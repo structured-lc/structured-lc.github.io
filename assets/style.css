@@ -1028,3 +1028,37 @@ ul li::marker {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* Author footnote */
+.author-footnote {
+  text-align: right;
+  font-size: 0.75em;
+  color: #6b7280;
+  padding: 1em 0 0.5em 0;
+  margin-top: 2em;
+  border-top: 1px solid #e5e7eb;
+  font-style: normal;
+}
+
+.author-footnote .heart {
+  color: #ef4444;
+  font-style: normal;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.1); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.1); }
+  70% { transform: scale(1); }
+}
+
+/* Ensure footnote appears in print */
+@media print {
+  .author-footnote {
+    display: block !important;
+    visibility: visible !important;
+    page-break-inside: avoid;
+  }
+}
