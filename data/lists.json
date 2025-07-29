@@ -1,0 +1,18 @@
+[
+    { "name": "LeetCode-All", "url": "leetcode-all", "file": "LC_All.json" },
+    { "name": "LeetCode-75", "url": "leetcode-75", "file": "LC_75.json" },
+    { "name": "Crash-Course-DSA", "url": "crash-course-dsa", "file": "LC_Explore_Card_DSA.json" },
+    { "name": "Top-Q-Easy", "url": "top-q-easy", "file": "LC_Top_Questions_Easy.json" },
+    { "name": "Top-Q-Medium", "url": "top-q-medium", "file": "LC_Top_Questions_Medium.json" },
+    { "name": "Top-Q-Hard", "url": "top-q-hard", "file": "LC_Top_Questions_Hard.json" },
+    { "name": "Card-Google", "url": "interview-card-google", "file": "LC_Explore_Card_Google.json" },
+    { "name": "Card-Meta", "url": "interview-card-meta", "file": "LC_Explore_Card_Meta.json" },
+    { "name": "Card-Microsoft", "url": "interview-card-microsoft", "file": "LC_Explore_Card_MS.json" },
+    { "name": "Card-Amazon", "url": "interview-card-amazon", "file": "LC_Explore_Card_Amazon.json" },
+    { "name": "Card-Apple", "url": "interview-card-apple", "file": "LC_Explore_Card_Apple.json" },
+    { "name": "Card-Adobe", "url": "interview-card-adobe", "file": "LC_Explore_Card_Adobe.json" },
+    { "name": "Card-Uber", "url": "interview-card-uber", "file": "LC_Explore_Card_Uber.json" },
+    { "name": "Card-LinkedIn", "url": "interview-card-linkedin", "file": "LC_Explore_Card_LinkedIn.json" },
+    { "name": "Card-Yelp", "url": "interview-card-yelp", "file": "LC_Explore_Card_Yelp.json" },
+    { "name": "Card-Bloomberg", "url": "interview-card-bloomberg", "file": "LC_Explore_Card_Bloomberg.json" }
+]
