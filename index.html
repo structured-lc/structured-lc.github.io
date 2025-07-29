@@ -858,38 +858,62 @@
         .then(md => {
           // Process markdown for special formatting
           md = enhanceMarkdown(md);
-          
+
           // Calculate remaining time to ensure minimum loading duration
           const loadTime = Date.now() - loadStartTime;
           const remainingTime = Math.max(0, minimumLoadTime - loadTime);
-          
+
           // Delay content display to ensure minimum loading time
           setTimeout(() => {
             // Generate navigation buttons
             const navigationButtons = generateNavigationButtons(filename);
-            
-            document.getElementById('content').innerHTML = `
-              <div class="content-inner">
-                ${navigationButtons.top}
-                ${marked.parse(md)}
-                <div class="author-footnote">
-                  Made with <span class="heart">♥</span> by Durga Ganesh using AI
-                </div>
+
+          // Feedback button HTML (styled like other action buttons, yellow color)
+          const feedbackButton = `<button id="feedback-btn" style="background: #f6c700; color: #222; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-left: 0.5em;">💬 Feedback</button>`;
+
+          // Insert feedback button next to Print button in navigationButtons.top
+          let navTop = navigationButtons.top;
+          navTop = navTop.replace(new RegExp('(<button[^>]*id="print-btn"[^>]*>[^<]*<\\/button>)'), `$1${feedbackButton}`);
+
+          document.getElementById('content').innerHTML = `
+            <div class="content-inner">
+              ${navTop}
+              ${marked.parse(md)}
+              <div class="author-footnote">
+                Made with <span class="heart">♥</span> by Durga Ganesh using AI
               </div>
-            `;
-              
+            </div>
+          `;
+
             // Add difficulty badges
             addDifficultyBadges();
-            
+
             // Hide Practice links for printing
             hidePracticeLinksForPrint();
-            
+
             // Add navigation event listeners
             setupNavigationListeners();
             document.querySelectorAll('pre code').forEach((block) => {
               hljs.highlightElement(block);
             });
-            
+
+            // Feedback button logic
+            const feedbackBtn = document.getElementById('feedback-btn');
+            if (feedbackBtn) {
+              feedbackBtn.onclick = function() {
+                // Try to get problem title from page
+                let problemTitle = document.title.replace(' - LeetCode Prep', '');
+                let pageUrl = window.location.href;
+                let body = `**Feedback for:** ${problemTitle}\n\n**Page:** ${pageUrl}\n\n**Feedback:**\n`;
+                let issueUrl =
+                  'https://github.com/structured-lc/structured-lc.github.io/issues/new' +
+                  '?title=' + encodeURIComponent('Feedback: ' + problemTitle) +
+                  '&body=' + encodeURIComponent(body) +
+                  '&labels=feedback';
+                window.open(issueUrl, '_blank');
+              };
+            }
+
             // Always start at top of content
             document.getElementById('content').scrollTop = 0;
           }, remainingTime);
