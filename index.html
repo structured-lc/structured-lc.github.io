@@ -262,25 +262,16 @@
                 </div>
               `;
               // Re-attach event listeners for the buttons
-              document.getElementById('start-btn').onclick = function() {
-                if (currentListData.length > 0) {
-                  document.getElementById('content').innerHTML = `
-                    <div class=\"content-inner\">
-                      <div style=\"text-align: center; padding: 3rem 1rem; color: #656d76;\">
-                        <div style=\"display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;\">⏳</div>
-                        <p style=\"margin: 0; font-size: 0.95rem;\">Loading content...</p>
-                      </div>
-                      <div class=\"author-footnote\">
-                        Made with <span class=\"heart\">♥</span> by Durga Ganesh using AI
-                      </div>
-                    </div>
-                  `;
-                  document.title = `${currentListData[0].title} - LeetCode Prep`;
-                  router.navigate(currentListSlug, currentListData[0].slug);
+              document.getElementById('random-btn').onclick = function() {
+                if (list.length > 0) {
+                  // Pick a random problem from the list
+                  const randomIndex = Math.floor(Math.random() * list.length);
+                  const randomProblem = list[randomIndex];
+                  // Set title immediately
+                  document.title = `${randomProblem.title} - LeetCode Prep`;
+                  router.navigate(currentListSlug, randomProblem.slug);
                 }
               };
-              document.getElementById('random-btn').onclick = function() {
-                if (currentListData.length > 0) {
                   const randomIndex = Math.floor(Math.random() * currentListData.length);
                   const randomProblem = currentListData[randomIndex];
                   document.getElementById('content').innerHTML = `
