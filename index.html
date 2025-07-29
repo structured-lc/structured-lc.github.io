@@ -205,12 +205,12 @@
       // Handle route changes
       handleRoute() {
         const { listSlug, problemSlug } = this.parseHash();
-        
+
         // If lists aren't loaded yet and we have a route, wait for them
         if (currentLists.length === 0 && (listSlug || problemSlug)) {
           return; // Keep current content and wait for lists to load
         }
-        
+
         // During initial load, show loading indicator if we expect to load content
         if (!this.initialLoadComplete && (listSlug || problemSlug)) {
           document.getElementById('content').innerHTML = `
@@ -219,26 +219,89 @@
                 <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
                 <p style="margin: 0; font-size: 0.95rem;">Loading content...</p>
               </div>
+              <div class="author-footnote">
+                Made with <span class="heart">♥</span> by Durga Ganesh using AI
+              </div>
             </div>
           `;
         }
-        
+
         if (listSlug && slugToFileMap[listSlug]) {
           // Load the specific list
           const fileName = slugToFileMap[listSlug];
           const listName = this.getListNameFromFile(fileName);
-          
+
           // Update page title
           document.title = problemSlug ? `${listName} - LeetCode Prep` : `${listName} - LeetCode Prep`;
-          
+
           // Set active list in sidebar
           this.setActiveList(listName);
-          
+
           // Load the list data
           loadCodeListFiles(fileName, () => {
             if (problemSlug) {
               // Load specific problem
               this.loadProblemBySlug(problemSlug);
+            } else {
+              // Show list info in C3 with author footnote
+              const listInfo = currentLists.find(l => l.file === fileName);
+              const listName = listInfo ? listInfo.name : 'Problem List';
+              document.getElementById('content').innerHTML = `
+                <div class="content-inner">
+                  <div class="action-buttons">
+                    <button id="start-btn" style="background: #6f42c1; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-right: 0.5em;">▶️ Start</button>
+                    <button id="random-btn" style="background: #dc3545; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-right: 0.5em;">🎲 Random</button>
+                    <button id="share-list-btn" style="background: #28a745; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em;">🔗 Share List</button>
+                  </div>
+                  <h2>${listName}</h2>
+                  <p>Select a problem from the list to view its solution and explanation.</p>
+                  <p><strong>${currentListData.length}</strong> problems in this list</p>
+                  <div class="author-footnote">
+                    Made with <span class="heart">♥</span> by Durga Ganesh using AI
+                  </div>
+                </div>
+              `;
+              // Re-attach event listeners for the buttons
+              document.getElementById('start-btn').onclick = function() {
+                if (currentListData.length > 0) {
+                  document.getElementById('content').innerHTML = `
+                    <div class=\"content-inner\">
+                      <div style=\"text-align: center; padding: 3rem 1rem; color: #656d76;\">
+                        <div style=\"display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;\">⏳</div>
+                        <p style=\"margin: 0; font-size: 0.95rem;\">Loading content...</p>
+                      </div>
+                      <div class=\"author-footnote\">
+                        Made with <span class=\"heart\">♥</span> by Durga Ganesh using AI
+                      </div>
+                    </div>
+                  `;
+                  document.title = `${currentListData[0].title} - LeetCode Prep`;
+                  router.navigate(currentListSlug, currentListData[0].slug);
+                }
+              };
+              document.getElementById('random-btn').onclick = function() {
+                if (currentListData.length > 0) {
+                  const randomIndex = Math.floor(Math.random() * currentListData.length);
+                  const randomProblem = currentListData[randomIndex];
+                  document.getElementById('content').innerHTML = `
+                    <div class=\"content-inner\">
+                      <div style=\"text-align: center; padding: 3rem 1rem; color: #656d76;\">
+                        <div style=\"display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;\">⏳</div>
+                        <p style=\"margin: 0; font-size: 0.95rem;\">Loading random problem...</p>
+                      </div>
+                      <div class=\"author-footnote\">
+                        Made with <span class=\"heart\">♥</span> by Durga Ganesh using AI
+                      </div>
+                    </div>
+                  `;
+                  document.title = `${randomProblem.title} - LeetCode Prep`;
+                  router.navigate(currentListSlug, randomProblem.slug);
+                }
+              };
+              document.getElementById('share-list-btn').onclick = function() {
+                const listUrl = `${window.location.origin}${window.location.pathname}#${currentListSlug}`;
+                shareUrl(listUrl, `${listName} - LeetCode Prep`);
+              };
             }
           });
         } else if (listSlug && !slugToFileMap[listSlug] && currentLists.length > 0) {
@@ -249,6 +312,9 @@
               <h2>List Not Found</h2>
               <p>The requested list "<strong>${listSlug}</strong>" does not exist.</p>
               <p><a href="#" onclick="router.navigate('')">← Back to Home</a></p>
+              <div class="author-footnote">
+                Made with <span class="heart">♥</span> by Durga Ganesh using AI
+              </div>
             </div>
           `;
           document.querySelectorAll('#lists-sidebar a, #sidebar a').forEach(el => {
@@ -329,12 +395,12 @@
           const slug = listSlugMap[list.file];
           return `<li><a href="#${slug}">${list.name}</a></li>`;
         }).join('');
-        
+
         // Add example problem link if we have LeetCode All
         const leetcodeAll = currentLists.find(l => l.name.includes('LeetCode-All'));
         const exampleProblem = leetcodeAll ? 
           `<li><a href="#${listSlugMap[leetcodeAll.file]}/two-sum">Two Sum Problem (example)</a></li>` : '';
-        
+
         document.getElementById('content').innerHTML = `
           <div class="content-inner">
             <div class="action-buttons">
@@ -347,19 +413,22 @@
               ${exampleProblem}
             </ul>
             <p><em>You can bookmark any problem page or share direct links!</em></p>
+            <div class="author-footnote">
+              Made with <span class="heart">♥</span> by Durga Ganesh using AI
+            </div>
           </div>
         `;
-        
+
         // Add event listener for website share button
         document.getElementById('share-website-btn').onclick = function() {
           const websiteUrl = `${window.location.origin}${window.location.pathname}`;
           shareUrl(websiteUrl, 'LeetCode Prep - Algorithm Problem Solutions');
         };
-        
+
         // Reset all scroll positions when going to home
         resetColumnScrolls(['c1', 'c2']);
         currentMarkdownFile = ''; // Clear current file tracker
-        
+
         document.querySelectorAll('#lists-sidebar a, #sidebar a').forEach(el => {
           el.classList.remove('active');
         });
