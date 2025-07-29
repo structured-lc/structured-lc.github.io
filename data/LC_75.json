@@ -52,7 +52,7 @@
     {"number": 2542, "slug": "maximum-subsequence-score", "title": "Maximum Subsequence Score", "difficulty": "Medium"},
     {"number": 2462, "slug": "total-cost-to-hire-k-workers", "title": "Total Cost to Hire K Workers", "difficulty": "Medium"},
     {"number": 374, "slug": "guess-number-higher-or-lower", "title": "Guess Number Higher or Lower", "difficulty": "Easy"},
-    {"number": 2499, "slug": "successful-pairs-of-spells-and-potions", "title": "Successful Pairs of Spells and Potions", "difficulty": "Medium"},
+    {"number": 2499, "slug": "minimum-total-cost-to-make-arrays-unequal", "title": "Minimum Total Cost to Make Arrays Unequal", "difficulty": "Hard"},
     {"number": 162, "slug": "find-peak-element", "title": "Find Peak Element", "difficulty": "Medium"},
     {"number": 875, "slug": "koko-eating-bananas", "title": "Koko Eating Bananas", "difficulty": "Medium"},
     {"number": 17, "slug": "letter-combinations-of-a-phone-number", "title": "Letter Combinations of a Phone Number", "difficulty": "Medium"},
