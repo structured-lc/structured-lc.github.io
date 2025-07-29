@@ -1055,13 +1055,13 @@
               const li = document.createElement('li');
               const a = document.createElement('a');
               const problemUrl = `#${currentListSlug}/${item.slug}`;
-              
+
               a.href = problemUrl;
               a.textContent = item.title;
               a.onclick = (e) => {
                 e.preventDefault();
-                
-                // Show loading animation immediately like C1 does
+
+                // Always show loading animation
                 document.getElementById('content').innerHTML = `
                   <div class="content-inner">
                     <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
@@ -1070,11 +1070,20 @@
                     </div>
                   </div>
                 `;
-                
+
                 // Set title immediately using the actual problem data
                 document.title = `${item.title} - LeetCode Prep`;
-                
-                router.navigate(currentListSlug, item.slug);
+
+                // If already on this problem, force reload markdown with loading animation for 0.5s
+                const { problemSlug, listSlug } = router.parseHash();
+                if (problemSlug === item.slug && listSlug === currentListSlug) {
+                  // Show loading for 0.5s, then reload markdown
+                  setTimeout(() => {
+                    router.loadProblemBySlug(item.slug);
+                  }, 500);
+                } else {
+                  router.navigate(currentListSlug, item.slug);
+                }
               };
               li.appendChild(a);
               fileList.appendChild(li);
