@@ -252,6 +252,7 @@
                     <button id="start-btn" style="background: #6f42c1; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-right: 0.5em;">▶️ Start</button>
                     <button id="random-btn" style="background: #dc3545; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-right: 0.5em;">🎲 Random</button>
                     <button id="share-list-btn" style="background: #28a745; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em;">🔗 Share List</button>
+                    <button id="feedback-btn" style="background: #f6c700; color: #222; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-left: 0.5em;">💬 Feedback</button>
                   </div>
                   <h2>${listName}</h2>
                   <p>Select a problem from the list to view its solution and explanation.</p>
@@ -302,6 +303,21 @@
                 const listUrl = `${window.location.origin}${window.location.pathname}#${currentListSlug}`;
                 shareUrl(listUrl, `${listName} - LeetCode Prep`);
               };
+              // Add event listener for feedback button
+              const feedbackBtn = document.getElementById('feedback-btn');
+              if (feedbackBtn) {
+                feedbackBtn.onclick = function() {
+                  let pageTitle = document.title.replace(' - LeetCode Prep', '');
+                  let pageUrl = window.location.href;
+                  let body = `**Feedback for:** ${pageTitle}\n\n**Page:** ${pageUrl}\n\n**Feedback:**\n`;
+                  let issueUrl =
+                    'https://github.com/structured-lc/structured-lc.github.io/issues/new' +
+                    '?title=' + encodeURIComponent('Feedback: ' + pageTitle) +
+                    '&body=' + encodeURIComponent(body) +
+                    '&labels=feedback';
+                  window.open(issueUrl, '_blank');
+                };
+              }
             }
           });
         } else if (listSlug && !slugToFileMap[listSlug] && currentLists.length > 0) {
@@ -405,6 +421,7 @@
           <div class="content-inner">
             <div class="action-buttons">
               <button id="share-website-btn" style="background: #28a745; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em;">🔗 Share Website</button>
+              <button id="feedback-btn" style="background: #f6c700; color: #222; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-left: 0.5em;">💬 Feedback</button>
             </div>
             <h2>Welcome to LeetCode Prep</h2>
             <p>Select a list from the sidebar to get started, or try these direct links:</p>
@@ -424,6 +441,21 @@
           const websiteUrl = `${window.location.origin}${window.location.pathname}`;
           shareUrl(websiteUrl, 'LeetCode Prep - Algorithm Problem Solutions');
         };
+        // Add event listener for feedback button
+        const feedbackBtn = document.getElementById('feedback-btn');
+        if (feedbackBtn) {
+          feedbackBtn.onclick = function() {
+            let pageTitle = document.title.replace(' - LeetCode Prep', '');
+            let pageUrl = window.location.href;
+            let body = `**Feedback for:** ${pageTitle}\n\n**Page:** ${pageUrl}\n\n**Feedback:**\n`;
+            let issueUrl =
+              'https://github.com/structured-lc/structured-lc.github.io/issues/new' +
+              '?title=' + encodeURIComponent('Feedback: ' + pageTitle) +
+              '&body=' + encodeURIComponent(body) +
+              '&labels=feedback';
+            window.open(issueUrl, '_blank');
+          };
+        }
 
         // Reset all scroll positions when going to home
         resetColumnScrolls(['c1', 'c2']);
@@ -1197,24 +1229,22 @@
               // Get list name for display
               const listInfo = currentLists.find(l => l.file === jsonFile);
               const listName = listInfo ? listInfo.name : 'Problem List';
-              
               document.getElementById('content').innerHTML = `
                 <div class="content-inner">
                   <div class="action-buttons">
                     <button id="start-btn" style="background: #6f42c1; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-right: 0.5em;">▶️ Start</button>
                     <button id="random-btn" style="background: #dc3545; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-right: 0.5em;">🎲 Random</button>
                     <button id="share-list-btn" style="background: #28a745; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em;">🔗 Share List</button>
+                    <button id="feedback-btn" style="background: #f6c700; color: #222; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-left: 0.5em;">💬 Feedback</button>
                   </div>
                   <h2>${listName}</h2>
                   <p>Select a problem from the list to view its solution and explanation.</p>
                   <p><strong>${list.length}</strong> problems in this list</p>
                 </div>
               `;
-              
               // Add event listener for start button
               document.getElementById('start-btn').onclick = function() {
                 if (list.length > 0) {
-                  // Show loading animation immediately
                   document.getElementById('content').innerHTML = `
                     <div class="content-inner">
                       <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
@@ -1223,43 +1253,39 @@
                       </div>
                     </div>
                   `;
-                  
-                  // Set title immediately
                   document.title = `${list[0].title} - LeetCode Prep`;
-                  
                   router.navigate(currentListSlug, list[0].slug);
                 }
               };
-              
-              // Add event listener for random button
+              // Add event listener for random button (no loading animation)
               document.getElementById('random-btn').onclick = function() {
                 if (list.length > 0) {
-                  // Pick a random problem from the list
                   const randomIndex = Math.floor(Math.random() * list.length);
                   const randomProblem = list[randomIndex];
-                  
-                  // Show loading animation immediately
-                  document.getElementById('content').innerHTML = `
-                    <div class="content-inner">
-                      <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-                        <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
-                        <p style="margin: 0; font-size: 0.95rem;">Loading random problem...</p>
-                      </div>
-                    </div>
-                  `;
-                  
-                  // Set title immediately
                   document.title = `${randomProblem.title} - LeetCode Prep`;
-                  
                   router.navigate(currentListSlug, randomProblem.slug);
                 }
               };
-              
               // Add event listener for list share button
               document.getElementById('share-list-btn').onclick = function() {
                 const listUrl = `${window.location.origin}${window.location.pathname}#${currentListSlug}`;
                 shareUrl(listUrl, `${listName} - LeetCode Prep`);
               };
+              // Add event listener for feedback button
+              const feedbackBtn = document.getElementById('feedback-btn');
+              if (feedbackBtn) {
+                feedbackBtn.onclick = function() {
+                  let pageTitle = document.title.replace(' - LeetCode Prep', '');
+                  let pageUrl = window.location.href;
+                  let body = `**Feedback for:** ${pageTitle}\n\n**Page:** ${pageUrl}\n\n**Feedback:**\n`;
+                  let issueUrl =
+                    'https://github.com/structured-lc/structured-lc.github.io/issues/new' +
+                    '?title=' + encodeURIComponent('Feedback: ' + pageTitle) +
+                    '&body=' + encodeURIComponent(body) +
+                    '&labels=feedback';
+                  window.open(issueUrl, '_blank');
+                };
+              }
             }
             
             // Execute callback if provided (used for initial routing)
