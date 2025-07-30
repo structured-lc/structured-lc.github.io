@@ -1,106 +1,130 @@
 ### Leetcode 3628 (Medium): Maximum Number of Subsequences After One Inserting [Practice](https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting)
 
 ### Description  
-Given a string **s** of uppercase English letters, you may insert at most one uppercase English letter at any position (including the beginning or end).  
-Return the **maximum number of "LCT" subsequences** that can be formed in the resulting string after at most one insertion.  
-A subsequence is a sequence that can be derived by deleting some (or no) characters from the string without changing the order of the remaining characters.
+Given a string s consisting of uppercase English letters, you may insert at most one additional uppercase letter (at any position, including the start or end).  
+Your task is to return the maximum number of **"LCT"** subsequences that can be formed in the resulting string after up to one insertion.  
+A subsequence is any sequence that can be derived by deleting some (or none) of the characters, without changing the order of the remaining ones.
 
 ### Examples  
 
 **Example 1:**  
 Input: `s = "LMCT"`  
 Output: `2`  
-*Explanation: We can insert 'L' at the start to get "LLMCT". "LCT" can be formed starting with either of the two 'L's: "L__C__T" (using the first L, C, T) and "L__C__T" (using the second L, C, T). So total 2 subsequences.*
+*Explanation: You can insert 'L' at the beginning to get "LLMCT". The number of subsequences "LCT" is 2: (first L, C, T) and (second L, C, T).*
 
 **Example 2:**  
-Input: `s = "LCT"`  
-Output: `2`  
-*Explanation: Insert any 'L', 'C', or 'T' in the optimal position. If we insert 'L' at the beginning, we get "LLCT", which can form 2 subsequences: pick the first L, or the second L. Same logic applies for inserting 'T' at the end or 'C' between L and T.*
+Input: `s = "LCTCT"`  
+Output: `4`  
+*Explanation: Original "LCTCT" has 2 "LCT" subsequences (positions: 0,1,2 and 0,3,4). Insert 'C' between L and C to get "LCCTCT". Now you have 4 subsequences (0,1,3), (0,2,3), (0,1,4), (0,2,4).*
 
 **Example 3:**  
-Input: `s = "ABCD"`  
+Input: `s = "TCL"`  
 Output: `0`  
-*Explanation: Even after one insertion, it's not possible to form "LCT" as all three letters are missing from the string.*
+*Explanation: No matter what character you insert, "LCT" subsequence cannot be formed since order L → C → T is required.*
 
-### Thought Process (as if you're the interviewee)  
-- **Brute-force idea**:  
-  Try all 26 possible insertions at all positions, recompute the count of "LCT" subsequences for each resulting string. For each string, do a triple-nested loop to count all \((i, j, k)\) with \(0 \leq i < j < k < n\) so that \(s[i]=='L',\,s[j]=='C',\,s[k]=='T'\). This is too slow for large n.
-- **Optimal Approach**:  
-  Notice that only insertions of 'L', 'C', or 'T' can increase the count of "LCT" subsequences. For each possible insertion position, simulate the effect of inserting 'L', 'C', or 'T', and for each:
-    - For 'L': adds many new "LCT" starting from this new L; count how many "CT" pairs exist to its right.
-    - For 'C': adds new "LCT" by placing C with L's before and T's after; count #L before × #T after.
-    - For 'T': completes "LC" pairs to form "LCT"; count how many "LC" pairs exist to its left.
-  Preprocess prefix and suffix arrays for how many 'L', 'C', 'LC', 'CT', etc. up to each position, to get O(n) time.
-  Finally, the answer is max(existing "LCT" subsequences, best after one insertion).
-  
-  This tradeoff makes the optimal approach fast and interview-appropriate.
+### Thought Process (as if you’re the interviewee)  
+- **Brute-force:**  
+  Try all 26 letters at each possible position, recompute subsequences each time. This is very inefficient: O(26 × n × n³) if checking all subsequences for each insertion.
+
+- **Optimization:**  
+  Notice we're only maximizing "LCT" subsequences. So, our insertion should be either 'L', 'C', or 'T', inserted at the most beneficial position.
+
+  For fast calculation:
+  - Use prefix/suffix counts:
+    - Precompute for each index:
+      - The number of L's to the left.
+      - The number of C's after a position.
+      - The number of T's to the right.
+  - There are three insertion options:
+    - Insert 'L' at some position: it can start new "LCT" subsequences.
+    - Insert 'C' somewhere: it can connect an existing 'L' before and a 'T' after.
+    - Insert 'T' somewhere: it can finish new "LCT" subsequences.
+  - For each option, calculate how many new subsequences would be formed with the optimal position.
+
+- **Reasoning for final approach:**  
+  Prefix-suffix counting gives O(n) time, as you only need one pass left to right and right to left. Greedy choose the best insert letter and position, take the maximum among three insert scenarios.
 
 ### Corner cases to consider  
-- Empty string  
-- All characters present with multiple repeats (e.g., "LLCCCTTT")  
-- Only one of 'L', 'C', 'T' exists  
-- No valid subsequences in the original or even after one insertion  
-- Only one position to insert (very short string)  
-- Inserting doesn't improve the count at all
+- String does not contain all of 'L', 'C', 'T' (output is 0 or at most what can be gotten after one insertion).
+- All letters are the same (e.g., "CCC").
+- String is empty.
+- String is already maximal (inserting doesn't help).
+- Inserting at the start or end.
+- Multiple optimal positions for insertion.
 
 ### Solution
 
 ```python
 def maximumNumberOfSubsequences(s: str) -> int:
     n = len(s)
-    # Precompute prefix counts of L and LC
-    prefix_L = [0] * (n + 1)
-    prefix_LC = [0] * (n + 1)
+    
+    # First, count existing "LCT" subsequences
+    countL = 0
+    countLC = 0
+    countLCT = 0
+    for ch in s:
+        if ch == 'L':
+            countL += 1
+        elif ch == 'C':
+            countLC += countL
+        elif ch == 'T':
+            countLCT += countLC
+
+    max_subseq = countLCT  # Best without insertion
+
+    # Precompute prefix counts of L and C, suffix counts of T
+    prefixL = [0] * (n + 1)
+    prefixC = [0] * (n + 1)
+    suffixC = [0] * (n + 1)
+    suffixT = [0] * (n + 1)
+
     for i in range(n):
-        prefix_L[i+1] = prefix_L[i] + (s[i] == 'L')
-        prefix_LC[i+1] = prefix_LC[i]
-        if s[i] == 'C':
-            prefix_LC[i+1] += prefix_L[i]
-    
-    # Precompute suffix counts of T and CT
-    suffix_T = [0] * (n + 1)
-    suffix_CT = [0] * (n + 1)
+        prefixL[i+1] = prefixL[i] + (1 if s[i] == 'L' else 0)
+        prefixC[i+1] = prefixC[i] + (1 if s[i] == 'C' else 0)
     for i in range(n-1, -1, -1):
-        suffix_T[i] = suffix_T[i+1] + (s[i] == 'T')
-        suffix_CT[i] = suffix_CT[i+1]
-        if s[i] == 'C':
-            suffix_CT[i] += suffix_T[i+1]
-    
-    # Count current total LCT
-    total_LCT = 0
-    count_L = 0
-    count_LC = 0
-    for char in s:
-        if char == 'L':
-            count_L += 1
-        elif char == 'C':
-            count_LC += count_L
-        elif char == 'T':
-            total_LCT += count_LC
-    
-    answer = total_LCT
-    
-    # Try inserting at every position (0 to n) each of 'L', 'C', 'T'
-    for i in range(n + 1):
-        # Insert 'L': # of "CT" pairs in suffix starting at i
-        add_L = suffix_CT[i]
-        # Insert 'C': # of Ls before × # of Ts after
-        add_C = prefix_L[i] * suffix_T[i]
-        # Insert 'T': # of "LC" pairs before i
-        add_T = prefix_LC[i]
-        # Choose best at this position
-        answer = max(answer, total_LCT + max(add_L, add_C, add_T))
-    
-    return answer
+        suffixC[i] = suffixC[i+1] + (1 if s[i] == 'C' else 0)
+        suffixT[i] = suffixT[i+1] + (1 if s[i] == 'T' else 0)
+
+    # Try all positions to insert 'L', 'C', 'T'
+    for pos in range(n+1):
+        # Insert 'L' at pos: can start a prefix for each C after and T after
+        added = 0
+        # Subsequence starts at this new L, then C and T to the right
+        added = suffixC[pos] * suffixT[pos]
+        max_subseq = max(max_subseq, countLCT + added)
+
+        # Insert 'C' at pos: need L before, T after
+        added = prefixL[pos] * suffixT[pos]
+        max_subseq = max(max_subseq, countLCT + added)
+
+        # Insert 'T' at pos: need L before, C before
+        added = prefixL[pos] * prefixC[pos]
+        max_subseq = max(max_subseq, countLCT + added)
+
+    return max_subseq
 ```
 
 ### Time and Space complexity Analysis  
 
-- **Time Complexity:** O(n).  
-  All prefix and suffix arrays are filled in linear time, and we do one linear scan to consider each insertion position.
-- **Space Complexity:** O(n).  
-  Extra arrays prefix_L, prefix_LC, suffix_T, suffix_CT each have length O(n).
+- **Time Complexity:** O(n)  
+  - Each prefix/suffix array is filled in O(n), and checking all n+1 insert positions is O(n).
+  - So, total is O(n).
 
-### Follow-up questions  
-- What if you can insert more than one character (e.g. k insertions)?
-- How would the solution change if the subsequence pattern was different (e.g., not "LCT" but "XYZW")?
+- **Space Complexity:** O(n)  
+  - For the extra prefix/suffix arrays, each is length n+1.
+
+### Potential follow-up questions (as if you’re the interviewer)  
+
+- What if we had to maximize the number of another subsequence, like "ABC" instead of "LCT"?  
+  *Hint: Generalize the prefix/suffix computation for arbitrary patterns.*
+
+- What if you could insert two or more letters?  
+  *Hint: Consider all combinations; the optimal may not be simply making two optimal single insertions.*
+
+- How would you modify the approach to count all possible unique subsequences of length 3, not just "LCT"?  
+  *Hint: Precompute and aggregate for each 3-letter combination; combinatorial enumeration.*
+
+### Summary
+This problem is a **prefix-suffix counting and greedy string problem**. The key pattern is to reduce repeated work by precomputing aggregations to enable constant-time answer for each possible insertion spot.  
+This pattern is widely applicable in subsequence counting, optimal string insertions, and dynamic programming over character streams.  
+It exemplifies how optimizing brute force by analyzing constraints and leveraging counts/prefix sums leads to a scalable and efficient solution.

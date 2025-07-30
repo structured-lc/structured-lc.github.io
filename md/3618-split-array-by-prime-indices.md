@@ -1,12 +1,14 @@
 ### Leetcode 3618 (Medium): Split Array by Prime Indices [Practice](https://leetcode.com/problems/split-array-by-prime-indices)
 
 ### Description  
-Given an integer array **nums**, split it into two arrays, **A** and **B**, using this rule:
-- Elements at **prime indices** (where the index itself is a prime number) must go into array **A**.
-- All other elements (indices that are not prime) go into array **B**.
-Return the **absolute difference** between the sums of the two arrays:  
-\[\lvert \text{sum}(A) - \text{sum}(B) \rvert\]  
-*Prime indices* are indices in the array that correspond to prime numbers (0-based). A **prime number** is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+Given an integer array, split it into two arrays A and B:
+- **A** contains elements from `nums` whose indices are prime numbers.
+- **B** contains elements from `nums` at all other (non-prime) indices.
+
+Return the absolute difference between the sums of A and B:  
+`|sum(A) - sum(B)|`
+
+A “prime index” is any index i ≥ 2 where i is prime. Remember: array indices start at 0.
 
 ### Examples  
 
@@ -14,70 +16,69 @@ Return the **absolute difference** between the sums of the two arrays:
 Input: `nums = [2, 3, 4]`  
 Output: `1`  
 Explanation:  
-Prime indices: 2 (only `2` is prime)  
-Array A: [4]  
-Array B: [2, 3]  
-\(|4 - (2+3)| = |4-5| = 1\)
+Prime indices: `[2]`  
+A = `[4]`, B = `[2, 3]`.  
+|4 - (2+3)| = |4-5| = 1
 
 **Example 2:**  
 Input: `nums = [-1, 5, 7, 0]`  
 Output: `3`  
 Explanation:  
-Prime indices: 2, 3  
-Array A: [7, 0]  
-Array B: [-1, 5]  
-\(|(7+0) - (-1+5)| = |7-4| = 3\)
+Prime indices: `[2, 3]`  
+A = `[7, 0]`, B = `[-1, 5]`.  
+|(7 + 0) - (-1 + 5)| = |7 - 4| = 3
 
 **Example 3:**  
-Input: `nums = [10, 99, 1, 2, 3]`  
-Output: `102`  
+Input: `nums = [10, -2, 6, 9, 11, 8]`  
+Output: `8`  
 Explanation:  
-Prime indices: 2, 3  
-Array A: [1, 2]  
-Array B: [10, 99, 3]  
-\(|(1+2) - (10+99+3)| = |3-112| = 109\)
+Prime indices: `[2, 3, 5]`  
+A = `[6, 9, 8]`, B = `[10, -2, 11]`  
+|(6+9+8) - (10+(-2)+11)| = |23 - 19| = 4
 
-### Thought Process (as if you're the interviewee)  
-Brute force approach:  
-- For each index \(i\), check if \(i\) is a prime.
-- If yes, add nums[i] to A; otherwise, to B.
-- Finally, calculate and return the absolute difference between sum(A) and sum(B).
+### Thought Process (as if you’re the interviewee)  
+First, let's clarify:  
+- For each index i (starting at 0), check if i is prime.
+- If so, move nums[i] to A. Otherwise, to B.
+- Finally, return |sum(A) - sum(B)|.
 
-Optimizations:  
-- Checking if a number is prime for every index could be costly (O(n√n)).  
-- Since we need to know for every index (from 0 to n-1) whether it is prime, we can precompute all primes up to n using the **Sieve of Eratosthenes** (O(n log log n)).  
-- Then, one pass over nums, separating based on whether each index is prime.
+**Brute-force:**  
+- For each index i, check if i is prime by trial division O(√i). For each i, that would be O(n√n) time for the array.
+- This is suboptimal for large n.
 
-Trade-offs:  
-- Sieve provides the most efficient way for this range of repeated prime checks.
-- The space and time usage is both minimal and efficient for \( n \leq 10^5 \).
+**Optimization:**  
+- Use the **Sieve of Eratosthenes** to quickly precompute prime indices up to n-1.
+- Sieve is O(n log log n). Then, a simple scan splits A and B in one pass.
+
+**Trade-offs:**  
+- Sieve is optimal for large arrays.
+- This avoids redundant computation and keeps code simple and efficient.
 
 ### Corner cases to consider  
-- Empty array: nums = []. Should return 0.
-- Array with a single element: only index 0 (not prime), so goes to B.
-- All array indices are non-prime (length 2): both go to B.
-- All array indices are prime (impossible except for indices 2+).
-- Negative numbers in input.
-- All nums are equal.
-- Large arrays to check efficiency.
+- Empty array (`nums = []`): the result is 0.
+- Array with 1 or 2 elements: prime indices start at 2, so A will be empty.
+- All elements at non-prime indices.
+- Negative values in nums.
+- All elements are 0.
+- Very large or small integer values.
+- No prime indices at all.
 
 ### Solution
 
 ```python
 def splitArrayByPrimeIndices(nums):
     n = len(nums)
-    # Step 1: Sieve of Eratosthenes to identify prime indices up to n-1
-    is_prime = [False, False] + [True] * (n - 2)  # 0 and 1 are not prime
+    # Sieve of Eratosthenes to find all primes up to n-1
+    is_prime = [False, False] + [True] * (n - 2)  # indices 0 and 1 are not prime
     for i in range(2, int(n ** 0.5) + 1):
         if is_prime[i]:
             for j in range(i * i, n, i):
                 is_prime[j] = False
 
-    sum_A = 0  # Sum of elements at prime indices
-    sum_B = 0  # Sum of elements at non-prime indices
-
-    for idx, val in enumerate(nums):
-        if is_prime[idx]:
+    sum_A = 0  # sum of elements at prime indices
+    sum_B = 0  # sum of all other elements
+    for i, val in enumerate(nums):
+        if i >= 2 and is_prime[i]:
             sum_A += val
         else:
             sum_B += val
@@ -87,14 +88,19 @@ def splitArrayByPrimeIndices(nums):
 
 ### Time and Space complexity Analysis  
 
-- **Time Complexity:**  
-  - Sieve of Eratosthenes: \(O(n \log \log n)\)
-  - Single pass through nums: \(O(n)\)  
-  - Overall: **O(n \log \log n)**
-- **Space Complexity:**  
-  - To store primality info for indices: \(O(n)\)
-  - Small constant space otherwise.
+- **Time Complexity:** O(n log log n) for the sieve, plus O(n) for the scan through nums. Overall: O(n log log n).
+- **Space Complexity:** O(n) for the is_prime list; other variables use constant space outside the input.
 
-### Follow-up questions  
-- What if we want to generalize to other "special index" functions, not just primes?
-- What if the array is streaming, i.e., elements come one-by-one? Can you process without storing the whole primality sieve?
+### Potential follow-up questions (as if you’re the interviewer)  
+
+- If the array is extremely large, can you handle memory limits?
+  *Hint: Use a space-efficient sieve (bit array) or segmented sieve.*
+
+- Can you split by different “index rules” (e.g., Fibonacci indices, even/odd indices)?
+  *Hint: Abstract out the logic for which indices to pick.*
+
+- If indices are 1-based (not 0-based), what would change?
+  *Hint: Adjust offsets and clarify what counts as the 1ˢᵗ element.*
+
+### Summary
+This approach uses the classic Sieve of Eratosthenes pattern to preprocess prime indices for efficient array splitting. This problem is an example of the “index-based grouping” and “precompute/memoize to accelerate queries” patterns, both of which are very common in coding interviews. Variants often appear when you must bucket elements based on the properties of their indices, not values.

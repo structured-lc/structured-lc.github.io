@@ -1,111 +1,88 @@
 ### Leetcode 3623 (Medium): Count Number of Trapezoids I [Practice](https://leetcode.com/problems/count-number-of-trapezoids-i)
 
 ### Description  
-Given a set of distinct integer points on a 2D Cartesian plane, count how many **different trapezoids with exactly two parallel horizontal sides** (parallel to the x-axis) can be formed.  
-- A **trapezoid** is defined here as a quadrilateral with exactly one pair of sides parallel (the horizontal segments), which must be on two different y-levels.
-- The points that make up a horizontal segment must have the same y-coordinate and different x-coordinates.
-- Each trapezoid chosen must use two top points (forming one horizontal segment at one y), two bottom points (another horizontal segment at a different y), and connect the endpoints.
+Given a set of points on a plane, count the number of *trapezoids* you can form where both pairs of horizontal sides are parallel to the x-axis and sit on different y-levels. Specifically, a valid trapezoid is formed by picking two pairs of points on two different horizontal lines (y-values), so that the points on each line can be connected to form the horizontal sides of the trapezoid. The order in which you pick y-levels or the sides doesn't matter—just count all distinct trapezoids as per the described rules.
 
 ### Examples  
 
 **Example 1:**  
 Input: `points = [[1,0],[2,0],[3,0],[2,2],[3,2]]`  
-Output: `3`  
-*Explanation:  
-We have:*
-- *Bottom y = 0: (1,0),(2,0),(3,0) → segments: (1,0)-(2,0), (1,0)-(3,0), (2,0)-(3,0)*
-- *Top y = 2: (2,2),(3,2) → one segment: (2,2)-(3,2)*
-- *Every (bottom segment) × (top segment) forms a unique trapezoid.*
-- *Number of trapezoids: C(3,2)\*C(2,2) = 3\*1 = 3*
+Output: `1`  
+*Explanation: On y=0 we have (1,0),(2,0),(3,0). On y=2 we have (2,2),(3,2). Both horizontal levels can form a pair of horizontal segments (choose 2 from 3 at y=0, and the only pair at y=2), so there is 1 trapezoid possible.*
 
 **Example 2:**  
-Input: `points = [[1,1],[2,1],[3,2],[4,2]]`  
-Output: `1`  
-*Explanation:  
-Only possible horizontal segments:*
-- *At y=1: (1,1)-(2,1)*
-- *At y=2: (3,2)-(4,2)*
-- *Total: 1 segment at each level → 1 unique trapezoid.*
+Input: `points = [[1,1],[2,1],[3,1],[1,3],[2,3],[3,3]]`  
+Output: `9`  
+*Explanation: Each y-level has 3 points, and you can choose 2 points from each to form horizontal sides. Number of pairs on each level = 3, so total trapezoids = 3 × 3 = 9.*
 
 **Example 3:**  
-Input: `points = [[1,0],[2,0],[3,1]]`  
+Input: `points = [[0,0],[1,1],[2,2]]`  
 Output: `0`  
-*Explanation:  
-- Only one y-value has two points (y=0: (1,0) and (2,0)), but y=1 has only one point, so can't form any horizontal segment at different levels.*
+*Explanation: No two points share a y-value, so no horizontal side can be formed—so no trapezoids.*
 
-### Thought Process (as if you're the interviewee)  
+### Thought Process (as if you’re the interviewee)  
+First, to form a trapezoid as described, you need two distinct y-levels, and at each level, you need at least two points (so you can form a horizontal "side").  
+The brute-force way would be:  
+- For all pairs of y-levels,
+  - For each, count how many ways we can pick 2 points at y-level A and 2 points at y-level B.
+- For large N, this is inefficient.
 
-- **Brute-force idea:**  
-  - List all pairs of y-levels.
-  - For each y, try all pairs of points to form all possible horizontal segments.
-  - For every pair of horizontal segments at different y-levels, count as a valid trapezoid.
-  - This is O(N³) or worse, where N is the number of points. Not scalable.
+Instead, precalculate for each y-value, how many pairs of points (so, combinations C(n, 2)) exist.  
+Now, for each pair of *different* y-levels, the total trapezoids you can form using those levels is the product of the pairs from both levels.  
+Rather than check every pair, we can process all y-levels in order, and for each, accumulate the number of already seen pairs. For each y-level i, multiply its count of pairs by the total for all earlier y-levels, and sum this.
 
-- **How to optimize:**  
-  - Observe: **To have a horizontal side, need at least 2 points at the same y.**
-  - For each y, count how many ways to pick two points (segments): C(n,2) if there are n points on that y-level.
-  - Suppose all horizontal segments at y₁ and all at y₂ (y₁ ≠ y₂). All pairs give trapezoids: multiply C(n₁,2) × C(n₂,2).
-  - Instead of looping over all pairs of y-levels, keep prefix sum of the C(n,2) counts to efficiently compute total pairs.
-
-- **Why this works:**  
-  - The order of y doesn't matter; for each y going from bottom up, as you process all C(n,2) so far, you can multiply with the next layer's.
-  - This approach only scans the points, groups by y, and then combines using a running sum—O(N + K), where K is number of y-values.
-
-- **Trade-offs:**  
-  - Efficient, straightforward.
-  - Main challenge is handling the accumulation in a way that counts unique trapezoids, not double-counted.
+**Trade-offs:**  
+This optimized counting is O(M), where M is the number of distinct y-values, so it's much faster.
 
 ### Corner cases to consider  
-- No y-level has 2 or more points (cannot make horizontal segment at all).
-- Only one y-level has 2 or more points (can't pair to separate levels).
-- Multiple y-levels but all with only 1 point (no segments possible).
-- Very large number of points on one y-level (possible integer overflow; use modulo).
-- Negative and positive y-values—shouldn't affect, all logic is based on counts.
-- Input list may be empty.
+- No two points share a y-level (output = 0).
+- Only one y-level has ≥ 2 points (output = 0).
+- Multiple y-levels with < 2 points (skip).
+- Duplicate points (if not possible per problem, otherwise don't double count).
+- Large inputs (efficiency matters).
 
 ### Solution
 
 ```python
-from collections import defaultdict
-
-MOD = 10**9 + 7
+# Leetcode 3623 - Count Number of Trapezoids I
 
 def countTrapezoids(points):
-    # Step 1: Group all points by y-coordinate, count for each y
-    y_count = defaultdict(int)
+    from collections import defaultdict
+
+    MOD = 10**9 + 7
+    y_groups = defaultdict(int)
+
+    # Count points per y-level
     for x, y in points:
-        y_count[y] += 1
-        
-    # Step 2: For each y, compute number of horizontal segments (pairs of points)
-    ys_sorted = sorted(y_count)
-    seg_counts = []
-    for y in ys_sorted:
-        n = y_count[y]
-        # Only possible if at least 2 points
-        seg_count = n * (n - 1) // 2
-        seg_counts.append(seg_count)
-        
-    # Step 3: Count total trapezoids as sum over all pairs of y-levels
+        y_groups[y] += 1
+
+    # For each y, count all possible pairs ("horizontal sides") we can form
+    y_levels = sorted(y_groups.keys())
+    pair_counts = [ (y_groups[y] * (y_groups[y] - 1) // 2) % MOD for y in y_levels ]
+    
     ans = 0
-    pre_sum = 0  # sum of all seg_counts for lower y-levels
-    for sc in seg_counts:
-        ans = (ans + sc * pre_sum) % MOD
-        pre_sum = (pre_sum + sc) % MOD
-        
+    prefix_sum = 0
+    for cnt in pair_counts:
+        ans = (ans + cnt * prefix_sum) % MOD
+        prefix_sum = (prefix_sum + cnt) % MOD
     return ans
 ```
 
 ### Time and Space complexity Analysis  
 
-- **Time Complexity:** O(N + K log K)
-    - N = number of input points (for grouping).
-    - K = number of unique y-levels, sorting them.
-    - For each y-level, calculations are O(1). Thus, overall efficient.
-- **Space Complexity:** O(K)
-    - Due to hashmap for grouping and list for segment counts.
-    - No big auxiliary structures.
+- **Time Complexity:** O(N + M), where N is number of points, M is number of unique y-values (since sorting the y-levels, usually much less than N), and total work is linear over y-levels.
+- **Space Complexity:** O(M), for storing the count of points for each distinct y-level.
 
-### Follow-up questions  
-- How would you adapt the solution if given floating-point y-values (with possible tolerance)?
-- If the problem asked for all trapezoids (not just horizontal-parallel-sided), how would you generalize?
-- Can you output the actual set of points for each trapezoid, not just the count?
+### Potential follow-up questions (as if you’re the interviewer)  
+
+- What if we care about *all* types of trapezoids, not just those with horizontal sides?
+  *Hint: You'll need to consider all pairs of parallel segments, so check for all possible slopes (not just zero). Possible use of hashing by slope.*
+
+- Can you output the actual coordinates of all possible trapezoids, not just the count?
+  *Hint: For each y-level pair, you can enumerate all pairs at each level, generating combinations. What's the complexity of listing everything?*
+
+- Suppose some points are repeated. How does it affect your counting?
+  *Hint: If duplicate coordinates are allowed, how do you avoid double-counting?*
+
+### Summary
+This is a classic *combinatorics and grouping* problem: group by y-level, count combinations, then combine in a way that avoids double counting using prefix sums. This pattern is common in geometry, combinatorics, and problems involving pairs of events or groupings across distinct classes (e.g., two-sum style, rectangles in a grid, etc.). Fast reduction from O(N²) brute force to O(N) accumulative logic is key.

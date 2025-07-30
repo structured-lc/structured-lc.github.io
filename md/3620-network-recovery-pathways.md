@@ -1,115 +1,120 @@
 ### Leetcode 3620 (Hard): Network Recovery Pathways [Practice](https://leetcode.com/problems/network-recovery-pathways)
 
 ### Description  
-Given a weighted undirected graph representing a network with `n` nodes labeled `0` to `n-1` and a set of edges defined by `(u, v, cost)`, you need to find a path from node `0` to node `n-1` that meets two criteria:
-- The *total cost* of the path is less than a given integer `k`.
-- Among all such valid paths, choose the one where the *minimum edge cost* along the path is maximized (i.e., out of all valid paths, pick the one whose weakest link is as strong as possible).
-Return the maximum possible minimum edge cost of any path from `0` to `n-1` with total cost < `k`. If no such path exists, return `-1`.
+Given a directed acyclic graph (DAG) with `n` nodes (numbered from 0 to n-1) and a list of edges, where each edge is defined as `(u, v, cost)`, you want to find the highest possible minimum edge cost among all possible paths from node 0 (source) to node n-1 (target), but only considering paths:
+- Where all intermediate nodes (excluding 0 and n-1) are "online" per a given `online` array,
+- The total path cost is ≤ `k`.
+Return the maximum possible minimum edge cost ("pathway score") among all valid paths between node 0 and node n-1 under these constraints.
 
 ### Examples  
 
 **Example 1:**  
-Input: `n = 5, edges = [[0,1,5],[1,4,7],[0,4,6],[0,2,3],[2,4,12]], k = 13`  
+Input: `n = 4, edges = [[0,1,5],[1,3,5],[0,2,6],[2,3,6]], online = [True,True,True,True], k = 12`  
 Output: `6`  
-*Explanation:  
-Possible paths from 0 to 4 with cost < 13:  
-- 0→1→4 (cost: 5+7=12, min edge: 5)  
-- 0→4 (cost: 6, min edge: 6)  
-Among these, 0→4 has the highest minimum edge cost (6).*
+*Explanation: Both paths 0→1→3 (total cost: 10, min cost: 5) and 0→2→3 (total cost: 12, min cost: 6) are valid. Path 0→2→3 has the higher minimum (6).*
 
 **Example 2:**  
-Input: `n = 3, edges = [[0,1,6],[1,2,8],[0,2,10]], k = 15`  
-Output: `8`  
-*Explanation:  
-Possible paths from 0 to 2 with cost < 15:  
-- 0→2 (cost: 10, min edge: 10)  
-- 0→1→2 (cost: 6+8=14, min edge: 6)  
-We pick 0→2, min edge = 10.*
+Input: `n = 5, edges = [[0,1,3],[1,4,3],[0,2,2],[2,3,4],[3,4,7]], online = [True,False,True,True,True], k = 10`  
+Output: `2`  
+*Explanation: Intermediate node 1 is offline, so the path 0→1→4 is invalid. The only allowed path is 0→2→3→4 (cost: 2+4+7=13 > 10), so no valid path with total cost ≤ 10. Return 0.*
 
 **Example 3:**  
-Input: `n = 3, edges = [[0,1,10],[1,2,10]], k = 15`  
-Output: `-1`  
-*Explanation:  
-All paths from 0 to 2 have total cost ≥ 15. Return -1.*
+Input: `n = 4, edges = [[0,1,2],[1,3,2],[0,2,2],[2,3,2]], online = [True,False,True,True], k = 5`  
+Output: `2`  
+*Explanation: Intermediate node 1 is offline, so only path 0→2→3 (cost: 4, min edge: 2) is valid.*
 
-### Thought Process (as if you're the interviewee)  
-- **Brute-force idea:**  
-  Try all possible paths from 0 to n−1, filter those with total cost < k, and return the max of `min(edge_cost)` among these paths. However, there are exponentially many paths, so this is not feasible for large graphs.
-
-- **Observation:**  
-  Unlike standard shortest paths, we want to maximize the minimum edge on the path, under a total cost constraint. This is a combination of binary search (for the minimum edge we can achieve) and pathfinding with cost constraints.
-
-- **Optimized idea:**  
-  Consider binary searching on the possible values for the "bottleneck" (the minimum edge on the path), say `mid`. For each candidate value, filter the graph to only include edges with cost ≥ `mid`. Then, check if there is a path from `0` to `n-1` whose *total cost* is < `k` in this filtered graph. This can be checked efficiently with a modified Dijkstra or BFS.
-
-- **Why this works:**  
-  Binary search gives O(log C) candidates (`C` = number of unique edge costs), and for each, we use Dijkstra's algorithm or BFS (since all costs are positive) to check path feasibility. Each such check is O((N+E) log N).
-
-- **Trade-offs:**  
-  This uses more memory and time than a single-path search, but is much more efficient than full enumeration.
+### Thought Process (as if you’re the interviewee)  
+- First, I’d clarify constraints: The graph is acyclic, and only online nodes (except 0 and n-1) can be used as intermediates.
+- Brute force: Enumerate all paths from 0 to n-1, filter for those where intermediates are online and sum ≤ k, and compute the minimum edge on each. Track the highest of these minimums. But the number of possible paths is exponential—this isn’t feasible for large graphs.
+- Optimization: Since we want to **maximize the minimum edge weight** on a valid path, this is a classic "path-maximization under budget" problem.
+    - **Binary search**: We can binary search on the possible minimum edge weight (the "score").
+    - For each candidate score `x`, check if a path exists from 0 to n-1 using only edges with cost ≥ x and with total path cost ≤ k, and intermediates online.
+    - To check this efficiently, use a modified Dijkstra’s algorithm (or BFS/DFS in a DAG) keeping track of path costs, only traversing valid edges/nodes for that threshold.
+- Trade-offs: This approach reduces the search from exponential (all paths) to O(n log C), where C is the range of possible edge costs, and each search step uses Dijkstra/topological traversal.
 
 ### Corner cases to consider  
-- No path from 0 to n-1 exists.
-- All possible paths have cost ≥ k.
-- All edges have the same weight.
-- Multiple paths with same minimum edge; choose path with total cost < k.
-- Edge cases: n = 2, only one edge.
-- Disconnected graphs.
+- The only valid path is through an offline node (return 0).
+- Nodes 0 or n-1 are offline (not possible by constraints).
+- k is so small that even the cheapest path exceeds k (return 0).
+- Multiple edges between pairs (should only use those meeting edge weight constraints).
+- All edges are below the minimum considered threshold.
 
 ### Solution
 
 ```python
-def max_min_edge_under_budget(n, edges, k):
-    # Step 1: Get all distinct edge costs for binary search
-    edge_costs = sorted(set(w for _, _, w in edges))
-    graph = [[] for _ in range(n)]
+from collections import defaultdict, deque
+import heapq
+
+def networkRecoveryPathways(n, edges, online, k):
+    # Find range for binary search: min and max edge weights
+    edge_weights = [w for u, v, w in edges]
+    if not edge_weights:
+        return 0
+    left, right = min(edge_weights), max(edge_weights)
+    answer = 0
+
+    # Build adjacency list: only allow traversing from u to v
+    adj = defaultdict(list)
     for u, v, w in edges:
-        graph[u].append((v, w))
-        graph[v].append((u, w))
+        adj[u].append((v, w))
 
-    # Binary search helper: can we reach n-1 from 0 with only edges of at least 'min_edge'
-    # and total cost < k?
-    import heapq
-
-    def can_achieve(min_edge):
-        # Only use edges ≥ min_edge
-        visited = [float('inf')] * n
-        pq = [(0, 0)]  # (total_cost, node)
+    def path_exists(threshold):
+        # Modified Dijkstra: only use edges >= threshold, path cost ≤ k, intermediates online
+        heap = [(0, 0)]  # (current_path_sum, node)
+        visited = [float('inf')] * n  # Smallest cost to reach each node
         visited[0] = 0
-        while pq:
-            total, u = heapq.heappop(pq)
-            if u == n-1:
-                return total < k
-            for v, w in graph[u]:
-                if w >= min_edge and total + w < visited[v] and total + w < k:
-                    visited[v] = total + w
-                    heapq.heappush(pq, (total + w, v))
+
+        while heap:
+            curr_cost, u = heapq.heappop(heap)
+            if curr_cost > k:
+                continue
+            if u == n - 1:
+                return True  # Found valid path
+            for v, w in adj[u]:
+                if w < threshold:
+                    continue
+                # Check online for intermediate nodes (except 0/n-1)
+                if v != 0 and v != n - 1 and not online[v]:
+                    continue
+                new_cost = curr_cost + w
+                if new_cost < visited[v]:
+                    visited[v] = new_cost
+                    heapq.heappush(heap, (new_cost, v))
         return False
 
-    # Binary search for best achievable min_edge
-    left, right = 0, len(edge_costs) - 1
-    answer = -1
+    # Binary search on possible min edge weight
     while left <= right:
         mid = (left + right) // 2
-        candidate = edge_costs[mid]
-        if can_achieve(candidate):
-            answer = candidate
-            left = mid + 1  # try higher
+        if path_exists(mid):
+            answer = mid  # Try higher threshold
+            left = mid + 1
         else:
-            right = mid - 1  # try lower
+            right = mid - 1
     return answer
 ```
 
 ### Time and Space complexity Analysis  
 
 - **Time Complexity:**  
-  O((E + N) log C × log N)  
-  - log C for binary search over possible bottleneck (distinct edge costs C ≤ E),  
-  - For each search, we run modified Dijkstra up to all nodes, which is O((E + N) log N).
+  - Binary search over edge weights: O(log C), C=max(edge weight)
+  - For each step, Dijkstra/best-path search: O((n + m) log n)
+  - So overall: O((n + m) log n · log C)
 
 - **Space Complexity:**  
-  O(E + N) for adjacency list and Dijkstra's state tracking.
+  - Adjacency list: O(n + m)
+  - Dijkstra’s storage: O(n)
 
-### Follow-up questions  
-- How would you handle dynamic updates to edge weights (online queries)?
-- Can you adapt this for unweighted or directed graphs, or support negative edges (if all total costs are still positive)?
+### Potential follow-up questions (as if you’re the interviewer)  
+
+- What would you do if the graph had cycles?  
+  *Hint: Dijkstra or Bellman-Ford may be needed; cycles may allow infinite cost, so path counting changes—add ‘visited’/recursion management.*
+
+- What if the number of online/offline changes frequently in queries?  
+  *Hint: Preprocessing or dynamic approaches; consider segment trees or lazy propagation.*
+
+- Can you also output the actual path, not just the pathway score?  
+  *Hint: Add parent tracking in Dijkstra’s search to reconstruct the path.*
+
+### Summary
+This problem uses the **binary search on the answer** technique combined with a modified **shortest path algorithm** (Dijkstra or BFS in DAG) to efficiently determine the highest possible minimum edge on a valid path under given constraints.  
+This is a classic approach applicable in similar optimization/search problems: maximize (or minimize) a key metric along a path subject to complex constraints (edge/node properties, cost limits). Common in hard graph questions, especially in network routing, resource allocation, or reliability scenarios.

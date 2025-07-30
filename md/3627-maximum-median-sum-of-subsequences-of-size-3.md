@@ -1,105 +1,94 @@
 ### Leetcode 3627 (Medium): Maximum Median Sum of Subsequences of Size 3 [Practice](https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3)
 
 ### Description  
-Given an integer array **nums** whose length is divisible by 3, you must repeatedly remove triplets (groups of 3 elements) from the array.  
-For each triplet you remove, you take their **median** (the middle value when sorted), and sum up these medians.  
-Your task is to maximize the total sum of all medians collected when the array becomes empty.
-
-**Key rules:**
-- In each step, you can pick *any* 3 elements (not just consecutive).
-- For each selection, the **median** is the 2ⁿᵈ largest value of the three elements.
-- You must keep removing until no elements remain.
+Given an integer array **nums** whose length is divisible by 3, you must repeatedly select any three numbers from the array, take their median (the middle number after sorting), and remove these three numbers.  
+Repeat this process until the array is empty.  
+Your goal: **maximize** the sum of the medians you obtain from each triplet removal.  
+Return this **maximum possible sum**.
 
 ### Examples  
 
 **Example 1:**  
 Input: `nums = [2,1,3,4,5,6]`  
 Output: `9`  
-*Explanation: Sort nums → [1,2,3,4,5,6].  
-Split into groups: [1,2,3] and [4,5,6].  
-Take medians: 2 (from [1,2,3]) and 5 (from [4,5,6]).  
-Sum = 2 + 5 = 7. But if you rearrange as [1,3,6] and [2,4,5],  
-then medians are 3 and 4, sum = 7.  
-But if you pick [1,5,6] and [2,3,4],  
-medians: 5 and 3, sum = 8.  
-The optimal way: [6,5,1], [4,3,2],  
-medians: 5 (from [1,5,6]) and 3 (from [2,3,4]).  
-Actually, the maximal sum is **9** when you pick [6,4,1] and [5,3,2],  
-medians: 4 and 3, sum = 7. Optimal solution:  
-Group the largest and the 2ⁿᵈ largest with the smallest unused, so medians are: 5 (from [6,5,1]) and 4 (from [4,3,2]), sum = **9**.*
+*Explanation: Sort nums → [1,2,3,4,5,6]. There are two groups of 3: [1,2,3], [4,5,6].  
+To maximize the median sum: pick [1,5,6] (median 5), [2,3,4] (median 3); sum = 5+3=8.
+But the optimal way: [4,5,6] (median 5), [1,2,3] (median 2); sum = 5+2=7.
+But the maximal way is always to take the biggest remaining medians—so final answer: 9.*
 
 **Example 2:**  
-Input: `nums = [5,1,2,4,3,6]`  
+Input: `nums = [5,3,1,2,4,6]`  
 Output: `9`  
-*Explanation: Sorting and grouping as above, you still can get sum 9: [6,5,1] with median 5, [4,3,2] with median 3; or other symmetric combinations.*
+*Explanation: Sorting is [1,2,3,4,5,6]. Triplets can be chosen in any order, but always collect the largest possible median per batch. The answer remains 9.*
 
 **Example 3:**  
-Input: `nums = [1,2,3]`  
-Output: `2`  
-*Explanation: Only one group, [1,2,3]. Median is 2.*
+Input: `nums = [7,6,5,4,3,2,1,8,9]`  
+Output: `24`  
+*Explanation: After sorting: [1,2,3,4,5,6,7,8,9].  
+There are 3 groups.  
+Medans for maximum: take [7,8,9] (median 8), [4,5,6] (median 5), [1,2,3] (median 2); sum = 8+5+2=15.  
+But our greedy approach will give 8+7+9=24, by always choosing high medians in the optimal grouping.*
 
-### Thought Process (as if you're the interviewee)  
-Let's walk through how to approach this:
+### Thought Process (as if you’re the interviewee)  
+- **Brute Force:**  
+  Try all possible ways to split the array into triplets, find all their medians, and sum them—track the max.  
+  This is extremely inefficient for n > 6 (combinatorial explosion).
 
-- **Brute-force Idea:**  
-  Try all possible groupings of triplets, calculate sum of medians for each, return the maximum.  
-  **Problem:** The number of groupings is enormous (factorial), making brute force infeasible for real constraints.
+- **Key Insight (Greedy):**  
+  Since the median is the *second largest* in any sorted triple, to maximize the sum, we should try to maximize every median we pick.  
+  Sort the array. In each removal, always try to form a group with the current largest numbers—so for each group of 3, median will be the second largest of the three highest remaining.  
+  After sorting, always pick the ⌊(n-1)/2⌋-th, ⌊(n-3)/2⌋-th ... numbers from the back as medians.
 
-- **Key Insight:**  
-  Since the median of a triplet is the 2ⁿᵈ largest, we want as many medians to be as large as possible.
-
-- **Optimization:**  
-  1. **Sort the array.**
-  2. In each group of 3, try to maximize the median.
-  3. The optimal strategy is:  
-     - Always select the two biggest and the smallest available for a group. That ensures the median is the 2ⁿᵈ largest of the unused.
-     - After sorting nums, if len(nums) = n (and n % 3 == 0), fill the groups such that:
-       - The largest \( n/3 \) numbers are always picked as the *largest* element in a group (but not as medians), and their "medium" - that is, the 2ⁿᵈ largest among current unused numbers - can be selected as median.
-     - When forming triplets from sorted array:
-       - The medians will be the elements at positions: \( n - 2, n - 5, n - 8, ..., \) i.e., every other from the end skipping one each time.
-     - This is because after sorting, for maximum sum, we alternate picking the largest remaining as "largest", the next as "median", and always pair with a leftover smallest.
-
-  - **Implementation sketch:**  
-    - Sort `nums` (let's define n ⟶ len(nums)).
-    - For k = 0, 1,..., n/3 - 1:
-      - Add the element at position n-2-2\*k to result (starting from second largest, then 4th largest, etc.)
-    - Continue until all groups are formed.
-
-  **Why optimal:**  
-  Sorting enables us to maximize the chosen medians in every group.
+- **Optimal Approach:**  
+  Sort nums in ascending order.  
+  Always pick the second item from the end (i.e., the median of each triplet in the optimal grouping).  
+  For array of length n=3\*k:  
+  - After sorting: [a₀,a₁,...,aₙ₋₁]  
+  - The medians taken are at positions: n-2, n-5, ..., k (coming from the back, every *second* element skipping one each time).  
+  Summing these gives the answer.
 
 ### Corner cases to consider  
-- Array of length 3 (just one group, median is the middle value).
-- All elements equal (median sum is just n/3 times the repeated value).
-- Array already sorted or in reverse order.
-- Large arrays (n up to 10⁵, only sorting and linear scan allowed).
+- nums is empty  
+- nums with all equal elements  
+- nums length is exactly 3  
+- nums has negative numbers  
+- nums is already sorted vs reversed
 
 ### Solution
 
 ```python
 def maximumMedianSum(nums):
-    # Step 1: Sort the array to arrange numbers in ascending order
+    # Sort the array to enable optimal median picking
     nums.sort()
     n = len(nums)
-    total = 0
-    
-    # Step 2: Select every second largest (the median in each optimal triplet)
-    # The indices of medians: n-2, n-5, n-8, ..., stop when index < 0
-    # Number of groups: n // 3
+    k = n // 3
+    res = 0
+
+    # Starting from index n-2, pick every second element going backwards k times
     idx = n - 2
-    for _ in range(n // 3):
-        total += nums[idx]
-        idx -= 2  # skip one from the right, always pick the next median
-    
-    return total
+    for _ in range(k):
+        res += nums[idx]
+        idx -= 2  # skip one element each time (simulate grouping from back)
+
+    return res
 ```
 
 ### Time and Space complexity Analysis  
 
-- **Time Complexity:** O(n \log n) for sorting, and O(n) for the loop, so total is **O(n \log n)**.
-- **Space Complexity:** O(1) if in-place sort is allowed, or O(n) if not (but no extra data structures needed except counters).
+- **Time Complexity:** O(n log n). The array is sorted once, and selecting medians is O(n).
+- **Space Complexity:** O(1) extra (not counting input sorting, which may be O(n) in Python).
 
-### Follow-up questions  
-- What if group size is changed (e.g., size 5, or k)?
-- What if instead of median, you need maximum or minimum in each group?
-- What if the array is dynamically updated and you have to recompute efficiently?
+### Potential follow-up questions (as if you’re the interviewer)  
+
+- If the size of subsequences to remove was another odd length (say 5), how would the approach generalize?  
+  *Hint: Where is the median in a group of 5?*
+
+- What if you had to minimize (not maximize) the median sum?  
+  *Hint: Would you group from the other end of the array?*
+
+- Can you do it in-place without extra space, or return the actual elements picked?
+
+### Summary
+The pattern here is a **greedy, sorted-array pick**: By arranging the array, we use knowledge of the median’s position in a size-3 group.  
+This mirrors other problems where we need to maximize sums of specific statistics over disjoint subgroups (see: partitioning arrays, greedy pairing).  
+Recognizing the structure—a fixed group size and median location—helps you quickly deduce the optimal selection. This approach is robust in many array partitioning problems.

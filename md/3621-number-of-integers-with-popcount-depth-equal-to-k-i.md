@@ -1,118 +1,115 @@
 ### Leetcode 3621 (Hard): Number of Integers With Popcount-Depth Equal to K I [Practice](https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i)
 
 ### Description  
-Given integers **n** and **k**, count how many integers \( x \) such that \( 1 \leq x \leq n \) have **popcount-depth** exactly **k**. The **popcount-depth** of an integer is the number of times you need to apply `popcount` (the number of 1's in the binary representation) until you reach 1.  
-For example, for \( x = 7 \):  
-- 7 in binary = '111' → popcount = 3  
-- 3 in binary = '11' → popcount = 2  
-- 2 in binary = '10' → popcount = 1  
-So, popcount-depth(7) = 3 steps.
+Given two integers, **n** and **k**, count how many numbers **x** (1 ≤ x ≤ n) have **popcount-depth** equal to **k**.  
+- The **popcount** of a number is the number of 1's in its binary representation.
+- The **popcount-depth** of a number is how many times you must repeatedly apply popcount to it before reaching 1.
+    - Example: For 10 (binary 1010): popcount(10) = 2  →  popcount(2) = 1. So popcount-depth = 2.
 
 ### Examples  
 
 **Example 1:**  
-Input: `n = 10, k = 2`  
-Output: `5`  
-*Explanation:  
-The numbers with popcount-depth 2 are 3, 5, 6, 9, 10. For each:  
-- 3: 11₂ → popcount=2 → 10₂ → popcount=1  
-- 5: 101₂ → popcount=2 → 10₂ → popcount=1  
-- 6: 110₂ → popcount=2 → 10₂ → popcount=1  
-- 9: 1001₂ → popcount=2 → 10₂ → popcount=1  
-- 10: 1010₂ → popcount=2 → 10₂ → popcount=1*
+Input: `n = 5, k = 1`  
+Output: `2`  
+*Explanation: Numbers with popcount-depth = 1 are 1 (1₁), 2 (10₂).*
 
 **Example 2:**  
-Input: `n = 7, k = 3`  
-Output: `1`  
-*Explanation:  
-Only number 7 has popcount-depth 3:  
-- 7: 111₂ → popcount=3 → 11₂ → popcount=2 → 10₂ → popcount=1*
+Input: `n = 10, k = 2`  
+Output: `3`  
+*Explanation: 4 (100₂) → popcount(4)=1 (depth 1), so skip. 6 (110₂) → 2 (10₂) → 1 (depth 2). 9 (1001₂) → 2 (10₂) → 1 (depth 2). 10 (1010₂) → 2 (10₂) → 1 (depth 2). There are 3 such numbers (6, 9, 10).*
 
 **Example 3:**  
-Input: `n = 15, k = 1`  
+Input: `n = 20, k = 3`  
 Output: `1`  
-*Explanation:  
-Only number 1 has popcount-depth 1:  
-- 1: 1₂, already 1, so depth is 1.*
+*Explanation: 14 (1110₂) → 3 → 2 → 1 (depth 3). Only 14 has popcount-depth 3 up to 20.*
 
-### Thought Process (as if you're the interviewee)  
-First, understand what **popcount-depth** means: for each integer, repeatedly apply the popcount function until the result is 1, and count the steps.
+### Thought Process (as if you’re the interviewee)  
+- **Brute-force:**  
+    - For each x = 1 to n, calculate its popcount-depth.  
+    - Inefficient for large n (up to 10⁹ or higher), since iterating and computing repeatedly would not scale.
 
-**Brute-Force Approach:**  
-- For each \( x = 1 \) to \( n \):  
-    - Compute its popcount-depth by looping until reaching 1.
-    - Count if the depth equals \( k \).
-- **Inefficient** for large \( n \) (up to \( 10^{12} \) or higher).
+- **Optimize:**  
+    - Notice: Only the count of bits (popcount) matters at each iteration. We can precompute the popcount-depth for all possible bit counts up to 64 (since n fits in 64 bits).  
+    - For each 1 ≤ x ≤ n, the popcount-depth depends on how many 1's (let's call this b) are in x's binary.
+    - We use **digit DP**: For each position, choose whether to use 1 or 0—track how many 1's have been used so far, and how many numbers with b 1’s ≤ n exist.
+    - For each possible b (1 ≤ b ≤ max bits), if popcount-depth[b] = k, sum the count of numbers ≤ n with exactly b 1’s.  
+    - The count of numbers ≤ n with exactly b 1’s in their binary representation can be computed by digit DP, or, if no ≤ bound, with binomial coefficients C(total bits, b).
 
-**Optimization:**  
-Notice that **popcount** is based on the number of 1's in the binary representation.  
-Let’s precompute the popcount-depth for all possible popcounts. Since at each step, the number gets smaller, the popcount-depth for a number can be determined recursively.
+    - Final approach:
+        - Precompute all popcount-depth[b] for 1 ≤ b ≤ 64.
+        - For each target b such that popcount-depth[b] = k, count numbers ≤ n with exactly b 1’s using digit DP.
 
-Use **digit DP** (Dynamic Programming on the bits of \( n \)):  
-- State: (current bit position, how many 1's chosen so far, tight or not (limit)).
-- At the end, if total 1's leads to popcount-depth \( k-1 \) (since the first step is just counting 1's), count that path.
-
-Precompute popcount-depth for possible values (since the number of 1's can't exceed 64, precompute depths for 0 to 64).  
-Final answer: For each possible number of 1's, see if its popcount-depth is \( k-1 \), then use DP to count how many numbers \(\leq n\) have that many 1's (i.e., combinations).
-
-**Trade-offs:**  
-- Precomputation makes checking depth fast.
-- Digit DP reduces time from \( O(n) \) to \( O(\text{number of bits}^2) \), which is tractable.
+- **Why Digit DP?**
+    - Because “≤ n” is a bound, and we need to count all numbers (not just up to 2^b-1), so combinatorics alone won’t work—digit DP ensures we only count eligible numbers.
 
 ### Corner cases to consider  
-- \( n = 1 \): Only a single number.
-- \( k = 1 \): Only numbers that are 1 (binary).
-- \( k \) greater than possible for \( n \).
-- \( n \) is all 1's (like \( 2^m - 1 \)).
+- n is very small or very large  
+- k is bigger than maximum possible popcount-depth  
+- n = 1  
+- k = 1 (look for numbers directly with popcount = 1)  
+- n includes numbers with leading zeros (binary representation)
 
 ### Solution
 
 ```python
-def number_of_integers_with_popcount_depth_equal_to_k(n: int, k: int) -> int:
-    # Precompute popcount-depth for 0 to 100
-    MAX_POP = 100
-    popcount_depth = [0] * (MAX_POP + 1)
-    popcount_depth[0] = -1  # 0 is undefined, but won't be used
-    popcount_depth[1] = 1   # base: depth of 1 is 1
-    for i in range(2, MAX_POP+1):
-        pc = bin(i).count('1')
-        popcount_depth[i] = popcount_depth[pc] + 1
+def numberOfIntegersWithPopcountDepthEqualToK(n: int, k: int) -> int:
+    # Precompute popcount-depth for b in [1, 64]
+    popcount_depth = [0] * 65  # index = number of 1's in binary (b)
+    popcount_depth[0] = 0  # By definition (should never be called)
+    for b in range(1, 65):
+        cnt, num = 0, b
+        while num != 1:
+            num = bin(num).count('1')
+            cnt += 1
+        popcount_depth[b] = cnt + 1  # +1 for the last step to reach 1
 
     from functools import lru_cache
 
-    bits = list(map(int, bin(n)[2:]))
+    bits = []
+    tmp = n
+    while tmp:
+        bits.append(tmp & 1)
+        tmp >>= 1
+    bits = bits[::-1]
+    L = len(bits)
 
+    # Digit DP: f(pos, cnt, tight): position, 1's picked so far, prefix tight to n
     @lru_cache(None)
-    def dp(idx, ones, is_limit, is_num):
-        if idx == len(bits):
-            # Only care if number is chosen and ones > 0
-            if is_num and k > 0 and ones > 0 and popcount_depth[ones] == k:
-                return 1
-            return 0
-
+    def dp(pos, one_cnt, tight):
+        if pos == L:
+            # If the number is not 0 and its popcount-depth is k
+            if one_cnt == 0:
+                return 0
+            return int(popcount_depth[one_cnt] == k)
         res = 0
-        up = bits[idx] if is_limit else 1
-        # Option: put 0 here
-        if not is_num:
-            # Not started, can skip this digit (leading zero)
-            res += dp(idx + 1, ones, False, False)
-        for d in range(0 if is_num else 1, up + 1):
-            res += dp(idx + 1,
-                      ones + d,
-                      is_limit and (d == up),
-                      is_num or d)
+        max_digit = bits[pos] if tight else 1
+        for d in range(0, max_digit + 1):
+            res += dp(pos + 1,
+                      one_cnt + d,
+                      tight and (d == max_digit))
         return res
 
-    return dp(0, 0, True, False)
+    # Special case: k = 0, only x = 0 (not in 1≤x≤n)
+    if k == 0:
+        return 0
+    return dp(0, 0, True)
 ```
 
 ### Time and Space complexity Analysis  
 
-- **Time Complexity:**  
-    \( O(\text{bit\_length}(n)^2) \) due to Digit DP (number of positions \(\times\) possible sum of ones, both up to ~64).
-- **Space Complexity:**  
-    \( O(\text{bit\_length}(n) \times \text{max\_ones}) \) for DP memoization storage.
+- **Time Complexity:** O(L × 64), where L is the number of bits in n (≤ 64). For each bit position and possible 1's count, with tight constraint. Efficient memoization ensures each state is visited only once.
+- **Space Complexity:** O(L × 64), memoization for dp states, plus O(64) for `popcount_depth`.
 
-### Follow-up questions  
-- How would you optimize for multiple queries with different \( n \), but the same \( k \)?  
-- What if you're required to return the actual numbers with a given popcount-depth, rather than just the count?
+### Potential follow-up questions (as if you’re the interviewer)  
+
+- What if n is so large that even memoization isn't enough?
+  *Hint: Can you restrict recursion, or discard states with impossible popcount-depth?*
+
+- Can you generalize the concept to other iterative function types, e.g., digital root?
+  *Hint: Try to abstract “popcount” to any iterative process.*
+
+- How would you output all such x, not just count?
+  *Hint: Use similar DP but store actual numbers or reconstruct them.*
+
+### Summary
+This problem uses **digit dynamic programming (digit DP)** and popcount-depth precomputation. The core insight is to precompute for all possible bit counts, and use digit DP to count exactly the number of numbers ≤ n with a set number of 1’s. This approach is seen in problems where constrained counting over binary/bits representation is required, especially with “numbers ≤ n” and digit-based operations. Common patterns: digit DP, iterative function fixed points (e.g., popcount, digital root), combinatoric counting with constraints.
