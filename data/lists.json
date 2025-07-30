@@ -1,5 +1,8 @@
 [
     { "name": "LeetCode-All", "url": "leetcode-all", "file": "LC_All.json" },
+    { "name": "LeetCode-Easy", "url": "leetcode-easy", "file": "LC_Easy.json" },
+    { "name": "LeetCode-Medium", "url": "leetcode-medium", "file": "LC_Medium.json" },
+    { "name": "LeetCode-Hard", "url": "leetcode-hard", "file": "LC_Hard.json" },
     { "name": "LeetCode-75", "url": "leetcode-75", "file": "LC_75.json" },
     { "name": "Crash-Course-DSA", "url": "crash-course-dsa", "file": "LC_Explore_Card_DSA.json" },
     { "name": "Top-Q-Easy", "url": "top-q-easy", "file": "LC_Top_Questions_Easy.json" },
