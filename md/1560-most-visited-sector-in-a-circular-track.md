@@ -1,4 +1,4 @@
-### Leetcode 1560 (Easy): Most Visited Sector in a Circular Track [Practice](https://leetcode.com/problems/most-visited-sector-in-a-circular-track)
+### Leetcode 1560 (Easy): Most Visited Sector in  a Circular Track [Practice](https://leetcode.com/problems/most-visited-sector-in-a-circular-track)
 
 ### Description  
 Given a **circular track with n sectors** labeled from 1 to n, you're given the path of a marathon as an integer array `rounds` where the \(i^{th}\) round starts at `rounds[i-1]` and ends at `rounds[i]`. The marathon starts at `rounds`. During each round, the path follows sectors in ascending order, going from 1 to n and wrapping around as necessary. Find all **sectors visited the most number of times**, sorted in ascending order.
