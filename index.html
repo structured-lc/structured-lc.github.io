@@ -284,19 +284,22 @@
                 if (currentListData.length > 0) {
                   const randomIndex = Math.floor(Math.random() * currentListData.length);
                   const randomProblem = currentListData[randomIndex];
+                  
+                  // Show loading animation with the standard "Loading content..." text
                   document.getElementById('content').innerHTML = `
                     <div class=\"content-inner\">
                       <div style=\"text-align: center; padding: 3rem 1rem; color: #656d76;\">
                         <div style=\"display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;\">⏳</div>
-                        <p style=\"margin: 0; font-size: 0.95rem;\">Loading random problem...</p>
-                      </div>
-                      <div class=\"author-footnote\">
-                        Made with <span class=\"heart\">♥</span> by Durga Ganesh using AI
+                        <p style=\"margin: 0; font-size: 0.95rem;\">Loading content...</p>
                       </div>
                     </div>
                   `;
-                  document.title = `${randomProblem.title} - LeetCode Prep`;
-                  router.navigate(currentListSlug, randomProblem.slug);
+                  
+                  // Set title and navigate after a short delay to ensure smooth loading
+                  setTimeout(() => {
+                    document.title = `${randomProblem.title} - LeetCode Prep`;
+                    router.navigate(currentListSlug, randomProblem.slug);
+                  }, 50);
                 }
               };
               document.getElementById('share-list-btn').onclick = function() {
@@ -1257,13 +1260,27 @@
                   router.navigate(currentListSlug, list[0].slug);
                 }
               };
-              // Add event listener for random button (no loading animation)
+              // Add event listener for random button
               document.getElementById('random-btn').onclick = function() {
                 if (list.length > 0) {
                   const randomIndex = Math.floor(Math.random() * list.length);
                   const randomProblem = list[randomIndex];
-                  document.title = `${randomProblem.title} - LeetCode Prep`;
-                  router.navigate(currentListSlug, randomProblem.slug);
+                  
+                  // Show loading animation with the standard "Loading content..." text
+                  document.getElementById('content').innerHTML = `
+                    <div class=\"content-inner\">
+                      <div style=\"text-align: center; padding: 3rem 1rem; color: #656d76;\">
+                        <div style=\"display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;\">⏳</div>
+                        <p style=\"margin: 0; font-size: 0.95rem;\">Loading content...</p>
+                      </div>
+                    </div>
+                  `;
+                  
+                  // Set title and navigate after a short delay to ensure smooth loading
+                  setTimeout(() => {
+                    document.title = `${randomProblem.title} - LeetCode Prep`;
+                    router.navigate(currentListSlug, randomProblem.slug);
+                  }, 50);
                 }
               };
               // Add event listener for list share button
