@@ -18,7 +18,17 @@
 </head>
 <body>
   <div id="ribbon">
-    <a href="#" id="home-btn" onclick="router.navigate('')"><span class="btn-icon">🏠</span><span class="btn-text"> Home</span></a>
+    <a href="#" id="home-btn" onclick="
+      const { listSlug, problemSlug } = router.parseHash();
+      showLoadingAnimation();
+      if (!listSlug && !problemSlug) {
+        // Already on home - let showWelcome handle the timing
+        router.showWelcome();
+      } else {
+        // Not on home - navigate immediately, the router will handle the welcome display
+        router.navigate('');
+      }
+    "><span class="btn-icon">🏠</span><span class="btn-text"> Home</span></a>
     <span id="ribbon-title">LEETCODE ARTICLES</span>
     <div id="ribbon-actions">
       <button id="search-btn"><span class="btn-icon">🔍</span><span class="btn-text"> Search</span></button>
@@ -164,6 +174,18 @@
       
       return { slugMap, fileMap };
     }
+    
+    // Function to show loading animation for consistent UX
+    function showLoadingAnimation() {
+      document.getElementById('content').innerHTML = `
+        <div class="content-inner">
+          <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
+            <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
+            <p style="margin: 0; font-size: 0.95rem;">Loading content...</p>
+          </div>
+        </div>
+      `;
+    }
 
     // Router class for URL management
     class Router {
@@ -199,7 +221,15 @@
       navigate(listSlug, problemSlug = null) {
         isPageReload = false; // This is navigation, not a page reload
         const url = problemSlug ? `#${listSlug}/${problemSlug}` : `#${listSlug}`;
+        const currentUrl = window.location.hash;
+        
         window.location.hash = url;
+        
+        // If navigating to the same route, manually trigger handleRoute
+        // to ensure loading animation and content refresh
+        if (currentUrl === url) {
+          setTimeout(() => this.handleRoute(), 10);
+        }
       }
       
       // Handle route changes
@@ -340,8 +370,8 @@
             el.classList.remove('active');
           });
           document.getElementById('file-list').innerHTML = '';
-        } else if (!listSlug && this.initialLoadComplete) {
-          // Home route - show welcome message (only after initial load is complete)
+        } else if (!listSlug) {
+          // Home route - always show welcome message when navigating to home
           document.title = 'LeetCode Prep';
           this.showWelcome();
         }
@@ -409,65 +439,78 @@
       
       // Show welcome message
       showWelcome() {
-        // Generate dynamic examples from available lists
-        const exampleLinks = currentLists.slice(0, 4).map(list => {
-          const slug = listSlugMap[list.file];
-          return `<li><a href="#${slug}">${list.name}</a></li>`;
-        }).join('');
+        // Check if content is currently showing loading animation
+        const currentContent = document.getElementById('content').innerHTML;
+        const isShowingLoading = currentContent.includes('Loading content...');
+        
+        const displayWelcome = () => {
+          // Generate dynamic examples from available lists
+          const exampleLinks = currentLists.slice(0, 4).map(list => {
+            const slug = listSlugMap[list.file];
+            return `<li><a href="#${slug}">${list.name}</a></li>`;
+          }).join('');
 
-        // Add example problem link if we have LeetCode All
-        const leetcodeAll = currentLists.find(l => l.name.includes('LeetCode-All'));
-        const exampleProblem = leetcodeAll ? 
-          `<li><a href="#${listSlugMap[leetcodeAll.file]}/two-sum">Two Sum Problem (example)</a></li>` : '';
+          // Add example problem link if we have LeetCode All
+          const leetcodeAll = currentLists.find(l => l.name.includes('LeetCode-All'));
+          const exampleProblem = leetcodeAll ? 
+            `<li><a href="#${listSlugMap[leetcodeAll.file]}/two-sum">Two Sum Problem (example)</a></li>` : '';
 
-        document.getElementById('content').innerHTML = `
-          <div class="content-inner">
-            <div class="action-buttons">
-              <button id="share-website-btn" style="background: #28a745; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em;">🔗 Share Website</button>
-              <button id="feedback-btn" style="background: #BA0B49; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-left: 0.5em;">💬 Feedback</button>
+          document.getElementById('content').innerHTML = `
+            <div class="content-inner">
+              <div class="action-buttons">
+                <button id="share-website-btn" style="background: #28a745; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em;">🔗 Share Website</button>
+                <button id="feedback-btn" style="background: #BA0B49; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-left: 0.5em;">💬 Feedback</button>
+              </div>
+              <h2>Welcome to LeetCode Prep</h2>
+              <p>Select a list from the sidebar to get started, or try these direct links:</p>
+              <ul>
+                ${exampleLinks}
+                ${exampleProblem}
+              </ul>
+              <p><em>You can bookmark any problem page or share direct links!</em></p>
+              <div class="author-footnote">
+                Made with <span class="heart">♥</span> by Durga Ganesh using AI
+              </div>
             </div>
-            <h2>Welcome to LeetCode Prep</h2>
-            <p>Select a list from the sidebar to get started, or try these direct links:</p>
-            <ul>
-              ${exampleLinks}
-              ${exampleProblem}
-            </ul>
-            <p><em>You can bookmark any problem page or share direct links!</em></p>
-            <div class="author-footnote">
-              Made with <span class="heart">♥</span> by Durga Ganesh using AI
-            </div>
-          </div>
-        `;
+          `;
 
-        // Add event listener for website share button
-        document.getElementById('share-website-btn').onclick = function() {
-          const websiteUrl = `${window.location.origin}${window.location.pathname}`;
-          shareUrl(websiteUrl, 'LeetCode Prep - Algorithm Problem Solutions');
-        };
-        // Add event listener for feedback button
-        const feedbackBtn = document.getElementById('feedback-btn');
-        if (feedbackBtn) {
-          feedbackBtn.onclick = function() {
-            let pageTitle = document.title.replace(' - LeetCode Prep', '');
-            let pageUrl = window.location.href;
-            let body = `**Feedback for:** ${pageTitle}\n\n**Page:** ${pageUrl}\n\n**Feedback:**\n`;
-            let issueUrl =
-              'https://github.com/structured-lc/structured-lc.github.io/issues/new' +
-              '?title=' + encodeURIComponent('Feedback: ' + pageTitle) +
-              '&body=' + encodeURIComponent(body) +
-              '&labels=feedback';
-            window.open(issueUrl, '_blank');
+          // Add event listener for website share button
+          document.getElementById('share-website-btn').onclick = function() {
+            const websiteUrl = `${window.location.origin}${window.location.pathname}`;
+            shareUrl(websiteUrl, 'LeetCode Prep - Algorithm Problem Solutions');
           };
+          // Add event listener for feedback button
+          const feedbackBtn = document.getElementById('feedback-btn');
+          if (feedbackBtn) {
+            feedbackBtn.onclick = function() {
+              let pageTitle = document.title.replace(' - LeetCode Prep', '');
+              let pageUrl = window.location.href;
+              let body = `**Feedback for:** ${pageTitle}\n\n**Page:** ${pageUrl}\n\n**Feedback:**\n`;
+              let issueUrl =
+                'https://github.com/structured-lc/structured-lc.github.io/issues/new' +
+                '?title=' + encodeURIComponent('Feedback: ' + pageTitle) +
+                '&body=' + encodeURIComponent(body) +
+                '&labels=feedback';
+              window.open(issueUrl, '_blank');
+            };
+          }
+
+          // Reset all scroll positions when going to home
+          resetColumnScrolls(['c1', 'c2']);
+          currentMarkdownFile = ''; // Clear current file tracker
+
+          document.querySelectorAll('#lists-sidebar a, #sidebar a').forEach(el => {
+            el.classList.remove('active');
+          });
+          document.getElementById('file-list').innerHTML = '';
+        };
+        
+        // If loading animation is showing, wait 500ms before displaying welcome
+        if (isShowingLoading) {
+          setTimeout(displayWelcome, 500);
+        } else {
+          displayWelcome();
         }
-
-        // Reset all scroll positions when going to home
-        resetColumnScrolls(['c1', 'c2']);
-        currentMarkdownFile = ''; // Clear current file tracker
-
-        document.querySelectorAll('#lists-sidebar a, #sidebar a').forEach(el => {
-          el.classList.remove('active');
-        });
-        document.getElementById('file-list').innerHTML = '';
       }
     }
     
@@ -739,6 +782,8 @@
           a.textContent = list.name;
           a.onclick = (e) => {
             e.preventDefault();
+            // Always show loading animation for consistent UX
+            showLoadingAnimation();
             router.navigate(listSlug);
           };
           li.appendChild(a);
