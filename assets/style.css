@@ -7,9 +7,17 @@ html body {
 }
 #container {
   display: flex;
-  height: calc(100vh - 2.5em); /* Subtract the padding-top to fit exactly */
+  height: calc(100vh - 2.5em); /* Base height minus ribbon */
   margin-top: 0; /* Remove margin - ribbon positioning handles spacing */
-  padding-top: 2.5em; /* Reduced from 3em to match thinner ribbon */
+  padding-top: 2.5em; /* Space for ribbon */
+  flex-direction: column; /* Stack breadcrumb and content */
+}
+
+/* Container content area - the actual 3-column layout */
+.container-content {
+  display: flex;
+  flex: 1; /* Take remaining space after breadcrumb */
+  overflow: hidden; /* Prevent overflow */
 }
 
 #sidebar {
@@ -32,9 +40,73 @@ html body {
   flex-shrink: 0;
 }
 
+#content {
+  flex: 1;
+  background: #ffffff;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.content-inner {
+  margin: 1em 1.5em;
+  padding: 1.5em;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px rgba(27,31,36,0.15);
+  border: 1px solid #e1e5e9;
+  max-width: none;
+}
+
 /* Mobile back navigation - hidden by default */
 .mobile-back-nav {
   display: none;
+}
+
+/* Dynamic Breadcrumb Navigation */
+.breadcrumb-nav {
+  background: #f6f8fa;
+  border-bottom: 1px solid #e1e5e9;
+  padding: 0.5em 1em;
+  position: sticky;
+  top: 2.5em; /* Below ribbon */
+  z-index: 99;
+}
+
+.breadcrumb-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.8em;
+  color: #656d76;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.breadcrumb-item.clickable {
+  cursor: pointer;
+  color: #0969da;
+}
+
+.breadcrumb-item.clickable:hover {
+  background: #e1e5e9;
+  color: #135197;
+}
+
+.breadcrumb-icon {
+  font-size: 0.9em;
+}
+
+.breadcrumb-arrow {
+  color: #8c959f;
+  font-weight: bold;
+  user-select: none;
 }
 
 /* Responsive design for mobile */
@@ -44,7 +116,17 @@ html body {
     flex-direction: column;
     height: calc(100vh - 2.5em);
     padding-top: 2.5em;
-    position: relative;
+  }
+  
+  .container-content {
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  /* Hide breadcrumb on mobile, use mobile back navigation instead */
+  .breadcrumb-nav {
+    display: none !important;
   }
   
   /* Mobile back navigation */
@@ -174,12 +256,13 @@ html body {
     max-width: 150px;
   }
   
-  #lists-sidebar,
-  #sidebar {
+  .container-content #lists-sidebar,
+  .container-content #sidebar {
     padding: 0.8em;
   }
   
   .content-inner {
+    margin: 0.5em;
     padding: 1em;
   }
   
@@ -808,7 +891,8 @@ ul li::marker {
   #ribbon,
   #lists-sidebar,
   #sidebar,
-  .mobile-back-nav {
+  .mobile-back-nav,
+  .breadcrumb-nav {
     display: none !important;
   }
   

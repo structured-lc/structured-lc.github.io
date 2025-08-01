@@ -36,6 +36,26 @@
     </div>
   </div>
   <div id="container">
+    <!-- Dynamic Breadcrumb Navigation -->
+    <div class="breadcrumb-nav" style="display: none;">
+      <div class="breadcrumb-content">
+        <span class="breadcrumb-item" id="breadcrumb-list">
+          <span class="breadcrumb-icon">📚</span>
+          <span class="breadcrumb-text">Select a List</span>
+        </span>
+        <span class="breadcrumb-arrow" id="breadcrumb-arrow-1" style="display: none;">→</span>
+        <span class="breadcrumb-item" id="breadcrumb-problem" style="display: none;">
+          <span class="breadcrumb-icon">📝</span>
+          <span class="breadcrumb-text">Select a Problem</span>
+        </span>
+        <span class="breadcrumb-arrow" id="breadcrumb-arrow-2" style="display: none;">→</span>
+        <span class="breadcrumb-item" id="breadcrumb-content" style="display: none;">
+          <span class="breadcrumb-icon">📖</span>
+          <span class="breadcrumb-text">Problem Content</span>
+        </span>
+      </div>
+    </div>
+    
     <!-- Mobile Back Navigation -->
     <div class="mobile-back-nav" style="display: none;">
       <button id="mobile-back-btn" class="mobile-back-button">
@@ -47,20 +67,23 @@
       </div>
     </div>
     
-    <nav id="lists-sidebar">
-      <ul id="lists-list"></ul>
-    </nav>
-    <nav id="sidebar">
-      <ul id="file-list"></ul>
-    </nav>
-    <main id="content">
-      <div class="content-inner" id="default-content">
-        <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-          <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
-          <p style="margin: 0; font-size: 0.95rem;">Loading...</p>
+    <!-- Main Content Area -->
+    <div class="container-content">
+      <nav id="lists-sidebar">
+        <ul id="lists-list"></ul>
+      </nav>
+      <nav id="sidebar">
+        <ul id="file-list"></ul>
+      </nav>
+      <main id="content">
+        <div class="content-inner" id="default-content">
+          <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
+            <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
+            <p style="margin: 0; font-size: 0.95rem;">Loading...</p>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </div>
   
   <!-- Search Modal -->
@@ -284,6 +307,9 @@
               // Load specific problem
               this.loadProblemBySlug(problemSlug);
             } else {
+              // Update breadcrumb for list selection
+              breadcrumbManager.updateBreadcrumb(listName);
+              
               // Show list info in C3 with author footnote
               const listInfo = currentLists.find(l => l.file === fileName);
               const listName = listInfo ? listInfo.name : 'Problem List';
@@ -384,6 +410,7 @@
         } else if (!listSlug) {
           // Home route - always show welcome message when navigating to home
           document.title = 'LeetCode Prep';
+          breadcrumbManager.hideBreadcrumb();
           this.showWelcome();
         }
       }
@@ -407,6 +434,11 @@
         if (problem) {
           // Set title (in case this wasn't called from onclick handler)
           document.title = `${problem.title} - LeetCode Prep`;
+          
+          // Update breadcrumb for problem selection
+          const currentList = currentLists.find(l => listSlugMap[l.file] === currentListSlug);
+          const listName = currentList ? currentList.name : 'Problem List';
+          breadcrumbManager.updateBreadcrumb(listName, problem.title);
           
           // Auto-switch to content tab on mobile
           if (typeof mobileNavManager !== 'undefined') {
@@ -581,6 +613,7 @@
       
       updateLayout() {
         const backNav = document.querySelector('.mobile-back-nav');
+        const containerContent = document.querySelector('.container-content');
         const containers = ['lists-sidebar', 'sidebar', 'content'];
         
         if (this.isMobileLayout) {
@@ -588,11 +621,15 @@
           this.updateBackNavigation();
           
           // Apply mobile stacking logic
+          containerContent.style.flexDirection = 'column';
           this.showMobileView(this.currentView);
           
         } else {
           // Hide mobile back navigation for desktop
           backNav.style.display = 'none';
+          
+          // Restore desktop 3-column layout
+          containerContent.style.flexDirection = 'row';
           
           // Show all containers for desktop
           containers.forEach(id => {
@@ -691,6 +728,91 @@
     
     // Initialize mobile navigation manager
     const mobileNavManager = new MobileNavigationManager();
+    
+    // Breadcrumb Management
+    class BreadcrumbManager {
+      constructor() {
+        this.init();
+      }
+      
+      init() {
+        // Make breadcrumb items clickable
+        document.getElementById('breadcrumb-list').addEventListener('click', () => {
+          if (currentListSlug) {
+            router.navigate('');
+          }
+        });
+        
+        document.getElementById('breadcrumb-problem').addEventListener('click', () => {
+          if (currentListSlug) {
+            router.navigate(currentListSlug);
+          }
+        });
+      }
+      
+      updateBreadcrumb(listName = '', problemTitle = '') {
+        const breadcrumbNav = document.querySelector('.breadcrumb-nav');
+        const listItem = document.getElementById('breadcrumb-list');
+        const problemItem = document.getElementById('breadcrumb-problem');
+        const contentItem = document.getElementById('breadcrumb-content');
+        const arrow1 = document.getElementById('breadcrumb-arrow-1');
+        const arrow2 = document.getElementById('breadcrumb-arrow-2');
+        
+        // Always show breadcrumb if we have any navigation state
+        if (listName || problemTitle) {
+          breadcrumbNav.style.display = 'block';
+        } else {
+          breadcrumbNav.style.display = 'none';
+          return;
+        }
+        
+        // Update list breadcrumb
+        if (listName) {
+          listItem.querySelector('.breadcrumb-text').textContent = listName;
+          listItem.style.display = 'inline-block';
+          listItem.classList.add('clickable');
+        } else {
+          listItem.querySelector('.breadcrumb-text').textContent = 'Select a List';
+          listItem.style.display = 'inline-block';
+          listItem.classList.remove('clickable');
+        }
+        
+        // Update problem breadcrumb
+        if (listName && !problemTitle) {
+          // List selected, no problem selected
+          problemItem.querySelector('.breadcrumb-text').textContent = 'Select a Problem';
+          problemItem.style.display = 'inline-block';
+          problemItem.classList.remove('clickable');
+          arrow1.style.display = 'inline';
+          
+          contentItem.style.display = 'none';
+          arrow2.style.display = 'none';
+        } else if (listName && problemTitle) {
+          // Both list and problem selected
+          problemItem.querySelector('.breadcrumb-text').textContent = 'Problems';
+          problemItem.style.display = 'inline-block';
+          problemItem.classList.add('clickable');
+          arrow1.style.display = 'inline';
+          
+          contentItem.querySelector('.breadcrumb-text').textContent = problemTitle;
+          contentItem.style.display = 'inline-block';
+          arrow2.style.display = 'inline';
+        } else {
+          // No list selected
+          problemItem.style.display = 'none';
+          contentItem.style.display = 'none';
+          arrow1.style.display = 'none';
+          arrow2.style.display = 'none';
+        }
+      }
+      
+      hideBreadcrumb() {
+        document.querySelector('.breadcrumb-nav').style.display = 'none';
+      }
+    }
+    
+    // Initialize breadcrumb manager
+    const breadcrumbManager = new BreadcrumbManager();
     
     // Smart scrolling function to keep active problem visible in C2
     function scrollToActiveProblem() {
