@@ -498,6 +498,9 @@
           // Reset all scroll positions when going to home
           resetColumnScrolls(['c1', 'c2']);
           currentMarkdownFile = ''; // Clear current file tracker
+          
+          // Clean up keyboard navigation handlers when going to home
+          cleanupKeyboardHandlers();
 
           document.querySelectorAll('#lists-sidebar a, #sidebar a').forEach(el => {
             el.classList.remove('active');
@@ -1105,17 +1108,38 @@
       };
     }
 
+    // Global cleanup function for keyboard handlers
+    function cleanupKeyboardHandlers() {
+      if (window.currentKeyHandler) {
+        document.removeEventListener('keydown', window.currentKeyHandler);
+        window.currentKeyHandler = null;
+      }
+    }
+
     // Setup navigation event listeners and keyboard shortcuts
     function setupNavigationListeners() {
-      // Add keyboard navigation (arrow keys)
+      // Clean up any existing handlers first
+      cleanupKeyboardHandlers();
+      
+      // Add keyboard navigation (arrow keys) - fixed version
       const handleKeyNavigation = (e) => {
-        // Only handle if we're not in an input field
-        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+        // Only handle if we're not in an input field or modal
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || 
+            document.getElementById('search-modal').style.display === 'block' ||
+            document.getElementById('settings-modal').style.display === 'block') {
           return;
         }
         
-        const { problemSlug } = router.parseHash();
-        if (!problemSlug || !currentListData || currentListData.length === 0) {
+        // Get current state from URL hash
+        const { listSlug, problemSlug } = router.parseHash();
+        
+        // Only proceed if we have both a list and problem selected
+        if (!listSlug || !problemSlug || !currentListData || currentListData.length === 0) {
+          return;
+        }
+        
+        // Make sure we're on the correct list
+        if (listSlug !== currentListSlug) {
           return;
         }
         
@@ -1141,7 +1165,9 @@
           // Set title immediately
           document.title = `${prevProblem.title} - LeetCode Prep`;
           
+          // Navigate to previous problem
           router.navigate(currentListSlug, prevProblem.slug);
+          
         } else if (e.key === 'ArrowRight' && currentIndex < currentListData.length - 1) {
           e.preventDefault();
           const nextProblem = currentListData[currentIndex + 1];
@@ -1159,12 +1185,14 @@
           // Set title immediately
           document.title = `${nextProblem.title} - LeetCode Prep`;
           
+          // Navigate to next problem
           router.navigate(currentListSlug, nextProblem.slug);
         }
       };
       
-      // Remove existing listener if any
-      document.removeEventListener('keydown', handleKeyNavigation);
+      // Store reference to current handler for cleanup
+      window.currentKeyHandler = handleKeyNavigation;
+      
       // Add new listener
       document.addEventListener('keydown', handleKeyNavigation);
     }
