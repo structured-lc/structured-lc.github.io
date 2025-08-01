@@ -585,14 +585,6 @@
         // Check if we're in mobile layout
         this.checkLayout();
         
-        // Set up back button handler
-        const backBtn = document.getElementById('mobile-back-btn');
-        if (backBtn) {
-          backBtn.addEventListener('click', () => {
-            this.navigateBack();
-          });
-        }
-        
         // Listen for layout changes
         window.addEventListener('resize', () => {
           this.checkLayout();
@@ -612,22 +604,15 @@
       }
       
       updateLayout() {
-        const backNav = document.querySelector('.mobile-back-nav');
         const containerContent = document.querySelector('.container-content');
         const containers = ['lists-sidebar', 'sidebar', 'content'];
         
         if (this.isMobileLayout) {
-          // Show mobile back navigation when appropriate
-          this.updateBackNavigation();
-          
           // Apply mobile stacking logic
           containerContent.style.flexDirection = 'column';
           this.showMobileView(this.currentView);
           
         } else {
-          // Hide mobile back navigation for desktop
-          backNav.style.display = 'none';
-          
           // Restore desktop 3-column layout
           containerContent.style.flexDirection = 'row';
           
@@ -662,8 +647,6 @@
             document.getElementById('content').style.display = 'block';
             break;
         }
-        
-        this.updateBackNavigation();
       }
       
       updateBackNavigation() {
@@ -736,16 +719,24 @@
       }
       
       init() {
-        // Make breadcrumb items clickable
+        // Make breadcrumb items clickable for navigation
         document.getElementById('breadcrumb-list').addEventListener('click', () => {
           if (currentListSlug) {
+            // Navigate to home and show lists view on mobile
             router.navigate('');
+            if (typeof mobileNavManager !== 'undefined' && mobileNavManager.isMobileLayout) {
+              mobileNavManager.showMobileView('lists');
+            }
           }
         });
         
         document.getElementById('breadcrumb-problem').addEventListener('click', () => {
           if (currentListSlug) {
+            // Navigate to list and show problems view on mobile
             router.navigate(currentListSlug);
+            if (typeof mobileNavManager !== 'undefined' && mobileNavManager.isMobileLayout) {
+              mobileNavManager.showMobileView('problems');
+            }
           }
         });
       }
@@ -758,7 +749,14 @@
         const arrow1 = document.getElementById('breadcrumb-arrow-1');
         const arrow2 = document.getElementById('breadcrumb-arrow-2');
         
-        // Always show breadcrumb if we have any navigation state
+        // Only show breadcrumb on mobile when we have navigation state
+        const isMobile = window.innerWidth <= 768;
+        if (!isMobile) {
+          breadcrumbNav.style.display = 'none';
+          return;
+        }
+        
+        // Show breadcrumb if we have any navigation state
         if (listName || problemTitle) {
           breadcrumbNav.style.display = 'block';
         } else {
@@ -807,7 +805,13 @@
       }
       
       hideBreadcrumb() {
-        document.querySelector('.breadcrumb-nav').style.display = 'none';
+        const breadcrumbNav = document.querySelector('.breadcrumb-nav');
+        const isMobile = window.innerWidth <= 768;
+        
+        // Only hide if on mobile, desktop breadcrumb is already hidden via CSS
+        if (isMobile) {
+          breadcrumbNav.style.display = 'none';
+        }
       }
     }
     

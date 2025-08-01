@@ -62,14 +62,9 @@ html body {
   display: none;
 }
 
-/* Dynamic Breadcrumb Navigation */
+/* Dynamic Breadcrumb Navigation - Mobile Only */
 .breadcrumb-nav {
-  background: #f6f8fa;
-  border-bottom: 1px solid #e1e5e9;
-  padding: 0.5em 1em;
-  position: sticky;
-  top: 2.5em; /* Below ribbon */
-  z-index: 99;
+  display: none; /* Hidden by default on desktop */
 }
 
 .breadcrumb-content {
@@ -111,7 +106,7 @@ html body {
 
 /* Responsive design for mobile */
 @media (max-width: 768px) {
-  /* Mobile layout: Single column stack with back navigation */
+  /* Mobile layout: Single column stack with breadcrumb navigation */
   #container {
     flex-direction: column;
     height: calc(100vh - 2.5em);
@@ -124,22 +119,19 @@ html body {
     overflow: hidden;
   }
   
-  /* Hide breadcrumb on mobile, use mobile back navigation instead */
+  /* Show breadcrumb on mobile, hide simple back navigation */
   .breadcrumb-nav {
-    display: none !important;
-  }
-  
-  /* Mobile back navigation */
-  .mobile-back-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block !important;
     background: #f6f8fa;
     border-bottom: 2px solid #e1e5e9;
     padding: 0.7em 1em;
     position: sticky;
     top: 2.5em;
     z-index: 100;
+  }
+  
+  .mobile-back-nav {
+    display: none !important;
   }
   
   .mobile-back-button {
@@ -241,19 +233,17 @@ html body {
     padding-top: 3.2em; /* Adjust for smaller ribbon */
   }
   
-  .mobile-back-nav {
+  .breadcrumb-nav {
     padding: 0.5em 0.8em;
     top: 3.2em; /* Match container padding */
   }
   
-  .mobile-back-button {
-    padding: 0.4em 0.6em;
+  .breadcrumb-content {
     font-size: 0.75em;
   }
   
-  .mobile-breadcrumb {
-    font-size: 0.75em;
-    max-width: 150px;
+  .breadcrumb-item {
+    padding: 0.25em 0.5em;
   }
   
   .container-content #lists-sidebar,
