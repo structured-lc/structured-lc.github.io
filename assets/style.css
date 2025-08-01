@@ -32,43 +32,14 @@ html body {
   flex-shrink: 0;
 }
 
-/* Mobile tabs - hidden by default */
-.mobile-tabs {
+/* Mobile back navigation - hidden by default */
+.mobile-back-nav {
   display: none;
 }
 
 /* Responsive design for mobile */
-@media (max-width: 768px) and (orientation: landscape) {
-  /* Landscape mobile: Keep current 3-column layout but smaller */
-  #container {
-    flex-direction: row; /* Keep horizontal layout for landscape */
-    height: calc(100vh - 2.5em);
-    padding-top: 2.5em;
-  }
-  
-  #lists-sidebar {
-    width: 140px;
-    min-width: 120px;
-  }
-  
-  #sidebar {
-    width: 200px;
-    min-width: 180px;
-  }
-  
-  #content {
-    flex: 1;
-    padding: 0.5em 0;
-  }
-  
-  .content-inner {
-    margin: 0 0.5em;
-    padding: 1em;
-  }
-}
-
-/* Portrait mobile: Revolutionary tab-based layout */
-@media (max-width: 768px) and (orientation: portrait) {
+@media (max-width: 768px) {
+  /* Mobile layout: Single column stack with back navigation */
   #container {
     flex-direction: column;
     height: calc(100vh - 2.5em);
@@ -76,7 +47,88 @@ html body {
     position: relative;
   }
   
-  /* Ribbon adjustments for portrait */
+  /* Mobile back navigation */
+  .mobile-back-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f6f8fa;
+    border-bottom: 2px solid #e1e5e9;
+    padding: 0.7em 1em;
+    position: sticky;
+    top: 2.5em;
+    z-index: 100;
+  }
+  
+  .mobile-back-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    background: #6f42c1;
+    color: white;
+    border: none;
+    padding: 0.5em 0.8em;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .mobile-back-button:hover {
+    background: #5936a4;
+  }
+  
+  .back-arrow {
+    font-size: 1.1em;
+  }
+  
+  .mobile-breadcrumb {
+    flex: 1;
+    text-align: right;
+    color: #656d76;
+    font-size: 0.8em;
+    font-weight: 500;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* Sidebars and content - initially hidden, shown one at a time */
+  #lists-sidebar,
+  #sidebar,
+  #content {
+    display: none;
+    width: 100%;
+    min-width: unset;
+    flex: 1;
+    border-right: none;
+    background: #ffffff;
+    overflow-y: auto;
+  }
+  
+  #lists-sidebar,
+  #sidebar {
+    border-bottom: 1px solid #d0d7de;
+    padding: 1em;
+  }
+  
+  #content {
+    padding: 0;
+  }
+  
+  .content-inner {
+    margin: 0;
+    padding: 1.2em;
+    max-width: none;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+  }
+  
+  /* Adjust ribbon for mobile */
   #home-btn {
     left: 0.5em;
     font-size: 0.75em;
@@ -98,105 +150,33 @@ html body {
     padding: 0.25em 0.75em;
     max-width: 200px;
   }
-  
-  /* Mobile tab navigation */
-  .mobile-tabs {
-    display: flex;
-    background: #f6f8fa;
-    border-bottom: 2px solid #e1e5e9;
-    position: sticky;
-    top: 2.5em;
-    z-index: 100;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .mobile-tab {
-    flex: 1;
-    padding: 0.7em 0.5em;
-    text-align: center;
-    background: #f6f8fa;
-    border: none;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.8em;
-    font-weight: 500;
-    color: #656d76;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border-bottom: 3px solid transparent;
-  }
-  
-  .mobile-tab.active {
-    background: #ffffff;
-    color: #135197;
-    border-bottom-color: #135197;
-    font-weight: 600;
-  }
-  
-  .mobile-tab:hover:not(.active) {
-    background: #eaecef;
-    color: #24292f;
-  }
-  
-  /* Hide sidebars by default, show based on active tab */
-  #lists-sidebar,
-  #sidebar {
-    display: none;
-    width: 100%;
-    min-width: unset;
-    max-height: 60vh; /* Allow more space */
-    flex-shrink: 0;
-    border-right: none;
-    border-bottom: 1px solid #d0d7de;
-    background: #ffffff;
-  }
-  
-  #lists-sidebar.active,
-  #sidebar.active {
-    display: block;
-  }
-  
-  /* Content area adjustments */
-  #content {
-    flex: 1;
-    padding: 0;
-    overflow-y: auto;
-    background: #ffffff;
-  }
-  
-  #content.active {
-    display: block !important;
-  }
-  
-  .content-inner {
-    margin: 0;
-    padding: 1.2em;
-    max-width: none;
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
-  }
+
 }
 
-/* Small screens: Refine the tab-based layout */
+/* Small screens: More compact mobile layout */
 @media (max-width: 480px) {
   #container {
     padding-top: 3.2em; /* Adjust for smaller ribbon */
   }
   
-  .mobile-tabs {
+  .mobile-back-nav {
+    padding: 0.5em 0.8em;
     top: 3.2em; /* Match container padding */
   }
   
-  .mobile-tab {
-    padding: 0.6em 0.3em;
+  .mobile-back-button {
+    padding: 0.4em 0.6em;
     font-size: 0.75em;
+  }
+  
+  .mobile-breadcrumb {
+    font-size: 0.75em;
+    max-width: 150px;
   }
   
   #lists-sidebar,
   #sidebar {
-    max-height: 50vh; /* Less space on very small screens */
-    padding: 0.5em;
+    padding: 0.8em;
   }
   
   .content-inner {
@@ -210,7 +190,7 @@ html body {
     padding: 0.2em 0.4em;
   }
   
-  /* Hide button text on mobile portrait, show only icons */
+  /* Hide button text on very small screens, show only icons */
   #home-btn .btn-text,
   #search-btn .btn-text,
   #settings-btn .btn-text {
@@ -827,7 +807,8 @@ ul li::marker {
   
   #ribbon,
   #lists-sidebar,
-  #sidebar {
+  #sidebar,
+  .mobile-back-nav {
     display: none !important;
   }
   

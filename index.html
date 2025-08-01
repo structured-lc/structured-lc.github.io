@@ -36,11 +36,15 @@
     </div>
   </div>
   <div id="container">
-    <!-- Mobile tabs (only visible in portrait mode) -->
-    <div class="mobile-tabs" style="display: none;">
-      <button class="mobile-tab active" data-target="lists-sidebar">📚 Lists</button>
-      <button class="mobile-tab" data-target="sidebar">📝 Problems</button>
-      <button class="mobile-tab" data-target="content">📖 Content</button>
+    <!-- Mobile Back Navigation -->
+    <div class="mobile-back-nav" style="display: none;">
+      <button id="mobile-back-btn" class="mobile-back-button">
+        <span class="back-arrow">←</span>
+        <span class="back-text">Back to Lists</span>
+      </button>
+      <div class="mobile-breadcrumb">
+        <span id="mobile-current-list">Select a List</span>
+      </div>
     </div>
     
     <nav id="lists-sidebar">
@@ -405,8 +409,8 @@
           document.title = `${problem.title} - LeetCode Prep`;
           
           // Auto-switch to content tab on mobile
-          if (typeof mobileTabManager !== 'undefined') {
-            mobileTabManager.autoSwitchToContent();
+          if (typeof mobileNavManager !== 'undefined') {
+            mobileNavManager.autoShowContent();
           }
           
           // Only show loading animation if content area doesn't already have it
@@ -514,6 +518,11 @@
           // Clean up keyboard navigation handlers when going to home
           cleanupKeyboardHandlers();
 
+          // Auto-switch to lists view on mobile
+          if (typeof mobileNavManager !== 'undefined') {
+            mobileNavManager.autoShowLists();
+          }
+
           document.querySelectorAll('#lists-sidebar a, #sidebar a').forEach(el => {
             el.classList.remove('active');
           });
@@ -532,123 +541,156 @@
     // Initialize router
     const router = new Router();
     
-    // Mobile Tab Management for Portrait Mode
-    class MobileTabManager {
+    // Mobile Navigation Management
+    class MobileNavigationManager {
       constructor() {
-        this.currentTab = 'lists-sidebar';
-        this.isPortraitMode = false;
+        this.currentView = 'lists'; // 'lists', 'problems', 'content'
+        this.isMobileLayout = false;
         this.init();
       }
       
       init() {
-        // Check if we're in portrait mode
-        this.checkOrientation();
+        // Check if we're in mobile layout
+        this.checkLayout();
         
-        // Set up tab click handlers
-        document.querySelectorAll('.mobile-tab').forEach(tab => {
-          tab.addEventListener('click', (e) => {
-            const target = e.target.dataset.target;
-            this.switchTab(target);
+        // Set up back button handler
+        const backBtn = document.getElementById('mobile-back-btn');
+        if (backBtn) {
+          backBtn.addEventListener('click', () => {
+            this.navigateBack();
           });
-        });
+        }
         
-        // Listen for orientation changes
+        // Listen for layout changes
         window.addEventListener('resize', () => {
-          this.checkOrientation();
+          this.checkLayout();
         });
         window.addEventListener('orientationchange', () => {
-          setTimeout(() => this.checkOrientation(), 100);
+          setTimeout(() => this.checkLayout(), 100);
         });
       }
       
-      checkOrientation() {
-        const isNowPortrait = window.innerWidth <= 768 && 
-                              window.innerHeight > window.innerWidth;
+      checkLayout() {
+        const isNowMobile = window.innerWidth <= 768;
         
-        if (isNowPortrait !== this.isPortraitMode) {
-          this.isPortraitMode = isNowPortrait;
+        if (isNowMobile !== this.isMobileLayout) {
+          this.isMobileLayout = isNowMobile;
           this.updateLayout();
         }
       }
       
       updateLayout() {
-        const mobileTabs = document.querySelector('.mobile-tabs');
+        const backNav = document.querySelector('.mobile-back-nav');
         const containers = ['lists-sidebar', 'sidebar', 'content'];
         
-        if (this.isPortraitMode) {
-          // Show mobile tabs
-          mobileTabs.style.display = 'flex';
+        if (this.isMobileLayout) {
+          // Show mobile back navigation when appropriate
+          this.updateBackNavigation();
           
-          // Hide all containers initially
-          containers.forEach(id => {
-            const element = document.getElementById(id);
-            element.classList.remove('active');
-          });
-          
-          // Show the current active tab
-          this.switchTab(this.currentTab);
+          // Apply mobile stacking logic
+          this.showMobileView(this.currentView);
           
         } else {
-          // Hide mobile tabs for landscape/desktop
-          mobileTabs.style.display = 'none';
+          // Hide mobile back navigation for desktop
+          backNav.style.display = 'none';
           
-          // Show all containers for landscape/desktop
+          // Show all containers for desktop
           containers.forEach(id => {
             const element = document.getElementById(id);
-            element.classList.add('active');
             element.style.display = 'block';
           });
         }
       }
       
-      switchTab(targetId) {
-        if (!this.isPortraitMode) return;
-        
-        this.currentTab = targetId;
-        
-        // Update tab buttons
-        document.querySelectorAll('.mobile-tab').forEach(tab => {
-          tab.classList.toggle('active', tab.dataset.target === targetId);
-        });
-        
-        // Update container visibility
+      showMobileView(viewType) {
         const containers = ['lists-sidebar', 'sidebar', 'content'];
+        this.currentView = viewType;
+        
+        if (!this.isMobileLayout) return;
+        
+        // Hide all containers initially
         containers.forEach(id => {
-          const element = document.getElementById(id);
-          if (id === targetId) {
-            element.classList.add('active');
-            element.style.display = 'block';
-          } else {
-            element.classList.remove('active');
-            element.style.display = 'none';
-          }
+          document.getElementById(id).style.display = 'none';
         });
         
-        // Special handling for content tab - ensure it's always visible when active
-        if (targetId === 'content') {
-          const contentEl = document.getElementById('content');
-          contentEl.style.display = 'block';
-          contentEl.style.flex = '1';
+        // Show the appropriate view
+        switch (viewType) {
+          case 'lists':
+            document.getElementById('lists-sidebar').style.display = 'block';
+            break;
+          case 'problems':
+            document.getElementById('sidebar').style.display = 'block';
+            break;
+          case 'content':
+            document.getElementById('content').style.display = 'block';
+            break;
+        }
+        
+        this.updateBackNavigation();
+      }
+      
+      updateBackNavigation() {
+        const backNav = document.querySelector('.mobile-back-nav');
+        const backBtn = document.getElementById('mobile-back-btn');
+        const breadcrumb = document.getElementById('mobile-current-list');
+        
+        if (!this.isMobileLayout) {
+          backNav.style.display = 'none';
+          return;
+        }
+        
+        // Show/hide back navigation based on current view
+        if (this.currentView === 'lists') {
+          backNav.style.display = 'none';
+        } else {
+          backNav.style.display = 'flex';
+          
+          // Update breadcrumb and back button text
+          if (this.currentView === 'problems') {
+            backBtn.querySelector('.back-text').textContent = 'Back to Lists';
+            const currentList = currentLists.find(l => listSlugMap[l.file] === currentListSlug);
+            breadcrumb.textContent = currentList ? currentList.name : 'Problem List';
+          } else if (this.currentView === 'content') {
+            backBtn.querySelector('.back-text').textContent = 'Back to Problems';
+            const { problemSlug } = router.parseHash();
+            const problem = currentListData.find(p => p.slug === problemSlug);
+            breadcrumb.textContent = problem ? problem.title : 'Problem';
+          }
         }
       }
       
-      
-      // Auto-switch tabs based on user actions
-      autoSwitchToContent() {
-        if (this.isPortraitMode) {
-          this.switchTab('content');
+      navigateBack() {
+        if (this.currentView === 'problems') {
+          // Go back to lists view
+          this.showMobileView('lists');
+        } else if (this.currentView === 'content') {
+          // Go back to problems view
+          this.showMobileView('problems');
         }
       }
       
-      autoSwitchToProblems() {
-        if (this.isPortraitMode && currentListData && currentListData.length > 0) {
-          this.switchTab('sidebar');
+      // Auto-navigation methods called from router
+      autoShowProblems() {
+        if (this.isMobileLayout) {
+          this.showMobileView('problems');
+        }
+      }
+      
+      autoShowContent() {
+        if (this.isMobileLayout) {
+          this.showMobileView('content');
+        }
+      }
+      
+      autoShowLists() {
+        if (this.isMobileLayout) {
+          this.showMobileView('lists');
         }
       }
     }
     
-    // Initialize mobile tab manager
-    const mobileTabManager = new MobileTabManager();
+    // Initialize mobile navigation manager
+    const mobileNavManager = new MobileNavigationManager();
     
     // Smart scrolling function to keep active problem visible in C2
     function scrollToActiveProblem() {
@@ -1420,9 +1462,9 @@
               fileList.appendChild(li);
             });
             
-            // Auto-switch to problems tab when list is loaded (mobile)
-            if (typeof mobileTabManager !== 'undefined') {
-              mobileTabManager.autoSwitchToProblems();
+            // Auto-switch to problems view when list is loaded (mobile)
+            if (typeof mobileNavManager !== 'undefined') {
+              mobileNavManager.autoShowProblems();
             }
             
             // Handle C2 scroll: Reset for new lists OR navigation, restore for page reloads
