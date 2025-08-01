@@ -32,15 +32,51 @@ html body {
   flex-shrink: 0;
 }
 
+/* Mobile tabs - hidden by default */
+.mobile-tabs {
+  display: none;
+}
+
 /* Responsive design for mobile */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: landscape) {
+  /* Landscape mobile: Keep current 3-column layout but smaller */
   #container {
-    flex-direction: column;
-    height: auto;
-    min-height: calc(100vh - 2.5em); /* Ensure proper height calculation */
-    padding-top: 2.5em; /* Match desktop padding */
+    flex-direction: row; /* Keep horizontal layout for landscape */
+    height: calc(100vh - 2.5em);
+    padding-top: 2.5em;
   }
   
+  #lists-sidebar {
+    width: 140px;
+    min-width: 120px;
+  }
+  
+  #sidebar {
+    width: 200px;
+    min-width: 180px;
+  }
+  
+  #content {
+    flex: 1;
+    padding: 0.5em 0;
+  }
+  
+  .content-inner {
+    margin: 0 0.5em;
+    padding: 1em;
+  }
+}
+
+/* Portrait mobile: Revolutionary tab-based layout */
+@media (max-width: 768px) and (orientation: portrait) {
+  #container {
+    flex-direction: column;
+    height: calc(100vh - 2.5em);
+    padding-top: 2.5em;
+    position: relative;
+  }
+  
+  /* Ribbon adjustments for portrait */
   #home-btn {
     left: 0.5em;
     font-size: 0.75em;
@@ -61,50 +97,120 @@ html body {
     font-size: 0.75em;
     padding: 0.25em 0.75em;
     max-width: 200px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  }
+  
+  /* Mobile tab navigation */
+  .mobile-tabs {
+    display: flex;
+    background: #f6f8fa;
+    border-bottom: 2px solid #e1e5e9;
+    position: sticky;
+    top: 2.5em;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mobile-tab {
+    flex: 1;
+    padding: 0.7em 0.5em;
+    text-align: center;
+    background: #f6f8fa;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #656d76;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .mobile-tab.active {
+    background: #ffffff;
+    color: #135197;
+    border-bottom-color: #135197;
     font-weight: 600;
+  }
+  
+  .mobile-tab:hover:not(.active) {
+    background: #eaecef;
+    color: #24292f;
+  }
+  
+  /* Hide sidebars by default, show based on active tab */
+  #lists-sidebar,
+  #sidebar {
+    display: none;
+    width: 100%;
+    min-width: unset;
+    max-height: 60vh; /* Allow more space */
+    flex-shrink: 0;
+    border-right: none;
+    border-bottom: 1px solid #d0d7de;
+    background: #ffffff;
+  }
+  
+  #lists-sidebar.active,
+  #sidebar.active {
+    display: block;
+  }
+  
+  /* Content area adjustments */
+  #content {
+    flex: 1;
+    padding: 0;
+    overflow-y: auto;
+    background: #ffffff;
+  }
+  
+  #content.active {
+    display: block !important;
+  }
+  
+  .content-inner {
+    margin: 0;
+    padding: 1.2em;
+    max-width: none;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+  }
+}
+
+/* Small screens: Refine the tab-based layout */
+@media (max-width: 480px) {
+  #container {
+    padding-top: 3.2em; /* Adjust for smaller ribbon */
+  }
+  
+  .mobile-tabs {
+    top: 3.2em; /* Match container padding */
+  }
+  
+  .mobile-tab {
+    padding: 0.6em 0.3em;
+    font-size: 0.75em;
   }
   
   #lists-sidebar,
   #sidebar {
-    width: 100%;
-    min-width: unset;
-    max-height: 150px;
-    flex-shrink: 0;
-    display: block; /* Ensure it's visible */
-  }
-  
-  /* Add subtle border between C1 and C2 on mobile */
-  #sidebar {
-    border-top: 1px solid #d6dae0; /* Slightly stronger gray than background */
-    border-right: none; /* Remove desktop right border on mobile */
-  }
-  
-  #content {
-    flex: 1;
-    padding: 1em 0;
+    max-height: 50vh; /* Less space on very small screens */
+    padding: 0.5em;
   }
   
   .content-inner {
-    margin: 0 1em;
-    max-width: none;
-    padding: 1.5em;
-  }
-}
-
-@media (max-width: 480px) {
-  #container {
-    padding-top: 3.2em; /* Adjust for smaller ribbon on tiny screens */
+    padding: 1em;
   }
   
+  /* Make ribbon more compact */
   #home-btn {
     left: 0.25em;
     font-size: 0.7em;
     padding: 0.2em 0.4em;
   }
   
-  /* Hide button text on mobile portrait, show only icons for consistency */
+  /* Hide button text on mobile portrait, show only icons */
   #home-btn .btn-text,
   #search-btn .btn-text,
   #settings-btn .btn-text {
@@ -119,32 +225,14 @@ html body {
   #search-btn, #settings-btn {
     font-size: 0.7em;
     padding: 0.2em 0.4em;
-  }
-  
-  #search-btn,
-  #settings-btn {
     width: auto;
     min-width: unset;
-    padding: 0.3em 0.5em;
   }
   
   #ribbon-title {
     font-size: 0.65em;
     padding: 0.2em 0.5em;
     max-width: 150px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-  }
-  
-  #lists-sidebar,
-  #sidebar {
-    max-height: 120px;
-  }
-  
-  .content-inner {
-    margin: 0 0.5em;
-    padding: 1.2em;
   }
   
   /* Action buttons positioning for mobile */
@@ -153,13 +241,21 @@ html body {
     margin: 0 0 1em 0 !important;
     display: flex !important;
     justify-content: flex-end !important;
+    flex-wrap: wrap !important;
+    gap: 0.4em !important;
     top: auto !important;
     right: auto !important;
   }
   
-  #share-btn, #print-btn {
+  .action-buttons button {
     font-size: 0.6em !important;
     padding: 0.3em 0.6em !important;
+    flex-shrink: 0;
+  }
+  
+  .action-buttons span {
+    font-size: 0.65em !important;
+    margin: 0 0.3em !important;
   }
 }
 

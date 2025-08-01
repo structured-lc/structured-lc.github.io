@@ -36,6 +36,13 @@
     </div>
   </div>
   <div id="container">
+    <!-- Mobile tabs (only visible in portrait mode) -->
+    <div class="mobile-tabs" style="display: none;">
+      <button class="mobile-tab active" data-target="lists-sidebar">📚 Lists</button>
+      <button class="mobile-tab" data-target="sidebar">📝 Problems</button>
+      <button class="mobile-tab" data-target="content">📖 Content</button>
+    </div>
+    
     <nav id="lists-sidebar">
       <ul id="lists-list"></ul>
     </nav>
@@ -397,6 +404,11 @@
           // Set title (in case this wasn't called from onclick handler)
           document.title = `${problem.title} - LeetCode Prep`;
           
+          // Auto-switch to content tab on mobile
+          if (typeof mobileTabManager !== 'undefined') {
+            mobileTabManager.autoSwitchToContent();
+          }
+          
           // Only show loading animation if content area doesn't already have it
           const currentContent = document.getElementById('content').innerHTML;
           if (!currentContent.includes('Loading content...')) {
@@ -519,6 +531,124 @@
     
     // Initialize router
     const router = new Router();
+    
+    // Mobile Tab Management for Portrait Mode
+    class MobileTabManager {
+      constructor() {
+        this.currentTab = 'lists-sidebar';
+        this.isPortraitMode = false;
+        this.init();
+      }
+      
+      init() {
+        // Check if we're in portrait mode
+        this.checkOrientation();
+        
+        // Set up tab click handlers
+        document.querySelectorAll('.mobile-tab').forEach(tab => {
+          tab.addEventListener('click', (e) => {
+            const target = e.target.dataset.target;
+            this.switchTab(target);
+          });
+        });
+        
+        // Listen for orientation changes
+        window.addEventListener('resize', () => {
+          this.checkOrientation();
+        });
+        window.addEventListener('orientationchange', () => {
+          setTimeout(() => this.checkOrientation(), 100);
+        });
+      }
+      
+      checkOrientation() {
+        const isNowPortrait = window.innerWidth <= 768 && 
+                              window.innerHeight > window.innerWidth;
+        
+        if (isNowPortrait !== this.isPortraitMode) {
+          this.isPortraitMode = isNowPortrait;
+          this.updateLayout();
+        }
+      }
+      
+      updateLayout() {
+        const mobileTabs = document.querySelector('.mobile-tabs');
+        const containers = ['lists-sidebar', 'sidebar', 'content'];
+        
+        if (this.isPortraitMode) {
+          // Show mobile tabs
+          mobileTabs.style.display = 'flex';
+          
+          // Hide all containers initially
+          containers.forEach(id => {
+            const element = document.getElementById(id);
+            element.classList.remove('active');
+          });
+          
+          // Show the current active tab
+          this.switchTab(this.currentTab);
+          
+        } else {
+          // Hide mobile tabs for landscape/desktop
+          mobileTabs.style.display = 'none';
+          
+          // Show all containers for landscape/desktop
+          containers.forEach(id => {
+            const element = document.getElementById(id);
+            element.classList.add('active');
+            element.style.display = 'block';
+          });
+        }
+      }
+      
+      switchTab(targetId) {
+        if (!this.isPortraitMode) return;
+        
+        this.currentTab = targetId;
+        
+        // Update tab buttons
+        document.querySelectorAll('.mobile-tab').forEach(tab => {
+          tab.classList.toggle('active', tab.dataset.target === targetId);
+        });
+        
+        // Update container visibility
+        const containers = ['lists-sidebar', 'sidebar', 'content'];
+        containers.forEach(id => {
+          const element = document.getElementById(id);
+          if (id === targetId) {
+            element.classList.add('active');
+            element.style.display = 'block';
+          } else {
+            element.classList.remove('active');
+            element.style.display = 'none';
+          }
+        });
+        
+        // Special handling for content tab - ensure it's always visible when active
+        if (targetId === 'content') {
+          const contentEl = document.getElementById('content');
+          contentEl.style.display = 'block';
+          contentEl.style.flex = '1';
+        }
+      }
+      
+      
+      // Auto-switch tabs based on user actions
+      autoSwitchToContent() {
+        if (this.isPortraitMode) {
+          this.switchTab('content');
+        }
+      }
+      
+      autoSwitchToProblems() {
+        if (this.isPortraitMode && currentListData && currentListData.length > 0) {
+          this.switchTab('sidebar');
+        }
+      }
+    }
+    
+    // Initialize mobile tab manager
+    const mobileTabManager = new MobileTabManager();
     
     // Smart scrolling function to keep active problem visible in C2
     function scrollToActiveProblem() {
@@ -1289,6 +1419,11 @@
               li.appendChild(a);
               fileList.appendChild(li);
             });
+            
+            // Auto-switch to problems tab when list is loaded (mobile)
+            if (typeof mobileTabManager !== 'undefined') {
+              mobileTabManager.autoSwitchToProblems();
+            }
             
             // Handle C2 scroll: Reset for new lists OR navigation, restore for page reloads
             if (isNewList && !isPageReload) {
