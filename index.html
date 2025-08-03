@@ -350,28 +350,51 @@
         
         // Always show content view for problem display
         currentView = 'content';
-        showMobileView('content');
         
-        // Show loading animation immediately
-        document.getElementById('mobile-content').innerHTML = `
-          <div class="mobile-content-inner">
-            <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-              <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>
-              <p style="margin: 0; font-size: 0.95rem;">Loading...</p>
+        // Only trigger view animation if we're not already in a controlled loading state
+        if (!this.isNavigating) {
+          showMobileView('content');
+          // Show loading animation for direct URL access
+          document.getElementById('mobile-content').innerHTML = `
+            <div class="mobile-content-inner">
+              <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
+                <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>
+                <p style="margin: 0; font-size: 0.95rem;">Loading...</p>
+              </div>
             </div>
-          </div>
-        `;
+          `;
+        } else {
+          // Just ensure content view is visible without animation
+          document.querySelectorAll('.mobile-view').forEach(view => {
+            view.style.display = 'none';
+          });
+          document.getElementById('mobile-content-view').style.display = 'block';
+        }
         
         // Load list if not already loaded or if it's a different list
         if (currentListSlug !== listSlug || currentListData.length === 0) {
           await loadMobileCodeListFiles(fileName);
         }
         
-        // Find and load problem
+        // Find and load problem - but don't let it interrupt the loading animation timing
         const problem = currentListData.find(p => p.slug === problemSlug);
         if (problem) {
           document.title = `${problem.title} - LeetCode Prep`;
-          await loadMobileMarkdownFile(`${problem.number}-${problem.slug}.md`);
+          
+          // Start markdown loading in background, but don't await it yet
+          const markdownPromise = loadMobileMarkdownFile(`${problem.number}-${problem.slug}.md`);
+          
+          // If we're in a controlled navigation (isNavigating = true), let the router handle timing
+          if (this.isNavigating) {
+            await markdownPromise;
+          } else {
+            // For direct URL access, ensure minimum loading time
+            const minLoadTime = 500; // Slightly longer for better UX
+            const [, ] = await Promise.all([
+              markdownPromise,
+              new Promise(resolve => setTimeout(resolve, minLoadTime))
+            ]);
+          }
         } else {
           this.showError('Problem Not Found', `The requested problem "${problemSlug}" does not exist in this list.`);
           return;
@@ -898,11 +921,19 @@
         a.onclick = (e) => {
           e.preventDefault();
           
+          // Mark as navigating to prevent double loading animation
+          mobileRouter.isNavigating = true;
+          
           // Immediately switch to content view and show content loading
           currentView = 'content';
-          showMobileView('content');
           
-          // Show loading animation without additional view switching
+          // Show content view without animation to avoid conflicts with loading spinner
+          document.querySelectorAll('.mobile-view').forEach(view => {
+            view.style.display = 'none';
+          });
+          document.getElementById('mobile-content-view').style.display = 'block';
+          
+          // Show loading animation without view transition interference
           document.getElementById('mobile-content').innerHTML = `
             <div class="mobile-content-inner">
               <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
@@ -914,8 +945,10 @@
           
           document.title = `${item.title} - LeetCode Prep`;
           
-          // Mark as navigating to prevent double loading animation
-          mobileRouter.isNavigating = true;
+          // Update breadcrumbs immediately since we're bypassing showMobileView
+          setTimeout(() => {
+            updateMobileBreadcrumb();
+          }, 0);
           
           // Navigate to new problem with controlled timing
           setTimeout(() => {
@@ -937,6 +970,7 @@
       // Don't show loading animation here - it's handled by navigation
       
       try {
+        // Fetch markdown in background without disturbing the loading animation
         const response = await fetch(`md/${filename}`);
         
         if (!response.ok) {
@@ -948,24 +982,36 @@
         
         const navigationButtons = generateMobileNavigationButtons(filename);
         
-        document.getElementById('mobile-content').innerHTML = `
-          <div class="mobile-content-inner">
-            ${navigationButtons.top}
-            ${marked.parse(enhancedMd)}
-            <div class="mobile-author-footnote">
-              Made with <span class="heart">♥</span> by Durga Ganesh using AI
-            </div>
-          </div>
-        `;
-        
-        addMobileDifficultyBadges();
-        setupMobileNavigationListeners();
-        
-        document.querySelectorAll('pre code').forEach((block) => {
-          hljs.highlightElement(block);
+        // Use requestAnimationFrame to ensure smooth transition
+        await new Promise(resolve => {
+          requestAnimationFrame(() => {
+            document.getElementById('mobile-content').innerHTML = `
+              <div class="mobile-content-inner">
+                ${navigationButtons.top}
+                ${marked.parse(enhancedMd)}
+                <div class="mobile-author-footnote">
+                  Made with <span class="heart">♥</span> by Durga Ganesh using AI
+                </div>
+              </div>
+            `;
+            
+            addMobileDifficultyBadges();
+            setupMobileNavigationListeners();
+            
+            document.querySelectorAll('pre code').forEach((block) => {
+              hljs.highlightElement(block);
+            });
+            
+            document.getElementById('mobile-content').scrollTop = 0;
+            
+            // Update breadcrumbs after content is loaded
+            setTimeout(() => {
+              updateMobileBreadcrumb();
+            }, 0);
+            
+            resolve();
+          });
         });
-        
-        document.getElementById('mobile-content').scrollTop = 0;
         
         // Animate the markdown content with proper timing to avoid conflicts
         const contentInner = document.querySelector('.mobile-content-inner');
@@ -1083,7 +1129,10 @@
       if (newIndex >= 0 && newIndex < currentListData.length) {
         const newProblem = currentListData[newIndex];
         
-        // Show loading animation directly without calling showMobileLoadingAnimation
+        // Mark as navigating to prevent router's loading animation
+        mobileRouter.isNavigating = true;
+        
+        // Show loading animation directly without view animation conflicts
         document.getElementById('mobile-content').innerHTML = `
           <div class="mobile-content-inner">
             <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
@@ -1095,8 +1144,10 @@
         
         document.title = `${newProblem.title} - LeetCode Prep`;
         
-        // Mark as navigating to prevent double loading animation
-        mobileRouter.isNavigating = true;
+        // Update breadcrumbs immediately since we're bypassing showMobileView
+        setTimeout(() => {
+          updateMobileBreadcrumb();
+        }, 0);
         
         // Navigate to new problem with controlled timing
         setTimeout(() => {
