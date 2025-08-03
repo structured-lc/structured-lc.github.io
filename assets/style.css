@@ -295,17 +295,21 @@ html, body {
 /* Lists View */
 #mobile-lists-sidebar {
   background: #e5e7eb;
-  padding: 20px 16px;
+  padding: 16px;
   margin-top: 8px;
 }
 
 #mobile-lists-list {
   list-style: none;
-  padding: 0;
+  padding: 16px;
   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #d1d5db;
 }
 
 #mobile-lists-list li {
@@ -444,22 +448,23 @@ html, body {
 /* Problems View */
 #mobile-sidebar {
   background: #e5e7eb;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
   padding: 16px;
   margin-top: 8px;
 }
 
 #mobile-file-list {
   list-style: none;
-  padding: 0;
+  padding: 16px;
   margin: 0;
-  flex: 1;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #d1d5db;
+  flex: 1;
+  overflow-y: auto;
 }
 
 #mobile-file-list li {
@@ -474,8 +479,8 @@ html, body {
 }
 
 #mobile-file-list li:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 #mobile-file-list li:active {
