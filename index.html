@@ -1,9 +1,8 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="LeetCode problem preparation with organized problem lists, clean solutions, and detailed explanations.">
   <meta name="keywords" content="LeetCode, algorithms, data structures, programming, interview preparation">
   <meta name="author" content="LeetCode Prep">
@@ -17,121 +16,111 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div id="ribbon">
-    <a href="#" id="home-btn" onclick="
-      const { listSlug, problemSlug } = router.parseHash();
-      showLoadingAnimation();
-      if (!listSlug && !problemSlug) {
-        // Already on home - let showWelcome handle the timing
-        router.showWelcome();
-      } else {
-        // Not on home - navigate immediately, the router will handle the welcome display
-        router.navigate('');
-      }
-    "><span class="btn-icon">🏠</span><span class="btn-text"> Home</span></a>
-    <span id="ribbon-title">LEETCODE ARTICLES</span>
-    <div id="ribbon-actions">
-      <button id="search-btn"><span class="btn-icon">🔍</span><span class="btn-text"> Search</span></button>
-      <button id="settings-btn"><span class="btn-icon">⚙️</span><span class="btn-text"> Settings</span></button>
+  <!-- Mobile Ribbon/Topbar -->
+  <div id="mobile-ribbon">
+    <button id="mobile-home-btn" class="mobile-nav-btn">
+      <span class="btn-icon">🏠</span>
+    </button>
+    <span id="mobile-ribbon-title">LEETCODE ARTICLES</span>
+    <div id="mobile-ribbon-actions">
+      <button id="mobile-search-btn" class="mobile-nav-btn">
+        <span class="btn-icon">🔍</span>
+      </button>
+      <button id="mobile-settings-btn" class="mobile-nav-btn">
+        <span class="btn-icon">⚙️</span>
+      </button>
     </div>
   </div>
-  <div id="container">
-    <!-- Dynamic Breadcrumb Navigation -->
-    <div class="breadcrumb-nav" style="display: none;">
-      <div class="breadcrumb-content">
-        <span class="breadcrumb-item" id="breadcrumb-list">
-          <span class="breadcrumb-icon">📚</span>
-          <span class="breadcrumb-text">Select a List</span>
-        </span>
-        <span class="breadcrumb-arrow" id="breadcrumb-arrow-1" style="display: none;">→</span>
-        <span class="breadcrumb-item" id="breadcrumb-problem" style="display: none;">
-          <span class="breadcrumb-icon">📝</span>
-          <span class="breadcrumb-text">Select a Problem</span>
-        </span>
-        <span class="breadcrumb-arrow" id="breadcrumb-arrow-2" style="display: none;">→</span>
-        <span class="breadcrumb-item" id="breadcrumb-content" style="display: none;">
-          <span class="breadcrumb-icon">📖</span>
-          <span class="breadcrumb-text">Problem Content</span>
-        </span>
-      </div>
-    </div>
-    
-    <!-- Mobile Back Navigation -->
-    <div class="mobile-back-nav" style="display: none;">
-      <button id="mobile-back-btn" class="mobile-back-button">
-        <span class="back-arrow">←</span>
-        <span class="back-text">Back to Lists</span>
-      </button>
+
+  <!-- Mobile Container -->
+  <div id="mobile-container">
+    <!-- Mobile Breadcrumb Navigation -->
+    <div class="mobile-breadcrumb-nav" id="mobile-breadcrumb-nav" style="display: none;">
       <div class="mobile-breadcrumb">
-        <span id="mobile-current-list">Select a List</span>
+        <span id="mobile-breadcrumb-home" class="mobile-breadcrumb-link" onclick="showMobileLoadingAnimation(); setTimeout(() => mobileRouter.navigate(''), 500);">Home</span>
+        <span id="mobile-breadcrumb-arrow-1" class="mobile-breadcrumb-arrow" style="display: none;"> → </span>
+        <span id="mobile-breadcrumb-list" class="mobile-breadcrumb-link" style="display: none;" onclick=""></span>
+        <span id="mobile-breadcrumb-arrow-2" class="mobile-breadcrumb-arrow" style="display: none;"> → </span>
+        <span id="mobile-breadcrumb-problem" class="mobile-breadcrumb-text" style="display: none;"></span>
       </div>
     </div>
     
-    <!-- Main Content Area -->
-    <div class="container-content">
-      <nav id="lists-sidebar">
-        <ul id="lists-list"></ul>
-      </nav>
-      <nav id="sidebar">
-        <ul id="file-list"></ul>
-      </nav>
-      <main id="content">
-        <div class="content-inner" id="default-content">
-          <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-            <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
-            <p style="margin: 0; font-size: 0.95rem;">Loading...</p>
+    <!-- Main Content Views -->
+    <div class="mobile-content">
+      <!-- Lists View (Home) -->
+      <div id="mobile-lists-view" class="mobile-view">
+        <div id="mobile-lists-sidebar">
+          <ul id="mobile-lists-list"></ul>
+        </div>
+      </div>
+      
+      <!-- Problems View -->
+      <div id="mobile-problems-view" class="mobile-view" style="display: none;">
+        <div id="mobile-sidebar">
+          <ul id="mobile-file-list"></ul>
+        </div>
+      </div>
+      
+      <!-- Content View -->
+      <div id="mobile-content-view" class="mobile-view" style="display: none;">
+        <div id="mobile-content">
+          <div class="mobile-content-inner" id="mobile-default-content">
+            <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
+              <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
+              <p style="margin: 0; font-size: 0.95rem;">Loading...</p>
+            </div>
           </div>
         </div>
-      </main>
+      </div>
     </div>
   </div>
-  
+
   <!-- Search Modal -->
-  <div id="search-modal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
+  <div id="mobile-search-modal" class="mobile-modal">
+    <div class="mobile-modal-content">
+      <div class="mobile-modal-header">
         <h3>🔍 Search Problems</h3>
-        <span class="close-btn" onclick="closeSearchModal()">&times;</span>
+        <span class="mobile-close-btn" onclick="closeMobileSearchModal()">&times;</span>
       </div>
-      <div class="modal-body">
-        <input type="text" id="search-input" placeholder="Search problems by title, number, or difficulty... (Ctrl+K)" autocomplete="off">
-        <div class="search-filters">
-          <label><input type="checkbox" id="filter-easy" checked> Easy</label>
-          <label><input type="checkbox" id="filter-medium" checked> Medium</label>
-          <label><input type="checkbox" id="filter-hard" checked> Hard</label>
+      <div class="mobile-modal-body">
+        <input type="text" id="mobile-search-input" placeholder="Search problems by title, number, or difficulty..." autocomplete="off">
+        <div class="mobile-search-filters">
+          <label><input type="checkbox" id="mobile-filter-easy" checked> Easy</label>
+          <label><input type="checkbox" id="mobile-filter-medium" checked> Medium</label>
+          <label><input type="checkbox" id="mobile-filter-hard" checked> Hard</label>
         </div>
-        <div id="search-results"></div>
+        <div id="mobile-search-results"></div>
       </div>
     </div>
   </div>
-  
+
   <!-- Settings Modal -->
-  <div id="settings-modal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
+  <div id="mobile-settings-modal" class="mobile-modal">
+    <div class="mobile-modal-content">
+      <div class="mobile-modal-header">
         <h3>⚙️ Settings</h3>
-        <span class="close-btn" onclick="closeSettingsModal()">&times;</span>
+        <span class="mobile-close-btn" onclick="closeMobileSettingsModal()">&times;</span>
       </div>
-      <div class="modal-body">
-        <div class="setting-item">
-          <label for="theme-toggle">Theme:</label>
-          <select id="theme-toggle">
+      <div class="mobile-modal-body">
+        <div class="mobile-setting-item">
+          <label for="mobile-theme-toggle">Theme:</label>
+          <select id="mobile-theme-toggle">
             <option value="light">Light</option>
             <option value="dark">Dark</option>
             <option value="auto">Auto</option>
           </select>
         </div>
-        <div class="setting-item">
-          <label for="font-size">Font Size:</label>
-          <select id="font-size">
+        <div class="mobile-setting-item">
+          <label for="mobile-font-size">Font Size:</label>
+          <select id="mobile-font-size">
             <option value="small">Small</option>
             <option value="normal" selected>Normal</option>
             <option value="large">Large</option>
           </select>
         </div>
-        <div class="setting-item">
-          <label for="layout-mode">Layout:</label>
-          <select id="layout-mode">
+        <div class="mobile-setting-item">
+          <label for="mobile-layout-mode">Layout:</label>
+          <select id="mobile-layout-mode">
             <option value="comfortable" selected>Comfortable</option>
             <option value="compact">Compact</option>
           </select>
@@ -139,62 +128,53 @@
       </div>
     </div>
   </div>
-  
+
+  <!-- Feedback FAB -->
+  <button id="mobile-feedback-fab" class="mobile-feedback-fab">
+    <span>💬</span>
+  </button>
+
+  <!-- Share FAB -->
+  <button id="mobile-share-fab" class="mobile-share-fab">
+    <span>🔗</span>
+  </button>
+
   <script>
     /*
     ===========================================
-    DYNAMIC URL ROUTING SYSTEM
-    ===========================================
-    
-    URLs are defined in data/lists.json using the "url" key:
-    {
-      "name": "Display Name",     // What users see in sidebar
-      "url": "url-slug",         // What appears in browser URL  
-      "file": "data_file.json"   // Which JSON file to load
-    }
-    
-    Benefits:
-    - Change display names without breaking URLs
-    - Full control over URL structure
-    - Fallback: generates from "name" if "url" missing
-    
-    Examples:
-    - "name": "LeetCode 75 Master List" + "url": "lc75" → #lc75
-    - Problems: #lc75/two-sum
-    
-    Debug: Open browser console and run showAllURLs() 
+    MOBILE LEETCODE ARTICLES APP
+    Using same core architecture as desktop version
     ===========================================
     */
     
-    // Global state management
+    // Global state management (same as desktop)
     let currentLists = [];
     let currentListData = [];
     let currentListSlug = '';
     let currentMarkdownFile = ''; 
     let listSlugMap = {};
     let slugToFileMap = {};
-    let isPageReload = true; // Track if this is a page reload vs navigation
+    let isPageReload = true;
+    let currentView = 'lists'; // 'lists', 'problems', 'content'
     
-    // Generate URL-friendly slug from text
+    // Generate URL-friendly slug from text (same as desktop)
     function createSlug(text) {
       return text
         .toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, '') // Remove special characters
-        .replace(/\s+/g, '-')         // Replace spaces with hyphens
-        .replace(/-+/g, '-')          // Replace multiple hyphens with single
-        .replace(/^-|-$/g, '');       // Remove leading/trailing hyphens
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '');
     }
     
-    // Generate mappings from lists.json data
+    // Generate mappings from lists.json data (same as desktop)
     function generateSlugMappings(lists) {
       const slugMap = {};
       const fileMap = {};
       
       lists.forEach(list => {
-        // Use the explicit 'url' key if available, otherwise fall back to generating from name
         const slug = list.url || createSlug(list.name);
         
-        // Handle potential duplicates by adding number suffix
         let finalSlug = slug;
         let counter = 1;
         while (Object.values(slugMap).includes(finalSlug)) {
@@ -209,39 +189,15 @@
       return { slugMap, fileMap };
     }
     
-    // Function to show loading animation for consistent UX
-    function showLoadingAnimation() {
-      document.getElementById('content').innerHTML = `
-        <div class="content-inner">
-          <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-            <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
-            <p style="margin: 0; font-size: 0.95rem;">Loading content...</p>
-          </div>
-        </div>
-      `;
-    }
-
-    // Router class for URL management
-    class Router {
-      constructor() {
-        this.routes = {};
-        this.currentRoute = null;
-        this.initialLoadComplete = false;
-        
-        // Listen for hash changes
+    // Mobile Router (adapted from desktop)
+    const mobileRouter = {
+      init() {
         window.addEventListener('hashchange', () => this.handleRoute());
-        window.addEventListener('load', () => {
-          // Delay initial route handling to prevent welcome flash
-          setTimeout(() => {
-            this.initialLoadComplete = true;
-            this.handleRoute();
-          }, 50); // Small delay to let DOM settle
-        });
-      }
+        this.handleRoute();
+      },
       
-      // Parse current URL hash
       parseHash() {
-        const hash = window.location.hash.slice(1); // Remove #
+        const hash = window.location.hash.substring(1);
         if (!hash) return { listSlug: null, problemSlug: null };
         
         const parts = hash.split('/');
@@ -249,1452 +205,717 @@
           listSlug: parts[0] || null,
           problemSlug: parts[1] || null
         };
-      }
+      },
       
-      // Navigate to a specific route
-      navigate(listSlug, problemSlug = null) {
-        isPageReload = false; // This is navigation, not a page reload
-        const url = problemSlug ? `#${listSlug}/${problemSlug}` : `#${listSlug}`;
-        const currentUrl = window.location.hash;
+      navigate(listSlug = '', problemSlug = '') {
+        const newHash = listSlug ? 
+          (problemSlug ? `#${listSlug}/${problemSlug}` : `#${listSlug}`) : 
+          '';
         
-        window.location.hash = url;
+        // Mark that we're navigating to prevent double loading animations
+        this.isNavigating = true;
         
-        // If navigating to the same route, manually trigger handleRoute
-        // to ensure loading animation and content refresh
-        if (currentUrl === url) {
-          setTimeout(() => this.handleRoute(), 10);
+        if (window.location.hash !== newHash) {
+          window.location.hash = newHash;
+        } else {
+          this.handleRoute();
         }
-      }
+      },
       
-      // Handle route changes
-      handleRoute() {
+      async handleRoute() {
         const { listSlug, problemSlug } = this.parseHash();
-
-        // If lists aren't loaded yet and we have a route, wait for them
-        if (currentLists.length === 0 && (listSlug || problemSlug)) {
-          return; // Keep current content and wait for lists to load
+        
+        // Don't show loading animation here if we're already showing it from navigation
+        if (!this.isNavigating) {
+          showMobileLoadingAnimation();
         }
-
-        // During initial load, show loading indicator if we expect to load content
-        if (!this.initialLoadComplete && (listSlug || problemSlug)) {
-          document.getElementById('content').innerHTML = `
-            <div class="content-inner">
-              <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-                <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
-                <p style="margin: 0; font-size: 0.95rem;">Loading content...</p>
-              </div>
-              <div class="author-footnote">
-                Made with <span class="heart">♥</span> by Durga Ganesh using AI
-              </div>
-            </div>
-          `;
+        
+        // Minimum loading time for consistent UX
+        const loadStartTime = Date.now();
+        const minimumLoadTime = 500; // 0.5s
+        
+        if (!listSlug && !problemSlug) {
+          // Home view
+          await this.showWelcome();
+        } else if (listSlug && !problemSlug) {
+          // List view
+          await this.showList(listSlug);
+        } else if (listSlug && problemSlug) {
+          // Problem view
+          await this.showProblem(listSlug, problemSlug);
         }
-
-        if (listSlug && slugToFileMap[listSlug]) {
-          // Load the specific list
-          const fileName = slugToFileMap[listSlug];
-          const listName = this.getListNameFromFile(fileName);
-
-          // Update page title
-          document.title = problemSlug ? `${listName} - LeetCode Prep` : `${listName} - LeetCode Prep`;
-
-          // Set active list in sidebar
-          this.setActiveList(listName);
-
-          // Load the list data
-          loadCodeListFiles(fileName, () => {
-            if (problemSlug) {
-              // Load specific problem
-              this.loadProblemBySlug(problemSlug);
-            } else {
-              // Update breadcrumb for list selection
-              breadcrumbManager.updateBreadcrumb(listName);
-              
-              // Show list info in C3 with author footnote
-              const listInfo = currentLists.find(l => l.file === fileName);
-              const listName = listInfo ? listInfo.name : 'Problem List';
-              document.getElementById('content').innerHTML = `
-                <div class="content-inner">
-                  <div class="action-buttons">
-                    <button id="start-btn" style="background: #6f42c1; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-right: 0.5em;">▶️ Start</button>
-                    <button id="random-btn" style="background: #dc3545; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-right: 0.5em;">🎲 Random</button>
-                    <button id="share-list-btn" style="background: #28a745; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em;">🔗 Share List</button>
-                    <button id="feedback-btn" style="background: #BA0B49; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-left: 0.5em;">💬 Feedback</button>
-                  </div>
-                  <h2>${listName}</h2>
-                  <p>Select a problem from the list to view its solution and explanation.</p>
-                  <p><strong>${currentListData.length}</strong> problems in this list</p>
-                  <div class="author-footnote">
-                    Made with <span class="heart">♥</span> by Durga Ganesh using AI
-                  </div>
-                </div>
-              `;
-              // Re-attach event listeners for the buttons
-              document.getElementById('start-btn').onclick = function() {
-                if (currentListData.length > 0) {
-                  document.getElementById('content').innerHTML = `
-                    <div class=\"content-inner\">
-                      <div style=\"text-align: center; padding: 3rem 1rem; color: #656d76;\">
-                        <div style=\"display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;\">⏳</div>
-                        <p style=\"margin: 0; font-size: 0.95rem;\">Loading content...</p>
-                      </div>
-                      <div class=\"author-footnote\">
-                        Made with <span class=\"heart\">♥</span> by Durga Ganesh using AI
-                      </div>
-                    </div>
-                  `;
-                  document.title = `${currentListData[0].title} - LeetCode Prep`;
-                  router.navigate(currentListSlug, currentListData[0].slug);
-                }
-              };
-              document.getElementById('random-btn').onclick = function() {
-                if (currentListData.length > 0) {
-                  const randomIndex = Math.floor(Math.random() * currentListData.length);
-                  const randomProblem = currentListData[randomIndex];
-                  
-                  // Show loading animation with the standard "Loading content..." text
-                  document.getElementById('content').innerHTML = `
-                    <div class=\"content-inner\">
-                      <div style=\"text-align: center; padding: 3rem 1rem; color: #656d76;\">
-                        <div style=\"display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;\">⏳</div>
-                        <p style=\"margin: 0; font-size: 0.95rem;\">Loading content...</p>
-                      </div>
-                    </div>
-                  `;
-                  
-                  // Set title and navigate after a short delay to ensure smooth loading
-                  setTimeout(() => {
-                    document.title = `${randomProblem.title} - LeetCode Prep`;
-                    router.navigate(currentListSlug, randomProblem.slug);
-                  }, 50);
-                }
-              };
-              document.getElementById('share-list-btn').onclick = function() {
-                const listUrl = `${window.location.origin}${window.location.pathname}#${currentListSlug}`;
-                shareUrl(listUrl, `${listName} - LeetCode Prep`);
-              };
-              // Add event listener for feedback button
-              const feedbackBtn = document.getElementById('feedback-btn');
-              if (feedbackBtn) {
-                feedbackBtn.onclick = function() {
-                  let pageTitle = document.title.replace(' - LeetCode Prep', '');
-                  let pageUrl = window.location.href;
-                  let body = `**Feedback for:** ${pageTitle}\n\n**Page:** ${pageUrl}\n\n**Feedback:**\n`;
-                  let issueUrl =
-                    'https://github.com/structured-lc/structured-lc.github.io/issues/new' +
-                    '?title=' + encodeURIComponent('Feedback: ' + pageTitle) +
-                    '&body=' + encodeURIComponent(body) +
-                    '&labels=feedback';
-                  window.open(issueUrl, '_blank');
-                };
-              }
-            }
-          });
-        } else if (listSlug && !slugToFileMap[listSlug] && currentLists.length > 0) {
-          // Invalid list slug (only show error after lists are loaded)
-          document.title = 'Not Found - LeetCode Prep';
-          document.getElementById('content').innerHTML = `
-            <div class="content-inner">
-              <h2>List Not Found</h2>
-              <p>The requested list "<strong>${listSlug}</strong>" does not exist.</p>
-              <p><a href="#" onclick="router.navigate('')">← Back to Home</a></p>
-              <div class="author-footnote">
-                Made with <span class="heart">♥</span> by Durga Ganesh using AI
-              </div>
-            </div>
-          `;
-          document.querySelectorAll('#lists-sidebar a, #sidebar a').forEach(el => {
-            el.classList.remove('active');
-          });
-          document.getElementById('file-list').innerHTML = '';
-        } else if (!listSlug) {
-          // Home route - always show welcome message when navigating to home
-          document.title = 'LeetCode Prep';
-          breadcrumbManager.hideBreadcrumb();
-          this.showWelcome();
+        
+        // Ensure minimum load time
+        const loadTime = Date.now() - loadStartTime;
+        const remainingTime = Math.max(0, minimumLoadTime - loadTime);
+        
+        if (remainingTime > 0) {
+          await new Promise(resolve => setTimeout(resolve, remainingTime));
         }
-      }
+        
+        this.isNavigating = false;
+        isPageReload = false;
+      },
       
-      // Get list name from filename
-      getListNameFromFile(fileName) {
-        const list = currentLists.find(l => l.file === fileName);
-        return list ? list.name : '';
-      }
+      async showWelcome() {
+        console.log('showWelcome - clearing state'); // Debug log
+        currentView = 'lists';
+        
+        // Don't show loading animation here - it's handled by navigation
+        
+        // Reset global variables when going home
+        currentListSlug = '';
+        currentListData = [];
+        currentMarkdownFile = '';
+        
+        // Clear hash if not already cleared
+        if (window.location.hash) {
+          window.location.hash = '';
+        }
+        
+        // Force clear breadcrumbs immediately
+        const breadcrumbNav = document.getElementById('mobile-breadcrumb-nav');
+        const breadcrumbList = document.getElementById('mobile-breadcrumb-list');
+        const breadcrumbProblem = document.getElementById('mobile-breadcrumb-problem');
+        
+        if (breadcrumbNav) {
+          breadcrumbNav.style.display = 'none';
+          console.log('showWelcome - set breadcrumb nav display to none'); // Debug log
+        }
+        if (breadcrumbList) {
+          breadcrumbList.textContent = '';
+        }
+        if (breadcrumbProblem) {
+          breadcrumbProblem.textContent = '';
+        }
+        
+        showMobileView('lists');
+        
+        if (currentLists.length === 0) {
+          await loadMobileLists();
+        }
+        
+        // Re-render lists
+        renderMobileLists();
+        
+        document.title = 'LeetCode Prep';
+      },
       
-      // Set active list in C1
-      setActiveList(listName) {
-        document.querySelectorAll('#lists-sidebar a').forEach(el => {
-          el.classList.toggle('active', el.textContent === listName);
-        });
-      }
+      async showList(listSlug) {
+        // Don't show loading animation here - it's handled by navigation
+        
+        // Ensure lists and mappings are loaded
+        if (currentLists.length === 0) {
+          await loadMobileLists();
+        }
+        
+        const fileName = slugToFileMap[listSlug];
+        if (!fileName) {
+          this.showError('List Not Found', `The requested list "${listSlug}" does not exist.`);
+          return;
+        }
+        
+        currentView = 'problems';
+        showMobileView('problems');
+        
+        // Clear previous problems immediately
+        document.getElementById('mobile-file-list').innerHTML = '';
+        
+        await loadMobileCodeListFiles(fileName);
+        
+        const listInfo = currentLists.find(l => l.file === fileName);
+        document.title = `${listInfo ? listInfo.name : 'Problem List'} - LeetCode Prep`;
+      },
       
-      // Load problem by slug
-      loadProblemBySlug(problemSlug) {
+      async showProblem(listSlug, problemSlug) {
+        // Don't show loading animation here - it's handled by navigation
+        
+        // Ensure lists and mappings are loaded
+        if (currentLists.length === 0) {
+          await loadMobileLists();
+        }
+        
+        const fileName = slugToFileMap[listSlug];
+        if (!fileName) {
+          this.showError('List Not Found', `The requested list "${listSlug}" does not exist.`);
+          return;
+        }
+        
+        currentView = 'content';
+        showMobileView('content');
+        
+        // Load list if not already loaded
+        if (currentListSlug !== listSlug) {
+          await loadMobileCodeListFiles(fileName);
+        }
+        
+        // Find and load problem
         const problem = currentListData.find(p => p.slug === problemSlug);
         if (problem) {
-          // Set title (in case this wasn't called from onclick handler)
           document.title = `${problem.title} - LeetCode Prep`;
-          
-          // Update breadcrumb for problem selection
-          const currentList = currentLists.find(l => listSlugMap[l.file] === currentListSlug);
-          const listName = currentList ? currentList.name : 'Problem List';
-          breadcrumbManager.updateBreadcrumb(listName, problem.title);
-          
-          // Auto-switch to content tab on mobile
-          if (typeof mobileNavManager !== 'undefined') {
-            mobileNavManager.autoShowContent();
-          }
-          
-          // Only show loading animation if content area doesn't already have it
-          const currentContent = document.getElementById('content').innerHTML;
-          if (!currentContent.includes('Loading content...')) {
-            document.getElementById('content').innerHTML = `
-              <div class="content-inner">
-                <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-                  <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
-                  <p style="margin: 0; font-size: 0.95rem;">Loading content...</p>
-                </div>
-              </div>
-            `;
-          }
-          
-          const filename = `${problem.number}-${problem.slug}.md`;
-          loadMarkdown(filename);
-          
-          // Set active problem in C2
-          document.querySelectorAll('#sidebar a').forEach(el => {
-            const isActive = el.textContent === problem.title;
-            el.classList.toggle('active', isActive);
-          });
-          
-          // Scroll to the active problem in C2
-          scrollToActiveProblem();
+          await loadMobileMarkdownFile(`${problem.number}-${problem.slug}.md`);
         } else {
-          // Problem not found in current list
-          document.title = 'Problem Not Found - LeetCode Prep';
-          document.getElementById('content').innerHTML = `
-            <div class="content-inner">
-              <h2>Problem Not Found</h2>
-              <p>The problem "<strong>${problemSlug}</strong>" was not found in the current list.</p>
-              <p><a href="#${currentListSlug}" onclick="router.navigate('${currentListSlug}')">← Back to List</a></p>
-            </div>
-          `;
-          document.querySelectorAll('#sidebar a').forEach(el => {
-            el.classList.remove('active');
-          });
-        }
-      }
-      
-      // Show welcome message
-      showWelcome() {
-        // Check if content is currently showing loading animation
-        const currentContent = document.getElementById('content').innerHTML;
-        const isShowingLoading = currentContent.includes('Loading content...');
-        
-        const displayWelcome = () => {
-          // Generate dynamic examples from available lists
-          const exampleLinks = currentLists.slice(0, 4).map(list => {
-            const slug = listSlugMap[list.file];
-            return `<li><a href="#${slug}">${list.name}</a></li>`;
-          }).join('');
-
-          // Add example problem link if we have LeetCode All
-          const leetcodeAll = currentLists.find(l => l.name.includes('LeetCode-All'));
-          const exampleProblem = leetcodeAll ? 
-            `<li><a href="#${listSlugMap[leetcodeAll.file]}/two-sum">Two Sum Problem (example)</a></li>` : '';
-
-          document.getElementById('content').innerHTML = `
-            <div class="content-inner">
-              <div class="action-buttons">
-                <button id="share-website-btn" style="background: #28a745; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em;">🔗 Share Website</button>
-                <button id="feedback-btn" style="background: #BA0B49; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-left: 0.5em;">💬 Feedback</button>
-              </div>
-              <h2>Welcome to LeetCode Prep</h2>
-              <p>Select a list from the sidebar to get started, or try these direct links:</p>
-              <ul>
-                ${exampleLinks}
-                ${exampleProblem}
-              </ul>
-              <p><em>You can bookmark any problem page or share direct links!</em></p>
-              <div class="author-footnote">
-                Made with <span class="heart">♥</span> by Durga Ganesh using AI
-              </div>
-            </div>
-          `;
-
-          // Add event listener for website share button
-          document.getElementById('share-website-btn').onclick = function() {
-            const websiteUrl = `${window.location.origin}${window.location.pathname}`;
-            shareUrl(websiteUrl, 'LeetCode Prep - Algorithm Problem Solutions');
-          };
-          // Add event listener for feedback button
-          const feedbackBtn = document.getElementById('feedback-btn');
-          if (feedbackBtn) {
-            feedbackBtn.onclick = function() {
-              let pageTitle = document.title.replace(' - LeetCode Prep', '');
-              let pageUrl = window.location.href;
-              let body = `**Feedback for:** ${pageTitle}\n\n**Page:** ${pageUrl}\n\n**Feedback:**\n`;
-              let issueUrl =
-                'https://github.com/structured-lc/structured-lc.github.io/issues/new' +
-                '?title=' + encodeURIComponent('Feedback: ' + pageTitle) +
-                '&body=' + encodeURIComponent(body) +
-                '&labels=feedback';
-              window.open(issueUrl, '_blank');
-            };
-          }
-
-          // Reset all scroll positions when going to home
-          resetColumnScrolls(['c1', 'c2']);
-          currentMarkdownFile = ''; // Clear current file tracker
-          
-          // Clean up keyboard navigation handlers when going to home
-          cleanupKeyboardHandlers();
-
-          // Auto-switch to lists view on mobile
-          if (typeof mobileNavManager !== 'undefined') {
-            mobileNavManager.autoShowLists();
-          }
-
-          document.querySelectorAll('#lists-sidebar a, #sidebar a').forEach(el => {
-            el.classList.remove('active');
-          });
-          document.getElementById('file-list').innerHTML = '';
-        };
-        
-        // If loading animation is showing, wait 500ms before displaying welcome
-        if (isShowingLoading) {
-          setTimeout(displayWelcome, 500);
-        } else {
-          displayWelcome();
-        }
-      }
-    }
-    
-    // Initialize router
-    const router = new Router();
-    
-    // Mobile Navigation Management
-    class MobileNavigationManager {
-      constructor() {
-        this.currentView = 'lists'; // 'lists', 'problems', 'content'
-        this.isMobileLayout = false;
-        this.init();
-      }
-      
-      init() {
-        // Check if we're in mobile layout
-        this.checkLayout();
-        
-        // Listen for layout changes
-        window.addEventListener('resize', () => {
-          this.checkLayout();
-        });
-        window.addEventListener('orientationchange', () => {
-          setTimeout(() => this.checkLayout(), 100);
-        });
-      }
-      
-      checkLayout() {
-        const isNowMobile = window.innerWidth <= 768;
-        
-        if (isNowMobile !== this.isMobileLayout) {
-          this.isMobileLayout = isNowMobile;
-          this.updateLayout();
-        }
-      }
-      
-      updateLayout() {
-        const containerContent = document.querySelector('.container-content');
-        const containers = ['lists-sidebar', 'sidebar', 'content'];
-        
-        if (this.isMobileLayout) {
-          // Apply mobile stacking logic
-          containerContent.style.flexDirection = 'column';
-          this.showMobileView(this.currentView);
-          
-        } else {
-          // Restore desktop 3-column layout
-          containerContent.style.flexDirection = 'row';
-          
-          // Show all containers for desktop
-          containers.forEach(id => {
-            const element = document.getElementById(id);
-            element.style.display = 'block';
-          });
-        }
-      }
-      
-      showMobileView(viewType) {
-        const containers = ['lists-sidebar', 'sidebar', 'content'];
-        this.currentView = viewType;
-        
-        if (!this.isMobileLayout) return;
-        
-        // Hide all containers initially
-        containers.forEach(id => {
-          document.getElementById(id).style.display = 'none';
-        });
-        
-        // Show the appropriate view
-        switch (viewType) {
-          case 'lists':
-            document.getElementById('lists-sidebar').style.display = 'block';
-            break;
-          case 'problems':
-            document.getElementById('sidebar').style.display = 'block';
-            break;
-          case 'content':
-            document.getElementById('content').style.display = 'block';
-            break;
-        }
-      }
-      
-      updateBackNavigation() {
-        const backNav = document.querySelector('.mobile-back-nav');
-        const backBtn = document.getElementById('mobile-back-btn');
-        const breadcrumb = document.getElementById('mobile-current-list');
-        
-        if (!this.isMobileLayout) {
-          backNav.style.display = 'none';
+          this.showError('Problem Not Found', `The requested problem "${problemSlug}" does not exist in this list.`);
           return;
         }
-        
-        // Show/hide back navigation based on current view
-        if (this.currentView === 'lists') {
-          backNav.style.display = 'none';
-        } else {
-          backNav.style.display = 'flex';
-          
-          // Update breadcrumb and back button text
-          if (this.currentView === 'problems') {
-            backBtn.querySelector('.back-text').textContent = 'Back to Lists';
-            const currentList = currentLists.find(l => listSlugMap[l.file] === currentListSlug);
-            breadcrumb.textContent = currentList ? currentList.name : 'Problem List';
-          } else if (this.currentView === 'content') {
-            backBtn.querySelector('.back-text').textContent = 'Back to Problems';
-            const { problemSlug } = router.parseHash();
-            const problem = currentListData.find(p => p.slug === problemSlug);
-            breadcrumb.textContent = problem ? problem.title : 'Problem';
-          }
-        }
-      }
+      },
       
-      navigateBack() {
-        if (this.currentView === 'problems') {
-          // Go back to lists view
-          this.showMobileView('lists');
-        } else if (this.currentView === 'content') {
-          // Go back to problems view
-          this.showMobileView('problems');
-        }
+      showError(title, message) {
+        currentView = 'content';
+        showMobileView('content');
+        document.getElementById('mobile-content').innerHTML = `
+          <div class="mobile-content-inner">
+            <h2>${title}</h2>
+            <p>${message}</p>
+            <p><a href="#" onclick="mobileRouter.navigate('')">← Back to Home</a></p>
+          </div>
+        `;
+        document.title = `${title} - LeetCode Prep`;
       }
-      
-      // Auto-navigation methods called from router
-      autoShowProblems() {
-        if (this.isMobileLayout) {
-          this.showMobileView('problems');
-        }
-      }
-      
-      autoShowContent() {
-        if (this.isMobileLayout) {
-          this.showMobileView('content');
-        }
-      }
-      
-      autoShowLists() {
-        if (this.isMobileLayout) {
-          this.showMobileView('lists');
-        }
-      }
-    }
+    };
     
-    // Initialize mobile navigation manager
-    const mobileNavManager = new MobileNavigationManager();
-    
-    // Breadcrumb Management
-    class BreadcrumbManager {
-      constructor() {
-        this.init();
+    // Mobile view management
+    function showMobileView(viewType) {
+      // Hide all views
+      document.querySelectorAll('.mobile-view').forEach(view => {
+        view.style.display = 'none';
+      });
+      
+      // Show target view
+      const targetView = document.getElementById(`mobile-${viewType}-view`);
+      if (targetView) {
+        targetView.style.display = 'block';
       }
       
-      init() {
-        // Make breadcrumb items clickable for navigation
-        document.getElementById('breadcrumb-list').addEventListener('click', () => {
-          if (currentListSlug) {
-            // Navigate to home and show lists view on mobile
-            router.navigate('');
-            if (typeof mobileNavManager !== 'undefined' && mobileNavManager.isMobileLayout) {
-              mobileNavManager.showMobileView('lists');
-            }
-          }
-        });
-        
-        document.getElementById('breadcrumb-problem').addEventListener('click', () => {
-          if (currentListSlug) {
-            // Navigate to list and show problems view on mobile
-            router.navigate(currentListSlug);
-            if (typeof mobileNavManager !== 'undefined' && mobileNavManager.isMobileLayout) {
-              mobileNavManager.showMobileView('problems');
-            }
-          }
-        });
-      }
+      currentView = viewType;
       
-      updateBreadcrumb(listName = '', problemTitle = '') {
-        const breadcrumbNav = document.querySelector('.breadcrumb-nav');
-        const listItem = document.getElementById('breadcrumb-list');
-        const problemItem = document.getElementById('breadcrumb-problem');
-        const contentItem = document.getElementById('breadcrumb-content');
-        const arrow1 = document.getElementById('breadcrumb-arrow-1');
-        const arrow2 = document.getElementById('breadcrumb-arrow-2');
-        
-        // Only show breadcrumb on mobile when we have navigation state
-        const isMobile = window.innerWidth <= 768;
-        if (!isMobile) {
-          breadcrumbNav.style.display = 'none';
-          return;
-        }
-        
-        // Show breadcrumb if we have any navigation state
-        if (listName || problemTitle) {
-          breadcrumbNav.style.display = 'block';
-        } else {
-          breadcrumbNav.style.display = 'none';
-          return;
-        }
-        
-        // Update list breadcrumb
-        if (listName) {
-          listItem.querySelector('.breadcrumb-text').textContent = listName;
-          listItem.style.display = 'inline-block';
-          listItem.classList.add('clickable');
-        } else {
-          listItem.querySelector('.breadcrumb-text').textContent = 'Select a List';
-          listItem.style.display = 'inline-block';
-          listItem.classList.remove('clickable');
-        }
-        
-        // Update problem breadcrumb
-        if (listName && !problemTitle) {
-          // List selected, no problem selected
-          problemItem.querySelector('.breadcrumb-text').textContent = 'Select a Problem';
-          problemItem.style.display = 'inline-block';
-          problemItem.classList.remove('clickable');
-          arrow1.style.display = 'inline';
-          
-          contentItem.style.display = 'none';
-          arrow2.style.display = 'none';
-        } else if (listName && problemTitle) {
-          // Both list and problem selected
-          problemItem.querySelector('.breadcrumb-text').textContent = 'Problems';
-          problemItem.style.display = 'inline-block';
-          problemItem.classList.add('clickable');
-          arrow1.style.display = 'inline';
-          
-          contentItem.querySelector('.breadcrumb-text').textContent = problemTitle;
-          contentItem.style.display = 'inline-block';
-          arrow2.style.display = 'inline';
-        } else {
-          // No list selected
-          problemItem.style.display = 'none';
-          contentItem.style.display = 'none';
-          arrow1.style.display = 'none';
-          arrow2.style.display = 'none';
-        }
-      }
-      
-      hideBreadcrumb() {
-        const breadcrumbNav = document.querySelector('.breadcrumb-nav');
-        const isMobile = window.innerWidth <= 768;
-        
-        // Only hide if on mobile, desktop breadcrumb is already hidden via CSS
-        if (isMobile) {
-          breadcrumbNav.style.display = 'none';
-        }
-      }
-    }
-    
-    // Initialize breadcrumb manager
-    const breadcrumbManager = new BreadcrumbManager();
-    
-    // Smart scrolling function to keep active problem visible in C2
-    function scrollToActiveProblem() {
+      // Force immediate breadcrumb update
       setTimeout(() => {
-        const activeLink = document.querySelector('#sidebar a.active');
-        if (activeLink) {
-          const sidebar = document.getElementById('sidebar');
-          const sidebarRect = sidebar.getBoundingClientRect();
-          const linkRect = activeLink.getBoundingClientRect();
-          
-          // Add padding to trigger scroll before item goes completely out of view
-          const padding = 60; // pixels of buffer space
-          
-          // Check if link is outside visible area (with padding)
-          const isAbove = linkRect.top < (sidebarRect.top + padding);
-          const isBelow = linkRect.bottom > (sidebarRect.bottom - padding);
-          
-          if (isAbove || isBelow) {
-            // Calculate the position to center the active link
-            const sidebarScrollTop = sidebar.scrollTop;
-            const sidebarHeight = sidebar.clientHeight;
-            const linkOffsetTop = activeLink.offsetTop;
-            const linkHeight = activeLink.offsetHeight;
-            
-            // Center the link in the sidebar
-            const targetScrollTop = linkOffsetTop - (sidebarHeight / 2) + (linkHeight / 2);
-            
-            // Smooth scroll to the target position
-            sidebar.scrollTo({
-              top: Math.max(0, targetScrollTop),
-              behavior: 'smooth'
-            });
-          }
-        }
-      }, 100); // Small delay to ensure DOM is updated
+        updateMobileBreadcrumb();
+      }, 0);
     }
     
-    // Scroll Position Management System (C1 and C2 only)
-    function saveScrollPositions() {
-      // Save C1 and C2 scroll positions (always preserve these)
-      localStorage.setItem('c1ScrollPosition', document.getElementById('lists-sidebar').scrollTop);
-      localStorage.setItem('c2ScrollPosition', document.getElementById('sidebar').scrollTop);
-    }
-    
-    function restoreScrollPositions() {
-      // Restore C1 position immediately without delay
-      const c1Scroll = localStorage.getItem('c1ScrollPosition');
-      if (c1Scroll !== null) {
-        document.getElementById('lists-sidebar').scrollTop = parseInt(c1Scroll);
-      }
-    }
-    
-    function restoreC2ScrollPosition() {
-      // Restore C2 position immediately without delay
-      const c2Scroll = localStorage.getItem('c2ScrollPosition');
-      if (c2Scroll !== null) {
-        document.getElementById('sidebar').scrollTop = parseInt(c2Scroll);
-      }
-    }
-    
-    function resetColumnScrolls(columns = ['c1', 'c2']) {
-      // Reset specified columns to top
-      if (columns.includes('c1')) {
-        document.getElementById('lists-sidebar').scrollTop = 0;
-        localStorage.removeItem('c1ScrollPosition');
-      }
-      if (columns.includes('c2')) {
-        document.getElementById('sidebar').scrollTop = 0;
-        localStorage.removeItem('c2ScrollPosition');
-      }
-    }
-    
-    // Modal Management
-    function openSearchModal() {
-      document.getElementById('search-modal').style.display = 'block';
-      document.getElementById('search-input').focus();
-      populateSearchResults();
-    }
-    
-    function closeSearchModal() {
-      document.getElementById('search-modal').style.display = 'none';
-      document.getElementById('search-input').value = '';
-    }
-    
-    function openSettingsModal() {
-      document.getElementById('settings-modal').style.display = 'block';
-      loadSettings();
-    }
-    
-    function closeSettingsModal() {
-      document.getElementById('settings-modal').style.display = 'none';
-      saveSettings();
-    }
-    
-    // Search Functionality
-    let allProblems = [];
-    
-    function populateSearchResults(searchTerm = '') {
-      if (allProblems.length === 0) {
-        // Load all problems from all lists
-        Promise.all(currentLists.map(list => 
-          fetch(`data/${list.file}`).then(res => res.json())
-          .then(problems => problems.map(p => ({...p, listName: list.name, listSlug: listSlugMap[list.file]})))
-        )).then(results => {
-          allProblems = results.flat();
-          displaySearchResults(filterProblems(searchTerm));
-        });
-      } else {
-        displaySearchResults(filterProblems(searchTerm));
-      }
-    }
-    
-    function filterProblems(searchTerm) {
-      const easy = document.getElementById('filter-easy').checked;
-      const medium = document.getElementById('filter-medium').checked;
-      const hard = document.getElementById('filter-hard').checked;
+    // Update mobile breadcrumb - simplified to use URL hash directly
+    function updateMobileBreadcrumb() {
+      const breadcrumbNav = document.getElementById('mobile-breadcrumb-nav');
+      const breadcrumbHome = document.getElementById('mobile-breadcrumb-home');
+      const breadcrumbArrow1 = document.getElementById('mobile-breadcrumb-arrow-1');
+      const breadcrumbList = document.getElementById('mobile-breadcrumb-list');
+      const breadcrumbArrow2 = document.getElementById('mobile-breadcrumb-arrow-2');
+      const breadcrumbProblem = document.getElementById('mobile-breadcrumb-problem');
       
-      return allProblems.filter(problem => {
-        const matchesTerm = !searchTerm || 
-          problem.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          problem.number.toString().includes(searchTerm) ||
-          problem.difficulty.toLowerCase().includes(searchTerm.toLowerCase());
-          
-        const matchesDifficulty = 
-          (easy && problem.difficulty === 'Easy') ||
-          (medium && problem.difficulty === 'Medium') ||
-          (hard && problem.difficulty === 'Hard');
-          
-        return matchesTerm && matchesDifficulty;
-      }).slice(0, 50); // Limit to 50 results
-    }
-    
-    function displaySearchResults(problems) {
-      const resultsDiv = document.getElementById('search-results');
+      // Parse current URL hash directly - don't rely on global variables
+      const hash = window.location.hash.substring(1);
       
-      if (problems.length === 0) {
-        resultsDiv.innerHTML = '<div style="padding: 1em; text-align: center; color: #656d76;">No problems found</div>';
+      console.log('updateMobileBreadcrumb - hash:', hash); // Debug log
+      
+      if (!hash) {
+        // Home page - hide breadcrumbs completely and reset all elements
+        console.log('Home page detected - hiding breadcrumbs'); // Debug log
+        breadcrumbNav.style.display = 'none';
+        breadcrumbArrow1.style.display = 'none';
+        breadcrumbList.style.display = 'none';
+        breadcrumbArrow2.style.display = 'none';
+        breadcrumbProblem.style.display = 'none';
+        breadcrumbList.textContent = '';
+        breadcrumbProblem.textContent = '';
         return;
       }
       
-      resultsDiv.innerHTML = problems.map(problem => `
-        <div class="search-result-item" onclick="navigateToProblem('${problem.listSlug}', '${problem.slug}')">
-          <div class="search-result-title">${problem.number}. ${problem.title}</div>
-          <div class="search-result-meta">${problem.difficulty} • ${problem.listName}</div>
-        </div>
-      `).join('');
-    }
-    
-    function navigateToProblem(listSlug, problemSlug) {
-      closeSearchModal();
-      router.navigate(listSlug, problemSlug);
-    }
-    
-    // Settings Functionality
-    function loadSettings() {
-      const theme = localStorage.getItem('theme') || 'light';
-      const fontSize = localStorage.getItem('fontSize') || 'normal';
-      const layout = localStorage.getItem('layout') || 'comfortable';
+      const parts = hash.split('/');
+      const listSlug = parts[0] || null;
+      const problemSlug = parts[1] || null;
       
-      document.getElementById('theme-toggle').value = theme;
-      document.getElementById('font-size').value = fontSize;
-      document.getElementById('layout-mode').value = layout;
-    }
-    
-    function saveSettings() {
-      const theme = document.getElementById('theme-toggle').value;
-      const fontSize = document.getElementById('font-size').value;
-      const layout = document.getElementById('layout-mode').value;
+      console.log('Breadcrumb parts:', { listSlug, problemSlug }); // Debug log
       
-      localStorage.setItem('theme', theme);
-      localStorage.setItem('fontSize', fontSize);
-      localStorage.setItem('layout', layout);
+      if (!listSlug) {
+        // Home page - hide breadcrumbs
+        breadcrumbNav.style.display = 'none';
+        return;
+      }
       
-      applySettings();
-    }
-    
-    function applySettings() {
-      const theme = localStorage.getItem('theme') || 'light';
-      const fontSize = localStorage.getItem('fontSize') || 'normal';
-      const layout = localStorage.getItem('layout') || 'comfortable';
+      // Show breadcrumb navigation
+      breadcrumbNav.style.display = 'flex';
+      breadcrumbHome.style.display = 'inline';
       
-      // Apply theme (placeholder for future dark mode)
-      document.body.className = `theme-${theme} font-${fontSize} layout-${layout}`;
-    }
-    
-    // Reusable share function
-    function shareUrl(url, title) {
-      if (navigator.share) {
-        // Use native sharing if available
-        navigator.share({
-          title: title,
-          url: url
-        });
-      } else if (navigator.clipboard) {
-        // Copy to clipboard
-        navigator.clipboard.writeText(url).then(() => {
-          // Find the active share button and show feedback
-          const activeBtn = document.querySelector('#share-website-btn, #share-list-btn, #share-btn');
-          if (activeBtn) {
-            const originalText = activeBtn.innerHTML;
-            activeBtn.innerHTML = '✓ Copied!';
-            setTimeout(() => {
-              activeBtn.innerHTML = originalText;
-            }, 2000);
-          }
-        });
+      // Get list name from slug
+      const listFile = slugToFileMap[listSlug];
+      const listInfo = currentLists.find(l => l.file === listFile);
+      const listName = listInfo ? listInfo.name : listSlug;
+      
+      if (!problemSlug) {
+        // List page: Home → List Name
+        breadcrumbArrow1.style.display = 'inline';
+        breadcrumbList.style.display = 'inline';
+        breadcrumbList.textContent = listName;
+        breadcrumbList.classList.remove('mobile-breadcrumb-link');
+        breadcrumbList.classList.add('mobile-breadcrumb-text');
+        breadcrumbList.onclick = null;
+        
+        breadcrumbArrow2.style.display = 'none';
+        breadcrumbProblem.style.display = 'none';
       } else {
-        // Fallback - show URL in alert
-        alert(`Share this URL: ${url}`);
+        // Problem page: Home → List Name → Problem Name
+        breadcrumbArrow1.style.display = 'inline';
+        breadcrumbList.style.display = 'inline';
+        breadcrumbList.textContent = listName;
+        breadcrumbList.classList.remove('mobile-breadcrumb-text');
+        breadcrumbList.classList.add('mobile-breadcrumb-link');
+        breadcrumbList.onclick = () => {
+          showMobileLoadingAnimation();
+          setTimeout(() => {
+            mobileRouter.navigate(listSlug);
+          }, 500);
+        };
+        
+        // Get problem name from slug
+        const problem = currentListData.find(p => p.slug === problemSlug);
+        const problemName = problem ? problem.title : problemSlug;
+        
+        breadcrumbArrow2.style.display = 'inline';
+        breadcrumbProblem.style.display = 'inline';
+        breadcrumbProblem.textContent = problemName;
       }
     }
-
-    // Global function to share current page (for onclick handlers)
-    window.shareCurrentPage = function() {
-      const currentUrl = window.location.href;
-      const { problemSlug } = router.parseHash();
-      const problem = currentListData.find(p => p.slug === problemSlug);
-      const title = problem ? `${problem.title} - LeetCode Prep` : document.title;
-      shareUrl(currentUrl, title);
-    };
-
-    // Utility function to show all generated URLs (for debugging)
-    window.showAllURLs = function() {
-      console.log('\n=== All Generated URLs ===');
-      currentLists.forEach(list => {
-        const slug = listSlugMap[list.file];
-        console.log(`${list.name}:`);
-        console.log(`  List URL: ${window.location.origin}${window.location.pathname}#${slug}`);
-        console.log(`  Example Problem: ${window.location.origin}${window.location.pathname}#${slug}/two-sum`);
-        console.log('');
-      });
-      console.log('Call this function anytime in the browser console to see current URLs!');
-    };
-
-    // Initial render: only lists in column 1
-    fetch('data/lists.json')
-      .then(res => res.json())
-      .then(codeLists => {
-        currentLists = codeLists;
-        
-        // Generate slug mappings dynamically from the lists
-        const { slugMap, fileMap } = generateSlugMappings(codeLists);
-        listSlugMap = slugMap;
-        slugToFileMap = fileMap;
-        
-        // Debug: Log the generated URL mappings
-        console.log('Generated URL mappings:');
-        Object.entries(listSlugMap).forEach(([file, slug]) => {
-          const list = codeLists.find(l => l.file === file);
-          const displayName = list?.name || 'Unknown';
-          const urlKey = list?.url ? ` (from url: "${list.url}")` : ' (generated from name)';
-          console.log(`  "${displayName}" → #${slug}${urlKey}`);
-        });
-        
-        const listsList = document.getElementById('lists-list');
-        listsList.innerHTML = '';
-        
-        codeLists.forEach(list => {
-          const li = document.createElement('li');
-          const a = document.createElement('a');
-          const listSlug = listSlugMap[list.file];
-          
-          a.href = `#${listSlug}`;
-          a.textContent = list.name;
-          a.onclick = (e) => {
-            e.preventDefault();
-            // Always show loading animation for consistent UX
-            showLoadingAnimation();
-            router.navigate(listSlug);
-          };
-          li.appendChild(a);
-          listsList.appendChild(li);
-        });
-        
-        // Handle initial route after lists are loaded
-        router.handleRoute();
-        
-        // Final fallback: if no specific content was loaded and we're at home, show welcome
-        setTimeout(() => {
-          const { listSlug, problemSlug } = router.parseHash();
-          if (!listSlug && !problemSlug) {
-            const currentContent = document.getElementById('content').innerHTML;
-            // Only show welcome if content is still the default or loading
-            if (currentContent.includes('Welcome') && currentContent.includes('Select a file') || 
-                currentContent.includes('Loading content...')) {
-              router.showWelcome();
-            }
-          }
-        }, 100);
-        
-        // Set up scroll position management after DOM is ready
-        setTimeout(() => {
-          // Add scroll event listeners to save positions (C1 and C2 only)
-          document.getElementById('lists-sidebar').addEventListener('scroll', saveScrollPositions);
-          document.getElementById('sidebar').addEventListener('scroll', saveScrollPositions);
-          
-          // Restore C1 scroll position immediately for page reloads
-          if (isPageReload) {
-            restoreScrollPositions();
-          }
-          
-          // After initial setup, mark subsequent navigations as not page reloads
-          setTimeout(() => {
-            isPageReload = false;
-          }, 500);
-        }, 50);
-        
-        // Add event listeners for ribbon buttons
-        document.getElementById('search-btn').addEventListener('click', openSearchModal);
-        document.getElementById('settings-btn').addEventListener('click', openSettingsModal);
-        
-        // Search input event listener
-        document.getElementById('search-input').addEventListener('input', (e) => {
-          populateSearchResults(e.target.value);
-        });
-        
-        // Filter checkboxes event listeners
-        ['filter-easy', 'filter-medium', 'filter-hard'].forEach(id => {
-          document.getElementById(id).addEventListener('change', () => {
-            populateSearchResults(document.getElementById('search-input').value);
-          });
-        });
-        
-        // Keyboard shortcuts
-        document.addEventListener('keydown', (e) => {
-          // Ctrl+K or Cmd+K for search
-          if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-            e.preventDefault();
-            openSearchModal();
-          }
-          // Escape to close modals
-          if (e.key === 'Escape') {
-            closeSearchModal();
-            closeSettingsModal();
-          }
-        });
-        
-        // Close modals when clicking outside
-        window.addEventListener('click', (e) => {
-          if (e.target.classList.contains('modal')) {
-            closeSearchModal();
-            closeSettingsModal();
-          }
-        });
-        
-        // Apply saved settings on load
-        applySettings();
-        
-        // Fix mobile hover states - prevent sticky hover on touch devices
-        if ('ontouchstart' in window) {
-          // Add touch event listeners to clear hover states
-          document.addEventListener('touchstart', function() {
-            // Remove any lingering hover classes
-            document.querySelectorAll('#lists-sidebar a:hover, #sidebar a:hover').forEach(el => {
-              el.blur();
-            });
-          });
-          
-          // Clear hover states when touching anywhere
-          document.addEventListener('touchend', function() {
-            setTimeout(() => {
-              document.querySelectorAll('#lists-sidebar a, #sidebar a').forEach(el => {
-                if (!el.classList.contains('active')) {
-                  el.style.background = '#eaecef';
-                  el.style.color = '#24292f';
-                  el.style.fontWeight = '400';
-                  el.style.boxShadow = 'none';
-                  el.style.border = '1px solid transparent';
-                }
-              });
-            }, 10);
-          });
-        }
-      });
-
-    const fileList = document.getElementById('file-list');
-    const content = document.getElementById('content');
-
-    // Load markdown file
-    function loadMarkdown(filename) {
-      // Always start C3 at the top for any content
-      currentMarkdownFile = filename;
-      
-      // Check if we already have loading content (to avoid double delays)
-      const currentContent = document.getElementById('content').innerHTML;
-      const alreadyLoading = currentContent.includes('Loading content...');
-      
-      // Only show loading indicator if content area doesn't already have it
-      if (!alreadyLoading) {
-        document.getElementById('content').innerHTML = `
-          <div class="content-inner">
+    
+    // Show loading animation (smaller size matching FAB buttons)
+    function showMobileLoadingAnimation() {
+      if (currentView === 'lists' || !currentView) {
+        // Home view loading
+        document.getElementById('mobile-lists-list').innerHTML = `
+          <li style="text-align: center; padding: 2rem; color: #656d76;">
+            <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>
+            <div style="font-size: 0.95rem;">Loading...</div>
+          </li>
+        `;
+      } else if (currentView === 'problems') {
+        // Problems view loading
+        document.getElementById('mobile-file-list').innerHTML = `
+          <li style="text-align: center; padding: 2rem; color: #656d76;">
+            <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>
+            <div style="font-size: 0.95rem;">Loading...</div>
+          </li>
+        `;
+      } else if (currentView === 'content') {
+        // Content view loading
+        document.getElementById('mobile-content').innerHTML = `
+          <div class="mobile-content-inner">
             <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-              <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
-              <p style="margin: 0; font-size: 0.95rem;">Loading content...</p>
+              <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>
+              <p style="margin: 0; font-size: 0.95rem;">Loading...</p>
             </div>
           </div>
         `;
       }
-      
-      // Track start time for minimum loading duration
-      const loadStartTime = Date.now();
-      const minimumLoadTime = alreadyLoading ? 0 : 500; // No minimum delay if already loading
-      
-      fetch('md/' + filename)
-        .then(res => {
-          if (!res.ok) {
-            // Custom error message, not the full HTML
-            document.getElementById('content').innerHTML = `
-              <div class="content-inner">
-                <h2>File Not Found</h2>
-                <p>The requested markdown file does not exist.</p>
-              </div>
-            `;
-            // Update title for error state
-            document.title = 'File Not Found - LeetCode Prep';
-            return Promise.reject('File not found');
-          }
-          return res.text();
-        })
-        .then(md => {
-          // Process markdown for special formatting
-          md = enhanceMarkdown(md);
-
-          // Calculate remaining time to ensure minimum loading duration
-          const loadTime = Date.now() - loadStartTime;
-          const remainingTime = Math.max(0, minimumLoadTime - loadTime);
-
-          // Delay content display to ensure minimum loading time
-          setTimeout(() => {
-            // Generate navigation buttons
-            const navigationButtons = generateNavigationButtons(filename);
-
-          // Feedback button HTML (styled like other action buttons, now orange color)
-          const feedbackButton = `<button id="feedback-btn" style="background: #BA0B49; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-left: 0.5em;">💬 Feedback</button>`;
-
-          // Insert feedback button next to Print button in navigationButtons.top
-          let navTop = navigationButtons.top;
-          navTop = navTop.replace(new RegExp('(<button[^>]*id="print-btn"[^>]*>[^<]*<\\/button>)'), `$1${feedbackButton}`);
-
-          document.getElementById('content').innerHTML = `
-            <div class="content-inner">
-              ${navTop}
-              ${marked.parse(md)}
-              <div class="author-footnote">
-                Made with <span class="heart">♥</span> by Durga Ganesh using AI
-              </div>
-            </div>
-          `;
-
-            // Add difficulty badges
-            addDifficultyBadges();
-
-            // Hide Practice links for printing
-            hidePracticeLinksForPrint();
-
-            // Add navigation event listeners
-            setupNavigationListeners();
-            document.querySelectorAll('pre code').forEach((block) => {
-              hljs.highlightElement(block);
-            });
-
-            // Feedback button logic
-            const feedbackBtn = document.getElementById('feedback-btn');
-            if (feedbackBtn) {
-              feedbackBtn.onclick = function() {
-                // Try to get problem title from page
-                let problemTitle = document.title.replace(' - LeetCode Prep', '');
-                let pageUrl = window.location.href;
-                let body = `**Feedback for:** ${problemTitle}\n\n**Page:** ${pageUrl}\n\n**Feedback:**\n`;
-                let issueUrl =
-                  'https://github.com/structured-lc/structured-lc.github.io/issues/new' +
-                  '?title=' + encodeURIComponent('Feedback: ' + problemTitle) +
-                  '&body=' + encodeURIComponent(body) +
-                  '&labels=feedback';
-                window.open(issueUrl, '_blank');
-              };
-            }
-
-            // Always start at top of content
-            document.getElementById('content').scrollTop = 0;
-          }, remainingTime);
-        })
-        .catch(() => {
-          // Already handled above
-        });
     }
-
-    // Enhance markdown with special formatting
-    function enhanceMarkdown(md) {
-      // Add difficulty badges at the beginning of the line
-      md = md.replace(/### Leetcode (\d+) \((\w+)\): (.+)/g, 
-        '### <span class="difficulty-badge $2">$2</span>Leetcode $1: $3');
+    
+    // Load lists (same logic as desktop)
+    async function loadMobileLists() {
+      try {
+        const response = await fetch('data/lists.json');
+        currentLists = await response.json();
+        
+        const { slugMap, fileMap } = generateSlugMappings(currentLists);
+        listSlugMap = slugMap;
+        slugToFileMap = fileMap;
+        
+        renderMobileLists();
+      } catch (error) {
+        console.error('Failed to load lists:', error);
+        document.getElementById('mobile-lists-list').innerHTML = `
+          <li style="color: #dc3545; padding: 1em;">Failed to load practice lists</li>
+        `;
+      }
+    }
+    
+    // Render mobile lists
+    function renderMobileLists() {
+      const listsList = document.getElementById('mobile-lists-list');
+      listsList.innerHTML = '';
       
-      // Make examples more compact - use bold instead of headers
-      md = md.replace(/\*\*Example (\d+):\*\*/g, 
-        '**Example $1:**');
+      currentLists.forEach(list => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        const listSlug = listSlugMap[list.file];
+        
+        a.href = `#${listSlug}`;
+        a.innerHTML = `
+          <span class="mobile-list-icon">${getMobileListIcon(list.name)}</span>
+          <span class="mobile-list-text">${list.name}</span>
+          <span class="mobile-list-arrow">→</span>
+        `;
+        
+        a.onclick = (e) => {
+          e.preventDefault();
+          showMobileLoadingAnimation();
+          setTimeout(() => {
+            mobileRouter.navigate(listSlug);
+          }, 500);
+        };
+        
+        li.appendChild(a);
+        listsList.appendChild(li);
+      });
+    }
+    
+    // Get list icon (same as desktop concept)
+    function getMobileListIcon(listName) {
+      if (listName.includes('75')) return '📋';
+      if (listName.includes('Easy')) return '🟢';
+      if (listName.includes('Medium')) return '🟡';
+      if (listName.includes('Hard')) return '🔴';
+      if (listName.includes('Google')) return '🔍';
+      if (listName.includes('Meta')) return '👥';
+      if (listName.includes('Amazon')) return '📦';
+      if (listName.includes('Microsoft')) return '🪟';
+      if (listName.includes('Apple')) return '🍎';
+      if (listName.includes('DSA')) return '🧮';
+      if (listName.includes('Handbook')) return '📚';
+      return '📝';
+    }
+    
+    // Load code list files (adapted from desktop)
+    async function loadMobileCodeListFiles(jsonFile) {
+      const newListSlug = listSlugMap[jsonFile];
+      const isNewList = (currentListSlug !== newListSlug);
       
-      // Enhance explanation formatting
-      md = md.replace(/\*Explanation:/g, 
-        '💡 *Explanation:');
+      // Don't show loading animation here - it's handled by navigation
       
-      // Add hint icon for hints
-      md = md.replace(/\*Hint:/g, 
-        '💡 *Hint:');
+      try {
+        const response = await fetch(`data/${jsonFile}`);
+        const list = await response.json();
+        
+        // Ensure all problems have slugs (generate if missing)
+        list.forEach(problem => {
+          if (!problem.slug) {
+            problem.slug = createSlug(problem.title);
+          }
+        });
+        
+        currentListData = list;
+        currentListSlug = newListSlug;
+        
+        renderMobileProblems();
+        
+        if (isNewList && !isPageReload) {
+          document.getElementById('mobile-sidebar').scrollTop = 0;
+          currentMarkdownFile = '';
+        }
+      } catch (error) {
+        console.error('Failed to load code list:', error);
+      }
+    }
+    
+    // Render mobile problems
+    function renderMobileProblems() {
+      const fileList = document.getElementById('mobile-file-list');
+      fileList.innerHTML = '';
+      
+      currentListData.forEach(item => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        const problemUrl = `#${currentListSlug}/${item.slug}`;
+        
+        a.href = problemUrl;
+        a.innerHTML = `
+          <span class="mobile-problem-number">#${item.number}</span>
+          <span class="mobile-problem-title">${item.title}</span>
+          <span class="mobile-problem-difficulty ${item.difficulty.toLowerCase()}">${item.difficulty}</span>
+        `;
+        
+        a.onclick = (e) => {
+          e.preventDefault();
+          showMobileLoadingAnimation();
+          document.title = `${item.title} - LeetCode Prep`;
+          
+          // Navigate to new problem with controlled timing
+          setTimeout(() => {
+            mobileRouter.navigate(currentListSlug, item.slug);
+          }, 500);
+        };
+        
+        li.appendChild(a);
+        fileList.appendChild(li);
+      });
+    }
+    
+    // Load markdown file (adapted from desktop)
+    async function loadMobileMarkdownFile(filename) {
+      currentMarkdownFile = filename;
+      
+      // Don't show loading animation here - it's handled by navigation
+      
+      try {
+        const response = await fetch(`md/${filename}`);
+        
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: File not found`);
+        }
+        
+        const md = await response.text();
+        const enhancedMd = enhanceMobileMarkdown(md);
+        
+        const navigationButtons = generateMobileNavigationButtons(filename);
+        
+        document.getElementById('mobile-content').innerHTML = `
+          <div class="mobile-content-inner">
+            ${navigationButtons.top}
+            ${marked.parse(enhancedMd)}
+            <div class="mobile-author-footnote">
+              Made with <span class="heart">♥</span> by Durga Ganesh using AI
+            </div>
+          </div>
+        `;
+        
+        addMobileDifficultyBadges();
+        setupMobileNavigationListeners();
+        
+        document.querySelectorAll('pre code').forEach((block) => {
+          hljs.highlightElement(block);
+        });
+        
+        document.getElementById('mobile-content').scrollTop = 0;
+        
+      } catch (error) {
+        document.getElementById('mobile-content').innerHTML = `
+          <div class="mobile-content-inner">
+            <h2>File Not Found</h2>
+            <p>The requested markdown file "<strong>${filename}</strong>" does not exist.</p>
+            <p>Error: ${error.message}</p>
+            <p><a href="#" onclick="mobileRouter.navigate(currentListSlug)">← Back to Problems</a></p>
+          </div>
+        `;
+        document.title = 'File Not Found - LeetCode Prep';
+      }
+    }    // Enhanced markdown processing (add difficulty badges like desktop and format title)
+    function enhanceMobileMarkdown(md) {
+      console.log('enhanceMobileMarkdown - before bulb processing:', md.includes('💡')); // Debug log
+      
+      // First, clean up any existing malformed difficulty badges
+      md = md.replace(/<span class="difficulty-badge [^"]*<span[^>]*>[^<]*<\/span>[^"]*"[^>]*>/g, '');
+      md = md.replace(/class="difficulty-badge [^"]*"[^>]*>[^<]*<\/span>">/g, '');
+      
+      // Transform title to match desktop format: {difficulty} LeetCode {number}: {title} [Practice](link)
+      md = md.replace(/### Leetcode (\d+) \((Easy|Medium|Hard)\): ([^[]+) \[Practice\]\(([^)]+)\)/g, 
+        function(match, number, difficulty, title, practiceLink) {
+          const difficultyLower = difficulty.toLowerCase();
+          return `<h3><span class="difficulty-badge ${difficultyLower}">${difficulty}</span> LeetCode ${number}: ${title.trim()} <a href="${practiceLink}" target="_blank" rel="noopener noreferrer" style="background: #0969da; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; text-decoration: none; display: inline-block; margin-left: 0.5em;">Practice</a></h3>`;
+        });
+      
+      // Add bulb animation to bulb emojis
+      md = md.replace(/💡/g, '<span class="bulb-animation">💡</span>');
+      
+      console.log('enhanceMobileMarkdown - after bulb processing:', md.includes('bulb-animation')); // Debug log
       
       return md;
     }
-
-    // Generate navigation buttons for prev/next problems
-    function generateNavigationButtons(currentFilename) {
-      if (!currentListData || currentListData.length === 0) {
-        return { top: '' };
-      }
+    
+    // Generate mobile navigation buttons (matching desktop styling)
+    function generateMobileNavigationButtons(filename) {
+      const currentIndex = currentListData.findIndex(p => 
+        `${p.number}-${p.slug}.md` === filename
+      );
       
-      // Find current problem index
-      const currentProblem = currentListData.find(p => `${p.number}-${p.slug}.md` === currentFilename);
-      if (!currentProblem) {
-        return { top: '' };
-      }
+      const prevButton = currentIndex > 0 ? 
+        `<button id="mobile-prev-btn" style="background: #6f42c1; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle;"><span style="display: inline-flex; align-items: center;">← Prev</span></button>` :
+        `<button disabled style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 0.2em 0.5em; border-radius: 3px; cursor: not-allowed; font-weight: 500; font-size: 0.65em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle;"><span style="display: inline-flex; align-items: center;">← Prev</span></button>`;
       
-      const currentIndex = currentListData.indexOf(currentProblem);
-      const prevProblem = currentIndex > 0 ? currentListData[currentIndex - 1] : null;
-      const nextProblem = currentIndex < currentListData.length - 1 ? currentListData[currentIndex + 1] : null;
-      
-      const prevButton = prevProblem ? 
-        `<button onclick="
-           // Show loading animation immediately
-           document.getElementById('content').innerHTML = \`
-             <div class='content-inner'>
-               <div style='text-align: center; padding: 3rem 1rem; color: #656d76;'>
-                 <div style='display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;'>⏳</div>
-                 <p style='margin: 0; font-size: 0.95rem;'>Loading content...</p>
-               </div>
-             </div>
-           \`;
-           // Set title immediately
-           document.title = '${prevProblem.title} - LeetCode Prep';
-           // Navigate and scroll to visible
-           router.navigate('${currentListSlug}', '${prevProblem.slug}');
-         " 
-                 title="${prevProblem.title}"
-                 style="background: #6f42c1; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em;">
-           ← Prev
-         </button>` :
-        `<button disabled 
-                 style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 0.2em 0.5em; border-radius: 3px; cursor: not-allowed; font-weight: 500; font-size: 0.65em;">
-           ← Prev
-         </button>`;
-      
-      const nextButton = nextProblem ? 
-        `<button onclick="
-           // Show loading animation immediately
-           document.getElementById('content').innerHTML = \`
-             <div class='content-inner'>
-               <div style='text-align: center; padding: 3rem 1rem; color: #656d76;'>
-                 <div style='display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;'>⏳</div>
-                 <p style='margin: 0; font-size: 0.95rem;'>Loading content...</p>
-               </div>
-             </div>
-           \`;
-           // Set title immediately
-           document.title = '${nextProblem.title} - LeetCode Prep';
-           // Navigate and scroll to visible
-           router.navigate('${currentListSlug}', '${nextProblem.slug}');
-         "
-                 title="${nextProblem.title}"
-                 style="background: #6f42c1; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em;">
-           Next →
-         </button>` :
-        `<button disabled
-                 style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 0.2em 0.5em; border-radius: 3px; cursor: not-allowed; font-weight: 500; font-size: 0.65em;">
-           Next →
-         </button>`;
-      
-      const navigationHTML = `
-        <div class="action-buttons">
-          ${prevButton}
-          <span style="color: #656d76; font-size: 0.7em; margin: 0 0.5em;">${currentIndex + 1} of ${currentListData.length}</span>
-          ${nextButton}
-          <button id="share-btn" onclick="shareCurrentPage()" style="background: #28a745; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-left: 0.5em;">🔗 Share</button>
-          <button id="print-btn" onclick="window.print()" style="background: #0969da; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em;">🖨️ Print</button>
-        </div>
-      `;
+      const nextButton = currentIndex < currentListData.length - 1 ?
+        `<button id="mobile-next-btn" style="background: #6f42c1; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle;"><span style="display: inline-flex; align-items: center;">Next →</span></button>` :
+        `<button disabled style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 0.2em 0.5em; border-radius: 3px; cursor: not-allowed; font-weight: 500; font-size: 0.65em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle;"><span style="display: inline-flex; align-items: center;">Next →</span></button>`;
       
       return {
-        top: navigationHTML
+        top: `
+          <div class="mobile-action-buttons">
+            ${prevButton}
+            <span style="color: #656d76; font-size: 0.7em; margin: 0 0.5em;">${currentIndex + 1} of ${currentListData.length}</span>
+            ${nextButton}
+            <button id="mobile-print-btn" onclick="window.print()" style="background: #0969da; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; margin-left: 0.5em;">🖨️ Print</button>
+          </div>
+        `
       };
     }
-
-    // Global cleanup function for keyboard handlers
-    function cleanupKeyboardHandlers() {
-      if (window.currentKeyHandler) {
-        document.removeEventListener('keydown', window.currentKeyHandler);
-        window.currentKeyHandler = null;
-      }
-    }
-
-    // Setup navigation event listeners and keyboard shortcuts
-    function setupNavigationListeners() {
-      // Clean up any existing handlers first
-      cleanupKeyboardHandlers();
-      
-      // Add keyboard navigation (arrow keys) - fixed version
-      const handleKeyNavigation = (e) => {
-        // Only handle if we're not in an input field or modal
-        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || 
-            document.getElementById('search-modal').style.display === 'block' ||
-            document.getElementById('settings-modal').style.display === 'block') {
-          return;
-        }
-        
-        // Get current state from URL hash
-        const { listSlug, problemSlug } = router.parseHash();
-        
-        // Only proceed if we have both a list and problem selected
-        if (!listSlug || !problemSlug || !currentListData || currentListData.length === 0) {
-          return;
-        }
-        
-        // Make sure we're on the correct list
-        if (listSlug !== currentListSlug) {
-          return;
-        }
-        
-        const currentProblem = currentListData.find(p => p.slug === problemSlug);
-        if (!currentProblem) return;
-        
-        const currentIndex = currentListData.indexOf(currentProblem);
-        
-        if (e.key === 'ArrowLeft' && currentIndex > 0) {
-          e.preventDefault();
-          const prevProblem = currentListData[currentIndex - 1];
-          
-          // Show loading animation immediately
-          document.getElementById('content').innerHTML = `
-            <div class="content-inner">
-              <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-                <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
-                <p style="margin: 0; font-size: 0.95rem;">Loading content...</p>
-              </div>
-            </div>
-          `;
-          
-          // Set title immediately
-          document.title = `${prevProblem.title} - LeetCode Prep`;
-          
-          // Navigate to previous problem
-          router.navigate(currentListSlug, prevProblem.slug);
-          
-        } else if (e.key === 'ArrowRight' && currentIndex < currentListData.length - 1) {
-          e.preventDefault();
-          const nextProblem = currentListData[currentIndex + 1];
-          
-          // Show loading animation immediately
-          document.getElementById('content').innerHTML = `
-            <div class="content-inner">
-              <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-                <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
-                <p style="margin: 0; font-size: 0.95rem;">Loading content...</p>
-              </div>
-            </div>
-          `;
-          
-          // Set title immediately
-          document.title = `${nextProblem.title} - LeetCode Prep`;
-          
-          // Navigate to next problem
-          router.navigate(currentListSlug, nextProblem.slug);
-        }
-      };
-      
-      // Store reference to current handler for cleanup
-      window.currentKeyHandler = handleKeyNavigation;
-      
-      // Add new listener
-      document.addEventListener('keydown', handleKeyNavigation);
-    }
-
-    // Add difficulty badge classes
-    function addDifficultyBadges() {
+    
+    // Add difficulty badges
+    function addMobileDifficultyBadges() {
       document.querySelectorAll('.difficulty-badge').forEach(badge => {
         const difficulty = badge.textContent.toLowerCase();
         badge.classList.add(difficulty);
       });
     }
-
-    // Hide Practice links for printing
-    function hidePracticeLinksForPrint() {
-      // Find all links that contain "Practice" text and point to leetcode.com
-      document.querySelectorAll('a[href*="leetcode.com/problems"]').forEach(link => {
-        if (link.textContent.trim().toLowerCase().includes('practice')) {
-          link.classList.add('practice-link');
-        }
-      });
-    }
-
-    // Load code list and render its problems in column 2
-    function loadCodeListFiles(jsonFile, callback = null) {
-      // Check if this is a new list being loaded (compare BEFORE updating currentListSlug)
-      const newListSlug = listSlugMap[jsonFile];
-      const isNewList = (currentListSlug !== newListSlug);
+    
+    // Setup navigation listeners
+    function setupMobileNavigationListeners() {
+      const prevBtn = document.getElementById('mobile-prev-btn');
+      const nextBtn = document.getElementById('mobile-next-btn');
       
-      // Show loading animation in C3 for new list loads with timing pattern
-      if (isNewList && !isPageReload) {
-        document.getElementById('content').innerHTML = `
-          <div class="content-inner">
-            <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-              <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
-              <p style="margin: 0; font-size: 0.95rem;">Loading list...</p>
-            </div>
-          </div>
-        `;
+      if (prevBtn) {
+        prevBtn.onclick = () => navigateToMobileAdjacentProblem(-1);
       }
       
-      // Track start time for minimum loading duration
-      const loadStartTime = Date.now();
-      const minimumLoadTime = 500; // 0.5 second minimum
-      
-      fetch('data/' + jsonFile)
-        .then(res => res.json())
-        .then(list => {
-          // Calculate remaining time to ensure minimum loading duration
-          const loadTime = Date.now() - loadStartTime;
-          const remainingTime = Math.max(0, minimumLoadTime - loadTime);
-          
-          // Delay content display to ensure minimum loading time
-          setTimeout(() => {
-            currentListData = list;
-            currentListSlug = newListSlug; // Update after the comparison
-            
-            const fileList = document.getElementById('file-list');
-            fileList.innerHTML = '';
-            
-            list.forEach(item => {
-              const li = document.createElement('li');
-              const a = document.createElement('a');
-              const problemUrl = `#${currentListSlug}/${item.slug}`;
-
-              a.href = problemUrl;
-              a.textContent = item.title;
-              a.onclick = (e) => {
-                e.preventDefault();
-
-                // Always show loading animation
-                document.getElementById('content').innerHTML = `
-                  <div class="content-inner">
-                    <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-                      <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
-                      <p style="margin: 0; font-size: 0.95rem;">Loading content...</p>
-                    </div>
-                  </div>
-                `;
-
-                // Set title immediately using the actual problem data
-                document.title = `${item.title} - LeetCode Prep`;
-
-                // If already on this problem, force reload markdown with loading animation for 0.5s
-                const { problemSlug, listSlug } = router.parseHash();
-                if (problemSlug === item.slug && listSlug === currentListSlug) {
-                  // Show loading for 0.5s, then reload markdown
-                  setTimeout(() => {
-                    router.loadProblemBySlug(item.slug);
-                  }, 500);
-                } else {
-                  router.navigate(currentListSlug, item.slug);
-                }
-              };
-              li.appendChild(a);
-              fileList.appendChild(li);
-            });
-            
-            // Auto-switch to problems view when list is loaded (mobile)
-            if (typeof mobileNavManager !== 'undefined') {
-              mobileNavManager.autoShowProblems();
-            }
-            
-            // Handle C2 scroll: Reset for new lists OR navigation, restore for page reloads
-            if (isNewList && !isPageReload) {
-              // User navigated to a different list - reset to top
-              document.getElementById('sidebar').scrollTop = 0;
-              currentMarkdownFile = ''; // Clear current file tracker
-            } else if (isPageReload) {
-              // Page reload - restore C2 position immediately after content is added
-              restoreC2ScrollPosition();
-            }
-            
-            // Only show welcome message if no specific problem is being loaded
-            if (!router.parseHash().problemSlug) {
-              // Get list name for display
-              const listInfo = currentLists.find(l => l.file === jsonFile);
-              const listName = listInfo ? listInfo.name : 'Problem List';
-              document.getElementById('content').innerHTML = `
-                <div class="content-inner">
-                  <div class="action-buttons">
-                    <button id="start-btn" style="background: #6f42c1; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-right: 0.5em;">▶️ Start</button>
-                    <button id="random-btn" style="background: #dc3545; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-right: 0.5em;">🎲 Random</button>
-                    <button id="share-list-btn" style="background: #28a745; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em;">🔗 Share List</button>
-                    <button id="feedback-btn" style="background: #BA0B49; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; margin-left: 0.5em;">💬 Feedback</button>
-                  </div>
-                  <h2>${listName}</h2>
-                  <p>Select a problem from the list to view its solution and explanation.</p>
-                  <p><strong>${list.length}</strong> problems in this list</p>
-                </div>
-              `;
-              // Add event listener for start button
-              document.getElementById('start-btn').onclick = function() {
-                if (list.length > 0) {
-                  document.getElementById('content').innerHTML = `
-                    <div class="content-inner">
-                      <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-                        <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
-                        <p style="margin: 0; font-size: 0.95rem;">Loading content...</p>
-                      </div>
-                    </div>
-                  `;
-                  document.title = `${list[0].title} - LeetCode Prep`;
-                  router.navigate(currentListSlug, list[0].slug);
-                }
-              };
-              // Add event listener for random button
-              document.getElementById('random-btn').onclick = function() {
-                if (list.length > 0) {
-                  const randomIndex = Math.floor(Math.random() * list.length);
-                  const randomProblem = list[randomIndex];
-                  
-                  // Show loading animation with the standard "Loading content..." text
-                  document.getElementById('content').innerHTML = `
-                    <div class=\"content-inner\">
-                      <div style=\"text-align: center; padding: 3rem 1rem; color: #656d76;\">
-                        <div style=\"display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;\">⏳</div>
-                        <p style=\"margin: 0; font-size: 0.95rem;\">Loading content...</p>
-                      </div>
-                    </div>
-                  `;
-                  
-                  // Set title and navigate after a short delay to ensure smooth loading
-                  setTimeout(() => {
-                    document.title = `${randomProblem.title} - LeetCode Prep`;
-                    router.navigate(currentListSlug, randomProblem.slug);
-                  }, 50);
-                }
-              };
-              // Add event listener for list share button
-              document.getElementById('share-list-btn').onclick = function() {
-                const listUrl = `${window.location.origin}${window.location.pathname}#${currentListSlug}`;
-                shareUrl(listUrl, `${listName} - LeetCode Prep`);
-              };
-              // Add event listener for feedback button
-              const feedbackBtn = document.getElementById('feedback-btn');
-              if (feedbackBtn) {
-                feedbackBtn.onclick = function() {
-                  let pageTitle = document.title.replace(' - LeetCode Prep', '');
-                  let pageUrl = window.location.href;
-                  let body = `**Feedback for:** ${pageTitle}\n\n**Page:** ${pageUrl}\n\n**Feedback:**\n`;
-                  let issueUrl =
-                    'https://github.com/structured-lc/structured-lc.github.io/issues/new' +
-                    '?title=' + encodeURIComponent('Feedback: ' + pageTitle) +
-                    '&body=' + encodeURIComponent(body) +
-                    '&labels=feedback';
-                  window.open(issueUrl, '_blank');
-                };
-              }
-            }
-            
-            // Execute callback if provided (used for initial routing)
-            if (callback) callback();
-          }, remainingTime);
-        })
-        .catch(() => {
-          document.getElementById('file-list').innerHTML = "<li>Failed to load list.</li>";
-          document.getElementById('content').innerHTML = `
-            <div class="content-inner">
-              <h2>Error</h2>
-              <p>Failed to load the problem list.</p>
-            </div>
-          `;
-        });
+      if (nextBtn) {
+        nextBtn.onclick = () => navigateToMobileAdjacentProblem(1);
+      }
     }
+    
+    // Navigate to adjacent problem (with loading animation)
+    function navigateToMobileAdjacentProblem(direction) {
+      const { problemSlug } = mobileRouter.parseHash();
+      const currentIndex = currentListData.findIndex(p => p.slug === problemSlug);
+      
+      if (currentIndex === -1) return;
+      
+      const newIndex = currentIndex + direction;
+      if (newIndex >= 0 && newIndex < currentListData.length) {
+        const newProblem = currentListData[newIndex];
+        
+        // Show loading animation immediately
+        showMobileLoadingAnimation();
+        document.title = `${newProblem.title} - LeetCode Prep`;
+        
+        // Navigate to new problem with controlled timing
+        setTimeout(() => {
+          mobileRouter.navigate(currentListSlug, newProblem.slug);
+        }, 500);
+      }
+    }
+    
+    // Mobile event handlers
+    function setupMobileEventHandlers() {
+      // Navigation buttons - always show loading animation
+      document.getElementById('mobile-home-btn').onclick = () => {
+        showMobileLoadingAnimation();
+        setTimeout(() => {
+          mobileRouter.navigate('');
+        }, 500);
+      };
+      
+      document.getElementById('mobile-search-btn').onclick = () => {
+        openMobileSearchModal();
+      };
+      
+      document.getElementById('mobile-settings-btn').onclick = () => {
+        openMobileSettingsModal();
+      };
+      
+      document.getElementById('mobile-feedback-fab').onclick = () => {
+        openMobileFeedback();
+      };
+      
+      document.getElementById('mobile-share-fab').onclick = () => {
+        shareMobileUrl(window.location.href, document.title);
+      };
+    }
+    
+    // Filter problems (mobile)
+    function filterMobileProblems(searchTerm) {
+      const fileList = document.getElementById('mobile-file-list');
+      const items = fileList.querySelectorAll('li');
+      
+      items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        const matches = searchTerm === '' || text.includes(searchTerm.toLowerCase());
+        item.style.display = matches ? 'block' : 'none';
+      });
+    }
+    
+    // Mobile search modal
+    function openMobileSearchModal() {
+      document.getElementById('mobile-search-modal').style.display = 'block';
+    }
+    
+    function closeMobileSearchModal() {
+      document.getElementById('mobile-search-modal').style.display = 'none';
+    }
+    
+    // Mobile settings modal
+    function openMobileSettingsModal() {
+      document.getElementById('mobile-settings-modal').style.display = 'block';
+    }
+    
+    function closeMobileSettingsModal() {
+      document.getElementById('mobile-settings-modal').style.display = 'none';
+    }
+    
+    // Share URL function (updated to match desktop version)
+    function shareMobileUrl(url, title) {
+      if (navigator.share) {
+        // Use native sharing if available
+        navigator.share({
+          title: title,
+          url: url
+        }).then(() => {
+          showMobileToast('Shared successfully!');
+        }).catch((error) => {
+          // If native share fails or is cancelled, fall back to clipboard
+          console.log('Native share failed:', error);
+          fallbackToClipboard(url);
+        });
+      } else {
+        // No native share support, use clipboard
+        fallbackToClipboard(url);
+      }
+    }
+    
+    // Fallback clipboard function
+    function fallbackToClipboard(url) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(() => {
+          showMobileToast('Link copied to clipboard!');
+        }).catch(() => {
+          showMobileToast(`Share: ${url}`);
+        });
+      } else {
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = url;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-999999px';
+        textArea.style.top = '-999999px';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try {
+          document.execCommand('copy');
+          showMobileToast('Link copied to clipboard!');
+        } catch (err) {
+          showMobileToast(`Share: ${url}`);
+        }
+        document.body.removeChild(textArea);
+      }
+    }
+    
+    // Open mobile feedback (matching desktop version)
+    function openMobileFeedback() {
+      let pageTitle = document.title.replace(' - LeetCode Prep', '');
+      let pageUrl = window.location.href;
+      let body = `**Feedback for:** ${pageTitle}\n\n**Page:** ${pageUrl}\n\n**Feedback:**\n`;
+      let issueUrl =
+        'https://github.com/structured-lc/structured-lc.github.io/issues/new' +
+        '?title=' + encodeURIComponent('Feedback: ' + pageTitle) +
+        '&body=' + encodeURIComponent(body) +
+        '&labels=feedback';
+      window.open(issueUrl, '_blank');
+    }    // Show mobile toast
+    function showMobileToast(message) {
+      const toast = document.createElement('div');
+      toast.className = 'mobile-toast';
+      toast.textContent = message;
+      document.body.appendChild(toast);
+      
+      setTimeout(() => toast.classList.add('show'), 100);
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+      }, 3000);
+    }
+    
+    // Initialize mobile app
+    document.addEventListener('DOMContentLoaded', async () => {
+      setupMobileEventHandlers();
+      await loadMobileLists(); // Load lists first
+      mobileRouter.init(); // Then initialize router, which will handle the current URL
+    });
   </script>
 </body>
 </html>

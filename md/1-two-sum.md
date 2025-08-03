@@ -1,7 +1,7 @@
 ### Leetcode 1 (Easy): Two Sum [Practice](https://leetcode.com/problems/two-sum)
 
 ### Description  
-You are given an array of integers called `nums` and an integer `target`.  
+💡 You are given an array of integers called `nums` and an integer `target`.  
 Your task is to find **two unique indices** such that the numbers at those indices in `nums` add up to `target`. Return the indices as a list. You can assume:
 - There is **exactly one unique solution**.
 - You **cannot use the same element twice** (i.e., can't use the same index twice).
