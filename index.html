@@ -228,7 +228,7 @@
       async handleRoute() {
         const { listSlug, problemSlug } = this.parseHash();
         
-        // Don't show loading animation here if we're already showing it from navigation
+        // Always show loading animation for route changes, except when we're manually navigating
         if (!this.isNavigating) {
           showMobileLoadingAnimation();
         }
@@ -237,15 +237,20 @@
         const loadStartTime = Date.now();
         const minimumLoadTime = 300; // 0.3s
         
-        if (!listSlug && !problemSlug) {
-          // Home view
-          await this.showWelcome();
-        } else if (listSlug && !problemSlug) {
-          // List view
-          await this.showList(listSlug);
-        } else if (listSlug && problemSlug) {
-          // Problem view
-          await this.showProblem(listSlug, problemSlug);
+        try {
+          if (!listSlug && !problemSlug) {
+            // Home view
+            await this.showWelcome();
+          } else if (listSlug && !problemSlug) {
+            // List view
+            await this.showList(listSlug);
+          } else if (listSlug && problemSlug) {
+            // Problem view
+            await this.showProblem(listSlug, problemSlug);
+          }
+        } catch (error) {
+          console.error('Route handling error:', error);
+          this.showError('Navigation Error', 'An error occurred while loading the page.');
         }
         
         // Ensure minimum load time
@@ -327,8 +332,6 @@
       },
       
       async showProblem(listSlug, problemSlug) {
-        // Don't show loading animation here - it's handled by navigation
-        
         // Ensure lists and mappings are loaded
         if (currentLists.length === 0) {
           await loadMobileLists();
@@ -340,11 +343,22 @@
           return;
         }
         
+        // Always show content view for problem display
         currentView = 'content';
         showMobileView('content');
         
-        // Load list if not already loaded
-        if (currentListSlug !== listSlug) {
+        // Show loading animation immediately
+        document.getElementById('mobile-content').innerHTML = `
+          <div class="mobile-content-inner">
+            <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
+              <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>
+              <p style="margin: 0; font-size: 0.95rem;">Loading...</p>
+            </div>
+          </div>
+        `;
+        
+        // Load list if not already loaded or if it's a different list
+        if (currentListSlug !== listSlug || currentListData.length === 0) {
           await loadMobileCodeListFiles(fileName);
         }
         
@@ -741,7 +755,17 @@
           // Immediately switch to content view and show content loading
           currentView = 'content';
           showMobileView('content');
-          showMobileLoadingAnimation();
+          
+          // Show loading animation without additional view switching
+          document.getElementById('mobile-content').innerHTML = `
+            <div class="mobile-content-inner">
+              <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
+                <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>
+                <p style="margin: 0; font-size: 0.95rem;">Loading...</p>
+              </div>
+            </div>
+          `;
+          
           document.title = `${item.title} - LeetCode Prep`;
           
           // Navigate to new problem with controlled timing
@@ -781,7 +805,17 @@
           // Immediately switch to content view and show content loading
           currentView = 'content';
           showMobileView('content');
-          showMobileLoadingAnimation();
+          
+          // Show loading animation without additional view switching
+          document.getElementById('mobile-content').innerHTML = `
+            <div class="mobile-content-inner">
+              <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
+                <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>
+                <p style="margin: 0; font-size: 0.95rem;">Loading...</p>
+              </div>
+            </div>
+          `;
+          
           document.title = `${item.title} - LeetCode Prep`;
           
           // Navigate to new problem with controlled timing
@@ -833,10 +867,24 @@
         
         document.getElementById('mobile-content').scrollTop = 0;
         
-        // Animate the content container
+        // Animate the markdown content with proper timing to avoid conflicts
         const contentInner = document.querySelector('.mobile-content-inner');
         if (contentInner) {
-          animateMobileContent(contentInner, 'fade-in');
+          // Start with content hidden
+          contentInner.style.opacity = '0';
+          contentInner.style.transform = 'translateY(10px)';
+          
+          // Animate in after a brief delay
+          setTimeout(() => {
+            contentInner.style.transition = 'opacity 0.4s ease-out, transform 0.4s ease-out';
+            contentInner.style.opacity = '1';
+            contentInner.style.transform = 'translateY(0)';
+            
+            // Clean up transition after animation
+            setTimeout(() => {
+              contentInner.style.transition = '';
+            }, 400);
+          }, 100);
         }
         
       } catch (error) {
@@ -935,8 +983,16 @@
       if (newIndex >= 0 && newIndex < currentListData.length) {
         const newProblem = currentListData[newIndex];
         
-        // Show loading animation immediately (no exit animation for smoother experience)
-        showMobileLoadingAnimation();
+        // Show loading animation directly without calling showMobileLoadingAnimation
+        document.getElementById('mobile-content').innerHTML = `
+          <div class="mobile-content-inner">
+            <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
+              <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>
+              <p style="margin: 0; font-size: 0.95rem;">Loading...</p>
+            </div>
+          </div>
+        `;
+        
         document.title = `${newProblem.title} - LeetCode Prep`;
         
         // Navigate to new problem with controlled timing
