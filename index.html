@@ -60,6 +60,9 @@
       <!-- Problems View -->
       <div id="mobile-problems-view" class="mobile-view" style="display: none;">
         <div id="mobile-sidebar">
+          <div class="mobile-search-container">
+            <input type="text" id="mobile-problem-search" placeholder="Search problems..." autocomplete="off">
+          </div>
           <ul id="mobile-file-list"></ul>
         </div>
       </div>
@@ -266,7 +269,6 @@
       },
       
       async showWelcome() {
-        console.log('showWelcome - clearing state'); // Debug log
         currentView = 'lists';
         
         // Reset global variables when going home
@@ -286,7 +288,6 @@
         
         if (breadcrumbNav) {
           breadcrumbNav.style.display = 'none';
-          console.log('showWelcome - set breadcrumb nav display to none'); // Debug log
         }
         if (breadcrumbList) {
           breadcrumbList.textContent = '';
@@ -308,13 +309,17 @@
       },
       
       async showList(listSlug) {
+        
         // Ensure lists and mappings are loaded
         if (currentLists.length === 0) {
           await loadMobileLists();
         }
         
+        
         const fileName = slugToFileMap[listSlug];
+        
         if (!fileName) {
+          console.error('No file found for slug:', listSlug);
           this.showError('List Not Found', `The requested list "${listSlug}" does not exist.`);
           return;
         }
@@ -471,11 +476,8 @@
       // Parse current URL hash directly - don't rely on global variables
       const hash = window.location.hash.substring(1);
       
-      console.log('updateMobileBreadcrumb - hash:', hash); // Debug log
-      
       if (!hash) {
         // Home page - hide breadcrumbs completely and reset all elements
-        console.log('Home page detected - hiding breadcrumbs'); // Debug log
         breadcrumbNav.style.display = 'none';
         breadcrumbArrow1.style.display = 'none';
         breadcrumbList.style.display = 'none';
@@ -489,8 +491,6 @@
       const parts = hash.split('/');
       const listSlug = parts[0] || null;
       const problemSlug = parts[1] || null;
-      
-      console.log('Breadcrumb parts:', { listSlug, problemSlug }); // Debug log
       
       if (!listSlug) {
         // Home page - hide breadcrumbs
@@ -508,7 +508,7 @@
       const listName = listInfo ? listInfo.name : listSlug;
       
       if (!problemSlug) {
-        // List page: Home → List Name
+        // List page: [Home] → List-Name (Home is clickable, List-Name is current)
         breadcrumbArrow1.style.display = 'inline';
         breadcrumbList.style.display = 'inline';
         breadcrumbList.textContent = listName;
@@ -519,7 +519,7 @@
         breadcrumbArrow2.style.display = 'none';
         breadcrumbProblem.style.display = 'none';
       } else {
-        // Problem page: Home → List Name → Problem Name
+        // Problem page: [Home] → [List-Name] → Problem-Name (Home & List are clickable, Problem is current)
         breadcrumbArrow1.style.display = 'inline';
         breadcrumbList.style.display = 'inline';
         breadcrumbList.textContent = listName;
@@ -593,20 +593,35 @@
     }
     
     // Render mobile lists
-    function renderMobileLists() {
+    async function renderMobileLists() {
       const listsList = document.getElementById('mobile-lists-list');
       listsList.innerHTML = '';
       
-      currentLists.forEach(list => {
+      // Load problem counts for all lists first
+      const listsWithCounts = await Promise.all(
+        currentLists.map(async (list) => {
+          const count = await getMobileListProblemCount(list.file);
+          return { ...list, problemCount: count };
+        })
+      );
+      
+      listsWithCounts.forEach(list => {
         const li = document.createElement('li');
         const a = document.createElement('a');
         const listSlug = listSlugMap[list.file];
+        const description = getMobileListDescription(list.name);
         
         a.href = `#${listSlug}`;
         a.innerHTML = `
-          <span class="mobile-list-icon">${getMobileListIcon(list.name)}</span>
-          <span class="mobile-list-text">${list.name}</span>
-          <span class="mobile-list-arrow">→</span>
+          <div class="mobile-list-header">
+            <span class="mobile-list-icon">${getMobileListIcon(list.name)}</span>
+            <div class="mobile-list-content">
+              <div class="mobile-list-title">${list.name}</div>
+              <div class="mobile-list-count">${list.problemCount} problems</div>
+              <div class="mobile-list-description">${description}</div>
+            </div>
+            <span class="mobile-list-arrow">→</span>
+          </div>
         `;
         
         a.onclick = (e) => {
@@ -626,20 +641,35 @@
     }
     
     // Render mobile lists without animation (for router transitions)
-    function renderMobileListsNoAnimation() {
+    async function renderMobileListsNoAnimation() {
       const listsList = document.getElementById('mobile-lists-list');
       listsList.innerHTML = '';
       
-      currentLists.forEach(list => {
+      // Load problem counts for all lists first
+      const listsWithCounts = await Promise.all(
+        currentLists.map(async (list) => {
+          const count = await getMobileListProblemCount(list.file);
+          return { ...list, problemCount: count };
+        })
+      );
+      
+      listsWithCounts.forEach(list => {
         const li = document.createElement('li');
         const a = document.createElement('a');
         const listSlug = listSlugMap[list.file];
+        const description = getMobileListDescription(list.name);
         
         a.href = `#${listSlug}`;
         a.innerHTML = `
-          <span class="mobile-list-icon">${getMobileListIcon(list.name)}</span>
-          <span class="mobile-list-text">${list.name}</span>
-          <span class="mobile-list-arrow">→</span>
+          <div class="mobile-list-header">
+            <span class="mobile-list-icon">${getMobileListIcon(list.name)}</span>
+            <div class="mobile-list-content">
+              <div class="mobile-list-title">${list.name}</div>
+              <div class="mobile-list-count">${list.problemCount} problems</div>
+              <div class="mobile-list-description">${description}</div>
+            </div>
+            <span class="mobile-list-arrow">→</span>
+          </div>
         `;
         
         a.onclick = (e) => {
@@ -670,6 +700,43 @@
       if (listName.includes('DSA')) return '🧮';
       if (listName.includes('Handbook')) return '📚';
       return '📝';
+    }
+
+    // Get list description
+    function getMobileListDescription(listName) {
+      if (listName.includes('LeetCode-All')) return 'Complete collection of all LeetCode problems';
+      if (listName.includes('LeetCode-Easy')) return 'Perfect for beginners and warm-up practice';
+      if (listName.includes('LeetCode-Medium')) return 'Balanced difficulty for skill development';
+      if (listName.includes('LeetCode-Hard')) return 'Advanced problems for expert preparation';
+      if (listName.includes('LeetCode-75')) return 'Essential problems for interview prep';
+      if (listName.includes('Handbook')) return 'Curated selection of must-solve problems';
+      if (listName.includes('DSA')) return 'Data structures and algorithms fundamentals';
+      if (listName.includes('Top-Q-Easy')) return 'Most popular easy-level interview questions';
+      if (listName.includes('Top-Q-Medium')) return 'Most popular medium-level interview questions';
+      if (listName.includes('Top-Q-Hard')) return 'Most popular hard-level interview questions';
+      if (listName.includes('Google')) return 'Problems frequently asked at Google interviews';
+      if (listName.includes('Meta')) return 'Problems frequently asked at Meta interviews';
+      if (listName.includes('Microsoft')) return 'Problems frequently asked at Microsoft interviews';
+      if (listName.includes('Amazon')) return 'Problems frequently asked at Amazon interviews';
+      if (listName.includes('Apple')) return 'Problems frequently asked at Apple interviews';
+      if (listName.includes('Adobe')) return 'Problems frequently asked at Adobe interviews';
+      if (listName.includes('Uber')) return 'Problems frequently asked at Uber interviews';
+      if (listName.includes('LinkedIn')) return 'Problems frequently asked at LinkedIn interviews';
+      if (listName.includes('Yelp')) return 'Problems frequently asked at Yelp interviews';
+      if (listName.includes('Bloomberg')) return 'Problems frequently asked at Bloomberg interviews';
+      return 'Curated collection of coding problems';
+    }
+
+    // Get problem count for a list
+    async function getMobileListProblemCount(listFile) {
+      try {
+        const response = await fetch(`data/${listFile}`);
+        const data = await response.json();
+        return data.length;
+      } catch (error) {
+        console.error('Error loading list data:', error);
+        return 0;
+      }
     }
     
     // Load code list files (adapted from desktop)
@@ -704,11 +771,17 @@
     
     // Load code list files without animation (for router transitions)
     async function loadMobileCodeListFilesNoAnimation(jsonFile) {
+      
       const newListSlug = listSlugMap[jsonFile];
       const isNewList = (currentListSlug !== newListSlug);
       
       try {
         const response = await fetch(`data/${jsonFile}`);
+        
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        
         const list = await response.json();
         
         // Ensure all problems have slugs (generate if missing)
@@ -729,6 +802,13 @@
         }
       } catch (error) {
         console.error('Failed to load code list:', error);
+        // Show error message to user
+        document.getElementById('mobile-file-list').innerHTML = `
+          <li style="color: #dc3545; padding: 1em; text-align: center;">
+            <div>Failed to load problems</div>
+            <div style="font-size: 0.8em; margin-top: 0.5em;">Error: ${error.message}</div>
+          </li>
+        `;
       }
     }
     
@@ -784,10 +864,26 @@
     
     // Render mobile problems without animation (for router transitions)
     function renderMobileProblemsNoAnimation() {
+      
       const fileList = document.getElementById('mobile-file-list');
+      if (!fileList) {
+        console.error('mobile-file-list element not found!');
+        return;
+      }
+      
       fileList.innerHTML = '';
       
-      currentListData.forEach(item => {
+      if (!currentListData || currentListData.length === 0) {
+        fileList.innerHTML = `
+          <li style="text-align: center; padding: 2rem; color: #656d76;">
+            <div>No problems found in this list</div>
+          </li>
+        `;
+        return;
+      }
+      
+      currentListData.forEach((item, index) => {
+        
         const li = document.createElement('li');
         const a = document.createElement('a');
         const problemUrl = `#${currentListSlug}/${item.slug}`;
@@ -827,6 +923,7 @@
         li.appendChild(a);
         fileList.appendChild(li);
       });
+      
       // No animation - view transition already handled by showMobileView
     }
     
@@ -1135,8 +1232,7 @@
     // Initialize mobile app
     document.addEventListener('DOMContentLoaded', async () => {
       setupMobileEventHandlers();
-      await loadMobileLists(); // Load lists first
-      mobileRouter.init(); // Then initialize router, which will handle the current URL
+      mobileRouter.init(); // Initialize router, which will handle loading and rendering
     });
   </script>
 </body>
