@@ -60,9 +60,6 @@
       <!-- Problems View -->
       <div id="mobile-problems-view" class="mobile-view" style="display: none;">
         <div id="mobile-sidebar">
-          <div class="mobile-search-container">
-            <input type="text" id="mobile-problem-search" placeholder="Search problems..." autocomplete="off">
-          </div>
           <ul id="mobile-file-list"></ul>
         </div>
       </div>
@@ -1393,8 +1390,8 @@
       };
     }
     
-    // Filter problems (mobile)
-    function filterMobileProblems(searchTerm) {
+    // Filter problems list (mobile) - for inline filtering within problem lists
+    function filterMobileProblemsInList(searchTerm) {
       const fileList = document.getElementById('mobile-file-list');
       const items = fileList.querySelectorAll('li');
       
@@ -1405,13 +1402,148 @@
       });
     }
     
-    // Mobile search modal
+    // Mobile Search Functionality
+    let mobileAllProblems = [];
+    
     function openMobileSearchModal() {
       document.getElementById('mobile-search-modal').style.display = 'block';
+      document.getElementById('mobile-search-input').focus();
+      populateMobileSearchResults();
     }
     
     function closeMobileSearchModal() {
       document.getElementById('mobile-search-modal').style.display = 'none';
+      document.getElementById('mobile-search-input').value = '';
+    }
+    
+    function populateMobileSearchResults(searchTerm = '') {
+      if (mobileAllProblems.length === 0) {
+        // Load all problems from all lists
+        Promise.all(currentLists.map(list => 
+          fetch(`data/${list.file}`).then(res => res.json())
+          .then(problems => problems.map(p => ({
+            ...p, 
+            listName: list.name, 
+            listSlug: listSlugMap[list.file],
+            slug: p.slug || createSlug(p.title)
+          })))
+        )).then(results => {
+          mobileAllProblems = results.flat();
+          displayMobileSearchResults(filterMobileProblems(searchTerm));
+        }).catch(error => {
+          console.error('Error loading problems for search:', error);
+          document.getElementById('mobile-search-results').innerHTML = 
+            '<div style="padding: 1em; text-align: center; color: #dc2626;">Error loading problems</div>';
+        });
+      } else {
+        displayMobileSearchResults(filterMobileProblems(searchTerm));
+      }
+    }
+    
+    function filterMobileProblems(searchTerm) {
+      const easy = document.getElementById('mobile-filter-easy').checked;
+      const medium = document.getElementById('mobile-filter-medium').checked;
+      const hard = document.getElementById('mobile-filter-hard').checked;
+      
+      const allResults = mobileAllProblems.filter(problem => {
+        const matchesTerm = !searchTerm || 
+          problem.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          problem.number.toString().includes(searchTerm) ||
+          problem.difficulty.toLowerCase().includes(searchTerm.toLowerCase());
+          
+        const matchesDifficulty = 
+          (easy && problem.difficulty === 'Easy') ||
+          (medium && problem.difficulty === 'Medium') ||
+          (hard && problem.difficulty === 'Hard');
+          
+        return matchesTerm && matchesDifficulty;
+      });
+      
+      // If we're in a specific list context, prioritize results from current list
+      if (currentListSlug && currentListSlug !== '') {
+        const currentListResults = allResults.filter(problem => problem.listSlug === currentListSlug);
+        const otherListResults = allResults.filter(problem => problem.listSlug !== currentListSlug);
+        
+        // Combine: current list first, then others, limit to 50 total
+        return [...currentListResults, ...otherListResults].slice(0, 50);
+      }
+      
+      return allResults.slice(0, 50); // Default: just limit to 50 results
+    }
+    
+    function displayMobileSearchResults(problems) {
+      const resultsDiv = document.getElementById('mobile-search-results');
+      
+      if (problems.length === 0) {
+        resultsDiv.innerHTML = '<div style="padding: 1em; text-align: center; color: #656d76;">No problems found</div>';
+        return;
+      }
+      
+      let html = '';
+      
+      // If we're in a specific list context, separate current list from others
+      if (currentListSlug && currentListSlug !== '') {
+        const currentListProblems = problems.filter(p => p.listSlug === currentListSlug);
+        const otherListProblems = problems.filter(p => p.listSlug !== currentListSlug);
+        
+        // Show current list results first
+        if (currentListProblems.length > 0) {
+          const currentListInfo = currentLists.find(l => listSlugMap[l.file] === currentListSlug);
+          const currentListName = currentListInfo ? currentListInfo.name : 'Current List';
+          
+          html += `<div class="mobile-search-section-header">From ${currentListName}</div>`;
+          html += currentListProblems.map(problem => `
+            <div class="mobile-search-result-item" onclick="navigateToMobileProblem('${problem.listSlug}', '${problem.slug}')">
+              <div class="mobile-search-result-title">${problem.number}. ${problem.title}</div>
+              <div class="mobile-search-result-meta">
+                <span class="mobile-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
+                <span>${problem.listName}</span>
+              </div>
+            </div>
+          `).join('');
+        }
+        
+        // Show other list results
+        if (otherListProblems.length > 0) {
+          if (currentListProblems.length > 0) {
+            html += `<div class="mobile-search-section-header" style="margin-top: 1em;">From Other Lists</div>`;
+          }
+          html += otherListProblems.map(problem => `
+            <div class="mobile-search-result-item" onclick="navigateToMobileProblem('${problem.listSlug}', '${problem.slug}')">
+              <div class="mobile-search-result-title">${problem.number}. ${problem.title}</div>
+              <div class="mobile-search-result-meta">
+                <span class="mobile-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
+                <span>${problem.listName}</span>
+              </div>
+            </div>
+          `).join('');
+        }
+      } else {
+        // Default display for home context
+        html = problems.map(problem => `
+          <div class="mobile-search-result-item" onclick="navigateToMobileProblem('${problem.listSlug}', '${problem.slug}')">
+            <div class="mobile-search-result-title">${problem.number}. ${problem.title}</div>
+            <div class="mobile-search-result-meta">
+              <span class="mobile-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
+              <span>${problem.listName}</span>
+            </div>
+          </div>
+        `).join('');
+      }
+      
+      resultsDiv.innerHTML = html;
+    }
+    
+    function navigateToMobileProblem(listSlug, problemSlug) {
+      closeMobileSearchModal();
+      
+      // Show loading animation
+      showMobileLoadingAnimation();
+      
+      // Navigate with controlled timing
+      setTimeout(() => {
+        mobileRouter.navigate(listSlug, problemSlug);
+      }, 300);
     }
     
     // Mobile settings modal
@@ -1499,6 +1631,46 @@
     // Initialize mobile app
     document.addEventListener('DOMContentLoaded', async () => {
       setupMobileEventHandlers();
+      
+      // Mobile search event listeners
+      document.getElementById('mobile-search-input').addEventListener('input', (e) => {
+        populateMobileSearchResults(e.target.value);
+      });
+      
+      // Mobile filter checkboxes event listeners
+      ['mobile-filter-easy', 'mobile-filter-medium', 'mobile-filter-hard'].forEach(id => {
+        document.getElementById(id).addEventListener('change', () => {
+          populateMobileSearchResults(document.getElementById('mobile-search-input').value);
+        });
+      });
+      
+      // Mobile keyboard shortcuts
+      document.addEventListener('keydown', (e) => {
+        // Ctrl+K or Cmd+K for search
+        if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+          e.preventDefault();
+          openMobileSearchModal();
+        }
+        // Escape to close modals
+        if (e.key === 'Escape') {
+          closeMobileSearchModal();
+          closeMobileSettingsModal();
+        }
+      });
+      
+      // Close modals when clicking outside
+      window.addEventListener('click', (e) => {
+        const searchModal = document.getElementById('mobile-search-modal');
+        const settingsModal = document.getElementById('mobile-settings-modal');
+        
+        if (e.target === searchModal) {
+          closeMobileSearchModal();
+        }
+        if (e.target === settingsModal) {
+          closeMobileSettingsModal();
+        }
+      });
+      
       mobileRouter.init(); // Initialize router, which will handle loading and rendering
     });
   </script>
