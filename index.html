@@ -1031,6 +1031,8 @@
             setupMobileNavigationListeners();
             
             document.querySelectorAll('pre code').forEach((block) => {
+              // Convert 4-space indentation to 2-space for better mobile readability
+              optimizeMobileCodeIndentation(block);
               hljs.highlightElement(block);
             });
             
@@ -1076,6 +1078,34 @@
         `;
         document.title = 'File Not Found - LeetCode Prep';
       }
+    }
+    
+    // Optimize code indentation for mobile readability
+    function optimizeMobileCodeIndentation(codeBlock) {
+      if (!codeBlock || !codeBlock.textContent) return;
+      
+      let code = codeBlock.textContent;
+      
+      // Convert 4-space indentation to 2-space indentation
+      // This handles multiple levels of indentation properly
+      const lines = code.split('\n');
+      const optimizedLines = lines.map(line => {
+        // Count leading spaces
+        const leadingSpaces = line.match(/^( *)/)[1].length;
+        
+        // If we have 4 or more leading spaces, convert every 4 spaces to 2
+        if (leadingSpaces >= 4) {
+          const indentLevel = Math.floor(leadingSpaces / 4);
+          const remainderSpaces = leadingSpaces % 4;
+          const newIndent = '  '.repeat(indentLevel) + ' '.repeat(remainderSpaces);
+          return newIndent + line.trimStart();
+        }
+        
+        return line;
+      });
+      
+      // Update the code block content
+      codeBlock.textContent = optimizedLines.join('\n');
     }
     
     // Enhanced markdown processing (add difficulty badges like desktop and format title)
