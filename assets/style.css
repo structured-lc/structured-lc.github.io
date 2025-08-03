@@ -10,7 +10,7 @@
 html, body {
   margin: 0 !important;
   font-family: 'Inter', 'Roboto', Arial, sans-serif !important;
-  background: #f6f8fa !important;
+  background: #e5e7eb !important;
   color: #24292f !important;
   height: 100vh;
   overflow-x: hidden;
@@ -282,7 +282,7 @@ html, body {
 
 /* Lists View */
 #mobile-lists-sidebar {
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: #e5e7eb;
   padding: 20px 16px;
 }
 
@@ -300,7 +300,7 @@ html, body {
   border-radius: 12px;
   background: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(226, 232, 240, 0.5);
+  border: 1px solid #d1d5db;
   overflow: hidden;
   transition: all 0.3s ease;
 }
@@ -332,7 +332,7 @@ html, body {
 }
 
 #mobile-lists-list a:hover {
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: #f9fafb;
 }
 
 #mobile-lists-list a:active {
@@ -408,7 +408,7 @@ html, body {
 
 /* Problems View */
 #mobile-sidebar {
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: #e5e7eb;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -423,13 +423,12 @@ html, body {
 #mobile-problem-search {
   width: 100%;
   padding: 12px 16px;
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid #d1d5db;
   border-radius: 12px;
   font-size: 16px;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
+  background: #ffffff;
   color: #1e293b;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.2s ease;
 }
 
@@ -460,7 +459,7 @@ html, body {
   border-radius: 12px;
   background: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(226, 232, 240, 0.6);
+  border: 1px solid #d1d5db;
   overflow: hidden;
   transition: all 0.3s ease;
   min-height: 60px;
@@ -549,19 +548,18 @@ html, body {
 /* Content View */
 #mobile-content {
   flex: 1;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: #e5e7eb;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 16px;
 }
 
 .mobile-content-inner {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
+  background: #ffffff;
+  border-radius: 12px;
   padding: 24px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(226, 232, 240, 0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #d1d5db;
   max-width: none;
   line-height: 1.6;
   margin: 0 auto;
@@ -573,10 +571,10 @@ html, body {
   justify-content: flex-end;
   margin-bottom: 12px;
   padding: 12px 16px;
-  background: rgba(248, 250, 252, 0.8);
-  backdrop-filter: blur(10px);
+  background: #ffffff;
   border-radius: 12px;
-  border: 1px solid rgba(226, 232, 240, 0.5);
+  border: 1px solid #d1d5db;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   flex-wrap: wrap;
   gap: 8px;
 }
