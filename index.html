@@ -37,7 +37,10 @@
     <!-- Mobile Breadcrumb Navigation -->
     <div class="mobile-breadcrumb-nav" id="mobile-breadcrumb-nav" style="display: none;">
       <div class="mobile-breadcrumb">
-        <span id="mobile-breadcrumb-home" class="mobile-breadcrumb-link" onclick="showMobileLoadingAnimation(); setTimeout(() => mobileRouter.navigate(''), 500);">Home</span>
+        <span id="mobile-breadcrumb-home" class="mobile-breadcrumb-link" onclick="
+          showMobileLoadingAnimation(); 
+          setTimeout(() => mobileRouter.navigate(''), 300);
+        ">Home</span>
         <span id="mobile-breadcrumb-arrow-1" class="mobile-breadcrumb-arrow" style="display: none;"> → </span>
         <span id="mobile-breadcrumb-list" class="mobile-breadcrumb-link" style="display: none;" onclick=""></span>
         <span id="mobile-breadcrumb-arrow-2" class="mobile-breadcrumb-arrow" style="display: none;"> → </span>
@@ -232,7 +235,7 @@
         
         // Minimum loading time for consistent UX
         const loadStartTime = Date.now();
-        const minimumLoadTime = 500; // 0.5s
+        const minimumLoadTime = 300; // 0.3s
         
         if (!listSlug && !problemSlug) {
           // Home view
@@ -260,8 +263,6 @@
       async showWelcome() {
         console.log('showWelcome - clearing state'); // Debug log
         currentView = 'lists';
-        
-        // Don't show loading animation here - it's handled by navigation
         
         // Reset global variables when going home
         currentListSlug = '';
@@ -293,17 +294,15 @@
         
         if (currentLists.length === 0) {
           await loadMobileLists();
+        } else {
+          // Re-render lists without additional animation since showMobileView already animated
+          renderMobileListsNoAnimation();
         }
-        
-        // Re-render lists
-        renderMobileLists();
         
         document.title = 'LeetCode Prep';
       },
       
       async showList(listSlug) {
-        // Don't show loading animation here - it's handled by navigation
-        
         // Ensure lists and mappings are loaded
         if (currentLists.length === 0) {
           await loadMobileLists();
@@ -321,7 +320,7 @@
         // Clear previous problems immediately
         document.getElementById('mobile-file-list').innerHTML = '';
         
-        await loadMobileCodeListFiles(fileName);
+        await loadMobileCodeListFilesNoAnimation(fileName);
         
         const listInfo = currentLists.find(l => l.file === fileName);
         document.title = `${listInfo ? listInfo.name : 'Problem List'} - LeetCode Prep`;
@@ -385,17 +384,68 @@
       const targetView = document.getElementById(`mobile-${viewType}-view`);
       if (targetView) {
         targetView.style.display = 'block';
+        // Reset any existing styles from previous animations
+        targetView.style.opacity = '';
+        targetView.style.transform = '';
+        targetView.style.transition = '';
+        
+        // Add coordinated animation for the entire view
+        animateMobileContent(targetView, 'slide-up');
       }
       
       currentView = viewType;
-      
+
       // Force immediate breadcrumb update
       setTimeout(() => {
         updateMobileBreadcrumb();
       }, 0);
     }
     
-    // Update mobile breadcrumb - simplified to use URL hash directly
+    // Mobile content animation helper functions
+    function animateMobileContent(element, animationType = 'fade-in') {
+      if (!element) return;
+      
+      // Remove any existing animation classes and inline styles
+      element.classList.remove('mobile-content-fade-in', 'mobile-content-slide-in', 'mobile-content-slide-up', 'mobile-content-exit');
+      element.style.opacity = '';
+      element.style.transform = '';
+      element.style.transition = '';
+      
+      // Force reflow to ensure the class removal takes effect
+      element.offsetHeight;
+      
+      // Add the new animation class
+      switch (animationType) {
+        case 'fade-in':
+          element.classList.add('mobile-content-fade-in');
+          break;
+        case 'slide-in':
+          element.classList.add('mobile-content-slide-in');
+          break;
+        case 'slide-up':
+          element.classList.add('mobile-content-slide-up');
+          break;
+        case 'exit':
+          element.classList.add('mobile-content-exit');
+          break;
+      }
+      
+      // Remove animation class after animation completes
+      setTimeout(() => {
+        element.classList.remove('mobile-content-fade-in', 'mobile-content-slide-in', 'mobile-content-slide-up', 'mobile-content-exit');
+      }, 350);
+    }
+    
+    // Animate content changes in specific containers
+    function animateMobileContentContainer(containerId, animationType = 'fade-in') {
+      const container = document.getElementById(containerId);
+      if (container) {
+        // Small delay to ensure content is rendered
+        setTimeout(() => {
+          animateMobileContent(container, animationType);
+        }, 50);
+      }
+    }    // Update mobile breadcrumb - simplified to use URL hash directly
     function updateMobileBreadcrumb() {
       const breadcrumbNav = document.getElementById('mobile-breadcrumb-nav');
       const breadcrumbHome = document.getElementById('mobile-breadcrumb-home');
@@ -465,7 +515,7 @@
           showMobileLoadingAnimation();
           setTimeout(() => {
             mobileRouter.navigate(listSlug);
-          }, 500);
+          }, 300);
         };
         
         // Get problem name from slug
@@ -550,12 +600,46 @@
           showMobileLoadingAnimation();
           setTimeout(() => {
             mobileRouter.navigate(listSlug);
-          }, 500);
+          }, 300);
         };
         
         li.appendChild(a);
         listsList.appendChild(li);
       });
+      
+      // Animate the lists container
+      animateMobileContentContainer('mobile-lists-list', 'fade-in');
+    }
+    
+    // Render mobile lists without animation (for router transitions)
+    function renderMobileListsNoAnimation() {
+      const listsList = document.getElementById('mobile-lists-list');
+      listsList.innerHTML = '';
+      
+      currentLists.forEach(list => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        const listSlug = listSlugMap[list.file];
+        
+        a.href = `#${listSlug}`;
+        a.innerHTML = `
+          <span class="mobile-list-icon">${getMobileListIcon(list.name)}</span>
+          <span class="mobile-list-text">${list.name}</span>
+          <span class="mobile-list-arrow">→</span>
+        `;
+        
+        a.onclick = (e) => {
+          e.preventDefault();
+          showMobileLoadingAnimation();
+          setTimeout(() => {
+            mobileRouter.navigate(listSlug);
+          }, 300);
+        };
+        
+        li.appendChild(a);
+        listsList.appendChild(li);
+      });
+      // No animation - view transition already handled by showMobileView
     }
     
     // Get list icon (same as desktop concept)
@@ -579,8 +663,6 @@
       const newListSlug = listSlugMap[jsonFile];
       const isNewList = (currentListSlug !== newListSlug);
       
-      // Don't show loading animation here - it's handled by navigation
-      
       try {
         const response = await fetch(`data/${jsonFile}`);
         const list = await response.json();
@@ -596,6 +678,36 @@
         currentListSlug = newListSlug;
         
         renderMobileProblems();
+        
+        if (isNewList && !isPageReload) {
+          document.getElementById('mobile-sidebar').scrollTop = 0;
+          currentMarkdownFile = '';
+        }
+      } catch (error) {
+        console.error('Failed to load code list:', error);
+      }
+    }
+    
+    // Load code list files without animation (for router transitions)
+    async function loadMobileCodeListFilesNoAnimation(jsonFile) {
+      const newListSlug = listSlugMap[jsonFile];
+      const isNewList = (currentListSlug !== newListSlug);
+      
+      try {
+        const response = await fetch(`data/${jsonFile}`);
+        const list = await response.json();
+        
+        // Ensure all problems have slugs (generate if missing)
+        list.forEach(problem => {
+          if (!problem.slug) {
+            problem.slug = createSlug(problem.title);
+          }
+        });
+        
+        currentListData = list;
+        currentListSlug = newListSlug;
+        
+        renderMobileProblemsNoAnimation();
         
         if (isNewList && !isPageReload) {
           document.getElementById('mobile-sidebar').scrollTop = 0;
@@ -625,18 +737,63 @@
         
         a.onclick = (e) => {
           e.preventDefault();
+          
+          // Immediately switch to content view and show content loading
+          currentView = 'content';
+          showMobileView('content');
           showMobileLoadingAnimation();
           document.title = `${item.title} - LeetCode Prep`;
           
           // Navigate to new problem with controlled timing
           setTimeout(() => {
             mobileRouter.navigate(currentListSlug, item.slug);
-          }, 500);
+          }, 300);
         };
         
         li.appendChild(a);
         fileList.appendChild(li);
       });
+      
+      // Animate the problems list container
+      animateMobileContentContainer('mobile-file-list', 'slide-in');
+    }
+    
+    // Render mobile problems without animation (for router transitions)
+    function renderMobileProblemsNoAnimation() {
+      const fileList = document.getElementById('mobile-file-list');
+      fileList.innerHTML = '';
+      
+      currentListData.forEach(item => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        const problemUrl = `#${currentListSlug}/${item.slug}`;
+        
+        a.href = problemUrl;
+        a.innerHTML = `
+          <span class="mobile-problem-number">#${item.number}</span>
+          <span class="mobile-problem-title">${item.title}</span>
+          <span class="mobile-problem-difficulty ${item.difficulty.toLowerCase()}">${item.difficulty}</span>
+        `;
+        
+        a.onclick = (e) => {
+          e.preventDefault();
+          
+          // Immediately switch to content view and show content loading
+          currentView = 'content';
+          showMobileView('content');
+          showMobileLoadingAnimation();
+          document.title = `${item.title} - LeetCode Prep`;
+          
+          // Navigate to new problem with controlled timing
+          setTimeout(() => {
+            mobileRouter.navigate(currentListSlug, item.slug);
+          }, 300);
+        };
+        
+        li.appendChild(a);
+        fileList.appendChild(li);
+      });
+      // No animation - view transition already handled by showMobileView
     }
     
     // Load markdown file (adapted from desktop)
@@ -676,6 +833,12 @@
         
         document.getElementById('mobile-content').scrollTop = 0;
         
+        // Animate the content container
+        const contentInner = document.querySelector('.mobile-content-inner');
+        if (contentInner) {
+          animateMobileContent(contentInner, 'fade-in');
+        }
+        
       } catch (error) {
         document.getElementById('mobile-content').innerHTML = `
           <div class="mobile-content-inner">
@@ -687,10 +850,10 @@
         `;
         document.title = 'File Not Found - LeetCode Prep';
       }
-    }    // Enhanced markdown processing (add difficulty badges like desktop and format title)
+    }
+    
+    // Enhanced markdown processing (add difficulty badges like desktop and format title)
     function enhanceMobileMarkdown(md) {
-      console.log('enhanceMobileMarkdown - before bulb processing:', md.includes('💡')); // Debug log
-      
       // First, clean up any existing malformed difficulty badges
       md = md.replace(/<span class="difficulty-badge [^"]*<span[^>]*>[^<]*<\/span>[^"]*"[^>]*>/g, '');
       md = md.replace(/class="difficulty-badge [^"]*"[^>]*>[^<]*<\/span>">/g, '');
@@ -702,10 +865,13 @@
           return `<h3><span class="difficulty-badge ${difficultyLower}">${difficulty}</span> LeetCode ${number}: ${title.trim()} <a href="${practiceLink}" target="_blank" rel="noopener noreferrer" style="background: #0969da; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; text-decoration: none; display: inline-block; margin-left: 0.5em;">Practice</a></h3>`;
         });
       
-      // Add bulb animation to bulb emojis
-      md = md.replace(/💡/g, '<span class="bulb-animation">💡</span>');
+      // Enhance explanation formatting (add bulb icon like desktop)
+      md = md.replace(/\*Explanation:/g, 
+        '💡 *Explanation:');
       
-      console.log('enhanceMobileMarkdown - after bulb processing:', md.includes('bulb-animation')); // Debug log
+      // Add hint icon for hints (add bulb icon like desktop)
+      md = md.replace(/\*Hint:/g, 
+        '💡 *Hint:');
       
       return md;
     }
@@ -769,14 +935,14 @@
       if (newIndex >= 0 && newIndex < currentListData.length) {
         const newProblem = currentListData[newIndex];
         
-        // Show loading animation immediately
+        // Show loading animation immediately (no exit animation for smoother experience)
         showMobileLoadingAnimation();
         document.title = `${newProblem.title} - LeetCode Prep`;
         
         // Navigate to new problem with controlled timing
         setTimeout(() => {
           mobileRouter.navigate(currentListSlug, newProblem.slug);
-        }, 500);
+        }, 300);
       }
     }
     
@@ -787,7 +953,7 @@
         showMobileLoadingAnimation();
         setTimeout(() => {
           mobileRouter.navigate('');
-        }, 500);
+        }, 300);
       };
       
       document.getElementById('mobile-search-btn').onclick = () => {
