@@ -615,16 +615,35 @@
       }
     }
     
+    // Generate difficulty indicators with opacity based on counts
+    function generateDifficultyIndicators(difficultyDistribution) {
+      const { easy, medium, hard } = difficultyDistribution;
+      
+      // Full opacity if problems exist, faded if none
+      const easyOpacity = easy > 0 ? 1.0 : 0.3;
+      const mediumOpacity = medium > 0 ? 1.0 : 0.3;
+      const hardOpacity = hard > 0 ? 1.0 : 0.3;
+      
+      return `
+        <div class="mobile-difficulty-dot easy" style="opacity: ${easyOpacity}" title="${easy} Easy problems"></div>
+        <div class="mobile-difficulty-dot medium" style="opacity: ${mediumOpacity}" title="${medium} Medium problems"></div>
+        <div class="mobile-difficulty-dot hard" style="opacity: ${hardOpacity}" title="${hard} Hard problems"></div>
+      `;
+    }
+    
     // Render mobile lists
     async function renderMobileLists() {
       const listsList = document.getElementById('mobile-lists-list');
       listsList.innerHTML = '';
       
-      // Load problem counts for all lists first
+      // Load problem counts and difficulty distributions for all lists first
       const listsWithCounts = await Promise.all(
         currentLists.map(async (list) => {
-          const count = await getMobileListProblemCount(list.file);
-          return { ...list, problemCount: count };
+          const [count, difficultyDist] = await Promise.all([
+            getMobileListProblemCount(list.file),
+            getMobileListDifficultyDistribution(list.file)
+          ]);
+          return { ...list, problemCount: count, difficultyDistribution: difficultyDist };
         })
       );
       
@@ -632,7 +651,14 @@
         const li = document.createElement('li');
         const a = document.createElement('a');
         const listSlug = listSlugMap[list.file];
-        const description = getMobileListDescription(list.name);
+        const description = list.description || 'Curated collection of coding problems';
+        
+        // Create difficulty indicators
+        const difficultyIndicators = generateDifficultyIndicators(list.difficultyDistribution);
+        
+        // Create count text with elegant slash format (renderMobileLists)
+        const { easy, medium, hard } = list.difficultyDistribution;
+        const compactCountText = `${list.problemCount} problems • <span style="color: #15803d; font-weight: 600;">${easy}</span>/<span style="color: #ca8a04; font-weight: 600;">${medium}</span>/<span style="color: #dc2626; font-weight: 600;">${hard}</span>`;
         
         a.href = `#${listSlug}`;
         a.innerHTML = `
@@ -640,10 +666,10 @@
             <span class="mobile-list-icon">${getMobileListIcon(list.name)}</span>
             <div class="mobile-list-content">
               <div class="mobile-list-title">${list.name}</div>
-              <div class="mobile-list-count">${list.problemCount} problems</div>
+              <div class="mobile-list-count">${compactCountText}</div>
               <div class="mobile-list-description">${description}</div>
             </div>
-            <span class="mobile-list-arrow">→</span>
+            <div class="mobile-list-difficulty-indicators">${difficultyIndicators}</div>
           </div>
         `;
         
@@ -668,11 +694,14 @@
       const listsList = document.getElementById('mobile-lists-list');
       listsList.innerHTML = '';
       
-      // Load problem counts for all lists first
+      // Load problem counts and difficulty distributions for all lists first
       const listsWithCounts = await Promise.all(
         currentLists.map(async (list) => {
-          const count = await getMobileListProblemCount(list.file);
-          return { ...list, problemCount: count };
+          const [count, difficultyDist] = await Promise.all([
+            getMobileListProblemCount(list.file),
+            getMobileListDifficultyDistribution(list.file)
+          ]);
+          return { ...list, problemCount: count, difficultyDistribution: difficultyDist };
         })
       );
       
@@ -680,7 +709,14 @@
         const li = document.createElement('li');
         const a = document.createElement('a');
         const listSlug = listSlugMap[list.file];
-        const description = getMobileListDescription(list.name);
+        const description = list.description || 'Curated collection of coding problems';
+        
+        // Create difficulty indicators
+        const difficultyIndicators = generateDifficultyIndicators(list.difficultyDistribution);
+        
+        // Create count text with elegant slash format (renderMobileListsNoAnimation)
+        const { easy, medium, hard } = list.difficultyDistribution;
+        const compactCountText = `${list.problemCount} problems • <span style="color: #15803d; font-weight: 600;">${easy}</span>/<span style="color: #ca8a04; font-weight: 600;">${medium}</span>/<span style="color: #dc2626; font-weight: 600;">${hard}</span>`;
         
         a.href = `#${listSlug}`;
         a.innerHTML = `
@@ -688,10 +724,10 @@
             <span class="mobile-list-icon">${getMobileListIcon(list.name)}</span>
             <div class="mobile-list-content">
               <div class="mobile-list-title">${list.name}</div>
-              <div class="mobile-list-count">${list.problemCount} problems</div>
+              <div class="mobile-list-count">${compactCountText}</div>
               <div class="mobile-list-description">${description}</div>
             </div>
-            <span class="mobile-list-arrow">→</span>
+            <div class="mobile-list-difficulty-indicators">${difficultyIndicators}</div>
           </div>
         `;
         
@@ -725,31 +761,6 @@
       return '📝';
     }
 
-    // Get list description
-    function getMobileListDescription(listName) {
-      if (listName.includes('LeetCode-All')) return 'Complete collection of all LeetCode problems';
-      if (listName.includes('LeetCode-Easy')) return 'Perfect for beginners and warm-up practice';
-      if (listName.includes('LeetCode-Medium')) return 'Balanced difficulty for skill development';
-      if (listName.includes('LeetCode-Hard')) return 'Advanced problems for expert preparation';
-      if (listName.includes('LeetCode-75')) return 'Essential problems for interview prep';
-      if (listName.includes('Handbook')) return 'Curated selection of must-solve problems';
-      if (listName.includes('DSA')) return 'Data structures and algorithms fundamentals';
-      if (listName.includes('Top-Q-Easy')) return 'Most popular easy-level interview questions';
-      if (listName.includes('Top-Q-Medium')) return 'Most popular medium-level interview questions';
-      if (listName.includes('Top-Q-Hard')) return 'Most popular hard-level interview questions';
-      if (listName.includes('Google')) return 'Problems frequently asked at Google interviews';
-      if (listName.includes('Meta')) return 'Problems frequently asked at Meta interviews';
-      if (listName.includes('Microsoft')) return 'Problems frequently asked at Microsoft interviews';
-      if (listName.includes('Amazon')) return 'Problems frequently asked at Amazon interviews';
-      if (listName.includes('Apple')) return 'Problems frequently asked at Apple interviews';
-      if (listName.includes('Adobe')) return 'Problems frequently asked at Adobe interviews';
-      if (listName.includes('Uber')) return 'Problems frequently asked at Uber interviews';
-      if (listName.includes('LinkedIn')) return 'Problems frequently asked at LinkedIn interviews';
-      if (listName.includes('Yelp')) return 'Problems frequently asked at Yelp interviews';
-      if (listName.includes('Bloomberg')) return 'Problems frequently asked at Bloomberg interviews';
-      return 'Curated collection of coding problems';
-    }
-
     // Get problem count for a list
     async function getMobileListProblemCount(listFile) {
       try {
@@ -759,6 +770,27 @@
       } catch (error) {
         console.error('Error loading list data:', error);
         return 0;
+      }
+    }
+    
+    // Get difficulty distribution for a list
+    async function getMobileListDifficultyDistribution(listFile) {
+      try {
+        const response = await fetch(`data/${listFile}`);
+        const data = await response.json();
+        
+        const distribution = { easy: 0, medium: 0, hard: 0 };
+        data.forEach(problem => {
+          const difficulty = problem.difficulty?.toLowerCase();
+          if (difficulty && distribution.hasOwnProperty(difficulty)) {
+            distribution[difficulty]++;
+          }
+        });
+        
+        return distribution;
+      } catch (error) {
+        console.error('Error loading list data for difficulty distribution:', error);
+        return { easy: 0, medium: 0, hard: 0 };
       }
     }
     
@@ -849,7 +881,7 @@
         a.innerHTML = `
           <span class="mobile-problem-number">#${item.number}</span>
           <span class="mobile-problem-title">${item.title}</span>
-          <span class="mobile-problem-difficulty ${item.difficulty.toLowerCase()}">${item.difficulty}</span>
+          <div class="mobile-problem-difficulty-dot ${item.difficulty.toLowerCase()}" title="${item.difficulty}"></div>
         `;
         
         a.onclick = (e) => {
@@ -915,7 +947,7 @@
         a.innerHTML = `
           <span class="mobile-problem-number">#${item.number}</span>
           <span class="mobile-problem-title">${item.title}</span>
-          <span class="mobile-problem-difficulty ${item.difficulty.toLowerCase()}">${item.difficulty}</span>
+          <div class="mobile-problem-difficulty-dot ${item.difficulty.toLowerCase()}" title="${item.difficulty}"></div>
         `;
         
         a.onclick = (e) => {
@@ -1056,7 +1088,7 @@
       md = md.replace(/### Leetcode (\d+) \((Easy|Medium|Hard)\): ([^[]+) \[Practice\]\(([^)]+)\)/g, 
         function(match, number, difficulty, title, practiceLink) {
           const difficultyLower = difficulty.toLowerCase();
-          return `<h3><span class="difficulty-badge ${difficultyLower}">${difficulty}</span> LeetCode ${number}: ${title.trim()} <a href="${practiceLink}" target="_blank" rel="noopener noreferrer" style="background: #0969da; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; text-decoration: none; display: inline-block; margin-left: 0.5em;">Practice</a></h3>`;
+          return `<h3><span class="markdown-difficulty-dot ${difficultyLower}"></span> LeetCode ${number}: ${title.trim()} <a href="${practiceLink}" target="_blank" rel="noopener noreferrer" style="background: #0969da; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; text-decoration: none; display: inline-block; margin-left: 0.5em;">Practice</a></h3>`;
         });
       
       // Enhance explanation formatting (add bulb icon like desktop)

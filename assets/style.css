@@ -327,8 +327,8 @@ html, body {
 .mobile-list-header {
   display: flex;
   align-items: flex-start;
-  padding: 18px 20px;
-  gap: 16px;
+  padding: 14px 18px;
+  gap: 14px;
 }
 
 #mobile-lists-list a:hover {
@@ -363,16 +363,16 @@ html, body {
 }
 
 .mobile-list-title {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.4;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
   color: #1e293b;
 }
 
 .mobile-list-count {
   font-size: 13px;
   font-weight: 500;
-  color: #0969da;
+  color: #64748b;
   opacity: 0.8;
 }
 
@@ -381,6 +381,28 @@ html, body {
   line-height: 1.3;
   color: #64748b;
   margin-top: 2px;
+}
+
+/* Inline difficulty dots within count text */
+.difficulty-dot-inline {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+
+.difficulty-dot-inline.easy {
+  background: #15803d;
+}
+
+.difficulty-dot-inline.medium {
+  background: #ca8a04;
+}
+
+.difficulty-dot-inline.hard {
+  background: #dc2626;
 }
 
 .mobile-list-text {
@@ -514,6 +536,53 @@ html, body {
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #1e293b;
+}
+
+/* Difficulty indicators for list cards */
+.mobile-list-difficulty-indicators {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.mobile-difficulty-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: opacity 0.2s ease;
+}
+
+.mobile-difficulty-dot.easy {
+  background: #15803d;
+}
+
+.mobile-difficulty-dot.medium {
+  background: #ca8a04;
+}
+
+.mobile-difficulty-dot.hard {
+  background: #dc2626;
+}
+
+/* Difficulty dots for problem lists */
+.mobile-problem-difficulty-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.mobile-problem-difficulty-dot.easy {
+  background: #15803d;
+}
+
+.mobile-problem-difficulty-dot.medium {
+  background: #ca8a04;
+}
+
+.mobile-problem-difficulty-dot.hard {
+  background: #dc2626;
 }
 
 .mobile-problem-difficulty {
@@ -1081,6 +1150,28 @@ html, body {
   letter-spacing: 0.3px;
   box-shadow: 0 2px 4px rgba(220, 38, 38, 0.2);
   border: 1px solid rgba(220, 38, 38, 0.2);
+}
+
+/* Difficulty dots for markdown headers */
+.markdown-difficulty-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.markdown-difficulty-dot.easy {
+  background: #15803d;
+}
+
+.markdown-difficulty-dot.medium {
+  background: #ca8a04;
+}
+
+.markdown-difficulty-dot.hard {
+  background: #dc2626;
 }
 
 /* Responsive Adjustments */
