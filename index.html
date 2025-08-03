@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="LeetCode problem preparation with organized problem lists, clean solutions, and detailed explanations.">
   <meta name="keywords" content="LeetCode, algorithms, data structures, programming, interview preparation">
-  <meta name="author" content="LeetCode Prep">
-  <title>LeetCode Prep</title>
+  <meta name="author" content="LeetCode Handbook">
+  <title>LeetCode Handbook</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
     <button id="mobile-home-btn" class="mobile-nav-btn">
       <span class="btn-icon">🏠</span>
     </button>
-    <span id="mobile-ribbon-title">LEETCODE ARTICLES</span>
+    <span id="mobile-ribbon-title">LEETCODE HANDBOOK</span>
     <div id="mobile-ribbon-actions">
       <button id="mobile-search-btn" class="mobile-nav-btn">
         <span class="btn-icon">🔍</span>
@@ -145,7 +145,7 @@
   <script>
     /*
     ===========================================
-    MOBILE LEETCODE ARTICLES APP
+    MOBILE LEETCODE HANDBOOK APP
     Using same core architecture as desktop version
     ===========================================
     */
@@ -302,7 +302,7 @@
           renderMobileListsNoAnimation();
         }
         
-        document.title = 'LeetCode Prep';
+        document.title = 'LeetCode Handbook';
       },
       
       async showList(listSlug) {
@@ -330,7 +330,7 @@
         await loadMobileCodeListFilesNoAnimation(fileName);
         
         const listInfo = currentLists.find(l => l.file === fileName);
-        document.title = `${listInfo ? listInfo.name : 'Problem List'} - LeetCode Prep`;
+        document.title = `${listInfo ? listInfo.name : 'Problem List'} - LeetCode Handbook`;
       },
       
       async showProblem(listSlug, problemSlug) {
@@ -376,7 +376,7 @@
         // Find and load problem - but don't let it interrupt the loading animation timing
         const problem = currentListData.find(p => p.slug === problemSlug);
         if (problem) {
-          document.title = `${problem.title} - LeetCode Prep`;
+          document.title = `${problem.title} - LeetCode Handbook`;
           
           // Start markdown loading in background, but don't await it yet
           const markdownPromise = loadMobileMarkdownFile(`${problem.number}-${problem.slug}.md`);
@@ -408,7 +408,7 @@
             <p><a href="#" onclick="mobileRouter.navigate('')">← Back to Home</a></p>
           </div>
         `;
-        document.title = `${title} - LeetCode Prep`;
+        document.title = `${title} - LeetCode Handbook`;
       }
     };
     
@@ -637,9 +637,8 @@
       const welcomeDiv = document.createElement('div');
       welcomeDiv.className = 'mobile-list-actions mobile-welcome-message';
       welcomeDiv.innerHTML = `
-        <div style="text-align: center; color: #64748b; font-size: 14px; font-weight: 500; line-height: 1.4; width: 100%;">
-          🚀 Ready To Level Up Your Coding Skills?<br>
-          <span style="color: #1e293b; font-weight: 600;">Choose A Problem Set Below To Begin Your Journey!</span>
+        <div style="text-align: center; color: #374151; font-size: 14px; font-weight: 500; line-height: 1.4; width: 100%;">
+          📚 Structured LeetCode Problem Collections!
         </div>
       `;
       listsList.appendChild(welcomeDiv);
@@ -671,13 +670,17 @@
         a.href = `#${listSlug}`;
         a.innerHTML = `
           <div class="mobile-list-header">
-            <span class="mobile-list-icon">${getMobileListIcon(list.name)}</span>
             <div class="mobile-list-content">
-              <div class="mobile-list-title">${list.name}</div>
+              <div class="mobile-list-title-with-icon-and-dots">
+                <div class="mobile-list-icon-and-title">
+                  <span class="mobile-list-icon">${getMobileListIcon(list.name)}</span>
+                  <div class="mobile-list-title">${list.name}</div>
+                </div>
+                <div class="mobile-list-difficulty-indicators">${difficultyIndicators}</div>
+              </div>
               <div class="mobile-list-count">${compactCountText}</div>
               <div class="mobile-list-description">${description}</div>
             </div>
-            <div class="mobile-list-difficulty-indicators">${difficultyIndicators}</div>
           </div>
         `;
         
@@ -698,6 +701,7 @@
     }
     
     // Render mobile lists without animation (for router transitions)
+    // Render mobile lists without animation (for router transitions)
     async function renderMobileListsNoAnimation() {
       const listsList = document.getElementById('mobile-lists-list');
       listsList.innerHTML = '';
@@ -706,9 +710,8 @@
       const welcomeDiv = document.createElement('div');
       welcomeDiv.className = 'mobile-list-actions mobile-welcome-message';
       welcomeDiv.innerHTML = `
-        <div style="text-align: center; color: #64748b; font-size: 14px; font-weight: 500; line-height: 1.4; width: 100%;">
-          🚀 Ready To Level Up Your Coding Skills?<br>
-          <span style="color: #1e293b; font-weight: 600;">Choose A Problem Set Below To Begin Your Journey!</span>
+        <div style="text-align: center; color: #374151; font-size: 14px; font-weight: 500; line-height: 1.4; width: 100%;">
+          📚 Structured LeetCode Problem Collections!
         </div>
       `;
       listsList.appendChild(welcomeDiv);
@@ -740,13 +743,17 @@
         a.href = `#${listSlug}`;
         a.innerHTML = `
           <div class="mobile-list-header">
-            <span class="mobile-list-icon">${getMobileListIcon(list.name)}</span>
             <div class="mobile-list-content">
-              <div class="mobile-list-title">${list.name}</div>
+              <div class="mobile-list-title-with-icon-and-dots">
+                <div class="mobile-list-icon-and-title">
+                  <span class="mobile-list-icon">${getMobileListIcon(list.name)}</span>
+                  <div class="mobile-list-title">${list.name}</div>
+                </div>
+                <div class="mobile-list-difficulty-indicators">${difficultyIndicators}</div>
+              </div>
               <div class="mobile-list-count">${compactCountText}</div>
               <div class="mobile-list-description">${description}</div>
             </div>
-            <div class="mobile-list-difficulty-indicators">${difficultyIndicators}</div>
           </div>
         `;
         
@@ -933,7 +940,7 @@
             </div>
           `;
           
-          document.title = `${item.title} - LeetCode Prep`;
+          document.title = `${item.title} - LeetCode Handbook`;
           
           // Navigate to new problem with controlled timing
           setTimeout(() => {
@@ -1020,7 +1027,7 @@
             </div>
           `;
           
-          document.title = `${item.title} - LeetCode Prep`;
+          document.title = `${item.title} - LeetCode Handbook`;
           
           // Update breadcrumbs immediately since we're bypassing showMobileView
           setTimeout(() => {
@@ -1123,7 +1130,7 @@
             <p><a href="#" onclick="mobileRouter.navigate(currentListSlug)">← Back to Problems</a></p>
           </div>
         `;
-        document.title = 'File Not Found - LeetCode Prep';
+        document.title = 'File Not Found - LeetCode Handbook';
       }
     }
     
@@ -1397,7 +1404,7 @@
           </div>
         `;
         
-        document.title = `${newProblem.title} - LeetCode Prep`;
+        document.title = `${newProblem.title} - LeetCode Handbook`;
         
         // Update breadcrumbs immediately since we're bypassing showMobileView
         setTimeout(() => {
@@ -1439,7 +1446,7 @@
         </div>
       `;
       
-      document.title = `${firstProblem.title} - LeetCode Prep`;
+      document.title = `${firstProblem.title} - LeetCode Handbook`;
       
       // Update breadcrumbs immediately
       setTimeout(() => {
@@ -1481,7 +1488,7 @@
         </div>
       `;
       
-      document.title = `${randomProblem.title} - LeetCode Prep`;
+      document.title = `${randomProblem.title} - LeetCode Handbook`;
       
       // Update breadcrumbs immediately
       setTimeout(() => {
@@ -1736,7 +1743,7 @@
     
     // Open mobile feedback (matching desktop version)
     function openMobileFeedback() {
-      let pageTitle = document.title.replace(' - LeetCode Prep', '');
+      let pageTitle = document.title.replace(' - LeetCode Handbook', '');
       let pageUrl = window.location.href;
       let body = `**Feedback for:** ${pageTitle}\n\n**Page:** ${pageUrl}\n\n**Feedback:**\n`;
       let issueUrl =
