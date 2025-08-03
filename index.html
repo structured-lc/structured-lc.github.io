@@ -914,6 +914,9 @@
           
           document.title = `${item.title} - LeetCode Prep`;
           
+          // Mark as navigating to prevent double loading animation
+          mobileRouter.isNavigating = true;
+          
           // Navigate to new problem with controlled timing
           setTimeout(() => {
             mobileRouter.navigate(currentListSlug, item.slug);
@@ -1091,6 +1094,9 @@
         `;
         
         document.title = `${newProblem.title} - LeetCode Prep`;
+        
+        // Mark as navigating to prevent double loading animation
+        mobileRouter.isNavigating = true;
         
         // Navigate to new problem with controlled timing
         setTimeout(() => {
