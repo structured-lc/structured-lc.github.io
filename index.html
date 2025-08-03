@@ -633,6 +633,17 @@
       const listsList = document.getElementById('mobile-lists-list');
       listsList.innerHTML = '';
       
+      // Add welcome message box at the top
+      const welcomeDiv = document.createElement('div');
+      welcomeDiv.className = 'mobile-list-actions mobile-welcome-message';
+      welcomeDiv.innerHTML = `
+        <div style="text-align: center; color: #64748b; font-size: 14px; font-weight: 500; line-height: 1.4; width: 100%;">
+          🚀 Ready To Level Up Your Coding Skills?<br>
+          <span style="color: #1e293b; font-weight: 600;">Choose A Problem Set Below To Begin Your Journey!</span>
+        </div>
+      `;
+      listsList.appendChild(welcomeDiv);
+      
       // Load problem counts and difficulty distributions for all lists first
       const listsWithCounts = await Promise.all(
         currentLists.map(async (list) => {
@@ -690,6 +701,17 @@
     async function renderMobileListsNoAnimation() {
       const listsList = document.getElementById('mobile-lists-list');
       listsList.innerHTML = '';
+      
+      // Add welcome message box at the top
+      const welcomeDiv = document.createElement('div');
+      welcomeDiv.className = 'mobile-list-actions mobile-welcome-message';
+      welcomeDiv.innerHTML = `
+        <div style="text-align: center; color: #64748b; font-size: 14px; font-weight: 500; line-height: 1.4; width: 100%;">
+          🚀 Ready To Level Up Your Coding Skills?<br>
+          <span style="color: #1e293b; font-weight: 600;">Choose A Problem Set Below To Begin Your Journey!</span>
+        </div>
+      `;
+      listsList.appendChild(welcomeDiv);
       
       // Load problem counts and difficulty distributions for all lists first
       const listsWithCounts = await Promise.all(
@@ -869,6 +891,19 @@
       const fileList = document.getElementById('mobile-file-list');
       fileList.innerHTML = '';
       
+      // Add quick action buttons at the top
+      const actionsDiv = document.createElement('div');
+      actionsDiv.className = 'mobile-list-actions';
+      actionsDiv.innerHTML = `
+        <button class="mobile-action-button mobile-start-button" onclick="startMobileList()">
+          <span>▶️</span> Start
+        </button>
+        <button class="mobile-action-button mobile-random-button" onclick="pickRandomMobileProblem()">
+          <span>🎲</span> Random
+        </button>
+      `;
+      fileList.appendChild(actionsDiv);
+      
       currentListData.forEach(item => {
         const li = document.createElement('li');
         const a = document.createElement('a');
@@ -933,6 +968,19 @@
         `;
         return;
       }
+      
+      // Add quick action buttons at the top
+      const actionsDiv = document.createElement('div');
+      actionsDiv.className = 'mobile-list-actions';
+      actionsDiv.innerHTML = `
+        <button class="mobile-action-button mobile-start-button" onclick="startMobileList()">
+          <span>▶️</span> Start
+        </button>
+        <button class="mobile-action-button mobile-random-button" onclick="pickRandomMobileProblem()">
+          <span>🎲</span> Random
+        </button>
+      `;
+      fileList.appendChild(actionsDiv);
       
       currentListData.forEach((item, index) => {
         
@@ -1361,6 +1409,89 @@
           mobileRouter.navigate(currentListSlug, newProblem.slug);
         }, 300);
       }
+    }
+    
+    // Start from the first problem in the list
+    function startMobileList() {
+      if (!currentListData || currentListData.length === 0) return;
+      
+      const firstProblem = currentListData[0];
+      
+      // Mark as navigating to prevent router's loading animation
+      mobileRouter.isNavigating = true;
+      
+      // Immediately switch to content view and show content loading
+      currentView = 'content';
+      
+      // Show content view without animation to avoid conflicts with loading spinner
+      document.querySelectorAll('.mobile-view').forEach(view => {
+        view.style.display = 'none';
+      });
+      document.getElementById('mobile-content-view').style.display = 'block';
+      
+      // Show loading animation
+      document.getElementById('mobile-content').innerHTML = `
+        <div class="mobile-content-inner">
+          <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
+            <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>
+            <p style="margin: 0; font-size: 0.95rem;">Starting From First Problem...</p>
+          </div>
+        </div>
+      `;
+      
+      document.title = `${firstProblem.title} - LeetCode Prep`;
+      
+      // Update breadcrumbs immediately
+      setTimeout(() => {
+        updateMobileBreadcrumb();
+      }, 0);
+      
+      // Navigate to first problem with controlled timing
+      setTimeout(() => {
+        mobileRouter.navigate(currentListSlug, firstProblem.slug);
+      }, 300);
+    }
+    
+    // Pick a random problem from the list
+    function pickRandomMobileProblem() {
+      if (!currentListData || currentListData.length === 0) return;
+      
+      const randomIndex = Math.floor(Math.random() * currentListData.length);
+      const randomProblem = currentListData[randomIndex];
+      
+      // Mark as navigating to prevent router's loading animation
+      mobileRouter.isNavigating = true;
+      
+      // Immediately switch to content view and show content loading
+      currentView = 'content';
+      
+      // Show content view without animation to avoid conflicts with loading spinner
+      document.querySelectorAll('.mobile-view').forEach(view => {
+        view.style.display = 'none';
+      });
+      document.getElementById('mobile-content-view').style.display = 'block';
+      
+      // Show loading animation
+      document.getElementById('mobile-content').innerHTML = `
+        <div class="mobile-content-inner">
+          <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
+            <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">🎲</div>
+            <p style="margin: 0; font-size: 0.95rem;">Picking Random Problem...</p>
+          </div>
+        </div>
+      `;
+      
+      document.title = `${randomProblem.title} - LeetCode Prep`;
+      
+      // Update breadcrumbs immediately
+      setTimeout(() => {
+        updateMobileBreadcrumb();
+      }, 0);
+      
+      // Navigate to random problem with controlled timing
+      setTimeout(() => {
+        mobileRouter.navigate(currentListSlug, randomProblem.slug);
+      }, 300);
     }
     
     // Mobile event handlers
