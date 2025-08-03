@@ -1031,9 +1031,11 @@
             setupMobileNavigationListeners();
             
             document.querySelectorAll('pre code').forEach((block) => {
-              // Convert 4-space indentation to 2-space for better mobile readability
+              // Convert 4-space indentation to 3-space for better mobile readability
               optimizeMobileCodeIndentation(block);
               hljs.highlightElement(block);
+              // Add individual code controls above each code block
+              addCodeBlockControls(block.parentElement);
             });
             
             document.getElementById('mobile-content').scrollTop = 0;
@@ -1086,18 +1088,19 @@
       
       let code = codeBlock.textContent;
       
-      // Convert 4-space indentation to 2-space indentation
+      // Convert 4-space indentation to 3-space indentation
       // This handles multiple levels of indentation properly
       const lines = code.split('\n');
       const optimizedLines = lines.map(line => {
         // Count leading spaces
         const leadingSpaces = line.match(/^( *)/)[1].length;
         
-        // If we have 4 or more leading spaces, convert every 4 spaces to 2
+        // If we have 4 or more leading spaces, convert every 4 spaces to 3
         if (leadingSpaces >= 4) {
           const indentLevel = Math.floor(leadingSpaces / 4);
           const remainderSpaces = leadingSpaces % 4;
-          const newIndent = '  '.repeat(indentLevel) + ' '.repeat(remainderSpaces);
+          // Use 3 spaces per indent level, preserve remainder
+          const newIndent = '   '.repeat(indentLevel) + ' '.repeat(remainderSpaces);
           return newIndent + line.trimStart();
         }
         
@@ -1178,6 +1181,151 @@
       if (nextBtn) {
         nextBtn.onclick = () => navigateToMobileAdjacentProblem(1);
       }
+    }
+    
+    // Add individual code controls above each code block
+    function addCodeBlockControls(preElement) {
+      if (!preElement || preElement.querySelector('.code-control-added')) return;
+      
+      // Mark as processed to avoid duplicates
+      preElement.classList.add('code-control-added');
+      
+      // Find the preceding heading (h3 with "Solution")
+      let headingElement = preElement.previousElementSibling;
+      while (headingElement && headingElement.tagName !== 'H3') {
+        headingElement = headingElement.previousElementSibling;
+      }
+      
+      // Only add controls if we found a "Solution" heading
+      if (!headingElement || !headingElement.textContent.toLowerCase().includes('solution')) {
+        return;
+      }
+      
+      // Check if controls already added to this heading
+      if (headingElement.querySelector('.code-control-inline')) {
+        return;
+      }
+      
+      // Default values for this code block
+      let currentSize = 13; // px - combined font size and line height adjustment
+      
+      // Create control element
+      const controlsSpan = document.createElement('span');
+      controlsSpan.className = 'code-control-inline';
+      controlsSpan.innerHTML = `
+        <button class="code-control-btn code-minus">−</button>
+        <button class="code-control-btn code-plus">+</button>
+      `;
+      
+      // Style the controls container
+      controlsSpan.style.cssText = `
+        float: right;
+        display: inline-flex;
+        align-items: flex-end;
+        gap: 2px;
+        margin-left: 10px;
+        vertical-align: bottom;
+      `;
+      
+      // Style individual buttons
+      const buttons = controlsSpan.querySelectorAll('.code-control-btn');
+      buttons.forEach(btn => {
+        btn.style.cssText = `
+          background: #6f42c1;
+          color: white;
+          border: none;
+          padding: 1px 6px;
+          border-radius: 2px;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 11px;
+          line-height: 1;
+          min-width: 18px;
+          height: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.2s ease;
+          user-select: none;
+        `;
+      });
+      
+      // Update code block styles
+      function updateCodeBlock() {
+        const fontSize = currentSize;
+        const lineHeight = 1.2 + (currentSize - 10) * 0.03; // Dynamic line height
+        
+        preElement.style.fontSize = `${fontSize}px`;
+        preElement.style.lineHeight = lineHeight.toString();
+        
+        // Update button states
+        const minusBtn = controlsSpan.querySelector('.code-minus');
+        const plusBtn = controlsSpan.querySelector('.code-plus');
+        
+        if (minusBtn) {
+          minusBtn.disabled = currentSize <= 10;
+          minusBtn.style.opacity = currentSize <= 10 ? '0.5' : '1';
+          minusBtn.style.cursor = currentSize <= 10 ? 'not-allowed' : 'pointer';
+        }
+        
+        if (plusBtn) {
+          plusBtn.disabled = currentSize >= 18;
+          plusBtn.style.opacity = currentSize >= 18 ? '0.5' : '1';
+          plusBtn.style.cursor = currentSize >= 18 ? 'not-allowed' : 'pointer';
+        }
+      }
+      
+      // Add event listeners
+      const minusBtn = controlsSpan.querySelector('.code-minus');
+      const plusBtn = controlsSpan.querySelector('.code-plus');
+      
+      if (minusBtn) {
+        minusBtn.addEventListener('click', () => {
+          if (currentSize > 10) {
+            currentSize--;
+            updateCodeBlock();
+          }
+        });
+        
+        minusBtn.addEventListener('mouseenter', () => {
+          if (!minusBtn.disabled) {
+            minusBtn.style.transform = 'scale(1.1)';
+            minusBtn.style.background = '#5a2d8f';
+          }
+        });
+        
+        minusBtn.addEventListener('mouseleave', () => {
+          minusBtn.style.transform = 'scale(1)';
+          minusBtn.style.background = '#6f42c1';
+        });
+      }
+      
+      if (plusBtn) {
+        plusBtn.addEventListener('click', () => {
+          if (currentSize < 18) {
+            currentSize++;
+            updateCodeBlock();
+          }
+        });
+        
+        plusBtn.addEventListener('mouseenter', () => {
+          if (!plusBtn.disabled) {
+            plusBtn.style.transform = 'scale(1.1)';
+            plusBtn.style.background = '#5a2d8f';
+          }
+        });
+        
+        plusBtn.addEventListener('mouseleave', () => {
+          plusBtn.style.transform = 'scale(1)';
+          plusBtn.style.background = '#6f42c1';
+        });
+      }
+      
+      // Append controls to the heading
+      headingElement.appendChild(controlsSpan);
+      
+      // Initialize with current values
+      updateCodeBlock();
     }
     
     // Navigate to adjacent problem (with loading animation)

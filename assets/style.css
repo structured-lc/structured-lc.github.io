@@ -266,6 +266,17 @@ html, body {
   padding: 0.25em 0;
 }
 
+/* Inline Code Controls (within headings) */
+.code-control-inline {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  vertical-align: bottom;
+}
+
+.code-control-inline:hover {
+  opacity: 1;
+}
+
 /* Removed duplicate rule - consolidated above */
 
 /* Mobile Content Area */
@@ -736,15 +747,15 @@ html, body {
   background: #f6f8fa;
   border: 1px solid #d0d7de;
   border-radius: 8px;
-  padding: 16px;
+  padding: 14px;
   overflow-x: auto;
   margin: 16px 0;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 13px;
+  line-height: 1.45;
   /* Mobile code optimizations */
-  tab-size: 2;
-  -moz-tab-size: 2;
-  -webkit-tab-size: 2;
+  tab-size: 3;
+  -moz-tab-size: 3;
+  -webkit-tab-size: 3;
   white-space: pre;
   word-wrap: break-word;
   /* Improved scrolling on mobile */
@@ -856,12 +867,12 @@ html, body {
 .mobile-content-inner pre code {
   background: none;
   padding: 0;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 13px;
+  line-height: 1.45;
   /* Mobile code optimizations */
-  tab-size: 2;
-  -moz-tab-size: 2;
-  -webkit-tab-size: 2;
+  tab-size: 3;
+  -moz-tab-size: 3;
+  -webkit-tab-size: 3;
   white-space: pre;
   /* Improved font for mobile readability */
   font-family: 'Fira Code', 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
@@ -1228,15 +1239,15 @@ html, body {
 /* Extra small mobile devices */
 @media (max-width: 360px) {
   .mobile-content-inner pre {
-    font-size: 13px;
+    font-size: 12px;
     padding: 12px;
     line-height: 1.4;
-    tab-size: 2;
+    tab-size: 3;
     margin: 12px 0;
   }
   
   .mobile-content-inner pre code {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.4;
   }
   
@@ -1248,15 +1259,15 @@ html, body {
 /* Small mobile devices */
 @media (max-width: 480px) {
   .mobile-content-inner pre {
-    font-size: 13px;
-    padding: 14px;
-    line-height: 1.45;
-    tab-size: 2;
+    font-size: 12px;
+    padding: 13px;
+    line-height: 1.42;
+    tab-size: 3;
   }
   
   .mobile-content-inner pre code {
-    font-size: 13px;
-    line-height: 1.45;
+    font-size: 12px;
+    line-height: 1.42;
   }
 }
 
@@ -1271,14 +1282,14 @@ html, body {
   }
   
   .mobile-content-inner pre {
-    font-size: 14px;
-    padding: 16px;
-    line-height: 1.5;
+    font-size: 13px;
+    padding: 14px;
+    line-height: 1.45;
   }
   
   .mobile-content-inner pre code {
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 13px;
+    line-height: 1.45;
   }
 }
 
@@ -1384,27 +1395,29 @@ html, body {
   .mobile-content-inner code {
     background: #0d1117 !important;
     color: #e6edf3 !important;
-    font-size: 14px;
-    tab-size: 2;
-    -moz-tab-size: 2;
-    -webkit-tab-size: 2;
+    font-size: 13px;
+    tab-size: 3;
+    -moz-tab-size: 3;
+    -webkit-tab-size: 3;
   }
   
   .mobile-content-inner pre {
     background: #0d1117 !important;
     border-color: #30363d !important;
-    font-size: 14px;
-    padding: 16px;
-    tab-size: 2;
-    -moz-tab-size: 2;
-    -webkit-tab-size: 2;
-    line-height: 1.5;
+    font-size: 13px;
+    padding: 14px;
+    tab-size: 3;
+    -moz-tab-size: 3;
+    -webkit-tab-size: 3;
+    line-height: 1.45;
   }
   
   .mobile-author-footnote {
     border-color: #30363d !important;
     color: #8b949e !important;
   }
+  
+  /* Code Block Controls Dark Mode - individual controls are styled inline */
 }
 
 /* Mobile Content Animation Classes */
