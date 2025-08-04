@@ -1080,6 +1080,7 @@
             `;
             
             addMobileDifficultyBadges();
+            hidePracticeLinksForPrint();
             setupMobileNavigationListeners();
             
             document.querySelectorAll('pre code').forEach((block) => {
@@ -1194,21 +1195,25 @@
       );
       
       const prevButton = currentIndex > 0 ? 
-        `<button id="mobile-prev-btn" style="background: #6f42c1; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; gap: 4px; transition: all 0.2s ease;" onmouseover="this.style.background='#5a2d8f'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#6f42c1'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'"><span style="display: inline-flex; align-items: center;">← Prev</span></button>` :
-        `<button disabled style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 0.2em 0.5em; border-radius: 3px; cursor: not-allowed; font-weight: 500; font-size: 0.65em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle;"><span style="display: inline-flex; align-items: center;">← Prev</span></button>`;
+        `<button id="mobile-prev-btn" style="background: #6f42c1; color: white; border: none; padding: 0.15em 0.4em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.6em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; gap: 3px; transition: all 0.2s ease;" onmouseover="this.style.background='#5a2d8f'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#6f42c1'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'"><span style="display: inline-flex; align-items: center;">← Prev</span></button>` :
+        `<button disabled style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 0.15em 0.4em; border-radius: 3px; cursor: not-allowed; font-weight: 500; font-size: 0.6em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle;"><span style="display: inline-flex; align-items: center;">← Prev</span></button>`;
       
       const nextButton = currentIndex < currentListData.length - 1 ?
-        `<button id="mobile-next-btn" style="background: #6f42c1; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; gap: 4px; transition: all 0.2s ease;" onmouseover="this.style.background='#5a2d8f'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#6f42c1'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'"><span style="display: inline-flex; align-items: center;">Next →</span></button>` :
-        `<button disabled style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 0.2em 0.5em; border-radius: 3px; cursor: not-allowed; font-weight: 500; font-size: 0.65em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle;"><span style="display: inline-flex; align-items: center;">Next →</span></button>`;
+        `<button id="mobile-next-btn" style="background: #6f42c1; color: white; border: none; padding: 0.15em 0.4em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.6em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; gap: 3px; transition: all 0.2s ease;" onmouseover="this.style.background='#5a2d8f'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#6f42c1'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'"><span style="display: inline-flex; align-items: center;">Next →</span></button>` :
+        `<button disabled style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 0.15em 0.4em; border-radius: 3px; cursor: not-allowed; font-weight: 500; font-size: 0.6em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle;"><span style="display: inline-flex; align-items: center;">Next →</span></button>`;
       
       return {
         top: `
           <div class="mobile-action-buttons">
-            ${prevButton}
-            <span style="color: #656d76; font-size: 0.7em; margin: 0 0.5em;">${currentIndex + 1} of ${currentListData.length}</span>
-            ${nextButton}
-            <button id="mobile-random-btn" style="background: #8b5cf6; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; margin-left: 0.5em; gap: 4px; transition: all 0.2s ease;" onmouseover="this.style.background='#7c3aed'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#8b5cf6'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'"><span style="display: inline-flex; align-items: center;">🎲 Random</span></button>
-            <button id="mobile-print-btn" onclick="window.print()" style="background: #0969da; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; margin-left: 0.5em; gap: 4px; transition: all 0.2s ease;" onmouseover="this.style.background='#0550ae'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#0969da'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'">🖨️ Print</button>
+            <div style="display: flex; align-items: center; gap: 6px;">
+              ${prevButton}
+              <span style="color: #656d76; font-size: 0.7em; margin: 0 0.3em;">${currentIndex + 1} of ${currentListData.length}</span>
+              ${nextButton}
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <button id="mobile-random-btn" style="background: #f59e0b; color: white; border: none; padding: 0.15em 0.4em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.6em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; gap: 3px; transition: all 0.2s ease;" onmouseover="this.style.background='#d97706'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#f59e0b'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'"><span style="display: inline-flex; align-items: center;">🎲 Random</span></button>
+              <button id="mobile-print-btn" onclick="window.print()" style="background: #0969da; color: white; border: none; padding: 0.15em 0.4em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.6em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; gap: 3px; transition: all 0.2s ease;" onmouseover="this.style.background='#0550ae'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#0969da'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'">🖨️ Print</button>
+            </div>
           </div>
         `
       };
@@ -1219,6 +1224,16 @@
       document.querySelectorAll('.difficulty-badge').forEach(badge => {
         const difficulty = badge.textContent.toLowerCase();
         badge.classList.add(difficulty);
+      });
+    }
+    
+    // Hide Practice links for printing
+    function hidePracticeLinksForPrint() {
+      // Find all links that contain "Practice" text and point to leetcode.com
+      document.querySelectorAll('a[href*="leetcode.com/problems"]').forEach(link => {
+        if (link.textContent.trim().toLowerCase().includes('practice')) {
+          link.classList.add('practice-link');
+        }
       });
     }
     
