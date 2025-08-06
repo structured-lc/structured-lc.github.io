@@ -14,6 +14,53 @@
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    /* Ensure proper layout switching */
+    .desktop-layout { display: none !important; }
+    .mobile-layout { display: flex !important; }
+    
+    @media (min-width: 1024px) {
+      .desktop-layout { display: flex !important; }
+      .mobile-layout { display: none !important; }
+      #mobile-ribbon { display: none !important; }
+    }
+    
+    /* Fade-in animation for desktop content */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .desktop-content-inner.fade-in {
+      animation: fadeInUp 0.4s ease-out;
+    }
+    
+    /* Fade-in animation for desktop lists and problems */
+    #desktop-lists-sidebar.fade-in {
+      animation: fadeInUp 0.4s ease-out;
+    }
+    
+    #desktop-problems-sidebar.fade-in {
+      animation: fadeInUp 0.4s ease-out;
+    }
+    
+    /* Smooth scrolling for sidebar containers */
+    #desktop-lists-sidebar, #desktop-problems-sidebar {
+      scroll-behavior: smooth;
+    }
+    
+    /* Custom scrolling timing for smoother animations */
+    #desktop-file-list li, #desktop-lists-list li {
+      scroll-margin-top: 20px;
+      scroll-margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
   <!-- Mobile Ribbon/Topbar -->
@@ -32,8 +79,52 @@
     </div>
   </div>
 
+  <!-- Desktop Layout Container -->
+  <div id="desktop-container" class="desktop-layout">
+    <!-- Desktop Header/Ribbon -->
+    <div id="desktop-ribbon">
+      <a href="#" id="desktop-home-btn" class="desktop-nav-btn">
+        <span class="btn-icon">🏠</span><span class="btn-text"> Home</span>
+      </a>
+      <span id="desktop-ribbon-title">LEETCODE HANDBOOK</span>
+      <div id="desktop-ribbon-actions">
+        <button id="desktop-search-btn" class="desktop-nav-btn"><span class="btn-icon">🔍</span><span class="btn-text"> Search</span></button>
+        <button id="desktop-settings-btn" class="desktop-nav-btn"><span class="btn-icon">⚙️</span><span class="btn-text"> Settings</span></button>
+      </div>
+    </div>
+    
+    <!-- Desktop 3-Column Layout -->
+    <nav id="desktop-lists-sidebar" class="desktop-sidebar">
+      <ul id="desktop-lists-list"></ul>
+    </nav>
+    
+    <nav id="desktop-problems-sidebar" class="desktop-sidebar">
+      <ul id="desktop-file-list"></ul>
+    </nav>
+    
+    <main id="desktop-content" class="desktop-main">
+      <div class="desktop-content-inner" id="desktop-default-content">
+        <div id="landing-content">
+          <!-- Fallback content in case JS fails -->
+          <div style="max-width: 700px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
+            <h1 style="font-size: 2.8rem; font-weight: 700; color: #1a202c; margin-bottom: 1rem;">
+              LeetCode Handbook
+            </h1>
+            <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 3rem; line-height: 1.6;">
+              Your comprehensive guide to coding interview preparation
+            </p>
+            <div style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; border-radius: 12px; padding: 2rem;">
+              <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">Loading...</h3>
+              <p style="font-size: 1rem; opacity: 0.9; margin-bottom: 0;">Please wait while the application loads</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
   <!-- Mobile Container -->
-  <div id="mobile-container">
+  <div id="mobile-container" class="mobile-layout">
     <!-- Mobile Breadcrumb Navigation -->
     <div class="mobile-breadcrumb-nav" id="mobile-breadcrumb-nav" style="display: none;">
       <div class="mobile-breadcrumb">
@@ -132,6 +223,60 @@
     </div>
   </div>
 
+  <!-- Desktop Search Modal -->
+  <div id="desktop-search-modal" class="desktop-modal">
+    <div class="desktop-modal-content">
+      <div class="desktop-modal-header">
+        <h3>🔍 Search Problems</h3>
+        <span class="desktop-close-btn" onclick="closeDesktopSearchModal()">&times;</span>
+      </div>
+      <div class="desktop-modal-body">
+        <input type="text" id="desktop-search-input" placeholder="Search problems by title, number, or difficulty... (Ctrl+K)" autocomplete="off">
+        <div class="desktop-search-filters">
+          <label><input type="checkbox" id="desktop-filter-easy" checked> Easy</label>
+          <label><input type="checkbox" id="desktop-filter-medium" checked> Medium</label>
+          <label><input type="checkbox" id="desktop-filter-hard" checked> Hard</label>
+        </div>
+        <div id="desktop-search-results"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desktop Settings Modal -->
+  <div id="desktop-settings-modal" class="desktop-modal">
+    <div class="desktop-modal-content">
+      <div class="desktop-modal-header">
+        <h3>⚙️ Settings</h3>
+        <span class="desktop-close-btn" onclick="closeDesktopSettingsModal()">&times;</span>
+      </div>
+      <div class="desktop-modal-body">
+        <div class="desktop-setting-item">
+          <label for="desktop-theme-toggle">Theme:</label>
+          <select id="desktop-theme-toggle">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="auto">Auto</option>
+          </select>
+        </div>
+        <div class="desktop-setting-item">
+          <label for="desktop-font-size">Font Size:</label>
+          <select id="desktop-font-size">
+            <option value="small">Small</option>
+            <option value="normal" selected>Normal</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="desktop-setting-item">
+          <label for="desktop-layout-density">Layout Density:</label>
+          <select id="desktop-layout-density">
+            <option value="comfortable" selected>Comfortable</option>
+            <option value="compact">Compact</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Feedback FAB -->
   <button id="mobile-feedback-fab" class="mobile-feedback-fab">
     <span>💬</span>
@@ -143,6 +288,304 @@
   </button>
 
   <script>
+    // Global variable for desktop router state
+    let desktopRouterInitialized = false;
+    
+    // Desktop Router - simplified to follow mobile router pattern exactly
+    const desktopRouter = {
+      isNavigating: false,
+      
+      init() {
+        console.log('Initializing desktop router');
+        
+        window.addEventListener('hashchange', () => {
+          // Only handle hash changes on desktop and if not currently navigating
+          if (window.innerWidth >= 1024 && !this.isNavigating) {
+            console.log('Desktop hashchange detected');
+            this.handleRoute();
+          }
+        });
+        
+        // Initial route handling
+        this.handleRoute();
+      },
+      
+      parseHash() {
+        const hash = window.location.hash.substring(1);
+        if (!hash) return { listSlug: null, problemSlug: null };
+        
+        const parts = hash.split('/');
+        return {
+          listSlug: parts[0] || null,
+          problemSlug: parts[1] || null
+        };
+      },
+      
+      navigate(listSlug = '', problemSlug = '') {
+        const newHash = listSlug ? 
+          (problemSlug ? `#${listSlug}/${problemSlug}` : `#${listSlug}`) : 
+          '';
+        
+        this.isNavigating = true;
+        
+        if (window.location.hash !== newHash) {
+          window.location.hash = newHash;
+        } else {
+          this.handleRoute();
+        }
+      },
+      
+      async handleRoute() {
+        const { listSlug, problemSlug } = this.parseHash();
+        console.log('Desktop router handling:', listSlug, problemSlug);
+        
+        try {
+          if (!listSlug && !problemSlug) {
+            // Home view
+            await this.showWelcome();
+          } else if (listSlug && !problemSlug) {
+            // List view
+            await this.showList(listSlug);
+          } else if (listSlug && problemSlug) {
+            // Problem view
+            await this.showProblem(listSlug, problemSlug);
+          }
+        } catch (error) {
+          console.error('Desktop route handling error:', error);
+          showErrorHomePage('Navigation Error: ' + error.message);
+        }
+        
+        // Reset navigation flag
+        setTimeout(() => {
+          this.isNavigating = false;
+        }, 100);
+      },
+      
+      async showWelcome() {
+        console.log('Desktop router: showing home');
+        
+        // INSTANT C1 scroll reset - before clearing states
+        const c1Container = document.getElementById('desktop-lists-sidebar');
+        if (c1Container) {
+          // Store original scroll behavior
+          const originalScrollBehavior = c1Container.style.scrollBehavior;
+          // Disable smooth scrolling temporarily for instant reset
+          c1Container.style.scrollBehavior = 'auto';
+          c1Container.scrollTop = 0;
+          // Restore original scroll behavior after reset
+          setTimeout(() => {
+            c1Container.style.scrollBehavior = originalScrollBehavior;
+          }, 0);
+        }
+        
+        // Clear all active states
+        document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
+        document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
+        document.getElementById('desktop-file-list').innerHTML = '';
+        
+        // Clear state
+        currentListSlug = '';
+        currentListData = [];
+        currentDesktopList = null;
+        
+        // Show home content
+        showHomeLandingPage();
+        document.title = 'LeetCode Handbook';
+      },
+      
+      async showList(listSlug) {
+        console.log('Desktop router: showing list', listSlug);
+        
+        const fileName = slugToFileMap[listSlug];
+        if (!fileName) {
+          throw new Error(`List "${listSlug}" not found`);
+        }
+        
+        // Show loading animation in C3 immediately
+        showDesktopLoadingAnimation('content');
+        
+        // INSTANT C2 scroll reset - before any content changes
+        const c2Container = document.getElementById('desktop-problems-sidebar');
+        if (c2Container) {
+          // Store original scroll behavior
+          const originalScrollBehavior = c2Container.style.scrollBehavior;
+          // Disable smooth scrolling temporarily for instant reset
+          c2Container.style.scrollBehavior = 'auto';
+          c2Container.scrollTop = 0;
+          // Restore original scroll behavior after reset
+          setTimeout(() => {
+            c2Container.style.scrollBehavior = originalScrollBehavior;
+          }, 0);
+        }
+        
+        // Find and activate the list
+        const listLinks = document.querySelectorAll('#desktop-lists-list a[href="#' + listSlug + '"]');
+        if (listLinks.length > 0) {
+          // Clear previous selections
+          document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
+          document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
+          
+          // Activate the list
+          const listItem = listLinks[0].closest('li');
+          listItem.classList.add('active');
+          scrollToActiveList();
+        }
+        
+        // Update state
+        currentDesktopList = listSlug;
+        currentListSlug = listSlug;
+        
+        // Load the problems in background while showing loading animation
+        const listData = await renderDesktopProblems(listSlug, false); // false = don't show landing page yet
+        
+        // Ensure minimum 0.5s loading time for C3, then show the landing page
+        const minLoadTime = 500; // 0.5 seconds
+        await Promise.all([
+          new Promise(resolve => setTimeout(resolve, minLoadTime)),
+          Promise.resolve() // The data is already loaded above
+        ]);
+        
+        // Now show the landing page after the minimum loading time
+        if (listData && listData.length > 0) {
+          await showListLandingPage(listSlug, listData);
+        }
+        
+        const listInfo = currentLists.find(l => l.file === fileName);
+        document.title = `${listInfo ? listInfo.name : 'Problem List'} - LeetCode Handbook`;
+      },
+      
+      async showProblem(listSlug, problemSlug) {
+        console.log('Desktop router: showing problem', listSlug, problemSlug);
+        
+        const fileName = slugToFileMap[listSlug];
+        if (!fileName) {
+          throw new Error(`List "${listSlug}" not found`);
+        }
+        
+        // Find and activate the list first
+        const listLinks = document.querySelectorAll('#desktop-lists-list a[href="#' + listSlug + '"]');
+        if (listLinks.length > 0) {
+          document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
+          const listItem = listLinks[0].closest('li');
+          listItem.classList.add('active');
+          scrollToActiveList();
+        }
+        
+        // Load list data dynamically just like mobile router - no complex state management
+        let listData = [];
+        if (currentListSlug !== listSlug || currentListData.length === 0) {
+          console.log('Loading fresh list data for:', fileName);
+          try {
+            const response = await fetch(`data/${fileName}`);
+            if (!response.ok) {
+              throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+            listData = await response.json();
+            
+            // Ensure all problems have slugs
+            listData.forEach(problem => {
+              if (!problem.slug) {
+                problem.slug = createSlug(problem.title);
+              }
+            });
+            
+            // Update global state only after successful loading
+            currentListData = listData;
+            currentListSlug = listSlug;
+            currentDesktopList = listSlug;
+            
+            console.log('Loaded', listData.length, 'problems from', fileName);
+          } catch (error) {
+            console.error('Failed to load list data:', error);
+            throw new Error(`Failed to load list "${listSlug}"`);
+          }
+        } else {
+          // Use existing data
+          listData = currentListData;
+          console.log('Using existing list data:', listData.length, 'problems');
+        }
+        
+        // CRITICAL FIX: Always ensure C2 shows the correct list BEFORE trying to highlight the problem
+        // This fixes back button navigation where C2 might contain the wrong list
+        const fileList = document.getElementById('desktop-file-list');
+        
+        // More robust check: always verify the actual content of C2 matches the expected list
+        const firstProblemLink = fileList.querySelector('a[href^="#' + listSlug + '/"]');
+        const hasCorrectListContent = firstProblemLink !== null;
+        
+        if (currentListSlug !== listSlug || !fileList.hasChildNodes() || !hasCorrectListContent) {
+          console.log('Desktop router: C2 needs refresh - currentListSlug:', currentListSlug, 'expected:', listSlug, 'hasContent:', fileList.hasChildNodes(), 'hasCorrectContent:', hasCorrectListContent);
+          await renderDesktopProblems(listSlug, false);
+        }
+        
+        // Find the problem in the data (after ensuring we have the correct list loaded)
+        const problem = listData.find(p => p.slug === problemSlug);
+        if (!problem) {
+          throw new Error(`Problem "${problemSlug}" not found in list "${listSlug}"`);
+        }
+        
+        // Activate the problem in C2
+        const problemLinks = document.querySelectorAll('#desktop-file-list a[href*="/' + problemSlug + '"]');
+        if (problemLinks.length > 0) {
+          document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
+          const problemItem = problemLinks[0].closest('li');
+          problemItem.classList.add('active');
+          scrollToActiveProblem({ delay: 100, behavior: 'smooth' });
+        }
+        
+        // Load the problem content in C3
+        document.title = `${problem.title} - LeetCode Handbook`;
+        loadDesktopProblemContent(listSlug, problemSlug, problem.number || problem.id);
+      }
+    };
+    
+    // IMMEDIATE HOME PAGE INITIALIZATION - Run as soon as possible
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('DOM loaded - attempting immediate home page display');
+      if (window.innerWidth >= 1024) {
+        const contentInner = document.querySelector('.desktop-content-inner');
+        if (contentInner) {
+          console.log('Desktop detected - replacing fallback content with full home page');
+          contentInner.innerHTML = `
+            <div style="max-width: 700px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
+              <h1 style="font-size: 2.8rem; font-weight: 700; color: #1a202c; margin-bottom: 1rem;">
+                LeetCode Handbook
+              </h1>
+              <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 3rem; line-height: 1.6;">
+                Your comprehensive guide to coding interview preparation
+              </p>
+              
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; text-align: left;">
+                  <div style="font-size: 2rem; margin-bottom: 1rem;">📚</div>
+                  <h3 style="font-size: 1.2rem; font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Curated Collections</h3>
+                  <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5;">Hand-picked problem sets from top companies and essential topics.</p>
+                </div>
+                
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; text-align: left;">
+                  <div style="font-size: 2rem; margin-bottom: 1rem;">⚡</div>
+                  <h3 style="font-size: 1.2rem; font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Instant Navigation</h3>
+                  <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5;">Seamless browsing with prev/next navigation and random exploration.</p>
+                </div>
+                
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; text-align: left;">
+                  <div style="font-size: 2rem; margin-bottom: 1rem;">🎯</div>
+                  <h3 style="font-size: 1.2rem; font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Focused Practice</h3>
+                  <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5;">Clean, distraction-free interface for effective problem solving.</p>
+                </div>
+              </div>
+              
+              <div style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; border-radius: 12px; padding: 2rem;">
+                <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">Get Started</h3>
+                <p style="font-size: 1rem; opacity: 0.9; margin-bottom: 0;">Choose a collection from the left sidebar to begin your journey</p>
+              </div>
+            </div>
+          `;
+          console.log('Home page content set immediately');
+        }
+      }
+    });
+    
     /*
     ===========================================
     MOBILE LEETCODE HANDBOOK APP
@@ -195,7 +638,12 @@
     // Mobile Router (adapted from desktop)
     const mobileRouter = {
       init() {
-        window.addEventListener('hashchange', () => this.handleRoute());
+        window.addEventListener('hashchange', () => {
+          // Only handle hash changes on mobile
+          if (window.innerWidth < 1024) {
+            this.handleRoute();
+          }
+        });
         this.handleRoute();
       },
       
@@ -352,14 +800,13 @@
         if (!this.isNavigating) {
           showMobileView('content');
           // Show loading animation for direct URL access
-          document.getElementById('mobile-content').innerHTML = `
-            <div class="mobile-content-inner">
-              <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-                <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>
-                <p style="margin: 0; font-size: 0.95rem;">Loading...</p>
-              </div>
-            </div>
-          `;
+          document.getElementById('mobile-content').innerHTML = 
+            '<div class="mobile-content-inner">' +
+              '<div style="text-align: center; padding: 3rem 1rem; color: #656d76;">' +
+                '<div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>' +
+                '<p style="margin: 0; font-size: 0.95rem;">Loading...</p>' +
+              '</div>' +
+            '</div>';
         } else {
           // Just ensure content view is visible without animation
           document.querySelectorAll('.mobile-view').forEach(view => {
@@ -401,14 +848,13 @@
       showError(title, message) {
         currentView = 'content';
         showMobileView('content');
-        document.getElementById('mobile-content').innerHTML = `
-          <div class="mobile-content-inner">
-            <h2>${title}</h2>
-            <p>${message}</p>
-            <p><a href="#" onclick="mobileRouter.navigate('')">← Back to Home</a></p>
-          </div>
-        `;
-        document.title = `${title} - LeetCode Handbook`;
+        document.getElementById('mobile-content').innerHTML = 
+          '<div class="mobile-content-inner">' +
+            '<h2>' + title + '</h2>' +
+            '<p>' + message + '</p>' +
+            '<p><a href="#" onclick="mobileRouter.navigate(\'\')">← Back to Home</a></p>' +
+          '</div>';
+        document.title = title + ' - LeetCode Handbook';
       }
     };
     
@@ -566,44 +1012,92 @@
     function showMobileLoadingAnimation() {
       if (currentView === 'lists' || !currentView) {
         // Home view loading
-        document.getElementById('mobile-lists-list').innerHTML = `
-          <li style="text-align: center; padding: 2rem; color: #656d76;">
-            <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>
-            <div style="font-size: 0.95rem;">Loading...</div>
-          </li>
-        `;
+        document.getElementById('mobile-lists-list').innerHTML = 
+          '<li style="text-align: center; padding: 2rem; color: #656d76;">' +
+            '<div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>' +
+            '<div style="font-size: 0.95rem;">Loading...</div>' +
+          '</li>';
       } else if (currentView === 'problems') {
         // Problems view loading
-        document.getElementById('mobile-file-list').innerHTML = `
-          <li style="text-align: center; padding: 2rem; color: #656d76;">
-            <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>
-            <div style="font-size: 0.95rem;">Loading...</div>
-          </li>
-        `;
+        document.getElementById('mobile-file-list').innerHTML = 
+          '<li style="text-align: center; padding: 2rem; color: #656d76;">' +
+            '<div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>' +
+            '<div style="font-size: 0.95rem;">Loading...</div>' +
+          '</li>';
       } else if (currentView === 'content') {
         // Content view loading
-        document.getElementById('mobile-content').innerHTML = `
-          <div class="mobile-content-inner">
-            <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-              <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>
-              <p style="margin: 0; font-size: 0.95rem;">Loading...</p>
-            </div>
-          </div>
-        `;
+        document.getElementById('mobile-content').innerHTML = 
+          '<div class="mobile-content-inner">' +
+            '<div style="text-align: center; padding: 3rem 1rem; color: #656d76;">' +
+              '<div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>' +
+              '<p style="margin: 0; font-size: 0.95rem;">Loading...</p>' +
+            '</div>' +
+          '</div>';
       }
+    }
+    
+    // Hide loading animation (simply clears content - actual content rendering happens in render functions)
+    function hideMobileLoadingAnimation() {
+      // This function is called but the actual "hiding" is done by the render functions
+      // that replace the loading content with actual content
+      // We can use this for any cleanup if needed
+    }
+    
+    // Desktop loading animations
+    function showDesktopLoadingAnimation(type = 'content') {
+      if (type === 'content') {
+        // Show loading in content area
+        const contentInner = document.querySelector('.desktop-content-inner');
+        if (contentInner) {
+          contentInner.innerHTML = 
+            '<div style="text-align: center; padding: 3rem 1rem; color: #656d76;">' +
+              '<div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>' +
+              '<p style="margin: 0; font-size: 0.95rem;">Loading content...</p>' +
+            '</div>';
+        }
+      } else if (type === 'problems') {
+        // Show loading in problems sidebar
+        const fileList = document.getElementById('desktop-file-list');
+        if (fileList) {
+          fileList.innerHTML = 
+            '<li style="text-align: center; padding: 2rem; color: #656d76;">' +
+              '<div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>' +
+              '<div style="font-size: 0.95rem;">Loading problems...</div>' +
+            '</li>';
+        }
+      } else if (type === 'lists') {
+        // Show loading in lists sidebar
+        const listsList = document.getElementById('desktop-lists-list');
+        if (listsList) {
+          listsList.innerHTML = 
+            '<li style="text-align: center; padding: 2rem; color: #656d76;">' +
+              '<div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>' +
+              '<div style="font-size: 0.95rem;">Loading lists...</div>' +
+            '</li>';
+        }
+      }
+    }
+    
+    function hideDesktopLoadingAnimation() {
+      // This function is handled by the content rendering functions
+      // but can be used for cleanup if needed
     }
     
     // Load lists (same logic as desktop)
     async function loadMobileLists() {
       try {
+        console.log('loadMobileLists: Starting to fetch data/lists.json...');
         const response = await fetch('data/lists.json');
         currentLists = await response.json();
+        console.log('loadMobileLists: Loaded', currentLists.length, 'lists from JSON');
         
         const { slugMap, fileMap } = generateSlugMappings(currentLists);
         listSlugMap = slugMap;
         slugToFileMap = fileMap;
+        console.log('loadMobileLists: Generated slug mappings. SlugMap keys:', Object.keys(listSlugMap).length);
         
         renderMobileLists();
+        console.log('loadMobileLists: Data loading complete! Lists and slug mappings are ready for desktop.');
       } catch (error) {
         console.error('Failed to load lists:', error);
         document.getElementById('mobile-lists-list').innerHTML = `
@@ -636,11 +1130,10 @@
       // Add welcome message box at the top
       const welcomeDiv = document.createElement('div');
       welcomeDiv.className = 'mobile-list-actions mobile-welcome-message';
-      welcomeDiv.innerHTML = `
-        <div style="text-align: center; color: #374151; font-size: 14px; font-weight: 500; line-height: 1.4; width: 100%;">
-          📚 Structured LeetCode Problem Collections!
-        </div>
-      `;
+      welcomeDiv.innerHTML = 
+        '<div style="text-align: center; color: #374151; font-size: 14px; font-weight: 500; line-height: 1.4; width: 100%;">' +
+          '📚 Structured LeetCode Problem Collections!' +
+        '</div>';
       listsList.appendChild(welcomeDiv);
       
       // Load problem counts and difficulty distributions for all lists first
@@ -665,24 +1158,23 @@
         
         // Create count text with elegant slash format (renderMobileLists)
         const { easy, medium, hard } = list.difficultyDistribution;
-        const compactCountText = `${list.problemCount} problems • <span style="color: #15803d; font-weight: 600;">${easy}</span>/<span style="color: #ca8a04; font-weight: 600;">${medium}</span>/<span style="color: #dc2626; font-weight: 600;">${hard}</span>`;
+        const compactCountText = list.problemCount + ' problems • <span style="color: #15803d; font-weight: 600;">' + easy + '</span>/<span style="color: #ca8a04; font-weight: 600;">' + medium + '</span>/<span style="color: #dc2626; font-weight: 600;">' + hard + '</span>';
         
-        a.href = `#${listSlug}`;
-        a.innerHTML = `
-          <div class="mobile-list-header">
-            <div class="mobile-list-content">
-              <div class="mobile-list-title-with-icon-and-dots">
-                <div class="mobile-list-icon-and-title">
-                  <span class="mobile-list-icon">${getMobileListIcon(list.name)}</span>
-                  <div class="mobile-list-title">${list.name}</div>
-                </div>
-                <div class="mobile-list-difficulty-indicators">${difficultyIndicators}</div>
-              </div>
-              <div class="mobile-list-count">${compactCountText}</div>
-              <div class="mobile-list-description">${description}</div>
-            </div>
-          </div>
-        `;
+        a.href = '#' + listSlug;
+        a.innerHTML = 
+          '<div class="mobile-list-header">' +
+            '<div class="mobile-list-content">' +
+              '<div class="mobile-list-title-with-icon-and-dots">' +
+                '<div class="mobile-list-icon-and-title">' +
+                  '<span class="mobile-list-icon">' + getMobileListIcon(list.name) + '</span>' +
+                  '<div class="mobile-list-title">' + list.name + '</div>' +
+                '</div>' +
+                '<div class="mobile-list-difficulty-indicators">' + difficultyIndicators + '</div>' +
+              '</div>' +
+              '<div class="mobile-list-count">' + compactCountText + '</div>' +
+              '<div class="mobile-list-description">' + description + '</div>' +
+            '</div>' +
+          '</div>';
         
         a.onclick = (e) => {
           e.preventDefault();
@@ -709,11 +1201,10 @@
       // Add welcome message box at the top
       const welcomeDiv = document.createElement('div');
       welcomeDiv.className = 'mobile-list-actions mobile-welcome-message';
-      welcomeDiv.innerHTML = `
-        <div style="text-align: center; color: #374151; font-size: 14px; font-weight: 500; line-height: 1.4; width: 100%;">
-          📚 Structured LeetCode Problem Collections!
-        </div>
-      `;
+      welcomeDiv.innerHTML = 
+        '<div style="text-align: center; color: #374151; font-size: 14px; font-weight: 500; line-height: 1.4; width: 100%;">' +
+          '📚 Structured LeetCode Problem Collections!' +
+        '</div>';
       listsList.appendChild(welcomeDiv);
       
       // Load problem counts and difficulty distributions for all lists first
@@ -738,24 +1229,23 @@
         
         // Create count text with elegant slash format (renderMobileListsNoAnimation)
         const { easy, medium, hard } = list.difficultyDistribution;
-        const compactCountText = `${list.problemCount} problems • <span style="color: #15803d; font-weight: 600;">${easy}</span>/<span style="color: #ca8a04; font-weight: 600;">${medium}</span>/<span style="color: #dc2626; font-weight: 600;">${hard}</span>`;
+        const compactCountText = list.problemCount + ' problems • <span style="color: #15803d; font-weight: 600;">' + easy + '</span>/<span style="color: #ca8a04; font-weight: 600;">' + medium + '</span>/<span style="color: #dc2626; font-weight: 600;">' + hard + '</span>';
         
-        a.href = `#${listSlug}`;
-        a.innerHTML = `
-          <div class="mobile-list-header">
-            <div class="mobile-list-content">
-              <div class="mobile-list-title-with-icon-and-dots">
-                <div class="mobile-list-icon-and-title">
-                  <span class="mobile-list-icon">${getMobileListIcon(list.name)}</span>
-                  <div class="mobile-list-title">${list.name}</div>
-                </div>
-                <div class="mobile-list-difficulty-indicators">${difficultyIndicators}</div>
-              </div>
-              <div class="mobile-list-count">${compactCountText}</div>
-              <div class="mobile-list-description">${description}</div>
-            </div>
-          </div>
-        `;
+        a.href = '#' + listSlug;
+        a.innerHTML = 
+          '<div class="mobile-list-header">' +
+            '<div class="mobile-list-content">' +
+              '<div class="mobile-list-title-with-icon-and-dots">' +
+                '<div class="mobile-list-icon-and-title">' +
+                  '<span class="mobile-list-icon">' + getMobileListIcon(list.name) + '</span>' +
+                  '<div class="mobile-list-title">' + list.name + '</div>' +
+                '</div>' +
+                '<div class="mobile-list-difficulty-indicators">' + difficultyIndicators + '</div>' +
+              '</div>' +
+              '<div class="mobile-list-count">' + compactCountText + '</div>' +
+              '<div class="mobile-list-description">' + description + '</div>' +
+            '</div>' +
+          '</div>';
         
         a.onclick = (e) => {
           e.preventDefault();
@@ -1569,6 +2059,68 @@
     
     // Mobile event handlers
     function setupMobileEventHandlers() {
+      // Desktop home button handler
+      document.getElementById('desktop-home-btn').onclick = (e) => {
+        e.preventDefault();
+        if (window.innerWidth >= 1024) {
+          // Desktop: Use the router to navigate home properly
+          desktopRouter.navigate('');
+          
+          // Clear content area immediately, then show home landing page
+          const contentInner = document.querySelector('.desktop-content-inner');
+          if (contentInner) {
+            // Ready to show home landing page
+          }
+          
+          // Clear all selections and states IMMEDIATELY
+          document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
+          document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
+          document.getElementById('desktop-file-list').innerHTML = '';
+          
+          // Clear ALL state variables
+          currentListSlug = '';
+          currentListData = [];
+          currentDesktopList = null;
+          
+          // Show loading for 0.5s, then show home landing page
+          setTimeout(() => {
+            // Use the proper showHomeLandingPage function instead of inline HTML
+            try {
+              showHomeLandingPage();
+            } catch (error) {
+              console.error('Home button - showHomeLandingPage failed:', error);
+              // Fallback to direct HTML if function fails
+              const homeContentInner = document.querySelector('.desktop-content-inner');
+              if (homeContentInner) {
+                homeContentInner.innerHTML = `
+                  <div style="max-width: 700px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
+                    <h1 style="font-size: 2.8rem; font-weight: 700; color: #1a202c; margin-bottom: 1rem;">
+                      LeetCode Handbook
+                    </h1>
+                    <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 3rem; line-height: 1.6;">
+                      Your comprehensive guide to coding interview preparation
+                    </p>
+                    <div style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; border-radius: 12px; padding: 2rem;">
+                      <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">Welcome Back!</h3>
+                      <p style="font-size: 1rem; opacity: 0.9; margin-bottom: 0;">Choose a collection from the left sidebar to begin</p>
+                    </div>
+                  </div>
+                `;
+              }
+            }
+          }, 500); // 0.5s loading delay
+          
+          history.pushState({}, '', '#');
+          document.title = 'LeetCode Handbook';
+        } else {
+          // Mobile: Navigate to home with loading animation
+          showMobileLoadingAnimation();
+          setTimeout(() => {
+            mobileRouter.navigate('');
+          }, 200);
+        }
+      };
+
       // Navigation buttons - always show loading animation
       document.getElementById('mobile-home-btn').onclick = () => {
         showMobileLoadingAnimation();
@@ -1832,8 +2384,111 @@
       }, 3000);
     }
     
+    // Smart scrolling function to keep active problem visible in C2
+    // Smart scrolling function to keep active problem visible in problems sidebar
+    function scrollToActiveProblem(options = {}) {
+      setTimeout(() => {
+        const activeLi = document.querySelector('#desktop-file-list li.active');
+        if (activeLi) {
+          const container = document.getElementById('desktop-file-list').parentElement;
+          const containerRect = container.getBoundingClientRect();
+          const activeLiRect = activeLi.getBoundingClientRect();
+          
+          // Add padding to trigger scroll before item goes completely out of view
+          const padding = 60; // pixels of buffer space
+          
+          // Check if link is outside visible area (with padding)
+          const isAbove = activeLiRect.top < (containerRect.top + padding);
+          const isBelow = activeLiRect.bottom > (containerRect.bottom - padding);
+          
+          if (isAbove || isBelow) {
+            // Calculate the position to center the active item
+            const containerScrollTop = container.scrollTop;
+            const containerHeight = container.clientHeight;
+            const activeLiOffsetTop = activeLi.offsetTop;
+            const activeLiHeight = activeLi.offsetHeight;
+            
+            // Center the item in the container
+            const targetScrollTop = activeLiOffsetTop - (containerHeight / 2) + (activeLiHeight / 2);
+            
+            // Smooth scroll to the target position
+            container.scrollTo({
+              top: Math.max(0, targetScrollTop),
+              behavior: options.behavior || 'smooth'
+            });
+          }
+        }
+      }, options.delay || 100); // Allow custom delay
+    }
+    
+    // Smart scrolling function to keep active list visible in lists sidebar
+    function scrollToActiveList(options = {}) {
+      setTimeout(() => {
+        const activeLi = document.querySelector('#desktop-lists-list li.active');
+        if (activeLi) {
+          const container = document.getElementById('desktop-lists-list').parentElement;
+          const containerRect = container.getBoundingClientRect();
+          const activeLiRect = activeLi.getBoundingClientRect();
+          
+          // Add padding to trigger scroll before item goes completely out of view
+          const padding = 60; // pixels of buffer space
+          
+          // Check if link is outside visible area (with padding)
+          const isAbove = activeLiRect.top < (containerRect.top + padding);
+          const isBelow = activeLiRect.bottom > (containerRect.bottom - padding);
+          
+          if (isAbove || isBelow) {
+            // Calculate the position to center the active item
+            const containerScrollTop = container.scrollTop;
+            const containerHeight = container.clientHeight;
+            const activeLiOffsetTop = activeLi.offsetTop;
+            const activeLiHeight = activeLi.offsetHeight;
+            
+            // Center the item in the container
+            const targetScrollTop = activeLiOffsetTop - (containerHeight / 2) + (activeLiHeight / 2);
+            
+            // Smooth scroll to the target position
+            container.scrollTo({
+              top: Math.max(0, targetScrollTop),
+              behavior: options.behavior || 'smooth'
+            });
+          }
+        }
+      }, options.delay || 100); // Allow custom delay
+    }
+    
+    // Intelligent scrolling for adjacent problems (preserves relative position)
+    function scrollToAdjacentProblem(currentSlug, newSlug, direction) {
+      setTimeout(() => {
+        const newActiveLi = document.querySelector('#desktop-file-list li.active');
+        if (!newActiveLi) return;
+        
+        const container = document.getElementById('desktop-file-list').parentElement;
+        const containerRect = container.getBoundingClientRect();
+        const newActiveLiRect = newActiveLi.getBoundingClientRect();
+        
+        // Check if new active item is visible
+        const isVisible = newActiveLiRect.top >= containerRect.top && 
+                         newActiveLiRect.bottom <= containerRect.bottom;
+        
+        if (!isVisible) {
+          // For adjacent items, try a gentler scroll approach
+          // Instead of centering, try to bring it just into view
+          const scrollBehavior = Math.abs(direction) === 1 ? 'smooth' : 'smooth';
+          const blockPosition = direction > 0 ? 'end' : 'start'; // Scroll less aggressively
+          
+          newActiveLi.scrollIntoView({ 
+            behavior: scrollBehavior, 
+            block: blockPosition,
+            inline: 'nearest' 
+          });
+        }
+      }, 150); // Slightly longer delay for adjacent scrolling
+    }
+    
     // Initialize mobile app
     document.addEventListener('DOMContentLoaded', async () => {
+      
       setupMobileEventHandlers();
       
       // Mobile search event listeners
@@ -1875,8 +2530,969 @@
         }
       });
       
+      console.log('Mobile DOMContentLoaded: Starting mobile router initialization...');
       mobileRouter.init(); // Initialize router, which will handle loading and rendering
-    });
+      console.log('Mobile DOMContentLoaded: Mobile router initialized. Data loading should begin now...');
+      
+      // Handle browser back/forward navigation using hashchange (legacy desktop approach)
+      window.addEventListener('hashchange', () => {
+        if (window.innerWidth >= 1024) {
+          console.log('Desktop hashchange event:', window.location.hash);
+          handleDesktopNavigation();
+        }
+      });
+      
+      // Modified desktop navigation handler - now just delegates to router
+      function handleDesktopNavigation() {
+        if (!desktopRouterInitialized) {
+          console.log('Initializing desktop router...');
+          desktopRouter.init();
+          desktopRouterInitialized = true;
+        } else {
+          desktopRouter.handleRoute();
+        }
+      }
+      
+      // Helper function for full problem view loading
+      function loadFullDesktopProblemView(listSlug, problemSlug) {
+          console.log('Loading full problem view:', listSlug, problemSlug);
+          showDesktopLoadingAnimation('content');
+          const listLinks = document.querySelectorAll('#desktop-lists-list a[href="#' + listSlug + '"]');
+          if (listLinks.length > 0) {
+            // Clear previous selections
+            document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
+            document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
+            
+            // Activate the list
+            const listItem = listLinks[0].closest('li');
+            listItem.classList.add('active');
+            scrollToActiveList({ delay: 50 });
+            currentDesktopList = listSlug;
+            currentListSlug = listSlug;
+            
+            // Load the problems first, then activate the specific problem
+            renderDesktopProblems(listSlug, false).then(() => {
+              // Now find and activate the problem
+              const problemLinks = document.querySelectorAll('#desktop-file-list a[href*="/' + problemSlug + '"]');
+              if (problemLinks.length > 0) {
+                const problemItem = problemLinks[0].closest('li');
+                problemItem.classList.add('active');
+                
+                // Use smooth scrolling for newly loaded content
+                scrollToActiveProblem({ delay: 150, behavior: 'smooth' });
+                
+                // Load the problem content
+                if (currentListData) {
+                  const problem = currentListData.find(p => p.slug === problemSlug);
+                  if (problem) {
+                    loadDesktopProblemContent(listSlug, problemSlug, problem.number || problem.id);
+                    document.title = problem.title + ' - LeetCode Handbook';
+                  }
+                }
+              }
+            });
+          }
+        }
+      });
+      
+      // Desktop Modal Functions
+      let desktopAllProblems = [];
+      
+      function openDesktopSearchModal() {
+        document.getElementById('desktop-search-modal').style.display = 'block';
+        document.getElementById('desktop-search-input').focus();
+        populateDesktopSearchResults();
+      }
+      
+      function closeDesktopSearchModal() {
+        document.getElementById('desktop-search-modal').style.display = 'none';
+        document.getElementById('desktop-search-input').value = '';
+      }
+      
+      function populateDesktopSearchResults(searchTerm = '') {
+        if (desktopAllProblems.length === 0) {
+          // Load all problems from all lists
+          Promise.all(currentLists.map(list => 
+            fetch(`data/${list.file}`).then(res => res.json())
+            .then(problems => problems.map(p => ({
+              ...p, 
+              listName: list.name, 
+              listSlug: listSlugMap[list.file],
+              slug: p.slug || createSlug(p.title)
+            })))
+          )).then(results => {
+            desktopAllProblems = results.flat();
+            displayDesktopSearchResults(filterDesktopProblems(searchTerm));
+          }).catch(error => {
+            console.error('Error loading problems for desktop search:', error);
+          });
+        } else {
+          displayDesktopSearchResults(filterDesktopProblems(searchTerm));
+        }
+      }
+      
+      function filterDesktopProblems(searchTerm) {
+        const easyChecked = document.getElementById('desktop-filter-easy').checked;
+        const mediumChecked = document.getElementById('desktop-filter-medium').checked;
+        const hardChecked = document.getElementById('desktop-filter-hard').checked;
+        
+        return desktopAllProblems.filter(problem => {
+          const matchesSearch = !searchTerm || 
+            problem.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            problem.number?.toString().includes(searchTerm) ||
+            problem.difficulty?.toLowerCase().includes(searchTerm.toLowerCase());
+            
+          const matchesDifficulty = 
+            (problem.difficulty === 'Easy' && easyChecked) ||
+            (problem.difficulty === 'Medium' && mediumChecked) ||
+            (problem.difficulty === 'Hard' && hardChecked);
+            
+          return matchesSearch && matchesDifficulty;
+        });
+      }
+      
+      function displayDesktopSearchResults(problems) {
+        const resultsContainer = document.getElementById('desktop-search-results');
+        
+        if (problems.length === 0) {
+          resultsContainer.innerHTML = '<div class="desktop-no-results">No problems found</div>';
+          return;
+        }
+        
+        resultsContainer.innerHTML = problems.slice(0, 50).map(problem => `
+          <div class="desktop-search-result" onclick="
+            closeDesktopSearchModal();
+            showDesktopLoadingAnimation('content');
+            setTimeout(() => {
+              // Ensure the list is loaded first
+              if (currentListSlug !== problem.listSlug) {
+                loadDesktopProblemList(problem.listSlug);
+              }
+              setTimeout(() => {
+                // Navigate with hash-based routing
+                window.location.hash = problem.listSlug + '/' + problem.slug;
+              }, 300);
+            }, 200);
+          ">
+            <div class="desktop-search-result-header">
+              <span class="desktop-search-result-number">${problem.number || problem.id || '?'}</span>
+              <span class="desktop-search-result-title">${problem.title}</span>
+              <span class="desktop-search-result-difficulty ${problem.difficulty?.toLowerCase() || 'medium'}">${problem.difficulty || 'Medium'}</span>
+            </div>
+            <div class="desktop-search-result-meta">
+              <span class="desktop-search-result-list">${problem.listName}</span>
+            </div>
+          </div>
+        `).join('');
+      }
+      
+      function openDesktopSettingsModal() {
+        document.getElementById('desktop-settings-modal').style.display = 'block';
+        loadDesktopSettings();
+      }
+      
+      function closeDesktopSettingsModal() {
+        document.getElementById('desktop-settings-modal').style.display = 'none';
+        saveDesktopSettings();
+      }
+      
+      function loadDesktopSettings() {
+        const theme = localStorage.getItem('desktop-theme') || 'light';
+        const fontSize = localStorage.getItem('desktop-font-size') || 'normal';
+        const layoutDensity = localStorage.getItem('desktop-layout-density') || 'comfortable';
+        
+        document.getElementById('desktop-theme-toggle').value = theme;
+        document.getElementById('desktop-font-size').value = fontSize;
+        document.getElementById('desktop-layout-density').value = layoutDensity;
+      }
+      
+      function saveDesktopSettings() {
+        const theme = document.getElementById('desktop-theme-toggle').value;
+        const fontSize = document.getElementById('desktop-font-size').value;
+        const layoutDensity = document.getElementById('desktop-layout-density').value;
+        
+        localStorage.setItem('desktop-theme', theme);
+        localStorage.setItem('desktop-font-size', fontSize);
+        localStorage.setItem('desktop-layout-density', layoutDensity);
+        
+        applyDesktopSettings();
+      }
+      
+      function applyDesktopSettings() {
+        const theme = localStorage.getItem('desktop-theme') || 'light';
+        const fontSize = localStorage.getItem('desktop-font-size') || 'normal';
+        const layoutDensity = localStorage.getItem('desktop-layout-density') || 'comfortable';
+        
+        // Apply theme
+        document.body.setAttribute('data-theme', theme);
+        
+        // Apply font size
+        document.body.setAttribute('data-font-size', fontSize);
+        
+        // Apply layout density
+        document.body.setAttribute('data-layout-density', layoutDensity);
+      }
+
+      // Desktop Layout Functions
+      async function renderDesktopLists() {
+        try {
+          const response = await fetch('./data/lists.json');
+          const codeLists = await response.json();
+          
+          // Use the global listSlugMap that's already populated
+          const listsWithCounts = await Promise.all(
+            codeLists.map(async (list) => {
+              try {
+                const listResponse = await fetch(`./data/${list.file}`);
+                const listData = await listResponse.json();
+                const difficultyDistribution = await getMobileListDifficultyDistribution(list.file);
+                return {
+                  ...list,
+                  problemCount: listData.length,
+                  difficultyDistribution
+                };
+              } catch (error) {
+                console.error(`Error loading ${list.file}:`, error);
+                return {
+                  ...list,
+                  problemCount: 0,
+                  difficultyDistribution: { easy: 0, medium: 0, hard: 0 }
+                };
+              }
+            })
+          );
+          
+          const listsList = document.getElementById('desktop-lists-list');
+          listsList.innerHTML = '';
+          
+          listsWithCounts.forEach(list => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            const listSlug = listSlugMap[list.file];
+            const description = list.description || 'Curated collection of coding problems';
+            
+            // Create count text with elegant slash format
+            const { easy, medium, hard } = list.difficultyDistribution;
+            const compactCountText = `${list.problemCount} problems • <span style="color: #15803d; font-weight: 600;">${easy}</span>/<span style="color: #ca8a04; font-weight: 600;">${medium}</span>/<span style="color: #dc2626; font-weight: 600;">${hard}</span>`;
+            
+            a.href = `#${listSlug}`;
+            a.innerHTML = `
+              <div class="desktop-list-header">
+                <div style="display: flex; align-items: flex-start; gap: 12px;">
+                  <span class="desktop-list-icon">${getMobileListIcon(list.name)}</span>
+                  <div class="desktop-list-content">
+                    <div class="desktop-list-title">${list.name}</div>
+                    <div class="desktop-list-count">${compactCountText}</div>
+                    <div class="desktop-list-description">${description}</div>
+                  </div>
+                </div>
+              </div>
+            `;
+            
+            a.onclick = async (e) => {
+              e.preventDefault();
+              
+              // Just navigate using the router - let it handle all the loading logic
+              desktopRouter.navigate(listSlug);
+            };
+            
+            li.appendChild(a);
+            listsList.appendChild(li);
+          });
+          
+          // Add fade-in animation to C1 (lists)
+          const listsSidebar = document.getElementById('desktop-lists-sidebar');
+          if (listsSidebar) {
+            listsSidebar.classList.remove('fade-in');
+            // Force reflow
+            listsSidebar.offsetHeight;
+            listsSidebar.classList.add('fade-in');
+          }
+          
+          // Don't show home landing page here - let the initialization handle it
+          
+        } catch (error) {
+          console.error('Error loading desktop lists:', error);
+        }
+      }
+      
+      let currentDesktopList = null;
+      
+      // ==========================================
+      // UNIFIED LANDING PAGE SYSTEM - FROM SCRATCH  
+      // ==========================================
+      
+      // Show home landing page - with dynamic loading status
+      function showHomeLandingPage() {
+        console.log('showHomeLandingPage called, currentLists.length:', currentLists.length, 'listSlugMap keys:', Object.keys(listSlugMap).length);
+        
+        // Try desktop element first, then fallback to mobile  
+        let targetElement = document.querySelector('.desktop-content-inner');
+        if (!targetElement) {
+          targetElement = document.getElementById('landing-content');
+        }
+        console.log('Target element found:', targetElement, 'Current content:', targetElement?.innerHTML.substring(0, 100));
+        if (!targetElement) {
+          console.error('Could not find target element for home landing page');
+          // Try to create the desktop content area if it doesn't exist
+          const desktopLayout = document.querySelector('.desktop-layout');
+          if (desktopLayout) {
+            const contentColumn = document.querySelector('.desktop-content');
+            if (contentColumn) {
+              targetElement = document.createElement('div');
+              targetElement.className = 'desktop-content-inner fade-in';
+              contentColumn.appendChild(targetElement);
+            }
+          }
+          if (!targetElement) {
+            console.error('Could not create or find target element for home landing page');
+            return false;
+          }
+        }
+        console.log('Found target element:', targetElement);
+        
+        console.log('Setting innerHTML for home landing page with', currentLists.length, 'lists available');
+        targetElement.innerHTML = `
+          <div style="max-width: 700px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
+            <h1 style="font-size: 2.8rem; font-weight: 700; color: #1a202c; margin-bottom: 1rem;">
+              LeetCode Handbook
+            </h1>
+            <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 3rem; line-height: 1.6;">
+              Your comprehensive guide to coding interview preparation
+            </p>
+            
+            <div style="background: #f0f9ff; border: 1px solid #0ea5e9; border-radius: 12px; padding: 2rem; margin-bottom: 3rem;">
+              <div style="font-size: 1.5rem; margin-bottom: 1rem; color: #0369a1;">📋</div>
+              <h3 style="font-size: 1.2rem; font-weight: 600; color: #0c4a6e; margin-bottom: 1rem;">Ready to Explore</h3>
+              <p style="color: #0369a1; font-size: 1rem; margin-bottom: 1.5rem;">
+                ${currentLists.length} problem collections loaded and ready for practice
+              </p>
+              <p style="color: #0284c7; font-size: 0.95rem; margin: 0;">
+                👈 Select a collection from the left sidebar to begin your coding journey
+              </p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; text-align: left;">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">📚</div>
+                <h3 style="font-size: 1.2rem; font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Curated Collections</h3>
+                <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5;">Hand-picked problem sets from top companies and essential topics.</p>
+              </div>
+              
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; text-align: left;">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">⚡</div>
+                <h3 style="font-size: 1.2rem; font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Instant Navigation</h3>
+                <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5;">Seamless browsing with prev/next navigation and random exploration.</p>
+              </div>
+              
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; text-align: left;">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">🎯</div>
+                <h3 style="font-size: 1.2rem; font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Focused Practice</h3>
+                <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5;">Clean, distraction-free interface for effective problem solving.</p>
+              </div>
+            </div>
+          </div>
+        `;
+        
+        // Trigger fade-in animation if it's the desktop content area
+        if (targetElement.classList.contains('desktop-content-inner')) {
+          targetElement.classList.remove('fade-in');
+          void targetElement.offsetWidth; // Force reflow
+          targetElement.classList.add('fade-in');
+        }
+        
+        return true;
+      }
+      
+      // Show loading home page while data loads
+      function showLoadingHomePage() {
+        console.log('showLoadingHomePage called');
+        let targetElement = document.querySelector('.desktop-content-inner');
+        if (!targetElement) {
+          targetElement = document.getElementById('landing-content');
+        }
+        if (!targetElement) {
+          console.error('Could not find target element for loading home page');
+          return false;
+        }
+        
+        targetElement.innerHTML = `
+          <div style="max-width: 700px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
+            <h1 style="font-size: 2.8rem; font-weight: 700; color: #1a202c; margin-bottom: 1rem;">
+              LeetCode Handbook
+            </h1>
+            <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 3rem; line-height: 1.6;">
+              Your comprehensive guide to coding interview preparation
+            </p>
+            
+            <div style="background: #fffbeb; border: 1px solid #f59e0b; border-radius: 12px; padding: 3rem; margin-bottom: 3rem;">
+              <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2.5rem; margin-bottom: 1.5rem;">⏳</div>
+              <h3 style="font-size: 1.3rem; font-weight: 600; color: #92400e; margin-bottom: 1rem;">Loading Problem Collections</h3>
+              <p style="color: #d97706; font-size: 1rem; margin: 0;">
+                Please wait while we load your coding interview collections...
+              </p>
+            </div>
+          </div>
+        `;
+        
+        return true;
+      }
+      
+      // Show error home page if loading fails
+      function showErrorHomePage(errorMessage) {
+        console.log('showErrorHomePage called with error:', errorMessage);
+        let targetElement = document.querySelector('.desktop-content-inner');
+        if (!targetElement) {
+          targetElement = document.getElementById('landing-content');
+        }
+        if (!targetElement) {
+          console.error('Could not find target element for error home page');
+          return false;
+        }
+        
+        targetElement.innerHTML = `
+          <div style="max-width: 700px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
+            <h1 style="font-size: 2.8rem; font-weight: 700; color: #1a202c; margin-bottom: 1rem;">
+              LeetCode Handbook
+            </h1>
+            <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 3rem; line-height: 1.6;">
+              Your comprehensive guide to coding interview preparation
+            </p>
+            
+            <div style="background: #fef2f2; border: 1px solid #f87171; border-radius: 12px; padding: 3rem; margin-bottom: 3rem;">
+              <div style="font-size: 2.5rem; margin-bottom: 1.5rem; color: #dc2626;">⚠️</div>
+              <h3 style="font-size: 1.3rem; font-weight: 600; color: #991b1b; margin-bottom: 1rem;">Loading Error</h3>
+              <p style="color: #dc2626; font-size: 1rem; margin-bottom: 1.5rem;">
+                ${errorMessage || 'Failed to load problem collections'}
+              </p>
+              <button onclick="location.reload()" style="background: #dc2626; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 600; cursor: pointer;">
+                Retry
+              </button>
+            </div>
+          </div>
+        `;
+        
+        return true;
+      }
+      
+      // Show list landing page - simple overview of the list
+      function showListLandingPage(listSlug, listData) {
+        console.log('showListLandingPage called with listSlug:', listSlug);
+        // Try desktop element first, then fallback to mobile
+        let targetElement = document.querySelector('.desktop-content-inner');
+        if (!targetElement) {
+          targetElement = document.getElementById('landing-content');
+        }
+        if (!targetElement) {
+          console.error('Could not find target element for list landing page'); 
+          return false;
+        }
+        
+        // Get list info
+        const reverseSlugMap = Object.fromEntries(
+          Object.entries(listSlugMap).map(([file, slug]) => [slug, file])
+        );
+        const filename = reverseSlugMap[listSlug];
+        const listInfo = currentLists.find(list => list.file === filename);
+        
+        const listName = listInfo ? listInfo.name : 'Problem List';
+        const listDesc = listInfo ? listInfo.description : 'A collection of coding problems to enhance your skills.';
+        
+        // Calculate stats
+        const totalProblems = listData.length;
+        const difficulties = { easy: 0, medium: 0, hard: 0 };
+        
+        listData.forEach(problem => {
+          const diff = (problem.difficulty || 'medium').toLowerCase();
+          if (difficulties.hasOwnProperty(diff)) {
+            difficulties[diff]++;
+          }
+        });
+        
+        targetElement.innerHTML = `
+          <div style="max-width: 700px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
+            <div style="display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); border-radius: 16px; margin-bottom: 2rem;">
+              <span style="font-size: 1.5rem; filter: brightness(0) invert(1);">📋</span>
+            </div>
+            
+            <h1 style="font-size: 2.5rem; font-weight: 700; color: #1a202c; margin-bottom: 1rem;">
+              ${listName}
+            </h1>
+            <p style="font-size: 1.1rem; color: #6b7280; margin-bottom: 3rem; line-height: 1.6;">
+              ${listDesc}
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+              <div style="background: #f0fdf4; border: 1px solid #dcfce7; border-radius: 8px; padding: 1.5rem;">
+                <div style="font-size: 2rem; color: #16a34a; font-weight: 700; margin-bottom: 0.5rem;">${difficulties.easy}</div>
+                <div style="color: #16a34a; font-weight: 600; font-size: 0.9rem;">Easy Problems</div>
+              </div>
+              
+              <div style="background: #fffbeb; border: 1px solid #fed7aa; border-radius: 8px; padding: 1.5rem;">
+                <div style="font-size: 2rem; color: #ea580c; font-weight: 700; margin-bottom: 0.5rem;">${difficulties.medium}</div>
+                <div style="color: #ea580c; font-weight: 600; font-size: 0.9rem;">Medium Problems</div>
+              </div>
+              
+              <div style="background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; padding: 1.5rem;">
+                <div style="font-size: 2rem; color: #dc2626; font-weight: 700; margin-bottom: 0.5rem;">${difficulties.hard}</div>
+                <div style="color: #dc2626; font-weight: 600; font-size: 0.9rem;">Hard Problems</div>
+              </div>
+              
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
+                <div style="font-size: 2rem; color: #374151; font-weight: 700; margin-bottom: 0.5rem;">${totalProblems}</div>
+                <div style="color: #374151; font-weight: 600; font-size: 0.9rem;">Total Problems</div>
+              </div>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; border-radius: 12px; padding: 2rem;">
+              <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">Ready to Practice?</h3>
+              <p style="font-size: 1rem; opacity: 0.9; margin-bottom: 1.5rem;">Jump into the problems or pick one at random</p>
+              
+              <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                <button data-action="first-landing" data-list-slug="${listSlug}" 
+                        style="background: #10b981; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 1rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 8px;" 
+                        onmouseover="this.style.background='#059669'; this.style.transform='translateY(-1px)'" 
+                        onmouseout="this.style.background='#10b981'; this.style.transform='translateY(0)'" 
+                        onmousedown="this.style.transform='scale(0.95)'" 
+                        onmouseup="this.style.transform='translateY(-1px)'">
+                  ▶️ Start
+                </button>
+                <button data-action="random-landing" data-list-slug="${listSlug}" 
+                        style="background: #f59e0b; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 1rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 8px;" 
+                        onmouseover="this.style.background='#d97706'; this.style.transform='translateY(-1px)'" 
+                        onmouseout="this.style.background='#f59e0b'; this.style.transform='translateY(0)'" 
+                        onmousedown="this.style.transform='scale(0.95)'" 
+                        onmouseup="this.style.transform='translateY(-1px)'">
+                  🎲 Random
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+        
+        // Trigger fade-in animation if it's the desktop content area
+        if (targetElement.classList.contains('desktop-content-inner')) {
+          targetElement.classList.remove('fade-in');
+          void targetElement.offsetWidth; // Force reflow
+          targetElement.classList.add('fade-in');
+        }
+        
+        return true;
+      }
+      
+      // ==========================================
+      // END UNIFIED LANDING PAGE SYSTEM
+      // ==========================================
+
+
+
+      async function renderDesktopProblems(listSlug, showLandingPage = true) {
+        try {
+          // No delay for C2 loading - render immediately
+          const fileList = document.getElementById('desktop-file-list');
+          
+          // Use the global listSlugMap
+          const reverseSlugMap = Object.fromEntries(
+            Object.entries(listSlugMap).map(([file, slug]) => [slug, file])
+          );
+          
+          const filename = reverseSlugMap[listSlug];
+          if (!filename) {
+            console.error('No filename found for slug:', listSlug);
+            return;
+          }
+          
+          const response = await fetch('./data/' + filename);
+          const problems = await response.json();
+          
+          // Set currentListData for navigation buttons
+          currentListData = problems;
+          
+          // CRITICAL FIX: Update currentListSlug to match the list we just loaded
+          // This ensures the global state is consistent with what's shown in C2
+          currentListSlug = listSlug;
+          
+          // Clear and render actual problems immediately
+          fileList.innerHTML = '';
+          
+          problems.forEach(problem => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            const problemSlug = problem.slug || createSlug(problem.title);
+            
+            a.href = '#' + listSlug + '/' + problemSlug;
+            a.innerHTML = 
+              '<span class="desktop-problem-number">' + (problem.id || '?') + '</span>' +
+              '<span class="desktop-problem-title">' + problem.title + '</span>' +
+              '<span class="desktop-problem-difficulty ' + (problem.difficulty ? problem.difficulty.toLowerCase() : 'medium') + '">' + (problem.difficulty || 'Medium') + '</span>';
+            
+            a.onclick = (e) => {
+              e.preventDefault();
+              
+              // Just navigate using the router - let it handle all the loading logic
+              desktopRouter.navigate(listSlug, problemSlug);
+            };
+            
+            li.appendChild(a);
+            fileList.appendChild(li);
+          });
+          
+          // Add fade-in animation to C2 (problems)
+          const problemsSidebar = document.getElementById('desktop-problems-sidebar');
+          if (problemsSidebar) {
+            problemsSidebar.classList.remove('fade-in');
+            // Force reflow
+            problemsSidebar.offsetHeight;
+            problemsSidebar.classList.add('fade-in');
+          }
+          
+          // Show list landing page in content area only if requested
+          if (showLandingPage) {
+            await showListLandingPage(listSlug, problems);
+          }
+          
+          // Return the problems data for external timing control
+          return problems;
+          
+        } catch (error) {
+          console.error('Error loading desktop problems:', error);
+        }
+      }
+      
+      // Alias for search functionality
+      const loadDesktopProblemList = renderDesktopProblems;
+      
+      // Generate desktop navigation buttons (similar to mobile but desktop styled)
+      function generateDesktopNavigationButtons(filename) {
+        if (!currentListData || currentListData.length === 0) {
+          return { top: '' };
+        }
+        
+        const currentIndex = currentListData.findIndex(p => 
+          (p.number + '-' + p.slug + '.md') === filename
+        );
+        
+        if (currentIndex === -1) {
+          return { top: '' };
+        }
+        
+        const prevProblem = currentIndex > 0 ? currentListData[currentIndex - 1] : null;
+        const nextProblem = currentIndex < currentListData.length - 1 ? currentListData[currentIndex + 1] : null;
+        
+        const prevButton = prevProblem ? 
+          '<button data-action="prev" data-slug="' + prevProblem.slug + '" data-number="' + (prevProblem.number || prevProblem.id) + '" data-title="' + prevProblem.title.replace(/"/g, '&quot;') + '" ' +
+           'title="' + prevProblem.title + '" ' +
+           'style="background: #6f42c1; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-weight: 500; font-size: 0.9rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 6px;" ' +
+           'onmouseover="this.style.background=\'#5a2d8f\'; this.style.transform=\'translateY(-1px)\'" ' +
+           'onmouseout="this.style.background=\'#6f42c1\'; this.style.transform=\'translateY(0)\'"> ' +
+           '← Prev</button>' :
+          '<button disabled style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 8px 12px; border-radius: 6px; cursor: not-allowed; font-weight: 500; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">← Prev</button>';
+        
+        const nextButton = nextProblem ? 
+          '<button data-action="next" data-slug="' + nextProblem.slug + '" data-number="' + (nextProblem.number || nextProblem.id) + '" data-title="' + nextProblem.title.replace(/"/g, '&quot;') + '" ' +
+           'title="' + nextProblem.title + '" ' +
+           'style="background: #6f42c1; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-weight: 500; font-size: 0.9rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 6px;" ' +
+           'onmouseover="this.style.background=\'#5a2d8f\'; this.style.transform=\'translateY(-1px)\'" ' +
+           'onmouseout="this.style.background=\'#6f42c1\'; this.style.transform=\'translateY(0)\'"> ' +
+           'Next →</button>' :
+          '<button disabled style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 8px 12px; border-radius: 6px; cursor: not-allowed; font-weight: 500; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">Next →</button>';
+        
+        return {
+          top: 
+            '<div class="desktop-action-buttons" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">' +
+              '<div style="display: flex; align-items: center; gap: 12px;">' +
+                prevButton +
+                '<span style="color: #64748b; font-size: 0.9rem; font-weight: 500;">' + (currentIndex + 1) + ' of ' + currentListData.length + '</span>' +
+                nextButton +
+              '</div>' +
+              '<div style="display: flex; align-items: center; gap: 12px;">' +
+                '<button id="desktop-random-btn" data-action="random" style="background: #f59e0b; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-weight: 500; font-size: 0.9rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 6px;" onmouseover="this.style.background=\'#d97706\'; this.style.transform=\'translateY(-1px)\'" onmouseout="this.style.background=\'#f59e0b\'; this.style.transform=\'translateY(0)\'">🎲 Random</button>' +
+                '<button id="desktop-print-btn" onclick="window.print()" style="background: #0969da; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-weight: 500; font-size: 0.9rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 6px;" onmouseover="this.style.background=\'#0550ae\'; this.style.transform=\'translateY(-1px)\'" onmouseout="this.style.background=\'#0969da\'; this.style.transform=\'translateY(0)\'">🖨️ Print</button>' +
+              '</div>' +
+            '</div>'
+        };
+      }
+      
+      async function loadDesktopProblemContent(listSlug, problemSlug, problemNumber) {
+        try {
+          // Always show loading animation in C3 first
+          const contentInner = document.querySelector('.desktop-content-inner');
+          contentInner.innerHTML = `
+            <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
+              <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
+              <div style="font-size: 1.1rem; font-weight: 500;">Loading problem content...</div>
+            </div>
+          `;
+          
+          // Always have 0.5s delay for C3 content loading
+          await new Promise(resolve => setTimeout(resolve, 500));
+          
+          // Try with number prefix first (most common format)
+          let response = await fetch('./md/' + problemNumber + '-' + problemSlug + '.md');
+          
+          // If that fails, try without number prefix
+          if (!response.ok) {
+            response = await fetch('./md/' + problemSlug + '.md');
+          }
+          
+          if (!response.ok) throw new Error('Problem not found');
+          
+          const markdown = await response.text();
+          const html = marked.parse(markdown);
+          
+          // Apply syntax highlighting
+          const tempDiv = document.createElement('div');
+          tempDiv.innerHTML = html;
+          tempDiv.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightElement(block);
+          });
+          
+          // Generate navigation buttons
+          const filename = problemNumber + '-' + problemSlug + '.md';
+          const navigationButtons = generateDesktopNavigationButtons(filename);
+          
+          // Set content with navigation buttons
+          contentInner.innerHTML = navigationButtons.top + tempDiv.innerHTML;
+          
+          // Trigger fade-in animation
+          contentInner.classList.remove('fade-in');
+          void contentInner.offsetWidth; // Force reflow
+          contentInner.classList.add('fade-in');
+          
+          // Add mobile-style author footnote
+          const authorFootnote = document.createElement('div');
+          authorFootnote.className = 'mobile-author-footnote';
+          authorFootnote.innerHTML = 
+            '<p>Made with <span class="heart">♥</span> for coding interview preparation</p>';
+          contentInner.appendChild(authorFootnote);
+          
+          // Setup desktop random button functionality - handled by event delegation
+          const desktopRandomBtn = document.getElementById('desktop-random-btn');
+          // Random button click is handled by document event delegation below
+          
+          hideMobileLoadingAnimation();
+          
+        } catch (error) {
+          console.error('Error loading desktop problem:', error);
+          const contentInner = document.querySelector('.desktop-content-inner');
+          contentInner.innerHTML = 
+            '<div style="text-align: center; padding: 3rem 1rem; color: #656d76;">' +
+              '<h2>Problem Not Found</h2>' +
+              '<p>The requested problem could not be loaded.</p>' +
+            '</div>';
+          hideMobileLoadingAnimation();
+        }
+      }
+      
+      // Desktop Event Listeners
+      document.getElementById('desktop-search-btn').addEventListener('click', openDesktopSearchModal);
+      document.getElementById('desktop-settings-btn').addEventListener('click', openDesktopSettingsModal);
+      
+      // Desktop search input event listener
+      document.getElementById('desktop-search-input').addEventListener('input', (e) => {
+        populateDesktopSearchResults(e.target.value);
+      });
+      
+      // Desktop navigation button event delegation - track previous active problem index
+      window.prevActiveProblemIndex = null;
+      document.addEventListener('click', (e) => {
+        const button = e.target.closest('button[data-action]');
+        if (!button) return;
+        
+        const action = button.dataset.action;
+        
+        // Track previous active problem index before navigation
+        const fileList = document.getElementById('desktop-file-list');
+        if (fileList) {
+          const lis = Array.from(fileList.querySelectorAll('li'));
+          const prevActiveLi = fileList.querySelector('li.active');
+          window.prevActiveProblemIndex = prevActiveLi ? lis.indexOf(prevActiveLi) : null;
+        }
+        
+        if (action === 'prev' || action === 'next') {
+          const slug = button.dataset.slug;
+          const number = button.dataset.number;
+          const title = button.dataset.title;
+          
+          // Calculate direction for intelligent scrolling
+          const currentProblemSlug = window.location.hash.split('/')[1];
+          const direction = action === 'next' ? 1 : -1;
+          
+          // No initial loading animation - loadDesktopProblemContent will handle it
+          setTimeout(() => {
+            loadDesktopProblemContent(currentListSlug, slug, number);
+            // Update active state in problem list
+            document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
+            const problemLinks = document.querySelectorAll('#desktop-file-list a[href*="/' + slug + '"]');
+            if (problemLinks.length > 0) {
+              const problemItem = problemLinks[0].closest('li');
+              problemItem.classList.add('active');
+              
+              // For prev/next navigation, always use proper centering
+              scrollToActiveProblem({ delay: 100, behavior: 'smooth' });
+            }
+            // Update URL
+            window.location.hash = currentListSlug + '/' + slug;
+            document.title = title + ' - LeetCode Handbook';
+          }, 200);
+        } else if (action === 'random') {
+          const problems = currentListData;
+          if (problems && problems.length > 0) {
+            const randomProblem = problems[Math.floor(Math.random() * problems.length)];
+            // No initial loading animation - loadDesktopProblemContent will handle it
+            setTimeout(() => {
+              loadDesktopProblemContent(currentListSlug, randomProblem.slug, randomProblem.number || randomProblem.id);
+              // Update active state in problem list
+              document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
+              const problemLinks = document.querySelectorAll('#desktop-file-list a[href*="/' + randomProblem.slug + '"]');
+              if (problemLinks.length > 0) {
+                problemLinks[0].closest('li').classList.add('active');
+                // Use smooth centered scrolling for random selection
+                scrollToActiveProblem({ delay: 100, behavior: 'smooth' });
+              }
+              // Update URL - use hash for navigation
+              window.location.hash = currentListSlug + '/' + randomProblem.slug;
+              document.title = randomProblem.title + ' - LeetCode Handbook';
+            }, 200);
+          }
+        } else if (action === 'random-landing') {
+          const listSlug = button.dataset.listSlug;
+          const problems = currentListData;
+          if (problems && problems.length > 0) {
+            const randomProblem = problems[Math.floor(Math.random() * problems.length)];
+            // No initial loading animation - loadDesktopProblemContent will handle it
+            setTimeout(() => {
+              loadDesktopProblemContent(listSlug, randomProblem.slug, randomProblem.number || randomProblem.id);
+              // Update active state in problem list
+              document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
+              const problemLinks = document.querySelectorAll('#desktop-file-list a[href*="/' + randomProblem.slug + '"]');
+              if (problemLinks.length > 0) {
+                problemLinks[0].closest('li').classList.add('active');
+                scrollToActiveProblem({ delay: 100, behavior: 'smooth' });
+              }
+              // Update URL - use hash for navigation
+              window.location.hash = listSlug + '/' + randomProblem.slug;
+              document.title = randomProblem.title + ' - LeetCode Handbook';
+            }, 200);
+          }
+        } else if (action === 'first-landing') {
+          const listSlug = button.dataset.listSlug;
+          const problems = currentListData;
+          if (problems && problems.length > 0) {
+            const firstProblem = problems[0];
+            // No initial loading animation - loadDesktopProblemContent will handle it
+            setTimeout(() => {
+              loadDesktopProblemContent(listSlug, firstProblem.slug, firstProblem.number || firstProblem.id);
+              // Update active state in problem list
+              document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
+              const problemLinks = document.querySelectorAll('#desktop-file-list a[href*="/' + firstProblem.slug + '"]');
+              if (problemLinks.length > 0) {
+                problemLinks[0].closest('li').classList.add('active');
+                scrollToActiveProblem({ delay: 100, behavior: 'smooth' });
+              }
+              // Update URL - use hash for navigation
+              window.location.hash = listSlug + '/' + firstProblem.slug;
+              document.title = firstProblem.title + ' - LeetCode Handbook';
+            }, 200);
+          }
+        }
+      });
+      
+      // Desktop search filters event listeners
+      ['desktop-filter-easy', 'desktop-filter-medium', 'desktop-filter-hard'].forEach(id => {
+        document.getElementById(id).addEventListener('change', () => {
+          const searchTerm = document.getElementById('desktop-search-input').value;
+          populateDesktopSearchResults(searchTerm);
+        });
+      });
+      
+      // Desktop modal click-outside-to-close
+      window.addEventListener('click', (e) => {
+        const desktopSearchModal = document.getElementById('desktop-search-modal');
+        const desktopSettingsModal = document.getElementById('desktop-settings-modal');
+        
+        if (e.target === desktopSearchModal) {
+          closeDesktopSearchModal();
+        }
+        if (e.target === desktopSettingsModal) {
+          closeDesktopSettingsModal();
+        }
+      });
+      
+      // Desktop keyboard shortcuts
+      document.addEventListener('keydown', (e) => {
+        if (window.innerWidth >= 1024) { // Only on desktop
+          // Ctrl+K or Cmd+K for search
+          if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+            e.preventDefault();
+            openDesktopSearchModal();
+          }
+          
+          // Escape to close modals
+          if (e.key === 'Escape') {
+            closeDesktopSearchModal();
+            closeDesktopSettingsModal();
+          }
+        }
+      });
+      
+      // Apply desktop settings on load
+      applyDesktopSettings();
+      
+      // DESKTOP INITIALIZATION - Wait for data to be ready, then initialize
+      function initializeDesktopWhenReady() {
+        console.log('Checking if desktop initialization is ready. Width:', window.innerWidth, 'Lists loaded:', currentLists.length, 'SlugMap keys:', Object.keys(listSlugMap).length);
+        
+        if (window.innerWidth >= 1024) {
+          if (currentLists.length > 0 && Object.keys(listSlugMap).length > 0) {
+            console.log('Desktop initialization: Data is ready! Starting desktop initialization...');
+            
+            // Load desktop lists directly without loading page
+            console.log('Loading desktop lists...');
+            renderDesktopLists().then(() => {
+              console.log('Desktop lists loaded successfully. Initializing router...');
+              
+              // Initialize the desktop router now that data is ready
+              if (!desktopRouterInitialized) {
+                desktopRouter.init();
+                desktopRouterInitialized = true;
+              }
+            }).catch(error => {
+              console.error('Error loading desktop lists:', error);
+              showErrorHomePage('Failed to load problem lists');
+            });
+          } else {
+            console.log('Desktop initialization: Data not ready yet. Will retry in 200ms...');
+            setTimeout(initializeDesktopWhenReady, 200);
+          }
+        }
+      }
+      
+      // Start desktop initialization after a short delay
+      setTimeout(initializeDesktopWhenReady, 300);
+      
+      // Simple window resize handler
+      window.addEventListener('resize', () => {
+        if (window.innerWidth >= 1024) {
+          // If switching to desktop and lists aren't loaded, initialize
+          const listsList = document.getElementById('desktop-lists-list');
+          if (listsList && !listsList.innerHTML) {
+            console.log('Resize to desktop - initializing');
+            setTimeout(() => {
+              showLoadingHomePage();
+              if (Object.keys(listSlugMap).length > 0) {
+                renderDesktopLists().then(() => {
+                  // Initialize router on resize if not already done
+                  if (!desktopRouterInitialized) {
+                    desktopRouter.init();
+                    desktopRouterInitialized = true;
+                  }
+                });
+              }
+            }, 100);
+          }
+        }
+      });
   </script>
 </body>
 </html>

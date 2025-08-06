@@ -1638,6 +1638,651 @@ html, body {
   50% { text-shadow: 0 2px 8px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.1); }
 }
 
+/* ========================================
+   DESKTOP LAYOUT - RESPONSIVE FRAMEWORK
+   ======================================== */
+
+/* Mobile-First: Hide desktop layout by default */
+.desktop-layout {
+  display: none !important;
+}
+
+.mobile-layout {
+  display: flex !important;
+}
+
+/* Desktop Breakpoint: Show desktop layout, hide mobile */
+@media (min-width: 1024px) {
+  .desktop-layout {
+    display: flex !important;
+  }
+  
+  .mobile-layout {
+    display: none !important;
+  }
+  
+  /* Adjust mobile ribbon for desktop - hide it */
+  #mobile-ribbon {
+    display: none !important;
+  }
+  
+  /* Desktop Container Structure */
+  #desktop-container {
+    display: flex;
+    height: 100vh;
+    padding-top: 60px; /* Space for desktop ribbon */
+    flex-direction: row;
+  }
+  
+  /* Desktop Ribbon */
+  #desktop-ribbon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #desktop-ribbon-title {
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+  
+  #desktop-ribbon-actions {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .desktop-nav-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .desktop-nav-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+  }
+  
+  .desktop-nav-btn:active {
+    transform: translateY(0);
+  }
+  
+  /* Desktop Modals */
+  .desktop-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+  }
+  
+  .desktop-modal-content {
+    background-color: white;
+    margin: 8% auto;
+    padding: 0;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: modalFadeIn 0.3s ease;
+  }
+  
+  .desktop-modal-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .desktop-modal-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .desktop-close-btn {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 28px;
+    font-weight: 300;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+  }
+  
+  .desktop-close-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  .desktop-modal-body {
+    padding: 24px;
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+  
+  /* Desktop Search Modal Specific */
+  #desktop-search-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 16px;
+    transition: border-color 0.2s ease;
+  }
+  
+  #desktop-search-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  }
+  
+  .desktop-search-filters {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .desktop-search-filters label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .desktop-search-filters input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #667eea;
+  }
+  
+  #desktop-search-results {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .desktop-search-result {
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .desktop-search-result:hover {
+    background: #f8fafc;
+    border-color: #667eea;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .desktop-search-result-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+  
+  .desktop-search-result-number {
+    background: #667eea;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    min-width: 40px;
+    text-align: center;
+  }
+  
+  .desktop-search-result-title {
+    font-weight: 600;
+    flex: 1;
+    color: #1f2937;
+  }
+  
+  .desktop-search-result-difficulty {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .desktop-search-result-difficulty.easy {
+    background: #dcfce7;
+    color: #166534;
+  }
+  
+  .desktop-search-result-difficulty.medium {
+    background: #fef3c7;
+    color: #92400e;
+  }
+  
+  .desktop-search-result-difficulty.hard {
+    background: #fecaca;
+    color: #991b1b;
+  }
+  
+  .desktop-search-result-meta {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+  
+  .desktop-search-result-list {
+    font-style: italic;
+  }
+  
+  .desktop-no-results {
+    text-align: center;
+    color: #6b7280;
+    padding: 40px 20px;
+    font-style: italic;
+  }
+  
+  /* Desktop Settings Modal Specific */
+  .desktop-setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .desktop-setting-item:last-child {
+    border-bottom: none;
+  }
+  
+  .desktop-setting-item label {
+    font-weight: 500;
+    color: #374151;
+  }
+  
+  .desktop-setting-item select {
+    padding: 8px 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    min-width: 120px;
+  }
+  
+  .desktop-setting-item select:focus {
+    outline: none;
+    border-color: #667eea;
+  }
+  
+  /* Desktop Sidebar Base Styling */
+  .desktop-sidebar {
+    background: #e5e7eb;
+    border-right: 1px solid #d1d5db;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-shrink: 0;
+  }
+  
+  /* Lists Sidebar */
+  #desktop-lists-sidebar {
+    width: 280px;
+    min-width: 240px;
+  }
+  
+  /* Problems Sidebar */
+  #desktop-problems-sidebar {
+    width: 320px;
+    min-width: 280px;
+  }
+  
+  /* Main Content Area */
+  #desktop-content {
+    flex: 1;
+    background: #e5e7eb;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 16px;
+  }
+  
+  /* Desktop Content Inner */
+  .desktop-content-inner {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #d1d5db;
+    max-width: none;
+    line-height: 1.6;
+    margin: 0;
+    min-height: calc(100vh - 112px); /* Account for padding and ribbon */
+    width: 100%;
+  }
+  
+  /* Desktop Lists and File Lists */
+  #desktop-lists-list,
+  #desktop-file-list {
+    list-style: none;
+    padding: 16px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* Desktop List Items - Mobile-Inspired Cards */
+  #desktop-lists-list li {
+    margin: 0;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #d1d5db;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  #desktop-lists-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  #desktop-lists-list a {
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    color: #1e293b;
+    transition: all 0.2s ease;
+  }
+  
+  #desktop-lists-list a:hover {
+    background: #f9fafb;
+  }
+  
+  /* Desktop Problem Items - Mobile-Inspired Design */
+  #desktop-file-list li {
+    margin: 0;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #d1d5db;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    min-height: 60px;
+  }
+  
+  #desktop-file-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  #desktop-file-list a {
+    display: flex;
+    align-items: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    color: #1e293b;
+    transition: all 0.2s ease;
+    gap: 12px;
+  }
+  
+  #desktop-file-list a:hover {
+    background: #f8fafc;
+  }
+  
+  /* Active states for desktop navigation */
+  #desktop-lists-list li.active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.2);
+    border-color: #667eea;
+  }
+  
+  #desktop-lists-list li.active a {
+    background: rgba(102, 126, 234, 0.05);
+  }
+  
+  #desktop-file-list li.active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.2);
+    border-color: #667eea;
+  }
+  
+  #desktop-file-list li.active a {
+    background: rgba(102, 126, 234, 0.05);
+  }
+  
+  /* Desktop List Header Styling (like mobile cards) */
+  .desktop-list-header {
+    padding: 16px 18px;
+  }
+  
+  .desktop-list-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+  }
+  
+  .desktop-list-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #1e293b;
+    margin: 0;
+  }
+  
+  .desktop-list-count {
+    font-size: 13px;
+    font-weight: 500;
+    color: #64748b;
+    opacity: 0.9;
+    margin-top: 4px;
+  }
+  
+  .desktop-list-description {
+    font-size: 12px;
+    line-height: 1.3;
+    color: #64748b;
+    margin-top: 4px;
+  }
+  
+  /* Desktop List Icon */
+  .desktop-list-icon {
+    font-size: 18px;
+    min-width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 6px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);
+    flex-shrink: 0;
+    margin-right: 12px;
+  }
+  
+  /* Desktop Problem Styling */
+  .desktop-problem-number {
+    font-size: 13px;
+    color: #475569;
+    font-weight: 600;
+    min-width: 45px;
+    padding: 4px 8px;
+    background: #f1f5f9;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .desktop-problem-title {
+    flex: 1;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #1e293b;
+  }
+  
+  .desktop-problem-difficulty {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    letter-spacing: 0.3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .desktop-problem-difficulty.easy {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    color: #15803d;
+    border: 1px solid rgba(21, 128, 61, 0.2);
+  }
+  
+  .desktop-problem-difficulty.medium {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    color: #d97706;
+    border: 1px solid rgba(217, 119, 6, 0.2);
+  }
+  
+  .desktop-problem-difficulty.hard {
+    background: linear-gradient(135deg, #fecaca 0%, #fca5a5 100%);
+    color: #dc2626;
+    border: 1px solid rgba(220, 38, 38, 0.2);
+  }
+  
+  /* Typography adjustments for desktop */
+  .desktop-content-inner {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  
+  .desktop-content-inner h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #24292f;
+    line-height: 1.3;
+  }
+  
+  .desktop-content-inner h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 32px 0 16px 0;
+    color: #24292f;
+    line-height: 1.3;
+  }
+  
+  .desktop-content-inner h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 24px 0 12px 0;
+    color: #8b5cf6;
+    line-height: 1.3;
+  }
+  
+  .desktop-content-inner p {
+    margin-bottom: 16px;
+    color: #24292f;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .desktop-content-inner code {
+    background: #f6f8fa;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 14px;
+    color: #24292f;
+  }
+  
+  .desktop-content-inner pre {
+    background: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  }
+  
+  .desktop-content-inner ul,
+  .desktop-content-inner ol {
+    padding-left: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .desktop-content-inner li {
+    margin-bottom: 8px;
+  }
+  
+  .desktop-content-inner blockquote {
+    border-left: 4px solid #d0d7de;
+    padding: 0 16px;
+    margin: 16px 0;
+    color: #656d76;
+  }
+  
+  .desktop-content-inner a {
+    color: #0969da;
+    text-decoration: none;
+  }
+  
+  .desktop-content-inner a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Desktop Author Footnote */
+  .desktop-content-inner .mobile-author-footnote {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e4e8;
+    color: #656d76;
+    font-size: 14px;
+  }
+}
+
 /* Print Styles - Clean document layout matching desktop version */
 @media print {
   * {
