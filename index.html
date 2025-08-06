@@ -106,18 +106,7 @@
       <div class="desktop-content-inner" id="desktop-default-content">
         <div id="landing-content">
           <!-- Fallback content in case JS fails -->
-          <div style="max-width: 700px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
-            <h1 style="font-size: 2.8rem; font-weight: 700; color: #1a202c; margin-bottom: 1rem;">
-              LeetCode Handbook
-            </h1>
-            <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 3rem; line-height: 1.6;">
-              Your comprehensive guide to coding interview preparation
-            </p>
-            <div style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; border-radius: 12px; padding: 2rem;">
-              <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">Loading...</h3>
-              <p style="font-size: 1rem; opacity: 0.9; margin-bottom: 0;">Please wait while the application loads</p>
-            </div>
-          </div>
+          
         </div>
       </div>
     </main>
@@ -296,12 +285,9 @@
       isNavigating: false,
       
       init() {
-        console.log('Initializing desktop router');
-        
         window.addEventListener('hashchange', () => {
           // Only handle hash changes on desktop and if not currently navigating
           if (window.innerWidth >= 1024 && !this.isNavigating) {
-            console.log('Desktop hashchange detected');
             this.handleRoute();
           }
         });
@@ -337,7 +323,6 @@
       
       async handleRoute() {
         const { listSlug, problemSlug } = this.parseHash();
-        console.log('Desktop router handling:', listSlug, problemSlug);
         
         try {
           if (!listSlug && !problemSlug) {
@@ -362,8 +347,6 @@
       },
       
       async showWelcome() {
-        console.log('Desktop router: showing home');
-        
         // INSTANT C1 scroll reset - before clearing states
         const c1Container = document.getElementById('desktop-lists-sidebar');
         if (c1Container) {
@@ -394,8 +377,6 @@
       },
       
       async showList(listSlug) {
-        console.log('Desktop router: showing list', listSlug);
-        
         const fileName = slugToFileMap[listSlug];
         if (!fileName) {
           throw new Error(`List "${listSlug}" not found`);
@@ -455,8 +436,6 @@
       },
       
       async showProblem(listSlug, problemSlug) {
-        console.log('Desktop router: showing problem', listSlug, problemSlug);
-        
         const fileName = slugToFileMap[listSlug];
         if (!fileName) {
           throw new Error(`List "${listSlug}" not found`);
@@ -474,7 +453,6 @@
         // Load list data dynamically just like mobile router - no complex state management
         let listData = [];
         if (currentListSlug !== listSlug || currentListData.length === 0) {
-          console.log('Loading fresh list data for:', fileName);
           try {
             const response = await fetch(`data/${fileName}`);
             if (!response.ok) {
@@ -494,15 +472,12 @@
             currentListSlug = listSlug;
             currentDesktopList = listSlug;
             
-            console.log('Loaded', listData.length, 'problems from', fileName);
           } catch (error) {
-            console.error('Failed to load list data:', error);
             throw new Error(`Failed to load list "${listSlug}"`);
           }
         } else {
           // Use existing data
           listData = currentListData;
-          console.log('Using existing list data:', listData.length, 'problems');
         }
         
         // CRITICAL FIX: Always ensure C2 shows the correct list BEFORE trying to highlight the problem
@@ -514,7 +489,6 @@
         const hasCorrectListContent = firstProblemLink !== null;
         
         if (currentListSlug !== listSlug || !fileList.hasChildNodes() || !hasCorrectListContent) {
-          console.log('Desktop router: C2 needs refresh - currentListSlug:', currentListSlug, 'expected:', listSlug, 'hasContent:', fileList.hasChildNodes(), 'hasCorrectContent:', hasCorrectListContent);
           await renderDesktopProblems(listSlug, false);
         }
         
@@ -538,54 +512,7 @@
         loadDesktopProblemContent(listSlug, problemSlug, problem.number || problem.id);
       }
     };
-    
-    // IMMEDIATE HOME PAGE INITIALIZATION - Run as soon as possible
-    document.addEventListener('DOMContentLoaded', () => {
-      console.log('DOM loaded - attempting immediate home page display');
-      if (window.innerWidth >= 1024) {
-        const contentInner = document.querySelector('.desktop-content-inner');
-        if (contentInner) {
-          console.log('Desktop detected - replacing fallback content with full home page');
-          contentInner.innerHTML = `
-            <div style="max-width: 700px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
-              <h1 style="font-size: 2.8rem; font-weight: 700; color: #1a202c; margin-bottom: 1rem;">
-                LeetCode Handbook
-              </h1>
-              <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 3rem; line-height: 1.6;">
-                Your comprehensive guide to coding interview preparation
-              </p>
-              
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; text-align: left;">
-                  <div style="font-size: 2rem; margin-bottom: 1rem;">📚</div>
-                  <h3 style="font-size: 1.2rem; font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Curated Collections</h3>
-                  <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5;">Hand-picked problem sets from top companies and essential topics.</p>
-                </div>
-                
-                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; text-align: left;">
-                  <div style="font-size: 2rem; margin-bottom: 1rem;">⚡</div>
-                  <h3 style="font-size: 1.2rem; font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Instant Navigation</h3>
-                  <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5;">Seamless browsing with prev/next navigation and random exploration.</p>
-                </div>
-                
-                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; text-align: left;">
-                  <div style="font-size: 2rem; margin-bottom: 1rem;">🎯</div>
-                  <h3 style="font-size: 1.2rem; font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Focused Practice</h3>
-                  <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5;">Clean, distraction-free interface for effective problem solving.</p>
-                </div>
-              </div>
-              
-              <div style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; border-radius: 12px; padding: 2rem;">
-                <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">Get Started</h3>
-                <p style="font-size: 1rem; opacity: 0.9; margin-bottom: 0;">Choose a collection from the left sidebar to begin your journey</p>
-              </div>
-            </div>
-          `;
-          console.log('Home page content set immediately');
-        }
-      }
-    });
-    
+
     /*
     ===========================================
     MOBILE LEETCODE HANDBOOK APP
@@ -764,7 +691,6 @@
         const fileName = slugToFileMap[listSlug];
         
         if (!fileName) {
-          console.error('No file found for slug:', listSlug);
           this.showError('List Not Found', `The requested list "${listSlug}" does not exist.`);
           return;
         }
@@ -1086,18 +1012,14 @@
     // Load lists (same logic as desktop)
     async function loadMobileLists() {
       try {
-        console.log('loadMobileLists: Starting to fetch data/lists.json...');
         const response = await fetch('data/lists.json');
         currentLists = await response.json();
-        console.log('loadMobileLists: Loaded', currentLists.length, 'lists from JSON');
         
         const { slugMap, fileMap } = generateSlugMappings(currentLists);
         listSlugMap = slugMap;
         slugToFileMap = fileMap;
-        console.log('loadMobileLists: Generated slug mappings. SlugMap keys:', Object.keys(listSlugMap).length);
         
         renderMobileLists();
-        console.log('loadMobileLists: Data loading complete! Lists and slug mappings are ready for desktop.');
       } catch (error) {
         console.error('Failed to load lists:', error);
         document.getElementById('mobile-lists-list').innerHTML = `
@@ -2063,14 +1985,27 @@
       document.getElementById('desktop-home-btn').onclick = (e) => {
         e.preventDefault();
         if (window.innerWidth >= 1024) {
-          // Desktop: Use the router to navigate home properly
-          desktopRouter.navigate('');
+          // Desktop: Show loading animation with 0.5s minimum time, then use router to navigate home properly
+          showDesktopLoadingAnimation('content');
           
-          // Clear content area immediately, then show home landing page
-          const contentInner = document.querySelector('.desktop-content-inner');
-          if (contentInner) {
-            // Ready to show home landing page
-          }
+          // Clear all selections and states IMMEDIATELY  
+          document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
+          document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
+          document.getElementById('desktop-file-list').innerHTML = '';
+          
+          // Clear ALL state variables
+          currentListSlug = '';
+          currentListData = [];
+          currentDesktopList = null;
+          
+          // Show 0.5s loading animation, then navigate via router (router handles home page display)
+          setTimeout(() => {
+            desktopRouter.navigate('');
+          }, 500); // 0.5s loading delay as requested
+          
+          document.title = 'LeetCode Handbook';
+          
+
           
           // Clear all selections and states IMMEDIATELY
           document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
@@ -2322,7 +2257,7 @@
           showMobileToast('Shared successfully!');
         }).catch((error) => {
           // If native share fails or is cancelled, fall back to clipboard
-          console.log('Native share failed:', error);
+
           fallbackToClipboard(url);
         });
       } else {
@@ -2530,14 +2465,12 @@
         }
       });
       
-      console.log('Mobile DOMContentLoaded: Starting mobile router initialization...');
       mobileRouter.init(); // Initialize router, which will handle loading and rendering
-      console.log('Mobile DOMContentLoaded: Mobile router initialized. Data loading should begin now...');
       
       // Handle browser back/forward navigation using hashchange (legacy desktop approach)
       window.addEventListener('hashchange', () => {
         if (window.innerWidth >= 1024) {
-          console.log('Desktop hashchange event:', window.location.hash);
+
           handleDesktopNavigation();
         }
       });
@@ -2545,7 +2478,6 @@
       // Modified desktop navigation handler - now just delegates to router
       function handleDesktopNavigation() {
         if (!desktopRouterInitialized) {
-          console.log('Initializing desktop router...');
           desktopRouter.init();
           desktopRouterInitialized = true;
         } else {
@@ -2555,7 +2487,6 @@
       
       // Helper function for full problem view loading
       function loadFullDesktopProblemView(listSlug, problemSlug) {
-          console.log('Loading full problem view:', listSlug, problemSlug);
           showDesktopLoadingAnimation('content');
           const listLinks = document.querySelectorAll('#desktop-lists-list a[href="#' + listSlug + '"]');
           if (listLinks.length > 0) {
@@ -2824,14 +2755,11 @@
       
       // Show home landing page - with dynamic loading status
       function showHomeLandingPage() {
-        console.log('showHomeLandingPage called, currentLists.length:', currentLists.length, 'listSlugMap keys:', Object.keys(listSlugMap).length);
-        
         // Try desktop element first, then fallback to mobile  
         let targetElement = document.querySelector('.desktop-content-inner');
         if (!targetElement) {
           targetElement = document.getElementById('landing-content');
         }
-        console.log('Target element found:', targetElement, 'Current content:', targetElement?.innerHTML.substring(0, 100));
         if (!targetElement) {
           console.error('Could not find target element for home landing page');
           // Try to create the desktop content area if it doesn't exist
@@ -2849,9 +2777,9 @@
             return false;
           }
         }
-        console.log('Found target element:', targetElement);
+
         
-        console.log('Setting innerHTML for home landing page with', currentLists.length, 'lists available');
+
         targetElement.innerHTML = `
           <div style="max-width: 700px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
             <h1 style="font-size: 2.8rem; font-weight: 700; color: #1a202c; margin-bottom: 1rem;">
@@ -2906,7 +2834,6 @@
       
       // Show loading home page while data loads
       function showLoadingHomePage() {
-        console.log('showLoadingHomePage called');
         let targetElement = document.querySelector('.desktop-content-inner');
         if (!targetElement) {
           targetElement = document.getElementById('landing-content');
@@ -2940,7 +2867,6 @@
       
       // Show error home page if loading fails
       function showErrorHomePage(errorMessage) {
-        console.log('showErrorHomePage called with error:', errorMessage);
         let targetElement = document.querySelector('.desktop-content-inner');
         if (!targetElement) {
           targetElement = document.getElementById('landing-content');
@@ -2977,7 +2903,6 @@
       
       // Show list landing page - simple overview of the list
       function showListLandingPage(listSlug, listData) {
-        console.log('showListLandingPage called with listSlug:', listSlug);
         // Try desktop element first, then fallback to mobile
         let targetElement = document.querySelector('.desktop-content-inner');
         if (!targetElement) {
@@ -3441,17 +3366,10 @@
       
       // DESKTOP INITIALIZATION - Wait for data to be ready, then initialize
       function initializeDesktopWhenReady() {
-        console.log('Checking if desktop initialization is ready. Width:', window.innerWidth, 'Lists loaded:', currentLists.length, 'SlugMap keys:', Object.keys(listSlugMap).length);
-        
         if (window.innerWidth >= 1024) {
           if (currentLists.length > 0 && Object.keys(listSlugMap).length > 0) {
-            console.log('Desktop initialization: Data is ready! Starting desktop initialization...');
-            
             // Load desktop lists directly without loading page
-            console.log('Loading desktop lists...');
             renderDesktopLists().then(() => {
-              console.log('Desktop lists loaded successfully. Initializing router...');
-              
               // Initialize the desktop router now that data is ready
               if (!desktopRouterInitialized) {
                 desktopRouter.init();
@@ -3462,7 +3380,6 @@
               showErrorHomePage('Failed to load problem lists');
             });
           } else {
-            console.log('Desktop initialization: Data not ready yet. Will retry in 200ms...');
             setTimeout(initializeDesktopWhenReady, 200);
           }
         }
@@ -3477,7 +3394,6 @@
           // If switching to desktop and lists aren't loaded, initialize
           const listsList = document.getElementById('desktop-lists-list');
           if (listsList && !listsList.innerHTML) {
-            console.log('Resize to desktop - initializing');
             setTimeout(() => {
               showLoadingHomePage();
               if (Object.keys(listSlugMap).length > 0) {
