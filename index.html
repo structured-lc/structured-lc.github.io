@@ -361,6 +361,17 @@
           }, 0);
         }
         
+        // CLEAR DESKTOP CONTENT AREA IMMEDIATELY - Reset to clean state
+        const contentInner = document.querySelector('.desktop-content-inner');
+        if (contentInner) {
+          contentInner.innerHTML = `
+            <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
+              <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
+              <div style="font-size: 1.1rem; font-weight: 500;">Loading home page...</div>
+            </div>
+          `;
+        }
+        
         // Clear all active states
         document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
         document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
@@ -371,8 +382,11 @@
         currentListData = [];
         currentDesktopList = null;
         
-        // Show home content
-        showHomeLandingPage();
+        // Show home content after a brief delay for smooth transition
+        setTimeout(() => {
+          showHomeLandingPage();
+        }, 300);
+        
         document.title = 'LeetCode Handbook';
       },
       
@@ -648,10 +662,23 @@
         currentListData = [];
         currentMarkdownFile = '';
         
+        // ADD MOBILE SELECTION HIGHLIGHTING - Clear all mobile selections when going home
+        document.querySelectorAll('#mobile-lists-list li').forEach(item => item.classList.remove('active'));
+        document.querySelectorAll('#mobile-file-list li').forEach(item => item.classList.remove('active'));
+        
         // Clear hash if not already cleared
         if (window.location.hash) {
           window.location.hash = '';
         }
+        
+        // CLEAR MOBILE CONTENT AREA - Reset to clean state
+        document.getElementById('mobile-content').innerHTML = 
+          '<div class="mobile-content-inner" id="mobile-default-content">' +
+            '<div style="text-align: center; padding: 3rem 1rem; color: #656d76;">' +
+              '<div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>' +
+              '<p style="margin: 0; font-size: 0.95rem;">Loading...</p>' +
+            '</div>' +
+          '</div>';
         
         // Force clear breadcrumbs immediately
         const breadcrumbNav = document.getElementById('mobile-breadcrumb-nav');
@@ -687,6 +714,12 @@
           await loadMobileLists();
         }
         
+        // ADD MOBILE SELECTION HIGHLIGHTING - Clear previous selections and highlight current list
+        document.querySelectorAll('#mobile-lists-list li').forEach(item => item.classList.remove('active'));
+        const currentListLink = document.querySelector(`#mobile-lists-list a[href="#${listSlug}"]`);
+        if (currentListLink) {
+          currentListLink.closest('li').classList.add('active');
+        }
         
         const fileName = slugToFileMap[listSlug];
         
@@ -744,6 +777,13 @@
         // Load list if not already loaded or if it's a different list
         if (currentListSlug !== listSlug || currentListData.length === 0) {
           await loadMobileCodeListFiles(fileName);
+        }
+        
+        // ADD MOBILE SELECTION HIGHLIGHTING - Highlight current problem  
+        document.querySelectorAll('#mobile-file-list li').forEach(item => item.classList.remove('active'));
+        const currentProblemLink = document.querySelector(`#mobile-file-list a[href="#${listSlug}/${problemSlug}"]`);
+        if (currentProblemLink) {
+          currentProblemLink.closest('li').classList.add('active');
         }
         
         // Find and load problem - but don't let it interrupt the loading animation timing
@@ -1338,6 +1378,10 @@
         a.onclick = (e) => {
           e.preventDefault();
           
+          // ADD MOBILE SELECTION HIGHLIGHTING - Clear previous selections and highlight this problem
+          document.querySelectorAll('#mobile-file-list li').forEach(item => item.classList.remove('active'));
+          li.classList.add('active');
+          
           // Immediately switch to content view and show content loading
           currentView = 'content';
           showMobileView('content');
@@ -1419,6 +1463,10 @@
           
           // Mark as navigating to prevent double loading animation
           mobileRouter.isNavigating = true;
+          
+          // ADD MOBILE SELECTION HIGHLIGHTING - Clear previous selections and highlight this problem
+          document.querySelectorAll('#mobile-file-list li').forEach(item => item.classList.remove('active'));
+          li.classList.add('active');
           
           // Immediately switch to content view and show content loading
           currentView = 'content';
@@ -1988,6 +2036,17 @@
           // Desktop: Show loading animation with 0.5s minimum time, then use router to navigate home properly
           showDesktopLoadingAnimation('content');
           
+          // FORCE CLEAR DESKTOP CONTENT - Ensure clean state during transition
+          const contentInner = document.querySelector('.desktop-content-inner');
+          if (contentInner) {
+            contentInner.innerHTML = `
+              <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
+                <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
+                <div style="font-size: 1.1rem; font-weight: 500;">Loading home page...</div>
+              </div>
+            `;
+          }
+          
           // Clear all selections and states IMMEDIATELY  
           document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
           document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
@@ -2058,6 +2117,15 @@
 
       // Navigation buttons - always show loading animation
       document.getElementById('mobile-home-btn').onclick = () => {
+        // FORCE CLEAR MOBILE CONTENT - Ensure clean state during transition
+        document.getElementById('mobile-content').innerHTML = 
+          '<div class="mobile-content-inner" id="mobile-default-content">' +
+            '<div style="text-align: center; padding: 3rem 1rem; color: #656d76;">' +
+              '<div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>' +
+              '<p style="margin: 0; font-size: 0.95rem;">Loading...</p>' +
+            '</div>' +
+          '</div>';
+        
         showMobileLoadingAnimation();
         setTimeout(() => {
           mobileRouter.navigate('');
@@ -3388,17 +3456,59 @@
       // Start desktop initialization after a short delay
       setTimeout(initializeDesktopWhenReady, 300);
       
-      // Simple window resize handler
+      // Enhanced window resize handler with better switching logic and state preservation
+      let layoutType = window.innerWidth >= 1024 ? 'desktop' : 'mobile';
+      let isInitialLoad = true;
+      
       window.addEventListener('resize', () => {
+        const newLayoutType = window.innerWidth >= 1024 ? 'desktop' : 'mobile';
+        
+        // Only handle switching if layout type has actually changed
+        if (newLayoutType !== layoutType) {
+          layoutType = newLayoutType;
+          
+          if (newLayoutType === 'desktop') {
+            // Switching from mobile to desktop
+            console.log('📱➡️💻 Switching from mobile to desktop layout');
+            
+            // If switching to desktop and lists aren't loaded, initialize
+            const listsList = document.getElementById('desktop-lists-list');
+            if (listsList && !listsList.innerHTML) {
+              setTimeout(() => {
+                showLoadingHomePage();
+                if (Object.keys(listSlugMap).length > 0) {
+                  renderDesktopLists().then(() => {
+                    // Initialize router on resize if not already done
+                    if (!desktopRouterInitialized) {
+                      desktopRouter.init();
+                      desktopRouterInitialized = true;
+                    }
+                    // Replay current URL in desktop layout
+                    replayCurrentUrlInLayout('desktop');
+                  });
+                }
+              }, 100);
+            } else {
+              // Desktop already loaded, just replay the URL
+              replayCurrentUrlInLayout('desktop');
+            }
+          } else {
+            // Switching from desktop to mobile
+            console.log('💻➡️📱 Switching from desktop to mobile layout');
+            
+            // Replay current URL in mobile layout
+            replayCurrentUrlInLayout('mobile');
+          }
+        }
+        
+        // Additional responsive adjustments (existing logic)
         if (window.innerWidth >= 1024) {
-          // If switching to desktop and lists aren't loaded, initialize
           const listsList = document.getElementById('desktop-lists-list');
           if (listsList && !listsList.innerHTML) {
             setTimeout(() => {
               showLoadingHomePage();
               if (Object.keys(listSlugMap).length > 0) {
                 renderDesktopLists().then(() => {
-                  // Initialize router on resize if not already done
                   if (!desktopRouterInitialized) {
                     desktopRouter.init();
                     desktopRouterInitialized = true;
@@ -3409,6 +3519,26 @@
           }
         }
       });
+      
+      // ==========================================
+      // SIMPLE URL REPLAY SYSTEM
+      // ==========================================
+      
+      // Simple URL replay - just let the router handle the current hash
+      function replayCurrentUrlInLayout(targetLayout) {
+        // The hash is already set correctly, just trigger the appropriate router
+        setTimeout(() => {
+          if (targetLayout === 'desktop') {
+            desktopRouter.handleRoute();
+          } else {
+            mobileRouter.handleRoute();
+          }
+        }, 100);
+      }
+
+      // ==========================================
+      // END SIMPLE URL REPLAY SYSTEM
+      // ==========================================
   </script>
 </body>
 </html>

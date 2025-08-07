@@ -1961,16 +1961,18 @@ html, body {
     flex-shrink: 0;
   }
   
-  /* Lists Sidebar */
+  /* Lists Sidebar - Responsive Width */
   #desktop-lists-sidebar {
-    width: 280px;
+    width: 22%;  /* ~22% of screen for lists sidebar */
     min-width: 240px;
+    max-width: 320px;
   }
   
-  /* Problems Sidebar */
+  /* Problems Sidebar - Responsive Width */
   #desktop-problems-sidebar {
-    width: 320px;
+    width: 26%;  /* ~26% of screen for problems sidebar */
     min-width: 280px;
+    max-width: 400px;
   }
   
   /* Main Content Area */
