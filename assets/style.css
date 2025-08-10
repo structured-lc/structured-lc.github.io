@@ -7,6 +7,71 @@
   box-sizing: border-box;
 }
 
+/* Add keyframe animations */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes backgroundShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Stats Grid */
+@media (max-width: 768px) {
+  .stats-grid-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid-4 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 html, body {
   margin: 0 !important;
   font-family: 'Inter', 'Roboto', Arial, sans-serif !important;
@@ -40,15 +105,16 @@ html, body {
 
 #mobile-ribbon-title {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   flex: 1;
-  letter-spacing: 0.5px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .mobile-nav-btn {
@@ -260,12 +326,12 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 0; /* Remove bottom margin since it's now part of the content background */
   padding: 8px 12px;
-  background: #ffffff;
-  border-radius: 12px;
-  border: 1px solid #d1d5db;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: transparent; /* Remove individual background */
+  border: none; /* Remove individual border */
+  box-shadow: none; /* Remove individual shadow */
+  border-radius: 0; /* Remove individual border radius */
   flex-wrap: nowrap;
   gap: 6px;
 }
@@ -968,8 +1034,8 @@ html, body {
 /* Author footnote */
 .mobile-author-footnote {
   text-align: center;
-  margin-top: 40px;
-  padding-top: 20px;
+  margin-top: 24px;
+  padding: 16px;
   border-top: 1px solid #e1e4e8;
   color: #656d76;
   font-size: 14px;
@@ -1670,7 +1736,7 @@ html, body {
   #desktop-container {
     display: flex;
     height: 100vh;
-    padding-top: 60px; /* Space for desktop ribbon */
+    padding-top: 52px; /* Space for desktop ribbon */
     flex-direction: row;
   }
   
@@ -1680,55 +1746,97 @@ html, body {
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 52px; /* Reduced from 60px */
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
     z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.25);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   
   #desktop-ribbon-title {
     color: white;
-    font-weight: 700;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
+    font-weight: 800;
+    font-size: 1.1rem; /* Reduced from 1.2rem */
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
   
   #desktop-ribbon-actions {
     display: flex;
-    gap: 12px;
+    gap: 8px;
   }
   
   .desktop-nav-btn {
     background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     color: white;
-    padding: 8px 16px;
-    border-radius: 6px;
+    padding: 8px 14px; /* Reduced from 10px 16px to match smaller ribbon */
+    border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
     font-size: 0.9rem;
-    font-weight: 500;
-    transition: all 0.2s ease;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
+    backdrop-filter: blur(15px);
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .desktop-nav-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
   
   .desktop-nav-btn:hover {
     background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-1px);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .desktop-nav-btn:hover::before {
+    opacity: 1;
   }
   
   .desktop-nav-btn:active {
-    transform: translateY(0);
+    transform: translateY(-1px) scale(0.98);
   }
   
-  /* Desktop Modals */
+  .desktop-nav-btn .btn-text {
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .desktop-nav-btn .btn-icon {
+    font-size: 1.1em;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Desktop Modals - Only show on desktop screens */
   .desktop-modal {
     display: none;
     position: fixed;
@@ -1739,6 +1847,34 @@ html, body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(4px);
+  }
+  
+  /* Only enable desktop modals on desktop screens */
+  @media (min-width: 1024px) {
+    .desktop-modal {
+      display: none; /* Still hidden by default, shown via JS */
+    }
+  }
+  
+  /* Force hide desktop modals on mobile */
+  @media (max-width: 1023px) {
+    .desktop-modal,
+    .desktop-modal *,
+    .desktop-modal-header,
+    .desktop-modal-content,
+    .desktop-modal-body,
+    #desktop-search-modal,
+    #desktop-settings-modal,
+    .desktop-search-filters,
+    .desktop-setting-item {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      position: absolute !important;
+      left: -9999px !important;
+      top: -9999px !important;
+    }
   }
   
   .desktop-modal-content {
@@ -1840,84 +1976,85 @@ html, body {
   #desktop-search-results {
     max-height: 400px;
     overflow-y: auto;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #f8fafc;
   }
   
-  .desktop-search-result {
-    padding: 12px;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    margin-bottom: 8px;
+  .desktop-search-result-item {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e2e8f0;
     cursor: pointer;
     transition: all 0.2s ease;
-  }
-  
-  .desktop-search-result:hover {
-    background: #f8fafc;
-    border-color: #667eea;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .desktop-search-result-header {
     display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 4px;
+    flex-direction: column;
+    gap: 4px;
   }
   
-  .desktop-search-result-number {
-    background: #667eea;
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    min-width: 40px;
-    text-align: center;
+  .desktop-search-result-item:hover {
+    background: #ffffff;
+    transform: translateX(2px);
+  }
+  
+  .desktop-search-result-item:last-child {
+    border-bottom: none;
   }
   
   .desktop-search-result-title {
-    font-weight: 600;
-    flex: 1;
-    color: #1f2937;
+    font-weight: 500;
+    color: #1e293b;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  
+  .desktop-search-result-meta {
+    font-size: 13px;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
   
   .desktop-search-result-difficulty {
-    padding: 4px 8px;
+    display: inline-block;
+    padding: 2px 6px;
     border-radius: 4px;
-    font-size: 0.8rem;
+    font-size: 11px;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
   }
   
   .desktop-search-result-difficulty.easy {
     background: #dcfce7;
-    color: #166534;
+    color: #15803d;
   }
   
   .desktop-search-result-difficulty.medium {
     background: #fef3c7;
-    color: #92400e;
+    color: #d97706;
   }
   
   .desktop-search-result-difficulty.hard {
     background: #fecaca;
-    color: #991b1b;
+    color: #dc2626;
   }
   
-  .desktop-search-result-meta {
-    color: #6b7280;
-    font-size: 0.9rem;
+  .desktop-search-section-header {
+    padding: 12px 16px 8px 16px;
+    margin: 0 -8px;
+    background: #f6f8fa;
+    border-top: 1px solid #e1e5e9;
+    border-bottom: 1px solid #e1e5e9;
+    font-size: 12px;
+    font-weight: 600;
+    color: #656d76;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
   
-  .desktop-search-result-list {
-    font-style: italic;
-  }
-  
-  .desktop-no-results {
-    text-align: center;
-    color: #6b7280;
-    padding: 40px 20px;
-    font-style: italic;
+  .desktop-search-section-header:first-child {
+    border-top: none;
   }
   
   /* Desktop Settings Modal Specific */
@@ -1994,7 +2131,7 @@ html, body {
     max-width: none;
     line-height: 1.6;
     margin: 0;
-    min-height: calc(100vh - 112px); /* Account for padding and ribbon */
+    min-height: calc(100vh - 104px); /* Account for padding and ribbon (52px + 52px) */
     width: 100%;
   }
   
@@ -2191,6 +2328,26 @@ html, body {
     border: 1px solid rgba(220, 38, 38, 0.2);
   }
   
+  /* Desktop problem difficulty dots (matching mobile design) */
+  .desktop-problem-difficulty-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  
+  .desktop-problem-difficulty-dot.easy {
+    background: #15803d;
+  }
+  
+  .desktop-problem-difficulty-dot.medium {
+    background: #ca8a04;
+  }
+  
+  .desktop-problem-difficulty-dot.hard {
+    background: #dc2626;
+  }
+  
   /* Typography adjustments for desktop */
   .desktop-content-inner {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -2216,7 +2373,7 @@ html, body {
     font-size: 22px;
     font-weight: 600;
     margin: 24px 0 12px 0;
-    color: #8b5cf6;
+    color: #2364b5;
     line-height: 1.3;
   }
   
@@ -2274,11 +2431,26 @@ html, body {
     text-decoration: underline;
   }
   
+  /* Desktop-specific content wrapper with background */
+  .desktop-content-with-background {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 0; /* No padding on wrapper - let individual sections handle their own padding */
+  }
+
+  /* Desktop action buttons styling within background */
+  .desktop-content-with-background .desktop-action-buttons {
+    border-bottom: 1px solid #e1e4e8; /* Add subtle separator */
+    border-radius: 12px 12px 0 0; /* Match the top border radius of the container */
+  }
+  
   /* Desktop Author Footnote */
   .desktop-content-inner .mobile-author-footnote {
     text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
+    margin-top: 0; /* Remove the space above */
+    padding: 12px; /* Add padding inside the background box */
     border-top: 1px solid #e1e4e8;
     color: #656d76;
     font-size: 14px;
@@ -2749,5 +2921,67 @@ html, body {
   .heart {
     color: #cf222e !important;
     text-shadow: none !important;
+  }
+  
+  /* Desktop-specific print styles - hide desktop UI elements and show content properly */
+  #desktop-ribbon,
+  .desktop-nav-btn,
+  #desktop-search-btn,
+  #desktop-settings-btn,
+  #desktop-search-modal,
+  #desktop-settings-modal,
+  .btn-text,
+  .btn-icon,
+  #desktop-lists-sidebar,
+  #desktop-problems-sidebar,
+  .desktop-action-buttons,
+  #desktop-random-btn,
+  #desktop-print-btn,
+  .desktop-close-btn,
+  .desktop-search-filters,
+  .desktop-modal,
+  .desktop-modal-content,
+  .desktop-modal-header {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* Desktop content container */
+  .desktop-content-inner,
+  .desktop-content-with-background {
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: white !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+  
+  /* Ensure desktop content inherits mobile print styles */
+  .desktop-content-inner h1,
+  .desktop-content-inner h2,
+  .desktop-content-inner h3,
+  .desktop-content-inner h4,
+  .desktop-content-inner h5,
+  .desktop-content-inner h6,
+  .desktop-content-inner p,
+  .desktop-content-inner code,
+  .desktop-content-inner pre,
+  .desktop-content-inner ul,
+  .desktop-content-inner ol,
+  .desktop-content-inner li,
+  .desktop-content-inner blockquote,
+  .desktop-content-inner a {
+    /* Inherit all mobile print styles for consistency */
+    color: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    margin: inherit !important;
+    padding: inherit !important;
+    line-height: inherit !important;
+    font-family: inherit !important;
   }
 }

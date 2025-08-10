@@ -212,59 +212,7 @@
     </div>
   </div>
 
-  <!-- Desktop Search Modal -->
-  <div id="desktop-search-modal" class="desktop-modal">
-    <div class="desktop-modal-content">
-      <div class="desktop-modal-header">
-        <h3>🔍 Search Problems</h3>
-        <span class="desktop-close-btn" onclick="closeDesktopSearchModal()">&times;</span>
-      </div>
-      <div class="desktop-modal-body">
-        <input type="text" id="desktop-search-input" placeholder="Search problems by title, number, or difficulty... (Ctrl+K)" autocomplete="off">
-        <div class="desktop-search-filters">
-          <label><input type="checkbox" id="desktop-filter-easy" checked> Easy</label>
-          <label><input type="checkbox" id="desktop-filter-medium" checked> Medium</label>
-          <label><input type="checkbox" id="desktop-filter-hard" checked> Hard</label>
-        </div>
-        <div id="desktop-search-results"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Desktop Settings Modal -->
-  <div id="desktop-settings-modal" class="desktop-modal">
-    <div class="desktop-modal-content">
-      <div class="desktop-modal-header">
-        <h3>⚙️ Settings</h3>
-        <span class="desktop-close-btn" onclick="closeDesktopSettingsModal()">&times;</span>
-      </div>
-      <div class="desktop-modal-body">
-        <div class="desktop-setting-item">
-          <label for="desktop-theme-toggle">Theme:</label>
-          <select id="desktop-theme-toggle">
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
-            <option value="auto">Auto</option>
-          </select>
-        </div>
-        <div class="desktop-setting-item">
-          <label for="desktop-font-size">Font Size:</label>
-          <select id="desktop-font-size">
-            <option value="small">Small</option>
-            <option value="normal" selected>Normal</option>
-            <option value="large">Large</option>
-          </select>
-        </div>
-        <div class="desktop-setting-item">
-          <label for="desktop-layout-density">Layout Density:</label>
-          <select id="desktop-layout-density">
-            <option value="comfortable" selected>Comfortable</option>
-            <option value="compact">Compact</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- Desktop modals will be created dynamically on desktop only -->
 
   <!-- Feedback FAB -->
   <button id="mobile-feedback-fab" class="mobile-feedback-fab">
@@ -360,18 +308,7 @@
             c1Container.style.scrollBehavior = originalScrollBehavior;
           }, 0);
         }
-        
-        // CLEAR DESKTOP CONTENT AREA IMMEDIATELY - Reset to clean state
-        const contentInner = document.querySelector('.desktop-content-inner');
-        if (contentInner) {
-          contentInner.innerHTML = `
-            <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-              <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
-              <div style="font-size: 1.1rem; font-weight: 500;">Loading home page...</div>
-            </div>
-          `;
-        }
-        
+
         // Clear all active states
         document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
         document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
@@ -382,15 +319,11 @@
         currentListData = [];
         currentDesktopList = null;
         
-        // Show home content after a brief delay for smooth transition
-        setTimeout(() => {
-          showHomeLandingPage();
-        }, 300);
+        // Show home content immediately since we already had loading delay
+        showHomeLandingPage();
         
         document.title = 'LeetCode Handbook';
-      },
-      
-      async showList(listSlug) {
+      },      async showList(listSlug) {
         const fileName = slugToFileMap[listSlug];
         if (!fileName) {
           throw new Error(`List "${listSlug}" not found`);
@@ -1647,6 +1580,26 @@
       
       return md;
     }
+
+    // Enhanced desktop markdown processing (same as mobile but with desktop classes)
+    function enhanceDesktopMarkdown(md) {
+      // Transform title to match mobile format: {difficulty} LeetCode {number}: {title} [Practice](link)
+      md = md.replace(/### Leetcode (\d+) \((Easy|Medium|Hard)\): ([^[]+) \[Practice\]\(([^)]+)\)/g, 
+        function(match, number, difficulty, title, practiceLink) {
+          const difficultyLower = difficulty.toLowerCase();
+          return `<h3><span class="markdown-difficulty-dot ${difficultyLower}"></span> LeetCode ${number}: ${title.trim()} <a href="${practiceLink}" target="_blank" rel="noopener noreferrer" style="background: #0969da; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; text-decoration: none; display: inline-block; margin-left: 0.5em; gap: 4px; transition: all 0.2s ease;" onmouseover="this.style.background='#0550ae'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#0969da'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'">Practice</a></h3>`;
+        });
+      
+      // Enhance explanation formatting (add bulb icon like mobile)
+      md = md.replace(/\*Explanation:/g, 
+        '💡 *Explanation:');
+      
+      // Add hint icon for hints (add bulb icon like mobile)
+      md = md.replace(/\*Hint:/g, 
+        '💡 *Hint:');
+      
+      return md;
+    }
     
     // Generate mobile navigation buttons (matching desktop styling)
     function generateMobileNavigationButtons(filename) {
@@ -2036,17 +1989,6 @@
           // Desktop: Show loading animation with 0.5s minimum time, then use router to navigate home properly
           showDesktopLoadingAnimation('content');
           
-          // FORCE CLEAR DESKTOP CONTENT - Ensure clean state during transition
-          const contentInner = document.querySelector('.desktop-content-inner');
-          if (contentInner) {
-            contentInner.innerHTML = `
-              <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
-                <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
-                <div style="font-size: 1.1rem; font-weight: 500;">Loading home page...</div>
-              </div>
-            `;
-          }
-          
           // Clear all selections and states IMMEDIATELY  
           document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
           document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
@@ -2063,49 +2005,7 @@
           }, 500); // 0.5s loading delay as requested
           
           document.title = 'LeetCode Handbook';
-          
-
-          
-          // Clear all selections and states IMMEDIATELY
-          document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
-          document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
-          document.getElementById('desktop-file-list').innerHTML = '';
-          
-          // Clear ALL state variables
-          currentListSlug = '';
-          currentListData = [];
-          currentDesktopList = null;
-          
-          // Show loading for 0.5s, then show home landing page
-          setTimeout(() => {
-            // Use the proper showHomeLandingPage function instead of inline HTML
-            try {
-              showHomeLandingPage();
-            } catch (error) {
-              console.error('Home button - showHomeLandingPage failed:', error);
-              // Fallback to direct HTML if function fails
-              const homeContentInner = document.querySelector('.desktop-content-inner');
-              if (homeContentInner) {
-                homeContentInner.innerHTML = `
-                  <div style="max-width: 700px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
-                    <h1 style="font-size: 2.8rem; font-weight: 700; color: #1a202c; margin-bottom: 1rem;">
-                      LeetCode Handbook
-                    </h1>
-                    <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 3rem; line-height: 1.6;">
-                      Your comprehensive guide to coding interview preparation
-                    </p>
-                    <div style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; border-radius: 12px; padding: 2rem;">
-                      <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">Welcome Back!</h3>
-                      <p style="font-size: 1rem; opacity: 0.9; margin-bottom: 0;">Choose a collection from the left sidebar to begin</p>
-                    </div>
-                  </div>
-                `;
-              }
-            }
-          }, 500); // 0.5s loading delay
-          
           history.pushState({}, '', '#');
-          document.title = 'LeetCode Handbook';
         } else {
           // Mobile: Navigate to home with loading animation
           showMobileLoadingAnimation();
@@ -2117,19 +2017,11 @@
 
       // Navigation buttons - always show loading animation
       document.getElementById('mobile-home-btn').onclick = () => {
-        // FORCE CLEAR MOBILE CONTENT - Ensure clean state during transition
-        document.getElementById('mobile-content').innerHTML = 
-          '<div class="mobile-content-inner" id="mobile-default-content">' +
-            '<div style="text-align: center; padding: 3rem 1rem; color: #656d76;">' +
-              '<div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>' +
-              '<p style="margin: 0; font-size: 0.95rem;">Loading...</p>' +
-            '</div>' +
-          '</div>';
-        
+        // Show loading animation using the standard function
         showMobileLoadingAnimation();
         setTimeout(() => {
           mobileRouter.navigate('');
-        }, 300);
+        }, 300); // Keep original mobile timing
       };
       
       document.getElementById('mobile-search-btn').onclick = () => {
@@ -2312,6 +2204,345 @@
     
     function closeMobileSettingsModal() {
       document.getElementById('mobile-settings-modal').style.display = 'none';
+    }
+    
+    // Desktop modals creation (only on desktop)
+    function createDesktopModals() {
+      if (window.innerWidth < 1024) return; // Only create on desktop
+      
+      // Check if modals already exist
+      if (document.getElementById('desktop-search-modal')) return;
+      
+      // Create desktop search modal
+      const searchModal = document.createElement('div');
+      searchModal.id = 'desktop-search-modal';
+      searchModal.className = 'desktop-modal';
+      searchModal.innerHTML = `
+        <div class="desktop-modal-content">
+          <div class="desktop-modal-header">
+            <h3>🔍 Search Problems</h3>
+            <span class="desktop-close-btn" onclick="closeDesktopSearchModal()">&times;</span>
+          </div>
+          <div class="desktop-modal-body">
+            <input type="text" id="desktop-search-input" placeholder="Search problems by title, number, or difficulty... (Ctrl+K)" autocomplete="off">
+            <div class="desktop-search-filters">
+              <label><input type="checkbox" id="desktop-filter-easy" checked> Easy</label>
+              <label><input type="checkbox" id="desktop-filter-medium" checked> Medium</label>
+              <label><input type="checkbox" id="desktop-filter-hard" checked> Hard</label>
+            </div>
+            <div id="desktop-search-results"></div>
+          </div>
+        </div>
+      `;
+      
+      // Create desktop settings modal
+      const settingsModal = document.createElement('div');
+      settingsModal.id = 'desktop-settings-modal';
+      settingsModal.className = 'desktop-modal';
+      settingsModal.innerHTML = `
+        <div class="desktop-modal-content">
+          <div class="desktop-modal-header">
+            <h3>⚙️ Settings</h3>
+            <span class="desktop-close-btn" onclick="closeDesktopSettingsModal()">&times;</span>
+          </div>
+          <div class="desktop-modal-body">
+            <div class="desktop-setting-item">
+              <label for="desktop-theme-toggle">Theme:</label>
+              <select id="desktop-theme-toggle">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="auto">Auto</option>
+              </select>
+            </div>
+            <div class="desktop-setting-item">
+              <label for="desktop-font-size">Font Size:</label>
+              <select id="desktop-font-size">
+                <option value="small">Small</option>
+                <option value="normal" selected>Normal</option>
+                <option value="large">Large</option>
+              </select>
+            </div>
+            <div class="desktop-setting-item">
+              <label for="desktop-layout-density">Layout Density:</label>
+              <select id="desktop-layout-density">
+                <option value="comfortable" selected>Comfortable</option>
+                <option value="compact">Compact</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      `;
+      
+      // Append to body
+      document.body.appendChild(searchModal);
+      document.body.appendChild(settingsModal);
+      
+      // NOW set up event listeners after modals are created
+      setupDesktopEventListeners();
+    }
+
+    // Setup desktop event listeners (called after modals are created)
+    function setupDesktopEventListeners() {
+      if (window.innerWidth < 1024) return; // Only on desktop
+      
+      try {
+        // Desktop search and settings button listeners
+        const desktopSearchBtn = document.getElementById('desktop-search-btn');
+        const desktopSettingsBtn = document.getElementById('desktop-settings-btn');
+        const desktopSearchInput = document.getElementById('desktop-search-input');
+        
+        if (desktopSearchBtn) {
+          desktopSearchBtn.addEventListener('click', () => {
+            openDesktopSearchModal();
+          });
+        }
+        if (desktopSettingsBtn) {
+          desktopSettingsBtn.addEventListener('click', () => {
+            openDesktopSettingsModal();
+          });
+        }
+        
+        // Desktop search input event listener
+        if (desktopSearchInput) {
+          desktopSearchInput.addEventListener('input', (e) => {
+            populateDesktopSearchResults(e.target.value);
+          });
+        }
+        
+        // Desktop filter checkboxes event listeners
+        ['desktop-filter-easy', 'desktop-filter-medium', 'desktop-filter-hard'].forEach(id => {
+          const element = document.getElementById(id);
+          if (element) {
+            element.addEventListener('change', () => {
+              const searchInput = document.getElementById('desktop-search-input');
+              if (searchInput) {
+                populateDesktopSearchResults(searchInput.value);
+              }
+            });
+          }
+        });
+        
+        // Desktop keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+          // Only handle desktop shortcuts when on desktop layout
+          if (window.innerWidth >= 1024) {
+            // Ctrl+K or Cmd+K for search
+            if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+              e.preventDefault();
+              if (typeof openDesktopSearchModal === 'function') {
+                openDesktopSearchModal();
+              }
+            }
+            // Escape to close modals
+            if (e.key === 'Escape') {
+              if (typeof closeDesktopSearchModal === 'function') {
+                closeDesktopSearchModal();
+              }
+              if (typeof closeDesktopSettingsModal === 'function') {
+                closeDesktopSettingsModal();
+              }
+            }
+          }
+        });
+        
+        // Desktop modal background click to close
+        const desktopSearchModal = document.getElementById('desktop-search-modal');
+        const desktopSettingsModal = document.getElementById('desktop-settings-modal');
+        
+        if (desktopSearchModal) {
+          desktopSearchModal.addEventListener('click', (e) => {
+            if (e.target === desktopSearchModal && typeof closeDesktopSearchModal === 'function') {
+              closeDesktopSearchModal();
+            }
+          });
+        }
+        
+        if (desktopSettingsModal) {
+          desktopSettingsModal.addEventListener('click', (e) => {
+            if (e.target === desktopSettingsModal && typeof closeDesktopSettingsModal === 'function') {
+              closeDesktopSettingsModal();
+            }
+          });
+        }
+        
+      } catch (error) {
+        console.warn('Desktop event listeners setup failed:', error);
+      }
+    }
+
+    // Desktop Search Functionality (based on mobile implementation)
+    let desktopAllProblems = [];
+    
+    function openDesktopSearchModal() {
+      if (window.innerWidth < 1024) return; // Safety check
+      const modal = document.getElementById('desktop-search-modal');
+      const input = document.getElementById('desktop-search-input');
+      if (modal && input) {
+        modal.style.display = 'block';
+        input.focus();
+        
+        // Reset scroll position of search results to top
+        const searchResults = document.getElementById('desktop-search-results');
+        if (searchResults) {
+          searchResults.scrollTop = 0;
+        }
+        
+        populateDesktopSearchResults();
+      }
+    }
+    
+    function closeDesktopSearchModal() {
+      if (window.innerWidth < 1024) return; // Safety check
+      const modal = document.getElementById('desktop-search-modal');
+      const input = document.getElementById('desktop-search-input');
+      if (modal) {
+        modal.style.display = 'none';
+      }
+      if (input) {
+        input.value = '';
+      }
+    }
+    
+    function populateDesktopSearchResults(searchTerm = '') {
+      if (desktopAllProblems.length === 0) {
+        // Load all problems from all lists
+        Promise.all(currentLists.map(list => 
+          fetch(`data/${list.file}`).then(res => res.json())
+          .then(problems => problems.map(p => ({
+            ...p, 
+            listName: list.name, 
+            listSlug: listSlugMap[list.file],
+            slug: p.slug || createSlug(p.title)
+          })))
+        )).then(results => {
+          desktopAllProblems = results.flat();
+          displayDesktopSearchResults(filterDesktopProblems(searchTerm));
+        }).catch(error => {
+          console.error('Error loading problems for desktop search:', error);
+          document.getElementById('desktop-search-results').innerHTML = 
+            '<div style="padding: 1em; text-align: center; color: #dc2626;">Error loading problems</div>';
+        });
+      } else {
+        displayDesktopSearchResults(filterDesktopProblems(searchTerm));
+      }
+    }
+    
+    function filterDesktopProblems(searchTerm) {
+      const easy = document.getElementById('desktop-filter-easy').checked;
+      const medium = document.getElementById('desktop-filter-medium').checked;
+      const hard = document.getElementById('desktop-filter-hard').checked;
+      
+      const allResults = desktopAllProblems.filter(problem => {
+        const matchesTerm = !searchTerm || 
+          problem.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          problem.number.toString().includes(searchTerm) ||
+          problem.difficulty.toLowerCase().includes(searchTerm.toLowerCase());
+          
+        const matchesDifficulty = 
+          (easy && problem.difficulty === 'Easy') ||
+          (medium && problem.difficulty === 'Medium') ||
+          (hard && problem.difficulty === 'Hard');
+          
+        return matchesTerm && matchesDifficulty;
+      });
+      
+      // If we're in a specific list context, prioritize results from current list
+      if (currentListSlug && currentListSlug !== '') {
+        const currentListResults = allResults.filter(problem => problem.listSlug === currentListSlug);
+        const otherListResults = allResults.filter(problem => problem.listSlug !== currentListSlug);
+        
+        // Combine: current list first, then others, limit to 50 total
+        return [...currentListResults, ...otherListResults].slice(0, 50);
+      }
+      
+      return allResults.slice(0, 50); // Default: just limit to 50 results
+    }
+    
+    function displayDesktopSearchResults(problems) {
+      const resultsDiv = document.getElementById('desktop-search-results');
+      
+      if (problems.length === 0) {
+        resultsDiv.innerHTML = '<div style="padding: 1em; text-align: center; color: #656d76;">No problems found</div>';
+        return;
+      }
+      
+      let html = '';
+      
+      // If we're in a specific list context, separate current list from others
+      if (currentListSlug && currentListSlug !== '') {
+        const currentListProblems = problems.filter(p => p.listSlug === currentListSlug);
+        const otherListProblems = problems.filter(p => p.listSlug !== currentListSlug);
+        
+        // Show current list results first
+        if (currentListProblems.length > 0) {
+          const currentListInfo = currentLists.find(l => listSlugMap[l.file] === currentListSlug);
+          const currentListName = currentListInfo ? currentListInfo.name : 'Current List';
+          
+          html += `<div class="desktop-search-section-header">From ${currentListName}</div>`;
+          html += currentListProblems.map(problem => `
+            <div class="desktop-search-result-item" onclick="navigateToDesktopProblem('${problem.listSlug}', '${problem.slug}')">
+              <div class="desktop-search-result-title">${problem.number}. ${problem.title}</div>
+              <div class="desktop-search-result-meta">
+                <span class="desktop-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
+                <span>${problem.listName}</span>
+              </div>
+            </div>
+          `).join('');
+        }
+        
+        // Show other list results
+        if (otherListProblems.length > 0) {
+          if (currentListProblems.length > 0) {
+            html += `<div class="desktop-search-section-header" style="margin-top: 1em;">From Other Lists</div>`;
+          }
+          html += otherListProblems.map(problem => `
+            <div class="desktop-search-result-item" onclick="navigateToDesktopProblem('${problem.listSlug}', '${problem.slug}')">
+              <div class="desktop-search-result-title">${problem.number}. ${problem.title}</div>
+              <div class="desktop-search-result-meta">
+                <span class="desktop-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
+                <span>${problem.listName}</span>
+              </div>
+            </div>
+          `).join('');
+        }
+      } else {
+        // Default display for home context
+        html = problems.map(problem => `
+          <div class="desktop-search-result-item" onclick="navigateToDesktopProblem('${problem.listSlug}', '${problem.slug}')">
+            <div class="desktop-search-result-title">${problem.number}. ${problem.title}</div>
+            <div class="desktop-search-result-meta">
+              <span class="desktop-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
+              <span>${problem.listName}</span>
+            </div>
+          </div>
+        `).join('');
+      }
+      
+      resultsDiv.innerHTML = html;
+    }
+    
+    function navigateToDesktopProblem(listSlug, problemSlug) {
+      closeDesktopSearchModal();
+      
+      // Navigate directly using desktop router (let router handle loading animation)
+      desktopRouter.navigate(listSlug, problemSlug);
+    }
+    
+    // Desktop settings modal
+    function openDesktopSettingsModal() {
+      if (window.innerWidth < 1024) return; // Safety check
+      const modal = document.getElementById('desktop-settings-modal');
+      if (modal) {
+        modal.style.display = 'block';
+      }
+    }
+    
+    function closeDesktopSettingsModal() {
+      if (window.innerWidth < 1024) return; // Safety check
+      const modal = document.getElementById('desktop-settings-modal');
+      if (modal) {
+        modal.style.display = 'none';
+      }
     }
     
     // Share URL function (updated to match desktop version)
@@ -2594,144 +2825,6 @@
         }
       });
       
-      // Desktop Modal Functions
-      let desktopAllProblems = [];
-      
-      function openDesktopSearchModal() {
-        document.getElementById('desktop-search-modal').style.display = 'block';
-        document.getElementById('desktop-search-input').focus();
-        populateDesktopSearchResults();
-      }
-      
-      function closeDesktopSearchModal() {
-        document.getElementById('desktop-search-modal').style.display = 'none';
-        document.getElementById('desktop-search-input').value = '';
-      }
-      
-      function populateDesktopSearchResults(searchTerm = '') {
-        if (desktopAllProblems.length === 0) {
-          // Load all problems from all lists
-          Promise.all(currentLists.map(list => 
-            fetch(`data/${list.file}`).then(res => res.json())
-            .then(problems => problems.map(p => ({
-              ...p, 
-              listName: list.name, 
-              listSlug: listSlugMap[list.file],
-              slug: p.slug || createSlug(p.title)
-            })))
-          )).then(results => {
-            desktopAllProblems = results.flat();
-            displayDesktopSearchResults(filterDesktopProblems(searchTerm));
-          }).catch(error => {
-            console.error('Error loading problems for desktop search:', error);
-          });
-        } else {
-          displayDesktopSearchResults(filterDesktopProblems(searchTerm));
-        }
-      }
-      
-      function filterDesktopProblems(searchTerm) {
-        const easyChecked = document.getElementById('desktop-filter-easy').checked;
-        const mediumChecked = document.getElementById('desktop-filter-medium').checked;
-        const hardChecked = document.getElementById('desktop-filter-hard').checked;
-        
-        return desktopAllProblems.filter(problem => {
-          const matchesSearch = !searchTerm || 
-            problem.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            problem.number?.toString().includes(searchTerm) ||
-            problem.difficulty?.toLowerCase().includes(searchTerm.toLowerCase());
-            
-          const matchesDifficulty = 
-            (problem.difficulty === 'Easy' && easyChecked) ||
-            (problem.difficulty === 'Medium' && mediumChecked) ||
-            (problem.difficulty === 'Hard' && hardChecked);
-            
-          return matchesSearch && matchesDifficulty;
-        });
-      }
-      
-      function displayDesktopSearchResults(problems) {
-        const resultsContainer = document.getElementById('desktop-search-results');
-        
-        if (problems.length === 0) {
-          resultsContainer.innerHTML = '<div class="desktop-no-results">No problems found</div>';
-          return;
-        }
-        
-        resultsContainer.innerHTML = problems.slice(0, 50).map(problem => `
-          <div class="desktop-search-result" onclick="
-            closeDesktopSearchModal();
-            showDesktopLoadingAnimation('content');
-            setTimeout(() => {
-              // Ensure the list is loaded first
-              if (currentListSlug !== problem.listSlug) {
-                loadDesktopProblemList(problem.listSlug);
-              }
-              setTimeout(() => {
-                // Navigate with hash-based routing
-                window.location.hash = problem.listSlug + '/' + problem.slug;
-              }, 300);
-            }, 200);
-          ">
-            <div class="desktop-search-result-header">
-              <span class="desktop-search-result-number">${problem.number || problem.id || '?'}</span>
-              <span class="desktop-search-result-title">${problem.title}</span>
-              <span class="desktop-search-result-difficulty ${problem.difficulty?.toLowerCase() || 'medium'}">${problem.difficulty || 'Medium'}</span>
-            </div>
-            <div class="desktop-search-result-meta">
-              <span class="desktop-search-result-list">${problem.listName}</span>
-            </div>
-          </div>
-        `).join('');
-      }
-      
-      function openDesktopSettingsModal() {
-        document.getElementById('desktop-settings-modal').style.display = 'block';
-        loadDesktopSettings();
-      }
-      
-      function closeDesktopSettingsModal() {
-        document.getElementById('desktop-settings-modal').style.display = 'none';
-        saveDesktopSettings();
-      }
-      
-      function loadDesktopSettings() {
-        const theme = localStorage.getItem('desktop-theme') || 'light';
-        const fontSize = localStorage.getItem('desktop-font-size') || 'normal';
-        const layoutDensity = localStorage.getItem('desktop-layout-density') || 'comfortable';
-        
-        document.getElementById('desktop-theme-toggle').value = theme;
-        document.getElementById('desktop-font-size').value = fontSize;
-        document.getElementById('desktop-layout-density').value = layoutDensity;
-      }
-      
-      function saveDesktopSettings() {
-        const theme = document.getElementById('desktop-theme-toggle').value;
-        const fontSize = document.getElementById('desktop-font-size').value;
-        const layoutDensity = document.getElementById('desktop-layout-density').value;
-        
-        localStorage.setItem('desktop-theme', theme);
-        localStorage.setItem('desktop-font-size', fontSize);
-        localStorage.setItem('desktop-layout-density', layoutDensity);
-        
-        applyDesktopSettings();
-      }
-      
-      function applyDesktopSettings() {
-        const theme = localStorage.getItem('desktop-theme') || 'light';
-        const fontSize = localStorage.getItem('desktop-font-size') || 'normal';
-        const layoutDensity = localStorage.getItem('desktop-layout-density') || 'comfortable';
-        
-        // Apply theme
-        document.body.setAttribute('data-theme', theme);
-        
-        // Apply font size
-        document.body.setAttribute('data-font-size', fontSize);
-        
-        // Apply layout density
-        document.body.setAttribute('data-layout-density', layoutDensity);
-      }
-
       // Desktop Layout Functions
       async function renderDesktopLists() {
         try {
@@ -2781,7 +2874,6 @@
                   <span class="desktop-list-icon">${getMobileListIcon(list.name)}</span>
                   <div class="desktop-list-content">
                     <div class="desktop-list-title">${list.name}</div>
-                    <div class="desktop-list-count">${compactCountText}</div>
                     <div class="desktop-list-description">${description}</div>
                   </div>
                 </div>
@@ -2849,42 +2941,104 @@
         
 
         targetElement.innerHTML = `
-          <div style="max-width: 700px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
-            <h1 style="font-size: 2.8rem; font-weight: 700; color: #1a202c; margin-bottom: 1rem;">
-              LeetCode Handbook
-            </h1>
-            <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 3rem; line-height: 1.6;">
-              Your comprehensive guide to coding interview preparation
-            </p>
-            
-            <div style="background: #f0f9ff; border: 1px solid #0ea5e9; border-radius: 12px; padding: 2rem; margin-bottom: 3rem;">
-              <div style="font-size: 1.5rem; margin-bottom: 1rem; color: #0369a1;">📋</div>
-              <h3 style="font-size: 1.2rem; font-weight: 600; color: #0c4a6e; margin-bottom: 1rem;">Ready to Explore</h3>
-              <p style="color: #0369a1; font-size: 1rem; margin-bottom: 1.5rem;">
-                ${currentLists.length} problem collections loaded and ready for practice
-              </p>
-              <p style="color: #0284c7; font-size: 0.95rem; margin: 0;">
-                👈 Select a collection from the left sidebar to begin your coding journey
-              </p>
+          <div style="background: #ffffff; border-radius: 12px; padding: 32px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); border: 1px solid #d1d5db; margin: 0; position: relative; overflow: hidden;">
+            <!-- Header Section with Gradient -->
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 3rem 2rem 2rem; position: relative; margin: -32px -32px 2rem -32px; border-radius: 12px 12px 0 0;">
+              <!-- Background Pattern -->
+              <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1; background-image: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.4"><circle cx="10" cy="10" r="2"/><circle cx="50" cy="10" r="2"/><circle cx="10" cy="50" r="2"/><circle cx="50" cy="50" r="2"/></g></svg>');"></div>
+              
+              <div style="max-width: 800px; margin: 0 auto; position: relative; z-index: 2;">
+                <!-- Title Section -->
+                <div style="text-align: center; color: white; margin-bottom: 2rem;">
+                  <div style="display: inline-flex; align-items: center; justify-content: center; width: 80px; height: 80px; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(20px); border-radius: 20px; margin-bottom: 1.5rem; border: 1px solid rgba(255, 255, 255, 0.3);">
+                    <span style="font-size: 2.5rem;">🧠</span>
+                  </div>
+                  
+                  <h1 style="font-size: 3.5rem; font-weight: 800; color: white; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); line-height: 1.2;">
+                    LeetCode Handbook
+                  </h1>
+                  <p style="font-size: 1.3rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 0; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Your comprehensive guide to coding interview preparation with organized problem lists and detailed solutions
+                  </p>
+                </div>
+              </div>
             </div>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; text-align: left;">
-                <div style="font-size: 2rem; margin-bottom: 1rem;">📚</div>
-                <h3 style="font-size: 1.2rem; font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Curated Collections</h3>
-                <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5;">Hand-picked problem sets from top companies and essential topics.</p>
-              </div>
-              
-              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; text-align: left;">
-                <div style="font-size: 2rem; margin-bottom: 1rem;">⚡</div>
-                <h3 style="font-size: 1.2rem; font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Instant Navigation</h3>
-                <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5;">Seamless browsing with prev/next navigation and random exploration.</p>
-              </div>
-              
-              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; text-align: left;">
-                <div style="font-size: 2rem; margin-bottom: 1rem;">🎯</div>
-                <h3 style="font-size: 1.2rem; font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Focused Practice</h3>
-                <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5;">Clean, distraction-free interface for effective problem solving.</p>
+            <!-- Content Section -->
+            <div style="padding: 0;">
+              <div style="max-width: 800px; margin: 0 auto;">
+                <!-- Stats Grid - All in One Row -->
+                <div class="stats-grid-4" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
+                  <div style="background: white; border-radius: 16px; padding: 2rem 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; right: 0; width: 60px; height: 60px; background: linear-gradient(135deg, #dcfce7, #bbf7d0); border-radius: 0 16px 0 60px;"></div>
+                    <div style="font-size: 2.5rem; color: #16a34a; font-weight: 800; margin-bottom: 0.5rem; position: relative; z-index: 2;">1000+</div>
+                    <div style="color: #16a34a; font-weight: 600; font-size: 0.9rem; position: relative; z-index: 2;">Problems</div>
+                  </div>
+                  
+                  <div style="background: white; border-radius: 16px; padding: 2rem 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; right: 0; width: 60px; height: 60px; background: linear-gradient(135deg, #dbeafe, #bfdbfe); border-radius: 0 16px 0 60px;"></div>
+                    <div style="font-size: 2.5rem; color: #3b82f6; font-weight: 800; margin-bottom: 0.5rem; position: relative; z-index: 2;">${currentLists.length}+</div>
+                    <div style="color: #3b82f6; font-weight: 600; font-size: 0.9rem; position: relative; z-index: 2;">Collections</div>
+                  </div>
+                  
+                  <div style="background: white; border-radius: 16px; padding: 2rem 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; right: 0; width: 60px; height: 60px; background: linear-gradient(135deg, #fed7aa, #fdba74); border-radius: 0 16px 0 60px;"></div>
+                    <div style="font-size: 2.5rem; color: #f59e0b; font-weight: 800; margin-bottom: 0.5rem; position: relative; z-index: 2;">100%</div>
+                    <div style="color: #f59e0b; font-weight: 600; font-size: 0.9rem; position: relative; z-index: 2;">Organized</div>
+                  </div>
+                  
+                  <div style="background: white; border-radius: 16px; padding: 2rem 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; right: 0; width: 60px; height: 60px; background: linear-gradient(135deg, #fecaca, #fca5a5); border-radius: 0 16px 0 60px;"></div>
+                    <div style="font-size: 2.5rem; color: #dc2626; font-weight: 800; margin-bottom: 0.5rem; position: relative; z-index: 2;">Expert</div>
+                    <div style="color: #dc2626; font-weight: 600; font-size: 0.9rem; position: relative; z-index: 2;">Solutions</div>
+                  </div>
+                </div>
+                
+                <!-- Welcome Message -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; margin-bottom: 2rem;">
+                  <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                      <span style="font-size: 1.2rem;">🚀</span>
+                    </div>
+                    <h3 style="font-size: 1.2rem; font-weight: 600; color: #374151; margin: 0;">Ready to Start Your Journey</h3>
+                  </div>
+                  <p style="color: #6b7280; font-size: 1rem; margin: 0; line-height: 1.6;">
+                    <strong>${currentLists.length} problem collections</strong> are loaded and ready for practice. Select a collection from the left sidebar to begin your coding journey with detailed explanations and multiple solution approaches.
+                  </p>
+                </div>
+                
+                <!-- Feature Cards -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                  <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                      <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #16a34a 0%, #059669 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: 1.2rem;">📚</span>
+                      </div>
+                      <h3 style="font-size: 1.1rem; font-weight: 600; color: #374151; margin: 0;">Curated Collections</h3>
+                    </div>
+                    <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5; margin: 0;">Hand-picked problem sets from top companies and essential coding topics.</p>
+                  </div>
+                  
+                  <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                      <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: 1.2rem;">⚡</span>
+                      </div>
+                      <h3 style="font-size: 1.1rem; font-weight: 600; color: #374151; margin: 0;">Instant Navigation</h3>
+                    </div>
+                    <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5; margin: 0;">Seamless browsing with prev/next navigation and random exploration features.</p>
+                  </div>
+                  
+                  <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                      <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: 1.2rem;">🎯</span>
+                      </div>
+                      <h3 style="font-size: 1.1rem; font-weight: 600; color: #374151; margin: 0;">Focused Practice</h3>
+                    </div>
+                    <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.5; margin: 0;">Clean, distraction-free interface designed for effective problem solving.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -2902,35 +3056,13 @@
       
       // Show loading home page while data loads
       function showLoadingHomePage() {
-        let targetElement = document.querySelector('.desktop-content-inner');
-        if (!targetElement) {
-          targetElement = document.getElementById('landing-content');
-        }
-        if (!targetElement) {
-          console.error('Could not find target element for loading home page');
-          return false;
-        }
+        // Use exact same pattern as Home button click - show loading animation for 0.5s
+        showDesktopLoadingAnimation('content');
         
-        targetElement.innerHTML = `
-          <div style="max-width: 700px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
-            <h1 style="font-size: 2.8rem; font-weight: 700; color: #1a202c; margin-bottom: 1rem;">
-              LeetCode Handbook
-            </h1>
-            <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 3rem; line-height: 1.6;">
-              Your comprehensive guide to coding interview preparation
-            </p>
-            
-            <div style="background: #fffbeb; border: 1px solid #f59e0b; border-radius: 12px; padding: 3rem; margin-bottom: 3rem;">
-              <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2.5rem; margin-bottom: 1.5rem;">⏳</div>
-              <h3 style="font-size: 1.3rem; font-weight: 600; color: #92400e; margin-bottom: 1rem;">Loading Problem Collections</h3>
-              <p style="color: #d97706; font-size: 1rem; margin: 0;">
-                Please wait while we load your coding interview collections...
-              </p>
-            </div>
-          </div>
-        `;
-        
-        return true;
+        // Show home page after 0.5s delay (same as Home button)
+        setTimeout(() => {
+          showHomeLandingPage();
+        }, 500);
       }
       
       // Show error home page if loading fails
@@ -3003,61 +3135,93 @@
         });
         
         targetElement.innerHTML = `
-          <div style="max-width: 700px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
-            <div style="display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); border-radius: 16px; margin-bottom: 2rem;">
-              <span style="font-size: 1.5rem; filter: brightness(0) invert(1);">📋</span>
+          <div style="background: #ffffff; border-radius: 12px; padding: 32px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); border: 1px solid #d1d5db; margin: 0; position: relative; overflow: hidden;">
+            <!-- Header Section with Gradient -->
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem 2rem 1.5rem; position: relative; margin: -32px -32px 1.5rem -32px; border-radius: 12px 12px 0 0;">
+              <!-- Background Pattern -->
+              <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1; background-image: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.4"><circle cx="10" cy="10" r="2"/><circle cx="50" cy="10" r="2"/><circle cx="10" cy="50" r="2"/><circle cx="50" cy="50" r="2"/></g></svg>');"></div>
+              
+              <div style="max-width: 700px; margin: 0 auto; position: relative; z-index: 2;">
+                <!-- Action Buttons - Integrated into header -->
+                <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+                  <div style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(20px); border-radius: 16px; padding: 8px; display: flex; gap: 8px; border: 1px solid rgba(255, 255, 255, 0.3);">
+                    <button data-action="first-landing" data-list-slug="${listSlug}" 
+                            style="background: rgba(16, 185, 129, 0.9); color: white; border: none; padding: 12px 24px; border-radius: 12px; cursor: pointer; font-weight: 600; font-size: 1rem; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);" 
+                            onmouseover="this.style.background='rgba(5, 150, 105, 1)'; this.style.transform='translateY(-2px) scale(1.02)'; this.style.boxShadow='0 8px 25px rgba(16, 185, 129, 0.4)'" 
+                            onmouseout="this.style.background='rgba(16, 185, 129, 0.9)'; this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='none'" 
+                            onmousedown="this.style.transform='translateY(0) scale(0.98)'" 
+                            onmouseup="this.style.transform='translateY(-2px) scale(1.02)'">
+                      <span style="font-size: 1.2em;">▶️</span> Start Journey
+                    </button>
+                    <button data-action="random-landing" data-list-slug="${listSlug}" 
+                            style="background: rgba(245, 158, 11, 0.9); color: white; border: none; padding: 12px 24px; border-radius: 12px; cursor: pointer; font-weight: 600; font-size: 1rem; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);" 
+                            onmouseover="this.style.background='rgba(217, 119, 6, 1)'; this.style.transform='translateY(-2px) scale(1.02)'; this.style.boxShadow='0 8px 25px rgba(245, 158, 11, 0.4)'" 
+                            onmouseout="this.style.background='rgba(245, 158, 11, 0.9)'; this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='none'" 
+                            onmousedown="this.style.transform='translateY(0) scale(0.98)'" 
+                            onmouseup="this.style.transform='translateY(-2px) scale(1.02)'">
+                      <span style="font-size: 1.2em;">🎲</span> Random
+                    </button>
+                  </div>
+                </div>
+                
+                <!-- Title Section -->
+                <div style="text-align: center; color: white;">
+                  <div style="display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(20px); border-radius: 16px; margin-bottom: 1rem; border: 1px solid rgba(255, 255, 255, 0.3);">
+                    <span style="font-size: 1.8rem;">${listInfo ? getMobileListIcon(listInfo.name) : '📋'}</span>
+                  </div>
+                  
+                  <h1 style="font-size: 2.4rem; font-weight: 800; color: white; margin-bottom: 0.75rem; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                    ${listName}
+                  </h1>
+                  <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 0; line-height: 1.6; max-width: 500px; margin-left: auto; margin-right: auto;">
+                    ${listDesc}
+                  </p>
+                </div>
+              </div>
             </div>
             
-            <h1 style="font-size: 2.5rem; font-weight: 700; color: #1a202c; margin-bottom: 1rem;">
-              ${listName}
-            </h1>
-            <p style="font-size: 1.1rem; color: #6b7280; margin-bottom: 3rem; line-height: 1.6;">
-              ${listDesc}
-            </p>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
-              <div style="background: #f0fdf4; border: 1px solid #dcfce7; border-radius: 8px; padding: 1.5rem;">
-                <div style="font-size: 2rem; color: #16a34a; font-weight: 700; margin-bottom: 0.5rem;">${difficulties.easy}</div>
-                <div style="color: #16a34a; font-weight: 600; font-size: 0.9rem;">Easy Problems</div>
-              </div>
-              
-              <div style="background: #fffbeb; border: 1px solid #fed7aa; border-radius: 8px; padding: 1.5rem;">
-                <div style="font-size: 2rem; color: #ea580c; font-weight: 700; margin-bottom: 0.5rem;">${difficulties.medium}</div>
-                <div style="color: #ea580c; font-weight: 600; font-size: 0.9rem;">Medium Problems</div>
-              </div>
-              
-              <div style="background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; padding: 1.5rem;">
-                <div style="font-size: 2rem; color: #dc2626; font-weight: 700; margin-bottom: 0.5rem;">${difficulties.hard}</div>
-                <div style="color: #dc2626; font-weight: 600; font-size: 0.9rem;">Hard Problems</div>
-              </div>
-              
-              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
-                <div style="font-size: 2rem; color: #374151; font-weight: 700; margin-bottom: 0.5rem;">${totalProblems}</div>
-                <div style="color: #374151; font-weight: 600; font-size: 0.9rem;">Total Problems</div>
-              </div>
-            </div>
-            
-            <div style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; border-radius: 12px; padding: 2rem;">
-              <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">Ready to Practice?</h3>
-              <p style="font-size: 1rem; opacity: 0.9; margin-bottom: 1.5rem;">Jump into the problems or pick one at random</p>
-              
-              <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-                <button data-action="first-landing" data-list-slug="${listSlug}" 
-                        style="background: #10b981; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 1rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 8px;" 
-                        onmouseover="this.style.background='#059669'; this.style.transform='translateY(-1px)'" 
-                        onmouseout="this.style.background='#10b981'; this.style.transform='translateY(0)'" 
-                        onmousedown="this.style.transform='scale(0.95)'" 
-                        onmouseup="this.style.transform='translateY(-1px)'">
-                  ▶️ Start
-                </button>
-                <button data-action="random-landing" data-list-slug="${listSlug}" 
-                        style="background: #f59e0b; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 1rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 8px;" 
-                        onmouseover="this.style.background='#d97706'; this.style.transform='translateY(-1px)'" 
-                        onmouseout="this.style.background='#f59e0b'; this.style.transform='translateY(0)'" 
-                        onmousedown="this.style.transform='scale(0.95)'" 
-                        onmouseup="this.style.transform='translateY(-1px)'">
-                  🎲 Random
-                </button>
+            <!-- Content Section with Reduced Spacing -->
+            <div style="padding: 0;">
+              <div style="max-width: 700px; margin: 0 auto;">
+                <!-- Stats Grid - All in One Row -->
+                <div class="stats-grid-4" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
+                  <div style="background: white; border-radius: 12px; padding: 1.5rem 1rem; text-align: center; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; right: 0; width: 50px; height: 50px; background: linear-gradient(135deg, #dcfce7, #bbf7d0); border-radius: 0 12px 0 50px;"></div>
+                    <div style="font-size: 2rem; color: #16a34a; font-weight: 800; margin-bottom: 0.25rem; position: relative; z-index: 2;">${difficulties.easy}</div>
+                    <div style="color: #16a34a; font-weight: 600; font-size: 0.85rem; position: relative; z-index: 2;">Easy</div>
+                  </div>
+                  
+                  <div style="background: white; border-radius: 12px; padding: 1.5rem 1rem; text-align: center; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; right: 0; width: 50px; height: 50px; background: linear-gradient(135deg, #fed7aa, #fdba74); border-radius: 0 12px 0 50px;"></div>
+                    <div style="font-size: 2rem; color: #ea580c; font-weight: 800; margin-bottom: 0.25rem; position: relative; z-index: 2;">${difficulties.medium}</div>
+                    <div style="color: #ea580c; font-weight: 600; font-size: 0.85rem; position: relative; z-index: 2;">Medium</div>
+                  </div>
+                  
+                  <div style="background: white; border-radius: 12px; padding: 1.5rem 1rem; text-align: center; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; right: 0; width: 50px; height: 50px; background: linear-gradient(135deg, #fecaca, #fca5a5); border-radius: 0 12px 0 50px;"></div>
+                    <div style="font-size: 2rem; color: #dc2626; font-weight: 800; margin-bottom: 0.25rem; position: relative; z-index: 2;">${difficulties.hard}</div>
+                    <div style="color: #dc2626; font-weight: 600; font-size: 0.85rem; position: relative; z-index: 2;">Hard</div>
+                  </div>
+                  
+                  <div style="background: white; border-radius: 12px; padding: 1.5rem 1rem; text-align: center; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; right: 0; width: 50px; height: 50px; background: linear-gradient(135deg, #e2e8f0, #cbd5e1); border-radius: 0 12px 0 50px;"></div>
+                    <div style="font-size: 2rem; color: #374151; font-weight: 800; margin-bottom: 0.25rem; position: relative; z-index: 2;">${totalProblems}</div>
+                    <div style="color: #374151; font-weight: 600; font-size: 0.85rem; position: relative; z-index: 2;">Total</div>
+                  </div>
+                </div>
+                
+                <!-- Quick Tips -->
+                <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0;">
+                  <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                    <div style="width: 36px; height: 36px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                      <span style="font-size: 1.1rem;">💡</span>
+                    </div>
+                    <h3 style="font-size: 1.1rem; font-weight: 600; color: #374151; margin: 0;">Ready to Practice?</h3>
+                  </div>
+                  <p style="color: #6b7280; font-size: 0.95rem; margin: 0; line-height: 1.5;">
+                    Click <strong>Start Journey</strong> to begin with the first problem, or try <strong>Random</strong> to challenge yourself with a surprise problem. Each problem includes detailed explanations and multiple solution approaches.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -3115,9 +3279,9 @@
             
             a.href = '#' + listSlug + '/' + problemSlug;
             a.innerHTML = 
-              '<span class="desktop-problem-number">' + (problem.id || '?') + '</span>' +
+              '<span class="desktop-problem-number">' + (problem.number || problem.id || '#') + '</span>' +
               '<span class="desktop-problem-title">' + problem.title + '</span>' +
-              '<span class="desktop-problem-difficulty ' + (problem.difficulty ? problem.difficulty.toLowerCase() : 'medium') + '">' + (problem.difficulty || 'Medium') + '</span>';
+              '<div class="desktop-problem-difficulty-dot ' + (problem.difficulty ? problem.difficulty.toLowerCase() : 'medium') + '" title="' + (problem.difficulty || 'Medium') + '"></div>';
             
             a.onclick = (e) => {
               e.preventDefault();
@@ -3175,32 +3339,32 @@
         const prevButton = prevProblem ? 
           '<button data-action="prev" data-slug="' + prevProblem.slug + '" data-number="' + (prevProblem.number || prevProblem.id) + '" data-title="' + prevProblem.title.replace(/"/g, '&quot;') + '" ' +
            'title="' + prevProblem.title + '" ' +
-           'style="background: #6f42c1; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-weight: 500; font-size: 0.9rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 6px;" ' +
+           'style="background: #6f42c1; color: white; border: none; padding: 6px 10px; border-radius: 5px; cursor: pointer; font-weight: 500; font-size: 0.8rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 5px;" ' +
            'onmouseover="this.style.background=\'#5a2d8f\'; this.style.transform=\'translateY(-1px)\'" ' +
            'onmouseout="this.style.background=\'#6f42c1\'; this.style.transform=\'translateY(0)\'"> ' +
            '← Prev</button>' :
-          '<button disabled style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 8px 12px; border-radius: 6px; cursor: not-allowed; font-weight: 500; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">← Prev</button>';
+          '<button disabled style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 6px 10px; border-radius: 5px; cursor: not-allowed; font-weight: 500; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 5px;">← Prev</button>';
         
         const nextButton = nextProblem ? 
           '<button data-action="next" data-slug="' + nextProblem.slug + '" data-number="' + (nextProblem.number || nextProblem.id) + '" data-title="' + nextProblem.title.replace(/"/g, '&quot;') + '" ' +
            'title="' + nextProblem.title + '" ' +
-           'style="background: #6f42c1; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-weight: 500; font-size: 0.9rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 6px;" ' +
+           'style="background: #6f42c1; color: white; border: none; padding: 6px 10px; border-radius: 5px; cursor: pointer; font-weight: 500; font-size: 0.8rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 5px;" ' +
            'onmouseover="this.style.background=\'#5a2d8f\'; this.style.transform=\'translateY(-1px)\'" ' +
            'onmouseout="this.style.background=\'#6f42c1\'; this.style.transform=\'translateY(0)\'"> ' +
            'Next →</button>' :
-          '<button disabled style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 8px 12px; border-radius: 6px; cursor: not-allowed; font-weight: 500; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">Next →</button>';
+          '<button disabled style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 6px 10px; border-radius: 5px; cursor: not-allowed; font-weight: 500; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 5px;">Next →</button>';
         
         return {
           top: 
-            '<div class="desktop-action-buttons" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">' +
-              '<div style="display: flex; align-items: center; gap: 12px;">' +
+            '<div class="desktop-action-buttons" style="padding: 10px 14px; margin-bottom: 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">' +
+              '<div style="display: flex; align-items: center; gap: 10px;">' +
                 prevButton +
-                '<span style="color: #64748b; font-size: 0.9rem; font-weight: 500;">' + (currentIndex + 1) + ' of ' + currentListData.length + '</span>' +
+                '<span style="color: #656d76; font-size: 0.85rem; font-weight: 500;">' + (currentIndex + 1) + ' of ' + currentListData.length + '</span>' +
                 nextButton +
               '</div>' +
-              '<div style="display: flex; align-items: center; gap: 12px;">' +
-                '<button id="desktop-random-btn" data-action="random" style="background: #f59e0b; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-weight: 500; font-size: 0.9rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 6px;" onmouseover="this.style.background=\'#d97706\'; this.style.transform=\'translateY(-1px)\'" onmouseout="this.style.background=\'#f59e0b\'; this.style.transform=\'translateY(0)\'">🎲 Random</button>' +
-                '<button id="desktop-print-btn" onclick="window.print()" style="background: #0969da; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-weight: 500; font-size: 0.9rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 6px;" onmouseover="this.style.background=\'#0550ae\'; this.style.transform=\'translateY(-1px)\'" onmouseout="this.style.background=\'#0969da\'; this.style.transform=\'translateY(0)\'">🖨️ Print</button>' +
+              '<div style="display: flex; align-items: center; gap: 10px;">' +
+                '<button id="desktop-random-btn" data-action="random" style="background: #f59e0b; color: white; border: none; padding: 6px 10px; border-radius: 5px; cursor: pointer; font-weight: 500; font-size: 0.8rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 5px;" onmouseover="this.style.background=\'#d97706\'; this.style.transform=\'translateY(-1px)\'" onmouseout="this.style.background=\'#f59e0b\'; this.style.transform=\'translateY(0)\'">🎲 Random</button>' +
+                '<button id="desktop-print-btn" data-action="print" style="background: #0969da; color: white; border: none; padding: 6px 10px; border-radius: 5px; cursor: pointer; font-weight: 500; font-size: 0.8rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 5px;" onmouseover="this.style.background=\'#0550ae\'; this.style.transform=\'translateY(-1px)\'" onmouseout="this.style.background=\'#0969da\'; this.style.transform=\'translateY(0)\'">🖨️ Print</button>' +
               '</div>' +
             '</div>'
         };
@@ -3231,7 +3395,9 @@
           if (!response.ok) throw new Error('Problem not found');
           
           const markdown = await response.text();
-          const html = marked.parse(markdown);
+          // Use mobile markdown enhancement for consistency
+          const enhancedMarkdown = enhanceDesktopMarkdown(markdown);
+          const html = marked.parse(enhancedMarkdown);
           
           // Apply syntax highlighting
           const tempDiv = document.createElement('div');
@@ -3244,20 +3410,25 @@
           const filename = problemNumber + '-' + problemSlug + '.md';
           const navigationButtons = generateDesktopNavigationButtons(filename);
           
-          // Set content with navigation buttons
-          contentInner.innerHTML = navigationButtons.top + tempDiv.innerHTML;
+          // Set content with enhanced padding and center layout
+          contentInner.innerHTML = `
+            <div style="max-width: 900px; margin: 0 auto; padding: 0;">
+              <div class="desktop-content-with-background">
+                ${navigationButtons.top}
+                <div style="padding: 0 32px;">
+                  ${tempDiv.innerHTML}
+                </div>
+                <div class="mobile-author-footnote">
+                  <p>Made with <span class="heart">♥</span> by Durga Ganesh using AI</p>
+                </div>
+              </div>
+            </div>
+          `;
           
           // Trigger fade-in animation
           contentInner.classList.remove('fade-in');
           void contentInner.offsetWidth; // Force reflow
           contentInner.classList.add('fade-in');
-          
-          // Add mobile-style author footnote
-          const authorFootnote = document.createElement('div');
-          authorFootnote.className = 'mobile-author-footnote';
-          authorFootnote.innerHTML = 
-            '<p>Made with <span class="heart">♥</span> for coding interview preparation</p>';
-          contentInner.appendChild(authorFootnote);
           
           // Setup desktop random button functionality - handled by event delegation
           const desktopRandomBtn = document.getElementById('desktop-random-btn');
@@ -3276,15 +3447,6 @@
           hideMobileLoadingAnimation();
         }
       }
-      
-      // Desktop Event Listeners
-      document.getElementById('desktop-search-btn').addEventListener('click', openDesktopSearchModal);
-      document.getElementById('desktop-settings-btn').addEventListener('click', openDesktopSettingsModal);
-      
-      // Desktop search input event listener
-      document.getElementById('desktop-search-input').addEventListener('input', (e) => {
-        populateDesktopSearchResults(e.target.value);
-      });
       
       // Desktop navigation button event delegation - track previous active problem index
       window.prevActiveProblemIndex = null;
@@ -3388,53 +3550,22 @@
               document.title = firstProblem.title + ' - LeetCode Handbook';
             }, 200);
           }
+        } else if (action === 'print') {
+          // Handle print action without causing page reload
+          e.preventDefault();
+          e.stopPropagation();
+          window.print();
         }
       });
-      
-      // Desktop search filters event listeners
-      ['desktop-filter-easy', 'desktop-filter-medium', 'desktop-filter-hard'].forEach(id => {
-        document.getElementById(id).addEventListener('change', () => {
-          const searchTerm = document.getElementById('desktop-search-input').value;
-          populateDesktopSearchResults(searchTerm);
-        });
-      });
-      
-      // Desktop modal click-outside-to-close
-      window.addEventListener('click', (e) => {
-        const desktopSearchModal = document.getElementById('desktop-search-modal');
-        const desktopSettingsModal = document.getElementById('desktop-settings-modal');
-        
-        if (e.target === desktopSearchModal) {
-          closeDesktopSearchModal();
-        }
-        if (e.target === desktopSettingsModal) {
-          closeDesktopSettingsModal();
-        }
-      });
-      
-      // Desktop keyboard shortcuts
-      document.addEventListener('keydown', (e) => {
-        if (window.innerWidth >= 1024) { // Only on desktop
-          // Ctrl+K or Cmd+K for search
-          if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-            e.preventDefault();
-            openDesktopSearchModal();
-          }
-          
-          // Escape to close modals
-          if (e.key === 'Escape') {
-            closeDesktopSearchModal();
-            closeDesktopSettingsModal();
-          }
-        }
-      });
-      
-      // Apply desktop settings on load
-      applyDesktopSettings();
       
       // DESKTOP INITIALIZATION - Wait for data to be ready, then initialize
       function initializeDesktopWhenReady() {
         if (window.innerWidth >= 1024) {
+          // Create desktop modals immediately on first call
+          if (!document.getElementById('desktop-search-modal')) {
+            createDesktopModals();
+          }
+          
           if (currentLists.length > 0 && Object.keys(listSlugMap).length > 0) {
             // Load desktop lists directly without loading page
             renderDesktopLists().then(() => {
@@ -3471,6 +3602,9 @@
             // Switching from mobile to desktop
             console.log('📱➡️💻 Switching from mobile to desktop layout');
             
+            // Create desktop modals when switching to desktop
+            createDesktopModals();
+            
             // If switching to desktop and lists aren't loaded, initialize
             const listsList = document.getElementById('desktop-lists-list');
             if (listsList && !listsList.innerHTML) {
@@ -3496,6 +3630,12 @@
             // Switching from desktop to mobile
             console.log('💻➡️📱 Switching from desktop to mobile layout');
             
+            // Remove desktop modals when switching to mobile
+            const searchModal = document.getElementById('desktop-search-modal');
+            const settingsModal = document.getElementById('desktop-settings-modal');
+            if (searchModal) searchModal.remove();
+            if (settingsModal) settingsModal.remove();
+            
             // Replay current URL in mobile layout
             replayCurrentUrlInLayout('mobile');
           }
@@ -3506,12 +3646,18 @@
           const listsList = document.getElementById('desktop-lists-list');
           if (listsList && !listsList.innerHTML) {
             setTimeout(() => {
-              showLoadingHomePage();
+              // Use exact same pattern as Home button click
+              showDesktopLoadingAnimation('content');
+              
+              // First ensure data is ready
               if (Object.keys(listSlugMap).length > 0) {
                 renderDesktopLists().then(() => {
                   if (!desktopRouterInitialized) {
-                    desktopRouter.init();
                     desktopRouterInitialized = true;
+                    // After 0.5s loading, navigate to home (same as Home button)
+                    setTimeout(() => {
+                      desktopRouter.init();
+                    }, 500);
                   }
                 });
               }
@@ -3526,14 +3672,12 @@
       
       // Simple URL replay - just let the router handle the current hash
       function replayCurrentUrlInLayout(targetLayout) {
-        // The hash is already set correctly, just trigger the appropriate router
-        setTimeout(() => {
-          if (targetLayout === 'desktop') {
-            desktopRouter.handleRoute();
-          } else {
-            mobileRouter.handleRoute();
-          }
-        }, 100);
+        // The hash is already set correctly, just trigger the appropriate router immediately for smooth transition
+        if (targetLayout === 'desktop') {
+          desktopRouter.handleRoute();
+        } else {
+          mobileRouter.handleRoute();
+        }
       }
 
       // ==========================================
