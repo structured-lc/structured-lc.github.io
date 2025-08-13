@@ -60,6 +60,42 @@
       scroll-margin-top: 20px;
       scroll-margin-bottom: 20px;
     }
+
+    /* Print styles - ensure only desktop content prints and no stale mobile content */
+    @media print {
+      /* Only hide mobile content when in desktop mode */
+      body.desktop-mode #mobile-container,
+      body.desktop-mode .mobile-container,
+      body.desktop-mode .mobile-content-inner {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+      }
+      
+      /* Ensure desktop content is visible when in desktop mode */
+      body.desktop-mode #desktop-container,
+      body.desktop-mode .desktop-container {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+      
+      /* When in mobile mode, hide desktop content during print */
+      body.mobile-mode #desktop-container,
+      body.mobile-mode .desktop-container {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+      }
+      
+      /* Ensure mobile content is visible when in mobile mode */
+      body.mobile-mode #mobile-container,
+      body.mobile-mode .mobile-container {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -3423,6 +3459,15 @@
         }
       }
       
+      // Debug: Override window.print to track all calls
+      const originalPrint = window.print;
+      window.print = function() {
+        console.log('=== WINDOW.PRINT() CALLED ===');
+        console.log('Stack trace:', new Error().stack);
+        console.log('Timestamp:', Date.now());
+        return originalPrint.call(this);
+      };
+      
       // Desktop navigation button event delegation - track previous active problem index
       window.prevActiveProblemIndex = null;
       document.addEventListener('click', (e) => {
@@ -3430,6 +3475,11 @@
         if (!button) return;
         
         const action = button.dataset.action;
+        
+        // Debug logging for print action
+        if (action === 'print') {
+          console.log('Print button clicked:', button.id, 'Current timestamp:', Date.now());
+        }
         
         // Track previous active problem index before navigation
         const fileList = document.getElementById('desktop-file-list');
@@ -3526,101 +3576,52 @@
             }, 200);
           }
         } else if (action === 'print') {
-          // Handle print action by temporarily switching to mobile layout for better print output
+          // Desktop print function - completely remove mobile container to prevent blank pages
           e.preventDefault();
           e.stopPropagation();
+          e.stopImmediatePropagation();
           
-          // Detect Safari browser
-          const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+          console.log('=== DESKTOP PRINT WITH DOM CLEANUP ===');
+          console.log('Button ID:', button.id);
           
-          // Store current layout state
-          const desktopContainer = document.getElementById('desktop-container');
+          // Completely remove mobile container from DOM to prevent blank pages
           const mobileContainer = document.getElementById('mobile-container');
-          const body = document.body;
+          let mobileContainerParent = null;
+          let mobileContainerNextSibling = null;
           
-          // Get current desktop content to show in mobile layout
-          const desktopContentInner = document.querySelector('.desktop-content-inner');
-          const mobileContentInner = document.querySelector('.mobile-content-inner');
-          
-          if (desktopContainer && mobileContainer && desktopContentInner && mobileContentInner) {
-            // Copy desktop content to mobile container with proper class conversion
-            const contentToShow = desktopContentInner.cloneNode(true);
-            contentToShow.className = 'mobile-content-inner'; // Ensure it uses mobile class
-            
-            // Convert any nested desktop-specific classes to mobile equivalents
-            const convertClasses = (element) => {
-              if (element.classList) {
-                // Convert desktop-specific classes to mobile equivalents
-                if (element.classList.contains('desktop-content-inner')) {
-                  element.classList.remove('desktop-content-inner');
-                  element.classList.add('mobile-content-inner');
-                }
-                // Add more conversions if needed for other desktop-specific classes
-              }
-              
-              // Recursively convert child elements
-              for (let child of element.children) {
-                convertClasses(child);
-              }
-            };
-            
-            convertClasses(contentToShow);
-            
-            // Safari-specific: Hide desktop container first with visibility
-            if (isSafari) {
-              desktopContainer.style.visibility = 'hidden';
-              desktopContainer.style.position = 'absolute';
-              desktopContainer.style.left = '-9999px';
-            }
-            
-            // Store original mobile content
-            const originalMobileContent = mobileContentInner.innerHTML;
-            const originalMobileClass = mobileContentInner.className;
-            
-            // Replace mobile content with desktop content (preserve the mobile-content-inner class)
-            mobileContentInner.innerHTML = contentToShow.innerHTML;
-            mobileContentInner.className = 'mobile-content-inner'; // Ensure mobile class is applied
-            
-            // Switch to mobile layout
-            desktopContainer.style.display = 'none';
-            mobileContainer.style.display = 'flex';
-            body.classList.remove('desktop-mode');
-            body.classList.add('mobile-mode');
-            
-            // Safari needs more time to process layout changes before printing
-            const printDelay = isSafari ? 200 : 50;
-            
-            // Wait for layout to settle, then print
-            setTimeout(() => {
-              window.print();
-              
-              // Safari needs more time before restoring layout to avoid duplicate content
-              const restoreDelay = isSafari ? 500 : 100;
-              
-              // Restore desktop layout after print dialog opens
-              setTimeout(() => {
-                // Restore original mobile content and class first
-                mobileContentInner.innerHTML = originalMobileContent;
-                mobileContentInner.className = originalMobileClass;
-                
-                // Switch back to desktop layout
-                desktopContainer.style.display = 'flex';
-                mobileContainer.style.display = 'none';
-                body.classList.remove('mobile-mode');
-                body.classList.add('desktop-mode');
-                
-                // Safari-specific: Restore desktop container visibility
-                if (isSafari) {
-                  desktopContainer.style.visibility = 'visible';
-                  desktopContainer.style.position = 'static';
-                  desktopContainer.style.left = 'auto';
-                }
-              }, restoreDelay);
-            }, printDelay);
-          } else {
-            // Fallback to regular print if layout switching fails
-            window.print();
+          if (mobileContainer) {
+            console.log('Temporarily removing mobile container from DOM');
+            mobileContainerParent = mobileContainer.parentNode;
+            mobileContainerNextSibling = mobileContainer.nextSibling;
+            mobileContainer.remove();
           }
+          
+          // Ensure desktop container is properly visible
+          const desktopContainer = document.getElementById('desktop-container');
+          if (desktopContainer) {
+            console.log('Ensuring desktop container is visible for print');
+            desktopContainer.style.display = 'flex';
+            desktopContainer.style.visibility = 'visible';
+            desktopContainer.style.opacity = '1';
+          }
+          
+          console.log('About to call window.print() with clean DOM');
+          
+          // Print with clean DOM
+          window.print();
+          
+          // Restore mobile container after print dialog opens
+          setTimeout(() => {
+            if (mobileContainer && mobileContainerParent) {
+              console.log('Restoring mobile container to DOM');
+              if (mobileContainerNextSibling) {
+                mobileContainerParent.insertBefore(mobileContainer, mobileContainerNextSibling);
+              } else {
+                mobileContainerParent.appendChild(mobileContainer);
+              }
+            }
+            console.log('Desktop print completed, DOM restored');
+          }, 100);
         }
       });
       
