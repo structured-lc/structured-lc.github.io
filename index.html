@@ -3551,10 +3551,101 @@
             }, 200);
           }
         } else if (action === 'print') {
-          // Handle print action without causing page reload
+          // Handle print action by temporarily switching to mobile layout for better print output
           e.preventDefault();
           e.stopPropagation();
-          window.print();
+          
+          // Detect Safari browser
+          const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+          
+          // Store current layout state
+          const desktopContainer = document.getElementById('desktop-container');
+          const mobileContainer = document.getElementById('mobile-container');
+          const body = document.body;
+          
+          // Get current desktop content to show in mobile layout
+          const desktopContentInner = document.querySelector('.desktop-content-inner');
+          const mobileContentInner = document.querySelector('.mobile-content-inner');
+          
+          if (desktopContainer && mobileContainer && desktopContentInner && mobileContentInner) {
+            // Copy desktop content to mobile container with proper class conversion
+            const contentToShow = desktopContentInner.cloneNode(true);
+            contentToShow.className = 'mobile-content-inner'; // Ensure it uses mobile class
+            
+            // Convert any nested desktop-specific classes to mobile equivalents
+            const convertClasses = (element) => {
+              if (element.classList) {
+                // Convert desktop-specific classes to mobile equivalents
+                if (element.classList.contains('desktop-content-inner')) {
+                  element.classList.remove('desktop-content-inner');
+                  element.classList.add('mobile-content-inner');
+                }
+                // Add more conversions if needed for other desktop-specific classes
+              }
+              
+              // Recursively convert child elements
+              for (let child of element.children) {
+                convertClasses(child);
+              }
+            };
+            
+            convertClasses(contentToShow);
+            
+            // Safari-specific: Hide desktop container first with visibility
+            if (isSafari) {
+              desktopContainer.style.visibility = 'hidden';
+              desktopContainer.style.position = 'absolute';
+              desktopContainer.style.left = '-9999px';
+            }
+            
+            // Store original mobile content
+            const originalMobileContent = mobileContentInner.innerHTML;
+            const originalMobileClass = mobileContentInner.className;
+            
+            // Replace mobile content with desktop content (preserve the mobile-content-inner class)
+            mobileContentInner.innerHTML = contentToShow.innerHTML;
+            mobileContentInner.className = 'mobile-content-inner'; // Ensure mobile class is applied
+            
+            // Switch to mobile layout
+            desktopContainer.style.display = 'none';
+            mobileContainer.style.display = 'flex';
+            body.classList.remove('desktop-mode');
+            body.classList.add('mobile-mode');
+            
+            // Safari needs more time to process layout changes before printing
+            const printDelay = isSafari ? 200 : 50;
+            
+            // Wait for layout to settle, then print
+            setTimeout(() => {
+              window.print();
+              
+              // Safari needs more time before restoring layout to avoid duplicate content
+              const restoreDelay = isSafari ? 500 : 100;
+              
+              // Restore desktop layout after print dialog opens
+              setTimeout(() => {
+                // Restore original mobile content and class first
+                mobileContentInner.innerHTML = originalMobileContent;
+                mobileContentInner.className = originalMobileClass;
+                
+                // Switch back to desktop layout
+                desktopContainer.style.display = 'flex';
+                mobileContainer.style.display = 'none';
+                body.classList.remove('mobile-mode');
+                body.classList.add('desktop-mode');
+                
+                // Safari-specific: Restore desktop container visibility
+                if (isSafari) {
+                  desktopContainer.style.visibility = 'visible';
+                  desktopContainer.style.position = 'static';
+                  desktopContainer.style.left = 'auto';
+                }
+              }, restoreDelay);
+            }, printDelay);
+          } else {
+            // Fallback to regular print if layout switching fails
+            window.print();
+          }
         }
       });
       

@@ -2459,6 +2459,26 @@ html, body {
 
 /* Print Styles - Clean document layout matching desktop version */
 @media print {
+  /* Safari-specific fixes for duplicate content issues */
+  @supports (-webkit-appearance: none) {
+    #desktop-container[style*="display: none"] {
+      display: none !important;
+      visibility: hidden !important;
+      position: absolute !important;
+      left: -9999px !important;
+      opacity: 0 !important;
+    }
+    
+    /* Ensure only mobile layout is visible during print in Safari */
+    body.mobile-mode #desktop-container {
+      display: none !important;
+      visibility: hidden !important;
+      position: absolute !important;
+      left: -9999px !important;
+      opacity: 0 !important;
+    }
+  }
+  
   * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
@@ -2924,6 +2944,7 @@ html, body {
   }
   
   /* Desktop-specific print styles - hide desktop UI elements and show content properly */
+  #desktop-container,
   #desktop-ribbon,
   .desktop-nav-btn,
   #desktop-search-btn,
@@ -2944,6 +2965,8 @@ html, body {
   .desktop-modal-header {
     display: none !important;
     visibility: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
   }
   
   /* Desktop content container */
