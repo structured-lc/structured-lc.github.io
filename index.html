@@ -1618,12 +1618,12 @@
       return {
         top: `
           <div class="mobile-action-buttons">
-            <div style="display: flex; align-items: center; gap: 6px;">
+            <div class="mobile-action-left" style="display: flex; align-items: center; gap: 6px;">
               ${prevButton}
               <span style="color: #656d76; font-size: 0.7em; margin: 0 0.3em;">${currentIndex + 1} of ${currentListData.length}</span>
               ${nextButton}
             </div>
-            <div style="display: flex; align-items: center; gap: 6px;">
+            <div class="mobile-action-right" style="display: flex; align-items: center; gap: 6px;">
               <button id="mobile-random-btn" style="background: #f59e0b; color: white; border: none; padding: 0.15em 0.4em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.6em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; gap: 3px; transition: all 0.2s ease;" onmouseover="this.style.background='#d97706'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#f59e0b'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'"><span style="display: inline-flex; align-items: center;">🎲 Random</span></button>
               <button id="mobile-print-btn" onclick="window.print()" style="background: #0969da; color: white; border: none; padding: 0.15em 0.4em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.6em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; gap: 3px; transition: all 0.2s ease;" onmouseover="this.style.background='#0550ae'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#0969da'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'">🖨️ Print</button>
             </div>
