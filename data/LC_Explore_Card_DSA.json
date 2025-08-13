@@ -48,7 +48,7 @@
     {"number": 703, "slug": "kth-largest-element-in-a-stream", "title": "Kth Largest Element in a Stream", "difficulty": "Easy"},
     {"number": 1323, "slug": "maximum-69-number", "title": "Maximum 69 Number", "difficulty": "Easy"},
     {"number": 1710, "slug": "maximum-units-on-a-truck", "title": "Maximum Units on a Truck", "difficulty": "Easy"},
-    {"number": 1705, "slug": "how-many-apples-can-you-put-into-the-basket", "title": "How Many Apples Can You Put into the Basket", "difficulty": "Easy"},
+    {"number": 1196, "slug": "how-many-apples-can-you-put-into-the-basket", "title": "How Many Apples Can You Put into the Basket", "difficulty": "Easy"},
     {"number": 1338, "slug": "reduce-array-size-to-the-half", "title": "Reduce Array Size to The Half", "difficulty": "Medium"},
     {"number": 35, "slug": "search-insert-position", "title": "Search Insert Position", "difficulty": "Easy"},
     {"number": 2389, "slug": "longest-subsequence-with-limited-sum", "title": "Longest Subsequence With Limited Sum", "difficulty": "Easy"},
