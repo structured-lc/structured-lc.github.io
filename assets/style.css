@@ -322,31 +322,19 @@ html, body {
 
 /* Removed duplicate rule - consolidated above */
 
-  .mobile-action-buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    margin-bottom: 12px;
-    padding: 12px 16px;
-    background: #ffffff;
-    border-radius: 12px;
-    border: 1px solid #d1d5db;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    flex-wrap: nowrap;
-    gap: 8px;
-    width: 100%;
-  }
-  .mobile-action-left {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .mobile-action-right {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
+.mobile-action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0; /* Remove bottom margin since it's now part of the content background */
+  padding: 8px 12px;
+  background: transparent; /* Remove individual background */
+  border: none; /* Remove individual border */
+  box-shadow: none; /* Remove individual shadow */
+  border-radius: 0; /* Remove individual border radius */
+  flex-wrap: nowrap;
+  gap: 6px;
+}
 
 /* Inline Code Controls (within headings) */
 .code-control-inline {
@@ -783,6 +771,19 @@ html, body {
   margin: 0 auto;
 }
 
+.mobile-action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
+  gap: 8px;
+}
 
 .mobile-action-btn {
   background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
@@ -2458,26 +2459,6 @@ html, body {
 
 /* Print Styles - Clean document layout matching desktop version */
 @media print {
-  /* Safari-specific fixes for duplicate content issues */
-  @supports (-webkit-appearance: none) {
-    #desktop-container[style*="display: none"] {
-      display: none !important;
-      visibility: hidden !important;
-      position: absolute !important;
-      left: -9999px !important;
-      opacity: 0 !important;
-    }
-    
-    /* Ensure only mobile layout is visible during print in Safari */
-    body.mobile-mode #desktop-container {
-      display: none !important;
-      visibility: hidden !important;
-      position: absolute !important;
-      left: -9999px !important;
-      opacity: 0 !important;
-    }
-  }
-  
   * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
@@ -2942,8 +2923,204 @@ html, body {
     text-shadow: none !important;
   }
   
+  /* Legacy Desktop print styles - hide legacy UI elements */
+  #ribbon,
+  #lists-sidebar,
+  #sidebar,
+  .modal,
+  .modal-content,
+  .modal-header,
+  .close-btn,
+  .search-filters,
+  .action-buttons,
+  .setting-item,
+  #search-modal,
+  #settings-modal,
+  #search-btn,
+  #settings-btn,
+  #home-btn,
+  #container {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* Show only content area for legacy print */
+  #content {
+    display: block !important;
+    position: static !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: white !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    animation: none !important;
+    transform: none !important;
+    flex: none !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Legacy content-inner print styles */
+  .content-inner {
+    display: block !important;
+    position: static !important;
+    padding: 25px !important;
+    margin: 0 !important;
+    background: white !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    animation: none !important;
+    transform: none !important;
+    flex: none !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  .content-inner h1 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #24292f !important;
+    margin: 1em 0 0.5em 0 !important;
+    page-break-after: avoid;
+    line-height: 1.3 !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
+  
+  .content-inner h2 {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #24292f !important;
+    margin: 0.8em 0 0.4em 0 !important;
+    page-break-after: avoid;
+    line-height: 1.3 !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
+  
+  .content-inner h3 {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #2364b5 !important;
+    margin: 0.8em 0 0.4em 0 !important;
+    page-break-after: avoid;
+    line-height: 1.3 !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
+  
+  .content-inner h4,
+  .content-inner h5,
+  .content-inner h6 {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #24292f !important;
+    margin: 0.6em 0 0.3em 0 !important;
+    page-break-after: avoid;
+    line-height: 1.3 !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
+  
+  .content-inner p {
+    color: #24292f !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    margin: 0.4em 0 !important;
+    orphans: 3;
+    widows: 3;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
+  
+  .content-inner code {
+    background: #f6f8fa !important;
+    color: #24292f !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+    font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+    font-size: 12px !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  .content-inner pre {
+    background: #f6f8fa !important;
+    border: 1px solid #d0d7de !important;
+    border-radius: 6px !important;
+    padding: 14px !important;
+    overflow: visible !important;
+    margin: 1em 0 !important;
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+    font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+    page-break-inside: avoid;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    box-shadow: none !important;
+  }
+  
+  .content-inner pre code {
+    background: none !important;
+    padding: 0 !important;
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+    border-radius: 0 !important;
+    font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+  }
+  
+  .content-inner ul,
+  .content-inner ol {
+    padding-left: 2em !important;
+    margin: 0.5em 0 !important;
+  }
+  
+  .content-inner li {
+    margin: 0.2em 0 !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
+  
+  .content-inner blockquote {
+    border-left: 4px solid #d1d9e0 !important;
+    padding-left: 1em !important;
+    margin: 0.8em 0 !important;
+    color: #656d76 !important;
+    font-style: italic !important;
+    page-break-inside: avoid;
+    background: none !important;
+    box-shadow: none !important;
+    line-height: 1.4 !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
+  
+  .content-inner a {
+    color: #0969da !important;
+    text-decoration: underline !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Legacy desktop author footnote */
+  .content-inner .author-footnote {
+    text-align: center !important;
+    margin-top: 2em !important;
+    padding-top: 1em !important;
+    border-top: 1px solid #d1d9e0 !important;
+    color: #656d76 !important;
+    font-size: 11px !important;
+    page-break-inside: avoid;
+    background: none !important;
+    box-shadow: none !important;
+  }
+
   /* Desktop-specific print styles - hide desktop UI elements and show content properly */
-  #desktop-container,
   #desktop-ribbon,
   .desktop-nav-btn,
   #desktop-search-btn,
@@ -2964,14 +3141,14 @@ html, body {
   .desktop-modal-header {
     display: none !important;
     visibility: hidden !important;
-    position: absolute !important;
-    left: -9999px !important;
   }
   
-  /* Desktop content container */
-  .desktop-content-inner,
-  .desktop-content-with-background {
+  /* Show desktop container and main content area for print */
+  #desktop-container,
+  #desktop-content,
+  .desktop-main {
     display: block !important;
+    position: static !important;
     padding: 0 !important;
     margin: 0 !important;
     background: white !important;
@@ -2980,30 +3157,169 @@ html, body {
     border-radius: 0 !important;
     width: 100% !important;
     max-width: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    animation: none !important;
+    transform: none !important;
+    flex: none !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
   }
   
-  /* Ensure desktop content inherits mobile print styles */
-  .desktop-content-inner h1,
-  .desktop-content-inner h2,
-  .desktop-content-inner h3,
+  /* Show only desktop content inner for print */
+  .desktop-content-inner {
+    display: block !important;
+    position: static !important;
+    padding: 25px !important;
+    margin: 0 !important;
+    background: white !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    animation: none !important;
+    transform: none !important;
+    flex: none !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Apply mobile print styles to desktop content */
+  .desktop-content-inner h1 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #24292f !important;
+    margin: 1em 0 0.5em 0 !important;
+    page-break-after: avoid;
+    line-height: 1.3 !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
+  
+  .desktop-content-inner h2 {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #24292f !important;
+    margin: 0.8em 0 0.4em 0 !important;
+    page-break-after: avoid;
+    line-height: 1.3 !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
+  
+  .desktop-content-inner h3 {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #2364b5 !important;
+    margin: 0.8em 0 0.4em 0 !important;
+    page-break-after: avoid;
+    line-height: 1.3 !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
+  
   .desktop-content-inner h4,
   .desktop-content-inner h5,
-  .desktop-content-inner h6,
-  .desktop-content-inner p,
-  .desktop-content-inner code,
-  .desktop-content-inner pre,
+  .desktop-content-inner h6 {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #24292f !important;
+    margin: 0.6em 0 0.3em 0 !important;
+    page-break-after: avoid;
+    line-height: 1.3 !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
+  
+  .desktop-content-inner p {
+    color: #24292f !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    margin: 0.4em 0 !important;
+    orphans: 3;
+    widows: 3;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
+  
+  .desktop-content-inner code {
+    background: #f6f8fa !important;
+    color: #24292f !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+    font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+    font-size: 12px !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  .desktop-content-inner pre {
+    background: #f6f8fa !important;
+    border: 1px solid #d0d7de !important;
+    border-radius: 6px !important;
+    padding: 14px !important;
+    overflow: visible !important;
+    margin: 1em 0 !important;
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+    font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+    page-break-inside: avoid;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    box-shadow: none !important;
+  }
+  
+  .desktop-content-inner pre code {
+    background: none !important;
+    padding: 0 !important;
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+    border-radius: 0 !important;
+    font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+  }
+  
   .desktop-content-inner ul,
-  .desktop-content-inner ol,
-  .desktop-content-inner li,
-  .desktop-content-inner blockquote,
+  .desktop-content-inner ol {
+    padding-left: 2em !important;
+    margin: 0.5em 0 !important;
+  }
+  
+  .desktop-content-inner li {
+    margin: 0.2em 0 !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
+  
+  .desktop-content-inner blockquote {
+    border-left: 4px solid #d1d9e0 !important;
+    padding-left: 1em !important;
+    margin: 0.8em 0 !important;
+    color: #656d76 !important;
+    font-style: italic !important;
+    page-break-inside: avoid;
+    background: none !important;
+    box-shadow: none !important;
+    line-height: 1.4 !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
+  
   .desktop-content-inner a {
-    /* Inherit all mobile print styles for consistency */
-    color: inherit !important;
-    font-size: inherit !important;
-    font-weight: inherit !important;
-    margin: inherit !important;
-    padding: inherit !important;
-    line-height: inherit !important;
-    font-family: inherit !important;
+    color: #0969da !important;
+    text-decoration: underline !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Desktop author footnote - clean style */
+  .desktop-author-footnote,
+  .author-footnote {
+    text-align: center !important;
+    margin-top: 2em !important;
+    padding-top: 1em !important;
+    border-top: 1px solid #d1d9e0 !important;
+    color: #656d76 !important;
+    font-size: 11px !important;
+    page-break-inside: avoid;
+    background: none !important;
+    box-shadow: none !important;
   }
 }
