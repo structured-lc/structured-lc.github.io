@@ -19,5 +19,6 @@
     {"name": "Card-LinkedIn", "url": "interview-card-linkedin", "file": "LC_Explore_Card_LinkedIn.json", "description": "Problems frequently asked at LinkedIn interviews"},
     {"name": "Card-Yelp", "url": "interview-card-yelp", "file": "LC_Explore_Card_Yelp.json", "description": "Problems frequently asked at Yelp interviews"},
     {"name": "Card-Bloomberg", "url": "interview-card-bloomberg", "file": "LC_Explore_Card_Bloomberg.json", "description": "Problems frequently asked at Bloomberg interviews"},
-    {"name": "Tag / Biconnected Component", "url": "tag-biconnected-component", "file": "LC_Tag_Biconnected_Component.json", "description": "Problem tagged with Biconnected Component"}
+    {"name": "Tag / Biconnected Component", "url": "tag-biconnected-component", "file": "LC_Tag_Biconnected_Component.json", "description": "Problem tagged with Biconnected Component"},
+    {"name": "Tag / Rejection Sampling", "url": "tag-rejection-sampling", "file": "LC_Tag_Rejection_Sampling.json", "description": "Problem tagged with Rejection Sampling"}
 ]
