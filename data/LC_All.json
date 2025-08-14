@@ -3629,5 +3629,21 @@
     {"number": 3628, "slug": "maximum-number-of-subsequences-after-one-inserting", "title": "Maximum Number of Subsequences After One Inserting", "difficulty": "Medium"},
     {"number": 3629, "slug": "minimum-jumps-to-reach-end-via-prime-teleportation", "title": "Minimum Jumps to Reach End via Prime Teleportation", "difficulty": "Medium"},
     {"number": 3630, "slug": "partition-array-for-maximum-xor-and-and", "title": "Partition Array for Maximum XOR and AND", "difficulty": "Hard"},
-    {"number": 3631, "slug": "sort-threats-by-severity-and-exploitability", "title": "Sort Threats by Severity and Exploitability", "difficulty": "Medium"}
+    {"number": 3631, "slug": "sort-threats-by-severity-and-exploitability", "title": "Sort Threats by Severity and Exploitability", "difficulty": "Medium"},
+    {"number": 3632, "slug": "subarrays-with-xor-at-least-k", "title": "Subarrays with XOR at Least K", "difficulty": "Hard"},
+    {"number": 3633, "slug": "earliest-finish-time-for-land-and-water-rides-i", "title": "Earliest Finish Time for Land and Water Rides I", "difficulty": "Easy"},
+    {"number": 3634, "slug": "minimum-removals-to-balance-array", "title": "Minimum Removals to Balance Array", "difficulty": "Medium"},
+    {"number": 3635, "slug": "earliest-finish-time-for-land-and-water-rides-ii", "title": "Earliest Finish Time for Land and Water Rides II", "difficulty": "Medium"},
+    {"number": 3636, "slug": "threshold-majority-queries", "title": "Threshold Majority Queries", "difficulty": "Hard"},
+    {"number": 3637, "slug": "trionic-array-i", "title": "Trionic Array I", "difficulty": "Easy"},
+    {"number": 3638, "slug": "maximum-balanced-shipments", "title": "Maximum Balanced Shipments", "difficulty": "Medium"},
+    {"number": 3639, "slug": "minimum-time-to-activate-string", "title": "Minimum Time to Activate String", "difficulty": "Medium"},
+    {"number": 3640, "slug": "trionic-array-ii", "title": "Trionic Array II", "difficulty": "Hard"},
+    {"number": 3641, "slug": "longest-semi-repeating-subarray", "title": "Longest Semi-Repeating Subarray", "difficulty": "Medium"},
+    {"number": 3642, "slug": "find-books-with-polarized-opinions", "title": "Find Books with Polarized Opinions", "difficulty": "Easy"},
+    {"number": 3643, "slug": "flip-square-submatrix-vertically", "title": "Flip Square Submatrix Vertically", "difficulty": "Easy"},
+    {"number": 3644, "slug": "maximum-k-to-sort-a-permutation", "title": "Maximum K to Sort a Permutation", "difficulty": "Medium"},
+    {"number": 3645, "slug": "maximum-total-from-optimal-activation-order", "title": "Maximum Total from Optimal Activation Order", "difficulty": "Medium"},
+    {"number": 3646, "slug": "next-special-palindrome-number", "title": "Next Special Palindrome Number", "difficulty": "Hard"},
+    {"number": 3647, "slug": "maximum-weight-in-two-bags", "title": "Maximum Weight in Two Bags", "difficulty": "Medium"}
 ]
