@@ -18,10 +18,5 @@
     {"name": "Card-Uber", "url": "interview-card-uber", "file": "LC_Explore_Card_Uber.json", "description": "Problems frequently asked at Uber interviews"},
     {"name": "Card-LinkedIn", "url": "interview-card-linkedin", "file": "LC_Explore_Card_LinkedIn.json", "description": "Problems frequently asked at LinkedIn interviews"},
     {"name": "Card-Yelp", "url": "interview-card-yelp", "file": "LC_Explore_Card_Yelp.json", "description": "Problems frequently asked at Yelp interviews"},
-    {"name": "Card-Bloomberg", "url": "interview-card-bloomberg", "file": "LC_Explore_Card_Bloomberg.json", "description": "Problems frequently asked at Bloomberg interviews"},
-    {"name": "Tag / Strongly Connected Component", "url": "tag-strongly-connected-component", "file": "LC_Tag_Strongly_Connected_Component.json", "description": "Problem tagged with Strongly Connected Component"},
-    {"name": "Tag / Eulerian Circuit", "url": "tag-eulerian-circuit", "file": "LC_Tag_Eulerian_Circuit.json", "description": "Problem tagged with Eulerian Circuit"},
-    {"name": "Tag / Radix Sort", "url": "tag-radix-sort", "file": "LC_Tag_Radix_Sort.json", "description": "Problem tagged with Radix Sort"},
-    {"name": "Tag / Rejection Sampling", "url": "tag-rejection-sampling", "file": "LC_Tag_Rejection_Sampling.json", "description": "Problem tagged with Rejection Sampling"},
-    {"name": "Tag / Biconnected Component", "url": "tag-biconnected-component", "file": "LC_Tag_Biconnected_Component.json", "description": "Problem tagged with Biconnected Component"}
+    {"name": "Card-Bloomberg", "url": "interview-card-bloomberg", "file": "LC_Explore_Card_Bloomberg.json", "description": "Problems frequently asked at Bloomberg interviews"}
 ]
