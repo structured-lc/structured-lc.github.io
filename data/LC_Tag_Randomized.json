@@ -1,0 +1,14 @@
+[
+    {"number": 380, "slug": "insert-delete-getrandom-o1", "title": "Insert Delete GetRandom O(1)", "difficulty": "Medium"},
+    {"number": 381, "slug": "insert-delete-getrandom-o1-duplicates-allowed", "title": "Insert Delete GetRandom O(1) - Duplicates allowed", "difficulty": "Hard"},
+    {"number": 382, "slug": "linked-list-random-node", "title": "Linked List Random Node", "difficulty": "Medium"},
+    {"number": 384, "slug": "shuffle-an-array", "title": "Shuffle an Array", "difficulty": "Medium"},
+    {"number": 398, "slug": "random-pick-index", "title": "Random Pick Index", "difficulty": "Medium"},
+    {"number": 470, "slug": "implement-rand10-using-rand7", "title": "Implement Rand10() Using Rand7()", "difficulty": "Medium"},
+    {"number": 478, "slug": "generate-random-point-in-a-circle", "title": "Generate Random Point in a Circle", "difficulty": "Medium"},
+    {"number": 497, "slug": "random-point-in-non-overlapping-rectangles", "title": "Random Point in Non-overlapping Rectangles", "difficulty": "Medium"},
+    {"number": 519, "slug": "random-flip-matrix", "title": "Random Flip Matrix", "difficulty": "Medium"},
+    {"number": 528, "slug": "random-pick-with-weight", "title": "Random Pick with Weight", "difficulty": "Medium"},
+    {"number": 710, "slug": "random-pick-with-blacklist", "title": "Random Pick with Blacklist", "difficulty": "Hard"},
+    {"number": 1515, "slug": "best-position-for-a-service-centre", "title": "Best Position for a Service Centre", "difficulty": "Hard"}
+]

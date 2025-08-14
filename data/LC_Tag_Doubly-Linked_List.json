@@ -1,0 +1,15 @@
+[
+    {"number": 146, "slug": "lru-cache", "title": "LRU Cache", "difficulty": "Medium"},
+    {"number": 426, "slug": "convert-binary-search-tree-to-sorted-doubly-linked-list", "title": "Convert Binary Search Tree to Sorted Doubly Linked List", "difficulty": "Medium"},
+    {"number": 430, "slug": "flatten-a-multilevel-doubly-linked-list", "title": "Flatten a Multilevel Doubly Linked List", "difficulty": "Medium"},
+    {"number": 432, "slug": "all-oone-data-structure", "title": "All O`one Data Structure", "difficulty": "Hard"},
+    {"number": 460, "slug": "lfu-cache", "title": "LFU Cache", "difficulty": "Hard"},
+    {"number": 716, "slug": "max-stack", "title": "Max Stack", "difficulty": "Hard"},
+    {"number": 1472, "slug": "design-browser-history", "title": "Design Browser History", "difficulty": "Medium"},
+    {"number": 1797, "slug": "design-authentication-manager", "title": "Design Authentication Manager", "difficulty": "Medium"},
+    {"number": 2296, "slug": "design-a-text-editor", "title": "Design a Text Editor", "difficulty": "Hard"},
+    {"number": 3263, "slug": "convert-doubly-linked-list-to-array-i", "title": "Convert Doubly Linked List to Array I", "difficulty": "Easy"},
+    {"number": 3294, "slug": "convert-doubly-linked-list-to-array-ii", "title": "Convert Doubly Linked List to Array II", "difficulty": "Medium"},
+    {"number": 3507, "slug": "minimum-pair-removal-to-sort-array-i", "title": "Minimum Pair Removal to Sort Array I", "difficulty": "Easy"},
+    {"number": 3510, "slug": "minimum-pair-removal-to-sort-array-ii", "title": "Minimum Pair Removal to Sort Array II", "difficulty": "Hard"}
+]

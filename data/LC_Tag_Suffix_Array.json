@@ -1,0 +1,9 @@
+[
+    {"number": 1044, "slug": "longest-duplicate-substring", "title": "Longest Duplicate Substring", "difficulty": "Hard"},
+    {"number": 1062, "slug": "longest-repeating-substring", "title": "Longest Repeating Substring", "difficulty": "Medium"},
+    {"number": 1698, "slug": "number-of-distinct-substrings-in-a-string", "title": "Number of Distinct Substrings in a String", "difficulty": "Medium"},
+    {"number": 1923, "slug": "longest-common-subpath", "title": "Longest Common Subpath", "difficulty": "Hard"},
+    {"number": 1977, "slug": "number-of-ways-to-separate-numbers", "title": "Number of Ways to Separate Numbers", "difficulty": "Hard"},
+    {"number": 2223, "slug": "sum-of-scores-of-built-strings", "title": "Sum of Scores of Built Strings", "difficulty": "Hard"},
+    {"number": 3213, "slug": "construct-string-with-minimum-cost", "title": "Construct String with Minimum Cost", "difficulty": "Hard"}
+]

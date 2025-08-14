@@ -1,0 +1,21 @@
+[
+    {"number": 292, "slug": "nim-game", "title": "Nim Game", "difficulty": "Easy"},
+    {"number": 319, "slug": "bulb-switcher", "title": "Bulb Switcher", "difficulty": "Medium"},
+    {"number": 810, "slug": "chalkboard-xor-game", "title": "Chalkboard XOR Game", "difficulty": "Hard"},
+    {"number": 1025, "slug": "divisor-game", "title": "Divisor Game", "difficulty": "Easy"},
+    {"number": 1033, "slug": "moving-stones-until-consecutive", "title": "Moving Stones Until Consecutive", "difficulty": "Medium"},
+    {"number": 1227, "slug": "airplane-seat-assignment-probability", "title": "Airplane Seat Assignment Probability", "difficulty": "Medium"},
+    {"number": 1503, "slug": "last-moment-before-all-ants-fall-out-of-a-plank", "title": "Last Moment Before All Ants Fall Out of a Plank", "difficulty": "Medium"},
+    {"number": 1908, "slug": "game-of-nim", "title": "Game of Nim", "difficulty": "Medium"},
+    {"number": 2396, "slug": "strictly-palindromic-number", "title": "Strictly Palindromic Number", "difficulty": "Medium"},
+    {"number": 2419, "slug": "longest-subarray-with-maximum-bitwise-and", "title": "Longest Subarray With Maximum Bitwise AND", "difficulty": "Medium"},
+    {"number": 2425, "slug": "bitwise-xor-of-all-pairings", "title": "Bitwise XOR of All Pairings", "difficulty": "Medium"},
+    {"number": 2505, "slug": "bitwise-or-of-all-subsequence-sums", "title": "Bitwise OR of All Subsequence Sums", "difficulty": "Medium"},
+    {"number": 2568, "slug": "minimum-impossible-or", "title": "Minimum Impossible OR", "difficulty": "Medium"},
+    {"number": 2731, "slug": "movement-of-robots", "title": "Movement of Robots", "difficulty": "Medium"},
+    {"number": 2745, "slug": "construct-the-longest-new-string", "title": "Construct the Longest New String", "difficulty": "Medium"},
+    {"number": 2749, "slug": "minimum-operations-to-make-the-integer-zero", "title": "Minimum Operations to Make the Integer Zero", "difficulty": "Medium"},
+    {"number": 3227, "slug": "vowels-game-in-a-string", "title": "Vowels Game in a String", "difficulty": "Medium"},
+    {"number": 3577, "slug": "count-the-number-of-computer-unlocking-permutations", "title": "Count the Number of Computer Unlocking Permutations", "difficulty": "Medium"},
+    {"number": 3596, "slug": "minimum-cost-path-with-alternating-directions-i", "title": "Minimum Cost Path with Alternating Directions I", "difficulty": "Medium"}
+]

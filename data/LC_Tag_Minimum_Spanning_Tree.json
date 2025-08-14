@@ -1,0 +1,8 @@
+[
+    {"number": 1135, "slug": "connecting-cities-with-minimum-cost", "title": "Connecting Cities With Minimum Cost", "difficulty": "Medium"},
+    {"number": 1168, "slug": "optimize-water-distribution-in-a-village", "title": "Optimize Water Distribution in a Village", "difficulty": "Hard"},
+    {"number": 1489, "slug": "find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree", "title": "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree", "difficulty": "Hard"},
+    {"number": 1584, "slug": "min-cost-to-connect-all-points", "title": "Min Cost to Connect All Points", "difficulty": "Medium"},
+    {"number": 1724, "slug": "checking-existence-of-edge-length-limited-paths-ii", "title": "Checking Existence of Edge Length Limited Paths II", "difficulty": "Hard"},
+    {"number": 3600, "slug": "maximize-spanning-tree-stability-with-upgrades", "title": "Maximize Spanning Tree Stability with Upgrades", "difficulty": "Hard"}
+]

@@ -1,0 +1,5 @@
+[
+    {"number": 164, "slug": "maximum-gap", "title": "Maximum Gap", "difficulty": "Medium"},
+    {"number": 912, "slug": "sort-an-array", "title": "Sort an Array", "difficulty": "Medium"},
+    {"number": 2343, "slug": "query-kth-smallest-trimmed-number", "title": "Query Kth Smallest Trimmed Number", "difficulty": "Medium"}
+]

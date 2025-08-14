@@ -1,0 +1,14 @@
+[
+    {"number": 23, "slug": "merge-k-sorted-lists", "title": "Merge k Sorted Lists", "difficulty": "Hard"},
+    {"number": 148, "slug": "sort-list", "title": "Sort List", "difficulty": "Medium"},
+    {"number": 315, "slug": "count-of-smaller-numbers-after-self", "title": "Count of Smaller Numbers After Self", "difficulty": "Hard"},
+    {"number": 327, "slug": "count-of-range-sum", "title": "Count of Range Sum", "difficulty": "Hard"},
+    {"number": 493, "slug": "reverse-pairs", "title": "Reverse Pairs", "difficulty": "Hard"},
+    {"number": 912, "slug": "sort-an-array", "title": "Sort an Array", "difficulty": "Medium"},
+    {"number": 1649, "slug": "create-sorted-array-through-instructions", "title": "Create Sorted Array through Instructions", "difficulty": "Hard"},
+    {"number": 2031, "slug": "count-subarrays-with-more-ones-than-zeros", "title": "Count Subarrays With More Ones Than Zeros", "difficulty": "Medium"},
+    {"number": 2179, "slug": "count-good-triplets-in-an-array", "title": "Count Good Triplets in an Array", "difficulty": "Hard"},
+    {"number": 2426, "slug": "number-of-pairs-satisfying-inequality", "title": "Number of Pairs Satisfying Inequality", "difficulty": "Hard"},
+    {"number": 2519, "slug": "count-the-number-of-k-big-indices", "title": "Count the Number of K-Big Indices", "difficulty": "Hard"},
+    {"number": 3109, "slug": "find-the-index-of-permutation", "title": "Find the Index of Permutation", "difficulty": "Medium"}
+]

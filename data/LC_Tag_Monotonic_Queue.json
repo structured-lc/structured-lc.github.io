@@ -1,0 +1,22 @@
+[
+    {"number": 239, "slug": "sliding-window-maximum", "title": "Sliding Window Maximum", "difficulty": "Hard"},
+    {"number": 683, "slug": "k-empty-slots", "title": "K Empty Slots", "difficulty": "Hard"},
+    {"number": 862, "slug": "shortest-subarray-with-sum-at-least-k", "title": "Shortest Subarray with Sum at Least K", "difficulty": "Hard"},
+    {"number": 918, "slug": "maximum-sum-circular-subarray", "title": "Maximum Sum Circular Subarray", "difficulty": "Medium"},
+    {"number": 1425, "slug": "constrained-subsequence-sum", "title": "Constrained Subsequence Sum", "difficulty": "Hard"},
+    {"number": 1438, "slug": "longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit", "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit", "difficulty": "Medium"},
+    {"number": 1499, "slug": "max-value-of-equation", "title": "Max Value of Equation", "difficulty": "Hard"},
+    {"number": 1687, "slug": "delivering-boxes-from-storage-to-ports", "title": "Delivering Boxes from Storage to Ports", "difficulty": "Hard"},
+    {"number": 1696, "slug": "jump-game-vi", "title": "Jump Game VI", "difficulty": "Medium"},
+    {"number": 2071, "slug": "maximum-number-of-tasks-you-can-assign", "title": "Maximum Number of Tasks You Can Assign", "difficulty": "Hard"},
+    {"number": 2398, "slug": "maximum-number-of-robots-within-budget", "title": "Maximum Number of Robots Within Budget", "difficulty": "Hard"},
+    {"number": 2407, "slug": "longest-increasing-subsequence-ii", "title": "Longest Increasing Subsequence II", "difficulty": "Hard"},
+    {"number": 2444, "slug": "count-subarrays-with-fixed-bounds", "title": "Count Subarrays With Fixed Bounds", "difficulty": "Hard"},
+    {"number": 2762, "slug": "continuous-subarrays", "title": "Continuous Subarrays", "difficulty": "Medium"},
+    {"number": 2944, "slug": "minimum-number-of-coins-for-fruits", "title": "Minimum Number of Coins for Fruits", "difficulty": "Medium"},
+    {"number": 2945, "slug": "find-maximum-non-decreasing-array-length", "title": "Find Maximum Non-decreasing Array Length", "difficulty": "Hard"},
+    {"number": 2969, "slug": "minimum-number-of-coins-for-fruits-ii", "title": "Minimum Number of Coins for Fruits II", "difficulty": "Hard"},
+    {"number": 3420, "slug": "count-non-decreasing-subarrays-after-k-operations", "title": "Count Non-Decreasing Subarrays After K Operations", "difficulty": "Hard"},
+    {"number": 3578, "slug": "count-partitions-with-max-min-difference-at-most-k", "title": "Count Partitions With Max-Min Difference at Most K", "difficulty": "Medium"},
+    {"number": 3589, "slug": "count-prime-gap-balanced-subarrays", "title": "Count Prime-Gap Balanced Subarrays", "difficulty": "Medium"}
+]

@@ -1,0 +1,8 @@
+[
+    {"number": 164, "slug": "maximum-gap", "title": "Maximum Gap", "difficulty": "Medium"},
+    {"number": 220, "slug": "contains-duplicate-iii", "title": "Contains Duplicate III", "difficulty": "Hard"},
+    {"number": 347, "slug": "top-k-frequent-elements", "title": "Top K Frequent Elements", "difficulty": "Medium"},
+    {"number": 451, "slug": "sort-characters-by-frequency", "title": "Sort Characters By Frequency", "difficulty": "Medium"},
+    {"number": 692, "slug": "top-k-frequent-words", "title": "Top K Frequent Words", "difficulty": "Medium"},
+    {"number": 912, "slug": "sort-an-array", "title": "Sort an Array", "difficulty": "Medium"}
+]

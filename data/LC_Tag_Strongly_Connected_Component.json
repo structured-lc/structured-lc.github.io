@@ -1,0 +1,5 @@
+[
+    {"number": 1489, "slug": "find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree", "title": "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree", "difficulty": "Hard"},
+    {"number": 1568, "slug": "minimum-number-of-days-to-disconnect-island", "title": "Minimum Number of Days to Disconnect Island", "difficulty": "Hard"},
+    {"number": 2846, "slug": "minimum-edge-weight-equilibrium-queries-in-a-tree", "title": "Minimum Edge Weight Equilibrium Queries in a Tree", "difficulty": "Hard"}
+]

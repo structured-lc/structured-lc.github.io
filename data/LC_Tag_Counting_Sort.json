@@ -1,0 +1,13 @@
+[
+    {"number": 274, "slug": "h-index", "title": "H-Index", "difficulty": "Medium"},
+    {"number": 561, "slug": "array-partition", "title": "Array Partition", "difficulty": "Easy"},
+    {"number": 912, "slug": "sort-an-array", "title": "Sort an Array", "difficulty": "Medium"},
+    {"number": 1051, "slug": "height-checker", "title": "Height Checker", "difficulty": "Easy"},
+    {"number": 1122, "slug": "relative-sort-array", "title": "Relative Sort Array", "difficulty": "Easy"},
+    {"number": 1365, "slug": "how-many-numbers-are-smaller-than-the-current-number", "title": "How Many Numbers Are Smaller Than the Current Number", "difficulty": "Easy"},
+    {"number": 1833, "slug": "maximum-ice-cream-bars", "title": "Maximum Ice Cream Bars", "difficulty": "Medium"},
+    {"number": 2037, "slug": "minimum-number-of-moves-to-seat-everyone", "title": "Minimum Number of Moves to Seat Everyone", "difficulty": "Easy"},
+    {"number": 3088, "slug": "make-string-anti-palindrome", "title": "Make String Anti-palindrome", "difficulty": "Hard"},
+    {"number": 3189, "slug": "minimum-moves-to-get-a-peaceful-board", "title": "Minimum Moves to Get a Peaceful Board", "difficulty": "Medium"},
+    {"number": 3517, "slug": "smallest-palindromic-rearrangement-i", "title": "Smallest Palindromic Rearrangement I", "difficulty": "Medium"}
+]
