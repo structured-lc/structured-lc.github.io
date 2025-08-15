@@ -222,7 +222,7 @@
         <span class="mobile-close-btn" onclick="closeMobileSearchModal()">&times;</span>
       </div>
       <div class="mobile-modal-body">
-        <input type="text" id="mobile-search-input" placeholder="Search problems by title, number, or difficulty..." autocomplete="off">
+        <input type="text" id="mobile-search-input" placeholder="Search lists and problems by title, number, or difficulty..." autocomplete="off">
         <div class="mobile-search-filters">
           <label><input type="checkbox" id="mobile-filter-easy" checked> Easy</label>
           <label><input type="checkbox" id="mobile-filter-medium" checked> Medium</label>
@@ -2194,15 +2194,66 @@
           })))
         )).then(results => {
           mobileAllProblems = results.flat();
-          displayMobileSearchResults(filterMobileProblems(searchTerm));
+          displayMobileSearchResults(filterMobileContent(searchTerm));
         }).catch(error => {
           console.error('Error loading problems for search:', error);
           document.getElementById('mobile-search-results').innerHTML = 
             '<div style="padding: 1em; text-align: center; color: #dc2626;">Error loading problems</div>';
         });
       } else {
-        displayMobileSearchResults(filterMobileProblems(searchTerm));
+        displayMobileSearchResults(filterMobileContent(searchTerm));
       }
+    }
+    
+    function filterMobileContent(searchTerm) {
+      const easy = document.getElementById('mobile-filter-easy').checked;
+      const medium = document.getElementById('mobile-filter-medium').checked;
+      const hard = document.getElementById('mobile-filter-hard').checked;
+      
+      // Filter lists first
+      let matchingLists = [];
+      if (searchTerm) {
+        matchingLists = currentLists.filter(list => 
+          list.name.toLowerCase().includes(searchTerm.toLowerCase())
+        ).map(list => ({
+          type: 'list',
+          name: list.name,
+          listSlug: listSlugMap[list.file],
+          file: list.file
+        }));
+      }
+      
+      // Filter problems
+      const allProblems = mobileAllProblems.filter(problem => {
+        const matchesTerm = !searchTerm || 
+          problem.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          problem.number.toString().includes(searchTerm) ||
+          problem.difficulty.toLowerCase().includes(searchTerm.toLowerCase());
+          
+        const matchesDifficulty = 
+          (easy && problem.difficulty === 'Easy') ||
+          (medium && problem.difficulty === 'Medium') ||
+          (hard && problem.difficulty === 'Hard');
+          
+        return matchesTerm && matchesDifficulty;
+      }).map(problem => ({
+        ...problem,
+        type: 'problem'
+      }));
+      
+      // Combine results: lists first, then problems, limited to 50 total
+      const combinedResults = [...matchingLists, ...allProblems].slice(0, 50);
+      
+      // If we're in a specific list context, still prioritize results from current list for problems
+      if (currentListSlug && currentListSlug !== '') {
+        const currentListProblems = allProblems.filter(problem => problem.listSlug === currentListSlug);
+        const otherListProblems = allProblems.filter(problem => problem.listSlug !== currentListSlug);
+        
+        // Combine: lists first, then current list problems, then other problems
+        return [...matchingLists, ...currentListProblems, ...otherListProblems].slice(0, 50);
+      }
+      
+      return combinedResults;
     }
     
     function filterMobileProblems(searchTerm) {
@@ -2236,64 +2287,92 @@
       return allResults.slice(0, 50); // Default: just limit to 50 results
     }
     
-    function displayMobileSearchResults(problems) {
+    function displayMobileSearchResults(items) {
       const resultsDiv = document.getElementById('mobile-search-results');
       
-      if (problems.length === 0) {
-        resultsDiv.innerHTML = '<div style="padding: 1em; text-align: center; color: #656d76;">No problems found</div>';
+      if (items.length === 0) {
+        resultsDiv.innerHTML = '<div style="padding: 1em; text-align: center; color: #656d76;">No results found</div>';
         return;
       }
       
       let html = '';
       
-      // If we're in a specific list context, separate current list from others
-      if (currentListSlug && currentListSlug !== '') {
-        const currentListProblems = problems.filter(p => p.listSlug === currentListSlug);
-        const otherListProblems = problems.filter(p => p.listSlug !== currentListSlug);
-        
-        // Show current list results first
-        if (currentListProblems.length > 0) {
-          const currentListInfo = currentLists.find(l => listSlugMap[l.file] === currentListSlug);
-          const currentListName = currentListInfo ? currentListInfo.name : 'Current List';
-          
-          html += `<div class="mobile-search-section-header">From ${currentListName}</div>`;
-          html += currentListProblems.map(problem => `
-            <div class="mobile-search-result-item" onclick="navigateToMobileProblem('${problem.listSlug}', '${problem.slug}')">
-              <div class="mobile-search-result-title">${problem.number}. ${problem.title}</div>
-              <div class="mobile-search-result-meta">
-                <span class="mobile-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
-                <span>${problem.listName}</span>
-              </div>
+      // Separate lists and problems
+      const lists = items.filter(item => item.type === 'list');
+      const problems = items.filter(item => item.type === 'problem');
+      
+      // Show lists first if any
+      if (lists.length > 0) {
+        html += `<div class="mobile-search-section-header">📋 Collections</div>`;
+        html += lists.map(list => `
+          <div class="mobile-search-result-item" onclick="closeMobileSearchModal(); showMobileLoadingAnimation(); setTimeout(() => mobileRouter.navigate('${list.listSlug}'), 300);">
+            <div class="mobile-search-result-title">
+              <span style="margin-right: 8px;">📋</span>${list.name}
             </div>
-          `).join('');
-        }
-        
-        // Show other list results
-        if (otherListProblems.length > 0) {
-          if (currentListProblems.length > 0) {
-            html += `<div class="mobile-search-section-header" style="margin-top: 1em;">From Other Lists</div>`;
-          }
-          html += otherListProblems.map(problem => `
-            <div class="mobile-search-result-item" onclick="navigateToMobileProblem('${problem.listSlug}', '${problem.slug}')">
-              <div class="mobile-search-result-title">${problem.number}. ${problem.title}</div>
-              <div class="mobile-search-result-meta">
-                <span class="mobile-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
-                <span>${problem.listName}</span>
-              </div>
-            </div>
-          `).join('');
-        }
-      } else {
-        // Default display for home context
-        html = problems.map(problem => `
-          <div class="mobile-search-result-item" onclick="navigateToMobileProblem('${problem.listSlug}', '${problem.slug}')">
-            <div class="mobile-search-result-title">${problem.number}. ${problem.title}</div>
             <div class="mobile-search-result-meta">
-              <span class="mobile-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
-              <span>${problem.listName}</span>
+              <span style="color: #6b7280;">Problem Collection</span>
             </div>
           </div>
         `).join('');
+      }
+      
+      // Show problems
+      if (problems.length > 0) {
+        if (lists.length > 0) {
+          html += `<div class="mobile-search-section-header" style="margin-top: 1em;">🧩 Problems</div>`;
+        }
+        
+        // If we're in a specific list context, separate current list from others
+        if (currentListSlug && currentListSlug !== '') {
+          const currentListProblems = problems.filter(p => p.listSlug === currentListSlug);
+          const otherListProblems = problems.filter(p => p.listSlug !== currentListSlug);
+          
+          // Show current list results first
+          if (currentListProblems.length > 0) {
+            const currentListInfo = currentLists.find(l => listSlugMap[l.file] === currentListSlug);
+            const currentListName = currentListInfo ? currentListInfo.name : 'Current List';
+            
+            if (lists.length === 0) {
+              html += `<div class="mobile-search-section-header">From ${currentListName}</div>`;
+            }
+            html += currentListProblems.map(problem => `
+              <div class="mobile-search-result-item" onclick="navigateToMobileProblem('${problem.listSlug}', '${problem.slug}')">
+                <div class="mobile-search-result-title">${problem.number}. ${problem.title}</div>
+                <div class="mobile-search-result-meta">
+                  <span class="mobile-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
+                  <span>${problem.listName}</span>
+                </div>
+              </div>
+            `).join('');
+          }
+          
+          // Show other list results
+          if (otherListProblems.length > 0) {
+            if (currentListProblems.length > 0 || lists.length > 0) {
+              html += `<div class="mobile-search-section-header" style="margin-top: 1em;">From Other Collections</div>`;
+            }
+            html += otherListProblems.map(problem => `
+              <div class="mobile-search-result-item" onclick="navigateToMobileProblem('${problem.listSlug}', '${problem.slug}')">
+                <div class="mobile-search-result-title">${problem.number}. ${problem.title}</div>
+                <div class="mobile-search-result-meta">
+                  <span class="mobile-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
+                  <span>${problem.listName}</span>
+                </div>
+              </div>
+            `).join('');
+          }
+        } else {
+          // Default display for home context
+          html += problems.map(problem => `
+            <div class="mobile-search-result-item" onclick="navigateToMobileProblem('${problem.listSlug}', '${problem.slug}')">
+              <div class="mobile-search-result-title">${problem.number}. ${problem.title}</div>
+              <div class="mobile-search-result-meta">
+                <span class="mobile-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
+                <span>${problem.listName}</span>
+              </div>
+            </div>
+          `).join('');
+        }
       }
       
       resultsDiv.innerHTML = html;
@@ -2338,7 +2417,7 @@
             <span class="desktop-close-btn" onclick="closeDesktopSearchModal()">&times;</span>
           </div>
           <div class="desktop-modal-body">
-            <input type="text" id="desktop-search-input" placeholder="Search problems by title, number, or difficulty... (Ctrl+K)" autocomplete="off">
+            <input type="text" id="desktop-search-input" placeholder="Search lists and problems by title, number, or difficulty... (Ctrl+K)" autocomplete="off">
             <div class="desktop-search-filters">
               <label><input type="checkbox" id="desktop-filter-easy" checked> Easy</label>
               <label><input type="checkbox" id="desktop-filter-medium" checked> Medium</label>
@@ -2530,15 +2609,66 @@
           })))
         )).then(results => {
           desktopAllProblems = results.flat();
-          displayDesktopSearchResults(filterDesktopProblems(searchTerm));
+          displayDesktopSearchResults(filterDesktopContent(searchTerm));
         }).catch(error => {
           console.error('Error loading problems for desktop search:', error);
           document.getElementById('desktop-search-results').innerHTML = 
             '<div style="padding: 1em; text-align: center; color: #dc2626;">Error loading problems</div>';
         });
       } else {
-        displayDesktopSearchResults(filterDesktopProblems(searchTerm));
+        displayDesktopSearchResults(filterDesktopContent(searchTerm));
       }
+    }
+    
+    function filterDesktopContent(searchTerm) {
+      const easy = document.getElementById('desktop-filter-easy').checked;
+      const medium = document.getElementById('desktop-filter-medium').checked;
+      const hard = document.getElementById('desktop-filter-hard').checked;
+      
+      // Filter lists first
+      let matchingLists = [];
+      if (searchTerm) {
+        matchingLists = currentLists.filter(list => 
+          list.name.toLowerCase().includes(searchTerm.toLowerCase())
+        ).map(list => ({
+          type: 'list',
+          name: list.name,
+          listSlug: listSlugMap[list.file],
+          file: list.file
+        }));
+      }
+      
+      // Filter problems
+      const allProblems = desktopAllProblems.filter(problem => {
+        const matchesTerm = !searchTerm || 
+          problem.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          problem.number.toString().includes(searchTerm) ||
+          problem.difficulty.toLowerCase().includes(searchTerm.toLowerCase());
+          
+        const matchesDifficulty = 
+          (easy && problem.difficulty === 'Easy') ||
+          (medium && problem.difficulty === 'Medium') ||
+          (hard && problem.difficulty === 'Hard');
+          
+        return matchesTerm && matchesDifficulty;
+      }).map(problem => ({
+        ...problem,
+        type: 'problem'
+      }));
+      
+      // Combine results: lists first, then problems, limited to 50 total
+      const combinedResults = [...matchingLists, ...allProblems].slice(0, 50);
+      
+      // If we're in a specific list context, still prioritize results from current list for problems
+      if (currentListSlug && currentListSlug !== '') {
+        const currentListProblems = allProblems.filter(problem => problem.listSlug === currentListSlug);
+        const otherListProblems = allProblems.filter(problem => problem.listSlug !== currentListSlug);
+        
+        // Combine: lists first, then current list problems, then other problems
+        return [...matchingLists, ...currentListProblems, ...otherListProblems].slice(0, 50);
+      }
+      
+      return combinedResults;
     }
     
     function filterDesktopProblems(searchTerm) {
@@ -2572,64 +2702,92 @@
       return allResults.slice(0, 50); // Default: just limit to 50 results
     }
     
-    function displayDesktopSearchResults(problems) {
+    function displayDesktopSearchResults(items) {
       const resultsDiv = document.getElementById('desktop-search-results');
       
-      if (problems.length === 0) {
-        resultsDiv.innerHTML = '<div style="padding: 1em; text-align: center; color: #656d76;">No problems found</div>';
+      if (items.length === 0) {
+        resultsDiv.innerHTML = '<div style="padding: 1em; text-align: center; color: #656d76;">No results found</div>';
         return;
       }
       
       let html = '';
       
-      // If we're in a specific list context, separate current list from others
-      if (currentListSlug && currentListSlug !== '') {
-        const currentListProblems = problems.filter(p => p.listSlug === currentListSlug);
-        const otherListProblems = problems.filter(p => p.listSlug !== currentListSlug);
-        
-        // Show current list results first
-        if (currentListProblems.length > 0) {
-          const currentListInfo = currentLists.find(l => listSlugMap[l.file] === currentListSlug);
-          const currentListName = currentListInfo ? currentListInfo.name : 'Current List';
-          
-          html += `<div class="desktop-search-section-header">From ${currentListName}</div>`;
-          html += currentListProblems.map(problem => `
-            <div class="desktop-search-result-item" onclick="navigateToDesktopProblem('${problem.listSlug}', '${problem.slug}')">
-              <div class="desktop-search-result-title">${problem.number}. ${problem.title}</div>
-              <div class="desktop-search-result-meta">
-                <span class="desktop-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
-                <span>${problem.listName}</span>
-              </div>
+      // Separate lists and problems
+      const lists = items.filter(item => item.type === 'list');
+      const problems = items.filter(item => item.type === 'problem');
+      
+      // Show lists first if any
+      if (lists.length > 0) {
+        html += `<div class="desktop-search-section-header">📋 Collections</div>`;
+        html += lists.map(list => `
+          <div class="desktop-search-result-item" onclick="navigateToDesktopList('${list.listSlug}')">
+            <div class="desktop-search-result-title">
+              <span style="margin-right: 8px;">📋</span>${list.name}
             </div>
-          `).join('');
-        }
-        
-        // Show other list results
-        if (otherListProblems.length > 0) {
-          if (currentListProblems.length > 0) {
-            html += `<div class="desktop-search-section-header" style="margin-top: 1em;">From Other Lists</div>`;
-          }
-          html += otherListProblems.map(problem => `
-            <div class="desktop-search-result-item" onclick="navigateToDesktopProblem('${problem.listSlug}', '${problem.slug}')">
-              <div class="desktop-search-result-title">${problem.number}. ${problem.title}</div>
-              <div class="desktop-search-result-meta">
-                <span class="desktop-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
-                <span>${problem.listName}</span>
-              </div>
-            </div>
-          `).join('');
-        }
-      } else {
-        // Default display for home context
-        html = problems.map(problem => `
-          <div class="desktop-search-result-item" onclick="navigateToDesktopProblem('${problem.listSlug}', '${problem.slug}')">
-            <div class="desktop-search-result-title">${problem.number}. ${problem.title}</div>
             <div class="desktop-search-result-meta">
-              <span class="desktop-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
-              <span>${problem.listName}</span>
+              <span style="color: #6b7280;">Problem Collection</span>
             </div>
           </div>
         `).join('');
+      }
+      
+      // Show problems
+      if (problems.length > 0) {
+        if (lists.length > 0) {
+          html += `<div class="desktop-search-section-header" style="margin-top: 1em;">🧩 Problems</div>`;
+        }
+        
+        // If we're in a specific list context, separate current list from others
+        if (currentListSlug && currentListSlug !== '') {
+          const currentListProblems = problems.filter(p => p.listSlug === currentListSlug);
+          const otherListProblems = problems.filter(p => p.listSlug !== currentListSlug);
+          
+          // Show current list results first
+          if (currentListProblems.length > 0) {
+            const currentListInfo = currentLists.find(l => listSlugMap[l.file] === currentListSlug);
+            const currentListName = currentListInfo ? currentListInfo.name : 'Current List';
+            
+            if (lists.length === 0) {
+              html += `<div class="desktop-search-section-header">From ${currentListName}</div>`;
+            }
+            html += currentListProblems.map(problem => `
+              <div class="desktop-search-result-item" onclick="navigateToDesktopProblem('${problem.listSlug}', '${problem.slug}')">
+                <div class="desktop-search-result-title">${problem.number}. ${problem.title}</div>
+                <div class="desktop-search-result-meta">
+                  <span class="desktop-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
+                  <span>${problem.listName}</span>
+                </div>
+              </div>
+            `).join('');
+          }
+          
+          // Show other list results
+          if (otherListProblems.length > 0) {
+            if (currentListProblems.length > 0 || lists.length > 0) {
+              html += `<div class="desktop-search-section-header" style="margin-top: 1em;">From Other Collections</div>`;
+            }
+            html += otherListProblems.map(problem => `
+              <div class="desktop-search-result-item" onclick="navigateToDesktopProblem('${problem.listSlug}', '${problem.slug}')">
+                <div class="desktop-search-result-title">${problem.number}. ${problem.title}</div>
+                <div class="desktop-search-result-meta">
+                  <span class="desktop-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
+                  <span>${problem.listName}</span>
+                </div>
+              </div>
+            `).join('');
+          }
+        } else {
+          // Default display for home context
+          html += problems.map(problem => `
+            <div class="desktop-search-result-item" onclick="navigateToDesktopProblem('${problem.listSlug}', '${problem.slug}')">
+              <div class="desktop-search-result-title">${problem.number}. ${problem.title}</div>
+              <div class="desktop-search-result-meta">
+                <span class="desktop-search-result-difficulty ${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
+                <span>${problem.listName}</span>
+              </div>
+            </div>
+          `).join('');
+        }
       }
       
       resultsDiv.innerHTML = html;
@@ -2640,6 +2798,13 @@
       
       // Navigate directly using desktop router (let router handle loading animation)
       desktopRouter.navigate(listSlug, problemSlug);
+    }
+    
+    function navigateToDesktopList(listSlug) {
+      closeDesktopSearchModal();
+      
+      // Navigate to the list using desktop router
+      desktopRouter.navigate(listSlug);
     }
     
     // Desktop settings modal
