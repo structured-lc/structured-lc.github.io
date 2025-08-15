@@ -6,6 +6,7 @@
   <meta name="description" content="LeetCode problem preparation with organized problem lists, clean solutions, and detailed explanations.">
   <meta name="keywords" content="LeetCode, algorithms, data structures, programming, interview preparation">
   <meta name="author" content="LeetCode Handbook">
+  <meta name="version" content="1.0.0">
   <title>LeetCode Handbook</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,6 +60,15 @@
     #desktop-file-list li, #desktop-lists-list li {
       scroll-margin-top: 20px;
       scroll-margin-bottom: 20px;
+    }
+
+    /* Version info styling */
+    #version-info {
+      transition: opacity 0.3s ease;
+    }
+    
+    #version-info:hover {
+      opacity: 0.9 !important;
     }
 
     /* Print styles - ensure only desktop content prints and no stale mobile content */
@@ -3050,6 +3060,12 @@
                     <strong>${currentLists.length} problem collections</strong> await your exploration. Choose a collection from the sidebar to start your structured journey through coding interview preparation.
                   </p>
                 </div>
+                
+                <!-- Version Information -->
+                <div id="version-info" style="text-align: center; padding: 1rem; color: #9ca3af; font-size: 0.8rem; border-top: 1px solid #e5e7eb; margin-top: 1rem;">
+                  <div>LeetCode Handbook <span id="version-number">v1.0.0</span> | Last updated: <span id="version-date">August 15, 2025</span></div>
+                  <div style="margin-top: 0.25rem; opacity: 0.7;">Built with ♥ for structured interview preparation</div>
+                </div>
               </div>
             </div>
           </div>
@@ -3062,7 +3078,48 @@
           targetElement.classList.add('fade-in');
         }
         
+        // Load version information dynamically
+        loadVersionInfo();
+        
         return true;
+      }
+      
+      // Load version information from version.json
+      async function loadVersionInfo() {
+        try {
+          const response = await fetch('version.json');
+          if (response.ok) {
+            const versionData = await response.json();
+            
+            // Update version display elements
+            const versionNumber = document.getElementById('version-number');
+            const versionDate = document.getElementById('version-date');
+            
+            if (versionNumber) {
+              versionNumber.textContent = `v${versionData.version}`;
+            }
+            if (versionDate) {
+              versionDate.textContent = versionData.lastUpdated;
+            }
+            
+            // Add version info to meta tag for search engines
+            updateVersionMetaTag(versionData.version);
+          }
+        } catch (error) {
+          console.log('Version info not available:', error);
+          // Fallback to default values already in HTML
+        }
+      }
+      
+      // Update meta tag with version info
+      function updateVersionMetaTag(version) {
+        let metaVersion = document.querySelector('meta[name="version"]');
+        if (!metaVersion) {
+          metaVersion = document.createElement('meta');
+          metaVersion.name = 'version';
+          document.head.appendChild(metaVersion);
+        }
+        metaVersion.content = version;
       }
       
       // Show loading home page while data loads

@@ -1,0 +1,19 @@
+{
+  "version": "1.1.2",
+  "lastUpdated": "2025-08-15",
+  "features": [
+    "LeetCode problem scraping",
+    "Tag-based filtering",
+    "GitHub Actions automation",
+    "Mobile/Desktop responsive design",
+    "Markdown problem solutions"
+  ],
+  "description": "Structured LeetCode Problem Collections with automated data fetching and clean problem organization",
+  "updateReason": "Added user tracking to version management",
+  "updatedBy": {
+    "type": "manual",
+    "name": "Durga Ganesh <dganesh.iit@gmail.com>",
+    "gitName": "Durga Ganesh",
+    "gitEmail": "dganesh.iit@gmail.com"
+  }
+}
