@@ -165,8 +165,8 @@
       <div class="mobile-breadcrumb">
         <span id="mobile-breadcrumb-home" class="mobile-breadcrumb-link" onclick="
           showMobileLoadingAnimation(); 
-          setTimeout(() => mobileRouter.navigate(''), 300);
-        ">Home</span>
+          setTimeout(() => mobileRouter.navigate('lists'), 300);
+        ">Lists</span>
         <span id="mobile-breadcrumb-arrow-1" class="mobile-breadcrumb-arrow" style="display: none;"> → </span>
         <span id="mobile-breadcrumb-list" class="mobile-breadcrumb-link" style="display: none;" onclick=""></span>
         <span id="mobile-breadcrumb-arrow-2" class="mobile-breadcrumb-arrow" style="display: none;"> → </span>
@@ -176,8 +176,18 @@
     
     <!-- Main Content Views -->
     <div class="mobile-content">
-      <!-- Lists View (Home) -->
-      <div id="mobile-lists-view" class="mobile-view">
+      <!-- Home View -->
+      <div id="mobile-home-view" class="mobile-view">
+        <div id="mobile-home-content" class="mobile-content-inner">
+          <div style="text-align: center; padding: 3rem 1rem; color: #656d76;">
+            <div style="display: inline-block; animation: spin 1s linear infinite; font-size: 2rem; margin-bottom: 1rem;">⏳</div>
+            <p style="margin: 0; font-size: 0.95rem;">Loading...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lists View -->
+      <div id="mobile-lists-view" class="mobile-view" style="display: none;">
         <div id="mobile-lists-sidebar">
           <ul id="mobile-lists-list"></ul>
         </div>
@@ -608,8 +618,11 @@
         try {
           if (!listSlug && !problemSlug) {
             // Home view
+            await this.showHome();
+          } else if (listSlug === 'lists' && !problemSlug) {
+            // Lists view
             await this.showWelcome();
-          } else if (listSlug && !problemSlug) {
+          } else if (listSlug && listSlug !== 'lists' && !problemSlug) {
             // List view
             await this.showList(listSlug);
           } else if (listSlug && problemSlug) {
@@ -633,6 +646,51 @@
         isPageReload = false;
       },
       
+      async showHome() {
+        currentView = 'home';
+        
+        // Reset global variables when going home
+        currentListSlug = '';
+        currentListData = [];
+        currentMarkdownFile = '';
+        
+        // Clear hash if not already cleared
+        if (window.location.hash) {
+          window.location.hash = '';
+        }
+        
+        // Clear all mobile selections
+        document.querySelectorAll('#mobile-lists-list li').forEach(item => item.classList.remove('active'));
+        document.querySelectorAll('#mobile-file-list li').forEach(item => item.classList.remove('active'));
+        
+        // Force clear breadcrumbs immediately
+        const breadcrumbNav = document.getElementById('mobile-breadcrumb-nav');
+        const breadcrumbList = document.getElementById('mobile-breadcrumb-list');
+        const breadcrumbProblem = document.getElementById('mobile-breadcrumb-problem');
+        
+        if (breadcrumbNav) {
+          breadcrumbNav.style.display = 'none';
+        }
+        if (breadcrumbList) {
+          breadcrumbList.textContent = '';
+        }
+        if (breadcrumbProblem) {
+          breadcrumbProblem.textContent = '';
+        }
+        
+        showMobileView('home');
+        
+        // Ensure lists are loaded for the home page content
+        if (currentLists.length === 0) {
+          await loadMobileLists();
+        }
+        
+        // Show mobile home landing page
+        showMobileHomeLandingPage();
+        
+        document.title = 'LeetCode Handbook';
+      },
+      
       async showWelcome() {
         currentView = 'lists';
         
@@ -645,10 +703,8 @@
         document.querySelectorAll('#mobile-lists-list li').forEach(item => item.classList.remove('active'));
         document.querySelectorAll('#mobile-file-list li').forEach(item => item.classList.remove('active'));
         
-        // Clear hash if not already cleared
-        if (window.location.hash) {
-          window.location.hash = '';
-        }
+        // Don't clear hash for lists view - we want to keep #lists
+        // (This function now handles the lists view, not the home view)
         
         // CLEAR MOBILE CONTENT AREA - Reset to clean state
         document.getElementById('mobile-content').innerHTML = 
@@ -683,7 +739,7 @@
           renderMobileListsNoAnimation();
         }
         
-        document.title = 'LeetCode Handbook';
+        document.title = 'Browse Collections - LeetCode Handbook';
       },
       
       async showList(listSlug) {
@@ -903,8 +959,8 @@
       const listSlug = parts[0] || null;
       const problemSlug = parts[1] || null;
       
-      if (!listSlug) {
-        // Home page - hide breadcrumbs
+      if (!listSlug || listSlug === 'lists') {
+        // Home page or Lists overview page - hide breadcrumbs
         breadcrumbNav.style.display = 'none';
         return;
       }
@@ -956,12 +1012,24 @@
     // Show loading animation (smaller size matching FAB buttons)
     function showMobileLoadingAnimation() {
       if (currentView === 'lists' || !currentView) {
-        // Home view loading
+        // Lists view loading
         document.getElementById('mobile-lists-list').innerHTML = 
           '<li style="text-align: center; padding: 2rem; color: #656d76;">' +
             '<div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>' +
             '<div style="font-size: 0.95rem;">Loading...</div>' +
           '</li>';
+      } else if (currentView === 'home') {
+        // Home view loading - show loading in the home content area with proper mobile styling
+        const homeContent = document.getElementById('mobile-home-content');
+        if (homeContent) {
+          homeContent.innerHTML = 
+            '<div style="background: #ffffff; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); border: 1px solid #d1d5db; margin: 12px; text-align: center;">' +
+              '<div style="padding: 3rem 1rem; color: #656d76;">' +
+                '<div style="display: inline-block; animation: spin 1s linear infinite; font-size: 1.5rem; margin-bottom: 1rem;">⏳</div>' +
+                '<p style="margin: 0; font-size: 0.95rem;">Loading...</p>' +
+              '</div>' +
+            '</div>';
+        }
       } else if (currentView === 'problems') {
         // Problems view loading
         document.getElementById('mobile-file-list').innerHTML = 
@@ -3120,6 +3188,130 @@
           document.head.appendChild(metaVersion);
         }
         metaVersion.content = version;
+      }
+      
+      // Show mobile home landing page
+      function showMobileHomeLandingPage() {
+        const targetElement = document.getElementById('mobile-home-content');
+        if (!targetElement) {
+          console.error('Could not find mobile home content element');
+          return false;
+        }
+
+        targetElement.innerHTML = `
+          <div style="background: #ffffff; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); border: 1px solid #d1d5db; margin: 12px; position: relative; overflow: hidden;">
+            <!-- Header Section with Gradient -->
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem 1rem 1.5rem; position: relative; margin: -20px -20px 1.5rem -20px; border-radius: 12px 12px 0 0;">
+              <!-- Background Pattern -->
+              <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1; background-image: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.4"><circle cx="10" cy="10" r="2"/><circle cx="50" cy="10" r="2"/><circle cx="10" cy="50" r="2"/><circle cx="50" cy="50" r="2"/></g></svg>');"></div>
+              
+              <div style="position: relative; z-index: 2;">
+                <!-- Title Section -->
+                <div style="text-align: center; color: white; margin-bottom: 1rem;">
+                  <div style="display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(20px); border-radius: 15px; margin-bottom: 1rem; border: 1px solid rgba(255, 255, 255, 0.3);">
+                    <span style="font-size: 2rem;">🧩</span>
+                  </div>
+                  
+                  <h1 style="font-size: 2.2rem; font-weight: 800; color: white; margin-bottom: 0.5rem; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); line-height: 1.2;">
+                    LeetCode Handbook
+                  </h1>
+                  <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 0; line-height: 1.5;">
+                    Every problem, one unified framework.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Content Section -->
+            <div style="padding: 0;">
+              <!-- Feature Tiles - 2x2 Grid for Mobile -->
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
+                <div style="background: white; border-radius: 12px; padding: 1.25rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); border: 1px solid #d1d5db; text-align: center;">
+                  <div style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%); border-radius: 10px; margin: 0 auto 0.75rem; color: white;">
+                    <span style="font-size: 1.2rem;">🗂️</span>
+                  </div>
+                  <h3 style="font-size: 0.95rem; font-weight: 600; color: #374151; margin: 0 0 0.5rem 0;">One Framework</h3>
+                  <p style="color: #6b7280; font-size: 0.8rem; line-height: 1.4; margin: 0;">Structured approach for every problem</p>
+                </div>
+                
+                <div style="background: white; border-radius: 12px; padding: 1.25rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); border: 1px solid #d1d5db; text-align: center;">
+                  <div style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 10px; margin: 0 auto 0.75rem; color: white;">
+                    <span style="font-size: 1.2rem;">📋</span>
+                  </div>
+                  <h3 style="font-size: 0.95rem; font-weight: 600; color: #374151; margin: 0 0 0.5rem 0;">Organized Lists</h3>
+                  <p style="color: #6b7280; font-size: 0.8rem; line-height: 1.4; margin: 0;">Curated by difficulty and topic</p>
+                </div>
+                
+                <div style="background: white; border-radius: 12px; padding: 1.25rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); border: 1px solid #d1d5db; text-align: center;">
+                  <div style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); border-radius: 10px; margin: 0 auto 0.75rem; color: white;">
+                    <span style="font-size: 1.2rem;">🤖</span>
+                  </div>
+                  <h3 style="font-size: 0.95rem; font-weight: 600; color: #374151; margin: 0 0 0.5rem 0;">AI-Powered</h3>
+                  <p style="color: #6b7280; font-size: 0.8rem; line-height: 1.4; margin: 0;">Consistent explanations</p>
+                </div>
+                
+                <div style="background: white; border-radius: 12px; padding: 1.25rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); border: 1px solid #d1d5db; text-align: center;">
+                  <div style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); border-radius: 10px; margin: 0 auto 0.75rem; color: white;">
+                    <span style="font-size: 1.2rem;">💬</span>
+                  </div>
+                  <h3 style="font-size: 0.95rem; font-weight: 600; color: #374151; margin: 0 0 0.5rem 0;">Interview Style</h3>
+                  <p style="color: #6b7280; font-size: 0.8rem; line-height: 1.4; margin: 0;">Realistic conversations</p>
+                </div>
+              </div>
+              
+              <!-- Quick Start Section -->
+              <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); border: 1px solid #d1d5db; margin-bottom: 1.5rem;">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1rem;">
+                  <div style="width: 32px; height: 32px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 1rem;">🚀</span>
+                  </div>
+                  <h3 style="font-size: 1rem; font-weight: 600; color: #374151; margin: 0;">Ready to Begin?</h3>
+                </div>
+                <p style="color: #6b7280; font-size: 0.9rem; margin: 0 0 1rem 0; line-height: 1.5;">
+                  <strong>${currentLists.length} problem collections</strong> await your exploration.
+                </p>
+                <button onclick="showMobileLoadingAnimation(); setTimeout(() => mobileRouter.navigate('lists'), 500);" style="width: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 0.9rem; font-weight: 600; cursor: pointer; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); transition: all 0.2s ease;" onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0, 0, 0, 0.1)'" onmousedown="this.style.transform='translateY(0)'; this.style.boxShadow='0 1px 2px rgba(0, 0, 0, 0.1)'">
+                  Browse Collections
+                </button>
+              </div>
+              
+              <!-- Version Information -->
+              <div id="mobile-version-info" style="text-align: center; padding: 1rem; color: #9ca3af; font-size: 0.75rem; border-top: 1px solid #e5e7eb;">
+                <div>LeetCode Handbook <span id="mobile-version-number">v1.0.0</span> | Last updated: <span id="mobile-version-date">August 15, 2025</span></div>
+                <div style="margin-top: 0.25rem; opacity: 0.7;">Built with ♥ for structured interview preparation</div>
+              </div>
+            </div>
+          </div>
+        `;
+        
+        // Load version information dynamically for mobile
+        loadMobileVersionInfo();
+        
+        return true;
+      }
+      
+      // Load version information for mobile home page
+      async function loadMobileVersionInfo() {
+        try {
+          const response = await fetch('version.json');
+          if (response.ok) {
+            const versionData = await response.json();
+            
+            // Update mobile version display elements
+            const versionNumber = document.getElementById('mobile-version-number');
+            const versionDate = document.getElementById('mobile-version-date');
+            
+            if (versionNumber) {
+              versionNumber.textContent = `v${versionData.version}`;
+            }
+            if (versionDate) {
+              versionDate.textContent = versionData.lastUpdated;
+            }
+          }
+        } catch (error) {
+          console.log('Mobile version info not available:', error);
+          // Fallback to default values already in HTML
+        }
       }
       
       // Show loading home page while data loads

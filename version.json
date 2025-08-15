@@ -1,5 +1,5 @@
 {
-  "version": "1.1.2",
+  "version": "1.2.0",
   "lastUpdated": "2025-08-15",
   "features": [
     "LeetCode problem scraping",
@@ -9,11 +9,10 @@
     "Markdown problem solutions"
   ],
   "description": "Structured LeetCode Problem Collections with automated data fetching and clean problem organization",
-  "updateReason": "Added user tracking to version management",
+  "updateReason": "Mobile Layout gets a Home Landing Page",
   "updatedBy": {
     "type": "manual",
-    "name": "Durga Ganesh <dganesh.iit@gmail.com>",
-    "gitName": "Durga Ganesh",
-    "gitEmail": "dganesh.iit@gmail.com"
+    "name": "Durga Ganesh",
+    "gitName": "Durga Ganesh"
   }
 }
