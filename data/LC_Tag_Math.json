@@ -580,6 +580,7 @@
     {"number": 3535, "slug": "unit-conversion-ii", "title": "Unit Conversion II", "difficulty": "Medium"},
     {"number": 3536, "slug": "maximum-product-of-two-digits", "title": "Maximum Product of Two Digits", "difficulty": "Easy"},
     {"number": 3539, "slug": "find-sum-of-array-product-of-magical-sequences", "title": "Find Sum of Array Product of Magical Sequences", "difficulty": "Hard"},
+    {"number": 3547, "slug": "maximum-sum-of-edge-values-in-a-graph", "title": "Maximum Sum of Edge Values in a Graph", "difficulty": "Hard"},
     {"number": 3549, "slug": "multiply-two-polynomials", "title": "Multiply Two Polynomials", "difficulty": "Hard"},
     {"number": 3550, "slug": "smallest-index-with-digit-sum-equal-to-index", "title": "Smallest Index With Digit Sum Equal to Index", "difficulty": "Easy"},
     {"number": 3556, "slug": "sum-of-largest-prime-substrings", "title": "Sum of Largest Prime Substrings", "difficulty": "Medium"},

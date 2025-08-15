@@ -41,5 +41,6 @@
     {"number": 3380, "slug": "maximum-area-rectangle-with-point-constraints-i", "title": "Maximum Area Rectangle With Point Constraints I", "difficulty": "Medium"},
     {"number": 3382, "slug": "maximum-area-rectangle-with-point-constraints-ii", "title": "Maximum Area Rectangle With Point Constraints II", "difficulty": "Hard"},
     {"number": 3515, "slug": "shortest-path-in-a-weighted-tree", "title": "Shortest Path in a Weighted Tree", "difficulty": "Hard"},
-    {"number": 3520, "slug": "minimum-threshold-for-inversion-pairs-count", "title": "Minimum Threshold for Inversion Pairs Count", "difficulty": "Medium"}
+    {"number": 3520, "slug": "minimum-threshold-for-inversion-pairs-count", "title": "Minimum Threshold for Inversion Pairs Count", "difficulty": "Medium"},
+    {"number": 3624, "slug": "number-of-integers-with-popcount-depth-equal-to-k-ii", "title": "Number of Integers With Popcount-Depth Equal to K II", "difficulty": "Hard"}
 ]
