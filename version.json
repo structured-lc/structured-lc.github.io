@@ -1,5 +1,5 @@
 {
-  "version": "0.4.1",
+  "version": "0.4.2",
   "lastUpdated": "2025-08-16",
   "features": [
     "LeetCode problem scraping",
@@ -9,7 +9,7 @@
     "Markdown problem solutions"
   ],
   "description": "Structured LeetCode Problem Collections with automated data fetching and clean problem organization",
-  "updateReason": "Footer updated",
+  "updateReason": "Mobile Layout Print fixed",
   "updatedBy": {
     "type": "manual",
     "name": "Durga Ganesh",
