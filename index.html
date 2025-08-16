@@ -109,6 +109,11 @@
 
     /* Print styles - ensure only desktop content prints and no stale mobile content */
     @media print {
+      /* Hide landing content during print only when it's the default content */
+      #desktop-default-content #landing-content {
+        display: none !important;
+      }
+      
       /* Only hide mobile content when in desktop mode */
       body.desktop-mode #mobile-container,
       body.desktop-mode .mobile-container,
