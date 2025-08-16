@@ -1,6 +1,6 @@
 {
-  "version": "1.3.0",
-  "lastUpdated": "2025-08-15",
+  "version": "0.4.0",
+  "lastUpdated": "2025-08-16",
   "features": [
     "LeetCode problem scraping",
     "Tag-based filtering",
@@ -9,7 +9,7 @@
     "Markdown problem solutions"
   ],
   "description": "Structured LeetCode Problem Collections with automated data fetching and clean problem organization",
-  "updateReason": "Now, Search functionality includes collections/lists as well",
+  "updateReason": "Layout sclae functionality added & Settings updated",
   "updatedBy": {
     "type": "manual",
     "name": "Durga Ganesh",
