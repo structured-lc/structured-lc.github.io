@@ -2952,13 +2952,29 @@
     function openMobileFeedback() {
       let pageTitle = document.title.replace(' - LeetCode Handbook', '');
       let pageUrl = window.location.href;
-      let body = `**Feedback for:** ${pageTitle}\n\n**Page:** ${pageUrl}\n\n**Feedback:**\n`;
-      let issueUrl =
-        'https://github.com/structured-lc/structured-lc.github.io/issues/new' +
-        '?title=' + encodeURIComponent('Feedback: ' + pageTitle) +
-        '&body=' + encodeURIComponent(body) +
-        '&labels=feedback';
-      window.open(issueUrl, '_blank');
+      let layout = window.innerWidth < 1024 ? 'Mobile' : 'Desktop';
+      fetch('version.json')
+        .then(response => response.json())
+        .then(versionData => {
+          let version = versionData.version || 'unknown';
+          let lastUpdated = versionData.lastUpdated || 'unknown';
+          let body = `**Feedback for:** ${pageTitle}\n\n**Page:** ${pageUrl}\n**Layout:** ${layout}\n**Version:** v${version}\n**Last Updated:** ${lastUpdated}\n\n**Feedback:**\n`;
+          let issueUrl =
+            'https://github.com/structured-lc/structured-lc.github.io/issues/new' +
+            '?title=' + encodeURIComponent('Feedback: ' + pageTitle) +
+            '&body=' + encodeURIComponent(body) +
+            '&labels=feedback';
+          window.open(issueUrl, '_blank');
+        })
+        .catch(() => {
+          let body = `**Feedback for:** ${pageTitle}\n\n**Page:** ${pageUrl}\n**Layout:** ${layout}\n**Version:** unknown\n**Last Updated:** unknown\n\n**Feedback:**\n`;
+          let issueUrl =
+            'https://github.com/structured-lc/structured-lc.github.io/issues/new' +
+            '?title=' + encodeURIComponent('Feedback: ' + pageTitle) +
+            '&body=' + encodeURIComponent(body) +
+            '&labels=feedback';
+          window.open(issueUrl, '_blank');
+        });
     }    // Show mobile toast
     function showMobileToast(message) {
       const toast = document.createElement('div');
