@@ -884,5 +884,9 @@
     {"number": 3591, "slug": "check-if-any-element-has-prime-frequency", "title": "Check if Any Element Has Prime Frequency", "difficulty": "Easy"},
     {"number": 3602, "slug": "hexadecimal-and-hexatrigesimal-conversion", "title": "Hexadecimal and Hexatrigesimal Conversion", "difficulty": "Easy"},
     {"number": 3606, "slug": "coupon-code-validator", "title": "Coupon Code Validator", "difficulty": "Easy"},
-    {"number": 3622, "slug": "check-divisibility-by-digit-sum-and-product", "title": "Check Divisibility by Digit Sum and Product", "difficulty": "Easy"}
+    {"number": 3622, "slug": "check-divisibility-by-digit-sum-and-product", "title": "Check Divisibility by Digit Sum and Product", "difficulty": "Easy"},
+    {"number": 3633, "slug": "earliest-finish-time-for-land-and-water-rides-i", "title": "Earliest Finish Time for Land and Water Rides I", "difficulty": "Easy"},
+    {"number": 3637, "slug": "trionic-array-i", "title": "Trionic Array I", "difficulty": "Easy"},
+    {"number": 3642, "slug": "find-books-with-polarized-opinions", "title": "Find Books with Polarized Opinions", "difficulty": "Easy"},
+    {"number": 3643, "slug": "flip-square-submatrix-vertically", "title": "Flip Square Submatrix Vertically", "difficulty": "Easy"}
 ]

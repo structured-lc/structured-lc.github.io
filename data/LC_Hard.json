@@ -854,5 +854,11 @@
     {"number": 3621, "slug": "number-of-integers-with-popcount-depth-equal-to-k-i", "title": "Number of Integers With Popcount-Depth Equal to K I", "difficulty": "Hard"},
     {"number": 3624, "slug": "number-of-integers-with-popcount-depth-equal-to-k-ii", "title": "Number of Integers With Popcount-Depth Equal to K II", "difficulty": "Hard"},
     {"number": 3625, "slug": "count-number-of-trapezoids-ii", "title": "Count Number of Trapezoids II", "difficulty": "Hard"},
-    {"number": 3630, "slug": "partition-array-for-maximum-xor-and-and", "title": "Partition Array for Maximum XOR and AND", "difficulty": "Hard"}
+    {"number": 3630, "slug": "partition-array-for-maximum-xor-and-and", "title": "Partition Array for Maximum XOR and AND", "difficulty": "Hard"},
+    {"number": 3632, "slug": "subarrays-with-xor-at-least-k", "title": "Subarrays with XOR at Least K", "difficulty": "Hard"},
+    {"number": 3636, "slug": "threshold-majority-queries", "title": "Threshold Majority Queries", "difficulty": "Hard"},
+    {"number": 3640, "slug": "trionic-array-ii", "title": "Trionic Array II", "difficulty": "Hard"},
+    {"number": 3646, "slug": "next-special-palindrome-number", "title": "Next Special Palindrome Number", "difficulty": "Hard"},
+    {"number": 3651, "slug": "minimum-cost-path-with-teleportations", "title": "Minimum Cost Path with Teleportations", "difficulty": "Hard"},
+    {"number": 3655, "slug": "xor-after-range-multiplication-queries-ii", "title": "XOR After Range Multiplication Queries II", "difficulty": "Hard"}
 ]

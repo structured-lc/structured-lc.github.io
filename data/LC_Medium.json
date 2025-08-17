@@ -1887,5 +1887,19 @@
     {"number": 3627, "slug": "maximum-median-sum-of-subsequences-of-size-3", "title": "Maximum Median Sum of Subsequences of Size 3", "difficulty": "Medium"},
     {"number": 3628, "slug": "maximum-number-of-subsequences-after-one-inserting", "title": "Maximum Number of Subsequences After One Inserting", "difficulty": "Medium"},
     {"number": 3629, "slug": "minimum-jumps-to-reach-end-via-prime-teleportation", "title": "Minimum Jumps to Reach End via Prime Teleportation", "difficulty": "Medium"},
-    {"number": 3631, "slug": "sort-threats-by-severity-and-exploitability", "title": "Sort Threats by Severity and Exploitability", "difficulty": "Medium"}
+    {"number": 3631, "slug": "sort-threats-by-severity-and-exploitability", "title": "Sort Threats by Severity and Exploitability", "difficulty": "Medium"},
+    {"number": 3634, "slug": "minimum-removals-to-balance-array", "title": "Minimum Removals to Balance Array", "difficulty": "Medium"},
+    {"number": 3635, "slug": "earliest-finish-time-for-land-and-water-rides-ii", "title": "Earliest Finish Time for Land and Water Rides II", "difficulty": "Medium"},
+    {"number": 3638, "slug": "maximum-balanced-shipments", "title": "Maximum Balanced Shipments", "difficulty": "Medium"},
+    {"number": 3639, "slug": "minimum-time-to-activate-string", "title": "Minimum Time to Activate String", "difficulty": "Medium"},
+    {"number": 3641, "slug": "longest-semi-repeating-subarray", "title": "Longest Semi-Repeating Subarray", "difficulty": "Medium"},
+    {"number": 3644, "slug": "maximum-k-to-sort-a-permutation", "title": "Maximum K to Sort a Permutation", "difficulty": "Medium"},
+    {"number": 3645, "slug": "maximum-total-from-optimal-activation-order", "title": "Maximum Total from Optimal Activation Order", "difficulty": "Medium"},
+    {"number": 3647, "slug": "maximum-weight-in-two-bags", "title": "Maximum Weight in Two Bags", "difficulty": "Medium"},
+    {"number": 3648, "slug": "minimum-sensors-to-cover-grid", "title": "Minimum Sensors to Cover Grid", "difficulty": "Medium"},
+    {"number": 3649, "slug": "number-of-perfect-pairs", "title": "Number of Perfect Pairs", "difficulty": "Medium"},
+    {"number": 3650, "slug": "minimum-cost-path-with-edge-reversals", "title": "Minimum Cost Path with Edge Reversals", "difficulty": "Medium"},
+    {"number": 3652, "slug": "best-time-to-buy-and-sell-stock-using-strategy", "title": "Best Time to Buy and Sell Stock using Strategy", "difficulty": "Medium"},
+    {"number": 3653, "slug": "xor-after-range-multiplication-queries-i", "title": "XOR After Range Multiplication Queries I", "difficulty": "Medium"},
+    {"number": 3654, "slug": "minimum-sum-after-divisible-sum-deletions", "title": "Minimum Sum After Divisible Sum Deletions", "difficulty": "Medium"}
 ]
