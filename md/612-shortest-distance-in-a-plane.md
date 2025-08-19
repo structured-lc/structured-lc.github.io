@@ -121,3 +121,8 @@ def shortest_distance(points):
 
 ### Summary
 This is a classic closest pair of points in 2D plane problem, typically solved with brute-force in O(n²) for small or moderate inputs, using a double loop and simple Euclidean calculation. The same pattern occurs in clustering, geometry, spatial queries, and proximity detection tasks, and is foundational for advanced computational geometry techniques.
+
+### Tags
+Database(#database)
+
+### Similar Problems

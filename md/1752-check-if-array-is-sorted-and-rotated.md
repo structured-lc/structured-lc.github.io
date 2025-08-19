@@ -73,3 +73,9 @@ def check(nums):
 
 ### Summary
 This problem uses the classic **rotation point** pattern—detecting the number of "drops" (where order breaks) in a circular array. The single-pass, constant-space approach is optimal. Such logic is also useful for searching in rotated sorted arrays and for problems on periodicity or array wrap-around. This is a common interview pattern for array rotation and order-checking.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Check if All A's Appears Before All B's(check-if-all-as-appears-before-all-bs) (Easy)

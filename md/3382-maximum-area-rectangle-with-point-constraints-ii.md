@@ -120,3 +120,9 @@ def maxRectangleArea(xCoord, yCoord):
 
 ### Summary
 This problem uses an enumeration and validation pattern common in computational geometry, especially where axis-alignment allows O(1) point lookups. The brute-force + set combo is typical for “find rectangles in a set of points” when further constraints (no internal points) must be enforced. This pattern appears in grid, maximal/minimal submatrix/rectangle, or rectangle-finding variations in arrays and geometry problems.
+
+### Tags
+Array(#array), Math(#math), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Geometry(#geometry), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Area Rectangle(minimum-area-rectangle) (Medium)

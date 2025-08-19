@@ -82,3 +82,9 @@ def equalSubstring(s: str, t: str, maxCost: int) -> int:
 
 ### Summary
 This problem is a classic **sliding window** pattern for substrings with resource/constraint limits. It’s efficient (O(n)), easy to implement, and widely applicable to “longest/shortest subarray with constraints” problems (prime example: longest subarray with sum ≤ k, etc.). This window expansion/contraction method avoids brute force checking all substrings.
+
+### Tags
+String(#string), Binary Search(#binary-search), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Longest Nice Subarray(longest-nice-subarray) (Medium)

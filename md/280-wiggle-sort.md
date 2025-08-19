@@ -89,3 +89,11 @@ def wiggleSort(nums):
 ### Summary
 This problem uses a **greedy in-place single-pass pattern** where local swaps guarantee the global alternating order. It avoids unnecessary sorting or memory use.  
 This pattern is widely applicable when only a local-enforcement of invariants suffices for global correctness, such as for alternating peaks/valleys, “zig-zag” traversals, or locally sorted intervals.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Sort Colors(sort-colors) (Medium)
+- Wiggle Sort II(wiggle-sort-ii) (Medium)
+- Array With Elements Not Equal to Average of Neighbors(array-with-elements-not-equal-to-average-of-neighbors) (Medium)

@@ -107,3 +107,11 @@ def findShortestCycle(n, edges):
 This problem is a classic *undirected graph* “shortest cycle” pattern. The key is observing that BFS efficiently finds shortest cycles because it processes nodes layer by layer.  
 This technique generalizes: to detect shortest cycles in any *unweighted undirected* graph, perform BFS from each node and look for “cross-edges” (back edges not to parent) that close a cycle.  
 This pattern shows up in cycle detection, shortest path, and connectivity problems in unweighted graphs.
+
+### Tags
+Breadth-First Search(#breadth-first-search), Graph(#graph)
+
+### Similar Problems
+- Redundant Connection(redundant-connection) (Medium)
+- Longest Cycle in a Graph(longest-cycle-in-a-graph) (Hard)
+- Divide Nodes Into the Maximum Number of Groups(divide-nodes-into-the-maximum-number-of-groups) (Hard)

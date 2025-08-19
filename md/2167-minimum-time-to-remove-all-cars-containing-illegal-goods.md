@@ -96,3 +96,9 @@ def minimumTime(s: str) -> int:
 
 ### Summary
 We use a greedy DP that calculates the prefix minimal removal cost for all illegal ('1') cars, then tries every possible split between left and right end removals to minimize the total. This is a classical prefix DP (or partition DP) pattern, seen in string partitioning, coin flips, and greedy DP problems. It’s a common approach whenever you can optimally combine left and right costs through a split.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Minimum Number of K Consecutive Bit Flips(minimum-number-of-k-consecutive-bit-flips) (Hard)

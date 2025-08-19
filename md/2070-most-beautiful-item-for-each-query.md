@@ -122,3 +122,11 @@ The approach is "offline queries + prefix-max preprocessing":
 - Build a prefix maximum of beauty for each price  
 - Answer each query efficiently via binary search  
 This pattern—preprocessing sorted data for fast lookups and then using binary search—applies broadly (e.g., "maximum up to value", range queries, offline query problems). It’s a key pattern for time-efficient query answering, especially when the input is static.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Closest Room(closest-room) (Hard)
+- Find the Score of All Prefixes of an Array(find-the-score-of-all-prefixes-of-an-array) (Medium)
+- Maximum Sum Queries(maximum-sum-queries) (Hard)

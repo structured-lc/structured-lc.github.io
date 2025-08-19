@@ -123,3 +123,8 @@ class StreamChecker:
 
 ### Summary
 This problem uses the **reversed Trie** technique for streaming suffix lookups, a common trick where prefix structures are leveraged in reverse for fast suffix search. This pattern (buffering recent N elements and using Trie or automaton) is a classic for text-searching and online matching scenarios, and variants appear in problems like Aho-Corasick, spell check/autocomplete, and dynamic regex engines.
+
+### Tags
+Array(#array), String(#string), Design(#design), Trie(#trie), Data Stream(#data-stream)
+
+### Similar Problems

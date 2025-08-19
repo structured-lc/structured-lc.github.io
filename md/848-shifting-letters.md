@@ -83,3 +83,14 @@ def shiftingLetters(s, shifts):
 
 ### Summary
 This approach uses a prefix-sum-style reverse traversal to efficiently precompute cumulative shifts and vectorizes the shifting process to O(n) time, rather than simulating each shift update in O(n²). The pattern is common in *range update* or *sweep line* problems, where you aggregate changes in advance and apply effects in a single pass, which can also be used for difference arrays or cumulative interval counting.
+
+### Tags
+Array(#array), String(#string), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Replace All Digits with Characters(replace-all-digits-with-characters) (Easy)
+- Shifting Letters II(shifting-letters-ii) (Medium)
+- Lexicographically Smallest String After Substring Operation(lexicographically-smallest-string-after-substring-operation) (Medium)
+- Shift Distance Between Two Strings(shift-distance-between-two-strings) (Medium)
+- Find the K-th Character in String Game I(find-the-k-th-character-in-string-game-i) (Easy)
+- Find the K-th Character in String Game II(find-the-k-th-character-in-string-game-ii) (Hard)

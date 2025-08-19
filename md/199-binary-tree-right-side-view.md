@@ -126,3 +126,10 @@ class Solution:
 
 ### Summary
 This problem is a classic use case for **level-order traversal (BFS)**, focusing on capturing the last node at each level to represent the right side view. It demonstrates the importance of queue-based traversal in trees and can also be adapted to depth-first recursive strategies, which is a common interview pattern. This approach also generalizes to views from any side or extracting specific level information.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Populating Next Right Pointers in Each Node(populating-next-right-pointers-in-each-node) (Medium)
+- Boundary of Binary Tree(boundary-of-binary-tree) (Medium)

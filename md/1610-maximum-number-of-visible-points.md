@@ -76,3 +76,8 @@ def visiblePoints(points, angle, location):
 
 ### Summary
 Pattern is: *geometry (polar angle)* + *sorting* + *sliding window (two-pointer)*. Used in problems where intervals wrap around, maximal clusters in the angular or circular domain, and sightline/sensor applications.
+
+### Tags
+Array(#array), Math(#math), Geometry(#geometry), Sliding Window(#sliding-window), Sorting(#sorting)
+
+### Similar Problems

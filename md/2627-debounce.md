@@ -132,3 +132,10 @@ It requires understanding of timers, closures, and stateful function wrappers.
 The core idea is "reset and delay" — ensuring only the last call within a window takes effect.  
 This is a standard interview pattern, with applications in both frontend (JS) and backend (async jobs, rate limiting).  
 Patterns learned here generalize to throttling, batching, or any "defer and coalesce" workflow.
+
+### Tags
+
+### Similar Problems
+- Promise Time Limit(promise-time-limit) (Medium)
+- Cache With Time Limit(cache-with-time-limit) (Medium)
+- Throttle(throttle) (Medium)

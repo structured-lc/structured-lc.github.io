@@ -114,3 +114,8 @@ def minWastedSpace(packages, boxes):
 
 ### Summary
 This problem uses the **prefix sum** and **two-pointer/binary search** pattern on sorted arrays to identify package allocation efficiently for each supplier, minimizing space waste. Patterns like sorting, prefix sum for segment queries, and binary search allocation are common in problems involving ranges, intervals, or assignments. The underlying idea can be applied to other resource allocation and bin-packing style problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sorting(#sorting), Prefix Sum(#prefix-sum)
+
+### Similar Problems

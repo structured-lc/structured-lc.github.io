@@ -80,3 +80,8 @@ def min_bit_changes(n, k):
 
 ### Summary
 This problem utilizes a classic bit manipulation pattern: flipping bits, using AND to check subset, and XOR to find differing bits. The core idea is recognizing operation constraints (1→0 only), and using bitwise logic for O(1) efficiency. The subset-check and bit-count approaches are reusable in problems where subset or difference count is important, like mask-based DP, bit fields, or digital logic simulations.
+
+### Tags
+Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

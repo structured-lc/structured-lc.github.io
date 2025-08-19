@@ -163,3 +163,9 @@ Patterns:
 - Set intersection  
 - Friend-graph queries  
 This technique is widely useful in collaborative filtering, social network analytics, and co-occurrence problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Leetcodify Friends Recommendations(leetcodify-friends-recommendations) (Hard)

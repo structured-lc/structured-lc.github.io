@@ -75,3 +75,9 @@ def findMaxValueOfEquation(points, k):
 
 ### Summary
 Applies sliding window maximum (monotonic deque) technique. This is a powerful pattern for windowed max/argmax queries, DP optimizations and advanced data structure design, and is widely usable in interval greedy or sequence processing problems.
+
+### Tags
+Array(#array), Queue(#queue), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue), Monotonic Queue(#monotonic-queue)
+
+### Similar Problems
+- Count Pairs in Two Arrays(count-pairs-in-two-arrays) (Medium)

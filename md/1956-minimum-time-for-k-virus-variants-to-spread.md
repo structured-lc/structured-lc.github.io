@@ -131,3 +131,8 @@ def minDayskVariants(points, k):
 This problem is a **geometric binary search pattern** combined with *interval/k-interval intersection*.  
 Translating the problem into (u, v) space makes the intersection check straightforward and avoids unnecessary grid simulation.  
 The pattern of binary searching for minimal parameter (e.g., number of days, window width) that satisfies a frequency/intersection property is common and appears in other grid or geometric "spread with overlap" questions.
+
+### Tags
+Array(#array), Math(#math), Binary Search(#binary-search), Geometry(#geometry), Enumeration(#enumeration)
+
+### Similar Problems

@@ -145,3 +145,8 @@ This problem is a simulation/event-processing problem, requiring careful handlin
 - Correctly ordering event processing (status before message),
 - Parsing and expanding mention tokens per message.
 Similar simulation or event-driven problems can be found in online presence tracking, real-time chat apps, or notification counters.
+
+### Tags
+Array(#array), Math(#math), Sorting(#sorting), Simulation(#simulation)
+
+### Similar Problems

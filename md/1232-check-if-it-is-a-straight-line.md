@@ -74,3 +74,8 @@ def checkStraightLine(coordinates):
 This approach uses the **cross product pattern** to robustly check for collinearity, avoiding floating-point division and handling all edge cases cleanly.  
 It’s a common trick for collinearity in computational geometry and comes up often in vector-based and line-detection problems.  
 Works with O(n) time and O(1) space — simple, reliable, and powerful for interview use.
+
+### Tags
+Array(#array), Math(#math), Geometry(#geometry)
+
+### Similar Problems

@@ -139,3 +139,8 @@ def countPairs(n, edges, queries):
 This problem uses the **two-pointers** (or binary search) pattern on **sorted degree arrays** to efficiently count unordered node pairs with degree sum above a threshold.  
 A careful **adjustment for shared edges** between directly connected nodes ensures correct results, and is a classic example of inclusion-exclusion in combinatorial counting.  
 This general pattern—sort, count pairs efficiently, then correct for overcounts—appears in other graph and array sum/count problems, and is broadly applicable in competitive/interview settings.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Binary Search(#binary-search), Graph(#graph), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems

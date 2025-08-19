@@ -118,3 +118,11 @@ class NumMatrix:
 
 ### Summary
 This problem uses the **2D prefix sum pattern**, a common dynamic programming trick for subarray/submatrix sum queries with immutable data. It's a vital technique for problems that require fast range sum queries over static data, and applies to applications ranging from image processing to spreadsheet optimizations.
+
+### Tags
+Array(#array), Design(#design), Matrix(#matrix), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Range Sum Query - Immutable(range-sum-query-immutable) (Easy)
+- Range Sum Query 2D - Mutable(range-sum-query-2d-mutable) (Medium)
+- Find the Grid of Region Average(find-the-grid-of-region-average) (Medium)

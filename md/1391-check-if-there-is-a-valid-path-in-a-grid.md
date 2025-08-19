@@ -89,3 +89,9 @@ def opposite(d): return opposite_direction[d]
 
 ### Summary
 A grid traversal problem with movement constraints. Uses BFS/DFS and connection mapping. Coding pattern is similar to graph traversal with legality checks at every step.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
+
+### Similar Problems
+-  Check if There Is a Valid Parentheses String Path(check-if-there-is-a-valid-parentheses-string-path) (Hard)

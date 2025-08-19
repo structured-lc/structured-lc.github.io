@@ -105,3 +105,9 @@ def powerfulIntegers(x: int, y: int, bound: int) -> List[int]:
 
 ### Summary
 This problem uses the **enumerate all (power)combinations** pattern, leveraging how exponents grow rapidly to keep loops bounded. The solution uses a set for uniqueness and nested loops up to practical limits. This pattern (checking all possible combinations under a bound) appears in sum-of-powers, coin change sums, and product-sum problems, especially when the search space shrinks rapidly.
+
+### Tags
+Hash Table(#hash-table), Math(#math), Enumeration(#enumeration)
+
+### Similar Problems
+- Count the Number of Powerful Integers(count-the-number-of-powerful-integers) (Hard)

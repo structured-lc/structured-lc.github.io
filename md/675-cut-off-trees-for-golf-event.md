@@ -121,3 +121,8 @@ class Solution:
 
 ### Summary
 This is a classic **multi-stage shortest-path problem** where you need to repeatedly compute shortest paths among sorted targets, commonly solved with BFS for grid-based minimum pathing. The central theme is *stateful traversal* and *incremental search* using BFS. The same pattern applies to robot pathing, video game AI movement, or logistics planning on grids.
+
+### Tags
+Array(#array), Breadth-First Search(#breadth-first-search), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
+
+### Similar Problems

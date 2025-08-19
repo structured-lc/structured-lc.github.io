@@ -59,3 +59,9 @@ def encode(n):
 
 ### Summary
 Simple math/string manipulation: convert n+1 to binary, drop the leading 1. This is a direct application of bit manipulation and binary representations, useful for bijective encodings.
+
+### Tags
+Math(#math), String(#string), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Convert to Base -2(convert-to-base-2) (Medium)

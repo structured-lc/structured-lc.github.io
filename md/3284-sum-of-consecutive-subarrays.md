@@ -122,3 +122,8 @@ def sum_of_consecutive_subarrays(nums):
 
 ### Summary
 We use a **two-pointers** and **prefix sum** pattern to find maximal runs of consecutive (+1 or -1) subarrays, then compute all valid subarrays’ sums efficiently. This technique leverages the properties of arithmetic runs. The idea of scanning maximal valid subarrays and using prefix sums is common in substring and subarray pattern recognition. This generalizes to problems involving *runs* or *windows* with certain properties (e.g. sliding window, maximum sum subarray, string pattern runs, etc.).
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

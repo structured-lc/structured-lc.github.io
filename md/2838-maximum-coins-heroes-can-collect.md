@@ -111,3 +111,8 @@ def maximumCoins(heroes: List[int], monsters: List[int], coins: List[int]) -> Li
 
 ### Summary
 This problem is classic for combining **sort**, **binary search**, and **prefix sum**, a very frequent pattern for “find the sum/count/value up to some threshold”. This approach avoids brute force and is highly efficient even with large input sizes. This pattern applies to many similar problems, like “number of people ≤ height”, “sum of sales ≤ some quota”, and “max products before a budget”, etc.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting), Prefix Sum(#prefix-sum)
+
+### Similar Problems

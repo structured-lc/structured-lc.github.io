@@ -99,3 +99,10 @@ def countTime(time: str) -> int:
 
 ### Summary
 This approach uses straightforward combinatorial reasoning for filling digits independently and multiplies the options for hours and minutes. It's a classic case of digit-mask combinatorics for constrained representations, applicable in other problems involving generating valid codes or times from templates with wildcards. The solution avoids full enumeration and uses mathematical casework, ensuring efficiency and readability.
+
+### Tags
+String(#string), Enumeration(#enumeration)
+
+### Similar Problems
+- Largest Time for Given Digits(largest-time-for-given-digits) (Medium)
+- Latest Time by Replacing Hidden Digits(latest-time-by-replacing-hidden-digits) (Easy)

@@ -85,3 +85,8 @@ def binaryGap(n: int) -> int:
 
 ### Summary
 This problem is an example of **bit manipulation** and **single-pass difference tracking**. The pattern here is identifying **indices of bits** within an integer and operating with minimal additional space and time. This approach applies to other problems involving finding patterns or distances within a sequence (such as maximum consecutive elements, min/max difference between positions of values, etc.). The problem demonstrates efficient value tracking and the practical use of bitwise operations.
+
+### Tags
+Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

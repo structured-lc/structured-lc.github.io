@@ -112,3 +112,15 @@ def calculate(s: str) -> int:
 
 ### Summary
 This problem is a classic **expression evaluation** scenario. The key pattern used is **stack-based parsing** to handle nested subexpressions, a fundamental parsing technique. This coding approach applies to arithmetic interpreters, compilers, and cases when you must parse or evaluate expressions with nesting and order. The pattern can also be seen in problems involving directory path simplification, evaluating reverse polish notation, and balanced parenthesis validation, among others.
+
+### Tags
+Math(#math), String(#string), Stack(#stack), Recursion(#recursion)
+
+### Similar Problems
+- Evaluate Reverse Polish Notation(evaluate-reverse-polish-notation) (Medium)
+- Basic Calculator II(basic-calculator-ii) (Medium)
+- Different Ways to Add Parentheses(different-ways-to-add-parentheses) (Medium)
+- Expression Add Operators(expression-add-operators) (Hard)
+- Basic Calculator III(basic-calculator-iii) (Hard)
+- The Score of Students Solving Math Expression(the-score-of-students-solving-math-expression) (Hard)
+- Minimize Result by Adding Parentheses to Expression(minimize-result-by-adding-parentheses-to-expression) (Medium)

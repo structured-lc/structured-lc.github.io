@@ -127,3 +127,8 @@ class BoundedBlockingQueue:
 
 ### Summary
 This solution uses the **producer-consumer pattern** with a lock and two condition variables to manage coordination between threads. It's a classic **concurrency pattern** for resource pools, buffers, and scheduling, and appears in problems involving thread-safe bounded buffers, task queues, and cross-thread data exchange. The core technique is applicable anywhere you need to synchronize access to fixed-size shared resources among competing threads.
+
+### Tags
+Concurrency(#concurrency)
+
+### Similar Problems

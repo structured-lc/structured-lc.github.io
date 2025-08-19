@@ -93,3 +93,10 @@ def areOccurrencesEqual(s):
 This problem is a classic use-case for **counting** and **frequency arrays** (or hashmaps when the domain is not fixed).  
 It uses the pattern of scanning input for counts, then comparing those counts for some property (equality in this case).  
 The general approach is common and can be applied in tasks like checking anagrams, grouping, or other frequency-based string problems.
+
+### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Rings and Rods(rings-and-rods) (Easy)
+- Make Number of Distinct Characters Equal(make-number-of-distinct-characters-equal) (Medium)

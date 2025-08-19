@@ -109,3 +109,12 @@ class Solution:
 
 ### Summary
 The approach uses post-order DFS and tracks the longest path with consecutive, identical node values, updating a global maximum. It's a classic example of the *"tree dynamic programming / bottom-up DFS"* pattern, commonly used for subtree or path-based computations in trees. This recursive method is both efficient and easy to generalize to similar path problems on trees.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Binary Tree Maximum Path Sum(binary-tree-maximum-path-sum) (Hard)
+- Count Univalue Subtrees(count-univalue-subtrees) (Medium)
+- Path Sum III(path-sum-iii) (Medium)
+- Longest Path With Different Adjacent Characters(longest-path-with-different-adjacent-characters) (Hard)

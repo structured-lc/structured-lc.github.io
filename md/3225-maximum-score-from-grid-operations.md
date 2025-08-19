@@ -128,3 +128,9 @@ This problem uses **bitmask dynamic programming**—specifically, DP with row-st
 The core idea is similar to other grid DP/bitmask problems (like Domino Tiling or Maximum Sum of Non-Adjacent Cells in Grid):  
 By processing row by row and only remembering current blackened columns, we scale exponentially with row length but only linearly with the number of rows.  
 This technique is broadly applicable to other grid and chessboard state problems where state is localized per-row or per-column.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Maximum Difference Score in a Grid(maximum-difference-score-in-a-grid) (Medium)

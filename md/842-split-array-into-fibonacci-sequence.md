@@ -102,3 +102,10 @@ def splitIntoFibonacci(num: str):
 
 ### Summary
 This problem uses the classic **backtracking** and **DFS with pruning** pattern: try and build a solution incrementally, revert when impossible, and use ruling-out constraints to minimize useless computation. Similar approaches are needed for permutation, combination, subsequence, and partitioning problems in strings and arrays. Backtracking solutions also naturally handle variants and constraints that arise in related interview problems.
+
+### Tags
+String(#string), Backtracking(#backtracking)
+
+### Similar Problems
+- Additive Number(additive-number) (Medium)
+- Fibonacci Number(fibonacci-number) (Easy)

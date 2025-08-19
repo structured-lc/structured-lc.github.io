@@ -157,3 +157,9 @@ def game_play_analysis_v(activity):
 ### Summary
 This problem uses a **grouping and aggregation pattern** on event logs: tracking installations by earliest date, then aggregating returns for retention calculation.  
 This pattern is common in user analytics, activity tracking, and cohort analysis—extensible to N-day retention, churn analysis, or engagement funnels in product analytics.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Game Play Analysis IV(game-play-analysis-iv) (Medium)

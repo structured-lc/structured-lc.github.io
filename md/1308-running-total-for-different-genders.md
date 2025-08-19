@@ -95,3 +95,9 @@ def running_total(records):
 
 ### Summary
 The problem is a variant of the cumulative sum (running total) per group pattern, partitioned by a field (here, "gender") and ordered by another ("name"). This approach is common in analytics, window aggregation, and can be extended to any number of groups or orderings.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Last Person to Fit in the Bus(last-person-to-fit-in-the-bus) (Medium)

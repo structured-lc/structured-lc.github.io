@@ -141,3 +141,8 @@ def countBalancedPermutations(num: str) -> int:
 ### Summary
 This problem uses a **digit multiset dynamic programming + combinatorics** pattern: decide how many of each digit to assign to even/odd indices so both sums are equal, then use multinomial coefficients to count unique permutations.  
 This pattern applies in advanced counting problems involving multisets and grouping with sum constraints, and maps to problems involving **partitioning or weighted subset selection with duplicates**. The recursive DP (with memoization and combinatorics for counting) is the core pattern.
+
+### Tags
+Math(#math), String(#string), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
+
+### Similar Problems

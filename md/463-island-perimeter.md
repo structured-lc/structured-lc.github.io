@@ -107,3 +107,11 @@ def islandPerimeter(grid):
 
 ### Summary
 This problem demonstrates a straightforward grid traversal approach with neighbor checking. The key insight is that each land cell contributes to the perimeter based on how many of its sides are exposed to water or grid boundaries. This pattern of checking neighbors in a grid appears frequently in problems involving islands, connected components, and area/perimeter calculations. The solution is efficient and easy to understand, making it a good example of how to approach grid-based problems systematically.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- Max Area of Island(max-area-of-island) (Medium)
+- Flood Fill(flood-fill) (Easy)
+- Coloring A Border(coloring-a-border) (Medium)

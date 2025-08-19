@@ -91,3 +91,17 @@ def stoneGameVIII(stones):
 
 ### Summary
 This problem is a **game theory + dynamic programming** pattern, common in two-player “take-away” or “merge” games. The main leap is recognizing that by using the prefix sums and only considering cumulative take-or-skip decisions, we can reduce the state space to O(n). Similar strategies are frequently used in stone and coin game variants or interval DP problems.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum), Game Theory(#game-theory)
+
+### Similar Problems
+- Stone Game(stone-game) (Medium)
+- Stone Game II(stone-game-ii) (Medium)
+- Stone Game III(stone-game-iii) (Hard)
+- Stone Game IV(stone-game-iv) (Hard)
+- Stone Game V(stone-game-v) (Hard)
+- Stone Game VI(stone-game-vi) (Medium)
+- Stone Game VII(stone-game-vii) (Medium)
+- Stone Game VIII(stone-game-viii) (Hard)
+- Stone Game IX(stone-game-ix) (Medium)

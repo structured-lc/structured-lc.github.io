@@ -177,3 +177,8 @@ def shortestPathInWeightedTree(n, edges, queries):
 
 ### Summary
 This problem uses the "Euler Tour" or "Flatten the tree" pattern with a Fenwick/Segment Tree to perform range updates and point queries efficiently on trees. This is common in problems involving "subtree updates/queries" and path calculations, especially in competitive programming and advanced data structure scenarios. This approach can be applied in other scenarios requiring efficient batch updates or point queries on trees, such as subtree value addition, subtree min/max queries, or path sum after edge updates.
+
+### Tags
+Array(#array), Tree(#tree), Depth-First Search(#depth-first-search), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
+
+### Similar Problems

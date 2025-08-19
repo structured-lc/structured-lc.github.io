@@ -116,3 +116,13 @@ def maximumRobots(chargeTimes, runningCosts, budget):
 ### Summary
 This problem uses a sliding window combined with a **monotonic deque** to efficiently maintain the maximum in a window—an advanced, but common, pattern in hard array/sliding window interviews. The cost formula combines both max and sum, requiring careful update logic.  
 This pattern applies to any problem needing window maximum/minimum (e.g., "sliding window maximum"), and strongly illustrates real-world use of double-ended queues (deque) for fast window min/max calculation.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Queue(#queue), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue), Prefix Sum(#prefix-sum), Monotonic Queue(#monotonic-queue)
+
+### Similar Problems
+- Sliding Window Maximum(sliding-window-maximum) (Hard)
+- Kth Smallest Product of Two Sorted Arrays(kth-smallest-product-of-two-sorted-arrays) (Hard)
+- Maximum Number of Tasks You Can Assign(maximum-number-of-tasks-you-can-assign) (Hard)
+- Minimized Maximum of Products Distributed to Any Store(minimized-maximum-of-products-distributed-to-any-store) (Medium)
+- Minimum Time to Complete Trips(minimum-time-to-complete-trips) (Medium)

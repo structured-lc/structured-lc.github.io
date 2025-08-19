@@ -102,3 +102,11 @@ def deleteNodes(head, nums):
 ### Summary
 This problem demonstrates the two-pointer/deletion pattern for singly linked lists, using a dummy node for simpler head management and a set for fast existence checks.  
 It's a staple of linked list manipulation, and the set-based lookup pattern applies in any scenario where removal or filtering is based on a value set (examples: delete duplicates, whitelist/blacklist filtering, etc).
+
+### Tags
+Array(#array), Hash Table(#hash-table), Linked List(#linked-list)
+
+### Similar Problems
+- Remove Linked List Elements(remove-linked-list-elements) (Easy)
+- Delete Node in a Linked List(delete-node-in-a-linked-list) (Medium)
+- Remove Nodes From Linked List(remove-nodes-from-linked-list) (Medium)

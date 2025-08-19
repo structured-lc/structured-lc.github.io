@@ -75,3 +75,8 @@ def minimumPartition(s: str, k: int) -> int:
 
 ### Summary
 This problem is a classic example of the **greedy partitioning** pattern: always extend the current valid segment as far as possible, then cut when forced. It uses a straightforward linear scan and is efficient. The greedy intuition is key—look for points where continuing would violate constraints and cut there. This strategy appears in interval partitioning, memory paging, and string segmentation problems.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
+
+### Similar Problems

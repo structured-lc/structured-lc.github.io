@@ -278,3 +278,9 @@ def print_binary_tree(root):
 
 ### Summary
 This problem demonstrates a classic tree transformation technique using the "first child, next sibling" representation. The key insight is mapping the N-ary tree's multiple children to a binary tree's left-right structure systematically. This pattern is fundamental in compiler design, where ASTs (Abstract Syntax Trees) often need to be converted between different representations. The solution showcases how complex tree structures can be flattened into simpler binary representations while preserving all structural information, which is crucial for tree serialization and storage systems.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Design(#design), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Serialize and Deserialize N-ary Tree(serialize-and-deserialize-n-ary-tree) (Hard)

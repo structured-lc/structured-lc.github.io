@@ -114,3 +114,9 @@ def min_operations_to_make_frequencies_equal(s):
 
 ### Summary
 This problem uses the "try all possible targets and count costs" pattern, leveraging the bounded alphabet size for efficiency. The key insight is to enumerate all possible combinations of target frequency and number of unique letters, optimizing the cost using insert, delete, and change operations. Similar approaches can be used when normalizing structures with bounded dimensions, such as frequencies, histograms, or task-balancing scenarios.
+
+### Tags
+Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming), Counting(#counting), Enumeration(#enumeration)
+
+### Similar Problems
+- Minimum Number of Steps to Make Two Strings Anagram(minimum-number-of-steps-to-make-two-strings-anagram) (Medium)

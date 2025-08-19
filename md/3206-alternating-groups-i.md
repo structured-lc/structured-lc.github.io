@@ -80,3 +80,8 @@ def numberOfAlternatingGroups(colors):
 The approach uses simple brute-force with modular arithmetic to handle the circular nature of the arrangement.  
 This is a variation of **circular sliding window** or **wraparound array** pattern, often seen in ring buffer or circular structure problems.  
 The coding pattern generalizes to cases where local groupings require custom neighbor checks, and can appear in pattern search in 2D grids, music intervals, or gaming board problems.
+
+### Tags
+Array(#array), Sliding Window(#sliding-window)
+
+### Similar Problems

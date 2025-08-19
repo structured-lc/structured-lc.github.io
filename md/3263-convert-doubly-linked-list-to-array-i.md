@@ -78,3 +78,9 @@ def toArray(head):
 
 ### Summary
 This problem demonstrates the standard *Linked List Traversal* pattern. You iteratively visit each node via `next` pointers and collect values, which is a foundational technique useful in many other linked list problems — such as detecting cycles, reversing lists, or copying lists. The solution is straightforward and efficient for singly or doubly linked lists alike whenever a simple, ordered collection of node values is needed.
+
+### Tags
+Array(#array), Linked List(#linked-list), Doubly-Linked List(#doubly-linked-list)
+
+### Similar Problems
+- Remove Linked List Elements(remove-linked-list-elements) (Easy)

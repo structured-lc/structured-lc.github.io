@@ -212,3 +212,16 @@ def frequencySortList(s):
 
 ### Summary
 This problem demonstrates frequency counting and custom sorting techniques. The key insight is that we need to group identical characters together and order these groups by frequency. The bucket sort approach is optimal for this problem since frequencies are bounded by string length, but the standard sorting approach is more general and easier to implement. This pattern appears frequently in problems involving frequency analysis, top-k elements, and custom ordering requirements.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Bucket Sort(#bucket-sort), Counting(#counting)
+
+### Similar Problems
+- Top K Frequent Elements(top-k-frequent-elements) (Medium)
+- First Unique Character in a String(first-unique-character-in-a-string) (Easy)
+- Sort Array by Increasing Frequency(sort-array-by-increasing-frequency) (Easy)
+- Percentage of Letter in String(percentage-of-letter-in-string) (Easy)
+- Maximum Number of Pairs in Array(maximum-number-of-pairs-in-array) (Easy)
+- Node With Highest Edge Score(node-with-highest-edge-score) (Medium)
+- Most Frequent Even Element(most-frequent-even-element) (Easy)
+- Count Pairs Of Similar Strings(count-pairs-of-similar-strings) (Easy)

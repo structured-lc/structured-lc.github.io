@@ -104,3 +104,13 @@ def numberOfWays(startPos: int, endPos: int, k: int) -> int:
 
 ### Summary
 This problem is a classic **combinatorics** and **dynamic programming** (DP) variant. The main insight is to map walks on a line to combinations (binomial coefficients) and rephrase the constraints to arithmetic equations on step counts. The coding pattern is widely used in problems involving walks or random walks with fixed steps and can be applied to similar variations in grid path counting, lattice walks, and related fields.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
+
+### Similar Problems
+- Unique Paths(unique-paths) (Medium)
+- Climbing Stairs(climbing-stairs) (Easy)
+- Reach a Number(reach-a-number) (Medium)
+- Reaching Points(reaching-points) (Hard)
+- Number of Ways to Stay in the Same Place After Some Steps(number-of-ways-to-stay-in-the-same-place-after-some-steps) (Hard)

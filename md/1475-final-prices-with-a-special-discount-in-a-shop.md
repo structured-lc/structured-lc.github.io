@@ -60,3 +60,8 @@ def finalPrices(prices):
 
 ### Summary
 This is a classic monotonic stack problem, often used for "next smaller/greater" type questions. Mastering this pattern is extremely helpful for array/stack-based interview questions, such as those on histogram area and stock span.
+
+### Tags
+Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems

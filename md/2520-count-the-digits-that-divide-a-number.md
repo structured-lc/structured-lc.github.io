@@ -77,3 +77,10 @@ def countDigits(num: int) -> int:
 
 ### Summary
 This problem uses the “digit by digit scan” pattern — iterate through all the digits of a number and check a simple condition. The main coding pattern is extracting and examining each digit using arithmetic. This arises often in digit-based math problems, such as reversing numbers or finding palindromic numbers. Recognizing cases where you shouldn’t divide by zero is common and often tested as an interview pitfall.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Happy Number(happy-number) (Easy)
+- Self Dividing Numbers(self-dividing-numbers) (Easy)

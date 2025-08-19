@@ -64,3 +64,14 @@ def maxProfit(prices):
 
 ### Summary
 This is a classic greedy problem: every time there is an increase, we take that profit. The pattern used is “greedy acceptance of local improvements,” common for interval merging, scheduling, and profit-collection problems. This optimal substructure makes this approach both fast and elegant. A variant appears everywhere there’s a need to accumulate “all positive changes,” and it’s a useful trick for array manipulation and financial modeling.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
+
+### Similar Problems
+- Best Time to Buy and Sell Stock(best-time-to-buy-and-sell-stock) (Easy)
+- Best Time to Buy and Sell Stock III(best-time-to-buy-and-sell-stock-iii) (Hard)
+- Best Time to Buy and Sell Stock IV(best-time-to-buy-and-sell-stock-iv) (Hard)
+- Best Time to Buy and Sell Stock with Cooldown(best-time-to-buy-and-sell-stock-with-cooldown) (Medium)
+- Best Time to Buy and Sell Stock with Transaction Fee(best-time-to-buy-and-sell-stock-with-transaction-fee) (Medium)
+- Maximum Profit From Trading Stocks(maximum-profit-from-trading-stocks) (Medium)

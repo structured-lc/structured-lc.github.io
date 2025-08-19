@@ -85,3 +85,8 @@ WHERE
 
 ### Summary
 The approach uses **regular expressions** and string operations in SQL to ensure email validity under specific rules. Email validation patterns are common in database and reporting queries, with regex being a standard solution.
+
+### Tags
+Database(#database)
+
+### Similar Problems

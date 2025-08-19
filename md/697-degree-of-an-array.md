@@ -101,3 +101,9 @@ This strategy is very common:
 - Finding boundaries (first/last index),  
 - And using these for windowing or optimizing subarray spans.  
 Hashmaps/dictionaries to track element statistics are central here, and similar patterns occur in problems like Longest Substring with K Distinct Characters, or Minimum Window Substring.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems
+- Maximum Subarray(maximum-subarray) (Medium)

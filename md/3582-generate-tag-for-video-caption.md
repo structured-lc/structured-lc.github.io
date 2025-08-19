@@ -100,3 +100,8 @@ def generate_tag(caption):
 
 ### Summary
 This problem is a **classic string preprocessing and formatting pattern**—combining case conversion, filtering, and truncation. The approach is linear scan with per-word transformation, commonly seen in data normalization, UI, and slug/tag generation scenarios. This method is robust, clear, and easily extensible for more complex rules.
+
+### Tags
+String(#string), Simulation(#simulation)
+
+### Similar Problems

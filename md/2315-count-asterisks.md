@@ -81,3 +81,8 @@ def countAsterisks(s: str) -> int:
 We applied the **stateful linear scan** (flag-tracking) approach—typical for string segment problems with delimiter pairs.  
 This pattern is common in parsing and "between delimiters" substring counting, such as balanced parentheses, tags, or quotes.  
 It's efficient, simple, and easily adaptable to similar string-processing tasks.
+
+### Tags
+String(#string)
+
+### Similar Problems

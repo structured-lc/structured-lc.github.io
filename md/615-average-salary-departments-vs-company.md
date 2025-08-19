@@ -117,3 +117,9 @@ def average_salary_departments_vs_company(employee, salary):
 
 ### Summary
 This problem demonstrates the classic aggregation and grouping coding pattern, where data is first joined, then partitioned by one or more keys (month and department), and aggregate statistics (mean) are computed. The approach is common for analytics and reporting scenarios, and is widely applicable in SQL, MapReduce, and data pipelines. This is a good example of working with grouped data, multiple aggregation levels, and comparison logic.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Countries You Can Safely Invest In(countries-you-can-safely-invest-in) (Medium)

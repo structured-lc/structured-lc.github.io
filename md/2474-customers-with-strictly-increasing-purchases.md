@@ -158,3 +158,10 @@ def customers_with_strictly_increasing_purchases(orders):
 
 ### Summary
 This problem uses the **group-by aggregation** pattern, combined with filling missing data for a full range (data imputation for absent years). The scan for strictly increasing values is a standard sequence check. This is broadly useful in time-series validation (e.g., monotonic trend enforcement), reporting, or preprocessing for ML models. The combination of dictionary aggregations and sequence validation is a common interview pattern for analytics or data engineering problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Report Contiguous Dates(report-contiguous-dates) (Hard)
+- Find the Start and End Number of Continuous Ranges(find-the-start-and-end-number-of-continuous-ranges) (Medium)

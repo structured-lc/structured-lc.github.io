@@ -142,3 +142,12 @@ def minimumCost(source, target, original, changed, cost):
 
 ### Summary
 This problem combines ideas from **all-pairs shortest path (Floyd-Warshall)** for chaining substring-to-substring transformations and **dynamic programming** to greedily apply the best conversion at each position. The transformation step is similar to word ladder/graph-of-words problems, while the DP breaking at substring positions is like jump game or string partition DP. This pattern is applicable in substring editing, advanced string transformations, and interval DP.
+
+### Tags
+Array(#array), String(#string), Dynamic Programming(#dynamic-programming), Graph(#graph), Trie(#trie), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Can Convert String in K Moves(can-convert-string-in-k-moves) (Medium)
+- Minimum Moves to Convert String(minimum-moves-to-convert-string) (Easy)
+- Minimum Number of Valid Strings to Form Target II(minimum-number-of-valid-strings-to-form-target-ii) (Hard)
+- Minimum Number of Valid Strings to Form Target I(minimum-number-of-valid-strings-to-form-target-i) (Medium)

@@ -194,3 +194,9 @@ def countSubsequences(nums):
 
 ### Summary
 This problem combines **combinatorics**, **prefix frequency**, and **dynamic programming**. The "unique mode at the center" pattern appears in competitive programming for problems about subsequences/subarrays characterized by the count of special properties. Core techniques are frequency arrays/hashes, prefix and suffix accumulation, and smart enumeration with combinations. Similar patterns show up when counting "special center" subsequences or modes among intervals, important for efficient subarray/subsequence queries.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Combinatorics(#combinatorics)
+
+### Similar Problems
+- Subsequences with a Unique Middle Mode I(subsequences-with-a-unique-middle-mode-i) (Hard)

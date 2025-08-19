@@ -102,3 +102,18 @@ def longestNiceSubarray(nums):
 This problem reduces to a sliding window with a bitmask. It’s a variant of the classic “longest substring with unique characters” using bitwise constraints.  
 Common patterns: Sliding window, two pointers, and bitmasking to enforce non-overlapping bits.  
 This pattern appears in substring/subarray problems with uniqueness, mutual exclusion, or disjointness of elements.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Longest Substring Without Repeating Characters(longest-substring-without-repeating-characters) (Medium)
+- Bitwise AND of Numbers Range(bitwise-and-of-numbers-range) (Medium)
+- Bitwise ORs of Subarrays(bitwise-ors-of-subarrays) (Medium)
+- Fruit Into Baskets(fruit-into-baskets) (Medium)
+- Max Consecutive Ones III(max-consecutive-ones-iii) (Medium)
+- Get Equal Substrings Within Budget(get-equal-substrings-within-budget) (Medium)
+- Frequency of the Most Frequent Element(frequency-of-the-most-frequent-element) (Medium)
+- Longest Substring Of All Vowels in Order(longest-substring-of-all-vowels-in-order) (Medium)
+- Maximize the Confusion of an Exam(maximize-the-confusion-of-an-exam) (Medium)
+- Maximum Sum of Distinct Subarrays With Length K(maximum-sum-of-distinct-subarrays-with-length-k) (Medium)

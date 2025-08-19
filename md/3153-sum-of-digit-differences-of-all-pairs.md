@@ -108,3 +108,9 @@ def sum_digit_differences(nums):
 
 ### Summary
 This problem is a classic application of the **counting** and **pairwise difference** pattern. Instead of brute-force pair checking, we efficiently leverage per-position digit frequency counts and combinatorics to tally up the total differences. This method is common for bit/digit comparison problems—such as Hamming distance/Cyclic code calculations—and can often be adapted to a wide variety of "number of differences in all pairs" settings.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Counting(#counting)
+
+### Similar Problems
+- Total Hamming Distance(total-hamming-distance) (Medium)

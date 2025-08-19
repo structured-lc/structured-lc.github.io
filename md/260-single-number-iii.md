@@ -99,3 +99,12 @@ Uses the **bit manipulation/XOR pattern**:
 - Leverages the property that x ⊕ x = 0 and x ⊕ 0 = x.
 - Finds the distinguishing bit between uniques, partitions, and reveals each by cancellation in group.  
 This bitwise pattern is widely used (Single Number I, II, appearing once/twice/three times), and is a frequent trick for *finding unpaired elements* efficiently.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Single Number(single-number) (Easy)
+- Single Number II(single-number-ii) (Medium)
+- Find The Original Array of Prefix Xor(find-the-original-array-of-prefix-xor) (Medium)
+- Find the XOR of Numbers Which Appear Twice(find-the-xor-of-numbers-which-appear-twice) (Easy)

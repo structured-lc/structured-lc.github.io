@@ -75,3 +75,9 @@ def canReorderDoubled(arr):
 
 ### Summary
 The core approach uses frequency maps and absolute value sorting to pair elements with their doubles efficiently. This *count-and-greedy pairing* pattern is commonly used for problems involving pairing (or grouping) based on specific ratios or multiples and is easily adapted for similar constraints like k-difference or k-ratio pairs.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Find Original Array From Doubled Array(find-original-array-from-doubled-array) (Medium)

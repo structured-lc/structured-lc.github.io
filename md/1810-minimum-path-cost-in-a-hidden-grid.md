@@ -132,3 +132,10 @@ This problem is solved in two phases:
 2. **Dijkstra's algorithm** to **compute the minimum path** from the start to the target within the mapped region.
 
 This mapping-followed-by-pathfinding split is a common pattern in grid-related interactive or partially observable search problems—including robot navigation and maze exploration. The coding pattern applies to any situation where direct, global grid access is unavailable, but local exploration is allowed.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Interactive(#interactive), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Robot Room Cleaner(robot-room-cleaner) (Hard)
+- Shortest Path in a Hidden Grid(shortest-path-in-a-hidden-grid) (Medium)

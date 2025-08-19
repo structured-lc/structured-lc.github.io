@@ -90,3 +90,9 @@ def maximumAlternatingSubarraySum(nums):
 
 ### Summary
 This problem is a variation of the classic **Kadane’s Algorithm**, adapted to handle alternating addition and subtraction. The essence is to track two alternating DP states for each scan position, allowing the solution in O(n) time and O(1) space. This "alternating DP" or "state compression DP" is a useful pattern for many sign-alternating and parity-dependent subarray problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Maximum Alternating Subsequence Sum(maximum-alternating-subsequence-sum) (Medium)

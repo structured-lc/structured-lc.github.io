@@ -97,3 +97,11 @@ def kthSmallestPrimeFraction(arr, k):
 
 ### Summary
 This problem uses the **min-heap pattern** for efficiently finding the kᵗʰ smallest among pairwise combinations, without brute force. This pattern is common in k-select problems, such as finding the smallest pairs, or kth smallest/largest in sorted matrices. Heap-based approaches optimize out O(n²) complexity, and the solution applies similarly to many top-k or select problems involving sorted data and combining two sets.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Kth Smallest Element in a Sorted Matrix(kth-smallest-element-in-a-sorted-matrix) (Medium)
+- Kth Smallest Number in Multiplication Table(kth-smallest-number-in-multiplication-table) (Hard)
+- Find K-th Smallest Pair Distance(find-k-th-smallest-pair-distance) (Hard)

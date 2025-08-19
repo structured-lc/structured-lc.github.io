@@ -124,3 +124,11 @@ def maximalRectangle(matrix):
 
 ### Summary
 This problem uses a classic *stack-based* approach for finding the largest rectangle in a histogram, applied row by row. By transforming the 2D maximal rectangle search into many 1D histogram problems, it leverages a well-known and efficient coding pattern with clear reusability (for example: Leetcode 84 - Largest Rectangle in Histogram). This dynamic programming + stack pattern is widely applicable in matrix rectangle and area-finding scenarios.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Stack(#stack), Matrix(#matrix), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Largest Rectangle in Histogram(largest-rectangle-in-histogram) (Hard)
+- Maximal Square(maximal-square) (Medium)
+- Find Sorted Submatrices With Maximum Element at Most K(find-sorted-submatrices-with-maximum-element-at-most-k) (Hard)

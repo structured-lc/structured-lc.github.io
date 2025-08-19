@@ -91,3 +91,8 @@ def maxSubarrays(nums):
 
 ### Summary
 This problem is a classic case for a greedy linear scan with bitwise operations, leveraging the property that the bitwise AND can only lose '1' bits as more numbers are added. The code structure is highly reusable for similar problems where a subarray must be split on a specific value or property, making it a common pattern in greedy or scan-based questions.
+
+### Tags
+Array(#array), Greedy(#greedy), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

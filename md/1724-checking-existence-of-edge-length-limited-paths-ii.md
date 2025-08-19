@@ -132,3 +132,11 @@ class DistanceLimitedPathsExist:
 
 ### Summary
 This problem is a classic application of the **offline query+union-find+sorting** paradigm. It leverages the fact that query constraints on edge weights can be handled by batch-processing, reminiscent of Kruskal’s MST approach. The same pattern is useful in problems involving dynamic connectivity under constraints, such as connectivity queries on graphs with changing edge cost limits.
+
+### Tags
+Union Find(#union-find), Graph(#graph), Minimum Spanning Tree(#minimum-spanning-tree)
+
+### Similar Problems
+- Checking Existence of Edge Length Limited Paths(checking-existence-of-edge-length-limited-paths) (Hard)
+- Number of Good Paths(number-of-good-paths) (Hard)
+- Minimum Score of a Path Between Two Cities(minimum-score-of-a-path-between-two-cities) (Medium)

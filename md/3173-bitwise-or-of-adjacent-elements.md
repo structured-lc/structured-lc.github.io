@@ -84,3 +84,9 @@ def orArray(nums):
 
 ### Summary
 This problem illustrates the **adjacent pair scanning** pattern, where each element in the output is based on consecutive elements in the input. The loop-and-collect approach is standard for such cases. This coding pattern is common in interval analysis, differences, moving average, or other rolling window computations, especially when relationships are local (between neighboring items).
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Neighboring Bitwise XOR(neighboring-bitwise-xor) (Medium)

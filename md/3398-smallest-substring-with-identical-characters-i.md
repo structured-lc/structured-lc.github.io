@@ -93,3 +93,8 @@ def smallest_substring_with_identical_characters(s: str, numOps: int) -> int:
 
 ### Summary
 This problem uses the **binary search on answer** optimization pattern, common when the answer space is monotonic and can be checked in linear or log time. The core is to break long runs using limited "cuts" (flips). This pattern arises in various interval and grouping optimization problems. Techniques here apply to segmenting arrays, string compression, and similar partitioning/interval-breaking problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Enumeration(#enumeration)
+
+### Similar Problems

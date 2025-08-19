@@ -98,3 +98,8 @@ def specialPerm(nums):
 This problem models **DP with bitmask** and permutation, similar to "Traveling Salesman", "Beautiful Arrangement", or "Permutations with Constraints".  
 Key pattern: Recursion with bitmask and memoization to prune repeated work.  
 This pattern is very common in classic combinatorial and constraint-oriented problems on permutations, especially when n ≤ 14–16. Understanding this approach is powerful for all constraint-satisfying permutation counting problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems

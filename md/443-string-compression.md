@@ -98,3 +98,14 @@ def compress(chars):
 
 ### Summary
 This uses the **two pointer pattern**—one pointer for reading input and another for writing output in-place. It's a classic pattern for array in-place modification and can also be applied to remove/remove duplicates, reordering, or compaction type problems. The key challenge is always keeping track of read/write positions and handling multi-digit numbers correctly.
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Count and Say(count-and-say) (Medium)
+- Encode and Decode Strings(encode-and-decode-strings) (Medium)
+- Design Compressed String Iterator(design-compressed-string-iterator) (Easy)
+- Decompress Run-Length Encoded List(decompress-run-length-encoded-list) (Easy)
+- String Compression III(string-compression-iii) (Medium)
+- Better Compression of String(better-compression-of-string) (Medium)

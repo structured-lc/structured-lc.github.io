@@ -145,3 +145,12 @@ class NumMatrix:
 
 ### Summary
 This problem uses the **2D Binary Indexed Tree (Fenwick Tree) pattern** to efficiently handle dynamic matrix range queries and point updates. This pattern is fundamental for any problem needing both *range sum queries* and *online updates* on 2D arrays, and generalizes naturally to range sum queries in higher-dimensions, or for building data structures like 2D segment trees. It’s also core for problems in competitive programming and database queries involving multidimensional data.
+
+### Tags
+Array(#array), Design(#design), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Matrix(#matrix)
+
+### Similar Problems
+- Range Sum Query 2D - Immutable(range-sum-query-2d-immutable) (Medium)
+- Range Sum Query - Mutable(range-sum-query-mutable) (Medium)
+- Increment Submatrices by One(increment-submatrices-by-one) (Medium)
+- Sum of Matrix After Queries(sum-of-matrix-after-queries) (Medium)

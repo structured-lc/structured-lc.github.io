@@ -127,3 +127,9 @@ def countKSubsequencesWithMaxBeauty(s: str, k: int) -> int:
 This problem uses the **greedy + combinatorial** pattern: always select the k most frequent unique chars for max sum, but use combinatorics to count tie-break possibilities when frequencies tie at the cut-off.  
 The pattern appears in problems related to *top-K selection*, combinations with duplicates, or maximizing set-based scores.  
 Key techniques: counter, combinatorics, modular arithmetic, careful handling of ties.
+
+### Tags
+Hash Table(#hash-table), Math(#math), String(#string), Greedy(#greedy), Combinatorics(#combinatorics)
+
+### Similar Problems
+- Distinct Subsequences II(distinct-subsequences-ii) (Hard)

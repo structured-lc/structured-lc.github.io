@@ -92,3 +92,9 @@ def countSteppingNumbers(low, high):
 
 ### Summary
 We use a **Breadth-First Search (BFS)** approach to generate valid Stepping Numbers efficiently within a numeric interval. This pattern (digit-by-digit number-building with constraints) is common in “number construction” and “digital DP”-type problems. The BFS ensures only valid numbers are generated, output is sorted, and performance is practical even for large ranges. This technique applies broadly in similar problems where numbers are built or traversed subject to digit rules.
+
+### Tags
+Math(#math), Backtracking(#backtracking), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Count Stepping Numbers in Range(count-stepping-numbers-in-range) (Hard)

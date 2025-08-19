@@ -156,3 +156,10 @@ def count_ideal_arrays(n, maxValue):
 
 ### Summary
 This problem is a combination of **dynamic programming, combinatorics, number theory, and prime factorization**. The key insight is to count how many ways sequences of n positions can be filled such that each next value is a multiple of the previous, by distributing increments among prime factors with stars-and-bars. The core coding pattern is **counting unordered multisets, combinatorial distribution, and using precomputed factorials**—ideas that frequently appear in integer partitioning, lattice path, and number-theoretical combinatorics problems.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics), Number Theory(#number-theory)
+
+### Similar Problems
+- Count Ways to Make Array With Product(count-ways-to-make-array-with-product) (Hard)
+- Count the Number of Beautiful Subarrays(count-the-number-of-beautiful-subarrays) (Medium)

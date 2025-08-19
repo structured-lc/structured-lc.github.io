@@ -112,3 +112,16 @@ def lowestCommonAncestor(root, p, q):
 
 ### Summary
 This solution follows the **post-order DFS** recursion pattern, often used for descendant-based tree questions. It efficiently finds the LCA in **O(n)** time and **O(h)** space without revisiting nodes or storing paths. Variations of this approach are popular in problems involving ancestry, subtree computation, or bottom-up information propagation in trees. This same pattern appears in other problems like finding distance between nodes, counting subtrees, or propagating values upwards in general trees.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Lowest Common Ancestor of a Binary Search Tree(lowest-common-ancestor-of-a-binary-search-tree) (Medium)
+- Smallest Common Region(smallest-common-region) (Medium)
+- Find Players With Zero or One Losses(find-players-with-zero-or-one-losses) (Medium)
+- Lowest Common Ancestor of a Binary Tree II(lowest-common-ancestor-of-a-binary-tree-ii) (Medium)
+- Lowest Common Ancestor of a Binary Tree III(lowest-common-ancestor-of-a-binary-tree-iii) (Medium)
+- Lowest Common Ancestor of a Binary Tree IV(lowest-common-ancestor-of-a-binary-tree-iv) (Medium)
+- Step-By-Step Directions From a Binary Tree Node to Another(step-by-step-directions-from-a-binary-tree-node-to-another) (Medium)
+- Cycle Length Queries in a Tree(cycle-length-queries-in-a-tree) (Hard)

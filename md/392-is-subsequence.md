@@ -86,3 +86,12 @@ def isSubsequence(s: str, t: str) -> bool:
 The **two-pointer pattern** is used, which efficiently checks for a subsequence in linear time.  
 This approach is commonly applied to problems involving the ordering or matching between two lists or strings (e.g., merging sorted arrays, validating shuffle patterns).  
 It's optimal for cases where order matters but contiguity isn't required.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Number of Matching Subsequences(number-of-matching-subsequences) (Medium)
+- Shortest Way to Form String(shortest-way-to-form-string) (Medium)
+- Append Characters to String to Make Subsequence(append-characters-to-string-to-make-subsequence) (Medium)
+- Make String a Subsequence Using Cyclic Increments(make-string-a-subsequence-using-cyclic-increments) (Medium)

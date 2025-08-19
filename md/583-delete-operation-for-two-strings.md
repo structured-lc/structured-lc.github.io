@@ -76,3 +76,12 @@ def minDistance(word1: str, word2: str) -> int:
 
 ### Summary
 The problem leverages the **Longest Common Subsequence** dynamic programming pattern, which appears in string transformation, diff tools, and genetic sequence analysis. The solution reduces all unnecessary deletions to only what isn’t part of the LCS, which is both intuitive and efficient for the problem’s constraints. This DP template is highly reusable for related edit distance and LCS problems.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Edit Distance(edit-distance) (Medium)
+- Minimum ASCII Delete Sum for Two Strings(minimum-ascii-delete-sum-for-two-strings) (Medium)
+- Longest Common Subsequence(longest-common-subsequence) (Medium)
+- Make Three Strings Equal(make-three-strings-equal) (Easy)

@@ -74,3 +74,12 @@ def maxResult(nums, k):
 
 ### Summary
 Monotonic queue / sliding window maximum pattern, combining DP and deque. Very common for max-in-range sliding window problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Queue(#queue), Heap (Priority Queue)(#heap-priority-queue), Monotonic Queue(#monotonic-queue)
+
+### Similar Problems
+- Sliding Window Maximum(sliding-window-maximum) (Hard)
+- Jump Game VII(jump-game-vii) (Medium)
+- Jump Game VIII(jump-game-viii) (Medium)
+- Maximize Value of Function in a Ball Passing Game(maximize-value-of-function-in-a-ball-passing-game) (Hard)

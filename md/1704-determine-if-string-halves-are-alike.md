@@ -83,3 +83,8 @@ def halves_are_alike(s: str) -> bool:
 
 ### Summary
 We use a **counting/partition pattern**: scan two halves of the string and compare features (here, vowel count). It's a standard approach for "split and compare" problems. Variants of this logic apply to palindrome checks, balancing problems, and any task requiring symmetrical evaluation of string halves.
+
+### Tags
+String(#string), Counting(#counting)
+
+### Similar Problems

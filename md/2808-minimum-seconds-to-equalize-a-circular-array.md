@@ -104,3 +104,8 @@ Patterns used:
 - **Hash map grouping**
 - **Distance/gap-finding with wraparound (circular array)**
 This approach and pattern often appears in problems about simultaneous spread, wavefronts, or circular adjacency, such as problems involving infection, voting, or minimum propagation time in rings.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

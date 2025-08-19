@@ -168,3 +168,9 @@ print(find_post_topics(posts, keywords))
 
 ### Summary
 The problem is a classic text processing and token matching challenge that fits into the general category of join/group-by problems, often seen in SQL or map-reduce settings. The solution is highly portable to other contexts: join/sort/group-by techniques, inverted keyword lookup, normalization and set operations. This pattern commonly appears in search, categorization, tagging, and information extraction tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Group Sold Products By The Date(group-sold-products-by-the-date) (Easy)

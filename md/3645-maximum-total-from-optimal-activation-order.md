@@ -95,3 +95,8 @@ def maxTotal(value, limit):
 This problem demonstrates a classic **greedy** and **sorting by constraint** pattern:  
 When constraints (like limits) risk making good options unavailable, prioritize them carefully—sort by the constraint, then quality/value. This is a common approach in activation or scheduling problems, especially where **greedy selection** with side effects (e.g., in eligibility/pruning) is required.  
 Patterns like this are useful in interval scheduling, jobs-with-deadlines, and greedy heap questions.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

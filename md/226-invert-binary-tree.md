@@ -130,3 +130,9 @@ def invertTree(root):
 
 ### Summary  
 This problem applies a classic **recursive tree traversal** pattern, specifically Preorder (process node, then children). The approach is simple and leverages the natural recursive structure of trees. It can be adapted to an iterative method with a stack or queue. This pattern is commonly found in problems involving subtree manipulations, such as cloning, mirroring, or modifying every node in a tree.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Reverse Odd Levels of Binary Tree(reverse-odd-levels-of-binary-tree) (Medium)

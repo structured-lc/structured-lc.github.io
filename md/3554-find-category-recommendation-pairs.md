@@ -160,3 +160,8 @@ def find_category_recommendation_pairs(purchases, product_info):
 This problem uses the **pattern of combining user-based groupings to find pairs of frequent co-occurrences** (category pairs purchased by same users). It relies on generating pairs from sets per user to avoid costly cross joins over global categories. The solution pattern emphasizes transforming data to user-category mapping, pair generation per user, aggregation, and filtering.
 
 This kind of problem and approach applies to many recommendation and co-purchasing analyses in big data and e-commerce domains.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -126,3 +126,11 @@ def count_subarrays(nums):
 
 ### Summary
 This problem is an example of the monotonic stack/sliding window pattern to efficiently count or aggregate information over subarrays that satisfy certain boundary and interior conditions. It's similar to classic interval-extension/stack enumeration problems (like Largest Rectangle in Histogram or Count Subarrays with Bounded Maximum). The idea of grouping identical runs and merging with monotonic constraints is broadly applicable in subarray and range-counting problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Number of Subarrays with Bounded Maximum(number-of-subarrays-with-bounded-maximum) (Medium)
+- Count Subarrays With Fixed Bounds(count-subarrays-with-fixed-bounds) (Hard)
+- Count Subarrays Where Max Element Appears at Least K Times(count-subarrays-where-max-element-appears-at-least-k-times) (Medium)

@@ -71,3 +71,11 @@ def findSubarrays(nums):
 
 ### Summary
 This problem uses the classic “detect duplicate with a set” pattern, with a sliding window of size 2 to generate subarray sums. It’s a simple form of the hash set deduplication trick, commonly found in array and window-based coding questions, such as detecting duplicates in a window, finding repeated sums, or two-sum style problems. The general approach applies broadly to issues involving running duplicates or overlaps in linera scans.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)
+- Partition Equal Subset Sum(partition-equal-subset-sum) (Medium)
+- Find Two Non-overlapping Sub-arrays Each With Target Sum(find-two-non-overlapping-sub-arrays-each-with-target-sum) (Medium)

@@ -115,3 +115,8 @@ class Solution:
 This problem demonstrates a **"DP with non-overlapping intervals, variable length, and segment selection"** pattern.  
 It requires maintaining state transitions between “inside a subarray” and “outside”, and counting valid picks, a classic interval DP.  
 The same idea can be applied to other problems where you must select k non-overlapping subarrays (possibly of fixed or minimal length) to optimize a sum, min, or product, and variants show up in stock buying, interval scheduling, and segment partitioning problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
+
+### Similar Problems

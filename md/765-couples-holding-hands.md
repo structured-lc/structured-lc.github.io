@@ -88,3 +88,11 @@ def minSwapsCouples(row):
 
 ### Summary
 This problem uses the **greedy "put the correct partner in place by swapping" pattern**, leveraging the property that each person's partner is uniquely defined and that swaps can be done anywhere. Maintaining a mapping of current positions enables constant-time swaps, resulting in an efficient O(N) solution. This strategy is common in problems involving "cycle swaps" or "minimum swaps to sort." It also relates to union-find/cycle-decomposition, which appears in problems about grouping or coloring.
+
+### Tags
+Greedy(#greedy), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
+
+### Similar Problems
+- First Missing Positive(first-missing-positive) (Hard)
+- Missing Number(missing-number) (Easy)
+- K-Similar Strings(k-similar-strings) (Hard)

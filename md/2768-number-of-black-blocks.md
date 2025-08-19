@@ -113,3 +113,8 @@ def countBlackBlocks(m, n, coordinates):
 
 ### Summary
 This approach utilizes a hash map to efficiently count affected 2 × 2 blocks for each black cell, providing an efficient solution pattern for problems involving local neighborhoods in a grid (often called "sparse update" or "affect by neighbors"). This pattern is applicable to other problems where only cells affected by points/events need to be processed, rather than touching every location in the grid.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Enumeration(#enumeration)
+
+### Similar Problems

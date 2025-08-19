@@ -102,3 +102,12 @@ def palindromePairs(words):
 
 ### Summary
 This solution uses a *hashmap* for O(1) lookups and breaks down each word into all possible prefix/suffix splits to find matching palindrome combinations. This is an application of the “prefix/suffix pairing and reverse lookup” coding pattern, commonly seen in string manipulation and palindrome substring problems. Variations of this approach can be used in problems requiring pairing based on string transforms or symmetry.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Trie(#trie)
+
+### Similar Problems
+- Longest Palindromic Substring(longest-palindromic-substring) (Medium)
+- Shortest Palindrome(shortest-palindrome) (Hard)
+- Longest Palindrome by Concatenating Two Letter Words(longest-palindrome-by-concatenating-two-letter-words) (Medium)
+- Find Maximum Number of String Pairs(find-maximum-number-of-string-pairs) (Easy)

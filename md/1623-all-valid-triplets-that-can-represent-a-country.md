@@ -57,3 +57,8 @@ def valid_triplets(nums):
 
 ### Summary
 This problem uses a classic sliding window/scan pattern, also applicable in subarray and substring problems. Easily extended by changing triplet validation logic.
+
+### Tags
+Database(#database)
+
+### Similar Problems

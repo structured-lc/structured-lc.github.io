@@ -137,3 +137,8 @@ def countServers(n, logs, x, queries):
 
 ### Summary
 This problem uses the **offline query sliding window technique** — a common pattern for handling interval queries on time-sorted data, achieving much better performance versus naive per-query search by leveraging pre-sorting and a moving window. It's a template that applies to any problem where queries and updates are both time-based and queries are given upfront (offline), such as range queries, minimum/maximum-in-window, and interval frequency counts.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Sorting(#sorting)
+
+### Similar Problems

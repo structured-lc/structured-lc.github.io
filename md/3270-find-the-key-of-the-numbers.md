@@ -88,3 +88,9 @@ def findTheKey(num1, num2, num3):
 
 ### Summary
 This problem exemplifies the **per-digit transformation** pattern, often used in digital signal processing or string-to-number algorithm questions. Key steps are standardization (pad), per-index (column) min, and appropriate conversion to ensure no leading zeros. Variants of this approach occur in coordinate-wise problems and digital manipulation tasks.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Largest Number(largest-number) (Medium)

@@ -70,3 +70,8 @@ class ParkingSystem:
 
 ### Summary
 The solution uses simple state tracking with counters. The same pattern works for inventory counters or basic resource allocation.
+
+### Tags
+Design(#design), Simulation(#simulation), Counting(#counting)
+
+### Similar Problems

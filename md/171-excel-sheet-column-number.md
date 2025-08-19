@@ -73,3 +73,10 @@ def titleToNumber(columnTitle: str) -> int:
 
 ### Summary
 The problem is a classic **base conversion** pattern, commonly seen in variants such as number-to-string and string-to-number questions (with a custom mapping). It’s often encountered in problems dealing with spreadsheets, encodings, or anywhere a non-standard numeral system exists. Recognizing its base structure and how to generalize the conversion is the key insight for robust solutions.
+
+### Tags
+Math(#math), String(#string)
+
+### Similar Problems
+- Excel Sheet Column Title(excel-sheet-column-title) (Easy)
+- Cells in a Range on an Excel Sheet(cells-in-a-range-on-an-excel-sheet) (Easy)

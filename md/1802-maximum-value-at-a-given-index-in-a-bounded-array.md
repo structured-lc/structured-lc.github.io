@@ -112,3 +112,8 @@ def maxValue(n, index, maxSum):
 
 ### Summary
 This problem showcases the **binary search on answer** pattern, common in maximization/minimization problems with monotonic constraints. Efficient pyramid-sum calculation for both sides of the target index allows us to quickly test each candidate and converge to the answer. This same pattern applies wherever gradual increase/decrease with bounds and total constraints are involved—good for interval-filling, pyramid or "mountain" arrays, and resource allocation with step-restrictions.
+
+### Tags
+Math(#math), Binary Search(#binary-search), Greedy(#greedy)
+
+### Similar Problems

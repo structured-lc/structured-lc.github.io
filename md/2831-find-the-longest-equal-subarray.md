@@ -101,3 +101,8 @@ def longestEqualSubarray(nums, k):
 
 ### Summary
 This problem uses the **sliding window** and **grouping by value** pattern to efficiently find the largest subarray of equal values after limited deletions. The same technique applies to problems like "longest substring with at most k replacements" and other frequency-within-window-style questions. The approach avoids brute-force over all subarrays by treating each value group independently and carefully counting needed deletions.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Sliding Window(#sliding-window)
+
+### Similar Problems

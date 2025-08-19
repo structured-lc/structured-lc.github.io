@@ -103,3 +103,10 @@ def countAndSay(n: int) -> str:
 
 ### Summary
 This problem uses a **simulation** and **run-length encoding** approach, in which each term is constructed by reading and encoding the previous term. The pattern is a classic example of iterative sequence construction and is most closely related to string parsing and encoding techniques, which are also applicable to problems like "Run Length Encoding" and some types of data compression.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Encode and Decode Strings(encode-and-decode-strings) (Medium)
+- String Compression(string-compression) (Medium)

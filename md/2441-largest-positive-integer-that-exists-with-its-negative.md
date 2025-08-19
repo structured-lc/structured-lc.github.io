@@ -66,3 +66,9 @@ def findMaxK(nums):
 
 ### Summary
 This is a classic example of the *hash set* lookup pattern, commonly used in interview problems requiring fast existence checks or pair-finding (like "two-sum"). Efficient use of a set allows O(n) time and space, and the approach readily applies to problems seeking matching pairs or symmetries in arrays.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Sorting(#sorting)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)

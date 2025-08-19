@@ -76,3 +76,19 @@ def lengthOfLongestSubstring(s):
 
 ### Summary
 This problem uses the **sliding window** pattern—one of the most common approaches for substring and subarray problems in strings and arrays. It allows tracking a dynamic window of candidates, efficiently managing constraints (here, uniqueness) with fast lookup structures like sets or hashmaps. Sliding window strategies can be applied in many similar substring/search problems, such as "Longest Substring with At Most K Distinct Characters" and "Minimum Window Substring".
+
+### Tags
+Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Longest Substring with At Most Two Distinct Characters(longest-substring-with-at-most-two-distinct-characters) (Medium)
+- Longest Substring with At Most K Distinct Characters(longest-substring-with-at-most-k-distinct-characters) (Medium)
+- Subarrays with K Different Integers(subarrays-with-k-different-integers) (Hard)
+- Maximum Erasure Value(maximum-erasure-value) (Medium)
+- Number of Equal Count Substrings(number-of-equal-count-substrings) (Medium)
+- Minimum Consecutive Cards to Pick Up(minimum-consecutive-cards-to-pick-up) (Medium)
+- Longest Nice Subarray(longest-nice-subarray) (Medium)
+- Optimal Partition of String(optimal-partition-of-string) (Medium)
+- Count Complete Subarrays in an Array(count-complete-subarrays-in-an-array) (Medium)
+- Find Longest Special Substring That Occurs Thrice II(find-longest-special-substring-that-occurs-thrice-ii) (Medium)
+- Find Longest Special Substring That Occurs Thrice I(find-longest-special-substring-that-occurs-thrice-i) (Medium)

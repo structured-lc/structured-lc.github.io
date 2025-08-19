@@ -194,3 +194,9 @@ class ImmutableHelper:
 The solution leverages the **proxy pattern** and lazy (on-write) shallow copying to provide efficient, user-friendly immutable object 'modification'.  
 This pattern is known as *structural sharing*, is highly useful for versioned data structures (like in Redux, React, state management), and is a foundational technique for persistent (functional) data structures and undo history.  
 The coding pattern generalizes to situations where local modifications to large, nested data must be efficient and non-destructive—classic in UI state and collaborative editing.
+
+### Tags
+
+### Similar Problems
+- Infinite Method Object(infinite-method-object) (Easy)
+- Make Object Immutable(make-object-immutable) (Medium)

@@ -100,3 +100,8 @@ def numUniqueEmails(emails):
 ### Summary
 This problem is classic **string normalization** with a **hash set** for uniqueness.  
 Pattern used here is **data cleaning and de-duplication**—applicable for text processing, log clean-up, and pre-processing for database storage of standardized records.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string)
+
+### Similar Problems

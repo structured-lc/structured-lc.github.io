@@ -102,3 +102,8 @@ def minimizeScore(nums):
 
 ### Summary
 This problem uses the **"Sort and squeeze the ends" pattern**—a common idea for minimizing/maximizing ranges and gaps when restricted changes are allowed. The approach applies to a broad class of problems where moving the extremes has the greatest impact. Recognizing that only the largest and smallest values matter allows an O(n log n) solution, crucial for large input sizes.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

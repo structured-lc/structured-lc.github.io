@@ -137,3 +137,10 @@ def waysToSplit(nums):
 
 ### Summary
 This problem uses the **prefix sum + binary search** pattern to efficiently determine valid split points under multiple sum constraints. The approach is generally applicable to subarray partitioning problems with cumulative constraints and is a classic technique in subarray sum interval counting. Recognizing how to use prefix sums for quick range queries and binary search for locating valid intervals is key and repeatedly useful in interview problems.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Number of Ways to Divide a Long Corridor(number-of-ways-to-divide-a-long-corridor) (Hard)
+- Number of Ways to Split Array(number-of-ways-to-split-array) (Medium)

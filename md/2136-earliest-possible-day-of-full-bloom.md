@@ -96,3 +96,9 @@ def earliestFullBloom(plantTime, growTime):
 ### Summary
 This problem is a classic **greedy scheduling** question, similar to job sequencing where longer jobs (growth durations) should start as early as possible. The optimal pattern is to sort all "tasks" (seeds) by impact on the final deadline—here, **growTime**—and process them in descending order.  
 Similar greedy strategies can be widely applied to problems like maximizing profit with deadlines, *minimum completion time*, or *project scheduling*.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Number of Days to Make m Bouquets(minimum-number-of-days-to-make-m-bouquets) (Medium)

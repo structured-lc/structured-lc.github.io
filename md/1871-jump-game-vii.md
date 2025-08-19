@@ -92,3 +92,18 @@ def canReach(s: str, minJump: int, maxJump: int) -> bool:
 
 ### Summary
 This problem is a classical **dynamic BFS window** problem, where you track reachability within growing intervals efficiently. Avoiding brute-force checks by moving a 'farthest' pointer is essential for O(n) performance. This sliding window + BFS idea is used in many jump and reachability style LeetCode questions, making it a reusable pattern for graph traversal and restricted-dynamic-reach problems.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Jump Game II(jump-game-ii) (Medium)
+- Jump Game(jump-game) (Medium)
+- Jump Game III(jump-game-iii) (Medium)
+- Jump Game IV(jump-game-iv) (Hard)
+- Jump Game V(jump-game-v) (Hard)
+- Jump Game VI(jump-game-vi) (Medium)
+- Jump Game VII(jump-game-vii) (Medium)
+- Jump Game VIII(jump-game-viii) (Medium)
+- Count Vowel Strings in Ranges(count-vowel-strings-in-ranges) (Medium)
+- Maximum Number of Jumps to Reach the Last Index(maximum-number-of-jumps-to-reach-the-last-index) (Medium)

@@ -104,3 +104,8 @@ def colorTheArray(n, queries):
 
 ### Summary
 This approach is an example of incremental counting and **sweep line/local pair maintenance**: only updates involving neighbors can affect the answer, leading to an efficient O(1) per query. Patterns like this apply in dynamic array queries, 1D cellular automata, and games with local neighbor effects.
+
+### Tags
+Array(#array)
+
+### Similar Problems

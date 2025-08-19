@@ -160,3 +160,10 @@ def minCost(nums, k, dist):
 This is a **multi-stage DP problem with extra constraints** on the placement of subarray starts.  
 It demonstrates a common "DP with window" or "partition with cost and restriction" pattern, highly applicable to partition, painting, duty scheduling, and k-grouping problems.  
 Sliding window minima, dynamic programming, and careful constraint management are key tools for such hard partition optimization problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Minimum Cost to Cut a Stick(minimum-cost-to-cut-a-stick) (Hard)
+- Minimum Cost to Split an Array(minimum-cost-to-split-an-array) (Hard)

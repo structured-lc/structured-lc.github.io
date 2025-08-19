@@ -95,3 +95,9 @@ def ways(pizza, k):
 
 ### Summary
 This is a classic DP with memoization pattern on subregions, combined with clever region-sum counting (via prefix sum). Such rectangular DP/memoization occurs in other grid partitioning, rectangle DP, and string cut/merge problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Memoization(#memoization), Matrix(#matrix), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Selling Pieces of Wood(selling-pieces-of-wood) (Hard)

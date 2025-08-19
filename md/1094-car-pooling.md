@@ -78,3 +78,9 @@ def carPooling(trips, capacity):
 
 ### Summary
 The approach uses the **difference array / sweep line algorithm**, a common and efficient pattern for interval and range update problems. It transforms the problem into tracking net changes at points of interest (pick-up/drop-off), enabling fast and scalable solutions without simulating every movement. This pattern appears in interval covering, calendar scheduling, traffic flow, and range sum problems.
+
+### Tags
+Array(#array), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Meeting Rooms II(meeting-rooms-ii) (Medium)

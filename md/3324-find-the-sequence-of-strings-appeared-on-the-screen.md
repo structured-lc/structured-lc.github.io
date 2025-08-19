@@ -95,3 +95,9 @@ def find_sequence_of_strings(target: str):
 
 ### Summary
 This approach simulates the keyboard operations, recording all intermediate strings as required by the typing process. The coding pattern is simulation and greedy string construction—understanding the restrictions and directly translating operations step-by-step. This pattern is common in problems involving system process simulation and greedy/step-by-step state transitions.
+
+### Tags
+String(#string), Simulation(#simulation)
+
+### Similar Problems
+- Keyboard Row(keyboard-row) (Easy)

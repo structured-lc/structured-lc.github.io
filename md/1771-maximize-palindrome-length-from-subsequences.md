@@ -125,3 +125,9 @@ def longestPalindrome(word1: str, word2: str) -> int:
 ### Summary
 This is a classic **dynamic programming** problem—specifically, the *Longest Palindromic Subsequence (LPS)* DP, but with additional boundary constraints requiring at least one character from each of two disjoint string ranges. The coding pattern matches range-based DP on substrings and is seen in other palindrome DP and partition DP problems.  
 Recognizing how to restrict solutions to ensure both input strings contribute is key. This approach and pattern are applicable to variations involving “join two (or more) parts to make optimal palindromes or subsequences under certain boundaries.”
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Longest Palindromic Subsequence(longest-palindromic-subsequence) (Medium)

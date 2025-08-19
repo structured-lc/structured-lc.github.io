@@ -84,3 +84,9 @@ def construct2DArray(original, m, n):
 This problem uses a classic array transformation (reshaping) pattern: chunking a list into sublists of fixed length.  
 It checks feasibility with a simple size comparison, then slices the input list into rows in a single loop.  
 This reshape pattern is common, appearing in matrix operations and data preprocessing, and is extendable to many application domains.
+
+### Tags
+Array(#array), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems
+- Reshape the Matrix(reshape-the-matrix) (Easy)

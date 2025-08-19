@@ -74,3 +74,8 @@ def repeatedNTimes(nums):
 The set-based approach is a classic **hashing duplicate check** pattern, efficient for finding the first repeated element.  
 It's similar to solving "find the duplicate number" type questions and works due to the clear constraints of this problem.  
 This coding pattern is widely applicable for problems where you need to detect repeats or non-uniques quickly within a collection.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

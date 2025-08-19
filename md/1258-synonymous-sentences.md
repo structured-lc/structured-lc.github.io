@@ -87,3 +87,8 @@ def generateSentences(synonyms, text):
 
 ### Summary
 Union-find groups synonyms, DFS or product generates all combinations. This is a classical combinatorial sentence construction—a pattern seen in synonym expansions, word ladders, natural language generation.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Backtracking(#backtracking), Sort(#sort), Union Find(#union-find)
+
+### Similar Problems

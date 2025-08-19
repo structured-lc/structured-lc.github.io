@@ -160,3 +160,9 @@ This problem showcases a **control flow/cancellation pattern** for generators em
 Key takeaways:  
 - Using a “promise race” between the intended work and a cancellation notification makes cancellation handling **reactive and prompt**.
 - This applies in orchestrating network requests, async pipelines, event handlers, and more wherever cooperative cancellation or pausing/resuming is desired.
+
+### Tags
+
+### Similar Problems
+- Generate Fibonacci Sequence(generate-fibonacci-sequence) (Easy)
+- Nested Array Generator(nested-array-generator) (Medium)

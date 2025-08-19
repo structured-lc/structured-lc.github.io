@@ -148,3 +148,11 @@ def groupStrings(words):
 
 ### Summary
 We model each word with a bitmask to use set operations efficiently. By connecting masks using Union-Find for all valid add/remove/replace connections, we can count disjoint groups and largest group sizes. This bitmask + DSU approach is a classic solution for connectivity problems over sets/subsets and arises in word/path graphs, "similar words", and genetic mutation problem patterns.
+
+### Tags
+String(#string), Bit Manipulation(#bit-manipulation), Union Find(#union-find)
+
+### Similar Problems
+- Word Ladder II(word-ladder-ii) (Hard)
+- Similar String Groups(similar-string-groups) (Hard)
+- Largest Component Size by Common Factor(largest-component-size-by-common-factor) (Hard)

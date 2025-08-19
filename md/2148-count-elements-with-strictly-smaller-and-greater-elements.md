@@ -80,3 +80,9 @@ def countElements(nums):
 
 ### Summary
 This problem is a classic example of **single-pass min/max searching** and **counting elements in a range**, a common coding interview pattern. It's efficient and doesn’t require sorting, and the core logic applies to many problems involving finding values between extremes or counting non-boundary elements in arrays.
+
+### Tags
+Array(#array), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems
+- Find Smallest Letter Greater Than Target(find-smallest-letter-greater-than-target) (Easy)

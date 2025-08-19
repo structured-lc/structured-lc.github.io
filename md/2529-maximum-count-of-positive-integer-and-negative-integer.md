@@ -87,3 +87,10 @@ def maximumCount(nums):
 ### Summary
 This problem uses the **Binary Search** pattern on sorted arrays to efficiently find the split points between negatives, zeroes, and positives.  
 It's a classic example of leveraging array properties to improve both clarity and computational efficiency, a common pattern in interview problems involving sorted data. This pattern is widely applicable in partition-type or boundary-searching problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Counting(#counting)
+
+### Similar Problems
+- Binary Search(binary-search) (Easy)
+- Count Negative Numbers in a Sorted Matrix(count-negative-numbers-in-a-sorted-matrix) (Easy)

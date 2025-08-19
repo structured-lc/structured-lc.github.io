@@ -111,3 +111,8 @@ def min_swaps_to_sort_by_digit_sum(nums):
 This solution uses the **cycle decomposition pattern** commonly found in "minimum swaps to sort" problems.  
 It computes the target sorted state using custom criteria (digit sum), then processes the array to count swap cycles.  
 This pattern generalizes to any sorting-by-criteria + swap-minimization question, and is seen in problems like "Minimum Swaps to Sort an Array" and "Min Swaps To Make Palindrome".
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting)
+
+### Similar Problems

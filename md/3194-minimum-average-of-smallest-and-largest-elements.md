@@ -91,3 +91,9 @@ def minimumAverage(nums):
 
 ### Summary
 This problem leverages the **two-pointer technique**: after sorting, processing from both ends controls the smallest/largest removals efficiently in one pass. The pattern is common in problems involving pairwise minimization or maximization, such as pairing for smallest difference, or minimizing/maximizing resource use in scheduling. Sorting as a preprocessing step to enable O(n) pairing is a powerful and reusable pattern for many array problems where "smallest/largest" type selection is repeated.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Sorting(#sorting)
+
+### Similar Problems
+- Number of Distinct Averages(number-of-distinct-averages) (Easy)

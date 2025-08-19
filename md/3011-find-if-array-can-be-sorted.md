@@ -106,3 +106,9 @@ def canSortArray(nums):
 ### Summary
 This problem demonstrates a **greedy sliding window** or **block partitioning** pattern where constraints define movable “groups” within the array. The key is that within each group, you can sort arbitrarily, but you cannot move elements between different set bit count groups.  
 This pattern appears in problems around restricted swaps, subarray properties, or “block-based” constraints, and is also related to greedy “group boundary” checking.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Sorting(#sorting)
+
+### Similar Problems
+- Sort Integers by The Number of 1 Bits(sort-integers-by-the-number-of-1-bits) (Easy)

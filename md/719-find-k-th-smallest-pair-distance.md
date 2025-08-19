@@ -101,3 +101,15 @@ This problem uses the **binary search on answer** technique—searching the solu
 Efficient pair counting with two pointers is a classic "window on sorted array" trick.  
 The approach is common in other "find k-th in pairwise metric" problems, such as k-th smallest/largest pair sums, medians of pairwise differences, and so on.  
 Recognizing when to avoid brute-force O(n²) enumeration by binary searching on computed values is a crucial skill in algorithm design.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Find K Pairs with Smallest Sums(find-k-pairs-with-smallest-sums) (Medium)
+- Kth Smallest Element in a Sorted Matrix(kth-smallest-element-in-a-sorted-matrix) (Medium)
+- Find K Closest Elements(find-k-closest-elements) (Medium)
+- Kth Smallest Number in Multiplication Table(kth-smallest-number-in-multiplication-table) (Hard)
+- K-th Smallest Prime Fraction(k-th-smallest-prime-fraction) (Medium)
+- Find the Median of the Uniqueness Array(find-the-median-of-the-uniqueness-array) (Hard)
+- Maximize Score of Numbers in Ranges(maximize-score-of-numbers-in-ranges) (Medium)

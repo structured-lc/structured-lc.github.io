@@ -118,3 +118,12 @@ GROUP BY
 
 ### Summary
 This problem uses the common **SQL aggregation** pattern, specifically `GROUP BY` and `SUM()`, to calculate grouped totals. It demonstrates a basic and reusable approach for any data summary tasks, like summing orders per customer, or hits per page, found in both SQL and analytics contexts.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Product Sales Analysis I(product-sales-analysis-i) (Easy)
+- Product Sales Analysis III(product-sales-analysis-iii) (Medium)
+- Product Sales Analysis IV(product-sales-analysis-iv) (Medium)
+- Product Sales Analysis V(product-sales-analysis-v) (Easy)

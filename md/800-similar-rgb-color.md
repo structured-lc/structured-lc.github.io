@@ -108,3 +108,8 @@ def similarRGB(color: str) -> str:
 This problem uses a *digit grouping & rounding pattern*: each channel is mapped to the nearest allowed shorthand value (multiples of 17).  
 Rounding to the nearest fixed step and reconstructing a string is a pattern seen in quantization, color compression, and binning problems.  
 The direct mathematical rounding makes this a classic interview problem for recognizing patterns and avoiding unnecessary brute-force.
+
+### Tags
+Math(#math), String(#string), Enumeration(#enumeration)
+
+### Similar Problems

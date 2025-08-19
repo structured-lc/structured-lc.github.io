@@ -98,3 +98,13 @@ def minMoves(nums):
 
 ### Summary
 This problem demonstrates an important problem-solving technique: reframing the problem to see it from a different perspective. Instead of thinking about incrementing n-1 elements, we think about the relative differences between elements and the minimum element. The mathematical insight that all elements need to "catch up" to the same level leads to the elegant O(n) solution. This pattern of finding mathematical relationships appears frequently in array manipulation problems.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems
+- Minimum Moves to Equal Array Elements II(minimum-moves-to-equal-array-elements-ii) (Medium)
+- Maximum Running Time of N Computers(maximum-running-time-of-n-computers) (Hard)
+- Pour Water Between Buckets to Make Water Levels Equal(pour-water-between-buckets-to-make-water-levels-equal) (Medium)
+- Divide Players Into Teams of Equal Skill(divide-players-into-teams-of-equal-skill) (Medium)
+- Find Minimum Operations to Make All Elements Divisible by Three(find-minimum-operations-to-make-all-elements-divisible-by-three) (Easy)

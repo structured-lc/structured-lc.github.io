@@ -81,3 +81,11 @@ def shortestDistance(wordsDict, word1, word2):
 This problem uses the **"two pointers / sliding window"** coding pattern on a linear scan, tracking relevant indices.  
 It demonstrates reducing brute-force nested loops to a single pass with O(1) auxiliary space by keeping track of minimal needed state.  
 This approach appears in other "shortest distance between elements" scenarios, such as shortest distance between two values in an array, processing streams, or in memory-efficient search tasks.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems
+- Shortest Word Distance II(shortest-word-distance-ii) (Medium)
+- Shortest Word Distance III(shortest-word-distance-iii) (Medium)
+- Find All K-Distant Indices in an Array(find-all-k-distant-indices-in-an-array) (Easy)

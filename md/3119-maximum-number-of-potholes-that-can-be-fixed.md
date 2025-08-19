@@ -109,3 +109,8 @@ def maxPotholes(road: str, budget: int) -> int:
 
 ### Summary
 This problem is a classic example of **Greedy + Counting + Simulation**. We prioritize the largest fixes for best cost-effectiveness, counting all options and reducing the problem by simulating "splitting" leftover segments. This pattern—greedily processing segments by size for budget/cost constrained max benefit—arises in interval scheduling, knapsack, or resource allocation problems.
+
+### Tags
+String(#string), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

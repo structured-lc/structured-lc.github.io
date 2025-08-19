@@ -143,3 +143,10 @@ def minimumCost(source, target, original, changed, cost):
 
 ### Summary
 This problem is a classic example of **all-pairs shortest path** in a **small, character-based graph**. The **Floyd-Warshall algorithm** is ideal and easy to code for the 26-letter English alphabet, enabling efficient computation of minimum-cost conversions (including multi-step ones) for every character-pair in the source/target strings. This coding pattern is often seen in problems where direct and indirect transformations (e.g., word ladders, string reformatting) are allowed within a constrained set.
+
+### Tags
+Array(#array), String(#string), Graph(#graph), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Can Convert String in K Moves(can-convert-string-in-k-moves) (Medium)
+- Minimum Moves to Convert String(minimum-moves-to-convert-string) (Easy)

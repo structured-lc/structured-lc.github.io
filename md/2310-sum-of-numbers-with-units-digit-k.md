@@ -83,3 +83,11 @@ def minimumNumbers(num: int, k: int) -> int:
 This problem uses an **enumerative math plus greedy check** approach, taking advantage of properties of the units digit and modular arithmetic.  
 The pattern of cycling units digits makes the solution efficient because we only have to search up to 10.  
 It’s a classic example of math digit-based enumeration, useful for other digit cycling or residue class problems.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Enumeration(#enumeration)
+
+### Similar Problems
+- Digit Count in Range(digit-count-in-range) (Hard)
+- Count Integers With Even Digit Sum(count-integers-with-even-digit-sum) (Easy)
+- Sum of Number and Its Reverse(sum-of-number-and-its-reverse) (Medium)

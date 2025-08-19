@@ -163,3 +163,8 @@ def second_highest_salary_ii(employees):
 The pattern here is **"group by + ranking/selection"**. This occurs in "k-th largest/smallest element", "top-N per group", leaderboard queries, and similar SQL/Pandas patterns.  
 Window functions (e.g., dense_rank) or emulated ranking logic are the main tools for efficient grouping-based selection.  
 This pattern is widely used for leaderboard, analytics, and reporting tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems

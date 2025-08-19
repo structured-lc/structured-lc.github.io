@@ -66,3 +66,11 @@ def find_continuous_ranges(nums):
 
 ### Summary
 This is the typical two-pointer scanning pattern for interval/segment problems. It's efficient and applicable for summary-ranges-type queries in time series, logs, or numerical datasets.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Report Contiguous Dates(report-contiguous-dates) (Hard)
+- Find the Missing IDs(find-the-missing-ids) (Medium)
+- Customers With Strictly Increasing Purchases(customers-with-strictly-increasing-purchases) (Hard)

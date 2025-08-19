@@ -119,3 +119,10 @@ def longestCommonSubpath(n: int, paths: List[List[int]]) -> int:
 
 ### Summary
 This problem utilizes the **binary search on answer** + **rolling hash (Rabin-Karp)** pattern, a powerful approach for substring/subarray intersection-type problems. This solution is memory- and runtime-optimized, and similar ideas can be applied in problems like finding longest common substring, sequence intersection, or duplicate substring finding in multiple sequences or strings.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Rolling Hash(#rolling-hash), Suffix Array(#suffix-array), Hash Function(#hash-function)
+
+### Similar Problems
+- Reconstruct Itinerary(reconstruct-itinerary) (Hard)
+- Maximum Length of Repeated Subarray(maximum-length-of-repeated-subarray) (Medium)

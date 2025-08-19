@@ -92,3 +92,8 @@ def canConvert(str1, str2):
 
 ### Summary
 This problem is a **string mapping** and **cycle detection (with buffer character)** pattern problem. It applies to problems involving **global character substitution** and the need to handle cycles, similar to graph mapping and topological sorting in disguise. The main insight is that having a spare/unused character allows breaking mapping cycles; without it, only trivial (equal strings) mapping is possible. This pattern recurs in various data normalization and translation tasks.
+
+### Tags
+Hash Table(#hash-table), String(#string), Graph(#graph)
+
+### Similar Problems

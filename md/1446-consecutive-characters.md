@@ -61,3 +61,14 @@ def maxPower(s: str) -> int:
 
 ### Summary
 This is a classic sliding window / run-length problem with a linear scan. This pattern is useful for consecutive element detection, string runs, and basic sequence analysis.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Max Consecutive Ones(max-consecutive-ones) (Easy)
+- Longest Continuous Increasing Subsequence(longest-continuous-increasing-subsequence) (Easy)
+- Check if an Array Is Consecutive(check-if-an-array-is-consecutive) (Easy)
+- Count Number of Homogenous Substrings(count-number-of-homogenous-substrings) (Medium)
+- Longest Substring of One Repeating Character(longest-substring-of-one-repeating-character) (Hard)
+- Minimum Number of Chairs in a Waiting Room(minimum-number-of-chairs-in-a-waiting-room) (Easy)

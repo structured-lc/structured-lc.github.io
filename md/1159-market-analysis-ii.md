@@ -168,3 +168,8 @@ def market_analysis_ii(users, orders, items):
 This problem is a **window function and left join pattern**, common in SQL data analysis.  
 It can be generalized to "Nth event" problems and preference matching, which often come up in market analytics and business logic interviews.  
 Understanding ranking, partitioning, and joining user attributes is essential here.
+
+### Tags
+Database(#database)
+
+### Similar Problems

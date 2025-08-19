@@ -105,3 +105,7 @@ class Solution:
 
 ### Summary
 This problem uses the **dynamic programming with Trie** pattern, a variant of "word break" with word cost minimization. It's a classic use case for Trie prefix matching combined with DP memoization for optimal substructure and overlapping subproblems. This approach generalizes to any "construct by concatenation" + "minimal cost" questions, such as word segmentation, sentence assembly, and minimal cost composition problems.
+
+### Tags
+
+### Similar Problems

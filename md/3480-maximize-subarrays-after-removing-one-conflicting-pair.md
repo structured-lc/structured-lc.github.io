@@ -98,3 +98,8 @@ def maxSubarrays(n, conflictingPairs):
 
 ### Summary
 This problem leverages **greedy interval management** and frequency-based optimization, a common pattern in dynamic forbidden-interval problems. The approach is similar to maintaining **disjoint intervals** and efficiently updating/removing constraints. The pattern is broadly applicable to **maximum subarray/interval** problems with mutable constraints, notably in classic greedy or sliding window setups with dynamic restrictions.
+
+### Tags
+Array(#array), Segment Tree(#segment-tree), Enumeration(#enumeration), Prefix Sum(#prefix-sum)
+
+### Similar Problems

@@ -91,3 +91,9 @@ def maximumPopulation(logs):
 
 ### Summary
 This problem uses the **difference array (prefix sum)** technique to efficiently count and query the number of people alive per year given constrained year ranges. It's a classic example of sweep-line/interval addition and counting pattern, commonly seen in calendar merge, meeting room, or overlapping intervals problems. This approach is efficient, easily scalable for small year ranges, and avoids nested loops.
+
+### Tags
+Array(#array), Counting(#counting), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Shifting Letters II(shifting-letters-ii) (Medium)

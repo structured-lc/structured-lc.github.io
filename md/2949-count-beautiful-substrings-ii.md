@@ -148,3 +148,8 @@ def count_beautiful_substrings(s: str, k: int) -> int:
 
 ### Summary
 This problem is a combination of the prefix sum / hashmap pattern (often used to count substrings or subarrays with a particular sum or property) with an extra modulo/divisibility constraint. The general approach is efficient and widely used for equal count substrings, zero-sum subarrays, and similar problems, which often appear in coding interviews and contests.
+
+### Tags
+Hash Table(#hash-table), Math(#math), String(#string), Number Theory(#number-theory), Prefix Sum(#prefix-sum)
+
+### Similar Problems

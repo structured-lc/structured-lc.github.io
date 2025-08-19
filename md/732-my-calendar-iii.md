@@ -89,3 +89,11 @@ class MyCalendarThree:
 
 ### Summary
 This problem is a classic example of the **sweep line** or "count boundaries" pattern, which is commonly used in calendar, interval, and overlapping events problems. The technique generalizes well: it’s used in line segment intersections, skyline problems, and booking systems. If the problem size increases or supports modifications, use an interval tree for efficiency.
+
+### Tags
+Binary Search(#binary-search), Design(#design), Segment Tree(#segment-tree), Prefix Sum(#prefix-sum), Ordered Set(#ordered-set)
+
+### Similar Problems
+- My Calendar I(my-calendar-i) (Medium)
+- My Calendar II(my-calendar-ii) (Medium)
+- Count Integers in Intervals(count-integers-in-intervals) (Hard)

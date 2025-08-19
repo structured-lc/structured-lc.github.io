@@ -109,3 +109,13 @@ def minimum_diameter_after_merge(edges1: List[List[int]], edges2: List[List[int]
 
 ### Summary
 This problem uses the **tree diameter** calculation pattern (two-pass BFS/DFS) and a center/radius analysis for optimal joining. It's a classic tree structure problem with an optimal "merge at centers" insight, generalizable for tree merging and minimum-diameter problems in distributed/networked systems. This approach can also be applied wherever tree representations are joined and properties like maximal distances need to be managed efficiently.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
+
+### Similar Problems
+- Minimum Height Trees(minimum-height-trees) (Medium)
+- Tree Diameter(tree-diameter) (Medium)
+- Maximize the Number of Target Nodes After Connecting Trees I(maximize-the-number-of-target-nodes-after-connecting-trees-i) (Medium)
+- Maximize the Number of Target Nodes After Connecting Trees II(maximize-the-number-of-target-nodes-after-connecting-trees-ii) (Hard)
+- Maximize Sum of Weights after Edge Removals(maximize-sum-of-weights-after-edge-removals) (Hard)

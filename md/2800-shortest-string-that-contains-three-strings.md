@@ -100,3 +100,9 @@ def minimumString(a: str, b: str, c: str) -> str:
 This problem uses the "greedy merge on all permutations" approach, seeking maximal string overlaps to minimize length and breaking ties on lexicographical order.  
 Patterns here relate to **superstring construction**, **greedy overlap merge**, and **permutation enumeration**, which also appear in DNA assembly, string deduction, and shortest path with complex state representations.  
 While brute-force is feasible for 3 strings, for larger cases more advanced string algorithms (like minimal superstring problem with DP) or optimized greedy heuristics may be required.
+
+### Tags
+String(#string), Greedy(#greedy), Enumeration(#enumeration)
+
+### Similar Problems
+- Shortest Common Supersequence (shortest-common-supersequence) (Hard)

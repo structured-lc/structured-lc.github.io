@@ -112,3 +112,9 @@ def mincostToHireWorkers(quality, wage, K):
 
 ### Summary
 This problem is a classic example of a **heap + greedy + sorting** pattern. The idea is to leverage the crucial proportional wage restriction, transforming the search space into an efficient heap-based selection problem by focusing on the wage/quality ratio, and always maintaining the minimum heap of worker qualities. This pattern—using a ratio or efficiency for sorting, and a heap to maintain best subsets—applies to several optimization problems, especially those involving cost minimization over competitive attributes.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Maximum Subsequence Score(maximum-subsequence-score) (Medium)

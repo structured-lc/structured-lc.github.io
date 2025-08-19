@@ -180,3 +180,8 @@ def classify_nodes(tree):
 
 ### Summary
 This problem is a classic example of parent-child mapping and classification in trees. The solution uses a "self-join" pattern—common in SQL and useful for parent-child relationships in any tree-like structure. The classification pattern here applies for n-ary and general rooted trees, not just binary. This node classification method is seen in file system ancestry, org charts, and network tree problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

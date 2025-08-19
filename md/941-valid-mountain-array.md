@@ -91,3 +91,10 @@ def validMountainArray(arr):
 
 ### Summary
 This problem uses the **two-pointer/scan pattern**, often seen in array and sequence checking problems. It emphasizes recognizing sequence properties and efficiently detecting structure (mountain, valley, etc.). Variations of this logic are useful in problems like detecting valleys, stock buy/sell patterns, and longest increasing/decreasing subsequence detection.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Minimum Number of Removals to Make Mountain Array(minimum-number-of-removals-to-make-mountain-array) (Hard)
+- Beautiful Towers I(beautiful-towers-i) (Medium)

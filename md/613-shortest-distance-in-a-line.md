@@ -81,3 +81,8 @@ def shortest_distance_in_line(x):
 ### Summary
 The core insight is that for points on a 1D line, the minimal absolute difference appears between two adjacent sorted values.  
 Sorting, then performing a single linear scan, allows us to efficiently solve the problem in O(n log n) time using the **“Sort and Compare Adjacent”** pattern. This strategy is broadly useful for nearest-neighbor or minimal-difference-type problems across arrays and lists.
+
+### Tags
+Database(#database)
+
+### Similar Problems

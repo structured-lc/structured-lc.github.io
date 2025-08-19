@@ -101,3 +101,9 @@ def queensAttacktheKing(queens, king):
 
 ### Summary
 This problem is an example of **directional search on a fixed grid** using efficient set lookup. The approach is a combination of simulation and set-based search, a pattern common in chess or board grid puzzles. This versatile pattern appears in problems like searching for threats in chess, checking paths, and exploring neighbors in 2D grids efficiently.
+
+### Tags
+Array(#array), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems
+- Minimum Moves to Capture The Queen(minimum-moves-to-capture-the-queen) (Medium)

@@ -113,3 +113,9 @@ def minimumSwaps(nums):
 This problem is a variation of the greedy, two-pointer, and optimal swap strategy seen in similar array manipulation questions.  
 It's an example of focusing on *key elements* (min/max) and their *relative order*, and not getting distracted by the rest.  
 The greedy insight—adjust for overlaps when movement paths of min and max cross—is a common thread in swap/min-move array problems.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems
+- Minimum Adjacent Swaps for K Consecutive Ones(minimum-adjacent-swaps-for-k-consecutive-ones) (Hard)

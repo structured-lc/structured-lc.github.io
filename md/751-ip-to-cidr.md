@@ -106,3 +106,10 @@ This problem uses **bit manipulation** and **greedy grouping** to convert an IP 
 The key pattern is to always choose the largest possible aligned power-of-two block at each step.  
 This is a common pattern in address partitioning, interval grouping, or networking-related segmentation problems.  
 Other scenarios: memory segment partitioning, efficient resource allocation, block grouping algorithms.
+
+### Tags
+String(#string), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Restore IP Addresses(restore-ip-addresses) (Medium)
+- Validate IP Address(validate-ip-address) (Medium)

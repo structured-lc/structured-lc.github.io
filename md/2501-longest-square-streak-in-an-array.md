@@ -90,3 +90,8 @@ def longestSquareStreak(nums):
 This problem uses the **hash set / hash map** pattern for fast existence checks and repeated forward chaining.  
 It's similar to problems where you extend sequences by some operation (like Consecutive Sequence, or Longest Increasing Subsequence), but here the operation is "square" rather than "+1" or "+k".  
 Usefulness: The existence set trick often appears when you need to build custom sequences efficiently.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
+
+### Similar Problems

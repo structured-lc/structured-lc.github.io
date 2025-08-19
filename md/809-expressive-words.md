@@ -96,3 +96,8 @@ def expressiveWords(s: str, words: list[str]) -> int:
 
 ### Summary
 This approach illustrates the **two-pointer** technique, paired with in-parallel group counting, to compare structural patterns between two strings efficiently. This pattern is common in “group sequence matching” and problems that ask for **grouped validation**, and shows up in string compression, run-length encoding, and diff utilities.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems

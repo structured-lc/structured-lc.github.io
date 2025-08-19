@@ -83,3 +83,10 @@ def convert_date_to_binary(date):
 ### Summary
 This problem uses a **simple simulation and string parsing pattern**: break input into parts, perform a small calculation on each, and reassemble.  
 The solution is direct, robust to constraints, and showcases basic string/integer handling. This pattern frequently appears in parsing and formatting problems, and is foundational to interview questions involving manual conversion or output transformation.
+
+### Tags
+Math(#math), String(#string)
+
+### Similar Problems
+- Number of 1 Bits(number-of-1-bits) (Easy)
+- Convert to Base -2(convert-to-base-2) (Medium)

@@ -105,3 +105,9 @@ def countValidWords(sentence: str) -> int:
 
 ### Summary
 This approach demonstrates the **tokenization + validation** pattern, scanning each word and performing stepwise checks in linear time. The pattern is broadly useful: parsing or validating log lines, cleaning user input, or token classification in natural-language tasks. The function is easily adapted to related word validation questions with custom rules.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Maximum Number of Words Found in Sentences(maximum-number-of-words-found-in-sentences) (Easy)

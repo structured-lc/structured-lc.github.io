@@ -76,3 +76,8 @@ def minimum_time_to_reach_destination(n, edges, s, t):
 
 ### Summary
 Classic shortest path problem with Dijkstra’s, handles any non-negative edge weights, cycles, disconnected components, and is an interview staple for directed/undirected graphs.
+
+### Tags
+Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
+
+### Similar Problems

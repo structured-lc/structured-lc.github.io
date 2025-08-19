@@ -144,3 +144,11 @@ def maximumScore(nums, multipliers):
 This is a classic example of **dynamic programming on choices** -- optimizing over a sequence, where decisions at each step depend only on remaining operations and state variables (step index and left picks).  
 It uses a 2D DP state and memoization (top-down) to efficiently compute the answer in O(m²) time/space.  
 This pattern appears in similar "pick from ends" interval DP problems, including coin games, optimal strategy for games, and variants where states depend on prefix/suffix choices.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Maximum Points You Can Obtain from Cards(maximum-points-you-can-obtain-from-cards) (Medium)
+- Stone Game VII(stone-game-vii) (Medium)
+- Maximum Spending After Buying Items(maximum-spending-after-buying-items) (Hard)

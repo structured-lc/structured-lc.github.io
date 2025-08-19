@@ -94,3 +94,11 @@ def decodeString(s):
 
 ### Summary
 This problem uses the **stack pattern**, commonly seen in problems involving nested structures (parentheses, XML parsing, etc.). The stack enables you to process nested and repeated elements in a single pass as you parse the string left-to-right. This approach is efficient, intuitive for nested decoding, and easily adapted for other similar parsing tasks.
+
+### Tags
+String(#string), Stack(#stack), Recursion(#recursion)
+
+### Similar Problems
+- Encode String with Shortest Length(encode-string-with-shortest-length) (Hard)
+- Number of Atoms(number-of-atoms) (Hard)
+- Brace Expansion(brace-expansion) (Medium)

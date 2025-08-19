@@ -131,3 +131,14 @@ def kClosest(points, k):
 
 ### Summary
 This problem uses the "top-k" pattern, often solved via heap or partial quickselect. The heap-based approach is efficient for moderate k and allows us to process very large arrays in a streaming fashion. This pattern appears in problems like finding k largest/smallest elements, top-k frequent, or nearest neighbors. The solution avoids the performance costs of sorting the full array and is robust for interviews.
+
+### Tags
+Array(#array), Math(#math), Divide and Conquer(#divide-and-conquer), Geometry(#geometry), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Quickselect(#quickselect)
+
+### Similar Problems
+- Kth Largest Element in an Array(kth-largest-element-in-an-array) (Medium)
+- Top K Frequent Elements(top-k-frequent-elements) (Medium)
+- Top K Frequent Words(top-k-frequent-words) (Medium)
+- Find Nearest Point That Has the Same X or Y Coordinate(find-nearest-point-that-has-the-same-x-or-y-coordinate) (Easy)
+- Minimum Rectangles to Cover Points(minimum-rectangles-to-cover-points) (Medium)
+- K-th Nearest Obstacle Queries(k-th-nearest-obstacle-queries) (Medium)

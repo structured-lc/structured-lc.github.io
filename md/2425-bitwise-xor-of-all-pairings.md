@@ -92,3 +92,8 @@ def xorAllNums(nums1, nums2):
 
 ### Summary
 This problem leverages the **XOR’s parity cancellation property** to reduce a brute-force pairing problem to a linear scan with a bitwise trick. The pattern is common in bit-manipulation or “XOR across pairs” style questions, and is useful anytime you’re asked to summarize the result of all pairwise operations efficiently without explicit enumeration. Key insight is spotting where parity (odd/even count) affects whether contributions survive.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Brainteaser(#brainteaser)
+
+### Similar Problems

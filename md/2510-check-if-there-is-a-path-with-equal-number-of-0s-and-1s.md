@@ -103,3 +103,12 @@ def isThereAPath(grid):
 This problem uses the **DP on grids with state compression via difference (“balance”) tracking**, a pattern seen in balanced path-counting questions.  
 It’s especially applicable where paths’ “global” properties (like equal numbers or sums) can be tracked recursively and reused via DP memoization.  
 Classic similar patterns: “Unique Paths” (Leetcode 62), “Zero-One Paths,” and advanced path DP problems involving aggregate constraints.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems
+- Minimum Path Sum(minimum-path-sum) (Medium)
+- Dungeon Game(dungeon-game) (Hard)
+- Minimum Cost Homecoming of a Robot in a Grid(minimum-cost-homecoming-of-a-robot-in-a-grid) (Medium)
+- Paths in Matrix Whose Sum Is Divisible by K(paths-in-matrix-whose-sum-is-divisible-by-k) (Hard)

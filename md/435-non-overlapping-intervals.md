@@ -90,3 +90,10 @@ def eraseOverlapIntervals(intervals):
 
 ### Summary
 This problem is a classic example of the **greedy interval scheduling** pattern: maximize the number of non-overlapping intervals (or minimize removals for non-overlap). The same pattern applies in scenarios like meeting room allocation, activity selection, and event scheduling. Key intuition: always keep intervals that finish earliest to maximize subsequent opportunities.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Number of Arrows to Burst Balloons(minimum-number-of-arrows-to-burst-balloons) (Medium)
+- Determine if Two Events Have Conflict(determine-if-two-events-have-conflict) (Easy)

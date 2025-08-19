@@ -88,3 +88,8 @@ def countAlternatingSubarrays(nums):
 
 ### Summary
 This problem uses the classic "run-length" or **sliding window** technique to identify and count maximal contiguous segments with a property (alternation). The pattern — track a segment until it breaks, tally results, reset — is common in substring and subarray problems, e.g., finding maximal sequences, runs, or properties. The approach is efficient and broadly applicable to many array/string scanning problems.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems

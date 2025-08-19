@@ -95,3 +95,8 @@ def find_occurrences(nums, queries):
 
 ### Summary
 This is an example of the "preprocess for fast queries" pattern, using a hashmap to store positions for each value, then answering lookups in O(1) for each query. It's related to indexing, frequency counting, or grouping patterns—frequently applied in problems involving repeated queries over static arrays.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

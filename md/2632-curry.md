@@ -81,3 +81,9 @@ def curry(fn):
 This is a classic **closure and partial application** (currying) functional programming pattern.  
 It shows up anywhere you want to delay evaluation, enable dependency injection, or create partially applied utility methods.  
 Closures, recursion, and argument accumulation are the central strategies applied here.
+
+### Tags
+
+### Similar Problems
+- Memoize(memoize) (Medium)
+- Memoize II(memoize-ii) (Hard)

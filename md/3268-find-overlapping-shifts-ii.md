@@ -131,3 +131,8 @@ def find_overlapping_shifts(shifts):
 This problem uses the **sweep line (scanline) algorithm**, which is a common pattern for processing event intervals efficiently.  
 It's especially applicable for: calculating max overlapping events, merging intervals, and calendar/meeting availability.  
 Patterns like this are frequently seen in interval scheduling, meeting rooms, and time-window aggregation problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

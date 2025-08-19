@@ -80,3 +80,8 @@ def imageSmoother(img):
 
 ### Summary
 The approach uses a classic grid traversal with local neighbor aggregation—a common pattern for image processing, convolution, and board game simulations. This pattern extends to median/mode filtering, flood fill, blurring, and game-of-life type problems. The step-by-step boundary-robust logic makes it especially reusable for many matrix-local-aggregation interview questions.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems

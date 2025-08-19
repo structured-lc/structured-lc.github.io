@@ -91,3 +91,11 @@ def numMatchingSubseq(s, words):
 This uses the **buckets queue** or **multiple pointers/buckets** pattern, grouping work by moments where progress is possible.  
 Every character in **s** advances the 'waiting list' for matching subsequences, so the work for each character and each word is done only once and in order.  
 This pattern is common for sequence matching, task pipelines, and event simulation.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Trie(#trie), Sorting(#sorting)
+
+### Similar Problems
+- Is Subsequence(is-subsequence) (Easy)
+- Shortest Way to Form String(shortest-way-to-form-string) (Medium)
+- Count Vowel Substrings of a String(count-vowel-substrings-of-a-string) (Easy)

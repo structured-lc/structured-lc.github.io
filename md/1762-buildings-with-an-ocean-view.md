@@ -72,3 +72,10 @@ def findBuildings(heights):
 
 ### Summary
 This problem uses a classic **monotonic decreasing traversal pattern** when scanning from the right to find buildings taller than those to their right. This pattern is common in skyline or visibility problems and is efficient for linear-time scanning problems involving comparisons with aggregates from one side.
+
+### Tags
+Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Number of Visible People in a Queue(number-of-visible-people-in-a-queue) (Hard)
+- Finding the Number of Visible Mountains(finding-the-number-of-visible-mountains) (Medium)

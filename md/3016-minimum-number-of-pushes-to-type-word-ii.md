@@ -87,3 +87,9 @@ def minimumPushes(word: str) -> int:
 
 ### Summary
 This problem is a classic **greedy allocation** and **frequency counting** pattern where optimal assignment of letter frequencies to lowest-cost positions yields the minimum total cost. This strategy is common in other assignment-type interview problems, especially those involving minimization with assignable buckets and costs, such as task scheduling or load balancing tasks with different costs.
+
+### Tags
+Hash Table(#hash-table), String(#string), Greedy(#greedy), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems
+- Letter Combinations of a Phone Number(letter-combinations-of-a-phone-number) (Medium)

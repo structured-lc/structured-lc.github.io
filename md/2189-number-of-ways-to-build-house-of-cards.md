@@ -105,3 +105,9 @@ def houseOfCards(n):
 
 ### Summary
 The problem is a variation of classic integer partition with constraints, and is solved efficiently using top-down DP (recursion with memoization). Finds use in enumerative combinatorics and fits the "subset sum/partition" DP pattern, often used in tiling, stacking, and restricted composition problems.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Champagne Tower(champagne-tower) (Medium)

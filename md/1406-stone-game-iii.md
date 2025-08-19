@@ -69,3 +69,13 @@ def stoneGameIII(stoneValue):
 
 ### Summary
 This is a classic DP for two-player zero-sum games, with each player minimizing the other's potential. The difference-based DP is a standard minimax-with-memory (Game Theory) approach, reusable for similar multiple-take games.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Game Theory(#game-theory)
+
+### Similar Problems
+- Stone Game V(stone-game-v) (Hard)
+- Stone Game VI(stone-game-vi) (Medium)
+- Stone Game VII(stone-game-vii) (Medium)
+- Stone Game VIII(stone-game-viii) (Hard)
+- Stone Game IX(stone-game-ix) (Medium)

@@ -79,3 +79,8 @@ def consecutiveNumbersSum(n: int) -> int:
 
 ### Summary
 The approach uses **mathematical series equations and divisibility checks** to efficiently count the number of ways to represent n as a sum of consecutive positive integers. This is a classic example of reducing a brute-force search to an O(√n) math-based algorithm, and the same technique applies to many sequence and sum decomposition problems.
+
+### Tags
+Math(#math), Enumeration(#enumeration)
+
+### Similar Problems

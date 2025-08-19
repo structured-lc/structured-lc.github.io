@@ -128,3 +128,8 @@ def maximize_active_section_with_trade_ii(s: str) -> int:
 
 ### Summary
 This problem uses **interval analysis** and **greedy block movement** to optimize a segmentation metric. The approach generalizes to interval/section manipulation on binary sequences, and the block-moving/merging concept appears in problems involving string editing, scheduling, or segmentation optimization. Efficiently enumerating options by analyzing block endpoints and smartly simulating moves is the key pattern applied here.
+
+### Tags
+Array(#array), String(#string), Binary Search(#binary-search), Segment Tree(#segment-tree)
+
+### Similar Problems

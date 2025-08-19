@@ -168,3 +168,9 @@ def strongPasswordChecker(password: str) -> int:
 ### Summary
 This problem leverages a **greedy algorithm** and careful case analysis, combining string scanning, sequence parsing, and length-focused optimizations.  
 The pattern—checking validations, then greedy edits—is widely applicable for “text correction” tasks and password/validation engines generally.
+
+### Tags
+String(#string), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Strong Password Checker II(strong-password-checker-ii) (Easy)

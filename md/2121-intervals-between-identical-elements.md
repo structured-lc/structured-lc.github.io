@@ -113,3 +113,9 @@ This problem uses the prefix sum pattern to efficiently aggregate distances in g
 The process is: **group → sort → prefix sum → interval aggregation** per element.  
 It’s a classic case of "group-by-then-process," common in tasks that ask for all relationships within identical elements, such as: subarray sums by value, minimal movement grouping, or k-sum techniques.  
 Mastery of prefix sums, group mapping, and efficient aggregation is broadly useful in interviews for reducing O(n²) tasks to O(n).
+
+### Tags
+Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Continuous Subarray Sum(continuous-subarray-sum) (Medium)

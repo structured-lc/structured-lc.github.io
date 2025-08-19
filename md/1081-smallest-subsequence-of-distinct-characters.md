@@ -95,3 +95,9 @@ def smallestSubsequence(s: str) -> str:
 ### Summary
 This is a classic **greedy + monotonic stack** pattern, closely related to "Remove Duplicate Letters."  
 It is efficient due to keeping track of last positions and using sets/stacks for constant-time checks. The pattern frequently appears in problems dealing with "unique results," "subsequences," or "lexicographic order under constraints."
+
+### Tags
+String(#string), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Find the Most Competitive Subsequence(find-the-most-competitive-subsequence) (Medium)

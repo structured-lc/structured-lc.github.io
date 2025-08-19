@@ -116,3 +116,9 @@ def orderOfLargestPlusSign(n, mines):
 ### Summary
 This problem is a classic example of **preprocessing with dynamic programming (DP) in a 2D grid**, where you want to be able to efficiently query properties that depend on multiple directions.  
 The same approach can be applied to other “maximum cross/plus sign” or “largest shape area” problems—such as counting consecutive values in grids, DP for submatrices, or dealing with blockages (obstacles) in spatial data.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Maximal Square(maximal-square) (Medium)

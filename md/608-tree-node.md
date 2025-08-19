@@ -130,3 +130,8 @@ def classify_tree_nodes(nodes):
 
 ### Summary
 This problem uses the "hash set for quick lookup" coding pattern, common for classifying or deduplicating elements efficiently. It applies anytime you need to check for membership or relationships across columns in unstructured data. This approach is widely needed in tree queries, graph preprocessing, or relational data lookups.
+
+### Tags
+Database(#database)
+
+### Similar Problems

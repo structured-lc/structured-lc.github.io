@@ -140,3 +140,8 @@ class Solution:
 
 ### Summary
 This problem is a variation of the **Longest Common Prefix** pattern, but after dynamic, per-query removal. **Trie (prefix tree)** data structure is key: it allows efficient prefix search and dynamic update/removal. The approach is optimized by updating the prefix counts rather than recomputing all subsets. Similar techniques are used for dynamic dictionary problems, prefix/word recommendations, or problems with "for all subsets after removal" constraints.
+
+### Tags
+Array(#array), String(#string), Trie(#trie)
+
+### Similar Problems

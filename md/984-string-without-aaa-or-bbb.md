@@ -89,3 +89,8 @@ def strWithout3a3b(a: int, b: int) -> str:
 
 ### Summary  
 This is a classic **greedy construction** problem: always place the maximum allowed consecutive of the "dominant" letter, then switch. This avoids illegal substrings by never letting more than two of the same letter group together. This **"Spacing/Grouping"** pattern frequently appears in problems where you must spread out items under specific adjacency constraints—such as task scheduling or seating arrangements to prevent clustering.
+
+### Tags
+String(#string), Greedy(#greedy)
+
+### Similar Problems

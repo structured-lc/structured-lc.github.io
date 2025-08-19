@@ -86,3 +86,11 @@ def arrayChange(nums, operations):
 
 ### Summary
 This problem is a classic use case for a *hash map* (dictionary) to maintain mapping from values to indices, allowing O(1) updates and lookups. It's an example of "offline queries" applied efficiently, showing that preprocessing + smart data structures can often beat brute force. The approach also appears in similar problems like dynamic index/value updates, swap/replace operations, and mapping-based simulations.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Simulation(#simulation)
+
+### Similar Problems
+- Find All Numbers Disappeared in an Array(find-all-numbers-disappeared-in-an-array) (Easy)
+- Maximum Number of Integers to Choose From a Range I(maximum-number-of-integers-to-choose-from-a-range-i) (Medium)
+- Maximum Number of Integers to Choose From a Range II(maximum-number-of-integers-to-choose-from-a-range-ii) (Medium)

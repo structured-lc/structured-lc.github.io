@@ -103,3 +103,9 @@ This problem is a classic "decorate-sort-undecorate" (DSU/Schwartzian transform)
 Mapping each number is “decorating,” sorting by mapped value is sorting, then “undecorate” by projecting back to the original nums.  
 This pattern appears in custom-sorting questions, radix problems, or anywhere elements must be sorted by complicated transformations while preserving original order (or ties).  
 Familiar in string sorting, word transforms, and even digit/bitwise custom sorts.
+
+### Tags
+Array(#array), Sorting(#sorting)
+
+### Similar Problems
+- Map Sum Pairs(map-sum-pairs) (Medium)

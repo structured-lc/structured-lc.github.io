@@ -63,3 +63,8 @@ def printLinkedListInReverse(head):
 
 ### Summary
 This is a classic **reverse traversal** problem for a singly linked list with forward-only access, using either recursion or an explicit stack. The pattern also appears in tree post-order traversal and "print stack backwards" tasks, important for constant-space constraints and cannot-mutate-structure challenges.
+
+### Tags
+Linked List(#linked-list), Two Pointers(#two-pointers), Stack(#stack), Recursion(#recursion)
+
+### Similar Problems

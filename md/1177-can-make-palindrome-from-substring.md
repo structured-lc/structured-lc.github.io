@@ -90,3 +90,10 @@ def canMakePaliQueries(s, queries):
 
 ### Summary
 This problem applies a classic "prefix sum" and "bitmask" technique, enabling quick range queries on substring character parities. It’s a common interview pattern for segment queries and is efficient for large numbers of queries. The bitmask representation for odd/even counts is especially powerful for problems focused on character frequency parity and can be reused for palindrome-related queries.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Plates Between Candles(plates-between-candles) (Medium)
+- Maximize the Number of Partitions After Operations(maximize-the-number-of-partitions-after-operations) (Hard)

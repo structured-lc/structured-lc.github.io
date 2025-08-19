@@ -95,3 +95,10 @@ def replaceElements(arr):
 This problem is a classic example of the "right/left max scan" pattern, useful anytime you need each position to know info about elements in one direction (like running min/max or prefix/suffix products).  
 The optimized O(n) one-pass solution uses a backwards traversal and running max tracker, a common and efficient idiom for this class of questions.  
 Knowing how to convert O(n²) two-loop scans into a clever single-scan solution is a key array skill for tech interviews.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Two Furthest Houses With Different Colors(two-furthest-houses-with-different-colors) (Easy)
+- Next Greater Element IV(next-greater-element-iv) (Hard)

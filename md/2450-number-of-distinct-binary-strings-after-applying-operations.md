@@ -86,3 +86,9 @@ def countDistinctStrings(s: str, k: int) -> int:
 
 ### Summary
 This problem is a neat application of **bitmasking and combinatorics**. Every possible combination of flips corresponds to a subset of the allowed substrings, so the total number of distinct outcomes is 2^(n-k+1). This is a classic group action / bit-flip reachability pattern, which appears in questions about toggling states, lights, or switches in combinatorial game problems.
+
+### Tags
+Math(#math), String(#string)
+
+### Similar Problems
+- Minimum Number of K Consecutive Bit Flips(minimum-number-of-k-consecutive-bit-flips) (Hard)

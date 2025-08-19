@@ -117,3 +117,9 @@ def maximumSumQueries(nums1, nums2, queries):
 ### Summary
 This problem uses the **Offline Query + Monotonic Data Structure pattern**, where sorting and pre-processing allow answering dominance queries (max under constraints) efficiently.  
 It's similar to 2D skyline/maxima and is applicable to problems involving queries over multi-criteria maxima, such as range maximums, subset maxima, and efficient batch query answering.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Stack(#stack), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Sorting(#sorting), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Most Beautiful Item for Each Query(most-beautiful-item-for-each-query) (Medium)

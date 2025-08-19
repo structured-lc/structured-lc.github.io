@@ -70,3 +70,8 @@ def getSumAbsoluteDifferences(nums):
 
 ### Summary
 This is an example of the **prefix sum pattern** to efficiently compute subarray sums. The approach leverages the sorted order to express sums of absolute differences with O(1) computation for each index. The same pattern applies to range sum and difference calculations in sorted arrays.
+
+### Tags
+Array(#array), Math(#math), Prefix Sum(#prefix-sum)
+
+### Similar Problems

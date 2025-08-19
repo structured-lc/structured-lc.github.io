@@ -138,3 +138,9 @@ def countSubgraphsForEachDiameter(n, edges):
 
 ### Summary
 This problem uses **bitmask subset enumeration** combined with BFS for connectivity and diameter in induced subgraphs—a "brute-force on small input" strategy. This coding pattern appears in problems involving exhaustive search over sets with size constraints (like small n). It can be applied elsewhere where graphs/subgraphs must be constructed and properties analyzed, such as counting connected induced subgraphs, or when using DP over bitmask states is possible.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Tree(#tree), Enumeration(#enumeration), Bitmask(#bitmask)
+
+### Similar Problems
+- Tree Diameter(tree-diameter) (Medium)

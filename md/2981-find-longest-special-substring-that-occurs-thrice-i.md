@@ -97,3 +97,10 @@ def maximumLength(s: str) -> int:
 A classic sliding window with character frequency check, iterating by decreasing substring size to ensure the largest valid substring is found first.  
 This pattern—enumerate substring lengths, use sliding window, validate with simple checks—is common for substring counting problems with small input.  
 For larger inputs, adapt via prefix sums, hashing, or precomputing runs ("run-length encoding") for efficiency.
+
+### Tags
+Hash Table(#hash-table), String(#string), Binary Search(#binary-search), Sliding Window(#sliding-window), Counting(#counting)
+
+### Similar Problems
+- Longest Substring Without Repeating Characters(longest-substring-without-repeating-characters) (Medium)
+- Longest Substring with At Least K Repeating Characters(longest-substring-with-at-least-k-repeating-characters) (Medium)

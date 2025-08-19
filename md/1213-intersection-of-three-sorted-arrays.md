@@ -89,3 +89,10 @@ def arraysIntersection(arr1, arr2, arr3):
 We leveraged the property that all input arrays are sorted and applied a **multi-pointer (three-pointer)** technique to find common elements efficiently.  
 This is a classic Two (or k) Pointer pattern—in general, used to merge or synchronize traversal across multiple sorted lists/arrays for intersection or union.  
 This approach can be generalized to intersect k sorted arrays, with either pointers or a min-heap to keep in sync.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Counting(#counting)
+
+### Similar Problems
+- Intersection of Two Arrays(intersection-of-two-arrays) (Easy)
+- Intersection of Multiple Arrays(intersection-of-multiple-arrays) (Easy)

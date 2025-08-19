@@ -82,3 +82,10 @@ def get_common(nums1, nums2):
 
 ### Summary
 This solution uses the classic two-pointer pattern for sorted arrays, minimizing comparisons by leveraging order. It’s a standard approach for “find intersection” or “merge” style problems, commonly seen in tasks such as merging sorted lists or finding intersecting elements between datasets. This pattern is broadly applicable whenever operations depend on sorted order.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Binary Search(#binary-search)
+
+### Similar Problems
+- Intersection of Two Arrays(intersection-of-two-arrays) (Easy)
+- Intersection of Two Arrays II(intersection-of-two-arrays-ii) (Easy)

@@ -103,3 +103,9 @@ def findRotation(mat, target):
 
 ### Summary
 This problem uses the simulation/coding pattern of *matrix rotation*, repeated up to 4 times with row/column remapping. The brute-force method is efficient enough given n small. The approach also applies to problems in image processing, puzzle games, and manipulating square grids.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems
+- Rotate Image(rotate-image) (Medium)

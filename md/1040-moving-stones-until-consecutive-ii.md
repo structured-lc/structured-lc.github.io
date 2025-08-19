@@ -97,3 +97,9 @@ def numMovesStonesII(stones):
 
 ### Summary
 This problem uses the **sliding window** pattern on a sorted array to minimize moves, and a simple direct calculation for the maximal case. The approach is similar to "longest consecutive subsequence" problems and highlights careful handling of endpoint restrictions and special edge cases. This pattern is useful in **interval**, **window**, and **consecutive sequence** problems.
+
+### Tags
+Array(#array), Math(#math), Sliding Window(#sliding-window), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Number of Operations to Make Array Continuous(minimum-number-of-operations-to-make-array-continuous) (Hard)

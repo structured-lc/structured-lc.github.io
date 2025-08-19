@@ -76,3 +76,8 @@ def makeSmallestPalindrome(s: str) -> str:
 
 ### Summary
 The approach here is a classic **two pointer** strategy customized for palindrome processing: iterate inwards, ensuring character equality at mirrored positions, always choosing the lexicographically smaller character to minimize both edit count and lex order. This pattern shows up often in string and palindrome questions, and is efficient for problems with symmetric requirements.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Greedy(#greedy)
+
+### Similar Problems

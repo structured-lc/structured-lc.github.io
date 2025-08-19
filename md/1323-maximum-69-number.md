@@ -76,3 +76,8 @@ def maximum69Number(num):
 This is a classic **greedy** string manipulation problem — maximize a number by changing only one digit, hence target the most significant possible spot.  
 - Common coding patterns: digit manipulation, greedy, string handling, “first-occurrence” strategies.
 - This approach generalizes to other digit-flipping max-value problems (e.g., “minimum number with k changes”).
+
+### Tags
+Math(#math), Greedy(#greedy)
+
+### Similar Problems

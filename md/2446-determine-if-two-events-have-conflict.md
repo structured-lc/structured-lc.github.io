@@ -82,3 +82,11 @@ def haveConflict(event1, event2):
 
 ### Summary
 This problem is a **classic interval overlap detection**, leveraging the fact that "HH:MM" format can be compared directly as strings. The solution is a one-liner after understanding the overlap rule—widely applicable to schedule conflicts, event calendars, or any scenario needing two interval checks. The “check if intervals overlap” pattern is commonly seen in calendar problems, reservation systems, and scheduling algorithms.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems
+- Merge Intervals(merge-intervals) (Medium)
+- Non-overlapping Intervals(non-overlapping-intervals) (Medium)
+- My Calendar I(my-calendar-i) (Medium)

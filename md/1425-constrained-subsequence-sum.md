@@ -91,3 +91,9 @@ def constrainedSubsetSum(nums, k):
 ### Summary
 This problem is a classic application of **dynamic programming with a sliding window maximum**, efficiently implemented with a deque (monotonic queue). The core pattern is applicable to constrained subproblems where each state depends on a window of previous states, and maximizing/minimizing such segment intervals.  
 Other problems that use this technique include **Sliding Window Maximum**, **Max Subarray Sum with Constraints**, or even more general grid DP with constrained steps.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Queue(#queue), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue), Monotonic Queue(#monotonic-queue)
+
+### Similar Problems
+- Maximum Element-Sum of a Complete Subset of Indices(maximum-element-sum-of-a-complete-subset-of-indices) (Hard)

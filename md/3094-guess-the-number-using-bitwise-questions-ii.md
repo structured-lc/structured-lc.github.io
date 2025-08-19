@@ -89,3 +89,8 @@ class Solution(Problem):
 
 ### Summary
 This problem uses a **bit manipulation and observation pattern**: test and revert each bit position to reconstruct a number with information from a mutation-causing API. The key is recovering state by inverting each mutation, enabling per-bit deduction. This "bitwise scan and revert" idea can be applied to similar problems where an action mutates state, and the solution needs to extract state information while ensuring mutations can be reverted or compensated along the way.
+
+### Tags
+Bit Manipulation(#bit-manipulation), Interactive(#interactive)
+
+### Similar Problems

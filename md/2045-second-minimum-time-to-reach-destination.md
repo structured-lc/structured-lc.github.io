@@ -121,3 +121,11 @@ def secondMinimum(n, edges, time, change):
 
 ### Summary
 We used a **BFS-style search with explicit timing** and careful state (node, arrival time) tracking to find the second minimum time given dynamic traffic signal constraints. The key pattern is **multi-state BFS** with signal-aware time calculation, a technique broadly applicable any time pathfinding requires modeling dynamic costs or “timer” state beyond just static edge weights.
+
+### Tags
+Breadth-First Search(#breadth-first-search), Graph(#graph), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Network Delay Time(network-delay-time) (Medium)
+- Find the City With the Smallest Number of Neighbors at a Threshold Distance(find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) (Medium)
+- Number of Ways to Arrive at Destination(number-of-ways-to-arrive-at-destination) (Medium)

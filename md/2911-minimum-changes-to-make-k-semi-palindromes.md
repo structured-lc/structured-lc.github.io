@@ -129,3 +129,9 @@ def min_changes_to_make_k_semi_palindromes(s: str, k: int) -> int:
 This problem is best solved with a **dynamic programming** pattern, using careful preprocessing to minimize the cost of making any substring a semi-palindrome.  
 The key insight is to combine substring DP (similar to "palindrome partitioning") with local palindrome group checks for all possible divisors.  
 This pattern -- DP + substring property preprocessing -- frequently appears in hard string partitioning and transformation problems.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Palindrome Partitioning III(palindrome-partitioning-iii) (Hard)

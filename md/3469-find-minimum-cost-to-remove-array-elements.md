@@ -130,3 +130,9 @@ def minCost(nums):
 
 ### Summary
 This problem is a classic **DP with memoization** challenge, exploiting overlapping subproblems and optimal substructure. The approach relies on recursive choices for the first three array elements and memoizes states to avoid repeated work. This DP pattern appears in problems where ordering and grouping matter, including interval DP, games, and state-space search.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Minimum Difference in Sums After Removal of Elements(minimum-difference-in-sums-after-removal-of-elements) (Hard)

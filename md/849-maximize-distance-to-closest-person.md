@@ -80,3 +80,10 @@ def maxDistToClosest(seats):
 
 ### Summary
 This problem uses the **greedy/two pointer** sliding scan pattern on arrays, optimized by considering stretches of empty seats and tracking the distance to the nearest occupied seats. This approach is broadly useful for problems involving maximizing or minimizing intervals/distances (e.g., placing routers, partitioning a line).
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Exam Room(exam-room) (Medium)
+- Task Scheduler II(task-scheduler-ii) (Medium)

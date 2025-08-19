@@ -111,3 +111,10 @@ def maximumGap(nums):
 
 ### Summary
 This problem uses a **pigeonhole/bucket sort** pattern to efficiently achieve O(n) time for "maximum gap between sorted elements." This avoids full sorting but leverages min/max computation for both the global range and per-bucket data, ensuring only critical comparisons are made. The same pattern is seen in problems involving global ordering with tight constraints, such as counting sort, distribution sort, and radix sort-based maximum gap finding.
+
+### Tags
+Array(#array), Sorting(#sorting), Bucket Sort(#bucket-sort), Radix Sort(#radix-sort)
+
+### Similar Problems
+- Widest Vertical Area Between Two Points Containing No Points(widest-vertical-area-between-two-points-containing-no-points) (Easy)
+- Maximum Consecutive Floors Without Special Floors(maximum-consecutive-floors-without-special-floors) (Medium)

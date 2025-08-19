@@ -78,3 +78,9 @@ def sleep(millis):
 
 ### Summary
 This problem tests understanding of asynchronous programming and timers. The main pattern is using a timer to delay Promise resolution, a technique widely used in scheduling, debouncing, and retry logic in modern async code (especially in JavaScript with async/await). This construction also parallels patterns in multithreaded Python (using threading) and event-driven programming in many languages.
+
+### Tags
+
+### Similar Problems
+- Promise Time Limit(promise-time-limit) (Medium)
+- Promise Pool(promise-pool) (Medium)

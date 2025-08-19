@@ -69,3 +69,12 @@ class NumArray:
 
 ### Summary
 This problem is a classic application of the **prefix sum** pattern, enabling efficient O(1) range sum queries after linear-time preprocessing. The approach is common and can be extended to mutable arrays with Segment Trees or Fenwick Trees, and adapted to multidimensional range sum problems. It’s an effective way of trading a bit of extra memory for drastic speedup in query performance for immutable data.
+
+### Tags
+Array(#array), Design(#design), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Range Sum Query 2D - Immutable(range-sum-query-2d-immutable) (Medium)
+- Range Sum Query - Mutable(range-sum-query-mutable) (Medium)
+- Maximum Size Subarray Sum Equals k(maximum-size-subarray-sum-equals-k) (Medium)
+- Sum of Variable Length Subarrays(sum-of-variable-length-subarrays) (Easy)

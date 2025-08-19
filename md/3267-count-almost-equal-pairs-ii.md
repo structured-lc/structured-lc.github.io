@@ -122,3 +122,9 @@ def countAlmostEqualPairs(nums):
 
 ### Summary
 This problem uses the pattern of *enumerate all nearby states in a small local space* and counting using hashing, commonly seen in permutation-variant or transform-a-bit-problem interview types when the transform space is small. The solution uses efficient enumeration and mapping—similar to fingerprints, anagrams, or almost-equal string problems. This approach and pattern also apply to certain "at most k edits" or "reachable by swaps" problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Counting(#counting), Enumeration(#enumeration)
+
+### Similar Problems
+- Find the Occurrence of First Almost Equal Substring(find-the-occurrence-of-first-almost-equal-substring) (Hard)

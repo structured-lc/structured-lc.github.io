@@ -99,3 +99,9 @@ def doesValidArrayExist(derived):
 ### Summary
 This problem uses a clever **bitwise property**: by observing how XOR propagates and “wraps” around, we reduce the check to a simple parity condition. This is a classic example of **circular dependency** and **bit manipulation**.  
 The pattern of chaining XOR through a cycle is common in cyclic or ring-structure problems, and shows up in graph parity or Gray code-type questions.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Bitwise OR of Adjacent Elements(bitwise-or-of-adjacent-elements) (Easy)

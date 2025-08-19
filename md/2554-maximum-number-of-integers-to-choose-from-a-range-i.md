@@ -99,3 +99,13 @@ def maxCount(banned, n, maxSum):
 This is a classic **greedy selection problem**, maximizing count under a sum constraint by picking smallest available elements.  
 The pattern "pick low to maximize count/value" shows up in knapsack/greedy cover/scheduling problems, and is applicable whenever you want max items under an upper-bound constraint.  
 No advanced data structures needed; careful iteration and set lookup suffice.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- First Missing Positive(first-missing-positive) (Hard)
+- Find All Numbers Disappeared in an Array(find-all-numbers-disappeared-in-an-array) (Easy)
+- Append K Integers With Minimal Sum(append-k-integers-with-minimal-sum) (Medium)
+- Replace Elements in an Array(replace-elements-in-an-array) (Medium)
+- Maximum Number of Integers to Choose From a Range II(maximum-number-of-integers-to-choose-from-a-range-ii) (Medium)

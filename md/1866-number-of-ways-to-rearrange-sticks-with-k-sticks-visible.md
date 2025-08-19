@@ -98,3 +98,8 @@ This problem is a classic **dynamic programming** question on permutations with 
 The DP follows a **combinatorial recurrence** and is similar to variants of the “stirling numbers of the first kind.”  
 This DP pattern applies to other problems involving “doing something special with the max element” or “arrangements with visibility/ordering constraints.”  
 It’s a key example of bottom-up DP with state compression.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
+
+### Similar Problems

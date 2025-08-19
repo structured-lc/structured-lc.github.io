@@ -104,3 +104,8 @@ def isDecomposable(s: str) -> bool:
 
 ### Summary
 The solution uses the "group by value" or "run-length encoding" technique: process consecutive runs, analyze their lengths, and track how the string can be split according to given constraints. This grouping and counting pattern is common in string parsing, and can apply to many substring decomposition problems or run-based checks (e.g., compression, word problems, custom pattern matching).
+
+### Tags
+String(#string)
+
+### Similar Problems

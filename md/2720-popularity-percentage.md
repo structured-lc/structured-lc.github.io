@@ -153,3 +153,8 @@ def popularity_percentage(friends):
 
 ### Summary
 This problem is a variant of the "graph degree" pattern, where for each node, we track unique neighbor counts and then aggregate using a formula. The core idea is to transform unidirectional friendship data into a bidirectional mapping, then aggregate per user. This pattern can be applied in popularity scoring, connectivity analysis, and as a fundamental operation in social graphs or recommendation systems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

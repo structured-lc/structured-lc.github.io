@@ -104,3 +104,8 @@ def maximumEnergy(energy: list[int], k: int) -> int:
 - Common DP pattern for jump-path array/grid problems (e.g., House Robber, Sequence DP).
 - Optimizes from brute-force to O(n) by smart backward filling of dp.
 - Applies to similar "fixed jump" or "disjoint subsequence sum" problems.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems

@@ -105,3 +105,9 @@ def maxDistinctNumAfterOperations(nums, k):
 
 ### Summary
 This problem demonstrates a classic greedy + frequency counting approach: analyze duplicate bottlenecks, and greedily spread values into available "slots" using allowed operations. This technique—convert "make unique" under constraints to frequency + allocation problem—shows up in problems about minimizing/removing duplicates, choosing disjoint intervals, and making arrays "good" by limited changes.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Least Number of Unique Integers after K Removals(least-number-of-unique-integers-after-k-removals) (Medium)

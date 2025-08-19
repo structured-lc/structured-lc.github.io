@@ -91,3 +91,8 @@ def countKeyChanges(s: str) -> int:
 ### Summary
 The approach uses a sliding comparison with normalization (lowercasing) to count changes efficiently—classic pattern for counting changes or transitions in a sequence.  
 This method is broadly useful wherever you need to count distinct runs, or transitions, in sequences, such as run-length encoding, word segmentation, or tracking changes in state sequences.
+
+### Tags
+String(#string)
+
+### Similar Problems

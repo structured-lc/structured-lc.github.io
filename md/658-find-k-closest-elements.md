@@ -83,3 +83,12 @@ def findClosestElements(arr, k, x):
 ### Summary
 This problem is a classic use of the "**Binary Search for Window on Sorted Array**" pattern. It's especially effective when you want to select a subarray/window that optimizes a property in terms of distance to a target and the array is already sorted.  
 Similar ideas can be found in minimizing/maximizing subarray, sliding window median, and range queries on sorted lists.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sliding Window(#sliding-window), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Guess Number Higher or Lower(guess-number-higher-or-lower) (Easy)
+- Guess Number Higher or Lower II(guess-number-higher-or-lower-ii) (Medium)
+- Find K-th Smallest Pair Distance(find-k-th-smallest-pair-distance) (Hard)
+- Find Closest Number to Zero(find-closest-number-to-zero) (Easy)

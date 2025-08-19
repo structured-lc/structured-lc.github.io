@@ -88,3 +88,15 @@ def isHappy(n: int) -> bool:
 This is a classic example of *cycle detection in sequences*, specifically digit transformations.  
 The coding pattern is **hashing/visited set for cycle detection**, commonly extended to problems involving repeated number transformations or linked list cycle detection.  
 The same logic applies to other digit sum transformation or digital root-related problems.
+
+### Tags
+Hash Table(#hash-table), Math(#math), Two Pointers(#two-pointers)
+
+### Similar Problems
+- Linked List Cycle(linked-list-cycle) (Easy)
+- Add Digits(add-digits) (Easy)
+- Ugly Number(ugly-number) (Easy)
+- Sum of Digits of String After Convert(sum-of-digits-of-string-after-convert) (Easy)
+- Minimum Addition to Make Integer Beautiful(minimum-addition-to-make-integer-beautiful) (Medium)
+- Smallest Value After Replacing With Sum of Prime Factors(smallest-value-after-replacing-with-sum-of-prime-factors) (Medium)
+- Count the Digits That Divide a Number(count-the-digits-that-divide-a-number) (Easy)

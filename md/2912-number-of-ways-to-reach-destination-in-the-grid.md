@@ -103,3 +103,8 @@ def numberOfWays(n, m, k, source, dest):
 This solution uses the “DP on grids with precomputed row/col sums” pattern, optimizing multi-move transitions with fast prefix sums.  
 This is common in path-counting grid problems, chessboard moves, and state DP with multi-way transitions.  
 Key idea: optimize per-step transitions by precomputing aggregate info, and save time with 2D DP states.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
+
+### Similar Problems

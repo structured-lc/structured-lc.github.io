@@ -103,3 +103,10 @@ def cheapestJump(coins, maxJump):
 
 ### Summary
 This problem is a variation of Zero-One DP/graph shortest-path in a DAG, with a lexicographical path constraint. It is solved by dynamic programming, moving backward, storing the minimum cost to reach the end from each cell and the next index of optimal path. The pattern appears in shortest-path, coin change, and jumping game type problems where you seek minimal moves/costs under movement constraints.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- House Robber(house-robber) (Medium)
+- House Robber II(house-robber-ii) (Medium)

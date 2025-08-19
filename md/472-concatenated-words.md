@@ -115,3 +115,9 @@ def findAllConcatenatedWordsInADict(words):
 
 ### Summary
 This problem combines the word break pattern with set operations and memoization. The key insight is recognizing that it's essentially a word break problem applied to each word in the array. Using DFS with memoization provides an efficient solution that avoids redundant computations. This pattern appears in many string decomposition problems and demonstrates the power of combining recursive thinking with dynamic programming optimizations.
+
+### Tags
+Array(#array), String(#string), Dynamic Programming(#dynamic-programming), Depth-First Search(#depth-first-search), Trie(#trie), Sorting(#sorting)
+
+### Similar Problems
+- Word Break II(word-break-ii) (Hard)

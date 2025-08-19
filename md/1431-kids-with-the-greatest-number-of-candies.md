@@ -80,3 +80,8 @@ def kidsWithCandies(candies, extraCandies):
 
 ### Summary
 This is a textbook example of the **prefix/max-scan** coding pattern—find an aggregate value (here, max) and compare each element to it under some transformation. This approach is widely useful in problems that ask if an element can become maximal/minimal after some change, or for problems involving ranking and comparisons in arrays. The logic is direct and efficient with a single pass for aggregation and one for evaluation.
+
+### Tags
+Array(#array)
+
+### Similar Problems

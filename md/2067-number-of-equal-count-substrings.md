@@ -114,3 +114,11 @@ def equalCountSubstrings(s: str, count: int) -> int:
 This problem uses the **sliding window with fixed window size** pattern, iterating over all valid window sizes (multiples of `count` with 1 to 26 unique letters).  
 It's a common approach when searching for substrings with frequency/count-based constraints, applicable in problems like "Longest Substring with At Most K Distinct Characters," "Minimum Window Substring," and other variants on substring and frequency-based matching.  
 Efficient handling of the sliding window and frequency updates are the key to optimal performance.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window), Counting(#counting)
+
+### Similar Problems
+- Longest Substring Without Repeating Characters(longest-substring-without-repeating-characters) (Medium)
+- Longest Substring with At Least K Repeating Characters(longest-substring-with-at-least-k-repeating-characters) (Medium)
+- Unique Substrings With Equal Digit Frequency(unique-substrings-with-equal-digit-frequency) (Medium)

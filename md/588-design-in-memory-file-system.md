@@ -155,3 +155,11 @@ class FileSystem:
 
 ### Summary
 The solution uses a **tree/trie pattern** (each node is either a directory or a file), which naturally fits hierarchical problems involving paths (e.g., file systems, URL routers, prefix-based queries). The coding pattern is broadly applicable anywhere paths need to be efficiently traversed and modified. In-memory file system problems like this are a great exercise in using recursive or iterative tree structures for real-world hierarchical data.
+
+### Tags
+Hash Table(#hash-table), String(#string), Design(#design), Trie(#trie), Sorting(#sorting)
+
+### Similar Problems
+- LRU Cache(lru-cache) (Medium)
+- LFU Cache(lfu-cache) (Hard)
+- Design Log Storage System(design-log-storage-system) (Medium)

@@ -74,3 +74,10 @@ def findLengthOfShortestSubarray(arr):
 
 ### Summary
 This is a classic application of the **two-pointer** and **prefix/suffix** non-decreasing subarray concepts. The techniques are widely useful in interval problems, sorted merging, and minimum operation substructures.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Count the Number of Incremovable Subarrays II(count-the-number-of-incremovable-subarrays-ii) (Hard)
+- Count the Number of Incremovable Subarrays I(count-the-number-of-incremovable-subarrays-i) (Easy)

@@ -99,3 +99,11 @@ def duplicateNumbersXOR(nums):
 
 ### Summary
 This is a classic hash map counting pattern: count frequency, apply a rule, and reduce with a simple operation (here, XOR). The coding pattern is extremely useful for *group by and reduce* problems and applies to many LeetCode problems about frequency or duplicates (e.g., finding pairs, counting unique or repeated elements). For value ranges bounded and small, array-based counting is a practical substitute for even faster code.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Single Number(single-number) (Easy)
+- Single Number II(single-number-ii) (Medium)
+- Single Number III(single-number-iii) (Medium)

@@ -97,3 +97,8 @@ def count_unique_even_numbers(digits):
 ### Summary
 We generate all valid, distinct three-digit even numbers using the input digits, without leading zeros and without reusing the same copy of a digit, by checking all possible ordered triples and using a set for uniqueness.  
 This is a typical brute-force with filtering, fits the permutations/combinatorics coding pattern, and applies wherever you need to systematically form numbers obeying constraint rules from a set of digits.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Recursion(#recursion), Enumeration(#enumeration)
+
+### Similar Problems

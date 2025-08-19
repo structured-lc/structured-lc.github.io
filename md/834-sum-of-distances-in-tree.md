@@ -129,3 +129,14 @@ def sumOfDistancesInTree(N, edges):
 
 ### Summary
 This approach exploits **tree dynamic programming with rerooting**—a common technique for tree-based problems where information about parent/child relationships lets you propagate results efficiently. The pattern is widely applicable for problems involving per-node aggregates that depend on subtree and "rest-of-tree" properties. Examples include problems about subtree sums, distances, or influence propagation in hierarchical data.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Graph(#graph)
+
+### Similar Problems
+- Distribute Coins in Binary Tree(distribute-coins-in-binary-tree) (Medium)
+- Count Nodes With the Highest Score(count-nodes-with-the-highest-score) (Medium)
+- Collect Coins in a Tree(collect-coins-in-a-tree) (Hard)
+- Maximum Score After Applying Operations on a Tree(maximum-score-after-applying-operations-on-a-tree) (Medium)
+- Count Pairs of Connectable Servers in a Weighted Tree Network(count-pairs-of-connectable-servers-in-a-weighted-tree-network) (Medium)
+- Time Taken to Mark All Nodes(time-taken-to-mark-all-nodes) (Hard)

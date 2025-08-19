@@ -122,3 +122,8 @@ def racecar(target):
 
 ### Summary
 This problem uses a **BFS shortest-path pattern** in a custom implicit state-space graph (pos, speed). This classical BFS idea is broadly applicable where you search for the minimum operations to reach a state with constrained moves (e.g., minimum steps or coin change, or word ladder). It is an example of **state encoding** and **implicit graph traversal** with pruning and is commonly seen in logic or digit DP, bidirectional BFS, and shortest-path problems without explicit edge lists.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

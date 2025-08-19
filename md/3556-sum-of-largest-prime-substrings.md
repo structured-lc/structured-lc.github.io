@@ -122,3 +122,8 @@ This problem is a classic example of substring generation combined with a set-ba
 Typical patterns: Generate all substrings, filter with a predicate (here: is_prime), deduplicate via set.  
 The pattern is commonly applicable to digit-string transformation and "find maximal substructure with property" problems.  
 Key challenge lies in the efficient correctness of the prime check, which is crucial for numbers possibly up to 10 digits.
+
+### Tags
+Hash Table(#hash-table), Math(#math), String(#string), Sorting(#sorting), Number Theory(#number-theory)
+
+### Similar Problems

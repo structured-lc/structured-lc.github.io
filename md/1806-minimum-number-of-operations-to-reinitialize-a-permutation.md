@@ -118,3 +118,8 @@ def reinitializePermutation(n: int) -> int:
 
 ### Summary
 This problem uses the pattern of finding the **cycle length of a permutation transformation**, which is a common topic when reasoning about repeated process on permutations. By focusing on the movement of a single non-fixed element, we reduce the process to O(n) time and O(1) space. This pattern frequently appears in cyclic simulation, shuffling, and group theory related coding problems.
+
+### Tags
+Array(#array), Math(#math), Simulation(#simulation)
+
+### Similar Problems

@@ -144,3 +144,8 @@ This is a **simulation problem**: use an array as memory and scan for allocate/f
 Patterns: array manipulation, sliding window, two pointers for block search.  
 Similar patterns arise in **interval management, process scheduling, and contiguous resource allocation**.  
 This technique is fundamental and prevalent in system design, memory management, and OS simulation interview problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Design(#design), Simulation(#simulation)
+
+### Similar Problems

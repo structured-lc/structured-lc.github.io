@@ -102,3 +102,8 @@ def minimumIncompatibility(nums: list[int], k: int) -> int:
 
 ### Summary
 Involves combinatorial search, bitmask and DP memoization. Similar patterns are common in subset sum, minimum cost partitioning, and grouping problems where subsets must satisfy uniqueness constraints.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems

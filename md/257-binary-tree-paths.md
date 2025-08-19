@@ -140,3 +140,11 @@ def binaryTreePaths(root):
 
 ### Summary
 This uses a classic **Depth-First Search (DFS)** traversing from root to leaves, accumulating the path with each step; at each leaf, we concatenate the path and record it. This **DFS/root-to-leaf-paths** pattern is common in tree problems and is broadly applicable: e.g. summing path values, printing all root-to-leaf paths for N-ary trees, or checking for a specific path sum.
+
+### Tags
+String(#string), Backtracking(#backtracking), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Path Sum II(path-sum-ii) (Medium)
+- Smallest String Starting From Leaf(smallest-string-starting-from-leaf) (Medium)
+- Step-By-Step Directions From a Binary Tree Node to Another(step-by-step-directions-from-a-binary-tree-node-to-another) (Medium)

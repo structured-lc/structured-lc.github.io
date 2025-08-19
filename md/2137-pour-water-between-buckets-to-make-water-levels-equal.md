@@ -100,3 +100,11 @@ def equalizeWater(buckets, loss):
 
 ### Summary
 This problem demonstrates an advanced use of **binary search on real numbers**, a key pattern for precision-based decisions on a monotonic property. The reasoning is similar to other “maximize minimum X” or “minimize maximum difference” bucket problems, including load balancing and resource splitting — making this technique widely applicable in interviews and algorithmic optimization tasks.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Search in Rotated Sorted Array(search-in-rotated-sorted-array) (Medium)
+- Find Peak Element(find-peak-element) (Medium)
+- Minimum Moves to Equal Array Elements(minimum-moves-to-equal-array-elements) (Medium)

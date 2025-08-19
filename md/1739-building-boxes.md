@@ -110,3 +110,9 @@ def minimum_boxes(n: int) -> int:
 
 ### Summary
 This is a classic **mathematical layer-building and greedy allocation** problem, relying on tetrahedral numbers for stacked pyramid counts and triangle numbers for additional needed boxes. The structure uses direct formulae and avoids brute force by leveraging the properties of 3D triangular stacking. This pattern is useful in problems involving combinatorial geometry, optimal resource allocation in constrained spaces, and minimizing a base under adjacency rules.
+
+### Tags
+Math(#math), Binary Search(#binary-search), Greedy(#greedy)
+
+### Similar Problems
+- Block Placement Queries(block-placement-queries) (Hard)

@@ -114,3 +114,8 @@ def minTransfers(transactions):
 ### Summary
 
 This problem is a classic example of using backtracking to explore subsets under constraints. The goal is to minimize the number of transactions to settle all debts using recursive pairing of people with opposite balances. The central insight is to eliminate intermediate steps by directly settling debts between individuals, minimizing transaction count through optimal pairing. This approach demonstrates a blend of DFS and greedy pruning to efficiently reduce exponential search space.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems

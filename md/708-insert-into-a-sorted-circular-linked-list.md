@@ -112,3 +112,9 @@ def insert(head, insertVal):
 
 ### Summary
 This solution revolves around **circular linked list traversal** with careful pointer management. The key pattern is recognizing the **transition point** between maximum and minimum values and handling edge cases (empty, all-equal, min/max position). This traversal and pointer patching approach is common in various data structure manipulation problems involving circular or tricky pointer links, and applying it here reliably maintains sorted order through single pass O(n) logic.
+
+### Tags
+Linked List(#linked-list)
+
+### Similar Problems
+- Insertion Sort List(insertion-sort-list) (Medium)

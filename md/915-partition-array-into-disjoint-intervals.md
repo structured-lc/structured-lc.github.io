@@ -90,3 +90,12 @@ def partitionDisjoint(nums):
 
 ### Summary
 This approach uses the **prefix/suffix maxima/minima** (array scan with dynamic updating) coding pattern, commonly found in subarray partitioning and range problems. Tightening boundaries dynamically is a good trick when one side must be as small (or large) as possible while maintaining a global property. Can be applied to any "partition with max/min" problem variants.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Sum of Beauty in the Array(sum-of-beauty-in-the-array) (Medium)
+- Optimal Partition of String(optimal-partition-of-string) (Medium)
+- Minimum Index of a Valid Split(minimum-index-of-a-valid-split) (Medium)
+- Maximum Strength of K Disjoint Subarrays(maximum-strength-of-k-disjoint-subarrays) (Hard)

@@ -104,3 +104,10 @@ def isPossible(nums):
 
 ### Summary
 This problem uses a **greedy** and **hash map tracking** pattern: greedily extend existing sequences or only start new valid ones if possible. This approach is common in substring/subsequence-building problems where global optimality comes from making the best local choice. The use of hash maps to track usage and open subsequences is a pattern that also appears in interval or sequence partitioning tasks.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Top K Frequent Elements(top-k-frequent-elements) (Medium)
+- Divide Array in Sets of K Consecutive Numbers(divide-array-in-sets-of-k-consecutive-numbers) (Medium)

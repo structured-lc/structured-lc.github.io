@@ -125,3 +125,9 @@ def crawl(startUrl: str, htmlParser: 'HtmlParser') -> List[str]:
 This problem is a **concurrent graph traversal** limited by hostnames, requiring careful handling of shared state for thread safety.  
 It’s a classic pattern useful in distributed crawling, parallel BFS/DFS, and any system that must safely discover and process connected resources in parallel.  
 Key parts: parallel work queue, visited set with concurrency, hostname filtering. This pattern also appears in parallel file/tree crawlers and scalable web/graph apps.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Concurrency(#concurrency)
+
+### Similar Problems
+- Web Crawler(web-crawler) (Medium)

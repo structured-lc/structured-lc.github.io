@@ -114,3 +114,8 @@ def prime_sub_operation(nums):
 ### Summary
 This problem is a classic example of **greedy choice with precomputed structures**—generating all possible prime subtractions efficiently up to the max element, then checking feasibility with binary search for the best subtraction at each step.  
 Patterns here—greedy, binary search, precomputation (Sieve of Eratosthenes), and number theory—apply in many sequence transformation/interpolation tasks, especially where you need dynamic adjustment and careful feasibility checks.
+
+### Tags
+Array(#array), Math(#math), Binary Search(#binary-search), Greedy(#greedy), Number Theory(#number-theory)
+
+### Similar Problems

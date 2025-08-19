@@ -64,3 +64,8 @@ def fixProductName(name: str) -> str:
 
 ### Summary
 This is a **string formatting** problem, common for data cleanup and UI display. Uses a split/capitalize/join pattern, applicable to many problems involving title-casing or normalization of user input.
+
+### Tags
+Database(#database)
+
+### Similar Problems

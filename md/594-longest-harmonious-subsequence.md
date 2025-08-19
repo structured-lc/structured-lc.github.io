@@ -83,3 +83,8 @@ def findLHS(nums):
 The approach uses a classic **hash map counting pattern**, grouping by value and combining counts of number pairs whose values differ by one.  
 This pattern is widely used for "frequency" or "pair difference" problems.  
 Knowing how to apply hash maps for such counting/aggregation helps in many LeetCode array/sequence questions.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems

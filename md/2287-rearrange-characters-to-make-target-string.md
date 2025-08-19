@@ -92,3 +92,10 @@ def rearrangeCharacters(s, target):
 
 ### Summary
 This is a classic **hash-map/counting** pattern where you count frequencies to figure out resource allocation. You find the limiting resource by computing the minimum number of complete sets you can assemble. This technique can also be seen in problems like "ransom note" creation, anagram checking, and inventory stock checks.
+
+### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Find Words That Can Be Formed by Characters(find-words-that-can-be-formed-by-characters) (Easy)
+- Maximum Number of Occurrences of a Substring(maximum-number-of-occurrences-of-a-substring) (Medium)

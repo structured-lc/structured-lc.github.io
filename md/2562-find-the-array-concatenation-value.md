@@ -76,3 +76,8 @@ def findTheArrayConcVal(nums):
 
 ### Summary
 A classic simulation and two-pointer pattern: process from both ends, concatenate as strings, and sum up results. Common for problems involving "process paired ends" or "mirror operations," like palindromes, merging intervals, or symmetric traversal. The trick is careful handling for the final unpaired element and efficient pointer logic.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Simulation(#simulation)
+
+### Similar Problems

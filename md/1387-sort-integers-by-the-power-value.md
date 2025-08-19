@@ -71,3 +71,9 @@ class Solution:
 
 ### Summary
 This is a classic sort-by-derived-key problem, which uses memoization/DP for speed. The overall coding pattern is mapping + sorting by tuple keys, and can be applied in leaderboard-type rankings and transformation-based sorting.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Memoization(#memoization), Sorting(#sorting)
+
+### Similar Problems
+- Find Score of an Array After Marking All Elements(find-score-of-an-array-after-marking-all-elements) (Medium)

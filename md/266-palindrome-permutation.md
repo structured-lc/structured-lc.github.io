@@ -88,3 +88,12 @@ def canPermutePalindrome(s):
 ### Summary
 This problem uses the **hash table / frequency counting pattern**: map each character to its count and check a condition derived from palindrome properties.  
 This frequency-counting then odd-count-test is common for permutation and anagram related problems, and variants appear in questions involving rearrangements, palindromic substrings, and character pairings.
+
+### Tags
+Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Longest Palindromic Substring(longest-palindromic-substring) (Medium)
+- Valid Anagram(valid-anagram) (Easy)
+- Palindrome Permutation II(palindrome-permutation-ii) (Medium)
+- Longest Palindrome(longest-palindrome) (Easy)

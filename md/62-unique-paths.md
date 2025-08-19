@@ -79,3 +79,15 @@ def uniquePaths(m, n):
 
 ### Summary
 This problem uses the **dynamic programming (DP) - grid traversal** pattern. It’s a classic interview favorite and can be found in variations such as "unique paths with obstacles" or "minimum path sum" problems. The solution relies on breaking down a big problem (total paths) into smaller subproblems (paths to each cell) and building up using the relationships between subproblems. This pattern commonly appears in grid-based DP problems, robot movement, word search in a matrix, etc.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
+
+### Similar Problems
+- Unique Paths II(unique-paths-ii) (Medium)
+- Minimum Path Sum(minimum-path-sum) (Medium)
+- Dungeon Game(dungeon-game) (Hard)
+- Minimum Path Cost in a Grid(minimum-path-cost-in-a-grid) (Medium)
+- Minimum Cost Homecoming of a Robot in a Grid(minimum-cost-homecoming-of-a-robot-in-a-grid) (Medium)
+- Number of Ways to Reach a Position After Exactly k Steps(number-of-ways-to-reach-a-position-after-exactly-k-steps) (Medium)
+- Paths in Matrix Whose Sum Is Divisible by K(paths-in-matrix-whose-sum-is-divisible-by-k) (Hard)

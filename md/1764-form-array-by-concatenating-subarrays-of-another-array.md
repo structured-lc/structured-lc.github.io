@@ -101,3 +101,8 @@ This problem is a classic example of the **two-pointer**/windowing pattern, simi
 It tests sequential, non-overlapping block matching in arrays.  
 The main coding pattern here—searching for subarrays in a larger array with order and non-overlap constraints—appears in problems like "string segmentation," "find sequence," and "windowed matching."  
 It's a good template for array scanning and pointer management interview problems.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), String Matching(#string-matching)
+
+### Similar Problems

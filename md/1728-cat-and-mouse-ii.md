@@ -162,3 +162,10 @@ class Solution:
 
 ### Summary
 This problem uses a **game theory DP with memoization and minimax-style recursion**, a common pattern in optimal two-player game simulations (chess, checkers, etc.), where both players pick the best move each turn. The coding technique generalizes to “win/loss/draw in two-player games with perfect information and deterministic moves.” Optimal DP key design and pruning make the solution tractable.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Graph(#graph), Topological Sort(#topological-sort), Memoization(#memoization), Matrix(#matrix), Game Theory(#game-theory)
+
+### Similar Problems
+- Escape The Ghosts(escape-the-ghosts) (Medium)
+- Cat and Mouse(cat-and-mouse) (Hard)

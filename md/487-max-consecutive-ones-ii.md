@@ -72,3 +72,11 @@ def findMaxConsecutiveOnes(nums):
 
 ### Summary
 The approach uses the classic **sliding window** pattern, where you expand the right pointer while maintaining the window validity (at most one zero inside). Once invalid, advance the left pointer. This ensures all subarrays considered have at most one zero, yielding the maximum possible length with a single flip. This is a standard approach for variable-length subarray or substring problems constrained by a count or budget, and can be generalized to similar “longest substring with at most k X” problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Max Consecutive Ones(max-consecutive-ones) (Easy)
+- Max Consecutive Ones III(max-consecutive-ones-iii) (Medium)
+- All Divisions With the Highest Score of a Binary Array(all-divisions-with-the-highest-score-of-a-binary-array) (Medium)

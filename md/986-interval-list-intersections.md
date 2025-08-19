@@ -101,3 +101,12 @@ def intervalIntersection(firstList, secondList):
 This problem is a perfect illustration of the **two-pointer** pattern on sorted lists or arrays.  
 By leveraging the sorted and disjoint properties of each interval list, we avoid unnecessary comparisons and maintain linear time complexity.  
 This two-pointer technique frequently appears in problems related to interval merging, timeline sweeps, and array traversals—widely used in scheduling, event processing, or when merging sorted datasets.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Line Sweep(#line-sweep)
+
+### Similar Problems
+- Merge Intervals(merge-intervals) (Medium)
+- Merge Sorted Array(merge-sorted-array) (Easy)
+- Employee Free Time(employee-free-time) (Hard)
+- Maximum Matching of Players With Trainers(maximum-matching-of-players-with-trainers) (Medium)

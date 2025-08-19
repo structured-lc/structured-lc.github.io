@@ -94,3 +94,10 @@ def matchReplacement(s: str, sub: str, mappings: list[list[str]]) -> bool:
 
 ### Summary
 This problem is a variant of pattern matching that combines sliding window with an "allowed substitutions" condition. The approach efficiently maps character-to-character replacement, then scans with a sliding window to check matchability for each possible substring—classic for advanced string manipulation and often appears in pattern matching, spellcheckers, and bioinformatics scenarios.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), String Matching(#string-matching)
+
+### Similar Problems
+- Design Add and Search Words Data Structure(design-add-and-search-words-data-structure) (Medium)
+- Number of Subarrays That Match a Pattern II(number-of-subarrays-that-match-a-pattern-ii) (Hard)

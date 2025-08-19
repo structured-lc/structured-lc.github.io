@@ -109,3 +109,10 @@ def minimumTotalDistance(robot, factory):
 This problem uses a typical **DP with grouping/knapsack pattern**, where transitions explore assigning possible contiguous groups of robots to each factory within capacity, minimizing cumulative distance.  
 Such patterns also appear in scheduling with resource limits, interval assignment, and capacitated facility location problems.  
 Sorting inputs first and considering group assignments makes the DP transitions efficient and manageable for hard constrained assignment problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
+
+### Similar Problems
+- Capacity To Ship Packages Within D Days(capacity-to-ship-packages-within-d-days) (Medium)
+- Number of Ways to Earn Points(number-of-ways-to-earn-points) (Hard)

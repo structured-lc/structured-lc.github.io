@@ -137,3 +137,8 @@ def minOperations(n: int, m: int) -> int:
 
 ### Summary
 This problem demonstrates a **graph traversal + Dijkstra’s shortest path** pattern, with additional constraints (primes forbidden as states). It is a classic case of "state space search with forbidden/inaccessible states." Variation of this logic can be used in sliding puzzles, sequence transforms, and problems with digit-wise operations and constraints. Modeling numbers as nodes, and each “legal” operation as an edge, is a versatile interview pattern.
+
+### Tags
+Math(#math), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Number Theory(#number-theory), Shortest Path(#shortest-path)
+
+### Similar Problems

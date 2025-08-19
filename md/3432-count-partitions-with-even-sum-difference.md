@@ -79,3 +79,8 @@ def countPartitions(nums):
 
 ### Summary
 This is a classic prefix sum and parity problem: the even/odd property of the total sum determines the answer in O(n) time, and relates to partition problems where the core insight is a global property (not dynamic programming). This parity-checking trick often appears in subarray, partition, and bitmask problems.
+
+### Tags
+Array(#array), Math(#math), Prefix Sum(#prefix-sum)
+
+### Similar Problems

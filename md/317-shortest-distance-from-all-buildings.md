@@ -119,3 +119,11 @@ def shortestDistance(grid):
 ### Summary
 This problem is a classic **multi-source BFS** pattern, but we must run BFS separately for each building and accumulate distances and reachability. The key is to reverse the naive approach (BFS from empty cells) and leverage a bottom-up BFS from each building.  
 This grid-based BFS is a frequently-used template in pathfinding, island/region counting, and similar problems where reachability and minimum distance sum must be computed over multiple sources.
+
+### Tags
+Array(#array), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- Walls and Gates(walls-and-gates) (Medium)
+- Best Meeting Point(best-meeting-point) (Hard)
+- As Far from Land as Possible(as-far-from-land-as-possible) (Medium)

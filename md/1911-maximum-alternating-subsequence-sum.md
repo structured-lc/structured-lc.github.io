@@ -89,3 +89,11 @@ def maxAlternatingSum(nums):
 This problem uses the classic DP "pick or skip" pattern for subsequences, with state compression to O(1) space. The idea generalizes to other maximum subsequence sum problems (e.g., maximum sum/subarray/subsequence).  
 Similar state tracking patterns appear in problems like "House Robber" and "Stock Buy and Sell" where decisions for next step depend on past choices and alternate patterns.  
 The linear time DP approach is efficient and optimal for large input sizes.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Maximum Alternating Subarray Sum(maximum-alternating-subarray-sum) (Medium)
+- Maximum Element-Sum of a Complete Subset of Indices(maximum-element-sum-of-a-complete-subset-of-indices) (Hard)
+- Maximum Product of Subsequences With an Alternating Sum Equal to K(maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k) (Hard)

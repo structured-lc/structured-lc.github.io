@@ -70,3 +70,8 @@ GROUP BY machine_id;
 
 ### Summary
 The core is SQL aggregation pattern: GROUP BY + AVG + ROUND. This is common for log aggregates, report generation, and dashboard summary queries.
+
+### Tags
+Database(#database)
+
+### Similar Problems

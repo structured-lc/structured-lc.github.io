@@ -90,3 +90,11 @@ def satisfiesConditions(grid):
 This problem follows a **brute-force adjacency check** pattern, common with 2D grid traversal where you verify conditions based on adjacent cells.  
 Working through each cell and comparing to specific neighbors (right, below) comes up often in matrix-based interviews—e.g., island counting, Game of Life, etc.  
 Edge handling (boundaries) and stopping early on first violation are important coding patterns here.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems
+- Candy(candy) (Hard)
+- Distribute Candies(distribute-candies) (Easy)
+- Minimum Cost of Buying Candies With Discount(minimum-cost-of-buying-candies-with-discount) (Easy)

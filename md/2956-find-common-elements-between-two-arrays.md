@@ -86,3 +86,8 @@ def findIntersectionValues(nums1, nums2):
 
 ### Summary
 This is a **hash set intersection** problem, using a common coding pattern for problems involving "presence in another collection." The set approach gives O(1) membership checks and O(n + m) runtime, which is optimal for unsorted arrays. Variations of this pattern apply to most array/set intersection, deduplication, and membership-check problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

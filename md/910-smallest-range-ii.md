@@ -86,3 +86,8 @@ def smallestRangeII(nums, k):
 
 ### Summary
 This solution uses the *greedy partition & sweep* pattern, commonly found in range minimization or maximizing gap after modification problems. Sorting then considering all possible split points is a powerful linear pass technique. This pattern also appears in minimizing maximum difference after changing array values, or in partitioning arrays for optimal buckets.
+
+### Tags
+Array(#array), Math(#math), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

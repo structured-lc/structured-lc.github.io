@@ -91,3 +91,14 @@ def productExceptSelf(nums):
 
 ### Summary
 This uses the **prefix and suffix product pattern**, a fundamental approach whenever you need to compute aggregate results for each element while excluding the element itself. This "all except self" aggregate is common, and prefix/suffix techniques generalize to sums, min/max, logical AND/OR, and more. This problem reinforces **in-place array computation** and **constant-space pass** techniques.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Trapping Rain Water(trapping-rain-water) (Hard)
+- Maximum Product Subarray(maximum-product-subarray) (Medium)
+- Paint House II(paint-house-ii) (Hard)
+- Minimum Difference in Sums After Removal of Elements(minimum-difference-in-sums-after-removal-of-elements) (Hard)
+- Construct Product Matrix(construct-product-matrix) (Medium)
+- Find Sum of Array Product of Magical Sequences(find-sum-of-array-product-of-magical-sequences) (Hard)

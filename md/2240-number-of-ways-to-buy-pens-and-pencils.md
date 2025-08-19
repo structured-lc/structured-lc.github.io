@@ -94,3 +94,10 @@ def waysToBuyPensPencils(total: int, cost1: int, cost2: int) -> int:
 
 ### Summary
 This problem uses the *combinatorial counting* pattern by fixing one variable (number of pens) and analytically counting the number of possibilities for the other (number of pencils). The key trick is to recognize the pattern in the constraints (linear budget equation) and avoid brute-force enumeration. This approach generalizes to many “number of solutions to linear equation under constraints” type problems.
+
+### Tags
+Math(#math), Enumeration(#enumeration)
+
+### Similar Problems
+- Find Three Consecutive Integers That Sum to a Given Number(find-three-consecutive-integers-that-sum-to-a-given-number) (Medium)
+- Count Integers With Even Digit Sum(count-integers-with-even-digit-sum) (Easy)

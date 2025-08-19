@@ -96,3 +96,10 @@ def minCost(basket1, basket2):
 
 ### Summary
 This problem is a classic case of frequency balancing combined with greedy optimization for swap cost, using counting and sorting. The solution applies counting (hashing/map), parity check for impossible cases, then sorts and greedily assigns swaps, considering both direct and double-swap (through global min) options for minimum total cost. This **frequency balancing** and **greedy min-cost swap** pattern is common in problems requiring equalization of multisets, such as pairing socks, rearranging cards, or anagrams reconciliation.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sort(#sort)
+
+### Similar Problems
+- The Latest Time to Catch a Bus(the-latest-time-to-catch-a-bus) (Medium)
+- Minimum Number of Operations to Make Arrays Similar(minimum-number-of-operations-to-make-arrays-similar) (Hard)

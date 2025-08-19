@@ -101,3 +101,12 @@ def getMoneyAmount(n):
 This problem is a **minimax DP** classic: you build up solutions for small ranges to solve the larger range, always minimizing the maximum possible cost (worst-case).  
 It uses a DP table to remember solutions for each subrange and simulates all possible initial guesses for each range to guarantee minimum loss.  
 This pattern—breaking a range, picking a "pivot," and minimizing the largest subproblem—is common in problems about worst-case performance and can be applied to other guess, search, or interval DP challenges.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Game Theory(#game-theory)
+
+### Similar Problems
+- Flip Game II(flip-game-ii) (Medium)
+- Guess Number Higher or Lower(guess-number-higher-or-lower) (Easy)
+- Can I Win(can-i-win) (Medium)
+- Find K Closest Elements(find-k-closest-elements) (Medium)

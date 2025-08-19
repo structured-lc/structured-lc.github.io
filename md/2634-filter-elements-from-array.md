@@ -70,3 +70,10 @@ def filter(arr, fn):
 
 ### Summary
 This problem exemplifies the **manual array filter pattern**—iterating and conditionally collecting items—which is fundamental in both imperative and functional programming. It’s a direct application of array traversal, and the exact logic generalizes to many contexts: stream processing, in-place partitioning, and lazy evaluation in generators. Problems involving selection or predicate-based filtering will build on this pattern.
+
+### Tags
+
+### Similar Problems
+- Group By(group-by) (Medium)
+- Apply Transform Over Each Element in Array(apply-transform-over-each-element-in-array) (Easy)
+- Array Reduce Transformation(array-reduce-transformation) (Easy)

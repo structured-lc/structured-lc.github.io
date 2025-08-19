@@ -79,3 +79,11 @@ This is a classic *single pass* problem — find the longest segment of two type
 It uses a common pattern: tracking running segment lengths while iterating.  
 Such segment-finding logic can be applied in problems like maximum consecutive ones, or any run-length encoding questions.  
 Efficient for both interview and production: O(n) time, O(1) space.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Max Consecutive Ones(max-consecutive-ones) (Easy)
+- Count Subarrays With More Ones Than Zeros(count-subarrays-with-more-ones-than-zeros) (Medium)
+- Check if Binary String Has at Most One Segment of Ones(check-if-binary-string-has-at-most-one-segment-of-ones) (Easy)

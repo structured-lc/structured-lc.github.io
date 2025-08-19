@@ -119,3 +119,9 @@ class DataStream:
 This problem uses the **“consecutive counter”** or **stateful tracking pattern**—an O(1) space, O(1) update approach for sliding-window questions where only matches (not the entire window) matter.  
 It’s highly efficient for stream processing and commonly appears when you need to spot runs of identical/fixed values, or detect breaches in sequence.  
 Related problems: longest consecutive sequence, sliding window all-equal or majority element detection, and event debouncing.
+
+### Tags
+Hash Table(#hash-table), Design(#design), Queue(#queue), Counting(#counting), Data Stream(#data-stream)
+
+### Similar Problems
+- Number of Zero-Filled Subarrays(number-of-zero-filled-subarrays) (Medium)

@@ -90,3 +90,8 @@ def closestDessertCost(baseCosts, toppingCosts, target):
 ### Summary
 This problem leverages the classic **backtracking subset-sum** pattern, as for each topping we try three choices (0, 1, 2 per topping).  
 This “generate all combinations and select the closest” approach is common for problems with small branching factors and bounded set sizes, and can also be used for classic subset sum or combinations problems when the total number of combinations is manageable.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking)
+
+### Similar Problems

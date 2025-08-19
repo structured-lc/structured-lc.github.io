@@ -126,3 +126,8 @@ This approach:
 - Uses set logic to avoid double counting and combinations to generate all candidate patterns,
 - Relies on classic frequency counting combined with lexicographical tiebreaking.  
 It’s a common pattern for **pattern analysis**, **sliding window combinations**, and **frequency analysis in logs**—relevant for web analytics and behavioral sequence mining.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting)
+
+### Similar Problems

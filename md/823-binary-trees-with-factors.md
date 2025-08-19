@@ -102,3 +102,8 @@ def numFactoredBinaryTrees(arr):
 
 ### Summary
 This problem uses a classic **dynamic programming with factors** pattern, combining factors for each node in a **bottom-up** manner based on **sorted input** and storing results to avoid recomputation. Similar approaches apply to counting compositions or trees with values determined by relationships among child nodes (ex: unique BST counts, coin change, subset product problems). It’s a good example of DP with memoization leveraging multiplicative structure and combinatorial tree-building.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
+
+### Similar Problems

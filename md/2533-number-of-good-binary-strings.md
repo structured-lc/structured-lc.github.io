@@ -80,3 +80,9 @@ def goodBinaryStrings(minLength, maxLength, oneGroup, zeroGroup):
 This problem uses the classic **dynamic programming on integer compositions** (tiling) pattern. The DP state builds all valid combinations from small to large lengths, using allowed group increments.  
 The same technique applies to partitioning problems, tiling, coin change, and block segmentation in many string or array composition scenarios.  
 No recursion or advanced libraries are needed—just a 1D DP array and simple iteration.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Special Binary String(special-binary-string) (Hard)

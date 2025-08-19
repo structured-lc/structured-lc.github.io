@@ -106,3 +106,12 @@ This problem demonstrates the **run-length counting** pattern for substring prob
 - For each run of identical chars, use k × (k + 1) ⁄ 2 substrings.
 - This pattern appears frequently in substring and sliding window counting, such as similar "count substrings with property X" problems.
 No extra data structures — just smart counting!
+
+### Tags
+Math(#math), String(#string)
+
+### Similar Problems
+- Consecutive Characters(consecutive-characters) (Easy)
+- Number of Substrings With Only 1s(number-of-substrings-with-only-1s) (Medium)
+- Sum of Subarray Ranges(sum-of-subarray-ranges) (Medium)
+- Count the Number of Good Subarrays(count-the-number-of-good-subarrays) (Medium)

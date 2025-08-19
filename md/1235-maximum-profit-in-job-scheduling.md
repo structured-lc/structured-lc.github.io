@@ -99,3 +99,10 @@ def jobScheduling(startTime, endTime, profit):
 
 ### Summary
 This problem is a variant of Weighted Interval Scheduling, solved efficiently with DP + binary search over sorted intervals. This dynamic programming pattern applies to a range of interval scheduling problems, including maximizing count, sum, or other aggregates for non-overlapping intervals. The key insight is sorting and fast lookup of compatible intervals; this approach generalizes to taxi scheduling, meeting rooms, or event scheduling problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
+
+### Similar Problems
+- Maximum Earnings From Taxi(maximum-earnings-from-taxi) (Medium)
+- Two Best Non-Overlapping Events(two-best-non-overlapping-events) (Medium)

@@ -99,3 +99,9 @@ def findMinimumTime(tasks):
 This is a classic **greedy interval scheduling and covering problem**.  
 The pattern—sort by deadline, greedily choose as late as possible—appears in interval packing/covering, scheduling, and bandwidth assignment scenarios.  
 Efficiently finding minimum overlap “cover cost” for union of intervals is a common theme in advanced scheduling or resource allocation problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Stack(#stack), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Single-Threaded CPU(single-threaded-cpu) (Medium)

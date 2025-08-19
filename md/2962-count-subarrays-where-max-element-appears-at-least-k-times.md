@@ -121,3 +121,9 @@ def count_subarrays(nums, k):
 This problem uses the **two pointer / sliding window** technique to efficiently count subarrays meeting frequency criteria for the max.  
 It's a common pattern for subarray problems where extensions to the right preserve some monotonic property.  
 This pattern is widely used for "number of subarrays with at least at most/exactly K (...) elements" and is efficient for large arrays.
+
+### Tags
+Array(#array), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Find the Number of Subarrays Where Boundary Elements Are Maximum(find-the-number-of-subarrays-where-boundary-elements-are-maximum) (Hard)

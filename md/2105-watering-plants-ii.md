@@ -99,3 +99,9 @@ def minimumRefill(plants, capacityA, capacityB):
 
 ### Summary
 We used a two-pointer simulation—a classic interview technique for problems where two agents work from opposite ends with local state. This technique is common in greedy, partitioning, or pairing problems. The solution pattern applies in any task where actions from both sides converge on a middle, such as merging, scheduling, or symmetric updates.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Simulation(#simulation)
+
+### Similar Problems
+- Watering Plants(watering-plants) (Medium)

@@ -128,3 +128,13 @@ def minCost(nums, k):
 
 ### Summary  
 This problem is a classic example of **DP over subarrays with custom cost evaluation**, requiring computation for every subproblem and overlapping optimal substructure. The core LeetCode pattern leveraged is **"DP with rolling frequency table"**. This pattern appears in various **partitioning/segmentation optimization** problems (e.g., min cost palindromic partition, min sum for k partitions, etc.). It tests ability to model complex cost with dynamic state.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming), Counting(#counting)
+
+### Similar Problems
+- Coin Change(coin-change) (Medium)
+- Split Array Largest Sum(split-array-largest-sum) (Hard)
+- Divide an Array Into Subarrays With Minimum Cost II(divide-an-array-into-subarrays-with-minimum-cost-ii) (Hard)
+- Minimum Sum of Values by Dividing Array(minimum-sum-of-values-by-dividing-array) (Hard)
+- Minimum Cost to Divide Array Into Subarrays(minimum-cost-to-divide-array-into-subarrays) (Hard)

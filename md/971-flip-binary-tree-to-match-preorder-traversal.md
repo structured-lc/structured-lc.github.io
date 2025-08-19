@@ -95,3 +95,8 @@ def flipMatchVoyage(root, voyage):
 
 ### Summary
 This problem uses a **preorder tree traversal + greedy flipping**, a common pattern for synchronization tasks between structure and target sequence. The DFS tightly syncs the current traversal with the expected voyage, flipping only when mismatched, and aborts early if impossible. Variations of this pattern appear in serialization, tree reconstruction, and guided tree transformations.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

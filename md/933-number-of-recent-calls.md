@@ -96,3 +96,8 @@ class RecentCounter:
 
 ### Summary
 This problem is a classic use of the **queue** data structure and the *sliding window* pattern. By maintaining only relevant elements (within a time window), we achieve excellent efficiency. The approach of popping stale elements and keeping only valid candidates is broadly useful in rate limiting, time-based caches, moving averages, and more.
+
+### Tags
+Design(#design), Queue(#queue), Data Stream(#data-stream)
+
+### Similar Problems

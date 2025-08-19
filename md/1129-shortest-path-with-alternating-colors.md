@@ -136,3 +136,8 @@ def shortestAlternatingPaths(n, redEdges, blueEdges):
 
 ### Summary
 We used a **BFS with an extended state (node, color)** to solve the shortest alternating path problem. This is a classic "BFS with extra state"-type pattern, applicable to situations where the path or transition has side-effects, like alternating steps or avoiding certain conditions. This approach is widely useful for grid and graph problems involving dependencies on prior steps, not just the current node.
+
+### Tags
+Breadth-First Search(#breadth-first-search), Graph(#graph)
+
+### Similar Problems

@@ -119,3 +119,10 @@ def findMinimumTime(moveTime):
 
 ### Summary
 This problem is a classic **grid shortest path** with “extra state” for alternating move times. The main pattern is “Dijkstra’s algorithm with state extension,” commonly seen in shortest path problems with periodically changing costs or other properties (for example, minimum time with doors opening/closing, or two-phase cost functions). This technique can be applied wherever gradually changing or alternating rules affect shortest paths.
+
+### Tags
+Array(#array), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Minimum Cost to Reach Destination in Time(minimum-cost-to-reach-destination-in-time) (Hard)
+- Minimum Time to Visit a Cell In a Grid(minimum-time-to-visit-a-cell-in-a-grid) (Hard)

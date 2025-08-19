@@ -138,3 +138,8 @@ This problem is a variant of bitmask DP, using "covering" all targets with minim
 The bitmask DP pattern is very useful in cases where subsets are small (≤20) and coverage/combinatorial selection is required.  
 It's commonly applied in problems involving small sets, subset covering, or combinatorial selection with efficiency needs.  
 The approach efficiently exploits the small size of target and the mathematical property of LCM for subset handling.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Number Theory(#number-theory), Bitmask(#bitmask)
+
+### Similar Problems

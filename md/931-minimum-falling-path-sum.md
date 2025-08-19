@@ -95,3 +95,9 @@ def minFallingPathSum(matrix):
 
 ### Summary
 This problem is a classic case of **grid dynamic programming**. The bottom-up DP approach (also known as tabulation) is both efficient and clear, representing a common pattern for minimum/maximum path sum problems on grids. This general method reoccurs in classic problems like “minimum path sum in triangle”, “unique paths”, and more. The pattern focuses on reducing exponential path choices to manageable, tractable O(n²) computation by systematic subproblem reuse.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems
+- Minimum Falling Path Sum II(minimum-falling-path-sum-ii) (Hard)

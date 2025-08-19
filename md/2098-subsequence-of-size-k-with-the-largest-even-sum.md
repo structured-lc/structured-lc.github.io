@@ -114,3 +114,11 @@ def largest_even_sum(nums, k):
 
 ### Summary
 This approach is a classic **greedy selection with parity correction**: take the k largest possible elements for maximal sum, then swap elements minimally if the sum’s parity is off. This technique often appears in selection/combination problems with an additional sum constraint (such as even/odd or divisibility). It’s a practical pattern for “pick k for best total, fix constraint if needed” problems.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Split Array Largest Sum(split-array-largest-sum) (Hard)
+- Partition Array for Maximum Sum(partition-array-for-maximum-sum) (Medium)
+- Number of Sub-arrays With Odd Sum(number-of-sub-arrays-with-odd-sum) (Medium)

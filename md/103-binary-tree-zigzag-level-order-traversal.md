@@ -126,3 +126,10 @@ def zigzagLevelOrder(root):
 
 ### Summary
 This problem is a classic application of **level order (BFS) traversal** with an alternating direction twist ("zigzag"). It reinforces the queue-based BFS pattern, direction toggling, and manipulating arrays/lists for traversal output. The zigzag pattern appears in other problems (printing N-ary trees, spiral order in matrices, etc.), so mastering this helps across tree-based and traversal question variants.
+
+### Tags
+Tree(#tree), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Binary Tree Level Order Traversal(binary-tree-level-order-traversal) (Medium)
+- Zigzag Grid Traversal With Skip(zigzag-grid-traversal-with-skip) (Easy)

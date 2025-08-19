@@ -86,3 +86,9 @@ def predictPartyVictory(senate: str) -> str:
 
 ### Summary
 This problem uses a classic *queue simulation* approach, where two queues model the sequential and round-based ban rights of senators from two parties. Efficient O(n) simulation avoids unnecessary repeated traversals, and the pattern generalizes to similar problems where actions are dependent on turn order and elimination (e.g. *Josephus problem*, turn-based games, etc.).
+
+### Tags
+String(#string), Greedy(#greedy), Queue(#queue)
+
+### Similar Problems
+- Teemo Attacking(teemo-attacking) (Easy)

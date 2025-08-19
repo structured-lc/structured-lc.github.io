@@ -104,3 +104,9 @@ def maxIncreasingGroups(usageLimits):
 
 ### Summary
 This problem is a variation of the greedy grouping/piling pattern, where you aim to maximize the number of increasing-size groups with resource constraints. Sorting is a frequent pattern here, spreading the smallest resources first. A similar logic applies to “maximum number of complete rows,” "coin pile" or "staircase" type problems. This pattern can be applied to task distribution, scheduling, and resource allocation under usage/deduplication limits.
+
+### Tags
+Array(#array), Math(#math), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Group the People Given the Group Size They Belong To(group-the-people-given-the-group-size-they-belong-to) (Medium)

@@ -135,3 +135,7 @@ def countSubarraysWithXorAtLeastK(nums, k):
 The solution applies the *prefix XOR* and *trie counting* pattern, common in "subarray XOR" and "subarray sum" range problems.  
 This approach efficiently reduces O(n²) subarray checks to O(n) with bitwise Trie structure, which is a powerful method for problems involving counting pairs or ranges derived via bitwise or prefix computations.  
 The Trie + prefix computation pattern is broadly applicable in XOR/range querying challenges.
+
+### Tags
+
+### Similar Problems

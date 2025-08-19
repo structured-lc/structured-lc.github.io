@@ -96,3 +96,9 @@ def min_trio_degree(n, edges):
 This problem is a classic example of triangle detection and degree computation in an undirected graph, utilizing adjacency matrices for fast lookup and careful degree accounting.  
 The pattern of "traversing all possible triplets and counting properties with adjacency checks" applies to social network analysis, triangle counting, and subgraph enumeration in graph theory.  
 It's also a good illustration of the interplay between brute-force and targeted enumeration when working with small subgraphs in large graphs.
+
+### Tags
+Graph(#graph), Enumeration(#enumeration)
+
+### Similar Problems
+- Add Edges to Make Degrees of All Nodes Even(add-edges-to-make-degrees-of-all-nodes-even) (Hard)

@@ -133,3 +133,8 @@ def number_of_accounts_no_stream(subscriptions, streams):
 
 ### Summary
 The approach uses set operations to efficiently determine which 2021+ subscribers never streamed, a **hashing/counting pattern** common in “find elements in one set not present in another” problems. This is a classic use of hash sets for efficient existence checks and can be seen in problems like finding non-intersecting arrays, event logging, or membership analytics.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -65,3 +65,9 @@ def maxDepth(s: str) -> int:
 
 ### Summary
 This is a classic **parenthesis matching/counter pattern**. Core to many parsing tasks, including evaluating mathematical expressions or parsing code.
+
+### Tags
+String(#string), Stack(#stack)
+
+### Similar Problems
+- Maximum Nesting Depth of Two Valid Parentheses Strings(maximum-nesting-depth-of-two-valid-parentheses-strings) (Medium)

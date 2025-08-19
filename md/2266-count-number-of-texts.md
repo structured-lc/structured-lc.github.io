@@ -89,3 +89,10 @@ def countTexts(pressedKeys: str) -> int:
 
 ### Summary
 This is a classic DP problem for counting possible interpretations of strings with variable groupings (word breaks, tiling, decoding ways patterns). State dp[i] counts all ways to split up to index i, with constraints on allowable runs (3 or 4). The approach generalizes to any “grouped runs with limits” splitting problem. The DP pattern is similar to ways to decode, staircase, and tiling domino problems.
+
+### Tags
+Hash Table(#hash-table), Math(#math), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Letter Combinations of a Phone Number(letter-combinations-of-a-phone-number) (Medium)
+- Decode Ways(decode-ways) (Medium)

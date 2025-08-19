@@ -108,3 +108,8 @@ def maximumSubtreeSize(edges, colors):
 
 ### Summary
 The problem applies the classic tree DFS/post-order traversal to propagate subtree information up from leaves to root. This is a standard recursive DP on trees technique to efficiently compute properties dependent on all descendants. The approach is common for problems like counting homogeneous/valid subtrees, evaluating conditions on subtrees, or computing tree-based aggregation features. The pattern is widely useful for tree-based dynamic programming and bottom-up calculations.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems

@@ -83,3 +83,8 @@ def countTestedDevices(batteryPercentages):
 
 ### Summary
 We solved this problem with a classic **array simulation** — tracking cumulative effect (number of tests so far) and checking if the iᵗʰ device, given this, is still testable. The technique is a rolling "prefix effect" counter, often useful in problems where sequential changes accumulate and affect a series of elements. This pattern appears in greedy single-pass problems where history influences future eligibility.
+
+### Tags
+Array(#array), Simulation(#simulation), Counting(#counting)
+
+### Similar Problems

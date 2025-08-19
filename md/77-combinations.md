@@ -91,3 +91,10 @@ def combine(n, k):
 This problem is a classic example of the **backtracking** (recursive decision tree) pattern.  
 It efficiently builds up solutions by exploring only valid extensions, avoiding duplicates by always moving forward in the candidate space (“start” grows).  
 This approach is very common for generating combinations, subsets, permutations, and has applications in problems like N-Queens, subset sums, and generating all valid parenthesis strings.
+
+### Tags
+Backtracking(#backtracking)
+
+### Similar Problems
+- Combination Sum(combination-sum) (Medium)
+- Permutations(permutations) (Medium)

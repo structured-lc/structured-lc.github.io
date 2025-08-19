@@ -134,3 +134,10 @@ def number_of_seniors_and_juniors(candidates, budget):
 
 ### Summary
 This problem uses the greedy pattern: always take the next cheapest candidate in the preferred group. Maximizing Seniors is prioritized, then Juniors, both via sorting and simulation. This pattern is common in resource allocation problems, conference scheduling, and classic "knapsack" variants where selection order matters.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Last Person to Fit in the Bus(last-person-to-fit-in-the-bus) (Medium)
+- The Number of Seniors and Juniors to Join the Company II(the-number-of-seniors-and-juniors-to-join-the-company-ii) (Hard)

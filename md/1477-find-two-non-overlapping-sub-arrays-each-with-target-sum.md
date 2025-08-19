@@ -93,3 +93,9 @@ def minSumOfLengths(arr, target):
 
 ### Summary
 This problem is a good demonstration of prefix sum/hashmaps + dynamic programming (tracking min subarray lengths) for optimal partitioning and subarray analysis. Similar ideas appear in "max sum of k non-overlapping subarrays" and interval-dp interview questions.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Find Subarrays With Equal Sum(find-subarrays-with-equal-sum) (Easy)

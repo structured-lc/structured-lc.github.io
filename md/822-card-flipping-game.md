@@ -99,3 +99,8 @@ def flipgame(fronts, backs):
 
 ### Summary
 This problem uses a **set exclusion** pattern and careful construction of “impossible” numbers to efficiently filter feasible answers. The key modeling step is to identify numbers that can never be hidden no matter how you flip cards, and then to check which values can exist on the back but not the front. This approach avoids brute-forcing flips and is a common pattern when problems present with exclusion constraints and combinatorial objects. The set filtering and candidate tracking idea is widely useful in other filtering or pruning interview problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

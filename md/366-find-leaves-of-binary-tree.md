@@ -138,3 +138,8 @@ def findLeaves(root):
 
 ### Summary
 This is a classic **Post-order DFS (bottom-up)** problem, assigning each node to a "round" where it would be removed if leaves were cut repeatedly. Collecting by height from the leaves up avoids modifying the tree and ensures every node is processed just once—an important coding and interview pattern for “removal round” or “layered grouping” of tree nodes. This approach appears in other problems involving “levels from leaf/root” or “group nodes by structural properties.”
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

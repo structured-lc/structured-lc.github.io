@@ -214,3 +214,8 @@ def range_xor_queries_with_subarray_reversals(nums, queries):
 This problem uses the advanced **implicit Treap** pattern, capable of supporting range queries, range modification (reverse), and point updates efficiently.  
 It demonstrates lazy propagation, ordered splits, and the power of randomized BSTs for array-like modifications under complex operations.  
 Similar data structures and ideas may be applied to range sum queries with reversals, substring manipulations, and ordered set problems where order and range operations must co-exist.
+
+### Tags
+Array(#array), Tree(#tree), Binary Tree(#binary-tree)
+
+### Similar Problems

@@ -129,3 +129,11 @@ def maxNumOfRemovableQueries(nums, queries):
 ### Summary
 This approach is based on a greedy interval covering pattern, ensuring every index i is covered by at least nums[i] queries after removals. It generalizes well to problems where each index has a "demand" and operations can contribute to fulfilling it.  
 The pattern is common in range coverage, interval scheduling, and certain greedy DP problems with coverage constraints.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Corporate Flight Bookings(corporate-flight-bookings) (Medium)
+- Minimum Moves to Make Array Complementary(minimum-moves-to-make-array-complementary) (Medium)
+- Zero Array Transformation IV(zero-array-transformation-iv) (Medium)

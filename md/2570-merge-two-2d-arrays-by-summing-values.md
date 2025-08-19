@@ -102,3 +102,11 @@ def mergeArrays(nums1, nums2):
 
 ### Summary
 This problem is a classic application of the **two-pointer merge pattern**—a staple for handling two sorted arrays. Such logic applies to interval merging, sorted list intersections, and is a core part of merge sort. The sorted property is crucial and enables single-pass, in-place merging for optimal efficiency.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers)
+
+### Similar Problems
+- Merge Two Sorted Lists(merge-two-sorted-lists) (Easy)
+- Meeting Scheduler(meeting-scheduler) (Medium)
+- Merge Similar Items(merge-similar-items) (Easy)

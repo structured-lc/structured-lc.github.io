@@ -69,3 +69,11 @@ def smallestNumber(n: int) -> int:
 
 ### Summary
 This problem is a **bit manipulation** and math-pattern recognition exercise. The solution identifies that numbers of the form 2ᵏ−1 have all set bits, leverages bit_length to find the smallest such number ≥ n, and constructs it efficiently. This all-set-bits pattern occurs frequently in bitmasking problems and some combinatorics applications.
+
+### Tags
+Math(#math), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Minimum Number of K Consecutive Bit Flips(minimum-number-of-k-consecutive-bit-flips) (Hard)
+- Minimum Bit Flips to Convert Number(minimum-bit-flips-to-convert-number) (Easy)
+- Find Sum of Array Product of Magical Sequences(find-sum-of-array-product-of-magical-sequences) (Hard)

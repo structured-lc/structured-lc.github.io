@@ -115,3 +115,11 @@ def distMoney(money: int, children: int) -> int:
 The problem uses a **greedy + constructive** approach:  
 - Iteratively try the largest feasible number of children to get exactly 8 dollars by distributing 8 dollars as much as possible and checking constraints for the rest.
 - Pattern closely relates to greedy maximization with direct feasibility checking/early rejection — useful in constrained splitting/partitioning problems, such as fair share allocation with forbidden amounts.
+
+### Tags
+Math(#math), Greedy(#greedy)
+
+### Similar Problems
+- Distribute Candies to People(distribute-candies-to-people) (Easy)
+- Fair Distribution of Cookies(fair-distribution-of-cookies) (Medium)
+- Calculate Money in Leetcode Bank(calculate-money-in-leetcode-bank) (Easy)

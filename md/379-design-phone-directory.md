@@ -169,3 +169,9 @@ class PhoneDirectory:
 ### Summary  
 This problem uses the **Queue/Set pattern**, allowing for efficient allocation, checking, and recycling of unique resources.  
 It's a typical **resource pool management** scenario and can be applied to inventory management, session usage, or generating unique IDs in real-time systems. The combination of deque and set is a common technique for handling unique assignments and fast lookup.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Linked List(#linked-list), Design(#design), Queue(#queue)
+
+### Similar Problems
+- Seat Reservation Manager(seat-reservation-manager) (Medium)

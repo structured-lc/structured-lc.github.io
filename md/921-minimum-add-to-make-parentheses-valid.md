@@ -91,3 +91,9 @@ def minAddToMakeValid(S: str) -> int:
 
 ### Summary
 This problem is a classic **parenthesis balancing** problem, commonly tackled with a single pass and a simple counter (greedy approach). It's closely related to stack-use patterns for evaluating expressions or validating matched delimiters, but here we optimize purely for additions. This coding pattern appears in syntax checking, string parsers, and text editor plugins.
+
+### Tags
+String(#string), Stack(#stack), Greedy(#greedy)
+
+### Similar Problems
+- Minimum Number of Swaps to Make the String Balanced(minimum-number-of-swaps-to-make-the-string-balanced) (Medium)

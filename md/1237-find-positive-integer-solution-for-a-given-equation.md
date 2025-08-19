@@ -106,3 +106,8 @@ def findSolution(customfunction, z):
 
 ### Summary
 This problem is a **matrix search** or **two-pointer monotonic search** pattern, commonly used when working with strictly increasing/decreasing 2D or sorted arrays. The ability to cut the search space efficiently comes from leveraging the monotonicity of the function. This approach generalizes to problems like searching in a sorted matrix, and can be adapted for more complex binary search in similar “hidden function” settings.
+
+### Tags
+Math(#math), Two Pointers(#two-pointers), Binary Search(#binary-search), Interactive(#interactive)
+
+### Similar Problems

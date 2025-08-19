@@ -117,3 +117,12 @@ def minimumOperations(grid):
 
 ### Summary
 The key insight is that this problem is a minimum vertex cover in a bipartite graph induced by assigning colors to the grid cells (like a chessboard). This enables using fast bipartite matching algorithms, making the approach optimal and efficient. The pattern of **reducing grid-adjacency problems to classic graph theory** is useful and arises in problems involving 2D constraints and local interactions. This approach is widely applicable, especially when the underlying graph is bipartite.
+
+### Tags
+Array(#array), Graph(#graph), Matrix(#matrix)
+
+### Similar Problems
+- Set Matrix Zeroes(set-matrix-zeroes) (Medium)
+- 01 Matrix(01-matrix) (Medium)
+- Minimum Number of Flips to Convert Binary Matrix to Zero Matrix(minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix) (Hard)
+- Remove All Ones With Row and Column Flips(remove-all-ones-with-row-and-column-flips) (Medium)

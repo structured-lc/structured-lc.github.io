@@ -93,3 +93,9 @@ def removeOccurrences(s: str, part: str) -> str:
 
 ### Summary
 This uses the classic **stack/string builder** pattern: scan the string, build up the answer, and remove matches on-the-fly as soon as they form at the end. This is similar to problems like "remove all adjacent duplicates" and can be generalized to any on-the-fly substring removal. The approach is efficient, O(n × m) time and O(n) space, and is usually optimal unless substring matching itself can be further improved by advanced algorithms.
+
+### Tags
+String(#string), Stack(#stack), Simulation(#simulation)
+
+### Similar Problems
+- Maximum Deletions on a String(maximum-deletions-on-a-string) (Hard)

@@ -164,3 +164,9 @@ GROUP BY
 
 ### Summary
 This is a **classic aggregation-and-join SQL/database problem**. The main pattern is **JOIN + GROUP BY + AGGREGATE**. This coding/data manipulation pattern is widely applicable in reporting, analytics, and survey-type business questions, and is highly common in both database queries and data processing with pandas or plain Python dicts.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Project Employees II(project-employees-ii) (Easy)

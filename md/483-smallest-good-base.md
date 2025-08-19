@@ -91,3 +91,8 @@ def smallestGoodBase(n_str):
 
 ### Summary
 This problem combines **math (geometric progressions)**, **binary search**, and **bit manipulation**. For each valid length m of consecutive 1's, estimate a candidate base k using exponentials, then validate using sum of geometric progression. The coding pattern here is "enumerate parameter, binary search candidate, validate using mathematical formula." This is broadly applicable to digital base-conversion, representation, and digit pattern problems.
+
+### Tags
+Math(#math), Binary Search(#binary-search)
+
+### Similar Problems

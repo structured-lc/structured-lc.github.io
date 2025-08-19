@@ -102,3 +102,11 @@ This problem uses **DP with memoization** over (stone, last jump size) state, a 
 Patterns: DP with states, set tracking, hash map memoization.  
 Related to word ladder, jump game II, and other constrained path-finding questions.  
 Common technique: decompose the problem statefully (stone + last jump), avoid revisiting identical subproblems, and prune impossible paths early.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Minimum Sideway Jumps(minimum-sideway-jumps) (Medium)
+- Solving Questions With Brainpower(solving-questions-with-brainpower) (Medium)
+- Maximum Number of Jumps to Reach the Last Index(maximum-number-of-jumps-to-reach-the-last-index) (Medium)

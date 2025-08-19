@@ -111,3 +111,10 @@ def count_of_substrings(word: str, k: int) -> int:
 This problem uses the **Sliding Window + Inclusion-Exclusion** pattern (at most k − at most (k − 1)) to efficiently count substrings with specific vowel and consonant constraints.  
 The critical insight is to count substrings with all vowels using a moving window, while keeping consonant count in check, and then carefully include only those with exactly k consonants.  
 Such patterns are common in substring counting problems where “exactly k” or “at most k” properties matter, and they demonstrate how to use window boundaries to constrain a solution in linear time.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Longest Substring Of All Vowels in Order(longest-substring-of-all-vowels-in-order) (Medium)
+- Count Vowel Substrings of a String(count-vowel-substrings-of-a-string) (Easy)

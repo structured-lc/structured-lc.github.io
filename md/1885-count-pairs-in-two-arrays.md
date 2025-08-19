@@ -104,3 +104,10 @@ def countPairs(nums1, nums2):
 
 ### Summary
 The approach uses a common coding pattern: transform the sum condition into a problem about **pair sums** over a transformed array, then use sorting and binary search to count valid pairs efficiently (O(n log n)). This “reduce-to-sorted-array + binary search for pair counts” is a standard trick for problems like “count pairs satisfying X + Y > threshold”, and is useful in other contexts like 2-sum, reverse pairs, and range count problems.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Max Value of Equation(max-value-of-equation) (Hard)
+- Substrings That Begin and End With the Same Letter(substrings-that-begin-and-end-with-the-same-letter) (Medium)

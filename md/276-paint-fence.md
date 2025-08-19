@@ -125,3 +125,12 @@ def numWays(n: int, k: int) -> int:
 
 ### Summary
 This problem uses a **dynamic programming pattern**—specifically, a "ways to reach here" rolling recurrence with overlapping subproblems. By focusing on "same" and "different" state transitions, we quickly solve the problem in O(n) time and O(1) space, a classic example of state compression in DP. This can be extended to other "no more than m in a row" coloring, tiling, or arrangement tasks.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- House Robber(house-robber) (Medium)
+- House Robber II(house-robber-ii) (Medium)
+- Paint House(paint-house) (Medium)
+- Paint House II(paint-house-ii) (Hard)

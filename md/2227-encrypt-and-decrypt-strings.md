@@ -154,3 +154,12 @@ class Encrypter:
 This problem uses the **preprocessing with hashmap** pattern to trade one-off preprocessing costs for ultra-fast queries.  
 It's common in problems where potential queries are numerous but originate from a bounded set (like a dictionary).  
 Similar techniques are useful in **dictionary encoding**, **password management**, or any scenario where reverse-mapping from an obfuscated representation is required and the "search space" is limited by a fixed list.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Design(#design), Trie(#trie)
+
+### Similar Problems
+- Implement Trie (Prefix Tree)(implement-trie-prefix-tree) (Medium)
+- Word Search II(word-search-ii) (Hard)
+- Implement Trie II (Prefix Tree)(implement-trie-ii-prefix-tree) (Medium)
+- Find the Sum of Encrypted Integers(find-the-sum-of-encrypted-integers) (Easy)

@@ -100,3 +100,9 @@ def validSubarrays(nums):
 This problem uses the **monotonic stack pattern**, a common tool for dealing with **next/previous greater/smaller element** problems in arrays.  
 This is highly efficient for problems where you scan linearly but need retroactive knowledge about order (like histogram largest rectangle, daily temperatures, etc.).  
 Understanding this pattern is extremely valuable for a range of subarray and range-query questions.
+
+### Tags
+Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Number of Smooth Descent Periods of a Stock(number-of-smooth-descent-periods-of-a-stock) (Medium)

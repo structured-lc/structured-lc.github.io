@@ -131,3 +131,8 @@ def convertBST(root):
 
 ### Summary
 This problem uses **reverse in-order traversal** (right → node → left), a classic tree traversal variation tailored for BSTs where nodes must be processed from largest to smallest. The running sum pattern is frequently applied to “all greater nodes” problems, and the recursive solution is both intuitive and compact. This pattern is broadly applicable for cumulative sum calculations in trees and lists ordered by value.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
+
+### Similar Problems

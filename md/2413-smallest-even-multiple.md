@@ -71,3 +71,13 @@ def smallestEvenMultiple(n):
 
 ### Summary
 This is a classic math-based problem that requires recognizing the relationship between parity and divisibility by two. The solution uses a constant-time parity check. This pattern (checking for divisibility and choosing minimal multiples) is common in LCM or "smallest common multiple" type interview questions. It’s also a good example of reducing an apparent search or simulation problem to a direct arithmetic result using problem constraints.
+
+### Tags
+Math(#math), Number Theory(#number-theory)
+
+### Similar Problems
+- Greatest Common Divisor of Strings(greatest-common-divisor-of-strings) (Easy)
+- Three Divisors(three-divisors) (Easy)
+- Find Greatest Common Divisor of Array(find-greatest-common-divisor-of-array) (Easy)
+- Convert the Temperature(convert-the-temperature) (Easy)
+- Minimum Cuts to Divide a Circle(minimum-cuts-to-divide-a-circle) (Easy)

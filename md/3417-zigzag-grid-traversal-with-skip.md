@@ -98,3 +98,10 @@ def zigzagGridTraversal(grid):
 
 ### Summary
 This problem uses a **zigzag traversal** pattern with alternating visit/skip implemented through a boolean toggle. The core coding pattern is simulating traversal direction changes with row reversal and selective cell inclusion. Similar patterns appear in matrix traversal problems where direction toggles, or skipping logic is involved.
+
+### Tags
+Array(#array), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems
+- Binary Tree Zigzag Level Order Traversal(binary-tree-zigzag-level-order-traversal) (Medium)
+- Longest ZigZag Path in a Binary Tree(longest-zigzag-path-in-a-binary-tree) (Medium)

@@ -94,3 +94,10 @@ This problem uses the classic **"greedy"** pattern: always apply your best power
 It's a simple linear scan to sum and get the max in the array.  
 This pattern is used in resource allocation, cost minimization, or any "use a one-time power for maximum global effect" problems.  
 No advanced data structures needed; it's clean, O(n), and teaches you how to convert simulation problems to analytical expressions leveraging constraints.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems
+- Dungeon Game(dungeon-game) (Hard)
+- Eliminate Maximum Number of Monsters(eliminate-maximum-number-of-monsters) (Medium)

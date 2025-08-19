@@ -75,3 +75,10 @@ def numRollsToTarget(n, k, target):
 
 ### Summary
 This problem is a classic case of **Dynamic Programming - Unbounded Knapsack/Subset Sum**. The solution uses states representing the number of dice and running sum, iteratively building answers from simpler subproblems. The pattern is widely applicable for dice/game probability, sum partition, and constrained counting questions.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Equal Sum Arrays With Minimum Number of Operations(equal-sum-arrays-with-minimum-number-of-operations) (Medium)
+- Find Missing Observations(find-missing-observations) (Medium)

@@ -98,3 +98,8 @@ def findRLEArray(encoded1, encoded2):
 
 ### Summary
 This problem uses the **two pointer** and **run-length merge** pattern: process segment-by-segment by advancing frequency counts, always minimizing expansion. This pattern is common in problems involving **compressed/encoded representations**, and is closely related to tasks in video encoding, image RLE, and large-scale streaming data processing where you can’t expand the data in memory.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers)
+
+### Similar Problems

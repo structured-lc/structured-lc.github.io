@@ -103,3 +103,10 @@ def missingRolls(rolls, mean, n):
 This is a **range distribution** problem: given a fixed sum and bounds per position, generate a valid assignment.  
 The coding pattern is "greedy distribution + math check," common in problems where we reconstruct a possible set or array under element-wise constraints (e.g., exam scores, equal splits, dice rolls).  
 Efficient, scalable, leverages the min/max constraints, and avoids brute-force search.
+
+### Tags
+Array(#array), Math(#math), Simulation(#simulation)
+
+### Similar Problems
+- Number of Dice Rolls With Target Sum(number-of-dice-rolls-with-target-sum) (Medium)
+- Dice Roll Simulation(dice-roll-simulation) (Hard)

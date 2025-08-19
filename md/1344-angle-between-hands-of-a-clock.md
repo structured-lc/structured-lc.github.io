@@ -76,3 +76,8 @@ def angleClock(hour: int, minutes: int) -> float:
 
 ### Summary
 This problem uses the **math/geometry pattern**, reducing a real-world system to precise arithmetic formulas. Recognizing the mapping from time to angle is key, and this approach often appears in other clock, cycle, or rotation-based problems. The solution is a pure function: no state, just input ⇒ output, which makes it both efficient and robust.
+
+### Tags
+Math(#math)
+
+### Similar Problems

@@ -119,3 +119,8 @@ def find_users_with_mortgage_and_refinance(loans):
 This problem uses the classic **hash map grouping** pattern — collect items into groups, then filter on group properties.  
 Variations of this appear in problems such as "Group Anagrams", "Find Users with All Roles", or any multi-key existence check.  
 Efficient, easy to reason about, and adaptable to more complex grouping queries.
+
+### Tags
+Database(#database)
+
+### Similar Problems

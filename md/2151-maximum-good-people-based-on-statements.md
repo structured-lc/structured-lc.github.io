@@ -111,3 +111,9 @@ class Solution:
 This is a classic use of **bitmasking for subset search**, leveraging exhaustive search since n is small.  
 The pattern—try all settings and check if each satisfies complex logical constraints—is common for "maximum consistent group/assignment" problems with restriction that makes brute-force feasible.  
 This method also appears in logic puzzles and scenarios where all interactions between agents must be reconciled.
+
+### Tags
+Array(#array), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Enumeration(#enumeration)
+
+### Similar Problems
+- Maximum Score Words Formed by Letters(maximum-score-words-formed-by-letters) (Hard)

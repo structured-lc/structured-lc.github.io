@@ -172,3 +172,7 @@ def status_of_flight_tickets(Flights, Passengers):
 
 ### Summary
 This problem demonstrates the use of *group by*, sorting on a key (booking_time), and assigning bucketed statuses by a group-specific threshold (capacity). It’s a classic example of ranking within groups, similar to leaderboard cutoffs, hotel bookings, or other priority queue scenarios. Common patterns here are grouping, stable sorting by key, and mapping position to a status—useful in database window function queries and reservations/seating systems.
+
+### Tags
+
+### Similar Problems

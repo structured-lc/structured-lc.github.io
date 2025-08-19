@@ -97,3 +97,8 @@ def minOperations(k: int) -> int:
 ### Summary
 This is an **enumeration and greedy pattern**: try all ways to combine basic atomic operations, then choose the best. The approach is mathematically efficient and avoids state explosion, which is common in DP or simulation problems.  
 The pattern—minimizing combined operations by balancing increases and duplications—applies for similar construction or build-up problems in combinatorics and greedy algorithms.
+
+### Tags
+Math(#math), Greedy(#greedy), Enumeration(#enumeration)
+
+### Similar Problems

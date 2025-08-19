@@ -134,3 +134,8 @@ def minimumJumps(nums):
 This problem uses the **Graph/BFS Shortest Path** pattern with "teleportation" edges based on prime-related logic.  
 It combines classic BFS for reachability with additional dynamic neighbor computation.  
 This approach generalizes to problems where some nodes enable non-local "special" jumps (used in many reachability/shortest path questions involving value-based transitions).
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Breadth-First Search(#breadth-first-search), Number Theory(#number-theory)
+
+### Similar Problems

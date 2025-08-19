@@ -100,3 +100,8 @@ def avoidFlood(rains):
 
 ### Summary
 This is a greedy + scheduling/heap pattern. Key is to allocate scarce dry opportunities to lakes that will flood soonest, which is solved using future rain info and a min-heap. This method is similar to optimal cache replacement and job scheduling.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

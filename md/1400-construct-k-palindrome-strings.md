@@ -57,3 +57,8 @@ def canConstruct(s, k):
 
 ### Summary
 This problem tests knowledge about palindrome composition from character counts, especially odd/even letter frequencies. A useful reduction to parity and feasibility.
+
+### Tags
+Hash Table(#hash-table), String(#string), Greedy(#greedy), Counting(#counting)
+
+### Similar Problems

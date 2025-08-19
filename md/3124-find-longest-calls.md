@@ -182,3 +182,8 @@ def find_longest_calls(contacts, calls):
 
 ### Summary
 This problem demonstrates the **ranking within groups** pattern (i.e., windowed ranking), joining tables, and custom formatting after grouping/top-k selection. This is common in leaderboard, statistics, or "top N per category" database/reporting scenarios, and can often be addressed similarly in both code and SQL using sorting or window functions.
+
+### Tags
+Database(#database)
+
+### Similar Problems

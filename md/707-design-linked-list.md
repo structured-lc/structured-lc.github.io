@@ -143,3 +143,9 @@ class MyLinkedList:
 
 ### Summary
 This problem uses the **linked list pattern**, fundamental for understanding pointer manipulation and dynamic memory in lists. The presented approach uses a singly linked list with a dummy head and size counter to simplify operations and boundary checks. This pattern is common and directly applicable in problems involving dynamic sequences, undo buffers, or implementing other data structures like LRU caches.
+
+### Tags
+Linked List(#linked-list), Design(#design)
+
+### Similar Problems
+- Design Skiplist(design-skiplist) (Hard)

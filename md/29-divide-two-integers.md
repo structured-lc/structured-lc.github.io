@@ -108,3 +108,8 @@ def divide(dividend: int, divisor: int) -> int:
 
 ### Summary
 This problem is a **bit manipulation pattern** using exponential search with left shifts to optimize repeated subtraction, and is a classic example of how to simulate division operations when basic arithmetic is restricted. Variations of this approach appear in other “implement arithmetic from primitives” problems, such as implementing multiplication, bit count, or even sqrt(x) without direct operators.
+
+### Tags
+Math(#math), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

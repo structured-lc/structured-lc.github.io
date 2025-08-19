@@ -61,3 +61,8 @@ def maximumWealth(accounts: List[List[int]]) -> int:
 
 ### Summary
 This problem is a classic array/traversal pattern (row-by-row). It's common in interview screens, and the same logic extends to maximums in grids, accumulators, or streaming scenarios. Pattern: row-reduction followed by aggregation.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems

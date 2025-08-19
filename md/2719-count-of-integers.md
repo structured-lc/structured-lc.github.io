@@ -129,3 +129,9 @@ def count_of_integers(num1: str, num2: str, min_sum: int, max_sum: int) -> int:
 
 ### Summary
 This problem uses the **digit dynamic programming** pattern—a classic for counting or optimizing over number ranges with digit-based properties. Digit DP efficiently traverses possible digit-choices while reusing subproblems via memoization. This idea recurs in many Leetcode Hard problems (e.g., numbers without consecutive ones, at most k non-zero digits, etc). Understanding "digit DP" is vital for tackling a broad class of combinatorial counting and digit restriction problems.
+
+### Tags
+Math(#math), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Count Numbers with Non-Decreasing Digits (count-numbers-with-non-decreasing-digits) (Hard)

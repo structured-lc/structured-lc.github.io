@@ -155,3 +155,8 @@ def combinations(arr, group_size):
 This problem is a **shortest-path search on exponential state space** (Bitmask DP or Dijkstra’s on implicit graph).  
 The main pattern is **bitmask state + prioritization** (use BFS/PQ to avoid TLE), common in boat/bridge crossing, card game simulations, or puzzle sequence optimization.  
 Reusable idea: **state = [groupings, belongings, timeline position]**; apply to problems with repeated decisions and group actions, especially with cycling constraints.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path), Bitmask(#bitmask)
+
+### Similar Problems

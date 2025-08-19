@@ -145,3 +145,9 @@ def median_employee_salary(employee):
 
 ### Summary
 This problem uses **Sorting per group + median extraction**, a pattern common for grouped-statistic queries. It’s a foundational approach for “median by group” in both SQL and procedural programming. The solution is straightforward, leveraging hash maps and sorting, and is adaptable to problems like finding other percentiles by group, or for streaming median with heaps.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Find Median Given Frequency of Numbers(find-median-given-frequency-of-numbers) (Hard)

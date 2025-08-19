@@ -119,3 +119,8 @@ def deckRevealedIncreasing(deck):
 
 ### Summary
 This problem uses a **reverse simulation** approach, efficiently constructing the required initial deck configuration by inverting the reveal process. The core coding pattern here uses queues/deques for circular shuffling simulation, and is applicable in a variety of "process reversal" or conveyor-belt style problems. The approach elegantly avoids brute-force permutations and is both efficient and succinct.
+
+### Tags
+Array(#array), Queue(#queue), Sorting(#sorting), Simulation(#simulation)
+
+### Similar Problems

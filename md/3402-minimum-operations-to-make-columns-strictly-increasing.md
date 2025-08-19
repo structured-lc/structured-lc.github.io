@@ -97,3 +97,9 @@ def minNumberOfOperations(grid):
 ### Summary
 A classic **greedy, column-by-column** solution: Only increment when a cell is not strictly greater than the one above. Process each column independently because no increments in one column affect another.  
 This is a common pattern in **matrix problems with local constraints** (rows/columns handled independently). This is related to problems with monotonicity constraints, such as making sequences strictly increasing by minimal edits.
+
+### Tags
+Array(#array), Greedy(#greedy), Matrix(#matrix)
+
+### Similar Problems
+- Minimum Operations to Make the Array Increasing(minimum-operations-to-make-the-array-increasing) (Easy)

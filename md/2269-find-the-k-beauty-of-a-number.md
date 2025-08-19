@@ -92,3 +92,8 @@ def divisorSubstrings(num: int, k: int) -> int:
 
 ### Summary
 This problem uses the **fixed-size sliding window** pattern, commonly seen with substring or subarray computations. The iterative, direct approach efficiently handles the typical constraints. The key trick is careful handling of leading zeros and checking substrings for eligibility (nonzero, division). This pattern comes up in digit-based dynamic programming, subarray problems, and related "number manipulation by window" tasks.
+
+### Tags
+Math(#math), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems

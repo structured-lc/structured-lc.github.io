@@ -110,3 +110,17 @@ class Solution:
 
 ### Summary
 This problem is a classic **backtracking with pruning** pattern, minimized unfairness being the "max of partitions". It uses recursion, state space pruning, and symmetry breaking — concepts common in fair allocation and load balancing domains. Variants appear in multi-way partition problems, task scheduling, or distributing objects with a fairness criterion.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems
+- Split Array Largest Sum(split-array-largest-sum) (Hard)
+- Split Array with Equal Sum(split-array-with-equal-sum) (Hard)
+- Partition to K Equal Sum Subsets(partition-to-k-equal-sum-subsets) (Medium)
+- Minimum XOR Sum of Two Arrays(minimum-xor-sum-of-two-arrays) (Hard)
+- The Number of Good Subsets(the-number-of-good-subsets) (Hard)
+- Minimum Number of Work Sessions to Finish the Tasks(minimum-number-of-work-sessions-to-finish-the-tasks) (Medium)
+- Partition Array Into Two Arrays to Minimize Sum Difference(partition-array-into-two-arrays-to-minimize-sum-difference) (Hard)
+- Maximum Rows Covered by Columns(maximum-rows-covered-by-columns) (Medium)
+- Distribute Money to Maximum Children(distribute-money-to-maximum-children) (Easy)

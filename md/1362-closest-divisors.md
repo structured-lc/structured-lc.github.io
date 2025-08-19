@@ -69,3 +69,9 @@ def closestDivisors(num):
 
 ### Summary
 The approach is to check for divisors as close to the square root as possible for num+1 and num+2, minimizing the difference between factors. This minimizes |a-b|. Very efficient and commonly used for factor closest pair brute-force.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Distinct Prime Factors of Product of Array(distinct-prime-factors-of-product-of-array) (Medium)

@@ -84,3 +84,10 @@ def greatestLetter(s: str) -> str:
 
 ### Summary
 This problem is a good example of the **set/bucket counting pattern** for single pass string analysis. It can also be solved with bit manipulation for even less space. This technique of scanning for matching capitalized/lowercase variants can be applied to password or validation problems needing "both cases present." The core trick is the O(1) lookup via set or bitmask, and the constant work for a bounded English alphabet.
+
+### Tags
+Hash Table(#hash-table), String(#string), Enumeration(#enumeration)
+
+### Similar Problems
+- Count the Number of Special Characters II(count-the-number-of-special-characters-ii) (Medium)
+- Count the Number of Special Characters I(count-the-number-of-special-characters-i) (Easy)

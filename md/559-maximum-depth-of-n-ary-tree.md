@@ -100,3 +100,11 @@ def maxDepth(root):
 ### Summary
 This problem is a classic **Tree/DFS** pattern. The key is recursive post-order traversal to compute and compare depths.  
 This coding pattern recurs frequently in tree problems: finding max/min path, validating structure, evaluating subtrees.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Maximum Depth of Binary Tree(maximum-depth-of-binary-tree) (Easy)
+- The Time When the Network Becomes Idle(the-time-when-the-network-becomes-idle) (Medium)
+- Count the Number of Good Nodes(count-the-number-of-good-nodes) (Medium)

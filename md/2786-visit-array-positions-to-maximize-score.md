@@ -116,3 +116,10 @@ def maxScore(nums, x):
 This problem uses the **"two-state DP"** or **"separate track for each parity"** pattern, which is useful when only a local property (like parity or color) affects transitions and costs.  
 Common in problems with "one or few switching penalties" and when all moves can only get better by considering the best so far for each class (parity here).  
 Pattern appears in stock buy/sell problems, coloring, even/odd walking, and simplified state transitions.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Jump Game II(jump-game-ii) (Medium)
+- Stone Game(stone-game) (Medium)

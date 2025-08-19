@@ -113,3 +113,14 @@ def maxProfit(prices):
 ### Summary
 This problem uses a classic **Dynamic Programming (DP, state machine)** pattern where you iterate through the list, updating the optimal choice at each step by tracking the states of transactions.  
 The four-state DP is also common for "Buy and Sell Stock" series, and is easily extended to k transactions. This approach avoids nested loops and is easy to extend or adapt for more complex stock-related interview problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Best Time to Buy and Sell Stock(best-time-to-buy-and-sell-stock) (Easy)
+- Best Time to Buy and Sell Stock II(best-time-to-buy-and-sell-stock-ii) (Medium)
+- Best Time to Buy and Sell Stock IV(best-time-to-buy-and-sell-stock-iv) (Hard)
+- Maximum Sum of 3 Non-Overlapping Subarrays(maximum-sum-of-3-non-overlapping-subarrays) (Hard)
+- Maximum Profit From Trading Stocks(maximum-profit-from-trading-stocks) (Medium)
+- Maximize Win From Two Segments(maximize-win-from-two-segments) (Medium)

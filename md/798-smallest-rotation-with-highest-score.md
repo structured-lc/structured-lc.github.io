@@ -127,3 +127,8 @@ def best_rotation(nums):
 This problem is a classic use of "difference array" or "prefix sum range events" — a common pattern for O(1) range updates, seen in interval processing (“sweep-line” or “calendar events”).  
 Whenever a brute-force solution would repeat a similar calculation for each position, always ask: can I mark where contributions *start* and *stop* and process them together?  
 This helps avoid O(n²) checks, and is valuable for interview performance on hard rotation/window/range questions.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems

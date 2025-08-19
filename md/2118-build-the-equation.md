@@ -117,3 +117,8 @@ def build_the_equation(terms):
 ### Summary
 This problem is a **sorting and string building** exercise. The main trick is getting the formatting rules right for algebraic terms, especially sign management and power formatting.  
 It’s a classic **custom string formatting problem** and occurs often in print logic or report generation situations, as well as in some algebraic symbolic computation preprocessing tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems

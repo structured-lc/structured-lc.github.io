@@ -95,3 +95,8 @@ def minMaxDifference(num: int) -> int:
 ### Summary
 We use **greedy digit mapping**: maximize by remapping the first non-9 to 9 (all), minimize by remapping the most significant digit to 0 (all), taking care with strings since digit positions matter most.  
 This is a classic *digit manipulation* problem—a common LeetCode pattern for maximizing or minimizing integers via replacements—and the same approach can help in other problems involving changing/rearranging digits for maximum or minimum values.
+
+### Tags
+Math(#math), Greedy(#greedy)
+
+### Similar Problems

@@ -86,3 +86,9 @@ def maximumBobPoints(numArrows, aliceArrows):
 
 ### Summary
 We use a classic subset enumeration (bitmask) approach, since the problem size (2¹²) makes exhaustive checking possible and efficient. This falls under "subset-sum", "meet-in-the-middle", and "knapsack" patterns—widely applicable techniques for small-n combinatorial optimization. This template can also be used for small-sized resource allocation or maximization problems with binary (take/skip) decisions.
+
+### Tags
+Array(#array), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Enumeration(#enumeration)
+
+### Similar Problems
+- Maximum Product of the Length of Two Palindromic Subsequences(maximum-product-of-the-length-of-two-palindromic-subsequences) (Medium)

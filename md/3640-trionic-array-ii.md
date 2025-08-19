@@ -148,3 +148,8 @@ def maxTrionicSum(nums):
 This problem is a classic example of the **"state DP + prefix sum"** pattern for subarray problems.  
 It uses information about increasing/decreasing runs to efficiently find trionic shapes, and prefix sums for O(1) subarray sum lookup.  
 This approach (scanning left/right, storing longest runs, aggregating via prefix sums) is common in many array/sequence segmentation and maximal subarray sum problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

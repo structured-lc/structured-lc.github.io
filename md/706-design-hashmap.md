@@ -152,3 +152,10 @@ class MyHashMap:
 ### Summary
 This problem is a classic example of **hash table design with separate chaining**. It exercises knowledge of hash functions, collision resolution, and space-time tradeoffs.  
 The approach is widely used in building dictionaries, sets, and caches, and forms the foundation for many real-world data structures.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Linked List(#linked-list), Design(#design), Hash Function(#hash-function)
+
+### Similar Problems
+- Design HashSet(design-hashset) (Easy)
+- Design Skiplist(design-skiplist) (Hard)

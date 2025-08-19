@@ -114,3 +114,8 @@ def addNegabinary(arr1, arr2):
 This solution uses **digit-wise simulation** to add negabinary numbers, handling the unique carry/borrow rules of base -2.  
 The pattern mirrors traditional base-B addition but requires specific case checks for negabinary's carry over rules.  
 This approach generalizes to any base addition with minor tweaks and is found in other problems involving custom numeral systems and bitwise math.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems

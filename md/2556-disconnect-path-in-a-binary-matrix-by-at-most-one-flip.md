@@ -110,3 +110,12 @@ def isPossibleToCutPath(grid):
 
 ### Summary
 This approach uses **path erasure / double DFS** to find if more than one disjoint path exists. It's a common trick for minimal cut/path disconnection in grid/graph problems. The pattern often applies to questions involving “removing minimal nodes to disconnect source and sink,” which shows up in both binary grid and general graph scenarios. Efficient, since it reduces a potential brute-force O((mn)²) to O(mn).
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- Number of Submatrices That Sum to Target(number-of-submatrices-that-sum-to-target) (Hard)
+- Minimum Cost to Make at Least One Valid Path in a Grid(minimum-cost-to-make-at-least-one-valid-path-in-a-grid) (Hard)
+- Minimum Number of Days to Disconnect Island(minimum-number-of-days-to-disconnect-island) (Hard)
+- Minimum Weighted Subgraph With the Required Paths(minimum-weighted-subgraph-with-the-required-paths) (Hard)

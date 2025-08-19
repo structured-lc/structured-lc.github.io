@@ -100,3 +100,10 @@ def repeatedSubstringPattern(s):
 
 ### Summary
 This problem demonstrates the importance of recognizing mathematical properties (divisors) in string problems. The key insight is that any repeating pattern must have a length that divides the total string length. While there are more sophisticated approaches using string algorithms, the divisor-based approach is intuitive and efficient enough for most cases. This pattern of checking all valid divisors appears in many mathematical and algorithmic problems.
+
+### Tags
+String(#string), String Matching(#string-matching)
+
+### Similar Problems
+- Find the Index of the First Occurrence in a String(find-the-index-of-the-first-occurrence-in-a-string) (Easy)
+- Repeated String Match(repeated-string-match) (Medium)

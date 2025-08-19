@@ -100,3 +100,10 @@ def fraction_of_players_with_consecutive_logins(activities: List[List[str]]) -> 
 
 ### Summary
 This problem uses a **bucket/hashmap pattern** for grouping records by player, then set lookup to efficiently check for specific dates. It’s reminiscent of data aggregation with group-by, and applies in scenarios requiring per-entity date analysis, like identifying churn, engagement streaks, or user retention cohorts.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Game Play Analysis III(game-play-analysis-iii) (Medium)
+- Game Play Analysis V(game-play-analysis-v) (Hard)

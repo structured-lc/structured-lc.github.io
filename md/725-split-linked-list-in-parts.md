@@ -101,3 +101,11 @@ def splitListToParts(head, k):
 ### Summary
 The approach uses an initial traversal to count nodes, computes partition sizes using division and remainder, then splits the list with another pass, ensuring all parts’ sizes differ by no more than 1 and preserving order.  
 This split-divide pattern (partitioning based on counts and remainders) is common and can be applied to string or array partitioning and work allocation problems.
+
+### Tags
+Linked List(#linked-list)
+
+### Similar Problems
+- Rotate List(rotate-list) (Medium)
+- Odd Even Linked List(odd-even-linked-list) (Medium)
+- Split a Circular Linked List(split-a-circular-linked-list) (Medium)

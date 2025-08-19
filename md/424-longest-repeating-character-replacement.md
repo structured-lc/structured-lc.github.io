@@ -88,3 +88,13 @@ def characterReplacement(s: str, k: int) -> int:
 ### Summary
 This problem uses the classic **sliding window** pattern to efficiently maintain a window with the optimal number of same-character replacements. The key trick is only needing to track the count of the most frequent character within the window to compute the required replacements.  
 Sliding window is a versatile pattern and commonly applies to substring or subarray optimization problems where operations (replacement, removal, addition) are restricted by a count or cost.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Longest Substring with At Most K Distinct Characters(longest-substring-with-at-most-k-distinct-characters) (Medium)
+- Max Consecutive Ones III(max-consecutive-ones-iii) (Medium)
+- Minimum Number of Operations to Make Array Continuous(minimum-number-of-operations-to-make-array-continuous) (Hard)
+- Maximize the Confusion of an Exam(maximize-the-confusion-of-an-exam) (Medium)
+- Longest Substring of One Repeating Character(longest-substring-of-one-repeating-character) (Hard)

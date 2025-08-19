@@ -89,3 +89,8 @@ def maxCoins(lane1, lane2):
 
 ### Summary
 The solution uses the **DP/DFS with memoization** pattern, managing a small fixed set of state variables (position, lane, remaining switches). The idea of bounding a complex traversal by the number of switches is a recurring technique in constrained movement/grid problems. This problem resembles "**stateful path DP**" frequently used in grid, robot, or multi-lane optimization problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

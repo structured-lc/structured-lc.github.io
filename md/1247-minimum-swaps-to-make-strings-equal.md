@@ -67,3 +67,10 @@ def minimumSwap(s1: str, s2: str) -> int:
 
 ### Summary
 The problem is a greedy/counter pairing classic. Only care about mismatches and their pairing; rest can be ignored. This is related to string transformation/minimum replacement by swap, with the pairing logic being the critical observation.
+
+### Tags
+Math(#math), String(#string), Greedy(#greedy)
+
+### Similar Problems
+- Determine if Two Strings Are Close(determine-if-two-strings-are-close) (Medium)
+- Make Number of Distinct Characters Equal(make-number-of-distinct-characters-equal) (Medium)

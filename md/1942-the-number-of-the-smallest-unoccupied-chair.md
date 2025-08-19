@@ -102,3 +102,8 @@ def smallestChair(times, friendTarget):
 
 ### Summary
 This problem is a heap allocation simulation, frequently encountered in "resource allocation" tasks (like meeting rooms, CPU scheduling, parking slots, etc.). The use of two min-heaps facilitates efficient allocation and freeing of the smallest resource index. The approach is closely related to "Minimum Meeting Rooms" and "Process Tasks Using Servers" patterns. This greedy + heap method is widely applicable wherever a "smallest available resource" needs to be tracked dynamically.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

@@ -77,3 +77,10 @@ def find_lex_smallest_string(s, a, b):
 
 ### Summary
 This is a BFS/visited pattern on the state space of digit-strings, leveraging mod operations and rotations. It's a classic search/enumerate structure for problems with a small enough state space and reversible operations.
+
+### Tags
+String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Enumeration(#enumeration)
+
+### Similar Problems
+- Lexicographically Smallest String After Substring Operation(lexicographically-smallest-string-after-substring-operation) (Medium)
+- Lexicographically Smallest String After a Swap(lexicographically-smallest-string-after-a-swap) (Easy)

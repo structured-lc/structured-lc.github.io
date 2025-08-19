@@ -62,3 +62,8 @@ def findTeamSize(arr):
 
 ### Summary
 Classic use of **hash map counting** to aggregate frequency per group, then mapping input positions to their team's frequency. This pattern appears frequently in data grouping and frequency aggregation tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -87,3 +87,10 @@ def mySqrt(x: int) -> int:
 
 ### Summary
 The problem is a classic application of **binary search** on a monotonic function. The integer square root solution pattern is common for root-search and similar monotonic function problems, and binary search allows us to find the answer efficiently without direct use of arithmetic shortcuts. This pattern can also be used for cube roots, searching in sorted arrays, peak elements in arrays, and numerical methods.
+
+### Tags
+Math(#math), Binary Search(#binary-search)
+
+### Similar Problems
+- Pow(x, n)(powx-n) (Medium)
+- Valid Perfect Square(valid-perfect-square) (Easy)

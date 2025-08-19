@@ -93,3 +93,8 @@ def trap(height):
 
 ### Summary
 This problem is a classic application of the two-pointer technique, often called the "two-pass" or "trapping water" pattern. You start with brute force, optimize with precomputation, then solve in O(1) space with running max trackers. This pattern is broadly useful for interval problems, sliding windows, and anywhere you need to compare prefix/suffix extremes or efficiently aggregate across an array.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -140,3 +140,10 @@ The problem is a classic example of level-order traversal (**BFS**) applied to a
 This is a common pattern useful for questions involving level-wise processing, such as “largest value on each row,” “average of levels in BT,” or “zigzag traversal.”  
 The space and time efficiency make it suitable even for large trees, given memory is sufficient for the tree’s width.  
 Can also be solved (slightly less directly) by **DFS** with recursion and a list/array to track sums at each depth.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Kth Largest Sum in a Binary Tree(kth-largest-sum-in-a-binary-tree) (Medium)
+- Cousins in Binary Tree II(cousins-in-binary-tree-ii) (Medium)

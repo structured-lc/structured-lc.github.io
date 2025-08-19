@@ -115,3 +115,9 @@ def kthCharacter(k, operations):
 
 ### Summary
 This problem is a prime example of the *"reverse-mapping"* pattern on implicitly constructed strings (functional encoding/tree-like expansion). The key is to avoid any full construction and only track indices and operations back to the "origin," aggregating side-effects (character increments). This kind of thinking applies in compressed string decoding, stateful expansion, and various "synthetic" string or tree traversal problems.
+
+### Tags
+Math(#math), Bit Manipulation(#bit-manipulation), Recursion(#recursion)
+
+### Similar Problems
+- Shifting Letters(shifting-letters) (Medium)

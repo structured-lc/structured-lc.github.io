@@ -88,3 +88,8 @@ def final_position_of_snake(n, commands):
 
 ### Summary
 This is a classic simulation problem involving coordinates manipulation on a grid. The approach is linear scan and incremental calculation, a common pattern for movement/grid problems. The same methodology applies to robot path, spiral matrices, and grid traversals where boundary or path tracking is relevant.
+
+### Tags
+Array(#array), String(#string), Simulation(#simulation)
+
+### Similar Problems

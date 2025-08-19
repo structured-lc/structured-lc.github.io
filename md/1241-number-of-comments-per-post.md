@@ -135,3 +135,8 @@ def number_of_comments_per_post(submissions):
 
 ### Summary
 This problem uses the “group by/count distinct” pattern common in data processing and SQL. The key technique is deduplicating records by using sets. This pattern generalizes to log analysis, user statistics, and database query logic, and is a typical join/filter/count scenario.
+
+### Tags
+Database(#database)
+
+### Similar Problems

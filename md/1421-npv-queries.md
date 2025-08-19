@@ -58,3 +58,8 @@ def compute_npv(cashflows, rate):
 
 ### Summary
 This is a straightforward application of a given formula, using a loop and careful number handling. The approach of iterative discounting and application of a formula per index shows up in time-value-of-money and many amortization pattern problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

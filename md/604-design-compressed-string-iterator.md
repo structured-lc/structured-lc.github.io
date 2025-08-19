@@ -122,3 +122,10 @@ class StringIterator:
 ### Summary
 The problem leverages *iterative parsing with lazy evaluation*, processing only what’s needed for the next/hasNext interface. No decompression is done; only char/count pairs are tracked and decremented as we go.  
 The pattern is common in string iterator, stream, and generator problems, and can be adapted to custom iteration logic with memory efficiency.
+
+### Tags
+Array(#array), String(#string), Design(#design), Iterator(#iterator)
+
+### Similar Problems
+- LRU Cache(lru-cache) (Medium)
+- String Compression(string-compression) (Medium)

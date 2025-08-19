@@ -79,3 +79,13 @@ def longestCommonSubsequence(text1: str, text2: str) -> int:
 
 ### Summary
 This problem is a classic example of the **dynamic programming** pattern, specifically the 2D DP table approach for sequence alignment problems. The key is recognizing overlapping subproblems and optimal substructure. This technique appears in DNA sequence alignment, text diff tools, and various edit distance computations. The code can be adapted for related problems like minimum insertions/deletions to convert one string to another.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Longest Palindromic Subsequence(longest-palindromic-subsequence) (Medium)
+- Delete Operation for Two Strings(delete-operation-for-two-strings) (Medium)
+- Shortest Common Supersequence (shortest-common-supersequence) (Hard)
+- Maximize Number of Subsequences in a String(maximize-number-of-subsequences-in-a-string) (Medium)
+- Subsequence With the Minimum Score(subsequence-with-the-minimum-score) (Hard)

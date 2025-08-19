@@ -90,3 +90,8 @@ def maxSubarrayLength(nums):
 We used the **monotonic stack** pattern to maintain possible starting indices for semi-decreasing subarrays.  
 This reduces the brute-force O(n²) approach to O(n) by efficiently skipping subarrays where the condition cannot be met.  
 The pattern is common in problems where you want to maintain a history of candidates in a certain order (such as Next Greater Element, Largest Rectangle in Histogram), and can be applied to various range-interval or "first/last" element queries over arrays.
+
+### Tags
+Array(#array), Stack(#stack), Sorting(#sorting), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems

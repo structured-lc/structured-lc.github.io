@@ -74,3 +74,13 @@ def stoneGameII(piles):
             # Stones taken now: suffix_sum[i] - suffix_sum[i + x]
             # Next player starts at i + x, new M = max(m, x)
             # Bob will take best from remaining
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum), Game Theory(#game-theory)
+
+### Similar Problems
+- Stone Game V(stone-game-v) (Hard)
+- Stone Game VI(stone-game-vi) (Medium)
+- Stone Game VII(stone-game-vii) (Medium)
+- Stone Game VIII(stone-game-viii) (Hard)
+- Stone Game IX(stone-game-ix) (Medium)

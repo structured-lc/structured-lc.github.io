@@ -99,3 +99,9 @@ def diagonalSort(mat):
 
 ### Summary
 This problem uses the diagonal-grouping trick (using i-j as a key) to efficiently segment and process matrix diagonals. The pattern is dictionary bucketing followed by sorting and replacement—commonly used in grid problems like diagonal order traversals and anti-diagonal summations. This approach generalizes to related tasks (e.g., finding min/max/sums by diagonals) and is widely applicable in grid manipulation and DP.
+
+### Tags
+Array(#array), Sorting(#sorting), Matrix(#matrix)
+
+### Similar Problems
+- Sort the Matrix Diagonally(sort-the-matrix-diagonally) (Medium)

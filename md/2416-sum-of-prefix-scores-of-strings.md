@@ -142,3 +142,11 @@ class Solution:
 
 ### Summary
 This problem is a classic use-case for the **Trie (prefix tree)** data structure and prefix frequency counting. Building a Trie with counters enables fast (O(L)) queries for prefix scores across potentially huge lists. This pattern shows up in auto-complete, T9 text, prefix-based dictionary lookups, and similar background tally/lookup systems.
+
+### Tags
+Array(#array), String(#string), Trie(#trie), Counting(#counting)
+
+### Similar Problems
+- Design Add and Search Words Data Structure(design-add-and-search-words-data-structure) (Medium)
+- Maximum XOR of Two Numbers in an Array(maximum-xor-of-two-numbers-in-an-array) (Medium)
+- Map Sum Pairs(map-sum-pairs) (Medium)

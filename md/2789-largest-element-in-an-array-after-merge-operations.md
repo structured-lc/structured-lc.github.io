@@ -103,3 +103,11 @@ def maxArrayValue(nums):
 
 ### Summary
 This problem uses a *greedy* right-to-left accumulation pattern—maximize the sum by always merging any group of left elements into right if allowed by the operation condition. The pattern is related to prefix accumulation but applied backwards and is a variant of optimal substructure, where the optimal action combines clusters as soon as the operation allows. This can be applied in problems involving greedy merging or collapse of subarrays/subsequences under a condition, such as certain compression, reduction, or dynamic grouping tasks.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems
+- Jump Game(jump-game) (Medium)
+- House Robber(house-robber) (Medium)
+- Get Maximum in Generated Array(get-maximum-in-generated-array) (Easy)

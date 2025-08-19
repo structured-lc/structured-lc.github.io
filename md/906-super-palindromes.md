@@ -119,3 +119,8 @@ def superpalindromesInRange(left: str, right: str) -> int:
 
 ### Summary
 The solution leverages *palindrome generation* up to a manageable limit and only squares candidate roots, dramatically reducing the search space from the whole interval to potential palindrome squares. This approach combines *smart generation* (constructing numbers digit by digit) and *palindrome property checks*—a common coding pattern for "palindromic number" problems, appearing in advanced number theory and combinatorial coding challenges.
+
+### Tags
+Math(#math), String(#string), Enumeration(#enumeration)
+
+### Similar Problems

@@ -97,3 +97,8 @@ def gameResult(head: ListNode) -> str:
 
 ### Summary
 This problem uses the **pairwise traversal** and **counter update** coding patterns. It demonstrates how linked list traversal logic can parallel array logic with proper pointer care. The main approach—iterative simulation—is commonly used in problems asking for processing nodes in pairs, such as for parsing, pairing, or competition tasks.
+
+### Tags
+Linked List(#linked-list)
+
+### Similar Problems

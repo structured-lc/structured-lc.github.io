@@ -111,3 +111,13 @@ def isItPossible(word1: str, word2: str) -> bool:
 This approach uses brute-force over a restricted search space (26 × 26 max swaps), which is efficient due to the limited alphabet.  
 The pattern is “frequency map simulation”, often used in string, anagram, and distinctiveness problems.  
 It’s widely applicable when possible transitions depend more on sets or multisets of characters than on actual word structure or order.
+
+### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Bulls and Cows(bulls-and-cows) (Medium)
+- Buddy Strings(buddy-strings) (Easy)
+- Minimum Swaps to Make Strings Equal(minimum-swaps-to-make-strings-equal) (Medium)
+- Check if One String Swap Can Make Strings Equal(check-if-one-string-swap-can-make-strings-equal) (Easy)
+- Check if All Characters Have Equal Number of Occurrences(check-if-all-characters-have-equal-number-of-occurrences) (Easy)

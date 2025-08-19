@@ -85,3 +85,10 @@ def findMaxFish(grid):
 
 ### Summary
 The approach used here is **DFS-based connected components detection** — a common pattern for region counting or traversal in 2D grids. It’s applicable in image processing (finding clusters), maze exploration, “Number of Islands”, and any problem where you must process all connected parts in a matrix/grid. The technique of marking visited nodes directly in the grid is a standard optimization to reduce space and avoid bugs with extra visited sets.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
+
+### Similar Problems
+- Number of Islands(number-of-islands) (Medium)
+- Max Area of Island(max-area-of-island) (Medium)

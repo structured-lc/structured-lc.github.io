@@ -84,3 +84,9 @@ This problem is a classic example of the **brute-force with a property-check** c
 The solution loops until it finds the next number matching a rare property, checking via digit counting each time.  
 With small enough constraints, this approach is effective and easy to read—ideal for interviews, as it trades a bit of efficiency for clarity.  
 The pattern frequently applies when finding next/previous numbers matching constraints (e.g., the next palindrome, next number with unique digits, etc.).
+
+### Tags
+Hash Table(#hash-table), Math(#math), Backtracking(#backtracking), Counting(#counting), Enumeration(#enumeration)
+
+### Similar Problems
+- Find the Width of Columns of a Grid(find-the-width-of-columns-of-a-grid) (Easy)

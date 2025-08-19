@@ -94,3 +94,10 @@ def hasCycle(head):
 
 ### Summary  
 This problem uses the **Floyd's Tortoise and Hare** (two-pointer) pattern to efficiently detect cycles in linked lists. It's a fundamental pattern seen in many "cycle detection" problems in linked lists and graphs, and is a classic interview favorite due to its space efficiency and robustness. Recognizing when to apply two-pointer strategies is a key interview skill.
+
+### Tags
+Hash Table(#hash-table), Linked List(#linked-list), Two Pointers(#two-pointers)
+
+### Similar Problems
+- Linked List Cycle II(linked-list-cycle-ii) (Medium)
+- Happy Number(happy-number) (Easy)

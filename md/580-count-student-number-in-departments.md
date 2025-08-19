@@ -136,3 +136,8 @@ ORDER BY
 
 ### Summary
 This problem uses the **aggregation and left join pattern**, which is common when you need counts including zero rows from one table. Knowing when to use LEFT JOIN vs. INNER JOIN is crucial for such business reporting requirements. Similar logic can be applied to sales/transactions per category, posts per user, etc.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -105,3 +105,11 @@ def min_operations(nums, queries):
 
 ### Summary
 This problem uses the **prefix sum + binary search** pattern, which is common when you need to quickly compute sums/ranges based on sorted order and handle multiple queries. The approach generalizes to problems involving interval/range modifications and cost calculations over sorted values. Patterns like this also appear in problems that require solving for medians or minimizing distance/cost functions across subsets.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sorting(#sorting), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Minimum Moves to Equal Array Elements II(minimum-moves-to-equal-array-elements-ii) (Medium)
+- Minimum Cost to Make Array Equal(minimum-cost-to-make-array-equal) (Hard)
+- Sum of Distances(sum-of-distances) (Medium)

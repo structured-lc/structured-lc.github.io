@@ -91,3 +91,11 @@ def minimumTime(jobs, workers):
 
 ### Summary
 This problem is a classic example of greedy matching, where sorting and one-to-one pairing yields the optimal answer by aligning large workloads with the highest capacities. The pattern is similar to "minimize the maximum" in scheduling, and can be applied to load balancing, resource allocation, and even certain assignment tasks in logistics and operations.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Task Scheduler(task-scheduler) (Medium)
+- Find Minimum Time to Finish All Jobs(find-minimum-time-to-finish-all-jobs) (Hard)
+- Minimum Number of Work Sessions to Finish the Tasks(minimum-number-of-work-sessions-to-finish-the-tasks) (Medium)

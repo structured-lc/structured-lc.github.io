@@ -142,3 +142,12 @@ def calculate(s: str) -> int:
 
 ### Summary
 This solution uses the classic **infix expression evaluation with two stacks** (numbers and operators), handling operator precedence and parentheses. It's a variant of the Shunting Yard algorithm, a standard parsing approach used in calculator and interpreter projects. This pattern is commonly applied wherever nested or precedence-sensitive expressions must be safely evaluated without using unsafe built-ins.
+
+### Tags
+Math(#math), String(#string), Stack(#stack), Recursion(#recursion)
+
+### Similar Problems
+- Basic Calculator(basic-calculator) (Hard)
+- Basic Calculator II(basic-calculator-ii) (Medium)
+- Basic Calculator IV(basic-calculator-iv) (Hard)
+- Build Binary Expression Tree From Infix Expression(build-binary-expression-tree-from-infix-expression) (Hard)

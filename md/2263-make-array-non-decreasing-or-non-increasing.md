@@ -168,3 +168,11 @@ def makeArrayMonotonic(nums):
 This is a **dynamic programming with monotonic substructure** problem.  
 The technique of building up DP by tracking the minimum cost path for each index/value combo under ordering constraints is especially common in sequence transformation and alignment problems, such as edit distance, LIS modifications, and time series smoothing.  
 This pattern can also apply to problems that ask for *minimum adjustment* to satisfy a global property with local consecutive constraints.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Greedy(#greedy)
+
+### Similar Problems
+- Non-decreasing Array(non-decreasing-array) (Medium)
+- Make Array Strictly Increasing(make-array-strictly-increasing) (Hard)
+- Minimum Operations to Make the Array Increasing(minimum-operations-to-make-the-array-increasing) (Easy)

@@ -111,3 +111,7 @@ def deep_merge(obj1, obj2):
 
 ### Summary
 This deep merge is a classic **recursive structural merge** problem, applicable to configuration management, object diffs, or file merging tools. It uses recursion and dynamic type inspection, and the same pattern appears in schema validation, data reconciliation, and JSON/YAML patching.
+
+### Tags
+
+### Similar Problems

@@ -119,3 +119,11 @@ This problem is a classic **range addition with point query** scenario, efficien
 Key ideas: convert range updates into two-point modifications, then prefix sum to get per-point results.  
 Similar problems: **Range Addition** (Leetcode 370), skyline problems, subarray sum with updates, and some 2D image manipulation cases.  
 Pattern is widely used for interval increment/count operations in competitive programming and real-world scenarios like event scheduling, lamps coverage, parking lots, etc.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Range Addition(range-addition) (Medium)
+- Brightest Position on Street(brightest-position-on-street) (Medium)
+- Increment Submatrices by One(increment-submatrices-by-one) (Medium)

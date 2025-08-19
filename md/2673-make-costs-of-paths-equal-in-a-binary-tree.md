@@ -124,3 +124,8 @@ def minIncrements(n, cost):
 
 ### Summary
 This problem uses a **bottom-up post-order traversal with cost balancing** — a common pattern for processing trees where lower subproblems inform parents' decisions. The pattern appears in tree dynamic programming and binary tree path problems, especially where sibling or path relations must be balanced. Recognizing the perfect-binary sibling relationship and processing from leaves upward is the key to efficiency.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Tree(#tree), Binary Tree(#binary-tree)
+
+### Similar Problems

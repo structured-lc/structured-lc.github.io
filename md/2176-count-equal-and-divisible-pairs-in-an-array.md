@@ -82,3 +82,10 @@ def count_pairs(nums, k):
 
 ### Summary
 This is a classic "count valid pairs" technical screening problem and uses the brute-force double loop pattern. It's a good illustration of simulating constraints with direct pair-checking. The brute-force is efficient enough for small arrays; for massive arrays or other constraints, grouping and combinatorial math, or more advanced filtering might be considered. This general pattern of "searching all index pairs that meet constraints" appears in triangle problems, duplicate checks, and combinatorial filtering.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Count Number of Pairs With Absolute Difference K(count-number-of-pairs-with-absolute-difference-k) (Easy)
+- Count Number of Bad Pairs(count-number-of-bad-pairs) (Medium)

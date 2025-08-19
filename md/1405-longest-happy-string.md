@@ -82,3 +82,9 @@ def longestDiverseString(a: int, b: int, c: int) -> str:
 
 ### Summary
 This is a max-heap greedy implementation, always choosing the largest available letter, with local constraint checking. This pattern of heap-based greedy picking under constraints is common in string construction problems like "Reorganize String" and "Task Scheduler".
+
+### Tags
+String(#string), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Reorganize String(reorganize-string) (Medium)

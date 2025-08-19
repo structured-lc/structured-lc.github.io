@@ -97,3 +97,9 @@ def sortedArrayToBST(nums):
 
 ### Summary  
 This problem demonstrates the **divide and conquer** pattern, showcasing how recursion and careful selection (always using the midpoint) lead to a balanced BST from a sorted source. This template is common in tree problems, especially construction from sorted data, and applies to linked lists, arrays, and scenarios requiring conversions while maintaining balance.
+
+### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer), Tree(#tree), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Convert Sorted List to Binary Search Tree(convert-sorted-list-to-binary-search-tree) (Medium)

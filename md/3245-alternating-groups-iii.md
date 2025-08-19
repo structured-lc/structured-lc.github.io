@@ -141,3 +141,8 @@ def alternating_groups_iii(colors, queries):
 
 ### Summary
 This problem uses a classic *sliding window* / window enumeration pattern with careful handling of **circular arrays**. The approach is to directly check each window for the alternating property whenever queried, since update queries may invalidate all precomputed results. For similar window property problems (like substring matching, run lengths, circular substring queries), this strategy and attention to corner cases (wrapping) is widely applicable.
+
+### Tags
+Array(#array), Binary Indexed Tree(#binary-indexed-tree)
+
+### Similar Problems

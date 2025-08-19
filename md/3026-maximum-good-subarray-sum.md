@@ -109,3 +109,10 @@ def maximum_good_subarray_sum(nums, k):
 ### Summary
 This problem is solved efficiently with the **prefix sum + hashmap** technique, a common coding pattern for “maximum subarray” and “matching endpoints” problems.  
 Recognizing that only certain endpoints matter (those differing by ±k) allows for linear time. This pattern is widely applicable in subarray sum and difference-based windowed problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Maximum Subarray(maximum-subarray) (Medium)
+- Maximum Sum of Distinct Subarrays With Length K(maximum-sum-of-distinct-subarrays-with-length-k) (Medium)

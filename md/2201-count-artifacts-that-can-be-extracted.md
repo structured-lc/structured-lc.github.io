@@ -82,3 +82,9 @@ def digArtifacts(n, artifacts, dig):
 
 ### Summary
 This problem uses a common *set for fast lookup* pattern to quickly check membership of cells. The solution is efficient due to the problem constraints (no overlaps, at most 4 cells per artifact, unique digs) and is a typical “grid scan with lookups” question, seen in other problems involving coverage, connected components, or region queries. The technique can be generalized to problems involving grid masking or coordinate membership checks.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Simulation(#simulation)
+
+### Similar Problems
+- Maximal Square(maximal-square) (Medium)

@@ -117,3 +117,8 @@ def exclusiveTime(n, logs):
 
 ### Summary
 This problem is a classic **"interval stack"** or "CPU scheduling with call stack" pattern, often encountered in log analysis, profilers, and simulation. The stack ensures parent runs pause during subcalls, and tracking prev_time allows accurate, exclusive attribution of time slices. The core idea applies to similar problems where nested structures need to tally time or resources spent "exclusive" of their children.
+
+### Tags
+Array(#array), Stack(#stack)
+
+### Similar Problems

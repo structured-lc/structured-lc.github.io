@@ -145,3 +145,10 @@ print(get_first_device_by_player(activity))
 This problem follows the **“group by and filter”** pattern — find a minimum or maximum per group, then match/include rows accordingly.  
 This approach is common for extracting first/latest events, for user analytics, or similar aggregate → join/filter use cases.  
 It generalizes: replace “min” with “rank-k”, or perform aggregations per group, across all analytics problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Game Play Analysis I(game-play-analysis-i) (Easy)
+- Game Play Analysis III(game-play-analysis-iii) (Medium)

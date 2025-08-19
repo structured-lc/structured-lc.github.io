@@ -116,3 +116,10 @@ def maxProfit(prices):
 This is a classic **dynamic programming** problem—**state machine DP** specifically, representing buy/sell/cooldown states.  
 Recognizing states and defining them properly is central and appears in many stock trading DP problems.  
 This exact pattern is useful for any scenario where constraints limit consecutive actions (e.g., limited cooldowns, transaction fees, buy/sell restrictions).
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Best Time to Buy and Sell Stock(best-time-to-buy-and-sell-stock) (Easy)
+- Best Time to Buy and Sell Stock II(best-time-to-buy-and-sell-stock-ii) (Medium)

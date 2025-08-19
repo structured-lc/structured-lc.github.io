@@ -86,3 +86,8 @@ def smallestRepunitDivByK(K):
 ### Summary
 This approach uses **modulo arithmetic** and a **sliding simulation** pattern to avoid constructing immense numbers, instead working by building the remainder step by step as we lengthen the chain of '1's.  
 This is a classic application of the "remainder cycling" and "digit construction without overflow" pattern, a technique useful in any scenario where number construction is unworkably huge but divisibility or modular results suffice. It appears in problems involving repeating digits, digital roots, modular cycles, and large number divisibility.
+
+### Tags
+Hash Table(#hash-table), Math(#math)
+
+### Similar Problems

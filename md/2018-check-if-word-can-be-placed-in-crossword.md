@@ -130,3 +130,8 @@ def placeWordInCrossword(board, word):
 
 ### Summary
 This problem is an application of the *scan and check pattern*—sliding a window and verifying segment rules—in both rows and columns of a grid. The approach modularizes the slot checking, handles both directions by reversing, and fits grid processing problems found in crossword, word search, seating, or scheduling questions. It's a versatile pattern useful for puzzles, games, and grid constraint checking in interviews.
+
+### Tags
+Array(#array), Matrix(#matrix), Enumeration(#enumeration)
+
+### Similar Problems

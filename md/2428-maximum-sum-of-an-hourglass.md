@@ -113,3 +113,9 @@ def maxSum(grid):
 
 ### Summary
 This problem is a classic **matrix scan** with a fixed-shaped window, closely related to fixed-size sliding window patterns in 2D arrays. The main trick is correct iteration bounds to avoid out-of-bounds indices and summing only the fixed hourglass cells. This approach generalizes to similar problems like maximum-sum submatrix with a given pattern or size, but works here because the hourglass pattern is small and easily described by offsets.
+
+### Tags
+Array(#array), Matrix(#matrix), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Matrix Block Sum(matrix-block-sum) (Medium)

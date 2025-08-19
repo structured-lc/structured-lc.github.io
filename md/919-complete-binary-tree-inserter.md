@@ -172,3 +172,8 @@ class CBTInserter:
 
 ### Summary
 This problem uses the **BFS traversal pattern**, commonly applied to level-order processing in binary trees. The main idea is to maintain a dynamic queue of nodes with empty child spots, allowing **O(1) insertions while preserving the completeness property**. This approach generalizes to problems where you need to always “fill from left to right, top to bottom,” and is a classic use of a queue to model pending candidates in a greedy layer-wise fashion.
+
+### Tags
+Tree(#tree), Breadth-First Search(#breadth-first-search), Design(#design), Binary Tree(#binary-tree)
+
+### Similar Problems

@@ -131,3 +131,8 @@ Output:
 ### Summary
 This is a classic SQL grouping and aggregation problem: compute statistics (ratios or percentages) over groups, with basic conditional counting.  
 This pattern (conditional aggregation per group) is used frequently in reporting, dashboards, and KPI calculations. Examples include attendance rates, daily conversion percentages, or per-day event success/failure rates.
+
+### Tags
+Database(#database)
+
+### Similar Problems

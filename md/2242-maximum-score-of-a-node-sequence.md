@@ -109,3 +109,9 @@ def maximumScore(scores, edges):
 ### Summary
 This problem depends on efficiently pruning candidates using the graph structure, specifically by leveraging the top-k neighbors for each node.  
 It’s a graph enumeration + best-candidates pattern, and similar optimizations appear in problems involving friend circles, k-way path finding, or clique/subgraph enumeration where maximal-structure scores are needed.
+
+### Tags
+Array(#array), Graph(#graph), Sorting(#sorting), Enumeration(#enumeration)
+
+### Similar Problems
+- Get the Maximum Score(get-the-maximum-score) (Hard)

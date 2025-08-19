@@ -69,3 +69,9 @@ def sumBase(n: int, k: int) -> int:
 
 ### Summary
 This is a classic **base conversion** and **digit extraction** pattern, commonly solved using modulus and integer division in a while loop. The coding approach is direct and applies to digit problems in any base, with variants seen in checksums, digital roots, or custom base formatting tasks. There is no need for library shortcuts or string manipulation; the integer-based method is simple, efficient, and robust.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+-   Count Symmetric Integers(count-symmetric-integers) (Easy)

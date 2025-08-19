@@ -169,3 +169,10 @@ def solveSudoku(board):
 
 ### Summary
 This problem is a classic example of the **Backtracking / DFS** technique on grids—recursively attempting possible options and backtracking on constraint violations. The pattern is used widely in puzzles, combinatorial search, and constraint satisfaction, including N-Queens, crosswords, and many board fill-in tasks. Tracking used values in sets/arrays is a frequent optimization.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Backtracking(#backtracking), Matrix(#matrix)
+
+### Similar Problems
+- Valid Sudoku(valid-sudoku) (Medium)
+- Unique Paths III(unique-paths-iii) (Hard)

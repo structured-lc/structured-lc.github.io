@@ -118,3 +118,13 @@ def maximumRows(matrix, numSelect):
 ### Summary
 This solution uses a **bitmasking + combinations** pattern, exploiting the small number of columns to enumerate all possible sets of chosen columns.  
 This combinatorial subsetting via bitmask is a common approach for subset selection and "covering" problems when n is small, and is applicable to set cover, scheduling, and assignment problems where the search space can be efficiently represented as bitmasks.
+
+### Tags
+Array(#array), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Matrix(#matrix), Enumeration(#enumeration)
+
+### Similar Problems
+- Matchsticks to Square(matchsticks-to-square) (Medium)
+- Partition to K Equal Sum Subsets(partition-to-k-equal-sum-subsets) (Medium)
+- Find the Shortest Superstring(find-the-shortest-superstring) (Hard)
+- Smallest Sufficient Team(smallest-sufficient-team) (Hard)
+- Fair Distribution of Cookies(fair-distribution-of-cookies) (Medium)

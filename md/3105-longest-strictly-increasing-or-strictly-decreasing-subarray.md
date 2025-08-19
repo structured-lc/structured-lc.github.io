@@ -89,3 +89,8 @@ def longestMonotonicSubarray(nums):
 
 ### Summary
 This problem uses the **sliding window** or **counter** pattern for contiguous arrays, with a single variable tracking streaks as you iterate. It's a direct O(n), O(1) scan, similar to finding "the longest run of a property" in an array—a common pattern in sequence analysis, applicable to any scenario where you're tracking length of stretches with a property (e.g., longest unbroken sequence of successes, failures, etc).
+
+### Tags
+Array(#array)
+
+### Similar Problems

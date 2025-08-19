@@ -91,3 +91,8 @@ def minimumCoins(prices):
 ### Summary
 
 This problem is a **variation of dynamic programming with decisions and range jumps**, similar to jump game and minimum cost path patterns. The key insight is that "buying" a fruit may enable non-local "skips" in the DP. Recognizing the overlapping subproblems and using a bottom-up DP helps reduce redundant computations compared to brute force/recursion. The main coding pattern is classic DP with nested loops, with potential for further optimization using sliding window minimums or segment trees if required for larger constraints.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Queue(#queue), Heap (Priority Queue)(#heap-priority-queue), Monotonic Queue(#monotonic-queue)
+
+### Similar Problems

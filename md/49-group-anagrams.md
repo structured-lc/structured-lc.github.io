@@ -82,3 +82,12 @@ def groupAnagrams(strs):
 
 ### Summary
 This is a classic “hashing + grouping” problem and is a direct application of the **Hash Map** and **Sorting** patterns. The key idea is to use a canonical signature (either sorted characters or character counts) as keys in a dictionary to collect each group. This approach generalizes to many grouping problems where we need to classify objects by some invariant property.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting)
+
+### Similar Problems
+- Valid Anagram(valid-anagram) (Easy)
+- Group Shifted Strings(group-shifted-strings) (Medium)
+- Find Resultant Array After Removing Anagrams(find-resultant-array-after-removing-anagrams) (Easy)
+- Count Anagrams(count-anagrams) (Hard)

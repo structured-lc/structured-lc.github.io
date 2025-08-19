@@ -135,3 +135,10 @@ class SeatManager:
 
 This solution uses the **min-heap (priority queue)** pattern, efficiently supporting always assigning the lowest available seat number and unreserving operations in log-time.  
 This pattern—greedy allocation and fast recycle of unique IDs/numbers—is widely applicable for resource pools, ID recycling, connection management, and similar systems where the smallest available resource should be assigned/designed efficiently.
+
+### Tags
+Design(#design), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Design Phone Directory(design-phone-directory) (Medium)
+- Design a Number Container System(design-a-number-container-system) (Medium)

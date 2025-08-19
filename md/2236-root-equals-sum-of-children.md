@@ -72,3 +72,8 @@ def checkTree(root):
 This problem is a direct property check on a small binary tree. The solution is a classic example of *direct access* of node values without traversal, recursion, or extra data structures.  
 It helps reinforce the importance of reading constraints carefully and choosing solutions that fit minimal input—it’s never needed to overcomplicate with tree traversal when simple arithmetic and value checks suffice.  
 Patterns like this show up when dealing with fixed-size trees or direct parent-child value relationships.
+
+### Tags
+Tree(#tree), Binary Tree(#binary-tree)
+
+### Similar Problems

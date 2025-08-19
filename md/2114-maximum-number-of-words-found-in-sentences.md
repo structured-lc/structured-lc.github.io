@@ -68,3 +68,9 @@ def mostWordsFound(sentences):
 
 ### Summary
 This problem uses the **counting pattern** – iterating through each element and keeping a running maximum. It’s a classic string manipulation scenario where minimal parsing suffices due to the input’s guaranteed formatting. Similar logic can be used for problems involving splitting or counting substrings, tokens, or features in strings or arrays.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems
+- Number of Valid Words in a Sentence(number-of-valid-words-in-a-sentence) (Easy)

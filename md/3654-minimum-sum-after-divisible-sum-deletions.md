@@ -95,3 +95,7 @@ def minimumSum(nums, k):
 
 ### Summary
 This problem uses **interval DP / recursive memoization** and explores all possible subarrays that could be deleted at each step. The key is to efficiently search for all combinations and avoid recomputation via memoization. It's closely related to string/array interval DP patterns (e.g., "Burst Balloons", palindrome partitioning). This removal pattern shows up in problems involving segment deletions with constraints.
+
+### Tags
+
+### Similar Problems

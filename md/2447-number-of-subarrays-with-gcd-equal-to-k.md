@@ -92,3 +92,10 @@ def subarrayGCD(nums, k):
 
 ### Summary
 This problem uses the **two-pointer nested loop** technique, updating GCD on the fly as the subarray expands. The main trick is using the **Euclidean algorithm** for GCD and early termination when the GCD cannot meet the criteria. This pattern is common in subarray problems requiring dynamic aggregates (sum, min, GCD, LCM, etc.), and mastering it helps in a wide range of interval challenges.
+
+### Tags
+Array(#array), Math(#math), Number Theory(#number-theory)
+
+### Similar Problems
+- Find Greatest Common Divisor of Array(find-greatest-common-divisor-of-array) (Easy)
+- Number of Subarrays With LCM Equal to K(number-of-subarrays-with-lcm-equal-to-k) (Medium)

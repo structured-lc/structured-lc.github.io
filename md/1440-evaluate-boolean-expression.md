@@ -99,3 +99,8 @@ def parseBoolExpr(expression: str) -> bool:
 
 ### Summary
 This problem leverages the classical stack-based parsing pattern used for evaluating expressions with parentheses and operators. The key insight is processing the innermost expressions first, which naturally fits a stack, and is extendable to support any new operators. This technique is very common in expression evaluation, calculators, and compilers.
+
+### Tags
+Database(#database)
+
+### Similar Problems

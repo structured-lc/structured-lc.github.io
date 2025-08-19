@@ -70,3 +70,8 @@ def makeGood(s: str) -> str:
 
 ### Summary
 This problem leverages the **stack pattern** to efficiently detect and remove adjacent "bad pairs" in a single scan. It’s a classic example of using a stack to handle problems involving matching or canceling out elements (like removing duplicate pairs, handling parentheses, and so on). This stack approach is both efficient and simple, making it a useful pattern for any scenario with forward-only removal of adjacent dependent pairs.
+
+### Tags
+String(#string), Stack(#stack)
+
+### Similar Problems

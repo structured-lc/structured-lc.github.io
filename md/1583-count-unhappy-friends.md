@@ -68,3 +68,8 @@ def unhappyFriends(n, preferences, pairs):
 
 ### Summary
 This is a pairing stability/unhappiness check drawing on the stable marriage problem. The main patterns involve preference order mapping and two-sided mutual ranking checks. This applies to many problems on assignments, rankings, or matching.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems

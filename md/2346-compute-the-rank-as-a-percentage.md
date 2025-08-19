@@ -177,3 +177,8 @@ def compute_rank_as_percentage(students: List[Dict[str, Any]]) -> List[Dict[str,
 
 ### Summary
 The solution uses classic "order by + grouping + ranking" logic, with careful tie-handling (standard rank, not dense rank). This type of ranking is common in leaderboards, grading, and reporting systems. The window function (rank/count over partition by group) pattern generalizes well to analytic queries and data processing, especially with SQL. The code is adaptable for other percentile or "relative rank" types of group rankings.
+
+### Tags
+Database(#database)
+
+### Similar Problems

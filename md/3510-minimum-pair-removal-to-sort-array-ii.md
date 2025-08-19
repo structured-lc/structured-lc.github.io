@@ -175,3 +175,8 @@ def minimum_operations(nums):
 This problem uses an **interval heap + linked-array simulation** of merges, a common pattern for problems where local greedy operations are forced but global rebuilds after mutation are costly.  
 It’s a variation of “simulate merges by always picking the best local choice,” and is similar to *Interval heap* + *Sweepline* or *Union-Find* for dynamic intervals.  
 Useful for problems requiring efficient updates around local merges under global array constraints.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Linked List(#linked-list), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation), Doubly-Linked List(#doubly-linked-list), Ordered Set(#ordered-set)
+
+### Similar Problems

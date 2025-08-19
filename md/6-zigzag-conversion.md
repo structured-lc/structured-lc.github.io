@@ -105,3 +105,8 @@ def convert(s: str, numRows: int) -> str:
 
 ### Summary
 This approach is a classic **simulation** pattern: traverse with state (direction, row), build the output incrementally. Useful also in similar problems with *patterned string transformations* or *matrix traversals*. The code is simple, avoids unnecessary grids, and efficiently solves the problem with one pass and minimal space.
+
+### Tags
+String(#string)
+
+### Similar Problems

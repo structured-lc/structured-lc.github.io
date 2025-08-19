@@ -136,3 +136,11 @@ def minimumWeight(n, edges, src1, src2, dest):
 
 ### Summary
 This problem is a classical minimum sum-paths union, optimized with Dijkstra’s algorithm and the key insight of considering all possible "meeting points" i (splitting/joining nodes). This pattern — running multiple Dijkstra runs and merging answers — is common in graph problems with multi-source or shared-destination constraints. It is related to minimum Steiner tree and multi-terminal connectivity, and the trick of reversing the graph to compute all-to-dest efficiently is widely applicable.
+
+### Tags
+Graph(#graph), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Minimum Cost to Make at Least One Valid Path in a Grid(minimum-cost-to-make-at-least-one-valid-path-in-a-grid) (Hard)
+- Escape the Spreading Fire(escape-the-spreading-fire) (Hard)
+- Disconnect Path in a Binary Matrix by at Most One Flip(disconnect-path-in-a-binary-matrix-by-at-most-one-flip) (Medium)

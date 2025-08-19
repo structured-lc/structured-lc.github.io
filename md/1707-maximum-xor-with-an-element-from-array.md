@@ -146,3 +146,13 @@ def maximizeXor(nums, queries):
 This problem uses a *bitwise Trie* (binary prefix tree) to efficiently find the maximum XOR with constraints.  
 This tree-based pattern is common for bitmask and XOR maximization over dynamic or filtered sets, especially for "all-pairs" queries with constraints. This pattern also appears in "Maximum XOR of Two Numbers in an Array" and similar bitwise search problems.  
 Key idea: Reduce per-query work to O(bit-length), use sorting for efficient eligibility, and process in two-pointer style to maintain optimal Trie state for each query.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Trie(#trie)
+
+### Similar Problems
+- Maximum XOR of Two Numbers in an Array(maximum-xor-of-two-numbers-in-an-array) (Medium)
+- Maximum Genetic Difference Query(maximum-genetic-difference-query) (Hard)
+- Minimize XOR(minimize-xor) (Medium)
+- Maximum Strong Pair XOR I(maximum-strong-pair-xor-i) (Easy)
+- Maximum Strong Pair XOR II(maximum-strong-pair-xor-ii) (Hard)

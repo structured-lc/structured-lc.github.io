@@ -126,3 +126,8 @@ def getNumberOfBacklogOrders(orders):
 ### Summary
 This problem uses the "simulate a system with optimal data structures" pattern, specifically with **double-priority queues (heaps)** to keep quick access to best buy and sell orders. This is a classic **order-matching / simulation** and **heap (priority queue) application**.  
 The same approach can be applied in real-time marketplaces, job schedulers, or any situation where efficient retrieval of the minimum/maximum is crucial for matching resources or tasks.
+
+### Tags
+Array(#array), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation)
+
+### Similar Problems

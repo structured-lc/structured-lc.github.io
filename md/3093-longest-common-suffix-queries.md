@@ -135,3 +135,10 @@ def longestCommonSuffixQueries(wordsContainer, wordsQuery):
 This problem is a strong illustration of using a **suffix Trie** (by reversed insertion) to turn a brute suffix search into a highly efficient lookup. Variants of this pattern appear in problems like substring or pattern matching, string suggestion engines, and DNA fragment overlap.  
 The main trick is realizing that reversing strings converts a suffix challenge into a prefix one, unlocking classic Trie efficiency.  
 The solution uses custom Trie nodes with storage for fast tie-breaking and is an example of "Trie plus metadata".
+
+### Tags
+Array(#array), String(#string), Trie(#trie)
+
+### Similar Problems
+- Longest Common Prefix(longest-common-prefix) (Easy)
+- Find the Length of the Longest Common Prefix(find-the-length-of-the-longest-common-prefix) (Medium)

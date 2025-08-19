@@ -79,3 +79,9 @@ def distanceBetweenBusStops(distance, start, destination):
 
 ### Summary
 This problem is a classic application of **array segment sums** and handling **circular arrays**. The key insight is that for any two points on a ring, the shortest path is either clockwise or counterclockwise, and we can use modular arithmetic and prefix sums to calculate both efficiently. This pattern is useful in cycle-based array problems and can be applied to similar scenarios like circular race tracks, wrap-around games, or ring topology networks.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Minimum Costs Using the Train Line(minimum-costs-using-the-train-line) (Hard)

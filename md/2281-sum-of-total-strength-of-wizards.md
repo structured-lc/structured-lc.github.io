@@ -131,3 +131,12 @@ def totalStrength(strength):
 
 ### Summary
 We use the **monotonic stack** and **prefix sum** pattern here to efficiently iterate over all subarrays where each strength[i] is the minimum, without explicitly enumerating every subarray. This converts a naive O(n³) problem to O(n), a very useful technique anytime you need to count or sum over subarrays constrained by min or max constraints. This pattern also applies to problems such as sum of subarray minimums, largest rectangle in histogram, and others.
+
+### Tags
+Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Next Greater Element I(next-greater-element-i) (Easy)
+- Sum of Subarray Minimums(sum-of-subarray-minimums) (Medium)
+- Number of Visible People in a Queue(number-of-visible-people-in-a-queue) (Hard)
+- Sum of Subarray Ranges(sum-of-subarray-ranges) (Medium)

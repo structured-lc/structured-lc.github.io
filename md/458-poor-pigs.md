@@ -99,3 +99,8 @@ def poorPigs(buckets, minutesToDie, minutesToTest):
 
 ### Summary
 This problem beautifully demonstrates the connection between combinatorics and information theory. The key insight is recognizing that each pig can encode multiple states based on when it dies, and we need enough pigs to create sufficient distinct outcomes to identify any bucket. The formula (T+1)^X ≥ buckets captures this relationship perfectly. This type of thinking - encoding information in multiple states - appears in many computer science problems involving error detection, data compression, and communication protocols.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
+
+### Similar Problems

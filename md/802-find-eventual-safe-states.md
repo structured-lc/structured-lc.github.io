@@ -104,3 +104,9 @@ def eventualSafeNodes(graph):
 ### Summary
 This solution uses the classical DFS coloring method for cycle detection in directed graphs. The “safe node set propagation” pattern helps solve similar questions where nodes are only valid if all their out-edges or descendants are valid (think: eventual safety, dead-end propagation).  
 This idea is also fundamental for problems like detecting cycles, topological sorting, and course schedule/ordering tasks.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort)
+
+### Similar Problems
+- Build a Matrix With Conditions(build-a-matrix-with-conditions) (Hard)

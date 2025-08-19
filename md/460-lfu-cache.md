@@ -187,3 +187,10 @@ class LFUCache:
 
 ### Summary
 LFU Cache combines concepts from hash tables and doubly linked lists to achieve O(1) performance. The key insight is maintaining separate doubly linked lists for each frequency level, allowing efficient access to the least frequently (and least recently) used items. The challenge lies in correctly updating frequencies and managing the minimum frequency tracker. This data structure demonstrates how complex caching policies can be implemented efficiently through careful design of supporting data structures.
+
+### Tags
+Hash Table(#hash-table), Linked List(#linked-list), Design(#design), Doubly-Linked List(#doubly-linked-list)
+
+### Similar Problems
+- LRU Cache(lru-cache) (Medium)
+- Design In-Memory File System(design-in-memory-file-system) (Hard)

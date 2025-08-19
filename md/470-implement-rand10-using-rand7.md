@@ -98,3 +98,8 @@ def rand10():
 
 ### Summary
 This problem demonstrates the rejection sampling technique, a fundamental method in random number generation. The key insight is creating a uniform distribution over a range that's divisible by the target range, then using rejection sampling to maintain uniformity. This technique is widely used in Monte Carlo methods, cryptography, and statistical computing. Understanding how to transform one random distribution into another while preserving uniformity is crucial for many probabilistic algorithms.
+
+### Tags
+Math(#math), Rejection Sampling(#rejection-sampling), Randomized(#randomized), Probability and Statistics(#probability-and-statistics)
+
+### Similar Problems

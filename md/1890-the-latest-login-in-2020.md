@@ -129,3 +129,8 @@ GROUP BY
 This problem is a classic example of SQL grouping and aggregation—**filtering rows and finding the max (latest) per group** (user).  
 This “filter+GROUP BY+aggregate” pattern is used frequently, such as for earliest/latest events, maximum scores, tallest building per city, etc.  
 Efficient with index support on time_stamp/user_id and highly scalable for typical relational datasets.
+
+### Tags
+Database(#database)
+
+### Similar Problems

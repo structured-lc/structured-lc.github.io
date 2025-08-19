@@ -75,3 +75,10 @@ def maxCount(m, n, ops):
 
 ### Summary
 This problem uses a classic "intersection of ranges" math pattern. By recognizing that only the area overlapped by **all** operations is incremented the most, we reduce the problem to simple min-finding across all ops, avoiding any need to simulate the full matrix. This pattern applies to similar range update/count problems, especially when only overlapping results matter.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems
+- Range Addition(range-addition) (Medium)
+- Sum of Matrix After Queries(sum-of-matrix-after-queries) (Medium)

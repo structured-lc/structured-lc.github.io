@@ -59,3 +59,10 @@ def sortByBits(arr):
 
 ### Summary
 This is a classic sorting problem using custom keys based on secondary criteria. The solution follows the "sort by mapped value" pattern, seen in problems needing custom, multi-stage sort logic.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems
+- Find Subsequence of Length K With the Largest Sum(find-subsequence-of-length-k-with-the-largest-sum) (Easy)
+- Find if Array Can Be Sorted(find-if-array-can-be-sorted) (Medium)

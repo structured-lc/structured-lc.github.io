@@ -121,3 +121,11 @@ def myAtoi(s: str) -> int:
 
 ### Summary
 This problem uses the **state machine/scanning pattern**, processing input step-by-step and handling conditions as encountered, a common approach for parser-like problems. The code is structured to handle edge conditions and overflow efficiently, with only constant extra space. This pattern is often seen in implementing custom parsers, language interpreters, or data ingress pipelines where strict input validation is required.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Reverse Integer(reverse-integer) (Medium)
+- Valid Number(valid-number) (Hard)
+- Check if Numbers Are Ascending in a Sentence(check-if-numbers-are-ascending-in-a-sentence) (Easy)

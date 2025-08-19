@@ -82,3 +82,8 @@ ORDER BY
 
 ### Summary
 This problem is a classic SQL aggregation (GROUP BY + COUNT with WHERE filter); useful for rollups, counting, and statistics by attribute.
+
+### Tags
+Database(#database)
+
+### Similar Problems

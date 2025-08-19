@@ -161,3 +161,8 @@ def employeesProjectAllocation(project, employees):
 
 ### Summary
 This problem is a **group by/aggregation with a join** pattern, common in database or data analysis questions. The core steps are mapping, grouping, aggregating averages, then filtering — this is widely applicable for analytics, reporting, and ETL pipelines. The coding involves building efficient lookups for per-team and per-employee data, and careful attention to details when there are edge cases with empty data, or teams of size one.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -71,3 +71,8 @@ def findOcurrences(text, first, second):
 
 ### Summary
 This problem relies on the sliding window pattern, looping through the word list and checking groups of consecutive words. This is a classic pattern for substring, substring-with-lookahead, and sequence detection problems. The approach is direct and requires only a single pass, making it efficient and clean. This pattern is broadly applicable for n-gram analysis and log or text processing tasks.
+
+### Tags
+String(#string)
+
+### Similar Problems

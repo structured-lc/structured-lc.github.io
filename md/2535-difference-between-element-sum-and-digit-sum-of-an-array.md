@@ -81,3 +81,10 @@ def differenceOfSum(nums):
 
 ### Summary
 This problem is a classic “digit sum” simulation, often used as an exercise in math and number manipulation. The coding pattern is simple iteration, digit extraction using `%` and integer division, and accumulating the results. This approach is also seen in problems involving digit root, checksum, or manipulating the representation of numbers.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems
+- Add Digits(add-digits) (Easy)
+- Minimum Sum of Four Digit Number After Splitting Digits(minimum-sum-of-four-digit-number-after-splitting-digits) (Easy)

@@ -88,3 +88,11 @@ def longestPalindrome(s):
 ### Summary
 
 This problem is a classic *hashmap counting / greedy* pattern—track frequencies, maximize paired usage, and optimize for a possible central character. It's a common template that applies to problems where element pairing, grouping, or symmetry is required, such as anagram or arrangement challenges.
+
+### Tags
+Hash Table(#hash-table), String(#string), Greedy(#greedy)
+
+### Similar Problems
+- Palindrome Permutation(palindrome-permutation) (Easy)
+- Longest Palindrome by Concatenating Two Letter Words(longest-palindrome-by-concatenating-two-letter-words) (Medium)
+- Largest Palindromic Number(largest-palindromic-number) (Medium)

@@ -103,3 +103,9 @@ def asteroidsDestroyed(mass, asteroids):
 
 ### Summary
 This is a classic **greedy** pattern question: always make the locally optimal (smallest first) choice to ensure a global solution. The key is to sort inputs for ordered processing, a common approach in interval problems, resource gathering, or minimizing/maximizing capacity. This pattern appears often in variations of scheduling, merging, and accumulation-style interview questions.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Asteroid Collision(asteroid-collision) (Medium)

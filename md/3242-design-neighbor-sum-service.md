@@ -114,3 +114,10 @@ class NeighborSum:
 ### Summary
 This problem uses the **hash map/grid navigation** pattern, trading modest setup work and O(n²) auxiliary storage to achieve instant O(1) neighbor-sum queries.  
 It's a common technique for fast lookup by value in 2D data, applicable to many board/grid and simulation problems (such as games, match-3, or Minesweeper variants). Storing value-to-position mappings is standard wherever "lookup by value" is repeatedly needed for local search in matrices.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Design(#design), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems
+- Matrix Block Sum(matrix-block-sum) (Medium)
+- Array With Elements Not Equal to Average of Neighbors(array-with-elements-not-equal-to-average-of-neighbors) (Medium)

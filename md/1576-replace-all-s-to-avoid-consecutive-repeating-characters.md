@@ -78,3 +78,8 @@ def modifyString(s: str) -> str:
 
 ### Summary
 This problem applies a common greedy replacement pattern, where for each position we make a locally optimal choice (pick the first available letter not matching neighbors). The approach is linear and very efficient. This pattern is common in string and greedy problems where the choice at each index only depends on immediate neighbors.
+
+### Tags
+String(#string)
+
+### Similar Problems

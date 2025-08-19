@@ -91,3 +91,11 @@ def validSubarraySize(nums, threshold):
 
 ### Summary
 We use a **monotonic stack** (next smaller to left/right) to determine, for each element, the largest subarray for which it’s the minimum. This reduces the problem from brute-force O(n²) to O(n). This pattern arises often in "maximum/minimum in subarray" problems and can be applied to various histogram, sliding window, and range analysis problems.
+
+### Tags
+Array(#array), Stack(#stack), Union Find(#union-find), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Maximum Subarray Min-Product(maximum-subarray-min-product) (Medium)
+- Smallest K-Length Subsequence With Occurrences of a Letter(smallest-k-length-subsequence-with-occurrences-of-a-letter) (Hard)
+- K Divisible Elements Subarrays(k-divisible-elements-subarrays) (Medium)

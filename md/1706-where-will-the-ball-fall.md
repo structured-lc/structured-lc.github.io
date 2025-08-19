@@ -103,3 +103,8 @@ def findBall(grid):
 
 ### Summary
 This problem is a classic simulation pattern: follow the state for each unit (ball) step by step through a grid, making decisions based on cell content and neighbors. The approach applies to grid navigation, physics simulations, and path prediction problems. Recognizing early-exit conditions and "local neighborhood" blockages is generally useful in similar matrix/grid pathfinding problems.
+
+### Tags
+Array(#array), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems

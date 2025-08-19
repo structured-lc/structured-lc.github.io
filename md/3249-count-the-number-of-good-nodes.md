@@ -138,3 +138,9 @@ class Solution:
 This problem is a clean example of **tree recursion and subtree property aggregation**, specifically applying a post-order DFS to compute child-related properties at each node.  
 The main pattern—calculating and comparing subtree sizes—appears in many tree DP, centroid decomposition, or “equal subtree” type interview questions.  
 **Mastery of DFS, recursive info passing, and local/global aggregation is the key pattern here.**
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems
+- Maximum Depth of N-ary Tree(maximum-depth-of-n-ary-tree) (Easy)

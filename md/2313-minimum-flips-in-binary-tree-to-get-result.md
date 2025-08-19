@@ -147,3 +147,11 @@ def minimumFlips(root, result):
 
 ### Summary
 This problem leverages **tree DP** with **post-order DFS** and memoization, a common pattern in evaluating and optimizing structured boolean/arithmetical expressions over binary trees. The same design is applicable for expressions with minimal edit/change/flip operations for desired results, such as "minimum swaps to evaluate expression" or "minimum operations in expression trees."
+
+### Tags
+Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Check If Two Expression Trees are Equivalent(check-if-two-expression-trees-are-equivalent) (Medium)
+- Design an Expression Tree With Evaluate Function(design-an-expression-tree-with-evaluate-function) (Medium)
+- Evaluate Boolean Binary Tree(evaluate-boolean-binary-tree) (Easy)

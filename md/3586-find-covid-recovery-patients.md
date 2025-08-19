@@ -112,3 +112,8 @@ def find_covid_recovery_patients(records):
 ### Summary
 This problem applies the **Grouping and Minimum/Maximum aggregation** pattern often used for log analysis and event stream analysis per entity.  
 The solution uses grouping, sorting, and scanning for ordered events (positive → later negative), a pattern valuable for user history, fraud detection, and state-machine problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

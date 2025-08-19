@@ -70,3 +70,8 @@ def findRepeatedDnaSequences(s):
 ### Summary
 This problem leverages the **sliding window + hash set/pattern detection** pattern, common in substring/duplicate substring or subarray problems.  
 The approach highlights efficient substring search and duplicate detection using hashing—easily applicable to varied string, pattern, or window-based detection tasks in technical interviews.
+
+### Tags
+Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Sliding Window(#sliding-window), Rolling Hash(#rolling-hash), Hash Function(#hash-function)
+
+### Similar Problems

@@ -84,3 +84,9 @@ def commonFactors(a: int, b: int) -> int:
 
 ### Summary
 This problem uses the classic pattern of **GCD and divisor counting**: the set of common factors for two numbers a and b is exactly the set of divisors of gcd(a, b). This approach is efficient and common in number theory, and is closely related to problems involving GCD, LCM, or divisor enumeration. Similar logic appears in problems asking for common multiples, greatest divisors, or shared factors in arrays.
+
+### Tags
+Math(#math), Enumeration(#enumeration), Number Theory(#number-theory)
+
+### Similar Problems
+- Count Primes(count-primes) (Medium)

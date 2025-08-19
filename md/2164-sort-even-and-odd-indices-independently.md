@@ -109,3 +109,10 @@ Used the "two-pass and merge" partitioning pattern:
 - Separate collection (split by even/odd indices), sort individually, and merge by restoring alternate positions.  
 - This logic is common for "group-and-reorder" class problems, which arise in questions about alternate, wave, or multigroup sorting.
 - The pattern is also applicable for problems requiring multiple independent sorts and then restoring or interleaving results.
+
+### Tags
+Array(#array), Sorting(#sorting)
+
+### Similar Problems
+- Sort Array By Parity(sort-array-by-parity) (Easy)
+- Sort Array By Parity II(sort-array-by-parity-ii) (Easy)

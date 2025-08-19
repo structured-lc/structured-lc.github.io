@@ -112,3 +112,10 @@ def getOrder(tasks):
 
 ### Summary
 This problem uses the **heap + two pointer pattern** for simulating a scheduling process, combining a sorted list for chronological scanning and a min-heap for task prioritization. This approach is common for process/task scheduling problems and anywhere you need to dynamically choose the *best* available item by some criteria (e.g. Dijkstra’s, interval merging, etc). The use of a priority queue for minimum selection is broadly applicable in real-world scheduling and resource allocation scenarios.
+
+### Tags
+Array(#array), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Parallel Courses III(parallel-courses-iii) (Hard)
+- Minimum Time to Complete All Tasks(minimum-time-to-complete-all-tasks) (Hard)

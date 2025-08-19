@@ -148,3 +148,8 @@ def longestVSegment(grid):
 
 ### Summary
 This problem is a combination of grid recursion, stateful DP/memoization, and careful tracking of path dependencies (direction, alternation, single allowed turn). The solution uses the **"DP on grid with state"** pattern—commonly used for grid-based, path-dependent, and sequence-constrained problems—similar to unique-paths-with-turns or game simulation on grids. It’s a valuable pattern, especially for hard graph/grid dynamic programming challenges.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Memoization(#memoization), Matrix(#matrix)
+
+### Similar Problems

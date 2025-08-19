@@ -95,3 +95,11 @@ def maxDistance(grid):
 
 ### Summary
 This problem is a classic example of the **Multi-Source BFS** pattern for shortest paths in an unweighted grid. The pattern applies to any scenario where many sources expand and we want to track the shortest reach to each target class. This approach is common in problems like "rot all oranges", "zombie in matrix", or “walls and gates”.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- Shortest Distance from All Buildings(shortest-distance-from-all-buildings) (Hard)
+- K Highest Ranked Items Within a Price Range(k-highest-ranked-items-within-a-price-range) (Medium)
+- Maximum Manhattan Distance After K Changes(maximum-manhattan-distance-after-k-changes) (Medium)

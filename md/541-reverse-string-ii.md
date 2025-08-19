@@ -85,3 +85,11 @@ def reverseStr(s: str, k: int) -> str:
 
 ### Summary
 This approach uses a **sliding window** and **in-place reversal** in fixed-size chunks—a common pattern for string manipulation problems. Similar logic can be applied to “Reverse Words in a String”, work with intervals in arrays, or applying transformations to every nth segment in a sequence. This is a classic case of segmenting and processing in-place.
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Reverse String(reverse-string) (Easy)
+- Reverse Words in a String III(reverse-words-in-a-string-iii) (Easy)
+- Faulty Keyboard(faulty-keyboard) (Easy)

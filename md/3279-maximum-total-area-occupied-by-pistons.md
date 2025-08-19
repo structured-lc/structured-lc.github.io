@@ -138,3 +138,8 @@ def max_total_area(height, positions, directions):
 
 ### Summary  
 This problem is a **simulation and event-tracking** challenge requiring understanding of periodic piston movements (modeled as bouncing linear trajectories). The key insight is mapping piston position changes into discrete events where direction flips, enabling efficient maximum area calculation without brute-force time-step simulation. The approach combines movement pattern recognition with event-driven updates and prefix area summations—common patterns in physics simulations and interval problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Simulation(#simulation), Counting(#counting), Prefix Sum(#prefix-sum)
+
+### Similar Problems

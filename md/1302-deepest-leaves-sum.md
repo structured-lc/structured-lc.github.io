@@ -113,3 +113,8 @@ def deepestLeavesSum(root):
 
 ### Summary
 The main pattern used here is **level-order traversal (BFS)** in binary trees, focusing on the last visited layer for the solution. It’s a classic example of where BFS cleanly surfaces the answer, and similar techniques apply to other “last level” or “level sum” tree problems, such as "bottom-up level order traversal" and "average of levels in tree".
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

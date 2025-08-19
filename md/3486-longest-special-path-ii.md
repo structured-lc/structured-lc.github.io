@@ -161,3 +161,9 @@ This problem is a classic **Dynamic Programming on Trees** pattern, where chains
 The approach avoids recomputation by only tracking maximal single- and double-value chains, summing edge lengths, and minimizing node counts, all in linear time.  
   
 Variants of this method apply to path-constrained problems on trees (e.g. longest path with limited values, sliding window on trees, tree diameter, etc.).
+
+### Tags
+Array(#array), Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Longest Special Path(longest-special-path) (Hard)

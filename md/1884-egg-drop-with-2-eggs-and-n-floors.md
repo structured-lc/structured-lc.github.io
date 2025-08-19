@@ -101,3 +101,9 @@ This is a classic **minimax search with limited resources**—a major interview 
 The core idea leverages **math to minimize worst-case moves** by reducing potential failure range at each step.  
 This strategy appears in variants: general egg drop, finding critical thresholds, and optimizing search with constraints.  
 You could apply this approach for related real-world problems like circuit testing, breakpoints, or adversarial minimax.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Super Egg Drop(super-egg-drop) (Hard)

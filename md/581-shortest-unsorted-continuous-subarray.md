@@ -94,3 +94,9 @@ def findUnsortedSubarray(nums):
 ### Summary
 This problem uses the **two pointer** or **sliding window** coding pattern with running min/max from both ends to pinpoint the smallest unsorted window in O(n) time and O(1) space.  
 The pattern is common in array sorting/ordering problems, and similar approaches can be applied to detect ordering violations, determine windows that need fixing, and other scenarios involving prefix/suffix checks.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Stack(#stack), Greedy(#greedy), Sorting(#sorting), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Smallest Subarray to Sort in Every Sliding Window(smallest-subarray-to-sort-in-every-sliding-window) (Medium)

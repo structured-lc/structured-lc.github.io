@@ -82,3 +82,8 @@ def count_beautiful_pairs(nums):
 
 ### Summary
 This problem is an application of **counting with digits** and **number theory (gcd/coprime)**. Instead of examining all pairs, we use **digit bucketization**: for each new number, exploit previously seen first digits to efficiently check coprimality. This is a common pattern for "pair" problems with digit-derived rules, such as "pairs whose sum has a certain property". The technique is applicable to other digit-based or quantized counting pair problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Counting(#counting), Number Theory(#number-theory)
+
+### Similar Problems

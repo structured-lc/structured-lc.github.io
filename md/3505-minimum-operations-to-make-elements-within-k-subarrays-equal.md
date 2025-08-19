@@ -116,3 +116,10 @@ def min_operations(nums, x, k):
 This problem is a classic **sliding window with DP** pattern, related to "pick k non-overlapping intervals with minimum cost" tasks.  
 The key is reducing each window to a cost (via sliding median), then DP for interval selection with non-overlapping constraint.  
 This technique appears in median-cost window transforms, sliding window optimizations, and interval scheduling DP.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Find Median from Data Stream(find-median-from-data-stream) (Hard)
+- Minimum Moves to Equal Array Elements II(minimum-moves-to-equal-array-elements-ii) (Medium)

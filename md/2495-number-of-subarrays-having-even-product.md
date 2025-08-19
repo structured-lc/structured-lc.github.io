@@ -97,3 +97,8 @@ def numOfSubarraysEvenProduct(nums):
 This problem leverages a **counting by exclusion** strategy—the key insight that a subarray has even product iff it contains at least one even.  
 The approach avoids brute force product calculation by translating the problem to: count all subarrays, subtract those with all odds.  
 This is a classic example of using **prefix scans and position tracking**—a widespread pattern for array problems involving subarrays with some property, e.g., "at least one occurrence", "no occurrence", etc. It demonstrates a reduction from candidate generation to combinatorial counting.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

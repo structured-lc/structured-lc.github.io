@@ -94,3 +94,9 @@ def findWinners(matches):
 
 ### Summary
 We used the **Counting** and **Hash Map** coding pattern to solve this, commonly found in problems requiring tallying frequencies (e.g., majority element, unique elements). The approach is space- and time-efficient for reasonable input sizes and can be adapted for related tournament statistics problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems
+- Lowest Common Ancestor of a Binary Tree(lowest-common-ancestor-of-a-binary-tree) (Medium)

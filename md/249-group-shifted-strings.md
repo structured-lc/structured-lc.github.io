@@ -102,3 +102,10 @@ def groupStrings(strings):
 This problem leverages **hashing with canonicalization**—finding a unique signature representing each equivalence class.  
 The approach uses *hash map grouping by difference pattern*, a pattern seen in many group-by-feature problems (like "Group Anagrams").  
 The concept of a *normalized form as grouping key* can apply to several string transformation/grouping challenges.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Group Anagrams(group-anagrams) (Medium)
+- Find Maximum Number of String Pairs(find-maximum-number-of-string-pairs) (Easy)

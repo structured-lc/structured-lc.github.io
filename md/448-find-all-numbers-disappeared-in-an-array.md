@@ -109,3 +109,15 @@ def findDisappearedNumbersHashSet(nums):
 
 ### Summary
 This problem showcases the clever technique of using array indices to store metadata about element presence. The marking approach transforms a space-constrained problem into an elegant O(1) space solution by reusing the input array as auxiliary storage. This pattern appears in many array problems where you need to track element properties without additional space.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems
+- First Missing Positive(first-missing-positive) (Hard)
+- Find All Duplicates in an Array(find-all-duplicates-in-an-array) (Medium)
+- Find Unique Binary String(find-unique-binary-string) (Medium)
+- Append K Integers With Minimal Sum(append-k-integers-with-minimal-sum) (Medium)
+- Replace Elements in an Array(replace-elements-in-an-array) (Medium)
+- Maximum Number of Integers to Choose From a Range I(maximum-number-of-integers-to-choose-from-a-range-i) (Medium)
+- Maximum Number of Integers to Choose From a Range II(maximum-number-of-integers-to-choose-from-a-range-ii) (Medium)

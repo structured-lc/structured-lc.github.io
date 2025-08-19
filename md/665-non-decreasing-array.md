@@ -95,3 +95,11 @@ def checkPossibility(nums):
 ### Summary
 This is a classic **greedy** pattern, focused on single-pass violation detection and local repair to enforce a global property (non-decreasing).  
 It often appears in array adjustment, streaming validation, and competitive problem settings. The logic can also be adapted to **k-change** questions and sequence consistency checks.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Make Array Non-decreasing or Non-increasing(make-array-non-decreasing-or-non-increasing) (Hard)
+- Find Good Days to Rob the Bank(find-good-days-to-rob-the-bank) (Medium)
+- Count Non-Decreasing Subarrays After K Operations(count-non-decreasing-subarrays-after-k-operations) (Hard)

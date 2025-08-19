@@ -87,3 +87,10 @@ def generate(numRows):
 
 ### Summary
 This approach employs a **dynamic programming** pattern—each row builds upon the prior. This pattern is common when subproblems overlap, such as calculating triangle numbers, Fibonacci, etc. Pascal’s Triangle and its iterative row-by-row build is classic for practicing 2D array construction and subproblem reuse.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Pascal's Triangle II(pascals-triangle-ii) (Easy)
+- Check If Digits Are Equal in String After Operations II(check-if-digits-are-equal-in-string-after-operations-ii) (Hard)

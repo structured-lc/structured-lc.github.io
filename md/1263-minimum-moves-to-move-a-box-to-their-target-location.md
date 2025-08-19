@@ -153,3 +153,8 @@ def min_push_box(grid):
 
 ### Summary
 This problem uses a **state space BFS** pattern, treating (box, player) as a compound state, and explores with the goal of minimum box pushes. A BFS within BFS is used for reachability validation. This is a classic algorithmic technique applicable to similar “push/pull box” puzzles, robot motion planning, and grid navigation with move restrictions.
+
+### Tags
+Array(#array), Breadth-First Search(#breadth-first-search), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
+
+### Similar Problems

@@ -81,3 +81,8 @@ def average(salary):
 
 ### Summary
 The approach uses the classic **array linear scan** pattern, tracking min, max, and sum in one pass. This is a common pattern for handling aggregates and outlier removal, and it applies to similar problems such as calculating a trimmed mean, finding average after removing specific elements, or in streaming data where you need quick statistics with exclusion criteria.
+
+### Tags
+Array(#array), Sorting(#sorting)
+
+### Similar Problems

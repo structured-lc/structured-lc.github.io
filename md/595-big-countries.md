@@ -74,3 +74,8 @@ def bigCountries(countries: List[Tuple[str, int, int]]) -> List[str]:
 
 ### Summary
 This problem uses a **filtering pattern**—scan a list (or table) and select entries based on OR-combined threshold comparisons. This is a basic but very common pattern in data processing and is foundational for database `WHERE` queries and Python filtering tasks. The approach applies cleanly to any scenario where objects/entities have multiple independent criteria for "selection."
+
+### Tags
+Database(#database)
+
+### Similar Problems

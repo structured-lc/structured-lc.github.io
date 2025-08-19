@@ -97,3 +97,9 @@ def grayCode(n):
 ### Summary
 
 This problem relies on **bit manipulation** and **pattern recognition**. The `i ^ (i >> 1)` formula is a concise way to produce n-bit Gray codes in O(2ⁿ) time and space, and is a classic example of using low-level operations efficiently. These techniques show up in combinatorics, circuit design, and coding theory, and the reflection pattern is a staple in recursive sequences and enumeration problems.
+
+### Tags
+Math(#math), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- 1-bit and 2-bit Characters(1-bit-and-2-bit-characters) (Easy)

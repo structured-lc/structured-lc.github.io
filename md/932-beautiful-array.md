@@ -84,3 +84,8 @@ def beautifulArray(n):
 ### Summary
 We use a **divide-and-conquer constructive algorithm**: recursively split the problem into odds and evens, map and concatenate, to build a permutation with the “no midpoint mean in between” property.  
 This is a classic constructive example using recursion and permutation mapping, and is a technique that can also be useful in problems about rearranging sequences to avoid certain patterns (no arithmetic progressions, etc.)
+
+### Tags
+Array(#array), Math(#math), Divide and Conquer(#divide-and-conquer)
+
+### Similar Problems

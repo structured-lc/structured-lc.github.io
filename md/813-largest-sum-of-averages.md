@@ -115,3 +115,8 @@ def largestSumOfAverages(nums, k):
 
 ### Summary
 This is a classic **DP on partitions** problem, where subproblems correspond to "what is the best sum of averages from position i with k groups left". The solution uses prefix sums and recursion with memoization for efficiency. This pattern applies to similar partitioning/maximization problems, for example: "Minimize the largest subarray sum", "Split array into k groups for min/max criteria", and more.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
+
+### Similar Problems

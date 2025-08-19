@@ -99,3 +99,10 @@ def shortestWay(source, target):
 
 ### Summary
 This problem uses the *Greedy Subsequence Construction* or *Two-pointers* pattern for linear scanning and matching. It’s a classic greedy+scanning approach, with optimizations possible via precomputed jump/lookup tables (commonly used in substring-search problems), and is especially useful anywhere you need to compose a sequence from repeated patterns or subsequences—a pattern frequently seen in parsing and edit-distance type problems.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Binary Search(#binary-search), Greedy(#greedy)
+
+### Similar Problems
+- Is Subsequence(is-subsequence) (Easy)
+- Number of Matching Subsequences(number-of-matching-subsequences) (Medium)

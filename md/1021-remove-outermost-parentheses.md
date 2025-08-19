@@ -88,3 +88,8 @@ def removeOuterParentheses(S: str) -> str:
 ### Summary
 This is a classic use of the **counter or stack** pattern to manage **nested structures** in a string, especially for processing parentheses, brackets, or similar. The approach is single-pass and requires only enough memory to hold the result.  
 Similar counter-based logic appears frequently in parsing tasks, generating/validating parentheses, and even compiler design basics.
+
+### Tags
+String(#string), Stack(#stack)
+
+### Similar Problems

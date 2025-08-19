@@ -152,3 +152,10 @@ class BookMyShow:
 This problem combines priority allocation, interval queries, and state updates—classic features of **range query data structures** like segment trees or fenwick trees.  
 Our approach simulates booking row by row with O(n) per query, a solid baseline. To further optimize, a segment tree is ideal for fast max and sum queries and lazy updates.  
 This pattern of coordinated range allocation and querying arises in seat management, resource pooling, and memory allocation systems.
+
+### Tags
+Binary Search(#binary-search), Design(#design), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
+
+### Similar Problems
+- Cinema Seat Allocation(cinema-seat-allocation) (Medium)
+- Longest Increasing Subsequence II(longest-increasing-subsequence-ii) (Hard)

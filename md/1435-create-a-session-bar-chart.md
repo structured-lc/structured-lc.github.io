@@ -81,3 +81,9 @@ SELECT '15 or more' AS bin, COUNT(*) FROM Sessions WHERE duration >= 900;
 
 ### Summary
 This problem is a classic example of data binning and summarizing with range conditions. The solution uses the SQL UNION ALL pattern with WHERE clauses for fixed bins, a pattern common in Analytics SQL and reporting interview questions.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Count Salary Categories(count-salary-categories) (Medium)

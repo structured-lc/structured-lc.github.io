@@ -86,3 +86,11 @@ def gcdOfStrings(str1: str, str2: str) -> str:
 ### Summary
 The problem is a variant of the **String Division/GCD** pattern: find the largest substring which both original strings can be constructed from via repetition.  
 The key insight is checking string concatenation equality and using the GCD of the lengths for the candidate substring—an elegant combination of string handling and number theory. This technique generalizes to related string period or pattern problems.
+
+### Tags
+Math(#math), String(#string)
+
+### Similar Problems
+- Find Greatest Common Divisor of Array(find-greatest-common-divisor-of-array) (Easy)
+- Smallest Even Multiple(smallest-even-multiple) (Easy)
+- Find the Maximum Factor Score of Array(find-the-maximum-factor-score-of-array) (Medium)

@@ -85,3 +85,7 @@ def create_object_from_two_arrays(keys_arr, values_arr):
 
 ### Summary
 This problem is an example of the **"mapping / association"** pattern, commonly seen in tasks that require quick lookup or grouping using a hash table. The solution makes use of a basic dictionary data structure with a guard to ensure only the first occurrence of a key is used. This pattern is common in frequency analysis, de-duplication, and building indexes from data streams.
+
+### Tags
+
+### Similar Problems

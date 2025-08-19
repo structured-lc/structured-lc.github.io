@@ -113,3 +113,8 @@ def minOperations(s1: str, s2: str, x: int) -> int:
 
 ### Summary
 This problem demonstrates a **greedy pairing** and **dynamic programming** pattern, useful for minimizing the cost of repairing mismatches when operations have fixed or variable costs. It is closely related to "minimum number of swaps" and "pairing mismatches," and similar patterns can be found in adjacent swaps problems, parity flip corrections, and segment grouping optimization.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

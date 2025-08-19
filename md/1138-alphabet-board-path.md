@@ -141,3 +141,8 @@ def alphabetBoardPath(target: str) -> str:
 
 ### Summary
 This problem uses the **string building** and **mapping** patterns, similar to coordinate pathfinding or "keyboard moves". The care around invalid cells (especially when using a ragged grid like for 'z') is a classic grid navigation consideration and appears in many "minimum move" or "maze" path problems. The approach is greedy—simply calculating row and column deltas per step—and robust for this fixed-size board.
+
+### Tags
+Hash Table(#hash-table), String(#string)
+
+### Similar Problems

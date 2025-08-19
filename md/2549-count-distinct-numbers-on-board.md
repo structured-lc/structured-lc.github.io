@@ -68,3 +68,9 @@ def distinctIntegers(n: int) -> int:
 
 ### Summary
 The final approach leverages mathematical insight: for n > 1, all numbers from 2 up to n can eventually be indirectly constructed using the board’s daily process. This **math/simulation insight** leads to an O(1) time, space solution—common in "growth by simulation" problems when a pattern emerges. This is a classic coding pattern, useful in reachability, closure, and set-growth simulation questions.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Simulation(#simulation)
+
+### Similar Problems
+- Count of Matches in Tournament(count-of-matches-in-tournament) (Easy)

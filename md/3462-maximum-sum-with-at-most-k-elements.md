@@ -108,3 +108,8 @@ def maxSum(grid, limits, k):
 
 ### Summary
 This problem uses a **greedy selection pattern with row-wise limits and global cap**, implemented via sort or heap. This is a common interview pattern for "take k best" with extra constraints, and also appears in problems involving merging sorted rows, top-k sum calculations, or batch-wise selection under multiple constraints.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
+
+### Similar Problems

@@ -177,3 +177,8 @@ def tournament_winners(players, matches):
 
 ### Summary
 This solution is a classic *aggregation and group-by* pattern (grouping, computing per-key aggregates, picking maximums, tie-breaking deterministically). It applies cleanly to leaderboard problems, score summaries, or winner-selection for partitioned/grouped data. The pattern appears often in analytics, competitive platforms, and basic SQL reporting.
+
+### Tags
+Database(#database)
+
+### Similar Problems

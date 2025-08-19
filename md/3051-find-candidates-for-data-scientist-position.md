@@ -130,3 +130,8 @@ def find_candidates(candidates):
 
 ### Summary
 This problem demonstrates the **grouping and filtering** pattern, often used for data aggregation. The solution leverages a hash map to track skills for each candidate and efficiently filter the ones that satisfy all criteria. This pattern appears in other set membership or "must-have N properties" SQL/group-by/data prep problems. It’s also a classic for interview SQL or dict+set problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

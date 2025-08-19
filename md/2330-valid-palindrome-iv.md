@@ -75,3 +75,11 @@ def makePalindrome(s: str) -> bool:
 
 ### Summary
 This is a classic two-pointer palindrome check and mismatch counting problem, solvable in linear time and constant space. The solution uses the "count the number of differences between mirrored pairs" pattern, which is common in palindrome and symmetric string problems. The counting approach is also seen in problems requiring minimum editing or transformation actions in strings or arrays.
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Valid Palindrome(valid-palindrome) (Easy)
+- Valid Palindrome II(valid-palindrome-ii) (Easy)
+- Valid Palindrome III(valid-palindrome-iii) (Hard)

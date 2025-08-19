@@ -63,3 +63,8 @@ def slowestKey(releaseTimes: List[int], keysPressed: str) -> str:
 
 ### Summary
 This is a typical **iteration and comparison** problem; tracks maximum with tiebreaker. Useful for logs or stream monitoring.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems

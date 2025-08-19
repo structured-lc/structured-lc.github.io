@@ -106,3 +106,8 @@ def minimum_operations(nums):
 ### Summary
 This is a **brute-force greedy simulation** problem, where each operation targets the local "bad pair" using a simple loop, accepting higher complexity due to small constraints.  
 The main coding pattern is *simulation* with greedy selection; this approach can also be applied to problems where step-by-step edits are made to arrays, especially for local, adjacent relationships (e.g., merge intervals, or elimination games).
+
+### Tags
+Array(#array), Hash Table(#hash-table), Linked List(#linked-list), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation), Doubly-Linked List(#doubly-linked-list), Ordered Set(#ordered-set)
+
+### Similar Problems

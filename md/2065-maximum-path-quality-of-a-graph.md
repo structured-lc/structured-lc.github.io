@@ -134,3 +134,10 @@ def maximalPathQuality(values, edges, maxTime):
 
 ### Summary
 This problem is an example of **DFS + backtracking** over all possible loop paths respecting a time constraint, while gathering node set properties along the way. The heavy constraint (≤4 edges per node) lets us use simple recursion with pruning—no need for DP or heavy optimization. This template is common in “find max/min cost along all paths under constraint” graph problems where the number of possible states (by visit history & time) is small. Variants show up in cycle-finding, state-enumeration, and resource-limited pathing questions.
+
+### Tags
+Array(#array), Backtracking(#backtracking), Graph(#graph)
+
+### Similar Problems
+- Cherry Pickup(cherry-pickup) (Hard)
+- Minimum Cost to Reach Destination in Time(minimum-cost-to-reach-destination-in-time) (Hard)

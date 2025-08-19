@@ -150,3 +150,9 @@ def makeImmutable(obj):
 This problem uses the **Proxy/Trap pattern** to recursively intercept all changes, achieving deep immutability with custom error messages.  
 This approach is critical in situations where data integrity and traceable error reasons are vital, especially with complex, nested configuration or state structures.  
 The **deep proxying pattern** is commonly seen in security wrappers, debugging libraries, and state managers in modern applications.
+
+### Tags
+
+### Similar Problems
+- Infinite Method Object(infinite-method-object) (Easy)
+- Immutability Helper(immutability-helper) (Hard)

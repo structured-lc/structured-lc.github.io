@@ -125,3 +125,8 @@ class DiningPhilosophers:
 This problem is a classic application of thread synchronization and deadlock avoidance.  
 The combination of per-resource (fork) locks and a global semaphore cleanly prevents cycles for deadlock.  
 This pattern is widely used for managing shared resources safely in concurrent programming and is foundational for operating system and multithreaded application design.
+
+### Tags
+Concurrency(#concurrency)
+
+### Similar Problems

@@ -102,3 +102,12 @@ def count_subranges(nums1, nums2):
 
 ### Summary
 This problem is a classic example of dynamic programming with subarray/subsequence enumeration and map-based subset sum DP. The final approach leverages tracking all possible balance sums efficiently via hash maps and updating as we grow each subrange. This pattern can apply in problems involving subset sums with "either-or" decisions over ranges, especially when the subset property is "sum to target"/"balance", and is a variation of the classic subset sum problem.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Intersection of Two Arrays(intersection-of-two-arrays) (Easy)
+- Intersection of Two Arrays II(intersection-of-two-arrays-ii) (Easy)
+- Minimum XOR Sum of Two Arrays(minimum-xor-sum-of-two-arrays) (Hard)
+- Minimize Product Sum of Two Arrays(minimize-product-sum-of-two-arrays) (Medium)

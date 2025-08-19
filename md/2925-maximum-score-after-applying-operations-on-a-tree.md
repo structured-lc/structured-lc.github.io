@@ -130,3 +130,11 @@ def maximumScoreAfterOperations(edges, values):
 
 ### Summary
 This problem uses the **tree DP / post-order DFS pattern**, similar to "minimum vertex cover on trees" or constrained subtree selection. The approach generalizes to problems requiring preserved paths or states along root-to-leaf traversal, making it widely applicable in subtree optimization and dynamic programming on trees.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems
+- Sum of Distances in Tree(sum-of-distances-in-tree) (Hard)
+- Collect Coins in a Tree(collect-coins-in-a-tree) (Hard)
+- Find the Maximum Sum of Node Values(find-the-maximum-sum-of-node-values) (Hard)

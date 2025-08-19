@@ -122,3 +122,10 @@ class MagicDictionary:
 ### Summary
 
 This problem uses the **Dictionary with One Modification Pattern**, where all one-off wildcard patterns of each dictionary word are precomputed to optimize search. It highlights efficient pattern matching and preprocessing techniques, common in problems like spell-checkers and fuzzy string matching. This approach can be adapted for k-modifications, edit distance, and approximate string matching challenges.
+
+### Tags
+Hash Table(#hash-table), String(#string), Depth-First Search(#depth-first-search), Design(#design), Trie(#trie)
+
+### Similar Problems
+- Implement Trie (Prefix Tree)(implement-trie-prefix-tree) (Medium)
+- Longest Word in Dictionary(longest-word-in-dictionary) (Medium)

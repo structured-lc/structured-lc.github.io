@@ -103,3 +103,8 @@ def validUtf8(data):
 This problem uses the **bit manipulation** coding pattern—key for parsing byte-level data, state tracking, and validating protocol or encoding rules.  
 It is a classic example for situations where sequence rules are strict: you must track not just the current element but also state and context from preceding elements (in this case, how many more bytes are expected).  
 This pattern is seen in problems like parsing network protocols, instruction decoders, or even more advanced string encoding/decoding problems.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

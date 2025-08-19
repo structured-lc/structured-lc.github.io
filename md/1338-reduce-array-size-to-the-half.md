@@ -82,3 +82,8 @@ If you could only remove one occurrence of each chosen number (instead of all), 
 ### Summary
 
 The problem is solved optimally with a greedy approach: count frequencies, sort, and select the most frequent elements until at least half the array is removed. This pattern is common for problems where minimizing a set based on frequency or maximizing coverage (like in Huffman coding or scheduling tasks). The coding pattern—counting, sorting, iterating—is widely applicable in array and set manipulation problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

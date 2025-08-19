@@ -130,3 +130,9 @@ class Bank:
 
 ### Summary
 This problem leverages **array-based account management** with simple O(1) operations for checking and updating balances. The design pattern is a classic example of **state simulation** using an array, and is widely applicable in scenarios where entities (users, assets, resources) are indexed and updated frequently with validation required. Similar patterns appear in system simulations, inventory, and ledger applications.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Design(#design), Simulation(#simulation)
+
+### Similar Problems
+- Design an ATM Machine(design-an-atm-machine) (Medium)

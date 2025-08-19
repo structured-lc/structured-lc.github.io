@@ -83,3 +83,9 @@ def min_operations(s: str) -> int:
 
 ### Summary
 This problem uses the classic **pattern comparison** and **greedy counting** technique—scan the string, compare to both valid patterns, and pick the one needing fewer changes. It's an example of a "min cost to fit pattern" problem, which appears in string and array manipulation interviews. This logic applies to other pattern transformation problems, like converting to palindromes or matching certain templates.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Remove Adjacent Almost-Equal Characters(remove-adjacent-almost-equal-characters) (Medium)

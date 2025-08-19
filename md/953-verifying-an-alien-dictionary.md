@@ -85,3 +85,8 @@ def isAlienSorted(words, order):
 
 ### Summary
 This problem uses the **custom sort order / string pairwise comparison** pattern. The code builds a mapping from characters to their alien order, then compares each adjacent word pair using this new order, mimicking a manual lexicographical comparison. This is a classic form of pairwise character comparison, useful in text processing and can be applied when dictionaries or user-defined orderings must be enforced (e.g., custom sorting, or challenging variations of standard lexicographical tasks).
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string)
+
+### Similar Problems

@@ -105,3 +105,8 @@ def num_points(points, r):
 
 ### Summary
 This is a **geometry with search** problem, using a brute-force scan over all possible pairs of points and all possible circle centers they determine. The key insight is that any two points on the boundary of a circle of radius `r` uniquely determine up to two such circles. This pattern is common in computational geometry, and similar principles apply in problems involving circle or sphere fitting, clustering, and maximum covering.
+
+### Tags
+Array(#array), Math(#math), Geometry(#geometry)
+
+### Similar Problems

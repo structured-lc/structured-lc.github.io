@@ -104,3 +104,8 @@ def second_day_verification(emails: List[List], texts: List[List]) -> List[int]:
 This problem follows the classic **table join and filter** pattern, which is fundamental in both SQL and data processing (pandas, map-reduce, etc.).  
 The join relates transactional data (signup events) to actions; filtering applies relational and date-based logic.  
 This coding pattern is common for "event X happened exactly Y time after event Z" problems, e.g., checking follow-ups, reminders, or time-bound activities.
+
+### Tags
+Database(#database)
+
+### Similar Problems

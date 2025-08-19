@@ -99,3 +99,10 @@ def countSubmatricesWithEqualFrequency(grid):
 
 ### Summary
 This problem uses the **2D prefix sum** pattern to efficiently count properties of all submatrices anchored at the top-left. Prefix sums reduce region queries to O(1) and avoid redundant recalculation, a common technique for submatrix sum/frequency queries. The same method applies to problems involving region statistics for dynamic programming in 2D arrays, histogram-based rectangle counting, and many grid-based counting problems.
+
+### Tags
+Array(#array), Matrix(#matrix), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Maximum Equal Frequency(maximum-equal-frequency) (Hard)
+- Count Submatrices With All Ones(count-submatrices-with-all-ones) (Medium)

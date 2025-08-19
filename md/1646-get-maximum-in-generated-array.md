@@ -77,3 +77,9 @@ def getMaximumGenerated(n):
 
 ### Summary
 This is a direct simulation/dynamic programming problem with O(n) time and space. The solution builds up nums while keeping track of the maximum. This pattern (fill array by recurrence, track max/min as you go) is commonly used in dynamic programming and can be seen in many array recursion/generation problems.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems
+- Largest Element in an Array after Merge Operations(largest-element-in-an-array-after-merge-operations) (Medium)

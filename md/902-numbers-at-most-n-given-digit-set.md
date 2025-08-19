@@ -107,3 +107,8 @@ def atMostNGivenDigitSet(digits, n):
 
 ### Summary
 This problem is a classic example of **digit dynamic programming (digit DP)**, which is used for counting or generating numbers with certain properties under upper/lower digit constraints. Recognizing it lets you count efficiently in O(number of digits × set size) time. This pattern is common for number construction, number bounds with custom digit sets, and similar combinatorial counting challenges.
+
+### Tags
+Array(#array), Math(#math), String(#string), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

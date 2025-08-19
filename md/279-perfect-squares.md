@@ -102,3 +102,11 @@ This problem is a classic example of **Dynamic Programming** — specifically, t
 It’s applicable anywhere you want to minimize the “number of moves” or “number of items” covering a sum — such as the coin change problem, staircase climbing with limited steps, or parsing decompositions.  
 Breadth‑first search can also be used here as a shortest path over implicit “states”.  
 The number theoretic result (Lagrange’s Four-Squares Theorem) guarantees every n can be written as sum of at most four squares, which allows for optimization in some advanced solutions.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Count Primes(count-primes) (Medium)
+- Ugly Number II(ugly-number-ii) (Medium)
+- Ways to Express an Integer as Sum of Powers(ways-to-express-an-integer-as-sum-of-powers) (Medium)

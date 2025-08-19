@@ -90,3 +90,8 @@ def is_special_array(nums, queries):
 
 ### Summary
 This leverages the **range prefix sum** pattern to answer multiple range "specialness" queries efficiently after linear preprocessing. The core check uses O(1) prefix queries per subarray. This is a common pattern for range property queries and also applies to problems like "number of even/odd numbers in a range", "number of increasing pairs", or "number of transitions in state in a range".
+
+### Tags
+Array(#array), Binary Search(#binary-search), Prefix Sum(#prefix-sum)
+
+### Similar Problems

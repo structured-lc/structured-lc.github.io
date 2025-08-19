@@ -82,3 +82,10 @@ def canConstruct(ransomNote: str, magazine: str) -> bool:
 
 ### Summary
 This solution uses the **frequency counting** pattern, which is common in string problems involving availability of resources with constraints (such as “Anagrams”, “Jewels and Stones”, etc.). The technique relies on pre-computing the available counts and then checking against required counts—which can be broadly applied anywhere resource consumption must be validated against supply.
+
+### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Stickers to Spell Word(stickers-to-spell-word) (Hard)
+- Find Words That Can Be Formed by Characters(find-words-that-can-be-formed-by-characters) (Easy)

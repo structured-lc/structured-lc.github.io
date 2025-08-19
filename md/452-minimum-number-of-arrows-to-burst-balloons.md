@@ -79,3 +79,10 @@ def findMinArrowShots(points):
 
 ### Summary
 This problem uses a **greedy algorithm** to minimize the number of arrows by always targeting the end of the earliest-ending interval not yet burst. The main insight is that **covering overlapping intervals together** is optimal. This is a classic *interval scheduling/covering* pattern, used frequently for tasks such as activity selection, meeting room usage, or video streaming segment optimizations.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Meeting Rooms II(meeting-rooms-ii) (Medium)
+- Non-overlapping Intervals(non-overlapping-intervals) (Medium)

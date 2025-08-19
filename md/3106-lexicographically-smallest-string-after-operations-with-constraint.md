@@ -95,3 +95,9 @@ def lexicographically_smallest_string(s: str, k: int) -> str:
 
 ### Summary
 This problem uses a **greedy** pattern: at each position, reduce the earliest character as much as possible within remaining k to ensure the smallest lex order. The cyclic alphabet and minimum step distance are key twists, but the solution remains linear. The general pattern applies to "lex smallest under cost constraint" questions, useful in greedy algorithm practice and contest problems.
+
+### Tags
+String(#string), Greedy(#greedy)
+
+### Similar Problems
+- Lexicographically Smallest String After Substring Operation(lexicographically-smallest-string-after-substring-operation) (Medium)

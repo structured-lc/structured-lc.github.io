@@ -93,3 +93,9 @@ def canVisitAllRooms(rooms):
 This problem is a classic example of the **graph traversal pattern**, specifically **DFS/BFS for reachability**.  
 It’s a fundamental interview pattern for problems about visiting all nodes or components in a graph or network, and it regularly applies to problems involving unlocking, traversing, or marking visited elements.  
 Other examples: course schedule, number of connected components, islands in a grid, etc.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
+
+### Similar Problems
+- Graph Valid Tree(graph-valid-tree) (Medium)

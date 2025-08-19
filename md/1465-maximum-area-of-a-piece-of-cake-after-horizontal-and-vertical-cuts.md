@@ -61,3 +61,8 @@ def maxArea(h, w, horizontalCuts, verticalCuts):
 
 ### Summary
 A classic greedy/geometry problem: reduces to finding max difference in sorted list (distance between cuts). This pattern is common for max/min interval partition/mathematical cutting problems.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

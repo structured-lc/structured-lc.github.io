@@ -85,3 +85,9 @@ def reverseWords(s: str) -> str:
 
 ### Summary
 This approach is a classic **string manipulation** problem that can be solved with **split, loop, and combine**—a canonical usage of string traversal and the two pointers pattern for in-place reversal. It's commonly seen in interview settings to check a candidate's attention to detail, comfort with string APIs, and boundary case handling. Variations show up in text formatting, log parsing, and natural language processing.
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Reverse String II(reverse-string-ii) (Easy)

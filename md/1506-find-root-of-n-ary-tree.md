@@ -88,3 +88,9 @@ def findRoot(tree):
 
 ### Summary
 This is a classic problem of parent/child bookkeeping. The clever approach of sum-of-values subtraction, or set subtraction, is a very common one for root/unique node detection, and applies across trees and graphs.
+
+### Tags
+Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems
+- Move Sub-Tree of N-Ary Tree(move-sub-tree-of-n-ary-tree) (Hard)

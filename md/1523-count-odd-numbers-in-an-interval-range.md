@@ -69,3 +69,9 @@ def count_odds(low: int, high: int) -> int:
 The main insight is recognizing the pattern that odd numbers appear every other number, letting us count odds in O(1) time by computing ⌊(high+1)/2⌋ - ⌊low/2⌋.  
 This is a classic *math trick* and is commonly seen in interval counting problems, not just for odds but for any regularly spaced property.  
 The pattern is useful for any task where you want to count elements matching a modulus over an interval.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Check if Bitwise OR Has Trailing Zeros(check-if-bitwise-or-has-trailing-zeros) (Easy)

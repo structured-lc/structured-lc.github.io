@@ -133,3 +133,10 @@ def find_last_marked_nodes(n, edges):
 This is a classic **tree diameter** and multi-source BFS pattern. By leveraging tree properties, you avoid running O(n) BFS operations.  
 Final approach uses three BFS traversals and computes distances from endpoints, reducing runtime from O(n²) to O(n).  
 This template (find diameter, and use endpoints to answer queries about maximal path distances) is frequently useful in tree problems and can be adapted to shortest/farthest path or dynamic spreading problems in trees.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems
+- Minimum Time to Visit Disappearing Nodes(minimum-time-to-visit-disappearing-nodes) (Medium)
+- Time Taken to Mark All Nodes(time-taken-to-mark-all-nodes) (Hard)

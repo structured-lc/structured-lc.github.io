@@ -141,3 +141,8 @@ print(fill_previous_nulls(rows))
 
 ### Summary
 This problem is a classic example of the "forward fill" (or "last observation carried forward") data cleaning pattern. The efficient solution involves a single pass after sorting, storing the most recent non-NULL value. The core coding pattern (tracking last relevant value across a sorted sequence) is widely used in data streaming, time series, and log parsing problems. Variations of this are common in SQL, Pandas, and ETL pipelines.
+
+### Tags
+Database(#database)
+
+### Similar Problems

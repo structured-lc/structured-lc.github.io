@@ -112,3 +112,9 @@ This approach is a classical brute-force substring expansion with an optimized r
 It closely follows the “count all substrings matching a custom property” pattern and is similar to hashmap + sliding window approaches for substring problems.  
 The mapping-step is a minor twist, but overall, this is a direct nesting-loop substring-counting algorithm.  
 This pattern of mapping-to-number + divisibility check can appear in string hash and “count subarrays/substrings with sum divisible by k” style questions.
+
+### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Count Substrings Divisible By Last Digit(count-substrings-divisible-by-last-digit) (Hard)

@@ -129,3 +129,8 @@ def average_sessions_per_user(activity_table):
 
 ### Summary
 This problem demonstrates the *aggregation by distinct values* pattern commonly used in SQL for analytics—especially, counting unique entities and averaging across groups. It tests knowledge of filtering data by date, handling possible nulls or divides by zero, and rounding results. The pattern applies widely in analytics queries where you need groupings and averages, such as user engagement, daily actives, or traffic metrics.
+
+### Tags
+Database(#database)
+
+### Similar Problems

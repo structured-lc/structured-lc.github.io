@@ -100,3 +100,9 @@ def minimumReplacement(nums):
 
 ### Summary
 This problem uses a **greedy right-to-left scan with math for optimal splitting**, a classic pattern for "make array satisfy a property with minimum local changes" type problems. Similar greedy approaches apply to "min operations to strictly increase/decrease, split/merge arrays for constraints, etc." and other array transformation questions where moves are localized and options must be minimized.
+
+### Tags
+Array(#array), Math(#math), Greedy(#greedy)
+
+### Similar Problems
+- Minimum Operations to Make the Array Increasing(minimum-operations-to-make-the-array-increasing) (Easy)

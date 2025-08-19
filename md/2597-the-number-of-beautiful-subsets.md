@@ -95,3 +95,9 @@ def beautifulSubsets(nums, k):
 ### Summary
 This problem is a classic case of **backtracking with state pruning**, leveraging a hash map to prevent illegal pairings during subset formation.  
 The coding pattern is common for subset/combination problems with "forbidden" conditions and decision trees, and can be applied to other problems such as subset sum with forbidden elements, or independent sets in graphs.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Sorting(#sorting), Combinatorics(#combinatorics)
+
+### Similar Problems
+- Construct the Lexicographically Largest Valid Sequence(construct-the-lexicographically-largest-valid-sequence) (Medium)

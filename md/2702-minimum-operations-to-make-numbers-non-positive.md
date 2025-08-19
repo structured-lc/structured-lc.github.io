@@ -119,3 +119,8 @@ def minimumOperations(nums, x, y):
 
 ### Summary
 This is a "minimal operations" problem for state transitions where an operation affects one item more than the others (Hybrid Greedy + Binary Search on answer + Brute Force partitioning). This pattern shows up in problems where you control both the number and the *target* of non-uniform state transitions; similar logic appears in "minimum moves to make all elements equal" with non-uniform moves, or in some resource allocation/minimization DP problems. The core is "guess-and-check (binary search the answer) + enumerate possibilities."
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems

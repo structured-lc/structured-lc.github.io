@@ -96,3 +96,8 @@ def minimum_right_shifts(nums):
 
 ### Summary
 This problem uses the **single pass** and **rotation** pattern, exploiting the fact that sorting by right shifts is only possible if the array is a rotated sorted array (at most one "drop"). The key insight is reducing the check to O(n) by counting breaks in monotonic increase, a technique applicable to similar "rotated array" problems.
+
+### Tags
+Array(#array)
+
+### Similar Problems

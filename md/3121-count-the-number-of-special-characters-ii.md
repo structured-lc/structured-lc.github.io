@@ -93,3 +93,11 @@ def numberOfSpecialChars(word: str) -> int:
 
 ### Summary
 This problem is a variation of string/window/prefix check patterns, compressing info per letter and validating in linear time. The pattern—tracking character first/last occurrences—is common for scanline or range-tracking in strings, and applies to many substring order, window, and character uniqueness problems.
+
+### Tags
+Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Detect Capital(detect-capital) (Easy)
+- Greatest English Letter in Upper and Lower Case(greatest-english-letter-in-upper-and-lower-case) (Easy)
+- Count the Number of Special Characters I(count-the-number-of-special-characters-i) (Easy)

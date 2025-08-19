@@ -75,3 +75,8 @@ def longestAwesome(s: str) -> int:
 
 ### Summary
 This uses a **prefix XOR + bitmask** approach, often called the "mask parity hack," to solve palindrome-permutation substring problems in linear time. Works anywhere we care about the **parity of counts** for each character. The pattern generalizes beautifully to similar substring palindrome queries.
+
+### Tags
+Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

@@ -62,3 +62,8 @@ def kthSmallest(mat, k):
 
 ### Summary
 This is a heap-based k-way merging pattern, applicable in combining multiple sorted lists for minimum result-set extraction—common in databases, schedulers, and median/sum selection problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
+
+### Similar Problems

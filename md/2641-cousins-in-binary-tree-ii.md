@@ -126,3 +126,10 @@ def replaceValueInTree(root):
 
 ### Summary
 This problem showcases the **level order traversal (BFS) pattern** for trees, with a focus on aggregating data at each level and then updating node values based on relationships that depend on both level and parent. This pattern is re-usable anywhere you need to compute aggregates per tree level, such as "average of levels," "node with max value at each depth," etc. The core of the solution is identifying which nodes count as cousins and efficiently grouping and summing them per level.
+
+### Tags
+Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Cousins in Binary Tree(cousins-in-binary-tree) (Easy)
+- Maximum Level Sum of a Binary Tree(maximum-level-sum-of-a-binary-tree) (Medium)

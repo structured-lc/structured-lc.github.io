@@ -104,3 +104,10 @@ def maximumLength(nums, k):
 This problem uses a classic **dynamic programming** approach, similar to the Longest Increasing Subsequence (LIS) but with an extension for up to k substitutions.  
 It's a variant of DP on sequences with a 'number of allowed mistakes/changes' state, which is a common coding pattern for sequence transformation problems.  
 Other applications include error-tolerant substring/subsequence matching, string transformations with allowed edits, or similar DP problems with bounded changes.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Longest Increasing Subsequence(longest-increasing-subsequence) (Medium)
+- Maximum Length of Repeated Subarray(maximum-length-of-repeated-subarray) (Medium)

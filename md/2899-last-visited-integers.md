@@ -106,3 +106,8 @@ This problem uses the pattern of a **stack/history with indexed lookback**, a cl
 It's commonly seen in browser history stacks, undo-redo implementations, or IRL UI navigation.  
 With only two stateful variables—the list of seen elements and count of consecutive lookbacks—it’s both space and time efficient.  
 This indexed history lookup pattern also applies to command history, call logs, and any context where recent actions need to be revisited or recalled in order.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems

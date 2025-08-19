@@ -88,3 +88,9 @@ def smallestDivisibleDigitProduct(n: int, t: int) -> int:
 This is a **math simulation** plus **digit manipulation** problem, relying on the guarantee that a product-zero (via digit-zero) always occurs every 10 numbers.  
 The brute-force approach is also optimal due to the limited candidate space.  
 This approach (digit-product, digit-sum within a range) is a common pattern in digit dynamic programming (Digit DP), and useful wherever number properties or divisibility constraints relate to digit operations.
+
+### Tags
+Math(#math), Enumeration(#enumeration)
+
+### Similar Problems
+- Smallest Number With Given Digit Product(smallest-number-with-given-digit-product) (Medium)

@@ -85,3 +85,7 @@ def circular_generator(arr, start_index):
 This problem is a classic circular array traversal using modular arithmetic.  
 The pattern — index wrapping with modulo, generator/yield for lazy evaluation — is powerful for cyclic data structures, periodic queues, or round-robin scheduling.  
 This pattern frequently arises in problems involving periodic or infinite-like structures and is a fundamental building block for ring buffers, simulations, and iterator patterns in general.
+
+### Tags
+
+### Similar Problems

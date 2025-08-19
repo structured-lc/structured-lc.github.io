@@ -100,3 +100,9 @@ def maxStrength(nums):
 
 ### Summary
 This problem uses the classical "maximum product subset" pattern, balancing positive, negative, and zero elements. It's related to the greedy-logic problems about maximizing or minimizing products in arrays with both signs. The key is to consider sign parity and avoid zeroing products unless forced. This approach is common in problems like finding the maximum product of a subset or subarray, often appearing in interview settings.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Greedy(#greedy), Bit Manipulation(#bit-manipulation), Sorting(#sorting), Enumeration(#enumeration)
+
+### Similar Problems
+- Maximum Strength of K Disjoint Subarrays(maximum-strength-of-k-disjoint-subarrays) (Hard)

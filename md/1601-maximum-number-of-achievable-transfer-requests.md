@@ -78,3 +78,8 @@ def maximumRequests(n: int, requests: List[List[int]]) -> int:
 
 ### Summary
 This problem is a classic example of subset enumeration with bitmasking, where you need to select the largest valid subset satisfying balancing constraints. The bitmask/backtracking pattern is common when the set to enumerate is small (≤20). Variations of this approach are used in scheduling, matching, and combinatorial optimization.
+
+### Tags
+Array(#array), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Enumeration(#enumeration)
+
+### Similar Problems

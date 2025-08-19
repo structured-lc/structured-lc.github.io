@@ -111,3 +111,8 @@ Similar patterns appear in:
 - Partition DP (subarray segmentation)
 - **Greedy partitions for monotonic sequences**
 - Can be used in resource allocation, file merging, or pattern design where contiguous regrouping is permitted under a monotonic/constraint.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Stack(#stack), Queue(#queue), Monotonic Stack(#monotonic-stack), Monotonic Queue(#monotonic-queue)
+
+### Similar Problems

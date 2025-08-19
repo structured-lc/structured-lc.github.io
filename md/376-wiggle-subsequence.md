@@ -85,3 +85,9 @@ def wiggleMaxLength(nums):
 
 ### Summary
 This problem uses the **dynamic programming - state compression** pattern. By keeping track of the length of wiggle subsequences ending with up or down at each index, then optimizing state to two scalars, we achieve O(n) time and O(1) space. The technique applies to similar sequence or subsequence problems, especially where alternation or switching patterns must be tracked length-wise.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
+
+### Similar Problems
+- Rearrange Array Elements by Sign(rearrange-array-elements-by-sign) (Medium)

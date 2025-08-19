@@ -89,3 +89,8 @@ def minTimeForKComponents(n, edges, k):
 
 ### Summary
 This problem uses the offline union-find (DSU) and binary search over answer pattern, which shows up in many dynamic connectivity and parameter minimization graph problems.
+
+### Tags
+Binary Search(#binary-search), Union Find(#union-find), Graph(#graph), Sorting(#sorting)
+
+### Similar Problems

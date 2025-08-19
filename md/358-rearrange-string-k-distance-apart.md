@@ -104,3 +104,11 @@ def rearrangeString(s, k):
 ### Summary
 This problem uses the **Greedy with Heap/Queue** pattern for scheduling under separation constraints.  
 It is a variant of interval (cooldown) task scheduling, rebalancing, or the "Least Recently Used" discipline, often seen in job/task schedulers, exam proctoring, or any scenario with "separation" and "frequency" constraints.
+
+### Tags
+Hash Table(#hash-table), String(#string), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Counting(#counting)
+
+### Similar Problems
+- Task Scheduler(task-scheduler) (Medium)
+- Reorganize String(reorganize-string) (Medium)
+- Construct String With Repeat Limit(construct-string-with-repeat-limit) (Medium)

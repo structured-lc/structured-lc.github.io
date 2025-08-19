@@ -60,3 +60,9 @@ def canMakeArithmeticProgression(arr):
 
 ### Summary
 A simple array manipulation problem. Classic use of sorting then pairwise check for pattern. Similar checks used in finding geometric/sequences, collinearity, or regularity in datasets.
+
+### Tags
+Array(#array), Sorting(#sorting)
+
+### Similar Problems
+- Arithmetic Subarrays(arithmetic-subarrays) (Medium)

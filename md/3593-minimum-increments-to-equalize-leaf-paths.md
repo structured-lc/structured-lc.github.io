@@ -143,3 +143,8 @@ def minIncrements(n, edges, cost):
 This problem uses the DFS aggregation pattern on trees: compute values for subtrees and propagate up optimally.  
 It commonly arises in path-equalizing problems, such as distributing work, synchronizing schedules in trees, and processing root-to-leaf dependencies.  
 It's a classic example of bottom-up tree dynamic programming where local adjustments must be made to obtain global equality among paths.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems

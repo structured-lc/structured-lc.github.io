@@ -72,3 +72,9 @@ def numSteps(s: str) -> int:
 
 ### Summary
 This is a simulation problem leveraging binary properties: bit manipulations and step counting. Working from right to left allows you to handle potential carries efficiently without converting to integers.
+
+### Tags
+String(#string), Bit Manipulation(#bit-manipulation), Simulation(#simulation)
+
+### Similar Problems
+- Minimum Moves to Reach Target Score(minimum-moves-to-reach-target-score) (Medium)

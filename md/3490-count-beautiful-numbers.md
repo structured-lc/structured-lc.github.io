@@ -138,3 +138,8 @@ def count_beautiful_numbers(l: int, r: int) -> int:
 ### Summary
 This problem is a classic use of **digit dynamic programming (Digit DP)** for efficiently counting numbers with properties defined by their digits within a given range.  
 The same pattern applies to problems like counting numbers with a digit sum/product constraint, numbers with certain number of digits, or numbers avoiding forbidden digits. Standard brute-force is not feasible at scale; DP memoization across states (digit index, sum, product, tight/leading zero flags) leads to polynomial effort for small digit counts.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

@@ -272,3 +272,11 @@ class CodecJSON:
 
 ### Summary
 N-ary tree serialization requires careful handling of variable node degrees. The preorder traversal with child count provides an efficient solution that preserves structure while maintaining linear time complexity. This problem demonstrates important concepts in tree serialization, data structure design, and the trade-offs between different encoding schemes. Understanding these patterns is crucial for designing persistent storage systems and network protocols that handle hierarchical data.
+
+### Tags
+String(#string), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Serialize and Deserialize Binary Tree(serialize-and-deserialize-binary-tree) (Hard)
+- Serialize and Deserialize BST(serialize-and-deserialize-bst) (Medium)
+- Encode N-ary Tree to Binary Tree(encode-n-ary-tree-to-binary-tree) (Hard)

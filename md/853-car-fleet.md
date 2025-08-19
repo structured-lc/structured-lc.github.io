@@ -101,3 +101,10 @@ def carFleet(target, position, speed):
 ### Summary
 This problem uses a **greedy approach plus sorting**, a common coding pattern for "merging intervals" or "processing tasks/events by deadlines/priority."  
 It's widely applicable to problems involving physical simulation, collision, or absorption events where entities cannot "jump ahead" — e.g., asteroid collision, queue grouping, or task scheduling by deadlines.
+
+### Tags
+Array(#array), Stack(#stack), Sorting(#sorting), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Car Fleet II(car-fleet-ii) (Hard)
+- Count Collisions on a Road(count-collisions-on-a-road) (Medium)

@@ -105,3 +105,16 @@ def minMeetingRooms(intervals):
 
 ### Summary
 This problem uses the **sweep line** (interval merging) pattern, common for solving overlapping-interval questions. Sorting start/end times and scanning with two pointers makes it efficient and easy to implement. This approach generalizes well for any problem where you want to track overlaps, peak usage, or allocate resources for intervals—like assigning classrooms, CPU scheduling, or even runway management at airports.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Merge Intervals(merge-intervals) (Medium)
+- Meeting Rooms(meeting-rooms) (Easy)
+- Minimum Number of Arrows to Burst Balloons(minimum-number-of-arrows-to-burst-balloons) (Medium)
+- Car Pooling(car-pooling) (Medium)
+- Number of Flowers in Full Bloom(number-of-flowers-in-full-bloom) (Hard)
+- Meeting Rooms III(meeting-rooms-iii) (Hard)
+- Total Cost to Hire K Workers(total-cost-to-hire-k-workers) (Medium)
+- Points That Intersect With Cars(points-that-intersect-with-cars) (Easy)

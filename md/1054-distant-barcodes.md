@@ -92,3 +92,8 @@ def rearrangeBarcodes(barcodes):
 
 ### Summary
 This is a **greedy rearrangement** problem where we space out the most frequent elements first. The solution follows a pattern similar to rearrange-string problems, such as "Rearrange String k Distance Apart" and "Task Scheduler". The technique of distributing high-frequency elements as far apart as possible is a common approach in interval separation and coloring problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Counting(#counting)
+
+### Similar Problems

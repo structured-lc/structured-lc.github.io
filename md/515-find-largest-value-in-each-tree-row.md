@@ -133,3 +133,8 @@ Pattern applies to:
 - Left/right view of a tree  
 - Tree zigzag or spiral order  
 - Level-wise sums, averages, or other reduction operations
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

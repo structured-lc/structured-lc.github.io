@@ -105,3 +105,9 @@ def count_almost_equal_pairs(nums):
 
 ### Summary
 This problem uses the **brute-force double loop with precomputation** pattern, leveraging small input size. The central trick: for each number, enumerate all numbers reachable by one swap, and for each pair, check mutual reachability. This "enumerate digit permutations for small constraints" approach is common when the input size is small and operations relate to digits, as seen in digit-based similarity or adjacency counting problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Counting(#counting), Enumeration(#enumeration)
+
+### Similar Problems
+- Check if One String Swap Can Make Strings Equal(check-if-one-string-swap-can-make-strings-equal) (Easy)

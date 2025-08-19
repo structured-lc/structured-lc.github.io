@@ -100,3 +100,9 @@ def countDays(days, meetings):
 This is a classic **merge intervals** problem — by merging all overlaps, you can efficiently count/track *gaps* in the schedule.  
 This pattern occurs in sweep line problems, "meeting rooms", calendar schedulers, file range coalescing, and server/booking slot problems.  
 Recognizing overlap → merge → count gap is a recurring approach in real-world interval data.
+
+### Tags
+Array(#array), Sorting(#sorting)
+
+### Similar Problems
+- Merge Intervals(merge-intervals) (Medium)

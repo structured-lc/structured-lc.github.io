@@ -86,3 +86,8 @@ def minimumOperations(nums, target):
 
 ### Summary
 This problem uses a **difference array** and a **greedy prefix approach** to count the minimal number of subarray operations required. The usage pattern is common for any scenario where subarray modifications must sum up to a “staircase” of differences — e.g., histogram flattening or painting problems. It highlights careful reduction to 1D delta processing and sequence transitions. Variants on this theme appear in range-update/monotonic array problems and have deep ties to greedy and prefix sum methods.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems

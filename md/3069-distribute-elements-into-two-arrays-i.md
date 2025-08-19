@@ -111,3 +111,10 @@ def distribute_elements(nums):
 
 ### Summary
 This problem demonstrates the **greedy simulation pattern**, where you iteratively build answers step by step based on immediate local choices. It's a good example of constructive list building and state tracking with arrays. This pattern also arises in problems where decisions depend on current or previous elements, such as partitioning, scheduling, or sequential grouping tasks.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems
+- Split Array Largest Sum(split-array-largest-sum) (Hard)
+- Divide Array Into Equal Pairs(divide-array-into-equal-pairs) (Easy)

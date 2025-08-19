@@ -101,3 +101,8 @@ def minCost(arr, brr, k):
 This problem uses the **greedy + sorting pattern** to minimize total adjustments when matching two arrays.  
 It leverages the **Rearrangement Inequality**, which ensures pairing smallest to smallest (and so on) gives minimum sum of absolute differences.  
 This approach and code pattern commonly applies to array matching, goal-seeking via pairwise cost minimization, and canonical cases like assignment or resource allocation problems.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

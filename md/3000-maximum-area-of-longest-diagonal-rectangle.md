@@ -77,3 +77,8 @@ def max_area_of_longest_diagonal_rectangle(dimensions):
 
 ### Summary
 This problem uses a classic **single-pass maximum-tracking** strategy: scan through a list while maintaining the "best so far" properties based on coupled criteria (diagonal length primary, area secondary). The avoidance of sqrt and floating-point by comparing squared lengths is a useful and common math trick for optimization and precision when dealing with distances or lengths, widely applicable in computational geometry, selection problems, and competitive programming.
+
+### Tags
+Array(#array)
+
+### Similar Problems

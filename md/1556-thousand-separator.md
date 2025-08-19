@@ -85,3 +85,8 @@ def thousandSeparator(n: int) -> str:
 
 ### Summary
 This problem is a classic example of **string manipulation** and **grouping**. The technique is the same as formatting numbers with thousand separators but can be adapted for any separator or group size. It is applicable to formatting outputs in finance, internationalization, or any domain where human-readable numbers are needed. The coding pattern—processing strings in groups from the end or using modular conditions—also applies to problems like word wrapping, group encoding, or digit grouping tasks.
+
+### Tags
+String(#string)
+
+### Similar Problems

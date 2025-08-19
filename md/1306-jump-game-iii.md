@@ -76,3 +76,13 @@ def canReach(arr, start):
 
 ### Summary
 This problem showcases the **graph traversal** pattern, where each index represents a node and permissible jumps define edges. Both BFS and DFS are valid; this solution uses recursive DFS with in-place marking for O(1) extra space. It's a technique common for similar reachability problems in arrays and graphs, such as "Word Ladder", "Snakes and Ladders", and other variations of "Jump Game".
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Jump Game II(jump-game-ii) (Medium)
+- Jump Game(jump-game) (Medium)
+- Jump Game VII(jump-game-vii) (Medium)
+- Jump Game VIII(jump-game-viii) (Medium)
+- Maximum Number of Jumps to Reach the Last Index(maximum-number-of-jumps-to-reach-the-last-index) (Medium)

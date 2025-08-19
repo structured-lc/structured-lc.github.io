@@ -64,3 +64,10 @@ def isStrictlyPalindromic(n: int) -> bool:
 ### Summary
 
 This problem is a mathematical brainteaser rather than an implementation-heavy coding question. The insight is recognizing, through proof or pattern, that there are no strictly palindromic numbers according to the definition for n ≥ 4. As a result, the answer for all valid input values is simply False. The pattern is rare in interview problems but illustrates the importance of recognizing mathematical impossibility and leveraging proofs over brute force computation.
+
+### Tags
+Math(#math), Two Pointers(#two-pointers), Brainteaser(#brainteaser)
+
+### Similar Problems
+- Palindrome Number(palindrome-number) (Easy)
+- Stone Game(stone-game) (Medium)

@@ -88,3 +88,13 @@ def nextPermutation(nums):
 
 ### Summary  
 This solution uses a two-pointer approach to find the next lexicographical permutation in-place. It identifies a pivot, finds the correct element to swap, and reverses the suffix efficiently. This "next permutation" pattern is common for permutation generation, backtracking, and combinatorial problems.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers)
+
+### Similar Problems
+- Permutations(permutations) (Medium)
+- Permutations II(permutations-ii) (Medium)
+- Permutation Sequence(permutation-sequence) (Hard)
+- Palindrome Permutation II(palindrome-permutation-ii) (Medium)
+- Minimum Adjacent Swaps to Reach the Kth Smallest Number(minimum-adjacent-swaps-to-reach-the-kth-smallest-number) (Medium)

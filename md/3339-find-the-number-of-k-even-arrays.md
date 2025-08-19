@@ -128,3 +128,9 @@ def findKEvenArrays(n, m, k):
 This problem uses **parity classification** and classic **dynamic programming**. Its state is small: we only track current position, remaining k-pairs, and the last number's parity.  
 The main insight is that counting only depends on whether numbers are even or odd (not their actual value), so we use counts for efficient transitions.  
 Pattern used: **Digit DP / parity DP** — commonly seen in sequence construction and restriction-counting problems.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Sort Array By Parity II(sort-array-by-parity-ii) (Easy)

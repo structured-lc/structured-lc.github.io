@@ -78,3 +78,8 @@ def isDivisibleByDigitSumAndProduct(n: int) -> bool:
 ### Summary
 We used a standard *digit extraction and aggregation* pattern to solve this problem efficiently.  
 This is a common approach for *digit property* problems, such as sum of digits, product of digits, or even palindromic digit checks and is generally applicable wherever we need to analyze numerically significant properties of an integer's digits.
+
+### Tags
+Math(#math)
+
+### Similar Problems

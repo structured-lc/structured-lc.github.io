@@ -78,3 +78,9 @@ def createInfiniteMethodObject():
 
 ### Summary
 This problem demonstrates the use of **dynamic method resolution** via Python’s `__getattr__` (or Proxies in JavaScript) to construct a highly flexible object interface. This is a rare but powerful pattern used for mocks, testing, dynamic APIs, and sometimes for domain-specific language (DSL) frameworks. Recognizing interceptor patterns and method overloading at runtime is a useful skill in dynamic programming and metaprogramming tasks.
+
+### Tags
+
+### Similar Problems
+- Immutability Helper(immutability-helper) (Hard)
+- Make Object Immutable(make-object-immutable) (Medium)

@@ -79,3 +79,13 @@ def finalString(s: str) -> str:
 
 ### Summary
 This problem uses the **simulation pattern**, directly modeling the behavior described. The main coding pattern is: **string building with in-place transformations**, a common approach for many parsing/simulation questions. Understanding efficient use of string/list operations is key, especially for constrained input sizes, and can be broadly applied to problems involving stream processing or interpreters.
+
+### Tags
+String(#string), Simulation(#simulation)
+
+### Similar Problems
+- Reverse Vowels of a String(reverse-vowels-of-a-string) (Easy)
+- Reverse String II(reverse-string-ii) (Easy)
+- Reverse Only Letters(reverse-only-letters) (Easy)
+- Find the Original Typed String I(find-the-original-typed-string-i) (Easy)
+- Find the Original Typed String II(find-the-original-typed-string-ii) (Hard)

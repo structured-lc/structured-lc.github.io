@@ -72,3 +72,11 @@ def alternateDigitSum(n: int) -> int:
 
 ### Summary
 This problem uses a **single-pass iteration pattern** with basic alternation logic. It’s a good example of **digit-by-digit processing** and simple sign alternation. This pattern can also be applied to other problems involving alternate sign sums or digit manipulations, such as "subtract the sum of even and odd positioned digits" or similar integer digit transforms.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Add Digits(add-digits) (Easy)
+- Minimum Sum of Four Digit Number After Splitting Digits(minimum-sum-of-four-digit-number-after-splitting-digits) (Easy)
+- Separate the Digits in an Array(separate-the-digits-in-an-array) (Easy)

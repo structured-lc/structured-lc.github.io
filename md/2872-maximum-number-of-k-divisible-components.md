@@ -146,3 +146,9 @@ def maxKDivisibleComponents(n, edges, values, k):
 This approach uses a **DFS subtree pattern**, commonly used in tree problems that involve aggregating values from leaves up to root and deciding where cuts can be made.  
 It’s efficient and elegant, with similar structure to subtree sum, subtree size, or cutting trees on properties.  
 This general recursive pattern is widely applicable whenever you need to split or count components in trees based on subtree properties.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems
+- Create Components With Same Value(create-components-with-same-value) (Hard)

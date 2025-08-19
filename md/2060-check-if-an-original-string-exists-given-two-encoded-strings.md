@@ -121,3 +121,10 @@ def possibly_equals(s1: str, s2: str) -> bool:
 
 ### Summary
 This problem is a classic **DFS with state compression** and **backtracking** with memoization, handling ambiguous numeric encodings. The general pattern arises anywhere two differently compressed representations need to be matched (e.g., wildcard pattern matching, run-length encoding comparison, sequence alignment). Such approaches are broadly useful wherever enumeration of mutually consistent decodings is required.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Valid Word Abbreviation(valid-word-abbreviation) (Easy)
+- Check If Two String Arrays are Equivalent(check-if-two-string-arrays-are-equivalent) (Easy)

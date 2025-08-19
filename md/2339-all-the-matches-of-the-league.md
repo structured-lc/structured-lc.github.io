@@ -91,3 +91,8 @@ def all_matches_of_league(teams):
 This is a classic **self-join/cross-product** SQL and combinatorics problem — generate all ordered pairs (excluding self-pairs) from a list.  
 It’s a common pattern in scheduling, tournament table generation, and combinatorial problems involving pairs/permutations.  
 No advanced data structures are required; a nested loop or a SQL cross join with filter suffices.
+
+### Tags
+Database(#database)
+
+### Similar Problems

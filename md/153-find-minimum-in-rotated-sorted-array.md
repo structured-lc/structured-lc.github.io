@@ -93,3 +93,10 @@ def findMin(nums):
 - This is a classic use-case for the **Binary Search** pattern, specifically suited for arrays that are rotated sorted.
 - The key insight is that one half of the array is always sorted, and binary search efficiently eliminates half the array each step.
 - The same approach is useful for searching for elements in rotated arrays and handling a variety of sorted/rotated array problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Search in Rotated Sorted Array(search-in-rotated-sorted-array) (Medium)
+- Find Minimum in Rotated Sorted Array II(find-minimum-in-rotated-sorted-array-ii) (Hard)

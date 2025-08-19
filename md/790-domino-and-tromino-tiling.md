@@ -89,3 +89,8 @@ def numTilings(n):
 ### Summary
 
 This is a classic **dynamic programming** problem that requires careful consideration of different tiling configurations, especially due to the introduction of trominoes. The two-state DP approach is efficient and generalizable to many tiling problems. The pattern (DP with multiple states) is common in grid/challenge/board tiling problems and in problems where multiple actions affect the state differently. This approach is also relevant for problems involving laying out tiles, making cuts, or covering areas with specific shapes.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

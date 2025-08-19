@@ -109,3 +109,9 @@ This problem is a direct simulation using the **greedy matching** pattern: for e
 The scan-left-for-fit-and-mark pattern is a **classic greedy assignment** used in interval scheduling and matching problems.  
 This approach is consistent with many interview problems where you must assign resources to tasks preserving order and capacity.  
 Optimizations (e.g., segment tree or binary search) are possible, especially as n grows, or if constraints relax order or exclusiveness.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Segment Tree(#segment-tree), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Block Placement Queries(block-placement-queries) (Hard)

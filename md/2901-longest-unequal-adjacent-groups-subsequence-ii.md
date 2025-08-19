@@ -118,3 +118,8 @@ def longest_unequal_adjacent_groups_subsequence(words, groups):
 ### Summary
 This is a **dynamic programming** problem closely related to **Longest Increasing Subsequence** but with custom "compatibility" relations (Hamming distance 1 and group difference).  
 The technique—DP + path reconstruction—is a common pattern and can be used any time you need to build the longest sequence with adjacency constraints, such as in string/graph puzzles or variant subsequence questions.
+
+### Tags
+Array(#array), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

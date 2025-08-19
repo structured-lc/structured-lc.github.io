@@ -126,3 +126,10 @@ This problem uses a **grid DFS/BFS island-counting pattern**, with simulation of
 The key insight is checking if the grid is already disconnected, then simulating single removals, and leveraging the fact that with two removals, any 4-connected island can always be disconnected.  
 This "try plus simulation plus theoretical shortcut" is a common approach for minimum-cut type grid questions.  
 Patterns used here (DFS for island count, simulating removals) are also fundamental in problems dealing with "breaking" or "partitioning" graphs or grids.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix), Strongly Connected Component(#strongly-connected-component)
+
+### Similar Problems
+- Disconnect Path in a Binary Matrix by at Most One Flip(disconnect-path-in-a-binary-matrix-by-at-most-one-flip) (Medium)
+- Minimum Runes to Add to Cast Spell(minimum-runes-to-add-to-cast-spell) (Hard)

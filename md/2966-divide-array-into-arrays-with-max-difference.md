@@ -89,3 +89,8 @@ def divideArray(nums, k):
 
 ### Summary
 This problem is a classic example of the **greedy** + **sorting** pattern. By sorting, we can line up the numbers so that three consecutive elements are as close as possible, and greedily try to build valid groups. This technique is commonly used in problems involving grouping with difference or adjacency constraints — such as forming teams by skill or distributing resources with capacity/difference limitations.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

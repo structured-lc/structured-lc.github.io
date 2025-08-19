@@ -116,3 +116,8 @@ WHERE rank = 1;
 
 ### Summary  
 This problem uses the **window function pattern** (RANK/ROW_NUMBER partitioned by customer) combined with conditional aggregation to calculate a percentage metric. It is a classic example of using SQL window functions to find first or earliest records per group and then performing calculations on that subset—common in reporting, analytics, and data validation contexts.
+
+### Tags
+Database(#database)
+
+### Similar Problems

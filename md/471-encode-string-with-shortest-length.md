@@ -114,3 +114,10 @@ def encode(s: str) -> str:
 
 ### Summary
 This problem uses the **DP on substrings** pattern, where we build shortest solutions for all substrings and merge them for the full string. It's a classic optimal substructure/overlapping subproblem scenario, commonly seen in parsing, palindrome, and optimal segmenting problems.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Decode String(decode-string) (Medium)
+- Number of Atoms(number-of-atoms) (Hard)

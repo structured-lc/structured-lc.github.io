@@ -126,3 +126,8 @@ def marketAnalysisIII(users, items, orders):
 This problem uses the **hash map / grouping** pattern and set tracking, common for "per-user statistics" with exclusions.  
 The approach generalizes to data analysis problems where per-entity aggregations need to exclude or filter certain categories before tallying results.  
 SQL solutions use GROUP BY and filtering, while coding interviews expect neat dictionary/set logic with maximal efficiency.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -62,3 +62,9 @@ def arrayStringsAreEqual(word1, word2):
 
 ### Summary
 This problem is a classic example of **string concatenation and comparison**, which is a common array and string-processing pattern. The solution uses the join pattern but can be adapted to a two-pointer or iterator-based approach for efficiency in space-constrained or streaming contexts.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems
+- Check if an Original String Exists Given Two Encoded Strings(check-if-an-original-string-exists-given-two-encoded-strings) (Hard)

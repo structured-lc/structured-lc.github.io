@@ -69,3 +69,8 @@ ORDER BY i.item_category, FIELD(d.day_of_week,'Monday','Tuesday','Wednesday','Th
 
 ### Summary
 This problem tests multi-dimensional SQL aggregation, use of date functions, and the need for full cross-group reporting even for missing data. The cross join plus left join pattern is a standard for ensuring completeness in reporting grids.
+
+### Tags
+Database(#database)
+
+### Similar Problems

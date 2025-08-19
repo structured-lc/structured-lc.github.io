@@ -151,3 +151,8 @@ def ceo_subordinate_hierarchy(employees):
 
 ### Summary
 This approach uses **BFS traversal** of a general tree (manager-subordinate hierarchy) to compute levels and gather information for each subordinate. This is a **rooted tree traversal** pattern, frequently applied in problems with organizational trees, file system hierarchies, and similar structures. The adjacency-list and BFS (or DFS for variations) pattern generalizes well to many hierarchical data problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

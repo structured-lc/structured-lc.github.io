@@ -115,3 +115,9 @@ def mergeNodes(head):
 This problem is a classic example of **Linked List Traversal with Sentinel/Marker values** and constructing a new result list in one pass.
 The pattern is: process segments separated by special values (here zeros), summarize data in those segments, and build a new representation.
 This is a common approach for delimiter-based partitioning problems and can be applied to arrays, lists, or streams where segment boundaries are marked by specific values.
+
+### Tags
+Linked List(#linked-list), Simulation(#simulation)
+
+### Similar Problems
+- Linked List Components(linked-list-components) (Medium)

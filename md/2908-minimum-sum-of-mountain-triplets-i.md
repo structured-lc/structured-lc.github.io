@@ -98,3 +98,11 @@ def minimumSum(nums):
 This is a classic "find peak with smaller neighbors" problem—**pattern: iterate with the middle fixed, scan left and right for constraints**.  
 The approach is O(n²) brute scan, easy to code and clear. Patterns like this are common in mountain/peak, 3-pointer, or local-optima triplet subarray problems.  
 Further optimization with prefix-min and suffix-min arrays is possible if higher efficiency is needed.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- 3Sum(3sum) (Medium)
+- Number of Arithmetic Triplets(number-of-arithmetic-triplets) (Easy)
+- Maximum Value of an Ordered Triplet I(maximum-value-of-an-ordered-triplet-i) (Easy)

@@ -109,3 +109,8 @@ def distinctNumbers(nums, k):
 ### Summary
 This problem is a classic example of the **sliding window** + **hash map** pattern to solve range distinct counting in linear time.  
 Pattern can also be applied to problems like "Longest substring with at most k distinct characters", "Find all anagrams in a string", and many range query/statistics tasks where recalculating from scratch for each window would be inefficient.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
+
+### Similar Problems

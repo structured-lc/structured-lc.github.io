@@ -143,3 +143,9 @@ def updateBoard(board, click):
 
 ### Summary
 This problem is a classic **DFS/BFS flood fill** on grids, similar to paint fill or island expansion. The key is to properly manage recursion and in-place board updates to avoid revisiting. The pattern applies to image fill, island counting, and region expansion in grid-based puzzles.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- Detonate the Maximum Bombs(detonate-the-maximum-bombs) (Medium)

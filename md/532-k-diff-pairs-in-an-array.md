@@ -95,3 +95,14 @@ def findPairs(nums, k):
 
 ### Summary
 This problem is an application of the **hash set/hash map** pattern for fast unique pair lookups, related to the **Two Sum** problem. The approach efficiently counts unique pairs in O(n) time and is often used in problems involving unique value detection or recording element frequencies. The techniques here are widely applicable for problems requiring uniqueness constraints and difference calculations in arrays.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Absolute Difference in BST(minimum-absolute-difference-in-bst) (Easy)
+- Count Number of Pairs With Absolute Difference K(count-number-of-pairs-with-absolute-difference-k) (Easy)
+- Kth Smallest Product of Two Sorted Arrays(kth-smallest-product-of-two-sorted-arrays) (Hard)
+- Count Number of Bad Pairs(count-number-of-bad-pairs) (Medium)
+- Number of Pairs Satisfying Inequality(number-of-pairs-satisfying-inequality) (Hard)
+- Minimum Absolute Difference Between Elements With Constraint(minimum-absolute-difference-between-elements-with-constraint) (Medium)

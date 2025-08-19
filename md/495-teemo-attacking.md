@@ -77,3 +77,11 @@ def findPoisonedDuration(timeSeries, duration):
 
 ### Summary
 This problem uses the **interval merging/overlapping** technique—a common approach for combining timelines or ranges. It's often seen in "merge intervals," calendar meeting, and streaming window problems. A simple O(n) scan suffices because intervals are sorted and can only overlap with their direct successor. The problem strengthens understanding of overlap handling and efficient scanning patterns.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems
+- Merge Intervals(merge-intervals) (Medium)
+- Can Place Flowers(can-place-flowers) (Easy)
+- Dota2 Senate(dota2-senate) (Medium)

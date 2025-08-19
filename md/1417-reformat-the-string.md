@@ -89,3 +89,8 @@ def reformat(s: str) -> str:
 
 ### Summary
 This problem demonstrates the two-pointer or two-bucket pattern: split the input into groups, then recombine while preserving a structural property (alternating types). The approach is efficient and commonly found in partitioning or rearrangement problems such as merging even/odd arrays or alternating positive/negative numbers.
+
+### Tags
+String(#string)
+
+### Similar Problems

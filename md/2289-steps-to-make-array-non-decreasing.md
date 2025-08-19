@@ -96,3 +96,9 @@ def totalSteps(nums):
 This problem is a classic use case for a **monotonic stack** combined with **dynamic programming**.  
 The principle is: for each number, track how many "waves" it takes to become safe; propagate the removal steps using information about previously seen elements.  
 This pattern is common in problems smoothening arrays, removing obstacles, or simulating cascading removals, and appears in histogram, asteroid collision, and some interval problems.
+
+### Tags
+Array(#array), Linked List(#linked-list), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Remove One Element to Make the Array Strictly Increasing(remove-one-element-to-make-the-array-strictly-increasing) (Easy)

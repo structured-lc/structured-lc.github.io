@@ -95,3 +95,9 @@ def maxRectangleArea(points):
 
 ### Summary
 This problem uses the *brute-force + pruning* design pattern, leveraging geometric properties and the small input size. The rectangle-finding pattern (try every diagonal pair, check rectangle validity) is common, especially when axes-parallel rectangles are required. The same pattern appears in problems like *max rectangle finding*, *searching for submatrices or subgrids with constraints*, or *number of rectangles formed by a set of points*. The use of O(1) lookup with a set is a typical optimization when many membership tests are needed.
+
+### Tags
+Array(#array), Math(#math), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Geometry(#geometry), Sorting(#sorting), Enumeration(#enumeration)
+
+### Similar Problems
+- Minimum Area Rectangle(minimum-area-rectangle) (Medium)

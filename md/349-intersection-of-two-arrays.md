@@ -90,3 +90,16 @@ def intersection(nums1, nums2):
 ### Summary  
 This problem uses the **hash set** pattern: sets provide O(1) lookup and enforce uniqueness, making them a natural fit for intersection tasks.  
 This is a foundation for problems involving fast membership checks, such as finding union, distinct elements, or differences between sets.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Intersection of Two Arrays II(intersection-of-two-arrays-ii) (Easy)
+- Intersection of Three Sorted Arrays(intersection-of-three-sorted-arrays) (Easy)
+- Find the Difference of Two Arrays(find-the-difference-of-two-arrays) (Easy)
+- Count Common Words With One Occurrence(count-common-words-with-one-occurrence) (Easy)
+- Choose Numbers From Two Arrays in Range(choose-numbers-from-two-arrays-in-range) (Hard)
+- Intersection of Multiple Arrays(intersection-of-multiple-arrays) (Easy)
+- Minimum Common Value(minimum-common-value) (Easy)
+- Maximum Size of a Set After Removals(maximum-size-of-a-set-after-removals) (Medium)

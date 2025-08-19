@@ -82,3 +82,14 @@ def change(amount, coins):
 This is a classic *Unbounded Knapsack* (all-coins-unlimited) dynamic programming pattern.  
 It’s very similar to the classic subset sum/combinations/count-ways DP, and appears in problems involving monetary change, combinations, or any scenario where an unlimited supply of items must fill a target sum.  
 The core coding pattern (1D DP, filling by outer loop on coins and inner loop on target amount) allows highly efficient, order-insensitive combination counting.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Maximum Value of K Coins From Piles(maximum-value-of-k-coins-from-piles) (Hard)
+- Number of Ways to Earn Points(number-of-ways-to-earn-points) (Hard)
+- Count of Sub-Multisets With Bounded Sum(count-of-sub-multisets-with-bounded-sum) (Hard)
+- Length of the Longest Subsequence That Sums to Target(length-of-the-longest-subsequence-that-sums-to-target) (Medium)
+- The Number of Ways to Make the Sum(the-number-of-ways-to-make-the-sum) (Medium)
+- Inverse Coin Change(inverse-coin-change) (Medium)

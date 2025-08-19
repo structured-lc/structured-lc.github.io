@@ -83,3 +83,11 @@ def myPow(x: float, n: int) -> float:
 
 ### Summary
 This problem is a classic application of the **Binary Exponentiation** (a divide-and-conquer pattern, often called fast power or exponentiation by squaring). The technique is common in mathematical computation problems to reduce O(n) exponentiation to O(log n), and appears in tasks ranging from modular exponentiation (in cryptography, combinatorics) to certain dynamic programming recurrences. The approach is highly reusable across languages and scenarios where efficient power computation is required.
+
+### Tags
+Math(#math), Recursion(#recursion)
+
+### Similar Problems
+- Sqrt(x)(sqrtx) (Easy)
+- Super Pow(super-pow) (Medium)
+- Count Collisions of Monkeys on a Polygon(count-collisions-of-monkeys-on-a-polygon) (Medium)

@@ -159,3 +159,9 @@ def monthly_transactions(transactions):
 
 ### Summary
 This problem leverages the **group by and conditional aggregation** pattern, very common in data analysis and SQL. The same approach can be applied for sales reports, user activity summaries, or any time-series+category breakdown scenario. This is a fundamental analytics pattern seen across data engineering and reporting tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Monthly Transactions II(monthly-transactions-ii) (Medium)

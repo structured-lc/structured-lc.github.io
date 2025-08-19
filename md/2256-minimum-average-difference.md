@@ -111,3 +111,10 @@ def minimumAverageDifference(nums):
 
 ### Summary
 The problem leverages the **prefix sum** pattern. Calculating running segment sums on-the-fly reduces repeated work — allowing an O(n) approach. This style appears in many subarray average/difference split problems (like "partition array", "max diff between parts", etc.). Prefix sum tricks are broadly useful for any scenario involving repeated range-sum queries.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Split Array With Same Average(split-array-with-same-average) (Hard)
+- Number of Ways to Split Array(number-of-ways-to-split-array) (Medium)

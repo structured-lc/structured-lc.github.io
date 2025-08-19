@@ -102,3 +102,8 @@ def unitConversion(n, conversions, queries):
 ### Summary
 We use a **conversion to root** pattern (tree prefix products), which is a classic prefix product/cumulative product technique. This allows O(1) query time after O(n) preprocessing.  
 The modular inverse is essential for division under modulo arithmetic. This approach is common for multiplicative path queries or when edge reciprocals must be handled efficiently, such as ratio graphs, scaling queries, or currency conversion trees.
+
+### Tags
+Array(#array), Math(#math), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
+
+### Similar Problems

@@ -86,3 +86,8 @@ def minCost(nums, x):
 This problem fits the **"Greedy with rolling minimum"** pattern, updating the minimum cost per position across state transitions (shifts) and keeping the total minimum at each stage, trying all reasonable "operation count" breakpoints.  
 The same pattern applies in cases involving rotation-and-take problems, cost minimization across permutations, and rolling minimums.  
 Common for interview rounds on dynamic programming, greedy, and rotating window problems.
+
+### Tags
+Array(#array), Enumeration(#enumeration)
+
+### Similar Problems

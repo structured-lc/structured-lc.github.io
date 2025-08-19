@@ -100,3 +100,9 @@ This problem leverages **prefix-building** pattern and can be solved efficiently
 Both focus on validating that every prefix of a candidate exists; this is a classic use-case for Tries or HashSets.  
 Similar logic applies in problems like 'Longest Word in Dictionary' and 'Buildable Words'.  
 The key insight is that you can reduce redundant checks by ordering the search or utilizing fast lookup structures for prefix validation.
+
+### Tags
+Array(#array), String(#string), Depth-First Search(#depth-first-search), Trie(#trie)
+
+### Similar Problems
+- Longest Word in Dictionary(longest-word-in-dictionary) (Medium)

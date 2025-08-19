@@ -86,3 +86,9 @@ def minimumSplits(nums):
 
 ### Summary
 We used a **greedy GCD scan** pattern: continuously extend a subarray while its GCD >1; when it hits 1, split and start over. This is a classic greedy + math problem, similar to "Split Array" problems, and is useful anywhere the property of GCD (irreversible loss when 1 is reached) applies, such as in minimal sectioning of number sequences by divisibility.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Number Theory(#number-theory)
+
+### Similar Problems
+- Minimum Subarrays in a Valid Split(minimum-subarrays-in-a-valid-split) (Medium)

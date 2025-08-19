@@ -125,3 +125,9 @@ def select_k_disjoint_special_substrings(s: str, k: int) -> bool:
 
 ### Summary
 This is a DP + greedy interval merge problem that closely parallels the "Partition Labels" pattern in greedy string segmentation problems. We precompute character ranges and DP to maximize non-overlapping special substrings. The pattern is commonly reused in string partitioning and interval selection problems.
+
+### Tags
+Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Find Longest Self-Contained Substring(find-longest-self-contained-substring) (Hard)

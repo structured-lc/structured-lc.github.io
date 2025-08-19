@@ -105,3 +105,9 @@ def alienOrder(words):
 ### Summary
 This problem uses the **Topological Sort** pattern, constructing a directed graph from inferred character precedences and then finding an ordering that satisfies all constraints. Robust cycle detection and edge constraint handling are crucial.  
 The same approach and coding pattern can be applied to "course scheduling," "build order," and any task dependency problem where elements must be ordered based on partial information. The key insight: pairwise constraints from input define a precedence graph, which must be acyclic for a solution to exist.
+
+### Tags
+Array(#array), String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort)
+
+### Similar Problems
+- Course Schedule II(course-schedule-ii) (Medium)

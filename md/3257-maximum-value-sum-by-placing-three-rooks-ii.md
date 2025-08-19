@@ -131,3 +131,9 @@ def maximumValueSum(board):
 This problem is a combinatorial search for the *maximum sum over independent options* (no row/col collision); it’s similar to assignment and matching problems.  
 The key pattern here is **"select k elements, no two share row/column, maximize sum"**, which appears in job assignments or maximum bipartite matching variants.  
 The brute approach is viable for k=3, but is not scalable. Generalizing leads to assignment problems (Hungarian Algorithm for bigger k), and can also arise in more classic combinatoric design and grid planning problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix), Enumeration(#enumeration)
+
+### Similar Problems
+- Available Captures for Rook(available-captures-for-rook) (Easy)

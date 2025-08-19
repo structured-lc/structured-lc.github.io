@@ -95,3 +95,10 @@ def minimum_substrings_in_partition(s):
 
 ### Summary
 This problem uses the **Substring DP pattern** — for each index, try all substring breaks and update dp based on subproblem solutions. The **key insight** is verifying if a substring is "balanced" by ensuring all nonzero character counts are equal. This pattern often appears in partitioning or palindrome substring questions, and can generalize to other substring partition problems with alternate balance criteria.
+
+### Tags
+Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming), Counting(#counting)
+
+### Similar Problems
+- Partition Array for Maximum Sum(partition-array-for-maximum-sum) (Medium)
+- Partition String Into Minimum Beautiful Substrings(partition-string-into-minimum-beautiful-substrings) (Medium)

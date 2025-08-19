@@ -97,3 +97,11 @@ class Solution:
 
 ### Summary
 This problem is a classic use case for the **Reservoir Sampling** algorithm, which allows for random sampling over single-pass data with unknown size using constant space. The pattern appears in problems where you must randomly pick an occurrence from a set or stream, especially when pre-storage of all options is infeasible. Variants include picking k random elements or handling streaming data where only one pass is allowed.
+
+### Tags
+Hash Table(#hash-table), Math(#math), Reservoir Sampling(#reservoir-sampling), Randomized(#randomized)
+
+### Similar Problems
+- Linked List Random Node(linked-list-random-node) (Medium)
+- Random Pick with Blacklist(random-pick-with-blacklist) (Hard)
+- Random Pick with Weight(random-pick-with-weight) (Medium)

@@ -124,3 +124,8 @@ class FileSystem:
 
 ### Summary
 This solution uses a simple and effective **hash map pattern** to implement the virtual file system, emphasizing fast O(1) lookups and insertions for each path. This dictionary-based approach is common for mapping unique entities (e.g., word counts, route lookups, URL shorteners) and is a recurring design in problems involving unique string keys with arbitrary values.
+
+### Tags
+Hash Table(#hash-table), String(#string), Design(#design), Trie(#trie)
+
+### Similar Problems

@@ -109,3 +109,9 @@ def can_make_palindrome(s, queries):
 ### Summary
 The solution uses the classic **palindrome permutation** check with prefix **bitmask for parity** of character counts, a smart use of bitwise manipulation for O(1) substring checks.  
 This technique is common in palindrome substring, even/odd count tracking, and fast range queries; it's broadly applicable to problems involving parity or subset frequency queries.
+
+### Tags
+Hash Table(#hash-table), String(#string), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Longest Chunked Palindrome Decomposition(longest-chunked-palindrome-decomposition) (Hard)

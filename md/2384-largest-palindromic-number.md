@@ -108,3 +108,9 @@ def largestPalindromic(num: str) -> str:
 
 ### Summary
 This uses a **hash/counting plus greedy assembly** coding pattern, combining digit counting with mirroring and placement logic. It's a classic greedy palindrome construction, similar to longest palindrome formation, and is widely applicable anywhere where optimal symmetric structure is desired under digit constraints.
+
+### Tags
+Hash Table(#hash-table), String(#string), Greedy(#greedy), Counting(#counting)
+
+### Similar Problems
+- Longest Palindrome(longest-palindrome) (Easy)

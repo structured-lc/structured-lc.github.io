@@ -139,3 +139,8 @@ def new_users_daily_count(traffic, today='2019-06-30', window=90):
 
 ### Summary
 This problem uses the **group-by aggregation** and **filtering** pattern, which is fundamental for data analytics (FAQ-style SQL queries). The approach can be applied to any "first event" counting problem, like “first purchase per user” or cohort analysis. The core logic (find minimum date per group, then aggregate by that date) is a classic in SQL and data-heavy backends.
+
+### Tags
+Database(#database)
+
+### Similar Problems

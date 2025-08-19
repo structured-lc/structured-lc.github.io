@@ -98,3 +98,10 @@ def allPathsSourceTarget(graph):
 
 ### Summary
 This problem exemplifies the **backtracking + DFS** pattern for finding all valid paths/solutions in a search space. The approach is common in problems involving paths, combinations, permutations, or solving brainteasers with branching choices. The technique avoids cycles (guaranteed by DAG here), and is memory-efficient except for the output size. Variants are widely used in puzzles, AI (finding all solutions), games, and certain graph path analyses.
+
+### Tags
+Backtracking(#backtracking), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
+
+### Similar Problems
+- Number of Ways to Arrive at Destination(number-of-ways-to-arrive-at-destination) (Medium)
+- Number of Increasing Paths in a Grid(number-of-increasing-paths-in-a-grid) (Hard)

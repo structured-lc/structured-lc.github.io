@@ -130,3 +130,12 @@ def buildMatrix(k: int, rowConditions: List[List[int]], colConditions: List[List
 
 ### Summary
 This problem is a classic instance of resolving **partial orders** with **topological sort** (Kahn’s algorithm or DFS) applied independently to row and column constraints. The code demonstrates the Topological Sorting pattern, broadly relevant to problems involving dependency ordering, scheduling, and layered graph relations. This pattern frequently appears not only in grid/matrix construction, but also in scheduling tasks or restoring sequences from pairwise order facts.
+
+### Tags
+Array(#array), Graph(#graph), Topological Sort(#topological-sort), Matrix(#matrix)
+
+### Similar Problems
+- Course Schedule(course-schedule) (Medium)
+- Course Schedule II(course-schedule-ii) (Medium)
+- Find Eventual Safe States(find-eventual-safe-states) (Medium)
+- Loud and Rich(loud-and-rich) (Medium)

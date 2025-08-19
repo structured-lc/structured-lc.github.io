@@ -99,3 +99,8 @@ END;
 
 ### Summary
 The approach is a classic in-place update using SQL’s `CASE` expression. This is a common pattern for categorical value swaps or flips in a column with only two possible values. It’s widely applicable for “toggle” operations and demonstrates understanding of conditional logic with `UPDATE` in SQL.
+
+### Tags
+Database(#database)
+
+### Similar Problems

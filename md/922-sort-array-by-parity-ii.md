@@ -94,3 +94,13 @@ def sortArrayByParityII(nums):
 ### Summary
 This problem is a classic **two-pointer in-place partitioning** scenario, related to Dutch National Flag, and common in questions that rearrange elements by some simple rule (parity, sign, color, etc).  
 This approach can be generalized wherever two groups of equal count need to be placed at specific positions—like alternating gender seating, or zero/nonzero partitioning with arrangement constraints.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Sorting(#sorting)
+
+### Similar Problems
+- Sort Array By Parity(sort-array-by-parity) (Easy)
+- Rearrange Array Elements by Sign(rearrange-array-elements-by-sign) (Medium)
+- Sort Even and Odd Indices Independently(sort-even-and-odd-indices-independently) (Easy)
+- Largest Number After Digit Swaps by Parity(largest-number-after-digit-swaps-by-parity) (Easy)
+- Find the Number of K-Even Arrays(find-the-number-of-k-even-arrays) (Medium)

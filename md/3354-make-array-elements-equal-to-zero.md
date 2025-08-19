@@ -83,3 +83,8 @@ def countStartIndices(nums):
 
 ### Summary
 This problem uses a prefix-sum scan to identify valid starting zeros by checking if the block of non-zero elements is strictly to the left or right, a classic two-pointer or prefix-sum array pattern. This technique is commonly used in partition or subarray problems such as those involving balancing or boundary conditions.
+
+### Tags
+Array(#array), Simulation(#simulation), Prefix Sum(#prefix-sum)
+
+### Similar Problems

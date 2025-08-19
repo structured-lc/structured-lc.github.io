@@ -96,3 +96,8 @@ def minProcessingTime(processorTime, tasks):
 ### Summary
 This is a **greedy array pairing + parallel scheduling** problem—common in job scheduling, load balancing, or any batch-assign problem where you want to minimize the latest finishing time (makespan).  
 The greedy "assign hardest to fastest" trick works because with parallel processing, the largest element dominates. This pattern is often used in task allocation, CPU scheduling, cloud computing resource management, and more.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

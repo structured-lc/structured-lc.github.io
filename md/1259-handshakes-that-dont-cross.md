@@ -96,3 +96,8 @@ def numberOfWays(numPeople: int) -> int:
 
 ### Summary
 This is a classic **Catalan number** dynamic programming problem: subproblems represent independent regions split by each handshake. The DP recurrence is heavily used in problems involving non-crossing partitions (matching brackets, unique BSTs, polygon triangulations). The coding pattern is DP with overlapping subproblems and optimal substructure. Recognition of Catalan numbers allows for quick solution and generalization to related combinatorial problems.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

@@ -95,3 +95,9 @@ def checkEqualTree(root):
 
 ### Summary
 This problem uses the **DFS with subtree sum accumulation** pattern—classic in tree partitioning, path sums, and counting subtree properties. Computing all subtree sums in one post-order traversal is a common and powerful technique, especially when combined with problem-specific logic (such as checking for sum existence). This approach generalizes well to other problems about partitioning trees, cutting edges to optimize some property, or finding subtrees with specific characteristics.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Create Components With Same Value(create-components-with-same-value) (Hard)

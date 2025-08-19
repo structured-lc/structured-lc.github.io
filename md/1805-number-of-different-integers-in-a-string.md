@@ -90,3 +90,9 @@ def num_different_integers(word):
 
 ### Summary
 This problem is a classic **parsing and set** pattern: extract substrings (consecutive digits), normalize (remove leading zeros), and count unique entries. Sets are a common tool for tracking uniqueness efficiently. The coding approach is a “scan and collect” pattern, useful for tokenizing input or parsing structured data. This template appears in problems involving substrings, normalization, and counting distinct types.
+
+### Tags
+Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Longest Subarray With Maximum Bitwise AND(longest-subarray-with-maximum-bitwise-and) (Medium)

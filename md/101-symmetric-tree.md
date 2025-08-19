@@ -104,3 +104,8 @@ def isSymmetric(root: TreeNode) -> bool:
 ### Summary
 This problem uses the *mirror comparison* pattern and is a classic application of tree recursion. Recognizing that checking mirroring is essentially comparing nodes in symmetric positions is key.  
 The approach—either recursive or iterative—is a foundational pattern for tree problems and can be generalized for checking structural symmetry or “mirroredness” in other tree-like data structures.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

@@ -67,3 +67,11 @@ WHERE t2.id IS NULL;
 
 ### Summary
 The question is a classic "find missing from full set" task. The **set difference** pattern is common in data problems, and easily translates between SQL and Python.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Report Contiguous Dates(report-contiguous-dates) (Hard)
+- Find the Start and End Number of Continuous Ranges(find-the-start-and-end-number-of-continuous-ranges) (Medium)
+- Number of Transactions per Visit(number-of-transactions-per-visit) (Hard)

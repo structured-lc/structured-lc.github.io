@@ -80,3 +80,8 @@ def countSubarrays(nums):
 
 ### Summary
 This problem is a classic fixed-size sliding window check: examine all subarrays of a certain length (3), and check a mathematical condition that relates their elements. The approach is direct and avoids premature optimization; it's a representative example of using for-loop and windowed access for local array conditions, and the pattern frequently appears in other problems involving fixed-length subarrays and elementwise relationships.
+
+### Tags
+Array(#array)
+
+### Similar Problems

@@ -108,3 +108,8 @@ def highest_salaries_difference(salaries):
 This problem uses the **"find max/min across groups"** pattern, a classic in SQL (GROUP BY + aggregate function) and in code (track max per group using dict or variables).  
 It's a common pattern in many ranking, leaderboard, and analytics-style interview questions.  
 Efficient because it iterates once, with constant space for fixed keys. The approach generalizes to handling any department count or group criterion.
+
+### Tags
+Database(#database)
+
+### Similar Problems

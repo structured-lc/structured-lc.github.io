@@ -142,3 +142,9 @@ The problem is a classic **shortest path in an unweighted graph** application, s
 A key challenge is correctly mapping “snaking” board positions and handling ladder/snake jumps.  
 This pattern is common for board games, state-space puzzles, and problems involving moves or transitions with uniform cost.  
 BFS is ideal here as it finds the minimum moves by exploring all one-step-away positions first.
+
+### Tags
+Array(#array), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- Most Profitable Path in a Tree(most-profitable-path-in-a-tree) (Medium)

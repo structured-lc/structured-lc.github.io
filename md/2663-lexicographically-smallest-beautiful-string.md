@@ -97,3 +97,10 @@ def smallestBeautifulString(s: str, k: int) -> str:
 
 ### Summary
 This problem is a classic **greedy construction** with backtracking for string generation under adjacency constraints. By incrementing and greedily filling each position respecting forbidden local patterns, we efficiently find the minimal valid next string. The pattern used here appears in lexicographical string generation with local no-repeat/adjacency constraints, and also relates to problems in de Bruijn sequences or combinatorial generation with forbidden substrings.
+
+### Tags
+String(#string), Greedy(#greedy)
+
+### Similar Problems
+- Smallest String With Swaps(smallest-string-with-swaps) (Medium)
+- Find Palindrome With Fixed Length(find-palindrome-with-fixed-length) (Medium)

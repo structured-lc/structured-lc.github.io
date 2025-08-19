@@ -54,3 +54,9 @@ def numSpecial(mat):
 
 ### Summary
 This problem utilizes prefix sum-style precomputation and is a staple for scanning matrices for isolated features. This approach applies to unique row/column conflicts, text editors, or image processing.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems
+- Difference Between Ones and Zeros in Row and Column(difference-between-ones-and-zeros-in-row-and-column) (Medium)

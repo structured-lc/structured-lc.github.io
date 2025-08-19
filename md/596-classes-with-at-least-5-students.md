@@ -146,3 +146,8 @@ The approach uses **hash map grouping** with **sets for deduplication**—classi
 This pattern is common in tasks like distinct counts, group-based filtering, or histogram-style summary.  
 It’s efficient in both Python and SQL, and directly aligns with database operations like `GROUP BY` + `HAVING`.  
 You can extend this logic to more complex group filters, or adapt for scale with streaming or distributed processing.
+
+### Tags
+Database(#database)
+
+### Similar Problems

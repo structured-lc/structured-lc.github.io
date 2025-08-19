@@ -139,3 +139,9 @@ def biggest_window_between_visits(user_visits):
 
 ### Summary
 This problem uses the "sliding window" and "window function" pattern, commonly found in data analytics and time series analysis. Approaches here (LEAD/LAG, grouping, window maximum) are standard for log-gap analysis, anomaly detection, and churn prediction in real-world business data or analytics platforms.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Users With Two Purchases Within Seven Days(users-with-two-purchases-within-seven-days) (Medium)

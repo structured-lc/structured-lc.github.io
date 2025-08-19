@@ -128,3 +128,12 @@ def preorderTraversalIterative(root):
 The approach uses the **preorder traversal pattern**: process root, left, then right. It is a fundamental DFS traversal scheme.  
 Both recursive and iterative forms are direct; recursive is more elegant, and iterative is robust for deep trees.  
 This pattern underpins many tree problems, including tree cloning, serialization, and evaluating/printing hierarchies.
+
+### Tags
+Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Binary Tree Inorder Traversal(binary-tree-inorder-traversal) (Easy)
+- Verify Preorder Sequence in Binary Search Tree(verify-preorder-sequence-in-binary-search-tree) (Medium)
+- N-ary Tree Preorder Traversal(n-ary-tree-preorder-traversal) (Easy)
+- Kth Largest Sum in a Binary Tree(kth-largest-sum-in-a-binary-tree) (Medium)

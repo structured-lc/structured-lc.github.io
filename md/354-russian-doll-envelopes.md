@@ -87,3 +87,11 @@ def maxEnvelopes(envelopes):
 
 ### Summary
 This problem uses the "Longest Increasing Subsequence" coding pattern, but adapted to two dimensions (width, height) via careful sorting and LIS application. Sorting by width (and descending by height for ties) ensures correctness and avoids conflicts. The O(n log n) LIS with binary search is a standard but powerful optimization in competitive programming and interviews. This approach applies to other multi-dimensional sequencing problems where ordering across multiple attributes is required.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
+
+### Similar Problems
+- Longest Increasing Subsequence(longest-increasing-subsequence) (Medium)
+- The Number of Weak Characters in the Game(the-number-of-weak-characters-in-the-game) (Medium)
+- Longest Non-decreasing Subarray From Two Arrays(longest-non-decreasing-subarray-from-two-arrays) (Medium)

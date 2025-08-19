@@ -94,3 +94,10 @@ def maxKelements(nums, k):
 
 ### Summary
 This problem is a classic **greedy algorithm** with a **max-heap** (priority queue) pattern, commonly used when always needing to pick the current global best (like "top K", "frequency buckets", or "resource allocation" problems). The heap guarantees efficient maximum selection and reinsertion as values change over time. This general approach appears in other problems where you need to repeatedly choose and update the best candidate, such as merging k sorted lists, scheduling, or repeated extraction.
+
+### Tags
+Array(#array), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Sliding Window Maximum(sliding-window-maximum) (Hard)
+- Remove Stones to Minimize the Total(remove-stones-to-minimize-the-total) (Medium)

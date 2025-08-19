@@ -85,3 +85,9 @@ def commonChars(words):
 
 ### Summary
 This problem uses the "Hashing/Counting" pattern, leveraging a fixed-size array to track minimum frequencies of each character across all words. It's a classic problem for learning how to align and aggregate frequency data, and variations appear in problems involving set/multiset intersections, word puzzles, or aggregating text data. This approach is efficient in both time and space due to fixed alphabet size.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Intersection of Two Arrays II(intersection-of-two-arrays-ii) (Easy)

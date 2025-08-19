@@ -76,3 +76,10 @@ def possibleStringCount(word: str) -> int:
 
 ### Summary
 This problem uses a classic **string traversal** and *adjacent grouping* pattern: scan for runs of repeated characters and count their implications. Such patterns show up in problems involving character groups, substrings, or typo corrections. The answer logic — "number of places where consecutive characters are the same + 1" — is a direct application of this scan-and-count pattern, making it both optimal and easy to understand.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Keyboard Row(keyboard-row) (Easy)
+- Faulty Keyboard(faulty-keyboard) (Easy)

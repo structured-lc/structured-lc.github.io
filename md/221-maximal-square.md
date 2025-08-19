@@ -98,3 +98,13 @@ def maximalSquare(matrix):
 
 ### Summary
 This problem is a classic use case of **dynamic programming on a 2D grid**, specifically for finding largest contiguous shapes (here, a square). The DP formula leverages relationships with neighbors to efficiently build up possible side lengths and tracks the largest found. The approach generalizes to many 'largest submatrix' pattern problems and is foundational for matrix-based DP questions.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems
+- Maximal Rectangle(maximal-rectangle) (Hard)
+- Largest Plus Sign(largest-plus-sign) (Medium)
+- Count Artifacts That Can Be Extracted(count-artifacts-that-can-be-extracted) (Medium)
+- Stamping the Grid(stamping-the-grid) (Hard)
+- Maximize Area of Square Hole in Grid(maximize-area-of-square-hole-in-grid) (Medium)

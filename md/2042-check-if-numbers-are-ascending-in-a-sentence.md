@@ -76,3 +76,11 @@ def are_numbers_ascending(s: str) -> bool:
 
 ### Summary
 This problem uses the **string parsing** and **state tracking** patterns. You scan sequentially, updating a variable as you go, and short-circuit if something breaks the required property. This is common in problems where you need to check for monotonicity, sortedness, or process elements with accumulators. The idea generalizes to a variety of stream-like checking questions.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- String to Integer (atoi)(string-to-integer-atoi) (Medium)
+- Sorting the Sentence(sorting-the-sentence) (Easy)
+- Check if All A's Appears Before All B's(check-if-all-as-appears-before-all-bs) (Easy)

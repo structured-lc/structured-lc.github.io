@@ -93,3 +93,8 @@ def maxIncreaseKeepingSkyline(grid):
 
 This approach fits the **matrix row/column property** pattern: preprocess row-wise and column-wise maximum values, use their intersection for each cell to constrain updates. This is common in problems asking for optimization under row/column max/min constraints, such as in certain dynamic programming or greedy grid questions.  
 The skyline "unification" step is a classic for spatial constraint problems and applies similarly in graphics, DP, or city planning simulations.
+
+### Tags
+Array(#array), Greedy(#greedy), Matrix(#matrix)
+
+### Similar Problems

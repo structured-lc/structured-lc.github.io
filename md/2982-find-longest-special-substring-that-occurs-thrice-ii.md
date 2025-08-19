@@ -102,3 +102,10 @@ def maximumLength(s: str) -> int:
 ### Summary
 This is a variant of the sliding window / run-length encoding pattern, where we exploit the fact that special substrings consist of a single repeated character. The solution builds upon grouping runs and sliding over their repetition windows, a neat trick for single-character substring counting.  
 The run-length technique is common in string compression, substring occurrence, and any “repeated letter” substring problem.
+
+### Tags
+Hash Table(#hash-table), String(#string), Binary Search(#binary-search), Sliding Window(#sliding-window), Counting(#counting)
+
+### Similar Problems
+- Longest Substring Without Repeating Characters(longest-substring-without-repeating-characters) (Medium)
+- Longest Substring with At Least K Repeating Characters(longest-substring-with-at-least-k-repeating-characters) (Medium)

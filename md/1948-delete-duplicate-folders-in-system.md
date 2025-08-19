@@ -126,3 +126,10 @@ def deleteDuplicateFolder(paths):
 ### Summary
 This problem demonstrates a classic *"tree serialization"* and *"duplicate subtree detection"* pattern, using **Trie/Tree**, **hash maps**, and **post-order DFS**.  
 This approach is common for detecting duplicate subtrees, repeated folder structures, or sub-paths in hierarchical data structures, and generalizes to problems involving detecting similarities in trees (e.g., duplicated files, plagiarism detection, or repeated substructures in data).
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Trie(#trie), Hash Function(#hash-function)
+
+### Similar Problems
+- Find Duplicate File in System(find-duplicate-file-in-system) (Medium)
+- Find Duplicate Subtrees(find-duplicate-subtrees) (Medium)

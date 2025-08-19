@@ -69,3 +69,8 @@ def minCosts(cost):
 ### Summary
 This is a classic **prefix minimum** pattern—maintain a running minimum as you process an array left to right.  
 It’s common in problems where, for each position, you want the minimum/maximum up to that point. The technique is widely used in range queries, monotonic stack/queue optimizations, and dynamic programming, whenever a cumulative monotonic property is leveraged for efficiency.
+
+### Tags
+Array(#array)
+
+### Similar Problems

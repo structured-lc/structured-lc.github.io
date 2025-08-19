@@ -120,3 +120,8 @@ def numberOfWaysToAssignEdgeWeights(n, edges, parity):
 ### Summary
 The approach uses **DFS with DP on tree paths and parity**.  
 It's a common pattern: label tree nodes by path properties (sum parity, XOR, etc.) and use DP to count solution ways. Can apply to variants like coloring, path constraints, or subtree labels.
+
+### Tags
+Math(#math), Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems

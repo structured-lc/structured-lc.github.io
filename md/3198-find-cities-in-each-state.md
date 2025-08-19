@@ -113,3 +113,8 @@ ORDER BY state ASC;
 
 ### Summary
 This problem uses the **grouping and aggregation pattern** in SQL. The main tool is GROUP BY combined with GROUP_CONCAT for string aggregation and ORDER BY for sorting. This pattern is common in report generation and data summarization tasks, such as collecting items per category or building summary descriptions. It is also a practical example of SQL's power for text data transformation within groups.
+
+### Tags
+Database(#database)
+
+### Similar Problems

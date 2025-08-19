@@ -91,3 +91,8 @@ def maxSubarraySumCircular(nums):
 ### Summary  
 This is a hybrid of the **Kadane's algorithm** for max subarray sum (classic pattern) and a clever transformation to efficiently check wrapping subarrays via min subarray calculation.  
 The key insight is turning “circular” into a “remove a continuous block in the middle”—a common trick in circular array problems, e.g., for circular max/min subarray or scheduling-type problems.
+
+### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer), Dynamic Programming(#dynamic-programming), Queue(#queue), Monotonic Queue(#monotonic-queue)
+
+### Similar Problems

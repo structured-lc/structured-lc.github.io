@@ -111,3 +111,11 @@ class Solution:
 ### Summary
 This problem is a classic application of the **Union-Find (Disjoint Set Union, DSU)** structure for dynamic connectivity checking, with the twist of rejection based on additional constraints. It's important to simulate the union and only commit if all constraints are satisfied.  
 This union-find-with-constraints approach is common in social network, grouping, and clustering problems, and appears in problems like Kruskal's algorithm with forbidden edges, or network security segmentation tasks.
+
+### Tags
+Union Find(#union-find), Graph(#graph)
+
+### Similar Problems
+- Number of Islands II(number-of-islands-ii) (Hard)
+- Smallest String With Swaps(smallest-string-with-swaps) (Medium)
+- Maximum Employees to Be Invited to a Meeting(maximum-employees-to-be-invited-to-a-meeting) (Hard)

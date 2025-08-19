@@ -89,3 +89,9 @@ This approach demonstrates the typical two-part string matching pattern:
 - Split by the special wildcard, then match fixed prefixes/suffixes allowing flexible middles.  
 - This pattern is common in filesystem globbing, simple pattern-matching, and certain substring search variants.  
 - The code is straightforward and leverages small input sizes for efficient direct checks, making it suitable for both interviews and production settings where only one wildcard is present.
+
+### Tags
+String(#string), String Matching(#string-matching)
+
+### Similar Problems
+- Wildcard Matching(wildcard-matching) (Hard)

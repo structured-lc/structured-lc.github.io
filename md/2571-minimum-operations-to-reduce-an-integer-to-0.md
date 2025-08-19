@@ -111,3 +111,9 @@ def min_operations(n: int) -> int:
 ### Summary
 This problem is a classic **greedy bit manipulation** challenge, similar to popcount with enhanced flexibility due to the add operation. The main trick is optimally managing carries by sometimes incrementing n to reduce future operations, echoing concepts from binary addition/subtraction.  
 The technique is widely useful for "minimum steps to zero" problems, and the core idea generalizes to manipulations in other bases and coin change-type DP problems.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Greedy(#greedy), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Plus One(plus-one) (Easy)

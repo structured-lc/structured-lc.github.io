@@ -136,3 +136,9 @@ def minFlips(a: int, b: int, c: int) -> int:
 
 ### Summary
 This solution demonstrates a classic usage of *bitwise manipulation* and greedy choices at each bit. The key pattern is "count the minimal per-position changes to match a binary property," and arises in problems involving **bit masks**, **digital circuits (logic gates)**, and even **xor puzzles**. This single-pass, position-wise scan is highly efficient for bitwise alignment problems.
+
+### Tags
+Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Minimum Bit Flips to Convert Number(minimum-bit-flips-to-convert-number) (Easy)

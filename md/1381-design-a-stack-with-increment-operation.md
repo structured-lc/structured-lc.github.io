@@ -80,3 +80,8 @@ class CustomStack:
 
 ### Summary
 This problem uses the **lazy propagation** trick for fast range updates, a common coding pattern seen in range sum/segment trees, and amortizing deferred work.
+
+### Tags
+Array(#array), Stack(#stack), Design(#design)
+
+### Similar Problems

@@ -99,3 +99,10 @@ def validWordSquare(words):
 
 ### Summary
 This solution uses a **symmetry-checking pattern**—directly verifying word square properties by comparing row and column characters. The key insight is careful bounds checking because word lengths can differ. This problem is a classic **matrix-transpose symmetry** check, and the approach is broadly useful anywhere row/column consistency is important, like crossword generation, sudoku validation, or spreadsheet data checks.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems
+- Word Squares(word-squares) (Hard)
+- Toeplitz Matrix(toeplitz-matrix) (Easy)

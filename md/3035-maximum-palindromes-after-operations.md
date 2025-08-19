@@ -117,3 +117,9 @@ def maxPalindromesAfterOperations(words):
 This problem is an application of the **greedy algorithm pattern** combined with counting and sorting.  
 The insight is that, with unlimited global swaps, all that matters is total letter pairing, and distributing pairs optimally (smallest words first) maximizes palindromes.  
 This pattern often appears in problems where global rearrangement is allowed and only counts matter, not original structure.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Greedy(#greedy), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems
+- Valid Palindrome(valid-palindrome) (Easy)

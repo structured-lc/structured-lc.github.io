@@ -95,3 +95,10 @@ def longestMountain(arr):
 
 ### Summary
 This problem is a classic application of the **two-pointer** and **state machine** patterns for sequence analysis. Identifying peaks and expanding outwards optimally finds mountains in O(n) time with O(1) space. This mountain pattern is relevant to other "find peak/valley/plateau" sequence problems often discussed in array scanning or sliding window interviews.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Dynamic Programming(#dynamic-programming), Enumeration(#enumeration)
+
+### Similar Problems
+- Minimum Number of Removals to Make Mountain Array(minimum-number-of-removals-to-make-mountain-array) (Hard)
+- Find Good Days to Rob the Bank(find-good-days-to-rob-the-bank) (Medium)

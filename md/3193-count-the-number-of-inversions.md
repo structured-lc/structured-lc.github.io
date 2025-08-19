@@ -114,3 +114,9 @@ class Solution:
 This is a **dynamic programming over permutations** with inversion-count, filtered by prefix constraints. The pattern is similar to classic DP that counts permutations by inversion number, but with **extra pruning** when specific prefix inversion counts are required.  
 This pattern appears in combinatorial enumeration, restricted sorting, and advanced counting queries about permutations.  
 The DP with state (length, inversions) and transitions by “where to put the new number” is a key pattern in these problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- K Inverse Pairs Array(k-inverse-pairs-array) (Hard)

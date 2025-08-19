@@ -109,3 +109,10 @@ def countHousePlacements(n: int) -> int:
 
 ### Summary
 This problem is a **classic dynamic programming** question with a constraint prohibiting adjacent selections—similar to the "no two adjacent" subset selection problem, or Fibonacci-style tiling. The **main pattern** is defining states based on whether the previous element is selected (like the "House Robber" or "Independent Set on Linear Graph"). The result exploits the independence of the two sides by squaring the valid count for one. This DP pattern is broadly applicable wherever arrangements with adjacency constraints are needed.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Climbing Stairs(climbing-stairs) (Easy)
+- House Robber(house-robber) (Medium)

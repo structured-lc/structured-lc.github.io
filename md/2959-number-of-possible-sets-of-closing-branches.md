@@ -146,3 +146,8 @@ def numberOfSets(n, maxDistance, roads):
 
 ### Summary
 The main insight is that **for very small input size (n ≤ 10), exhaustive subset enumeration is feasible**. This pattern—enumerate all subsets with pruning conditions and use all-pairs shortest paths for validation—appears in many problems involving subgraphs, masks, or small graphs. The solution mixes bitmask generation, Floyd-Warshall, and connectivity via explicit pairwise checks—a combination often used in bitmask DP and brute-force graph enumeration.
+
+### Tags
+Bit Manipulation(#bit-manipulation), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Enumeration(#enumeration), Shortest Path(#shortest-path)
+
+### Similar Problems

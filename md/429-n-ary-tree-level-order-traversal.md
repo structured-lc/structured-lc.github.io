@@ -156,3 +156,12 @@ def levelOrderTwoQueues(root):
 
 ### Summary
 N-ary tree level order traversal extends the classic binary tree approach to handle nodes with variable numbers of children. The BFS approach with a queue remains the most intuitive solution, processing one level at a time. The key insight is tracking the number of nodes at each level to properly separate levels in the result. This pattern is fundamental for tree traversal problems and can be adapted for various tree-related tasks like finding tree width, depth, or level-specific operations.
+
+### Tags
+Tree(#tree), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Binary Tree Level Order Traversal(binary-tree-level-order-traversal) (Medium)
+- N-ary Tree Preorder Traversal(n-ary-tree-preorder-traversal) (Easy)
+- N-ary Tree Postorder Traversal(n-ary-tree-postorder-traversal) (Easy)
+- The Time When the Network Becomes Idle(the-time-when-the-network-becomes-idle) (Medium)

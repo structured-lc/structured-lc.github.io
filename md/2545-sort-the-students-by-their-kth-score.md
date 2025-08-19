@@ -90,3 +90,12 @@ def sortTheStudents(score, k):
 
 ### Summary
 This problem uses the **custom sorting by column** pattern—a common interview pattern for matrix problems. It is easily solved using a lambda function as the sorting key. This same pattern is frequently applied for DataFrame sorting, scheduling, leaderboard generation, and more. The use of stable sort ensures that rows with the same kᵗʰ score preserve their original order, which can be important in real-world data processing.
+
+### Tags
+Array(#array), Sorting(#sorting), Matrix(#matrix)
+
+### Similar Problems
+- Erect the Fence(erect-the-fence) (Hard)
+- Custom Sort String(custom-sort-string) (Medium)
+- Sort the People(sort-the-people) (Easy)
+- Sort Threats by Severity and Exploitability(sort-threats-by-severity-and-exploitability) (Medium)

@@ -129,3 +129,9 @@ This is a classical greedy + binary search ("binary search the answer") problem.
 1. Transformation to decision version (“can it be done in t?”),  
 2. Use binary search for optimal t,  
 3. For each t, efficiently check feasibility via greedy or simulation.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Kth Smallest Number in Multiplication Table(kth-smallest-number-in-multiplication-table) (Hard)

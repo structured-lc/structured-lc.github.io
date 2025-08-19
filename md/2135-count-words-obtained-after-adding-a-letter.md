@@ -105,3 +105,11 @@ def countWordsObtainedAfterAddingALetter(startWords, targetWords):
 
 ### Summary
 This problem leverages the *bitmasking* pattern to efficiently represent and manipulate sets of characters—ideal whenever you're working with subsets of a small, fixed alphabet. The idea to check for a possible predecessor mask by removing each character and seeing if it exists is related to other set-building or "remove and check" problems, useful in word games, dictionary construction, and subset-difference checks. The overall approach is both common and optimal in problems where the universe size is small and operations must be fast.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Sorting(#sorting)
+
+### Similar Problems
+- Strings Differ by One Character(strings-differ-by-one-character) (Medium)
+- Count Substrings That Differ by One Character(count-substrings-that-differ-by-one-character) (Medium)
+- Maximum Score From Removing Substrings(maximum-score-from-removing-substrings) (Medium)

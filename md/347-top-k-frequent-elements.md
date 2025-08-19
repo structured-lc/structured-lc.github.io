@@ -110,3 +110,18 @@ This problem is a classic example of the **hash map + bucket sort pattern**, esp
 Bucket sort enables linear time since the frequency range is capped at the input size.  
 The pattern arises in many "top-k" frequency or histogram scenarios, such as word counts, most common objects, or log analysis.  
 Common alternative: Use heaps when k ≪ n or when frequencies change dynamically.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Divide and Conquer(#divide-and-conquer), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Bucket Sort(#bucket-sort), Counting(#counting), Quickselect(#quickselect)
+
+### Similar Problems
+- Word Frequency(word-frequency) (Medium)
+- Kth Largest Element in an Array(kth-largest-element-in-an-array) (Medium)
+- Sort Characters By Frequency(sort-characters-by-frequency) (Medium)
+- Split Array into Consecutive Subsequences(split-array-into-consecutive-subsequences) (Medium)
+- Top K Frequent Words(top-k-frequent-words) (Medium)
+- K Closest Points to Origin(k-closest-points-to-origin) (Medium)
+- Sort Features by Popularity(sort-features-by-popularity) (Medium)
+- Sender With Largest Word Count(sender-with-largest-word-count) (Medium)
+- Most Frequent Even Element(most-frequent-even-element) (Easy)
+- Linked List Frequency(linked-list-frequency) (Easy)

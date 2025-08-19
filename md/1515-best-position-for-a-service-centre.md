@@ -93,3 +93,8 @@ def getMinDistSum(positions: List[List[int]]) -> float:
 
 ### Summary
 The approach is an application of **iterative convex optimization** (gradient descent) to minimize the sum of Euclidean distances—a version of the Fermat–Weber point problem. This pattern of using gradient descent is common where the loss is convex but has no closed-form minimum. The centroid start is typical for such algorithms.
+
+### Tags
+Array(#array), Math(#math), Geometry(#geometry), Randomized(#randomized)
+
+### Similar Problems

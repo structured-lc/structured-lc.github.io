@@ -92,3 +92,11 @@ def maxConsecutive(bottom, top, special):
 
 ### Summary
 This problem fits the "finding maximum gap between sorted elements + start/end" pattern. The solution relies on sorting and then O(1) gap computation per interval, which is common when working with excluded or 'barrier' points segmenting a range. This technique is useful for maximum subarray problems, calendar booking, intervals between events, and seat allocation.
+
+### Tags
+Array(#array), Sorting(#sorting)
+
+### Similar Problems
+- Longest Consecutive Sequence(longest-consecutive-sequence) (Medium)
+- Maximum Gap(maximum-gap) (Medium)
+- Widest Vertical Area Between Two Points Containing No Points(widest-vertical-area-between-two-points-containing-no-points) (Easy)

@@ -178,3 +178,8 @@ def find_top_scoring_students(students, courses, enrollments):
 This problem is a classic example of **set comparison and mapping** using hashmaps and sets for efficient lookups — a core pattern for "look up and match relationships" scenarios.  
 It appears in problems like course scheduling, permission checks, or any "all requirements must be satisfied" logic.  
 The essential coding skills: building and querying dictionaries, set operations, and understanding multi-table (or multi-list) joins — useful for both interview and production code.
+
+### Tags
+Database(#database)
+
+### Similar Problems

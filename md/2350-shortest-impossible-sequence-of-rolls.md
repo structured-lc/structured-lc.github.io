@@ -85,3 +85,8 @@ def shortestImpossibleSequence(rolls, k):
 The problem uses a greedy "cycle detection" method—the answer increases each time all k faces are observed.  
 This technique is common when all variants of elements must be sequentially observed (subset collection patterns).  
 The code avoids explicit combinatorial checks and is applicable to problems involving hitting all unique elements repeatedly in order.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy)
+
+### Similar Problems

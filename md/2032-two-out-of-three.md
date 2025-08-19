@@ -96,3 +96,8 @@ def twoOutOfThree(nums1, nums2, nums3):
 This problem uses the *frequency mapping/presence counting* pattern: for each unique input value, track in how many distinct input groups (not total counts) it appears.  
 Using set and dictionary data structures ensures the correct handling of duplicates and keeps the code simple and readable.  
 This approach generalizes well to any "present in at least k out of N groups" style tasks and is common in interview questions involving array/category intersection.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

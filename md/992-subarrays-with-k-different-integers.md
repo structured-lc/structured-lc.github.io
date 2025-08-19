@@ -96,3 +96,15 @@ def subarraysWithKDistinct(nums, K):
 This is a classic **sliding window + hashmap** problem for "subarrays with at most K ...", optimized by using the difference pattern to get counts for "exactly K".  
 The approach generalizes to a variety of related substring/subarray problems and is a powerful pattern for interviews.  
 Commonly reused for problems counting subarrays with unique, at most/at least constraints, and more.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Counting(#counting)
+
+### Similar Problems
+- Longest Substring Without Repeating Characters(longest-substring-without-repeating-characters) (Medium)
+- Longest Substring with At Most Two Distinct Characters(longest-substring-with-at-most-two-distinct-characters) (Medium)
+- Longest Substring with At Most K Distinct Characters(longest-substring-with-at-most-k-distinct-characters) (Medium)
+- Count Vowel Substrings of a String(count-vowel-substrings-of-a-string) (Easy)
+- Number of Unique Flavors After Sharing K Candies(number-of-unique-flavors-after-sharing-k-candies) (Medium)
+- K Divisible Elements Subarrays(k-divisible-elements-subarrays) (Medium)
+- Count Complete Subarrays in an Array(count-complete-subarrays-in-an-array) (Medium)

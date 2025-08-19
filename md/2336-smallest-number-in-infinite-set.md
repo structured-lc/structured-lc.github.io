@@ -136,3 +136,9 @@ class SmallestInfiniteSet:
 
 ### Summary
 This approach applies the *priority queue + set* pattern for *custom-ordered retrieval*, which is widely useful in scheduling, streaming order management, and interval management problems. The logic of only simulating parts of an infinite (or large) set is a key pattern in “infinite, virtual, or lazy” data structures.
+
+### Tags
+Hash Table(#hash-table), Design(#design), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set)
+
+### Similar Problems
+- First Missing Positive(first-missing-positive) (Hard)

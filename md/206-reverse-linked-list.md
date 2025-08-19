@@ -123,3 +123,15 @@ This problem is a textbook example of the **iterative two-pointer pattern** for 
 It is fundamental to master, as similar pointer-rewiring logic extends to more advanced problems like reversing sublists, copying complex linked lists, and detecting cycles.  
 No extra space is needed, and the main challenge is tracking pointers correctly to avoid losing parts of the list.  
 Common in many technical interviews to test basic understanding of linked lists and pointer manipulation.
+
+### Tags
+Linked List(#linked-list), Recursion(#recursion)
+
+### Similar Problems
+- Reverse Linked List II(reverse-linked-list-ii) (Medium)
+- Binary Tree Upside Down(binary-tree-upside-down) (Medium)
+- Palindrome Linked List(palindrome-linked-list) (Easy)
+- Reverse Nodes in Even Length Groups(reverse-nodes-in-even-length-groups) (Medium)
+- Maximum Twin Sum of a Linked List(maximum-twin-sum-of-a-linked-list) (Medium)
+- Remove Nodes From Linked List(remove-nodes-from-linked-list) (Medium)
+- Insert Greatest Common Divisors in Linked List(insert-greatest-common-divisors-in-linked-list) (Medium)

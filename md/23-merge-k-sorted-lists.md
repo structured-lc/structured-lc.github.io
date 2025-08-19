@@ -111,3 +111,11 @@ def mergeKLists(lists):
 This problem is a classic **k-way merge**, most efficiently solved with a min-heap to always pick the smallest of the current list heads—yielding O(n log k) time.  
 The pattern used here extends naturally to merging sorted arrays, external sorting, and streaming data sources.  
 It’s a prototypical heap/priority queue and merge-sort application for algorithmic interviews and high-performance data merging.
+
+### Tags
+Linked List(#linked-list), Divide and Conquer(#divide-and-conquer), Heap (Priority Queue)(#heap-priority-queue), Merge Sort(#merge-sort)
+
+### Similar Problems
+- Merge Two Sorted Lists(merge-two-sorted-lists) (Easy)
+- Ugly Number II(ugly-number-ii) (Medium)
+- Smallest Subarrays With Maximum Bitwise OR(smallest-subarrays-with-maximum-bitwise-or) (Medium)

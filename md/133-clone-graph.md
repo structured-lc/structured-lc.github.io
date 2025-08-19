@@ -130,3 +130,11 @@ class Solution:
 This is a classic **graph traversal + hashmap** pattern, commonly used in situations where we must track copies of already visited nodes to avoid duplication and infinite loops.  
 The solution uses recursive DFS for simplicity; the same idea applies to BFS.  
 This pattern appears in many problems involving deep copying or traversing possibly cyclic graphs, and is also foundational for serializing/deserializing graphs and dealing with complex pointer structures.
+
+### Tags
+Hash Table(#hash-table), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
+
+### Similar Problems
+- Copy List with Random Pointer(copy-list-with-random-pointer) (Medium)
+- Clone Binary Tree With Random Pointer(clone-binary-tree-with-random-pointer) (Medium)
+- Clone N-ary Tree(clone-n-ary-tree) (Medium)

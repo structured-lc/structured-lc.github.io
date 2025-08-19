@@ -108,3 +108,12 @@ def maxValue(events, k):
 
 ### Summary
 This problem is a classic example of the weighted interval scheduling dynamic programming pattern. The key trick is combining sorting, dynamic programming, and binary search to efficiently select a maximum-value subset of non-overlapping items. This pattern applies in other scheduling, resource allocation, or selection optimization problems with similar pairing and overlap rules.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
+
+### Similar Problems
+- Maximum Number of Events That Can Be Attended(maximum-number-of-events-that-can-be-attended) (Medium)
+- Maximum Earnings From Taxi(maximum-earnings-from-taxi) (Medium)
+- Two Best Non-Overlapping Events(two-best-non-overlapping-events) (Medium)
+- Meeting Rooms III(meeting-rooms-iii) (Hard)

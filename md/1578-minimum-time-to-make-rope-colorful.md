@@ -60,3 +60,8 @@ def minCost(colors, neededTime):
 
 ### Summary
 This is a greedy pattern commonly seen in array run removal/selection problems. For each consecutive group, we optimize locally by only keeping the maximum-valued element and summing removals for the rest. Pattern applies when you need to minimize cost when keeping only one of several repeated elements.
+
+### Tags
+Array(#array), String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
+
+### Similar Problems

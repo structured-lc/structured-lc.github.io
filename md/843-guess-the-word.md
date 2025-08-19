@@ -100,3 +100,8 @@ def findSecretWord(wordlist, master):
 
 ### Summary
 This problem uses the **Minimax/Information-based Guess Reduction** pattern — commonly seen in games such as Mastermind. The crucial idea is to make guesses that guarantee the maximal elimination of candidates regardless of the feedback, especially under guess-count constraints. This pattern is helpful in adversarial guessing, games, and search problems where the worst-case scenario must be minimized.
+
+### Tags
+Array(#array), Math(#math), String(#string), Interactive(#interactive), Game Theory(#game-theory)
+
+### Similar Problems

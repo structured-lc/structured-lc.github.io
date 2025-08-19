@@ -96,3 +96,9 @@ def longestSubsequence(s: str, k: int) -> int:
 This problem illustrates the **greedy** and **bit manipulation** patterns: always keep cost-free parts ('0's), and only add risky parts ('1's) when safe, proceeding from least to most significant position.  
 It's a classic example of making locally optimal (greedy) choices to produce a globally optimal subsequence subject to a numeric constraint.  
 This approach applies to other settings, such as selecting digits for maximum/minimum number under a base or value restriction.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Memoization(#memoization)
+
+### Similar Problems
+- Maximum Binary String After Change(maximum-binary-string-after-change) (Medium)

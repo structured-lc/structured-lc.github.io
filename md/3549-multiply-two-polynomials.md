@@ -102,3 +102,8 @@ This problem is a classic use of the convolution (schoolbook) multiplication pat
 The coding pattern is nested iteration with indexed accumulation, applicable in integer multiplication (like Karatsuba), polynomial operations, digital signal processing (convolution), and more.  
 For very large input, FFT-based polynomial multiplication is optimal. For sparse cases, hashmap-based accumulation for nonzero terms saves work.  
 The brute-force approach is straightforward, efficient enough for standard input limits, and demonstrates clear thinking and code clarity.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems

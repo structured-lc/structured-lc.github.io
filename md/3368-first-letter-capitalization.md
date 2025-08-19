@@ -89,3 +89,8 @@ def capitalize_text(content_text):
 This problem is a classic string manipulation challenge, illustrating the “scan and transform tokens” pattern.  
 The map-transform-join style is broadly applicable: title-casing names, correcting headings, or standardizing natural language input before further processing.  
 It’s common in preprocessing stages for NLP, user-input normalization, and data cleaning tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems

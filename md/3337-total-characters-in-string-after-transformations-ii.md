@@ -131,3 +131,8 @@ def total_characters_after_transformations(s, t, nums):
 
 ### Summary
 The approach uses **matrix exponentiation** on a 26×26 character transition matrix to model repeated transformations, a powerful technique for solving recurrence-like problems on fixed-size finite states. This pattern is common in advanced combinatorial and dynamic programming settings, especially where the process can be modeled as a Markov chain or repeated function application over a finite domain.
+
+### Tags
+Hash Table(#hash-table), Math(#math), String(#string), Dynamic Programming(#dynamic-programming), Counting(#counting)
+
+### Similar Problems

@@ -76,3 +76,8 @@ class Solution:
 
 ### Summary
 This problem uses the tree/DFS traversal pattern and bitmasking to efficiently check the palindromic property without expensive frequency counts at every node. The core technique (bitmask for checking parity of counts) generalizes to sequence parity problems on small, fixed value ranges.
+
+### Tags
+Bit Manipulation(#bit-manipulation), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

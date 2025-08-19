@@ -99,3 +99,8 @@ def isSelfCrossing(distance):
 
 ### Summary
 This problem showcases an **array geometric pattern** – recognizing that only the last few steps can possibly cause a crossing. The solution uses pure math, constant space, and achieves O(n) runtime by leveraging the path’s regular turn rules. This pattern of “constant window-check based on geometric constraints” is rare but comes up in robot simulation and grid problems, and is an efficient replacement for simulation when movements are highly structured.
+
+### Tags
+Array(#array), Math(#math), Geometry(#geometry)
+
+### Similar Problems

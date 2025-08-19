@@ -68,3 +68,10 @@ def findTheDifference(s: str, t: str) -> str:
 
 ### Summary
 This is a classic string manipulation problem and demonstrates both the **hashmap** (frequency counting) and the **bitwise XOR** trick techniques. The solution showcases a common pattern—using properties of operations (like XOR) to reduce space complexity. This XOR pattern appears in other interview problems too, such as finding single non-duplicate elements in arrays, and is widely applicable anywhere elements appear in pairs except for a unique one.
+
+### Tags
+Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Sorting(#sorting)
+
+### Similar Problems
+- Single Number(single-number) (Easy)
+- Permutation Difference between Two Strings(permutation-difference-between-two-strings) (Easy)

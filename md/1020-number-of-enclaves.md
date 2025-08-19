@@ -128,3 +128,8 @@ def numEnclaves(grid):
 This problem is a classic **flood fill** / **multi-source DFS or BFS**.  
 The key insight is that all land cells reachable from the border aren’t enclaves—remove those first, then count what’s left.  
 This technique applies to other “closed area” grid problems, like counting islands, lakes, or unconnected regions. Pattern: **Flood-fill from all boundaries, then examine the residue.**
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
+
+### Similar Problems

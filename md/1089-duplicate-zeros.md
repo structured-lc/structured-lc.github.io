@@ -98,3 +98,8 @@ def duplicateZeros(arr):
 
 ### Summary
 This problem uses the **two pointers** (backward fill) approach, often applied when in-place array operations must avoid overwriting data. Back-filling after a simulation pass is a classic technique for problems where insertions "expand" data but must stick to fixed bounds. This is commonly used in array shifting, compress/decompress, or implementing custom in-place transformations.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers)
+
+### Similar Problems

@@ -111,3 +111,8 @@ ORDER BY
 ### Summary
 This problem is a classic SQL aggregation and grouping task: “group by key and aggregate.” It uses the GROUP BY + MAX pattern, and then sorts for reporting order.  
 This pattern applies broadly to “last event per entity,” “most recent record per key,” or “top N by group” business logic in analytics and reporting.
+
+### Tags
+Database(#database)
+
+### Similar Problems

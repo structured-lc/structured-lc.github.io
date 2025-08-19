@@ -104,3 +104,8 @@ def buildArray(nums):
 
 ### Summary
 This problem uses the "build new array using index mapping" pattern — commonly seen in permutation, transformation, or simulation problems. A direct O(n) solution is the most readable and bug-free. The O(1) in-place trick leverages value encoding/decoding and is a useful pattern when space efficiency is needed and input is guaranteed to follow certain constraints (values in restricted range). This pattern also appears in problems involving cyclic replacement or in-place permutation.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems

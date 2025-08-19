@@ -156,3 +156,8 @@ def find_peak_calling_hours(calls):
 This solution uses a classic hash map aggregation pattern (“group by two keys, track max per group”).  
 It’s a common **group-by-and-find-max** pattern used in SQL (GROUP BY, aggregate, then window/partition) and can be generalized for time series, logs, analytics, and leaderboards.
 It’s widely applicable anywhere you need “find the keys with maximum value per group” logic.
+
+### Tags
+Database(#database)
+
+### Similar Problems

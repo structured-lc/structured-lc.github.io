@@ -110,3 +110,8 @@ def minLargest(nums1, nums2):
 
 ### Summary
 This problem is a dynamic programming state-space construction: at each point, pick the minimal next valid value with correct parity, avoiding overlap between arrays and ensuring strict increase. The DP "matrix-fill" pattern generalizes to similar problems involving parallel monotonic sequences with assignment constraints. This pattern is especially useful in scheduling/type-constrained sequence construction problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

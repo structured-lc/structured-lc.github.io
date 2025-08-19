@@ -106,3 +106,16 @@ def addTwoNumbers(l1, l2):
 
 ### Summary
 This problem is a classic example of simulating **elementary digit-by-digit addition** using a linked list structure and a **carry** variable, a very common coding pattern. The use of a dummy node for result assembly is standard in linked list problems. The approach generalizes to related problems (e.g., adding numbers with digits in forward order, merging lists, arithmetic with linked lists) and shows up in several variants throughout linked list exercises.
+
+### Tags
+Linked List(#linked-list), Math(#math), Recursion(#recursion)
+
+### Similar Problems
+- Multiply Strings(multiply-strings) (Medium)
+- Add Binary(add-binary) (Easy)
+- Sum of Two Integers(sum-of-two-integers) (Medium)
+- Add Strings(add-strings) (Easy)
+- Add Two Numbers II(add-two-numbers-ii) (Medium)
+- Add to Array-Form of Integer(add-to-array-form-of-integer) (Easy)
+- Add Two Polynomials Represented as Linked Lists(add-two-polynomials-represented-as-linked-lists) (Medium)
+- Double a Number Represented as a Linked List(double-a-number-represented-as-a-linked-list) (Medium)

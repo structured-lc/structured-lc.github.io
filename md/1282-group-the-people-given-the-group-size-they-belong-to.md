@@ -68,3 +68,10 @@ def group_the_people(groupSizes):
 
 ### Summary
 This utilizes the bucket-sort/group-by pattern, often used in grouping/partitioning problems. The technique is applicable anywhere you must allocate resources or assign entities based on pre-specified group constraints.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy)
+
+### Similar Problems
+- Rabbits in Forest(rabbits-in-forest) (Medium)
+- Maximum Number of Groups With Increasing Length(maximum-number-of-groups-with-increasing-length) (Hard)

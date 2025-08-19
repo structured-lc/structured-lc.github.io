@@ -77,3 +77,9 @@ We use a **function composition design pattern**, which chains unary functions s
 This is a classic functional programming technique, useful in **pipelines**, **middleware**, and chaining preprocessors.  
 The identity function as default is a standard base case seen elsewhere (e.g., with reduce).  
 This pattern is reusable for any "reduce over functions" style chaining in codebases.
+
+### Tags
+
+### Similar Problems
+- Memoize(memoize) (Medium)
+- Counter(counter) (Easy)

@@ -103,3 +103,16 @@ def minimizedMaximum(n, quantities):
 ### Summary
 This problem uses the **binary search + greedy feasibility check** pattern, common for "minimize the maximum" and similar workload allocation/balancing problems.  
 Patterns like this appear in "Split Array Largest Sum", "Capacity to Ship Packages Within D Days", etc., where binary search helps tune a target threshold and a greedy/counting check validates feasibility each step.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Greedy(#greedy)
+
+### Similar Problems
+- Koko Eating Bananas(koko-eating-bananas) (Medium)
+- Capacity To Ship Packages Within D Days(capacity-to-ship-packages-within-d-days) (Medium)
+- Maximum Candies Allocated to K Children(maximum-candies-allocated-to-k-children) (Medium)
+- Find the Smallest Divisor Given a Threshold(find-the-smallest-divisor-given-a-threshold) (Medium)
+- Magnetic Force Between Two Balls(magnetic-force-between-two-balls) (Medium)
+- Minimum Limit of Balls in a Bag(minimum-limit-of-balls-in-a-bag) (Medium)
+- Minimum Time to Complete Trips(minimum-time-to-complete-trips) (Medium)
+- Maximum Number of Robots Within Budget(maximum-number-of-robots-within-budget) (Hard)

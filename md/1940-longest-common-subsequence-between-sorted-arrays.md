@@ -87,3 +87,9 @@ def longestCommonSubsequence(arrays):
 
 ### Summary
 This problem uses the **hash counting** or **frequency map** pattern, capitalizing on the property that all arrays are strictly increasing and have no duplicates within themselves. The approach scans each array and notes how often each number appears across all arrays, then extracts those appearing in all arrays (i.e., count == number of arrays) in sorted order. This technique is broadly applicable for intersection problems, especially when the range of possible values is constrained and elements are unique per list.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Counting(#counting)
+
+### Similar Problems
+- Merge Two Sorted Lists(merge-two-sorted-lists) (Easy)

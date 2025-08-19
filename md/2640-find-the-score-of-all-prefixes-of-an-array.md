@@ -124,3 +124,9 @@ def findPrefixScore(nums):
 
 ### Summary
 This problem uses **prefix sum** and **prefix maximum tracking** patterns, both very common in array algorithms. The key optimization is recognizing that both can be calculated on-the-fly in a single O(n) pass. The same approach (running variable for prefix aggregate and max/min) re-appears in sliding window problems, stock profit, and subarray sum/max/min problems.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Most Beautiful Item for Each Query(most-beautiful-item-for-each-query) (Medium)

@@ -137,3 +137,12 @@ def pathSum(root, targetSum):
 
 ### Summary
 This problem uses the **Prefix Sum with Hash Map** pattern in trees—an advanced technique extending the common subarray sum approach from arrays to trees. This allows efficient O(n) solutions for path-sum problems and appears in many interview questions where you need to find path counts or segments adding up to a target—whether in arrays, linked lists, or trees.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Path Sum(path-sum) (Easy)
+- Path Sum II(path-sum-ii) (Medium)
+- Path Sum IV(path-sum-iv) (Medium)
+- Longest Univalue Path(longest-univalue-path) (Medium)

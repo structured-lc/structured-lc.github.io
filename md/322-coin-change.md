@@ -84,3 +84,17 @@ This problem is a classic **Dynamic Programming (DP) – unbounded knapsack** va
 - DP is chosen because greedy is incorrect for arbitrary coin sets.
 - This technique applies to other minimum/maximum path sum or coin combination problems.  
 - If you need the list of coins, you can backtrack from the DP array using a "parent" pointer array.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Minimum Cost For Tickets(minimum-cost-for-tickets) (Medium)
+- Maximum Value of K Coins From Piles(maximum-value-of-k-coins-from-piles) (Hard)
+- Minimum Number of Operations to Convert Time(minimum-number-of-operations-to-convert-time) (Easy)
+- Minimum Cost to Split an Array(minimum-cost-to-split-an-array) (Hard)
+- Count of Sub-Multisets With Bounded Sum(count-of-sub-multisets-with-bounded-sum) (Hard)
+- Length of the Longest Subsequence That Sums to Target(length-of-the-longest-subsequence-that-sums-to-target) (Medium)
+- Minimum Number of Coins to be Added(minimum-number-of-coins-to-be-added) (Medium)
+- Most Expensive Item That Can Not Be Bought(most-expensive-item-that-can-not-be-bought) (Medium)
+- Inverse Coin Change(inverse-coin-change) (Medium)

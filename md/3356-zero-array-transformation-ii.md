@@ -108,3 +108,11 @@ def minQueriesToZeroArray(nums, queries):
 
 ### Summary
 This problem is a classic application of **difference arrays** for efficient range updates, layered with **binary search** over queries for optimal k finding. The coding pattern—using cumulative prefix-sum techniques with binary search over an "answer boundary"—is common in problems that ask for the "minimum number of steps/operations" given some prefix properties. This exact trick (binary search on answer, difference array for range update sim) is widely useful in array update and transformation problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Corporate Flight Bookings(corporate-flight-bookings) (Medium)
+- Minimum Moves to Make Array Complementary(minimum-moves-to-make-array-complementary) (Medium)
+- Zero Array Transformation IV(zero-array-transformation-iv) (Medium)

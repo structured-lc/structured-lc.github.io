@@ -114,3 +114,8 @@ def second_highest_salary(salaries):
 
 ### Summary
 This problem is a common instance of the "Top K distinct values" coding pattern. The core steps are: deduplicating the input, sorting (or otherwise collecting) the values, and retrieving the appropriate rank. This approach—set for deduplication plus sorting for ranking—is found often in leaderboard problems and analysis tasks involving unique ranks or medians. The principle adapts easily for kᵗʰ largest/smallest queries, and is especially useful in SQL, interviews, and data processing.
+
+### Tags
+Database(#database)
+
+### Similar Problems

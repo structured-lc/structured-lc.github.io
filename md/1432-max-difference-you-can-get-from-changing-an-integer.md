@@ -75,3 +75,8 @@ def maxDiff(num):
 
 ### Summary
 This problem uses a "greedy digit replacement" pattern and careful string handling—searching for the best candidate for maximizing/minimizing. This approach is recurring in number / digit transformation problems.
+
+### Tags
+Math(#math), Greedy(#greedy)
+
+### Similar Problems

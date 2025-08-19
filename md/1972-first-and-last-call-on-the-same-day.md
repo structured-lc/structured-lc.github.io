@@ -131,3 +131,8 @@ This problem is a classic *windowed grouping and aggregation* pattern commonly f
 - Use time-rank to extract first/last events.
 - Efficient solution leverages either SQL window functions or a lightweight per-group sort in imperative code.  
 This approach can also be used in problems about first/last transactions, recurring meeting patterns, or other “sequence per group” analytics.
+
+### Tags
+Database(#database)
+
+### Similar Problems

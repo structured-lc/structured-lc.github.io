@@ -136,3 +136,8 @@ def earliestAndLatest(n, firstPlayer, secondPlayer):
 
 ### Summary
 This problem uses recursive DP with memoization to efficiently find the earliest and latest rounds two players can meet, considering all possible knockout tournament scenarios. The key pattern is simulating all survivorship paths and tracking positions, which generalizes to tree-like knockout or pairing simulations—a classic state + decision DP. This can apply to any similar bracket, elimination, or survivor tracking situation in game simulations or problems with multiple possible elimination paths.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Memoization(#memoization)
+
+### Similar Problems

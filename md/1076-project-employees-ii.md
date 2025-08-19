@@ -138,3 +138,10 @@ WHERE rk = 1;
 ### Summary
 This problem is a classic **SQL aggregation** pattern—GROUP BY and aggregate (COUNT), then filtering using HAVING or a window function for max.  
 This technique is broadly applicable for finding “most popular, highest count, most frequent” rows per group in data analysis, dashboards, and reporting tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Project Employees I(project-employees-i) (Easy)
+- Project Employees III(project-employees-iii) (Medium)

@@ -89,3 +89,10 @@ def minimumSize(nums, maxOperations):
 
 ### Summary
 This problem is a classic example of **binary search on the answer** (also called search on the solution space), a common pattern for optimization problems where feasibility can be checked efficiently. It occurs in many array partitioning, scheduling, and resource allocation scenarios. The key insight is to convert the problem to a decision problem (can you achieve this penalty?) and binary search the minimal value.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Maximum Candies Allocated to K Children(maximum-candies-allocated-to-k-children) (Medium)
+- Minimized Maximum of Products Distributed to Any Store(minimized-maximum-of-products-distributed-to-any-store) (Medium)

@@ -91,3 +91,8 @@ def get_encrypted_string(s: str, k: int) -> str:
 
 ### Summary
 This problem is a classic example of **cyclic array/string rotation** and modular indexing. The approach uses simple modular arithmetic and indexed lookup, a common technique in circular buffer problems and rotating arrays. The pattern appears in problems like rotate array, right or left shifting strings, and even in some cryptography basics. The key insight is using (i + k) % n for cyclic access without extra checks for wrapping.
+
+### Tags
+String(#string)
+
+### Similar Problems

@@ -108,3 +108,10 @@ def minRectanglesToCoverPoints(points, w):
 ### Summary
 The problem is a classic greedy interval covering, specialized to rectangles unlimited in height and width limited by w. By greedily sweeping the x-axis, always maximizing each rectangle's coverage, we achieve an optimal solution using sort + sweep—a **greedy + interval grouping** pattern.  
 This technique is broadly useful in other problems involving covering sorted “intervals” or “events” with a minimal set of overlapping containers, such as scheduling, memory paging, bin packing, or broadcast time slots.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Area Rectangle(minimum-area-rectangle) (Medium)
+- K Closest Points to Origin(k-closest-points-to-origin) (Medium)

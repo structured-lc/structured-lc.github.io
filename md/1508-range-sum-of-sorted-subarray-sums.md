@@ -66,3 +66,8 @@ def rangeSum(nums, n, left, right):
 
 ### Summary
 The problem is a classic example of the **prefix sum and brute force with sorting** pattern. Many competition problems use this structure. Optimizations may be needed for larger constraints, such as using priority queues for k-th ranks.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting), Prefix Sum(#prefix-sum)
+
+### Similar Problems

@@ -73,3 +73,12 @@ def fillCups(amount):
 
 ### Summary  
 This problem is a good example of recognizing that the answer is determined by constraints on the types of items (cups) and pairing strategy rather than simulating every step. The core pattern involves max constraints and pairing sums, common in problems about simultaneous processing of multiple queues or stacks. The key formula combines the maximum single type load and the half of total load, ensuring both conditions are met.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Construct Target Array With Multiple Sums(construct-target-array-with-multiple-sums) (Hard)
+- Maximum Score From Removing Stones(maximum-score-from-removing-stones) (Medium)
+- Maximum Running Time of N Computers(maximum-running-time-of-n-computers) (Hard)
+- Minimum Cost to Make Array Equal(minimum-cost-to-make-array-equal) (Hard)

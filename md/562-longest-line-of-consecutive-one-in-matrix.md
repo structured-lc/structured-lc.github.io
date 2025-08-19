@@ -110,3 +110,8 @@ def longestLine(mat):
 
 ### Summary
 This solution uses the **Dynamic Programming** pattern, commonly applied to matrix-based subproblems where each cell’s result depends on neighbor states (for example, maximal square, maximal rectangle problems). Tracking state in four directions simultaneously is the key — a technique applicable in other matrix traversal problems requiring direction-based aggregation.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems

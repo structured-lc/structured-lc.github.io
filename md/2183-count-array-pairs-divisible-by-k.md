@@ -86,3 +86,12 @@ def countPairs(nums, k):
 ### Summary
 This solution uses the "math plus hash map" pattern, turning a brute-force O(n²) problem into an O(n × d) one by leveraging properties of divisibility and gcd.  
 This technique of using gcd and careful frequency counting is widely applicable in number theory problems, especially those involving divisibility of products or pairs.
+
+### Tags
+Array(#array), Math(#math), Number Theory(#number-theory)
+
+### Similar Problems
+- Number of Single Divisor Triplets(number-of-single-divisor-triplets) (Medium)
+- Check If Array Pairs Are Divisible by k(check-if-array-pairs-are-divisible-by-k) (Medium)
+- Find the Number of Good Pairs II(find-the-number-of-good-pairs-ii) (Medium)
+- Find the Number of Good Pairs I(find-the-number-of-good-pairs-i) (Easy)

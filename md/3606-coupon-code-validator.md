@@ -70,3 +70,8 @@ def isValidCouponCode(code):
 
 ### Summary
 This is a classic input validation problem. It uses simple string traversal and counting, and can be solved with regular expressions or on-the-fly logic depending on requirements.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting)
+
+### Similar Problems

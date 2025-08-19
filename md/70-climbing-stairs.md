@@ -73,3 +73,18 @@ def climbStairs(n):
 
 ### Summary  
 This problem is a textbook example of **dynamic programming** and a direct application of the Fibonacci sequence. The iterative O(1) space solution is both efficient and elegant. This coding pattern is commonly applied in problems involving counting distinct ways with overlapping subproblems, such as coin change, staircase jumps with different step sizes, and tiling problems.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Memoization(#memoization)
+
+### Similar Problems
+- Min Cost Climbing Stairs(min-cost-climbing-stairs) (Easy)
+- Fibonacci Number(fibonacci-number) (Easy)
+- N-th Tribonacci Number(n-th-tribonacci-number) (Easy)
+- Minimum Rounds to Complete All Tasks(minimum-rounds-to-complete-all-tasks) (Medium)
+- Count Number of Ways to Place Houses(count-number-of-ways-to-place-houses) (Medium)
+- Number of Ways to Reach a Position After Exactly k Steps(number-of-ways-to-reach-a-position-after-exactly-k-steps) (Medium)
+- Count Ways To Build Good Strings(count-ways-to-build-good-strings) (Medium)
+- Frog Jump II(frog-jump-ii) (Medium)
+- Find Number of Ways to Reach the K-th Stair(find-number-of-ways-to-reach-the-k-th-stair) (Hard)
+- The Number of Ways to Make the Sum(the-number-of-ways-to-make-the-sum) (Medium)

@@ -119,3 +119,7 @@ def find_students_with_spiral(logs):
 
 ### Summary
 This solution uses **grouping**, **order simulation** (spiral order generation), and strict list comparison patterns. It relates to matrix traversal and canonical pattern-matching problems, widely useful in **simulation** and **geometry** interview questions.
+
+### Tags
+
+### Similar Problems

@@ -100,3 +100,9 @@ This approach is a classic **parsing and dictionary lookup** pattern:
 - Build a hash table for keys.
 - Scan string and substitute efficiently.
 This pattern is common in problems involving template replacement, basic parsing, and processing structured placeholders (e.g., HTML tags, variable interpolation). The problem tests comfortable hash map/data structure use and simple string parsing.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Apply Substitutions(apply-substitutions) (Medium)

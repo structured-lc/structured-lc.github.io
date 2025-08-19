@@ -142,3 +142,8 @@ class Solution:
 ### Summary
 This problem uses the "bottom-up post-order DFS, propagate auxiliary information" pattern, often seen in tree problems that require pairwise or subtree aggregate computations (e.g., count paths, sum distances, k-distant pairs between leaves).  
 Instead of brute-force, focus on **passing depth metadata upward** and **counting only relevant subtree pairs** at the lowest common ancestor. This pattern is common and useful for counting pairs or paths in subtrees, and variants arise in problems like "sum of distances between nodes," path sum queries, or subtree aggregations.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

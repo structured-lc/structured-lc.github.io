@@ -89,3 +89,9 @@ def minimizeStringValue(s: str) -> str:
 ### Summary
 This problem uses the greedy pattern: at every `'?'`, replace with the lowest frequency letter (ensuring lexicographical order among ties), to minimize running cost as defined by prefix matches.  
 It's a variant of the greedy "replace/assign to minimize global cost" pattern—appearing in problems like rearrangement, string construction, and lexicographically minimal transformations.
+
+### Tags
+Hash Table(#hash-table), String(#string), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Counting(#counting)
+
+### Similar Problems
+- Lexicographically Smallest String After Substring Operation(lexicographically-smallest-string-after-substring-operation) (Medium)

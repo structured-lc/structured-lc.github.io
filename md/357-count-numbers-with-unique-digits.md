@@ -81,3 +81,10 @@ def countNumbersWithUniqueDigits(n):
 
 ### Summary
 This solution uses a **permutational counting principle** to efficiently find how many unique-digit numbers exist for a given n. The approach leverages multiplication for positional digit choices, a common pattern for counting distinct possibilities, and is broadly applicable to unique arrangements or permutations problems.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking)
+
+### Similar Problems
+- Count Special Integers(count-special-integers) (Hard)
+- Count Numbers With Unique Digits II(count-numbers-with-unique-digits-ii) (Easy)

@@ -86,3 +86,9 @@ This approach uses the **hashing + two-pass selection** pattern:
 Count item frequencies, then in another pass, select the kᵗʰ item that fits a criterion (here, "distinct").  
 It’s a commonly used trick for "frequency in array" problems and shows up in favorites like "First Unique Character", "Top K Frequent", etc.  
 Efficient, order-preserving, and easy to reason about.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Count Common Words With One Occurrence(count-common-words-with-one-occurrence) (Easy)

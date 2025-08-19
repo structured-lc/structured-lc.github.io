@@ -134,3 +134,9 @@ def wordPatternMatch(pattern, s):
 ### Summary
 Uses **backtracking** (DFS) with bijective mapping.  
 Pattern is similar to classic recursive string match problems, and shows up in "word pattern", "regex match with substrings", and unique substring assignments. Key pattern: recursive exploration, pruning by state, and enforcing 1-to-1 map both ways.
+
+### Tags
+Hash Table(#hash-table), String(#string), Backtracking(#backtracking)
+
+### Similar Problems
+- Word Pattern(word-pattern) (Easy)

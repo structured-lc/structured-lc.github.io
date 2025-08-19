@@ -149,3 +149,8 @@ def friday_purchases_ii(purchases):
 ### Summary
 This problem uses the **date generation + left join + group by** coding pattern, common in reporting and event-tracking databases.  
 The core pattern—generating all required output records (dates), left joining facts (Purchases), and aggregating—appears in many analytic/reporting applications (attendance, sales reports, etc.), regardless of whether solving in SQL or a programming language.
+
+### Tags
+Database(#database)
+
+### Similar Problems

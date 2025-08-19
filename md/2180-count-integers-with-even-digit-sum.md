@@ -74,3 +74,13 @@ def countEven(num):
 
 ### Summary
 This is a classic *digit sum property* problem, often solved by brute-force for reasonable input bounds, but can be optimized using mathematical insights about number properties. The coding pattern is helpful in any problems involving properties of digits in a sequence — such as "count digit with even/odd sum," "find numbers under constraints on their digit sum," and so on. These ideas frequently appear in number theory, combinatorics, and digit dynamic programming problems.
+
+### Tags
+Math(#math), Simulation(#simulation)
+
+### Similar Problems
+- Sum of Numbers With Units Digit K(sum-of-numbers-with-units-digit-k) (Medium)
+- Sum of Digits of String After Convert(sum-of-digits-of-string-after-convert) (Easy)
+- Number of Ways to Buy Pens and Pencils(number-of-ways-to-buy-pens-and-pencils) (Medium)
+- Separate the Digits in an Array(separate-the-digits-in-an-array) (Easy)
+- Find if Digit Game Can Be Won(find-if-digit-game-can-be-won) (Easy)

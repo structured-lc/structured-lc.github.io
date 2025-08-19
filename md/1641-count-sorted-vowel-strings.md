@@ -62,3 +62,8 @@ def countVowelStrings(n):
 
 ### Summary
 Combining DP and combinatorics, this is a classic "stars and bars" (multicombination) problem. The formula crops up in similar problems where you divide n indistinguishable items into k boxes, and appears often in interview combinatorics questions.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
+
+### Similar Problems

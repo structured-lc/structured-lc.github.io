@@ -81,3 +81,14 @@ def findCircleNum(isConnected):
 ### Summary
 This problem is a classic example of the **connected components** pattern in graph theory, commonly solved using **DFS, BFS, or Union-Find**.  
 It's fundamental and appears in problems involving friend circles, grid islands, or connectivity queries. The DFS/BFS approach is both efficient and interview-friendly when adjacency matrices are given.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
+
+### Similar Problems
+- Number of Connected Components in an Undirected Graph(number-of-connected-components-in-an-undirected-graph) (Medium)
+- Robot Return to Origin(robot-return-to-origin) (Easy)
+- Sentence Similarity(sentence-similarity) (Easy)
+- Sentence Similarity II(sentence-similarity-ii) (Medium)
+- The Earliest Moment When Everyone Become Friends(the-earliest-moment-when-everyone-become-friends) (Medium)
+- Detonate the Maximum Bombs(detonate-the-maximum-bombs) (Medium)

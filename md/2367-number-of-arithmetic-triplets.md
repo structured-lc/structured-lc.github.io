@@ -81,3 +81,13 @@ def arithmeticTriplets(nums, diff):
 
 ### Summary
 This is a classic use of the **hash set for existence check** technique—often called "Hashing for fast lookups"—to reduce otherwise expensive triple nested loops down to a linear time algorithm. Variations of this pattern are common in substring/sequence detection and sum or difference-based problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Enumeration(#enumeration)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)
+- 3Sum(3sum) (Medium)
+- Number of Unequal Triplets in Array(number-of-unequal-triplets-in-array) (Easy)
+- Maximum Value of an Ordered Triplet I(maximum-value-of-an-ordered-triplet-i) (Easy)
+- Minimum Sum of Mountain Triplets I(minimum-sum-of-mountain-triplets-i) (Easy)

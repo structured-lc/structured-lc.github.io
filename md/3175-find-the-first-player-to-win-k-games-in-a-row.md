@@ -101,3 +101,8 @@ def findWinningPlayer(skills, k):
 
 ### Summary
 This is a classic greedy queue simulation with optimization using the problem’s natural structure: tracking the consecutive win count at each step. The O(n) scan and in-place logic echo the "array game winner" or "queue competition" pattern, which appears in similar Leetcode problems involving repetitive matching, leader tracking, or round-based tournaments. This method is useful for problems where history and relative strength determine placement efficiently.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems

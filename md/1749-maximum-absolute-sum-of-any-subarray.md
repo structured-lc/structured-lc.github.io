@@ -106,3 +106,9 @@ def max_absolute_sum(nums):
 This problem is a direct modification of the **Maximum Subarray Sum** (Kadane’s algorithm) pattern.  
 To solve, scan for both max and min subarray sums in one pass, then take the highest absolute value.  
 This dual-Kadane trick appears in several problems dealing with ranges or circularity, and efficiently solves all absolute-sum questions for subarrays in O(n) time.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Maximum Subarray(maximum-subarray) (Medium)

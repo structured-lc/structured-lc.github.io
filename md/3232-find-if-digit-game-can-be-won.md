@@ -84,3 +84,10 @@ def findGameCanBeWon(nums):
 
 ### Summary
 This problem uses a **partitioning and summing** pattern, a variant of greedy selection where candidate groups are fixed by digit count and a winner is determined by comparing group sums. It's similar to array split, greedy choice, and set-difference problems, and tests group-based maximization for simple conditions. This approach is clean, O(n), and uses only constant space. Similar logic applies to grouping or partitioning scenarios with restrictive choices.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems
+- Find Numbers with Even Number of Digits(find-numbers-with-even-number-of-digits) (Easy)
+- Count Integers With Even Digit Sum(count-integers-with-even-digit-sum) (Easy)

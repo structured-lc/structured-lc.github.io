@@ -100,3 +100,8 @@ def sumOfPower(nums):
 
 ### Summary
 This solution relies on **sorting**, **prefix sums**, and treating each element as the max in combinations, a technique common in subset/sum/product enumeration under grouping rules. The pattern of using running prefix sums and doubling per subset (“each previous subset either includes or does not include the new element”) is widely applicable anywhere independent subset processing is needed—such as subset products, sums, or min/max count enumerations.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Sorting(#sorting), Prefix Sum(#prefix-sum)
+
+### Similar Problems

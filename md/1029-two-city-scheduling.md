@@ -91,3 +91,9 @@ def twoCitySchedCost(costs):
 ### Summary
 This is a classic **greedy + sorting** pattern.  
 By sorting with respect to the cost difference between city A and city B, we maximize the savings, while honoring the needed assignment split. This “sort + greedy pick” trick is common in scheduling, assignment, and minimal-cost partitioning problems, and helps avoid brute force enumeration in certain constrained allocation setups.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Rearrange Array to Maximize Prefix Score(rearrange-array-to-maximize-prefix-score) (Medium)

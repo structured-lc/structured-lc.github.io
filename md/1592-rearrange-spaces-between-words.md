@@ -67,3 +67,9 @@ def reorderSpaces(text: str) -> str:
 
 ### Summary
 This problem uses string parsing, counting, and recombining. It is a good practice for split, join, and managing edge cases in string manipulation, and can generalize to other even-distribution and in-place problems.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Text Justification(text-justification) (Hard)

@@ -98,3 +98,11 @@ def buddyStrings(s: str, goal: str) -> bool:
 
 ### Summary
 This solution uses a **mismatch-count and duplicate check pattern**—a frequent trick when contrasting two strings/arrays for “off-by-little” differences, such as “can I convert A to B with a single move?” This is common in questions about swaps (minimum swaps to match, adjacent swaps allowed, etc.), and the check for duplicates is a pattern seen in making a string remain unchanged by limited moves.
+
+### Tags
+Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Determine if Two Strings Are Close(determine-if-two-strings-are-close) (Medium)
+- Check if One String Swap Can Make Strings Equal(check-if-one-string-swap-can-make-strings-equal) (Easy)
+- Make Number of Distinct Characters Equal(make-number-of-distinct-characters-equal) (Medium)

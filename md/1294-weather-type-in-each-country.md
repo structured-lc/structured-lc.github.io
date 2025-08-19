@@ -84,3 +84,8 @@ FROM Weather;
 
 ### Summary
 This is a classic SQL question testing basic familiarity with the DISTINCT keyword to obtain unique row pairs. Such patterns are widely used in SQL for deduplication and relationship extraction tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems

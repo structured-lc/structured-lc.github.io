@@ -121,3 +121,10 @@ def eligible_user_count(purchases: List[Dict], start_date: str, end_date: str, m
 This problem is a classic example of using **set data structure** for unique counting and **filtering by conditions**.  
 The approach is linear and can be directly mapped to a SQL **SELECT DISTINCT** query, or solved efficiently in code.  
 This pattern applies wherever we need to count unique keys subject to specific filters, such as fraud analysis or user segmentation.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Nth Highest Salary(nth-highest-salary) (Medium)
+- The Users That Are Eligible for Discount(the-users-that-are-eligible-for-discount) (Easy)

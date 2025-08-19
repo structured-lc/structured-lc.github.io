@@ -76,3 +76,16 @@ def minSubArrayLen(target, nums):
 
 ### Summary  
 This problem is a classic example of the **sliding window** pattern, especially effective when dealing with contiguous subarrays and all-positive numbers. It’s a common technique in problems involving minimum window length, target sums, or string substring/window questions. The ability to both grow and shrink the window efficiently is why this solution works in linear time.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Minimum Window Substring(minimum-window-substring) (Hard)
+- Maximum Size Subarray Sum Equals k(maximum-size-subarray-sum-equals-k) (Medium)
+- Maximum Length of Repeated Subarray(maximum-length-of-repeated-subarray) (Medium)
+- Minimum Operations to Reduce X to Zero(minimum-operations-to-reduce-x-to-zero) (Medium)
+- K Radius Subarray Averages(k-radius-subarray-averages) (Medium)
+- Maximum Product After K Increments(maximum-product-after-k-increments) (Medium)
+- Shortest Subarray With OR at Least K I(shortest-subarray-with-or-at-least-k-i) (Easy)
+- Minimum Positive Sum Subarray (minimum-positive-sum-subarray) (Easy)

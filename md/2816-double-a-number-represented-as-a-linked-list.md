@@ -108,3 +108,10 @@ def doubleIt(head: ListNode) -> ListNode:
 This problem leverages the **in-place linked list multiplication with carry**, a common coding pattern for implementing big integer math in primitive data structures.  
 The main trick is to process digits from least-to-most significant, which is handled by reversing the list (since it's singly linked).  
 Variations of this approach are often seen in *add two numbers* linked list problems, and are foundational for simulating arithmetic on large numbers stored as lists.
+
+### Tags
+Linked List(#linked-list), Math(#math), Stack(#stack)
+
+### Similar Problems
+- Add Two Numbers(add-two-numbers) (Medium)
+- Plus One Linked List(plus-one-linked-list) (Medium)

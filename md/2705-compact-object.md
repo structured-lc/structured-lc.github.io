@@ -108,3 +108,7 @@ def compactObject(obj):
 ### Summary
 This problem is a classic **recursive deep-clean/filter** pattern frequently seen on nested data, such as in config cleaning, deep cloning, or data ingestion pipelines.  
 The recursive traversal with compaction is a useful template for flattening, cleaning, or transforming complex hierarchical data. The concept is widely applicable in data parsing, normalization tasks, and interviewer favorites dealing with object/array manipulation.
+
+### Tags
+
+### Similar Problems

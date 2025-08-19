@@ -121,3 +121,10 @@ def getSkyline(buildings):
 
 ### Summary
 This problem uses the **sweep line** and **heap** (priority queue) patterns, common in computational geometry and event processing. The structure—processing sorted "events" with efficient tallies—is broadly applicable for interval union, meeting rooms, flight schedules, and histogram problems. The approach elegantly balances clarity and efficiency for handling complex geometric skyline outlines.
+
+### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Line Sweep(#line-sweep), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Falling Squares(falling-squares) (Hard)
+- Shifting Letters II(shifting-letters-ii) (Medium)

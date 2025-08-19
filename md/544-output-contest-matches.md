@@ -75,3 +75,8 @@ def findContestMatch(n):
 
 ### Summary
 This problem demonstrates an “expanding pairing” pattern, iteratively reducing the list by pairing symmetric elements until a single result remains. The method can be applied to tournament simulations and problems involving repeated halving with pairwise reduction (often seen in tree-building or divide-and-conquer computations). The solution is both space and time efficient, and uses straightforward looping and string construction.
+
+### Tags
+String(#string), Recursion(#recursion), Simulation(#simulation)
+
+### Similar Problems

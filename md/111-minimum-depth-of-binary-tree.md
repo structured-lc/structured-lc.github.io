@@ -102,3 +102,10 @@ def minDepth(root):
 This problem uses a classic **DFS/recursion on trees** pattern. The important detail is to handle missing children carefully—if a child is missing, avoid taking `min()` with 0.  
 It's a common template that applies to many tree-video problems, e.g., computing maximum depth, balanced tree checks, etc.  
 A BFS/level-order solution also works, and is sometimes preferred for very broad or deep trees to avoid recursion limits.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Binary Tree Level Order Traversal(binary-tree-level-order-traversal) (Medium)
+- Maximum Depth of Binary Tree(maximum-depth-of-binary-tree) (Easy)

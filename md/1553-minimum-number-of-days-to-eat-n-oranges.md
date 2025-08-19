@@ -73,3 +73,8 @@ def minDays(n):
 
 ### Summary
 Dynamic programming + memoization on n. Classic min-steps DP pattern where states can branch. Rarely possible with pure greedy, usually best with memoized recursion.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Memoization(#memoization)
+
+### Similar Problems

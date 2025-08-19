@@ -72,3 +72,10 @@ def furthestBuilding(heights, bricks, ladders):
 
 ### Summary
 Min heap/greedy pattern: always save ladders for largest uphill jumps. This approach often appears for resource allocation where you want to maximize progress with limited tools.
+
+### Tags
+Array(#array), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Make the Prefix Sum Non-negative(make-the-prefix-sum-non-negative) (Medium)
+- Find Building Where Alice and Bob Can Meet(find-building-where-alice-and-bob-can-meet) (Hard)

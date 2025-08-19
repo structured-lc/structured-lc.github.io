@@ -99,3 +99,11 @@ def takeCharacters(s: str, k: int) -> int:
 
 ### Summary
 This is a classic **sliding window + counting** problem. The main idea is to maximize the portion of the string that doesn't contribute to the requirement, thus minimizing what you need to take from the ends. This approach is O(n) and is robust for other similar prefix/suffix collection or subarray-removal minimization problems. The sliding window counting method is widely useful for substring/sequence problems where simultaneous requirements are imposed on counts or properties.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Merge Sorted Array(merge-sorted-array) (Easy)
+- Reorder List(reorder-list) (Medium)
+- Defuse the Bomb(defuse-the-bomb) (Easy)

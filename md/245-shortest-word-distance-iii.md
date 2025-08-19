@@ -90,3 +90,10 @@ def shortestWordDistance(wordsDict, word1, word2):
 This is a **two-pointer/single-pass scan** pattern often used for minimum distance problems or for scanning with state.  
 It illustrates careful handling when the two search targets may be identical.  
 This type of pattern also appears in string, array, or interval difference problems where you seek the minimum/maximum gap between elements that match certain criteria.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems
+- Shortest Word Distance(shortest-word-distance) (Easy)
+- Shortest Word Distance II(shortest-word-distance-ii) (Medium)

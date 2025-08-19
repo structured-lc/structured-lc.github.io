@@ -90,3 +90,8 @@ def reversePrefix(word: str, ch: str) -> str:
 ### Summary
 This is a classic string manipulation problem that tests the ability to locate an index and reverse part of a string—common in interviews. The approach uses the "find-part-reverse-concatenate" pattern, and the optimal method in Python leverages string slicing and reversal.  
 This pattern appears frequently, for example in palindrome checking, substring reversals, and sliding window problems.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Stack(#stack)
+
+### Similar Problems

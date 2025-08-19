@@ -102,3 +102,9 @@ def uniqueLetterString(s: str) -> int:
 
 ### Summary
 This problem uses a **contribution counting pattern**: for each character occurrence, count how many substrings exist where it is uniquely present. By precomputing previous and next occurrences, we efficiently sum up all unique contributions in O(n), avoiding generating all substrings. This technique is common for substring queries where each element's effect can be computed independently — it also appears in problems that require tracking windows or unique element counts (like "Subarrays with K Different Integers", "Count of Substrings with All Unique Characters", etc.).
+
+### Tags
+Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Total Appeal of A String(total-appeal-of-a-string) (Hard)

@@ -103,3 +103,8 @@ def isSameTree(p: TreeNode, q: TreeNode) -> bool:
 
 ### Summary
 This is a classic **recursive DFS tree comparison** problem, using a straightforward approach: check node equality and recursively proceed to children. The pattern is broadly applicable—for example, in validating binary tree equality checks, mirroring, or subtree matching problems. Recognizing places where structure and values both matter (vs. just values) is a common requirement in tree-based coding interviews.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

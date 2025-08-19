@@ -113,3 +113,10 @@ def trapRainWater(heightMap):
 ### Summary
 This problem is a classic **graph + simulation** and combines **BFS** flood-fill and **min-heap (priority queue)** to always expand from the lowest escape route. Like Dijkstra's, we use the boundary as sources and always fill from lowest cell outward, preventing overcounting trapped water.  
 The core pattern appears in many “minimum path, spilling, or fill” grid-based problems: trap rain water, flood simulation, multi-source propagation, and real-world applications like modeling basins or containers.
+
+### Tags
+Array(#array), Breadth-First Search(#breadth-first-search), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
+
+### Similar Problems
+- Trapping Rain Water(trapping-rain-water) (Hard)
+- Maximum Number of Points From Grid Queries(maximum-number-of-points-from-grid-queries) (Hard)

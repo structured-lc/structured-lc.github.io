@@ -73,3 +73,12 @@ def canArrange(arr, k):
 
 ### Summary
 This is a classic application of counting using mod arithmetic, related to the Two Sum and group-by-remainder pattern. Useful for other divisor, modulo, or complement group problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Counting(#counting)
+
+### Similar Problems
+- Count Array Pairs Divisible by K(count-array-pairs-divisible-by-k) (Hard)
+- Minimum Deletions to Make Array Divisible(minimum-deletions-to-make-array-divisible) (Hard)
+- Count Pairs That Form a Complete Day II(count-pairs-that-form-a-complete-day-ii) (Medium)
+- Count Pairs That Form a Complete Day I(count-pairs-that-form-a-complete-day-i) (Easy)

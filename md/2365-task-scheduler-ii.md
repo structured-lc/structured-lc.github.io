@@ -106,3 +106,11 @@ def taskSchedulerII(tasks, space):
 
 ### Summary
 This problem is a variation of the "Task Scheduler" classic, applying *cooldown constraints* to forced task orders. The main coding pattern is simulating day-by-day task scheduling — using a hash map to efficiently track cooldowns, yielding fast O(n) time. This pattern appears in other cooldown/timestamp simulation scenarios, and is relevant for problems where cooldowns or temporal constraints matter, especially process scheduling or rate-limiting algorithms.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Simulation(#simulation)
+
+### Similar Problems
+- Task Scheduler(task-scheduler) (Medium)
+- Maximize Distance to Closest Person(maximize-distance-to-closest-person) (Medium)
+- Check If All 1's Are at Least Length K Places Away(check-if-all-1s-are-at-least-length-k-places-away) (Easy)

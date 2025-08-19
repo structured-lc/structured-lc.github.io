@@ -106,3 +106,9 @@ def countPalindromicSubsequence(s: str) -> int:
 This problem uses a **pattern of sliding window/interval search for first-and-last appearance** of characters, and **set-based counting for uniqueness**. The final code efficiently counts all "aba"-form palindromic subsequences by fixing the outer letter and searching for all inner possibilities.  
 This pattern applies wherever you need to fix outer structure and enumerate middle variations, especially with small alphabets or fixed-size subsequences.  
 Common in problems involving **palindromic substrings/subsequences, two pointers, character frequency, or set-based uniqueness.**
+
+### Tags
+Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Count Palindromic Subsequences(count-palindromic-subsequences) (Hard)

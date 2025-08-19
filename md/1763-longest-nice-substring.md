@@ -86,3 +86,9 @@ def longestNiceSubstring(s: str) -> str:
 
 ### Summary
 This problem is a classic example of **divide and conquer on substrings**, similar to problems that try to find the longest substring satisfying a custom property (like "longest substring with at most k unique characters", etc.). The technique of dividing the problem at elements that make the full condition fail is a flexible pattern seen in substring search/interview problems.
+
+### Tags
+Hash Table(#hash-table), String(#string), Divide and Conquer(#divide-and-conquer), Bit Manipulation(#bit-manipulation), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Number of Good Paths(number-of-good-paths) (Hard)

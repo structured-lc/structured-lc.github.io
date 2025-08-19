@@ -125,3 +125,9 @@ This problem applies the *digit-by-digit backtracking* pattern, commonly used on
 - DFS allows us to prune and only produce possible, valid numbers.
 - Checking for the “confusing” property is done only for legal candidates.
 - This pattern is powerful for scenarios where not all “numbers” in a range are allowed: it can be used, for example, with “pretty numbers”, “special” digit sets, or constructing numbers with certain properties under transformations.
+
+### Tags
+Math(#math), Backtracking(#backtracking)
+
+### Similar Problems
+- Confusing Number(confusing-number) (Easy)

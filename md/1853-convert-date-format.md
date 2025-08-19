@@ -123,3 +123,8 @@ FROM Days;
 ### Summary
 This is a straightforward **SQL date formatting** problem. It leverages the built-in `DATE_FORMAT` function, which abstracts away locale details and edge cases—making the approach robust, concise, and highly maintainable.  
 The pattern of using built-in date/time formatting functions arises frequently in database reporting and data extraction, and a similar approach can be applied to any scenario requiring user-friendly or locale-specific date output.
+
+### Tags
+Database(#database)
+
+### Similar Problems

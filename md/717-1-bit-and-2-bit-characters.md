@@ -80,3 +80,9 @@ def isOneBitCharacter(bits):
 
 ### Summary
 We used a **greedy pointer scan**: repeatedly jump by `2` if we see a `1`, or `1` if we see a `0`, and check if we land *exactly* on the last index. This avoids backtracking or recursion and leverages the parsing rules given. This pointer traversal pattern is common in string parsing and bit manipulations, and appears frequently in "decode message" type problems.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Gray Code(gray-code) (Medium)

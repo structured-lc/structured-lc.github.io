@@ -127,3 +127,7 @@ class QueryBatcher:
 
 ### Summary
 This problem is a **batching pattern**, commonly used in systems that amortize overhead for multiple similar requests (e.g., database access, network requests, or caching layers). It balances responsiveness and efficiency, and is a typical pattern in high-concurrency backends or APIs. The approach is easily adapted for key deduplication, timeouts, size limits, or error handling.
+
+### Tags
+
+### Similar Problems

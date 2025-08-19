@@ -82,3 +82,12 @@ def longestCommonPrefix(strs):
 
 ### Summary
 This problem uses the **prefix scanning** pattern, where you repeatedly check a condition across multiple items and gradually narrow the candidate space. It’s often applied in string search, file path grouping, and directory tree processing. The character-by-character comparison is efficient, direct, and works well for small and moderate data sizes. This pattern is a classic in coding interviews and has practical applications in text processing and search autocompletion.
+
+### Tags
+Array(#array), String(#string), Trie(#trie)
+
+### Similar Problems
+- Smallest Missing Integer Greater Than Sequential Prefix Sum(smallest-missing-integer-greater-than-sequential-prefix-sum) (Easy)
+- Find the Length of the Longest Common Prefix(find-the-length-of-the-longest-common-prefix) (Medium)
+- Longest Common Suffix Queries(longest-common-suffix-queries) (Hard)
+- Longest Common Prefix After at Most One Removal(longest-common-prefix-after-at-most-one-removal) (Medium)

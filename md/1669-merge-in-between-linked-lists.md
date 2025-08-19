@@ -101,3 +101,8 @@ def mergeInBetween(list1: ListNode, a: int, b: int, list2: ListNode) -> ListNode
 
 ### Summary
 This is a classic linked list manipulation problem: pointer updates, edge cases around head/tail, handling external sublists. It's a key test of pointer skills for merging/splicing lists. This coding pattern is used for segment replacement, cutting and pasting linked list parts, and many interview variants.
+
+### Tags
+Linked List(#linked-list)
+
+### Similar Problems

@@ -142,3 +142,8 @@ def team_scores_in_tournament(teams, matches):
 
 ### Summary
 This problem uses the **group by + aggregation** pattern—very common in leaderboard queries. Constructing a “two-way” participation table with UNION ALL (or equivalent row expansion logic) is vital whenever an entity can appear as multiple columns in a dataset. This technique is widely applicable in rankings, sports, and competition problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

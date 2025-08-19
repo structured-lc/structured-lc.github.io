@@ -92,3 +92,10 @@ def tribonacci(n: int) -> int:
 This problem leverages the **Dynamic Programming - rolling window** pattern, similar to efficient Fibonacci computation.  
 We reduce space by keeping only the minimal past state needed. This coding pattern is broadly applicable in linear DP problems requiring values from a fixed sliding window.  
 For extremely large n, advanced techniques such as **matrix exponentiation** can be applied to reduce computation time, a concept often seen in sequence problems.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Memoization(#memoization)
+
+### Similar Problems
+- Climbing Stairs(climbing-stairs) (Easy)
+- Fibonacci Number(fibonacci-number) (Easy)

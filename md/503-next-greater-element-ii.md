@@ -84,3 +84,11 @@ def nextGreaterElements(nums):
 ### Summary
 
 This problem is a classic use of the **monotonic stack** pattern to optimize “next greater element” queries, made slightly trickier by the circular wrap-around constraint (handled by traversing the array twice). This approach generalizes to next smaller (or other monotonic) queries and is common in array, stack, and scheduling contexts.
+
+### Tags
+Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Next Greater Element I(next-greater-element-i) (Easy)
+- Next Greater Element III(next-greater-element-iii) (Medium)
+- Maximum and Minimum Sums of at Most Size K Subarrays(maximum-and-minimum-sums-of-at-most-size-k-subarrays) (Hard)

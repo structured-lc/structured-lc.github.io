@@ -103,3 +103,8 @@ def killProcess(pid, ppid, kill):
 You model the process relationships as a tree using an adjacency list, then recursively traverse (DFS) to collect all nodes in the subtree rooted at the `kill` node.  
 This is a standard tree traversal pattern, relevant anywhere you handle hierarchical or recursive structures: file systems, org charts, or dependency graphs.  
 The adjacency list + DFS (or BFS) approach is optimal for such process-killing or deletion “domino” problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems

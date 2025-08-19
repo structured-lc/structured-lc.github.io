@@ -110,3 +110,9 @@ def countRectangles(rectangles, points):
 
 ### Summary
 This problem uses **bucketing/grouping** (by rectangle height) and **binary search** for efficient queries—a pattern useful for range-counting with integer-bounded constraints. Similar approaches apply to geometric counting (e.g., grid search, prefix sums in 2D, sweep-line with ranges). Efficient preprocessing and per-group searching make brute force unnecessary, highlighting **bucket + search** as a key coding pattern.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Binary Indexed Tree(#binary-indexed-tree), Sorting(#sorting)
+
+### Similar Problems
+- Queries on Number of Points Inside a Circle(queries-on-number-of-points-inside-a-circle) (Medium)

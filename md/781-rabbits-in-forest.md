@@ -73,3 +73,9 @@ def numRabbits(answers):
 ### Summary
 
 This problem uses a **greedy grouping pattern with a hashmap** to count and pack items (here, rabbits) into groups of fixed size, minimizing total usage. This pattern applies to many group-packing or "fit-in-groups" problems (e.g., seating, partitioning). The key learning is translating each rabbit’s answer to a group constraint and efficiently aggregating group counts for the optimal solution.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Greedy(#greedy)
+
+### Similar Problems
+- Group the People Given the Group Size They Belong To(group-the-people-given-the-group-size-they-belong-to) (Medium)

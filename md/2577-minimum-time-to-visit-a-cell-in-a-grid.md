@@ -94,3 +94,10 @@ def minimumTime(grid):
 
 ### Summary
 This problem uses a **shortest-path variation (Dijkstra)** in a grid with arrival timing constraints. The pattern of always selecting the minimal-possible "state" (arrival time) is classic in pathfinding, and the solution closely mirrors other grid-based minimum-cost reachability problems. Variations of this approach show up in networking (routing with delays), dynamic games, and robot pathing with priorities.
+
+### Tags
+Array(#array), Breadth-First Search(#breadth-first-search), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Find Minimum Time to Reach Last Room I(find-minimum-time-to-reach-last-room-i) (Medium)
+- Find Minimum Time to Reach Last Room II(find-minimum-time-to-reach-last-room-ii) (Medium)

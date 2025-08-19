@@ -139,3 +139,11 @@ def countSubIslands(grid1, grid2):
 ### Summary
 This problem uses the **DFS flood-fill coding pattern** to identify and validate islands—a foundational technique for 2D grid traversal.  
 The approach is closely related to many other "island" and "connected component" problems (e.g., Number of Islands, Max Area of Island), so practicing this enhances general graph/DFS intuition for interviews.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
+
+### Similar Problems
+- Number of Islands(number-of-islands) (Medium)
+- Number of Distinct Islands(number-of-distinct-islands) (Medium)
+- Find All Groups of Farmland(find-all-groups-of-farmland) (Medium)

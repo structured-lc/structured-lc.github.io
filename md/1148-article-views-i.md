@@ -140,3 +140,8 @@ print(find_authors_self_view(views))  # Output: [4, 7]
 
 ### Summary
 This is a classic filtering and deduplication problem (“Find unique items matching a property”), common in database and analytics work. It relies on the filter–project–deduplicate pattern, which appears in problems involving logs, traces, access records, audits, etc. Variants include counting unique events, summing values per entity, or finding distinct values meeting certain conditions.
+
+### Tags
+Database(#database)
+
+### Similar Problems

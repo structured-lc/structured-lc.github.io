@@ -143,3 +143,8 @@ def winning_candidate(votes, candidates):
 
 ### Summary
 This solution uses the **group by counting pattern** — widely used in SQL problems dealing with counts, rankings, voting or frequency. The pattern is applicable in finding most popular/frequent items, top-k queries, etc. The query illustrates efficient aggregation, joining, and limiting results for real-world analytics.
+
+### Tags
+Database(#database)
+
+### Similar Problems

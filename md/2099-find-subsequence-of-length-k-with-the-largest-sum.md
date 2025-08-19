@@ -84,3 +84,12 @@ def maxSubsequence(nums, k):
 
 ### Summary
 This is a classic **greedy/priority queue** problem focused on selecting the top k elements by value, then restoring their input order. The pairing of value with index ensures subsequence order, which is a common pattern for “largest k but keep ordering” style tasks. This approach also appears in problems like "Top K Frequent Elements with Ties" or “Sliding Window Maximum.”
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Kth Largest Element in an Array(kth-largest-element-in-an-array) (Medium)
+- Maximize Sum Of Array After K Negations(maximize-sum-of-array-after-k-negations) (Easy)
+- Sort Integers by The Number of 1 Bits(sort-integers-by-the-number-of-1-bits) (Easy)
+- Minimum Difference in Sums After Removal of Elements(minimum-difference-in-sums-after-removal-of-elements) (Hard)

@@ -91,3 +91,8 @@ def firstDayBeenInAllRooms(nextVisit):
 This problem is a classic example of **DP with dependency on prior computed states** and a reference back/frame jump (non-monotonic).  
 The pattern (DP[i] = function of DP[i-1] and DP[nextVisit[i-1]]) is seen frequently in stateful path problems—especially where rules create cycles or alternate progression.  
 This approach can be applied in simulation/robot movement questions, puzzles with return/jump conditions, and more generally, problems needing efficient O(1) state transition between steps.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

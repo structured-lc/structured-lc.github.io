@@ -74,3 +74,8 @@ def truncateSentence(s: str, k: int) -> str:
 
 ### Summary
 This problem demonstrates the "two pointer or scan" pattern for processing substrings efficiently without extra memory overhead. It's commonly useful for string manipulation tasks, e.g., parsing CSV files, breaking text into phrases, or handling log files line by line. While the split-and-join method works for small inputs, being able to write an in-place scan version is a valuable skill in interviews for efficiency.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems

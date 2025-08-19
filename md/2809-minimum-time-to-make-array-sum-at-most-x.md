@@ -114,3 +114,8 @@ def minimumTime(nums1: List[int], nums2: List[int], x: int) -> int:
 
 This problem is a variant of **dynamic programming / knapsack** with a twist—each reset is like a "pick once" item, with its reward growing with the time step. The solution involves sorting for greedy opportunities and using DP to cover all options for the number of resets.  
 This pattern—"optimize selection of at most k resets/actions where order matters"—is common in problems involving scheduling, greedy plus DP, and resource allocation.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
+
+### Similar Problems

@@ -91,3 +91,9 @@ def escapeGhosts(ghosts, target):
 This problem leverages the property of **Manhattan Distance** as a minimal-step metric on a grid with up/down/left/right movement, making the solution both straightforward and efficient.  
 The key insight is that you only need to check whether you are strictly closer to the target than all ghosts—no simulation is necessary.  
 This is an example of the **greedy pattern** for shortest-path in grid movement without obstacles. Variations of this arise frequently in grid-based shortest-reach problems.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems
+- Cat and Mouse II(cat-and-mouse-ii) (Hard)

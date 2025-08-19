@@ -93,3 +93,11 @@ def addPoly(poly1, poly2):
 
 ### Summary
 This is a textbook pattern for **merging two sorted lists**, adapted for polynomial addition. The same technique can be used for other linear algebra or merging algorithms.
+
+### Tags
+Linked List(#linked-list), Math(#math), Two Pointers(#two-pointers)
+
+### Similar Problems
+- Add Two Numbers(add-two-numbers) (Medium)
+- Merge Two Sorted Lists(merge-two-sorted-lists) (Easy)
+- Add Two Numbers II(add-two-numbers-ii) (Medium)

@@ -96,3 +96,11 @@ def partition(s):
 This problem uses the **backtracking/cut and choose** pattern: at each index, try every possible "cut" that produces a palindrome and recursively partition the remainder.  
 It’s a classic candidate for backtracking, similar to *subsets* or *combination sum* problems, and can be further optimized if asked.  
 Patterns used here recur in word break, subset partitioning, and combination generation interview problems.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking)
+
+### Similar Problems
+- Palindrome Partitioning II(palindrome-partitioning-ii) (Hard)
+- Palindrome Partitioning IV(palindrome-partitioning-iv) (Hard)
+- Maximum Number of Non-overlapping Palindrome Substrings(maximum-number-of-non-overlapping-palindrome-substrings) (Hard)

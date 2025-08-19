@@ -131,3 +131,11 @@ JOIN Product ON Sales.product_id = Product.product_id;
 ### Summary
 This problem is a straightforward SQL JOIN pattern—a foundational database operation to enrich a primary data set with reference data.  
 The key pattern is lookup/join, which is vital in relational databases and common in both SQL and application-level data manipulations. Similar approaches are used in reporting, analytics tasks, and ETL pipelines when joining facts to dimensions.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Product Sales Analysis II(product-sales-analysis-ii) (Easy)
+- Product Sales Analysis IV(product-sales-analysis-iv) (Medium)
+- Product Sales Analysis V(product-sales-analysis-v) (Easy)

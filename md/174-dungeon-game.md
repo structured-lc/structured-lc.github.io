@@ -89,3 +89,15 @@ def calculateMinimumHP(dungeon):
 
 ### Summary
 This problem uses the **Reverse DP** pattern, where we work from the goal back to the start to guarantee feasibility at each move. Similar patterns occur in "minimum cost path" and other grid-based DP problems with constraints that are tightest at the destination. This is a classic example of *backwards DP* and grid traversal.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems
+- Unique Paths(unique-paths) (Medium)
+- Minimum Path Sum(minimum-path-sum) (Medium)
+- Cherry Pickup(cherry-pickup) (Hard)
+- Minimum Path Cost in a Grid(minimum-path-cost-in-a-grid) (Medium)
+- Minimum Health to Beat Game(minimum-health-to-beat-game) (Medium)
+- Paths in Matrix Whose Sum Is Divisible by K(paths-in-matrix-whose-sum-is-divisible-by-k) (Hard)
+- Check if There is a Path With Equal Number of 0's And 1's(check-if-there-is-a-path-with-equal-number-of-0s-and-1s) (Medium)

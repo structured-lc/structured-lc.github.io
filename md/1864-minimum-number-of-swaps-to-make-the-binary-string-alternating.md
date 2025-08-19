@@ -96,3 +96,8 @@ def min_swaps(s: str) -> int:
 
 ### Summary
 This approach leverages **pattern-mismatch counting** and optimal correction by swapping, a common trick in problems about string transformation with minimal operations. Pattern matching is widely used in problems like constructing specific orders or rearranging arrays with constraints. This method is efficient and easily generalizes to other “apply minimal changes to achieve X alternating pattern” challenges.
+
+### Tags
+String(#string), Greedy(#greedy)
+
+### Similar Problems

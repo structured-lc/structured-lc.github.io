@@ -111,3 +111,9 @@ def checkRecord(n):
 We applied *dynamic programming* with a carefully chosen small state: days so far, number of 'A's used, and consecutive 'L's.
 DP provides an O(n) time solution with O(1) space, perfect for large n constraints.  
 This *state machine DP* is a common pattern: it applies broadly to string counting problems with global and local restrictions (“at most k of X”, “no more than m in a row of Y”), such as barcode arrangements, binary strings with no adjacent 1's, etc.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Student Attendance Record I(student-attendance-record-i) (Easy)

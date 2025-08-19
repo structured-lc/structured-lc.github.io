@@ -80,3 +80,10 @@ def maxJumps(arr: List[int], d: int) -> int:
 
 ### Summary
 This is a classic memoized DFS/DP on intervals. The recursion tree is pruned by the strictly-lower and breaking rules, and DP memoization avoids recomputation. Patterns here appear in runnable-path, jump-game, and longest-nondecreasing-path problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
+
+### Similar Problems
+- Jump Game VII(jump-game-vii) (Medium)
+- Jump Game VIII(jump-game-viii) (Medium)

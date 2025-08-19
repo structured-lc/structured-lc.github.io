@@ -100,3 +100,8 @@ def findRelativeRanks(score):
 
 ### Summary  
 This approach uses the **sorting + ranking pattern**, often used when mapping elements to their relative positions. By sorting a list of (score, index) pairs and mapping ranks back to original indices, you efficiently solve a broad class of ranking problems. This technique is common in leaderboards, grading systems, and contest rankings.
+
+### Tags
+Array(#array), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

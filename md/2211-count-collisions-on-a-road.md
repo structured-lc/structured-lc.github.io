@@ -99,3 +99,12 @@ def countCollisions(directions: str) -> int:
 
 ### Summary
 This problem is a string traversal leveraging the observation that only the "middle" cars (not those exiting freely) can ever collide. The pattern—trimming irrelevant prefix/suffix and linear pass—appears in similar simulation or sweep-line problems. The solution avoids actual simulation by transforming the problem into a simple count, which is common in optimal interview solutions.
+
+### Tags
+String(#string), Stack(#stack), Simulation(#simulation)
+
+### Similar Problems
+- Asteroid Collision(asteroid-collision) (Medium)
+- Car Fleet(car-fleet) (Medium)
+- Last Moment Before All Ants Fall Out of a Plank(last-moment-before-all-ants-fall-out-of-a-plank) (Medium)
+- Car Fleet II(car-fleet-ii) (Hard)

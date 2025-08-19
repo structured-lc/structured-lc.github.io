@@ -103,3 +103,8 @@ def leastOpsExpressTarget(x: int, target: int) -> int:
 
 ### Summary
 This problem uses **recursive decomposition with memoization**, exploiting the mathematical structure of expression building from repeated multiplications, additions, and subtractions—classic "DP on integers" with state compression. The key pattern is exploring two choices for each power: close or overshoot, and recursively refining the answer. This approach is applicable in problems involving interval decompositions, integer DP, or optimal cost-minimization where choices build on subproblems.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Memoization(#memoization)
+
+### Similar Problems

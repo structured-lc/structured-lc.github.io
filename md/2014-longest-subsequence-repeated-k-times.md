@@ -142,3 +142,9 @@ This problem combines **backtracking/DFS/BFS** with **greedy candidate pruning**
 It's an application of candidate generation, filtered by feasibility, and used in string subsequence/repetition contexts.  
 A similar pattern appears in "counted subsequence" problems, "maximum repeated pattern," or "greatest possible string with constraints."  
 Bounding the answer length using total frequency/k is the key insight that makes exhaustive search practical here.
+
+### Tags
+String(#string), Backtracking(#backtracking), Greedy(#greedy), Counting(#counting), Enumeration(#enumeration)
+
+### Similar Problems
+- Longest Substring with At Least K Repeating Characters(longest-substring-with-at-least-k-repeating-characters) (Medium)

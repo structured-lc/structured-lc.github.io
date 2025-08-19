@@ -48,3 +48,8 @@ ON e.id = eu.id;
 
 ### Summary
 This is a standard SQL **join** query (LEFT JOIN). This pattern is common when combining core and reference data tables.
+
+### Tags
+Database(#database)
+
+### Similar Problems

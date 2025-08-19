@@ -82,3 +82,9 @@ def sumOfNumberAndReverse(num: int) -> bool:
 This is a brute-force digit manipulation problem that relies on checking all possible splitting pairs (k, reverse(k)) for a given sum.  
 The main pattern is checking all values in a bounded range and applying digit manipulation, which is common in palindrome and reverse-number problems (e.g., sum of palindrome numbers, reverse-integer).  
 This logic applies anywhere you need to check the relationship between a number and its digit-reversed counterpart.
+
+### Tags
+Math(#math), Enumeration(#enumeration)
+
+### Similar Problems
+- Sum of Numbers With Units Digit K(sum-of-numbers-with-units-digit-k) (Medium)

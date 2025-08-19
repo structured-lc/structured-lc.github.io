@@ -104,3 +104,8 @@ WHERE
 This problem uses the **Cross Join (Self-Join) pattern**, paired with filter predicates.  
 It is a classic scenario in SQL where you need to combine all possible matches under specific rules.  
 The solution is highly reusable for problems involving pairing/filtering entities based on types, such as “employee with mentor of a different department” or “products matched with compatible components.”
+
+### Tags
+Database(#database)
+
+### Similar Problems

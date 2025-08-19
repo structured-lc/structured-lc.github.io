@@ -129,3 +129,9 @@ def find_longest_self_contained_substring(s):
 This problem uses the "interval/window covering" pattern with pre-computed first/last indices, often useful with substring and palindromic interval problems.  
 Sliding window and greedy right boundary expansion are both used, similar to "partition labels".  
 This method is efficient because the alphabet is small and occurrence mapping turns string checks into constant-time lookups. The solution generalizes to scenarios where unique coverage or containment within ranges is relevant.
+
+### Tags
+Hash Table(#hash-table), String(#string), Binary Search(#binary-search), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Select K Disjoint Special Substrings(select-k-disjoint-special-substrings) (Medium)

@@ -72,3 +72,8 @@ def minimumMoves(arr):
 
 ### Summary
 This is a dynamic programming interval problem, similar to burst balloons, matrix multiplication, or palindrome partitioning. Keep the pattern "dp for all subarrays," trying all partitions.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

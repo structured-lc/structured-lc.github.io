@@ -87,3 +87,9 @@ def second_highest(s):
 This problem is a classic example of single-pass scanning while tracking the largest and second largest element (here, unique digits).  
 The pattern used is **tracking two variables for max and second max**; it’s a common coding pattern whenever “second largest”, “runner-up”, or similar properties are asked for.  
 This approach can be adapted for finding kᵗʰ largest, or when the values to be tracked are letters or other comparable items.
+
+### Tags
+Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Remove Digit From Number to Maximize Result(remove-digit-from-number-to-maximize-result) (Easy)

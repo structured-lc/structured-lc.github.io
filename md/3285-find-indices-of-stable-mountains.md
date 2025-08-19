@@ -69,3 +69,9 @@ def stableMountains(height, threshold):
 
 ### Summary
 This approach uses a single pass and constant extra space (besides the output), representing a classic linear scan and filtering pattern. It’s common in problems where you need to collect indices or elements based on adjacent values and simple comparisons; similar logic applies in local extrema, peak finding, and segment detection problems.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Find in Mountain Array(find-in-mountain-array) (Hard)

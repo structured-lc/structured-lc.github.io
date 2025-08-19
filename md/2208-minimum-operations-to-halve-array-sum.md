@@ -88,3 +88,10 @@ def minOperations(nums):
 
 ### Summary
 This problem uses a classic **greedy + heap pattern**: always operate on the maximum to achieve optimal cumulative effect in minimal steps. The approach is related to problems where you must minimize operations while shrinking some aggregate; max-heap enables efficiently picking the best candidate each time. This pattern also appears in problems like reducing files/weights by combining or splitting, or in resource distribution/modification optimization tasks.
+
+### Tags
+Array(#array), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Remove Stones to Minimize the Total(remove-stones-to-minimize-the-total) (Medium)
+- Minimum Operations to Exceed Threshold Value II(minimum-operations-to-exceed-threshold-value-ii) (Medium)

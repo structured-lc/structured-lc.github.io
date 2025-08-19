@@ -124,3 +124,8 @@ def continuous_subarrays(nums):
 This problem uses the **sliding window with two pointers** technique, enhanced by two monotonic queues to efficiently track the minimum and maximum in a window. When a window violates the constraint (max-min > 2), move the left pointer forward.  
 This pattern is common for problems requiring "subarrays/substrings where some property is true for all elements", particularly when the property can be checked or updated efficiently (like monotonic min/max, frequency counts).  
 The sliding window and monotonic deque idea is key in many modern array, string, and interval problems.
+
+### Tags
+Array(#array), Queue(#queue), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set), Monotonic Queue(#monotonic-queue)
+
+### Similar Problems

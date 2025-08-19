@@ -73,3 +73,9 @@ def nearestValidPoint(x, y, points):
 
 ### Summary
 This is a simple **linear search pattern**: scan for candidates, check a validity predicate, and track the candidate with best score while remembering their index. It's a very common pattern for "find minimum/maximum under constraint" problems, such as finding closest/farthest points, optimal candidates in arrays, etc.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- K Closest Points to Origin(k-closest-points-to-origin) (Medium)

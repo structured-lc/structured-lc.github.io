@@ -131,3 +131,9 @@ def gridIllumination(N, lamps, queries):
 
 ### Summary
 This approach is a classic **hash map-based counting** problem: track the count of items influencing different lines (rows, cols, diagonals). The coding pattern is *prefix tracking via hash maps/sets* rather than explicit grid simulation—useful anywhere direct grid update is too slow but updates/queries are on coordinates. Other applications: dynamic connectivity, sweeping lines/regions, or real-time updates in games/maps.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems
+- N-Queens(n-queens) (Hard)

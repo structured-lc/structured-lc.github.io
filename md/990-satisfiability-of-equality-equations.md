@@ -106,3 +106,8 @@ def equationsPossible(equations):
 
 ### Summary
 This solution uses the **Union-Find** (Disjoint Set Union, DSU) pattern, commonly used to resolve connectivity and equivalence problems efficiently, especially when relationships are transitive and can be modeled as sets. It’s a standard technique for problems involving grouping and checking for contradictions and is widely used in network connectivity, Kruskal’s MST, and other graph applications.
+
+### Tags
+Array(#array), String(#string), Union Find(#union-find), Graph(#graph)
+
+### Similar Problems

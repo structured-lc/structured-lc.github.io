@@ -60,3 +60,10 @@ def numSub(s):
 
 ### Summary
 This is a classic 'prefix/group block' problem with a key mathematical formula for summing substrings in runs. The pattern applies widely—counting substrings by group, range, streak, etc.—enabling O(n) solutions where naive approaches would take O(n²).
+
+### Tags
+Math(#math), String(#string)
+
+### Similar Problems
+- Count Number of Homogenous Substrings(count-number-of-homogenous-substrings) (Medium)
+- Count Vowel Substrings of a String(count-vowel-substrings-of-a-string) (Easy)

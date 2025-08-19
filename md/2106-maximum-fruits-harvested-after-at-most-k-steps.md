@@ -99,3 +99,9 @@ def maxTotalFruits(fruits, startPos, k):
 ### Summary
 This problem uses the **prefix sum** and **sliding window**/two-pointer patterns to optimize interval sum queries. The key is translating a path with limited steps into a range query, and using prefix sums to compute those efficiently.  
 This pattern applies to problems involving interval maximums, subarrays with movement constraints, or resource pickup with step limits.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Maximum Performance of a Team(maximum-performance-of-a-team) (Hard)

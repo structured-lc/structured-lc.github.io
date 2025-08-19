@@ -103,3 +103,10 @@ def countSubMultisets(nums, l, r):
 This is a classic **bounded subset sum** problem (bounded knapsack with counts), solved by DP where dp[s] = number of multisets achieving sum s. It's optimized using prefix sums to process each value efficiently.  
 The technique applies to any problem counting subset sums with usage limits, and is common for knapsack with frequency bounds, dice roll probabilities, and coin change when each coin is limited.  
 Patterns: Bounded knapsack, DP over sums, prefix sum DP optimization.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Coin Change(coin-change) (Medium)
+- Coin Change II(coin-change-ii) (Medium)

@@ -78,3 +78,8 @@ def maxIceCream(costs, coins):
 This problem is a classic **Greedy** pattern — always make the locally optimal choice (buy the cheapest available). Sorting the price list and consuming until out of budget gives the best global result.  
 The algorithm pattern applies widely in maximizing choices given limited resources, such as activity selection, knapsack (greedy variant), and scheduling.  
 If all inputs are small integers, a counting/bucket sort pattern can be used for O(n) solutions.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting), Counting Sort(#counting-sort)
+
+### Similar Problems

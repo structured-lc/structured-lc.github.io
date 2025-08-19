@@ -68,3 +68,9 @@ def minDifference(nums):
 
 ### Summary
 This is a **two-pointer/greedy** sorted difference minimization problem. It is widely applicable to scenarios where you have to restrict outliers or trim ends to optimize a range.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Minimize the Maximum Difference of Pairs(minimize-the-maximum-difference-of-pairs) (Medium)

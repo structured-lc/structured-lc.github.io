@@ -103,3 +103,12 @@ def merge(l1, l2):
 
 ### Summary
 This problem illustrates the **divide and conquer** approach on a linked list using **merge sort**, a classic interview pattern for efficient in-place sorting when random access is not possible. The pointer-based splitting/merging is commonly re-used for other linked list manipulations, such as reordering, partitioning, and k-group reversal.
+
+### Tags
+Linked List(#linked-list), Two Pointers(#two-pointers), Divide and Conquer(#divide-and-conquer), Sorting(#sorting), Merge Sort(#merge-sort)
+
+### Similar Problems
+- Merge Two Sorted Lists(merge-two-sorted-lists) (Easy)
+- Sort Colors(sort-colors) (Medium)
+- Insertion Sort List(insertion-sort-list) (Medium)
+- Sort Linked List Already Sorted Using Absolute Values(sort-linked-list-already-sorted-using-absolute-values) (Medium)

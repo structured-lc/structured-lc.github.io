@@ -171,3 +171,8 @@ print(findCitiesInEachStateII(cities))
 
 ### Summary
 This problem uses the **group-by pattern**, filtering based on group aggregates, and custom sorting. This approach is broadly applicable in data analytics and reporting, and common in SQL (“GROUP BY, HAVING, aggregate function, ORDER BY”). Being able to handle group-wise filtering, aggregation, and sorting is a critical coding/data manipulation skill.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -115,3 +115,8 @@ def findGoodSubset(grid):
 This problem uses the **bitmask** and **bitwise operations** pattern, exploiting small n (≤5) to try all two-row combinations efficiently.  
 The key is recognizing the constraint on column sums and leveraging binary properties.  
 This technique is broadly useful anywhere substructures are small and combinatorially search is warranted, e.g., other coding problems with tight constraints on binary arrays or feature activation.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Matrix(#matrix)
+
+### Similar Problems

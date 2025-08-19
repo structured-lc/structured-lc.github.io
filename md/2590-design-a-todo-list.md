@@ -122,3 +122,8 @@ class TodoList:
 
 ### Summary  
 This solution uses object-oriented design to encapsulate task data and operations, providing a clean interface for managing tasks. It leverages dictionaries and sets for efficient storage and lookup, making it suitable for systems with multiple users and tasks. This pattern is common in task management systems and can be applied to various problems involving data management and filtering.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Design(#design), Sorting(#sorting)
+
+### Similar Problems

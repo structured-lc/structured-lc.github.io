@@ -86,3 +86,13 @@ def removeOnes(grid):
 
 ### Summary
 This problem is a matrix bit manipulation problem with "row/column flip" as the allowed operation. The optimal approach: check if each row equals the first row or its complement, which is a common equivalence/consistency-check pattern. This logic can be applied in similar problems involving grid manipulation, toggling states, and subspace or group operations.
+
+### Tags
+Array(#array), Math(#math), Bit Manipulation(#bit-manipulation), Matrix(#matrix)
+
+### Similar Problems
+- Score After Flipping Matrix(score-after-flipping-matrix) (Medium)
+- Minimum Number of Flips to Convert Binary Matrix to Zero Matrix(minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix) (Hard)
+- Minimum Operations to Remove Adjacent Ones in Matrix(minimum-operations-to-remove-adjacent-ones-in-matrix) (Hard)
+- Remove All Ones With Row and Column Flips II(remove-all-ones-with-row-and-column-flips-ii) (Medium)
+- Difference Between Ones and Zeros in Row and Column(difference-between-ones-and-zeros-in-row-and-column) (Medium)

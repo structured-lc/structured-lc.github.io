@@ -84,3 +84,12 @@ def minSteps(n: int) -> int:
 
 ### Summary
 This problem uses the **prime factorization** and **dynamic programming** patterns. The greedy factorization jump lets you "multiply up" to the next factor efficiently. This type of pattern appears in string building/encoding ("copy-paste" patterns), DP problems with factor jumps, and optimization scenarios where operations are multiplicative.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- 4 Keys Keyboard(4-keys-keyboard) (Medium)
+- Broken Calculator(broken-calculator) (Medium)
+- Smallest Value After Replacing With Sum of Prime Factors(smallest-value-after-replacing-with-sum-of-prime-factors) (Medium)
+- Distinct Prime Factors of Product of Array(distinct-prime-factors-of-product-of-array) (Medium)

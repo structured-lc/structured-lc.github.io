@@ -92,3 +92,8 @@ def getProbability(balls):
 
 ### Summary
 This is a recursive combinatorial (counting) problem with symmetry. Classic for recursive partitioning/enumeration, multinomial distributions, and probability calculations over arrangements.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Combinatorics(#combinatorics), Probability and Statistics(#probability-and-statistics)
+
+### Similar Problems

@@ -97,3 +97,10 @@ def baseNeg2(n: int) -> str:
 ### Summary
 This problem centers on **non-standard base conversion** patterns. The key idea is adjusting how you collect digits so that they're always in \{0,1\}, even with negative bases, handling carry/borrowing as needed.  
 This remainder-division approach is a standard and powerful pattern for converting numbers to any (even negative) base, and occurs in problems involving integer encoding or non-traditional number representations.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Encode Number(encode-number) (Medium)
+- Convert Date to Binary(convert-date-to-binary) (Easy)

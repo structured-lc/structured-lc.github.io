@@ -105,3 +105,9 @@ class Foo:
 
 ### Summary
 This is a classic **concurrency coordination pattern**: "ensure N threads run in sequence." The pattern uses signaling primitives like Events or Semaphores to orchestrate strict execution order. It's foundational in thread synchronization and appears often in parallel task orchestration, pipeline processing, or when splitting complex workflows into ordered stages.
+
+### Tags
+Concurrency(#concurrency)
+
+### Similar Problems
+- Print FooBar Alternately(print-foobar-alternately) (Medium)

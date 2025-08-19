@@ -125,3 +125,9 @@ def maximumSubarrayXor(nums: List[int], queries: List[List[int]]) -> List[int]:
 
 ### Summary
 This approach uses **prefix xor and dynamic programming** to precompute the maximum xor for any subarray in O(n²) time, enabling O(1) query responses. The DP table approach is common for range query problems when queries are known in advance and n is reasonable (≤ 1000–2000). The technique can be generalized to other range-maximum or range-query variants, and parallels max subarray sum/xor classical patterns. For even larger constraints, segment trees or prefix trie approaches would be considered.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Make the XOR of All Segments Equal to Zero(make-the-xor-of-all-segments-equal-to-zero) (Hard)

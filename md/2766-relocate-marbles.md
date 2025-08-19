@@ -93,3 +93,8 @@ def relocateMarbles(nums, moveFrom, moveTo):
 
 ### Summary  
 We used the **Set manipulation** pattern here, taking advantage of unique element storage and fast add/remove operations. This approach is common in problems involving states where duplicity is irrelevant (e.g., sets of positions, rooms, or active flags). The core pattern is: use a set to model the state space and apply each operation as a membership update which is fast and clean. This solution can be applied whenever you need unique, unordered elements and efficient insert/remove.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Simulation(#simulation)
+
+### Similar Problems

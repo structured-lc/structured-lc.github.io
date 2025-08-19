@@ -89,3 +89,11 @@ def divideArray(nums):
 
 ### Summary
 This problem is a classic “counting/frequency” pattern. The core insight is every unique number’s frequency must be even to allow equal pairing. The typical approach either counts frequencies using an array or hash map, or sorts the array and checks adjacent pairs. This technique often applies to problems involving making pairs, groups, or partitions where element equality matters.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Counting(#counting)
+
+### Similar Problems
+- Sort Array by Increasing Frequency(sort-array-by-increasing-frequency) (Easy)
+- Distribute Elements Into Two Arrays I(distribute-elements-into-two-arrays-i) (Easy)
+- Distribute Elements Into Two Arrays II(distribute-elements-into-two-arrays-ii) (Hard)

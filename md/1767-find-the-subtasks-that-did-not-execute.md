@@ -144,3 +144,8 @@ def find_unexecuted_subtasks(tasks, executed):
 
 ### Summary
 This problem uses the **set difference** pattern: produce all possible combinations, then subtract the *existing* (executed) ones. The core technique is **efficient lookups** (set/dict) and systematic enumeration of possible outputs. This pattern is broadly common in SQL (left join, anti-join) and also in coding: it can apply to diff-ing tables, missing values, and more.
+
+### Tags
+Database(#database)
+
+### Similar Problems

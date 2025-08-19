@@ -143,3 +143,12 @@ def numberOfCombinations(num: str) -> int:
 
 ### Summary
 This problem is a **DP with substring comparison** challenge. It utilizes a classic dynamic programming approach, but is made feasible by precalculating the **Longest Common Prefix (LCP)** table so number comparisons between segments are O(1) regardless of their length. This pattern—combining DP with string precomputations—arises in advanced string parsing, cryptographic protocols, or any case where “split and compare” is required.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Suffix Array(#suffix-array)
+
+### Similar Problems
+- Decode Ways(decode-ways) (Medium)
+- Decode Ways II(decode-ways-ii) (Hard)
+- Restore The Array(restore-the-array) (Hard)
+- Number of Beautiful Partitions(number-of-beautiful-partitions) (Hard)

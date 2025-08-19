@@ -99,3 +99,9 @@ def findCelebrity(n):
 
 ### Summary
 This problem uses the **"two-pass candidate elimination"** pattern, which is efficient for situations where you need to identify a unique “winner” among many candidates, especially when pairwise comparison is costly. This pass-and-verify technique is applicable in similar scenarios, like the majority element problem, and is a useful alternative to brute-force solutions when optimization of pairwise checks is critical.
+
+### Tags
+Two Pointers(#two-pointers), Graph(#graph), Interactive(#interactive)
+
+### Similar Problems
+- Find the Town Judge(find-the-town-judge) (Easy)

@@ -120,3 +120,8 @@ def maxHappyGroups(batchSize, groups):
 ### Summary
 This problem uses **state compression DP and memoization**, focusing on the remainders of group sizes modulo batchSize to represent all possible states. Its core is modeling the problem via the counts of remainder buckets and recursively simulating the best next step.  
 This dynamic programming pattern (state compression + memoization) is common in problems with combinatorial arrangements and group dependencies (such as coin change with limited coins, or job scheduling with dependent batches).
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Memoization(#memoization), Bitmask(#bitmask)
+
+### Similar Problems

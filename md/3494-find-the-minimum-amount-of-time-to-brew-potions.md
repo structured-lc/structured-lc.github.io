@@ -104,3 +104,8 @@ def findMinimumTime(skill, mana):
 
 ### Summary
 This problem is a classic **pipeline simulation** (or “job-shop scheduling” for a single pipeline). The code models a Gantt chart for tasks in a stage-by-stage process, updating when each wizard is available. The pattern and logic is reusable for multi-stage manufacturing, CPU pipeline modeling, and “time to complete last job in sequence” setups.
+
+### Tags
+Array(#array), Simulation(#simulation), Prefix Sum(#prefix-sum)
+
+### Similar Problems

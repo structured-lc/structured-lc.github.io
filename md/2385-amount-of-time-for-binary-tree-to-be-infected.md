@@ -139,3 +139,12 @@ def amountOfTime(root, start):
 
 ### Summary
 This is a graph traversal problem applied to a binary tree, leveraging BFS to model the per-minute "infection" spread. The key is the **parent mapping** to enable upward movement, converting the tree into an undirected graph traversal for this simulation. This is a classic BFS layer-based pattern, often used for shortest path, level-order problems, and infectious spread modeling.
+
+### Tags
+Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Maximum Depth of Binary Tree(maximum-depth-of-binary-tree) (Easy)
+- Shortest Path to Get Food(shortest-path-to-get-food) (Medium)
+- All Nodes Distance K in Binary Tree(all-nodes-distance-k-in-binary-tree) (Medium)
+- Count the Number of Infection Sequences(count-the-number-of-infection-sequences) (Hard)

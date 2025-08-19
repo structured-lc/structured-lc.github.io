@@ -97,3 +97,15 @@ The core insight is recognizing **Partition Equal Subset Sum** as a Subset Sum (
 - Backpack (knapsack) with weights/values (introduced with extra DP dimensions)
 
 Recognizing problem reduction to subset sum and exploiting target-oriented state DP is a key dynamic programming tactic.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Partition to K Equal Sum Subsets(partition-to-k-equal-sum-subsets) (Medium)
+- Minimize the Difference Between Target and Chosen Elements(minimize-the-difference-between-target-and-chosen-elements) (Medium)
+- Maximum Number of Ways to Partition an Array(maximum-number-of-ways-to-partition-an-array) (Hard)
+- Partition Array Into Two Arrays to Minimize Sum Difference(partition-array-into-two-arrays-to-minimize-sum-difference) (Hard)
+- Find Subarrays With Equal Sum(find-subarrays-with-equal-sum) (Easy)
+- Number of Great Partitions(number-of-great-partitions) (Hard)
+- Split With Minimum Sum(split-with-minimum-sum) (Easy)

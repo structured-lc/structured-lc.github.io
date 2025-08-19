@@ -122,3 +122,9 @@ def first_login_per_player(activity_log):
 
 ### Summary
 This problem uses the classic **group-by aggregation** pattern to extract per-entity minimums (first login per player). The coding pattern is widely applicable for **finding per-group extrema** (min, max, first, last, etc.), which arises in log data analysis, time-series analytics, and more. This is also a foundational database skill: knowing how to aggregate and summarize large tables efficiently.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Game Play Analysis II(game-play-analysis-ii) (Easy)

@@ -123,3 +123,12 @@ def timeLimit(fn, t):
 This problem is a classic example of controlling asynchronous execution and enforcing deadlines using **Promise.race (or asyncio.wait in Python)**.  
 The pattern appears frequently in **timeouts, debouncing, throttling, and resilience patterns** in modern async/server code.  
 It teaches clean async composition, edge cases, and explains when and how to enforce time limits.
+
+### Tags
+
+### Similar Problems
+- Sleep(sleep) (Easy)
+- Debounce(debounce) (Medium)
+- Promise Pool(promise-pool) (Medium)
+- Cache With Time Limit(cache-with-time-limit) (Medium)
+- Throttle(throttle) (Medium)

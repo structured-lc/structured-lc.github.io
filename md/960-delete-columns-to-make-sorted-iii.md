@@ -84,3 +84,8 @@ def minDeletionSize(strs):
 
 ### Summary
 This problem uses the **Longest Increasing Subsequence (LIS)** dynamic programming pattern applied to columns (with a twist—all rows must be non-decreasing across the selected columns). This pattern, while more typically used for arrays, can be generalized for two-dimensional or multi-sequence constraints, and often appears in problems involving "minimum deletions" to achieve sorted order across sequences, such as "Delete Columns to Make Sorted II" and other grid-related DP optimizations.
+
+### Tags
+Array(#array), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

@@ -145,3 +145,7 @@ def cancellable(fn, args, t):
 This problem is a classic example of the **timer/cancel pattern**, mimicking `setInterval`/`clearInterval` in JavaScript.  
 It’s commonly seen in frontend event handling, polling, and tasks needing repeated execution with manual stop.  
 It reinforces understanding of timers, concurrency, and cancellation semantics, which are applicable in both frontend and backend scheduling problems.
+
+### Tags
+
+### Similar Problems

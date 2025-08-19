@@ -89,3 +89,11 @@ def findArray(pref):
 ### Summary
 This problem is a classic bit manipulation and array inversion problem, leveraging the property that XOR is its own inverse.  
 The approach uses a prefix-to-original reduction pattern, often used in both sum and XOR questions (prefix sums, decode xor-ed array, etc). This inversion technique, using a rolling difference/idempotent operation, is useful for a class of problems where cumulative/invertible results are stored instead of raw inputs.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Single Number III(single-number-iii) (Medium)
+- Count Triplets That Can Form Two Arrays of Equal XOR(count-triplets-that-can-form-two-arrays-of-equal-xor) (Medium)
+- Decode XORed Array(decode-xored-array) (Easy)

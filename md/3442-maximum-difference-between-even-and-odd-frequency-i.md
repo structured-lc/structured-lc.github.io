@@ -93,3 +93,8 @@ def max_difference_even_odd_frequency(s):
 
 ### Summary
 This is a classic **hash table frequency counting** pattern, optimized by focusing only on finding max among odds and min among evens, since character set size is small. This counting principle applies to a wide variety of string and frequency problems, including finding mode/multiplicity, string construction, and histogram analysis.
+
+### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems

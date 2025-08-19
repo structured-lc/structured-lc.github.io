@@ -103,3 +103,9 @@ This problem is a classic example of the **dynamic programming: subsequence coun
 It's applicable in string pattern matching, genetics (DNA subpatterns), and text parsing where order matters but not contiguity.  
 Patterns used: **2D DP with space optimization**, **subproblem state modeling**.  
 Similar: Leetcode 1143 (Longest Common Subsequence), Edit Distance, etc.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Number of Unique Good Subsequences(number-of-unique-good-subsequences) (Hard)

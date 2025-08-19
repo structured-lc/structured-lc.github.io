@@ -153,3 +153,8 @@ def verticalTraversal(root):
 
 ### Summary
 This solution uses the **column-table pattern** for two-dimensional traversals, combining BFS (or DFS) and structured collection with sorting to manage overlapping and ordering rules. It's a classic application of positional mapping and can apply to problems where elements must be grouped and ordered by two or more attributes (e.g., matrix-like grouping, skyline problems, directional traversals).
+
+### Tags
+Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Sorting(#sorting), Binary Tree(#binary-tree)
+
+### Similar Problems

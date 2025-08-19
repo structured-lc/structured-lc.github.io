@@ -87,3 +87,9 @@ def minimumObstacles(grid):
 
 ### Summary
 This problem is a classic **Dijkstra’s shortest-path** pattern, specialized for grid traversal with 0/1 weights (sometimes called 0-1 BFS). The same technique applies to **minimum cost pathfinding** on weighted grids, and can be adapted for related problems like minimum time, energy, or other constraints. Recognizing when to use a priority queue (for weighted graphs) is key in interview-level graph and grid traverse problems.
+
+### Tags
+Array(#array), Breadth-First Search(#breadth-first-search), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Shortest Path in a Grid with Obstacles Elimination(shortest-path-in-a-grid-with-obstacles-elimination) (Hard)

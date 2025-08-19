@@ -76,3 +76,13 @@ def findDuplicate(nums):
 
 ### Summary
 This solution uses the **Floyd's Tortoise and Hare algorithm**, a classic cycle detection technique, treating array indices and values like a linked list structure to find the duplicate. This is a powerful, space-efficient pattern also applicable to linked list cycle problems, especially **finding the cycle entrance** (cycle start), not just its existence. This approach is optimal when mutation isn’t allowed and extra space is restricted.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- First Missing Positive(first-missing-positive) (Hard)
+- Single Number(single-number) (Easy)
+- Linked List Cycle II(linked-list-cycle-ii) (Medium)
+- Missing Number(missing-number) (Easy)
+- Set Mismatch(set-mismatch) (Easy)

@@ -98,3 +98,10 @@ def checkValidString(s: str) -> bool:
 This is a **greedy/interval tracking pattern**—by maintaining a possible range of open left parentheses, you efficiently account for all possible wildcard scenarios without recursion or brute force.  
 It's a common idea for problems where characters have multiple valid roles or ambiguous choices, and you want to track "all possibilities" compactly through bounds.  
 This approach avoids 3ⁿ explosion by only recording necessary aggregate information, making it ideal for string processing and validation problems with ambiguous symbols.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Stack(#stack), Greedy(#greedy)
+
+### Similar Problems
+- Special Binary String(special-binary-string) (Hard)
+- Check if a Parentheses String Can Be Valid(check-if-a-parentheses-string-can-be-valid) (Medium)

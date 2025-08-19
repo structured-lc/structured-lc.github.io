@@ -84,3 +84,8 @@ def print_valid_phone_numbers(file_path):
 
 ### Summary
 This problem is a classic *filter-by-pattern* task and is best solved with regular expressions. It's a common shell or scripting pattern — reading and matching text with fixed (or parameterized) formats. The code pattern here applies to log filtering, data cleaning, or any case where only strictly formatted text lines are needed from messy input.
+
+### Tags
+Shell(#shell)
+
+### Similar Problems

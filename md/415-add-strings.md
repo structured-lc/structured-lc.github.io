@@ -103,3 +103,11 @@ def addStrings(num1: str, num2: str) -> str:
 ### Summary
 This solution implements the **digit-by-digit simulation of human addition** for arbitrarily large numbers without integer conversion.  
 It applies the *Two Pointers* pattern with a *carry-forward* mechanism; similar logic is widely useful for big-integer arithmetic, manual subtraction, or in problems like merging in reverse or processing from both ends. This code is robust, efficient, and interview-ready.
+
+### Tags
+Math(#math), String(#string), Simulation(#simulation)
+
+### Similar Problems
+- Add Two Numbers(add-two-numbers) (Medium)
+- Multiply Strings(multiply-strings) (Medium)
+- Add to Array-Form of Integer(add-to-array-form-of-integer) (Easy)

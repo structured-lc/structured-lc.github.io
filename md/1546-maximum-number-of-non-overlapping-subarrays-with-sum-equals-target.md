@@ -74,3 +74,8 @@ def maxNonOverlapping(nums, target):
 
 ### Summary
 This approach uses prefix sum and hashing, a **classic non-overlapping subarray partitioning** pattern. The greedy strategy (resetting on each cut) is crucial for non-overlap. This coding pattern applies to other problems of summing up segments with constraints on overlap or uniqueness.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Prefix Sum(#prefix-sum)
+
+### Similar Problems

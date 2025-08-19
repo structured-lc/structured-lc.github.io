@@ -144,3 +144,11 @@ This problem is a classic example of **online rank tracking** using the double h
 By always keeping the best k elements (by score & lex order) in a max-heap and the rest in a min-heap, we can support fast incremental rank retrieval.  
 This pattern is common in problems needing real-time top-k queries, like finding the kᵗʰ largest/smallest element or streaming median.  
 The key insight is careful heap balancing on both add and get.
+
+### Tags
+Design(#design), Heap (Priority Queue)(#heap-priority-queue), Data Stream(#data-stream), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Find Median from Data Stream(find-median-from-data-stream) (Hard)
+- Kth Largest Element in a Stream(kth-largest-element-in-a-stream) (Easy)
+- Finding MK Average(finding-mk-average) (Hard)

@@ -89,3 +89,13 @@ def longestConsecutive(nums):
 
 ### Summary
 This problem is a classic example of using a hash set for fast lookup and deduplication patterns. The approach avoids repeated work by only starting chains at sequence beginnings, ensuring every integer is considered at most twice. The coding technique translates well to other scenarios involving range detection, hash-based scanning, and is particularly useful in problems building on **set-based O(n)** logic.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Union Find(#union-find)
+
+### Similar Problems
+- Binary Tree Longest Consecutive Sequence(binary-tree-longest-consecutive-sequence) (Medium)
+- Find Three Consecutive Integers That Sum to a Given Number(find-three-consecutive-integers-that-sum-to-a-given-number) (Medium)
+- Maximum Consecutive Floors Without Special Floors(maximum-consecutive-floors-without-special-floors) (Medium)
+- Length of the Longest Alphabetical Continuous Substring(length-of-the-longest-alphabetical-continuous-substring) (Medium)
+- Find the Maximum Number of Elements in Subset(find-the-maximum-number-of-elements-in-subset) (Medium)

@@ -93,3 +93,9 @@ def maximumProduct(nums):
 ### Summary
 The core idea is to recognize that the **maximum product of three numbers** comes either from the three largest numbers or from two smallest (possibly negative) numbers with the largest positive.  
 This uses the classic “single scan, track extrema” coding pattern, which is very common for “find top k” problems. This approach also appears in interview contexts whenever you’re asked about subarray or subset optimization with little extra storage.
+
+### Tags
+Array(#array), Math(#math), Sorting(#sorting)
+
+### Similar Problems
+- Maximum Product Subarray(maximum-product-subarray) (Medium)

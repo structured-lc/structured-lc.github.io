@@ -94,3 +94,8 @@ def widestPairOfIndices(nums1, nums2):
 
 ### Summary
 We used the **prefix sum + hash map pattern** to efficiently identify the widest subarray with equal range sums. This approach is common in problems like *Contiguous Array (LeetCode 525)* and any problem requiring matching range properties or zero-sum subarrays. We optimize from O(n²) naive to O(n) by using running differences and tracking their first occurrence. This is a highly reusable coding pattern for interview scenarios.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
+
+### Similar Problems

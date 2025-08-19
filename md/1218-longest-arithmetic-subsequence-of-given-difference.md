@@ -88,3 +88,9 @@ def longestSubsequence(arr, difference):
 This problem is a classic application of dynamic programming combined with a hash map for fast lookups, similar to the "Longest Increasing Subsequence (LIS)" but tailored for a specific difference.  
 The approach updates lengths map (DP) in a single pass and has many parallels to problems involving subsequences/strings and prefix-based logic.  
 This pattern appears in other arithmetic progression, jump game, and chain-building problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Destroy Sequential Targets(destroy-sequential-targets) (Medium)

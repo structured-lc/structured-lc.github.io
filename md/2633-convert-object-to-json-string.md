@@ -106,3 +106,11 @@ def json_stringify(obj):
 
 ### Summary
 This solution uses a **recursive serialization** pattern, where each component (object, array, etc.) delegates to the same function for its children. This is a classic example of recursive data structure traversal for serialization and parsing, which is common in JSON, XML, and tree-like data problems. It’s highly applicable to any problem that requires processing nested or recursively defined data without using libraries.
+
+### Tags
+
+### Similar Problems
+- JSON Deep Equal(json-deep-equal) (Medium)
+- Flatten Deeply Nested Array(flatten-deeply-nested-array) (Medium)
+- Array of Objects to Matrix(array-of-objects-to-matrix) (Hard)
+- Differences Between Two Objects(differences-between-two-objects) (Medium)

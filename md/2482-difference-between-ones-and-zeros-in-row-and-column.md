@@ -98,3 +98,12 @@ def onesMinusZeros(grid):
 
 ### Summary
 This problem is a classic example of the "precompute row/column stats to answer per-cell queries efficiently" pattern, commonly seen in 2D matrix problems. Here, precomputing counts allows O(1) lookup per cell for fast matrix computation. This approach (row/column prefix sums or counts) is broadly reusable for questions requiring you to aggregate or compare across rows/columns, such as finding submatrix sums, computing regions, or data summarization in grids.
+
+### Tags
+Array(#array), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems
+- 01 Matrix(01-matrix) (Medium)
+- Special Positions in a Binary Matrix(special-positions-in-a-binary-matrix) (Easy)
+- Remove All Ones With Row and Column Flips(remove-all-ones-with-row-and-column-flips) (Medium)
+- First Completely Painted Row or Column(first-completely-painted-row-or-column) (Medium)

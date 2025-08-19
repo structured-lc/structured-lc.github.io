@@ -199,3 +199,8 @@ def calculate_influence(salespeople, customers, sales):
 
 ### Summary
 The approach uses a **multi-table LEFT JOIN and GROUP BY aggregation** pattern. This pattern is very common for statistics/analytics on relational data (databases). It can be applied for “sum per group”, “average/group”, “count/group” and other associative aggregation problems, especially with mandatory-zero handling for missing subgroups.
+
+### Tags
+Database(#database)
+
+### Similar Problems

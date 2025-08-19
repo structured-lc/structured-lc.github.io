@@ -101,3 +101,9 @@ def minTimeToType(word: str) -> int:
 This problem is a **greedy pattern** around minimal incremental cost between circular array elements.  
 It can be applied to ring-like data structures, minimum-walk on modulus/jump operations, and scenarios where cyclic distance (wrapping around) must be measured.  
 No advanced data structures are needed; the solution is optimized and purely arithmetic.
+
+### Tags
+String(#string), Greedy(#greedy)
+
+### Similar Problems
+- Minimum Distance to Type a Word Using Two Fingers(minimum-distance-to-type-a-word-using-two-fingers) (Hard)

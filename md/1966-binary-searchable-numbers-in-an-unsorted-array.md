@@ -111,3 +111,8 @@ def binarySearchableNumbers(nums):
 
 ### Summary
 This approach uses the common **precompute prefix max / suffix min** pattern, which lets us answer range max/min queries in O(1) time after an O(n) setup. This technique turns a brute-force O(n²) problem into an O(n) problem. It's applicable in a wide variety of "for each position, compare with all left/right" type problems, such as trapped water, leaders in array, and stock price questions.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems

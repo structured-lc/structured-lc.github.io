@@ -102,3 +102,10 @@ def makeLargestSpecial(s: str) -> str:
 This problem follows a classic **recursive divide-and-conquer** pattern: recursively partitioning the input on balanced conditions (special substrings), solving subproblems, and combining by sorting.  
 The method leverages properties of "special binary strings" and appears in problems about parsing/balanced substrings, e.g., valid parentheses, Dyck words, etc.  
 Sorting at each recursion ensures lexicographic optimality— a standard trick with recursively-defined strings and reordering.
+
+### Tags
+String(#string), Recursion(#recursion)
+
+### Similar Problems
+- Valid Parenthesis String(valid-parenthesis-string) (Medium)
+- Number of Good Binary Strings(number-of-good-binary-strings) (Medium)

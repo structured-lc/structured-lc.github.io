@@ -164,3 +164,11 @@ def abbreviateProduct(left: int, right: int) -> str:
 ### Summary
 This problem uses number theory (factor counts for 2, 5) and floating-point logarithms to accurately manage and abbreviate very large products. The **pattern combines digit tracking, modulo arithmetic, and factor counting**, a classic in handling big numbers for factorial-like products in interviews.  
 This digit-abbreviation pattern can be applied in any scenario where full products are too large to represent directly, such as high precision statistics, factorials, and combinatorics.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Factorial Trailing Zeroes(factorial-trailing-zeroes) (Medium)
+- Maximum Trailing Zeros in a Cornered Path(maximum-trailing-zeros-in-a-cornered-path) (Medium)
+- Find All Good Indices(find-all-good-indices) (Medium)

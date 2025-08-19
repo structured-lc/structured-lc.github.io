@@ -138,3 +138,8 @@ def overall_acceptance_rate(friend_requests, request_accepted):
 
 ### Summary
 This problem utilizes the **hash set pattern** for deduplicating relationships and efficiently computing ratios. It demonstrates careful attention to *unique* entity pairs—common in social network-related questions. This approach is widely applicable for counting unique relationships, deduplication, and aggregate statistics in both code and database (SQL) contexts.
+
+### Tags
+Database(#database)
+
+### Similar Problems

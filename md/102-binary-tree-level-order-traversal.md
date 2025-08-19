@@ -114,3 +114,17 @@ def levelOrder(root):
 
 ### Summary  
 This problem is a classic example of the **Breadth-First Search (BFS) pattern** for trees. Using a queue to process nodes level by level cleanly separates each depth. The code pattern used here is a template for many binary tree problems involving “by levels” or “shortest path” style of traversal. This method is also applicable for problems such as finding the minimum depth, average of each level, or connecting nodes at the same level.
+
+### Tags
+Tree(#tree), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Binary Tree Zigzag Level Order Traversal(binary-tree-zigzag-level-order-traversal) (Medium)
+- Binary Tree Level Order Traversal II(binary-tree-level-order-traversal-ii) (Medium)
+- Minimum Depth of Binary Tree(minimum-depth-of-binary-tree) (Easy)
+- Binary Tree Vertical Order Traversal(binary-tree-vertical-order-traversal) (Medium)
+- Average of Levels in Binary Tree(average-of-levels-in-binary-tree) (Easy)
+- N-ary Tree Level Order Traversal(n-ary-tree-level-order-traversal) (Medium)
+- Cousins in Binary Tree(cousins-in-binary-tree) (Easy)
+- Minimum Number of Operations to Sort a Binary Tree by Level(minimum-number-of-operations-to-sort-a-binary-tree-by-level) (Medium)
+- Divide Nodes Into the Maximum Number of Groups(divide-nodes-into-the-maximum-number-of-groups) (Hard)

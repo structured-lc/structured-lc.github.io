@@ -118,3 +118,8 @@ def sum_of_squares_of_distinct_counts(nums):
 The brute-force approach considers all subarrays and counts the unique numbers in O(n) per subarray, leading to O(n²) time.  
 It uses the **hashmap + two pointers** pattern, common for sliding window subarray uniqueness/count problems.  
 More advanced approaches (for very large arrays) may involve segment trees, Mo’s algorithm, or contribution techniques—but for interview and practical competitive code this pattern is highly adaptable for substring/subarray distinct element statistics.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
+
+### Similar Problems

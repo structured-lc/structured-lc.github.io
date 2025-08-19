@@ -144,3 +144,10 @@ def max_moves_to_kill_all_pawns(kx, ky, positions):
 
 ### Summary
 This is a **game DP** with **bitmask state compression and precomputed shortest paths**. The key patterns: memoization, alternate-turn minimax, precomputing move costs, and using bitmasking for subset state. This paradigm applies to traveling salesman, optimal coin game, and other "turn-based remnant subset" problems.
+
+### Tags
+Array(#array), Math(#math), Bit Manipulation(#bit-manipulation), Breadth-First Search(#breadth-first-search), Game Theory(#game-theory), Bitmask(#bitmask)
+
+### Similar Problems
+- Knight Probability in Chessboard(knight-probability-in-chessboard) (Medium)
+- Check Knight Tour Configuration(check-knight-tour-configuration) (Medium)

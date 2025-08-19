@@ -74,3 +74,12 @@ def longestPrefix(s: str) -> str:
 
 ### Summary
 This problem is a classic example of the string prefix-suffix problem, efficiently solved using the KMP algorithm's prefix function. This approach avoids brute-force O(n²) by building a partial match table in linear time. Recognizing the "overlapping prefix-suffix" requirement is key, and this pattern often arises in string search problems like substring matching and finding repeated patterns.
+
+### Tags
+String(#string), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
+
+### Similar Problems
+- Sum of Scores of Built Strings(sum-of-scores-of-built-strings) (Hard)
+- Maximum Deletions on a String(maximum-deletions-on-a-string) (Hard)
+- Minimum Time to Revert Word to Initial State II(minimum-time-to-revert-word-to-initial-state-ii) (Hard)
+- Minimum Time to Revert Word to Initial State I(minimum-time-to-revert-word-to-initial-state-i) (Medium)

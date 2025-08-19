@@ -120,3 +120,14 @@ def maxPathSum(root):
 
 ### Summary
 This is a classic tree **DFS recursion with post-order traversal** problem, using an auxiliary variable to track a global optimum. The key logic is that *while calculating the local maximum at each node (could fork in both directions), you can only pick one direction to propagate upwards*. This pattern reappears in many "maximum path sum"-style problems for trees and graphs, and closely relates to DP on trees—often called "tree DP."
+
+### Tags
+Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Path Sum(path-sum) (Easy)
+- Sum Root to Leaf Numbers(sum-root-to-leaf-numbers) (Medium)
+- Path Sum IV(path-sum-iv) (Medium)
+- Longest Univalue Path(longest-univalue-path) (Medium)
+- Time Needed to Inform All Employees(time-needed-to-inform-all-employees) (Medium)
+- Difference Between Maximum and Minimum Price Sum(difference-between-maximum-and-minimum-price-sum) (Hard)

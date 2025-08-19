@@ -86,3 +86,9 @@ def minimumCost(s: str) -> int:
 The approach is a **greedy scan of transition boundaries**, always taking the minimal flip cost at each change.  
 This is a common greedy or prefix-suffix boundary-flipping pattern, similar to "minimum flips to make string monotonic" and related prefix/suffix optimization problems.  
 It’s highly efficient due to the additive greedy breakdown, and the trick is recognizing when/where flips are necessary.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
+
+### Similar Problems
+- Flip String to Monotone Increasing(flip-string-to-monotone-increasing) (Medium)

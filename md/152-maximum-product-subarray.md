@@ -97,3 +97,13 @@ def maxProduct(nums):
 
 This solution uses an optimized dynamic programming approach to track both the maximum and minimum products ending at each position, allowing for sign changes that come from negative numbers. The coding pattern is a "state-variable DP" or "sliding window DP," commonly used for interval/contiguous subarray problems.  
 This pattern is also seen in Maximum Subarray (Kadane’s Algorithm), and any problems where local minima/maxima can 'flip' and affect global results due to sign changes (e.g., stock trading, profit/loss intervals, etc).
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Maximum Subarray(maximum-subarray) (Medium)
+- House Robber(house-robber) (Medium)
+- Product of Array Except Self(product-of-array-except-self) (Medium)
+- Maximum Product of Three Numbers(maximum-product-of-three-numbers) (Easy)
+- Subarray Product Less Than K(subarray-product-less-than-k) (Medium)

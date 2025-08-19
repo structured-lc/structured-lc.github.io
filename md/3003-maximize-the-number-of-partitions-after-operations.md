@@ -113,3 +113,9 @@ def maxPartitionsAfterOperations(s: str, k: int) -> int:
 
 ### Summary
 This problem uses the **bitmask dynamic programming** pattern, perfect for partitioning and unique char constraints when the alphabet is small. The approach recursively explores all cases of at most one modification, memoizing repeated states. The solution pattern is common in problems limiting "k distinct" elements and can adapt to situations with multiple allowed changes, different partition constraints, or other alphabet-limited states.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems
+- Can Make Palindrome from Substring(can-make-palindrome-from-substring) (Medium)

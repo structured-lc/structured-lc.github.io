@@ -150,3 +150,8 @@ def pruneTree(root):
 
 ### Summary
 This problem is a **classic binary tree pruning** question that uses a *post-order* DFS traversal. The recursive traversal ensures all decisions about pruning a node are based on the pruned subtrees below it. The approach is efficient, clear, and applicable to any tree pruning problem where information needs to be aggregated upward from children to parent. This problem type is common in tree traversals, dynamic programming on trees, and can also be adapted for filtering and reducing other hierarchical data structures.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

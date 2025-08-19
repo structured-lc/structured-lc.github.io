@@ -141,3 +141,11 @@ def longestPath(parent, s):
 
 ### Summary
 This problem demonstrates the classic use of DFS on trees, specifically the "aggregation" pattern where each node gathers information from its children. In particular, capturing the two longest distinct-child paths echoes the "diameter of tree" pattern, but conditioned on an adjacent-character constraint. This approach is widely used for various forms of path or subtree queries and can be adapted to problems with similar aggregation requirements.
+
+### Tags
+Array(#array), String(#string), Tree(#tree), Depth-First Search(#depth-first-search), Graph(#graph), Topological Sort(#topological-sort)
+
+### Similar Problems
+- Diameter of Binary Tree(diameter-of-binary-tree) (Easy)
+- Longest Univalue Path(longest-univalue-path) (Medium)
+- Choose Edges to Maximize Score in a Tree(choose-edges-to-maximize-score-in-a-tree) (Medium)

@@ -98,3 +98,11 @@ def candy(ratings):
 This problem is a classic **greedy/array manipulation** problem.  
 The two-pass scan (left-to-right, then right-to-left) is a common pattern for enforcing local ordering constraints when each element depends on both neighbors.  
 Patterns like this apply to problems involving hills/valleys, stock buy/sell with two positions, or similar “enforce min/max in both directions” tasks.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems
+- Minimize Maximum Value in a Grid(minimize-maximum-value-in-a-grid) (Hard)
+- Minimum Number of Operations to Satisfy Conditions(minimum-number-of-operations-to-satisfy-conditions) (Medium)
+- Check if Grid Satisfies Conditions(check-if-grid-satisfies-conditions) (Easy)

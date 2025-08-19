@@ -81,3 +81,13 @@ def findPeakElement(nums):
 ### Summary
 
 This problem leverages the **binary search** pattern but applies it to a "property" (peak detection) instead of a value. It's an example of using binary search to detect a condition that divides the search space, not simply to find a target. Similar ideas arise in problems involving "mountain arrays", searching for threshold crossings, or unimodal array peaks.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Peak Index in a Mountain Array(peak-index-in-a-mountain-array) (Medium)
+- Find a Peak Element II(find-a-peak-element-ii) (Medium)
+- Pour Water Between Buckets to Make Water Levels Equal(pour-water-between-buckets-to-make-water-levels-equal) (Medium)
+- Count Hills and Valleys in an Array(count-hills-and-valleys-in-an-array) (Easy)
+- Find the Peaks(find-the-peaks) (Easy)

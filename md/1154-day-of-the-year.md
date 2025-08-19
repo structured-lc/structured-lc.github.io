@@ -82,3 +82,8 @@ def dayOfYear(date: str) -> int:
 
 ### Summary
 This is a classic "calendar math" problem and a good example of constant-time array summing for month data, with a simple edge case (leap years). The approach is direct: parse, check leap year, sum array slice, and add. This pattern (slicing an array to sum ranges, adjusting based on edge rules) is common for problems involving dates, ranges, or cumulative data.
+
+### Tags
+Math(#math), String(#string)
+
+### Similar Problems

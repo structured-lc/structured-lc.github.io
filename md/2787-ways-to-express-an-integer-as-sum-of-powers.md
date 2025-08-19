@@ -107,3 +107,11 @@ It highlights the standard pattern:
 - Process candidates (here, base values)  
 - Update ways to reach each sum without using any number twice (right-to-left DP update)  
 The approach generalizes to similar subset-sum and combinational sum problems, and is common for Leetcode DP, knapsack, and combinatorial counting interview questions.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Perfect Squares(perfect-squares) (Medium)
+- Combination Sum IV(combination-sum-iv) (Medium)
+- Target Sum(target-sum) (Medium)

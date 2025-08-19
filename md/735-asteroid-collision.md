@@ -92,3 +92,12 @@ def asteroidCollision(asteroids):
 
 ### Summary
 This problem uses the **stack simulation** pattern: pushing and popping elements based on conditional state transitions. It’s common in scenarios with sequential, one-directional interactions (see: Valid Parentheses, Daily Temperatures, Next Greater Element). The key is efficiently tracking chain-reaction events and only keeping survivors, making it ideal for stack use.
+
+### Tags
+Array(#array), Stack(#stack), Simulation(#simulation)
+
+### Similar Problems
+- Can Place Flowers(can-place-flowers) (Easy)
+- Destroying Asteroids(destroying-asteroids) (Medium)
+- Count Collisions on a Road(count-collisions-on-a-road) (Medium)
+- Robot Collisions(robot-collisions) (Hard)

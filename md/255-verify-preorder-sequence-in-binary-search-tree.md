@@ -89,3 +89,9 @@ def verifyPreorder(preorder):
 
 ### Summary
 This problem leverages the vivid **BST properties** and the **preorder traversal pattern**. Using a stack to mimic ancestor-tracking allows efficient verification in linear time with minimal state. The pattern (stack to track ancestors and boundaries) is common in tree traversal validation and construction problems, and is useful for serializing/deserializing BSTs, as well as problems about next-greater elements.
+
+### Tags
+Array(#array), Stack(#stack), Tree(#tree), Binary Search Tree(#binary-search-tree), Recursion(#recursion), Monotonic Stack(#monotonic-stack), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Binary Tree Preorder Traversal(binary-tree-preorder-traversal) (Easy)

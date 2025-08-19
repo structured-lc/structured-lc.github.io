@@ -82,3 +82,9 @@ This problem uses a **hash map accumulation pattern** (or, with value bounds, a 
 It’s a classic instance of merging/aggregating items by key, which is common in database group-by, merging frequency arrays, or histogram/count-building tasks.    
 If the value range is small and dense, a counting array is fastest; otherwise, dictionaries (maps) generalize to wider input domains.  
 The coding pattern is highly reusable for aggregating properties by identifier.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Merge Two 2D Arrays by Summing Values(merge-two-2d-arrays-by-summing-values) (Easy)

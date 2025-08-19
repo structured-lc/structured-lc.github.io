@@ -104,3 +104,9 @@ def removeDuplicateLetters(s: str) -> str:
 This problem uses a **monotonic stack** approach, combined with greedy logic and tracking of last occurrences to ensure that the resulting string both avoids duplicates and is lexicographically smallest.  
 Variants of this pattern can be found in other "remove duplicate" or "smallest/largest subsequence" style questions, such as "Smallest Subsequence of Distinct Characters."  
 Understanding the **greedy and stack** combination is essential and widely applicable in substring/subsequence optimization problems.
+
+### Tags
+String(#string), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Smallest K-Length Subsequence With Occurrences of a Letter(smallest-k-length-subsequence-with-occurrences-of-a-letter) (Hard)

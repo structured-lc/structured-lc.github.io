@@ -99,3 +99,10 @@ class Solution:
 This problem is a variant of **binary search with unknown array length**, relying on *exponential backoff* to find a viable search window before applying binary search.  
 The pattern is common in scenarios with limited-access data (linked lists, streaming data, APIs with unbounded data, file readers).  
 The approach illustrates a key technique: *doubling search* to locate target boundaries efficiently, useful in many other blind-search contexts.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Interactive(#interactive)
+
+### Similar Problems
+- Binary Search(binary-search) (Easy)
+- Find the Index of the Large Integer(find-the-index-of-the-large-integer) (Medium)

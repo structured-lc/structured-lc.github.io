@@ -121,3 +121,9 @@ def min_operations(nums, k):
 This is a **heap/greedy coding pattern**: always merge the smallest to grow quickly toward the goal, similar to problems like "Minimum Cost to Connect Ropes."  
 Patterns involving min-heap for repeated merging of minimums appear in greedy optimization, Huffman coding, and resource consolidation scenarios.  
 This approach is robust for any scenario where local minimum greediness leads to global optimality.
+
+### Tags
+Array(#array), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation)
+
+### Similar Problems
+- Minimum Operations to Halve Array Sum(minimum-operations-to-halve-array-sum) (Medium)

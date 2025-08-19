@@ -90,3 +90,10 @@ def minCost(houses, cost, m, n, target):
 
 ### Summary
 This problem uses the "multidimensional DP" technique, tracking three parameters (index, previous color, remaining neighborhoods) and memoizes results to avoid recomputation. Such DP patterns are useful for constrained sequence construction, assignment problems, and path cost optimizations. Understanding the transitions between states (especially when counting neighborhoods) is key for mastering DP in practical scenarios.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Number of Distinct Roll Sequences(number-of-distinct-roll-sequences) (Hard)
+- Paint House IV(paint-house-iv) (Medium)

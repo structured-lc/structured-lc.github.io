@@ -132,3 +132,10 @@ def count_infection_sequences(n, sick):
 
 ### Summary
 This problem uses a combinatorial pattern, combining multinomial coefficients for global orderings and powers of 2 for internal block spread possibilities (blocks between sick children). This type of combinatorics occurs in interval infection, independent subproblems, and queue spreading problems—other scenarios include painting, distributing tasks, or simulating constrained propagations in queues or grids. The key is converting propagation constraints into mathematical structure for efficient computation.
+
+### Tags
+Array(#array), Math(#math), Combinatorics(#combinatorics)
+
+### Similar Problems
+- Contain Virus(contain-virus) (Hard)
+- Amount of Time for Binary Tree to Be Infected(amount-of-time-for-binary-tree-to-be-infected) (Medium)

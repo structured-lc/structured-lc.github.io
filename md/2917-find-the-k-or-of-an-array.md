@@ -82,3 +82,10 @@ def find_k_or(nums, k):
 
 ### Summary
 This problem is a classic example of **bit counting** and manipulation, specifically applied to the "at least k out of n" pattern for setting bits. The main pattern—looping over bits and counting set occurrences—is extremely useful in problems involving majority bits, checking for at least t times set bits, or even advanced voting/aggregation tasks. It's a staple in bitwise manipulation interview questions.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Counting Bits(counting-bits) (Easy)
+- Sum of Values at Indices With K Set Bits(sum-of-values-at-indices-with-k-set-bits) (Easy)

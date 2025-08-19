@@ -121,3 +121,7 @@ def deep_filter(obj, fn):
 
 This problem is a classic **recursive DFS/tree traversal** on nested structures with post-processing pruning (remove empty containers).  
 The technique and pattern is very common in serialization, filtering, validated transformations, and could be adapted to other JSON/tree structure manipulations—especially those requiring deep, structural modifications and clean-up.
+
+### Tags
+
+### Similar Problems

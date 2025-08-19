@@ -99,3 +99,9 @@ def findMinDifference(timePoints):
 
 ### Summary
 This problem is a great example of *bucketization* or *fixed-size boolean array marking* and is a classic use of conversion, sorting, and adjacent differencing for minimum distance on a circle. This pattern is seen in many "modulo" or wraparound difference problems, and applies for any fixed-size discrete domain. The early-out for duplicate detection is an efficient trick for fixed-range problems.
+
+### Tags
+Array(#array), Math(#math), String(#string), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Cost to Set Cooking Time(minimum-cost-to-set-cooking-time) (Medium)

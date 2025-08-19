@@ -88,3 +88,10 @@ def partitionArray(nums, k):
 
 ### Summary
 This problem uses the classic **greedy with sorting** pattern. Sort, then greedily extend groups as far as the rule allows, minimizing the number of groups. The same pattern is often seen in interval covering, scheduling, and grouping problems where "tight packing" is optimal. The greedy approach is provably optimal here due to the sorted structure and local optimality leading to global optimality.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit(longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) (Medium)
+- Maximum Beauty of an Array After Applying Operation(maximum-beauty-of-an-array-after-applying-operation) (Medium)

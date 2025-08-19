@@ -113,3 +113,9 @@ def numOfWays(points):
 This problem is a classic **2D search with constraints** pattern, requiring you to efficiently examine point-pair rectangles for blocking points.  
 The brute-force O(n³) is straightforward and safe for small n, but for large coordinates or larger n, using a **2D prefix sum (grid count table)** is a powerful optimization—common in range counting and fast queries on fixed grids.  
 Such techniques appear in image processing (range queries on images), chessboard problems, and computational geometry.
+
+### Tags
+Array(#array), Math(#math), Geometry(#geometry), Sorting(#sorting), Enumeration(#enumeration)
+
+### Similar Problems
+- Rectangle Area(rectangle-area) (Medium)

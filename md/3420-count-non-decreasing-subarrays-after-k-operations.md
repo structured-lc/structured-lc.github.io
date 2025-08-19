@@ -122,3 +122,9 @@ def countNonDecreasingSubarrays(nums, k):
 This problem uses an **advanced sliding window with monotonic deque/prefix cost** pattern to hit O(n) for counting subarrays that can be made non-decreasing under a global constraint.  
 It generalizes well to "minimum operations for monotonic subarrays" and demonstrates the power of careful two pointers plus hierarchy tracking (monotonic structures).  
 This pattern appears in certain DP optimizations and range query situations (range non-decreasing, min increments/subarray cost).
+
+### Tags
+Array(#array), Stack(#stack), Segment Tree(#segment-tree), Queue(#queue), Sliding Window(#sliding-window), Monotonic Stack(#monotonic-stack), Monotonic Queue(#monotonic-queue)
+
+### Similar Problems
+- Non-decreasing Array(non-decreasing-array) (Medium)

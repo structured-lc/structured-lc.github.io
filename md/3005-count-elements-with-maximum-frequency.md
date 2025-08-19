@@ -94,3 +94,11 @@ def max_frequency_elements(nums):
 This problem is a direct application of the **frequency counter** (hash map/dictionary) pattern, which is very common for counting elements and then selecting based on counts.  
 It's a variant of finding mode(s) in an array.  
 This pattern appears in problems with "top K frequent," "find the mode," "group by element," etc.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Counting(#counting)
+
+### Similar Problems
+- Maximum Frequency of an Element After Performing Operations I(maximum-frequency-of-an-element-after-performing-operations-i) (Medium)
+- Maximum Frequency of an Element After Performing Operations II(maximum-frequency-of-an-element-after-performing-operations-ii) (Hard)
+- Maximum Difference Between Even and Odd Frequency II(maximum-difference-between-even-and-odd-frequency-ii) (Hard)

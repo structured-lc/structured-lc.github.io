@@ -166,3 +166,8 @@ def find_consistently_improving_employees(employees, performance_reviews):
 ### Summary
 This problem uses the **sliding window** and **group by and sort** patterns: for each group (employee), consider the most recent fixed-size window of items.  
 It's a standard approach in SQL and in-memory code when the property involves the last ⌊n/2⌋ or k items. Applies to problems involving time-ordered records, last-k aggregation, and trend validation.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -124,3 +124,9 @@ def minChanges(nums, k):
 
 ### Summary
 This problem is a classic **grouping + DP over states** problem. We efficiently compress overlapping segment constraints using modular grouping, so that we only need to consider the frequency of each value in each group. The DP over xor states is a standard bitmask DP pattern, often seen in problems involving XOR over subarrays or cycles, such as subset XOR or finding subsets with given xor properties. This technique generalizes to other segment/covering problems where overlap can be represented via modularity or state transition.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Maximum XOR Score Subarray Queries(maximum-xor-score-subarray-queries) (Hard)

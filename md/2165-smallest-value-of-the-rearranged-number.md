@@ -92,3 +92,9 @@ def smallestNumber(num: int) -> int:
 
 ### Summary
 The approach is a classic **greedy/digit sort** technique: for positives, arrange digits to form the least integer; for negatives, arrange digits to get the most negative value. It’s efficient because digits are few (≤16), making sort practical. This pattern arises in problems about number rearrangement and is broadly applicable whenever digit order matters for minimum or maximum values.
+
+### Tags
+Math(#math), Sorting(#sorting)
+
+### Similar Problems
+- Largest Number(largest-number) (Medium)

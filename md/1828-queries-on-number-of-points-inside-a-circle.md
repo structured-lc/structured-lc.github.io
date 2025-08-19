@@ -92,3 +92,11 @@ def countPoints(points, queries):
 ### Summary
 Simple geometric brute-force using the distance property for circles.  
 This pattern—check each object against every query object—is a classic double-loop for range-counting problems; if needed for large input, spatial data structures can improve performance. Similar approaches appear in nearest neighbor, collision, or region-counting queries in 2D computational geometry.
+
+### Tags
+Array(#array), Math(#math), Geometry(#geometry)
+
+### Similar Problems
+- Count Lattice Points Inside a Circle(count-lattice-points-inside-a-circle) (Medium)
+- Count Number of Rectangles Containing Each Point(count-number-of-rectangles-containing-each-point) (Medium)
+- Check if the Rectangle Corner Is Reachable(check-if-the-rectangle-corner-is-reachable) (Hard)

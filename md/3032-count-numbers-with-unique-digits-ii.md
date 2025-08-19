@@ -110,3 +110,9 @@ def count_numbers_with_unique_digits(a: int, b: int) -> int:
 This problem uses the **Digit DP** pattern, particularly useful for "count numbers with property P in a range" types where P is about digits and no repetition.  
 This pattern is common for digit constraints, palindrome counting, and similar range queries.  
 Mastering digit dp helps handle a wide variety of unique-digit and bounding problems efficiently.
+
+### Tags
+Hash Table(#hash-table), Math(#math), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Count Numbers with Unique Digits(count-numbers-with-unique-digits) (Medium)

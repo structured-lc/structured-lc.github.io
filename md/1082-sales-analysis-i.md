@@ -156,3 +156,9 @@ def top_sellers(sales):
 
 ### Summary
 This problem uses the **grouping + aggregation (sum) + filtering by maximum** coding pattern. It's common in SQL and can be simulated in code by grouping data, applying a reduction operation, and filtering for the best. This pattern applies to rankings, leaderboards, and any "find top performer(s)" scenario.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Sales Analysis II(sales-analysis-ii) (Easy)

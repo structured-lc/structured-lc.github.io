@@ -79,3 +79,8 @@ def singleNonDuplicate(nums):
 
 ### Summary
 This problem is a classic use of **binary search on a sorted array** with special properties, focusing on index parity to guide search direction. This "divide and conquer by pattern" is a recurring pattern in interview problems involving paired elements or sorted data and can be applied in similar "find the unique/different element among pairs/groups" scenarios.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems

@@ -100,3 +100,8 @@ def countBeautifulSplits(nums):
 
 ### Summary
 We used LCP preprocessing for prefix comparison to efficiently enumerate valid triple splits in O(n²) time and space. This problem mirrors standard techniques in substring matching and prefix array construction. The two-pointer and sliding window approaches are insufficient here since arbitrary-length subarray prefix equality is required. This LCP table idea is applicable to problems requiring fast, repeated prefix or substring comparison, especially in string or sequence analysis contexts.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

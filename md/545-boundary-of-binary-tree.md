@@ -168,3 +168,9 @@ class Solution:
 
 ### Summary
 This approach is a **variation of tree traversal problems** and uses helper DFS traversals to separately collect the three “boundary” components. The "gather-and-glue" strategy is often used in problems involving special order traversals or structural decomposition of trees, making this a recurring pattern in binary tree interviews (e.g., spiral order, vertical order, outer view).
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Binary Tree Right Side View(binary-tree-right-side-view) (Medium)

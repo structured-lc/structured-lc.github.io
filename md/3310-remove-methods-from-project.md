@@ -113,3 +113,8 @@ def removeMethods(n, k, invocations):
 
 ### Summary
 This problem uses standard **graph traversal techniques**: BFS/DFS both from a node and towards a node (by reversing edges), often seen in dependency resolution and impact analysis in software engineering. The pattern is useful for **detecting influence zones, component analysis, and transitive closure**. Efficient in O(n+m), it can be further generalized to broader dependency analysis problems.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
+
+### Similar Problems

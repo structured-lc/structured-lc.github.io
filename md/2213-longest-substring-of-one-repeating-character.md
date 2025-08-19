@@ -177,3 +177,13 @@ The same coding pattern is applied in problems like:
 - Range Maximum Subarray
 - Range Majority Queries with modifications
 It’s efficient, scalable, and supports both queries and updates in logarithmic time—a common real-world interviews pattern.
+
+### Tags
+Array(#array), String(#string), Segment Tree(#segment-tree), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Merge Intervals(merge-intervals) (Medium)
+- Longest Repeating Character Replacement(longest-repeating-character-replacement) (Medium)
+- Consecutive Characters(consecutive-characters) (Easy)
+- Create Sorted Array through Instructions(create-sorted-array-through-instructions) (Hard)
+- Longest Increasing Subsequence II(longest-increasing-subsequence-ii) (Hard)

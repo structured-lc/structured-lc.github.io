@@ -109,3 +109,8 @@ def last_non_empty_string(s: str) -> str:
 
 ### Summary
 This problem uses **hashing** and **last occurrence tracking**. The optimal approach avoids simulation, using two passes and fixed O(1) extra space (for alphabet-based strings). It's an example of reducing a simulation problem to an array-mapping. The key insight is to relate rounds of removals to the character frequencies and capture the correct indices for final output. This kind of pattern is common in last occurrence/maximum-count problems and is widely applicable to problems involving segmenting operations or final-event capture for repeated processes.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems

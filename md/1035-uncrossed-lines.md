@@ -86,3 +86,9 @@ def maxUncrossedLines(A, B):
 - This problem is an exact application of the **Dynamic Programming - Longest Common Subsequence (LCS)** pattern.
 - The optimization for space (rolling arrays) is typical for LCS when only the result, not the actual paths, are needed.
 - Common in bioinformatics (sequence alignment), diff comparison algorithms, and many interview DP questions.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Edit Distance(edit-distance) (Medium)

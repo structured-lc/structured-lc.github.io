@@ -72,3 +72,10 @@ def prefixesDivBy5(nums):
 
 ### Summary
 The problem uses an **iterative prefix and modulo pattern**: for each step, the prefix is updated in O(1) time, and we keep intermediate values small with `% 5`. This approach is common for problems involving divisibility checks over growing sequences ("prefix modular arithmetic"), and it can be generalized for divisibility by other numbers. The coding pattern is efficient and easy to apply to similar problems like "prefix sum is divisible by K" and real-time streaming checks.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Average Value of Even Numbers That Are Divisible by Three(average-value-of-even-numbers-that-are-divisible-by-three) (Easy)
+- Find the Maximum Divisibility Score(find-the-maximum-divisibility-score) (Easy)

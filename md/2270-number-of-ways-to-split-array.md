@@ -90,3 +90,14 @@ def waysToSplitArray(nums):
 This problem is a classic **prefix sum** and **one-pass scan** pattern, common in array partition/splitting questions.  
 Optimization comes from avoiding redundant sum computations by using cumulative totals.  
 The coding approach and pattern here can be applied in subarray partition, “find kth split” and many “sliding window” like interview problems.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Split Array Largest Sum(split-array-largest-sum) (Hard)
+- Find Pivot Index(find-pivot-index) (Easy)
+- Ways to Split Array Into Three Subarrays(ways-to-split-array-into-three-subarrays) (Medium)
+- Find the Middle Index in Array(find-the-middle-index-in-array) (Easy)
+- Partition Array Into Two Arrays to Minimize Sum Difference(partition-array-into-two-arrays-to-minimize-sum-difference) (Hard)
+- Minimum Average Difference(minimum-average-difference) (Medium)

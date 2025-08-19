@@ -86,3 +86,12 @@ def bulbSwitch(n):
 
 ### Summary
 This problem uses the **math and divisors pattern**, a classic interview trick. If an index has an odd number of divisors (perfect square), the bulb is ON. Thus, the answer is ⌊√n⌋. This same **count-perfect-square** idea is useful in other toggling, factor-counting, and divisor parity problems. The final algorithm is extremely efficient and bypasses simulation entirely.
+
+### Tags
+Math(#math), Brainteaser(#brainteaser)
+
+### Similar Problems
+- Bulb Switcher II(bulb-switcher-ii) (Medium)
+- Minimum Number of K Consecutive Bit Flips(minimum-number-of-k-consecutive-bit-flips) (Hard)
+- Number of Times Binary String Is Prefix-Aligned(number-of-times-binary-string-is-prefix-aligned) (Medium)
+- Find the Pivot Integer(find-the-pivot-integer) (Easy)

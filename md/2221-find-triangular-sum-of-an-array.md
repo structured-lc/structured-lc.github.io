@@ -80,3 +80,11 @@ def triangularSum(nums):
 
 ### Summary
 This approach is a classic **in-place simulation** of a reduction operation, shrinking an array stepwise according to a given rule. This pattern is similar to the Pascal's Triangle or cumulative reductions, but because of the modulo operation and requirements, a direct iterative reduction is both clear and efficient for reasonable n. This coding style is also common for problems involving "local" transformations and cumulative state reductions.
+
+### Tags
+Array(#array), Math(#math), Simulation(#simulation), Combinatorics(#combinatorics)
+
+### Similar Problems
+- Pascal's Triangle II(pascals-triangle-ii) (Easy)
+- Calculate Digit Sum of a String(calculate-digit-sum-of-a-string) (Easy)
+- Min Max Game(min-max-game) (Easy)

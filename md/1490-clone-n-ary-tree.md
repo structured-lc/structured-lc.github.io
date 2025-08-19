@@ -73,3 +73,11 @@ def cloneTree(root):
 
 ### Summary
 This problem is a classic **tree recursion/deep cloning pattern**—clone the root, then recursively clone all children. The solution generalizes to copying any graph-like structure (with a hashmap for cycles), and commonly appears in problems involving deep copy, graph/tree traversal, or when duplicating entire data structures.
+
+### Tags
+Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Clone Graph(clone-graph) (Medium)
+- Copy List with Random Pointer(copy-list-with-random-pointer) (Medium)
+- Clone Binary Tree With Random Pointer(clone-binary-tree-with-random-pointer) (Medium)

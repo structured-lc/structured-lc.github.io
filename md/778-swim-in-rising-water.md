@@ -104,3 +104,9 @@ def swimInWater(grid):
 This problem uses the **modified Dijkstra’s algorithm** pattern — instead of summing edge costs, we track max cost along any path.  
 It’s a classic application of “minimize the maximum” along a path, common in problems with obstacles or variable path costs (see also: Path with Minimum Effort, 1631).  
 This pattern is very useful in grid pathfinding scenarios where *bottleneck constraints* are key, rather than total sum.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
+
+### Similar Problems
+- Path With Minimum Effort(path-with-minimum-effort) (Medium)

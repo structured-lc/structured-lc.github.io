@@ -80,3 +80,10 @@ The core approach here is brute-force pair checking, which is justified by the r
 The coding pattern is classic double-loop enumeration—common in "all pairs" situations where each pair must be validated by a custom condition.  
 This pattern applies to a number of similar problems, including pair sums, pair differences, or pair relations constrained by both elements' values.  
 For more advanced or tighter constraints, sorting or tries (for XOR queries) may provide faster solutions.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Trie(#trie), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Maximum XOR of Two Numbers in an Array(maximum-xor-of-two-numbers-in-an-array) (Medium)
+- Maximum XOR With an Element From Array(maximum-xor-with-an-element-from-array) (Hard)

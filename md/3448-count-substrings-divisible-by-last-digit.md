@@ -133,3 +133,9 @@ This problem uses the classic **DP on substrings counting with remainder bucket*
 - The state compresses all possible remainders for divisors 1–9.
 - This technique is useful for substring divisibility, matching remainder rules, and any DP where multiple counters must evolve per position.  
 - It avoids brute-force and is used in substring counting problems with modularity or divisibility constraints.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Number of Divisible Substrings(number-of-divisible-substrings) (Medium)

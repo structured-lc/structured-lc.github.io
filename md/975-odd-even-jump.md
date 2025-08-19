@@ -114,3 +114,8 @@ def oddEvenJumps(arr):
 
 ### Summary
 This problem uses a **dynamic programming with monotonic stack preprocessing** pattern to efficiently answer "next greater or equal" / "next less or equal" queries for each index. This structural pattern is common in range queries and can also be adapted for nearest greater/smaller element problems or competitive programming jump games. The DP step is similar to "can reach the end from this state?" as in classic reachability/jump game kinds of problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Stack(#stack), Sorting(#sorting), Monotonic Stack(#monotonic-stack), Ordered Set(#ordered-set)
+
+### Similar Problems

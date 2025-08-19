@@ -92,3 +92,14 @@ def lengthOfLongestSubstringKDistinct(s, k):
 This problem is a classic use-case for the **sliding window** and hash counting pattern, applicable in substring/array problems involving counts or "at most k" constraints.  
 Sliding window ensures linear scan, and the hash map allows efficient tracking of character counts.  
 Variations of this approach appear in problems like "Longest Substring Without Repeating Characters", "Minimum Window Substring", and more.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Longest Substring Without Repeating Characters(longest-substring-without-repeating-characters) (Medium)
+- Longest Substring with At Most Two Distinct Characters(longest-substring-with-at-most-two-distinct-characters) (Medium)
+- Longest Repeating Character Replacement(longest-repeating-character-replacement) (Medium)
+- Subarrays with K Different Integers(subarrays-with-k-different-integers) (Hard)
+- Max Consecutive Ones III(max-consecutive-ones-iii) (Medium)
+- Maximize the Confusion of an Exam(maximize-the-confusion-of-an-exam) (Medium)

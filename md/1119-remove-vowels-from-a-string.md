@@ -74,3 +74,10 @@ def removeVowels(s: str) -> str:
 ### Summary
 
 This problem uses the **filtering pattern**, which is very common for string and array manipulation tasks—collect characters or elements that satisfy a condition, and skip others. It's a staple pattern that can be applied to problems like removing special characters, digits, or filtering based on various criteria in strings or lists.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Reverse Vowels of a String(reverse-vowels-of-a-string) (Easy)
+- Remove Digit From Number to Maximize Result(remove-digit-from-number-to-maximize-result) (Easy)

@@ -96,3 +96,9 @@ This problem uses the **prefix sum with two pointers** pattern.
 It’s a classic way to check for possible subarray partitions.  
 This approach is common for "partition with equal sum" problems when partitions must be contiguous.  
 Recognizing sum divisibility and using either scan-from-ends or a running counter are core techniques.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems
+- Find the Middle Index in Array(find-the-middle-index-in-array) (Easy)

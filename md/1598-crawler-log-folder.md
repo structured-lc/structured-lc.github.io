@@ -76,3 +76,10 @@ def minOperations(logs):
 
 ### Summary
 This problem is a classic example of simulating stack-like navigation using a simple counter pattern, avoiding unnecessary data structures when possible. The approach is efficient and common for problems where only the "depth" or "balance" is tracked (e.g., parenthesis matching, mountain/valley counting).
+
+### Tags
+Array(#array), String(#string), Stack(#stack)
+
+### Similar Problems
+- Baseball Game(baseball-game) (Easy)
+- Backspace String Compare(backspace-string-compare) (Easy)

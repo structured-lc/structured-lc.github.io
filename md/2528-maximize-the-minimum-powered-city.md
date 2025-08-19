@@ -128,3 +128,9 @@ def maxPower(stations, r, k):
 This is a **Binary Search on Answer** combined with a greedy sweep (range covering, window updates).  
 This pattern is widely used for “maximize the minimum” style allocation, interval/coverage, load balancing, and “can we reach X with ≤Y additions” network/resource planning problems.  
 Typical features: test function simulates (greedily) and steers the binary search—common in scheduling, resource distribution, and “painter’s partition” family of problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Greedy(#greedy), Queue(#queue), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Maximum Number of Tasks You Can Assign(maximum-number-of-tasks-you-can-assign) (Hard)

@@ -139,3 +139,10 @@ This problem is a classic example of the **hashmap time-based cache** pattern, a
 The solution shows how to manage stateful data with expiry, and maintain “active” data by pruning expired entries.  
 Variants of this pattern occur in session management, in-memory TTL caches, rate limiting, etc.  
 The trade-off is simplicity/efficiency for small sets; for larger data, one may introduce a heap or scheduling mechanism for quick global expiry.
+
+### Tags
+
+### Similar Problems
+- Debounce(debounce) (Medium)
+- Promise Time Limit(promise-time-limit) (Medium)
+- Promise Pool(promise-pool) (Medium)

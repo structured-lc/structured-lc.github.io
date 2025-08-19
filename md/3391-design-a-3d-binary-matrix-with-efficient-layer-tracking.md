@@ -133,3 +133,8 @@ class Matrix3D:
 This problem is a classic example of data structure design for efficient layer-wise statistics and query.  
 The main pattern is *frequency counting with on-the-fly maximum tracking*, which occurs in problems involving histogram queries and efficiently tracking maxima/minima in updated sets.  
 You can apply this approach in memory-efficient 3D/2D tracking and maximum-frequency set extraction in other interview contexts.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Design(#design), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Ordered Set(#ordered-set)
+
+### Similar Problems

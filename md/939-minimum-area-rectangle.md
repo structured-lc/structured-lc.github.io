@@ -84,3 +84,11 @@ def minAreaRect(points):
 ### Summary
 This problem follows a common combinatorial geometry pattern — for each pair of diagonal points, check if the complementary pair also exist to form a rectangle, leveraging a set for fast lookup.  
 This diagonal+hashing technique is useful in other geometry problems involving point existence queries, rectangle detection, or axis-aligned rectangles in 2D point sets.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Geometry(#geometry), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Rectangles to Cover Points(minimum-rectangles-to-cover-points) (Medium)
+- Maximum Area Rectangle With Point Constraints I(maximum-area-rectangle-with-point-constraints-i) (Medium)
+- Maximum Area Rectangle With Point Constraints II(maximum-area-rectangle-with-point-constraints-ii) (Hard)

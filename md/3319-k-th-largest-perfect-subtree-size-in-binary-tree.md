@@ -124,3 +124,9 @@ def kthLargestSubtreeSize(root, k):
 
 ### Summary
 This solution highlights a *post-order DFS* binary tree traversal with local aggregation of subtree properties — a common pattern for problems like "largest subtree", "subtree sum", or "unival subtrees". The key trick is to determine from each node's children whether the current subtree meets global structure constraints, and to gather results efficiently during traversal. This pattern is broadly reusable for structural binary tree problems and interview scenarios involving subtrees and their properties.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Sorting(#sorting), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Balanced Binary Tree(balanced-binary-tree) (Easy)

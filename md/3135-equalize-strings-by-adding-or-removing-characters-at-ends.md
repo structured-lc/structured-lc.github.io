@@ -92,3 +92,8 @@ def minOperations(initial: str, target: str) -> int:
 
 ### Summary
 This problem uses the classic **dynamic programming** pattern for **longest common substring** detection, then a simple arithmetic transformation to compute the minimal required changes. The key realization is aligning the largest unchanged block possible (“anchor”) and minimizing left/right edits. Similar substring DP scans are common in edit-distance, diff, and string alignment problems.
+
+### Tags
+String(#string), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window), Hash Function(#hash-function)
+
+### Similar Problems

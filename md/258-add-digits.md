@@ -66,3 +66,15 @@ def addDigits(num: int) -> int:
 
 ### Summary
 This problem is a classic application of the **digital root** concept in number theory. The O(1) approach leverages a mathematical insight, avoiding explicit iteration or recursion. This pattern appears in problems dealing with digit manipulations or numeric cycles, and highlights the value of knowing number patterns and properties to optimize brute-force algorithms.
+
+### Tags
+Math(#math), Simulation(#simulation), Number Theory(#number-theory)
+
+### Similar Problems
+- Happy Number(happy-number) (Easy)
+- Sum of Digits in the Minimum Number(sum-of-digits-in-the-minimum-number) (Easy)
+- Sum of Digits of String After Convert(sum-of-digits-of-string-after-convert) (Easy)
+- Minimum Sum of Four Digit Number After Splitting Digits(minimum-sum-of-four-digit-number-after-splitting-digits) (Easy)
+- Calculate Digit Sum of a String(calculate-digit-sum-of-a-string) (Easy)
+- Difference Between Element Sum and Digit Sum of an Array(difference-between-element-sum-and-digit-sum-of-an-array) (Easy)
+- Alternating Digit Sum(alternating-digit-sum) (Easy)

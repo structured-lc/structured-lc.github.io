@@ -87,3 +87,7 @@ def factorial(n):
 This problem uses the **generator pattern**, efficiently producing each factorial value in sequence with just prior state tracked.  
 The iterative/single-state update is a classic memory-efficient approach, commonly used wherever prior computations inform the next (e.g., Fibonacci sequence, prefix products).  
 Generator-based solutions are often applied to big data or on-demand computation scenarios for space efficiency.
+
+### Tags
+
+### Similar Problems

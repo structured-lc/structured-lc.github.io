@@ -134,3 +134,10 @@ def minimumCost(start, target, specialRoads):
 This problem is a classic example of **shortest path on a grid with special edges**, optimized by only considering essential nodes (via special roads).  
 The core coding pattern is **Dijkstra’s algorithm** applied to a dynamic graph structure defined by key positions and special routes.  
 This approach is general and can be applied to other shortest-path problems where movement is cheap and “teleport”/special moves supplement with varying cost.
+
+### Tags
+Array(#array), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Minimum Path Sum(minimum-path-sum) (Medium)
+- Number of Restricted Paths From First to Last Node(number-of-restricted-paths-from-first-to-last-node) (Medium)

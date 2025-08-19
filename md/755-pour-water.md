@@ -117,3 +117,9 @@ def pour_water(heights, volume, k):
 This is a classic **simulation** problem, emphasizing careful step-by-step modeling of the scenario.
 It uses the "left-first, then right, else settle" rule resembling greedy pathfinding.
 Techniques in the solution, especially the scanning for the lowest neighbor, are applicable to similar water-filling, rain-water trapping, or gravity-based simulation questions.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems
+- Trapping Rain Water(trapping-rain-water) (Hard)

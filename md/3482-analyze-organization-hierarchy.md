@@ -206,3 +206,8 @@ def analyze_organization_hierarchy(employees):
 
 ### Summary
 This problem is an example of *tree dynamic programming/traversal*, especially post-order DFS for root-to-leaf aggregations common in org-chart, file-system, or company structure problems. The efficient solution leverages parent/child mapping and tree traversal patterns, which are very common in directory-size, role-based access, and dependency graph analyses.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -65,3 +65,8 @@ def luckyNumbers (matrix):
 
 ### Summary
 This involves element-wise matrix processing — a frequent coding pattern in matrix, DP, and grid traversal problems.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems

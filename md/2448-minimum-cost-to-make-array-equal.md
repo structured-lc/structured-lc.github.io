@@ -95,3 +95,13 @@ def minCost(nums, cost):
 This problem is a **weighted median** application, which appears in scenarios where the optimal shared value minimizes a cost-weighted distance sum.  
 The process leverages sorting with prefix sums and cumulative logic, a common and powerful coding interview pattern for minimizing costs or distances with per-element weights.  
 This pattern is highly reusable in other problems involving total cost minimization with weighted moves, like minimizing array move costs, fair schedules, or equitable distributions.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Minimum Moves to Equal Array Elements II(minimum-moves-to-equal-array-elements-ii) (Medium)
+- Maximum Product of the Length of Two Palindromic Substrings(maximum-product-of-the-length-of-two-palindromic-substrings) (Hard)
+- Minimum Amount of Time to Fill Cups(minimum-amount-of-time-to-fill-cups) (Easy)
+- Minimum Operations to Make All Array Elements Equal(minimum-operations-to-make-all-array-elements-equal) (Medium)
+- Minimum Cost to Make Array Equalindromic(minimum-cost-to-make-array-equalindromic) (Medium)

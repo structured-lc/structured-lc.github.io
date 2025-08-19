@@ -98,3 +98,8 @@ def capitalize_words(text):
 ### Summary
 This problem is a **string processing pattern** using **state tracking** (capitalization toggling). It’s applicable wherever “title-casing” with custom word boundaries is needed (for example, slug or human-readable formatting).  
 The technique easily generalizes, and is a foundation for more advanced tokenization or locale-aware text processing. The code stays efficient and clear by limiting built-ins and focusing on per-character logic.
+
+### Tags
+Database(#database)
+
+### Similar Problems

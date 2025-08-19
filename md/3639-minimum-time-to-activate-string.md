@@ -120,3 +120,8 @@ def minimumTimeToActivateString(s: str, order: list[int], k: int) -> int:
 This problem uses a **binary search** over the minimal time t, and at each step, leverages the observation that substrings with at least one '\*' = total substrings - substrings with no star (continuous star-free segments).  
 This reduces the complexity from brute-force cubic to O(n log n).  
 This pattern is common in problems that ask for the minimal time or step to reach a threshold and where the process is monotonic, enabling binary search.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems

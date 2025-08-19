@@ -102,3 +102,13 @@ def minEatingSpeed(piles, h):
 
 ### Summary
 The approach uses **binary search over the answer**, a classic pattern when the feasibility of a target (here, hours needed for eating speed \(k\)) is monotonic. This strategy is common for resource allocation, minimum/maximum threshold, or "smallest/largest value satisfying conditions" problems. Practical in bandwidth allocation, job scheduling, and throughput optimization problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Minimize Max Distance to Gas Station(minimize-max-distance-to-gas-station) (Hard)
+- Maximum Candies Allocated to K Children(maximum-candies-allocated-to-k-children) (Medium)
+- Minimized Maximum of Products Distributed to Any Store(minimized-maximum-of-products-distributed-to-any-store) (Medium)
+- Frog Jump II(frog-jump-ii) (Medium)
+- Minimum Time to Repair Cars(minimum-time-to-repair-cars) (Medium)

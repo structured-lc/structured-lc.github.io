@@ -101,3 +101,8 @@ def minimum_operations(nums):
 
 We use a **greedy / counting contiguous segment changes pattern**, which is common in problems where global operations become "local" due to the nature of allowed moves. Pattern is similar to "counting boundaries between groups of same values".  
 This method has wide applicability in array transformation, paint-fence DP, and prefix-sum problems.
+
+### Tags
+Array(#array)
+
+### Similar Problems

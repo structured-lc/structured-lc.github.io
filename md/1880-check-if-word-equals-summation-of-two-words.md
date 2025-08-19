@@ -81,3 +81,8 @@ def isSumEqual(firstWord, secondWord, targetWord):
 
 ### Summary
 This problem is essentially a *string to number conversion* using a custom mapping, followed by a simple arithmetic check. The *digit-by-digit number construction* pattern is widely used—similar patterns apply to problems like "String to Integer (Atoi)", "Valid Number", or base conversion scenarios. This implementation is efficient and clear, directly mimicking the logic we would use to form numbers digit-by-digit.
+
+### Tags
+String(#string)
+
+### Similar Problems

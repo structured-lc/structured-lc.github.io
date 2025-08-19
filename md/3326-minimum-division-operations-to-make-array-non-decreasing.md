@@ -91,3 +91,9 @@ def min_operations(nums):
 
 ### Summary
 This problem uses a **greedy reverse simulation**: for each element, repeatedly divide it by its largest proper divisor until the array is non-decreasing. This pattern—greedy backtracking from right to left, fixing target values one by one—is common in array monotonicity transformation problems. Efficient divisor-finding and careful simulation are key and can be extended to other questions where elements must be reduced by allowed operations under order constraints.
+
+### Tags
+Array(#array), Math(#math), Greedy(#greedy), Number Theory(#number-theory)
+
+### Similar Problems
+- Smallest Value After Replacing With Sum of Prime Factors(smallest-value-after-replacing-with-sum-of-prime-factors) (Medium)

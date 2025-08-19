@@ -106,3 +106,10 @@ class ValidWordAbbr:
 
 ### Summary
 This problem is a classic use of the **hashmap (dictionary) pattern** to preprocess and quickly look up the uniqueness property. Storing an abbreviation-to-set-of-words mapping leads to constant-time queries after an initial preprocessing step, balancing time and space. Similar patterns apply in problems with word lookups, grouping by signature (e.g., anagrams), and prefix/suffix matching.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Design(#design)
+
+### Similar Problems
+- Two Sum III - Data structure design(two-sum-iii-data-structure-design) (Easy)
+- Generalized Abbreviation(generalized-abbreviation) (Medium)

@@ -126,3 +126,8 @@ def suspiciousBankAccounts(accounts, transactions):
 
 ### Summary
 This problem uses the **group by** pattern and a consecutive sequence detection in time-series per group. It's a classic use case for SQL window functions or aggregations with maps/dictionaries. The consecutive months logic generalizes to rolling windows (n months) or other anomaly-detection in time-series datasets grouped by IDs.
+
+### Tags
+Database(#database)
+
+### Similar Problems

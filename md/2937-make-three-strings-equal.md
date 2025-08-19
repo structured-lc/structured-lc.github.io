@@ -72,3 +72,9 @@ def findMinimumOperations(s1: str, s2: str, s3: str) -> int:
 
 ### Summary
 This problem is a classic case of reducing multiple strings to their *longest common prefix* using right-end trimming. The optimal solution uses a single linear scan and is both time and space efficient. The same approach and reasoning pattern are common in problems involving operations restricted to ends of collections or arrays (e.g., string trimming, prefix logic), and can often be generalized to multiple strings or different allowed operations.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Delete Operation for Two Strings(delete-operation-for-two-strings) (Medium)

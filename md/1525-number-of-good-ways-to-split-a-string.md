@@ -81,3 +81,8 @@ def numSplits(s):
 
 ### Summary
 This problem is a classic example of prefix/suffix count precomputation — a common coding interview pattern. Tracking distinct elements seen so far allows for O(n) solutions in cases where brute-force is too slow. The concept is reusable in substring/partition/counting problems.
+
+### Tags
+Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

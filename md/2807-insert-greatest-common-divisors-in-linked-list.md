@@ -123,3 +123,9 @@ This problem uses the classic **linked list traversal with in-situ node insertio
 It’s a straightforward example of single-pass manipulation with O(n) time and O(1) space.  
 The pattern of “scan, compute, insert between” is common in problems involving local pairwise operations in linked list or array structures (e.g., merging nodes, splitting nodes, or interleaving operations).
 No advanced data structures or recursion needed. The Euclidean GCD computation is a basic number theory trick often useful in these pairwise math scenarios.
+
+### Tags
+Linked List(#linked-list), Math(#math), Number Theory(#number-theory)
+
+### Similar Problems
+- Reverse Linked List(reverse-linked-list) (Easy)

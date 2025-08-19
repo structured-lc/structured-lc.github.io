@@ -65,3 +65,10 @@ def numTimesAllBlue(flips: list[int]) -> int:
 
 ### Summary
 This is a simulation/tracking problem with a one-pass O(n) scan and simple maintenance of maximum and count. The idea of prefix alignment and keeping counters/thresholds appears frequently in array or stream prefix/suffix pattern problems.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Bulb Switcher(bulb-switcher) (Medium)
+- Bulb Switcher II(bulb-switcher-ii) (Medium)

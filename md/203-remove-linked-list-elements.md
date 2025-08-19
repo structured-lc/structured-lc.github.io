@@ -98,3 +98,14 @@ def removeElements(head: ListNode, val: int) -> ListNode:
 This approach uses the **dummy node** linked list pattern—a common way to handle cases where the head might be modified through deletions or insertions.  
 It's a single-pass, in-place algorithm and demonstrates fundamental linked list manipulation techniques.  
 Patterns here are helpful for similar problems: deleting a node, removing duplicates, partitioning a list, etc.
+
+### Tags
+Linked List(#linked-list), Recursion(#recursion)
+
+### Similar Problems
+- Remove Element(remove-element) (Easy)
+- Delete Node in a Linked List(delete-node-in-a-linked-list) (Medium)
+- Delete the Middle Node of a Linked List(delete-the-middle-node-of-a-linked-list) (Medium)
+- Delete Nodes From Linked List Present in Array(delete-nodes-from-linked-list-present-in-array) (Medium)
+- Convert Doubly Linked List to Array I(convert-doubly-linked-list-to-array-i) (Easy)
+- Convert Doubly Linked List to Array II(convert-doubly-linked-list-to-array-ii) (Medium)

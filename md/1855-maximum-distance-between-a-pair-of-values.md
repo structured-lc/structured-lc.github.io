@@ -92,3 +92,9 @@ def maxDistance(nums1, nums2):
 
 ### Summary
 This problem uses the **two-pointer** pattern, optimal for working with two sorted (or monotonic) arrays in tandem. The approach is common for interval and range problems on sorted arrays, and can be applied more generally wherever expanding a sliding window is meaningful. No extra data structures are needed, making this approach highly efficient for large input sizes.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search)
+
+### Similar Problems
+- Two Furthest Houses With Different Colors(two-furthest-houses-with-different-colors) (Easy)

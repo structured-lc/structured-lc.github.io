@@ -153,3 +153,8 @@ def patients_with_condition(patients):
 This problem uses the **string scanning** pattern—break a string by delimiters and check for a prefix in each word.  
 It's a simple application of data search, and similar logic is common in word parsing, CSV scanning, and substring search problems.  
 Mastering this approach is useful in many data cleanup and filtering tasks where you identify key tokens or codes in textual fields.
+
+### Tags
+Database(#database)
+
+### Similar Problems

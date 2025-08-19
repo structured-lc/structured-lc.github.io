@@ -62,3 +62,9 @@ def minInsertions(s):
 
 ### Summary
 This classic problem reduces to finding longest palindromic subsequence and uses the DP table over all substrings. It's an archetype of dynamic programming on substrings, commonly seen in editing distance and palindromic sequence problems.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Minimum Number of Moves to Make Palindrome(minimum-number-of-moves-to-make-palindrome) (Hard)

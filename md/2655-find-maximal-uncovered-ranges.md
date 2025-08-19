@@ -93,3 +93,11 @@ def findMaximalUncoveredRanges(n, ranges):
 
 ### Summary
 This problem is a standard **interval merging and gap-finding** question. The optimal solution sorts and merges overlapping intervals, and then sweeps through to find maximal uncovered gaps. This pattern is common in calendar booking, range coverage, and interval-related coding interviews. Recognizing the value of first merging intervals avoids unnecessary per-cell operations, and ensures correctness and performance.
+
+### Tags
+Array(#array), Sorting(#sorting)
+
+### Similar Problems
+- Missing Ranges(missing-ranges) (Easy)
+- Summary Ranges(summary-ranges) (Easy)
+- Check if All the Integers in a Range Are Covered(check-if-all-the-integers-in-a-range-are-covered) (Easy)

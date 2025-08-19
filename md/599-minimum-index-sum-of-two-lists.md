@@ -89,3 +89,9 @@ def findRestaurant(list1, list2):
 
 ### Summary
 This problem is a classic **hash map lookup pattern** — mapping items of one collection for O(1) access and checking for minimal property (here, index sum) during a linear scan of the second collection. This technique is common in set intersection with extra criteria, two-sum, or frequency counting problems. It's highly efficient for scenarios that need “find all common elements with a property in O(n) time.”
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Intersection of Two Linked Lists(intersection-of-two-linked-lists) (Easy)

@@ -133,3 +133,9 @@ This general pattern appears in **resource-splitting problems** and can also be 
 - Minimum cost to cut stick/wood into specified pieces  
 - Greedy scheduling where expensive tasks should happen earliest  
 Key lesson: when costs multiply with how many times a resource is split, cut the most expensive lines first.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Cost for Cutting Cake I(minimum-cost-for-cutting-cake-i) (Medium)

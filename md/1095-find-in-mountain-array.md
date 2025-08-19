@@ -108,3 +108,12 @@ def findInMountainArray(target, mountain_arr):
 This problem uses the **multiple binary search** pattern: once to find the peak, then two more to search both sorted (increasing and decreasing) subarrays.  
 This pattern is commonly used in interview problems involving arrays with **multiple sorted regions** or **peak/valley** characteristics (e.g. find peak element, search bitonic sequence).  
 The algorithm efficiently leverages the mountain array structure for optimal search.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Interactive(#interactive)
+
+### Similar Problems
+- Peak Index in a Mountain Array(peak-index-in-a-mountain-array) (Medium)
+- Minimum Number of Removals to Make Mountain Array(minimum-number-of-removals-to-make-mountain-array) (Hard)
+- Find Good Days to Rob the Bank(find-good-days-to-rob-the-bank) (Medium)
+- Find Indices of Stable Mountains(find-indices-of-stable-mountains) (Easy)

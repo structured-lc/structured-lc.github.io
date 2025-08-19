@@ -115,3 +115,8 @@ class DetectSquares:
 
 ### Summary
 This problem uses a **data-stream + hashmap counting pattern**. The core is efficiently tracking how many times each coordinate appears and recognizing patterns (squares) based on geometric relationships. This is a fundamental "design a data structure" question, often useful for spatial and geometric query problems. The approach generalizes to similar problems like detecting rectangles or other axis-aligned shapes, and counting with duplicated points is a common pitfall seen in interviews that this pattern solves cleanly.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Design(#design), Counting(#counting)
+
+### Similar Problems

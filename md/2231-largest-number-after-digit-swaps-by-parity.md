@@ -105,3 +105,13 @@ def largestInteger(num: int) -> int:
 ### Summary
 This is a "greedy with sorting by parity" pattern: separate into two groups based on a criterion (parity), sort each, and greedily assign the largest same-group element to each allowed position.  
 This pattern appears in some string/array rearrangement problems where swaps are restricted by some equivalence or property.
+
+### Tags
+Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Largest Number At Least Twice of Others(largest-number-at-least-twice-of-others) (Easy)
+- Sort Array By Parity(sort-array-by-parity) (Easy)
+- Sort Array By Parity II(sort-array-by-parity-ii) (Easy)
+- Smallest String With Swaps(smallest-string-with-swaps) (Medium)
+- Rearrange Array Elements by Sign(rearrange-array-elements-by-sign) (Medium)

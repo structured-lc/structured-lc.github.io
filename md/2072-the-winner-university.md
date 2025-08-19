@@ -139,3 +139,9 @@ This is a classical **aggregation and comparison** problem, requiring counting e
 The coding pattern is straightforward: filtering, counting, and then using conditional selection.  
 Such patterns occur frequently in leaderboard, statistics, voting, and winner-determination problems across datasets.  
 No extra data structures beyond counters are needed, and the approach is both simple and efficient for large input.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- The Number of Rich Customers(the-number-of-rich-customers) (Easy)

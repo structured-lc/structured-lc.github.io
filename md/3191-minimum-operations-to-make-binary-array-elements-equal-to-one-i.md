@@ -82,3 +82,9 @@ def minOperations(nums):
 
 ### Summary
 This is a classic greedy, window sliding, or simulation problem. The key is always "handle the leftmost zero as soon as possible." This ensures global minimal operations, relying on the property that flipping three consecutive values can fix zeros in a propagating fashion. The technique is broadly useful in bit-manipulation, simulation, and "minimum moves to uniform array" type questions.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Queue(#queue), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Minimum Number of K Consecutive Bit Flips(minimum-number-of-k-consecutive-bit-flips) (Hard)

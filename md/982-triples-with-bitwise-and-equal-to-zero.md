@@ -94,3 +94,8 @@ def countTriplets(nums):
 
 ### Summary
 This problem is a classic use of **bitmask counting** and pre-computation to convert a naïve triple loop into a pair-count and fast lookup. This approach, building a table of pair results and then querying for compatible third values, is widely usable in problems involving combinatoric counting with bitwise relationships. Understanding this pattern is useful for advanced problems in bitmask dynamic programming, geometry with set intersections, and fast subset queries.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

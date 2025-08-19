@@ -83,3 +83,11 @@ def minimumRecolors(blocks: str, k: int) -> int:
 
 ### Summary
 We used the classic **sliding window** pattern for a fixed window: maintain a count while moving, updating efficiently in constant time per step. This pattern is commonly found in substring/count problems, especially when conditions are measured on a fixed-size substring. It’s effective for minimal operations, range queries, or any problem where overlapping windows are relevant.
+
+### Tags
+String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Max Consecutive Ones III(max-consecutive-ones-iii) (Medium)
+- Maximum Points You Can Obtain from Cards(maximum-points-you-can-obtain-from-cards) (Medium)
+- Maximum Number of Vowels in a Substring of Given Length(maximum-number-of-vowels-in-a-substring-of-given-length) (Medium)

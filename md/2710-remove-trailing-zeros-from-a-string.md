@@ -69,3 +69,9 @@ def remove_trailing_zeros(num: str) -> str:
 
 ### Summary
 Simple pass-from-end algorithms and string slicing are classic patterns for handling substrings in coding interviews. This problem is a textbook example of the "scan-and-trim" pattern and is commonly encountered in file parsing or input sanitization tasks. Similar logic applies to removing leading zeros, counting/significant digit extraction, or string trimming problems.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Check if Bitwise OR Has Trailing Zeros(check-if-bitwise-or-has-trailing-zeros) (Easy)

@@ -76,3 +76,8 @@ def maxScoreSightseeingPair(values):
 
 ### Summary
 This problem uses a **prefix max** pattern: at each step, you use a running optimum from the left combined with the current value on the right. This is common in array problems involving pair-based scoring with an index relationship, and is especially useful for maximizing or minimizing formulas of the format arr[i] + arr[j] + f(i, j).
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

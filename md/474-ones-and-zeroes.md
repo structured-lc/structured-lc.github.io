@@ -97,3 +97,11 @@ def findMaxForm(strs, m, n):
 
 ### Summary
 This problem is a canonical example of the **multi-dimensional (2D) 0-1 knapsack problem** — an essential dynamic programming pattern. The key trick is how to update the dp table in reverse to avoid double-counting. This approach (iterative DP with resource tracking) is broadly useful for resource-constrained packing, scheduling, or selection problems with multiple resource limits.
+
+### Tags
+Array(#array), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Count Subarrays With More Ones Than Zeros(count-subarrays-with-more-ones-than-zeros) (Medium)
+- Non-negative Integers without Consecutive Ones(non-negative-integers-without-consecutive-ones) (Hard)
+- All Divisions With the Highest Score of a Binary Array(all-divisions-with-the-highest-score-of-a-binary-array) (Medium)

@@ -178,3 +178,8 @@ def longest_team_pass_streak(teams, passes):
 
 ### Summary
 This problem is a variant of a **sliding window / group-streak tracking** pattern, commonly seen when handling sequences with reset/break conditions. The main insight is to maintain a per-team streak counter, increment/reset based on the current pass, and always record the maximum. Patterns like this appear in logs analysis (session streaks), LeetCode's "longest continuous segment", or sequence tracking in time-series data.
+
+### Tags
+Database(#database)
+
+### Similar Problems

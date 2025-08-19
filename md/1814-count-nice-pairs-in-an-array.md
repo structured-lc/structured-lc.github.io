@@ -98,3 +98,11 @@ def countNicePairs(nums):
 ### Summary
 This approach applies the "hashing for pair differences" pattern. By transforming the original sum condition into a simpler difference, we can use a hash map to count matching differences efficiently.  
 This technique (mapping a complex pairwise condition into a single aggregated key) is common in subarray, substring, and sum/pair parity problems and often leads to O(n) solutions for otherwise O(n²) tasks.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Counting(#counting)
+
+### Similar Problems
+- Number of Pairs of Interchangeable Rectangles(number-of-pairs-of-interchangeable-rectangles) (Medium)
+- Count Number of Bad Pairs(count-number-of-bad-pairs) (Medium)
+- Number of Pairs Satisfying Inequality(number-of-pairs-satisfying-inequality) (Hard)

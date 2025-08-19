@@ -172,3 +172,9 @@ WHERE income > 50000;
 
 ### Summary
 This problem is a classic case of **aggregation with conditional grouping**. The standard SQL technique is to use multiple `SELECT` statements with conditional `WHERE` clauses and combine them via `UNION ALL`. In coding interviews, similar logic appears in problems like histogram bucketing, category counts, and grouping by ranges/pivots. The logic is clean, linear, and easily generalizable for other interval groups.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Create a Session Bar Chart(create-a-session-bar-chart) (Easy)

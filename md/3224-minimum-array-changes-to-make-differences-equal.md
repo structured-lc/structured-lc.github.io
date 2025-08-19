@@ -111,3 +111,8 @@ def min_changes(nums, k):
 
 ### Summary
 This problem is a classic use-case for the **difference array and prefix sum** technique to efficiently count and combine change requirements over value ranges. The pattern is common in problems where a cost function is piecewise-constant or can be linearly swept over a parameter. Related patterns appear in interval counting, querying optimal thresholds, or minimizing total cost across several ranges.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
+
+### Similar Problems

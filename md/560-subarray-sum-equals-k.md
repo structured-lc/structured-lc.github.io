@@ -104,3 +104,16 @@ def subarraySum(nums, k):
 ### Summary
 This problem uses the **Prefix Sum + Hashmap** sliding window pattern to count subarrays with a specific sum in O(n) time. It's a very standard, highly reusable pattern, especially when dealing with subarrays and required sums.  
 Similar techniques are broadly used in: finding longest/shortest subarray with target sum, zero sum subarrays, and even for multidimensional matrix problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)
+- Continuous Subarray Sum(continuous-subarray-sum) (Medium)
+- Subarray Product Less Than K(subarray-product-less-than-k) (Medium)
+- Find Pivot Index(find-pivot-index) (Easy)
+- Subarray Sums Divisible by K(subarray-sums-divisible-by-k) (Medium)
+- Minimum Operations to Reduce X to Zero(minimum-operations-to-reduce-x-to-zero) (Medium)
+- K Radius Subarray Averages(k-radius-subarray-averages) (Medium)
+- Maximum Sum Score of Array(maximum-sum-score-of-array) (Medium)

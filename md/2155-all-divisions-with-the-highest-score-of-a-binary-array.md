@@ -101,3 +101,13 @@ def maxScoreIndices(nums):
 
 ### Summary
 This approach uses a **prefix sum/prefix sweep pattern**, tracking counts as you scan the array once. This is a frequent and efficient pattern for subarray and split-count problems, often useful for problems like maximum subarray, histogram/bar problems, or anywhere pre-computed running totals enable constant-time queries for each range or split point.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Ones and Zeroes(ones-and-zeroes) (Medium)
+- Max Consecutive Ones II(max-consecutive-ones-ii) (Medium)
+- Count Subarrays With More Ones Than Zeros(count-subarrays-with-more-ones-than-zeros) (Medium)
+- Array Partition(array-partition) (Easy)
+- Divide Array in Sets of K Consecutive Numbers(divide-array-in-sets-of-k-consecutive-numbers) (Medium)

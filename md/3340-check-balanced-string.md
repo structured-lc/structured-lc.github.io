@@ -74,3 +74,9 @@ def isBalanced(num: str) -> bool:
 
 ### Summary
 This problem uses the **two-pointer / partial sum pattern**, though simplified to accumulation via modulo indexing. The approach is direct and common for problems related to digit separation, and the pattern applies to problems involving cumulative calculations from groups determined by index parity or modulus. This kind of index-based grouping shows up whenever input needs to be classified or split without using extra structures.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Balanced Binary Tree(balanced-binary-tree) (Easy)

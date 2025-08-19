@@ -78,3 +78,8 @@ def numberOfDays(year: int, month: int) -> int:
 This problem relies on *array lookup* and a simple *conditional check* for leap years—both are foundational patterns in coding interviews.  
 The leap year rules or similar lookup-table patterns are common in date manipulation and calendar calculation problems.  
 This type of approach generalizes to scenarios where a fixed mapping exists with a handful of exceptions handled by business logic.
+
+### Tags
+Math(#math)
+
+### Similar Problems

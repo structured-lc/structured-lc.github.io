@@ -85,3 +85,8 @@ def smallestRangeI(nums, k):
 
 ### Summary  
 This problem uses the **array arithmetic manipulation** and **greedy range minimization** technique. The key insight is to realize that the only way to minimize the difference between the largest and smallest elements is to maximize the overlap by shifting min up and max down as much as allowed. This is an example of the “range compression” pattern — useful wherever you can freely "stretch" or "shrink" min and max by constants. Variants of this pattern appear in other interval and difference minimization problems.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems

@@ -90,3 +90,8 @@ def minEnd(n: int, x: int) -> int:
 
 ### Summary
 This problem follows a **bit manipulation and greedy construction** pattern, mapping (n-1)'s bits to unset positions in x to uniquely and minimally construct the strictly increasing sequence. This pattern—"filling unset bits to build minimal increments while preserving a required AND mask"—arises in digital circuit design, combinatorial generation, and unique number generation under constraints.
+
+### Tags
+Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

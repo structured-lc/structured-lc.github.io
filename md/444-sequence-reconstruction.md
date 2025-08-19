@@ -303,3 +303,9 @@ def sequenceReconstructionClean(nums, sequences):
 
 ### Summary
 This problem combines topological sorting with uniqueness checking to verify sequence reconstruction. The key insight is that a unique reconstruction exists if and only if the topological ordering of the dependency graph is unique. This pattern appears in scheduling problems, dependency resolution, and sequence analysis. Understanding how to build dependency graphs from partial information and check for unique orderings is fundamental in many algorithmic applications involving precedence constraints and ordering requirements.
+
+### Tags
+Array(#array), Graph(#graph), Topological Sort(#topological-sort)
+
+### Similar Problems
+- Course Schedule II(course-schedule-ii) (Medium)

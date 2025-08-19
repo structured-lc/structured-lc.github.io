@@ -100,3 +100,8 @@ def minOperationsMaxProfit(customers, boardingCost, runningCost):
 
 ### Summary
 This problem is a simulation/greedy pattern: simulate process step by step and decide at each step what maximizes local profit, tracking the global maximum. It's common in resource-allocation or queueing problems, and applies to elevator, ferry, or simple batch-serving systems where each batch has a cost and limited capacity.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems

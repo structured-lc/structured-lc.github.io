@@ -97,3 +97,11 @@ def minimizeTheDifference(mat, target):
 This problem is a **dynamic programming/knapsack pattern**: for each row, construct and propagate all possible sums you can form so far, finally minimize the absolute difference to a fixed target.  
 Variants of this approach apply to subset sum, coin change, knapsack, and other problems where decisions build up a set of partial results.  
 Common patterns: propagate “reached” or “possible” states in layers as you make choices row by row (or item by item).
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems
+- Partition Equal Subset Sum(partition-equal-subset-sum) (Medium)
+- Closest Subsequence Sum(closest-subsequence-sum) (Hard)
+- Maximum Number of Points with Cost(maximum-number-of-points-with-cost) (Medium)

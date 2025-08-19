@@ -82,3 +82,8 @@ def maximumContainersOnShip(n, w, maxWeight):
 This problem is a classic example of *resource allocation* constrained by two independent limits, solved using the min pattern.  
 The same pattern (take the minimum imposed by independent constraints) is common in capacity planning, array allocation, and resource scheduling problems.  
 No loops or recursion are needed; math suffices for constant time solution.
+
+### Tags
+Math(#math)
+
+### Similar Problems

@@ -63,3 +63,8 @@ def maxScore(s):
 
 ### Summary
 This problem demonstrates prefix/suffix scan and greedy optimization patterns. The prefix sum approach is very useful for range scan and split-style problems, often with O(N) efficiency.
+
+### Tags
+String(#string), Prefix Sum(#prefix-sum)
+
+### Similar Problems

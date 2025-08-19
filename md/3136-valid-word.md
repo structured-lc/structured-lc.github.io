@@ -127,3 +127,8 @@ This is a **basic string validation** + flag-setting (state-checking) problem.
 Pattern: *Single pass, early exit on invalid data, track required features with flags.*  
 This coding pattern is widely applicable for input validators/policy checkers, e.g., custom password rules, form validation, or lexical analyzers.  
 Common in both interviews and daily software work for basic input sanitation and property enforcement.
+
+### Tags
+String(#string)
+
+### Similar Problems

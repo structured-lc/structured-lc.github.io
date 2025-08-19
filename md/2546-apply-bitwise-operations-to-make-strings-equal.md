@@ -74,3 +74,9 @@ def makeStringsEqual(s: str, target: str) -> bool:
 ### Summary
 This problem showcases a **bit-parity/symmetry** observation: the core of the problem is about the spread (or lack) of 1-bits and not about their initial exact arrangement. Such "can you reach by a group move?" problems often boil down to structural properties rather than simulation.  
 Pattern: reducing state space by key bit signatures (existence or absence of a type of bit), often useful in transformation problems where operations don't increase the bit complexity of the data.
+
+### Tags
+String(#string), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Minimum One Bit Operations to Make Integers Zero(minimum-one-bit-operations-to-make-integers-zero) (Hard)

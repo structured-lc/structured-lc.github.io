@@ -83,3 +83,10 @@ def minCostClimbingStairs(cost):
 
 ### Summary
 This is a classic **dynamic programming** problem, specifically the "minimum path" variation with choices of one or two steps. The key pattern is to build up the solution using the optimal results of the last two subproblems, allowing O(1) space. This DP principle applies to many stair, grid, and constrained path optimization problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Climbing Stairs(climbing-stairs) (Easy)
+- Find Number of Ways to Reach the K-th Stair(find-number-of-ways-to-reach-the-k-th-stair) (Hard)

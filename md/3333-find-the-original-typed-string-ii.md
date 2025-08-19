@@ -108,3 +108,10 @@ def find_original_typed_string(word: str, k: int) -> int:
 
 ### Summary
 This problem is a classic example of **grouping + dynamic programming** for combinatorial string reconstruction. The main trick is modeling each group as a choice of split, and then layering DP with prefix sums to efficiently try all valid assignments, then summing for the desired lengths. The pattern applies to "split/merge/k-group" string/counting DP problems, and closely matches approaches in string decoding, text segmentation, and certain compressed data interpretations.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Keyboard Row(keyboard-row) (Easy)
+- Faulty Keyboard(faulty-keyboard) (Easy)

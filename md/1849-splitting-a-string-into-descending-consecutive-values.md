@@ -84,3 +84,8 @@ def splitString(s: str) -> bool:
 
 ### Summary
 This problem uses a **recursive backtracking (DFS with backtracking) coding pattern**, trying all possible splits for a strictly defined relationship between segment values. This pattern is common when enumerating all ways to partition a string subject to number-based constraints (e.g., palindrome cuts, additive sequence). It’s efficient for small n due to early pruning and works well for strings up to moderate length.
+
+### Tags
+String(#string), Backtracking(#backtracking), Enumeration(#enumeration)
+
+### Similar Problems

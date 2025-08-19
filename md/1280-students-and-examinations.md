@@ -73,3 +73,8 @@ def students_and_examinations(students, subjects, exams):
 
 ### Summary
 The approach uses hash maps and pair iteration, a common pattern for problems asking about all combinations with counts. Efficient when all pairs are needed, and easily adapted to more complex queries or joins.
+
+### Tags
+Database(#database)
+
+### Similar Problems

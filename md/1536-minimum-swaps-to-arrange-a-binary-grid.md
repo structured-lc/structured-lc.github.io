@@ -106,3 +106,8 @@ def minSwaps(grid):
 
 ### Summary
 This problem uses a **greedy and simulation pattern**. By tracking trailing zeros in each row and selecting the minimal valid row for each position (and counting swaps needed to bubble it up), we resemble an **insertion sort** of sorts. The idea of transforming the problem into another sequence (trailing zeros) and then sorting it is a common approach in greedy grid or permutation problems. This technique also appears in scheduling (minimizing movements), and in simulation of process orderings.
+
+### Tags
+Array(#array), Greedy(#greedy), Matrix(#matrix)
+
+### Similar Problems

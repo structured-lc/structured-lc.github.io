@@ -95,3 +95,8 @@ class H2O:
 
 ### Summary  
 This pattern is a classic example of *barrier synchronization* and *resource counting* in concurrent programming. It is broadly applicable in any scenario where a set number of resources/threads must synchronize before proceeding as a unit, such as task grouping, resource pooling, and concurrent batch processing. The use of semaphores, barriers, or condition variables to group work is a fundamental concurrency pattern.
+
+### Tags
+Concurrency(#concurrency)
+
+### Similar Problems

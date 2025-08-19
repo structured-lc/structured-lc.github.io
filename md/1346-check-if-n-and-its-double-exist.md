@@ -64,3 +64,9 @@ def checkIfExist(arr):
 
 ### Summary
 We used the Hashing (set) finding pattern to check for complements in O(n) time. This is common for pair-checking problems, such as "Two Sum" and similar array membership detections.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Keep Multiplying Found Values by Two(keep-multiplying-found-values-by-two) (Easy)

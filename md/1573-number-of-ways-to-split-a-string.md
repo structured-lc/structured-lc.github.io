@@ -69,3 +69,9 @@ def numWays(s):
 
 ### Summary
 This problem uses prefix sum techniques and combinatorics together. It's a typical pattern for substrings or partitioning strings/arrays, especially when global properties like equal sum or counts must be maintained.
+
+### Tags
+Math(#math), String(#string)
+
+### Similar Problems
+- Split Array with Equal Sum(split-array-with-equal-sum) (Hard)

@@ -99,3 +99,11 @@ class Solution:
 
 ### Summary
 This problem uses the **Prefix Sum + Binary Search** pattern for efficient weighted random sampling. The approach ensures O(n) setup and O(log n) per query, balancing time and space well for most applications. This design is commonly used in algorithms requiring non-uniform probability selection, such as weighted lottery systems, sharding based on load, or simulating biased dice.
+
+### Tags
+Array(#array), Math(#math), Binary Search(#binary-search), Prefix Sum(#prefix-sum), Randomized(#randomized)
+
+### Similar Problems
+- Random Pick Index(random-pick-index) (Medium)
+- Random Pick with Blacklist(random-pick-with-blacklist) (Hard)
+- Random Point in Non-overlapping Rectangles(random-point-in-non-overlapping-rectangles) (Medium)

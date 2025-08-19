@@ -78,3 +78,8 @@ def isArmstrong(n: int) -> bool:
 
 ### Summary
 This problem applies the **digit-manipulation** pattern, a simple but classic check using basic loops and exponentiation. The same approach can be used for problems involving digit properties (e.g., palindromic numbers, special numbers, base conversions) and is a good exercise for integer processing and modular arithmetic.
+
+### Tags
+Math(#math)
+
+### Similar Problems

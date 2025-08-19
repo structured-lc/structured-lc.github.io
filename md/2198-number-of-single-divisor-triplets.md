@@ -113,3 +113,9 @@ def singleDivisorTriplet(nums):
 
 ### Summary
 This problem is a good example of *counting by value* and *combinatorial enumeration* based on frequency. It requires careful case handling for same/different elements and efficiently avoids O(n³) brute-force by using the properties of numbers involved, a common approach in advanced array and counting problems. This pattern applies to problems involving triplet/group constraints dependent only on values, not positions.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Count Array Pairs Divisible by K(count-array-pairs-divisible-by-k) (Hard)

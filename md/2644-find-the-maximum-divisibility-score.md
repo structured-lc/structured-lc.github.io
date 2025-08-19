@@ -89,3 +89,9 @@ def maxDivScore(nums, divisors):
 
 ### Summary
 This problem is a direct application of brute-force counting and tie-breaking. The pattern here is "group/count by property and optimize with tie-break on value," commonly used in problems involving majority, frequency, or that ask for "smallest/largest with maximal property." This is a typical approach for easy problems but also a foundational skill for more complex scenarios.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Binary Prefix Divisible By 5(binary-prefix-divisible-by-5) (Easy)

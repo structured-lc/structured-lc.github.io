@@ -108,3 +108,8 @@ def find_overlapping_shifts(employee_shifts):
 
 ### Summary
 This is a classic **interval overlap detection** problem. The pattern is pairwise comparison within grouped data—often solved by self-join in SQL, or nested loops in Python. This is commonly used whenever determining schedule conflicts, room bookings, or event overlaps. More advanced variants use sweep-line algorithms for improved efficiency.
+
+### Tags
+Database(#database)
+
+### Similar Problems

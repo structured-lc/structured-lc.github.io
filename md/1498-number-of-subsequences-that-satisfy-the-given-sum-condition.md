@@ -74,3 +74,11 @@ def numSubseq(nums, target):
 
 ### Summary
 Uses two-pointer and precompute power-of-2 patterns. Widely applicable to sliding window, counting subsets with constraints, range-based DP, and pruning combinations based on min/max or sum bounds.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Operations to Form Subsequence With Target Sum(minimum-operations-to-form-subsequence-with-target-sum) (Hard)
+- Find the Sum of Subsequence Powers(find-the-sum-of-subsequence-powers) (Hard)
+- Find the Sum of the Power of All Subsequences(find-the-sum-of-the-power-of-all-subsequences) (Hard)

@@ -105,3 +105,11 @@ def goodIndices(nums, k):
 
 ### Summary
 This problem uses the *prefix/suffix streaks* pattern, precomputing for each position the length of the longest non-increasing and non-decreasing sequences. It converts what appears to be a sliding window monotonicity check into efficient O(n) derived information with auxiliary arrays—a common technique in array streak or range problems. This pattern is also applicable in problems like "Maximum Size Subarray with k Properties" and others leveraging streaks or windowed segment properties.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Find Good Days to Rob the Bank(find-good-days-to-rob-the-bank) (Medium)
+- Abbreviating the Product of a Range(abbreviating-the-product-of-a-range) (Hard)
+- Count the Number of K-Big Indices(count-the-number-of-k-big-indices) (Hard)

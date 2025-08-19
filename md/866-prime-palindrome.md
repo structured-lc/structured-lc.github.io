@@ -108,3 +108,9 @@ def prime_palindrome(n):
 This problem combines two interview classics—palindrome checking and primality testing.  
 Key patterns: string reversal for palindromes, trial division for primality, and digit construction for generating odd-length palindromes.  
 This "generate candidate, filter condition" pattern is common for custom number generation problems, and optimizing by domain-specific math insights (e.g., primes and palindromes) can greatly speed up brute-force baseline algorithms.
+
+### Tags
+Math(#math), Number Theory(#number-theory)
+
+### Similar Problems
+- Sum of k-Mirror Numbers(sum-of-k-mirror-numbers) (Hard)

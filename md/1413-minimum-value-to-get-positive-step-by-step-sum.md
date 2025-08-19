@@ -99,3 +99,8 @@ Follow-up question 3:
 ### Summary
 
 This problem is solved using a single pass through the array, tracking the minimum sum encountered. It illustrates the pattern of using a single variable to track a minimum or maximum value in a sequence, which is a common approach in algorithmic problems. This technique can be applied to various problems involving sequences and cumulative sums.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems

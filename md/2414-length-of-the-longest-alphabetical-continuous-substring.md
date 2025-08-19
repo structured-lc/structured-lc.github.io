@@ -81,3 +81,13 @@ def longestContinuousSubstring(s: str) -> int:
 This problem follows the classic sliding window or single-pass scan pattern, ideal for substring or subarray length problems with consecutive/adjacent constraints.  
 The key is translating the "alphabetically consecutive" condition into an ASCII code difference and tracking maximal runs on the fly.  
 This approach is commonly useful for longest increasing, non-decreasing, or other dynamic contiguous segment problems.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Longest Consecutive Sequence(longest-consecutive-sequence) (Medium)
+- Arithmetic Slices(arithmetic-slices) (Medium)
+- Max Consecutive Ones(max-consecutive-ones) (Easy)
+- Maximum Number of Vowels in a Substring of Given Length(maximum-number-of-vowels-in-a-substring-of-given-length) (Medium)
+- Number of Zero-Filled Subarrays(number-of-zero-filled-subarrays) (Medium)

@@ -113,3 +113,11 @@ def countRestrictedPaths(n, edges):
 
 ### Summary
 This problem combines Dijkstra's shortest path with dynamic programming over a DAG (directed by the "strictly decreasing" constraint). Key patterns involved are shortest-path preprocessing, then using topological-ordered DP or memoized DFS for counting valid paths. This technique appears in other problems where path choices are ordered by a numeric feature, such as "strictly increasing/decreasing subpaths" or "longest decreasing path in matrix".
+
+### Tags
+Dynamic Programming(#dynamic-programming), Graph(#graph), Topological Sort(#topological-sort), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
+
+### Similar Problems
+- All Ancestors of a Node in a Directed Acyclic Graph(all-ancestors-of-a-node-in-a-directed-acyclic-graph) (Medium)
+- Design Graph With Shortest Path Calculator(design-graph-with-shortest-path-calculator) (Hard)
+- Minimum Cost of a Path With Special Roads(minimum-cost-of-a-path-with-special-roads) (Medium)

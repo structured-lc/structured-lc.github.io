@@ -149,3 +149,9 @@ def survivedRobotsHealths(positions: List[int], healths: List[int], directions: 
 
 ### Summary
 We used the **monotonic stack** approach after sorting to efficiently resolve robot collisions—each collision is managed as a local, sequential interaction. This stack pattern is common in problems involving sequential conflict or absorption (e.g., Asteroid Collision, Next Greater Element). The solution demonstrates a classic “build, sort, simulate with stack” design for efficiently resolving chain-reaction events in sequences.
+
+### Tags
+Array(#array), Stack(#stack), Sorting(#sorting), Simulation(#simulation)
+
+### Similar Problems
+- Asteroid Collision(asteroid-collision) (Medium)

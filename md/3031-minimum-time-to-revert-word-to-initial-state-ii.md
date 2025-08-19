@@ -102,3 +102,9 @@ def minimumTimeToInitialState(word: str, k: int) -> int:
 
 ### Summary
 This problem is a classic modular arithmetic and permutation cyclicity problem, reduced to finding the smallest t so that k×t is divisible by n, i.e. t = n / gcd(n, k). The coding pattern is number theory with gcd, and appears in periodic cycle, rotation, or operation-repeat-restore problems.
+
+### Tags
+String(#string), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
+
+### Similar Problems
+- Longest Happy Prefix(longest-happy-prefix) (Hard)

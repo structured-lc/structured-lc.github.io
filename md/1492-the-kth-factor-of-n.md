@@ -80,3 +80,8 @@ This problem uses the classic divisor-check pattern, iterating through 1 to n an
 It’s a straightforward O(n) brute-force algorithm, suitable due to small n limits in this problem.  
 The direct count-down approach avoids storing unnecessary data (like a factor list), making it efficient in space.  
 Similar logic applies for finding divisors or factors in other math/number theory problems, and extensions can use factor pair logic for large-scale n.
+
+### Tags
+Math(#math), Number Theory(#number-theory)
+
+### Similar Problems

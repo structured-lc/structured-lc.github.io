@@ -137,3 +137,10 @@ def findGridRegionAverage(image, threshold):
 This problem uses the **2D prefix sum** for fast region sum lookups and manual checks for all up/down/left/right neighbors within a window, which is a common matrix-processing pattern. 
 The approach of marking every cell with all regions it belongs to, and then aggregating results, is a general technique for "overlapping sliding window" problems where output at each cell depends on overlapping neighborhoods. 
 A similar pattern appears in image processing (denoise, blur), convolutional filters, and "median of sliding window" problems.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems
+- Range Sum Query 2D - Immutable(range-sum-query-2d-immutable) (Medium)
+- K Radius Subarray Averages(k-radius-subarray-averages) (Medium)

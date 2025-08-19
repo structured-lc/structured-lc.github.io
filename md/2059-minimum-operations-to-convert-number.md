@@ -101,3 +101,9 @@ def minimumOperations(nums, start, goal):
 ### Summary
 This problem is a classic example of **BFS on an implicit state graph**: you’re searching through all possible values obtainable via a set of repeated operations, seeking the shortest path to a target.  
 The solution shows the BFS pattern for shortest-path, applicable to other transformation and “minimum steps to reach N” problems. This pattern is common in word ladder, lock/unlock problems, and puzzle games with state transitions.
+
+### Tags
+Array(#array), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Minimum Operations to Reduce X to Zero(minimum-operations-to-reduce-x-to-zero) (Medium)

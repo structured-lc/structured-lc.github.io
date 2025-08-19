@@ -115,3 +115,13 @@ def smallestValue(n: int) -> int:
 This problem uses a classic **prime factorization and replacement loop**: repeatedly applying a transformation (sum of all prime factors, with multiplicity) until reaching a stable fixed-point value.  
 The core coding pattern is **loop until no change/fixed point**, and the prime factorization as a helper function. This pattern appears in other problems involving iterative mathematical transformations, e.g., digital root, repeated transformations, and dynamic process stabilization.  
 The factorization code is direct and easily adaptable; this “replace and repeat” style is a useful tool for other number theory and convergence pattern problems.
+
+### Tags
+Math(#math), Simulation(#simulation), Number Theory(#number-theory)
+
+### Similar Problems
+- Happy Number(happy-number) (Easy)
+- 2 Keys Keyboard(2-keys-keyboard) (Medium)
+- Count Ways to Make Array With Product(count-ways-to-make-array-with-product) (Hard)
+- Distinct Prime Factors of Product of Array(distinct-prime-factors-of-product-of-array) (Medium)
+- Minimum Division Operations to Make Array Non Decreasing(minimum-division-operations-to-make-array-non-decreasing) (Medium)

@@ -112,3 +112,12 @@ class Solution:
 The approach uses the classic two-pointer (slow/fast) technique for linked list middle finding, followed by in-place reversal and two-pointer comparison.  
 This O(1) space trick is a staple in linked list patterns—also useful for problems involving list reordering, pairing, and cycle detection.  
 Common patterns: slow/fast pointers, in-place reversal, and pairwise comparison.
+
+### Tags
+Linked List(#linked-list), Two Pointers(#two-pointers), Stack(#stack), Recursion(#recursion)
+
+### Similar Problems
+- Palindrome Number(palindrome-number) (Easy)
+- Valid Palindrome(valid-palindrome) (Easy)
+- Reverse Linked List(reverse-linked-list) (Easy)
+- Maximum Twin Sum of a Linked List(maximum-twin-sum-of-a-linked-list) (Medium)

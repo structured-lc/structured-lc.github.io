@@ -107,3 +107,9 @@ class Solution:
 
 ### Summary
 This problem uses the **Digit DP** technique: counting special numbers in a range using recursive (with memoization) dynamic programming on digit positions. The computation is split into prefix sums (`count(≤high)` minus `count(≤low-1)`), which is a very common trick for digit-type problems. This pattern also appears in "Count numbers with certain digit/property," "Sum of digits in range," and related integer range problems.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Stepping Numbers(stepping-numbers) (Medium)

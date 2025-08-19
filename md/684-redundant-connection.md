@@ -89,3 +89,12 @@ def findRedundantConnection(edges):
 This is a classic **cycle detection in undirected graph** problem, efficiently solved using the **Union-Find (Disjoint Set)** algorithm.  
 Union-Find is a common coding pattern for questions involving connected components, cycles, network connectivity, and is widely used in Kruskal’s MST and other graph problems.  
 The problem demonstrates how to efficiently detect cycles in a streaming manner, with O(n) performance and minimal storage.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
+
+### Similar Problems
+- Redundant Connection II(redundant-connection-ii) (Hard)
+- Accounts Merge(accounts-merge) (Medium)
+- Maximum Employees to Be Invited to a Meeting(maximum-employees-to-be-invited-to-a-meeting) (Hard)
+- Shortest Cycle in a Graph(shortest-cycle-in-a-graph) (Hard)

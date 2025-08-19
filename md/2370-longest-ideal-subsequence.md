@@ -86,3 +86,9 @@ def longestIdealString(s: str, k: int) -> int:
 This is a classic **dynamic programming** problem, with state representing the best answer for all subsequences ending with each letter.  
 It uses a one-dimensional DP array indexed by character, with transitions based only on nearby entries (by at most k positions). This “DP on letters” pattern is seen in many substring/subsequence optimization problems, especially when adjacency is restricted by a mathematical condition.  
 The pattern applies to problems like the longest increasing/decreasing subsequence with constraints, or problems limiting jumps based on alphabet/index differences.
+
+### Tags
+Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Longest Increasing Subsequence(longest-increasing-subsequence) (Medium)

@@ -95,3 +95,16 @@ def matchPlayersAndTrainers(players, trainers):
 
 ### Summary
 This problem uses a **greedy two-pointers after sorting** coding pattern—a classic technique for various matching, interval scheduling, or resource allocation problems where ordering both sides allows efficient lookup. The core pattern is applicable wherever "assign in order, moving up both pointers when matched" ensures optimal results, such as in scheduling meetings, task-to-worker assignments, or movie showtiming seatings.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Most Profit Assigning Work(most-profit-assigning-work) (Medium)
+- Long Pressed Name(long-pressed-name) (Easy)
+- Interval List Intersections(interval-list-intersections) (Medium)
+- Largest Merge Of Two Strings(largest-merge-of-two-strings) (Medium)
+- Maximum Number of Tasks You Can Assign(maximum-number-of-tasks-you-can-assign) (Hard)
+- Successful Pairs of Spells and Potions(successful-pairs-of-spells-and-potions) (Medium)
+- The Latest Time to Catch a Bus(the-latest-time-to-catch-a-bus) (Medium)
+- Maximize Greatness of an Array(maximize-greatness-of-an-array) (Medium)

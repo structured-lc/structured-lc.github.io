@@ -97,3 +97,8 @@ def kEmptySlots(flowers, k):
 
 ### Summary
 This approach demonstrates the **sliding window/prefix minimum** pattern for interval checking, paired with array preprocessing for O(1) queries. This is a common technique when you need to find a window or subarray with certain min/max properties relative to the edges (seen also in problems like "subarray with constraints," "min/max in all sliding windows," or advanced variation of two-pointer problems).
+
+### Tags
+Array(#array), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Queue(#queue), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set), Monotonic Queue(#monotonic-queue)
+
+### Similar Problems

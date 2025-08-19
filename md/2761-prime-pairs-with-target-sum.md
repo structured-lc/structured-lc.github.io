@@ -85,3 +85,9 @@ def findPrimePairs(n):
 
 ### Summary
 This is a classic use of the Sieve of Eratosthenes for fast primality checking, combined with a two-pointer-style search for pairs by iterating only up to ⌊n/2⌋. The approach is efficient, minimizing redundant work, and is broadly applicable to problems involving prime sums or Goldbach-type conjecture applications.
+
+### Tags
+Array(#array), Math(#math), Enumeration(#enumeration), Number Theory(#number-theory)
+
+### Similar Problems
+- Count Primes(count-primes) (Medium)

@@ -114,3 +114,9 @@ def minStickers(stickers, target):
 This problem is a classic **"stateful recursion with memoization"** pattern: reduce the target bit by bit using available resources (stickers), recursively solve subproblems, cache results.  
 It appears frequently in problems where you must minimize operations/resources for string formation or covering sets, such as Word Break (DP + recursion), Coin Change, and Set Cover problems.  
 Efficiently handling state (string or tuple) and aggressive pruning are crucial for acceptable runtime.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Memoization(#memoization), Bitmask(#bitmask)
+
+### Similar Problems
+- Ransom Note(ransom-note) (Easy)

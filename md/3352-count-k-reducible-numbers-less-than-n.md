@@ -157,3 +157,8 @@ def count_k_reducible_numbers(n: int, k: int) -> int:
 
 ### Summary
 This problem applies the **digit DP** pattern to work with constraints in number representations efficiently, specifically for properties reducible by popcount. Patterns of digit DP frequently appear in combinatorial and counting problems where "numbers less than N with a given property" must be counted, such as numbers with certain digits, digit sums, or divisibility. It's a highly reusable approach for bitwise or numerical "reduce-to-value" properties.
+
+### Tags
+Math(#math), String(#string), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
+
+### Similar Problems

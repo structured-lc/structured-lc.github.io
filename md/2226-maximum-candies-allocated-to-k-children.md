@@ -96,3 +96,16 @@ def maximumCandies(candies, k):
 
 ### Summary
 This problem uses the **binary search on the answer pattern**, common in allocation/partitioning problems when feasibility for a fixed value can be checked efficiently. The counting logic is O(n), and binary search efficiently narrows down the maximum number of candies per child. This approach is widely applicable—e.g., distributing other resources (wood, ribbons), maximizing minimums, etc.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Koko Eating Bananas(koko-eating-bananas) (Medium)
+- Minimum Limit of Balls in a Bag(minimum-limit-of-balls-in-a-bag) (Medium)
+- Minimum Speed to Arrive on Time(minimum-speed-to-arrive-on-time) (Medium)
+- Maximum Number of Removable Characters(maximum-number-of-removable-characters) (Medium)
+- Minimized Maximum of Products Distributed to Any Store(minimized-maximum-of-products-distributed-to-any-store) (Medium)
+- Minimum Time to Complete Trips(minimum-time-to-complete-trips) (Medium)
+- Minimize Maximum of Array(minimize-maximum-of-array) (Medium)
+- Maximize Happiness of Selected Children(maximize-happiness-of-selected-children) (Medium)

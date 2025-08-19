@@ -95,3 +95,8 @@ class Solution:
 
 ### Summary
 This problem leverages combinatorial counting (combinations and pair frequencies) and symmetry in the Manhattan metric to avoid brute-force enumeration—an instance of the "multiply by frequency" technique. It can be applied to similar problems involving pairwise metrics over subsets of grids (e.g., VLSI, distributions, combinatorial counting, etc.). Pattern: **pairwise counting, symmetry, mathematical reduction**.
+
+### Tags
+Math(#math), Combinatorics(#combinatorics)
+
+### Similar Problems

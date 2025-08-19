@@ -99,3 +99,9 @@ def maximizeFreeTime(eventTime, k, startTime, endTime):
 This problem uses a **greedy sliding window approach** on precomputed “gaps” between meetings, efficiently considering how rescheduling any k consecutive meetings allows maximizing one continuous free period.  
 This is a classic example of **window manipulation** in interval/array problems where you merge segments for a global optimum.  
 The pattern also appears in conference scheduling, busy/idle slot optimization, or maximizing contiguous resource availability in other time-interval problems.
+
+### Tags
+Array(#array), Greedy(#greedy), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Meeting Scheduler(meeting-scheduler) (Medium)

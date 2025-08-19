@@ -71,3 +71,8 @@ def accountBalanceAfterPurchase(purchaseAmount: int) -> int:
 
 ### Summary
 This problem is a classic “round to the nearest multiple” with a tiebreaks-up rule, and direct arithmetic makes the code simple and efficient. The pattern is very common for rounding or bucketing problems, so this technique applies anywhere you need to group or round input values (e.g., batch processing, grading scales, or interval-based logic).
+
+### Tags
+Math(#math)
+
+### Similar Problems

@@ -139,3 +139,10 @@ def topStudents(positive_feedback, negative_feedback, report, student_id, k):
 This problem is a classic case of **scoring + sorting with tie-breakers**.  
 The solution uses hashing for efficient look-up (Python set), iterates through each record, and uses a custom sort based on two keys.  
 Such scoring-and-ranking logic is a common pattern — applicable to problems like "rank athletes", "sort employees by performance", or "select top N items with multiple ranking criteria".
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Queue Reconstruction by Height(queue-reconstruction-by-height) (Medium)
+- K Highest Ranked Items Within a Price Range(k-highest-ranked-items-within-a-price-range) (Medium)

@@ -107,3 +107,9 @@ def word_frequency(filename):
 
 ### Summary
 This problem demonstrates the **hashmap pattern** for word counting, frequently seen in text processing. The output sorting by two criteria is a common question and applies to tasks like histogram counting, log analysis, and deduplication. A similar template is used for “Top K Frequent Elements” and problems involving grouping and sorting by frequency or metrics.
+
+### Tags
+Shell(#shell)
+
+### Similar Problems
+- Top K Frequent Elements(top-k-frequent-elements) (Medium)

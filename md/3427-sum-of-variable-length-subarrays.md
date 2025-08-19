@@ -94,3 +94,10 @@ def sumOfVariableLengthSubarrays(nums):
 This problem illustrates the **prefix sum pattern**, converting a brute-force O(n²) approach into an efficient O(n) algorithm.  
 It's a classic example of using prefix sums for range sum queries, a pattern useful in subarray sum, sliding window, and many range query problems.  
 Commonly applied in array processing, time-series sums, and other aggregate range computations.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Range Sum Query - Immutable(range-sum-query-immutable) (Easy)
+- Maximum Sum of 3 Non-Overlapping Subarrays(maximum-sum-of-3-non-overlapping-subarrays) (Hard)

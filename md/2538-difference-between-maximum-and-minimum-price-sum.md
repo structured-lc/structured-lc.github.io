@@ -175,3 +175,9 @@ def maxOutput(n, edges, price):
 
 ### Summary
 This problem is a classic example of **tree dynamic programming (tree DP) with rerooting**. The key is to use one DFS to find downward best paths from children, then cleverly propagate information in a second rerooting DFS to handle each node as potential root efficiently. This DP rerooting technique is extremely useful for any "every root, aggregate over all descendants" type tree path problems. The pattern appears in subtree/supertree computations, path assignment, and optimizing properties that depend on root choice in trees.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems
+- Binary Tree Maximum Path Sum(binary-tree-maximum-path-sum) (Hard)

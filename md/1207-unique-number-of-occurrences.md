@@ -93,3 +93,8 @@ def uniqueOccurrences(arr):
 
 ### Summary
 This is a classic hash map + set pattern — **use a dictionary to count occurrences, and a set to ensure uniqueness**. This approach is common for any "uniqueness of counts" problem and can be applied wherever you must check for unique group sizes, such as finding unique degrees in a graph or uniqueness of row/column frequency in matrix problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

@@ -75,3 +75,12 @@ def maxScore(cardPoints, k):
 
 ### Summary
 This problem is a classic example of the sliding window pattern. Instead of checking every pick at both ends, we model the picking process as leaving a window of n-k cards unpicked. By finding the minimal sum of n-k consecutive cards to leave behind, we can determine the maximal score efficiently. The technique applies to other "pick-from ends" problems as well, especially those that reduce to an exclusion window.
+
+### Tags
+Array(#array), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Maximum Score from Performing Multiplication Operations(maximum-score-from-performing-multiplication-operations) (Hard)
+- Removing Minimum and Maximum From Array(removing-minimum-and-maximum-from-array) (Medium)
+- Minimum Recolors to Get K Consecutive Black Blocks(minimum-recolors-to-get-k-consecutive-black-blocks) (Easy)
+- Maximum Spending After Buying Items(maximum-spending-after-buying-items) (Hard)

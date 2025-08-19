@@ -108,3 +108,9 @@ def crawl(startUrl, htmlParser):
 
 ### Summary
 This problem is a classic **graph traversal** question in disguise, solved effectively with BFS and a visited set. It’s closely related to crawling or exploring nodes in any linked data structure (graphs, trees, etc). The BFS/crawling pattern applies broadly in real-world applications such as indexing, dependency scanning, or link-based viral propagation across networks.
+
+### Tags
+String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Interactive(#interactive)
+
+### Similar Problems
+- Web Crawler Multithreaded(web-crawler-multithreaded) (Medium)

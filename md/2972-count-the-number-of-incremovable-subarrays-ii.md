@@ -120,3 +120,9 @@ def incremovable_subarrays(nums):
 ### Summary
 This problem uses the two-pointer and prefix/suffix idea to efficiently check the number of valid "incremovable" subarrays.  
 Strict prefix/suffix scanning and windowing is a common pattern for substring/subarray problems with constraints that depend on order, such as with strictly increasing/decreasing restrictions. This type of approach generalizes to problems involving merging sorted/range-based segments, dynamic programming for disjoint intervals, and greedy segment removals.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search)
+
+### Similar Problems
+- Shortest Subarray to be Removed to Make Array Sorted(shortest-subarray-to-be-removed-to-make-array-sorted) (Medium)

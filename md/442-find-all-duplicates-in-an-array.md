@@ -248,3 +248,11 @@ def findDuplicatesRobust(nums):
 
 ### Summary
 This problem showcases a clever use of array indices as a hash table, exploiting the constraint that numbers are in the range [1, n]. The sign-flipping technique is a common pattern for marking visited elements without using extra space. This approach is fundamental in problems where you need to track state within the constraints of the input structure. Understanding how to use array modifications for marking is crucial for solving space-efficient algorithms and demonstrates the importance of leveraging problem constraints creatively.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems
+- Find All Numbers Disappeared in an Array(find-all-numbers-disappeared-in-an-array) (Easy)
+- Sum of Distances(sum-of-distances) (Medium)
+- The Two Sneaky Numbers of Digitville(the-two-sneaky-numbers-of-digitville) (Easy)

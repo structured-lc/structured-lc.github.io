@@ -92,3 +92,8 @@ def check_digits_equal_after_operations(s: str) -> bool:
 
 ### Summary
 This problem uses a **Simulation / String reduction** pattern: iteratively condense a sequence based on adjacency rules. It's a classic "process until condition" implementation, and variants are common in digit games, elimination games, catalan-type reductions, or some dynamic programming transitions. The simulation pattern is broadly applicable—good for problems where operations are tightly coupled step by step and output relies on repeated transformation rather than direct math.
+
+### Tags
+Math(#math), String(#string), Simulation(#simulation), Combinatorics(#combinatorics), Number Theory(#number-theory)
+
+### Similar Problems

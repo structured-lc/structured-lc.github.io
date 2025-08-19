@@ -147,3 +147,8 @@ def year_on_year_growth_rate(user_transactions):
 
 ### Summary
 This solution demonstrates the **grouping and self-join pattern for sequential stats**, often used for time-based analytics (YoY/quarter/period-over-period). The approach is foundational for BI dashboards and can be adapted for SQL (with window functions) or Python (using dicts). This pattern appears frequently in business data processing, revenue analyses, and in LeetCode SQL/analytics problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

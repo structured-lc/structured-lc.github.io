@@ -117,3 +117,11 @@ def uniquePathsIII(grid):
 
 ### Summary
 This approach uses **backtracking and DFS** to enumerate all valid routes from the start cell, visiting every empty cell *exactly once*, and reaching the end. It's a classic stateful traversal problem, similar to "Hamiltonian Path" on a grid. The backtracking pattern is common for permutation and path-counting problems, especially when path-uniqueness or constraints are involved (e.g., Sudoku, word search, N-Queens).
+
+### Tags
+Array(#array), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Matrix(#matrix)
+
+### Similar Problems
+- Sudoku Solver(sudoku-solver) (Hard)
+- Unique Paths II(unique-paths-ii) (Medium)
+- Word Search II(word-search-ii) (Hard)

@@ -122,3 +122,9 @@ def minOperations(word1: str, word2: str) -> int:
 
 ### Summary
 This problem connects to **DP on partitions**, string transformation, and **interval DP patterns**. The crucial insight is using the substring operation's power to freely permute, swap, and reverse, making frequency counts the main subproblem. This pattern appears in many hard DP problems where you're allowed to batch edit substrings or segments—such as edit distance with batch ops, or palindrome partitioning.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
+
+### Similar Problems
+- Edit Distance(edit-distance) (Medium)

@@ -271,3 +271,11 @@ def parseTernaryDeque(expression):
 
 ### Summary
 This problem demonstrates recursive parsing of nested expressions with proper precedence handling. The key insight is recognizing the right-associative nature of ternary operators and using recursion to handle the nested structure naturally. This pattern is fundamental in compiler design, expression evaluation, and parsing algorithms. Understanding how to match operators across nested structures is crucial for building interpreters and evaluating complex expressions.
+
+### Tags
+String(#string), Stack(#stack), Recursion(#recursion)
+
+### Similar Problems
+- Mini Parser(mini-parser) (Medium)
+- Remove Comments(remove-comments) (Medium)
+- Parse Lisp Expression(parse-lisp-expression) (Hard)

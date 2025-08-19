@@ -74,3 +74,8 @@ def getFolderNames(names):
 
 ### Summary
 This uses the hash map pattern for deduplication and collision resolution, as with URL shorteners or username systems. It's a form of greedy allocation with memory for quick lookup.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string)
+
+### Similar Problems

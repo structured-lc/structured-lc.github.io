@@ -109,3 +109,11 @@ def wordPattern(pattern, s):
 
 ### Summary
 This question is a classic **bijection/hash map** problem, vital for mastering **mapping patterns** in strings and arrays—very common in interviews when checking for unique correspondences. Variations of this appear in problems about isomorphic strings, anagrams, or unique transformations. The double-hashmap pattern is frequently reusable in such scenarios.
+
+### Tags
+Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Isomorphic Strings(isomorphic-strings) (Easy)
+- Word Pattern II(word-pattern-ii) (Medium)
+- Find and Replace Pattern(find-and-replace-pattern) (Medium)

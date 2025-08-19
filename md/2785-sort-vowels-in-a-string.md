@@ -103,3 +103,9 @@ def sortVowels(s: str) -> str:
 - This is a classic string reconstruction problem, involving extraction, process, and rebuild.
 - The approach is similar to two-pointer or stream-reconstruction patterns, useful in problems asking to reorder or filter subsequence elements in place without disturbing the overall structure.
 - Counting sort provides speedup due to limited character alphabet; pattern applies to selective character sorting under constraints.
+
+### Tags
+String(#string), Sorting(#sorting)
+
+### Similar Problems
+- Reverse Vowels of a String(reverse-vowels-of-a-string) (Easy)

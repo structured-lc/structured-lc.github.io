@@ -73,3 +73,9 @@ def numWays(steps, arrLen):
 
 ### Summary
 This problem is a classic **bounded 1D DP** (state compression), reusing rows for efficiency. The pattern often appears in random walks, probability paths, and state machine transitions constrained by boundaries.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Number of Ways to Reach a Position After Exactly k Steps(number-of-ways-to-reach-a-position-after-exactly-k-steps) (Medium)

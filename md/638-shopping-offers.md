@@ -110,3 +110,8 @@ def shoppingOffers(price, special, needs):
 
 ### Summary
 This problem uses the **classic recursive DFS with memoization (DP over states)** pattern, commonly applied in *combination optimization* under constraints with a small number of dimension variables. Similar patterns are frequent in "shopping offers," "multi-dimensional knapsack," "coin change," and "shortest path with state constraints" problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Memoization(#memoization), Bitmask(#bitmask)
+
+### Similar Problems

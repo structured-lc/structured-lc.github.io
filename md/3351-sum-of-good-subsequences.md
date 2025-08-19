@@ -117,3 +117,8 @@ def sumOfGoodSubsequences(nums):
 This problem is a variation of the **DP on subsequences** pattern, similar to “count increasing subsequences”, but with strict consecutive difference = 1.  
 The key is to define **dp[x]** as the sum/ways of good subsequences ending with x, and build relations using only valid, consecutive values.  
 Commonly used in problems involving sequence constraints with tight bounds (e.g. jumping numbers, zig-zag arrays).
+
+### Tags
+Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

@@ -128,3 +128,8 @@ def canPartitionGrid(grid):
 
 ### Summary
 This problem combines **prefix sums**, **partitioning**, and a localized check for **"discounting" border cells to correct for imbalances**. The coding pattern here is common in partitioning arrays/grids with minimal intervention—often seen in grid-cut, split-equal, and divide-and-conquer contexts. Handling *region connectivity* after modification is a common follow-up in 2D grid manipulation problems (flood-fill, island counting, etc.), and the approach translates to other problems requiring maintaining the connectedness of regions after modification.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Matrix(#matrix), Enumeration(#enumeration), Prefix Sum(#prefix-sum)
+
+### Similar Problems

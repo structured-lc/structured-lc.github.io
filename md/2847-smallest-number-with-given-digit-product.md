@@ -85,3 +85,10 @@ def smallestNumber(n: int) -> str:
 
 ### Summary
 This problem is a classic application of **greedy factorization**: break a number into digit factors using the largest allowed digits, then organize them to form the minimal number. The pattern of **factorization using bounded primes**, with **post-processing order for minimal value**, is common in digit-product or root problems, and the technique is useful for other digit-construction or minimal/maximal value composition challenges.
+
+### Tags
+Math(#math), Greedy(#greedy)
+
+### Similar Problems
+- Smallest Divisible Digit Product I(smallest-divisible-digit-product-i) (Easy)
+- Smallest Divisible Digit Product II(smallest-divisible-digit-product-ii) (Hard)

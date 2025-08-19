@@ -66,3 +66,10 @@ def diagonalSum(mat):
 
 ### Summary
 This problem is an example of simple matrix traversal with index calculations. The pattern is typical for diagonal sums, anti-diagonal traversals, and related problems on square matrices. Counting overlaps (like the center) is a standard trick for O(n) efficient answers.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems
+- Check if Every Row and Column Contains All Numbers(check-if-every-row-and-column-contains-all-numbers) (Easy)
+- Check if Matrix Is X-Matrix(check-if-matrix-is-x-matrix) (Easy)

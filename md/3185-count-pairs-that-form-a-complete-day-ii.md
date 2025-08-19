@@ -68,3 +68,10 @@ def count_pairs(hours):
 
 ### Summary
 This problem uses the **modulo/remainder and complement counting pattern**, which is common in problems asking for pairs that sum to a multiple of some value (e.g., "two sum" modulo). The same pattern applies to finding subarrays or pairs in arrays with a prescribed modular sum, and is useful any time only remainders matter for counting combinations. The fixed, small modulus (24) keeps both time and space low.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Counting(#counting)
+
+### Similar Problems
+- Pairs of Songs With Total Durations Divisible by 60(pairs-of-songs-with-total-durations-divisible-by-60) (Medium)
+- Check If Array Pairs Are Divisible by k(check-if-array-pairs-are-divisible-by-k) (Medium)

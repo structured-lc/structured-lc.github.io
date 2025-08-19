@@ -137,3 +137,10 @@ def scoreOfStudents(s: str, answers: list[int]) -> int:
 
 ### Summary
 This problem uses a **recursive DP with memoization** approach for all possible ways to evaluate an arithmetic expression, a classic "all possible results from different groupings" pattern. Efficient memoization is key. The pattern applies to many problems involving all possible computation orderings, such as "different ways to add parentheses" or "evaluate all expressions".
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), String(#string), Dynamic Programming(#dynamic-programming), Stack(#stack), Memoization(#memoization)
+
+### Similar Problems
+- Basic Calculator(basic-calculator) (Hard)
+- Different Ways to Add Parentheses(different-ways-to-add-parentheses) (Medium)

@@ -88,3 +88,8 @@ def toHex(num: int) -> str:
 
 ### Summary
 This is a direct application of **bit manipulation and number base conversion**. The problem is a good example of manually handling number format conversions and two's complement for negative numbers—key skills for systems and embedded interviews. The same pattern (repeated division and mapping) can be extended to convert to other bases (binary, octal, custom bases) or to handle different output formats.
+
+### Tags
+Math(#math), String(#string), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

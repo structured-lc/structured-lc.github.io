@@ -165,3 +165,10 @@ class Solution:
 
 ### Summary
 This is a classic **tree transformation** and **in-place modification** problem using **preorder traversal** and the **DFS pattern**. The recursive method is elegant and works seamlessly with the unwinding order of recursion. Morris Traversal allows for O(1) extra space by rewiring pointers, showcasing advanced pointer manipulation. Similar in-place modification patterns show up in tree problems like right-side view, connecting next right pointers, or flattening/serializing trees for storage.
+
+### Tags
+Linked List(#linked-list), Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Flatten a Multilevel Doubly Linked List(flatten-a-multilevel-doubly-linked-list) (Medium)
+- Correct a Binary Tree(correct-a-binary-tree) (Medium)

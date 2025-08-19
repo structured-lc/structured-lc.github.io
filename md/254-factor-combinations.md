@@ -79,3 +79,9 @@ def getFactors(n):
 
 ### Summary
 This problem uses the **backtracking/DFS pattern** to generate all unique, sorted factor combinations without repetition or reordering. Pruning with the sqrt(n) boundary and enforcing non-decreasing order makes this both efficient and correct. Variants of this pattern appear in integer partitioning, combination sum, and recursive factorization problems.
+
+### Tags
+Backtracking(#backtracking)
+
+### Similar Problems
+- Combination Sum(combination-sum) (Medium)

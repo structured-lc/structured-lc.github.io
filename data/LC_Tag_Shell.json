@@ -1,6 +1,6 @@
 [
-    {"number": 192, "slug": "word-frequency", "title": "Word Frequency", "difficulty": "Medium"},
-    {"number": 193, "slug": "valid-phone-numbers", "title": "Valid Phone Numbers", "difficulty": "Easy"},
-    {"number": 194, "slug": "transpose-file", "title": "Transpose File", "difficulty": "Medium"},
-    {"number": 195, "slug": "tenth-line", "title": "Tenth Line", "difficulty": "Easy"}
+    {"number": 192, "slug": "word-frequency", "title": "Word Frequency", "difficulty": "Medium", "tags": ["Shell"], "similar_problems": [{"slug": "top-k-frequent-elements", "title": "Top K Frequent Elements", "difficulty": "Medium"}]},
+    {"number": 193, "slug": "valid-phone-numbers", "title": "Valid Phone Numbers", "difficulty": "Easy", "tags": ["Shell"], "similar_problems": []},
+    {"number": 194, "slug": "transpose-file", "title": "Transpose File", "difficulty": "Medium", "tags": ["Shell"], "similar_problems": []},
+    {"number": 195, "slug": "tenth-line", "title": "Tenth Line", "difficulty": "Easy", "tags": ["Shell"], "similar_problems": []}
 ]

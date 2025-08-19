@@ -110,3 +110,9 @@ def minInterval(intervals, queries):
 
 ### Summary
 This problem is a classic **sweep line + min-heap** interval covering problem, where we leverage sorting, a priority queue, and processing events in order to efficiently track relevant covering intervals per query. This coding pattern is common for interval scheduling, minimum range covering, and offline query answering in problems with large search space. It can be generalized to many other scenarios involving ranges and point queries.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Line Sweep(#line-sweep), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Number of Flowers in Full Bloom(number-of-flowers-in-full-bloom) (Hard)

@@ -101,3 +101,9 @@ def subarrayLCM(nums, k):
 This problem is a classic example of the **enumerate all subarrays** pattern, applying a running aggregation (LCM) with early exit optimization.  
 Unlike the sum or GCD, the LCM does not have convenient invertibility, so prefix/suffix tricks don't work—thus, a two-loops approach is optimal up to moderate size.  
 The pattern applies to similar range-query problems where the operation isn't easily decomposed or recombined.
+
+### Tags
+Array(#array), Math(#math), Number Theory(#number-theory)
+
+### Similar Problems
+- Number of Subarrays With GCD Equal to K(number-of-subarrays-with-gcd-equal-to-k) (Medium)

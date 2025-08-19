@@ -107,3 +107,9 @@ def countPartitions(nums):
 
 ### Summary
 This problem uses a **greedy/cutting algorithm with last occurrence tracking**, a classic way to enforce value constraints over segments. It relates to patterns like "partition labels" or "merge intervals" and is often useful in problems requiring unique element handling over subarrays. Recognizing the key constraint (all occurrences grouped) enables an O(n) solution.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Combinatorics(#combinatorics)
+
+### Similar Problems
+- Check if There is a Valid Partition For The Array(check-if-there-is-a-valid-partition-for-the-array) (Medium)

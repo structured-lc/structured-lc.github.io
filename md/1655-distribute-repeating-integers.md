@@ -83,3 +83,8 @@ def canDistribute(nums: List[int], quantity: List[int]) -> bool:
 
 ### Summary
 This classic **backtracking/bitmask** allocation problem leverages the small customer count (n ≤ 10). Sorting demands and pruning early speeds up the search. This pattern applies widely to pile/assignment problems with distributable units.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems

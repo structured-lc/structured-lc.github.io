@@ -95,3 +95,8 @@ def minimumArrayLength(nums):
 This problem reduces to a number theory insight: repeatedly taking modulus eventually will shrink the array to either a single element (if some number isn’t a multiple of the minimum), or to about half as many as minimums (when all are multiples of the minimum).  
 Pattern: **Greedy, Min/Mod, Array Reduction.**  
 This “keep reducing by modulus” technique frequently arises in combinatorial or number theory problems, especially when the operation mimics some property of the GCD.
+
+### Tags
+Array(#array), Math(#math), Greedy(#greedy), Number Theory(#number-theory)
+
+### Similar Problems

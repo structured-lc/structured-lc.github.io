@@ -101,3 +101,8 @@ If you use an explicit stack (alternative solution), space can be up to O(n) for
 
 ### Summary
 This is a classic example of using depth-counting and stack simulations for parentheses matching and scoring. The bit manipulation/depth approach is especially efficient and elegant for problems with primitive patterns and strict rules. The main coding pattern here—parenthesis parsing and state tracking—shows up in expression evaluation, syntax checking, and recursive data parsing problems.
+
+### Tags
+String(#string), Stack(#stack)
+
+### Similar Problems

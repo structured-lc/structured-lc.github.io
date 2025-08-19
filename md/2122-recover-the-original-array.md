@@ -96,3 +96,10 @@ def recoverArray(nums):
 
 ### Summary
 This problem is a strong example of **hashing and greedy pairing** after sorting. It highlights the pattern of candidate generation by checking all reasonable "differences" and verifying validity with hash counting. Variations of this technique appear in problems with "pair up" requirements, or when reconstructing arrays generated from deterministic operations on unknowns. The need to handle duplicates gracefully makes this a good hashmap/frequency practice problem.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Sorting(#sorting), Enumeration(#enumeration)
+
+### Similar Problems
+- Find Array Given Subset Sums(find-array-given-subset-sums) (Hard)
+- Find Original Array From Doubled Array(find-original-array-from-doubled-array) (Medium)

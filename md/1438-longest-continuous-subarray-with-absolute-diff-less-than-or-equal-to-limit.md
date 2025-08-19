@@ -72,3 +72,10 @@ def longestSubarray(nums, limit):
 
 ### Summary
 This is a classic monotonic deque / sliding window maximum/minimum pattern, vital in windowed signal, price or statistical analysis. Template generalizes to problems involving window-based range constraints.
+
+### Tags
+Array(#array), Queue(#queue), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set), Monotonic Queue(#monotonic-queue)
+
+### Similar Problems
+- Partition Array Such That Maximum Difference Is K(partition-array-such-that-maximum-difference-is-k) (Medium)
+- Count Subarrays With Fixed Bounds(count-subarrays-with-fixed-bounds) (Hard)

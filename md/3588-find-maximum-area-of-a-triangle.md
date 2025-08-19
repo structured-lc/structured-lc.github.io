@@ -128,3 +128,8 @@ def max_triangle_area(points):
 
 ### Summary
 This problem uses the **geometry + hashing/grouping** pattern, leveraging the fact that vertical/horizontal sides arise with repeated coordinates. Similar grouping tricks frequently appear in computational geometry and optimization problems, especially those involving rectangles or axis-aligned figures. This approach avoids brute force and exploits hash maps for speed. Patterns and hash maps are especially valuable when grouping and then combining with another iteration is necessary.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Greedy(#greedy), Geometry(#geometry), Enumeration(#enumeration)
+
+### Similar Problems

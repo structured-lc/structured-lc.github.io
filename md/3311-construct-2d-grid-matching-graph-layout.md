@@ -152,3 +152,8 @@ def construct2DGrid(n, edges):
 
 ### Summary
 This problem is a classic example of reconstructing a grid-layout from graph adjacencies, leveraging graph traversal and geometric constraints. The core coding pattern is BFS/DFS with explicit grid position mapping. Similar approaches arise in matrix reconstruction, crossword construction, and some puzzle/tiling problems. Key insights include using degrees to identify corners, mapping adjacency directions, and validating the final configuration.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Graph(#graph), Matrix(#matrix)
+
+### Similar Problems

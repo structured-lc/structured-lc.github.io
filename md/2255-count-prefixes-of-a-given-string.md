@@ -87,3 +87,11 @@ This problem is a classic example of string matching using a simple prefix scan.
 It utilizes the “string starts with” coding pattern, which is common in substring and tokenization problems.  
 The approach is direct, efficient for small strings, and easily generalizes to related problems like suffix checks or substring searches.  
 Patterns here are applicable in Trie/string-search problems, token scanning, and text preprocessing.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems
+- Check If a Word Occurs As a Prefix of Any Word in a Sentence(check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) (Easy)
+- Check If String Is a Prefix of Array(check-if-string-is-a-prefix-of-array) (Easy)
+- Counting Words With a Given Prefix(counting-words-with-a-given-prefix) (Easy)

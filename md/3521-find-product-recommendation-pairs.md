@@ -181,3 +181,8 @@ def findProductRecommendationPairs(product_purchases, product_info):
 
 ### Summary
 This problem uses the "hashmap counting + pair generation" pattern: for every entity (user), generate relevant pairs and count them with a dictionary for efficient grouping. This is a common technique for problems involving shared associations, co-purchases, or co-occurrences (like Netflix recommendations, market basket analysis). Patterns here are applicable in product association rules, recommendations, and network clustering.
+
+### Tags
+Database(#database)
+
+### Similar Problems

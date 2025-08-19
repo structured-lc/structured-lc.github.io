@@ -113,3 +113,8 @@ def max_rep_opt1(text):
 
 ### Summary
 This problem is best solved by breaking the string into runs of repeated characters, counting each character’s total frequency, and analyzing how blocks can be merged or extended by a single swap. It’s a combination of sliding window and greedy grouping—patterns also used in questions about substring manipulation and maximum segment finding.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems

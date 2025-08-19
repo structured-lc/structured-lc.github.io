@@ -83,3 +83,10 @@ def getRow(rowIndex):
 
 ### Summary
 This problem uses the **Dynamic Programming** and **in-place array update** pattern, efficiently constructing a specific row from a triangle defined by local rules. This approach can be applied to other triangle-structured DP problems—such as minimum paths, triangle sums, or combinatorial tables—where prior row values determine the next state.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Pascal's Triangle(pascals-triangle) (Easy)
+- Find Triangular Sum of an Array(find-triangular-sum-of-an-array) (Medium)

@@ -96,3 +96,8 @@ def minNumberOperations(target):
 
 ### Summary
 This problem is a great example of a **greedy algorithm** and the "prefix diff" approach—any time a jump up in values appears, it must be covered by new explicit subarray increments. Variants of this pattern show up in interval painting, histogram filling, and delta-encoding scenarios. Understanding when new operations are necessary (vs. when coverage from old operations suffices) helps bring the time down to linear, a theme in many optimal sequence transformation problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems

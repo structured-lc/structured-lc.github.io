@@ -99,3 +99,9 @@ def minimizeConcatenatedLength(words):
 This problem is a **top-down DP with memoization and overlapping subproblems**.  
 It’s based on tracking "state" as first/last character boundaries, and recursive exploration of two options at each join.  
 This **two-pointer dynamic boundary DP** appears in similar string/cost minimization problems, and is highly relevant for optimizing with overlapping subproblems and reconstructing choices (useful for advanced DP and contest questions).
+
+### Tags
+Array(#array), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Largest Merge Of Two Strings(largest-merge-of-two-strings) (Medium)

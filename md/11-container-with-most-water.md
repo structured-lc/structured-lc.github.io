@@ -78,3 +78,11 @@ def max_area(height):
 
 ### Summary  
 This problem uses the two-pointer pattern to efficiently find a pair of indices forming the container with the maximum water. This approach is common for array problems requiring pairwise optimization using linear time, notably where comparisons determine pointer movement. Similar two-pointer techniques are used in problems like trapping rain water, merging sorted arrays, or finding pairs with given sums in sorted lists.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Greedy(#greedy)
+
+### Similar Problems
+- Trapping Rain Water(trapping-rain-water) (Hard)
+- Maximum Tastiness of Candy Basket(maximum-tastiness-of-candy-basket) (Medium)
+- House Robber IV(house-robber-iv) (Medium)

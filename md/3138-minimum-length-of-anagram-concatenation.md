@@ -89,3 +89,8 @@ def minAnagramLength(s):
 
 ### Summary
 This is a **divisor/frequency analysis pattern**: The answer relies on properties of divisibility for chunked regularity, and frequency checks for "anagram-ness." The main technique (character counting + divisor enumeration) is common in substring construction problems, string periodicity, and can be used in questions like minimal string rotation, or period-finding in cyclic patterns. The solution is also efficient, requiring only counting, and divisor logic.
+
+### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems

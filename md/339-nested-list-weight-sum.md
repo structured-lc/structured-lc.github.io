@@ -77,3 +77,11 @@ def depthSum(nestedList):
 
 ### Summary
 This problem uses the **DFS pattern** (specifically pre-order traversal) on recursive data structures. It’s typical for problems involving trees, nested lists, or any hierarchy. Knowing how to traverse arbitrary-depth recursive structures is useful for many interview questions, including file systems, expressions, and tree algorithms.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Nested List Weight Sum II(nested-list-weight-sum-ii) (Medium)
+- Array Nesting(array-nesting) (Medium)
+- Employee Importance(employee-importance) (Medium)

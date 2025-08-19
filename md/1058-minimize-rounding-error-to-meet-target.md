@@ -123,3 +123,8 @@ def minimizeError(prices, target):
 
 ### Summary
 This solution uses a **greedy + sorting** pattern determined by the combinatorial nature of the rounding options, and the need to optimize a cumulative error. The logic — selecting items by smallest (or largest) fractional parts — is common in problems that balance constraint satisfaction and cost minimization and can be used in rounding, distributing resources, or load balancing tasks.
+
+### Tags
+Array(#array), Math(#math), String(#string), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

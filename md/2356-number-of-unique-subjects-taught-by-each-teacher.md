@@ -134,3 +134,8 @@ def count_unique_subjects(teacher_rows):
 This problem uses the **group-by** and **unique counting** pattern, a classic in SQL and data aggregation tasks.  
 It closely relates to **hashing/grouping by key and set membership** algorithms, seen in database engines and large-scale log processing.  
 The solution pattern generalizes to counting the number of distinct items per group, and is relevant in user analytics, logging, and category aggregation.
+
+### Tags
+Database(#database)
+
+### Similar Problems

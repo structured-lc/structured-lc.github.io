@@ -118,3 +118,10 @@ def employeeFreeTime(schedule):
 This is a classic **merge intervals** pattern problem.  
 You flatten and sort all intervals, merge them, then look for gaps—applying the same approach as for meeting rooms or calendar union/intersection.  
 This pattern reappears in range intersection, free/busy time calculations, and event timeline simulation problems.
+
+### Tags
+Array(#array), Line Sweep(#line-sweep), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Merge Intervals(merge-intervals) (Medium)
+- Interval List Intersections(interval-list-intersections) (Medium)

@@ -89,3 +89,9 @@ def longestSubarray(nums):
 
 ### Summary
 This problem demonstrates a classic **sliding window** pattern for finding the longest subarray with certain constraints—particularly useful when considering “at most k replacements/deletions.” The sliding window technique is broadly applicable for problems dealing with contiguous subarrays and constraints on the window content (like sum, distinct elements, or limited replacements). The core insight in this problem is reducing the exact-delete-one-element constraint to a limited-zero subarray window.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Max Consecutive Ones III(max-consecutive-ones-iii) (Medium)

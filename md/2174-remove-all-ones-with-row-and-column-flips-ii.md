@@ -151,3 +151,11 @@ This problem uses **state compression and memoization (DP)** on a bitmask to enc
 This pattern—using DFS/BFS/DP with bitmask state for all grids or graphs with small state space—appears often in problems with up to ~16 variables.  
 Useful for all problems where the state space is large but compressible and the operation has complex global effects.  
 Common in puzzles, grid-flipping, and multi-move game simulations.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- Set Matrix Zeroes(set-matrix-zeroes) (Medium)
+- Minimum Number of Flips to Convert Binary Matrix to Zero Matrix(minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix) (Hard)
+- Remove All Ones With Row and Column Flips(remove-all-ones-with-row-and-column-flips) (Medium)

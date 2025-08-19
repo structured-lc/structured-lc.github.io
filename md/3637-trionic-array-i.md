@@ -120,3 +120,8 @@ def isTrionic(nums):
 
 ### Summary
 This problem uses a **multi-pointer / scan partitioning technique** to classify array regions in a single linear pass. It’s a great example of reducing brute-force segment-checking to O(n) greedy scanning. This pattern can be generalized to problems like valleys and mountains (peak/valley arrays), stock trading, or tripartite array segmentation where strict monotonicity is required.
+
+### Tags
+Array(#array)
+
+### Similar Problems

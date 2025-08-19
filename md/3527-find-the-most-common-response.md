@@ -100,3 +100,9 @@ def findMostCommonResponse(responses):
 
 ### Summary
 This approach is based on the **Frequency Hash Map** / Counting pattern, with a twist to deduplicate using set per group before counting. Variants of this appear in survey/statistics data analysis and can be applied wherever groupwise-deduplication and counting is needed, such as "number of users performing an action per day", "most common tag across articles (deduplicated per article)" etc. The core idea is to use a hash map and efficient set operations per subgroup.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Majority Element(majority-element) (Easy)

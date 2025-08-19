@@ -120,3 +120,11 @@ This solution follows the recursive *deep equality* pattern, similar to problems
 It is a direct application of divide-and-conquer for nested data.  
 The same pattern can be applied to serialization, checksum validation, or other structure-sensitive comparisons.  
 Key takeaways: always check for base cases (like primitives and null), match types, and recurse only when structure matches, being careful of Python's quirks with null and type checking.
+
+### Tags
+
+### Similar Problems
+- Convert Object to JSON String(convert-object-to-json-string) (Medium)
+- Flatten Deeply Nested Array(flatten-deeply-nested-array) (Medium)
+- Array of Objects to Matrix(array-of-objects-to-matrix) (Hard)
+- Differences Between Two Objects(differences-between-two-objects) (Medium)

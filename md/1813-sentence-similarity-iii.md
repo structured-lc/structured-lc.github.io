@@ -97,3 +97,8 @@ def areSentencesSimilar(sentence1: str, sentence2: str) -> bool:
 
 ### Summary
 This problem uses the **two-pointer** and **array prefix/suffix matching** pattern, which is common for subsequence or merge-type questions. This technique is also effective for problems like checking array similarity under insertion/deletion operations, and for certain string/sequence segmentation problems.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems

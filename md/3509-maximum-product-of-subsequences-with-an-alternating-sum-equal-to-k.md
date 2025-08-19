@@ -108,3 +108,9 @@ def maxProduct(nums, k, limit):
 
 ### Summary
 This problem uses a **subset DP/combinatorial search pattern**, specifically with alternating sign and both sum/product constraints. The core idea is pick/not-pick recursion with memoization to avoid recalculating overlapping states, and state pruning to keep within the product limit. This pattern applies to other "find maximum product sum" or "subsequence by alternating rules" problems with multiple constraints.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Maximum Alternating Subsequence Sum(maximum-alternating-subsequence-sum) (Medium)

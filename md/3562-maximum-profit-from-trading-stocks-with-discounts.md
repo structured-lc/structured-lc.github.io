@@ -202,3 +202,8 @@ def maximumProfit(n, edges, present, future, budget):
 
 ### Summary
 This is a classic **tree DP with state propagation**, allied to knapsack-style dynamic programming patterns. Each node considers "to buy or not to buy," with subsequent impact cascading to its children (as discount eligibility). Problems combining hierarchical structures (trees) and budgeted subproblem choices (a kind of multidimensional knapsack) are frequent in interviews and competitive programming. Similar logic applies in problems where you must make budgeted investments/subset selections respecting a hierarchical dependency.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems

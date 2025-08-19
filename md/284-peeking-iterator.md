@@ -130,3 +130,11 @@ class PeekingIterator:
 
 ### Summary
 This problem is a common design pattern for **iterator wrappers** with lookahead—by caching the next element, we efficiently separate "peeking" from actual advancement. The **pre-fetch** or **lookahead cache** pattern can be used in merging sorted lists, stream processing, parsers, or anywhere you need to “peek ahead” in a sequence without consuming input.
+
+### Tags
+Array(#array), Design(#design), Iterator(#iterator)
+
+### Similar Problems
+- Binary Search Tree Iterator(binary-search-tree-iterator) (Medium)
+- Flatten 2D Vector(flatten-2d-vector) (Medium)
+- Zigzag Iterator(zigzag-iterator) (Medium)

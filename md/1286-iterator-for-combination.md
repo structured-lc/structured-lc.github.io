@@ -88,3 +88,8 @@ class CombinationIterator:
 
 ### Summary
 This problem uses the classic **combinatorial generation using indices** pattern, enabling on-the-fly generation of combinations in lexicographical order without redundant memory. This approach can be adapted for any iterator pattern where sequencing through k-combinations is required, especially in scenarios with large input where pre-building all outputs is impractical.
+
+### Tags
+String(#string), Backtracking(#backtracking), Design(#design), Iterator(#iterator)
+
+### Similar Problems

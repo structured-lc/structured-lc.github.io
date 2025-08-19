@@ -94,3 +94,9 @@ class Logger:
 This problem leverages the **hashmap pattern** for O(1) cache-style lookup and update, tracking last event occurrence per key.  
 It’s analogous to rate-limiting, cache expiration, and “recently seen” patterns — common in logging, streaming, and load balancer design.  
 The solution is simple, efficient, and easily extended if the requirements evolve.
+
+### Tags
+Hash Table(#hash-table), Design(#design), Data Stream(#data-stream)
+
+### Similar Problems
+- Design Hit Counter(design-hit-counter) (Medium)

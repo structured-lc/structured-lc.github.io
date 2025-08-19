@@ -129,3 +129,8 @@ for line in transpose_file(file_lines):
 This approach uses the common “matrix transpose” pattern—collect items column-wise and output them as rows.  
 Applicable to CSV parsing, spreadsheet operations, and other table processing problems.  
 The coding pattern is standard for 2D array manipulation and is a good demonstration of scan-and-aggregate logic.
+
+### Tags
+Shell(#shell)
+
+### Similar Problems

@@ -116,3 +116,13 @@ def numberOfGoodPaths(vals, edges):
 
 ### Summary
 This problem uses the **Union Find (Disjoint Set)** structure to efficiently merge and count components by node values in order, a classic application for grouping and connected component counting. The pattern is seen elsewhere in problems requiring grouping by connectivity and constraints, and is especially effective on trees or graphs with clear merging criteria by value or label.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Tree(#tree), Union Find(#union-find), Graph(#graph), Sorting(#sorting)
+
+### Similar Problems
+- Checking Existence of Edge Length Limited Paths(checking-existence-of-edge-length-limited-paths) (Hard)
+- Checking Existence of Edge Length Limited Paths II(checking-existence-of-edge-length-limited-paths-ii) (Hard)
+- Longest Nice Substring(longest-nice-substring) (Easy)
+- Count Good Triplets in an Array(count-good-triplets-in-an-array) (Hard)
+- Count Pairs Of Similar Strings(count-pairs-of-similar-strings) (Easy)

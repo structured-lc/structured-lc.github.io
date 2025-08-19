@@ -90,3 +90,11 @@ def unequalTriplets(nums):
 
 ### Summary
 This problem uses the **counting by frequency** pattern, separating the array into partitions and using combinatorics to count valid combinations efficiently instead of brute-force enumeration. The same pattern appears in problems that ask for counting unique pairs or triplets with specific constraints based on occurrences.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting)
+
+### Similar Problems
+- Count Good Triplets(count-good-triplets) (Easy)
+- Count Square Sum Triples(count-square-sum-triples) (Easy)
+- Number of Arithmetic Triplets(number-of-arithmetic-triplets) (Easy)

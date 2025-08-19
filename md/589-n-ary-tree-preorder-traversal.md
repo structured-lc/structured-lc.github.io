@@ -110,3 +110,11 @@ def preorder(root):
 
 ### Summary
 This problem uses a classic **Depth-First Search (DFS)** coding pattern, specifically the preorder variant. Preorder, postorder, and other traversals share the DFS principle and recursive/stack-based approaches. This code pattern is common for all kinds of tree traversal problems, including parsing n-ary trees, working with hierarchies, and many graph exploration tasks.
+
+### Tags
+Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems
+- Binary Tree Preorder Traversal(binary-tree-preorder-traversal) (Easy)
+- N-ary Tree Level Order Traversal(n-ary-tree-level-order-traversal) (Medium)
+- N-ary Tree Postorder Traversal(n-ary-tree-postorder-traversal) (Easy)

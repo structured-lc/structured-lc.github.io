@@ -119,3 +119,10 @@ def throttle(fn, t):
 
 ### Summary
 This problem uses the **throttling** pattern for rate-limiting function executions, a common tool in UI and event handling (debounce, throttle). The key coding technique is careful management of pending state and timers to ensure only the *first* and *latest* events fire in each throttle window. This pattern applies in scroll listeners, search-as-you-type, or network polling control.
+
+### Tags
+
+### Similar Problems
+- Debounce(debounce) (Medium)
+- Promise Time Limit(promise-time-limit) (Medium)
+- Promise Pool(promise-pool) (Medium)

@@ -81,3 +81,10 @@ def capitalizeTitle(title: str) -> str:
 
 ### Summary
 This is a straightforward **string manipulation** problem with simple case handling for each word. The pattern is common for word-wise text transformations and can be applied anywhere titles or headlines need to be standardized (e.g., formatting book/article titles). The approach is direct: split, process, and join—no advanced algorithms or data structures required.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Detect Capital(detect-capital) (Easy)
+- To Lower Case(to-lower-case) (Easy)

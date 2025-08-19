@@ -116,3 +116,8 @@ def calculate_compressed_mean(orders):
 
 ### Summary
 This problem follows the "weighted mean" or "running mean" calculation pattern, generalizing the usual mean by using the occurrence column as weights. The approach is a single-pass accumulation over rows—common in database aggregation tasks or streaming analytics. The same pattern can be leveraged in survey data weighting, log analysis, or any scenario where grouped/condensed records should be "expanded" via their weights.
+
+### Tags
+Database(#database)
+
+### Similar Problems

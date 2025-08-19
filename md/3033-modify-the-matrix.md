@@ -141,3 +141,8 @@ def modifiedMatrix(matrix: List[List[int]]) -> List[List[int]]:
 This problem uses a **two-pass, column-wise processing pattern**—first to gather column statistics, then to update cells conditionally.  
 This is a common pattern in grid/matrix problems (precompute, then transform).  
 You can apply this whenever updates rely on column-wise or row-wise aggregates, e.g., max/min/sum per row/col in matrix manipulation, spreadsheet, and table-based interview settings.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems

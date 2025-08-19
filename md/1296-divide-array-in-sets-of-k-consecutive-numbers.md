@@ -83,3 +83,10 @@ def isPossibleDivide(nums, k):
 
 ### Summary
 This problem uses the **hashmap frequency counting** pattern and a greedy approach, always expanding consecutive sets from the smallest available number. This greedy technique is common for interval, sequencing, or grouping problems. Similar ideas appear in card games (straight hands validation), inventory grouping, and task scheduling challenges.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Split Array into Consecutive Subsequences(split-array-into-consecutive-subsequences) (Medium)
+- All Divisions With the Highest Score of a Binary Array(all-divisions-with-the-highest-score-of-a-binary-array) (Medium)

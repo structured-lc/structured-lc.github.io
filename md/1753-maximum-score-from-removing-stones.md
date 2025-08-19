@@ -72,3 +72,9 @@ def maximumScore(a: int, b: int, c: int) -> int:
 
 ### Summary
 The problem uses a **greedy strategy** and a key mathematical reduction: maximizing the number of moves (score) means pairing the two largest non-empty piles at every turn. The solution's core is min((a+b+c)//2, a+b, b+c, a+c), but this reduces to min(x+y, total//2) due to heap size constraints. This greedy pattern is powerful for two-at-a-time pairing problems with resource removal, and similar logic can be used in scheduling and resource-matching scenarios.
+
+### Tags
+Math(#math), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Minimum Amount of Time to Fill Cups(minimum-amount-of-time-to-fill-cups) (Easy)

@@ -112,3 +112,8 @@ def countSpecialSubsequences(nums):
 ### Summary
 This problem fits the classic "count subsequences with a pattern" dynamic programming pattern, where at each stage we use previous results to extend all candidates efficiently.  
 The core DP state tracking (count0, count1, count2) is a powerful approach for similar problems involving subsequences with block requirements—an interview favorite!
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

@@ -101,3 +101,12 @@ def nearestPalindromic(n: str) -> str:
 ### Summary
 This is a classic **"mirror/candidate set + scan"** problem: generate all reasonable palindrome candidates by mirroring around the "center" and adjusting (prefix±1). Handle length change cases, check all candidates, and pick the closest one.  
 This pattern—generating minimal variants and picking by metric—shows up in palindrome, number game, and string-to-target-difference problems.
+
+### Tags
+Math(#math), String(#string)
+
+### Similar Problems
+- Find Palindrome With Fixed Length(find-palindrome-with-fixed-length) (Medium)
+- Next Palindrome Using Same Digits(next-palindrome-using-same-digits) (Hard)
+- Find the Count of Good Integers(find-the-count-of-good-integers) (Hard)
+- Find the Largest Palindrome Divisible by K(find-the-largest-palindrome-divisible-by-k) (Hard)

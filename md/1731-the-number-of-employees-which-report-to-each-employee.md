@@ -167,3 +167,8 @@ def get_managers_with_reports(employees):
 
 ### Summary
 This problem demonstrates the classic **self-join and group-by aggregation** pattern for hierarchical data. It’s commonly used for organizational, reporting, or tree-structured tables. The same pattern generalizes to other aggregation queries like computing total salaries, minimums/maximums, or multi-level reporting statistics.
+
+### Tags
+Database(#database)
+
+### Similar Problems

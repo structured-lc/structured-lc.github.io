@@ -100,3 +100,8 @@ def minDifference(nums, queries):
 
 ### Summary
 This problem uses the prefix sum/count pattern, boosted by a small value domain ([1,100]), enabling efficient per-query access to value frequency. The idea is also related to range queries with small value domains — a pattern appearing in frequency-counting, histogram range queries, and some advanced segment trees.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

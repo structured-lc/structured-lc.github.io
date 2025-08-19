@@ -80,3 +80,9 @@ def monotoneIncreasingDigits(n: int) -> int:
 
 ### Summary
 This problem uses the **greedy** and **digit manipulation** pattern. It’s a classic example of scanning from right-to-left to fix violations in a number-like structure, and replacing subsequent parts with maximal/minimal values to form a desired monotonic sequence. This logic appears in a variety of digit-based optimization and integer transformation questions, such as serializing numbers with constraints or optimizing outputs in combinatorial digit settings.
+
+### Tags
+Math(#math), Greedy(#greedy)
+
+### Similar Problems
+- Remove K Digits(remove-k-digits) (Medium)

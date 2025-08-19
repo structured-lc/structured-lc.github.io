@@ -83,3 +83,8 @@ ORDER BY year, month;
 
 ### Summary
 Classic SQL reporting aggregation with grouping and distinct counts, applicable to many transaction summary/analytics problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

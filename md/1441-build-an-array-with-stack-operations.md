@@ -81,3 +81,9 @@ def buildArray(target, n):
 
 ### Summary
 This solution follows a simple simulation or greedy pattern. For each integer up to the largest needed, simulate all operations that would happen, building the op list as required. This pattern can reappear in problems about simulating abstract data structure operations (like stacks, queues, or buffers).
+
+### Tags
+Array(#array), Stack(#stack), Simulation(#simulation)
+
+### Similar Problems
+- Minimum Operations to Collect Elements(minimum-operations-to-collect-elements) (Easy)

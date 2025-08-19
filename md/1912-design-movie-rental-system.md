@@ -204,3 +204,8 @@ class MovieRentingSystem:
 This problem showcases data design patterns for *marketplace-style* queries using sorted data structures (min-heaps and sets for state tracking).  
 Pattern: Maintain state in synchronised, query-optimized structures (here, per-movie and global heaps), using lazy deletion when direct removal isn't possible.  
 You’ll find similar patterns in problems involving top-k queries, booking/reserving systems, and event dispatch queues.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Design(#design), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set)
+
+### Similar Problems

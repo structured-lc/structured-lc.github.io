@@ -98,3 +98,9 @@ def maximumSubsequenceCount(text: str, pattern: str) -> int:
 
 ### Summary
 To maximize the number of 2-letter pattern subsequences after one insertion, count how many subsequences currently exist using a single pass, then consider adding either pattern or pattern[1] to maximize the new total. This approach uses the greedy, prefix counting pattern — a common technique in substring and subsequence counting problems, and similar logic can be applied where you track relationship between prefixes and current characters (works for many sliding window and prefix/suffix sum problems).
+
+### Tags
+String(#string), Greedy(#greedy), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Longest Common Subsequence(longest-common-subsequence) (Medium)

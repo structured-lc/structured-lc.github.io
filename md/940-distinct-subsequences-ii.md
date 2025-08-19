@@ -82,3 +82,10 @@ def distinctSubseqII(s: str) -> int:
 
 ### Summary
 This problem is a classic application of **dynamic programming using position last-seen tracking** to avoid overcounting duplicates, a pattern useful in string and subsequence counting problems (especially those needing to efficiently deduplicate combinatorial choices). It's related to counting palindromic/distinct subsequences and is widely helpful whenever solutions depend on combinations with duplicate avoidance.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Number of Unique Good Subsequences(number-of-unique-good-subsequences) (Hard)
+- Count K-Subsequences of a String With Maximum Beauty(count-k-subsequences-of-a-string-with-maximum-beauty) (Hard)

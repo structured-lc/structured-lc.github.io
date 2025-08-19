@@ -112,3 +112,9 @@ This solution uses the “expand right end and track changes” pattern — a va
 It dynamically calculates imbalance as subarrays expand, using a set to keep track of the current subarray’s numbers and efficiently updating the imbalance count as elements are added.  
 Patterns: set expansion, incremental property maintenance.  
 This approach is common in substring/subarray statistics (“count X over all substrings/subarrays”), and similar strategies apply in substring uniqueness/counting, frequency windowing, and other sliding window or prefix-sum optimizations.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Count Subarrays With Median K(count-subarrays-with-median-k) (Hard)

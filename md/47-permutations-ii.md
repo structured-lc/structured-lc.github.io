@@ -100,3 +100,12 @@ def permuteUnique(nums):
 This problem is a classic **backtracking** and **duplicate-pruning** pattern. The key twist from Leetcode 46 is avoiding repeated permutations when elements repeat.  
 You efficiently prune duplicates by sorting, tracking element usage, and only allowing swaps when no smaller duplicate could have been moved instead.  
 This technique is commonly used in permutation generation when the collection has duplicates and is broadly useful in problems like "Subsets II," "Combination Sum II," etc.
+
+### Tags
+Array(#array), Backtracking(#backtracking), Sorting(#sorting)
+
+### Similar Problems
+- Next Permutation(next-permutation) (Medium)
+- Permutations(permutations) (Medium)
+- Palindrome Permutation II(palindrome-permutation-ii) (Medium)
+- Number of Squareful Arrays(number-of-squareful-arrays) (Hard)

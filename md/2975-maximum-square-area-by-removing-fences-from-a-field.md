@@ -83,3 +83,9 @@ def maximizeSquareArea(m, n, hFences, vFences):
 
 ### Summary
 This problem uses the common "set of all differences" technique, where for a limited set of positions we enumerate all possible distance pairs. The intersection approach ensures only square sizes feasible in both axes are considered. This pattern of "possible rectangle/square sizes from fences/lines" is common, and set intersection is an efficient trick whenever possible distances must be matched in two dimensions.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Enumeration(#enumeration)
+
+### Similar Problems
+- Maximize Area of Square Hole in Grid(maximize-area-of-square-hole-in-grid) (Medium)

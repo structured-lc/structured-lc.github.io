@@ -121,3 +121,8 @@ def closest_equal_element_queries(nums: List[int], queries: List[int]) -> List[i
 
 ### Summary
 The efficient approach for this problem is the **index map with binary search**, a standard method for nearest duplicate queries in arrays (often combined with circular array logic). This preprocessing + fast-lookup pattern is reusable for problems requiring fast access to relative positions of repeated values (similar to nearest-repeated-word, range queries, etc).
+
+### Tags
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search)
+
+### Similar Problems

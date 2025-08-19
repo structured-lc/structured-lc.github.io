@@ -105,3 +105,11 @@ The core approach is **DP with bitmasking**, a classic technique for *assignment
 This patterns appears in problems involving pairing or permutation costs, like "Minimum Cost to Make Two Arrays Equal", "Minimum Assignment Cost", and other resource-matching tasks.  
 Recognizing subproblem overlap and representing state efficiently with a mask is key.  
 This type of problem is also closely related to the Hungarian Algorithm for large-scale assignment problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems
+- Fair Distribution of Cookies(fair-distribution-of-cookies) (Medium)
+- Choose Numbers From Two Arrays in Range(choose-numbers-from-two-arrays-in-range) (Hard)
+- Maximum AND Sum of Array(maximum-and-sum-of-array) (Hard)

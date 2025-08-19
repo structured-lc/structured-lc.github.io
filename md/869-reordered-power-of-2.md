@@ -99,3 +99,8 @@ def reorderedPowerOf2(n: int) -> bool:
 ### Summary
 This approach leverages the **“digit signature/fingerprint”** pattern, comparing the sorted string (or count of each digit) for the input and all candidate powers of 2. This matching on rearrangement **avoids costly permutation generation** and instead reduces to a simple set comparison across a small candidate set.  
 The “fingerprint match” is a generalizable trick used wherever permutation-based matches are needed, like “anagrams,” “digit reorders,” and “number transformations.”
+
+### Tags
+Hash Table(#hash-table), Math(#math), Sorting(#sorting), Counting(#counting), Enumeration(#enumeration)
+
+### Similar Problems

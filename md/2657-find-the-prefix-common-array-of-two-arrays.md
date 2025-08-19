@@ -97,3 +97,8 @@ def findThePrefixCommonArray(A, B):
 This problem is a two-pointer/prefix set intersection simulation, efficiently solvable by counting how many elements have appeared in both arrays’ prefixes at each step.  
 The main coding pattern is **prefix accumulation with set membership tracking**—commonly useful for “count until now” or evolving prefix/statistics queries, especially when working with permutations or unique elements.  
 Patterns like this often appear in problems involving running intersection/union, prefix queries, and can be generalized to intervals or other “seen-so-far” statistics.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

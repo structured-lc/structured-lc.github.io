@@ -89,3 +89,9 @@ def nextGreatestLetter(letters, target):
 
 ### Summary
 This problem uses the classic **binary search pattern** with a twist (circular array wrap-around). This pattern is common anywhere you need to efficiently locate insert positions or boundaries in sorted arrays, like searching for the "next" unique element, lower_bound/upper_bound problems, or handling rotations. The solution demonstrates efficient traversal with minimal auxiliary space.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Count Elements With Strictly Smaller and Greater Elements (count-elements-with-strictly-smaller-and-greater-elements) (Easy)

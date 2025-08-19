@@ -99,3 +99,9 @@ def min_steps_to_anagram(s: str, t: str) -> int:
 This problem is a classic example of the **hash map / frequency counter pattern** for comparing two strings by character frequencies.  
 Optimized for fixed, small alphabets, it generalizes to many anagram-related problems.  
 Commonly used in coding interviews, text processing tasks, or anywhere anagram checks or minimal mutations are involved.
+
+### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Minimum Number of Steps to Make Two Strings Anagram(minimum-number-of-steps-to-make-two-strings-anagram) (Medium)

@@ -86,3 +86,8 @@ def minDifficulty(jobDifficulty: List[int], d: int) -> int:
 
 ### Summary
 This problem is a classic example of interval DP (divide the jobs into contiguous segments) and uses DP with memoization to try all possible valid partitions efficiently, exploiting overlapping subproblems. Somewhat similar DP techniques are seen in problems like matrix chain multiplication or word break. The recurrence pattern occurs anywhere partitioned cost is minimized.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

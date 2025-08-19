@@ -81,3 +81,8 @@ class Solution:
 
 ### Summary
 This is a classic DP on subarrays with circle/adjacency constraints. The major coding pattern is 2-pass DP, similar to House Robber II. This pattern is widely useful for interval select problems, especially with non-adjacent choices and circular structure.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

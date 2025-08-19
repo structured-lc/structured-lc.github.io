@@ -117,3 +117,11 @@ def minJumps(arr):
 
 ### Summary
 This problem is a classic example of **BFS for shortest path in an implicit graph**. Each array index is a graph node; edges exist to i±1 and all same-value indices. Hash-mapping values to indices and clearing them after expansion is key for efficiency. This pattern applies to many graph or board-jumping problems — for instance, word ladders, chess moves, and shortest escape paths in grids.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Jump Game VII(jump-game-vii) (Medium)
+- Jump Game VIII(jump-game-viii) (Medium)
+- Maximum Number of Jumps to Reach the Last Index(maximum-number-of-jumps-to-reach-the-last-index) (Medium)

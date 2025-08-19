@@ -146,3 +146,8 @@ def maxMinSums(nums, k):
 
 ### Summary
 This problem exemplifies the **combinatorics + counting contribution pattern**: for each element, count how many subsequences of size l for which it is the min or max, using nCr. This pattern is common in problems where brute force is impossible due to combinatorial explosion, but outcome can be counted by *contribution* (not explicit listing). It’s frequently seen in prefix/suffix, min/max, or sum contribution problems in combinatorics, arrays, or DP settings.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Sorting(#sorting), Combinatorics(#combinatorics)
+
+### Similar Problems

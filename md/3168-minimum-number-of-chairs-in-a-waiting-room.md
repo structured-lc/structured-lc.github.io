@@ -95,3 +95,9 @@ def minimumChairs(s: str) -> int:
 This problem uses a **running counter pattern**—increment for entry, decrement for exit, and track the peak value.  
 It's a classic simulation or counting problem and this approach is common for maximum interval overlap (meeting room, parking lot, elevator capacity).  
 Key pattern: one-pass scan + running max = robust, efficient solution.
+
+### Tags
+String(#string), Simulation(#simulation)
+
+### Similar Problems
+- Consecutive Characters(consecutive-characters) (Easy)

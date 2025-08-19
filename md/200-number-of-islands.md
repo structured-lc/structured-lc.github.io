@@ -120,3 +120,20 @@ def numIslands(grid):
 ### Summary
 
 This problem is a classic usage of **graph traversal (DFS/BFS) on a grid**. The key is to mark connected pieces of land as visited so each island is only counted once. This pattern—visiting all connected neighbors and marking visited—is very common and also is applied in problems like **flood fill**, **closed islands**, and **counting connected components in a graph**. Understanding this “infect and mark” approach is essential for many graph/grid problems.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
+
+### Similar Problems
+- Surrounded Regions(surrounded-regions) (Medium)
+- Walls and Gates(walls-and-gates) (Medium)
+- Number of Islands II(number-of-islands-ii) (Hard)
+- Number of Connected Components in an Undirected Graph(number-of-connected-components-in-an-undirected-graph) (Medium)
+- Battleships in a Board(battleships-in-a-board) (Medium)
+- Number of Distinct Islands(number-of-distinct-islands) (Medium)
+- Max Area of Island(max-area-of-island) (Medium)
+- Count Sub Islands(count-sub-islands) (Medium)
+- Find All Groups of Farmland(find-all-groups-of-farmland) (Medium)
+- Count Unreachable Pairs of Nodes in an Undirected Graph(count-unreachable-pairs-of-nodes-in-an-undirected-graph) (Medium)
+- Maximum Number of Fish in a Grid(maximum-number-of-fish-in-a-grid) (Medium)
+- Count Islands With Total Value Divisible by K(count-islands-with-total-value-divisible-by-k) (Medium)

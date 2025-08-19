@@ -68,3 +68,9 @@ def maximumUniqueSubarray(nums):
 
 ### Summary
 Classic sliding window with hash set for unique window expansion. Common pattern for substring/array uniqueness, longest substring without repeats, etc.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Longest Substring Without Repeating Characters(longest-substring-without-repeating-characters) (Medium)

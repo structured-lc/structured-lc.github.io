@@ -70,3 +70,8 @@ def connectTwoGroups(cost: list[list[int]]) -> int:
 
 ### Summary
 This is a bitmask DP with assignment/matching flavor, addressing the need to connect all points on both sides. The bitmask combinatorial pattern is very common for 'cover all subsets' and 'assignment' problems, especially when group sizes are small (n ≤ 12).
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Matrix(#matrix), Bitmask(#bitmask)
+
+### Similar Problems

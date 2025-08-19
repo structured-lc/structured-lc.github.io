@@ -200,3 +200,8 @@ print(top_three_wineries(test_input))
 This problem uses the classic **group-by and top-K selection** pattern, mixing aggregation with tie-breaking and structured output.  
 It’s most naturally solved by using a nested dictionary, sorting, and careful result building.  
 This coding pattern is often used for leaderboard problems, reporting, or when selecting the best (or worst) entities per category.
+
+### Tags
+Database(#database)
+
+### Similar Problems

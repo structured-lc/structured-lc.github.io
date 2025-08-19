@@ -89,3 +89,10 @@ def maximumSum(arr):
 
 ### Summary
 This problem extends the **Kadane’s maximum subarray** pattern to allow a single element deletion, handled by keeping two DP variables: one for "no deletions yet" and another for "already deleted". This dual-tracking DP is a powerful pattern for variations of the subarray sum problem, and generalizes well for problems involving one or more skips or deletions. Commonly appears as an interview test of “modifying classic DP.”
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Maximize Subarray Sum After Removing All Occurrences of One Element(maximize-subarray-sum-after-removing-all-occurrences-of-one-element) (Hard)
+- Maximum Unique Subarray Sum After Deletion(maximum-unique-subarray-sum-after-deletion) (Easy)

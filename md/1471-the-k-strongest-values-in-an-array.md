@@ -62,3 +62,8 @@ def getStrongest(arr, k):
 
 ### Summary
 This is a classic custom-sort problem, especially common when needing to sort by both value and some property like distance to median. The two-pass sort is simple and robust for small input sizes.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Sorting(#sorting)
+
+### Similar Problems

@@ -142,3 +142,8 @@ class TaskManager:
 
 ### Summary
 This problem uses the classic "lazy deletion heap" pattern, combining a hash map for fast id-based lookup/updates/removals with a heap for priority extraction and correct tie-breaking. This design provides efficient O(log n) operations for all required methods and is commonly used in problems requiring priority queue semantics alongside id-indexed lookup (e.g., LRU caches, real-world schedulers). The approach generalizes to systems where items can change priority or be removed dynamically.
+
+### Tags
+Hash Table(#hash-table), Design(#design), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set)
+
+### Similar Problems

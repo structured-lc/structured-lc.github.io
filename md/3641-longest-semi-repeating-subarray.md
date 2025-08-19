@@ -101,3 +101,7 @@ def longest_semi_repeating_subarray(nums, key):
 - This uses the classic **sliding window** technique with a hash map for counting, optimized to be O(n).
 - This pattern is broadly used for "longest/shortest subarray with at most X property" questions, e.g. longest substring with at most K distinct characters, or with at most K changes.
 - Understanding how to efficiently count properties within a moving window (without recomputing for every window) is the key transferable skill.
+
+### Tags
+
+### Similar Problems

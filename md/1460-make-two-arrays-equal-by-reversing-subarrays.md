@@ -74,3 +74,8 @@ def canBeEqual(target, arr):
 This problem is a classic example of the **"Are two multisets equal?"** check, which is often solved using sorting or counting frequencies. The solution doesn't require any actual simulation of the operations, only understanding the implications of those operations.  
 Patterns: Sorting for equality, Hash counting, Permutation equivalence.  
 This approach applies broadly in checking if two arrays, sets, or strings can be made equal via any sequence of swaps, reversals, or rearrangements.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting)
+
+### Similar Problems

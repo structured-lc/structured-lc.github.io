@@ -112,3 +112,12 @@ def orangesRotting(grid):
 
 ### Summary
 This problem is a classic **multi-source BFS** pattern—every rotten orange simultaneously acts as a starting point and spreads its state outwards to neighbors in layers (minutes). Multi-source BFS is broadly useful in grid problems involving simultaneous propagation, spread, or filling, such as shortest-path in unweighted graphs, or simulation of "flood fills", biological/chemical spreads, or even network contagion models.
+
+### Tags
+Array(#array), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- Walls and Gates(walls-and-gates) (Medium)
+- Battleships in a Board(battleships-in-a-board) (Medium)
+- Detonate the Maximum Bombs(detonate-the-maximum-bombs) (Medium)
+- Escape the Spreading Fire(escape-the-spreading-fire) (Hard)

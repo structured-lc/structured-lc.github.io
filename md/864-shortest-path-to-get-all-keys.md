@@ -137,3 +137,8 @@ def shortestPathAllKeys(grid):
 
 ### Summary  
 This problem is a classic variant of **multi-state shortest path** using a BFS with a compact state encoding, where the *bitmask* is a canonical trick to quickly represent sets of small size (here, keys). The pattern used here can apply anywhere you need minimal steps to reach a “finished” state in a search, where the state includes multiple “tokens” (e.g., coins, switches, collectibles) besides location.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems

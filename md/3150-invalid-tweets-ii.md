@@ -136,3 +136,8 @@ This problem demonstrates the **"single-pass scan"** string checking pattern:
 - Efficiently process by scanning each element only once, using counters.
 - The same technique applies for input validation, log parsing, limit enforcement, and similar line-by-line data cleansing problems.  
 It's simple, fast, robust to changes, and easy to code and explain in interviews.
+
+### Tags
+Database(#database)
+
+### Similar Problems

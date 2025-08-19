@@ -100,3 +100,15 @@ def minimumTime(time: List[int], totalTrips: int) -> int:
 ### Summary
 The solution uses a **binary search on answer** technique, common for problems where you have a monotonic condition based on a numeric threshold (here, time). By quickly narrowing the answer space, we avoid slow iteration, even for very large inputs.  
 This pattern, "search for minimum/maximum parameter to satisfy a constraint," is crucial in scheduling, production-line, or batching problems—other classic LeetCode problems using it include "Koko Eating Bananas," "Capacity to Ship Packages Within D Days," etc.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Maximum Candies Allocated to K Children(maximum-candies-allocated-to-k-children) (Medium)
+- Minimum Speed to Arrive on Time(minimum-speed-to-arrive-on-time) (Medium)
+- Minimized Maximum of Products Distributed to Any Store(minimized-maximum-of-products-distributed-to-any-store) (Medium)
+- Maximum Running Time of N Computers(maximum-running-time-of-n-computers) (Hard)
+- Maximum Number of Robots Within Budget(maximum-number-of-robots-within-budget) (Hard)
+- Minimize Maximum of Array(minimize-maximum-of-array) (Medium)
+- Minimum Amount of Damage Dealt to Bob(minimum-amount-of-damage-dealt-to-bob) (Hard)

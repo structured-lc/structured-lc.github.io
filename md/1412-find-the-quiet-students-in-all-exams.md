@@ -165,3 +165,8 @@ This is a **group by / min, max** coding pattern, where you aggregate data per g
 It’s common in leaderboard, ranking, or statistical problems where you want to find entries not at an extreme in subgroups.  
 Key ideas: group aggregation, careful handling of ties, and “all” condition per entity.  
 Can be solved with SQL window functions, streaming, or in memory depending on data size and format.
+
+### Tags
+Database(#database)
+
+### Similar Problems

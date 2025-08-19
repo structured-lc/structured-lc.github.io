@@ -99,3 +99,11 @@ def generateMatrix(n):
 
 ### Summary
 This solution uses a **layered simulation** (four boundary pointers) to fill the matrix in a spiral pattern. This is a common coding pattern for spiral, zigzag, or layer-by-layer traversal problems in 2D arrays—also seen in “Spiral Matrix I”, matrix rotation tasks, or snake-like patterns. The method is general, robust to most edge cases, and easy to adapt for rectangular matrices.
+
+### Tags
+Array(#array), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems
+- Spiral Matrix(spiral-matrix) (Medium)
+- Spiral Matrix III(spiral-matrix-iii) (Medium)
+- Spiral Matrix IV(spiral-matrix-iv) (Medium)

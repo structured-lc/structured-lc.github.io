@@ -134,3 +134,11 @@ This problem is a classic **function caching/memoization** pattern—wrapping a 
 It’s a versatile technique, useful for optimizing recursive algorithms (like Fibonacci or factorial), reusing expensive computations, and improving API performance when calls are pure and deterministic.  
 The solution can be adapted to add features like cache expiry, LRU-eviction, and argument normalization for real-world use-cases.  
 Commonly seen in dynamic programming (with recursion), and in UI frameworks or database query optimization.
+
+### Tags
+
+### Similar Problems
+- Counter(counter) (Easy)
+- Curry(curry) (Medium)
+- Function Composition(function-composition) (Easy)
+- Memoize II(memoize-ii) (Hard)

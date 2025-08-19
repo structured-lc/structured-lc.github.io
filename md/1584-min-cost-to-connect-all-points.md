@@ -64,3 +64,9 @@ def minCostConnectPoints(points):
 
 ### Summary
 This is a classic Minimum Spanning Tree (MST) problem under Manhattan metric. Prim's algorithm is used here (greedy), and the method is broadly applicable in network design, circuits, and transportation.
+
+### Tags
+Array(#array), Union Find(#union-find), Graph(#graph), Minimum Spanning Tree(#minimum-spanning-tree)
+
+### Similar Problems
+- Minimum Number of Lines to Cover Points(minimum-number-of-lines-to-cover-points) (Medium)

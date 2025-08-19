@@ -145,3 +145,8 @@ def maximumSumQueries(nums, queries):
 We used the classic **"House Robber"/DP with non-adjacent constraint** combined with a **segment tree** to efficiently handle dynamic value updates and fast queries.  
 This "DP with range updates/merges" pattern is common in problems involving subsequence sums under constraints, and the segment tree state merge is a general dynamic programming pattern for range queries.  
 Variants appear in Range Sum Queries, Dynamic Programming on intervals, and some DP optimizations.
+
+### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer), Dynamic Programming(#dynamic-programming), Segment Tree(#segment-tree)
+
+### Similar Problems

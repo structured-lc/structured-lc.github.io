@@ -84,3 +84,9 @@ def checkRecord(s: str) -> bool:
 
 ### Summary
 This problem is a classic **linear scan with state management**. The solution checks constraints by incrementally updating counters. This pattern is common in validation problems, such as tracking streaks, windowed checks, or simple parsing tasks. Recognizing that both checks can be performed in a single loop optimizes both time and space, making the code straightforward and efficient.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Student Attendance Record II(student-attendance-record-ii) (Hard)

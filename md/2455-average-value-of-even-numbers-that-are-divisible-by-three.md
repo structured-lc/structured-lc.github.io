@@ -80,3 +80,9 @@ This is a classic **simple filtering and averaging** problem using a single pass
 You can apply the pattern of “sum and count as you scan” to any array-based scenario where you need an average under constraints.  
 Divisibility reductions via least common multiples can generalize this type of problem.  
 No sorting, extra memory, or advanced data structures are required.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems
+- Binary Prefix Divisible By 5(binary-prefix-divisible-by-5) (Easy)

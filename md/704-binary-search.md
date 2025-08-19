@@ -94,3 +94,10 @@ def search(nums, target):
 ### Summary
 The solution demonstrates the classic **binary search** pattern—a key technique for sorted arrays and logarithmic search problems.  
 It is fundamental in coding interviews and applies wherever you need efficient search over ordered data, such as searching in search trees, finding insert positions, or searching ranges with monotonic properties.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Search in a Sorted Array of Unknown Size(search-in-a-sorted-array-of-unknown-size) (Medium)
+- Maximum Count of Positive Integer and Negative Integer(maximum-count-of-positive-integer-and-negative-integer) (Easy)

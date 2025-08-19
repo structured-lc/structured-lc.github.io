@@ -82,3 +82,10 @@ def maximumNumberOfStringPairs(words):
 
 ### Summary
 In this problem, a **hash set** enables efficient pairing with only O(n) time and space. This is a classic example of the hashing/caching pattern, often seen when we need to quickly find complementary or matching items (e.g., Two Sum, matching parentheses). The approach demonstrates efficient use of lookup structures and pair-matching without double-counting or skipping candidates.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Simulation(#simulation)
+
+### Similar Problems
+- Group Shifted Strings(group-shifted-strings) (Medium)
+- Palindrome Pairs(palindrome-pairs) (Hard)

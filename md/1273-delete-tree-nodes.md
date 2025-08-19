@@ -92,3 +92,8 @@ def deleteTreeNodes(nodes, parent, value):
 
 ### Summary
 This is a post-order tree DFS for conditional deletion, a common pattern in tree cleanup, garbage collection, or computing aggregates that control which nodes are retained.
+
+### Tags
+Array(#array), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems

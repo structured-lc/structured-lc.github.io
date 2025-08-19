@@ -142,3 +142,8 @@ ORDER BY p.platform, e.experiment_name;
 
 ### Summary
 This problem uses a common **reporting pattern** in SQL: listing all possible category combinations, grouping, and counting occurrences, ensuring even zero-count cases with CROSS/LEFT JOINs and COALESCE. It’s a frequently used technique for creating completeness in summary or dashboard reports. This pattern also applies to survey analysis, completeness checks, and business intelligence tasks where "all combinations" must be displayed.
+
+### Tags
+Database(#database)
+
+### Similar Problems

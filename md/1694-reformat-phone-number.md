@@ -75,3 +75,8 @@ def reformatPhoneNumber(number):
 
 ### Summary
 Classic string parsing and grouping. This same logic can apply to formatting license keys, social security numbers, or other fixed groupings in data cleaning.
+
+### Tags
+String(#string)
+
+### Similar Problems

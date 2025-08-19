@@ -98,3 +98,11 @@ def maxVowels(s: str, k: int) -> int:
 
 ### Summary
 This problem is a textbook example of the **sliding window** pattern for substrings or subarrays with fixed length and counting/swapping elements as the window moves. The pattern is broadly applicable for max/min/sum calculations in subarrays and is much more efficient than brute force, reducing O(n\*k) methods to O(n) for one-pass solutions.
+
+### Tags
+String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Maximum White Tiles Covered by a Carpet(maximum-white-tiles-covered-by-a-carpet) (Medium)
+- Minimum Recolors to Get K Consecutive Black Blocks(minimum-recolors-to-get-k-consecutive-black-blocks) (Easy)
+- Length of the Longest Alphabetical Continuous Substring(length-of-the-longest-alphabetical-continuous-substring) (Medium)

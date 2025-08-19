@@ -106,3 +106,10 @@ def erectFence(trees):
 This problem uses the convex hull pattern, specifically *Andrew's monotone chain* algorithm.  
 It’s commonly applicable in computational geometry for “smallest enclosing polygon” type questions—used in fencing, clustering, shape analysis, and graphics.  
 The pattern emphasizes a two-pass scan (lower, upper), using cross products to maintain hull invariants and include all boundary points, even in colinear cases.
+
+### Tags
+Array(#array), Math(#math), Geometry(#geometry)
+
+### Similar Problems
+- Erect the Fence II(erect-the-fence-ii) (Hard)
+- Sort the Students by Their Kth Score(sort-the-students-by-their-kth-score) (Medium)

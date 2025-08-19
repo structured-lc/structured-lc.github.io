@@ -156,3 +156,8 @@ This problem uses a **deduplication by key with min/max rule** pattern, often fo
 The pattern is universal: keep only one "representative" per group, usually by comparing other columns (smallest/largest id, date, etc).  
 It's common in data cleansing, log processing, and database normalization.  
 In interviews, showing both a brute-force and an optimized (JOIN/subquery) approach is valued.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -159,3 +159,8 @@ This problem uses the classic **hashmap (dictionary) counting pattern** combined
 It’s common in social media/analytics problems — such as word frequency, trending topics, or top-K populating items.  
 Key parts are filtering by date, extracting target features from data (here the hashtag), and sorting for “top-K.”  
 This same pattern appears in many string and frequency analysis interview questions.
+
+### Tags
+Database(#database)
+
+### Similar Problems

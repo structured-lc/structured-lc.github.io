@@ -89,3 +89,10 @@ def find_valid_pair(s: str) -> str:
 We use a **two-pass, counting and scanning pattern**: first count every digit (frequency array), then scan for qualifying adjacent pairs.  
 This is a common pattern for "frequency-based immediate checks" in strings or arrays.  
 It generalizes to substring or subarray patterns requiring frequency matches, as seen in problems involving anagram checks, frequency bucketing, or sliding window techniques.
+
+### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Majority Element(majority-element) (Easy)
+- Contains Duplicate(contains-duplicate) (Easy)

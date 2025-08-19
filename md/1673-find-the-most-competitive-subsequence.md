@@ -86,3 +86,10 @@ def mostCompetitive(nums, k):
 This problem uses a classic **monotonic stack** / **greedy** pattern to compute an optimal lexicographically small subsequence in O(n) time.  
 Similar patterns are used in problems like “Remove k Digits” or “Next Greater Element.”  
 Understanding when and how to use monotonic stacks for greedy deletion—while keeping the constraint of future availability in mind—is key for mastering a variety of sequence selection problems.
+
+### Tags
+Array(#array), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Remove K Digits(remove-k-digits) (Medium)
+- Smallest Subsequence of Distinct Characters(smallest-subsequence-of-distinct-characters) (Medium)

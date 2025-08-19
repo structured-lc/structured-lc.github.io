@@ -75,3 +75,8 @@ def maxSatisfaction(satisfaction: List[int]) -> int:
 
 ### Summary
 This problem is a classic greedy + prefix sum optimization. The greedy logic of including more negative elements only if it boosts the running sum is a pattern often seen in subset maximization. Sorting and then adding up from the highest values is essential. Similar greedy or prefix sum ideas appear in scheduling, maximizing rewards, and minimizing penalties in sequence-related problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

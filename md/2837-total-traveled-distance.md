@@ -119,3 +119,8 @@ ORDER BY
 This is a straightforward SQL *aggregation with LEFT JOIN* problem, where we avoid missing users with no rides by joining from Users and using IFNULL (COALESCE can also be used).  
 This pattern is common for "compute roll-up metrics per entity even if no events/data exist" and applies to sales, transactions, etc.  
 Handling NULLs in aggregates after joins is a core SQL skill.
+
+### Tags
+Database(#database)
+
+### Similar Problems

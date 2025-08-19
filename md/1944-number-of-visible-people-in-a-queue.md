@@ -101,3 +101,13 @@ def canSeePersonsCount(heights):
 
 ### Summary
 This is a classic **monotonic stack** pattern, used to process "next greater (or equal)" or "who is visible/blocks view" type problems efficiently. The O(n) approach makes it ideal for large data and is common in stock span, histogram, and similar visibility scenarios.
+
+### Tags
+Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Buildings With an Ocean View(buildings-with-an-ocean-view) (Medium)
+- Sum of Subarray Ranges(sum-of-subarray-ranges) (Medium)
+- Sum of Total Strength of Wizards(sum-of-total-strength-of-wizards) (Hard)
+- Number of People That Can Be Seen in a Grid(number-of-people-that-can-be-seen-in-a-grid) (Medium)
+- Find Building Where Alice and Bob Can Meet(find-building-where-alice-and-bob-can-meet) (Hard)

@@ -129,3 +129,8 @@ ORDER BY user_id, steps_date;
 
 ### Summary
 This problem is a classic **SQL window function** question, focusing on rolling aggregates with a strict consecutive-day requirement. It shows how to combine `AVG` (or other aggregates) with windowed `LAG`, and careful use of `DATEDIFF` to enforce data constraints. The core pattern—rolling averages/sums with window frames and data integrity checks—applies widely to time-series analytics, financial calculations, and monitoring.
+
+### Tags
+Database(#database)
+
+### Similar Problems

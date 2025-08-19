@@ -148,3 +148,10 @@ This problem is a classic example of the **UNPIVOT** or "melt"-style transformat
 It’s a pattern common in data warehousing/reporting tasks.  
 The coding pattern is simple value checking and transformation per row.  
 The same pattern can be seen in CSV reshaping, data frame manipulations (e.g., Pandas melt), reporting pipelines, and wherever denormalization or flattening of database tables is needed.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Product's Price for Each Store(products-price-for-each-store) (Easy)
+- Dynamic Unpivoting of a Table(dynamic-unpivoting-of-a-table) (Hard)

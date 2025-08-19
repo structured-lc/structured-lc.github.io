@@ -180,3 +180,10 @@ class MyCircularDeque:
 ### Summary
 This problem leverages the fixed-size **circular buffer** pattern to allow efficient double-ended O(1) operations by careful pointer arithmetic. It’s a classic example of how ring buffers work for producer-consumer queues and circular scheduling.  
 The same pattern is used for classic circular queues, round-robin tasks, and some memory-mapped applications.
+
+### Tags
+Array(#array), Linked List(#linked-list), Design(#design), Queue(#queue)
+
+### Similar Problems
+- Design Circular Queue(design-circular-queue) (Medium)
+- Design Front Middle Back Queue(design-front-middle-back-queue) (Medium)

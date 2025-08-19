@@ -89,3 +89,9 @@ def minimumPushes(word):
 
 ### Summary
 This problem relies on **batching/gathering pattern**—grouping items optimally for a cost that grows per batch. By placing as many letters as possible onto each key before moving to the next, you always achieve a minimal sum of repeated actions. This batching insight applies to many keypad, encoding, or grouping interview problems.
+
+### Tags
+Math(#math), String(#string), Greedy(#greedy)
+
+### Similar Problems
+- Letter Combinations of a Phone Number(letter-combinations-of-a-phone-number) (Medium)

@@ -120,3 +120,10 @@ def levelOrderBottom(root):
 
 ### Summary
 This approach uses the classic **BFS traversal pattern**, collecting levels as we would for top-down traversal, then simply reversing the levels at the end for a bottom-up result. This is a common tree traversal pattern and the same logic applies to other problems like standard level-order traversal or zigzag level-order traversal, differing only in output arrangement.
+
+### Tags
+Tree(#tree), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Binary Tree Level Order Traversal(binary-tree-level-order-traversal) (Medium)
+- Average of Levels in Binary Tree(average-of-levels-in-binary-tree) (Easy)

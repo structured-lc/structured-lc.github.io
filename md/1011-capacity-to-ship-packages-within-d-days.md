@@ -109,3 +109,14 @@ def shipWithinDays(weights, D):
 
 ### Summary
 This problem uses the **binary search on the answer** (a.k.a. parametric/binary search), which is a widely used pattern in scheduling and load-balancing questions. This technique applies when the solution space is monotonic with respect to a parameter, and checking feasibility for a candidate value can be done efficiently. This pattern appears in interval-splitting, minimax cost, and similar problems in interviews.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Split Array Largest Sum(split-array-largest-sum) (Hard)
+- Divide Chocolate(divide-chocolate) (Hard)
+- Cutting Ribbons(cutting-ribbons) (Medium)
+- Minimized Maximum of Products Distributed to Any Store(minimized-maximum-of-products-distributed-to-any-store) (Medium)
+- Maximum Bags With Full Capacity of Rocks(maximum-bags-with-full-capacity-of-rocks) (Medium)
+- Minimum Total Distance Traveled(minimum-total-distance-traveled) (Hard)

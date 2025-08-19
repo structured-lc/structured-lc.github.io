@@ -72,3 +72,10 @@ def findSmallestRegion(regions, region1, region2):
 
 ### Summary
 Classic parent-mapping and ancestry lookup, which is the standard Lowest Common Ancestor method for trees represented as parent-children adjacency. This pattern appears in organizational ancestry, category trees and other hierarchical queries.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Lowest Common Ancestor of a Binary Search Tree(lowest-common-ancestor-of-a-binary-search-tree) (Medium)
+- Lowest Common Ancestor of a Binary Tree(lowest-common-ancestor-of-a-binary-tree) (Medium)

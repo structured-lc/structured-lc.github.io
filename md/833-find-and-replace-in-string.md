@@ -99,3 +99,8 @@ def findReplaceString(s, indices, sources, targets):
 
 ### Summary
 This problem uses the "Scan and Replace with a Mapping" pattern: preprocess all potential replacements, then iterate once through s, performing replacements where appropriate. The approach avoids index invalidations from earlier replacements, and is common for problems where simultaneous (unaffected) replacements are needed. This technique is useful wherever indexed, non-overlapping modifications on a string are required.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting)
+
+### Similar Problems

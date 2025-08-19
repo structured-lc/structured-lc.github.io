@@ -171,3 +171,10 @@ def medianSlidingWindow(nums, k):
 ### Summary
 This problem combines the **sliding window** and **heap/priority queue** patterns, using a two-heap approach (max-heap + min-heap) with *delayed deletions* to maintain median efficiently as the window slides.  
 This pattern recurs in problems needing order statistics over moving windows, such as running median, percentile, and may be adapted for kth largest, median maintenance, or real-time monitoring scenarios.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Find Median from Data Stream(find-median-from-data-stream) (Hard)
+- Minimum Operations to Make Median of Array Equal to K(minimum-operations-to-make-median-of-array-equal-to-k) (Medium)

@@ -136,3 +136,9 @@ def minEdgeReversals(n, edges):
 
 ### Summary
 This problem uses a classic **tree rerooting / dynamic programming on trees** pattern. The trick is to propagate edge reversal costs as you reroot—from parent to child—using two DFS traversals. This approach is general for problems where root choice requires efficient global recalculation, and can be found in problems involving sum of distances, subtree statistics, or reroot path costs.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
+
+### Similar Problems
+- Reorder Routes to Make All Paths Lead to the City Zero(reorder-routes-to-make-all-paths-lead-to-the-city-zero) (Medium)

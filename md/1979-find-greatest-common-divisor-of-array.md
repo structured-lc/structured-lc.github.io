@@ -79,3 +79,15 @@ def findGCD(nums):
 
 ### Summary
 This problem uses the classic **Euclidean algorithm** and array scanning techniques. The coding pattern—find extremes, then reduce with a classic algorithm—appears in problems involving LCM/GCD, array min/max, and more. The core takeaway: reduce the input array to the essential values for computing the answer, then solve with a well-known efficient method. This pattern is common in computational math and subarray/subsequence optimizations.
+
+### Tags
+Array(#array), Math(#math), Number Theory(#number-theory)
+
+### Similar Problems
+- Greatest Common Divisor of Strings(greatest-common-divisor-of-strings) (Easy)
+- Number of Different Subsequences GCDs(number-of-different-subsequences-gcds) (Hard)
+- Three Divisors(three-divisors) (Easy)
+- Smallest Even Multiple(smallest-even-multiple) (Easy)
+- Number of Subarrays With GCD Equal to K(number-of-subarrays-with-gcd-equal-to-k) (Medium)
+- Find the Number of Subsequences With Equal GCD(find-the-number-of-subsequences-with-equal-gcd) (Hard)
+- Maximum Subarray With Equal Products(maximum-subarray-with-equal-products) (Easy)

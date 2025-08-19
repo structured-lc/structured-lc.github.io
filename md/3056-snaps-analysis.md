@@ -160,3 +160,8 @@ def snap_analysis(activities: List[Dict[str, Any]], age: List[Dict[str, Any]]) -
 
 ### Summary
 This problem is a classic example of the **group by & aggregation** pattern, followed by a **pivot** (matrix-style) on activity type. It's a very common requirement in data analysis and reporting, and the logic can be reused for groupwise statistical analysis in other business query problems (e.g., sales by region, web usage by gender, etc.). The coding pattern is straightforward but tests clarity on SQL/data manipulation logic.
+
+### Tags
+Database(#database)
+
+### Similar Problems

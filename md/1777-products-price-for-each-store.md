@@ -116,3 +116,10 @@ GROUP BY
 
 ### Summary
 This SQL pivot pattern (aggregate + CASE in SELECT) is a very common approach for transforming “long” data (rows per entity/attribute) into a “wide” table (row per entity, attribute as columns). It’s widely applicable for reporting, stats, and migration problems, especially useful for grouped, conditional summaries.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Rearrange Products Table(rearrange-products-table) (Easy)
+- Dynamic Pivoting of a Table(dynamic-pivoting-of-a-table) (Hard)

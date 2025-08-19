@@ -124,3 +124,11 @@ def createSortedArray(instructions):
 
 ### Summary
 This problem is a classic example of the “count of elements less-than/greater-than as we process each element” pattern, common in order statistics and “smaller numbers after self” problems. Using a Fenwick Tree enables us to efficiently query and update rank/frequency for each element in log-time, making the approach scalable. This pattern applies broadly to problems involving dynamic counting in sorted order, like inversion counting, data stream median, or frequency ranking.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Merge Sort(#merge-sort), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Count Good Triplets in an Array(count-good-triplets-in-an-array) (Hard)
+- Longest Substring of One Repeating Character(longest-substring-of-one-repeating-character) (Hard)
+- Sort Array by Moving Items to Empty Space(sort-array-by-moving-items-to-empty-space) (Hard)

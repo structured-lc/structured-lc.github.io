@@ -74,3 +74,9 @@ def rangeBitwiseAnd(left: int, right: int) -> int:
 
 ### Summary
 This problem demonstrates a classic **bit manipulation** pattern, focusing on **finding a common prefix** in binary representation. It's efficient for large ranges, and the same idea of prefix compression is common in problems like finding the longest common prefix, range mask calculation, and some trie-based problems. The shift-and-compare loop is a key pattern for range bit problems.
+
+### Tags
+Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Longest Nice Subarray(longest-nice-subarray) (Medium)

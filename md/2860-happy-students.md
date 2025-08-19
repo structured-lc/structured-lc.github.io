@@ -109,3 +109,8 @@ def countWays(nums):
 This is a **greedy + sorting + split point** problem, closely related to counting valid partitions in arrays based on sorted values and strict inequalities.  
 The core trick is to use a sorted array so you can check, for each possible group size, if all selected students and all unselected students are happy via their threshold relative to the group size.  
 This pattern of enumerating partitions based on "left vs right" satisfaction under sorted order is common and can be reused in problems like minimizing the unfairness, energy problems, or partitioning arrays by satisfaction constraints.
+
+### Tags
+Array(#array), Sorting(#sorting), Enumeration(#enumeration)
+
+### Similar Problems

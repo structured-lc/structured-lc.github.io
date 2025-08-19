@@ -173,3 +173,9 @@ def numberOfBeautifulIntegers(low: int, high: int, k: int) -> int:
 ### Summary
 This problem is a classic example of **digit DP**: dynamic programming over the digits of a number, tracking constraints on digits and combining with number-theoretic properties (like divisibility). The counting pattern used here—DP over digit positions with bound/memoization—is very common for problems about "numbers with digit properties in a range."  
 This technique applies to many LeetCode hard problems involving ranges or digit-specific constraints, such as "count of numbers with X digits," "numbers without certain patterns," or "numbers divisible by Y." Mastering digit DP is essential for higher-level interview settings.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Count Numbers with Non-Decreasing Digits (count-numbers-with-non-decreasing-digits) (Hard)

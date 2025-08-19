@@ -113,3 +113,9 @@ def maximumBalancedSubsequenceSum(nums):
 This problem uses a **dynamic programming** approach with **monotonic optimization** by transforming the value/index constraint.  
 The solution pattern (DP − sequence transforms + segment/map query for past optimums) is common for "generalized LIS/LDS" or "max subsequence sum with custom constraints" problems.  
 You can encounter this structure in variations of weighted LIS, increasing tuple chains, or sequence selection under complex relationships.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
+
+### Similar Problems
+- Number of Pairs Satisfying Inequality(number-of-pairs-satisfying-inequality) (Hard)

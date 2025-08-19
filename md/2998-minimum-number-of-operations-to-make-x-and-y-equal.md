@@ -105,3 +105,10 @@ def minimumOperationsToMakeEqual(x: int, y: int) -> int:
 
 ### Summary
 This problem demonstrates a classic **recursion with memoization / dynamic programming** approach to minimize operations by exploring all permitted manipulations at each state. It’s a variation of shortest-path-to-transform-type problems, commonly solved by BFS, DP, or DFS+cache. Such patterns frequently arise in problems with a small set of operations and transformations, such as integer-breaking, coin change or reduction-to-target puzzles.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Breadth-First Search(#breadth-first-search), Memoization(#memoization)
+
+### Similar Problems
+- Shortest Bridge(shortest-bridge) (Medium)
+- Minimum Moves to Spread Stones Over Grid(minimum-moves-to-spread-stones-over-grid) (Medium)

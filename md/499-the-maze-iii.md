@@ -115,3 +115,10 @@ def findShortestWay(maze, ball, hole):
 
 ### Summary
 This is a **graph search** problem with an atypical movement pattern (rolling till stop). It’s a variant of Dijkstra’s algorithm with a lexicographical tie-breaker: maintain a priority queue ordered by distance and then path string. This pattern appears in "maze" or "robot rolling" problems on grids, and is a great template whenever shortest path is not grid-adjacency but can "slide" or "roll" to destination.
+
+### Tags
+Array(#array), String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Shortest Path(#shortest-path)
+
+### Similar Problems
+- The Maze(the-maze) (Medium)
+- The Maze II(the-maze-ii) (Medium)

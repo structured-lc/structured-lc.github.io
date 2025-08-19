@@ -111,3 +111,8 @@ def maxBuilding(n, restrictions):
 
 ### Summary
 This approach leverages **restriction propagation**—a common technique with interval and monotonicity constraints, using *forward/backward sweeps* to ensure all caps are feasible globally. The triangle-peak calculation between each fixed cap applies to "maximum staircase under multiple ceilings" and is broadly usable for propagation problems with local difference limits and global caps.
+
+### Tags
+Array(#array), Math(#math), Sorting(#sorting)
+
+### Similar Problems

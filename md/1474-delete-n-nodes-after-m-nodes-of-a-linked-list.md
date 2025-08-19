@@ -75,3 +75,10 @@ def deleteNodes(head, m, n):
 
 ### Summary
 This is a classic linked list pointer manipulation, exercising careful movement and connection skipping. Recognizing typical "pointer walking" patterns is key for interview problems involving sublist deletions, group reversals, or spaced traversals.
+
+### Tags
+Linked List(#linked-list)
+
+### Similar Problems
+- Remove Nth Node From End of List(remove-nth-node-from-end-of-list) (Medium)
+- Remove Zero Sum Consecutive Nodes from Linked List(remove-zero-sum-consecutive-nodes-from-linked-list) (Medium)

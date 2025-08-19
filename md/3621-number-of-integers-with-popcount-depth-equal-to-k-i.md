@@ -113,3 +113,9 @@ def numberOfIntegersWithPopcountDepthEqualToK(n: int, k: int) -> int:
 
 ### Summary
 This problem uses **digit dynamic programming (digit DP)** and popcount-depth precomputation. The core insight is to precompute for all possible bit counts, and use digit DP to count exactly the number of numbers ≤ n with a set number of 1’s. This approach is seen in problems where constrained counting over binary/bits representation is required, especially with “numbers ≤ n” and digit-based operations. Common patterns: digit DP, iterative function fixed points (e.g., popcount, digital root), combinatoric counting with constraints.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
+
+### Similar Problems
+- Find Pattern in Infinite Stream II(find-pattern-in-infinite-stream-ii) (Hard)

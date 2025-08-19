@@ -88,3 +88,8 @@ def lengthOfLastWord(s: str) -> int:
 ### Summary
 This is a classic *string manipulation — reverse scan* pattern. You minimize allocations and scan from the end, a very common technique for last-segment and suffix/string problems.  
 This pattern applies to problems involving: trimming, extracting last/suffix token, and other right-to-left parsing scenarios.
+
+### Tags
+String(#string)
+
+### Similar Problems

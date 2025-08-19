@@ -63,3 +63,9 @@ def differByOne(words):
 
 ### Summary
 Classic near-duplicate (single-edit distance-1) detection by masking/rolling hash. Generalizes to typo-detection or spell-check, similar to trie masking.
+
+### Tags
+Hash Table(#hash-table), String(#string), Rolling Hash(#rolling-hash), Hash Function(#hash-function)
+
+### Similar Problems
+- Count Words Obtained After Adding a Letter(count-words-obtained-after-adding-a-letter) (Medium)

@@ -97,3 +97,8 @@ def minDominoRotations(tops, bottoms):
 
 ### Summary
 This problem uses the **counting and simulation** pattern, focusing on candidate analysis and greedy choice. The solution reduces brute-force by recognizing structural constraints about dominoes. A similar pattern (check feasibility, count minimal adjustments) can be applied to problems where you need to align two arrays/lists by allowed swaps or flips, especially when constraints limit possible targets.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems

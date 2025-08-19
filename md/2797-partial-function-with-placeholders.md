@@ -107,3 +107,7 @@ def partial(fn, args):
 This problem is an application of the **partial function pattern** using array manipulation—essentially creating your own `functools.partial` with placeholder support.  
 It’s a **functional programming pattern** useful for currying, callbacks, and event handler binding.  
 Variations appear in languages and frameworks allowing **partial application**, and the concept is foundational in JavaScript and Python FP-style code.
+
+### Tags
+
+### Similar Problems

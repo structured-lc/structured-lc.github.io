@@ -79,3 +79,8 @@ def trimMean(arr):
 
 ### Summary
 This is a classic **sorting and windowing** pattern: trim the array by removing both ends after sorting, then operate on the middle. The approach is simple and robust, relying on O(n log n) sorting and slicing. Similar ideas are widely used in statistics (trimmed mean), and the pattern generalizes to problems involving quantiles, percentiles, or outlier removal.
+
+### Tags
+Array(#array), Sorting(#sorting)
+
+### Similar Problems

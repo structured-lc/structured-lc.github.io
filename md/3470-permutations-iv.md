@@ -110,3 +110,9 @@ def alternating_permutations(n):
 
 ### Summary
 This problem leverages the **backtracking** pattern, using aggressive pruning: only valid candidates are considered at every decision point based on the alternation rule. It's a classic example of pruning the search space with problem constraints. The technique is widely applicable to permutation generation with sequence constraints, e.g., for pattern-restricted, monotonic, or monotone-alternating sequences. This is similar to problems on generating valid parentheses, next/previous permutation, or count/construct up/down sequences in combinatorics.
+
+### Tags
+Array(#array), Math(#math), Combinatorics(#combinatorics), Enumeration(#enumeration)
+
+### Similar Problems
+- Permutations III(permutations-iii) (Medium)

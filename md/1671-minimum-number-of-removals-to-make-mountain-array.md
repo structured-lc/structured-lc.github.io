@@ -86,3 +86,15 @@ def minimumMountainRemovals(nums):
 
 ### Summary
 This is a dynamic programming and two-pass LIS/LDS problem—commonly tested. The bipartite DP pattern (prefix and suffix DPs) is broadly applicable: for unimodal arrays, valley/peak questions, and palindromic sequence questions.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
+
+### Similar Problems
+- Longest Increasing Subsequence(longest-increasing-subsequence) (Medium)
+- Longest Mountain in Array(longest-mountain-in-array) (Medium)
+- Peak Index in a Mountain Array(peak-index-in-a-mountain-array) (Medium)
+- Valid Mountain Array(valid-mountain-array) (Easy)
+- Find in Mountain Array(find-in-mountain-array) (Hard)
+- Beautiful Towers II(beautiful-towers-ii) (Medium)
+- Beautiful Towers I(beautiful-towers-i) (Medium)

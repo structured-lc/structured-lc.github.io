@@ -101,3 +101,10 @@ def min_operations_to_make_median_k(nums, k):
 ### Summary
 This problem leverages the idea of **greedily adjusting** only the critical portion of the array (the part containing the median), using **sorting** and **absolute difference summing** as the key operations.  
 The coding pattern—sort, find median, adjust only in one direction to the target—is a frequent motif in questions involving medians and cost minimization for aligning values. It is applicable in situations like "minimum moves to equal elements," "minimize cost/ops to centralize array values," and is related to the concept of the median minimizing sum of absolute deviations.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Find Median from Data Stream(find-median-from-data-stream) (Hard)
+- Sliding Window Median(sliding-window-median) (Hard)

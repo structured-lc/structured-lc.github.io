@@ -78,3 +78,8 @@ def countDistinct(s: str) -> int:
 
 ### Summary
 This problem leverages the **substring enumeration pattern** and highlights set-based deduplication. The naïve approach demonstrates brute-force, important for interviews for clarity, while trie/suffix-tree methods showcase proficiency with advanced data structures for optimized string handling. This pattern appears in questions involving substring counting, pattern matching, and string compression techniques.
+
+### Tags
+String(#string), Trie(#trie), Rolling Hash(#rolling-hash), Suffix Array(#suffix-array), Hash Function(#hash-function)
+
+### Similar Problems

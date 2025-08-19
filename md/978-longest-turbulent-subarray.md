@@ -94,3 +94,10 @@ def maxTurbulenceSize(arr):
 
 ### Summary
 This problem is a classic application of the **sliding window** and **stateful DP** patterns, where you only need information from the previous step to update your current state. The use of two state variables (up/down) is common in such comparison/oscillation problems; similar patterns appear in "wiggle subsequence", "peak valleys" problems, and can be adapted to problems requiring bidirectional state transitions.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Maximum Subarray(maximum-subarray) (Medium)
+- Longest Alternating Subarray(longest-alternating-subarray) (Easy)

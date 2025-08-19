@@ -108,3 +108,9 @@ def isAdditiveNumber(num: str) -> bool:
 
 ### Summary
 This is a classic **string backtracking/search** problem, where you try all possible splits for the first two numbers and validate the additive property greedily for the remainder. The **key insight** is that once you choose the first two numbers, the entire sequence is determined. Variants of this approach (brute force partitioning, checking for special rules like no leading zeros) apply in many digit-splitting or sequence construction problems.
+
+### Tags
+String(#string), Backtracking(#backtracking)
+
+### Similar Problems
+- Split Array into Fibonacci Sequence(split-array-into-fibonacci-sequence) (Medium)

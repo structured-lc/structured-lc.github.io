@@ -70,3 +70,8 @@ This problem is straightforward array element placement using index mapping, a v
 - Reordering arrays or linked lists given a permutation.
 - Mapping values or objects to new positions based on keys.
 The clean, direct index assignment technique is very useful in array and string manipulation questions.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems

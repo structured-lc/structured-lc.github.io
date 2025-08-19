@@ -103,3 +103,8 @@ def wonderfulSubstrings(word):
 
 ### Summary
 This problem is solved efficiently using **bitmasking** (bit-parity trick) and a running hash table to quickly find the number of substrings where the parity difference of counts preserves the "at most one odd count" constraint. This bitmask and pre-count technique is a classic pattern in substring parity, similar to problems like "count subarrays with even sum", "palindromic substrings with parity constraints", etc. It is highly efficient due to the small number of possible states (2¹⁰).
+
+### Tags
+Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
+
+### Similar Problems

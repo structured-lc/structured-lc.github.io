@@ -97,3 +97,10 @@ def canChange(start: str, target: str) -> bool:
 
 ### Summary
 This approach uses the **two-pointer pattern** on both input strings, comparing only the meaningful pieces and ensuring their movement constraints are satisfied relative to their allowable directions. This is a classic pointer movement and state validation problem, frequently encountered when transforming states under strict rules (it also appears in sliding puzzles and other movement-based string problems).
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Valid Parentheses(valid-parentheses) (Easy)
+- Swap Adjacent in LR String(swap-adjacent-in-lr-string) (Medium)

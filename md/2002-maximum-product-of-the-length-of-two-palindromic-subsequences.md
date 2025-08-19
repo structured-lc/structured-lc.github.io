@@ -100,3 +100,12 @@ def maxProduct(s: str) -> int:
 
 ### Summary
 This problem uses the **bitmask DP / exhaustive search** pattern for small n. Assigning each character to one of two palindromic subsequences and maximizing the product is a classic subset split problem, well-suited for bitmasking. Very similar logic can be applied to other problems requiring optimal partitioning of index sets or combinatorial optimizations for small-sized input.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems
+- Valid Palindrome(valid-palindrome) (Easy)
+- Longest Palindromic Subsequence(longest-palindromic-subsequence) (Medium)
+- Maximum Product of the Length of Two Palindromic Substrings(maximum-product-of-the-length-of-two-palindromic-substrings) (Hard)
+- Maximum Points in an Archery Competition(maximum-points-in-an-archery-competition) (Medium)

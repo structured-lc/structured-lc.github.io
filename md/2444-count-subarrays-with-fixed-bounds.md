@@ -113,3 +113,11 @@ def countSubarrays(nums, minK, maxK):
 This is a classic **sliding window with index tracking** pattern.  
 By maintaining the position of the last occurrence of `minK`, `maxK`, and the last invalid element, we can efficiently count all valid subarrays in one pass, O(n), with O(1) space.  
 A similar logic is often used for "count occurrences of a target with constraints" problems, and knowing how to derive sliding window endpoints using index math is valuable in subarray counting problems.
+
+### Tags
+Array(#array), Queue(#queue), Sliding Window(#sliding-window), Monotonic Queue(#monotonic-queue)
+
+### Similar Problems
+- Count Number of Nice Subarrays(count-number-of-nice-subarrays) (Medium)
+- Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit(longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) (Medium)
+- Find the Number of Subarrays Where Boundary Elements Are Maximum(find-the-number-of-subarrays-where-boundary-elements-are-maximum) (Hard)

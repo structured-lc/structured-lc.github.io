@@ -89,3 +89,8 @@ def shiftGrid(grid, k):
 
 ### Summary
 The optimal approach leverages array flattening and index mapping for efficient simulation of the shifting process. This pattern of 2D-to-1D conversions is common in grid or matrix manipulation problems, enabling efficient in-place or auxiliary-array solutions for rotation, shifting, or rearrangement tasks.
+
+### Tags
+Array(#array), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems

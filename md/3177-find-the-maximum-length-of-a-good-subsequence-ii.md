@@ -123,3 +123,10 @@ def maximumLength(nums, k):
 This problem is a variation of the classic subsequence DP pattern, but instead of requiring strictly increasing, it controls the number of allowed transitions in value.  
 The core insight is to use dynamic programming, indexed on (current value, allowed changes), to propagate maximal subsequence length as the array is traversed.  
 Such a DP approach is common for advanced variants of longest increasing/decreasing subsequence and other sequence selection under constraints.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Longest Increasing Subsequence(longest-increasing-subsequence) (Medium)
+- Maximum Length of Repeated Subarray(maximum-length-of-repeated-subarray) (Medium)

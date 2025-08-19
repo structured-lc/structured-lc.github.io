@@ -122,3 +122,9 @@ def minArea(grid):
 
 ### Summary
 This problem is a classic example of optimizing region covering via rectilinear partitioning, solvable by considering all possible vertical and horizontal splits—efficient due to the grid’s modest size and direct bounding box area calculation. The approach is a common extension of “minimum bounding rectangle” plus greedy/partitioning tricks, useful in grid clustering, image segmentation, and coverage optimization.
+
+### Tags
+Array(#array), Matrix(#matrix), Enumeration(#enumeration)
+
+### Similar Problems
+- Smallest Rectangle Enclosing Black Pixels(smallest-rectangle-enclosing-black-pixels) (Hard)

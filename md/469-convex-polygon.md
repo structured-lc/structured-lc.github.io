@@ -103,3 +103,8 @@ def isConvex(points):
 
 ### Summary  
 The problem is a classic application of the **cross product sign consistency** pattern to verify polygon convexity by checking polygon turns direction as you walk through vertices. This pattern is common in computational geometry problems like checking convex hull edges or polygon intersection and can be applied wherever orientation testing is required.
+
+### Tags
+Array(#array), Math(#math), Geometry(#geometry)
+
+### Similar Problems

@@ -101,3 +101,10 @@ def firstCompleteIndex(arr, mat):
 
 ### Summary
 This approach uses the efficient **counter pattern** by mapping each cell and updating row and column counts as we simulate the painting operations. It's a common pattern for "first completion among rows/cols" problems, and similar strategies are seen in problems like Bingo, matrix marking, and subgrid completeness. It shows a blend of hashmap-for-indexing and early-exit on aggregate counts.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Matrix(#matrix)
+
+### Similar Problems
+- Check if Every Row and Column Contains All Numbers(check-if-every-row-and-column-contains-all-numbers) (Easy)
+- Difference Between Ones and Zeros in Row and Column(difference-between-ones-and-zeros-in-row-and-column) (Medium)

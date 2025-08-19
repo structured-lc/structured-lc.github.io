@@ -126,3 +126,8 @@ def maximumPoints(edges, coins, k):
 
 ### Summary
 This problem uses **tree DP with memoization**. The main decision is at every node: whether to "halve" everything from here down, or not. Memoizing the computation for each unique (node, halve count) enables efficient recursion. This pattern—tree DP with state propagation to children—is common in other problems like “minimum camera cover on binary tree”, “tree coloring with path constraints”, and generalized “tree rooted subset” problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Tree(#tree), Depth-First Search(#depth-first-search), Memoization(#memoization)
+
+### Similar Problems

@@ -83,3 +83,8 @@ class ProductOfNumbers:
 
 ### Summary
 Prefix products are a common pattern in stream and windowed-product queries. The reset-on-zero trick is key, similar to many subarray product/sum problems. This pattern applies to range product/sum queries, subarray product constraints, and similar scenarios in array handling.
+
+### Tags
+Array(#array), Math(#math), Design(#design), Data Stream(#data-stream), Prefix Sum(#prefix-sum)
+
+### Similar Problems

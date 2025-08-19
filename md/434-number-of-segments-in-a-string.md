@@ -159,3 +159,8 @@ def countSegmentsOneLiner2(s):
 
 ### Summary
 This problem tests basic string processing and understanding of edge cases with whitespace handling. While Python's split() provides an elegant one-line solution, implementing manual counting demonstrates understanding of string traversal patterns and state management. The problem highlights the importance of considering edge cases like empty strings, multiple consecutive delimiters, and leading/trailing whitespace. These patterns are fundamental in text processing and appear frequently in parsing and tokenization problems.
+
+### Tags
+String(#string)
+
+### Similar Problems

@@ -86,3 +86,9 @@ def maxScoreWords(words, letters, score):
 
 ### Summary
 The main idea is subset enumeration with validation, using bitmasking—a critical pattern for problems with small n. This is a classic NP-complete flavor (like Knapsack/Subsets with constraints). Approach and code pattern generalizes to many selection & score-maximization variants.
+
+### Tags
+Array(#array), String(#string), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems
+- Maximum Good People Based on Statements(maximum-good-people-based-on-statements) (Hard)

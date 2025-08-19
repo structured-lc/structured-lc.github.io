@@ -115,3 +115,12 @@ def numberOfPairs(nums1, nums2, diff):
 
 ### Summary
 This problem uses a common "count of pairs with a difference condition" pattern, closely related to reverse pair counting. The main coding techniques are coordinate compression and Binary Indexed Tree (BIT) or segment tree. This is a classic approach for competitive problems needing efficient query and update operations over compressed value ranges, applicable also in problems like inversion count, reverse pairs, or 2D range queries.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Merge Sort(#merge-sort), Ordered Set(#ordered-set)
+
+### Similar Problems
+- K-diff Pairs in an Array(k-diff-pairs-in-an-array) (Medium)
+- Count Nice Pairs in an Array(count-nice-pairs-in-an-array) (Medium)
+- Count Number of Bad Pairs(count-number-of-bad-pairs) (Medium)
+- Maximum Balanced Subsequence Sum(maximum-balanced-subsequence-sum) (Hard)

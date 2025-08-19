@@ -97,3 +97,14 @@ def maxDepth(root):
 
 ### Summary
 This problem is a classic use of the **recursive DFS/post-order traversal pattern** for trees. It demonstrates how to aggregate results up from child nodes to their parent, and consolidates the template for measuring tree depth or height. This approach is broadly useful for any "depth-like" tree calculations and can easily adapt to finding properties like tree diameter, balance, or longest path.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Balanced Binary Tree(balanced-binary-tree) (Easy)
+- Minimum Depth of Binary Tree(minimum-depth-of-binary-tree) (Easy)
+- Maximum Depth of N-ary Tree(maximum-depth-of-n-ary-tree) (Easy)
+- Time Needed to Inform All Employees(time-needed-to-inform-all-employees) (Medium)
+- Amount of Time for Binary Tree to Be Infected(amount-of-time-for-binary-tree-to-be-infected) (Medium)
+- Height of Binary Tree After Subtree Removal Queries(height-of-binary-tree-after-subtree-removal-queries) (Hard)

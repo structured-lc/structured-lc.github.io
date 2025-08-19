@@ -91,3 +91,10 @@ def moveZeroes(nums):
 We used the **two-pointer technique** ("slow and fast pointer") to move all non-zero values forward, and then filled the remaining positions with zero.  
 This in-place pattern avoids extra space usage and preserves the relative order efficiently.  
 It’s a typical "stable partition" or "array manipulation" problem—this idea is broadly useful in removing/segregating values in-place, such as in Remove Element, Partition List, and Dutch National Flag problems.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers)
+
+### Similar Problems
+- Remove Element(remove-element) (Easy)
+- Apply Operations to an Array(apply-operations-to-an-array) (Easy)

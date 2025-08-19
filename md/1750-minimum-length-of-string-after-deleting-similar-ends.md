@@ -88,3 +88,8 @@ def minimumLength(s: str) -> int:
 
 ### Summary
 This problem is a classic *two-pointer* pattern, where you scan from both ends and process inwards as long as a local rule holds. There’s no need to rebuild strings, making it efficient in both time and space. This approach can be extended to various substring or array reduction problems where matching or pairing from both ends is required (palindromes, diff removal, etc.).
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems

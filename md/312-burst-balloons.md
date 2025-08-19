@@ -99,3 +99,9 @@ def maxCoins(nums):
 
 ### Summary
 This problem uses the **interval dynamic programming** pattern, where the optimal solution for a subarray depends on optimally splitting the interval at every possible point. This pattern is common in partition, bursting, or "build from inside out" problems. Recognizing when a problem can be reduced to optimal substructure over intervals is key to solving similar challenges efficiently.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Minimum Cost to Merge Stones(minimum-cost-to-merge-stones) (Hard)

@@ -109,3 +109,8 @@ def canBeCut(n, rectangles):
 
 ### Summary
 This problem uses an **interval merging and line sweep pattern**, highly common in computational geometry and similar to problems like "merge intervals", "calendar booking", and "meeting rooms". By projecting rectangles onto one axis, merging intervals, and counting groups, we can check if disjoint sections can be made. This works efficiently thanks to sorting (O(N log N)), and is a key pattern for interviews involving intervals, segments, and geometric segmentation.
+
+### Tags
+Array(#array), Sorting(#sorting)
+
+### Similar Problems

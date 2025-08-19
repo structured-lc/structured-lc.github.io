@@ -79,3 +79,13 @@ def findMiddleIndex(nums):
 
 ### Summary
 This problem demonstrates the **prefix sum pattern** to achieve an efficient linear solution. Instead of recomputing sums for every index (brute-force), we use running totals to track "left sum" and derive "right sum" without extra arrays. This is a classic trick used in **pivot index**, **balanced partition**, and similar array problems.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Find Pivot Index(find-pivot-index) (Easy)
+- Partition Array Into Three Parts With Equal Sum(partition-array-into-three-parts-with-equal-sum) (Easy)
+- Number of Ways to Split Array(number-of-ways-to-split-array) (Medium)
+- Maximum Sum Score of Array(maximum-sum-score-of-array) (Medium)
+- Left and Right Sum Differences(left-and-right-sum-differences) (Easy)

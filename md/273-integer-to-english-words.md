@@ -116,3 +116,9 @@ class Solution:
 
 ### Summary
 This problem uses the *divide and conquer* pattern to break the number into three-digit groups, converting each recursively into English words, and then assembling with scale words (thousand, million, billion). Hard-coding special cases (less than 20, tens, hundred, etc.) simplifies mapping. The approach is modular and reusable, applicable to problems requiring English stringification of numbers or similar number-to-string recursive decompositions.
+
+### Tags
+Math(#math), String(#string), Recursion(#recursion)
+
+### Similar Problems
+- Integer to Roman(integer-to-roman) (Medium)

@@ -77,3 +77,10 @@ def prefix_count(words, pref):
 ### Summary
 This is a classic *prefix matching* and *array scan* problem, following a straightforward pattern: loop through the array, compare a substring, and count matches.  
 The pattern is common in string problems and shows up in applications like autocomplete, word search, or dictionary prefix lookup. For repeated queries, a Trie is the preferred data structure for improved performance.
+
+### Tags
+Array(#array), String(#string), String Matching(#string-matching)
+
+### Similar Problems
+- Check If a Word Occurs As a Prefix of Any Word in a Sentence(check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) (Easy)
+- Count Prefixes of a Given String(count-prefixes-of-a-given-string) (Easy)

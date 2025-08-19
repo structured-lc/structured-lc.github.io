@@ -139,3 +139,10 @@ class Solution:
 This problem uses the **post-order DFS** and a **greedy bottom-up strategy** to minimize resource placement in a tree.  
 The pattern appears often in covering problems, guard placements, sensor coverage, or dynamic programming on trees.  
 Key insight: *maximize coverage per camera placement* and process leaf-to-root. Very efficient for hierarchical resource allocation and tree-based DP.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Distribute Coins in Binary Tree(distribute-coins-in-binary-tree) (Medium)
+- Choose Edges to Maximize Score in a Tree(choose-edges-to-maximize-score-in-a-tree) (Medium)

@@ -117,3 +117,8 @@ def maxSum(nums, m, k):
 
 ### Summary
 This problem demonstrates the **sliding window with hash map (frequency counter) pattern**, a very common technique for problems requiring tracking properties (e.g., distinct elements, sums) over fixed-size subarrays. This pattern generalizes well to similar questions such as "Longest subarray with at most k distinct values", "Maximum average subarray", and "Subarrays with at most k odd numbers".
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
+
+### Similar Problems

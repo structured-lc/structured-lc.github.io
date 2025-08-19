@@ -126,3 +126,7 @@ This problem leverages **bitwise operations** and **connected components** (Unio
 It demonstrates grouping/swapping constraints via AND operation—classic for advanced **component grouping**.  
 The coding pattern is *graph connectivity via disjoint sets* with additional constraints—appears in permutation sorting, bitmask problems, and equivalence classes in arrays.  
 Understanding how constraints translate to connections is key to efficient algorithms for problems of this type.
+
+### Tags
+
+### Similar Problems

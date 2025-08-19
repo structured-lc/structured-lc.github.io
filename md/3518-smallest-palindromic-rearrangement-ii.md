@@ -150,3 +150,8 @@ def smallest_palindromic_rearrangement_ii(s: str, k: int) -> str:
 
 ### Summary
 This problem is a classic application of **lexicographical kth-permutation generation**, using combinatorics and multiset permutation counting. The key observation is that a palindrome can be constructed from a half-string and its mirror, with possible center. This pattern is common in permutation-rank problems, and efficient multiset handling is essential for performance at scale. You can reuse the kth-lex-permutation + multiset combinatorics logic in anagrams, ranking, and similar permutation-indexing problems.
+
+### Tags
+Hash Table(#hash-table), Math(#math), String(#string), Combinatorics(#combinatorics), Counting(#counting)
+
+### Similar Problems

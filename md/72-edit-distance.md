@@ -113,3 +113,15 @@ def minDistance(word1: str, word2: str) -> int:
 ### Summary
 This problem is a classic example of **Dynamic Programming** applied to string transformation. The pattern—breaking down a problem into subproblems and building up a solution via a DP table—is standard in edit/sequence problems (like Longest Common Subsequence).  
 You can reuse this approach for spell checking, DNA/protein sequence analysis, and many other applications involving string transformations.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- One Edit Distance(one-edit-distance) (Medium)
+- Delete Operation for Two Strings(delete-operation-for-two-strings) (Medium)
+- Minimum ASCII Delete Sum for Two Strings(minimum-ascii-delete-sum-for-two-strings) (Medium)
+- Uncrossed Lines(uncrossed-lines) (Medium)
+- Minimum White Tiles After Covering With Carpets(minimum-white-tiles-after-covering-with-carpets) (Hard)
+- Longest Palindrome After Substring Concatenation II(longest-palindrome-after-substring-concatenation-ii) (Hard)
+- Minimum Steps to Convert String with Operations(minimum-steps-to-convert-string-with-operations) (Hard)

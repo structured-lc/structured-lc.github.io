@@ -125,3 +125,10 @@ def fullBloomFlowers(flowers, people):
 This is a **sorting + binary search** problem, a direct application of the interval covering/counting pattern.  
 The key trick is to pre-sort start and end times, so queries asking "how many intervals cover this point?" are answered in O(log N) each.  
 This pattern applies broadly: sweep line problems, calculating concurrent intervals, or answering range-count queries efficiently.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Sorting(#sorting), Prefix Sum(#prefix-sum), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Meeting Rooms II(meeting-rooms-ii) (Medium)
+- Minimum Interval to Include Each Query(minimum-interval-to-include-each-query) (Hard)

@@ -106,3 +106,11 @@ def sumOfBeauties(nums):
 
 ### Summary
 This problem demonstrates a common pattern of precomputing prefix/suffix statistics (max, min) to enable O(1) range queries during an O(n) pass, avoiding repeated work. This template is useful in many range-based problems, such as trapping rain water, subarray statistics, and sliding window maximum.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Best Time to Buy and Sell Stock(best-time-to-buy-and-sell-stock) (Easy)
+- Partition Array into Disjoint Intervals(partition-array-into-disjoint-intervals) (Medium)
+- Maximum Value of an Ordered Triplet II(maximum-value-of-an-ordered-triplet-ii) (Medium)

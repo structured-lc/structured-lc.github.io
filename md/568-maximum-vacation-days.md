@@ -96,3 +96,9 @@ def maxVacationDays(flights, days):
 
 ### Summary
 This problem uses the **Dynamic Programming** pattern, optimizing over weekly decisions based on previous state. The trick is to encode the state as (city, week) and update, considering only valid flights or staying put. This technique—multi-stage, staged DP—is common in scheduling, path maximization, or resource allocation problems with stage-wise constraints.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems
+- Cheapest Flights Within K Stops(cheapest-flights-within-k-stops) (Medium)

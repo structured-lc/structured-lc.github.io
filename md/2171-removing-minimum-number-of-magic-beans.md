@@ -77,3 +77,10 @@ def minimumRemoval(beans):
 
 ### Summary
 This problem uses the **prefix sum and sorting pattern**. By sorting and leveraging the properties of the possible "target" values, we efficiently find the minimal removal. The idea to set all non-empty bags to a chosen candidate value and remove the rest generalizes to many equalizing array problems, e.g., “make all values equal with minimal cost.” This approach is broadly useful in other interview settings involving array adjustment or normalization problems.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting), Enumeration(#enumeration), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Minimum Moves to Equal Array Elements II(minimum-moves-to-equal-array-elements-ii) (Medium)
+- Minimum Operations to Reduce X to Zero(minimum-operations-to-reduce-x-to-zero) (Medium)

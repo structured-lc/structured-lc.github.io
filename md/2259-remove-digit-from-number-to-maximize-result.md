@@ -89,3 +89,12 @@ def removeDigit(number: str, digit: str) -> str:
 
 ### Summary
 The solution uses a **greedy approach** for string digit manipulation: it identifies the optimal occurrence of the specified digit to remove, maximizing the resulting integer by prioritizing positional significance. This is a classic string scan and greedy pattern—often used in digit and substring maximization/minimization challenges (e.g., removing k digits to get the smallest/largest result).
+
+### Tags
+String(#string), Greedy(#greedy), Enumeration(#enumeration)
+
+### Similar Problems
+- Remove K Digits(remove-k-digits) (Medium)
+- Remove Vowels from a String(remove-vowels-from-a-string) (Easy)
+- Second Largest Digit in a String(second-largest-digit-in-a-string) (Easy)
+- Minimum Operations to Make a Special Number(minimum-operations-to-make-a-special-number) (Medium)

@@ -95,3 +95,8 @@ def minStabilityFactor(nums, maxC):
 
 ### Summary
 This problem uses a sliding window and frequency counting pattern, combined with enumeration of possible stable divisors. This approach is related to patterns for GCD-interval or divisor-segment questions, and can be generalized to problems seeking subarrays whose elements meet certain divisibility or GCD constraints after limited modifications.
+
+### Tags
+Array(#array), Math(#math), Binary Search(#binary-search), Greedy(#greedy), Segment Tree(#segment-tree), Number Theory(#number-theory)
+
+### Similar Problems

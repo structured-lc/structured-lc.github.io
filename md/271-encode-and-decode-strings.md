@@ -123,3 +123,12 @@ class Codec:
 The problem uses a **custom serialization pattern**, encoding each string as `[length]#[string]` to guarantee safe, reversible conversion between a list of strings and a plain string. This avoids delimiter conflicts since the length prefix always determines exact string boundaries.  
 It's a **common pattern** in network protocols, file formats, and database serialization: anywhere you need robust, delimiter-agnostic encoding/decoding.  
 The approach is clean, linear time, and very reliable for arbitrary string content.
+
+### Tags
+Array(#array), String(#string), Design(#design)
+
+### Similar Problems
+- Count and Say(count-and-say) (Medium)
+- Serialize and Deserialize Binary Tree(serialize-and-deserialize-binary-tree) (Hard)
+- String Compression(string-compression) (Medium)
+- Count Binary Substrings(count-binary-substrings) (Easy)

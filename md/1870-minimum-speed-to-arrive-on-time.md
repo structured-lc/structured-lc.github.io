@@ -104,3 +104,13 @@ def minSpeedOnTime(dist, hour):
 
 ### Summary
 This problem is a classic **binary search on answer** scenario, where the solution space is monotonic—higher speeds lead to lower arrival times. It also uses simulational logic to convert real constraints into a check function for the binary search. This approach is common for "min/max feasible parameter" (e.g., minimum days/capacity/speed/effort) problems and is applicable in scheduling, rate-minimization, and allocation problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Maximum Candies Allocated to K Children(maximum-candies-allocated-to-k-children) (Medium)
+- Minimum Skips to Arrive at Meeting On Time(minimum-skips-to-arrive-at-meeting-on-time) (Hard)
+- Minimum Time to Complete Trips(minimum-time-to-complete-trips) (Medium)
+- The Latest Time to Catch a Bus(the-latest-time-to-catch-a-bus) (Medium)
+- Minimize Maximum of Array(minimize-maximum-of-array) (Medium)

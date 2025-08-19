@@ -106,3 +106,10 @@ def deleteDuplicatesUnsorted(head):
 This problem is a classic application of the “hash map for frequency counting” pattern, which appears in duplicate removal and unique-element problems.  
 The two-pass approach (frequency count, then filter for unique nodes) is simple and efficient for detecting all duplicates in one go.  
 It’s a useful techique for unsorted data, and variations of this strategy work well in arrays and other structures where “all occurrences” need to be identified and handled efficiently.
+
+### Tags
+Hash Table(#hash-table), Linked List(#linked-list)
+
+### Similar Problems
+- Remove Duplicates from Sorted List II(remove-duplicates-from-sorted-list-ii) (Medium)
+- Remove Duplicates from Sorted List(remove-duplicates-from-sorted-list) (Easy)

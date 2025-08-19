@@ -138,3 +138,9 @@ The array-based BST iterator is a classic **iterator + traversal** pattern.
 It provides fast forward/back stepping via index within an in-order array, trading off O(n) space for O(1) next/prev time.  
 This pattern is common in problems where forward/back traversal is needed; the approach can be adapted to linked lists, array-based trees, or pre/post/in-order traversals for trees.  
 For strict O(h) space, a stack-based lazy iterator is the standard advanced follow-up.
+
+### Tags
+Stack(#stack), Tree(#tree), Design(#design), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree), Iterator(#iterator)
+
+### Similar Problems
+- Binary Search Tree Iterator(binary-search-tree-iterator) (Medium)

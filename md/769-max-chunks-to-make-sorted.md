@@ -76,3 +76,9 @@ def maxChunksToSorted(arr):
 
 ### Summary
 This problem leverages a **prefix maximum / greedy partitioning** pattern, exploiting properties of permutations. This kind of approach is common in problems where you need to find where a set forms a valid segment for rearrangement or sorting (e.g. "partition labels", "groups of people standing in crowded line"). The running max trick generalizes to similar partitioning problems, especially in greedy or interval problems.
+
+### Tags
+Array(#array), Stack(#stack), Greedy(#greedy), Sorting(#sorting), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Max Chunks To Make Sorted II(max-chunks-to-make-sorted-ii) (Hard)

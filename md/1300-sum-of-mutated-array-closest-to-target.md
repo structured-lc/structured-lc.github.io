@@ -102,3 +102,8 @@ def findBestValue(arr, target):
 
 ### Summary
 The approach is a combination of **binary search** and an **accumulative sum** method that exploits the monotonicity of the mutated sum function. Binary search efficiently narrows down candidate values, making this a typical example of "search on answer" and "greedy cap" patterns — useful for problems involving range-based optimization criteria. This can be generalized to other problems where modifying numbers under some constraint yields an optimal total.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems

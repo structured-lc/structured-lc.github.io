@@ -96,3 +96,11 @@ def ladderLength(beginWord, endWord, wordList):
 
 ### Summary
 This problem uses the classic **BFS (Breadth-First Search)** pattern for shortest-path in an unweighted graph, where nodes are words and edges represent a one-letter transformation. The trick is to generate possible neighbors on the fly. This approach is commonly applied to word transformation, puzzle, and unweighted graph shortest-path problems. Bidirectional BFS is a notable optimization for related variants.
+
+### Tags
+Hash Table(#hash-table), String(#string), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Word Ladder II(word-ladder-ii) (Hard)
+- Minimum Genetic Mutation(minimum-genetic-mutation) (Medium)
+- Words Within Two Edits of Dictionary(words-within-two-edits-of-dictionary) (Medium)

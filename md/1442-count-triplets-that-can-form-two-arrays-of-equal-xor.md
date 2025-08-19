@@ -78,3 +78,9 @@ def countTriplets(arr):
 
 ### Summary
 This is an example of leveraging prefix xor properties for optimization. Once you realize the key reduction (that the total xor must be zero for (i, k)), you can count for each valid segment. The pattern appears in multiple subarray xor/Cumsum problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Find The Original Array of Prefix Xor(find-the-original-array-of-prefix-xor) (Medium)

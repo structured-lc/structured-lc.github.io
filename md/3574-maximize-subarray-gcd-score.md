@@ -119,3 +119,8 @@ def maximizeSubarrayGCDScore(nums, k):
 
 ### Summary
 This problem is a **GCD + sliding window + divisor enumeration** challenge with greedy optimization. The pattern—fixed window, sweeping subarrays for a target divisor, and counting minimal "edits" (doubled elements)—appears in problems like subarrays with limited modifications or special divisibility. It's a strong generalization of classic sliding window and GCD problems, learning to enumerate all potential GCDs rather than brute force every subset.
+
+### Tags
+Array(#array), Math(#math), Enumeration(#enumeration), Number Theory(#number-theory)
+
+### Similar Problems

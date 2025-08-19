@@ -92,3 +92,10 @@ def findIndices(nums, indexDifference, valueDifference):
 
 ### Summary
 We identified a sliding window minimum/maximum search as the optimal approach, leveraging a single traversal with O(1) min/max tracking to solve the problem efficiently. This is a common coding pattern in range-based or k-distant problems, seen in maximum sliding window, subarray min/max difference, and two-pointer variants. The key is to process only a restricted window behind each i, maintaining min/max efficiently.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers)
+
+### Similar Problems
+- Minimum Absolute Difference Between Elements With Constraint(minimum-absolute-difference-between-elements-with-constraint) (Medium)
+- Find Indices With Index and Value Difference I(find-indices-with-index-and-value-difference-i) (Easy)

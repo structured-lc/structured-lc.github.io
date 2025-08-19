@@ -130,3 +130,8 @@ def maximizeMinGameScore(points, m):
 
 ### Summary
 This problem is a classic use of the **binary search on the answer** technique, an efficient way to solve “maximize the minimum” or “minimize the maximum” problems under resource constraints. The approach leverages both greedy visitation and block window scanning. This coding pattern is common in scheduling, fair allocation, or threshold-optimization problems, and can be adapted to variations involving movement, grouping, or visiting constraints.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Greedy(#greedy)
+
+### Similar Problems

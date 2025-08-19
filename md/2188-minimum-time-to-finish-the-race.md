@@ -105,3 +105,9 @@ def minimumFinishTime(tires, changeTime, numLaps):
 
 ### Summary
 This problem is an application of **DP with segmented block optimization** and **preprocessing blocks for combinations**. The solution is analogous to problems like “minimum cost to reach n with allowed steps,” but here each “step” may be a variable-length block with variable cost. This pattern shows up in racing/game energy management, segmented cost problems, and sequence partitioning with per-segment costs.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Minimum Skips to Arrive at Meeting On Time(minimum-skips-to-arrive-at-meeting-on-time) (Hard)

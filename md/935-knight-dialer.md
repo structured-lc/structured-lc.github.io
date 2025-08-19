@@ -97,3 +97,8 @@ def knightDialer(n):
 
 ### Summary
 This problem is a classic example of digit DP and state compression: by systematically tabulating reachable states at each move, we avoid repeated work and achieve linear time in n. The pattern is similar to many graph-walking and combinatorial path-counting problems. The move-mapping is a static graph adjacency list, and the main skill is translating movement rules into that mapping. Patterns here are common in chess-move and grid-walk-related DP tasks.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

@@ -87,3 +87,10 @@ def searchInsert(nums, target):
 
 ### Summary
 This problem is a **classic binary search template** application on a sorted array to determine either the target's index or the correct insertion point. It's a pattern commonly seen in search-related problems and variant interview questions, making mastery valuable for array and sorted data structure problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- First Bad Version(first-bad-version) (Easy)
+- Minimum Operations to Exceed Threshold Value I(minimum-operations-to-exceed-threshold-value-i) (Easy)

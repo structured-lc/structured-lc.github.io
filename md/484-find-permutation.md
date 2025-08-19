@@ -88,3 +88,9 @@ def findPermutation(s):
 
 ### Summary
 This problem demonstrates a classic greedy approach: when asked for the lexicographically smallest permutation matching a sequence of "I"/"D" relations, process each maximal downward ('D') sequence with a reversal to guarantee minimal values for rising sequences and large values "falling" for decreases. This "run reversal" pattern also applies in other problems where relative orderings are given by patterns (e.g., "minimum number following pattern," stack permutations).
+
+### Tags
+Array(#array), String(#string), Stack(#stack), Greedy(#greedy)
+
+### Similar Problems
+- Using a Robot to Print the Lexicographically Smallest String(using-a-robot-to-print-the-lexicographically-smallest-string) (Medium)

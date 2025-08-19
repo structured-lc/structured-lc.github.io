@@ -90,3 +90,8 @@ def decodeAtIndex(S: str, K: int) -> str:
 This problem uses a **reverse decoding** and **modulo reduction** pattern, which frequently appears when the expanded result is too large to construct directly.  
 Similar logic applies in compressed file expansions, run-length decoding, and tape simulation where only the result at a particular index is requested—never the whole output.  
 It emphasizes careful string traversal, pre-computation of cumulative sizes, and reverse engineering repeated structures.
+
+### Tags
+String(#string), Stack(#stack)
+
+### Similar Problems

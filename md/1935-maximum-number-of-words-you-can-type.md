@@ -77,3 +77,8 @@ def canBeTypedWords(text: str, brokenLetters: str) -> int:
 This problem uses the **string parsing + set lookup pattern** to filter out untypable words efficiently.  
 The main pattern here is **word-level filtering with character exclusion**, which recurs in problems about keyboard input validation, spell checking, or text-based input restrictions.  
 This logic can be adapted to situations where you need to filter, validate, or count elements that *can't* have any forbidden characters/values.
+
+### Tags
+Hash Table(#hash-table), String(#string)
+
+### Similar Problems

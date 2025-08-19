@@ -82,3 +82,24 @@ def lengthOfLIS(nums):
 This is a classic **dynamic programming** problem—subsequence, not subarray, and order matters.  
 It demonstrates a _DP + two-pointer/scan_ pattern, and can be optimized with binary search.  
 This pattern is widely used in sequence problems like LIS, Longest Increasing Path in Matrix, or versions on strings and more.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Increasing Triplet Subsequence(increasing-triplet-subsequence) (Medium)
+- Russian Doll Envelopes(russian-doll-envelopes) (Hard)
+- Maximum Length of Pair Chain(maximum-length-of-pair-chain) (Medium)
+- Number of Longest Increasing Subsequence(number-of-longest-increasing-subsequence) (Medium)
+- Minimum ASCII Delete Sum for Two Strings(minimum-ascii-delete-sum-for-two-strings) (Medium)
+- Minimum Number of Removals to Make Mountain Array(minimum-number-of-removals-to-make-mountain-array) (Hard)
+- Find the Longest Valid Obstacle Course at Each Position(find-the-longest-valid-obstacle-course-at-each-position) (Hard)
+- Minimum Operations to Make the Array K-Increasing(minimum-operations-to-make-the-array-k-increasing) (Hard)
+- Longest Ideal Subsequence(longest-ideal-subsequence) (Medium)
+- Maximum Number of Books You Can Take(maximum-number-of-books-you-can-take) (Hard)
+- Longest Increasing Subsequence II(longest-increasing-subsequence-ii) (Hard)
+- Find the Maximum Length of a Good Subsequence II(find-the-maximum-length-of-a-good-subsequence-ii) (Hard)
+- Find the Maximum Length of a Good Subsequence I(find-the-maximum-length-of-a-good-subsequence-i) (Medium)
+- Find the Maximum Length of Valid Subsequence I(find-the-maximum-length-of-valid-subsequence-i) (Medium)
+- Find the Maximum Length of Valid Subsequence II(find-the-maximum-length-of-valid-subsequence-ii) (Medium)
+- Longest Subsequence With Decreasing Adjacent Difference(longest-subsequence-with-decreasing-adjacent-difference) (Medium)

@@ -149,3 +149,8 @@ def constructFromPrePost(preorder, postorder):
 ### Summary
 This solution uses **recursion** and array index management, a common pattern for tree construction problems.  
 It combines the properties of **preorder** (root first) and **postorder** (root last) and leverages a hashmap for fast splits. This “construct a tree from two traversals” approach appears in other LeetCode variants (e.g., preorder/inorder), and learning the pattern of dividing and conquering with traversal properties is broadly applicable in tree-based coding interviews.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Divide and Conquer(#divide-and-conquer), Tree(#tree), Binary Tree(#binary-tree)
+
+### Similar Problems

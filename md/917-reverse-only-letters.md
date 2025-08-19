@@ -95,3 +95,9 @@ def reverseOnlyLetters(s: str) -> str:
 
 ### Summary  
 This problem uses the **two-pointer** pattern—an efficient way to process problems where swaps or comparisons are needed from both ends of a sequence. The solution is simple and readable, and the technique can be reused in problems involving palindromes, reversals with constraints, or selective swapping.
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Faulty Keyboard(faulty-keyboard) (Easy)

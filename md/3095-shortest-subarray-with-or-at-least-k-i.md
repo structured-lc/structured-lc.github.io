@@ -77,3 +77,10 @@ def shortest_subarray_with_or_at_least_k(nums, k):
 
 ### Summary
 This problem applies the "expanding sliding window/brute-force with early stopping" pattern, exploiting bounded input constraints. It illustrates a common approach for "shortest subarray with condition" problems, especially when bitwise operations or monotonic properties are involved, and can be adapted where the operation (e.g. AND or XOR) preserves useful structure.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Minimum Size Subarray Sum(minimum-size-subarray-sum) (Medium)
+- Shortest Subarray with Sum at Least K(shortest-subarray-with-sum-at-least-k) (Hard)

@@ -78,3 +78,12 @@ def isAnagram(s: str, t: str) -> bool:
 
 ### Summary
 This problem is a classic use of the **hashing/counter pattern** for character frequency comparison—a common pattern in anagram and frequency-matching problems. The fixed-size array (since input is restricted to lowercase English letters) allows for highly efficient O(n) time, O(1) space solution. Variants of this approach can be applied in word groupings, frequency map problems, and even for checking permutations.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sorting(#sorting)
+
+### Similar Problems
+- Group Anagrams(group-anagrams) (Medium)
+- Palindrome Permutation(palindrome-permutation) (Easy)
+- Find All Anagrams in a String(find-all-anagrams-in-a-string) (Medium)
+- Find Resultant Array After Removing Anagrams(find-resultant-array-after-removing-anagrams) (Easy)

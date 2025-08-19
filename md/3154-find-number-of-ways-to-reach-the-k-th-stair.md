@@ -93,3 +93,10 @@ def waysToReachStair(k: int) -> int:
 This problem uses a non-trivial combinatorial dynamic programming approach: for each possible **jump** count, count ways to distribute ‘down’ operations using combinations.  
 The pattern (split into non-consecutive insertions) comes up in problems involving forbidden adjacency, and is related to stars-and-bars counting.  
 Such combinatorial insight is common in stair climbing, grid walking, or sequence formation with forbidden moves.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Memoization(#memoization), Combinatorics(#combinatorics)
+
+### Similar Problems
+- Climbing Stairs(climbing-stairs) (Easy)
+- Min Cost Climbing Stairs(min-cost-climbing-stairs) (Easy)

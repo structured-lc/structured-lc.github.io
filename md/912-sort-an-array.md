@@ -112,3 +112,8 @@ def sortArray(nums):
 
 ### Summary
 This problem tests the understanding of array sorting algorithms beyond built-in methods and emphasizes mastering **divide and conquer** patterns like mergesort (or quicksort). The coding pattern seen here is one of the most fundamental in algorithm design. Mastering this equips you to solve related problems involving partitioning, merging, and maintaining order, which are common in interviews and in the implementation of many standard library features.
+
+### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Merge Sort(#merge-sort), Bucket Sort(#bucket-sort), Radix Sort(#radix-sort), Counting Sort(#counting-sort)
+
+### Similar Problems

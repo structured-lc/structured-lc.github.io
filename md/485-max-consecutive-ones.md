@@ -108,3 +108,14 @@ def findMaxConsecutiveOnesFunctional(nums):
 
 ### Summary
 This problem demonstrates the fundamental sliding window pattern for consecutive element counting. It's an excellent example of how simple state tracking can solve array traversal problems efficiently. This pattern extends to many similar problems involving consecutive elements, substring matching, and contiguous subarrays with specific properties.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Max Consecutive Ones II(max-consecutive-ones-ii) (Medium)
+- Max Consecutive Ones III(max-consecutive-ones-iii) (Medium)
+- Consecutive Characters(consecutive-characters) (Easy)
+- Longer Contiguous Segments of Ones than Zeros(longer-contiguous-segments-of-ones-than-zeros) (Easy)
+- Length of the Longest Alphabetical Continuous Substring(length-of-the-longest-alphabetical-continuous-substring) (Medium)
+- Maximum Enemy Forts That Can Be Captured(maximum-enemy-forts-that-can-be-captured) (Easy)

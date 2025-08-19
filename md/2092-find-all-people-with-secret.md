@@ -126,3 +126,9 @@ def findAllPeople(n, meetings, firstPerson):
 
 ### Summary
 This problem uses a combination of **graph traversal** (BFS/DFS), **offline event grouping**, and **simulation**. The core pattern is grouping events by time, then spreading state (here, knowledge) through components at each time slice. This approach is common in problems involving infection, rumor spreading, or knowledge propagation over dynamic events.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph), Sorting(#sorting)
+
+### Similar Problems
+- Reachable Nodes In Subdivided Graph(reachable-nodes-in-subdivided-graph) (Hard)

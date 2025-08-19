@@ -141,3 +141,8 @@ def findTheString(lcp):
 ### Summary
 This problem is a variant of **graph grouping (union-find/connected components)** with lexicographical string construction and a rigorous full-matrix validation. The solution relies on grouping all indices that must have the same character, greedily assigning the minimal available character, and then strictly validating the entirety of the resulting string against all lcp constraints.  
 This pattern (group-and-color, then validate) is common in string reconstruction, equivalence class coloring, and constraint satisfaction problems.
+
+### Tags
+Array(#array), String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Union Find(#union-find), Matrix(#matrix)
+
+### Similar Problems

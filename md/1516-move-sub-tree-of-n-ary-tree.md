@@ -123,3 +123,9 @@ def moveSubTree(root: 'Node', p: 'Node', q: 'Node') -> 'Node':
 
 ### Summary
 The main idea is to maintain parent pointers with a traversal, then update child lists according to the problem scenario (depending on whether p and q are in ancestor/descendant relationship). Tree manipulation and ancestor checks are common interview themes, often using traversal and intermediate mappings for flexibility.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems
+- Find Root of N-Ary Tree(find-root-of-n-ary-tree) (Medium)

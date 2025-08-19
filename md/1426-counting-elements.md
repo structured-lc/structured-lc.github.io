@@ -81,3 +81,8 @@ def countElements(arr):
 
 ### Summary
 This problem uses the *counting with set lookup* pattern. By utilizing a set, we achieve quick O(1) lookups for existence checks. The approach is a common and practical technique for efficiently answering "is x present in a collection?" queries. This pattern is widely applicable in problems involving quick existence checks and duplicate element counting.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

@@ -151,3 +151,10 @@ class FrontMiddleBackQueue:
 
 ### Summary
 This is a classic double-ended queue/pointer splitting design, adapted for efficiently supporting dynamic middle insertions and removals. The pattern generalizes to cases where a data structure needs to support random-access middle operations but full random-access would be too slow or complicated.
+
+### Tags
+Array(#array), Linked List(#linked-list), Design(#design), Queue(#queue), Data Stream(#data-stream)
+
+### Similar Problems
+- Design Circular Deque(design-circular-deque) (Medium)
+- Design Circular Queue(design-circular-queue) (Medium)

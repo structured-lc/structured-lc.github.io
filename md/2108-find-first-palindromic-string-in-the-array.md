@@ -85,3 +85,9 @@ def firstPalindrome(words):
 
 ### Summary
 This problem is a direct application of the **two pointers** technique for checking palindromes and highlights a standard loop-based array search. Brute-force is acceptable due to constraints. The two-pointers pattern used here is foundational for many string and array problems, and the edge-case checks are a common part of robust string processing.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Valid Palindrome(valid-palindrome) (Easy)

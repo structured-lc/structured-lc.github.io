@@ -95,3 +95,16 @@ def numberOfPaths(grid, k):
 
 ### Summary
 This is a classic **dynamic programming on grid** problem with an extra state dimension (modulo sum). The main pattern is **DP with extra state** (value modulo k), where only the current sum's remainder affects future state. This pattern appears in problems with "modulo constraint" on path or subsequence problems, such as subset sum modulo, or counting paths with parity or divisibility constraints. Common optimizations involve reducing DP dimensions when only recent rows/columns matter.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems
+- Unique Paths(unique-paths) (Medium)
+- Unique Paths II(unique-paths-ii) (Medium)
+- Minimum Path Sum(minimum-path-sum) (Medium)
+- Dungeon Game(dungeon-game) (Hard)
+- Cherry Pickup(cherry-pickup) (Hard)
+- Shortest Path in Binary Matrix(shortest-path-in-binary-matrix) (Medium)
+- Minimum Cost Homecoming of a Robot in a Grid(minimum-cost-homecoming-of-a-robot-in-a-grid) (Medium)
+- Check if There is a Path With Equal Number of 0's And 1's(check-if-there-is-a-path-with-equal-number-of-0s-and-1s) (Medium)

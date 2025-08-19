@@ -127,3 +127,8 @@ def allPossibleFBT(n: int):
 This problem is a classic example of *Recursive Tree Construction with Memoization*.  
 Every full binary tree with n nodes can be built by combining all pairs of smaller full binary trees whose sizes sum to n-1 (for the subtrees). The memoization (DP) pattern here is common in tree structure generation problems, such as generating unique BSTs, and appears in counting (Catalan number style) and construction (tree enumeration) variants.  
 Key patterns include recursion, memoization, and cartesian product of subproblem results.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Tree(#tree), Recursion(#recursion), Memoization(#memoization), Binary Tree(#binary-tree)
+
+### Similar Problems

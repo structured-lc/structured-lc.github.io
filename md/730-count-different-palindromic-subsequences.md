@@ -121,3 +121,10 @@ def countPalindromicSubsequences(s):
 ### Summary
 This problem is a classic **Dynamic Programming over substrings + states** problem, using a 3D DP table to eliminate duplicates and efficiently count unique palindromic subsequences.  
 The DP patterns here (start/end constraints, inclusion-exclusion) are broadly applicable in many substring/subsequence and counting problems.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Longest Palindromic Subsequence(longest-palindromic-subsequence) (Medium)
+- Count Palindromic Subsequences(count-palindromic-subsequences) (Hard)

@@ -93,3 +93,12 @@ def mostFrequentEven(nums):
 
 ### Summary
 This problem uses the classic **frequency counting** pattern—a hashmap to tally occurrences, followed by a tie-breaker based on value. This pattern applies to other frequency-based problems (e.g., finding top k frequent elements). Filtering while counting saves time and space. The tie-breaking requirement (smallest element) is a common interview twist.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Counting(#counting)
+
+### Similar Problems
+- Majority Element(majority-element) (Easy)
+- Majority Element II(majority-element-ii) (Medium)
+- Top K Frequent Elements(top-k-frequent-elements) (Medium)
+- Sort Characters By Frequency(sort-characters-by-frequency) (Medium)

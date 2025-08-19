@@ -90,3 +90,9 @@ def frogPosition(n, edges, t, target):
 
 ### Summary
 This is a DFS/backtracking problem for probability flow in trees. The pattern also appears in general graphs (state space traversal), Markov processes, or simulation scenarios.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
+
+### Similar Problems
+- Longest Special Path(longest-special-path) (Hard)

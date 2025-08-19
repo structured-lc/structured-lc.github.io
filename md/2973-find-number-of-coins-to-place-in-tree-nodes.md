@@ -123,3 +123,10 @@ def find_coins(edges, cost):
 
 ### Summary
 This is a classic case of a tree + DP/DFS pattern, where subtree aggregation is required and the result for each node depends only on its subtree’s information. The critical optimization is only maintaining a few largest/smallest elements per subtree, which reduces time and space from naive cubic/brute-force to linear. This aggregation technique is widely useful in tree DP, such as diameter problems, max/min subtree queries, and others.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Collect Coins in a Tree(collect-coins-in-a-tree) (Hard)
+- Find the Maximum Sum of Node Values(find-the-maximum-sum-of-node-values) (Hard)

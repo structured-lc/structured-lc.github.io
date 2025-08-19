@@ -127,3 +127,9 @@ def minimumTime(n, edges, disappear):
 This problem is a variant of **single-source shortest path** (Dijkstra’s algorithm) with a **node expiry constraint**.  
 Common pattern: shortest path with additional node/edge availability conditions.  
 This logic can be adapted for problems where *nodes or edges vanish* after certain periods—useful in network reliability, real-time systems, and simulated/active graphs.
+
+### Tags
+Array(#array), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Find the Last Marked Nodes in Tree(find-the-last-marked-nodes-in-tree) (Hard)

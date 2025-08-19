@@ -54,3 +54,11 @@ def findNumbers(nums):
 
 ### Summary
 This is a straightforward **counting/digit property** problem, with the core pattern being evaluating an array and accumulating a property using a simple loop or comprehension. Such digit-counting logic is also found in digit sum/parity/divisibility problems.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems
+- Finding 3-Digit Even Numbers(finding-3-digit-even-numbers) (Easy)
+- Number of Even and Odd Bits(number-of-even-and-odd-bits) (Easy)
+- Find if Digit Game Can Be Won(find-if-digit-game-can-be-won) (Easy)

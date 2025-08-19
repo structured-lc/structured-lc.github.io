@@ -129,3 +129,10 @@ def numIslands2(m, n, positions):
 
 ### Summary
 This problem is a classic application of the Disjoint Set (Union-Find) data structure—specifically dynamic connectivity. The coding pattern is the union-find with path compression and rank optimization, frequently used in graph connectivity challenges and Kruskal’s MST algorithm. Managing component counts in a dynamic, 2D setting is a valuable technique for grid-based algorithm problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Union Find(#union-find)
+
+### Similar Problems
+- Number of Islands(number-of-islands) (Medium)
+- Process Restricted Friend Requests(process-restricted-friend-requests) (Hard)

@@ -103,3 +103,10 @@ def maximumBeauty(nums, k):
 
 ### Summary
 This problem uses the **sweep line / event (prefix sum) over interval endpoints** pattern to solve the "maximum overlap" problem. The reduction to overlapping intervals is very common, and the method avoids brute forcing for every integer value. This approach applies to other problems involving maximum overlapping intervals, booking, calendar meeting conflicts, or interval intersection counting.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Sorting(#sorting)
+
+### Similar Problems
+- Maximum Size Subarray Sum Equals k(maximum-size-subarray-sum-equals-k) (Medium)
+- Partition Array Such That Maximum Difference Is K(partition-array-such-that-maximum-difference-is-k) (Medium)

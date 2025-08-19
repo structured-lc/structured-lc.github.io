@@ -85,3 +85,9 @@ def reconstructMatrix(upper, lower, colsum):
 
 ### Summary
 This is a greedy construction problem based on column-wise assignment and matching row sums. It's a unique but instructive example of constraint satisfaction seen in matrix or grid setting.
+
+### Tags
+Array(#array), Greedy(#greedy), Matrix(#matrix)
+
+### Similar Problems
+- Find Valid Matrix Given Row and Column Sums(find-valid-matrix-given-row-and-column-sums) (Medium)

@@ -99,3 +99,8 @@ def largestOverlap(A: List[List[int]], B: List[List[int]]) -> int:
 
 ### Summary
 This problem is a **classic application of vector counting and hash-mapping for translation-invariant overlap** – directly comparing shifted indices. The coding pattern involves focusing on 1s and counting their relative position differences. This trick is powerful for similar pattern/matrix match problems, especially in image registration, convolution, or grid-based sliding-window problems.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems

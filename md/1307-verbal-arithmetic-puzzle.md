@@ -113,3 +113,8 @@ def isSolvable(words, result):
 
 ### Summary
 A classic **backtracking** and **constraint satisfaction** problem that is as much about search pruning as brute-force checking. Applies to a broad class of puzzles (cryptarithmetic, alphametics) with combinatorial state and digit-assignment constraints.
+
+### Tags
+Array(#array), Math(#math), String(#string), Backtracking(#backtracking)
+
+### Similar Problems

@@ -114,3 +114,10 @@ def swapPairs(head):
 
 ### Summary
 This problem is a classic *linked list manipulation* task. The key trick is to use a dummy node as a precursor to enable swapping the head without special-casing, and carefully update pointers to avoid losing track of nodes. This approach is a pattern common to other *pairwise or group manipulation* problems on linked lists, such as reversing nodes in k-groups or reordering nodes.
+
+### Tags
+Linked List(#linked-list), Recursion(#recursion)
+
+### Similar Problems
+- Reverse Nodes in k-Group(reverse-nodes-in-k-group) (Hard)
+- Swapping Nodes in a Linked List(swapping-nodes-in-a-linked-list) (Medium)

@@ -113,3 +113,11 @@ def generatePalindromes(s):
 
 ### Summary
 This problem uses the **backtracking with pruning** coding pattern and takes advantage of the properties of palindromes (mirror symmetry, at most one center) for optimization. The idea of counting frequencies and generating permutations of a subset (the half-string) to avoid duplicates is common in permutation-related string problems, like "Permutations II" and "Anagrams".
+
+### Tags
+Hash Table(#hash-table), String(#string), Backtracking(#backtracking)
+
+### Similar Problems
+- Next Permutation(next-permutation) (Medium)
+- Permutations II(permutations-ii) (Medium)
+- Palindrome Permutation(palindrome-permutation) (Easy)

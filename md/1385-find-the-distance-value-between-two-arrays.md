@@ -69,3 +69,8 @@ def findTheDistanceValue(arr1, arr2, d):
 
 ### Summary
 This is a classic application of binary search for window/range queries on a sorted array, a common interview technique for distance/separation types of questions.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems

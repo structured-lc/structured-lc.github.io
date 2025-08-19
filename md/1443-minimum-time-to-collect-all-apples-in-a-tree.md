@@ -76,3 +76,8 @@ def minTime(n, edges, hasApple):
 
 ### Summary
 This is an example of the "tree pruning" pattern: DFS visit accumulates only those subtrees providing value (in this case, apples). Ignore unnecessary branches. Similar logic helps with problems like minimum path collection, file system traversal, subtree sum computation.
+
+### Tags
+Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems

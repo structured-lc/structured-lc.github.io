@@ -77,3 +77,9 @@ def countNegatives(grid):
 
 ### Summary
 Uses the two-pointer matrix traversal pattern, common with sorted 2D matrices (searching, counting, etc.). Recognizing the sorted property is key to reducing brute-force O(m×n) to O(m+n) time. This pattern applies to other problems like search in a 2D matrix, kth smallest/largest in a sorted matrix, etc.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Matrix(#matrix)
+
+### Similar Problems
+- Maximum Count of Positive Integer and Negative Integer(maximum-count-of-positive-integer-and-negative-integer) (Easy)

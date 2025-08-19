@@ -83,3 +83,8 @@ def memoryLeak(memory1: int, memory2: int) -> list[int]:
 
 ### Summary
 This is a classic **simulation problem**, with simple greedy logic: at each step, allocate to the largest stick. The optimal approach is a straightforward loop. No data structures are required. Almost all similar problems about resource allocation, alternating operations, or distributing load among elements can be approached by similar simulation or greedy strategies.
+
+### Tags
+Math(#math), Simulation(#simulation)
+
+### Similar Problems

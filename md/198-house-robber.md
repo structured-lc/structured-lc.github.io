@@ -82,3 +82,21 @@ def rob(nums):
 
 ### Summary
 This problem is a classic example of the **dynamic programming** pattern called "maximum sum of non-adjacent elements." The approach only needs to keep track of the last two best solutions, using the `max` function to determine whether to rob a house or skip it. This same underlying pattern appears in variants like "House Robber II" (circle) and some stock trading problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Maximum Product Subarray(maximum-product-subarray) (Medium)
+- House Robber II(house-robber-ii) (Medium)
+- Paint House(paint-house) (Medium)
+- Paint Fence(paint-fence) (Medium)
+- House Robber III(house-robber-iii) (Medium)
+- Non-negative Integers without Consecutive Ones(non-negative-integers-without-consecutive-ones) (Hard)
+- Coin Path(coin-path) (Hard)
+- Delete and Earn(delete-and-earn) (Medium)
+- Solving Questions With Brainpower(solving-questions-with-brainpower) (Medium)
+- Count Number of Ways to Place Houses(count-number-of-ways-to-place-houses) (Medium)
+- House Robber IV(house-robber-iv) (Medium)
+- Mice and Cheese(mice-and-cheese) (Medium)
+- Largest Element in an Array after Merge Operations(largest-element-in-an-array-after-merge-operations) (Medium)

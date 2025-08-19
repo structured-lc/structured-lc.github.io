@@ -101,3 +101,9 @@ def shortestSuperstring(s1: str, s2: str) -> str:
 
 ### Summary
 This problem uses the **string overlap pattern**—finding maximal matching edges to compress two strings into their shortest common superstring. The brute-force tries all overlaps, but optimized approaches just check prefix/suffix equality in both directions. This is a special case of the more general shortest superstring problem (which for >2 strings is much harder, using dynamic programming and bitmasking). Similar patterns appear in sequence assembly (bioinformatics), spell correction, and file merging.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Find the Shortest Superstring(find-the-shortest-superstring) (Hard)

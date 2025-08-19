@@ -106,3 +106,9 @@ def lastRemaining(n: int) -> int:
 ### Summary
 
 This problem is a recurring elimination process that can be solved with careful simulation of head position, step size, and direction—reducing what appears to be a brute-force simulation (O(n)) down to an O(log n) mathematical pattern. This approach is related to problems involving circular lists, fast exponentiation, and sequence analysis where the state can be described incrementally. You can apply this incremental elimination/halving trick in problems involving Josephus circle, skip lists, and divide-and-conquer scenarios.
+
+### Tags
+Math(#math), Recursion(#recursion)
+
+### Similar Problems
+- Min Max Game(min-max-game) (Easy)

@@ -98,3 +98,9 @@ def minCostSetTime(startAt, moveCost, pushCost, targetSeconds):
 
 ### Summary
 This approach uses a brute-force enumeration of all possible valid minute/second splits for the target, then for each, simulates the digit entry with costs according to movement and pushing. It leverages the small constraints for an exhaustive check and careful cost calculation, which is a recurring pattern in UI simulation and minimum cost path problems. Variations appear in PIN pad simulations, elevator problems, and number-entry problems with movement/press costs.
+
+### Tags
+Math(#math), Enumeration(#enumeration)
+
+### Similar Problems
+- Minimum Time Difference(minimum-time-difference) (Medium)

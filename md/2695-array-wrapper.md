@@ -81,3 +81,7 @@ class ArrayWrapper:
 This problem demonstrates **operator overloading** and **encapsulation** in Python.  
 Defining special ("dunder") methods allows custom classes to behave like built-in types for basic operations.  
 The pattern is widely applicable for customizing how objects interact in arithmetic, output, and container contexts.
+
+### Tags
+
+### Similar Problems

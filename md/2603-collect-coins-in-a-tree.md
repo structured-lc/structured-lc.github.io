@@ -122,3 +122,12 @@ def collectTheCoins(coins, edges):
 This problem is a classic example of **tree pruning** and modeling complex constraints as layers of removal.  
 The double-pruning technique exploits the collection radius and helps reduce the problem to counting essential edges.  
 This pattern, known as the "kernelization" or *minimal subtree covering all targets*, appears often in graph dynamics, such as message delivery, minimal travel, or Steiner tree problems in trees.
+
+### Tags
+Array(#array), Tree(#tree), Graph(#graph), Topological Sort(#topological-sort)
+
+### Similar Problems
+- Minimum Height Trees(minimum-height-trees) (Medium)
+- Sum of Distances in Tree(sum-of-distances-in-tree) (Hard)
+- Maximum Score After Applying Operations on a Tree(maximum-score-after-applying-operations-on-a-tree) (Medium)
+- Find Number of Coins to Place in Tree Nodes(find-number-of-coins-to-place-in-tree-nodes) (Hard)

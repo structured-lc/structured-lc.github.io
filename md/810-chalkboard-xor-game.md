@@ -68,3 +68,8 @@ def xorGame(nums):
 
 ### Summary  
 This problem is a variant of the classic **Nim game** and tests your understanding of XOR properties, parity, and game theory strategies. The key insight is whether the XOR sum is 0 and the parity (even/odd) of the array length. The "mirror" or symmetric strategy is also a classic theme in combinatorial games. This approach is seen in problems related to Nim, Grundy numbers, and other impartial game theory scenarios.
+
+### Tags
+Array(#array), Math(#math), Bit Manipulation(#bit-manipulation), Brainteaser(#brainteaser), Game Theory(#game-theory)
+
+### Similar Problems

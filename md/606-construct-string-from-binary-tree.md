@@ -122,3 +122,10 @@ def tree2str(root):
 
 ### Summary
 This is a classic **binary tree + preorder traversal + string encoding** problem. The main challenge is getting the parentheses right to preserve the tree structure while omitting unnecessary empty ones. The pattern (recursive DFS, structural string construction) is common and appears in problems like: serialize/deserialize tree, or tree-to-array representations.
+
+### Tags
+String(#string), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Construct Binary Tree from String(construct-binary-tree-from-string) (Medium)
+- Find Duplicate Subtrees(find-duplicate-subtrees) (Medium)

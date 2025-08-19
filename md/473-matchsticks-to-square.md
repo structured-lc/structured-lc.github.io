@@ -106,3 +106,9 @@ def makesquare(matchsticks):
 
 ### Summary
 This problem uses the classic **backtracking with pruning** pattern, efficient due to small input size. Sorting helps by reducing the search space, allowing for early stopping when adding a stick overshoots the target. Similar backtracking techniques appear in partition, subset sum, and k-equal-sums problems. Understanding state pruning, recursion, and the importance of sorting for optimization are key skills here.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems
+- Maximum Rows Covered by Columns(maximum-rows-covered-by-columns) (Medium)

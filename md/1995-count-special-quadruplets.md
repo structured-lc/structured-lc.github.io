@@ -84,3 +84,12 @@ def countQuadruplets(nums):
 
 ### Summary
 This solution uses a straightforward brute-force triple nested loop pattern, which is justified due to array size limits. The problem is a variant of the multi-pointer and k-sum family (here, 3+1 sum), common in interview scenarios. This counting pattern extends to problems like counting triplets, quadruplets, and can be optimized with hash maps in harder variants.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Enumeration(#enumeration)
+
+### Similar Problems
+- 4Sum(4sum) (Medium)
+- Increasing Triplet Subsequence(increasing-triplet-subsequence) (Medium)
+- Count Good Triplets(count-good-triplets) (Easy)
+- Count Increasing Quadruplets(count-increasing-quadruplets) (Hard)

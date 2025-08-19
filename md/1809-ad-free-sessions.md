@@ -129,3 +129,8 @@ def adFreeSessions(playback, ads):
 
 ### Summary
 This problem is a classic **anti-join** scenario, commonly seen in SQL (find entries in A not matched by B under some criteria). Translated to code: build a mapping for efficient access, check for any matching “violating” record, and include only sessions passing the check. This pattern is found in fraud detection, finding “clean runs” (e.g., no errors, no alerts), or event logs with/without specific incidents.
+
+### Tags
+Database(#database)
+
+### Similar Problems

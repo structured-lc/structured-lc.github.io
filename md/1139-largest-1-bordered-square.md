@@ -95,3 +95,8 @@ def largest1BorderedSquare(grid):
 
 ### Summary
 This problem leverages the **2D prefix sum / dynamic programming over grids** pattern to preprocess consecutive runs of 1s. This reduces the complexity of checking potential borders from O(k) to O(1), yielding an efficient solution. The same technique is used in other subgrid or submatrix “all border ___” or “all cells satisfy ___” problems. Pattern is versatile for maximal rectangle/square/region detection problems in 2D arrays.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems

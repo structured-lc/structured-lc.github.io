@@ -94,3 +94,10 @@ def maxLength(ribbons, k):
 This problem uses the **binary search on answer** pattern — a powerful technique when the answer lies in a numeric range and you can check feasibility in O(n) per test.  
 Classic applications include cutting objects into k parts (paper, wood, cable, etc), maximizing the minimum or minimizing the maximum, etc.  
 The helper function checks for feasibility, and binary search efficiently narrows down the optimal value. This approach works whenever the problem exhibits monotonicity (if a solution is possible for x, also possible for x-1), which is common in resource allocation and partitioning problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Capacity To Ship Packages Within D Days(capacity-to-ship-packages-within-d-days) (Medium)
+- Add Minimum Number of Rungs(add-minimum-number-of-rungs) (Medium)

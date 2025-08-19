@@ -67,3 +67,8 @@ def maximalNetworkRank(n: int, roads: list[list[int]]) -> int:
 
 ### Summary
 This problem uses the standard **graph degree + pairwise combination pattern**. The specific deduction (subtract 1 if directly connected) is a classic tweak when dealing with undirected graphs and unique edge counts.
+
+### Tags
+Graph(#graph)
+
+### Similar Problems

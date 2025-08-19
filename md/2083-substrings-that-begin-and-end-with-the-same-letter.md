@@ -85,3 +85,12 @@ def numberOfSubstrings(s: str) -> int:
 
 ### Summary
 This is a counting and combinatorics pattern problem, where you count how many pairs (including identical pair, i.e., single characters) can be formed with repeated identical characters. The core coding pattern is to reduce repeated substring checking (O(n²)) to simple frequency counting (O(n)). This is a common approach for substring/substring-counting problems where character equality properties are central, and similar techniques apply in palindromic substring counting, anagrams, and frequency-based combinatorial substring problems.
+
+### Tags
+Hash Table(#hash-table), Math(#math), String(#string), Counting(#counting), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Number of Good Pairs(number-of-good-pairs) (Easy)
+- Sum of Beauty of All Substrings(sum-of-beauty-of-all-substrings) (Medium)
+- Count Pairs in Two Arrays(count-pairs-in-two-arrays) (Medium)
+- Unique Substrings With Equal Digit Frequency(unique-substrings-with-equal-digit-frequency) (Medium)

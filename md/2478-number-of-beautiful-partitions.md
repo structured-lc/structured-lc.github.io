@@ -113,3 +113,10 @@ def beautifulPartitions(s: str, k: int, minLength: int) -> int:
 
 ### Summary
 This problem is a classic use of dynamic programming with range/splitting properties, similar to substring partitioning and palindrome partitioning DP. The two-dimensional dp plus prefix sum trick allows efficient computation for large inputs by exploiting constraints on valid start/end points for each substring. This pattern is common in substring, interval, or split counting problems and is widely applicable where range accumulations or choices are restricted by local properties.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Restore The Array(restore-the-array) (Hard)
+- Number of Ways to Separate Numbers(number-of-ways-to-separate-numbers) (Hard)

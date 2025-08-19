@@ -90,3 +90,8 @@ def maxScore(nums):
 
 ### Summary
 This problem follows a **reverse greedy** and **dynamic accumulation** pattern, where future optimal decisions only depend on the best possible choice onwards. The coding pattern used is similar to those found in "maximum sum path" problems and can be generalized to array dynamic programming with one-way dependencies. Variants may require windowed maxima (monotonic queue) or reconstructing paths, but the main insight here is that greedy suffix selection is optimal.
+
+### Tags
+Array(#array), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems

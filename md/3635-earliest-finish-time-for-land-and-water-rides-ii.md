@@ -98,3 +98,8 @@ def earliestFinishTime(landRides, waterRides):
 ### Summary
 
 This problem is a classic **brute-force pairwise min/max scheduling** task. The central observation is that the only important comparisons are the *pairwise combinations* of when a pair of rides can actually be experienced in sequence, given their respective opening times. The method generalizes to other problems where tasks happen in sequence and have independent unlock/start times, and the goal is to *minimize finish time* over all orderings and pairings.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

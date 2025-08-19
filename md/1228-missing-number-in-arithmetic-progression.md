@@ -66,3 +66,8 @@ def missingNumber(arr):
 
 ### Summary
 This problem utilizes the **arithmetic progression formula** and the idea that the sum of a full AP minus the current sum yields the missing value. It fits the pattern of leveraging sequence properties—similar approaches work for missing numbers in sequences (like Leetcode's "Missing Number" problem). Binary search optimizations are possible, especially if the array is sorted and very large. The key takeaway: when a structure is linear and regular, aggregate properties (like sum or constant difference) can help quickly reveal anomalies.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems

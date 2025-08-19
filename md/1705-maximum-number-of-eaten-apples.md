@@ -108,3 +108,8 @@ def eatenApples(apples, days):
 
 ### Summary
 This problem uses the **heap + greedy** pattern, where elements are processed in order of the next critical event, here the sooner rotten date. The solution efficiently always selects the most "urgent" item using a min-heap. This template is often seen in job scheduling with deadlines, inventory decay, or anytime "pick soonest to expire" is required.
+
+### Tags
+Array(#array), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

@@ -138,3 +138,8 @@ def duplicate_emails(persons):
 ### Summary
 The approach uses **hash counting (dictionary/Counter)**, a common coding technique for duplicate detection, validation, or frequency analysis.  
 This coding pattern applies in problems like “find the single non-duplicate in an array”, “anagrams”, and “duplicate file names”, among many others. The SQL `GROUP BY ... HAVING` pattern is also a foundational database skill.
+
+### Tags
+Database(#database)
+
+### Similar Problems

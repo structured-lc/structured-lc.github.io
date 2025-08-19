@@ -86,3 +86,8 @@ def minimum_deletions(s: str, k: int) -> int:
 
 ### Summary
 This problem uses the **frequency counting + greedy** deletion pattern: always keep the most frequent types you are allowed, and delete the rest. This approach is extremely common for “minimize removals to satisfy a constraint” involving character types/frequencies, and generalizes to many frequency-greedy problems.
+
+### Tags
+Hash Table(#hash-table), String(#string), Greedy(#greedy), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems

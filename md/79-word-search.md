@@ -107,3 +107,9 @@ def exist(board, word):
 
 ### Summary
 This problem uses backtracking and depth-first search (DFS) to explore all valid paths forming the word. The classic technique is useful for puzzles, games, and logic grid problems where you need to make reversible choices and explore alternatives. The pattern here is often seen in maze search, Sudoku, and constraint satisfaction tasks.
+
+### Tags
+Array(#array), String(#string), Backtracking(#backtracking), Depth-First Search(#depth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- Word Search II(word-search-ii) (Hard)

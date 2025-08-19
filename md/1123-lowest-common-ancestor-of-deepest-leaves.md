@@ -139,3 +139,9 @@ class Solution:
 This problem is a classic application of **DFS/Postorder Traversal** for trees, combining computation of **height (depth)** with identifying the **lowest common ancestor** as deepest branches converge.  
 It highlights patterns like recursive divide-and-conquer, LCA logic, and is broadly useful for binary/related tree problems.  
 This strategy is widely reusable for other “deepest node” and “LCA” related challenges.
+
+### Tags
+Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Lowest Common Ancestor of a Binary Tree IV(lowest-common-ancestor-of-a-binary-tree-iv) (Medium)

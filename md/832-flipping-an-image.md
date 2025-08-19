@@ -104,3 +104,8 @@ def flipAndInvertImage(image: List[List[int]]) -> List[List[int]]:
 This approach uses **two-pointer scanning** per row, efficiently reversing and inverting in-place.  
 It exemplifies the pattern of array two-pointer manipulation, and simultaneously performing multiple operations to save space and avoid unnecessary passes.  
 This two-pointer mirroring and modifying approach commonly arises in other interview problems involving array or string symmetry, reversal, or in-place transformation.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Bit Manipulation(#bit-manipulation), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems

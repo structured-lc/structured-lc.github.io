@@ -103,3 +103,12 @@ def subarrayBitwiseORs(arr):
 
 ### Summary
 This problem uses a **sliding window set dynamic programming** pattern, where for each array position we maintain possible OR results from previous positions and update for the current number. This approach is efficient due to the limited growth of possible results (since each new OR can only flip more bits on) and is a common technique when asked about subarray properties that have monotonic or bitwise nature. This pattern can be applied to subarray bitwise AND, maximums, and minimums with suitable modifications.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Longest Nice Subarray(longest-nice-subarray) (Medium)
+- Smallest Subarrays With Maximum Bitwise OR(smallest-subarrays-with-maximum-bitwise-or) (Medium)
+- Bitwise OR of All Subsequence Sums(bitwise-or-of-all-subsequence-sums) (Medium)
+- Find the Maximum Sequence Value of Array(find-the-maximum-sequence-value-of-array) (Hard)

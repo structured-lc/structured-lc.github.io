@@ -61,3 +61,9 @@ def maxBoxesInWarehouse(boxes, warehouse):
 
 ### Summary
 This problem uses greedy + pre-processing. Min-height prefix allows us to correctly model warehouse entry limits, and greedy fit of boxes ensures we maximize placement. The pattern is common for 'fit as many as possible' type interval and bin-packing problems.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Put Boxes Into the Warehouse I(put-boxes-into-the-warehouse-i) (Medium)

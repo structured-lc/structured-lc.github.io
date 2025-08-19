@@ -104,3 +104,10 @@ def longestPalindrome(words):
 
 ### Summary
 This problem is a classic **hash map counting + greedy pairing** exercise, optimized for palindromic patterns created from 2-character strings. The technique—pairing items with their reverse—can be used in problems involving mirrored relationships and palindromic construction, such as anagrams, palindromic subarrays, or DNA pairing problems. The “central unpaired element” trick is common when dealing with palindrome constructions.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Greedy(#greedy), Counting(#counting)
+
+### Similar Problems
+- Palindrome Pairs(palindrome-pairs) (Hard)
+- Longest Palindrome(longest-palindrome) (Easy)

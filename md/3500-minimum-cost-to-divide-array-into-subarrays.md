@@ -107,3 +107,9 @@ def minimumCost(nums, cost, k):
 This problem uses a classic **DP with prefix sums** pattern, tackling **minimum cost subarray partitioning**.  
 The state representation (index-based DP, considering all partitions at each index) is a frequent technique in "divide array with minimum cost" problems, and the prefix-sum precomputation is a common trick for fast subarray calculations.  
 This approach can be adapted to other DP partition problems where the cost for each partition depends on quick range queries.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Minimum Cost to Split an Array(minimum-cost-to-split-an-array) (Hard)

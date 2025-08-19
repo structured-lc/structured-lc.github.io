@@ -136,3 +136,8 @@ def maxFrequencyScore(nums, k):
 This problem uses the **sliding window with frequency dictionary** pattern, but with challenging updates: each window's score depends non-linearly on both value and frequency, so you must update contributions for outgoing/incoming elements by subtracting and adding the correct powered values.  
 The modular exponentiation technique (binary exponentiation) is necessary to efficiently compute large exponents under modulo.  
 This technique/general approach is common for problems involving **windowed aggregations with dynamic frequency-based computations** (such as most frequent element in window, windowed power sums, etc).
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Stack(#stack), Sliding Window(#sliding-window)
+
+### Similar Problems

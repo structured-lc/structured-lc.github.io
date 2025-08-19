@@ -96,3 +96,9 @@ def isLongPressedName(name: str, typed: str) -> bool:
 
 ### Summary
 This solution uses the **two pointers** pattern to compare two strings with allowance for consecutive repeats in the second string (long presses). It’s an efficient, O(n) approach and directly models real-world text processing problems involving repetition, such as keystroke errors or interpreting user input with unintended key presses. The two-pointer comparison technique can be adapted to various string matching, merge, and data stream problems.
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Maximum Matching of Players With Trainers(maximum-matching-of-players-with-trainers) (Medium)

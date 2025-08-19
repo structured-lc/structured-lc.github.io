@@ -120,3 +120,9 @@ This problem uses the "canonical form checking" pattern—check that all pattern
 This approach appears in problems involving board normalization or grid state transformation.  
 It uses bit manipulation, pattern matching, and minimal swap counting.  
 Efficient in time and space, avoids combinatorial explosion by leveraging board properties.
+
+### Tags
+Array(#array), Math(#math), Bit Manipulation(#bit-manipulation), Matrix(#matrix)
+
+### Similar Problems
+- Minimum Moves to Get a Peaceful Board(minimum-moves-to-get-a-peaceful-board) (Medium)

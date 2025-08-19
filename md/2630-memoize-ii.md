@@ -114,3 +114,9 @@ def memoize(fn):
 This problem uses the advanced **Trie-based Memoization** pattern, enabling caching for *any* function regardless of argument types (including objects, functions, etc). Unlike standard dictionary-based memoization, this approach structures the cache as nested dicts (per argument, per level) and stores values at leaves, keyed by a sentinel.  
 It’s particularly useful for dynamic programming, recursive calls, or expensive pure functions where input variety is high.  
 This design applies wherever standard hash/dict-based caches would fail (e.g., arguments are mutable, or equality by reference is required rather than by value).
+
+### Tags
+
+### Similar Problems
+- Memoize(memoize) (Medium)
+- Curry(curry) (Medium)

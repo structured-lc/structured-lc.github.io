@@ -90,3 +90,17 @@ def firstMissingPositive(nums):
 
 ### Summary
 This problem is a classic example of **cyclic sorting** (also called “Index Placement” trick), commonly used when a sequence can be placed in O(1) space by using the indices of the array as targets for the in-place reordering. This approach is powerful for “find the missing or duplicate” in consecutive ranges. Variants show up in sorting cyclic lists, finding duplicates, or marking arrays using index flipping. The in-place technique eliminates the need for extra memory and is a valuable coding pattern for interviews.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems
+- Missing Number(missing-number) (Easy)
+- Find the Duplicate Number(find-the-duplicate-number) (Medium)
+- Find All Numbers Disappeared in an Array(find-all-numbers-disappeared-in-an-array) (Easy)
+- Couples Holding Hands(couples-holding-hands) (Hard)
+- Smallest Number in Infinite Set(smallest-number-in-infinite-set) (Medium)
+- Maximum Number of Integers to Choose From a Range I(maximum-number-of-integers-to-choose-from-a-range-i) (Medium)
+- Smallest Missing Non-negative Integer After Operations(smallest-missing-non-negative-integer-after-operations) (Medium)
+- Maximum Number of Integers to Choose From a Range II(maximum-number-of-integers-to-choose-from-a-range-ii) (Medium)
+- Smallest Missing Integer Greater Than Sequential Prefix Sum(smallest-missing-integer-greater-than-sequential-prefix-sum) (Easy)

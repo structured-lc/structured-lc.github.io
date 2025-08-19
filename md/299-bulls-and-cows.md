@@ -90,3 +90,9 @@ def getHint(secret: str, guess: str) -> str:
 
 ### Summary
 This problem uses a “counting” pattern and careful bookkeeping with arrays to separate exact matches (bulls) from partial (cows). It's a classic digit/character counting task and shows up in problems where you need to compare multi-set relations, deal with duplicates, and track correct vs wrong positions. Variants appear in interview problems on anagrams, inventory matching, and card games.
+
+### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Make Number of Distinct Characters Equal(make-number-of-distinct-characters-equal) (Medium)

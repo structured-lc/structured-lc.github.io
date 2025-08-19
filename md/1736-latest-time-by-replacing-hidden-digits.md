@@ -88,3 +88,10 @@ def maximumTime(time: str) -> str:
 
 ### Summary
 This problem uses the **greedy filling pattern**, commonly seen in mask-filling or string digit replacement problems, where you must build the maximal or minimal string/number by filling unknowns optimally. This coding pattern is frequently useful whenever constructing largest (or smallest) valid numbers under specific constraints, and is especially quick and elegant for situations with tight, small, bounded positions like clock times or dates.
+
+### Tags
+String(#string), Greedy(#greedy)
+
+### Similar Problems
+- Number of Valid Clock Times(number-of-valid-clock-times) (Easy)
+- Latest Time You Can Obtain After Replacing Characters(latest-time-you-can-obtain-after-replacing-characters) (Easy)

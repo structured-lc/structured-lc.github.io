@@ -83,3 +83,9 @@ def isPrefixString(s, words):
 ### Summary
 This problem uses the **prefix accumulation** pattern, iteratively building a prefix from the array and comparing it to the target.  
 It's a direct example of a "running compose and compare" technique, common in string and sequence problems where results need to be built up step by step until a match is found or exceeded. This is broadly applicable in prefix-sum, prefix-array, or progressive-match type interviews.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Count Prefixes of a Given String(count-prefixes-of-a-given-string) (Easy)

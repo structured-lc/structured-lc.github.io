@@ -73,3 +73,8 @@ def runningSum(nums):
 
 ### Summary
 This problem uses a **prefix sum** (a.k.a. running sum or cumulative sum) pattern. It's fundamental for array and sequence algorithms, especially when dealing with sum queries or partial sums. You iterate once, maintaining a cumulative total, making the solution simple and efficient. This approach generalizes to two-dimensional arrays and more complex range-sum queries (as in Fenwick trees, segment trees, or for interval sums in interview questions).
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems

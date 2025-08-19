@@ -102,3 +102,8 @@ def maximumUpgradableServers(count, upgrade, sell, money):
 
 ### Summary
 The approach uses binary search within each data center to maximize the upgraded servers given local constraints. This is a classic search/greedy optimization pattern, useful in allocation/resource maximization problems and can be extended to other divide-and-conquer or greedy settings where individual decisions must be balanced for overall maximization.
+
+### Tags
+Array(#array), Math(#math), Binary Search(#binary-search)
+
+### Similar Problems

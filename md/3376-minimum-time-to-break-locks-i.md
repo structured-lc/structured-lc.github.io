@@ -99,3 +99,8 @@ def minimumTimeToBreakLocks(strength, k):
 This problem is a classic use-case for **bitmask Dynamic Programming** (DP) for small n, frequently seen in optimal ordering/sequencing problems.  
 Pattern: “Trying every order with memoization / DP (bitmask)” is very useful when the number of objects (locks/tasks) is small, but the number of possible sequences is factorial-sized.  
 The pattern can be used for problems around job scheduling, shortest path visiting all nodes, and permutation DP questions.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Depth-First Search(#depth-first-search), Bitmask(#bitmask)
+
+### Similar Problems

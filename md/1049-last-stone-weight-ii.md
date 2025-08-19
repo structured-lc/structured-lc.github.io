@@ -77,3 +77,9 @@ def lastStoneWeightII(stones):
 
 ### Summary
 This is a classic case of the **Subset Sum / Partition DP** pattern. The key is to reframe the "smash the stones" operation as trying to split the stones into two groups with as equal total weight as possible. The subset sum pattern and 0/1-knapsack DP are widely applicable for problems where you want to divide items or reach a value with some selection of elements, e.g. partition arrays, achieve a sum with coins, or schedule subsets for resource optimization.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Partition Array Into Two Arrays to Minimize Sum Difference(partition-array-into-two-arrays-to-minimize-sum-difference) (Hard)

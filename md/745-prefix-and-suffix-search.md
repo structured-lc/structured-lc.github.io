@@ -88,3 +88,9 @@ This problem is a classic example of using **preprocessing with hashmaps** to re
 The method takes advantage of **word length constraints**, storing all combinations up front.  
 This technique is often seen in "all pairs" problems, especially with short list/sequence length constraints.  
 Common coding pattern: **precompute all combinations** for fast query time, trading increased build time and space.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Design(#design), Trie(#trie)
+
+### Similar Problems
+- Design Add and Search Words Data Structure(design-add-and-search-words-data-structure) (Medium)

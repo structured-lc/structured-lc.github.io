@@ -102,3 +102,8 @@ def maximumImportance(n, roads):
 
 ### Summary
 This is a classic **greedy + sorting** pattern: assign scarce resources (highest values) to the "hubs" (cities with most impact). This approach appears in several resource allocation and maximization graph problems, where a node's value is counted multiple times based on its connectivity. The generalizable pattern: "When the marginal utility of assignment depends on usage frequency, sort and match high-demand with high-supply."
+
+### Tags
+Greedy(#greedy), Graph(#graph), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

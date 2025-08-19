@@ -161,3 +161,10 @@ def page_recommendations(friendships, likes):
 This problem is a classic **relational join/group-by** pattern, simulating recommendations by set operations over friends and page likes.  
 The coding technique draws from database-style grouping (often implemented in interviews using Python dictionaries).  
 This pattern is often used in "collaborative filtering" for recommendations, social networks (mutual friends, friend-of-friend), and many graph-based suggestion tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Page Recommendations(page-recommendations) (Medium)
+- Strong Friendship(strong-friendship) (Medium)

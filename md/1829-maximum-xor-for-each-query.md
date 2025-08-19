@@ -105,3 +105,9 @@ This is a classic **bit manipulation** problem involving **XOR and masks**, and 
 It's an example of how, for a target "maximize to all-bits-1", xor with mask yields the best answer, a common theme in xor/bitmask interview tasks.  
 Pattern: rolling aggregates (e.g., prefix xor), greedy bitmasking.  
 Common in problems requiring maximizing/minimizing bitwise results after changes.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Count the Number of Beautiful Subarrays(count-the-number-of-beautiful-subarrays) (Medium)

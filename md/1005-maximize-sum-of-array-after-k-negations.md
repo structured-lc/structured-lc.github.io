@@ -99,3 +99,9 @@ def largestSumAfterKNegations(nums, k):
 ### Summary  
 This problem uses the **Greedy + Sorting** pattern: always flip the most negative values until flips run out, handling even/odd leftovers by flipping the smallest absolute value (if k is odd).  
 This pattern (greedily fixing the worst elements first, then dealing with leftovers) appears in problems about maximizing/minimizing sums with repeated limited operations, or when sign changes can be applied flexibly.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Find Subsequence of Length K With the Largest Sum(find-subsequence-of-length-k-with-the-largest-sum) (Easy)

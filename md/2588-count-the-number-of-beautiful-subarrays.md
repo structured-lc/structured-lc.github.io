@@ -87,3 +87,10 @@ def beautifulSubarrays(nums):
 
 ### Summary
 We used the **prefix XOR and hashmap counting** technique (common for subarray-sum/XOR problems) to reduce the problem from O(n²) to O(n). This is a standard hashing + prefix trick frequently useful for finding counts of subarrays meeting a given xor/sum condition (e.g., problems like "Subarray Sum Equals K", "Counting subarrays with given sum/XOR").
+
+### Tags
+Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Maximum XOR for Each Query(maximum-xor-for-each-query) (Medium)
+- Count the Number of Ideal Arrays(count-the-number-of-ideal-arrays) (Hard)

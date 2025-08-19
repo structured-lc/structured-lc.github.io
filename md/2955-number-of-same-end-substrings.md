@@ -107,3 +107,8 @@ The problem is a classic **prefix sum with counting and combinatorics**:
 For each substring query, we count all single characters, then for each character, the number of additional substrings is count × (count - 1) // 2.  
 This method is efficient for fixed-sized alphabets, commonly useful in substring statistics problems.  
 The coding pattern is relevant for string query problems, subarray statistics, combinatorial substrings, and frequency counting.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting), Prefix Sum(#prefix-sum)
+
+### Similar Problems

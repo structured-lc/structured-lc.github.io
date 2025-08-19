@@ -111,3 +111,9 @@ def smallestSubarrayToSort(nums: List[int], k: int) -> List[int]:
 This problem uses the **window scanning and sort/difference** approach, a hybrid of sliding window and partial sorting patterns.  
 The key technique is identifying which minimal continuous segment can make a window sorted, by comparing original and sorted windows.  
 This pattern appears in "minimum subarray sorting", "check if almost sorted", and related array reordering interview questions.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Stack(#stack), Greedy(#greedy), Sorting(#sorting), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Shortest Unsorted Continuous Subarray(shortest-unsorted-continuous-subarray) (Medium)

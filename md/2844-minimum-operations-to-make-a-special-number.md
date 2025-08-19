@@ -94,3 +94,10 @@ def minimumOperations(num: str) -> int:
 
 ### Summary
 This problem uses the **greedy string scanning pattern**, exploiting divisibility rules for 25 (ends with 00, 25, 50, 75) to minimize deletions. It's a classic interview test of transforming string-digit numbers using targeted searches, with application to many "make number divisible by X" scenarios. The O(n) time and constant space approach is both efficient and elegant for this class of problems.
+
+### Tags
+Math(#math), String(#string), Greedy(#greedy), Enumeration(#enumeration)
+
+### Similar Problems
+- Remove K Digits(remove-k-digits) (Medium)
+- Remove Digit From Number to Maximize Result(remove-digit-from-number-to-maximize-result) (Easy)

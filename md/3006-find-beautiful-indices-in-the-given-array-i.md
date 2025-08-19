@@ -106,3 +106,8 @@ def find_beautiful_indices(s, a, b, k):
 ### Summary
 This problem uses the **sliding window/two pointers** and **substring search** patterns.  
 Precomputing candidate starts and merging ranges is a common pattern in string and range problems, and it appears in areas like text processing, genomics, and file search tasks.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Binary Search(#binary-search), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
+
+### Similar Problems

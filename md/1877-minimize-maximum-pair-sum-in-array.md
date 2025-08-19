@@ -80,3 +80,8 @@ def min_pair_sum(nums):
 
 ### Summary
 This problem is a classic example of the **two-pointer** and **greedy** pairing pattern after sorting. The technique efficiently pairs extremal elements to evenly distribute "large" values, minimizing the largest pair sum. This approach is broadly useful in problems where you must partition or pair up elements to minimize or maximize a certain aggregate statistic. Patterns like this show up in **array pairing**, **greedy matching**, and **load balancing** problems.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

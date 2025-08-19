@@ -92,3 +92,11 @@ def categorizeBox(length, width, height, mass):
 This is a classic **if-else condition classification problem** with multiple independent criteria, a common pattern in coding interviews.  
 The pattern applies to problems where multiple flags or conditions combine for output decision. Common elsewhere in rule engines or permission/gatekeeping logic.  
 Simple to code, yet highlights precision and careful boundary checking for interview evaluation.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Fizz Buzz(fizz-buzz) (Easy)
+- Find Winner on a Tic Tac Toe Game(find-winner-on-a-tic-tac-toe-game) (Easy)
+- Best Poker Hand(best-poker-hand) (Easy)

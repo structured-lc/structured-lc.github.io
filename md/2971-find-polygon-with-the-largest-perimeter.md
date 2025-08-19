@@ -70,3 +70,10 @@ def largestPerimeter(nums):
 
 ### Summary  
 The problem is solved by sorting the array and using a greedy approach with prefix sums to efficiently find the largest valid perimeter. This pattern is similar to problems that involve checking sequence properties after sorting and is a common strategy for subset sum or sequence verification tasks, especially when the sum of a subset is compared against its largest element.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- 3Sum Smaller(3sum-smaller) (Medium)
+- Valid Triangle Number(valid-triangle-number) (Medium)

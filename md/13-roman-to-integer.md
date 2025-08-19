@@ -106,3 +106,9 @@ def romanToInt(s: str) -> int:
 This approach uses the **single-pass scan with greedy addition/subtraction** pattern.  
 It's common in parsing problems (not only Roman numerals, but also for: currency, time parsing, etc.), where a structure has both additive and subtractive rules determined by the order of symbols.  
 Key ideas: mapping, pattern recognition in iteration, and handling "look ahead" for special cases.
+
+### Tags
+Hash Table(#hash-table), Math(#math), String(#string)
+
+### Similar Problems
+- Integer to Roman(integer-to-roman) (Medium)

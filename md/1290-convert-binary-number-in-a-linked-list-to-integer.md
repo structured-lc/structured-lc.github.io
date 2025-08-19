@@ -63,3 +63,8 @@ def getDecimalValue(head):
 
 ### Summary
 This is a classic **linked list traversal and bit manipulation** pattern where each node contributes a bit. Simplifies binary-to-decimal conversion, and same logic can be used for other base conversions or parsing problems.
+
+### Tags
+Linked List(#linked-list), Math(#math)
+
+### Similar Problems

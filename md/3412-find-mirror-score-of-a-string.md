@@ -107,3 +107,8 @@ def find_mirror_score(s: str) -> int:
 The key approach to this problem is **stack-based matching** with efficient character-to-index mapping—sometimes seen in problems involving mirrored pairs, or bracket balancing.  
 It leverages the property that the closest earlier available partner will always be at the top of the stack.  
 Patterns like this arise in string pairing or greedy "first available" matching problems.
+
+### Tags
+Hash Table(#hash-table), String(#string), Stack(#stack), Simulation(#simulation)
+
+### Similar Problems

@@ -104,3 +104,14 @@ def maxFrequency(nums, k):
 This problem uses the **sorting + sliding window** pattern, efficiently expanding and contracting a window to track the best possible segment with at most k total operations.  
 This approach is widely applicable to problems involving "make all elements equal under a budget", "max subarray under sum constraint", or similar transformation scenarios.  
 Key trick: pre-sort and use window total to avoid re-counting work.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Greedy(#greedy), Sliding Window(#sliding-window), Sorting(#sorting), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Find All Lonely Numbers in the Array(find-all-lonely-numbers-in-the-array) (Medium)
+- Longest Nice Subarray(longest-nice-subarray) (Medium)
+- Apply Operations to Maximize Frequency Score(apply-operations-to-maximize-frequency-score) (Hard)
+- Maximum Frequency of an Element After Performing Operations I(maximum-frequency-of-an-element-after-performing-operations-i) (Medium)
+- Maximum Frequency of an Element After Performing Operations II(maximum-frequency-of-an-element-after-performing-operations-ii) (Hard)
+- Maximum Difference Between Even and Odd Frequency II(maximum-difference-between-even-and-odd-frequency-ii) (Hard)

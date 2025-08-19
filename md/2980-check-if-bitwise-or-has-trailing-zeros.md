@@ -77,3 +77,10 @@ def has_trailing_zeros(nums):
 
 ### Summary
 This problem uses the **parity checking pattern**: identifying even elements to enable bitwise conditions across pairs. The approach is linear, O(n) time, O(1) space, and is broadly useful for any problem where the parity or the lowest bit matters, such as grouping, pair-counting, or bitmask problems. It demonstrates a common pattern of reducing a complex check to a problem on simple counts or properties.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Count Odd Numbers in an Interval Range(count-odd-numbers-in-an-interval-range) (Easy)
+- Remove Trailing Zeros From a String(remove-trailing-zeros-from-a-string) (Easy)

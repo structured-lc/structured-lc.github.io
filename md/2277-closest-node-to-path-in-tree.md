@@ -180,3 +180,10 @@ def closestNode(n, edges, queries):
 
 ### Summary
 This problem leverages the classic **tree LCA, depth, and path-reconstruction** patterns to solve efficient multi-query tree distance and path-node problems. The pattern is a standard **offline tree query** approach (binary lifting) and can be seen in problems involving **distance queries, subtree queries, and path property queries** on trees.
+
+### Tags
+Array(#array), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Count Number of Possible Root Nodes(count-number-of-possible-root-nodes) (Hard)
+- Design Graph With Shortest Path Calculator(design-graph-with-shortest-path-calculator) (Hard)

@@ -79,3 +79,8 @@ def max_operations(nums):
 ### Summary
 This problem is a **greedy array scan** using the "check consecutive pairs" pattern. It's typical for linear problems involving sequential removals from an array, commonly appearing in *greedy* and *sliding window* type questions.  
 The main coding pattern is **process in fixed-size chunks, and stop as soon as an element violates the rule**—a common approach for validating uniformity in segments or rolling windows.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems

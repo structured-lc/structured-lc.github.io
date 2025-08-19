@@ -96,3 +96,9 @@ def findSmallestInteger(nums, value):
 To solve this problem efficiently, notice the transformations allow every number to become any value congruent to its remainder mod `value`.  
 By counting the occurrences for each remainder, and greedily matching up integers starting from 0 with available slots, we directly find the smallest non-negative integer that cannot be formed.  
 This greedy remainders + count assignment is a common competitive-programming technique (variants appear in “minimum excluded value” or “Mex” settings), and similar principles can be applied to interval covering and modular reachability problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Greedy(#greedy)
+
+### Similar Problems
+- First Missing Positive(first-missing-positive) (Hard)

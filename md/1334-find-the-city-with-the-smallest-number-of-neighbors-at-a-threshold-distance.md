@@ -78,3 +78,9 @@ def findTheCity(n: int, edges: List[List[int]], distanceThreshold: int) -> int:
 
 ### Summary
 This is a classic application of the **all-pairs shortest path** algorithm (Floyd-Warshall) for small graphs, then picking minimum by a custom key. The counting + tie-breaking step is also common in similar aggregate neighbor problems.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Graph(#graph), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Second Minimum Time to Reach Destination(second-minimum-time-to-reach-destination) (Hard)

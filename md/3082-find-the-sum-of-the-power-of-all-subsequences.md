@@ -130,3 +130,9 @@ def findSumOfPower(nums, k):
 ### Summary
 This problem blends classic subset sum DP (counting subsets meeting sum criteria) and inclusion-exclusion principles (considering how often subsets appear as part of supersequences).  
 Common patterns found here include subset DP (knapsack style), careful use of combinatorics for counting, and binary mask enumeration. These appear in many combinatorial enumeration and advanced dynamic programming problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Number of Subsequences That Satisfy the Given Sum Condition(number-of-subsequences-that-satisfy-the-given-sum-condition) (Medium)

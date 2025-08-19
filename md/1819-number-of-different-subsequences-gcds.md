@@ -96,3 +96,9 @@ def gcd(a, b):
 
 ### Summary
 This problem demonstrates the intersection of number theory and combinatorics. The key insight is to iterate through possible GCD values rather than subsequences, using the mathematical property that valid GCDs must be divisors of array elements. This pattern appears in problems involving divisibility, GCD/LCM calculations, and optimization over mathematical constraints.
+
+### Tags
+Array(#array), Math(#math), Counting(#counting), Number Theory(#number-theory)
+
+### Similar Problems
+- Find Greatest Common Divisor of Array(find-greatest-common-divisor-of-array) (Easy)

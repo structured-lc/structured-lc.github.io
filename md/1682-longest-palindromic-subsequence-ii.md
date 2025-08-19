@@ -82,3 +82,9 @@ def longestPalindromeSubseq2(s: str) -> int:
 
 ### Summary
 Classic dynamic programming question with extra filtering by character uniqueness. The classic longest palindromic subsequence DP adapts well, but needs additional checking for endpoint characters. Pattern applies to advanced palindromic substructure with extra constraints.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Longest Palindromic Subsequence(longest-palindromic-subsequence) (Medium)

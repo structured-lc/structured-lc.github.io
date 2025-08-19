@@ -118,3 +118,8 @@ def maximize_spanning_tree_stability_with_upgrades(n, edges, k):
 
 ### Summary
 Used binary search to maximize the minimum strength (“stability”) of the spanning tree, and union-find to check if a given candidate strength and upgrade combination allows a valid tree. This is a classic greedy + binary search graph construction + union-find pattern, often seen in network design and MST variants.
+
+### Tags
+Binary Search(#binary-search), Greedy(#greedy), Union Find(#union-find), Graph(#graph), Minimum Spanning Tree(#minimum-spanning-tree)
+
+### Similar Problems

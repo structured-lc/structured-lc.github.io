@@ -76,3 +76,12 @@ def get_top_three_employees(employees, departments, salaries):
 
 ### Summary
 A classic SQL result ranking pattern—solve via **table joins** and sort/limit operations. In Python, mimicking this with hash maps and sort steps is common in interview settings.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Trips and Users(trips-and-users) (Hard)
+- Hopper Company Queries II(hopper-company-queries-ii) (Hard)
+- Hopper Company Queries III(hopper-company-queries-iii) (Hard)
+- Number of Times a Driver Was a Passenger(number-of-times-a-driver-was-a-passenger) (Medium)

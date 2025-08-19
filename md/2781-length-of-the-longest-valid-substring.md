@@ -96,3 +96,8 @@ This problem uses a classic **sliding window** approach with a **look-back limit
 The key is to quickly check, at each character, whether the current window contains any forbidden substring, and update the window's left pointer efficiently.  
 This solution pattern is common for substring and interval problems, especially when constraints allow bounding the look-back/check range (similar to "Longest Substring Without Repeating Characters", but with forbidden patterns instead of character uniqueness).  
 A trie or Aho-Corasick automaton could generalize further if forbidden words were unbounded in length.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems

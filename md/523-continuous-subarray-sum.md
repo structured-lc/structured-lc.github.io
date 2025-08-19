@@ -86,3 +86,12 @@ def checkSubarraySum(nums, k):
 
 ### Summary
 This problem uses the **Prefix Sum with Hash Map** pattern. By recognizing that equal prefix sum remainders modulo k indicate subarrays whose sum is a multiple of k, we reduce the search from O(n²) to O(n). This pattern appears in several subarray sum problems, especially with modular arithmetic or checks for subarrays with specific properties.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Subarray Sum Equals K(subarray-sum-equals-k) (Medium)
+- Minimum Number of Operations to Make Array Continuous(minimum-number-of-operations-to-make-array-continuous) (Hard)
+- Intervals Between Identical Elements(intervals-between-identical-elements) (Medium)
+- Apply Operations to Make All Array Elements Equal to Zero(apply-operations-to-make-all-array-elements-equal-to-zero) (Medium)

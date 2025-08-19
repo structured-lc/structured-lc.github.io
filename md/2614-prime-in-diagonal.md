@@ -95,3 +95,8 @@ def diagonalPrime(nums):
 
 ### Summary
 This solution uses the **matrix diagonal traversal and basic number theory (prime checking up to √n)** pattern. It is space-efficient and leverages direct access and iteration, common for matrix diagonal problems. The primality check is optimized for the given bounds. This approach is widely applicable for similar “find-limited-feature-on-a-diagonal” problems, or when matrix cells should be filtered by custom test conditions.
+
+### Tags
+Array(#array), Math(#math), Matrix(#matrix), Number Theory(#number-theory)
+
+### Similar Problems

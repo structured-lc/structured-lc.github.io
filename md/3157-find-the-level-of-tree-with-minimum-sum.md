@@ -147,3 +147,9 @@ def findLevelWithMinimumSum(root):
 This problem leverages the **BFS level-order traversal** pattern, ideal for all problems where computation must be done per tree level (e.g., level order sums, finding largest/lowest value in each level, etc).  
 This approach is commonly used in questions about level-based properties of trees, such as “Max Level Sum of a Binary Tree,” or “Average of Levels in Binary Tree.”  
 The BFS solution is simple, efficient (O(n)), and easy to extend for related problems.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Kth Largest Sum in a Binary Tree(kth-largest-sum-in-a-binary-tree) (Medium)

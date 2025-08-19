@@ -69,3 +69,10 @@ def minimizedStringLength(s):
 
 ### Summary
 We leveraged counting unique elements using a set to minimize string length by exhaustively removing duplicates. This is a classic hash set/deduplication pattern seen in many array/string problems—whenever order or positions do not matter, and only uniqueness/per-element identity is relevant.
+
+### Tags
+Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Remove All Adjacent Duplicates In String(remove-all-adjacent-duplicates-in-string) (Easy)
+- Remove All Adjacent Duplicates in String II(remove-all-adjacent-duplicates-in-string-ii) (Medium)

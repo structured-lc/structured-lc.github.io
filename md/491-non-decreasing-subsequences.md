@@ -89,3 +89,9 @@ def findSubsequences(nums):
 This problem is a classic **backtracking** question with deduplication, often called the “subsets with constraints” pattern.  
 This approach of recursively deciding to include or exclude each element and using sets for deduplication applies to other problems, such as generating **unique combinations, subsets with restrictions**, or **permutations with deduplication**.  
 Understanding this pattern builds a foundation for tackling many combinatorial search and generation problems in coding interviews.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Maximum Length of Pair Chain(maximum-length-of-pair-chain) (Medium)

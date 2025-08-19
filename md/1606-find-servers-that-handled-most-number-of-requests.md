@@ -82,3 +82,9 @@ def busiest_servers(k, arrival, load):
 
 ### Summary
 Efficient simulation using a heap (for busy servers) and sorted structure or balanced set (for available servers). Pattern is *sweep line/priority queue for asynchronous resource management*, common in interval scheduling, meeting rooms, or network request assignments.
+
+### Tags
+Array(#array), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Meeting Rooms III(meeting-rooms-iii) (Hard)

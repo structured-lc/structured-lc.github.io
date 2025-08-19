@@ -111,3 +111,8 @@ def getFinalState(nums, k, multiplier):
 
 ### Summary
 This problem is a classic example of a **priority queue optimization**, but the real trick is seeing the *batching* opportunity: since the process cycles through all indices repeatedly, you only need to count how many times each index is chosen and apply all the multiplications at once. This pattern (grouping repeated operations instead of simulating them) comes up often in **process simulation**, **heap cycling**, and **lazy propagation** scenarios, where large numbers of repeated or uniform operations can be mathematically collapsed for efficiency.
+
+### Tags
+Array(#array), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation)
+
+### Similar Problems

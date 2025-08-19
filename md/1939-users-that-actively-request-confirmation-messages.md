@@ -115,3 +115,8 @@ def users_within_24hrs(confirmations):
 
 ### Summary
 This problem is an example of the "window within sorted events per group" pattern—grouping data by key (user), sorting by time, and finding if consecutive (or any) records fall within a time window. This pattern is common for logs, time series, event sequences, or fraud detection. The key coding idea is pre-sorting and then scanning, to avoid n² comparisons. It can be solved efficiently with window/lead functions in SQL, or a two-pointer technique after sorting in Python, and is directly related to sliding window or repeated events in data engineering problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

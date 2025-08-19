@@ -89,3 +89,8 @@ def maximumOr(nums, k):
 
 ### Summary
 This approach uses the **prefix-suffix pattern** for array problems: efficiently maintaining cumulative state from left and right. Greedy "all-or-nothing on one index" is optimal here due to OR monotonicity and k being small. This pattern is commonly used in problems involving range-based operations and cumulative statistics (e.g., product or sum excluding the ith element).
+
+### Tags
+Array(#array), Greedy(#greedy), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
+
+### Similar Problems

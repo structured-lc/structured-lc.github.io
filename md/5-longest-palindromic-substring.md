@@ -115,3 +115,14 @@ This problem lets us practice the **expand-around-center** pattern, a common app
 The dynamic programming variant is also standard for such substring problems.  
 This approach also hints at techniques used in other string problems (e.g., word breaks, palindromic partitioning, or even longest common substring).  
 The center-expansion method is an efficient, easy-to-code pattern that’s broadly applicable to palindrome substring variants.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Shortest Palindrome(shortest-palindrome) (Hard)
+- Palindrome Permutation(palindrome-permutation) (Easy)
+- Palindrome Pairs(palindrome-pairs) (Hard)
+- Longest Palindromic Subsequence(longest-palindromic-subsequence) (Medium)
+- Palindromic Substrings(palindromic-substrings) (Medium)
+- Maximum Number of Non-overlapping Palindrome Substrings(maximum-number-of-non-overlapping-palindrome-substrings) (Hard)

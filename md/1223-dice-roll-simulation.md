@@ -101,3 +101,10 @@ def dieSimulator(n, rollMax):
 
 This is a **DP with multisized state variables** (face and streak count), classic for counting *non-consecutive-repetition* settings.  
 Pattern is "count ways to build restricted sequences", which also applies to strings with forbidden substrings or passwords with no k-consecutive repeats. Skilled interviewers watch for state transition modeling and careful base case/DP filling.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Find Missing Observations(find-missing-observations) (Medium)
+- Number of Distinct Roll Sequences(number-of-distinct-roll-sequences) (Hard)

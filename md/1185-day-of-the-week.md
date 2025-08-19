@@ -79,3 +79,8 @@ def dayOfTheWeek(day, month, year):
 
 ### Summary
 This problem is a classic date-to-weekday conversion and can be solved using **Zeller's Congruence**, a robust O(1) math formula that works for all Gregorian dates in the valid range. The general coding pattern is **mathematical formula implementation** or **date arithmetic**, which is common for scheduling applications, calendar algorithms, or time-based computations. It highlights careful handling of month and year rollovers and reinforces the critical thinking needed when not allowed to use built-in libraries.
+
+### Tags
+Math(#math)
+
+### Similar Problems

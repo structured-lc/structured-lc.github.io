@@ -82,3 +82,9 @@ def has_alternating_bits(n):
 
 ### Summary
 This problem’s optimal solution is a **classic bit manipulation pattern**, especially the “XOR with shifted self and check if all 1s” trick. The brute-force solution shows basic bitwise digit extraction. Recognizing this pattern is valuable for similar problems dealing with binary properties, alternating patterns, or uniform bit checks.
+
+### Tags
+Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Number of 1 Bits(number-of-1-bits) (Easy)

@@ -95,3 +95,11 @@ def postorderTraversal(root):
 ### Summary  
 This problem uses the classic **Depth-First Search** (DFS) traversal pattern for trees, specifically the "left-right-root" postorder variant. It’s a staple recursion technique for tree-based problems, helpful for solving problems involving subtree calculations, deletions, and post-processing scenarios.  
 Recursive DFS is the most straightforward approach, but understanding iterative methods is valuable for environments with recursion depth limits.
+
+### Tags
+Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Binary Tree Inorder Traversal(binary-tree-inorder-traversal) (Easy)
+- N-ary Tree Postorder Traversal(n-ary-tree-postorder-traversal) (Easy)
+- Minimum Fuel Cost to Report to the Capital(minimum-fuel-cost-to-report-to-the-capital) (Medium)

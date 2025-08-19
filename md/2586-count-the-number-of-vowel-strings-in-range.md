@@ -80,3 +80,8 @@ def countVowelStringsInRange(words, left, right):
 The solution uses a **simple linear scan** of the subarray, with a helper vowel check for each word’s endpoints.  
 The coding pattern is “sliding window/range scan” and “simple string property check”.  
 This approach is common for substring or array range validation queries and can be adapted for prefix-sums-like optimizations if queries are repeated.
+
+### Tags
+Array(#array), String(#string), Counting(#counting)
+
+### Similar Problems

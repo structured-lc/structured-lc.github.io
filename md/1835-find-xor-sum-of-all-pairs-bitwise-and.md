@@ -99,3 +99,8 @@ def getXORSum(arr1, arr2):
 ### Summary
 This problem is an elegant application of **bitwise distributivity** and **associativity**, showing how heavy brute-force can sometimes be bypassed using fundamental properties of operations like XOR and AND.  
 The pattern of reducing double loops with XOR/AND to a single formula appears in several bitwise “pair sum” or “pairwise function” problems, which are frequent in technical interviews. Re-using this approach with other operations is a good mental exercise for mastering binary tricks.
+
+### Tags
+Array(#array), Math(#math), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

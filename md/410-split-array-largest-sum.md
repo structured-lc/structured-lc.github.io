@@ -96,3 +96,17 @@ def splitArray(nums, k):
 
 ### Summary
 This problem is a classic application of **binary search on the answer** combined with greedy checking for partitioning feasibility. The pattern is useful whenever you need to split elements into "buckets" to minimize the largest bucket size—such as book allocation, job assignment, or bandwidth throttling scenarios.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Capacity To Ship Packages Within D Days(capacity-to-ship-packages-within-d-days) (Medium)
+- Divide Chocolate(divide-chocolate) (Hard)
+- Fair Distribution of Cookies(fair-distribution-of-cookies) (Medium)
+- Subsequence of Size K With the Largest Even Sum(subsequence-of-size-k-with-the-largest-even-sum) (Medium)
+- Maximum Total Beauty of the Gardens(maximum-total-beauty-of-the-gardens) (Hard)
+- Number of Ways to Split Array(number-of-ways-to-split-array) (Medium)
+- Minimum Cost to Split an Array(minimum-cost-to-split-an-array) (Hard)
+- Distribute Elements Into Two Arrays I(distribute-elements-into-two-arrays-i) (Easy)
+- Distribute Elements Into Two Arrays II(distribute-elements-into-two-arrays-ii) (Hard)

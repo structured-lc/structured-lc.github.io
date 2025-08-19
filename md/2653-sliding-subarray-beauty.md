@@ -110,3 +110,8 @@ This is a classic **fixed-size sliding window with order-statistics** in a bound
 Commonly appears when value range is fixed/small, enabling O(1) or O(r) updates per window rather than O(k log k) sorts.  
 Pattern generalizes to: Sliding window median, k-th largest/smallest in window problems, especially when values are bounded.  
 Key insight: **Count array instead of sort or BST when value range is small.**
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
+
+### Similar Problems

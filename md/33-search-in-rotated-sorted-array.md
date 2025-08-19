@@ -92,3 +92,11 @@ def search(nums, target):
 
 ### Summary
 This solution uses a **modified binary search** pattern to efficiently search a rotated sorted array in O(log n) time without extra space. The binary search logic adapts to identify which section of the array is sorted, making it a robust technique that generalizes to many array search problems with slight modifications (e.g., searching in rotated arrays with duplicates or finding rotation pivots). This is a frequently encountered pattern in array/search interview questions.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Search in Rotated Sorted Array II(search-in-rotated-sorted-array-ii) (Medium)
+- Find Minimum in Rotated Sorted Array(find-minimum-in-rotated-sorted-array) (Medium)
+- Pour Water Between Buckets to Make Water Levels Equal(pour-water-between-buckets-to-make-water-levels-equal) (Medium)

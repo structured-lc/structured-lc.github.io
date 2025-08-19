@@ -114,3 +114,8 @@ def sumSubseqWidths(A):
 - This problem uses the insight that each element’s role as min or max in various subsequences can be counted combinatorially using powers-of-two, avoiding brute force.
 - Sorting the array simplifies the process of counting.
 - The pattern of “element’s role as min vs. max in combinatorially different subsets” arises in various subset or combinatorial contribution problems, especially those involving sums across all subsets or subsequences.
+
+### Tags
+Array(#array), Math(#math), Sorting(#sorting)
+
+### Similar Problems

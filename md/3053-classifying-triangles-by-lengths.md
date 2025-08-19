@@ -93,3 +93,8 @@ def classify_triangle(A: int, B: int, C: int) -> str:
 This problem demonstrates simple **classification pattern** based on numerical properties and validity checks.  
 Key patterns: input validation, conditionals, setting up clear decision logic.  
 Variants of this problem (triangle validity, object classification) appear frequently in interviews and competitive programming.
+
+### Tags
+Database(#database)
+
+### Similar Problems

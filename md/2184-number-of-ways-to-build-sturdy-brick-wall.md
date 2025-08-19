@@ -130,3 +130,11 @@ def buildWall(height, width, bricks):
 
 ### Summary
 This problem is a classic application of **state compression dynamic programming** and **bitmasking** (if joint positions are coded as bitmasks), combined with graph compatibility (valid transitions between row patterns). It’s similar to tiling problems and featured often in DP/set-state interviews. The tree of valid patterns and compatibility computation is common in setup-heavy combinatorial DP, especially for 2D vital-parts adjacency constraints.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems
+- Brick Wall(brick-wall) (Medium)
+- Bricks Falling When Hit(bricks-falling-when-hit) (Hard)
+- Minimum Time to Kill All Monsters(minimum-time-to-kill-all-monsters) (Hard)

@@ -124,3 +124,11 @@ def possibleToStamp(grid, stampHeight, stampWidth):
 
 ### Summary
 This is a classic 2D range query and interval update task, solved via 2D prefix sums (for O(1) rectangular "zero check") and 2D difference matrices (for quick marking of covered regions). The coding pattern is widely useful in range update/counting, with applications in image processing, dynamic programming, and grid-rectangle problems.
+
+### Tags
+Array(#array), Greedy(#greedy), Matrix(#matrix), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Maximal Square(maximal-square) (Medium)
+- Bomb Enemy(bomb-enemy) (Medium)
+- Matrix Block Sum(matrix-block-sum) (Medium)

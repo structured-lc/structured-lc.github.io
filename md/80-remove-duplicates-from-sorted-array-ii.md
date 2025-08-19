@@ -90,3 +90,9 @@ def removeDuplicates(nums):
 ### Summary
 This problem uses the **two-pointer pattern**—especially effective for sorted arrays when we need to modify in-place under O(1) memory constraints.  
 This pattern appears often in remove duplicates/partitioning/sorted list manipulation problems, such as "Remove Duplicates from Sorted Array" (Leetcode 26) and "Move Zeroes." The control over allowed duplicate count (at most twice here) is easily generalized to any k.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers)
+
+### Similar Problems
+- Remove Duplicates from Sorted Array(remove-duplicates-from-sorted-array) (Easy)

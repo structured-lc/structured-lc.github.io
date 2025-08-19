@@ -111,3 +111,8 @@ def can_split_grid_equal_sum(grid):
 
 ### Summary
 This problem uses **prefix sum and cumulative sum patterns** for optimization, a staple in 2D array partitioning and submatrix sum problems. Recognizing the parity trick for early exit, and traversing the grid efficiently, are key. Related problems include matrix subarray sums, balanced partition, and "split array into two equal sum parts" problems.
+
+### Tags
+Array(#array), Matrix(#matrix), Enumeration(#enumeration), Prefix Sum(#prefix-sum)
+
+### Similar Problems

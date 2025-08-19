@@ -117,3 +117,10 @@ class Solution:
 This problem demonstrates the **DP + Trie** pattern, especially useful for parsing or breaking strings according to a set of allowed "dictionary" rules.  
 Common variants include **word break**, **concatenation matching**, and **string segmentation**.  
 The trade-off is preprocessing time (Trie), but it yields optimal runtime for many matching queries, and memoization prevents redundant string scans.
+
+### Tags
+Array(#array), String(#string), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Trie(#trie), Segment Tree(#segment-tree), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
+
+### Similar Problems
+- Minimum Cost to Convert String II(minimum-cost-to-convert-string-ii) (Hard)
+- Construct String with Minimum Cost(construct-string-with-minimum-cost) (Hard)

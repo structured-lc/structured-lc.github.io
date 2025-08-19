@@ -159,3 +159,8 @@ def subtreeInversionSum(edges, nums, k):
 This problem uses a classic tree DP approach with state remembering along the ancestor path. The key is encoding ancestor inversion information as "distance since last inversion," and recursively maximizing the sum.  
 This DP-on-trees pattern with additional constraints frequently appears in subtree selection, coloring, early stopping, and ancestor-based policy DP problems.  
 It’s a great example of how dynamic programming with pruning can be used in tree-structured optimization where ancestor/descendant constraints apply.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems

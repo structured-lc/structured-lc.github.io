@@ -108,3 +108,11 @@ Core patterns:
 - **Precompute transformation costs** (palindrome repairs) in O(n²)
 - **DP for cuts/partitioning** (2D, over substring and partition count)
 - This approach applies to similar "split into k blocks minimizing/optimizing cost" scenarios, like word break, palindrome cuts, and edit distance segmentations.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Palindrome Partitioning IV(palindrome-partitioning-iv) (Hard)
+- Maximum Number of Non-overlapping Palindrome Substrings(maximum-number-of-non-overlapping-palindrome-substrings) (Hard)
+- Minimum Changes to Make K Semi-palindromes(minimum-changes-to-make-k-semi-palindromes) (Hard)

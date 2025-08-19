@@ -120,3 +120,11 @@ def countPaths(n, roads):
 ### Summary
 We used **graph + Dijkstra with path counting** pattern, maintaining both shortest times and number of ways. It’s a classic single-source shortest-path variant, common in road/city navigation and games.  
 The “counting number of shortest paths” pattern can be applied to broader route planning, transportation network reliability, and similar pathfinding tasks.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Graph(#graph), Topological Sort(#topological-sort), Shortest Path(#shortest-path)
+
+### Similar Problems
+- All Paths From Source to Target(all-paths-from-source-to-target) (Medium)
+- Path with Maximum Probability(path-with-maximum-probability) (Medium)
+- Second Minimum Time to Reach Destination(second-minimum-time-to-reach-destination) (Hard)

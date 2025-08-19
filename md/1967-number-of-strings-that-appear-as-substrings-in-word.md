@@ -72,3 +72,8 @@ This problem uses the basic **substring search** or the “pattern matching” c
 It’s a direct application of string containment and is a foundational check in text processing.  
 Variants of this pattern appear in plagiarism checking, log scanning, and many string problems.  
 For harder scenarios, the multi-pattern search can be solved efficiently by Trie-based or automaton-based approaches.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems

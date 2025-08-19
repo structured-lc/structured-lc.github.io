@@ -105,3 +105,12 @@ def maximumBooks(books):
 
 ### Summary
 The problem uses a classic **monotonic stack** in combination with **dynamic programming** to efficiently manage state transitions and optimal segments. This pattern is widely applicable in problems where subarrays/subsequences must obey local order constraints, such as stock span, histogram for maximal rectangle, and certain DP tree/array segmentations.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Longest Increasing Subsequence(longest-increasing-subsequence) (Medium)
+- Maximum Ascending Subarray Sum(maximum-ascending-subarray-sum) (Easy)
+- Beautiful Towers II(beautiful-towers-ii) (Medium)
+- Beautiful Towers I(beautiful-towers-i) (Medium)

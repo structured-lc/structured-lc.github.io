@@ -99,3 +99,8 @@ def maxNumEdgesToRemove(n, edges):
 
 ### Summary
 This is a union-find/DSU pattern, maximizing redundant edges by connecting with shared edges first and then the unique edges for each user. It's a classic graph problem where edge types and component tracking are combined efficiently.
+
+### Tags
+Union Find(#union-find), Graph(#graph)
+
+### Similar Problems

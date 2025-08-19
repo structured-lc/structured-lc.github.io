@@ -104,3 +104,9 @@ def numBusesToDestination(routes, source, target):
 
 This solution uses **BFS on a graph constructed from bus stops and routes**, mapping stops to possible bus routes for efficient transfer checks. The pattern—multi-source BFS with state (count of buses taken)—is common in shortest-path transportation network problems.  
 This approach generalizes to any transfer minimization scenario, such as flights, trains, or any multi-stage routing problem.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Minimum Costs Using the Train Line(minimum-costs-using-the-train-line) (Hard)

@@ -146,3 +146,10 @@ def isSubtree(root, subRoot):
 ### Summary
 This problem uses the **DFS tree pattern**: traversing nodes recursively and using helper methods to solve a subproblem (identical tree check).  
 It showcases classic recursion for trees, and the pattern applies to any scenario where you need to compare structures or find patterns within tree or graph-like data (e.g., subgraph isomorphism, repeated subtree detection, "Same Tree" problem).
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), String Matching(#string-matching), Binary Tree(#binary-tree), Hash Function(#hash-function)
+
+### Similar Problems
+- Count Univalue Subtrees(count-univalue-subtrees) (Medium)
+- Most Frequent Subtree Sum(most-frequent-subtree-sum) (Medium)

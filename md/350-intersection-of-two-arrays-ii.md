@@ -77,3 +77,14 @@ def intersect(nums1, nums2):
 
 ### Summary
 This approach uses the **hash map counting pattern**, very common for intersection/union/count questions. This pattern is also useful for finding duplicates, grouping elements by frequency, and counting occurrences efficiently. It avoids sorting unless required, and handles all element types quickly and space-efficiently. If arrays are sorted or can be sorted easily, two pointers might be more space-efficient.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Intersection of Two Arrays(intersection-of-two-arrays) (Easy)
+- Find Common Characters(find-common-characters) (Easy)
+- Find the Difference of Two Arrays(find-the-difference-of-two-arrays) (Easy)
+- Choose Numbers From Two Arrays in Range(choose-numbers-from-two-arrays-in-range) (Hard)
+- Intersection of Multiple Arrays(intersection-of-multiple-arrays) (Easy)
+- Minimum Common Value(minimum-common-value) (Easy)

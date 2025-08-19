@@ -112,3 +112,10 @@ def min_operations(nums, k):
 
 ### Summary
 We use the **sliding window** pattern with a balanced window data structure (here, a sorted list with binary search) to efficiently keep track of the median and compute total change costs as the window moves. This is a classic "minimize absolute difference sum" technique, where the **median** is always optimal. This coding pattern is broadly applicable to problems involving windowed medians, order statistics in windows, and other sliding cost aggregations.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Find Median from Data Stream(find-median-from-data-stream) (Hard)
+- Minimum Moves to Equal Array Elements II(minimum-moves-to-equal-array-elements-ii) (Medium)

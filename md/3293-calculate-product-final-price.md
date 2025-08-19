@@ -95,3 +95,8 @@ def calculate_product_final_price(products, discounts):
 
 ### Summary
 This problem uses the common *hash map* (dictionary) pattern for fast lookups, which is widely applicable for any "enrich with side data" or "join-two-lists-by-key" types of problems. Similar logic often appears in database joins, as well as in joining APIs or merging datasets. The approach balances speed and space, and is easily extended to more complex join or discount scenarios.
+
+### Tags
+Database(#database)
+
+### Similar Problems

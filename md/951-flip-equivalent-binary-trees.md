@@ -109,3 +109,8 @@ def flipEquiv(root1: TreeNode, root2: TreeNode) -> bool:
 
 ### Summary
 This problem uses a classic **DFS with recursion** for **simultaneous tree traversal** and comparison. The core pattern is checking all meaningful subtree arrangements (flip/no-flip) at each node. Similar logic can be applied to problems involving structural tree equivalence with allowed transformations (like symmetry, mirrored trees, tree isomorphism).
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

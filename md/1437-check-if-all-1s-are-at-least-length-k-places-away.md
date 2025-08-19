@@ -59,3 +59,9 @@ def kLengthApart(nums, k):
 
 ### Summary
 This is a linear scan/logical pointer (last-seen) problem; the template works for off-by-k checks in sequences, e.g., checking gaps or windows in bit masks.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Task Scheduler II(task-scheduler-ii) (Medium)

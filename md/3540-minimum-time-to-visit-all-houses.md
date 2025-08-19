@@ -121,3 +121,8 @@ def minimumTimeToVisitAllHouses(forward, backward, queries):
 
 ### Summary
 This problem uses the **prefix sum** and **circular array** concepts to efficiently compute range sums along a ring. It’s a classic ring-walking or graph traversal pattern with quick cost lookup using precomputation. The coding pattern is valuable for any shortest-path on fixed cycles, or when repeated range queries are needed with wrap-around, such as in robotics, circular scheduling, or cyclic buffer movement.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems

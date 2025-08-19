@@ -121,3 +121,8 @@ def maximize_profit(workers, tasks):
 ### Summary
 This is a classic **Greedy Matching** problem using hash tables and priority queues, optimizing per group before picking the global maximum for the special case (universal worker).  
 It’s a pattern seen in greedy resource assignment and task scheduling problems, particularly where partial matching and a final “joker”/universal case exists (e.g., multi-stage assignment, hospital-resident matching, advanced allocation problems).
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

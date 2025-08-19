@@ -86,3 +86,8 @@ def areTheySimilar(mat, k):
 
 ### Summary
 This problem uses the cyclic array shifting pattern, optimized with modulo arithmetic to shortcut unnecessary work (common for problems involving repeated rotations or cycles). This technique is broadly applicable to cyclic buffer, array rotation, or periodic sequence comparison problems.
+
+### Tags
+Array(#array), Math(#math), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems

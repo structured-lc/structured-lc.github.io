@@ -111,3 +111,9 @@ def minDeletions(nums, numsDivide):
 
 ### Summary
 This problem reduces to finding the minimum number of leftward deletions in a sorted `nums` so that its smallest element divides gcd(numsDivide)—an elegant use of math, GCD, and sorting. The coding pattern is a common one (filtering candidates after an array transform + numerical checks) and can broadly apply to problems combining set reduction with divisibility or gcd constraints.
+
+### Tags
+Array(#array), Math(#math), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Number Theory(#number-theory)
+
+### Similar Problems
+- Check If Array Pairs Are Divisible by k(check-if-array-pairs-are-divisible-by-k) (Medium)

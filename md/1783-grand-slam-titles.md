@@ -172,3 +172,8 @@ for row in get_grand_slam_titles(players, championships):
 This problem demonstrates the **table unpivoting** (“wide-to-long” transform) and result aggregation pattern.  
 The pattern appears in scenarios involving denormalized tables (multiple value columns representing the same category), and often appears in data analysis/data wrangling tasks.  
 It is also a common SQL and ETL interview question for analytics or data-adjacent engineering roles.
+
+### Tags
+Database(#database)
+
+### Similar Problems

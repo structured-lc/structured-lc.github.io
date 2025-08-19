@@ -111,3 +111,11 @@ def minMoves(nums, k):
 
 ### Summary
 The approach efficiently finds the minimal adjacent swaps needed by focusing on the positions of the 1’s, using the sliding window and prefix sum technique. This “group 1s with minimum moves” pattern recurs in various hard problems dealing with grouping or rearrangement under local-move constraints, such as “minimum number of adjacent swaps for K consecutive characters,” or “minimum window operations.” It’s a classic greedy + prefix sum + sliding window optimization.
+
+### Tags
+Array(#array), Greedy(#greedy), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Minimum Swaps to Group All 1's Together(minimum-swaps-to-group-all-1s-together) (Medium)
+- Minimum Number of Operations to Make Array Continuous(minimum-number-of-operations-to-make-array-continuous) (Hard)
+- Minimum Adjacent Swaps to Make a Valid Array(minimum-adjacent-swaps-to-make-a-valid-array) (Medium)

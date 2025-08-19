@@ -99,3 +99,8 @@ def maxMatrixSum(matrix):
 
 ### Summary
 This problem fits the **Greedy** pattern with connected grid symmetries and absolute value analysis. Similar techniques are seen in matrix/array flipping or sign adjustment problems, and the key idea is to pair up negatives to cancel out their sign effect—leaving at most one (the smallest) if their count is odd. Recognizing sign flexibility under adjacency operations is the core insight.
+
+### Tags
+Array(#array), Greedy(#greedy), Matrix(#matrix)
+
+### Similar Problems

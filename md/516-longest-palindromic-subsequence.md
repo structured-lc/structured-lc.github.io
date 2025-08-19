@@ -104,3 +104,15 @@ This problem is a classic example of **dynamic programming on substrings**, leve
 The main pattern is like **"Longest Common Subsequence"**: choose or skip current character(s) and recurse.  
 DP on substrings applies to problems such as **Palindrome Partitioning**, **Regular Expression Matching**, and **Edit Distance**.  
 Subsequence DP problems appear often when order matters but continuity does not.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Longest Palindromic Substring(longest-palindromic-substring) (Medium)
+- Palindromic Substrings(palindromic-substrings) (Medium)
+- Count Different Palindromic Subsequences(count-different-palindromic-subsequences) (Hard)
+- Longest Common Subsequence(longest-common-subsequence) (Medium)
+- Longest Palindromic Subsequence II(longest-palindromic-subsequence-ii) (Medium)
+- Maximize Palindrome Length From Subsequences(maximize-palindrome-length-from-subsequences) (Hard)
+- Maximum Product of the Length of Two Palindromic Subsequences(maximum-product-of-the-length-of-two-palindromic-subsequences) (Medium)

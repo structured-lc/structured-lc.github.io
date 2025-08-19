@@ -99,3 +99,11 @@ def numDecodings(s: str) -> int:
 
 ### Summary
 This is a classic dynamic programming problem, using either top-down memoization or bottom-up tabulation. The core pattern is similar to ways-to-climb-stairs, using only previous one and two results to compute the current total, and is a template for DP with restricted transitions (Fibonacci-like problems, variations on decoding strings, etc.).
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Decode Ways II(decode-ways-ii) (Hard)
+- Number of Ways to Separate Numbers(number-of-ways-to-separate-numbers) (Hard)
+- Count Number of Texts(count-number-of-texts) (Medium)

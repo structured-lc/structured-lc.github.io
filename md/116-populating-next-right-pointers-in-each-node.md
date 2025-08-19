@@ -113,3 +113,11 @@ def connect(root: 'Node') -> 'Node':
 
 ### Summary
 The approach uses the **Linked List Level Traversal** pattern, leveraging the perfect binary tree structure. By connecting each node’s left and right children, and linking children between neighboring parents, you efficiently build next pointers without any extra data structures. This in-place method with constant space is powerful in trees with known structure and is a common pattern in similar tree-pointer problems.
+
+### Tags
+Linked List(#linked-list), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Populating Next Right Pointers in Each Node II(populating-next-right-pointers-in-each-node-ii) (Medium)
+- Binary Tree Right Side View(binary-tree-right-side-view) (Medium)
+- Cycle Length Queries in a Tree(cycle-length-queries-in-a-tree) (Hard)

@@ -94,3 +94,9 @@ def maxChunksToSorted(arr):
 This solution uses a **monotonic stack** pattern to merge overlapping chunks:  
 If the current number is "smaller" than what's in the stack, merge with previous chunk(s) to ensure that after sorting, the final concatenation is globally sorted.  
 The pattern of maintaining prefix-max or monotonic stacks appears in other chunking, histogram, and subarray boundary problems — especially those involving order and partitioning logic.
+
+### Tags
+Array(#array), Stack(#stack), Greedy(#greedy), Sorting(#sorting), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Max Chunks To Make Sorted(max-chunks-to-make-sorted) (Medium)

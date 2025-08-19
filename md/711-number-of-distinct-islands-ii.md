@@ -123,3 +123,9 @@ def numDistinctIslands2(grid):
 
 ### Summary
 This problem uses a **shape normalization** pattern, which is common when distinct shapes/structures must be compared up to isomorphism under geometric transformations. The main pattern is: “serialize & normalize” all possible variants (rotations/reflections), and pick a canonical form to ensure mathematical uniqueness. This general pattern applies in grid-based puzzles, some subgraph isomorphism problems, and chemical/molecular structure comparison.
+
+### Tags
+Hash Table(#hash-table), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Hash Function(#hash-function)
+
+### Similar Problems
+- Number of Distinct Islands(number-of-distinct-islands) (Medium)

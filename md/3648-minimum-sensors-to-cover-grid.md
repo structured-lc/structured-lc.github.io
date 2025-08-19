@@ -110,3 +110,7 @@ def minNumberOfSensors(n: int, m: int, k: int) -> int:
 
 ### Summary
 This problem is a classic **tiling/covering** pattern, where you partition the grid using the maximal area covered by each sensor and pack them without overlap. The code uses ceil-division to find how many sensors per axis, then multiplies them. This greedy-block tiling applies to many grid minimum covering or dominating set problems, e.g. minimal routers, guards, or similar sensor placement tasks.
+
+### Tags
+
+### Similar Problems

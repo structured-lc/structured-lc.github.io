@@ -68,3 +68,7 @@ def createHelloWorld():
 This solution uses the **closure** pattern: a function returning another function, which is fundamental in functional programming and JavaScript, Python, etc.  
 Here, the pattern is used in its simplest form—no environment is captured, but the interface allows for customization with minimal changes.  
 This is a **factory pattern** use-case, and it's commonly seen in decorators, callback generators, and event handler setups.
+
+### Tags
+
+### Similar Problems

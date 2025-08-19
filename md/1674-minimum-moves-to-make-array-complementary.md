@@ -99,3 +99,10 @@ def minMoves(nums, limit):
 
 ### Summary
 This problem is a classic case for the **prefix sum/difference array** pattern, which lets us compute the impact of bulk operations across a range. The difference array strategy is highly efficient whenever the brute-force would be quadratic due to iterating possible targets and checking costs for each. This pattern is common for range-update/range-query or frequency analysis scenarios.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Zero Array Transformation II(zero-array-transformation-ii) (Medium)
+- Zero Array Transformation III(zero-array-transformation-iii) (Medium)

@@ -69,3 +69,8 @@ def getSmallestString(n, k):
 
 ### Summary
 The approach is greedy, filling from the end with the largest possible valid letter while keeping earlier positions as small as possible (to guarantee lexicographic minimality). This is a common **greedy + constructive building from ends** problem pattern.
+
+### Tags
+String(#string), Greedy(#greedy)
+
+### Similar Problems

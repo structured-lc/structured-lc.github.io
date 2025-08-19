@@ -97,3 +97,10 @@ def flipLights(n: int, m: int) -> int:
 
 ### Summary
 This problem is a classic **state counting with symmetry and patterns**, where brute force is quickly replaced with mathematical observations. Recognizing that only the first three bulbs ever matter due to the periodicity of button effects is the main insight. The coding pattern used is "reduce problem to small constant size + use table/conditions"—a powerful and common technique for optimizing combinatorial toggle/counting scenarios.
+
+### Tags
+Math(#math), Bit Manipulation(#bit-manipulation), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Bulb Switcher(bulb-switcher) (Medium)
+- Number of Times Binary String Is Prefix-Aligned(number-of-times-binary-string-is-prefix-aligned) (Medium)

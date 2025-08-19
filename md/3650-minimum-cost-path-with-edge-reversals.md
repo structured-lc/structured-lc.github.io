@@ -95,3 +95,8 @@ def minCost(n, edges, source=0, target=None):
 
 ### Summary
 This problem is a classic **graph shortest-path** problem with a twist: you can traverse or reverse any edge at the same cost. The solution uses the **Dijkstra’s algorithm** coding pattern, efficiently finding the minimum path in O((n + m) log n) time. The technique of “expanding the state space” (modeling reversible edges explicitly) is broadly applicable to graphs with flexible edge operations, reward/penalty dynamics, and bidirectional search problems.
+
+### Tags
+
+### Similar Problems
+- Minimum Cost to Reach Destination in Time(minimum-cost-to-reach-destination-in-time) (Hard)

@@ -102,3 +102,12 @@ def checkPartitioning(s: str) -> bool:
 This problem follows the **palindromic substring partitioning pattern**, using DP for quick palindrome queries and nested loops to explore valid splits.  
 The precomputation trick is common in palindromic partitioning and works well whenever multiple direct substring palindrome queries are required.  
 Such patterns apply in k-partition palindrome problems, minimum cuts, and even dynamic partitioning scenarios.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Palindrome Partitioning(palindrome-partitioning) (Medium)
+- Palindrome Partitioning II(palindrome-partitioning-ii) (Hard)
+- Palindrome Partitioning III(palindrome-partitioning-iii) (Hard)
+- Maximum Number of Non-overlapping Palindrome Substrings(maximum-number-of-non-overlapping-palindrome-substrings) (Hard)

@@ -122,3 +122,10 @@ def hasValidPath(grid):
 This problem applies typical **stateful DFS/BFS with memoization**, a pattern widely used in grid-based or sequential DP problems with constraints.  
 Key to efficiency: encode the correct state (row, col, balance) and aggressively prune invalid search branches.  
 This approach is broadly applicable for grid path problems where mid-path validity (not just final state) must be maintained—such as string balancing, energy constraints, or specific resource tracking along the path.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems
+- Check if There is a Valid Path in a Grid(check-if-there-is-a-valid-path-in-a-grid) (Medium)
+- Check if a Parentheses String Can Be Valid(check-if-a-parentheses-string-can-be-valid) (Medium)

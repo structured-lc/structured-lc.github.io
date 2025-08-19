@@ -130,3 +130,8 @@ def findClosestLeaf(root: TreeNode, k: int) -> int:
 This problem demonstrates the technique of *converting a tree to an undirected graph* and then using **BFS** to find the shortest path, a pattern that shows up whenever bidirectional traversal is needed in a tree (finding shortest/closest nodes or relatives).  
 It’s a common pattern in problems like “Lowest Common Ancestor”, “Distance Between Nodes in a Tree”, and any search where parent navigation is required.  
 Key ideas are **BFS for shortest path**, and using a hashmap to store parent links if not explicitly available.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

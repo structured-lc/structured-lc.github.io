@@ -118,3 +118,8 @@ def numOfBurgers(tomatoSlices: int, cheeseSlices: int):
 This problem is a classic system of equations scenario, solved via algebraic manipulation and validity checks.  
 This “simultaneous equations with item counts” pattern is common in resource allocation, coin change, and combination problems.  
 It highlights translating real-world constraints into equations, and quickly testing solution validity.
+
+### Tags
+Math(#math)
+
+### Similar Problems

@@ -63,3 +63,11 @@ Hint: This shifts the problem to a lex order traversal of all binary strings, ch
 
 ### Summary  
 This problem uses a smart bit-flipping strategy (pigeonhole principle) to guarantee a unique solution efficiently. The pattern is a simple constructive approach, common in problems requiring constructing a counterexample. Similar constructive logic appears in problems that require you to find something guaranteed to exist due to the constraints (e.g., missing numbers, impossible configurations). The approach is both time- and space-efficient, avoiding brute-force enumeration.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Backtracking(#backtracking)
+
+### Similar Problems
+- Missing Number(missing-number) (Easy)
+- Find All Numbers Disappeared in an Array(find-all-numbers-disappeared-in-an-array) (Easy)
+- Random Pick with Blacklist(random-pick-with-blacklist) (Hard)

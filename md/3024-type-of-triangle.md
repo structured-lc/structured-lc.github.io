@@ -95,3 +95,8 @@ def triangleType(nums):
 
 ### Summary
 This solution uses **sorting for symmetry**, reducing triangle validity and type detection to a few simple comparisons. This is a classic geometry/toy validation pattern, similar to other "identify category given rules" problems. The array size is fixed, so performance is constant time; this technique is widely applicable to geometric object filtering and basic rule-checking problems.
+
+### Tags
+Array(#array), Math(#math), Sorting(#sorting)
+
+### Similar Problems

@@ -128,3 +128,8 @@ def maximumBeauty(flowers):
 ### Summary
 We used the prefix sum pattern and hash maps to quickly answer "what is the max sum subarray that starts and ends with the same element?"—the common variant is start/end indices or prefix-sum intervals with additional logic at bounds.  
 This is an instance of sliding-window/prefix-sum optimizations and can be seen in problems where subarrays must satisfy a property at the ends, for example, palindromic segments or matching boundary conditions.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Prefix Sum(#prefix-sum)
+
+### Similar Problems

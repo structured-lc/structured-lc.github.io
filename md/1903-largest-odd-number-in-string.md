@@ -70,3 +70,9 @@ def largestOddNumber(num: str) -> str:
 
 ### Summary
 The approach uses **reverse scanning** (right-to-left traversal), a common pattern for problems involving properties determined by trailing digits (such as parity). Greedy logic applies: to maximize the value, keep as many leading digits as possible by stopping at the first odd digit from the end. This pattern is useful for string slicing questions, number manipulation in string-form, and questions involving number properties (odd/even, divisibility, etc.).
+
+### Tags
+Math(#math), String(#string), Greedy(#greedy)
+
+### Similar Problems
+- Largest 3-Same-Digit Number in String(largest-3-same-digit-number-in-string) (Easy)

@@ -101,3 +101,11 @@ def maxOperations(nums, k):
 
 ### Summary
 The **hashmap counting pattern** is used here: for each number, check for its complement and form a pair if possible, otherwise record its occurrence for future pairings. It's a typical *complement-to-sum* problem, similar to **Two Sum** but with the one-use constraint, and it appears frequently in problems involving **pairing and one-time use**. The two-pointer pattern is a good space-saving variant when sorting is acceptable or the array is already sorted.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Sorting(#sorting)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)
+- Count Good Meals(count-good-meals) (Medium)
+- Divide Players Into Teams of Equal Skill(divide-players-into-teams-of-equal-skill) (Medium)

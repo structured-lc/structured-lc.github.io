@@ -80,3 +80,10 @@ def divisibilityArray(word: str, m: int) -> list[int]:
 
 ### Summary
 This problem uses a common **prefix property pattern**: processing “rolling” or progressively larger chunks of a sequence, updating a computation efficiently. The **running/modulo trick** is crucial for efficiency in string-to-integer problems, especially with very large numbers. This pattern is also used in problems involving rolling hash or checking divisibility without explicit integer conversion.
+
+### Tags
+Array(#array), Math(#math), String(#string)
+
+### Similar Problems
+- Subarray Sums Divisible by K(subarray-sums-divisible-by-k) (Medium)
+- Make Sum Divisible by P(make-sum-divisible-by-p) (Medium)

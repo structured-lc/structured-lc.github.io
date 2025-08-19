@@ -96,3 +96,8 @@ This problem is a classic application of **graph cycle detection** in a 2D grid.
 The approach uses **DFS with parent tracking** to avoid trivial cycles (immediate backtracking) and detects cycles by encountering previously visited nodes not equal to the parent.
 It’s a common interview pattern, useful in maze problems, region finding, and grid cycle detection.  
 The solution can be adapted with BFS or Union Find; the DFS method here is a general graph traversal template used across grid/search problems.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
+
+### Similar Problems

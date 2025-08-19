@@ -91,3 +91,8 @@ This problem is a classic example of **matrix manipulation**.
 The pattern—traversing a matrix and swapping dimensions—is common in data manipulation (rotating images, data science table reshaping, etc.).  
 The approach shown focuses on clear index mapping and space allocation, and illustrates how to work with 2D arrays directly.  
 Patterns here apply to other problems involving “reshape” or transformation of 2D data.
+
+### Tags
+Array(#array), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems

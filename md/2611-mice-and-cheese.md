@@ -80,3 +80,9 @@ def miceAndCheese(reward1, reward2, k):
 
 ### Summary
 This problem is a classic **greedy assignment** and top-K selection pattern: maximize a sum by optimally partitioning items by largest difference in gain/loss between two options. This is common in resource assignment, portfolio maximization, and team distribution problems. Tools: sorting by value difference, or heap for the top-k.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- House Robber(house-robber) (Medium)

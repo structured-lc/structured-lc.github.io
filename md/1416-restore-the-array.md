@@ -102,3 +102,10 @@ This is a classic **DP on substrings** problem, where you use a DP table to cach
 It’s closely related to "decode ways" and "word break" style problems: wherever we have a string and need to count (#) of ways to split it into valid pieces, DP fits well.  
 Key tricks: limit the substring window to the number of digits in k, check for leading zeros, and use a rolling integer construction to avoid the expense of substring conversion.  
 Pattern is common for parsing, dynamic programming on strings, and combinatorial counts over segmentations.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Number of Ways to Separate Numbers(number-of-ways-to-separate-numbers) (Hard)
+- Number of Beautiful Partitions(number-of-beautiful-partitions) (Hard)

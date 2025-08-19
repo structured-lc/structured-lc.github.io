@@ -130,3 +130,10 @@ def componentValue(nums, edges):
 This problem is a classic **tree-partition by subtree sum** pattern, leveraging DFS and smart factorization.  
 It generalizes to problems like splitting trees by value, checking valid subtree structure, or enforcing balanced partitions in distributed computations.  
 The key insight is to try all possible k and greedily cut off subtrees summing to the required target, stopping when the maximal valid k is found.
+
+### Tags
+Array(#array), Math(#math), Tree(#tree), Depth-First Search(#depth-first-search), Enumeration(#enumeration)
+
+### Similar Problems
+- Equal Tree Partition(equal-tree-partition) (Medium)
+- Maximum Number of K-Divisible Components(maximum-number-of-k-divisible-components) (Hard)

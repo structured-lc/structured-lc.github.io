@@ -116,3 +116,9 @@ class Solution:
 ### Summary
 This problem uses the **post-order traversal** pattern, which is especially useful when child information is required before processing the parent (as for sum and tilt calculations).  
 This approach avoids redundant computations by ensuring each node’s sum and tilt are computed exactly once, making it a classic **tree DFS** pattern that applies to problems involving subtree aggregation (sums, heights, counts, etc).
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Find All The Lonely Nodes(find-all-the-lonely-nodes) (Easy)

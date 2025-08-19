@@ -108,3 +108,11 @@ def countDistinct(nums, k, p):
 The approach is based on generating all possible subarrays (using start and end indices) and using a set for uniqueness, with an early break if the subarray violates the constraint (more than k divisible by p).  
 This is a classic "find all unique subarrays with property" pattern, often used with sets or Tries for uniqueness, and early loop termination for efficiency.  
 This sliding window+set approach is reusable in other problems with similar subarray constraints.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Trie(#trie), Rolling Hash(#rolling-hash), Hash Function(#hash-function), Enumeration(#enumeration)
+
+### Similar Problems
+- Subarrays with K Different Integers(subarrays-with-k-different-integers) (Hard)
+- Count Number of Nice Subarrays(count-number-of-nice-subarrays) (Medium)
+- Subarray With Elements Greater Than Varying Threshold(subarray-with-elements-greater-than-varying-threshold) (Hard)

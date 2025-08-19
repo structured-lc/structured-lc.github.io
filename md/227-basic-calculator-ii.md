@@ -103,3 +103,11 @@ def calculate(s: str) -> int:
 
 ### Summary
 This is a **classic stack-based parsing** problem, commonly encountered when evaluating mathematical expressions respecting operator precedence. The stack holds results that can’t be combined until higher precedence (multiplication/division) are resolved. The approach is reusable for more complex expression evaluators—such as handling parentheses, or interpreters/calculators for scripting languages. This pattern (single-pass with stack for precedence management) is common in parsing and calculator problems.
+
+### Tags
+Math(#math), String(#string), Stack(#stack)
+
+### Similar Problems
+- Basic Calculator(basic-calculator) (Hard)
+- Expression Add Operators(expression-add-operators) (Hard)
+- Basic Calculator III(basic-calculator-iii) (Hard)

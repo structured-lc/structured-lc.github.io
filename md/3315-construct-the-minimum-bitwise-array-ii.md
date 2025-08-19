@@ -97,3 +97,8 @@ def construct_min_bitwise_array(nums):
 
 ### Summary
 This problem leverages bitwise manipulation and relies on the unique properties of primes, particularly how consecutive integers' bitwise OR produces transitions in bit patterns. The solution uses observations about odd primes vs. the only even prime (2) for a near-O(1) per-entry answer. Pattern: greedy/bitwise property. Applicable when bit manipulation and integer patterns are involved, especially with primes or structured integer sets.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

@@ -124,3 +124,11 @@ class Solution:
 
 ### Summary
 This problem demonstrates the **binary search tree traversal** pattern, leveraging the BST property to guide search efficiently. It's a key example of applying divide-and-conquer and recursive/iterative strategies for trees. This approach generalizes to other BST operations (insert, delete, lower/upper bound, etc.), and the core logic mirrors classic binary search.
+
+### Tags
+Tree(#tree), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Closest Binary Search Tree Value(closest-binary-search-tree-value) (Easy)
+- Insert into a Binary Search Tree(insert-into-a-binary-search-tree) (Medium)
+- Closest Nodes Queries in a Binary Search Tree(closest-nodes-queries-in-a-binary-search-tree) (Medium)

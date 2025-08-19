@@ -130,3 +130,10 @@ def reachableNodes(edges, maxMoves, n):
 
 ### Summary
 The approach uses **Dijkstra’s shortest path algorithm** for the original nodes, and only simulates reach into subdivided nodes via math—never builds the exponentially larger expanded graph. This is a classic **shortest-path + counting reachability** problem and the math for intermediate (subdivided) nodes is a neat application of combining Dijkstra with per-edge logic. This pattern frequently appears in problems where an implicit graph expansion would be intractable, but local edge calculations suffice.
+
+### Tags
+Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Find All People With Secret(find-all-people-with-secret) (Hard)
+- Paths in Maze That Lead to Same Room(paths-in-maze-that-lead-to-same-room) (Medium)

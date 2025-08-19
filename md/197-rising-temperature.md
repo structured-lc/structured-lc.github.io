@@ -131,3 +131,8 @@ def rising_temperature(weather):
 This problem demonstrates the **adjacent comparison** pattern: comparing each element with its previous element, with a consecutive constraint (here, by date).  
 The classic approach is a **self-join** in SQL or a **single-pass** in Python after sorting.  
 This is a common coding/interview pattern applicable in scenarios like finding increasing trends, detecting new peaks, or diff-based comparisons in time-series data.
+
+### Tags
+Database(#database)
+
+### Similar Problems

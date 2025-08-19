@@ -202,3 +202,8 @@ class StatisticsTracker:
 
 ### Summary
 This problem combines several advanced data structures: double-ended queue for order, two heaps for median-finding, counters and reverse mapping for efficient mode, and delayed-deletion marks for supporting removal from heaps. These patterns (e.g., two heaps for median, counter+set for mode) are common in design of streaming statistics, and can be applied in online median, sliding window, and other stream-processing systems.
+
+### Tags
+Hash Table(#hash-table), Binary Search(#binary-search), Design(#design), Queue(#queue), Heap (Priority Queue)(#heap-priority-queue), Data Stream(#data-stream), Ordered Set(#ordered-set)
+
+### Similar Problems

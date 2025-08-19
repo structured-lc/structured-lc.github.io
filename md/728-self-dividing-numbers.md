@@ -80,3 +80,11 @@ def selfDividingNumbers(left: int, right: int):
 ### Summary
 
 This problem follows the brute-force pattern, iterating through a range and filtering based on digit properties (digit extraction and divisibility). The key insight is digit-wise filtering and modular checks. Patterns like digit separation (mod 10 & integer division) are common and can be applied to problems like palindrome numbers, reversing digits, or digit sum calculation. This is a straightforward filter-by-property pattern for numbers.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Perfect Number(perfect-number) (Easy)
+- Check if Number Has Equal Digit Count and Digit Value(check-if-number-has-equal-digit-count-and-digit-value) (Easy)
+- Count the Digits That Divide a Number(count-the-digits-that-divide-a-number) (Easy)

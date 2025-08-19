@@ -105,3 +105,9 @@ def countOfPairs(n: int, x: int, y: int):
 This is a **graph distances** problem where most paths are predictable (linear), but a single shortcut “bends” these paths and demands systematic minimum distance calculation for all pairs.  
 The approach is a classic **all-pairs shortest path** enumeration, optimized by math for the linear (path) case but brute-forced for the shortcut.  
 This counting pattern arises in **distance queries** on trees/paths with perturbations (e.g., “how many pairs at distance k?”), **combinatorial counting**, and can be made efficient by exploiting symmetry when there are no cycles.
+
+### Tags
+Graph(#graph), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Walls and Gates(walls-and-gates) (Medium)

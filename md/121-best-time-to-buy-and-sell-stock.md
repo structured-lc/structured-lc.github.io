@@ -72,3 +72,17 @@ def maxProfit(prices):
 
 ### Summary
 This problem uses the greedy pattern: iterate over the array to maintain the minimum price found and update the maximum profit accordingly. This pattern of tracking a running min/max is common in problems involving one-pass optimal substructure, such as maximum subarray sums (Kadane’s Algorithm), or when computing local peaks and valleys.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Maximum Subarray(maximum-subarray) (Medium)
+- Best Time to Buy and Sell Stock II(best-time-to-buy-and-sell-stock-ii) (Medium)
+- Best Time to Buy and Sell Stock III(best-time-to-buy-and-sell-stock-iii) (Hard)
+- Best Time to Buy and Sell Stock IV(best-time-to-buy-and-sell-stock-iv) (Hard)
+- Best Time to Buy and Sell Stock with Cooldown(best-time-to-buy-and-sell-stock-with-cooldown) (Medium)
+- Sum of Beauty in the Array(sum-of-beauty-in-the-array) (Medium)
+- Maximum Difference Between Increasing Elements(maximum-difference-between-increasing-elements) (Easy)
+- Maximum Profit From Trading Stocks(maximum-profit-from-trading-stocks) (Medium)
+- Best Time to Buy and Sell Stock V(best-time-to-buy-and-sell-stock-v) (Medium)

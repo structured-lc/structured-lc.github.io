@@ -83,3 +83,8 @@ def closestToTarget(arr, target):
 
 ### Summary  
 This problem uses bitwise AND properties and dynamic programming techniques where for each element, we track all possible AND results ending there, pruning redundant computations. It exemplifies the use of set-based intermediate state tracking and bit manipulation in range query optimization. This pattern often appears in bitmasking and range query problems, especially for operations where results monotonically change (like AND).
+
+### Tags
+Array(#array), Binary Search(#binary-search), Bit Manipulation(#bit-manipulation), Segment Tree(#segment-tree)
+
+### Similar Problems

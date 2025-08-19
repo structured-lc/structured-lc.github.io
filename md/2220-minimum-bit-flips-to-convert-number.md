@@ -95,3 +95,11 @@ def minBitFlips(start: int, goal: int) -> int:
 
 ### Summary
 This approach uses a classic **bit manipulation** and **count set bits** pattern. The use of XOR highlights how to detect differing bits efficiently. This coding method also appears in hamming distance, counting differing pixels, or bit flips in error correction contexts. It’s a standard and powerful trick for any interview involving binary numbers or bitwise operations.
+
+### Tags
+Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Minimum Flips to Make a OR b Equal to c(minimum-flips-to-make-a-or-b-equal-to-c) (Medium)
+- Minimum Number of Operations to Make Array XOR Equal to K(minimum-number-of-operations-to-make-array-xor-equal-to-k) (Medium)
+- Smallest Number With All Set Bits(smallest-number-with-all-set-bits) (Easy)

@@ -104,3 +104,11 @@ def getFood(grid):
 
 ### Summary
 This problem is a textbook application of the **BFS shortest path in a matrix/grid** pattern. BFS is chosen for its efficiency and guarantee of minimal path length in unweighted undirected grids. The problem is analogous to shortest path search in mazes, robot pathfinding, and can be extended for weighted graphs or other movement patterns (diagonal, knight’s moves, etc.).
+
+### Tags
+Array(#array), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- 01 Matrix(01-matrix) (Medium)
+- Shortest Path in a Grid with Obstacles Elimination(shortest-path-in-a-grid-with-obstacles-elimination) (Hard)
+- Amount of Time for Binary Tree to Be Infected(amount-of-time-for-binary-tree-to-be-infected) (Medium)

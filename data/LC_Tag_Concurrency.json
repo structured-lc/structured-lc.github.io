@@ -1,11 +1,11 @@
 [
-    {"number": 1114, "slug": "print-in-order", "title": "Print in Order", "difficulty": "Easy"},
-    {"number": 1115, "slug": "print-foobar-alternately", "title": "Print FooBar Alternately", "difficulty": "Medium"},
-    {"number": 1116, "slug": "print-zero-even-odd", "title": "Print Zero Even Odd", "difficulty": "Medium"},
-    {"number": 1117, "slug": "building-h2o", "title": "Building H2O", "difficulty": "Medium"},
-    {"number": 1188, "slug": "design-bounded-blocking-queue", "title": "Design Bounded Blocking Queue", "difficulty": "Medium"},
-    {"number": 1195, "slug": "fizz-buzz-multithreaded", "title": "Fizz Buzz Multithreaded", "difficulty": "Medium"},
-    {"number": 1226, "slug": "the-dining-philosophers", "title": "The Dining Philosophers", "difficulty": "Medium"},
-    {"number": 1242, "slug": "web-crawler-multithreaded", "title": "Web Crawler Multithreaded", "difficulty": "Medium"},
-    {"number": 1279, "slug": "traffic-light-controlled-intersection", "title": "Traffic Light Controlled Intersection", "difficulty": "Easy"}
+    {"number": 1114, "slug": "print-in-order", "title": "Print in Order", "difficulty": "Easy", "tags": ["Concurrency"], "similar_problems": [{"slug": "print-foobar-alternately", "title": "Print FooBar Alternately", "difficulty": "Medium"}]},
+    {"number": 1115, "slug": "print-foobar-alternately", "title": "Print FooBar Alternately", "difficulty": "Medium", "tags": ["Concurrency"], "similar_problems": [{"slug": "print-in-order", "title": "Print in Order", "difficulty": "Easy"}, {"slug": "print-zero-even-odd", "title": "Print Zero Even Odd", "difficulty": "Medium"}]},
+    {"number": 1116, "slug": "print-zero-even-odd", "title": "Print Zero Even Odd", "difficulty": "Medium", "tags": ["Concurrency"], "similar_problems": [{"slug": "print-foobar-alternately", "title": "Print FooBar Alternately", "difficulty": "Medium"}, {"slug": "fizz-buzz-multithreaded", "title": "Fizz Buzz Multithreaded", "difficulty": "Medium"}]},
+    {"number": 1117, "slug": "building-h2o", "title": "Building H2O", "difficulty": "Medium", "tags": ["Concurrency"], "similar_problems": []},
+    {"number": 1188, "slug": "design-bounded-blocking-queue", "title": "Design Bounded Blocking Queue", "difficulty": "Medium", "tags": ["Concurrency"], "similar_problems": []},
+    {"number": 1195, "slug": "fizz-buzz-multithreaded", "title": "Fizz Buzz Multithreaded", "difficulty": "Medium", "tags": ["Concurrency"], "similar_problems": [{"slug": "fizz-buzz", "title": "Fizz Buzz", "difficulty": "Easy"}, {"slug": "print-zero-even-odd", "title": "Print Zero Even Odd", "difficulty": "Medium"}]},
+    {"number": 1226, "slug": "the-dining-philosophers", "title": "The Dining Philosophers", "difficulty": "Medium", "tags": ["Concurrency"], "similar_problems": []},
+    {"number": 1242, "slug": "web-crawler-multithreaded", "title": "Web Crawler Multithreaded", "difficulty": "Medium", "tags": ["Depth-First Search", "Breadth-First Search", "Concurrency"], "similar_problems": [{"slug": "web-crawler", "title": "Web Crawler", "difficulty": "Medium"}]},
+    {"number": 1279, "slug": "traffic-light-controlled-intersection", "title": "Traffic Light Controlled Intersection", "difficulty": "Easy", "tags": ["Concurrency"], "similar_problems": []}
 ]

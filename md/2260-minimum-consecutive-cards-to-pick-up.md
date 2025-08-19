@@ -76,3 +76,9 @@ def minimumCardPickup(cards):
 
 ### Summary
 This problem uses the **sliding window** and **hash map** pattern to record last occurrences and efficiently find minimum windows containing duplicates. It’s a classic application of processing an array with lookups for quick detection of repeated elements within dynamic window boundaries—very common in substring or subarray problems involving "first repeat" or "minimum window" computations.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Longest Substring Without Repeating Characters(longest-substring-without-repeating-characters) (Medium)

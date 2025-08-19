@@ -84,3 +84,9 @@ def isAcronym(words, s):
 ### Summary
 This is a classic **character matching/iteration** pattern, where you check corresponding characters in two sequences.  
 It's straightforward but commonly appears in interview warmups or as substeps in more complex parsing/string problems. The logic can be reused in similar string transformation, validation, or abbreviation tasks.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems
+- Word Abbreviation(word-abbreviation) (Hard)

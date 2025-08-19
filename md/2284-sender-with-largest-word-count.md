@@ -135,3 +135,10 @@ def largestWordCount(messages, senders):
 This problem uses classic **hash map accumulation** and a **post-processing max/min scan**.  
 It’s a fundamental coding pattern for tally-and-select problems, often used in frequency counting, leaderboard tallying, log/stat analysis, or any "top-N ranking" question.  
 The lexicographical check is a subtle requirement and highlights attention to output constraints.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Top K Frequent Elements(top-k-frequent-elements) (Medium)
+- Top K Frequent Words(top-k-frequent-words) (Medium)

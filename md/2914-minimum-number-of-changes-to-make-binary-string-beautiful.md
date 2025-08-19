@@ -86,3 +86,8 @@ def min_changes_to_beautiful(s: str) -> int:
 This problem demonstrates the **greedy pairing** technique: you solve globally optimal problems by making optimal local choices—here, by matching every pair.  
 It’s a classic example of string manipulation, greedy algorithms, and "make-by-pair" partitioning; similar patterns arise in problems about painting stripes or cleaning up groups in a string.  
 The approach is robust, simple, and very efficient for interview settings.
+
+### Tags
+String(#string)
+
+### Similar Problems

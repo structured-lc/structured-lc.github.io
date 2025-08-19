@@ -116,3 +116,9 @@ def canSeePersonsCount(heights):
 
 ### Summary
 This problem leverages the *monotonic stack* pattern, commonly seen in "Next Greater Element" problems for arrays, and applies it efficiently to both rows and columns of a grid. Such stack methods are a standard approach in visible-element counting, histogram problems, and sliding window maximums, and are widely useful in interview grids, stock span, and histogram-related variants.
+
+### Tags
+Array(#array), Stack(#stack), Matrix(#matrix), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Number of Visible People in a Queue(number-of-visible-people-in-a-queue) (Hard)

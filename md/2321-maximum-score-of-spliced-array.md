@@ -99,3 +99,9 @@ def maximumsSplicedArray(nums1, nums2):
 This problem uses the classic **Kadane’s algorithm** pattern for max subarray sum, but applies it to the difference arrays (nums2ᵢ - nums1ᵢ and vice versa) to efficiently find the optimal single interval to swap for maximizing the total.  
 Key insight: The best swap corresponds exactly to the maximum-gain subarray in the difference array, which is a staple trick in array manipulation and interview settings.  
 This technique is widely applicable in problems that require maximizing or minimizing array sums by applying restricted subarray operations.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Maximum Subarray(maximum-subarray) (Medium)

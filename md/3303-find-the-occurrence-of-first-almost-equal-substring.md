@@ -99,3 +99,10 @@ We used a **character-by-character sliding window** comparison, counting mismatc
 This pattern appears in *approximate* string matching, and also in problems like "minimum window substring with at most k errors"/Hamming distance.  
 For small mismatch thresholds and moderate-length patterns, this brute-force window scan is simple, readable, and effective.  
 The approach is widely applicable in substring matching problems where *exact* matching is relaxed to allow a small error margin.
+
+### Tags
+String(#string), String Matching(#string-matching)
+
+### Similar Problems
+- Check Whether Two Strings are Almost Equivalent(check-whether-two-strings-are-almost-equivalent) (Easy)
+- Count Almost Equal Pairs II(count-almost-equal-pairs-ii) (Hard)

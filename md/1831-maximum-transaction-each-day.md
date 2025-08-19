@@ -130,3 +130,8 @@ def max_transactions_each_day(transactions):
 We solved the problem using the "group by key + track max and collect IDs" pattern.  
 This same grouping/aggregation template applies to SQL "find max per group", as well as in Python/interview coding.  
 It's common in frequency-based or max/min/group problems, and appears in event logs, statistics by category, and log/data stream aggregation.
+
+### Tags
+Database(#database)
+
+### Similar Problems

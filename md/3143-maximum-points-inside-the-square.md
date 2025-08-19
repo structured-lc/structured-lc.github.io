@@ -92,3 +92,9 @@ def maxPointsInsideSquare(points, s):
 This problem is an example of **grouping by boundary layers** and greedy set inclusion under uniqueness constraints.  
 The key insight is associating each point with the smallest enclosing square, and growing the inclusion set layer by layer, halting when a duplicate tag occurs.  
 The tagging uniqueness requirement blends classic geometric search with counting under constraints; the set pattern for uniqueness is a common one, and this approach is very efficient for "expand and check uniqueness as you go" types of problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Maximize the Distance Between Points on a Square(maximize-the-distance-between-points-on-a-square) (Hard)

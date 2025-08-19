@@ -91,3 +91,9 @@ def smallestDivisor(nums, threshold):
 
 ### Summary
 This problem uses the **binary search over the answer** pattern — not on the array elements themselves, but on the range of a possible answer (divisor). It's well-suited whenever you have a monotonic condition over a numeric space (here: as divisor increases, sum never increases). This coding pattern also appears in questions like *Kth Smallest/Largest, minimizing/maximizing under threshold, and similar divide-to-satisfy problems*.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Minimized Maximum of Products Distributed to Any Store(minimized-maximum-of-products-distributed-to-any-store) (Medium)

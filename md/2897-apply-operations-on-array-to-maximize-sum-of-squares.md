@@ -108,3 +108,9 @@ def maximumSumOfSquares(nums, k):
 
 ### Summary
 This problem is a classic instance of **bitwise greedy assignment**, where each bit's contribution is counted and assigned across k buckets to maximize the overall squared sum. The idea of *concentrating resource (bits, ones, or value tokens) into as few containers as possible to maximize squares/efficiency* is a recurring pattern, especially in resource distribution or combinatorial optimization. Similar logic appears in forming largest numbers, bitwise games, and maximizing convex functions of sums.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Minimize OR of Remaining Elements Using Operations(minimize-or-of-remaining-elements-using-operations) (Hard)

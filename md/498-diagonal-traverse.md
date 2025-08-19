@@ -87,3 +87,9 @@ def findDiagonalOrder(mat):
 
 ### Summary
 This problem uses the diagonal traversal pattern—frequent in matrix problems and sometimes in trees—where elements are grouped and traversed by index-sum. The approach is a variation on “group by diagonal” and “traverse with direction alternation.” This pattern appears in zigzag matrix traversal, and in some binary tree view/diagonal view problems. The in-place alternation is an efficient way to avoid extra post-processing.
+
+### Tags
+Array(#array), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems
+- Decode the Slanted Ciphertext(decode-the-slanted-ciphertext) (Medium)

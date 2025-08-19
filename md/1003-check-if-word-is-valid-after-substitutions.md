@@ -79,3 +79,9 @@ def isValid(s: str) -> bool:
 
 ### Summary
 This problem is a classic example of using a **stack-based pattern recognition** technique: process input left-to-right, push to a stack, and pop when a specific valid pattern (here, "abc") is detected. Such problems show up in **parsing, syntax checking, and bracket matching**. The stack ensures local order and efficiently captures the allowed nested insertions/removals. This is a common coding pattern for problems involving *balanced substrings* or reversible construction.
+
+### Tags
+String(#string), Stack(#stack)
+
+### Similar Problems
+- Valid Parentheses(valid-parentheses) (Easy)

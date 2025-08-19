@@ -88,3 +88,9 @@ def minimum_levels(possible):
 
 ### Summary
 This problem is a classic prefix sum array split scenario, looking for a greedy optimal cut. It's similar to two-part partition problems, and the coding pattern (single-pass prefix-suffix comparison) is common in interview questions dealing with contiguous splits, array sum dominance, or team selection scenarios.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Minimum Rounds to Complete All Tasks(minimum-rounds-to-complete-all-tasks) (Medium)

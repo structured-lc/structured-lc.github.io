@@ -120,3 +120,8 @@ def licenseKeyFormatting(S, K):
 
 ### Summary
 This problem uses a **string cleaning and formatting** pattern, which is common for input normalization tasks. The optimal solution makes use of reverse traversal to group characters directly, elegantly handling variable-sized first groups and avoiding awkward calculations. This pattern can also be found in text reformatting, grouping, or pre-processing problems, where data must be chunked from one end and delimited systematically.
+
+### Tags
+String(#string)
+
+### Similar Problems

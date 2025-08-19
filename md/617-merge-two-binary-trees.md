@@ -132,3 +132,8 @@ def mergeTrees(t1, t2):
 
 ### Summary
 This problem is a classic **tree DFS recursion** problem. The merge operation is performed top-down, making recursion especially natural. This approach—visiting nodes in tandem and merging—can be adapted for problems involving “combining” or “mirroring” trees, and applies to various tree-based interview questions (like tree addition, symmetry, or manipulation problems).
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

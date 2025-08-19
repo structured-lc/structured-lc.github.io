@@ -87,3 +87,11 @@ def singleNumber(nums):
 
 ### Summary
 This problem uses the **Bit Manipulation** and **Bitwise Counting** pattern, optimizing for O(1) space by tracking the number of times each bit appears using just two integer variables. This approach is a classic trick useful for similar problems where numbers appear *k* times and you need the unique element. This technique can also be adapted for other values of *k*, making it a broadly applicable pattern for interview settings.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Single Number(single-number) (Easy)
+- Single Number III(single-number-iii) (Medium)
+- Find the XOR of Numbers Which Appear Twice(find-the-xor-of-numbers-which-appear-twice) (Easy)

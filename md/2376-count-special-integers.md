@@ -117,3 +117,10 @@ def countSpecialNumbers(n: int) -> int:
 
 ### Summary
 The problem uses **digit DP**—a key dynamic programming pattern for combinatorial counting on numbers with digit constraints. The state encodes position, used digits, and the tight prefix flag. This approach (digit DP with bitmask for repeated digits) is widely applicable in unique digit/combinatorial number scenarios with digit-level restrictions, for example, counting numbers satisfying divisibility, bounding, or forbidden digit properties.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Count Numbers with Unique Digits(count-numbers-with-unique-digits) (Medium)
+- K-th Smallest in Lexicographical Order(k-th-smallest-in-lexicographical-order) (Hard)

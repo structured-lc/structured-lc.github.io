@@ -143,3 +143,8 @@ def recoverFromPreorder(traversal: str) -> TreeNode:
 
 ### Summary
 This problem uses a **stack + preorder traversal simulation** pattern, parsing a depth-annotated path and reconstructing the parent-child relationships incrementally. The stack keeps track of the current ancestors according to node depths, and the approach runs in linear time. This parsing/stack strategy can be applied to problems involving sequence-based hierarchical reconstruction, such as deserializing trees or parsing indented outlines.
+
+### Tags
+String(#string), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

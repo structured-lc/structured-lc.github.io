@@ -78,3 +78,13 @@ class ZigzagIterator:
 
 ### Summary
 This problem is a classic application of the **cyclic round-robin** pattern and queue for alternating iteration over multiple sources. By always storing only currently available sources in a queue, we ensure O(1) selection and generalize well to k lists, streams, or iterators. The technique is broadly useful in scheduling, resource multiplexing, and merging data from heterogenous sources.
+
+### Tags
+Array(#array), Design(#design), Queue(#queue), Iterator(#iterator)
+
+### Similar Problems
+- Binary Search Tree Iterator(binary-search-tree-iterator) (Medium)
+- Flatten 2D Vector(flatten-2d-vector) (Medium)
+- Peeking Iterator(peeking-iterator) (Medium)
+- Flatten Nested List Iterator(flatten-nested-list-iterator) (Medium)
+- Merge Strings Alternately(merge-strings-alternately) (Easy)

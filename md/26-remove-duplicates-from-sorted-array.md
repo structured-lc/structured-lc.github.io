@@ -77,3 +77,12 @@ def removeDuplicates(nums):
 
 ### Summary
 This is a classic example of the **two pointers** technique, specifically optimized for problems involving in-place modification of **sorted arrays**. This pattern shows up frequently for array problems involving "compressing" or "removing" data in-place, and can also be adapted for variants where you keep more than one occurrence or have more complex conditions on what to keep. The key insight here is to use the input's sorted property to efficiently tell when to move unique elements forward and keep the output order unchanged.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers)
+
+### Similar Problems
+- Remove Element(remove-element) (Easy)
+- Remove Duplicates from Sorted Array II(remove-duplicates-from-sorted-array-ii) (Medium)
+- Apply Operations to an Array(apply-operations-to-an-array) (Easy)
+- Sum of Distances(sum-of-distances) (Medium)

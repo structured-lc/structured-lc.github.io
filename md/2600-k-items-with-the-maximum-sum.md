@@ -95,3 +95,9 @@ def kItemsWithMaximumSum(numOnes, numZeros, numNegOnes, k):
 ### Summary
 This is a classic **greedy problem**: always pick the highest-value items first to maximize the sum.  
 The pattern of “pick the best available up to quota, then the next best, etc.” also applies to similar problems like selecting employees or resources to maximize/minimize a result under constraints.
+
+### Tags
+Math(#math), Greedy(#greedy)
+
+### Similar Problems
+- Maximum Subarray(maximum-subarray) (Medium)

@@ -114,3 +114,13 @@ def lowestCommonAncestor(root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
 
 ### Summary
 The solution leverages the **BST property** for efficient searching, making the process much faster than the generic binary tree approach. The iterative method uses O(1) space, constantly narrowing the search based on the values of `p` and `q`. This problem follows the **LCA pattern**, applicable whenever you have find-common-ancestor type problems and tree structures—variations appear in general binary trees, n-ary trees, file systems, and organizational hierarchies.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Lowest Common Ancestor of a Binary Tree(lowest-common-ancestor-of-a-binary-tree) (Medium)
+- Smallest Common Region(smallest-common-region) (Medium)
+- Lowest Common Ancestor of a Binary Tree II(lowest-common-ancestor-of-a-binary-tree-ii) (Medium)
+- Lowest Common Ancestor of a Binary Tree III(lowest-common-ancestor-of-a-binary-tree-iii) (Medium)
+- Lowest Common Ancestor of a Binary Tree IV(lowest-common-ancestor-of-a-binary-tree-iv) (Medium)

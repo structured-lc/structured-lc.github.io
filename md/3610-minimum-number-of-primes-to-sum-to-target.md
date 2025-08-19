@@ -88,3 +88,8 @@ def min_number_of_primes(target: int) -> int:
 
 ### Summary
 This is a classic **dynamic programming** problem with the twist that the coin set is all primes up to a certain number. It directly follows the minimum coin change DP pattern and can be repurposed for other similar "make up target value using elements with repetition" tasks.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Number Theory(#number-theory)
+
+### Similar Problems

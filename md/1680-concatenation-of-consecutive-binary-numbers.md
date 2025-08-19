@@ -68,3 +68,9 @@ def concatenatedBinary(n: int) -> int:
 
 ### Summary
 Classic use of bitwise operations and number theory. Popular coding pattern for optimized bit manipulations, such as rolling hashes and efficient encoding.
+
+### Tags
+Math(#math), Bit Manipulation(#bit-manipulation), Simulation(#simulation)
+
+### Similar Problems
+- Maximum Possible Number by Binary Concatenation(maximum-possible-number-by-binary-concatenation) (Medium)

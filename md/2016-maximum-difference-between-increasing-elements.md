@@ -86,3 +86,10 @@ def maximumDifference(nums):
 
 ### Summary
 This problem uses the **one-pass tracking pattern**, maintaining a running minimum and comparing on-the-fly, which is common in maximum subarray or minimum/maximum difference tasks. This approach is efficient (O(n), O(1)) and frequently seen in array scanning, stock-buy-sell type, and sliding window variations.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Best Time to Buy and Sell Stock(best-time-to-buy-and-sell-stock) (Easy)
+- Two Furthest Houses With Different Colors(two-furthest-houses-with-different-colors) (Easy)

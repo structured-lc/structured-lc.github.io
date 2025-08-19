@@ -73,3 +73,10 @@ def findFinalValue(nums, original):
 
 ### Summary
 This is a classic **hash set value existence**/lookup pattern, commonly used to trade O(n) memory for O(1) search speed. This coding pattern frequently appears in problems requiring repeated element existence checks or transformations: e.g., finding missing/duplicate numbers, repeated operations, or value propagation in a sequence. The approach is efficient, avoids unnecessary work, and cleanly separates data preparation from the actual search step.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Simulation(#simulation)
+
+### Similar Problems
+- Largest Number At Least Twice of Others(largest-number-at-least-twice-of-others) (Easy)
+- Check If N and Its Double Exist(check-if-n-and-its-double-exist) (Easy)

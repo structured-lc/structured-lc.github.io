@@ -143,3 +143,14 @@ class WordDictionary:
 
 ### Summary
 This problem is a classic **Trie design** problem with backtracking to handle wildcard (dot) queries. The Trie enables quick lookups and pruning of non-matching paths, making searches efficient even with some wildcards. This pattern is widely applicable for autocomplete, prefix/suffix matching, regex engines, and dictionary-based problems.
+
+### Tags
+String(#string), Depth-First Search(#depth-first-search), Design(#design), Trie(#trie)
+
+### Similar Problems
+- Implement Trie (Prefix Tree)(implement-trie-prefix-tree) (Medium)
+- Prefix and Suffix Search(prefix-and-suffix-search) (Hard)
+- Match Substring After Replacement(match-substring-after-replacement) (Hard)
+- Sum of Prefix Scores of Strings(sum-of-prefix-scores-of-strings) (Hard)
+- Count Prefix and Suffix Pairs II(count-prefix-and-suffix-pairs-ii) (Hard)
+- Count Prefix and Suffix Pairs I(count-prefix-and-suffix-pairs-i) (Easy)

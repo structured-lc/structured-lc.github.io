@@ -79,3 +79,8 @@ def orderlyQueue(s: str, k: int) -> str:
 
 ### Summary
 This problem sharply distinguishes between "rotation" and "permutation" possibilities based on k. For k = 1, efficient string manipulation is key; for k > 1, the result always boils down to sorting — a pattern common in string manipulation and permutation-type interview questions. The lexicographical rotation problem (for k = 1) is a classic and appears in other questions such as "Find the smallest rotation" or "Shifted string matching."
+
+### Tags
+Math(#math), String(#string), Sorting(#sorting)
+
+### Similar Problems

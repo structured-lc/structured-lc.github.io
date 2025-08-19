@@ -89,3 +89,9 @@ def read(buf: List[str], n: int) -> int:
 This approach is a classic application of the **"Read in chunks using buffer, copy to output until done"** pattern, commonly used when interacting with batched or paginated IO APIs.  
 The loop structure, temporary buffer, and careful character counting are standard for any file streaming situation where the underlying access method is limited.  
 This technique is not only useful for Leetcode "Read4"-style questions, but also for real-world file readers, stream processors, and network packet consumers.
+
+### Tags
+Array(#array), Simulation(#simulation), Interactive(#interactive)
+
+### Similar Problems
+- Read N Characters Given read4 II - Call Multiple Times(read-n-characters-given-read4-ii-call-multiple-times) (Hard)

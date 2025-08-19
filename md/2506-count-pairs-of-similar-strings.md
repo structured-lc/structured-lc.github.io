@@ -102,3 +102,11 @@ def similarPairs(words):
 ### Summary
 This problem is a classic reduction to hashing for grouping identical "character sets", and then counting combinations from group sizes. The **bitmasking** pattern is highly efficient when elements map to a small, fixed alphabet (like lowercase English).  
 The **hashmap counting/combinatorics** technique seen here also applies to problems involving "counting pairs/sets" based on equivalence over a transformation (e.g., anagram grouping, similar attribute grouping).
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Counting(#counting)
+
+### Similar Problems
+- Sort Characters By Frequency(sort-characters-by-frequency) (Medium)
+- Count the Number of Consistent Strings(count-the-number-of-consistent-strings) (Easy)
+- Number of Good Paths(number-of-good-paths) (Hard)

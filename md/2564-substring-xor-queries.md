@@ -109,3 +109,9 @@ def substringXorQueries(s, queries):
 
 ### Summary
 This problem leverages **preprocessing with a hash map** to allow constant-time query answering. The pattern is similar to substring hash mapping and conversion, common in substring search and rolling hash problems. Careful attention to substring length (due to value limits) is the key insight. This approach generalizes to various substring lookup problems with value constraints, especially when string length is moderate and many queries are expected.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- String Matching in an Array(string-matching-in-an-array) (Easy)

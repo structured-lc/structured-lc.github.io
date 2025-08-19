@@ -88,3 +88,10 @@ def canPlaceFlowers(flowerbed, n):
 This problem is a classic *greedy placement* scenario, commonly seen in interval scheduling and array arrangement problems.  
 The pattern can be applied anywhere you must choose positions under adjacency or spacing constraints.  
 Key interview skills: array traversal, in-place modification, and careful boundary checking.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems
+- Teemo Attacking(teemo-attacking) (Easy)
+- Asteroid Collision(asteroid-collision) (Medium)

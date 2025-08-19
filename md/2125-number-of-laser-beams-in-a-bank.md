@@ -98,3 +98,9 @@ def numberOfBeams(bank):
 ### Summary
 This problem uses the **adjacent grouping pattern**: group/skip empty rows, then process pairs of relevant rows with a fixed formula (multiply device counts).
 It’s a classic "filter and pairwise accumulate" style—a variation seen in consecutive subarrays/subsequences, group-by problems, and graph edge counting among selected vertices.
+
+### Tags
+Array(#array), Math(#math), String(#string), Matrix(#matrix)
+
+### Similar Problems
+- Set Matrix Zeroes(set-matrix-zeroes) (Medium)

@@ -93,3 +93,8 @@ def minimizeArrayLength(nums, k):
 
 ### Summary
 This problem is an example of the **Greedy Stack pattern**: always merge immediately when allowed, left-to-right, tracking the current minimal representation. It's a classic case of "greedy is optimal" because local merging choices cannot harm future options (the product only stays the same or grows). This pattern shows up in merge/reduce/consolidate scenarios (e.g., "merge stones with cost", "remove k digits to minimize number", etc.), where the constraints enforce a unique best reduction strategy.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
+
+### Similar Problems

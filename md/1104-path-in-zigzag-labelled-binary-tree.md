@@ -108,3 +108,9 @@ def pathInZigZagTree(label: int):
 
 ### Summary
 This problem uses math properties of complete binary trees and alternating level orders to efficiently find a path back to the root. The main trick is mirroring the label within its level when the level is reversed, then standard binary tree logic finds parents. This “reverse level order” trick is a useful technique for binary tree label manipulations, especially when tree structure follows regular mathematical patterns. It's a problem that strengthens skills in math-based tree traversal and level indexing.
+
+### Tags
+Math(#math), Tree(#tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Cycle Length Queries in a Tree(cycle-length-queries-in-a-tree) (Hard)

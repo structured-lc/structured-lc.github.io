@@ -87,3 +87,13 @@ def minOperations(nums):
 This is a classic greedy, "adjust-to-fit" array problem: fix local violations to guarantee a global property, using a single pass.  
 Pattern: **Array, Greedy, Local-to-Global**.  
 Applicable to other problems where you increment/decrement to enforce order or minimum differences, e.g., "Minimum Moves to Make Array Complementary" or "Make Array Strictly Decreasing."
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems
+- Minimum Increment to Make Array Unique(minimum-increment-to-make-array-unique) (Medium)
+- Make Array Non-decreasing or Non-increasing(make-array-non-decreasing-or-non-increasing) (Hard)
+- Maximum Product After K Increments(maximum-product-after-k-increments) (Medium)
+- Minimum Replacements to Sort the Array(minimum-replacements-to-sort-the-array) (Hard)
+- Minimum Operations to Make Columns Strictly Increasing(minimum-operations-to-make-columns-strictly-increasing) (Easy)

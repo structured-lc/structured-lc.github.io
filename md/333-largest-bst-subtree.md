@@ -125,3 +125,8 @@ class Solution:
 
 ### Summary
 This problem uses the **DFS/post-order pattern** to gather and combine subtree properties efficiently. For each subtree, we check validity conditions and carry forward required info (isBST, min, max, size) to enable O(n) checks for BST status. This is a classic **tree-dp** problem, and the approach is generally applicable to problems where properties need to be gathered bottom-up and merged for parent nodes, e.g., checking for balanced trees, diameter, or validating other custom tree criteria.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
+
+### Similar Problems

@@ -89,3 +89,10 @@ def countSquares(matrix):
 ### Summary  
 This uses a classic **dynamic programming** pattern on a 2D grid, where you build up a solution based on smaller subproblems (left, top, top-left neighbors) to answer a local query at each cell.  
 It’s an example of local DP table building for 2D matrix substructure problems, which is similar to the maximal square problem. Variations of this approach apply to other 2D grid/rectangle/square counting problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems
+- Minimum Cost Homecoming of a Robot in a Grid(minimum-cost-homecoming-of-a-robot-in-a-grid) (Medium)
+- Count Fertile Pyramids in a Land(count-fertile-pyramids-in-a-land) (Hard)

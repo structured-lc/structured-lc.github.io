@@ -103,3 +103,9 @@ def minBuildTime(blocks: List[int], split: int) -> int:
 
 ### Summary
 We use a **heap-based greedy approach**, similar to Huffman encoding or optimal merge pattern, to continually combine smaller build tasks, considering the split cost at each "merge". This is an example of **greedy + heap + simulation**. This pattern frequently appears in task scheduling and resource-constrained job finishing, notably in optimal file merge problems and parallel task completion scenarios.
+
+### Tags
+Array(#array), Math(#math), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Find Time Required to Eliminate Bacterial Strains(find-time-required-to-eliminate-bacterial-strains) (Hard)

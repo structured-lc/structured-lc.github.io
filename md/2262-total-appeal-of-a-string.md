@@ -115,3 +115,12 @@ def totalAppeal(s: str) -> int:
 This problem uses the "last occurrence" tracking pattern, common in substring and sliding window problems that count distinct or unique character contributions.  
 The key idea is to count, for each character at position i, in how many substrings it is newly distinct, using last seen indices to avoid brute force substring enumeration.  
 This pattern frequently appears in string problems requiring counts over all substrings, and can be adapted for more complex versions such as distinct letters, unique windows, and combinatorial substring sums.
+
+### Tags
+Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Count Unique Characters of All Substrings of a Given String(count-unique-characters-of-all-substrings-of-a-given-string) (Hard)
+- Count Vowel Substrings of a String(count-vowel-substrings-of-a-string) (Easy)
+- Vowels of All Substrings(vowels-of-all-substrings) (Medium)
+- Find the Median of the Uniqueness Array(find-the-median-of-the-uniqueness-array) (Hard)

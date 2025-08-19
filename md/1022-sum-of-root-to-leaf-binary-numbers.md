@@ -120,3 +120,8 @@ def sumRootToLeaf(root):
 ### Summary
 This problem uses the **DFS + path accumulation** coding pattern, where you traverse the tree while maintaining a running value (representing the binary number along the path).  
 It’s a great example of converting path-based information while traversing, updating state without extra structures, and is similar to tree-path-sum and root-to-leaf encoding problems.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

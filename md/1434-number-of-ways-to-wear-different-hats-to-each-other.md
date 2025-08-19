@@ -70,3 +70,9 @@ def numberWays(hats):
 
 ### Summary
 This is a classic bitmask DP problem, modeling assignments similar to "Perfect Matching". The approach is broadly applicable to subset assignment ("assign unique X to Y under constraints") types of combinatorial problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems
+- The Number of Good Subsets(the-number-of-good-subsets) (Hard)

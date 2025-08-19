@@ -120,3 +120,9 @@ class Solution:
 
 ### Summary
 This problem uses a combinatorial insight that after a series of pairwise sum-and-reduction steps, the final output digits are linear combinations of the original digits, weighted by binomial coefficients (mod 10). By using Lucas' Theorem and the Chinese Remainder Theorem for efficient binomial computations modulo 10, we avoid brute-force simulation, making the method practical for large inputs. The approach is an instance of "linearity of process under mod", and these techniques often arise in combinatorics-heavy coding contest problems.
+
+### Tags
+Math(#math), String(#string), Combinatorics(#combinatorics), Number Theory(#number-theory)
+
+### Similar Problems
+- Pascal's Triangle(pascals-triangle) (Easy)

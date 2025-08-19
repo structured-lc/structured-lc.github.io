@@ -106,3 +106,15 @@ def shiftingLetters(s, shifts):
 This problem uses the **difference array / prefix sum** technique for efficient range updates.  
 It's a very common interview pattern for bulk range modifications (used for e.g., "Range addition," "Interval increment queries"), and helps reduce brute-force O(n × m) work to O(n + m).  
 Understanding this trick is extremely useful for algorithmic interviews, especially for string or array range update problems.
+
+### Tags
+Array(#array), String(#string), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- The Skyline Problem(the-skyline-problem) (Hard)
+- Range Sum Query - Mutable(range-sum-query-mutable) (Medium)
+- Range Addition(range-addition) (Medium)
+- Shifting Letters(shifting-letters) (Medium)
+- Maximum Population Year(maximum-population-year) (Easy)
+- Describe the Painting(describe-the-painting) (Medium)
+- Shift Distance Between Two Strings(shift-distance-between-two-strings) (Medium)

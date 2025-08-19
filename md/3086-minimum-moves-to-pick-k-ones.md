@@ -103,3 +103,9 @@ def minimumMoves(nums, k, maxChanges):
 This problem is a variant of the “minimum operations” or “greedy pick” pattern, focusing on gathering k items using change-constrained operations.  
 The best approach leverages counting and simple greedy allocation of allowed changes, similar to two-pointer or window techniques in selection/subset-sum problems.  
 It highlights the value of reducing complex move simulation to simple counting and state tracking.
+
+### Tags
+Array(#array), Greedy(#greedy), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Minimum Swaps to Group All 1's Together(minimum-swaps-to-group-all-1s-together) (Medium)

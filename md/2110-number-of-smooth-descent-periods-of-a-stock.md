@@ -81,3 +81,11 @@ def getDescentPeriods(prices):
 
 ### Summary
 This is a classic *counting runs* or *sliding window* pattern, where you aggregate results for maximal runs instead of individual elements or brute force subarrays. The idea generalizes to many other subarray or substring counting problems involving monotonicity or difference constraints.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Subarray Product Less Than K(subarray-product-less-than-k) (Medium)
+- Number of Valid Subarrays(number-of-valid-subarrays) (Hard)
+- Number of Zero-Filled Subarrays(number-of-zero-filled-subarrays) (Medium)

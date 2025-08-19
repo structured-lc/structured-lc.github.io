@@ -122,3 +122,8 @@ This problem uses a standard *Dijkstra with expanded state* pattern—here, trac
 This pattern is common for problems where states have multiple resources (e.g., limited teleports, fuel, obstacle removals).  
 It’s directly applicable in any weighted graph where you must make k-cost-altering choices along shortest paths.  
 The main insight is state augmentation and careful relaxation in Dijkstra’s algorithm.
+
+### Tags
+Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
+
+### Similar Problems

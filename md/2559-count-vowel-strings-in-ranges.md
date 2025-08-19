@@ -101,3 +101,9 @@ def count_vowel_strings_in_ranges(words, queries):
 
 ### Summary
 This problem fits the **“subarray queries with static array”** pattern and is efficiently solved using a **prefix sum**. Precomputing prefix counts for each position lets every range query run in O(1), making this a common and scalable technique for interview questions about range counts, frequency tables, or subarray sums. This pattern is widely applicable to problems where you need to perform many lookups of cumulative or aggregated subarray data.
+
+### Tags
+Array(#array), String(#string), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Jump Game VII(jump-game-vii) (Medium)

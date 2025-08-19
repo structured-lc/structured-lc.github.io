@@ -120,3 +120,8 @@ def countSpecialTriplets(nums):
 
 ### Summary
 This problem leverages **prefix/suffix counting** with hash maps to produce an O(n) solution for finding special triplets. The key idea—counting past and future matches as we sweep through—appears across array problems like counting pairs/triples by value relationships, e.g., geometric progression triplets, quadruplets, etc.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Counting(#counting)
+
+### Similar Problems

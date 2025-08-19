@@ -107,3 +107,8 @@ def minDeletionSize(strs):
 This problem illustrates a **grid/column-wise traversal** pattern: treat a 2D structure where the key logic is comparing adjacent entries column-by-column.  
 Such patterns appear in spreadsheet data-cleaning, lex sort checks, and are common in string grid or matrix alignment problems.  
 The final approach is a direct scan, often the most efficient route under simple constraints, and shows the value of **early loop break** for optimization.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems

@@ -78,3 +78,11 @@ def checkString(s: str) -> bool:
 
 ### Summary
 This problem uses the **single-pass scan with state flag** pattern—extremely common for string validation problems that have _ordering_ constraints. It’s a direct application of validating “all x’s appear before all y’s” which shows up in array and string questions often. The same concept is applicable in validating sorted runs, partitioning elements, and streaming/real-time validation.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Minimum Deletions to Make String Balanced(minimum-deletions-to-make-string-balanced) (Medium)
+- Check if Array Is Sorted and Rotated(check-if-array-is-sorted-and-rotated) (Easy)
+- Check if Numbers Are Ascending in a Sentence(check-if-numbers-are-ascending-in-a-sentence) (Easy)

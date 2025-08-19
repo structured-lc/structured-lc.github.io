@@ -81,3 +81,10 @@ def count_pairs(nums, target):
 This problem follows the classic brute-force pair counting pattern: test all unique i < j index pairs and check a condition (here, sum < target).  
 The same pattern applies in "two-sum variants," triplet counting, and generally when dealing with combinations of k elements with certain properties.  
 For optimization, using sorting and two pointers can reduce pairwise comparisons if only counts are required, especially for sorted arrays.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)
+- Count the Number of Fair Pairs(count-the-number-of-fair-pairs) (Medium)

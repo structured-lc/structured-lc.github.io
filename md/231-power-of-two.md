@@ -79,3 +79,11 @@ def isPowerOfTwo(n: int) -> bool:
 This problem is a classic use-case for **bit manipulation**, specifically the singleton bit trick `(n & (n-1)) == 0`.  
 It’s a pattern that appears in problems testing binary properties or counting set bits, and can be adapted to questions about powers of other numbers with similar approaches (loop with modulus/division).  
 Commonly, this technique appears in coding interviews and competitive programming for efficiency.
+
+### Tags
+Math(#math), Bit Manipulation(#bit-manipulation), Recursion(#recursion)
+
+### Similar Problems
+- Number of 1 Bits(number-of-1-bits) (Easy)
+- Power of Three(power-of-three) (Easy)
+- Power of Four(power-of-four) (Easy)

@@ -104,3 +104,8 @@ def uniqueMorseRepresentations(words):
 ### Summary
 This problem is a classic **hash set / unique transformations by mapping** pattern, where you convert each input into a new "form" based on a fixed mapping for deduplication.  
 The set ensures quick lookups and uniqueness. This approach is common in problems where you need to count the number of unique outputs after applying a transformation or normalization to each input.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string)
+
+### Similar Problems

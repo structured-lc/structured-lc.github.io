@@ -108,3 +108,8 @@ def makeArrayPositive(nums):
 This problem uses a **greedy sliding window** and **prefix sum** approach to minimize changes needed to enforce positive sums over all windows of size ≥ 3.  
 This pattern of breaking the problem at the earliest violation is common in optimizations involving windows or ranges—such as "Partition Array", "Subarray Sums", or "Minimize Operations" types of problems.  
 No fancy data structures are needed; reasoning about prefix sums and careful window movement is sufficient. The overall pattern is frequently seen in competitive programming and algorithmic interviews.
+
+### Tags
+Array(#array), Greedy(#greedy), Prefix Sum(#prefix-sum)
+
+### Similar Problems

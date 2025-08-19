@@ -114,3 +114,10 @@ class MyHashSet:
 ### Summary
 This problem is a classic demonstration of the **direct-address table** and basic hash set design pattern. The O(1) array approach works only for small, fixed key ranges.  
 In interviews, always clarify constraints and highlight options like bucket hashing (separate chaining) when space is a concern or when working with arbitrary keys. This pattern also applies to problems like map/dictionary implementation, caches, or frequency tables.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Linked List(#linked-list), Design(#design), Hash Function(#hash-function)
+
+### Similar Problems
+- Design HashMap(design-hashmap) (Easy)
+- Design Skiplist(design-skiplist) (Hard)

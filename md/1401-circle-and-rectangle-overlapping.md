@@ -59,3 +59,8 @@ def checkOverlap(radius, xCenter, yCenter, x1, y1, x2, y2):
 
 ### Summary
 This is a classic geometric "distance-to-rectangle" problem, solved via clamp and Euclidean distance. Pattern occurs widely in graphics, geometry, and collision detection.
+
+### Tags
+Math(#math), Geometry(#geometry)
+
+### Similar Problems

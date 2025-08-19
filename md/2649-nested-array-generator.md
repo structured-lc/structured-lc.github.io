@@ -93,3 +93,10 @@ def nested_generator(arr: NestedIntList) -> Generator[int, None, None]:
 This problem uses the recursive generator pattern—a powerful tool for traversing arbitrarily nested data structures with low memory use.  
 Such recursive-yield logic is common in problems involving tree traversals, nested list flattening, and advanced iteration over composite data.  
 It’s extensible to iterators over tree-like objects, XML/JSON parsing, and more.
+
+### Tags
+
+### Similar Problems
+- Flatten Deeply Nested Array(flatten-deeply-nested-array) (Medium)
+- Generate Fibonacci Sequence(generate-fibonacci-sequence) (Easy)
+- Design Cancellable Function(design-cancellable-function) (Hard)

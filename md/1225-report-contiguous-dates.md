@@ -196,3 +196,11 @@ for row in output:
 
 ### Summary
 This problem uses the **grouping consecutive elements** or “merge ranges” pattern, often used in time-series analysis, intervals merging, and run-length encoding. The core is to label each day, then scan from oldest to newest, grouping consecutive days with the same state, and outputting each contiguous block as needed. This pattern is common in problems involving calendars, logs, or contiguous value segmentation.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Find the Start and End Number of Continuous Ranges(find-the-start-and-end-number-of-continuous-ranges) (Medium)
+- Find the Missing IDs(find-the-missing-ids) (Medium)
+- Customers With Strictly Increasing Purchases(customers-with-strictly-increasing-purchases) (Hard)

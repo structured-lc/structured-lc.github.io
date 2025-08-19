@@ -58,3 +58,9 @@ def sellers_with_no_sales(sellers, orders):
 
 ### Summary
 This is the classic set subtraction problem, where the goal is to find entities in one group not present in another. Very commonly solved using sets, hash-maps, or anti-joins. Pattern applies anywhere group membership and exclusions are needed.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Customer Who Visited but Did Not Make Any Transactions(customer-who-visited-but-did-not-make-any-transactions) (Easy)

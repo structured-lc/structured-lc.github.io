@@ -106,3 +106,8 @@ def findIntegerAdded(nums1, nums2):
 
 ### Summary
 This solution uses the “two pointers after sort” technique, reducing the problem to matching sorted arrays after removing two elements and shifting. The pattern of fixing the shift (difference) and validating by multi-set comparison arises in other difference array or “missing elements” problems, and the overall strategy is common when a small constant number of modifications (removals) is involved. This pattern extends to similar questions about matching transformed arrays after small removals or insertions.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Sorting(#sorting), Enumeration(#enumeration)
+
+### Similar Problems

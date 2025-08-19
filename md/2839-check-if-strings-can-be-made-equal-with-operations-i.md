@@ -84,3 +84,8 @@ def canBeEqual(s1: str, s2: str) -> bool:
 
 ### Summary
 This approach uses the "bucket by parity, compare after normalization" pattern, which is common in permutation-with-restricted-swap problems. It's efficient because, for fixed short inputs, both sorting and counting are constant time. The pattern applies in broader contexts where swaps or moves are restricted by position parity or index difference, such as some string and array rearrangement problems.
+
+### Tags
+String(#string)
+
+### Similar Problems

@@ -112,3 +112,10 @@ class MyCalendarTwo:
 
 ### Summary
 This problem uses the **sweep line** or **interval overlap pattern**—commonly seen in problems where you query or update overlapping intervals. The two-list approach provides a clean, interview-friendly structure and adapts directly to variants with more or less restrictive overlap policies. Similar patterns are used in room booking, meeting scheduling, and train platform allocation problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Design(#design), Segment Tree(#segment-tree), Prefix Sum(#prefix-sum), Ordered Set(#ordered-set)
+
+### Similar Problems
+- My Calendar I(my-calendar-i) (Medium)
+- My Calendar III(my-calendar-iii) (Hard)

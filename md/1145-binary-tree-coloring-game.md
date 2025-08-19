@@ -116,3 +116,8 @@ def btreeGameWinningMove(root, n, x):
 This problem is an application of **binary tree traversal** and strategic partitioning.  
 By counting **regions around Player 1’s pick**, we transform the game to a region-maximization problem: if Player 2 can start in the largest region (with more than half the nodes), they can guarantee a win.  
 The pattern—divide the tree at a node and analyze the sizes of partitions—applies to problems like tree balance checks, "kth smallest in binary tree subregion," and network control simulations.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

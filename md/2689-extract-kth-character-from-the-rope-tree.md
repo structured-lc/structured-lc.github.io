@@ -132,3 +132,8 @@ def getKthCharacter(root, k):
 This problem uses the **length-augmented tree traversal** pattern: at each node, use subtree metrics to guide the search for the kᵗʰ character, avoiding full string construction.  
 This is a classic Rope problem: ropes are used in text editors for fast split/merge/index.  
 The core technique (descend left/right based on cumulative counts) applies to many range query problems on trees, e.g. order statistics in BSTs, Kᵗʰ smallest in segment trees, etc.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

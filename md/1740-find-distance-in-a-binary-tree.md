@@ -128,3 +128,9 @@ def findDistance(root: TreeNode, p: int, q: int) -> int:
 
 ### Summary
 This problem uses the **LCA Pattern**—find the lowest common ancestor, then add up the individual depths for each node relative to the LCA. It's a classic approach for any "distance between nodes" tasks in trees, and the same technique appears in many interval or hierarchy tree problems such as organizational charts, file directory trees, and genealogy questions.
+
+### Tags
+Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Step-By-Step Directions From a Binary Tree Node to Another(step-by-step-directions-from-a-binary-tree-node-to-another) (Medium)

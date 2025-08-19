@@ -105,3 +105,8 @@ def sum_of_distinct_squares(nums):
 ### Summary
 This problem is solved by generating all subarrays and counting the distinct values in each, squaring that count and summing up.  
 It uses a common brute-force subarrays enumeration pattern with a minor optimization (frequency array for fast unique counting), which is broadly useful for similar small-n sliding-window or distinct-counting subarray problems. This approach is practical thanks to the modest input limits.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

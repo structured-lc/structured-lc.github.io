@@ -92,3 +92,8 @@ This problem uses a **single-pass scan** with simple max tracking, a classic cod
 - Correctly computing each task's duration based on consecutive logs.
 - Proper tie-breaking using employee ids.
 This pattern applies to cases where max/min value and their position/owner are needed in a sequential data stream.
+
+### Tags
+Array(#array)
+
+### Similar Problems

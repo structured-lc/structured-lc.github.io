@@ -79,3 +79,9 @@ def findMin(nums):
 This problem showcases the *binary search in rotated sorted arrays* pattern, with additional care for handling duplicates.  
 The approach balances O(log n) efficiency with a fallback to O(n) in degenerate cases, making it a robust template for any rotated-with-duplicates scenario.  
 Similar logic applies to search/insert in rotated arrays and problems like "search in rotated sorted array II."
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Find Minimum in Rotated Sorted Array(find-minimum-in-rotated-sorted-array) (Medium)

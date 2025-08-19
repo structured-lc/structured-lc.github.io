@@ -138,3 +138,9 @@ class Solution:
 
 ### Summary
 This problem is a classic **Tree DFS (postorder)** application, where global information is updated using local results from each node. The key insight is always to track the **two largest depths among the children** at each step. This approach is reusable for other problems involving longest paths or combining subtree results (e.g., binary tree diameter, longest univalue path).
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems
+- Diameter of Binary Tree(diameter-of-binary-tree) (Easy)

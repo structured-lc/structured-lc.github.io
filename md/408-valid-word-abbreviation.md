@@ -89,3 +89,11 @@ def validWordAbbreviation(word: str, abbr: str) -> bool:
 
 ### Summary
 The **two-pointer** technique shines when simulating parallel traversals over two related strings. It's a common coding pattern for problems like this where we validate two mapping structures step by step (as in string parsing or edit distance problems). This pattern helps avoid extra space and makes for linear, efficient, easy-to-debug code.
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Minimum Unique Word Abbreviation(minimum-unique-word-abbreviation) (Hard)
+- Word Abbreviation(word-abbreviation) (Hard)
+- Check if an Original String Exists Given Two Encoded Strings(check-if-an-original-string-exists-given-two-encoded-strings) (Hard)

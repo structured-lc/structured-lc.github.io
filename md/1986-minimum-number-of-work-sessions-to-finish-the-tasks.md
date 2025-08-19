@@ -121,3 +121,12 @@ def minSessions(tasks, sessionTime):
 This problem demonstrates the power of bitmask dynamic programming for subset partitioning and optimal assignment, especially when all combinations are considered and recomputation is pruned via memoization.  
 The core pattern is **combinatorial subset DP** (classic in problems like traveling salesman, partitioning, and set cover).  
 The DP with bitmask is a high-leverage tool for medium-sized n (10 ≤ n ≤ 20). Similar patterns can be used for problems that require grouping or partitioning items with subset constraints.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems
+- Smallest Sufficient Team(smallest-sufficient-team) (Hard)
+- Fair Distribution of Cookies(fair-distribution-of-cookies) (Medium)
+- Find Minimum Time to Finish All Jobs(find-minimum-time-to-finish-all-jobs) (Hard)
+- Find Minimum Time to Finish All Jobs II(find-minimum-time-to-finish-all-jobs-ii) (Medium)

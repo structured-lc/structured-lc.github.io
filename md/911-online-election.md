@@ -103,3 +103,9 @@ class TopVotedCandidate:
 This problem uses the **binary search on timeline pattern**, often applied where queries ask about “the value as of a given time.”  
 Preprocessing with running leader lists lets us answer time-based leader queries quickly.  
 The pattern applies to any “prefix-winner” queries or tracking time-evolving values efficiently.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Design(#design)
+
+### Similar Problems
+- Rank Teams by Votes(rank-teams-by-votes) (Medium)

@@ -114,3 +114,10 @@ def removeComments(source):
 
 ### Summary
 We used a **state-machine pattern** with a single pass per character, toggling an in_block flag to distinguish code from comments. This finite state approach is robust and commonly used for parsing or lexical analysis problems, and can be adapted for similar source code refactoring or mini-compiler tasks.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems
+- Mini Parser(mini-parser) (Medium)
+- Ternary Expression Parser(ternary-expression-parser) (Medium)

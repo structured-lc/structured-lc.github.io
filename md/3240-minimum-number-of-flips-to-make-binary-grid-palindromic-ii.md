@@ -130,3 +130,8 @@ def minFlips(grid):
 This problem is a *group symmetry* and *state enumeration* pattern (meet in the middle, backtracking over symmetric orbits).  
 It applies ideas from set covering, minimum flip for equality in symmetric groups, and recursive search.  
 Pattern is common wherever symmetry or paired-constraint groups must be handled together, such as grid coloring, image manipulation, and even palindromic string/grid construction tasks.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Matrix(#matrix)
+
+### Similar Problems

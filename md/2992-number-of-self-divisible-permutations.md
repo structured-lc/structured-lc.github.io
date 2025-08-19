@@ -94,3 +94,8 @@ def count_self_divisible_permutations(n):
 
 ### Summary
 This problem uses the backtracking with state compression (bitmask DP) pattern. We use a bitmask to represent used numbers and prune invalid choices early, making the solution efficient for moderate n (up to 12-14). The pattern also applies to permutation and arrangement problems with constraints on relative order/positions, such as the "Beautiful Arrangement" problem and N-Queens.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Number Theory(#number-theory), Bitmask(#bitmask)
+
+### Similar Problems

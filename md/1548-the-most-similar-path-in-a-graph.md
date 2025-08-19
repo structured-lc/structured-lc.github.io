@@ -89,3 +89,8 @@ def mostSimilar(n, roads, targetPath):
 
 ### Summary
 Uses classic DP over sequence and graph search, also called **Viterbi algorithm** pattern (DP + backtracking for path). Applies in sequence alignment, speech recognition, and path similarity problems.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Graph(#graph)
+
+### Similar Problems

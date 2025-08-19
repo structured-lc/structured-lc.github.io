@@ -99,3 +99,11 @@ def closeStrings(word1, word2):
 
 ### Summary
 This is a classic example of the **"frequency equivalence" pattern** — using character or value counts and comparing sorted patterns or sets, instead of the direct elements. It highlights that **for certain transformations, only the multiset structure and set membership matter**, not the actual arrangement. This pattern also appears in permutation problems and anagram checks.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems
+- Buddy Strings(buddy-strings) (Easy)
+- Minimum Swaps to Make Strings Equal(minimum-swaps-to-make-strings-equal) (Medium)
+- Minimum Number of Steps to Make Two Strings Anagram(minimum-number-of-steps-to-make-two-strings-anagram) (Medium)

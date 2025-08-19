@@ -122,3 +122,8 @@ def lengthOfLongestIncreasingPath(coordinates, k):
 This problem uses the **2D Longest Increasing Subsequence** pattern, which generalizes the classic LIS from 1D to 2D.  
 By splitting around coordinates[k] and combining the LIS to its left and right, we capture all increasing paths passing through k.  
 This pattern is useful wherever you need to build increasing chains under coordinate-wise (multi-attribute) constraints and frequently appears in grid dynamic programming, box stacking, and scheduling problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems

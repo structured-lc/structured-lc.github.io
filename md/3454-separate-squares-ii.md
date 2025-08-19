@@ -154,3 +154,9 @@ def separateSquares(squares):
 
 ### Summary  
 This problem uses the **binary search on the answer** technique on a monotonic function, combined with a 2D sweep line for efficient union area calculation below a candidate y. The coding pattern is very useful for geometric set-union, area queries, and root-finding on monotonic set functions. This pattern is common in computational geometry, e.g., for union-of-rectangles/lowering/threshold problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Segment Tree(#segment-tree), Line Sweep(#line-sweep)
+
+### Similar Problems
+- Rectangle Area II(rectangle-area-ii) (Hard)

@@ -93,3 +93,10 @@ def wordBreak(s, wordDict):
 This problem uses the classic **dynamic programming** pattern, specifically "substring DP", where the state at position i in the string depends on solutions to earlier prefixes.  
 It avoids redundant computation by storing results in can_break and efficiently checks word existence with a set.  
 This pattern appears in other substring decomposition problems, sentence parsing, and even in some variations of number factoring and coin change.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming), Trie(#trie), Memoization(#memoization)
+
+### Similar Problems
+- Word Break II(word-break-ii) (Hard)
+- Extra Characters in a String(extra-characters-in-a-string) (Medium)

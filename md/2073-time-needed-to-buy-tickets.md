@@ -95,3 +95,9 @@ def timeRequiredToBuy(tickets, k):
 
 ### Summary
 This problem uses the **counting/greedy** pattern—since each person's impact can be bounded by iteration and min comparison, we avoid simulation and rotation. The principle of "count how many times each person affects the outcome" is common in queue simulation and scheduling problems, and can be generalized to processes with cycles or repeat actions, such as "round robin" tasks in OS scheduling.
+
+### Tags
+Array(#array), Queue(#queue), Simulation(#simulation)
+
+### Similar Problems
+- Number of Students Unable to Eat Lunch(number-of-students-unable-to-eat-lunch) (Easy)

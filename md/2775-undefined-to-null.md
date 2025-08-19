@@ -87,3 +87,7 @@ def undefined_to_null(obj):
 
 ### Summary
 This problem uses the **recursive traversal** (DFS) pattern for deeply nested objects/arrays. It's common in problems like deep cloning, serialization, and data transformations. Robust error handling and correctly distinguishing object from array is key. Similar logic applies to tasks like deeply flattening structures or performing any recursive transformation.
+
+### Tags
+
+### Similar Problems

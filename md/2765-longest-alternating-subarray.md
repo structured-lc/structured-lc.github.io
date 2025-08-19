@@ -95,3 +95,9 @@ def alternating_subarray(nums):
 This problem uses a sliding window/two-pointer scan to efficiently find the longest continuous subarray with strict alternating +1, -1 difference pattern.  
 The main insight is that the alternation pattern constraint allows you to validate possible windows in one forward pass.  
 This "pattern detection" approach appears in problems like substring with alternating parity, or maximum-length wiggle subarrays.
+
+### Tags
+Array(#array), Enumeration(#enumeration)
+
+### Similar Problems
+- Longest Turbulent Subarray(longest-turbulent-subarray) (Medium)

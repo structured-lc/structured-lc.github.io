@@ -94,3 +94,17 @@ def findOrder(numCourses, prerequisites):
 
 ### Summary
 This problem is a classic example of the **topological sorting** pattern on a **directed acyclic graph (DAG)**. It’s commonly used for **dependency resolution** (courses, projects, build systems). The code leverages **Kahn’s Algorithm (BFS)**, which is especially clear for cycle detection and order production. Variations of this approach can be applied to **task scheduling, build order computation, compilation dependency resolution**, and everywhere dependencies form a directed acyclic structure.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort)
+
+### Similar Problems
+- Course Schedule(course-schedule) (Medium)
+- Alien Dictionary(alien-dictionary) (Hard)
+- Minimum Height Trees(minimum-height-trees) (Medium)
+- Sequence Reconstruction(sequence-reconstruction) (Medium)
+- Course Schedule III(course-schedule-iii) (Hard)
+- Parallel Courses(parallel-courses) (Medium)
+- Find All Possible Recipes from Given Supplies(find-all-possible-recipes-from-given-supplies) (Medium)
+- Build a Matrix With Conditions(build-a-matrix-with-conditions) (Hard)
+- Sort Array by Moving Items to Empty Space(sort-array-by-moving-items-to-empty-space) (Hard)

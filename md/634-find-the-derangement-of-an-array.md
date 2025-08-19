@@ -89,3 +89,8 @@ def findDerangement(n: int) -> int:
 This problem is a classic example of **dynamic programming with combinatorics**. The pattern (D(n) = (n-1) × (D(n-1) + D(n-2))) is typical in derangement and permutation-related problems.  
 Efficient rolling DP is the key to fitting within tight time/memory limits for large n.  
 The derangement count appears in problems about **permutations with forbidden positions**, **fixed points**, and sometimes in probability/statistics involving random shuffling.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
+
+### Similar Problems

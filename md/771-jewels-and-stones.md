@@ -80,3 +80,8 @@ def numJewelsInStones(jewels, stones):
 
 ### Summary
 This problem demonstrates the *set membership* and *hash set lookup* pattern, which is common in string and array problems that require quick existence checks. The approach—building a set for fast look-up and iterating through another sequence for comparison—is broadly useful, e.g., for duplicate detection or intersection problems. Patterns like this arise often in coding interviews when optimizing from brute-force to linear time.
+
+### Tags
+Hash Table(#hash-table), String(#string)
+
+### Similar Problems

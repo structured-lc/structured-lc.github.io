@@ -141,3 +141,9 @@ class Solution:
 ### Summary
 This problem demonstrates a classic **post-order traversal with pruning**. At each node, you decide whether to keep or remove it based on the results from its children. No need to build explicit path lists; updating “remaining limit” in recursion suffices.  
 This pattern is common for tree pruning problems where child existence determines parent’s fate, and can be generalized to solve other conditional-tree-trimming challenges.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Count Nodes Equal to Average of Subtree(count-nodes-equal-to-average-of-subtree) (Medium)

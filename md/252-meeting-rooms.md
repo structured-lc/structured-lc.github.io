@@ -71,3 +71,12 @@ def canAttendMeetings(intervals):
 
 ### Summary
 This problem uses the **Intervals & Sorting** pattern, which appears frequently in scheduling and calendar problems (e.g., Meeting Rooms II, Merge Intervals, Insert Interval). Sorting the intervals upfront simplifies overlap detection and brings the problem to a single pass. This method is efficient, robust, and commonly used for interval overlap checks.
+
+### Tags
+Array(#array), Sorting(#sorting)
+
+### Similar Problems
+- Merge Intervals(merge-intervals) (Medium)
+- Meeting Rooms II(meeting-rooms-ii) (Medium)
+- Meeting Rooms III(meeting-rooms-iii) (Hard)
+- Points That Intersect With Cars(points-that-intersect-with-cars) (Easy)

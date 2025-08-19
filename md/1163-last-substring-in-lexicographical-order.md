@@ -99,3 +99,9 @@ def lastSubstring(s: str) -> str:
 This problem uses the **two pointer** pattern for substring comparison, avoiding full suffix sorting or unnecessary subarray generation.  
 It’s closely related to problems about lexicographical ordering, substring search, and Suffix Arrays but solved here via an elegant linear scan.  
 This approach generalizes to related interview questions: e.g., finding repeated substrings, Suffix Automaton, or lexicographical minimal substring.
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Find the Lexicographically Largest String From the Box I(find-the-lexicographically-largest-string-from-the-box-i) (Medium)

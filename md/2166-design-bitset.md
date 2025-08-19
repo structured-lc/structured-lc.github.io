@@ -134,3 +134,9 @@ class Bitset:
 
 ### Summary
 This problem uses efficient bit manipulation and lazy logic inversion to achieve O(1) per operation, a common pattern for array operations where mass updates and queries occur (segment trees use similar tricks). The concept applies in bitmap indexing, network packet processing, image masks, and set/trie data structures where bulk inversion or “global” operations must remain fast.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Design(#design)
+
+### Similar Problems
+- Design Underground System(design-underground-system) (Medium)

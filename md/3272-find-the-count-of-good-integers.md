@@ -150,3 +150,10 @@ def countGoodIntegers(n: int, k: int) -> int:
 This problem combines the palindrome property with permutation counting and divisibility checks.  
 The solution uses enumeration of palindromes, maps permutations to digit multisets, and counts valid arrangements using combinatorics/factorials, avoiding leading zeros.  
 This pattern is related to problems on **permutation/combination of multiset digits**, efficient palindrome construction, and **divisibility constraints**—applicable in advanced digit dynamic programming and number theory questions.
+
+### Tags
+Hash Table(#hash-table), Math(#math), Combinatorics(#combinatorics), Enumeration(#enumeration)
+
+### Similar Problems
+- Palindrome Number(palindrome-number) (Easy)
+- Find the Closest Palindrome(find-the-closest-palindrome) (Hard)

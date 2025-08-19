@@ -75,3 +75,9 @@ def minNumberOfFrogs(croakOfFrogs):
 
 ### Summary
 The problem is solved using a greedy counting approach, updating stage counters for each croak sound. This exact method is common for sequence validation and concurrency management, applicable to event sequencing and resource management problems.
+
+### Tags
+String(#string), Counting(#counting)
+
+### Similar Problems
+- Divide Intervals Into Minimum Number of Groups(divide-intervals-into-minimum-number-of-groups) (Medium)

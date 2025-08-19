@@ -136,3 +136,9 @@ class Solution:
 
 ### Summary
 This problem is a classic **"recursive parsing"** challenge involving sets, unions, and cartesian products, and is closely related to expression parsing and evaluation. It uses **DFS** for brace expansion and can be applied in contexts such as arithmetic expression evaluation, regular expression simplification, and template expansion in compilers or interpreters. Using recursion and sets elegantly handles uniqueness and order requirements.
+
+### Tags
+String(#string), Backtracking(#backtracking), Stack(#stack), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Brace Expansion(brace-expansion) (Medium)

@@ -84,3 +84,8 @@ def isIdealPermutation(nums):
 The key observation is that all non-local global inversions break the equality, which can be detected by checking if any element has moved more than one position from its sorted index.  
 This translates to a single scan with abs(nums[i] - i) > 1.  
 This is a classic “index displacement” check, related to problems involving sorted order and inversions, and can be applied to permutation/array manipulations with constrained swaps.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems

@@ -173,3 +173,7 @@ def find_polarized_books(books, reading_sessions):
 ### Summary
 This approach uses the **group-by pattern**, commonly applied in database problems to aggregate facts per entity, here applied in Python using dictionaries.  
 Key takeaways: Reduce to aggregates, then apply thresholds; do not scan all ratings separately for each book. This coding/data pattern is widely used in analytics and reporting scenarios.
+
+### Tags
+
+### Similar Problems

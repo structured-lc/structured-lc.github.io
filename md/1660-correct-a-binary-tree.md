@@ -103,3 +103,10 @@ class Solution:
 
 ### Summary
 This uses BFS and per-level bookkeeping to detect illegal right pointers. The pattern is typical for questions involving tree structure correction, loops in trees, and illegal child pointer detection by level order.
+
+### Tags
+Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Flatten Binary Tree to Linked List(flatten-binary-tree-to-linked-list) (Medium)
+- Flatten a Multilevel Doubly Linked List(flatten-a-multilevel-doubly-linked-list) (Medium)

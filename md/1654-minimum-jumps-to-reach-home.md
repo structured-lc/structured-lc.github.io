@@ -89,3 +89,10 @@ def minimumJumps(forbidden: List[int], a: int, b: int, x: int) -> int:
 
 ### Summary
 This problem demonstrates **BFS with state tracking** for minimum steps with constraints, a pattern frequently used for shortest path problems with additional rules.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Reachable Nodes With Restrictions(reachable-nodes-with-restrictions) (Medium)
+- Maximum Number of Jumps to Reach the Last Index(maximum-number-of-jumps-to-reach-the-last-index) (Medium)

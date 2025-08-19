@@ -88,3 +88,11 @@ def sortArrayByParity(nums):
 
 ### Summary
 This is a classic **two-pointer partitioning problem**, similar to the partition step in QuickSort, but on a simple property (parity). The pattern is **in-place partitioning** and comes up in problems where you need to group elements based on a simple predicate. The solution is efficient and easy to implement. This pattern applies to grouping numbers, colors, or objects by a binary property in an array.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Sorting(#sorting)
+
+### Similar Problems
+- Sort Array By Parity II(sort-array-by-parity-ii) (Easy)
+- Sort Even and Odd Indices Independently(sort-even-and-odd-indices-independently) (Easy)
+- Largest Number After Digit Swaps by Parity(largest-number-after-digit-swaps-by-parity) (Easy)

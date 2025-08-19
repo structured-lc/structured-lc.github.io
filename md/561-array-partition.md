@@ -70,3 +70,11 @@ def arrayPairSum(nums):
 ### Summary
 
 This problem uses a classic **greedy sorting** pattern: sorting followed by optimal group selection (every other element). This kind of technique appears in maximization problems involving pairs or triplets. Patterns like this apply in other array partitioning or pairing minimization/maximization tasks, especially where ordering enables a simple direct computation.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting), Counting Sort(#counting-sort)
+
+### Similar Problems
+- Minimum Difference Between Highest and Lowest of K Scores(minimum-difference-between-highest-and-lowest-of-k-scores) (Easy)
+- Minimum Cost of Buying Candies With Discount(minimum-cost-of-buying-candies-with-discount) (Easy)
+- All Divisions With the Highest Score of a Binary Array(all-divisions-with-the-highest-score-of-a-binary-array) (Medium)

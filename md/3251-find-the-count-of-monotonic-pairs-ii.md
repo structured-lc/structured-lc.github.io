@@ -105,3 +105,8 @@ def countOfPairs(nums):
 
 ### Summary
 This problem is a **classic DP on sequences**, with monotonic constraints on two derived arrays tightly connected through element-wise sums. The approach is broadly applicable anywhere you need to count monotonic sequences with value relationships—common in DP, interval, and prefix combinatorics. Key patterns: **DP state design, range-based DP transitions, prefix sums for optimization.**
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics), Prefix Sum(#prefix-sum)
+
+### Similar Problems

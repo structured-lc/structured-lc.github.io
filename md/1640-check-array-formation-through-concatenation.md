@@ -62,3 +62,8 @@ def canFormArray(arr, pieces):
 
 ### Summary
 This is a hash-map matching problem—a greedy walk with O(1) piece lookup, commonly seen in segment assembling and array-building-type questions.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

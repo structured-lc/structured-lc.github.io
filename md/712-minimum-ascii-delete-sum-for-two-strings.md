@@ -102,3 +102,11 @@ def minimumDeleteSum(s1: str, s2: str) -> int:
 ### Summary
 This problem is a classic example of **2D dynamic programming** for string similarity, very similar to edit distance, longest common subsequence, and minimum insert/delete distance problems. The main twist is optimizing for sum of deleted ASCII values instead of operation counts.  
 This approach is broadly useful for any problems involving optimal subsequences or minimum change costs on two sequences.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Edit Distance(edit-distance) (Medium)
+- Longest Increasing Subsequence(longest-increasing-subsequence) (Medium)
+- Delete Operation for Two Strings(delete-operation-for-two-strings) (Medium)

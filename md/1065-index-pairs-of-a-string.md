@@ -87,3 +87,8 @@ def indexPairs(text, words):
 
 ### Summary
 This problem fits the *substring search* or *sliding window* pattern. Brute-force is viable due to tight constraints, but using a Trie can optimize for larger inputs or heavy prefix reuse. The direct approach—using word-set membership and scanning substrings up to max word length—is efficient and easy to implement. This technique is applicable to problems where you need to find all substrings in a text matching a dictionary, such as word break or string matching with multiple patterns.
+
+### Tags
+Array(#array), String(#string), Trie(#trie), Sorting(#sorting)
+
+### Similar Problems

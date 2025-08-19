@@ -95,3 +95,11 @@ def checkValid(matrix):
 
 ### Summary
 This problem is a matrix/array validation pattern, closely linked to checking permutations and constraints like in Valid Sudoku (row/column uniqueness). The overall approach uses direct validation via auxiliary arrays per row/column (hashing or fixed-size booleans), which is a common trick when the input range is limited and performance matters. This coding pattern also applies to puzzles, grid validation, and game logic.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Matrix(#matrix)
+
+### Similar Problems
+- Valid Sudoku(valid-sudoku) (Medium)
+- Matrix Diagonal Sum(matrix-diagonal-sum) (Easy)
+- First Completely Painted Row or Column(first-completely-painted-row-or-column) (Medium)

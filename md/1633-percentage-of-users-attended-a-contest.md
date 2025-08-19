@@ -65,3 +65,9 @@ def percentage_attended(users, register):
 
 ### Summary
 A simple **set** and **division** problem often posed as an SQL data query—common in analytics and business dashboard scenarios.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Queries Quality and Percentage(queries-quality-and-percentage) (Easy)

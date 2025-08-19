@@ -115,3 +115,8 @@ def fillSpecialGrid(n):
 
 ### Summary
 This problem uses the **divide and conquer** pattern, leveraging recursion and quadrant ordering to efficiently construct a 2ⁿ × 2ⁿ "special" grid. The key is to recursively solve for a smaller grid, then fill each quadrant with the correct offset to satisfy the constraints. This technique resembles recursive construction and assembling subproblems, widely applicable in multi-dimensional divide-and-conquer scenarios, such as certain tiling, image processing, or matrix problems.
+
+### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer), Matrix(#matrix)
+
+### Similar Problems

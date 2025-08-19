@@ -117,3 +117,9 @@ class Solution:
 
 ### Summary
 This problem is a classic **backtracking with prefix pruning**, with a Trie or hashmap optimization for rapid prefix lookup. The core pattern—extending candidates stepwise and pruning illegal paths early—is central to many subsequence and combinatorial search problems, such as word ladders, crossword construction, and recursive puzzle search. The use of prefix data structures enables efficient exploration and is widely applicable.
+
+### Tags
+Array(#array), String(#string), Backtracking(#backtracking), Trie(#trie)
+
+### Similar Problems
+- Valid Word Square(valid-word-square) (Easy)

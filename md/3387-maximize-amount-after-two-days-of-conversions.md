@@ -155,3 +155,9 @@ def maximize_amount_after_two_days(
 This problem is a classic **maximum product path in a weighted, bidirectional graph**, solved efficiently via a dynamic programming approach using modified Bellman-Ford.  
 The coding pattern—graph max product DP/BFS—is common for **arbitrage**, **currency exchange**, and similar optimal conversion/cost minimization problems.  
 The template can be applied to networks of rates/odds/efficiency (e.g., supply chain conversions, chemical reactions).
+
+### Tags
+Array(#array), String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
+
+### Similar Problems
+- Evaluate Division(evaluate-division) (Medium)

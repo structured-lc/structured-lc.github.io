@@ -103,3 +103,8 @@ Common patterns:
 - Breaking a hierarchical identifier into all ancestor paths (files, DNS, folder paths).
 - Used in log processing, file system analytics, and hierarchical counters.
 No tricky data structures; just systematic string handling and aggregation using dictionaries.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems

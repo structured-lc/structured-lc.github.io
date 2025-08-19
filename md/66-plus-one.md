@@ -84,3 +84,13 @@ def plusOne(digits):
 This approach uses a "simulated addition" pattern—manual digit manipulation from least to most significant, managing carry-over as needed.  
 It’s very common whenever you have numbers split by digit in an array or list—common in problems that simulate calculators, big integers, or special number formats.  
 This code pattern applies to big integer addition, incrementing string-based numbers, or any scenario where you must avoid integer overflow for large input sizes.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems
+- Multiply Strings(multiply-strings) (Medium)
+- Add Binary(add-binary) (Easy)
+- Plus One Linked List(plus-one-linked-list) (Medium)
+- Add to Array-Form of Integer(add-to-array-form-of-integer) (Easy)
+- Minimum Operations to Reduce an Integer to 0(minimum-operations-to-reduce-an-integer-to-0) (Medium)

@@ -142,3 +142,8 @@ def minTravelTime(l, n, k, position, time):
 
 ### Summary
 This problem uses the **merge intervals with cost minimization** pattern, combining interval DP and memoization. It's similar to interval DP patterns in "Minimum Cost to Merge Stones," where you minimize the total cost via optimal sequence of merges. This technique applies to problems where merge order and grouping matter, such as optimal BST, file merging, or chain matrix multiplication.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
+
+### Similar Problems

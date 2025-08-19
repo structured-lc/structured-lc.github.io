@@ -67,3 +67,11 @@ def mostExpensiveItem(primeOne, primeTwo):
 
 ### Summary
 This problem is a direct application of a math theorem (Chicken McNugget Theorem) for two coprime denominations, leading to an O(1) solution. The technique of reducing a combinatorial, subset-sum-style question to a number-theory formula is a powerful tool and sometimes appears in interview math-brain-teasers or optimization variants. The dynamic programming "coin change" or "unbounded knapsack" pattern is related for the more general question of which prices are constructible, especially if primes or coprimeness can’t be assumed.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Number Theory(#number-theory)
+
+### Similar Problems
+- Coin Change(coin-change) (Medium)
+- Minimum Cost For Tickets(minimum-cost-for-tickets) (Medium)
+- Minimum Number of Coins to be Added(minimum-number-of-coins-to-be-added) (Medium)

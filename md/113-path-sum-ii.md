@@ -137,3 +137,13 @@ def pathSum(root, targetSum):
 ### Summary
 This problem is a classic application of DFS with backtracking to find all root-to-leaf paths meeting a condition.  
 It illustrates tree traversal, state passing, and backtracking—patterns common in path, sum, and subset-finding problems on trees and graphs. Suitable for both coding interviews and understanding recursive exploration.
+
+### Tags
+Backtracking(#backtracking), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Path Sum(path-sum) (Easy)
+- Binary Tree Paths(binary-tree-paths) (Easy)
+- Path Sum III(path-sum-iii) (Medium)
+- Path Sum IV(path-sum-iv) (Medium)
+- Step-By-Step Directions From a Binary Tree Node to Another(step-by-step-directions-from-a-binary-tree-node-to-another) (Medium)

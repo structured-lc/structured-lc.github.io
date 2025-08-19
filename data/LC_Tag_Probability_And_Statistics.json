@@ -1,9 +1,9 @@
 [
-    {"number": 470, "slug": "implement-rand10-using-rand7", "title": "Implement Rand10() Using Rand7()", "difficulty": "Medium"},
-    {"number": 808, "slug": "soup-servings", "title": "Soup Servings", "difficulty": "Medium"},
-    {"number": 837, "slug": "new-21-game", "title": "New 21 Game", "difficulty": "Medium"},
-    {"number": 1093, "slug": "statistics-from-a-large-sample", "title": "Statistics from a Large Sample", "difficulty": "Medium"},
-    {"number": 1227, "slug": "airplane-seat-assignment-probability", "title": "Airplane Seat Assignment Probability", "difficulty": "Medium"},
-    {"number": 1230, "slug": "toss-strange-coins", "title": "Toss Strange Coins", "difficulty": "Medium"},
-    {"number": 1467, "slug": "probability-of-a-two-boxes-having-the-same-number-of-distinct-balls", "title": "Probability of a Two Boxes Having The Same Number of Distinct Balls", "difficulty": "Hard"}
+    {"number": 470, "slug": "implement-rand10-using-rand7", "title": "Implement Rand10() Using Rand7()", "difficulty": "Medium", "tags": ["Math", "Rejection Sampling", "Randomized", "Probability and Statistics"], "similar_problems": []},
+    {"number": 808, "slug": "soup-servings", "title": "Soup Servings", "difficulty": "Medium", "tags": ["Math", "Dynamic Programming", "Probability and Statistics"], "similar_problems": []},
+    {"number": 837, "slug": "new-21-game", "title": "New 21 Game", "difficulty": "Medium", "tags": ["Math", "Dynamic Programming", "Sliding Window", "Probability and Statistics"], "similar_problems": []},
+    {"number": 1093, "slug": "statistics-from-a-large-sample", "title": "Statistics from a Large Sample", "difficulty": "Medium", "tags": ["Array", "Math", "Probability and Statistics"], "similar_problems": []},
+    {"number": 1227, "slug": "airplane-seat-assignment-probability", "title": "Airplane Seat Assignment Probability", "difficulty": "Medium", "tags": ["Math", "Dynamic Programming", "Brainteaser", "Probability and Statistics"], "similar_problems": []},
+    {"number": 1230, "slug": "toss-strange-coins", "title": "Toss Strange Coins", "difficulty": "Medium", "tags": ["Array", "Math", "Dynamic Programming", "Probability and Statistics"], "similar_problems": []},
+    {"number": 1467, "slug": "probability-of-a-two-boxes-having-the-same-number-of-distinct-balls", "title": "Probability of a Two Boxes Having The Same Number of Distinct Balls", "difficulty": "Hard", "tags": ["Array", "Math", "Dynamic Programming", "Backtracking", "Combinatorics", "Probability and Statistics"], "similar_problems": []}
 ]

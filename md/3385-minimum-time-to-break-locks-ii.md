@@ -163,3 +163,8 @@ def minTimeToBreakLocks(strength):
 ### Summary
 This problem is a classic use of the **assignment problem** (minimum cost bipartite matching), solved here with the **Hungarian Algorithm** for n ≤ 80. Patterns include dynamic programming on permutations, cost matrix construction, and combinatorial optimization.  
 The Hungarian algorithm appears elsewhere in task scheduling, work assignment, or resource allocation settings where a one-to-one minimal cost mapping is required. The problem also highlights brute-force boundaries and where traditional greedy fails.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Graph(#graph)
+
+### Similar Problems

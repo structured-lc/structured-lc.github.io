@@ -89,3 +89,8 @@ def minimumLength(s: str) -> int:
 This problem is a *frequency-reduction* pattern, with careful constraint handling. The operation behaves like greedy pair-removal, but you can never delete all occurrences.  
 The main coding pattern is *hashing for frequency counting* plus a *mathematical insight* about the reduction rules, commonly seen in string transformation problems.  
 Useful pattern to know for problems where restricted pair removals must be optimized globally.
+
+### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems

@@ -93,3 +93,9 @@ def shortestPathBinaryMatrix(grid):
 
 ### Summary
 This problem uses the **Breadth-First Search** (**BFS**) pattern for shortest path in an unweighted grid. BFS is a common technique for matrix/graph traversal where the earliest arrival at a node gives the minimal path. You can reuse this pattern for maze solving, number of islands, or shortest path on chessboards.
+
+### Tags
+Array(#array), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- Paths in Matrix Whose Sum Is Divisible by K(paths-in-matrix-whose-sum-is-divisible-by-k) (Hard)

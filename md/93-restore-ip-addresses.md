@@ -132,3 +132,9 @@ def restore_ip_addresses(s: str) -> list[str]:
 This is a standard **backtracking** problem: try all possible splits while pruning invalid segments early.  
 Typical for “restore with splitting under constraints” style questions.  
 Similar backtracking patterns are broadly applicable in “string segmentation”, “combination sum”, and “palindrome partitioning” interview problems.
+
+### Tags
+String(#string), Backtracking(#backtracking)
+
+### Similar Problems
+- IP to CIDR(ip-to-cidr) (Medium)

@@ -141,3 +141,9 @@ def get_parents(mouse, cat, turn, graph):
 
 ### Summary
 This problem is a classic **game theory / DP on graphs** question, using a form of **reverse BFS (retrograde analysis)** to propagate win/loss/draw states backward from the known ends. The state representation and propagation pattern is common in problems about two-player games with full information, such as checkers, chess endgames, or many “perfect information” games. This pattern can be generalized to other board or state games with discrete moves and stateful draws.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Graph(#graph), Topological Sort(#topological-sort), Memoization(#memoization), Game Theory(#game-theory)
+
+### Similar Problems
+- Cat and Mouse II(cat-and-mouse-ii) (Hard)

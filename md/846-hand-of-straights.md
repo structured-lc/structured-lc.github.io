@@ -88,3 +88,8 @@ def isNStraightHand(hand, groupSize):
 
 ### Summary
 This problem is a **Greedy + Hashmap** pattern, where we greedily match the smallest available card into consecutive groups using a frequency map. Sorting ensures we always process in order without missing any possible required sequence. This pattern occurs in problems involving multiset grouping, consecutive intervals, and is related to the "sweep line" and "multiset simulation" family of problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

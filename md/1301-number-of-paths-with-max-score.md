@@ -104,3 +104,8 @@ def pathsWithMaxScore(board: List[str]) -> List[int]:
 
 ### Summary
 This uses a **dynamic programming** pattern on grids, maintaining for each cell both the optimal-score and number of paths. The DP state stores a tuple (score, ways), and each cell considers its three possible incoming neighbors, propagating scores/ways toward the top-left. This is a classic 2D DP table problem, broadly applicable to many grid navigation and optimal-path variants.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems

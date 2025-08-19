@@ -78,3 +78,9 @@ def minimumSumSubarray(nums, l, r):
 
 ### Summary
 This problem uses the **sliding window** and **brute force** subarray enumeration pattern. The brute-force nested loop is justified since constraints aren’t huge and the window range is controllable. This pattern often appears in substring or subarray minimum or maximum sum/range queries with fixed window constraints. If further optimization is necessary, using **prefix sums** or **deque** for sliding window minima can help in more advanced variants.
+
+### Tags
+Array(#array), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Minimum Size Subarray Sum(minimum-size-subarray-sum) (Medium)

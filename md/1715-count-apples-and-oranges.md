@@ -149,3 +149,8 @@ print(count_apples_and_oranges(boxes, chests)) # Output: (9, 12)
 This solution uses the classic **left join** and aggregation pattern, a common relational data pattern in SQL and in-memory joins in Python.  
 It’s a generic "sum over parent + optional child" pattern, useful in accounting, resource aggregation, and any case with *optional hierarchical linked totals*.  
 Understanding joins and aggregation is essential for data-oriented questions.
+
+### Tags
+Database(#database)
+
+### Similar Problems

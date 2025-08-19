@@ -90,3 +90,8 @@ def countKConstraintSubstrings(s: str, k: int) -> int:
 This problem uses a nested loop (brute force with early exit per substring) to count substrings that satisfy simple binary constraints.  
 It highlights the **substring enumeration** and **early break** optimization pattern appropriate under small constraints.  
 Similar logic frequently appears in substring analysis, e.g., counting substrings that contain at most k distinct characters, sliding window for longest subarray, etc.
+
+### Tags
+String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems

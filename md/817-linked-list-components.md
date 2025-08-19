@@ -88,3 +88,9 @@ def numComponents(head, nums):
 
 ### Summary
 This approach uses the **set** pattern and a **linear traversal** with a simple state variable to detect transitions between inside/outside valid components. The pattern (set for O(1) membership, scan for state change) appears in component labeling, consecutive segment problems, and island counting in arrays/graphs. It's broadly applicable wherever we process intervals or groupings in linear data with membership criteria.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Linked List(#linked-list)
+
+### Similar Problems
+- Merge Nodes in Between Zeros(merge-nodes-in-between-zeros) (Medium)

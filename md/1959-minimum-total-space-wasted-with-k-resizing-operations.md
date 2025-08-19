@@ -115,3 +115,8 @@ def minSpaceWastedKResizing(nums, k):
 This problem uses the **DP on partitioning** pattern: for sequences and allowed splits, we minimize (or maximize) a sum over segments.  
 It's common in minimizing cost across k subarrays, such as **DP for k-Partitions** (e.g., Split Array Largest Sum, Painters Partition, etc.). Efficient prefix sums and maximizing per segment are typical techniques for this pattern.  
 This approach models the minimum wasted space for dynamic sizing, balancing between segmenting (resizing often) and fewer resize operations.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

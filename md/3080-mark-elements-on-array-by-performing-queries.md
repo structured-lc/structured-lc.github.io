@@ -130,3 +130,8 @@ def unmarked_sum_after_queries(nums, queries):
 ### Summary
 This is a **heap-based simulation** problem, combining array scanning, marking, and efficient smallest retrieval.  
 The key pattern is min-heap + boolean marking, which also appears in "Kth smallest in matrix," set/priority queue problems, and scenarios where frequent queries require efficiently updating/removing/selecting minimal elements under constraints.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation)
+
+### Similar Problems

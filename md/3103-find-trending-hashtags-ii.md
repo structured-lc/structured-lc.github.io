@@ -132,3 +132,8 @@ def findTrendingHashtagsII(tweets):
 
 ### Summary
 This problem requires text parsing, map counting, and custom sorting—classic patterns seen in frequency and string problems. Core approaches involve hash maps for frequency, regex/text parsing, and multi-criteria sort. This pattern is reusable for top-K frequency queries (hashtags, words, mentions) in any stream or log setting, and the ideas generalize to large-scale data processing with tools like MapReduce or SQL window functions.
+
+### Tags
+Database(#database)
+
+### Similar Problems

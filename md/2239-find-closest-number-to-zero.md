@@ -74,3 +74,9 @@ def findClosestNumber(nums):
 
 ### Summary
 This problem uses the classic "track optimal value while iterating" (one-pass, O(n)) pattern. This approach is common for finding minimum/maximum or best-fit values. The comparison logic (absolute value, tie-breaking by value) is reusable for other problems where you need to select an element based on multiple criteria. This pattern is also applicable in streaming scenarios or whenever you want a solution with minimal space and linear time.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Find K Closest Elements(find-k-closest-elements) (Medium)

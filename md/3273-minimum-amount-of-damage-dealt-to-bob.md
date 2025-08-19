@@ -95,3 +95,10 @@ def minimum_damage_dealt_to_bob(enemies, attack):
 
 ### Summary
 This problem applies the greedy scheduling pattern, similar to “minimize weighted completion time” by always attacking the enemy with highest damage first. It’s commonly seen in greedy and scheduling problems and can be adapted to variants involving priorities, weights, or additional constraints. The core reasoning involves sorting tasks by cost-benefit and greedily eliminating most “expensive” contributors to the accumulation.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Time to Complete Trips(minimum-time-to-complete-trips) (Medium)
+- Minimum Penalty for a Shop(minimum-penalty-for-a-shop) (Medium)

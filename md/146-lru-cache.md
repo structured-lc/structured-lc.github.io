@@ -149,3 +149,12 @@ class LRUCache:
 This problem demonstrates the **Hash Map + Doubly Linked List** pattern, a classic approach for O(1) cache management.  
 It's a common design used in memory caches, browser history, and session management—anywhere LRU eviction is beneficial.  
 Being able to design LRU structures efficiently is a must-have for system design and interviews targeting scalable, high-performance code.
+
+### Tags
+Hash Table(#hash-table), Linked List(#linked-list), Design(#design), Doubly-Linked List(#doubly-linked-list)
+
+### Similar Problems
+- LFU Cache(lfu-cache) (Hard)
+- Design In-Memory File System(design-in-memory-file-system) (Hard)
+- Design Compressed String Iterator(design-compressed-string-iterator) (Easy)
+- Design Most Recently Used Queue(design-most-recently-used-queue) (Medium)

@@ -101,3 +101,10 @@ def countCharacters(words, chars):
 ### Summary
 This problem follows the **frequency array/counter pattern**, where you compare frequency requirements across two sources.  
 It can be applied in anagrams, subset string matches, inventory problems, and other resource-checking tasks where item counts matter. The solution is efficient due to the small and bounded alphabet, and direct array index use instead of repeated searches.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Ransom Note(ransom-note) (Easy)
+- Rearrange Characters to Make Target String(rearrange-characters-to-make-target-string) (Easy)

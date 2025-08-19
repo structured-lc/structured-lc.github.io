@@ -113,3 +113,9 @@ def maxNumOfSubstrings(s):
 
 ### Summary
 This problem uses the **greedy** and **interval scheduling** pattern: find all candidate non-overlapping intervals and select the maximum number by sorting on their end points. The expansion step ensures we only pick intervals where all occurrences of each contained character are strictly inside, resulting in valid substrings. This "merge intervals with constraints" pattern appears in parsing, substring extraction, and certain DP optimizations.
+
+### Tags
+String(#string), Greedy(#greedy)
+
+### Similar Problems
+- Maximum Number of Non-overlapping Palindrome Substrings(maximum-number-of-non-overlapping-palindrome-substrings) (Hard)

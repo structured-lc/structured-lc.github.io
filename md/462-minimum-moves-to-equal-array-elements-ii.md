@@ -90,3 +90,17 @@ def minMoves2(nums):
 
 ### Summary
 This problem demonstrates the importance of understanding mathematical properties like the median minimizing absolute deviations. Unlike the first version of this problem, the ability to both increment and decrement elements makes the median the optimal target. This pattern appears in many optimization problems involving minimizing total distance or cost, such as facility location problems and data clustering. The key insight is recognizing when a problem reduces to finding the median.
+
+### Tags
+Array(#array), Math(#math), Sorting(#sorting)
+
+### Similar Problems
+- Best Meeting Point(best-meeting-point) (Hard)
+- Minimum Moves to Equal Array Elements(minimum-moves-to-equal-array-elements) (Medium)
+- Minimum Operations to Make a Uni-Value Grid(minimum-operations-to-make-a-uni-value-grid) (Medium)
+- Removing Minimum Number of Magic Beans(removing-minimum-number-of-magic-beans) (Medium)
+- Minimum Cost to Make Array Equal(minimum-cost-to-make-array-equal) (Hard)
+- Minimum Operations to Make All Array Elements Equal(minimum-operations-to-make-all-array-elements-equal) (Medium)
+- Minimum Cost to Make Array Equalindromic(minimum-cost-to-make-array-equalindromic) (Medium)
+- Minimum Operations to Make Subarray Elements Equal(minimum-operations-to-make-subarray-elements-equal) (Medium)
+- Minimum Operations to Make Elements Within K Subarrays Equal(minimum-operations-to-make-elements-within-k-subarrays-equal) (Hard)

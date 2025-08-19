@@ -85,3 +85,11 @@ This problem is a **reverse engineering** and **modulo optimization** pattern.
 Instead of brute-force BFS/DFS, we solve it by working backwards, reducing the problem via mathematics.  
 The modulo trick dramatically cuts down redundant subtractions, making the algorithm efficient even for large coordinate ranges.  
 This reverse thinking approach is also useful for other grid/matrix reachability and number transformation problems.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Number of Ways to Reach a Position After Exactly k Steps(number-of-ways-to-reach-a-position-after-exactly-k-steps) (Medium)
+- Check if Point Is Reachable(check-if-point-is-reachable) (Hard)
+- Determine if a Cell Is Reachable at a Given Time(determine-if-a-cell-is-reachable-at-a-given-time) (Medium)

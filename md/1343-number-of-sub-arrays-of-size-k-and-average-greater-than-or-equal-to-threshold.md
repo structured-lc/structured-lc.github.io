@@ -99,3 +99,11 @@ def numOfSubarrays(arr, k, threshold):
 This solution is a textbook example of the sliding window pattern, a powerful and efficient way to handle problems involving subarrays of fixed size.  
 Sliding window avoids redundant work by maintaining state (here, the sum) as you move, turning an O(nk) brute force into O(n).  
 This coding pattern is broadly useful for subarray problems involving sums, averages, or maximum/minimum in a fixed-size window—like Maximum Sum Subarray, Minimum Size Subarray Sum, or Moving Average from Data Stream.
+
+### Tags
+Array(#array), Sliding Window(#sliding-window)
+
+### Similar Problems
+- K Radius Subarray Averages(k-radius-subarray-averages) (Medium)
+- Count Subarrays With Median K(count-subarrays-with-median-k) (Hard)
+- Apply Operations to Make All Array Elements Equal to Zero(apply-operations-to-make-all-array-elements-equal-to-zero) (Medium)

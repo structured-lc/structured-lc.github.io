@@ -110,3 +110,8 @@ def maximize_tastiness(price, tastiness, maxAmount, maxCoupons):
 
 ### Summary
 This problem is a direct application of the **Knapsack DP Pattern with an extra resource constraint** (coupons). Variations of this idea are common in resource allocation and optimization problems—look for dual-resource DP techniques. Techniques for reducing DP dimensions (e.g., rolling arrays, pruning) are useful when either constraint can be very large.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

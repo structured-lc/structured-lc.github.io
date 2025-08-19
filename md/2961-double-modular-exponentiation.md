@@ -81,3 +81,8 @@ def getGoodIndices(variables, target):
 
 ### Summary
 This problem is about applying **modular exponentiation** twice in sequence and is best solved using **fast power methods** (pow with mod in Python, or manual fast power). This pattern is common in number theory, cryptography, and other algorithm problems where large exponentials with mod need to be computed efficiently. The key “pattern” here is the stackable use of mod power, leveraging math identities and careful computational order for optimization and correctness.
+
+### Tags
+Array(#array), Math(#math), Simulation(#simulation)
+
+### Similar Problems

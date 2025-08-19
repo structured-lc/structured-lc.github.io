@@ -107,3 +107,10 @@ def countAnagrams(s):
 
 ### Summary
 This problem is a classic example of the **multinomial coefficient** pattern, often combined with **modulo arithmetic** and **modular inverses** due to combinatorial explosion. Precomputing factorials and their inverses is a common trick for O(1) binomial/multinomial computations. The same principle applies in counting permutations with duplicates, some DP-on-strings problems, and advanced probability scenarios.
+
+### Tags
+Hash Table(#hash-table), Math(#math), String(#string), Combinatorics(#combinatorics), Counting(#counting)
+
+### Similar Problems
+- Group Anagrams(group-anagrams) (Medium)
+- Count Ways to Build Rooms in an Ant Colony(count-ways-to-build-rooms-in-an-ant-colony) (Hard)

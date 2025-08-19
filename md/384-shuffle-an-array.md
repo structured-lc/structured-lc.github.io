@@ -109,3 +109,8 @@ class Solution:
 ### Summary
 
 This problem is a classic use of the **Fisher-Yates Shuffle** algorithm—the gold standard for unbiased, efficient array shuffling. The coding pattern involves storing an original reference for reset functionality, and mutating (shuffling) a working copy for the shuffle method. This design commonly appears in randomized algorithms, card shuffling simulators, and puzzles.
+
+### Tags
+Array(#array), Math(#math), Design(#design), Randomized(#randomized)
+
+### Similar Problems

@@ -123,3 +123,12 @@ def closestValue(root: TreeNode, target: float) -> int:
 
 ### Summary
 This problem uses the classic **BST search** pattern, efficiently narrowing down the search space using BST properties to achieve O(h) time. Recognizing how to prune subtrees quickly is important, not just for finding values but for a wide variety of interval/count/range queries in BST-style interview questions. This pattern appears in problems requiring fast "closest" or "range" value lookups in sorted data structures.
+
+### Tags
+Binary Search(#binary-search), Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Count Complete Tree Nodes(count-complete-tree-nodes) (Easy)
+- Closest Binary Search Tree Value II(closest-binary-search-tree-value-ii) (Hard)
+- Search in a Binary Search Tree(search-in-a-binary-search-tree) (Easy)
+- Closest Nodes Queries in a Binary Search Tree(closest-nodes-queries-in-a-binary-search-tree) (Medium)

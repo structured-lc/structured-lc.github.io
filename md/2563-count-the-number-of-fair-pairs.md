@@ -90,3 +90,12 @@ def countFairPairs(nums, lower, upper):
 
 ### Summary
 This problem uses the sorted-two-pointer pattern, often applied in pair sum/range count problems for arrays. It transforms an O(n²) search into an O(n log n) method by leveraging array sorting and efficient counting of pair sums within a window. The approach is common in subarray/pair-sum and windowed counting problems, and is a building block for more advanced questions involving offline queries or data structure integration.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Count of Range Sum(count-of-range-sum) (Hard)
+- Finding Pairs With a Certain Sum(finding-pairs-with-a-certain-sum) (Medium)
+- Count Number of Pairs With Absolute Difference K(count-number-of-pairs-with-absolute-difference-k) (Easy)
+- Count Pairs Whose Sum is Less than Target(count-pairs-whose-sum-is-less-than-target) (Easy)

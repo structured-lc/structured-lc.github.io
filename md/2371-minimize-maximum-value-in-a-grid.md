@@ -148,3 +148,9 @@ def minimizeMaxValueGrid(grid):
 
 ### Summary
 This is a classic **matrix relabeling under precedence constraints** problem. It relies on greedy + sorting, with tracking arrays for row and column "frontiers." The pattern is applicable to other problems involving grid relabeling, scheduling, DP with row/col monotonicity, and other "topological order" settings.
+
+### Tags
+Array(#array), Union Find(#union-find), Graph(#graph), Topological Sort(#topological-sort), Sorting(#sorting), Matrix(#matrix)
+
+### Similar Problems
+- Candy(candy) (Hard)

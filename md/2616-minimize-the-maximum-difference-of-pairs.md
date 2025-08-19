@@ -110,3 +110,10 @@ This "binary search on answer + greedy checker" approach is common in array part
 - Split Array Largest Sum,  
 - Aggressive Cows (partitioning stalls), etc.  
 Very efficient and robust for problems asking "minimize some maximum/minimum over subsets subject to constraints."
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Absolute Difference(minimum-absolute-difference) (Easy)
+- Minimum Difference Between Largest and Smallest Value in Three Moves(minimum-difference-between-largest-and-smallest-value-in-three-moves) (Medium)

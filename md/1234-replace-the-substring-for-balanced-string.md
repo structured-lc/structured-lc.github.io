@@ -102,3 +102,8 @@ def balancedString(s):
 
 ### Summary
 This problem is a classic variant of the **sliding window** technique to find the minimum window that fixes a global property (here, character count balance). The approach generalizes to other substring minimality or replacement problems, and sliding window is a common coding pattern for these.
+
+### Tags
+String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems

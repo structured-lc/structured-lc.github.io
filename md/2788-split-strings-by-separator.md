@@ -77,3 +77,9 @@ def split_words_by_separator(words, separator):
 
 ### Summary
 The approach uses basic string traversal and substring-building—classic for custom parsing problems, especially where use of high-level split/join is discouraged. This pattern frequently appears in log parsing, custom delimiters in data files, and anywhere fine-tuned string processing is required, and it trains careful attention to string boundaries and empty substring handling.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems
+- Split a String in Balanced Strings(split-a-string-in-balanced-strings) (Easy)

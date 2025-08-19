@@ -72,3 +72,8 @@ def reformatDate(date: str) -> str:
 
 ### Summary
 This is a **string parsing and mapping** problem, common in data normalization and transformation. The direct mapping pattern applies widely in code that interfaces with dates from multiple sources.
+
+### Tags
+String(#string)
+
+### Similar Problems

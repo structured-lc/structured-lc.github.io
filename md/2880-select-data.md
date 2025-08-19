@@ -94,3 +94,7 @@ def selectData(students: pd.DataFrame) -> pd.DataFrame:
 ### Summary
 This problem demonstrates the classic "filter and project" pattern in data manipulation, directly analogous to SQL's selection and projection.  
 It is a fundamental pandas/dataframe operation, appearing everywhere data is queried by value and specific columns are needed—such as filtering user logs, extracting features, or preparing datasets for modeling.
+
+### Tags
+
+### Similar Problems

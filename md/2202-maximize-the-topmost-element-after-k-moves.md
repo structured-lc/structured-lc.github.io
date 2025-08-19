@@ -112,3 +112,9 @@ def maximumTop(nums, k):
 This is a **"simulation + greedy analysis"** problem, but the optimal solution is built on reasoning about how the "removed pool" expands with each move — no need for actual pile simulation.  
 This pattern of simulating constrained sequence of removals and replacements to optimize some value (here, maximum top) is common in **stack manipulation** and game/priority queue problems.  
 Efficiently picking max from a prefix, and handling odd/even moves or "remaining move" parity, comes up in similar questions involving k-removals or k-operations on lists.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems
+- Gas Station(gas-station) (Medium)

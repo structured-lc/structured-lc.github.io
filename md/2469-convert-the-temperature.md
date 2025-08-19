@@ -79,3 +79,9 @@ def convertTemperature(celsius: float) -> list[float]:
 This is an example of a **direct formula application** pattern—just implement explicit mathematical formulas.  
 It's common for introductory problems or places where the system’s behavior is defined entirely by well-known equations, such as unit conversions.  
 Patterns like this apply to weight conversions, unit conversions in physics, or currency converters, where the challenge is mainly accuracy and clarity.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Smallest Even Multiple(smallest-even-multiple) (Easy)

@@ -82,3 +82,9 @@ Hint: The in-place marking trick relies on 1..n indexing. A hash map is needed f
 ### Summary
 
 This problem involves detecting a duplicate and missing number in a 1..n array by leveraging the array indices as markers—a common pattern in array manipulation problems. The in-place marking technique is efficient and commonly used for such scenarios. This approach is also seen in problems like "Find All Numbers Disappeared in an Array" and "Find the Duplicate Number."
+
+### Tags
+Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Sorting(#sorting)
+
+### Similar Problems
+- Find the Duplicate Number(find-the-duplicate-number) (Medium)

@@ -88,3 +88,8 @@ def partitionString(s: str) -> int:
 This is a classic greedy partitioning problem, using a sliding window and set for uniqueness tracking per segment.  
 It demonstrates the greedy pattern: at each character, extend the current segment as long as possible without violating the uniqueness condition.  
 Variants of this pattern are common in substring/partition/unique-letter type problems (e.g., Longest Substring Without Repeating Characters).
+
+### Tags
+Hash Table(#hash-table), String(#string), Trie(#trie), Simulation(#simulation)
+
+### Similar Problems

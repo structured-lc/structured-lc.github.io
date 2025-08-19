@@ -59,3 +59,8 @@ def destCity(paths):
 
 ### Summary
 This uses a hash set for quick membership lookup — a classic set difference task, common for graph endpoint detection and unique elements in lists.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string)
+
+### Similar Problems

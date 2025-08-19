@@ -107,3 +107,10 @@ def countCompleteSubstrings(word: str, k: int) -> int:
 This problem uses the multiple sliding window and segment partitioning patterns.  
 We segment the input at large adjacent differences, then for each segment, apply a sliding window over each possible window size (unique \* k), efficiently tracking character counts to identify valid "complete" substrings.  
 This pattern generalizes to problems involving substring uniqueness and frequency constraints, and showcases careful window state maintenance and segmentation techniques.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Number of Substrings Containing All Three Characters(number-of-substrings-containing-all-three-characters) (Medium)
+- Count Substrings Without Repeating Character(count-substrings-without-repeating-character) (Medium)

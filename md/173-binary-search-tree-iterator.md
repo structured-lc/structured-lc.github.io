@@ -147,3 +147,14 @@ class BSTIterator:
 
 ### Summary
 This problem is a classical use of the *in-order iterative traversal* pattern using a stack for a BST. The pattern allows traversal with minimal memory (O(h)) and enables average O(1) stepping through the tree. This design, decoupling state-of-traversal from the tree structure, is widely useful for tree traversal problems, flattening iterators, and scenarios requiring partial traversal or pausing/resuming tree walks.
+
+### Tags
+Stack(#stack), Tree(#tree), Design(#design), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree), Iterator(#iterator)
+
+### Similar Problems
+- Binary Tree Inorder Traversal(binary-tree-inorder-traversal) (Easy)
+- Flatten 2D Vector(flatten-2d-vector) (Medium)
+- Zigzag Iterator(zigzag-iterator) (Medium)
+- Peeking Iterator(peeking-iterator) (Medium)
+- Inorder Successor in BST(inorder-successor-in-bst) (Medium)
+- Binary Search Tree Iterator II(binary-search-tree-iterator-ii) (Medium)

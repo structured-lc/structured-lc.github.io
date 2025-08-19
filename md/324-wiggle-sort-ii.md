@@ -114,3 +114,12 @@ def wiggleSort(nums):
 
 ### Summary
 This solution applies the **Dutch National Flag pattern** with virtual indexing and in-place QuickSelect to partition around the median, producing the required wiggle order in a single pass and constant extra space. The partitioning and index mapping is a useful approach in many rearrangement and bucket problems, e.g., three-color sort, rearrange evens/odds, sort colors/problems involving relative order constraints.
+
+### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer), Greedy(#greedy), Sorting(#sorting), Quickselect(#quickselect)
+
+### Similar Problems
+- Sort Colors(sort-colors) (Medium)
+- Kth Largest Element in an Array(kth-largest-element-in-an-array) (Medium)
+- Wiggle Sort(wiggle-sort) (Medium)
+- Array With Elements Not Equal to Average of Neighbors(array-with-elements-not-equal-to-average-of-neighbors) (Medium)

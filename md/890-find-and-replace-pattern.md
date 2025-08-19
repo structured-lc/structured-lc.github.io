@@ -104,3 +104,10 @@ def findAndReplacePattern(words, pattern):
 This approach uses the *bijection mapping* pattern—ensuring a 1-1 correspondence between two sequences.  
 This is a common requirement in problems involving isomorphism, like checking if two strings are isomorphic, or reconstructing mappings in substitution ciphers.  
 The pattern can be reused in problems that require unique correspondence between elements of two collections.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Isomorphic Strings(isomorphic-strings) (Easy)
+- Word Pattern(word-pattern) (Easy)

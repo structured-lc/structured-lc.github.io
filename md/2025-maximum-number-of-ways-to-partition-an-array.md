@@ -130,3 +130,10 @@ def waysToPartition(nums, k):
 ### Summary
 This is a **prefix sum + hash map frequency** problem, similar to partition-equal-subset problems but with a dynamic modification twist. By precomputing prefix imbalances and scanning, we efficiently consider the effect of a single change per split.  
 Useful in partition, balancing, or dynamic update scenarios, especially where one (or few) update(s) can have global effects. This principle applies to problems involving one change or query to maximize array or partition properties.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Counting(#counting), Enumeration(#enumeration), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Partition Equal Subset Sum(partition-equal-subset-sum) (Medium)
+- Partition to K Equal Sum Subsets(partition-to-k-equal-sum-subsets) (Medium)

@@ -139,3 +139,9 @@ This problem is a blend of two classic patterns:
 - Generate the kᵗʰ next permutation using the "next permutation" algorithm, which is a standard method for generating permutations in lex order.  
 - Count the minimum number of adjacent swaps via selection-sort-like logic, or by counting inversions, which comes up in sorting questions and string transformation.  
 The approach is efficient for small-to-medium k. Both parts of this pattern show up in other questions, such as minimum swaps to convert strings, bubble/selection sort simulation, and kᵗʰ permutation generation.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Greedy(#greedy)
+
+### Similar Problems
+- Next Permutation(next-permutation) (Medium)

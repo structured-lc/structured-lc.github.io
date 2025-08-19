@@ -70,3 +70,9 @@ ORDER BY v.customer_id, v.visit_id;
 
 ### Summary
 This is a common SQL aggregation and join problem. The pattern—using LEFT JOIN and coalesce for missing data—arises in most reporting/BI tasks where you need all of one table and zero/more from a related fact table.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Find the Missing IDs(find-the-missing-ids) (Medium)

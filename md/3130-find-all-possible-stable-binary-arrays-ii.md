@@ -124,3 +124,10 @@ def countStableArrays(zero: int, one: int, limit: int) -> int:
 This problem is a variation of **DP with forbidden consecutive patterns**: you count valid permutations under run-length (consecutive) constraints.  
 The key is to carefully define your DP state: (remaining 0’s, remaining 1’s, current streak length, last digit used).  
 Classic in problems with "no k consecutive X", "run length encoded words", etc.; similar structures appear in *tiling*, *word formation*, and *constrained string* combinatorics.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Contiguous Array(contiguous-array) (Medium)
+- Binary Subarrays With Sum(binary-subarrays-with-sum) (Medium)

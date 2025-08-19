@@ -115,3 +115,13 @@ def smallestStringWithSwaps(s, pairs):
 ### Summary
 This problem uses the classic **Union-Find pattern** to discover connected components defined by interchangeable indices. The key coding pattern is grouping, sorting, and assignment by component.  
 The approach generalizes to problems involving grouping by connectivity and applying optimizations such as sorting or aggregation within each group. This is common in problems involving equivalence classes, social networks, and any interchangeable grouping scenario.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Sorting(#sorting)
+
+### Similar Problems
+- Minimize Hamming Distance After Swap Operations(minimize-hamming-distance-after-swap-operations) (Medium)
+- Process Restricted Friend Requests(process-restricted-friend-requests) (Hard)
+- Largest Number After Digit Swaps by Parity(largest-number-after-digit-swaps-by-parity) (Easy)
+- Lexicographically Smallest Beautiful String(lexicographically-smallest-beautiful-string) (Hard)
+- Make Lexicographically Smallest Array by Swapping Elements(make-lexicographically-smallest-array-by-swapping-elements) (Medium)

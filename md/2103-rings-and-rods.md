@@ -87,3 +87,9 @@ def countPoints(rings: str) -> int:
 
 ### Summary
 This problem uses a **bitmasking** approach, which is efficient because the set of possible rods and colors is fixed and small. This pattern of encoding categories with bits is common in situations with small, known finite sets (like days of week, types, boolean flags). The idea also emphasizes how problem constraints (fixed number of rods, fixed colors) can lead to simple and efficient solutions over more general-purpose approaches (like dicts or sets).
+
+### Tags
+Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Check if All Characters Have Equal Number of Occurrences(check-if-all-characters-have-equal-number-of-occurrences) (Easy)

@@ -87,3 +87,8 @@ def maxScore(nums):
 This problem uses a **greedy array pattern**—tracking and re-using the largest value seen so far for maximizing cumulative sums across jumps.  
 Such greedy scoring approaches are common in jump/score maximization on arrays, where the optimal substructure allows a simple O(n) scan.  
 Recognizing the form (greedy optimality, score accumulation with max-so-far) is also helpful in similar jump array problems and interval score questions.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems

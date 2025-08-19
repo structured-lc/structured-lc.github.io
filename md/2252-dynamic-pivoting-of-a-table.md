@@ -158,3 +158,9 @@ END;
 
 ### Summary
 This problem uses the **dynamic SQL construction** pattern to perform a pivot operation whose output columns aren’t known ahead of time. This is a classic **dynamic pivot** scenario, common in data warehousing and reporting. Similar approaches are widely used in SQL/BI reporting for cross-tab, and can also map to "pivot table" operations in Python pandas (`df.pivot(index, columns, values)`).
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Product's Price for Each Store(products-price-for-each-store) (Easy)

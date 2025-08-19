@@ -142,3 +142,9 @@ def timeTaken(arrival, state):
 This problem is a **simulation using two queues** with **priority rules**—a classic queue simulation.  
 The approach is general for single-resource contention problems; this pattern shows up in OS process scheduling, railway crossing, or server-throttling scenarios.  
 Understanding how to efficiently simulate real-world sequential events is an important interview pattern, and handling edge cases (equal arrivals, unused gaps, right initial states) is key.
+
+### Tags
+Array(#array), Queue(#queue), Simulation(#simulation)
+
+### Similar Problems
+- The Latest Time to Catch a Bus(the-latest-time-to-catch-a-bus) (Medium)

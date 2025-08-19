@@ -87,3 +87,12 @@ def minSwaps(s: str) -> int:
 
 ### Summary
 This problem is a **stack/balancing parentheses variant**, but can be solved with a single-pass and a counter. The core technique—tracking running balance and max imbalance—is commonly useful in similar bracket-matching or stack problems. This method also generalizes to related parenthesis matching problems and is a recurring theme in parsing and string-validation interview questions.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Stack(#stack), Greedy(#greedy)
+
+### Similar Problems
+- Remove Invalid Parentheses(remove-invalid-parentheses) (Hard)
+- Minimum Add to Make Parentheses Valid(minimum-add-to-make-parentheses-valid) (Medium)
+- Minimum Remove to Make Valid Parentheses(minimum-remove-to-make-valid-parentheses) (Medium)
+- Minimum Insertions to Balance a Parentheses String(minimum-insertions-to-balance-a-parentheses-string) (Medium)

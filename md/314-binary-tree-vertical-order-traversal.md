@@ -138,3 +138,9 @@ This pattern is also commonly applied in related problems like:
 - "Binary Tree Level Order Traversal"
 - "Diagonal Traversal"
 - Any problem where node grouping depends on position or depth properties.
+
+### Tags
+Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Sorting(#sorting), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Binary Tree Level Order Traversal(binary-tree-level-order-traversal) (Medium)

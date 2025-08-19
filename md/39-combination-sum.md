@@ -105,3 +105,15 @@ def combinationSum(candidates, target):
 
 ### Summary
 This problem uses the **backtracking / DFS** pattern to exhaustively search all combinations of numbers that sum up to a target, allowing each number to be reused. This coding pattern is commonly applied to other "combination" and "subset" style problems, and can be adapted for variants like using each element once (subset sum), or where input may have duplicates.
+
+### Tags
+Array(#array), Backtracking(#backtracking)
+
+### Similar Problems
+- Letter Combinations of a Phone Number(letter-combinations-of-a-phone-number) (Medium)
+- Combination Sum II(combination-sum-ii) (Medium)
+- Combinations(combinations) (Medium)
+- Combination Sum III(combination-sum-iii) (Medium)
+- Factor Combinations(factor-combinations) (Medium)
+- Combination Sum IV(combination-sum-iv) (Medium)
+- The Number of Ways to Make the Sum(the-number-of-ways-to-make-the-sum) (Medium)

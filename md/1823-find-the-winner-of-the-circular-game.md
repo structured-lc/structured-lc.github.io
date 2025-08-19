@@ -71,3 +71,8 @@ def findTheWinner(n: int, k: int) -> int:
 
 ### Summary
 This problem demonstrates the **Josephus recurrence pattern**—a powerful mathematical approach to solve games of elimination in circles, where modular arithmetic is leveraged to simulate cyclic removals efficiently. This pattern is common in problems involving elimination, scheduling, or wrap-around schemes and is far more efficient than explicit simulation for large inputs.
+
+### Tags
+Array(#array), Math(#math), Recursion(#recursion), Queue(#queue), Simulation(#simulation)
+
+### Similar Problems

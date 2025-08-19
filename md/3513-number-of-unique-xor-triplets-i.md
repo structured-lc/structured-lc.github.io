@@ -93,3 +93,8 @@ def count_unique_xor_triplets(nums):
 This problem uses the **enumeration/all-combinations pattern** with a uniqueness check enforced by a set. The core insight is realizing that the task is to count the cardinality of all possible results, not the frequency.  
 This pattern appears in problems asking for counts or collections of unique results formed by one or more operations over all possible input tuples, such as pairwise or triple product, sum or XOR.  
 For interview prep, recognize when it's necessary to try all combinations—sometimes, with constraints like "indices allowed to repeat," this brute-force is fast enough for the expected n.
+
+### Tags
+Array(#array), Math(#math), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

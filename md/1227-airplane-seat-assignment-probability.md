@@ -107,3 +107,8 @@ def nthPersonGetsNthSeat(n: int) -> float:
 ### Summary
 
 This is a **brainteaser / math induction pattern**, not a typical simulation or dynamic programming problem. Recognizing the recursive pattern and how swaps “cancel out” for every n > 1 leads to a constant return. This simple probabilistic result can appear in problems involving random selections, recursive probability, or Markov processes.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Brainteaser(#brainteaser), Probability and Statistics(#probability-and-statistics)
+
+### Similar Problems

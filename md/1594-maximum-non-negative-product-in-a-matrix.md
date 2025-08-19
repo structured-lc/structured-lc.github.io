@@ -71,3 +71,8 @@ def maxProductPath(grid: list[list[int]]) -> int:
 
 ### Summary
 This is a DP problem with max/min tracking, common when sign flips are possible (like "Max Product Subarray"). The dual-table pattern is widely applicable in problems involving negative transitions.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems

@@ -77,3 +77,8 @@ def resultingStringAfterAdjacentRemovals(s: str) -> str:
 
 ### Summary
 This problem is a classic **stack pattern**—similar to remove-adjacent-duplicates or validate-parentheses. The stack tracks only the unresolved characters, letting us efficiently react to removals in O(n) time. The technique applies broadly: nested structure tracking, undo operations, etc. It's essential practice for simulating reduction-based problems.
+
+### Tags
+String(#string), Stack(#stack), Simulation(#simulation)
+
+### Similar Problems

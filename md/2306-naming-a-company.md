@@ -107,3 +107,8 @@ def distinctNames(ideas):
 
 ### Summary
 This problem requires recognizing that after a swap, **only the suffix matters**—so it maps well to the "group by first letter, count unique suffixes" pattern. It's a classic hashing and set-grouping interview question, using set operations to efficiently filter out invalid swaps. Similar ideas apply to problems involving word transformation, grouping, and unique combinations (anagrams, word ladders, etc.).
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Enumeration(#enumeration)
+
+### Similar Problems

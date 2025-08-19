@@ -91,3 +91,7 @@ def invert_object(obj):
 This problem uses a direct *reverse mapping* (group-by-value) technique, commonly seen when grouping or counting properties by value.  
 It's a simple O(n) hash map pattern, and variants appear in group-by scenarios, frequency counting, and table pivoting.  
 Key points involve how to handle duplicates and non-string keys and the importance of only first-level processing.
+
+### Tags
+
+### Similar Problems

@@ -98,3 +98,8 @@ def distributeCandies(n: int, limit: int) -> int:
 This problem uses the **stars and bars** combinatorial method with inclusion-exclusion to handle upper limits.  
 The key pattern is applying combinatorics and the inclusion-exclusion principle to distribution questions with upper bounds.  
 This coding strategy appears in many “partition with bounds” problems, coin change variants, and integer solution count of equations under constraints.
+
+### Tags
+Math(#math), Combinatorics(#combinatorics)
+
+### Similar Problems

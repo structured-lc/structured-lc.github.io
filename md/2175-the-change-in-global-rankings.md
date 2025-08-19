@@ -189,3 +189,8 @@ This problem uses the **custom sorting and ranking** coding pattern, with tie-br
 - Any ranking or leaderboard calculation where elements move up/down based on updates
 - Problems requiring sort, rank assignments, and diff reporting  
 This approach (sort twice, hash team ids to rank, compute differences) generalizes well to leaderboard or competition ranking use-cases.
+
+### Tags
+Database(#database)
+
+### Similar Problems

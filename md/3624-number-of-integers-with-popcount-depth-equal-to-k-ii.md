@@ -170,3 +170,8 @@ def popcount_depth_ii(nums, queries):
 This problem is a classic example of dynamic range queries with updates, applying the **segment tree with frequency buckets** pattern.  
 It's a specialized version of the "range query with value condition" concept; the bucketed variant is applicable to other counting features or any "groupby" property that can be quickly recomputed, such as modulus, digit sums, or bit lengths.  
 Key coding patterns: Segment Trees, value bucketing, and recomputation on update.
+
+### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
+
+### Similar Problems

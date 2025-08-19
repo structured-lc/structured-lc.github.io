@@ -136,3 +136,8 @@ This problem is a "find all windows matching given substrings, with proximity" p
   - Preprocessing matches for fast interval queries.
   - Standard substring search—common in text, DNA, or log analytics.
   - Efficient interval containment using binary search in sorted arrays.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Binary Search(#binary-search), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
+
+### Similar Problems

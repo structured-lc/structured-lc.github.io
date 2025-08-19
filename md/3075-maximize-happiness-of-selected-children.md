@@ -81,3 +81,9 @@ def maximumHappinessSum(happiness: List[int], k: int) -> int:
 ### Summary
 This problem uses the greedy pattern: always take the largest available value to minimize future loss (due to decrements). The problem reduces to sorting and then simulating the decrement process for at most k children.  
 This *selection with penalty* pattern shows up in resource allocation, optimal scheduling, and variations of knapsack where the value diminishes with delay.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Maximum Candies Allocated to K Children(maximum-candies-allocated-to-k-children) (Medium)

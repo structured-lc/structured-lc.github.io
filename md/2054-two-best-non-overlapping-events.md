@@ -109,3 +109,12 @@ def maxTwoEvents(events):
 
 ### Summary
 The problem uses a **Sorting + Prefix Max + Binary Search** pattern, a classic sweep for non-overlapping intervals. This is a common approach also seen in Weighted Interval Scheduling DP and non-overlapping interval selection problems. Mastery here helps solve advanced scheduling, calendar, and reservation-style interview problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Maximum Profit in Job Scheduling(maximum-profit-in-job-scheduling) (Hard)
+- Maximum Number of Events That Can Be Attended II(maximum-number-of-events-that-can-be-attended-ii) (Hard)
+- Maximize Win From Two Segments(maximize-win-from-two-segments) (Medium)
+- Maximum Score of Non-overlapping Intervals(maximum-score-of-non-overlapping-intervals) (Hard)

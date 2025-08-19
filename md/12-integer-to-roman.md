@@ -103,3 +103,10 @@ def intToRoman(num: int) -> str:
 ### Summary
 This problem uses a **greedy algorithm** and simple mapping. It’s a classic case for applying mapping arrays and iterative subtraction, matching the **integer-to-string conversion** and **decoding** pattern.
 The pattern is common in problems requiring mapping one set of representations to another with rules — e.g., similar to Roman to integer conversion, integer to other numeral systems, or custom encoding tasks.
+
+### Tags
+Hash Table(#hash-table), Math(#math), String(#string)
+
+### Similar Problems
+- Roman to Integer(roman-to-integer) (Easy)
+- Integer to English Words(integer-to-english-words) (Hard)

@@ -133,3 +133,7 @@ This problem fits the brute-force "all pairs" pattern.
 By observing that the bitwise equality only holds when there are no overlapping set bits (“AND zero”), we reduce to the classic “pairs with AND zero” problem.  
 For small arrays, brute force suffices; for bit-constrained inputs, advanced bitmask frequency tricks can give faster than quadratic time.  
 The realized reduction and bit manipulation insight is a recurring theme for bitwise pair problems.
+
+### Tags
+
+### Similar Problems

@@ -87,3 +87,14 @@ def threeSumSmaller(nums, target):
 
 ### Summary
 This problem uses the **two-pointer pattern** on a sorted array, a classic trick for pair/triplet problems with sum constraints (see also: 3Sum, 2Sum, 3Sum Closest). The key leap is that, when a sum at (i, j, k) is small enough, so are all combos from j up to k. This dramatically reduces checks from O(n³) to O(n²) and is a common interview pattern for array-based combination problems.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- 3Sum(3sum) (Medium)
+- 3Sum Closest(3sum-closest) (Medium)
+- Valid Triangle Number(valid-triangle-number) (Medium)
+- Two Sum Less Than K(two-sum-less-than-k) (Easy)
+- Maximize Greatness of an Array(maximize-greatness-of-an-array) (Medium)
+- Find Polygon With the Largest Perimeter(find-polygon-with-the-largest-perimeter) (Medium)

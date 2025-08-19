@@ -141,3 +141,9 @@ class MyQueue:
 This problem uses the **two-stack simulation** technique to invert LIFO behavior and achieve FIFO queuing, showcasing the common “in-out stack pairing” pattern.  
 It’s a classic interview favorite and can be applied wherever order-reversal is required, such as queue implementation or undo-redo systems.  
 The core insight is leveraging stacks’ reversal property to manage queue state efficiently and with low overhead.
+
+### Tags
+Stack(#stack), Design(#design), Queue(#queue)
+
+### Similar Problems
+- Implement Stack using Queues(implement-stack-using-queues) (Easy)

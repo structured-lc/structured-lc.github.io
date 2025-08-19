@@ -86,3 +86,9 @@ def preimageSizeFZF(K: int) -> int:
 ### Summary
 We used a **double binary search pattern**—commonly useful for answering “exactly how many x satisfy property P” where the function is monotonic or plateaued. For this particular problem, understanding the properties of trailing zeroes in factorials allowed us to efficiently enumerate the solution's “jumps.”  
 This pattern is especially useful for problems involving monotonic functions with flat plateaus, such as searching for target occurrences in the image of non-decreasing mappings.
+
+### Tags
+Math(#math), Binary Search(#binary-search)
+
+### Similar Problems
+- Factorial Trailing Zeroes(factorial-trailing-zeroes) (Medium)

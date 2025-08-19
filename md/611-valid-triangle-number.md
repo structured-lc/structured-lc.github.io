@@ -102,3 +102,10 @@ def triangleNumber(nums):
 ### Summary
 This problem uses the **two pointers after sorting** pattern, which converts a triple-nested loop into double loops, yielding significant speed-up.  
 It’s a classic example where **ordering** the data lets you make stronger pruning and counts. Similar approaches apply to problems like three sum, counting triplets with a sum under a target, etc.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- 3Sum Smaller(3sum-smaller) (Medium)
+- Find Polygon With the Largest Perimeter(find-polygon-with-the-largest-perimeter) (Medium)

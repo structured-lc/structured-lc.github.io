@@ -89,3 +89,10 @@ def maximizeYSum(x, y):
 
 ### Summary
 The approach uses the "hashmap + sort top-k values" pattern, which trades O(n³) brute force for efficient O(n log n) or better and is common in problems where we want the best selection of unique-classed items. This is widely applicable for maximizing/minimizing subset values under grouping or uniqueness constraints, including many contest-style selection problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Maximum Sum of 3 Non-Overlapping Subarrays(maximum-sum-of-3-non-overlapping-subarrays) (Hard)
+- Largest Values From Labels(largest-values-from-labels) (Medium)

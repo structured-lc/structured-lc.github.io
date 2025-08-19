@@ -64,3 +64,8 @@ def freqAlphabets(s):
 
 ### Summary
 This is a classic string parsing and greedy lookahead problem. The pattern: look ahead to identify special multi-character patterns, otherwise consume single characters, is common in decoder/parser problems and practical tokenization.
+
+### Tags
+String(#string)
+
+### Similar Problems

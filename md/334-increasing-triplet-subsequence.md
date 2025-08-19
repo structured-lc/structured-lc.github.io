@@ -108,3 +108,12 @@ def increasingTriplet(nums):
 This is a classic greedy, linear scan problem—a variant of the "longest increasing subsequence," constrained to length 3.  
 The solution uses a **greedy two-pass** variable update pattern—a common approach in subsequence search problems—which can also be generalized for longer fixed-length increasing subsequences.  
 Patterns like this (tracking local minimums and mid-values) are broadly applicable to optimized, constant-space sequence problems.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems
+- Longest Increasing Subsequence(longest-increasing-subsequence) (Medium)
+- Count Special Quadruplets(count-special-quadruplets) (Easy)
+- Count Good Triplets in an Array(count-good-triplets-in-an-array) (Hard)
+- Count Increasing Quadruplets(count-increasing-quadruplets) (Hard)

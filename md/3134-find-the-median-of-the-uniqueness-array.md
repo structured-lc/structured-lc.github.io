@@ -111,3 +111,10 @@ def medianOfUniquenessArray(nums):
 
 ### Summary
 This problem requires finding the median value from the multiset of distinct counts of all possible subarrays—a problem that naively demands vast computation and memory. With **binary search** on possible uniqueness values and a **sliding window** for subarray counting (a common pattern for problems involving subarrays with at most K distinct values), we efficiently locate the median without building the full array. This sliding window + binary search pattern appears in other subarray counting and percentile-finding problems, especially involving uniqueness or frequency.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Find K-th Smallest Pair Distance(find-k-th-smallest-pair-distance) (Hard)
+- Total Appeal of A String(total-appeal-of-a-string) (Hard)

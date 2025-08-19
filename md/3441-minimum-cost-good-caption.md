@@ -115,3 +115,8 @@ def minimumCostGoodCaption(caption: str) -> str:
 
 ### Summary
 This problem is a case study in **Dynamic Programming with string partitioning**, optimizing both for minimal edits and lexicographical order. Patterns used here (segment DP, partition & merge, keeping track of best cost & result for substrings) are broadly useful for other string partition, edit distance, or k-group problems, and show up in problems requiring optimal grouping with constraints.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

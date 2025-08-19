@@ -91,3 +91,11 @@ class MyCalendar:
 
 ### Summary
 This problem uses the classic **interval overlap** checking pattern. The solution iterates over all existing intervals to prevent any overlap, a technique useful for calendar systems, meeting schedulers, and room reservations. While the brute-force approach is clear and easy to implement, further optimizations (segment tree, BST, or sorted list + binary search) can be considered for performance at scale.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Design(#design), Segment Tree(#segment-tree), Ordered Set(#ordered-set)
+
+### Similar Problems
+- My Calendar II(my-calendar-ii) (Medium)
+- My Calendar III(my-calendar-iii) (Hard)
+- Determine if Two Events Have Conflict(determine-if-two-events-have-conflict) (Easy)

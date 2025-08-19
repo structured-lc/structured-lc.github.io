@@ -118,3 +118,8 @@ def maxNumberOfAlloys(n, k, budget, composition, stock, cost):
 
 ### Summary
 This problem uses the classic **binary search on the answer** pattern: for each machine, you check the largest feasible solution using binary search and a greedy feasibility check. Binary searching on solution quantity can be applied to many allocation problems — especially where "can we make at least X" is easy to check. This is common in production, scheduling, and resource-constrained optimization.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems

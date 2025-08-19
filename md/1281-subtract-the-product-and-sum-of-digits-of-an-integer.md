@@ -63,3 +63,8 @@ def subtract_product_and_sum(n):
 
 ### Summary
 This is a direct arithmetic digit processing problem. The coding pattern is common for problems requiring manual digit extraction (mod 10 and div by 10), useful anywhere you can't use high-level string methods or are working with numeric-only representations.
+
+### Tags
+Math(#math)
+
+### Similar Problems

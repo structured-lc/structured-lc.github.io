@@ -111,3 +111,9 @@ def countVowelPermutation(n: int) -> int:
 
 ### Summary  
 This problem is a classic DP with state transitions scenario. The approach uses bottom-up DP to track valid string counts ending with each vowel at each length using the problem’s vowel succession rules. It is a common pattern often applied in counting sequences with constraints and can be extended or optimized using matrix exponentiation for large inputs.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Number of Strings Which Can Be Rearranged to Contain Substring(number-of-strings-which-can-be-rearranged-to-contain-substring) (Medium)

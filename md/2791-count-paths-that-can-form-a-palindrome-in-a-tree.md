@@ -114,3 +114,9 @@ def countPalindromePaths(parent, s):
 
 ### Summary
 This utilizes **bitmasking** and **DFS** for efficient palindromic property detection in paths. The key observation is that a path can form a palindrome if at most one letter has an odd count—testable by masking. The pattern is a clever application of bitwise operations and prefix state hashing, a common motif for path, parity, or frequency constraints in tree and string problems.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Tree(#tree), Depth-First Search(#depth-first-search), Bitmask(#bitmask)
+
+### Similar Problems
+- Count Valid Paths in a Tree(count-valid-paths-in-a-tree) (Hard)

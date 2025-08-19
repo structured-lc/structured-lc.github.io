@@ -167,3 +167,10 @@ def generateTrees(n):
 This problem uses classic **recursion and backtracking**—for each possible root, recursively build all left/right subtree possibilities and combine them.  
 The approach is a "construct all structures" variant: very similar patterns occur in problems where all unique structures or arrangements are requested (e.g., all full binary trees, all bracket combinations).  
 It provides an example of recursive "divide and combine" for tree generation and is a great recursive enumeration template.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Tree(#tree), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Unique Binary Search Trees(unique-binary-search-trees) (Medium)
+- Different Ways to Add Parentheses(different-ways-to-add-parentheses) (Medium)

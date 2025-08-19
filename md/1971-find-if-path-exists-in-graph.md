@@ -100,3 +100,10 @@ def validPath(n, edges, source, destination):
 ### Summary
 This problem is a classic **graph traversal** question, falling under the *path-existence* or *connected components* category. Common patterns used here are **BFS**, **DFS**, or **Union-Find** for fast connectivity checks.  
 This pattern is directly applicable to tasks such as checking network connectivity, determining if two people are connected in a social network, or ensuring communication in distributed systems.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
+
+### Similar Problems
+- Valid Arrangement of Pairs(valid-arrangement-of-pairs) (Hard)
+- Paths in Maze That Lead to Same Room(paths-in-maze-that-lead-to-same-room) (Medium)

@@ -1,6 +1,6 @@
 [
-    {"number": 382, "slug": "linked-list-random-node", "title": "Linked List Random Node", "difficulty": "Medium"},
-    {"number": 398, "slug": "random-pick-index", "title": "Random Pick Index", "difficulty": "Medium"},
-    {"number": 497, "slug": "random-point-in-non-overlapping-rectangles", "title": "Random Point in Non-overlapping Rectangles", "difficulty": "Medium"},
-    {"number": 519, "slug": "random-flip-matrix", "title": "Random Flip Matrix", "difficulty": "Medium"}
+    {"number": 382, "slug": "linked-list-random-node", "title": "Linked List Random Node", "difficulty": "Medium", "tags": ["Linked List", "Math", "Reservoir Sampling", "Randomized"], "similar_problems": [{"slug": "random-pick-index", "title": "Random Pick Index", "difficulty": "Medium"}]},
+    {"number": 398, "slug": "random-pick-index", "title": "Random Pick Index", "difficulty": "Medium", "tags": ["Hash Table", "Math", "Reservoir Sampling", "Randomized"], "similar_problems": [{"slug": "linked-list-random-node", "title": "Linked List Random Node", "difficulty": "Medium"}, {"slug": "random-pick-with-blacklist", "title": "Random Pick with Blacklist", "difficulty": "Hard"}, {"slug": "random-pick-with-weight", "title": "Random Pick with Weight", "difficulty": "Medium"}]},
+    {"number": 497, "slug": "random-point-in-non-overlapping-rectangles", "title": "Random Point in Non-overlapping Rectangles", "difficulty": "Medium", "tags": ["Array", "Math", "Binary Search", "Reservoir Sampling", "Prefix Sum", "Ordered Set", "Randomized"], "similar_problems": [{"slug": "random-pick-with-weight", "title": "Random Pick with Weight", "difficulty": "Medium"}, {"slug": "generate-random-point-in-a-circle", "title": "Generate Random Point in a Circle", "difficulty": "Medium"}]},
+    {"number": 519, "slug": "random-flip-matrix", "title": "Random Flip Matrix", "difficulty": "Medium", "tags": ["Hash Table", "Math", "Reservoir Sampling", "Randomized"], "similar_problems": []}
 ]

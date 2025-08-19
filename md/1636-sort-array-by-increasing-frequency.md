@@ -62,3 +62,14 @@ def frequencySort(nums):
 
 ### Summary
 This problem uses the custom sorting pattern combined with frequency counting. The pattern of custom comparators is frequently found in problems where you sort based on more than value, such as with strings or tuples considering multiple keys. Works well in problems with limited input size and value range.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting)
+
+### Similar Problems
+- Sort Characters By Frequency(sort-characters-by-frequency) (Medium)
+- Divide Array Into Equal Pairs(divide-array-into-equal-pairs) (Easy)
+- Most Frequent Number Following Key In an Array(most-frequent-number-following-key-in-an-array) (Easy)
+- Maximum Number of Pairs in Array(maximum-number-of-pairs-in-array) (Easy)
+- Node With Highest Edge Score(node-with-highest-edge-score) (Medium)
+- Sort the People(sort-the-people) (Easy)

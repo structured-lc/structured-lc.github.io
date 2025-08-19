@@ -89,3 +89,10 @@ def max_jump(stones):
 
 ### Summary
 Greedy alternation is a common pattern for minimizing the maximum gap in constrained path traversal problems. Here, the key is to maximize the "distance between skips" and thus restrict the largest possible jump the frog will need to make. This approach is applicable wherever the objective is to minimize the largest step between elements, seen in problems such as stepping stones, dividing arrays into chunks, or scheduling tasks to minimize peak load.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Greedy(#greedy)
+
+### Similar Problems
+- Climbing Stairs(climbing-stairs) (Easy)
+- Koko Eating Bananas(koko-eating-bananas) (Medium)

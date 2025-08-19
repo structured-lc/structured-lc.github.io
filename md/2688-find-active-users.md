@@ -143,3 +143,8 @@ def find_active_users(records):
 ### Summary
 This problem is a classic application of **self-join** for comparing records within the same group, a common SQL pattern for time windows and event-based "activity" queries.  
 It generalizes to fraud detection, retention analysis, or any time-dependent pairwise event query. Knowing how to efficiently join and compare grouped records by time is a key database/in-memory pattern.
+
+### Tags
+Database(#database)
+
+### Similar Problems

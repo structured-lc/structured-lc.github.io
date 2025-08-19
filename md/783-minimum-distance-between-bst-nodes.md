@@ -140,3 +140,9 @@ def minDiffInBST(root):
 
 ### Summary
 This problem demonstrates the classic *in-order traversal* pattern for binary search trees, leveraging their property that in-order returns nodes in sorted order. By updating the minimum found difference during traversal, we avoid extra storage and redundant comparisons. This strategy is broadly useful for any BST problem requiring sorted order or adjacency, and the in-order traversal pattern is commonly applied in many tree-based problems.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Binary Tree Inorder Traversal(binary-tree-inorder-traversal) (Easy)

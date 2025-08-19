@@ -70,3 +70,10 @@ def minCostToMoveChips(position):
 
 ### Summary
 This problem exemplifies **parity-based greedy counting**—a very common pattern whenever moves or connections have different costs based on even/odd properties. The insight that only parity jump costs money collapses the brute-force solution into a simple min-odd–even counter. This kind of strategy can show up in board games, puzzles, and problems involving cost-minimizing rearrangements on number lines.
+
+### Tags
+Array(#array), Math(#math), Greedy(#greedy)
+
+### Similar Problems
+- Minimum Number of Operations to Move All Balls to Each Box(minimum-number-of-operations-to-move-all-balls-to-each-box) (Medium)
+- Split With Minimum Sum(split-with-minimum-sum) (Easy)

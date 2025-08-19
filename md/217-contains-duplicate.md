@@ -80,3 +80,12 @@ def contains_duplicate(nums):
 ### Summary  
 This problem uses the classic **Hash Set for duplicate detection** pattern. Scanning while tracking seen values ensures we detect duplicates efficiently.  
 This coding pattern can be applied to other questions involving uniqueness or detecting repeats, such as finding the first repeating element or finding all duplicates in a list.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting)
+
+### Similar Problems
+- Contains Duplicate II(contains-duplicate-ii) (Easy)
+- Contains Duplicate III(contains-duplicate-iii) (Hard)
+- Make Array Zero by Subtracting Equal Amounts(make-array-zero-by-subtracting-equal-amounts) (Easy)
+- Find Valid Pair of Adjacent Digits in String(find-valid-pair-of-adjacent-digits-in-string) (Easy)

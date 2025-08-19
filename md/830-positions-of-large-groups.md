@@ -86,3 +86,9 @@ def largeGroupPositions(s):
 This problem uses the **grouped scanning** pattern: scan the input with pointers to detect runs (groups) of identical elements.  
 It's a very common coding pattern for problems involving consecutive groupings, substrings, or counting runs.  
 This same approach is useful for compressing data (Run-Length Encoding), grouping by value, or parsing event logs with repeated timestamps.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Divide a String Into Groups of Size k(divide-a-string-into-groups-of-size-k) (Easy)

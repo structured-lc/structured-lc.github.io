@@ -71,3 +71,8 @@ def defangIPaddr(address: str) -> str:
 
 ### Summary  
 This solution demonstrates a **basic string manipulation pattern**, scanning and transforming characters one by one. It's commonly used when you need to sanitize or alter substrings in a structured way, as seen in HTML escaping, input cleaning, or formatting data for output. This core pattern appears in many coding interview problems involving string transformation or encoding tasks.
+
+### Tags
+String(#string)
+
+### Similar Problems

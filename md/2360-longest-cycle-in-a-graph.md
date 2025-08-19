@@ -117,3 +117,11 @@ def longestCycle(edges):
 This problem uses a **single-path/linked-list-style graph traversal** with marking and step tracking to detect cycles efficiently.  
 It demonstrates a variant of **cycle detection** using path-mapping within DFS/BFS, but thanks to problem constraints (at most one outgoing edge), it behaves more like handling components in an array. The global `visited` ensures no repeated work — a common Linked List Cycle pattern adapted for the "single fork" digraph case.  
 This trick is broadly useful in linked list cycle detection, path simulation, and "graph where each node only points to one other node" situations.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort)
+
+### Similar Problems
+- Strange Printer II(strange-printer-ii) (Hard)
+- Minimum Number of Operations to Sort a Binary Tree by Level(minimum-number-of-operations-to-sort-a-binary-tree-by-level) (Medium)
+- Shortest Cycle in a Graph(shortest-cycle-in-a-graph) (Hard)

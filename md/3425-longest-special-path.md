@@ -133,3 +133,10 @@ def longestSpecialPath(edges, nums):
 This is a classic DFS-on-tree problem with state propagation (set of used values), frequently seen in unique-path or unique-value constraint problems.  
 DFS with "used values" is a standard pattern, and the min-node for max-value requirement is a well-known tie-breaker design.  
 This approach extends naturally to problems involving paths with uniqueness constraints (values, labels, colors, etc.) in trees and sometimes in DAGs.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Frog Position After T Seconds(frog-position-after-t-seconds) (Hard)
+- Longest Special Path II(longest-special-path-ii) (Hard)

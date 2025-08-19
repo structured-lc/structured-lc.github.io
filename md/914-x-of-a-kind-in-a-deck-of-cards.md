@@ -86,3 +86,8 @@ def hasGroupsSizeX(deck):
 ### Summary
 This is a classic **frequency grouping** and **GCD** pattern. Any problem where elements must be partitioned into equal groups based on counts tends to use the GCD trick.  
 This approach is common in combinatorics and grouping or bucket problems, and is highly scalable and efficient for such scenarios.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Counting(#counting), Number Theory(#number-theory)
+
+### Similar Problems

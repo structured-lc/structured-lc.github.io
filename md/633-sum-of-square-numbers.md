@@ -94,3 +94,10 @@ def judgeSquareSum(c: int) -> bool:
 This problem uses a classic two-pointer pattern due to the sorted nature of perfect squares — checking from opposite ends for a sum match.  
 It's a variant of the classic "pair sum" problem, mapping naturally to two pointers for optimal time and constant space.  
 The idea is broadly applicable where valid pairs with constraints are sought over sorted ranges, such as two-sum or searching sorted arrays.
+
+### Tags
+Math(#math), Two Pointers(#two-pointers), Binary Search(#binary-search)
+
+### Similar Problems
+- Valid Perfect Square(valid-perfect-square) (Easy)
+- Sum of Squares of Special Elements (sum-of-squares-of-special-elements) (Easy)

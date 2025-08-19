@@ -120,3 +120,10 @@ def minimumVisitedCells(grid):
 
 ### Summary
 This problem uses the **BFS shortest-path in a grid** pattern, but applied with coordinate-based movement rules instead of adjacent moves. The pruning using sets per row and column is a strong optimization to avoid visiting dead or duplicate states, which is crucial for performance. The pattern is common in grid pathfinding with variable jumps, like in "jump game" and puzzle/board games with special moves.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Stack(#stack), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Jump Game II(jump-game-ii) (Medium)
+- Jump Game(jump-game) (Medium)

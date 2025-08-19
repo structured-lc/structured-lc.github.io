@@ -179,3 +179,8 @@ def canMerge(trees):
 This problem combines union-find pattern with tree traversal, hash map lookups, and BST validity checks.  
 It leverages set/dictionary data structures to efficiently find where merges are possible and uses recursive traversal to perform merging and validation in one pass.  
 Such techniques are common in problems involving tree reconstruction, validation, and merge operations across disjoint data structures.
+
+### Tags
+Hash Table(#hash-table), Binary Search(#binary-search), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

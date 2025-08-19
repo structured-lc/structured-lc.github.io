@@ -101,3 +101,9 @@ def maximumGain(s: str, x: int, y: int) -> int:
 
 ### Summary
 This problem is a classic **greedy (two-pass) stack pattern**: always eliminate the highest-score substring first to block formation of lesser-value pairs. This pattern is common in string reduction problems where order of operations matters, especially when overlapping or cascading impacts are possible. The use of a stack to model removals of adjacent substrings is an efficient and robust pattern, reusable for other string removal or bracket-matching problems.
+
+### Tags
+String(#string), Stack(#stack), Greedy(#greedy)
+
+### Similar Problems
+- Count Words Obtained After Adding a Letter(count-words-obtained-after-adding-a-letter) (Medium)

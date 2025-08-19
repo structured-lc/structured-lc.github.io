@@ -103,3 +103,9 @@ This problem uses a **string processing** and **conditional logic** pattern.
 The main idea is classification by content (all digits or contains letters), then reduction to a single value via max.  
 This pattern appears often: validate input, branch on content type (`isdigit` vs not), aggregate a property (here, max).  
 It applies to problems involving input validation, string parsing, and value comparison across mixed-type data.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems
+- Maximum Subarray(maximum-subarray) (Medium)

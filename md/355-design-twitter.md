@@ -145,3 +145,9 @@ class Twitter:
 
 ### Summary  
 This problem uses a **hash map + heap** pattern, similar to “merge k sorted lists.” Each user’s tweets are stored individually. Feed retrieval relies on merging the most recent tweets efficiently with a heap—classic *k-way merge*. This approach is reusable for real-time feed problems, log aggregation, or anytime recent items need to be merged across categories/lists quickly. This is a common pattern in feed systems, log processing, and streaming apps.
+
+### Tags
+Hash Table(#hash-table), Linked List(#linked-list), Design(#design), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Design a File Sharing System(design-a-file-sharing-system) (Medium)

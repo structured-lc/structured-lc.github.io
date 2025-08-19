@@ -92,3 +92,15 @@ def maximum_subarray_sum(nums, k):
 
 ### Summary
 We solved the problem with an efficient **sliding window+hash map** approach, a common pattern for finding properties in subarrays of fixed size with uniqueness constraints. This pattern is broadly useful for substring/subarray questions involving distinct/unique elements, such as “longest substring with k distinct chars” and similar interval problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Max Consecutive Ones III(max-consecutive-ones-iii) (Medium)
+- Longest Nice Subarray(longest-nice-subarray) (Medium)
+- Optimal Partition of String(optimal-partition-of-string) (Medium)
+- Count the Number of Good Subarrays(count-the-number-of-good-subarrays) (Medium)
+- Maximum Good Subarray Sum(maximum-good-subarray-sum) (Medium)
+- Find the Power of K-Size Subarrays I(find-the-power-of-k-size-subarrays-i) (Medium)
+- Find the Power of K-Size Subarrays II(find-the-power-of-k-size-subarrays-ii) (Medium)

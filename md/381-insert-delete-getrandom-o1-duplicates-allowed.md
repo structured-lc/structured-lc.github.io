@@ -136,3 +136,9 @@ class RandomizedCollection:
 
 ### Summary
 This problem uses the **HashMap + Array** pattern for O(1) insert, remove, and random retrieval, cleverly supporting duplicates by mapping values to sets of indices. It's a classic use of dual data structures to get both fast lookup and random access—this approach also appears in problems like "Insert Delete GetRandom O(1)" (no duplicates), and random shuffling or set data structure interview questions.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Design(#design), Randomized(#randomized)
+
+### Similar Problems
+- Insert Delete GetRandom O(1)(insert-delete-getrandom-o1) (Medium)

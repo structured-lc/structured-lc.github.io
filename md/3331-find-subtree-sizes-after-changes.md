@@ -157,3 +157,8 @@ def findSubtreeSizesAfterChanges(parent, s):
 ### Summary
 This is a **DFS with ancestor tracking** problem, combining tree labeling and fast re-parenting based on ancestor lookups. The main pattern is “using stacks/mappings in tree recursion to access historical ancestor states by label.”  
 Variations of this logic apply to problems such as *lowest common ancestor*, *re-rooted subtree calculations*, or cases requiring ancestor context in trees/graphs.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems

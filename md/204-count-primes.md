@@ -86,3 +86,14 @@ def countPrimes(n: int) -> int:
 
 ### Summary
 This problem leverages the classic **Sieve of Eratosthenes** pattern—one of the most fundamental sieve techniques in computational number theory. The core idea is to iteratively mark non-primes, yielding an efficient O(n log log n) prime counting solution. This “marking multiples” approach is broadly useful for problems involving number properties over ranges, such as prime factorization, counting square-free numbers, and similar computational mathematics questions.
+
+### Tags
+Array(#array), Math(#math), Enumeration(#enumeration), Number Theory(#number-theory)
+
+### Similar Problems
+- Ugly Number(ugly-number) (Easy)
+- Ugly Number II(ugly-number-ii) (Medium)
+- Perfect Squares(perfect-squares) (Medium)
+- Number of Common Factors(number-of-common-factors) (Easy)
+- Prime Pairs With Target Sum(prime-pairs-with-target-sum) (Medium)
+- Find the Count of Numbers Which Are Not Special(find-the-count-of-numbers-which-are-not-special) (Medium)

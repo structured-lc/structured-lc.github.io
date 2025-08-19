@@ -92,3 +92,8 @@ def maximumMedianSum(nums):
 The pattern here is a **greedy, sorted-array pick**: By arranging the array, we use knowledge of the median’s position in a size-3 group.  
 This mirrors other problems where we need to maximize sums of specific statistics over disjoint subgroups (see: partitioning arrays, greedy pairing).  
 Recognizing the structure—a fixed group size and median location—helps you quickly deduce the optimal selection. This approach is robust in many array partitioning problems.
+
+### Tags
+Array(#array), Math(#math), Greedy(#greedy), Sorting(#sorting), Game Theory(#game-theory)
+
+### Similar Problems

@@ -98,3 +98,14 @@ def letterCombinations(digits):
 ### Summary
 
 This problem is a classic use of the **backtracking pattern** for generating all combinations. It's especially useful for scenarios where each stage involves a choice among a set of options (letters mapped to phone digits). The approach is widely applicable to areas such as permutation generation, combinations, password brute-forcing, and more.
+
+### Tags
+Hash Table(#hash-table), String(#string), Backtracking(#backtracking)
+
+### Similar Problems
+- Generate Parentheses(generate-parentheses) (Medium)
+- Combination Sum(combination-sum) (Medium)
+- Binary Watch(binary-watch) (Easy)
+- Count Number of Texts(count-number-of-texts) (Medium)
+- Minimum Number of Pushes to Type Word I(minimum-number-of-pushes-to-type-word-i) (Easy)
+- Minimum Number of Pushes to Type Word II(minimum-number-of-pushes-to-type-word-ii) (Medium)

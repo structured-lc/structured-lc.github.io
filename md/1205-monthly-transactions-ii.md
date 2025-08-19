@@ -219,3 +219,9 @@ print(monthly_transactions(transactions, chargebacks))
 
 ### Summary
 This problem is a classic example of **group-by aggregation and multi-table joins**, requiring a union of grouped statistics across two related tables and outputting all possible groups (even those present in only one source). The solution uses **hash maps/dictionaries** for O(1) aggregation and ensures every relevant (month, country) is output. The pattern is common in reporting, analytics, and data engineering, especially when blending transactional and event (chargeback) data. Similar SQL patterns include CTEs and FULL OUTER JOIN for combining summaries.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Monthly Transactions I(monthly-transactions-i) (Medium)

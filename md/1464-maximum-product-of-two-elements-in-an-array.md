@@ -61,3 +61,8 @@ def maxProduct(nums):
 
 ### Summary
 Classic "find the top 2" problem; common in array max/min/one-scan problems. Useful wherever you need the largest or smallest k items, e.g., heaps, selection algorithms.
+
+### Tags
+Array(#array), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

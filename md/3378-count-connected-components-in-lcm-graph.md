@@ -115,3 +115,8 @@ def countComponents(nums, threshold):
 
 ### Summary
 This problem uses the **Union-Find (DSU)** pattern, efficiently grouping numbers by shared divisors above the threshold, without O(n²) LCM checks. The math/graph hybrid makes this a classic interview example of optimizing graph construction using number theory, and the approach is applicable to other grouping/partitioning problems governed by divisor relationships (e.g., *connected components by GCD*, *clustering by mutual constraints*).
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Union Find(#union-find), Number Theory(#number-theory)
+
+### Similar Problems

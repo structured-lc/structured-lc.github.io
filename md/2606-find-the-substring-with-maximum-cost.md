@@ -81,3 +81,9 @@ def maximumCostSubstring(s, chars, vals):
 
 ### Summary
 This problem leverages the **maximum subarray sum (Kadane’s algorithm)** coding pattern, using a mapping for custom character values. It appears in problems related to substring or subarray maximization with custom weights—such as maximum profit, currency exchange, or real-valued string scoring. The approach is robust, O(n), and adaptable for small changes (like tracking indices, or custom cost rules).
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Maximum Subarray(maximum-subarray) (Medium)

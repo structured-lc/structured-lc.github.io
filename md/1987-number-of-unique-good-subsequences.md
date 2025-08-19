@@ -112,3 +112,10 @@ def numberOfUniqueGoodSubsequences(binary: str) -> int:
 ### Summary
 
 We used a dynamic programming approach inspired by the subsequences patterns. The main insight is to track the number of unique good subsequences ending with '1' and '0' (but starting correctly), and accumulate results modulo 10⁹+7. This pattern—counting unique, well-formed subsequences—is often used for string DP problems regarding distinct/unique substring or sequence formation under constraints. This approach is optimal for large n and involves O(1) space.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Distinct Subsequences(distinct-subsequences) (Hard)
+- Distinct Subsequences II(distinct-subsequences-ii) (Hard)

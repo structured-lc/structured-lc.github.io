@@ -91,3 +91,9 @@ def min_operations(nums, k):
 This problem uses the **bit manipulation** or **Hamming distance** pattern — compare two bit patterns and count positions that differ.  
 It’s a classic interview technique for XOR transformations and minimal modification problems, and it appears in tasks involving parity, mismatched bits, or fault-tolerant designs.  
 Recognizing that any differing bit between the array's XOR and k must be flipped—and each flip can happen anywhere in the array—is key to the optimal solution.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Minimum Bit Flips to Convert Number(minimum-bit-flips-to-convert-number) (Easy)

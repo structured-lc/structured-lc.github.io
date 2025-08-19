@@ -94,3 +94,9 @@ def wateringPlants(plants, capacity):
 
 ### Summary
 This problem is a classic *greedy simulation*, where you follow instructions step by step and count movement costs based on resource (water) limits. Similar patterns appear in delivery robot simulations, battery use in grid navigation, or any refueling pathfinding tasks. No tricks—just exact state management and careful step tallying.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems
+- Watering Plants II(watering-plants-ii) (Medium)

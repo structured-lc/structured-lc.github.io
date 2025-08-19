@@ -84,3 +84,7 @@ def getDataframeSize(players):
 This is a direct metadata query pattern, commonly used with pandas DataFrames.
 The main concept is accessing `.shape`.   
 This is a simple example of using built-in data structure properties to efficiently obtain structural metadata, and the approach generalizes to other data containers (arrays, matrices, lists of lists) where size information is readily available.
+
+### Tags
+
+### Similar Problems

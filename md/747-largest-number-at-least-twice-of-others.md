@@ -91,3 +91,10 @@ def dominantIndex(nums):
 ### Summary
 This problem uses a **single pass max and runner-up max search**—a frequent pattern for “top-k” or “dominant/majority” style problems.  
 It’s efficient (O(n), O(1)) and easy to reason about, and this pattern regularly appears in leaderboards, majority element, and similar “dominant” checks.
+
+### Tags
+Array(#array), Sorting(#sorting)
+
+### Similar Problems
+- Keep Multiplying Found Values by Two(keep-multiplying-found-values-by-two) (Easy)
+- Largest Number After Digit Swaps by Parity(largest-number-after-digit-swaps-by-parity) (Easy)

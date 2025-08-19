@@ -112,3 +112,10 @@ def depthSumInverse(nestedList):
 ### Summary
 This problem uses the **Depth-First Search** (DFS) pattern, combined with tracking metadata (depth and max depth) for each node. The approach is a *two-pass recursive traversal*: first to find the maximum depth, then to compute the answer using the appropriate weights.  
 This pattern is common in problems requiring aggregation conditioned on element position or level in a hierarchical structure, such as weighting tree or nested list nodes.
+
+### Tags
+Stack(#stack), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Nested List Weight Sum(nested-list-weight-sum) (Medium)
+- Array Nesting(array-nesting) (Medium)

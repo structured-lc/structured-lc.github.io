@@ -110,3 +110,10 @@ def kthSmallest(root, k):
 
 ### Summary
 This problem is a classic example of **inorder traversal** applied to BSTs, leveraging their property of in-order sortedness. The iterative (or recursive) in-order approach is a common pattern that’s widely useful in tree-related algorithms—especially when working with *ranges*, *min/max/median*, or *selection* queries in BSTs.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Binary Tree Inorder Traversal(binary-tree-inorder-traversal) (Easy)
+- Second Minimum Node In a Binary Tree(second-minimum-node-in-a-binary-tree) (Easy)

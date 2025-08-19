@@ -99,3 +99,11 @@ def find_target_indices(nums, target):
 This is a classic linear-scan counting problem that can be solved using the **Count and Construct** pattern, similar to bucket sort.    
 The optimal approach is to count how many numbers are less than and equal to the target, then construct the answer range—no sorting required, so it's both fast and memory-efficient.  
 This technique generalizes to problems where you need to find the position/range of elements after “virtual” sorting.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Find First and Last Position of Element in Sorted Array(find-first-and-last-position-of-element-in-sorted-array) (Medium)
+- Rank Transform of an Array(rank-transform-of-an-array) (Easy)
+- Find Words Containing Character(find-words-containing-character) (Easy)

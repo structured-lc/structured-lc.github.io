@@ -111,3 +111,9 @@ def calPoints(ops):
 
 ### Summary
 We used the **stack pattern** for history tracking, enabling efficient simulation of operations and undo actions. This technique (tracking history and undo) is common in problems dealing with undo/redo functionality, expression evaluation, or stack-based algorithms. It’s broadly applicable wherever you need to manage a rolling record of actions and handle reversals or compound operations based on immediate history.
+
+### Tags
+Array(#array), Stack(#stack), Simulation(#simulation)
+
+### Similar Problems
+- Crawler Log Folder(crawler-log-folder) (Easy)

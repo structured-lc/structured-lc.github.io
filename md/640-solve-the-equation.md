@@ -122,3 +122,10 @@ This is a **string parsing + linear equation reduction** problem.
 The main pattern is "scan-and-accumulate coefficients/constants", which is common in parsing math expressions and symbolic computation.  
 This approach is **robust against tricky sign/coefficients** cases, and the scan-per-side pattern applies to polynomial sum parsing and integration problems.  
 You can use similar logic for general algebraic simplification or interpreter foundation tasks.
+
+### Tags
+Math(#math), String(#string), Simulation(#simulation)
+
+### Similar Problems
+- Fraction Addition and Subtraction(fraction-addition-and-subtraction) (Medium)
+- Minimize Result by Adding Parentheses to Expression(minimize-result-by-adding-parentheses-to-expression) (Medium)

@@ -102,3 +102,11 @@ def minStoneSum(piles, k):
 ### Summary
 This problem is a classic greedy question using a **max heap (priority queue)** to always pick the largest element quickly, which maximizes the reduction in total sum per operation.  
 This heap/reduction pattern is common in problems where you repeatedly want the “current best” or “current biggest” item — for example, in "Reduce Array Size to Half", "IPO", or "Last Stone Weight".
+
+### Tags
+Array(#array), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Minimum Operations to Halve Array Sum(minimum-operations-to-halve-array-sum) (Medium)
+- Maximal Score After Applying K Operations(maximal-score-after-applying-k-operations) (Medium)
+- Take Gifts From the Richest Pile(take-gifts-from-the-richest-pile) (Easy)

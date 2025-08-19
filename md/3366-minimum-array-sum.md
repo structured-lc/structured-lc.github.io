@@ -130,3 +130,8 @@ def minimumArraySum(nums, k, op1, op2):
 We use **DP with memoization**, capturing the state as (index, op1_left, op2_left) and trying all valid operations per position, always choosing the minimal outcome at each step.  
 This is a common **bounded resource + state optimization** pattern—DP is critical because local greedy choices may not yield globally optimal sums.  
 Similar DP patterns show up in limited-use operations, resource-constrained scheduling, or restricted state transitions in arrays.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

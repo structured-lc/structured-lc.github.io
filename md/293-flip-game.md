@@ -77,3 +77,9 @@ def generatePossibleNextMoves(currentState: str) -> list[str]:
 
 ### Summary
 This problem is a classic application of the *scan & construct* pattern for string-manipulation problems. The approach is a simple linear scan, looking for substrings to manipulate independently. This type of pattern is commonly found in competitive string, simulation, and game problems and forms a building block for deeper state-space search optimizations in more advanced variations.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Flip Game II(flip-game-ii) (Medium)

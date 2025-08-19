@@ -1,4 +1,4 @@
 [
-    {"number": 470, "slug": "implement-rand10-using-rand7", "title": "Implement Rand10() Using Rand7()", "difficulty": "Medium"},
-    {"number": 478, "slug": "generate-random-point-in-a-circle", "title": "Generate Random Point in a Circle", "difficulty": "Medium"}
+    {"number": 470, "slug": "implement-rand10-using-rand7", "title": "Implement Rand10() Using Rand7()", "difficulty": "Medium", "tags": ["Math", "Rejection Sampling", "Randomized", "Probability and Statistics"], "similar_problems": []},
+    {"number": 478, "slug": "generate-random-point-in-a-circle", "title": "Generate Random Point in a Circle", "difficulty": "Medium", "tags": ["Math", "Geometry", "Rejection Sampling", "Randomized"], "similar_problems": [{"slug": "random-point-in-non-overlapping-rectangles", "title": "Random Point in Non-overlapping Rectangles", "difficulty": "Medium"}]}
 ]

@@ -94,3 +94,11 @@ def findDifference(nums1, nums2):
 ### Summary
 This approach uses the **hash set pattern** — convert arrays to sets for efficient membership checks and uniqueness.  
 It's a common pattern for array difference, union, and intersection problems and is broadly applicable in deduplication, membership, and comparison scenarios.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems
+- Intersection of Two Arrays(intersection-of-two-arrays) (Easy)
+- Intersection of Two Arrays II(intersection-of-two-arrays-ii) (Easy)
+- Intersection of Multiple Arrays(intersection-of-multiple-arrays) (Easy)

@@ -87,3 +87,9 @@ def longestArithSeqLength(nums):
 This problem uses the **dynamic programming with hashmap/memoization** pattern, tracking the longest subsequence length for every index + difference combination.  
 It's a classic **DP on subsequences** problem, similar to Longest Increasing Subsequence (LIS), but generalized to arbitrary difference rather than one specific gap.  
 This approach is found in problems involving counting/length-finding on sequences with varying relationships and is widely applicable whenever the state depends on both index and a "feature" (like difference, ratio, etc).
+
+### Tags
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Destroy Sequential Targets(destroy-sequential-targets) (Medium)

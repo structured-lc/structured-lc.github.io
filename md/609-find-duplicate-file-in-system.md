@@ -115,3 +115,9 @@ def findDuplicate(paths):
 
 This problem uses the **hashmap grouping pattern** (mapping content → file locations), a classic for all grouping or bucketing tasks—especially finding duplicates or anagrams.  
 Very commonly seen in string and file deduplication problems, and similar patterns apply in email or log grouping, grouping anagrams, or grouping by signatures in security analytics.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Delete Duplicate Folders in System(delete-duplicate-folders-in-system) (Hard)

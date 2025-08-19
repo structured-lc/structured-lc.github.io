@@ -91,3 +91,12 @@ This problem is a classic example of **counting triangles in an undirected graph
 The efficient approach is to use adjacency sets and neighbor intersection, which avoids the brute force O(n³) method.  
 The core pattern here is graph traversal with neighbor set intersection, a useful technique for detecting small cliques or cycles in graphs.  
 This pattern generalizes to k-clique counting (counting complete subgraphs of size k) and is a core idea in network motif analysis and cycle detection.
+
+### Tags
+Graph(#graph)
+
+### Similar Problems
+- Number of Connected Components in an Undirected Graph(number-of-connected-components-in-an-undirected-graph) (Medium)
+- Reachable Nodes In Subdivided Graph(reachable-nodes-in-subdivided-graph) (Hard)
+- Distance to a Cycle in Undirected Graph(distance-to-a-cycle-in-undirected-graph) (Hard)
+- Find if Path Exists in Graph(find-if-path-exists-in-graph) (Easy)

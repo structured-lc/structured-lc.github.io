@@ -107,3 +107,14 @@ def isValid(s: str) -> bool:
 
 ### Summary
 This problem is a **stack** pattern classic, used to check for correct matching of nested structures. Stacks enable elegant solutions for properly nested bracket problems and are commonly used in parsing, expression evaluation, and compilers. Recognizing when a problem requires "last opened, first closed" is a vital interview skill. This pattern is also applicable for binary tree traversals, undo operations, and depth-first search.
+
+### Tags
+String(#string), Stack(#stack)
+
+### Similar Problems
+- Generate Parentheses(generate-parentheses) (Medium)
+- Longest Valid Parentheses(longest-valid-parentheses) (Hard)
+- Remove Invalid Parentheses(remove-invalid-parentheses) (Hard)
+- Check If Word Is Valid After Substitutions(check-if-word-is-valid-after-substitutions) (Medium)
+- Check if a Parentheses String Can Be Valid(check-if-a-parentheses-string-can-be-valid) (Medium)
+- Move Pieces to Obtain a String(move-pieces-to-obtain-a-string) (Medium)

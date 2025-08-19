@@ -113,3 +113,11 @@ def minimumRounds(tasks):
 
 ### Summary
 This problem uses the **greedy grouping** pattern, minimizing rounds by forming the largest possible allowed group (here, 3), and only using smaller allowed groups (here, 2) when needed. Patterns like this are seen in problems involving partitioning numbers under grouping constraints. The logic—prefer large allowed group sizes to minimize the number of actions—applies universally in such settings (e.g. coin change, scheduling, packing problems).
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Counting(#counting)
+
+### Similar Problems
+- Climbing Stairs(climbing-stairs) (Easy)
+- Odd String Difference(odd-string-difference) (Easy)
+- Minimum Levels to Gain More Points(minimum-levels-to-gain-more-points) (Medium)

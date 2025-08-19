@@ -110,3 +110,10 @@ def maxFactorScore(nums):
 
 ### Summary
 We leveraged prefix and suffix arrays for efficient range GCD/LCM computation to make removal queries O(1) each, reducing brute-force O(n²) to O(n). This is a classic prefix/suffix decomposition (sometimes called “static range query without update”)—applicable to problems where an associative operation is needed on “all except one” or in “all except a specific subsegment” scenarios.
+
+### Tags
+Array(#array), Math(#math), Number Theory(#number-theory)
+
+### Similar Problems
+- Greatest Common Divisor of Strings(greatest-common-divisor-of-strings) (Easy)
+- Remove One Element to Make the Array Strictly Increasing(remove-one-element-to-make-the-array-strictly-increasing) (Easy)

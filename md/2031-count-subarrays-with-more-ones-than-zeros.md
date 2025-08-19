@@ -143,3 +143,11 @@ def countSubarrays(nums):
 
 ### Summary
 The core approach uses **prefix sums** converting the 0/1 array to -1/+1, and counts, for each end index, how many previous prefix sums are less than the current—a classic "count of range sum less than x" problem, efficiently solved with a Fenwick Tree or coordinate compression. This is a common pattern useful in subarray sum/count questions like "count range sum" or "number of subarrays with sum in [lower, upper]."
+
+### Tags
+Array(#array), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Merge Sort(#merge-sort), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Ones and Zeroes(ones-and-zeroes) (Medium)
+- Longer Contiguous Segments of Ones than Zeros(longer-contiguous-segments-of-ones-than-zeros) (Easy)
+- All Divisions With the Highest Score of a Binary Array(all-divisions-with-the-highest-score-of-a-binary-array) (Medium)

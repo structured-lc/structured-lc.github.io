@@ -77,3 +77,11 @@ def findKDistantIndices(nums, key, k):
 
 ### Summary
 This is a classic **window marking** or **range inclusion** problem for each key position. We leverage a set or boolean array for deduplication, and it falls under **array sweep** or **interval union** patterns—common in range-update and "for every position, can it be 'covered' by some special event?" style interview questions. The marking and then sorting/deduplication pattern is frequently used for such "distance from special position" array problems.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)
+- Shortest Word Distance(shortest-word-distance) (Easy)
+- Minimum Absolute Difference Between Elements With Constraint(minimum-absolute-difference-between-elements-with-constraint) (Medium)

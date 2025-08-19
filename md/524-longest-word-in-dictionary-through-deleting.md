@@ -86,3 +86,9 @@ def findLongestWord(s, dictionary):
 ### Summary
 This solution is based on the **two-pointer technique for checking subsequences** and **greedy selection** for longest and lexicographically smallest word. The pattern is common when selecting optimal elements with constraints.  
 This approach is also used for "is subsequence"-type problems and "selecting best among candidates" questions, making it very useful for string matching and filtering tasks.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), String(#string), Sorting(#sorting)
+
+### Similar Problems
+- Longest Word in Dictionary(longest-word-in-dictionary) (Medium)

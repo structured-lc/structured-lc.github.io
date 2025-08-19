@@ -96,3 +96,15 @@ def countVowelSubstrings(word: str) -> int:
 ### Summary
 The problem is a classic example of the "substring with all unique required characters" pattern but specialized to the case where the substring is restricted to vowels only. The solution uses an optimized brute-force approach: for every starting index, expand as long as you see vowels, track unique ones, and count as soon as all 5 are present.  
 This is a common string and sliding window pattern, and similar logic is used in problems involving substrings with all required characters, e.g., "Minimum Window Substring", "Substring with Concatenation of All Words", etc.
+
+### Tags
+Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Number of Matching Subsequences(number-of-matching-subsequences) (Medium)
+- Subarrays with K Different Integers(subarrays-with-k-different-integers) (Hard)
+- Number of Substrings With Only 1s(number-of-substrings-with-only-1s) (Medium)
+- Longest Substring Of All Vowels in Order(longest-substring-of-all-vowels-in-order) (Medium)
+- Total Appeal of A String(total-appeal-of-a-string) (Hard)
+- Count of Substrings Containing Every Vowel and K Consonants II(count-of-substrings-containing-every-vowel-and-k-consonants-ii) (Medium)
+- Count of Substrings Containing Every Vowel and K Consonants I(count-of-substrings-containing-every-vowel-and-k-consonants-i) (Medium)

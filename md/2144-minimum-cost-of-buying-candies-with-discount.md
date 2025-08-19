@@ -84,3 +84,12 @@ def minimumCost(cost):
 
 ### Summary
 This problem is a classic **greedy** selection pattern: sort elements, group by rules, always minimizing cost by "paying" for the highest-priced items. Such patterns are common in discount, coupon, or buy-X-get-Y type problems and appear in inventory management or even interval/meeting scheduling—anywhere you must select elements to maximize a benefit or minimize a cost within batch/group constraints.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Array Partition(array-partition) (Easy)
+- Minimum Absolute Difference(minimum-absolute-difference) (Easy)
+- Minimum Number of Operations to Satisfy Conditions(minimum-number-of-operations-to-satisfy-conditions) (Medium)
+- Check if Grid Satisfies Conditions(check-if-grid-satisfies-conditions) (Easy)

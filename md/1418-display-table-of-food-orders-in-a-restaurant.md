@@ -87,3 +87,8 @@ def displayTable(orders):
 
 ### Summary
 The solution applies hashmap counting and two-level sorting to tabulate counts. The pattern of counting, sorting, and table output is common in interview questions involving data grouping and tabular summaries. This can be adapted for problems requiring group-by and count operations.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting), Ordered Set(#ordered-set)
+
+### Similar Problems

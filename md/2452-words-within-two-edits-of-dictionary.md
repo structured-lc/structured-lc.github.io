@@ -110,3 +110,9 @@ def twoEditWords(queries, dictionary):
 This problem is a classic *fuzzy string matching* pattern with a fixed small edit budget. The efficient brute-force approach leverages the very small edit allowance (max 2) and early-out optimization.  
 This pattern applies to other error-tolerant matching tasks such as spell checking, suggestion engines, and DNA sequence matching where you only care about "close enough" matches.  
 For higher edit budgets or larger input, more advanced data structures (e.g., BK-trees, tries, precomputed variants, or hashing) can be used for efficient approximate search.
+
+### Tags
+Array(#array), String(#string), Trie(#trie)
+
+### Similar Problems
+- Word Ladder(word-ladder) (Hard)

@@ -137,3 +137,10 @@ def mostFrequentTreeSum(root):
 ### Summary
 
 This problem uses the **post-order DFS** traversal pattern to calculate subtree values in a bottom-up manner, allowing efficient memoization of results (hash map for frequencies). The approach is broadly applicable to any problem requiring aggregation of values over all subtrees or descendant sets, such as “path sum”, counting or measuring properties of subtrees, or frequency/statistic aggregation per subtree. The key technique: compute child results before the parent, collect and count properties at each node.
+
+### Tags
+Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Subtree of Another Tree(subtree-of-another-tree) (Easy)
+- Count Nodes Equal to Sum of Descendants(count-nodes-equal-to-sum-of-descendants) (Medium)

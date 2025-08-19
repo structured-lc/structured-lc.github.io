@@ -88,3 +88,9 @@ def tilingRectangle(n, m):
 
 ### Summary
 The DP approach is critical for optimal rectangle tiling when dimensions are small. This solution fits the **DP on 2D state** pattern, often reapplicable to grid partitioning problems where substructure results can be cached. Techniques here are common for similar "tiling" or "partitioning" problems in combinatorics and dynamic programming.
+
+### Tags
+Backtracking(#backtracking)
+
+### Similar Problems
+- Selling Pieces of Wood(selling-pieces-of-wood) (Hard)

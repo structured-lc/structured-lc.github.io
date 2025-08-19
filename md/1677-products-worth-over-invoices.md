@@ -124,3 +124,8 @@ ORDER BY p.name;
 
 ### Summary
 Uses classic SQL aggregation and JOINs, useful for any data summarization tasks. Common GROUP BY and LEFT JOIN anti-pattern for including rows with no relationship in the secondary table. Also illustrates COALESCE for null handling, important in reporting scenarios.
+
+### Tags
+Database(#database)
+
+### Similar Problems

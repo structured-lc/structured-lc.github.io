@@ -81,3 +81,8 @@ def findSmallestSetOfVertices(n, edges):
 
 ### Summary
 This problem uses the pattern of finding sources in a directed graph—nodes with no incoming edges. It showcases the application of tracking in-degree in DAGs and is a common subroutine in topological sorting, transitive closure, and minimum set cover problems in graphs. The strategy is simple, highly efficient, and is generally applicable for finding starting points in reachability questions in DAGs.
+
+### Tags
+Graph(#graph)
+
+### Similar Problems

@@ -54,3 +54,10 @@ def getLastMoment(n, left, right):
 
 ### Summary
 Classic **simulation reduction**: after realizing collision is irrelevant to final result (label swap), can solve simply by considering max time for each direction. This pattern appears in problems where symmetry/indistinguishability allows ignoring intermediate interactions.
+
+### Tags
+Array(#array), Brainteaser(#brainteaser), Simulation(#simulation)
+
+### Similar Problems
+- Count Collisions on a Road(count-collisions-on-a-road) (Medium)
+- Movement of Robots(movement-of-robots) (Medium)

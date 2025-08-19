@@ -98,3 +98,9 @@ def daysBetweenDates(date1: str, date2: str) -> int:
 
 ### Summary
 This problem is a classic example of avoiding naive day-by-day iteration by mapping each date to a serial number or "ordinal day count," making interval calculation fast. This “reduce-to-origin and subtract” pattern also shows up in range sum problems, date differences, and prefix sum applications. Handling leap years carefully is the main subtlety. This pattern recurs with date/time intervals, and in interval merging or booking system problems.
+
+### Tags
+Math(#math), String(#string)
+
+### Similar Problems
+- Count Days Spent Together(count-days-spent-together) (Easy)

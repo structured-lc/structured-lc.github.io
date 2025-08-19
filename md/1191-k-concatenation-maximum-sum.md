@@ -95,3 +95,8 @@ def kConcatenationMaxSum(arr, k):
 
 ### Summary
 This problem is an application of dynamic programming using **Kadane’s algorithm** for max subarray sum. The optimization for large k relies on identifying when full concatenations contribute positively and using prefix/suffix computations for boundary-spanning subarrays. This pattern occurs in other problems asking for repeated arrays or circular max subarray sums.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

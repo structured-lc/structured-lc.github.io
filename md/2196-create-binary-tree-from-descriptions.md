@@ -127,3 +127,10 @@ def createBinaryTree(descriptions):
 ### Summary
 This problem is a typical example of **"construct from parent-child relations"** and uses a dictionary for quick node lookup and a set to distinguish the root.  
 It's a common pattern in tree-building questions and can apply in constructing graphs, parsing expression trees, or organizing organizational hierarchies. The approach is efficient, clear, and readable, and uses only basic data structures.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Tree(#tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Convert Sorted List to Binary Search Tree(convert-sorted-list-to-binary-search-tree) (Medium)
+- Number Of Ways To Reconstruct A Tree(number-of-ways-to-reconstruct-a-tree) (Hard)

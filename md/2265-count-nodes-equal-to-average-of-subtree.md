@@ -130,3 +130,11 @@ class Solution:
 
 ### Summary
 This problem is a classic example of post-order DFS in a binary tree to aggregate information from child subtrees before handling the parent. The approach is a common pattern for "attribute of subtree" problems (computing subtree sum, count, min, max, etc.) and can be repurposed for many variations involving tree DP or post-order aggregation.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Maximum Average Subtree(maximum-average-subtree) (Medium)
+- Insufficient Nodes in Root to Leaf Paths(insufficient-nodes-in-root-to-leaf-paths) (Medium)
+- Count Nodes Equal to Sum of Descendants(count-nodes-equal-to-sum-of-descendants) (Medium)

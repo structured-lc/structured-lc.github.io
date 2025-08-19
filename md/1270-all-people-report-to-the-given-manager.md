@@ -116,3 +116,8 @@ def find_all_reports(employees, manager_id):
 
 ### Summary
 We solve this problem using a tree traversal approach (BFS/DFS), mapping manager relationships to efficiently find all reports. This is a classic *organizational hierarchy* pattern—common for employee management, folder/file systems, and any structure modeled as a directed acyclic graph (tree).
+
+### Tags
+Database(#database)
+
+### Similar Problems

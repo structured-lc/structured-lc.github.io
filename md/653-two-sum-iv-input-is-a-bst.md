@@ -130,3 +130,12 @@ def findTarget(root, k):
 
 ### Summary
 This problem applies the **“Two Sum”** pattern, mapping it to trees. The solution uses DFS and a HashSet to track seen values, matching the complement for each node while traversing. This “hashing for pair search” is a widely-used pattern (appears in arrays, linked lists, BSTs, etc.) and mastering it helps efficiently solve variations requiring pair or tuple sum checks in linear time. The recursive DFS + hashset approach is easy to adapt for other tree-based “pair”-style problems.
+
+### Tags
+Hash Table(#hash-table), Two Pointers(#two-pointers), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)
+- Two Sum II - Input Array Is Sorted(two-sum-ii-input-array-is-sorted) (Medium)
+- Two Sum III - Data structure design(two-sum-iii-data-structure-design) (Easy)
+- Two Sum BSTs(two-sum-bsts) (Medium)

@@ -79,3 +79,8 @@ def nextClosestTime(time):
 
 ### Summary  
 This problem is solved by incrementing the time minute-by-minute and checking at each step if the new time uses only the original digits. The approach is a simulation/brute-force pattern, optimized by leveraging the small input size. The pattern is common when you must generate candidates by iterating or simulating a process and validating each candidate. Similar patterns appear in password brute-forcing, sequential ID checks, and resource scheduling.
+
+### Tags
+Hash Table(#hash-table), String(#string), Backtracking(#backtracking), Enumeration(#enumeration)
+
+### Similar Problems

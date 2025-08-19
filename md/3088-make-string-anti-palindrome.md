@@ -110,3 +110,8 @@ def makeAntiPalindrome(s: str) -> str:
 
 This problem is a classic application of greedy reconstruction and counting, leveraging sorting and mirror pair checks. Many palindromic/anti-palindromic rearrangement problems (or similar problems like the rearrange string so no two adjacent are the same) use similar counting and frequency check ideas.  
 Recognizing the core limitation—no character can appear more than half the times—is essential for efficient checking. Adjusting the sorted sequence for lexicographical ordering is a common pattern as well.
+
+### Tags
+String(#string), Greedy(#greedy), Sorting(#sorting), Counting Sort(#counting-sort)
+
+### Similar Problems

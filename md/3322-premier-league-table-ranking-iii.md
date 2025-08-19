@@ -166,3 +166,8 @@ print(premier_league_table_ranking_iii(season_stats))
 This problem uses **sorting, grouping, and ranking patterns** commonly needed in leaderboard or ranking system designs.  
 The explicit breaking of ties by secondary and tertiary fields (goal difference, alphabetical order) is a typical multi-key sort, and assigning ranks using these criteria is a classic DENSE_RANK or RANK windowing problem.  
 Such an algorithm can be adapted for any leaderboard with tie-breaking.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -168,3 +168,8 @@ def getCoprimes(nums, edges):
 ### Summary
 This problem is a classic example of **Tree DP with ancestor tracking** and uses **precomputation** based on value constraints.  
 The main pattern is “*DFS with context or state passing*”—keeping track of auxiliary information about ancestors as we traverse. Similar ideas are useful in other “nearest ancestor” or “dynamic path property” problems on trees; for instance, finding the nearest node with a smaller value, or aggregating subtree statistics efficiently.
+
+### Tags
+Array(#array), Math(#math), Tree(#tree), Depth-First Search(#depth-first-search), Number Theory(#number-theory)
+
+### Similar Problems

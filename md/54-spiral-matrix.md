@@ -104,3 +104,11 @@ def spiralOrder(matrix):
 ### Summary
 This problem is a classic **simulation** and **matrix traversal** question, solved elegantly with the four-pointer technique for layer-by-layer iteration.  
 This pointer pattern can also handle problems requiring perimeter traversal or "peeling off" layers, and is commonly applied in problems involving in-place matrix modification (like rotating images, zigzag traversal, boundary layer rearrangement, etc.).
+
+### Tags
+Array(#array), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems
+- Spiral Matrix II(spiral-matrix-ii) (Medium)
+- Spiral Matrix III(spiral-matrix-iii) (Medium)
+- Spiral Matrix IV(spiral-matrix-iv) (Medium)

@@ -59,3 +59,8 @@ def xorOperation(n, start):
 
 ### Summary
 A basic array formula/XOR accumulation pattern. Brute-force is optimal for small n; for large n, look for XOR properties of sequences. This pattern appears in bit manipulation and number theory problems.
+
+### Tags
+Math(#math), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

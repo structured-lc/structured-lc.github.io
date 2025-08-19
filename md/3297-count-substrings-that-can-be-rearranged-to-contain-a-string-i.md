@@ -114,3 +114,9 @@ def count_substrings(word1: str, word2: str) -> int:
 
 ### Summary
 The approach uses prefix sums to allow quick character count retrieval for any substring, and brute-forces all possible substrings of length ≥ len(word2). Character set checks are handled in linear time with respect to the number of substrings, but overall complexity is O(n²), acceptable for small n. The pattern is a common variant of substring + character count checking, and similar logic applies in "anagram substring", "minimum window substring", and "permutation in string" types of LeetCode problems.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Minimum Window Substring(minimum-window-substring) (Hard)

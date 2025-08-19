@@ -141,3 +141,8 @@ def viewers_turned_streamers(sessions):
 
 ### Summary
 This problem is a *group-by and aggregation* challenge with a filtering twist—processing time-order per group. It’s common for reporting, log processing, and event stream analysis tasks in data engineering. The windowing/pivoting pattern and tracking “first” per-user appears in churn modeling, onboarding flows, and custom cohort analysis.
+
+### Tags
+Database(#database)
+
+### Similar Problems

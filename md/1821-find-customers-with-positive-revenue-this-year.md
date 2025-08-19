@@ -70,3 +70,8 @@ ORDER BY customer_id;
 
 ### Summary
 This problem demonstrates basic SQL filtering with multiple conditions using AND operator. It's a fundamental pattern for database queries involving time-based filtering and numerical comparisons. This approach is commonly used in business analytics, financial reporting, and data analysis scenarios where you need to segment data by time periods and performance metrics.
+
+### Tags
+Database(#database)
+
+### Similar Problems

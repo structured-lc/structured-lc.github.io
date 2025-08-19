@@ -78,3 +78,22 @@ def maxSubArray(nums):
 
 ### Summary
 This problem uses the classic dynamic programming approach, specifically "Kadane’s Algorithm". It’s a well-known “prefix sum optimization” or “running window” pattern, and appears in problems involving contiguous subarrays with optimal properties. This coding pattern can be applied to similar maximum (or minimum) sum subarray problems, and has real-world applications in finance, time-series analysis, and computational genomics.
+
+### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Best Time to Buy and Sell Stock(best-time-to-buy-and-sell-stock) (Easy)
+- Maximum Product Subarray(maximum-product-subarray) (Medium)
+- Degree of an Array(degree-of-an-array) (Easy)
+- Longest Turbulent Subarray(longest-turbulent-subarray) (Medium)
+- Maximum Score Of Spliced Array(maximum-score-of-spliced-array) (Hard)
+- Maximum Absolute Sum of Any Subarray(maximum-absolute-sum-of-any-subarray) (Medium)
+- Maximum Subarray Sum After One Operation(maximum-subarray-sum-after-one-operation) (Medium)
+- Substring With Largest Variance(substring-with-largest-variance) (Hard)
+- Count Subarrays With Score Less Than K(count-subarrays-with-score-less-than-k) (Hard)
+- Maximum Value of a String in an Array(maximum-value-of-a-string-in-an-array) (Easy)
+- Find the Substring With Maximum Cost(find-the-substring-with-maximum-cost) (Medium)
+- K Items With the Maximum Sum(k-items-with-the-maximum-sum) (Easy)
+- Maximum Good Subarray Sum(maximum-good-subarray-sum) (Medium)
+- Maximize Subarray Sum After Removing All Occurrences of One Element(maximize-subarray-sum-after-removing-all-occurrences-of-one-element) (Hard)

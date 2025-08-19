@@ -96,3 +96,8 @@ def min_operations(nums):
 
 ### Summary
 This problem is a great example of using binary representation and greedy thinking to minimize operations, mapping the increments and doubles to set bits and maximal bit length. It’s a classic pattern in problems involving operations on all elements (bitwise, digit DP, minimum steps problems). The bitwise decomposition can also be applied in other problems requiring “building up” numbers via allowed operations.
+
+### Tags
+Array(#array), Greedy(#greedy), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

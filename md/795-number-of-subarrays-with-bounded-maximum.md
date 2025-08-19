@@ -90,3 +90,10 @@ def numSubarrayBoundedMax(nums, left, right):
 
 ### Summary  
 This problem uses the classic two-pass or difference-of-counting window technique. The core coding pattern ― sliding window with resets when constraints break ― is broadly applicable to subarray range queries. The prefix sum–like `count(bound)` logic is also common for problems involving "at most"/"less than or equal" conditions.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers)
+
+### Similar Problems
+- Count Subarrays With Median K(count-subarrays-with-median-k) (Hard)
+- Find the Number of Subarrays Where Boundary Elements Are Maximum(find-the-number-of-subarrays-where-boundary-elements-are-maximum) (Hard)

@@ -103,3 +103,8 @@ def maximum_sum(nums):
 ### Summary
 
 This problem uses a **hash map bucket by property** pattern, where elements are grouped by sum of digits, and the top-matching elements are combined for the result. It's a classic way to handle pair-maximum or frequency-type interview questions and applies to problems involving “equal constraints” across pairs or groups.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

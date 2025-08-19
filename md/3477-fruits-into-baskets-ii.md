@@ -70,3 +70,9 @@ def unplaced_fruit_types(fruits, baskets):
                 break  # Move to next fruit
         if not placed:
             unplaced
+
+### Tags
+Array(#array), Binary Search(#binary-search), Segment Tree(#segment-tree), Simulation(#simulation), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Fruit Into Baskets(fruit-into-baskets) (Medium)

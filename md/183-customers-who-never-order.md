@@ -164,3 +164,8 @@ def customers_who_never_order(customers, orders):
 ### Summary
 
 The core pattern here is *anti-join*: returning items from one table that do not have a match in another. This is extremely common in SQL and database problems, and is best handled with `LEFT JOIN ... WHERE ... IS NULL` or `WHERE NOT IN` subquery logic. The solution uses sets for fast membership testing, a coding pattern frequently reused in interview-style table difference or existence questions.
+
+### Tags
+Database(#database)
+
+### Similar Problems

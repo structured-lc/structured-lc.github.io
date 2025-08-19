@@ -92,3 +92,9 @@ def countExcellentPairs(nums, k):
 ### Summary
 We use the insight that popcount(a & b) + popcount(a | b) = popcount(a) + popcount(b), reducing the problem to a frequency-count over set bit counts. Double counting is avoided by deduplicating input.  
 This is a classic pattern where mathematical reduction (bit manipulation) allows O(n²) brute force to be transformed into a much faster O(N) grouping problem, which appears often in bitwise or combinatorial sum-type LeetCode problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)

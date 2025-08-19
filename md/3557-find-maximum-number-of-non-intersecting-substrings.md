@@ -113,3 +113,8 @@ def maxSubstrings(word: str) -> int:
 ### Summary
 This solution uses the **greedy interval scheduling** pattern: Compute candidate intervals, sort by end, select the max set of non-overlapping intervals.  
 This is a classic pattern in many substring, interval, and scheduling problems (e.g., "Non-overlapping Intervals", "Merge Intervals", "Video Stitching"). Recognizing this pattern helps attack a wide range of interview and contest questions.
+
+### Tags
+Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
+
+### Similar Problems

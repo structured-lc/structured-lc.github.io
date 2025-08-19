@@ -75,3 +75,11 @@ def numberOfSpecialChars(word):
 
 ### Summary
 This problem is a classic **set membership** and **character frequency** problem, relying on the fixed size of the English alphabet. The pattern (using sets to check presence) commonly appears in string processing and bit masking problems. This approach is efficient and scalable, handling any input size within the alphabet constraints efficiently.
+
+### Tags
+Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Detect Capital(detect-capital) (Easy)
+- Greatest English Letter in Upper and Lower Case(greatest-english-letter-in-upper-and-lower-case) (Easy)
+- Count the Number of Special Characters II(count-the-number-of-special-characters-ii) (Medium)

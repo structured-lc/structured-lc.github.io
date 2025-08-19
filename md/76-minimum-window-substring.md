@@ -106,3 +106,16 @@ def minWindow(s: str, t: str) -> str:
 
 ### Summary
 The sliding window technique with hash maps lets you efficiently find the minimum substring containing a given set of characters—including duplicates—in O(n) time. This “variable sliding window” is a classic pattern for substring and subarray problems where order or counts are important, and is widely applicable in searching problems, substring uniqueness, and anagram matching.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Substring with Concatenation of All Words(substring-with-concatenation-of-all-words) (Hard)
+- Minimum Size Subarray Sum(minimum-size-subarray-sum) (Medium)
+- Sliding Window Maximum(sliding-window-maximum) (Hard)
+- Permutation in String(permutation-in-string) (Medium)
+- Smallest Range Covering Elements from K Lists(smallest-range-covering-elements-from-k-lists) (Hard)
+- Minimum Window Subsequence(minimum-window-subsequence) (Hard)
+- Count Substrings That Can Be Rearranged to Contain a String II(count-substrings-that-can-be-rearranged-to-contain-a-string-ii) (Hard)
+- Count Substrings That Can Be Rearranged to Contain a String I(count-substrings-that-can-be-rearranged-to-contain-a-string-i) (Medium)

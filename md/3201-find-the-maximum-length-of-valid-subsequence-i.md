@@ -110,3 +110,10 @@ This problem is a variant of the **Longest Valid Subsequence** pattern, leveragi
 It can be efficiently solved in O(n) by noting that you either pick elements all of one parity, or alternate parities for a longer sequence.  
 The greedy two-pointer/scan approach is robust and common in problems involving monotonic/alternate patterns in arrays, frequently appearing in problems on subsequence selection, longest alternating subsequence, or grouping by congruence classes.  
 The underlying technique generalizes to other similar array and sequence problems where adjacency relations can be described by simple group properties.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Longest Increasing Subsequence(longest-increasing-subsequence) (Medium)
+- Length of the Longest Subsequence That Sums to Target(length-of-the-longest-subsequence-that-sums-to-target) (Medium)

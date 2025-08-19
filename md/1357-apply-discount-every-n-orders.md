@@ -132,3 +132,9 @@ class Cashier:
 
 ### Summary
 This problem demonstrates a **mapping and counting pattern**: using a hash map for fast lookups and a counter to track state across calls. It's a common approach in billing, coupon, or reward systems where you must apply special logic on every Nᵗʰ event. The solution pattern (static lookup, accumulator, trigger on every N) is widely applicable in design and implementation of point-of-sale, inventory, customer rewards, and similar systems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Design(#design)
+
+### Similar Problems
+- Apply Discount to Prices(apply-discount-to-prices) (Medium)

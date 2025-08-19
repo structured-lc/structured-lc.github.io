@@ -118,3 +118,8 @@ def count_artist_occurrences(spotify):
 
 ### Summary
 This problem follows the common "frequency counting" and "custom sorting" coding pattern, seen in problems like word-frequency counters and leaderboard rankings. It demonstrates basic use of hashmaps for aggregation, and applying custom sorting for output format. This pattern is frequently encountered in analytics, logs, and real-world reporting scenarios.
+
+### Tags
+Database(#database)
+
+### Similar Problems

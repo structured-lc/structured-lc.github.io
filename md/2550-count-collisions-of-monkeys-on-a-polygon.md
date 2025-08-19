@@ -73,3 +73,9 @@ def countCollisions(n):
 
 ### Summary
 This problem uses the **counting principle** and combinatorics: for n monkeys, 2ⁿ possible moves, minus the only 2 collision-free cases. The pattern—subtracting exceptional cases from a full set—is common in combinatorial problems, e.g. derangements, cycle arrangements, etc. Fast exponentiation for large n is a frequent coding interview pattern and broadly applicable for modular arithmetic in combinatorics.
+
+### Tags
+Math(#math), Recursion(#recursion)
+
+### Similar Problems
+- Pow(x, n)(powx-n) (Medium)

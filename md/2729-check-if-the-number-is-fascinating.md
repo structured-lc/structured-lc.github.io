@@ -88,3 +88,8 @@ Core steps:
 - String manipulation
 - Set or sorted comparison to validate exactly one of each digit
 Patterns like this are used for validation of unique element presence, common in coding interviews.
+
+### Tags
+Hash Table(#hash-table), Math(#math)
+
+### Similar Problems

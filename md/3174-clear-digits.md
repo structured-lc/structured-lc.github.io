@@ -88,3 +88,8 @@ def clearDigits(s: str) -> str:
 
 ### Summary
 This is a classic **stack-simulation** problem, where the "remove nearest to left" rule for each digit lends itself naturally to the stack structure. This pattern is common for problems involving undo, matching, or pairing to the previous element (e.g., valid parentheses, text editor simulations). Stack is ideal whenever we need immediate access to the most recent candidate for removal/action.
+
+### Tags
+String(#string), Stack(#stack), Simulation(#simulation)
+
+### Similar Problems

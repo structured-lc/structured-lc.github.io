@@ -97,3 +97,8 @@ def lastStoneWeight(stones):
 
 ### Summary
 This problem uses a **greedy** approach, implemented efficiently with a **heap (priority queue)**. This pattern—repeatedly retrieving/removing maximum or minimum values—occurs in many scheduling and simulation problems, such as "Kth Largest Element," "Merge K Sorted Lists," and more. The heap technique is key whenever you must make frequent, efficient max/min extractions.
+
+### Tags
+Array(#array), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

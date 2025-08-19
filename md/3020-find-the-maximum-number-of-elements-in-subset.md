@@ -107,3 +107,9 @@ def maximumLength(nums):
 
 ### Summary
 This problem uses the **hashing + greedy chain extension** pattern: try every unique candidate as a root, chain out via a mathematical property (here, repeated squaring), and greedily build the longest valid sequence with available counts. This pattern is common in problems involving sequence construction or frequency buckets (like largest consecutive sequence, grouping, counting palindromes). The hashing and chain-walking idea generalizes to related sequence or palindrome problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Enumeration(#enumeration)
+
+### Similar Problems
+- Longest Consecutive Sequence(longest-consecutive-sequence) (Medium)

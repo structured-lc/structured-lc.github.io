@@ -73,3 +73,8 @@ def toHexspeak(num: str) -> str:
 
 ### Summary
 This problem is a direct string and digit mapping with rejection for invalid characters. It’s an example of string sanitization and encoding pattern that can be reused for validating and transforming inputs (encoding/decoding).
+
+### Tags
+Math(#math), String(#string)
+
+### Similar Problems

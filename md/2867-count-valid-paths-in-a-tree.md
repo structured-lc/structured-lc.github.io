@@ -142,3 +142,9 @@ def countPaths(n, edges):
 ### Summary
 The approach uses **tree-DFS** and combinatorics from each prime node's perspective to count unique valid paths.  
 It's an example of **divide-and-conquer in trees**, and often reappears in problems related to counting paths or subtrees meeting global constraints, especially where properties are rare (e.g., node is “special” or “prime”). This “split at property nodes and combine subtrees” trick is very powerful in tree DP and tree counting problems.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Number Theory(#number-theory)
+
+### Similar Problems
+- Count Paths That Can Form a Palindrome in a Tree(count-paths-that-can-form-a-palindrome-in-a-tree) (Hard)

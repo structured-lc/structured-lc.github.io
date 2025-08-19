@@ -89,3 +89,7 @@ def next_day(year, month, day):
 ### Summary
 This problem demonstrates careful handling of date arithmetic, especially leap year logic and month/year boundaries.  
 It is a classic *calendar math* pattern — common in scheduling, logging, and incremental date processing tasks, and is useful practice for clean edge case handling without relying on built-in helpers.
+
+### Tags
+
+### Similar Problems

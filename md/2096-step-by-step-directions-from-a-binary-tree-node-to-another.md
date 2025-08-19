@@ -149,3 +149,12 @@ def getDirections(root, startValue, destValue):
 
 ### Summary
 This problem uses the **Lowest Common Ancestor plus path-building** pattern. You compare paths to two nodes to quickly find the split, simulating 'up' moves using only downward pointers. This approach is efficient and generalizes to other unique-value tree navigation problems, such as building lowest common ancestor logic or finding directions in organization hierarchies.
+
+### Tags
+String(#string), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Path Sum II(path-sum-ii) (Medium)
+- Lowest Common Ancestor of a Binary Tree(lowest-common-ancestor-of-a-binary-tree) (Medium)
+- Binary Tree Paths(binary-tree-paths) (Easy)
+- Find Distance in a Binary Tree(find-distance-in-a-binary-tree) (Medium)

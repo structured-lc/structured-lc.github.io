@@ -125,3 +125,11 @@ def closestKValues(root, target, k):
 
 ### Summary
 The core approach is a **tree traversal with k-window maintenance**—a sliding window of closest values, leveraging BST’s in-order property to get sorted values. This is a classic "window on sorted data" pattern, also common in two-pointer problems over arrays, and can be adapted to find k closest in other sorted contexts (arrays, heaps, external storage). Techniques from this problem generalize to real-time recommendation systems and top-k query engines.
+
+### Tags
+Two Pointers(#two-pointers), Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Heap (Priority Queue)(#heap-priority-queue), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Binary Tree Inorder Traversal(binary-tree-inorder-traversal) (Easy)
+- Closest Binary Search Tree Value(closest-binary-search-tree-value) (Easy)
+- Closest Nodes Queries in a Binary Search Tree(closest-nodes-queries-in-a-binary-search-tree) (Medium)

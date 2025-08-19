@@ -117,3 +117,11 @@ def fullJustify(words, maxWidth):
 
 ### Summary
 This is a classic **greedy** and **string manipulation** problem, often asked to assess ability to handle intricate formatting logic. The solution patterns used include greedy packing, math for space distribution, and careful string assembly. These are common in formatting outputs (text editors, tables, reports), and also useful for interview tasks needing granular control over string layout.
+
+### Tags
+Array(#array), String(#string), Simulation(#simulation)
+
+### Similar Problems
+- Rearrange Spaces Between Words(rearrange-spaces-between-words) (Easy)
+- Divide a String Into Groups of Size k(divide-a-string-into-groups-of-size-k) (Easy)
+- Split Message Based on Limit(split-message-based-on-limit) (Hard)

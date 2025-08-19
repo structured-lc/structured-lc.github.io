@@ -163,3 +163,10 @@ def buildExpressionTree(s):
 
 ### Summary
 This problem uses a well-known parsing pattern similar to the **shunting-yard algorithm**. The key is to maintain two stacks (operators and nodes) so we can build the tree as we process the string. This pattern naturally handles operator precedence and parentheses, and can be adapted for a variety of expression evaluation or tree building problems. Common in compilers, calculators, and expression evaluators.
+
+### Tags
+String(#string), Stack(#stack), Tree(#tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Basic Calculator III(basic-calculator-iii) (Hard)
+- Check If Two Expression Trees are Equivalent(check-if-two-expression-trees-are-equivalent) (Medium)

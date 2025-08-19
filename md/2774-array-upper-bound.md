@@ -85,3 +85,10 @@ def upperBound(nums, target):
 This is a classic **modified binary search** pattern: find the *last* occurrence of a given value in a sorted array.  
 This coding pattern (variant of binary search) comes up whenever locating boundaries or extreme positions (first, last, insert position, etc.) for a target value in a sorted collection.  
 Mastering these tweaks is critical for efficient searching tasks in interviews and when working with range queries.
+
+### Tags
+
+### Similar Problems
+- Array Prototype Last(array-prototype-last) (Easy)
+- Group By(group-by) (Medium)
+- Snail Traversal(snail-traversal) (Medium)

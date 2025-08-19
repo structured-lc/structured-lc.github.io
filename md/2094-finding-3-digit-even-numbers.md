@@ -93,3 +93,9 @@ def findEvenNumbers(digits):
 This problem uses the **digit counting and pattern matching** technique — generate all possible candidates, and validate with frequency counts.  
 The approach is efficient, directly tests all possible outcomes, and avoids duplicate work with permutations.  
 This pattern — brute-forcing candidate numbers (with count checks) — is common in problems with combinatorial digit formation and strict counting constraints, e.g., "Number of unique digits numbers," "Find all valid time representations," etc.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Enumeration(#enumeration)
+
+### Similar Problems
+- Find Numbers with Even Number of Digits(find-numbers-with-even-number-of-digits) (Easy)

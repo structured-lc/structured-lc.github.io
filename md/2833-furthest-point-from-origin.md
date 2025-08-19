@@ -88,3 +88,9 @@ This is a classic greedy/counting problem — you maximize the net distance by c
 The logic is simple: maximize |countL − countR| by using all available unconstrained moves ('_') to further bias the net movement.  
 The pattern is common in problems that allow flexible assignment to maximize or minimize a metric (e.g., consecutive operations, maximizing imbalance).  
 Similar strategies are seen in array manipulation, flipping, or when there's a “wildcard” operator that can be freely assigned.
+
+### Tags
+String(#string), Counting(#counting)
+
+### Similar Problems
+- Robot Return to Origin(robot-return-to-origin) (Easy)

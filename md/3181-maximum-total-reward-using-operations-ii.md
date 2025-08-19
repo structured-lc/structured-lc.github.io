@@ -92,3 +92,8 @@ def maximumReward(rewardValues):
 This problem uses a **DP with state compression (subset sums)** idea, often seen in knapsack and subset sum variants.  
 The trick is converting the hard constraint (reward > x) into an incremental reachable sums solution.  
 Patterns like this extend to any “building up values under constraints” where you can only add a new item if it keeps the running total above some threshold.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

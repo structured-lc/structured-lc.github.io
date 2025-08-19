@@ -95,3 +95,7 @@ def delayAll(functions: List[Callable[[], 'asyncio.Future']], ms: int) -> List[C
 This problem uses the "wrapper/higher-order function" coding pattern: return a new function that augments the behavior of an existing one.  
 Here, the extra logic is simply to enforce a minimum settlement delay. The pattern is common for timeouts, retry logic, debouncing, and similar controls, in both synchronous and asynchronous settings.  
 It's a foundational technique in both functional programming and concurrency control.
+
+### Tags
+
+### Similar Problems

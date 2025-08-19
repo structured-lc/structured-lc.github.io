@@ -121,3 +121,8 @@ def isCompleteTree(root):
 
 ### Summary
 This problem uses the **level order traversal (BFS) pattern**, which is widely used for tree problems involving levels, widths, or completeness. The key pattern—detecting a `None` before any further non-null nodes—directly matches the property of a complete binary tree. Similar ideas apply to tree serialization, symmetry checks, and breadth-first searches for shortest paths or widest levels in a tree.
+
+### Tags
+Tree(#tree), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

@@ -118,3 +118,8 @@ def isEscapePossible(blocked, source, target):
 This approach applies the **bounded-region search pattern**, commonly seen when restrictions make global search intractable but local trapping is possible. It leverages the grid's sparseness (very few blockers) and guarantees from combinatorial geometry to ensure tractable runtime.  
 The method is a variant of BFS with an early exit condition (once outside potential trapping, we're "free"), and is a powerful tool for grid pathfinding with sparse obstacles.  
 Similar logic can be applied to large graphs or sparse maps where full search is infeasible but small-locale exhaustiveness is possible.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems

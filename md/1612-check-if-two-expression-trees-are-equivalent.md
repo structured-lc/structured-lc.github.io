@@ -67,3 +67,11 @@ class Solution:
 
 ### Summary
 This is a canonical **tree flattening + counting problem**. We reduce the trees to multisets (variable frequencies) since associative and commutative rules allow any grouping or order. This pattern appears in problems about “canonical form” for trees/expressions.
+
+### Tags
+Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree), Counting(#counting)
+
+### Similar Problems
+- Build Binary Expression Tree From Infix Expression(build-binary-expression-tree-from-infix-expression) (Hard)
+- Minimum Flips in Binary Tree to Get Result(minimum-flips-in-binary-tree-to-get-result) (Hard)
+- Evaluate Boolean Binary Tree(evaluate-boolean-binary-tree) (Easy)

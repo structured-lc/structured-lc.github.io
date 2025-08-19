@@ -115,3 +115,9 @@ def minOperations(nums1, nums2):
 
 ### Summary
 This problem is a classic greedy pattern: always make the operation with the biggest gain toward your goal. Sorting possible single-step changes (gains) and applying the largest first is optimal. The core pattern applies to other 'minimize operation count to reach target using step-gain set' problems, especially those with finite, small-value domains.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Counting(#counting)
+
+### Similar Problems
+- Number of Dice Rolls With Target Sum(number-of-dice-rolls-with-target-sum) (Medium)

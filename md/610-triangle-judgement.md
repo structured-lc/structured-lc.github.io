@@ -78,3 +78,8 @@ for sides in inputs:
 
 ### Summary
 This problem demonstrates direct application of the triangle inequality theorem for three numbers. It uses constant-time logical checks, a pattern common in geometric validation problems and input filtering. The approach is simple, robust, and often appears in simulation, graphics, or geometry-related coding interviews.
+
+### Tags
+Database(#database)
+
+### Similar Problems

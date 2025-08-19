@@ -57,3 +57,9 @@ def stringMatching(words):
 
 ### Summary
 This problem is a variant of the substring search pattern. The brute-force nested loop is acceptable for small input. This code shows how to implement clear pairwise substring checks common in interview string manipulation questions.
+
+### Tags
+Array(#array), String(#string), String Matching(#string-matching)
+
+### Similar Problems
+- Substring XOR Queries(substring-xor-queries) (Medium)

@@ -157,3 +157,10 @@ def bestClosingTime(customers: str) -> int:
 ### Summary
 This problem is a **prefix sum** and **greedy scan** optimization, common where costs or rewards are split around a division point.  
 The idea generalizes to "break point"/"cutoff" minimization tasks in strings/arrays, and the technique can be found in scheduling, cutoff detection, and certain dynamic programming base cases.
+
+### Tags
+String(#string), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Grid Game(grid-game) (Medium)
+- Minimum Amount of Damage Dealt to Bob(minimum-amount-of-damage-dealt-to-bob) (Hard)

@@ -121,3 +121,11 @@ def smallestSufficientTeam(req_skills, people):
 
 ### Summary
 The problem is a variant of "set cover," solved here with bitmasking and dynamic programming. Each possible skill combination is represented as a bitmask, and transitions are made by adding people one by one, only if they help to minimize team size. This is a classic application of bitmask DP for subset problems, and is a common pattern for optimization where state space is exponential in one dimension (like number of skills). This approach is applicable to many "minimum subset to cover/unify all features" problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems
+- The Number of Good Subsets(the-number-of-good-subsets) (Hard)
+- Minimum Number of Work Sessions to Finish the Tasks(minimum-number-of-work-sessions-to-finish-the-tasks) (Medium)
+- Maximum Rows Covered by Columns(maximum-rows-covered-by-columns) (Medium)

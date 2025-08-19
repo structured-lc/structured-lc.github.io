@@ -78,3 +78,10 @@ def isReflected(points):
 
 ### Summary
 This problem is a classic **geometry & set lookup** problem. It leverages the symmetry of reflection using simple arithmetic but relies on the hash set to guarantee efficiency. The same pattern—using a set to quickly verify the existence of geometric transformations—appears in other 2D geometry puzzles and duplicate detection problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math)
+
+### Similar Problems
+- Max Points on a Line(max-points-on-a-line) (Hard)
+- Number of Boomerangs(number-of-boomerangs) (Medium)

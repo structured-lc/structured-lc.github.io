@@ -138,3 +138,8 @@ print(get_second_most_recent_activity(user_activity))
 This problem is a classic example of **grouping and ranking within groups**.  
 The core SQL window function pattern (using RANK or ROW_NUMBER) can be reused for similar queries requiring nth-most (or least) selection per category, such as the kᵗʰ highest salary per department, or the second best score per student.  
 This pattern is widely useful across analytics and business reporting scenarios.
+
+### Tags
+Database(#database)
+
+### Similar Problems

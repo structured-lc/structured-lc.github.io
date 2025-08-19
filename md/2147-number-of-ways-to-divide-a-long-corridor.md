@@ -99,3 +99,11 @@ def numberOfWays(corridor: str) -> int:
 
 ### Summary
 This problem uses a **counting + grouping sliding window** pattern: group the constraints (exactly k=2 seats per section), and only consider the possible positions to split at the boundaries between blocks. The insight is that the answer is the product of the sizes of all plant-gaps between seat-pairs, making it efficient (O(n)), and the general pattern can be applied for "count number of ways to divide/partition with exact count" problems.
+
+### Tags
+Math(#math), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Decode Ways II(decode-ways-ii) (Hard)
+- Minimum Cost to Cut a Stick(minimum-cost-to-cut-a-stick) (Hard)
+- Ways to Split Array Into Three Subarrays(ways-to-split-array-into-three-subarrays) (Medium)

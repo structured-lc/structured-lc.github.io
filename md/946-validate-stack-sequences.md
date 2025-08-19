@@ -82,3 +82,8 @@ def validateStackSequences(pushed, popped):
 
 ### Summary
 This problem is a classic application of **stack simulation** for LIFO sequences. The approach directly models the real stack operations and is a good example of **two-pointer** and **stack-pointer** coding patterns. It is relevant in parsing, compiler/interpreter design, validating orderings, and simulating machine execution. The optimized O(n) time and space stack solution is standard in problems involving matching sequences with stack properties.
+
+### Tags
+Array(#array), Stack(#stack), Simulation(#simulation)
+
+### Similar Problems

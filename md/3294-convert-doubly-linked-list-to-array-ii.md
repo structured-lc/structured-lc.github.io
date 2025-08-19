@@ -92,3 +92,9 @@ def toArray(node):
 This problem applies the **"traverse a linked list from a non-head node"** pattern, leveraging the bidirectional pointers of a doubly linked list.  
 It’s a fundamental linear scan problem: first walk left to find the head, then scan right to generate the output.  
 This pattern is common in problems involving doubly linked structures and is useful in data structures where you may start traversal from the middle or any arbitrary node.
+
+### Tags
+Array(#array), Linked List(#linked-list), Doubly-Linked List(#doubly-linked-list)
+
+### Similar Problems
+- Remove Linked List Elements(remove-linked-list-elements) (Easy)

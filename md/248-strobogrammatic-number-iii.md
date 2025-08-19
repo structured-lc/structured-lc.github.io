@@ -120,3 +120,10 @@ def strobogrammaticInRange(low: str, high: str) -> int:
 
 ### Summary
 We **generate** all strobogrammatic numbers of lengths between those of low and high using DFS with backtracking, **pruning** any with leading '0' (other than "0" itself), and **count** only those falling within the string-bounds. This is a classic use of recursive construction for palindromic (symmetrical) patterns and constrained enumeration. The pattern is reusable for questions where you must generate numbers/strings with custom symmetry or self-inverse properties, such as palindromes or reflection-invariant strings.
+
+### Tags
+Array(#array), String(#string), Recursion(#recursion)
+
+### Similar Problems
+- Strobogrammatic Number(strobogrammatic-number) (Easy)
+- Strobogrammatic Number II(strobogrammatic-number-ii) (Medium)

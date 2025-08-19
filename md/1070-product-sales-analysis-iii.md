@@ -138,3 +138,11 @@ def product_sales_analysis_iii(sales: pd.DataFrame, product: pd.DataFrame) -> pd
 This is a classic **group by minimum value for each group** problem (group by product\_id, take min year, then filter/merge).  
 It's a very common pattern for "first/last event per group" in data analysis, and translates directly between SQL and pandas.  
 The approach is efficient and scales well, and appears in many sales analysis, churn, and time-series questions.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Product Sales Analysis II(product-sales-analysis-ii) (Easy)
+- Product Sales Analysis IV(product-sales-analysis-iv) (Medium)
+- Product Sales Analysis V(product-sales-analysis-v) (Easy)

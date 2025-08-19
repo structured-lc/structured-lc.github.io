@@ -100,3 +100,10 @@ def brightestPosition(lights):
 ### Summary
 This problem is a classic example of the **Event Sweep Line** pattern, where we track changes (deltas) at interval boundaries to efficiently count overlapping intervals. It's great for scenarios like interval overlap, meeting rooms, traffic, or booking systems.  
 The approach avoids brute-force iteration by only acting at event points, turning what could be an intractable O(n⋅R) into an elegant and scalable O(n log n) solution.
+
+### Tags
+Array(#array), Sorting(#sorting), Prefix Sum(#prefix-sum), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Minimum Number of Food Buckets to Feed the Hamsters(minimum-number-of-food-buckets-to-feed-the-hamsters) (Medium)
+- Count Positions on Street With Required Brightness(count-positions-on-street-with-required-brightness) (Medium)

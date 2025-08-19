@@ -73,3 +73,9 @@ def min_element_after_digit_sum(nums):
 
 ### Summary
 This is a classic *array and digit manipulation* problem where a mapping operation (digit sum) is followed by a minimum-finding. The pattern appears frequently in digit/number transformation problems. The approach—processing each element individually, computing something simple (digit sum), and aggregating (minimum)—is a foundation for more complex data streaming and in-place transformation problems.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems
+- Sum of Digits of String After Convert(sum-of-digits-of-string-after-convert) (Easy)

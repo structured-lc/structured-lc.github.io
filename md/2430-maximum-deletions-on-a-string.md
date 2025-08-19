@@ -95,3 +95,11 @@ def deleteString(s: str) -> int:
 
 ### Summary
 This problem uses the **DP with memoization and preprocessing for substring comparison** pattern, building on LCP or hash-based string matching. It's an important template for problems where a substring needs to be compared to another substring efficiently, and where optimal substructure and overlapping subproblems make DP effective. Similar techniques are used in "Longest Duplicate Substring" and "String Compression" type problems.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
+
+### Similar Problems
+- Shortest Palindrome(shortest-palindrome) (Hard)
+- Longest Happy Prefix(longest-happy-prefix) (Hard)
+- Remove All Occurrences of a Substring(remove-all-occurrences-of-a-substring) (Medium)

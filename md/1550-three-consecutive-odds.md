@@ -59,3 +59,8 @@ def threeConsecutiveOdds(arr):
 
 ### Summary
 A quick application of the **sliding window** pattern. Can generalize this to k consecutive properties, number of windows, or outputting indices.
+
+### Tags
+Array(#array)
+
+### Similar Problems

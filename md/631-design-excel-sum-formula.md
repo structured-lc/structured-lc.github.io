@@ -143,3 +143,8 @@ class Excel:
 This problem uses the **2D matrix simulation** and **dependency parsing** pattern.  
 It demonstrates tracking **static values OR dynamic formulas** for cells, parsing Excel-style address/range strings, and handling recursive dependency calculations.  
 This pattern is also found in other spreadsheet simulations, reactive programming, and cell dependency graphs in software configuration or computation grids.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Graph(#graph), Design(#design), Topological Sort(#topological-sort), Matrix(#matrix)
+
+### Similar Problems

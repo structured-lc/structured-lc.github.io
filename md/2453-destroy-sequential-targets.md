@@ -98,3 +98,12 @@ def destroy_targets(nums, space):
 This problem uses the **hash grouping/categorization** pattern, based on modulo arithmetic.  
 It is often applied where grouping by a pattern or fixed key (e.g., anagrams, remainders, time-intervals) is efficient, and frequency analysis is required.  
 This solution’s O(n) grouping + selection is a widely-used coding interview technique for counting and critical grouping tasks.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Counting(#counting)
+
+### Similar Problems
+- Arithmetic Slices II - Subsequence(arithmetic-slices-ii-subsequence) (Hard)
+- Pairs of Songs With Total Durations Divisible by 60(pairs-of-songs-with-total-durations-divisible-by-60) (Medium)
+- Longest Arithmetic Subsequence(longest-arithmetic-subsequence) (Medium)
+- Longest Arithmetic Subsequence of Given Difference(longest-arithmetic-subsequence-of-given-difference) (Medium)

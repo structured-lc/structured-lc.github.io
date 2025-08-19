@@ -95,3 +95,8 @@ def minRefuelStops(target, startFuel, stations):
 
 ### Summary
 This problem uses the classic **Greedy + Heap (Priority Queue)** pattern: always refuel at the biggest prior station(s) if stuck, until you can reach the next milestone. This design also appears in interval problems (merge intervals), scheduling, and “last-moment choice” scenarios. Efficient heap usage ensures optimal time/space trade-offs.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

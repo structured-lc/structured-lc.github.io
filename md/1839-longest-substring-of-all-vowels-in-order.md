@@ -106,3 +106,12 @@ def longestBeautifulSubstring(word: str) -> int:
 We use a **greedy single pass sliding window** to track when a window contains all vowels in order.  
 This is a classic example of stateful two-pointer traversal, tracking state transitions (“block” of each vowel), allowing efficient O(n) time and O(1) space.  
 This pattern appears in "sliding window with distinct characters/ordered patterns" problems, such as “Longest substring with k distinct elements”, or “Longest substring with all required characters in order”.
+
+### Tags
+String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Count Vowel Substrings of a String(count-vowel-substrings-of-a-string) (Easy)
+- Longest Nice Subarray(longest-nice-subarray) (Medium)
+- Count of Substrings Containing Every Vowel and K Consonants II(count-of-substrings-containing-every-vowel-and-k-consonants-ii) (Medium)
+- Count of Substrings Containing Every Vowel and K Consonants I(count-of-substrings-containing-every-vowel-and-k-consonants-i) (Medium)

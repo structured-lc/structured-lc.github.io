@@ -79,3 +79,10 @@ def numberOfWeakCharacters(properties):
 This problem uses the *sorting and greedy/max-tracking* pattern, common for "domination" problems in 2D (attack/defense) space.  
 By sorting strategically and keeping track of a running maximum, we avoid brute-force pairwise comparison.  
 This approach appears in skyline/rectangle problems and other 2D sweep-line or "non-dominated pairwise" scenarios.
+
+### Tags
+Array(#array), Stack(#stack), Greedy(#greedy), Sorting(#sorting), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Russian Doll Envelopes(russian-doll-envelopes) (Hard)
+- Maximum Height by Stacking Cuboids (maximum-height-by-stacking-cuboids) (Hard)

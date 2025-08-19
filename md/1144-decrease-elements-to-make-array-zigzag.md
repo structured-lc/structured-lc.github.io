@@ -100,3 +100,8 @@ def movesToMakeZigzag(nums):
 
 ### Summary
 This solution employs the **greedy pattern** tailored to a two-alternative dynamic, partitioning indices based on parity and minimizing moves per group. No fancy data structures required—just adjacent neighbor logic and keeping a running total. This pattern of evaluating both 'choices' and selecting the best can apply to other similar alternation or parity-based array problems.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems

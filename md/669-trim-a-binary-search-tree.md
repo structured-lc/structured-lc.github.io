@@ -128,3 +128,8 @@ def trimBST(root, low, high):
 This is a **standard DFS / recursive tree manipulation pattern** that leverages BST properties to efficiently prune a tree.  
 It’s highly reusable: similar logic applies in problems about searching, validation, or selective tree modification when the tree has sorted (BST) characteristics.  
 The technique highlights how **recursive pruning** can shape data structures in-place with minimal overhead.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
+
+### Similar Problems

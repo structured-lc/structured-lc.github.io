@@ -103,3 +103,9 @@ It uses a **counting and two-pointer build** pattern, often applicable to:
 - Anagram and palindrome rearrangement,
 - Problems needing lexicographically minimal/maximal outputs with constraints.  
 Optimizing by leveraging the fixed 26-letter alphabet removes the need for explicit sorting.
+
+### Tags
+String(#string), Sorting(#sorting), Counting Sort(#counting-sort)
+
+### Similar Problems
+- Shortest Palindrome(shortest-palindrome) (Hard)

@@ -92,3 +92,26 @@ def merge(intervals):
 
 ### Summary
 This problem uses a classic greedy and interval-merging pattern: sort by start, then iterate, merge overlapping intervals by expanding the current window’s right edge when possible. This is a common technique used in other merging and range queries, such as calendar bookings, interval coverage, and timeline processing.
+
+### Tags
+Array(#array), Sorting(#sorting)
+
+### Similar Problems
+- Insert Interval(insert-interval) (Medium)
+- Meeting Rooms(meeting-rooms) (Easy)
+- Meeting Rooms II(meeting-rooms-ii) (Medium)
+- Teemo Attacking(teemo-attacking) (Easy)
+- Add Bold Tag in String(add-bold-tag-in-string) (Medium)
+- Range Module(range-module) (Hard)
+- Employee Free Time(employee-free-time) (Hard)
+- Partition Labels(partition-labels) (Medium)
+- Interval List Intersections(interval-list-intersections) (Medium)
+- Amount of New Area Painted Each Day(amount-of-new-area-painted-each-day) (Hard)
+- Longest Substring of One Repeating Character(longest-substring-of-one-repeating-character) (Hard)
+- Count Integers in Intervals(count-integers-in-intervals) (Hard)
+- Divide Intervals Into Minimum Number of Groups(divide-intervals-into-minimum-number-of-groups) (Medium)
+- Determine if Two Events Have Conflict(determine-if-two-events-have-conflict) (Easy)
+- Count Ways to Group Overlapping Ranges(count-ways-to-group-overlapping-ranges) (Medium)
+- Points That Intersect With Cars(points-that-intersect-with-cars) (Easy)
+- Count Days Without Meetings(count-days-without-meetings) (Medium)
+- Minimize Connected Groups by Inserting Interval(minimize-connected-groups-by-inserting-interval) (Medium)

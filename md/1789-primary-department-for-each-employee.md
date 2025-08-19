@@ -168,3 +168,8 @@ def primary_department(employee_list):
 This approach uses a **set-union logic pattern** in SQL, efficiently combining two scenarios without subqueries: assignment by primary_flag, and assignment by unique membership.  
 The pattern is common for problems requiring conditional grouping and record selection in SQL, and generalizes to cases where "fallback logic" is applied on groupings.  
 Such logic appears in other "pick primary/secondary roles, fallback to defaults" scenarios in database queries.
+
+### Tags
+Database(#database)
+
+### Similar Problems

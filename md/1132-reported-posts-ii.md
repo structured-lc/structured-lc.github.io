@@ -145,3 +145,8 @@ def average_daily_percentage_reported_removed(actions, removals):
 
 ### Summary
 This problem primarily tests **grouping**, **join**, and **aggregate** SQL/querying skills, and how to *dedupe* per unique key (action_date, post_id). The pattern — filter, deduplicate, join, group by, aggregate — is common in reporting/analytics queries, useful for churn/retention stats, event monitoring, etc.
+
+### Tags
+Database(#database)
+
+### Similar Problems

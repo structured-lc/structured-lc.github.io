@@ -136,3 +136,10 @@ def maxPoints(grid, queries):
 ### Summary
 This problem uses the **offline query processing** pattern with a **priority queue (heap BFS)**, efficiently grouping queries by threshold and growing the visited region incrementally.  
 The same paradigm applies for "how many cells/regions/connected areas are reachable below a threshold" problems, and for offline event query problems where precomputing possible states greatly reduces repeated computation.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
+
+### Similar Problems
+- Trapping Rain Water II(trapping-rain-water-ii) (Hard)
+- Escape the Spreading Fire(escape-the-spreading-fire) (Hard)

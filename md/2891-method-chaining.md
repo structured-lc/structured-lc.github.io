@@ -95,3 +95,7 @@ def findHeavyAnimals(animals: pd.DataFrame) -> pd.DataFrame:
 
 ### Summary
 This problem demonstrates *method chaining*, a concise and highly readable approach in Pandas for sequencing multiple DataFrame operations. The pattern is widely used for data cleaning and transformation tasks: filter → sort → select. Mastering method chaining is handy for writing efficient, maintainable data analysis code both in interviews and real-world settings.
+
+### Tags
+
+### Similar Problems

@@ -89,3 +89,8 @@ def minimumMoney(transactions):
 
 ### Summary
 This problem is a classic **greedy + simulation** challenge but optimized by careful analysis of the worst-case order. The pattern of splitting the input into two categories (lossy and safe) and accounting for the worst “last transaction” is useful in **interval covering** and **greedy minimization** problems. The approach is systematic, efficient, and commonly transferable to scenarios where you face resource consumption with both recoverable and non-recoverable steps.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

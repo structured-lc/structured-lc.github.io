@@ -79,3 +79,11 @@ This problem leverages the **dynamic programming** pattern where results for pre
 `ans[i] = ans[i & (i - 1)] + 1`  
 which efficiently reduces the bit counting for each number to constant time.  
 This pattern (reuse of subproblem solutions and bitmask operations) appears in many bit manipulation and state compression DP problems, such as counting set bits, finding masks, or determining subsets.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Number of 1 Bits(number-of-1-bits) (Easy)
+- Sum of Values at Indices With K Set Bits(sum-of-values-at-indices-with-k-set-bits) (Easy)
+- Find the K-or of an Array(find-the-k-or-of-an-array) (Easy)

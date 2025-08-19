@@ -117,3 +117,10 @@ class Solution:
 
 ### Summary
 This problem uses the classic **DFS/postorder traversal** to gather information from bottom up and aggregate counts. The pattern is common for problems where you need to check/collect properties for the subtree rooted at every node efficiently. The approach is applicable for many similar subtree verification/counting problems.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Subtree of Another Tree(subtree-of-another-tree) (Easy)
+- Longest Univalue Path(longest-univalue-path) (Medium)

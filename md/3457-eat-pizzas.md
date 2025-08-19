@@ -106,3 +106,8 @@ Can the problem be solved if the gain on odd days alternated (e.g., gain the hea
 
 ### Summary
 This problem requires sorting and a greedy selection strategy to maximize the gain for both odd and even days. It’s a classic “greedy with sorting” pattern, common in both coding interviews (e.g., intervals, scheduling, activity selection) and real-world resource allocation problems. The approach efficiently guarantees optimal gain by always selecting the most valuable pizzas for odd-numbered days and the best possible second-largest for even days. This pattern is broadly applicable where you need to partition resources under dynamic constraints.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

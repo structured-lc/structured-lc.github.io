@@ -102,3 +102,9 @@ def distinctDifferenceArray(nums):
 
 ### Summary
 This problem uses an efficient double-scan and prefix/suffix sets pattern, common in segment/count-based problems (like prefix sums, distinct elements in ranges, etc). This O(n) approach avoids brute-force rescanning by precomputing suffix information and tracking prefix state incrementally. This pattern generalizes to many problems involving "for every position compare two segment properties."
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems
+- Left and Right Sum Differences(left-and-right-sum-differences) (Easy)

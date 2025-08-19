@@ -82,3 +82,9 @@ def minimum_operations(nums):
 
 ### Summary
 This problem leverages the **set uniqueness** and **sliding window/group removal** pattern. The optimal O(n) idea is to traverse from the end, and the earliest duplicate tells us how many elements we must remove, grouped into ⌈(i+1)/3⌉ operations. This pattern arises in array/window problems where element uniqueness is the property to maintain.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems
+- Minimum Increment to Make Array Unique(minimum-increment-to-make-array-unique) (Medium)

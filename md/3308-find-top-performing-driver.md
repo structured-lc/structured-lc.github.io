@@ -183,3 +183,8 @@ def find_top_performing_driver(drivers, trips):
 ### Summary
 The approach is a direct application of the **group by + ranking with tie-breakers** pattern.  
 This coding pattern appears in “Top k per group,” “Leaderboard,” and “employee performance” problems commonly seen in data-oriented interviews and can be implemented similarly in SQL using window functions or in Python using max with composite keys.
+
+### Tags
+Database(#database)
+
+### Similar Problems

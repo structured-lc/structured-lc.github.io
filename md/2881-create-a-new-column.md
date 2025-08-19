@@ -85,3 +85,7 @@ def createBonusColumn(employees):
 
 ### Summary
 This problem showcases basic vectorized DataFrame manipulation—a common Pandas pattern. Operations like adding/transforming columns based on others are fundamental in data engineering and analytics, and can be applied for any computation across DataFrame columns (such as percent increases, normalizations, grouping-based calculations, etc.). The pattern of vectorized updates also appears in SQL data transformations.
+
+### Tags
+
+### Similar Problems

@@ -88,3 +88,12 @@ ORDER BY start_month;
 
 ### Summary
 This approach uses SQL querying to slide a fixed-size window (3 months) across aggregated monthly ride data, leveraging table joins and grouping. This pattern—fixed-size sliding window time aggregation—is widely applicable in analytics tasks over time series data.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Trips and Users(trips-and-users) (Hard)
+- Hopper Company Queries I(hopper-company-queries-i) (Hard)
+- Hopper Company Queries II(hopper-company-queries-ii) (Hard)
+- Number of Times a Driver Was a Passenger(number-of-times-a-driver-was-a-passenger) (Medium)

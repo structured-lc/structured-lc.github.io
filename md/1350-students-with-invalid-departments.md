@@ -57,3 +57,8 @@ WHERE d.id IS NULL;
 
 ### Summary
 This is a standard SQL NON-MATCH/JOIN-with-NUL pattern. It's widely useful for data integrity and anti-join queries.
+
+### Tags
+Database(#database)
+
+### Similar Problems

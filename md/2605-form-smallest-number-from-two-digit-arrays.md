@@ -73,3 +73,8 @@ def minNumber(nums1, nums2):
 
 ### Summary
 This problem uses a classic *set intersection* and *minimum selection* pattern. The solution leverages properties of digits and small input size for a simple O(1) answer. The same approach applies to problems needing the fastest lookup of overlaps and constructing the minimum/maximum value from combinations of elements across arrays.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Enumeration(#enumeration)
+
+### Similar Problems

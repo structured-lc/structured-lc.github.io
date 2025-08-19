@@ -94,3 +94,8 @@ def minimumOperations(nums):
 
 ### Summary
 This problem is a classic **two-pointer greedy** application, often seen in palindrome and symmetric pair problems. The approach generalizes to any problem requiring adjacent merges to achieve symmetry. This method (merge smaller side, move pointers) is also common for tasks such as minimizing operations in array transformations for symmetry or monotonicity.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Greedy(#greedy)
+
+### Similar Problems

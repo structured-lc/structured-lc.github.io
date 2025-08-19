@@ -101,3 +101,10 @@ How would you handle duplicates in the array?
 ### Summary
 
 This problem combines sorting, dynamic programming, and combinatorial counting to efficiently sum the minimum absolute differences for all subsequences of length `k`. The sorting step is crucial for making the dynamic programming approach feasible, as it localizes the key differences to adjacent elements. DP with memoization is a common pattern for combinatorial problems with recursive structure and overlapping subproblems—seen in problems like "Subset Sum" or "Count Subsequences". The key challenge is managing the DP state compactly while efficiently tracking the metric of interest (minimum difference).
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
+
+### Similar Problems
+- Number of Subsequences That Satisfy the Given Sum Condition(number-of-subsequences-that-satisfy-the-given-sum-condition) (Medium)
+- Closest Subsequence Sum(closest-subsequence-sum) (Hard)

@@ -80,3 +80,9 @@ def minimumDifference(nums, k):
 
 ### Summary
 This problem is a **Sorting + Sliding Window** pattern: after sorting, the minimal difference between k scores can be found by scanning windows of length k and checking their endpoints. This pattern — sorting for proximity, then windowing/grouping — applies to many "minimum range" or "maximum-in-group" array problems like "minimize unfairness", "maximize group quality", etc. Sorting often drastically simplifies selection problems involving contiguous subgroups!
+
+### Tags
+Array(#array), Sliding Window(#sliding-window), Sorting(#sorting)
+
+### Similar Problems
+- Array Partition(array-partition) (Easy)

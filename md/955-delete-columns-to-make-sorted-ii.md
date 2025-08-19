@@ -92,3 +92,8 @@ def minDeletionSize(strs):
 This is a classic **greedy column-by-column** check, relying on logical marks to eliminate unnecessary future comparisons.  
 The “lock adjacency” trick is also used in problems like “Merge Intervals”, “Tracking Sorted Slices”, etc.  
 Key insight: Delete only columns that necessarily cause disorder, and track sorted pairs to minimize redundant checks.
+
+### Tags
+Array(#array), String(#string), Greedy(#greedy)
+
+### Similar Problems

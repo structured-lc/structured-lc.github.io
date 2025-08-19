@@ -85,3 +85,9 @@ def diStringMatch(s: str) -> list[int]:
 
 ### Summary
 This problem is a classic example of the **two pointers** and **greedy construction** pattern. By always placing the smallest or largest available number depending on the next needed direction, we guarantee correctness in a single pass. This logic can show up in other greedy sequence-construction problems, such as reconstructing orderings from constraints or simulating simple permutations under rules.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), String(#string), Greedy(#greedy)
+
+### Similar Problems
+- Construct Smallest Number From DI String(construct-smallest-number-from-di-string) (Medium)

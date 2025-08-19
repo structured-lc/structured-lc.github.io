@@ -54,3 +54,8 @@ ORDER BY p.product_id;
 
 ### Summary
 This solution uses a classic **JOIN** and **DISTINCT** pattern in SQL to get unique records matching criteria. Common in reporting problems, product-lookup, and filtering logic.
+
+### Tags
+Database(#database)
+
+### Similar Problems

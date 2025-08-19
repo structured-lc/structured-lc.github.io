@@ -108,3 +108,11 @@ def minimumDifference(nums):
 
 ### Summary
 This problem uses the "prefix-suffix with heaps" pattern, efficiently keeping track of optimal substructure sums by sliding windows and priority queues. It is a classic application of min/max heap and prefix/suffix partitioning, and this pattern appears in challenging split/partition subarray problems where a greedy or single pass approach may not suffice.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Product of Array Except Self(product-of-array-except-self) (Medium)
+- Find Subsequence of Length K With the Largest Sum(find-subsequence-of-length-k-with-the-largest-sum) (Easy)
+- Find Minimum Cost to Remove Array Elements(find-minimum-cost-to-remove-array-elements) (Medium)

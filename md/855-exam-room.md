@@ -133,3 +133,9 @@ class ExamRoom:
 
 ### Summary
 This problem is a classic application of *interval management* and greedy selection of maximal/minimal values in a sorted collection. Maintaining a **sorted list of occupied seats** is a standard coding pattern used in various problems involving intervals and range queries, and is highly efficient for moderately-sized data or sparse occupancy. Using a heap of intervals can reduce the seat() time further and is useful for dynamic partitioning scenarios. Variants of this method appear in problems involving parking lots, boarding queues, and processor scheduling.
+
+### Tags
+Design(#design), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Maximize Distance to Closest Person(maximize-distance-to-closest-person) (Medium)

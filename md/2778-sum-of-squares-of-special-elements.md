@@ -73,3 +73,10 @@ def sumOfSquares(nums):
 
 ### Summary
 This problem uses a simple single-pass traversal pattern with index-based filtering — a common pattern for selection and transformation in arrays. The approach cleanly demonstrates mapping between 0-based and 1-based indices and is widely applicable to problems based on divisibility, special indices, or in-place filtering.
+
+### Tags
+Array(#array), Enumeration(#enumeration)
+
+### Similar Problems
+- Sum of Square Numbers(sum-of-square-numbers) (Medium)
+- Sum of All Odd Length Subarrays(sum-of-all-odd-length-subarrays) (Easy)

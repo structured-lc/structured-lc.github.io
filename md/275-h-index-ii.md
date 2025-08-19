@@ -77,3 +77,9 @@ def hIndex(citations: List[int]) -> int:
 
 ### Summary
 This problem is a template use-case for **binary search** on a sorted array with custom logic, leveraging monotonic properties. This same paradigm can be used for finding left/right boundaries, min/max satisfying certain conditions, or other search-on-answer patterns elsewhere in interview questions. Very common in searching for optimal thresholds over sorted input.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- H-Index(h-index) (Medium)

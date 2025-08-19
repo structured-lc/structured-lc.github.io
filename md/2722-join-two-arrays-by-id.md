@@ -99,3 +99,7 @@ def join(arr1, arr2):
 This is a **hash map merge pattern**, common in problems requiring deduplication or quick joins by key.  
 It’s similar to merging dictionaries/maps by id, handling in-place merging, and can be generalized to many data integration or join-related problems.  
 Understanding how to efficiently merge, update and sort based on keys is useful in data processing, database “left join/right join”, and ETL pipelines.
+
+### Tags
+
+### Similar Problems

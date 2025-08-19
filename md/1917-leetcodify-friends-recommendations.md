@@ -187,3 +187,10 @@ def recommend_friends(Listens, Friendship):
 
 ### Summary
 This problem models a social graph + multi-dimensional intersection. The pattern is “find user pairs with overlapping activity satisfying some minimum threshold, excluding pairs with an explicit block (friends)”. This algorithm is applicable to recommendation engines, social network friend suggestions, and community detection. The essence is set intersection/grouping, a pattern common in link prediction and collaborative filtering problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Leetcodify Similar Friends(leetcodify-similar-friends) (Hard)
+- Strong Friendship(strong-friendship) (Medium)

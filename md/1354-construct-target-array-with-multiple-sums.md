@@ -74,3 +74,9 @@ def isPossible(target):
 
 ### Summary
 This is a reverse simulation with max-heap, a smart variant of greedy approach seen often in problems where largest elements govern the state. Pattern applies to optimal allocation, incremental construction, and greedy-decompose problems.
+
+### Tags
+Array(#array), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Minimum Amount of Time to Fill Cups(minimum-amount-of-time-to-fill-cups) (Easy)

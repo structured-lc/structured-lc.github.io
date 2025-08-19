@@ -89,3 +89,9 @@ def tallestBillboard(rods):
 
 ### Summary
 This problem uses a **Dynamic Programming with hashmap state**—a common “DP on difference” trick, useful when partitioning into equal sums/subsets. This approach also appears in subset sum variants, multi-way partitioning, and load balancing. The solution is a nice demonstration of efficient DP state compression and exploiting the problem’s symmetry.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Partition Array Into Two Arrays to Minimize Sum Difference(partition-array-into-two-arrays-to-minimize-sum-difference) (Hard)

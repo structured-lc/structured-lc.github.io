@@ -87,3 +87,8 @@ def findNthDigit(n):
 ### Summary
 This problem uses the grouping/counting technique to jump across "blocks" of numbers with the same digit length.  
 This is a classic example of digit/sequence block counting, commonly seen in number theory, and can be adapted to similar problems where a long concatenated number sequence is indexed by position rather than by value. Patterns like this appear in digital root finding, character stream processing, and sequence combinatorics.
+
+### Tags
+Math(#math), Binary Search(#binary-search)
+
+### Similar Problems

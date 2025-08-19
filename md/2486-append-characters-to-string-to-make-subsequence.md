@@ -81,3 +81,10 @@ def appendCharacters(s: str, t: str) -> int:
 ### Summary
 This problem uses the classic **two-pointer subsequence pattern**—efficiently advancing through both strings to match as many of t’s characters as possible in s. The number of unmatched t characters at the end gives the minimal number of characters to append.  
 This technique is common in string scanning, subsequence testing, and merging sorted arrays or lists, and provides a foundation for more challenging sequence alignment problems.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Greedy(#greedy)
+
+### Similar Problems
+- Is Subsequence(is-subsequence) (Easy)
+- Minimum Operations to Make a Subsequence(minimum-operations-to-make-a-subsequence) (Hard)

@@ -113,3 +113,11 @@ class Solution:
 
 ### Summary
 This approach uses **DFS and parent-tracking**—a classic recursion pattern for tree path property problems. It avoids redundant computation by passing critical state (parent value and running length) during the descent and compares for consecutiveness at each step. This pattern is common in other **tree path-based** questions (max depth, path sum, etc.).
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Longest Consecutive Sequence(longest-consecutive-sequence) (Medium)
+- Binary Tree Longest Consecutive Sequence II(binary-tree-longest-consecutive-sequence-ii) (Medium)
+- Check if an Array Is Consecutive(check-if-an-array-is-consecutive) (Easy)

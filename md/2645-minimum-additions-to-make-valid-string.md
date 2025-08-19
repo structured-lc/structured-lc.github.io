@@ -99,3 +99,9 @@ This problem is about string scan and pattern matching using simple state (point
 It's an example of *string simulation* with two pointers: one for input, one for pattern, and minimal state to model the rolling transform.  
 Patterns like this appear in cyclic group validation, stream validation, and substring chunking for custom rules (e.g., "reformat into pattern-X blocks").  
 The pointer cycling and greedy insertion is a valuable pattern for string problems where enforcing a repeated sub-structure is required.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Stack(#stack), Greedy(#greedy)
+
+### Similar Problems
+- Merge Strings Alternately(merge-strings-alternately) (Easy)

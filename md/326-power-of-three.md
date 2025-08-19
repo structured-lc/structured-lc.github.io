@@ -85,3 +85,11 @@ def isPowerOfThree(n):
 ### Summary
 
 This problem uses the repeated division pattern, a common way to check for membership in geometric progressions (powers of a base). The math trick leverages properties of divisibility among powers of a number, making for an efficient alternative. This pattern often applies when checking for powers of any constant base, and it’s often seen in integer decomposition questions.
+
+### Tags
+Math(#math), Recursion(#recursion)
+
+### Similar Problems
+- Power of Two(power-of-two) (Easy)
+- Power of Four(power-of-four) (Easy)
+- Check if Number is a Sum of Powers of Three(check-if-number-is-a-sum-of-powers-of-three) (Medium)

@@ -100,3 +100,8 @@ def minOperations(nums, k):
 This problem uses the **set** and **greedy reduction** pattern—track unique values that need to be operated upon and handle impossible cases early.  
 The solution is efficient thanks to direct use of sets for tracking disturbed values, and it's a typical application of "count distinct states needing conversion."  
 The approach, and recognizing impossible configurations early, shows up in a variety of problems where only monotonic changes (increase or decrease) are allowed.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

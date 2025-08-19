@@ -95,3 +95,13 @@ def minPathCost(grid, moveCost):
 This problem is a textbook example of **dynamic programming on a grid** with custom transitions.  
 It’s related to "minimum cost path" problems—a common pattern useful for matrix pathfinding with nontrivial transition costs (such as grid travel with per-move penalties).  
 The rolling DP row pattern for space optimization is standard whenever transitions only depend on the previous row, and can be applied in various path or scheduling DP problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems
+- Unique Paths(unique-paths) (Medium)
+- Unique Paths II(unique-paths-ii) (Medium)
+- Minimum Path Sum(minimum-path-sum) (Medium)
+- Dungeon Game(dungeon-game) (Hard)
+- Paint House(paint-house) (Medium)

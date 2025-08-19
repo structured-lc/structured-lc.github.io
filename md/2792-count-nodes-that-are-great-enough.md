@@ -142,3 +142,8 @@ def countGreatEnoughNodes(root, k):
 ### Summary
 This problem uses the "post-order DFS with subtree aggregation" pattern, taking advantage of k's small limit to efficiently merge and process small collections of subtree values.  
 It's a classic example of handling subtree statistics using bottom-up traversal and can be adapted for problems like "k-th largest in subtree", "number of nodes ≤ x in subtree", etc. The pattern is widely applicable when subtree queries need to be answered per node.
+
+### Tags
+Divide and Conquer(#divide-and-conquer), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

@@ -75,3 +75,14 @@ def maximumJumps(nums, target):
 
 ### Summary
 This problem demonstrates the classic **1D DP over prefixes** pattern with a quadratic nested loop, similar to the "Longest Increasing Subsequence" (LIS) DP pattern but adapted for a custom jump condition. It highlights the use of dp[i] to track optimal solutions for subproblems and is applicable to other problems with similar "from any j<i to i if reachable" constraints.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Jump Game II(jump-game-ii) (Medium)
+- Frog Jump(frog-jump) (Hard)
+- Jump Game III(jump-game-iii) (Medium)
+- Jump Game IV(jump-game-iv) (Hard)
+- Minimum Jumps to Reach Home(minimum-jumps-to-reach-home) (Medium)
+- Jump Game VII(jump-game-vii) (Medium)

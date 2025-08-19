@@ -97,3 +97,15 @@ def mergeTwoLists(list1, list2):
 
 ### Summary
 This problem demonstrates the **two-pointer** and **dummy node** design patterns, both commonly used for merging linked lists or solving problems that involve manipulating list nodes in-place. The approach makes use of the sorted property for efficient merging. The same principles apply when merging k sorted lists (often with a heap) or linked lists in various structures (doubly/circular, etc.), making this a foundational algorithm for data structure interviews.
+
+### Tags
+Linked List(#linked-list), Recursion(#recursion)
+
+### Similar Problems
+- Merge k Sorted Lists(merge-k-sorted-lists) (Hard)
+- Merge Sorted Array(merge-sorted-array) (Easy)
+- Sort List(sort-list) (Medium)
+- Shortest Word Distance II(shortest-word-distance-ii) (Medium)
+- Add Two Polynomials Represented as Linked Lists(add-two-polynomials-represented-as-linked-lists) (Medium)
+- Longest Common Subsequence Between Sorted Arrays(longest-common-subsequence-between-sorted-arrays) (Medium)
+- Merge Two 2D Arrays by Summing Values(merge-two-2d-arrays-by-summing-values) (Easy)

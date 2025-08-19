@@ -72,3 +72,9 @@ def squareIsWhite(coordinates: str) -> bool:
 
 ### Summary
 This problem is a classic **parity check pattern**—determining a property (here, color) based on whether the sum of two indices is odd or even. The approach generalizes to any 2D problem involving checkerboard‐like patterns (e.g. coloring grids, tiling). The resulting code is concise and easy to reason about, relying on ASCII codes and integer parity.
+
+### Tags
+Math(#math), String(#string)
+
+### Similar Problems
+- Check if Two Chessboard Squares Have the Same Color(check-if-two-chessboard-squares-have-the-same-color) (Easy)

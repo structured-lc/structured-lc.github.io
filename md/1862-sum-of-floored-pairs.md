@@ -108,3 +108,8 @@ def sumOfFlooredPairs(nums):
 
 ### Summary
 This problem uses **value-bucketing**, **prefix sums**, and careful arithmetic to efficiently compute aggregate results over all pairs in an array, replacing brute-force enumeration. The approach is similar to the "range sum" and "bucket counting" patterns and can be useful in other problems involving counting or summing specific relations between all pairs in dense input arrays.
+
+### Tags
+Array(#array), Math(#math), Binary Search(#binary-search), Prefix Sum(#prefix-sum)
+
+### Similar Problems

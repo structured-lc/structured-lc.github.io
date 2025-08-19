@@ -111,3 +111,8 @@ def maxMoves(grid):
 
 ### Summary
 This problem showcases classic grid-based *DFS + memoization* (top-down DP), a common pattern when paths overlap and optimal substructure exists. Efficiently caching the maximum result for subproblems makes the search tractable. This pattern applies in many variations of path-finding, word-search, and grid traversal problems found in dynamic programming interviews.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems

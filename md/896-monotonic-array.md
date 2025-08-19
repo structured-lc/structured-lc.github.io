@@ -73,3 +73,10 @@ def isMonotonic(nums):
 
 ### Summary
 This is a **single pass two-pointer pattern**, commonly used for array monotonicity, sortedness, and sequence evaluation. The pattern generalizes to problems that involve comparing adjacent elements under various constraints, such as consecutive duplicates, peaks/valleys, or plateau detection. The "track-two-flags" trick is a frequently recurring technique for verifying properties that could go in either direction.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Count Hills and Valleys in an Array(count-hills-and-valleys-in-an-array) (Easy)
+- Find the Count of Monotonic Pairs I(find-the-count-of-monotonic-pairs-i) (Hard)

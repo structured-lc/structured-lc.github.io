@@ -91,3 +91,8 @@ def largestDivisibleSubset(nums):
 
 ### Summary
 This problem uses the **dynamic programming on sorted arrays** pattern, similar to Longest Increasing Subsequence. Sorting first lets smaller values be considered as potential divisors for larger ones, and the dp chain records “how long” a divisible subset can grow up to each index. Reconstruction is via tracked previous indices. This DP + backtracking pattern is a common approach in subsequence, chain, or divisibility-based subset problems.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
+
+### Similar Problems

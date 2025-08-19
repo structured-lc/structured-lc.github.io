@@ -158,3 +158,8 @@ def find_consecutive_increasing(transactions):
 
 ### Summary
 This problem is a classic example of the **windowing/grouping pattern** with consecutive elements, which can be solved using window functions in SQL or pointer-based sweeps in code. The pattern of finding maximal runs (or streaks) matching certain rules occurs in analytics, time-series, and behavioral/event analysis. Such logic generalizes to activity streaks, consecutive wins/losses in games, or trend detection in finance/log data.
+
+### Tags
+Database(#database)
+
+### Similar Problems

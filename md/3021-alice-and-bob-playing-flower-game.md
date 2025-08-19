@@ -89,3 +89,8 @@ def flowerGame(n: int, m: int) -> int:
 
 ### Summary
 This problem is a classic **parity/game theory** problem — the winner depends only on odd/even sums, not move sequence. It uses **counting based on parity** (odd/even split), which appears in other problems about games, intervals, or pairs with sum properties. The optimized approach is very efficient, turning an O(n\*m) simulation into O(1) by recognizing parity patterns.
+
+### Tags
+Math(#math)
+
+### Similar Problems

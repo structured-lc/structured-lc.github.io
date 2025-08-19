@@ -113,3 +113,17 @@ def minimumDifference(nums):
 
 ### Summary
 This problem showcases the **meet-in-the-middle** technique, useful when n is moderate (≤ 15), and exhaustive search is otherwise infeasible. The partition/split-subset logic is common in optimization and subset-sum variants, and the binary search for closest sums appears in a number of advanced backtracking problems. This approach—with careful precomputation—enables efficiently minimizing differences among subsets beyond the classic subset sum scenario.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Ordered Set(#ordered-set), Bitmask(#bitmask)
+
+### Similar Problems
+- Partition Equal Subset Sum(partition-equal-subset-sum) (Medium)
+- Split Array With Same Average(split-array-with-same-average) (Hard)
+- Tallest Billboard(tallest-billboard) (Hard)
+- Last Stone Weight II(last-stone-weight-ii) (Medium)
+- Fair Distribution of Cookies(fair-distribution-of-cookies) (Medium)
+- Closest Subsequence Sum(closest-subsequence-sum) (Hard)
+- Number of Ways to Split Array(number-of-ways-to-split-array) (Medium)
+- Minimum Sum of Squared Difference(minimum-sum-of-squared-difference) (Medium)
+- Split With Minimum Sum(split-with-minimum-sum) (Easy)

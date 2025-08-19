@@ -124,3 +124,8 @@ def rank_scores(scores):
 
 ### Summary
 This solution demonstrates the "dense ranking" or "competition ranking" pattern, frequently used in leaderboard, ranking, and scoring problems. The key pattern is mapping unique items to their rank in sorted order, ensuring that ties share the same rank but that rank increments to the next integer immediately after a tie group. This is a common requirement for problems involving leaderboards, sports tournaments, or whenever ranking with ties needs to avoid gaps.
+
+### Tags
+Database(#database)
+
+### Similar Problems

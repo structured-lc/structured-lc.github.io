@@ -98,3 +98,8 @@ def largestPathValue(colors, edges):
 
 ### Summary
 This problem combines **cycle detection**, **topological sorting**, and **dynamic programming on DAGs**. The key DP idea is to propagate color counts along paths. This DP pattern—tracking and merging state across a topological order for nodes—is common in graph DP problems such as longest/shortest path in DAGs, and multi-source propagations.
+
+### Tags
+Hash Table(#hash-table), Dynamic Programming(#dynamic-programming), Graph(#graph), Topological Sort(#topological-sort), Memoization(#memoization), Counting(#counting)
+
+### Similar Problems

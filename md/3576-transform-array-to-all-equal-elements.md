@@ -99,3 +99,8 @@ The key coding pattern is **Greedy array transformation**, where each operation 
 - Array prefix transformations
 
 The pattern applies to bit flipping, sign flipping, bulbs, and similar types of sequence-adjustment questions.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems

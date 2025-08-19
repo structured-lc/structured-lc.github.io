@@ -77,3 +77,9 @@ def distributeCandies(candies, num_people):
 
 ### Summary
 This problem uses the simulation/greedy pattern, where you directly follow the specified steps. The technique—walking through a repeated sequence and distributing resources with a constraint—is a common pattern in resource allocation, round-robin distribution, and many simulation-based interview questions. The approach is simple, effective, and can be extended to similar distribution challenges.
+
+### Tags
+Math(#math), Simulation(#simulation)
+
+### Similar Problems
+- Distribute Money to Maximum Children(distribute-money-to-maximum-children) (Easy)

@@ -69,3 +69,10 @@ def map(arr, fn):
 
 ### Summary
 This problem uses the *map* pattern—a core approach in functional programming and frequently used in many languages. The solution is direct: loop over the array, transform each item, and collect results. This coding pattern is broadly applicable in data processing, transformation tasks, and is the building block for many advanced techniques such as stream/lazy evaluation.
+
+### Tags
+
+### Similar Problems
+- Group By(group-by) (Medium)
+- Filter Elements from Array(filter-elements-from-array) (Easy)
+- Array Reduce Transformation(array-reduce-transformation) (Easy)

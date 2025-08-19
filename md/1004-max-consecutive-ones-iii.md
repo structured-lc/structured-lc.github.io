@@ -91,3 +91,18 @@ def longestOnes(nums, k):
 
 ### Summary
 This problem is a classic example of the **sliding window** (two pointer) technique. It teaches how to optimize from an inefficient brute-force to a linear solution by maintaining a dynamic window with an invariant (at most k zeros). This pattern is also widely used in problems involving subarrays or substrings with constraints, like "Longest Substring with At Most K Distinct Characters" or "Minimum Window Substring".
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Longest Substring with At Most K Distinct Characters(longest-substring-with-at-most-k-distinct-characters) (Medium)
+- Longest Repeating Character Replacement(longest-repeating-character-replacement) (Medium)
+- Max Consecutive Ones(max-consecutive-ones) (Easy)
+- Max Consecutive Ones II(max-consecutive-ones-ii) (Medium)
+- Longest Subarray of 1's After Deleting One Element(longest-subarray-of-1s-after-deleting-one-element) (Medium)
+- Maximize the Confusion of an Exam(maximize-the-confusion-of-an-exam) (Medium)
+- Minimum Recolors to Get K Consecutive Black Blocks(minimum-recolors-to-get-k-consecutive-black-blocks) (Easy)
+- Longest Nice Subarray(longest-nice-subarray) (Medium)
+- Maximum Sum of Distinct Subarrays With Length K(maximum-sum-of-distinct-subarrays-with-length-k) (Medium)
+- Maximum Enemy Forts That Can Be Captured(maximum-enemy-forts-that-can-be-captured) (Easy)

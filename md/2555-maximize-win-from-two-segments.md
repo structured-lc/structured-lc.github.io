@@ -96,3 +96,10 @@ def maximizeWin(prizePositions, k):
 ### Summary
 This problem uses a **two-pointer sliding window** to efficiently compute window sizes and dynamic programming to combine two windowed results. The combination of the sliding window and prefix max is a common pattern for max-sum-of-k-intervals on a sorted sequence.  
 This approach (sliding window + prefix max for intervals) is broadly useful in interval coverage and range query problems, like "Maximum Sum of Two Non-Overlapping Subarrays", and gives an efficient O(n) solution.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Best Time to Buy and Sell Stock III(best-time-to-buy-and-sell-stock-iii) (Hard)
+- Two Best Non-Overlapping Events(two-best-non-overlapping-events) (Medium)

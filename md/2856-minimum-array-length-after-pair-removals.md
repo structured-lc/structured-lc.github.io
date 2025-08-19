@@ -100,3 +100,9 @@ def minLengthAfterRemovals(nums):
 ### Summary
 This approach uses the **greedy pairing** pattern: always try to pair most frequent elements with distinct others. It leverages counting and math to avoid unnecessary brute-force search or simulation.  
 This pattern is common in problems involving pairing, grouping, and matching in a sorted or partially sorted list, especially where the counts/frequencies heavily constrain what can be done.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Binary Search(#binary-search), Greedy(#greedy), Counting(#counting)
+
+### Similar Problems
+- Find the Maximum Number of Marked Indices(find-the-maximum-number-of-marked-indices) (Medium)

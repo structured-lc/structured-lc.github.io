@@ -129,3 +129,8 @@ def categorize_members(members, visits, purchases):
 ### Summary
 This is a **"group-by/count and then bucket by threshold"** pattern using hash tables to aggregate events, a common scenario in analytics and reporting.  
 It’s useful for problems like segmenting users by engagement, identifying top customers by transaction ratios, or labeling data with computed categories for business logic.
+
+### Tags
+Database(#database)
+
+### Similar Problems

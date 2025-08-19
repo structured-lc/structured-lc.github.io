@@ -132,3 +132,9 @@ def findSecondMinimumValue(root):
 This problem is a classic **tree traversal with pruning** pattern. The binary tree's special property enables pruning of unnecessary paths, making the solution efficient and clear.  
 The approach—searching for the smallest qualifying value strictly greater than the minimum—is similar to the "second minimum/unique value" problems, which commonly appear in both trees and arrays.  
 The **pattern** applies to other scenarios where finding the "runner-up" value under monotonicity properties is required.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Kth Smallest Element in a BST(kth-smallest-element-in-a-bst) (Medium)

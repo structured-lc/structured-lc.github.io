@@ -103,3 +103,9 @@ def robotWithString(s: str) -> str:
 This problem uses a **greedy** and **monotonic stack** pattern for lexicographically optimal problems, where processing order and immediate versus delayed operations matter.  
 It's similar to problems like **"Remove Duplicate Letters"**, **"Valid Parentheses"**, and **"Monotonic Stack"** questions, where stack and frequency tracking help decide the best moment to pop.  
 Understanding such patterns helps in parsing, string construction, and resource scheduling problems.
+
+### Tags
+Hash Table(#hash-table), String(#string), Stack(#stack), Greedy(#greedy)
+
+### Similar Problems
+- Find Permutation(find-permutation) (Medium)

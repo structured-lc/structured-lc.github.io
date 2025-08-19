@@ -69,3 +69,10 @@ def maxRepeating(sequence: str, word: str) -> int:
 
 ### Summary
 This uses the brute-force substring repeat and check pattern, very common for simple pattern matching/counting in strings when constraints are tight. You can often optimize further using more advanced string matching (e.g., KMP, rolling hash) for larger cases.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), String Matching(#string-matching)
+
+### Similar Problems
+- Detect Pattern of Length M Repeated K or More Times(detect-pattern-of-length-m-repeated-k-or-more-times) (Easy)
+- Minimum Number of Operations to Make Word K-Periodic(minimum-number-of-operations-to-make-word-k-periodic) (Medium)

@@ -86,3 +86,8 @@ def lex_min_string_after_removing_stars(s: str) -> str:
 - Stack is used to efficiently access and remove last seen characters.  
 - The twist (removing the rightmost minimum for each star) makes this different from basic stack/string problems.
 - Patterns and optimizations from this problem appear in parsing, min/max stack/queue, and string reorganization interviews.
+
+### Tags
+Hash Table(#hash-table), String(#string), Stack(#stack), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

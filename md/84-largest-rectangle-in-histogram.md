@@ -70,3 +70,10 @@ def largestRectangleArea(heights):
 
 ### Summary
 This problem is a classic use case for the monotonic stack pattern, which efficiently helps with problems asking for the previous or next "smaller/greater" element. This approach is used in many interval, histogram, and sliding window problems (like “Maximal Rectangle” in a binary 2D matrix). The stack preprocesses left/right bounds for each element in one pass, reducing brute-force O(n²) to O(n).
+
+### Tags
+Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Maximal Rectangle(maximal-rectangle) (Hard)
+- Maximum Score of a Good Subarray(maximum-score-of-a-good-subarray) (Hard)

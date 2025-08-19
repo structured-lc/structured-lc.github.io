@@ -120,3 +120,8 @@ def employees_with_manager_left(employees):
 ### Summary
 This is a classic set lookup and filtering pattern, often seen in SQL join and anti-join queries. The "missing parent" or "orphan record" pattern generalizes to tree/graph validation, find-orphan-nodes, and data consistency across linked records.  
 The pattern is common in database cleaning, organization hierarchies, and object reference validations.
+
+### Tags
+Database(#database)
+
+### Similar Problems

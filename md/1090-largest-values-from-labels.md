@@ -98,3 +98,9 @@ def largestValsFromLabels(values, labels, numWanted, useLimit):
 ### Summary
 This problem uses a **greedy + sorting** pattern — process the "best" candidates first, while satisfying side constraints. The approach is common for selection/knapsack variants with simple caps per category, and is efficient when sorting is possible.  
 This pattern appears in resource allocation, top-k filtering per group, and some greedy multi-knapsack problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems
+- Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values(maximize-ysum-by-picking-a-triplet-of-distinct-xvalues) (Medium)

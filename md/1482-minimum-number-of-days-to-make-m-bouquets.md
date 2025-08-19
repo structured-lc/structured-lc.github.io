@@ -72,3 +72,10 @@ def minDays(bloomDay, m, k):
 
 ### Summary
 This problem is a pattern for binary search on the answer. Whenever checking a "minimum number to satisfy a condition" where possible answers are monotonic, try binary search with a predicate function.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Maximize the Confusion of an Exam(maximize-the-confusion-of-an-exam) (Medium)
+- Earliest Possible Day of Full Bloom(earliest-possible-day-of-full-bloom) (Hard)

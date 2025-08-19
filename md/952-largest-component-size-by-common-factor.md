@@ -120,3 +120,10 @@ def largestComponentSize(nums):
 
 ### Summary
 This problem is a classic use-case for the **Union-Find (Disjoint Set Union)** data structure, combined with **number theory** (prime factorization). The approach groups numbers via common prime factors and leverages efficient set operations to answer connectivity queries. This is a common coding pattern for problems involving dynamic grouping and connected components, and arises in problems involving **graph connectivity, clustering, and network analysis**.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Union Find(#union-find), Number Theory(#number-theory)
+
+### Similar Problems
+- Groups of Strings(groups-of-strings) (Hard)
+- Distinct Prime Factors of Product of Array(distinct-prime-factors-of-product-of-array) (Medium)

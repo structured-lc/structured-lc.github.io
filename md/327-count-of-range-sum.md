@@ -114,3 +114,12 @@ def countRangeSum(nums, lower, upper):
 
 ### Summary
 This problem uses the prefix sum plus "count of range in prefix" coding pattern, with the solution exploiting the merge sort divide-and-conquer to keep track of how many prefix sum pairs fall within the required interval. This is a fundamental approach for "count the number of subarrays with sum in [a, b]" and appears often in subarray, log-time counting problems. The pattern can be used in problems involving intersecting ranges, 2-sum/3-sum filtered by bounds, and is closely related to using Fenwick/Segment Trees for frequency queries.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Merge Sort(#merge-sort), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Count of Smaller Numbers After Self(count-of-smaller-numbers-after-self) (Hard)
+- Reverse Pairs(reverse-pairs) (Hard)
+- Count the Number of Fair Pairs(count-the-number-of-fair-pairs) (Medium)
+- Find the Number of Copy Arrays(find-the-number-of-copy-arrays) (Medium)

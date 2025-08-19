@@ -117,3 +117,10 @@ def minimumAbsoluteSumDiff(nums1, nums2):
 
 ### Summary
 This problem combines binary search optimization with greedy selection. The key insight is that for each position, we only need to check the closest elements in the sorted array rather than all possible replacements. This pattern appears in problems involving finding optimal replacements, closest values, and minimizing sums through strategic swaps.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sorting(#sorting), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Minimum Sum of Squared Difference(minimum-sum-of-squared-difference) (Medium)
+- Minimize the Maximum Adjacent Element Difference(minimize-the-maximum-adjacent-element-difference) (Hard)

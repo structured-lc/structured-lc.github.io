@@ -79,3 +79,9 @@ What changes if ‘lonely’ means only no 'B' in the same row but possible in t
 
 ### Summary
 This problem is a classic grid traversal with count-based optimization. The pattern of preprocessing counts (rows, cols) is widely applicable for matrix problems where you need to avoid O(n²) rescanning. You could encounter similar count-and-verify patterns in problems involving grids, arrays, or frequency distributions. The logic is not only efficient but also easy to follow and adapt for similar scenarios.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Matrix(#matrix)
+
+### Similar Problems
+- Lonely Pixel II(lonely-pixel-ii) (Medium)

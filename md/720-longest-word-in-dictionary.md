@@ -95,3 +95,11 @@ def longestWord(words):
 This solution uses **sorting** and **prefix checking** with a set for quick lookups.  
 The coding pattern is set-based validation with iteration over sorted inputs, common in "build-by-prefix" type problems.  
 Similar approaches work in **Trie prefix problems**, dictionary sequence validation, and word-ladder type questions.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Trie(#trie), Sorting(#sorting)
+
+### Similar Problems
+- Longest Word in Dictionary through Deleting(longest-word-in-dictionary-through-deleting) (Medium)
+- Implement Magic Dictionary(implement-magic-dictionary) (Medium)
+- Longest Word With All Prefixes(longest-word-with-all-prefixes) (Medium)

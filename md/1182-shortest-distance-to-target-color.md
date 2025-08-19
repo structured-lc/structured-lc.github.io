@@ -133,3 +133,8 @@ def shortestDistanceColor(colors: List[int], queries: List[List[int]]) -> List[i
 ### Summary
 This problem uses a classic two-pointer and preprocessing technique: for each index, store the nearest left and right positions of each color, and answer queries in constant time.  
 This "precompute nearest for each class/type" pattern is useful for range query problems and can be adapted to cases like nearest greater/smaller element, or nearest occurrence for strings and intervals.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

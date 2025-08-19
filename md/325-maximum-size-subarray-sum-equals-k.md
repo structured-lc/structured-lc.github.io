@@ -90,3 +90,14 @@ def maxSubArrayLen(nums, k):
 
 ### Summary
 This is a classic **prefix sum + hashmap** problem. The key insight is recognizing that we can identify subarrays with sum=k by tracking previous sums and their earliest occurrences. The coding pattern is very common—it's similar to the two-sum pattern or longest subarray with sum <= k. This is also widely applicable to problems involving contiguous range queries, especially when the target can be formed by the difference between two prefix sums.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Minimum Size Subarray Sum(minimum-size-subarray-sum) (Medium)
+- Range Sum Query - Immutable(range-sum-query-immutable) (Easy)
+- Contiguous Array(contiguous-array) (Medium)
+- Subarray Product Less Than K(subarray-product-less-than-k) (Medium)
+- Maximum Beauty of an Array After Applying Operation(maximum-beauty-of-an-array-after-applying-operation) (Medium)
+- Shortest Subarray With OR at Least K II(shortest-subarray-with-or-at-least-k-ii) (Medium)

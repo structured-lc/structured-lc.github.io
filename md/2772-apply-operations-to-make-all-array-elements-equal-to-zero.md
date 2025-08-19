@@ -107,3 +107,10 @@ def checkArray(nums, k):
 ### Summary
 This problem demonstrates the **greedy plus prefix sum** (difference array) technique: sweep from left, apply the minimum number of operations at the earliest possible place, and keep track of running “decrement” counts efficiently.  
 This pattern appears in other range-update/range-query problems such as “range addition,” “car pooling,” or sliding window difference array problems, and is a powerful method in interval manipulation tasks.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Continuous Subarray Sum(continuous-subarray-sum) (Medium)
+- Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold(number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) (Medium)

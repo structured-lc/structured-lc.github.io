@@ -91,3 +91,17 @@ def stoneGameIX(stones):
 ### Summary
 This is a game simulation problem that reduces to counting residues modulo 3 and playing out possible strategies. The key insight is to realize "0 mod 3" stones do not affect the sum modulo 3, and determining the winner comes down to the parity and distribution of the remaining stones.  
 The approach employs mathematical induction and residue analysis—a recurring pattern in many combinatorial and game theory problems, such as Nim and other modular sum games.
+
+### Tags
+Array(#array), Math(#math), Greedy(#greedy), Counting(#counting), Game Theory(#game-theory)
+
+### Similar Problems
+- Stone Game(stone-game) (Medium)
+- Stone Game II(stone-game-ii) (Medium)
+- Stone Game III(stone-game-iii) (Hard)
+- Stone Game IV(stone-game-iv) (Hard)
+- Stone Game V(stone-game-v) (Hard)
+- Stone Game VI(stone-game-vi) (Medium)
+- Stone Game VII(stone-game-vii) (Medium)
+- Stone Game VIII(stone-game-viii) (Hard)
+- Stone Game IX(stone-game-ix) (Medium)

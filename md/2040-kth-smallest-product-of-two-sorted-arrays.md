@@ -120,3 +120,11 @@ def kthSmallestProduct(nums1, nums2, k):
 
 ### Summary
 This problem uses the **"binary search on the answer"** pattern, optimized by leveraging the sorted property of input arrays and a custom count function. This is a classic advanced technique in problems where brute-force is infeasible and the problem can be phrased as "How many pairs have value ≤ X?"—resembling Kth Smallest Pair Distance, Find Kth Smallest Number, or similar problems involving sorted pairs and k-selection.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Find K Pairs with Smallest Sums(find-k-pairs-with-smallest-sums) (Medium)
+- K-diff Pairs in an Array(k-diff-pairs-in-an-array) (Medium)
+- Maximum Number of Robots Within Budget(maximum-number-of-robots-within-budget) (Hard)

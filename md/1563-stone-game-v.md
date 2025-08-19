@@ -85,3 +85,16 @@ def stoneGameV(stoneValue):
 
 ### Summary
 This is a classic DP on intervals, which is common in splitting, painting, or combining array subproblems. Using memoization and prefix sums for fast interval queries is a common and transferable technique.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Game Theory(#game-theory)
+
+### Similar Problems
+- Stone Game(stone-game) (Medium)
+- Stone Game II(stone-game-ii) (Medium)
+- Stone Game III(stone-game-iii) (Hard)
+- Stone Game IV(stone-game-iv) (Hard)
+- Stone Game VI(stone-game-vi) (Medium)
+- Stone Game VII(stone-game-vii) (Medium)
+- Stone Game VIII(stone-game-viii) (Hard)
+- Stone Game IX(stone-game-ix) (Medium)

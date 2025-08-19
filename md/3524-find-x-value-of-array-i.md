@@ -110,3 +110,8 @@ def resultArray(nums, k):
 
 ### Summary
 This approach uses a classic **prefix DP** pattern. For each new number, we carry over counts of previous subarrays by their modulo classes, updating using modular multiplication. This pattern is common for **counting subarrays with modular constraints**, and can be applied to problems like counting subarrays with sum or product divisible by k, or similar "modulo" based DP problems.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

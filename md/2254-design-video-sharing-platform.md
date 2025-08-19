@@ -158,3 +158,11 @@ class VideoSharingPlatform:
 
 ### Summary
 This problem combines **min-heap for id management** and typical **hashmap lookups** for object storage and statistics tracking, a pattern common in resource allocation systems such as parking slots, connection pools, or distributed ids. Efficient id recycling and auxiliary stats are both interview favorites. The coding approach is modular and can be generalized for managing any pool with reusable unique keys and per-entry stats.
+
+### Tags
+Hash Table(#hash-table), Stack(#stack), Design(#design), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Tweet Counts Per Frequency(tweet-counts-per-frequency) (Medium)
+- Design Browser History(design-browser-history) (Medium)
+- Most Popular Video Creator(most-popular-video-creator) (Medium)

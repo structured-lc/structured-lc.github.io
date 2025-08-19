@@ -143,3 +143,10 @@ def maximumCost(n, highways, k):
 This problem is a textbook example of **bitmask DP on graphs** to enumerate all possible non-revisiting paths of exact length (k highways).  
 It appears in variants of the "travel salesman" and "exact path" problems, which frequently show up in interviews when n is small (≤20).  
 Core patterns: State compression, dynamic programming with mask, k-length path search in undirected graphs.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Graph(#graph), Bitmask(#bitmask)
+
+### Similar Problems
+- Minimum Cost to Reach Destination in Time(minimum-cost-to-reach-destination-in-time) (Hard)
+- Minimum Cost to Reach City With Discounts(minimum-cost-to-reach-city-with-discounts) (Medium)

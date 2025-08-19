@@ -85,3 +85,9 @@ def largestTriangleArea(points):
 
 ### Summary
 This is a **brute-force combination problem**: check all possible triangles from the given points, using the **shoelace formula** for calculating triangle areas in 2D. This "all combinations" approach is simple and fully acceptable due to the small `n`. The pattern of "check all k-combinations" is commonly applied in geometry or combinatorial problems with low input bounds.
+
+### Tags
+Array(#array), Math(#math), Geometry(#geometry)
+
+### Similar Problems
+- Largest Perimeter Triangle(largest-perimeter-triangle) (Easy)

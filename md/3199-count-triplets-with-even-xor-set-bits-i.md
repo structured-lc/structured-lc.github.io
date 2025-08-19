@@ -81,3 +81,8 @@ def countTripletsWithEvenXOR(a, b, c):
 
 ### Summary
 This is a classic **triple nested loop enumeration**: try all triplet combinations and check a property (parity of set bits) on the result. The main pattern is exhaustive search, efficient here due to small array sizes. A similar pattern applies to many small-combinatorial subset problems. The "counting set bits parity" part is a useful trick in both bitwise and combinatorial interview problems.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

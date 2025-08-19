@@ -118,3 +118,8 @@ def nodesBetweenCriticalPoints(head):
 ### Summary
 This problem uses the **one-pass array scan** pattern: you traverse the data once while recording positions meeting a specific local condition (local minima/maxima).  
 The pattern is commonly used for problems involving local extrema, peaks, valleys, or finding distances between special elements in linked lists, arrays, or sequences.
+
+### Tags
+Linked List(#linked-list)
+
+### Similar Problems

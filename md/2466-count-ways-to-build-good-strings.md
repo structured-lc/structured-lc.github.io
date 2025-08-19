@@ -96,3 +96,9 @@ This is a classic **unbounded knapsack DP** problem (with only two item sizes: z
 The solution uses bottom-up DP to count ways to build up all possible string lengths, summing up the counts for all needed output lengths.  
 This DP pattern appears in many problems: coin change, tiling, staircase, and integer compositions.  
 Understanding the recurrence and base cases is critical for these types of combinatorics/build problems.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Climbing Stairs(climbing-stairs) (Easy)

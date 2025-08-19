@@ -110,3 +110,8 @@ def count_blocks(big_array):
 This problem uses the **binary search for next change** pattern, a twist on the two-pointer or group-by approach for sorted or grouped arrays.  
 The efficiency comes from the maximal blocks already being formed, making a logarithmic jump to the next block possible, which is ideal for BigArray or external memory scenarios.  
 Such grouping and block-counting patterns are common in **run-length encoding**, **data compression**, and detecting value changes in sorted/grouped sequences.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Interactive(#interactive)
+
+### Similar Problems

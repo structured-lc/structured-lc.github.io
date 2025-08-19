@@ -87,3 +87,8 @@ def isInterleave(s1: str, s2: str, s3: str) -> bool:
 The problem uses the **dynamic programming** pattern, optimizing a brute-force recursion via state memoization (2D to 1D array for space).  
 It’s a classical *string DP* problem seen in parsing, edit distance, and merge problems.  
 This pattern is broadly applicable anywhere you need to check if one sequence can be built by interleaving multiple sub-sequences while preserving their internal ordering.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

@@ -97,3 +97,14 @@ def rob(nums):
 
 ### Summary  
 This problem uses **dynamic programming with state reduction** and is a variant of the classic House Robber pattern. The twist—houses arranged in a circle—forces us to split the problem into two linear subproblems, avoiding the circular adjacency. This **sliding-window DP** or **rolling state DP** technique (with O(1) extra space) is common for problems where decisions depend on non-adjacent or "skip-and-take" patterns, such as in maximum subsequence sums without consecutive picks.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- House Robber(house-robber) (Medium)
+- Paint House(paint-house) (Medium)
+- Paint Fence(paint-fence) (Medium)
+- House Robber III(house-robber-iii) (Medium)
+- Non-negative Integers without Consecutive Ones(non-negative-integers-without-consecutive-ones) (Hard)
+- Coin Path(coin-path) (Hard)

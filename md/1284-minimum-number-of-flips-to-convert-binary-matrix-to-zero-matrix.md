@@ -92,3 +92,11 @@ def min_flips(mat):
 
 ### Summary
 This problem is a classic example of using BFS for shortest path in a state space. The pattern appears in grid puzzles and bitmask DP. For larger matrices, alternate strategies like algebraic methods or heuristics may be necessary.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- Minimum Operations to Remove Adjacent Ones in Matrix(minimum-operations-to-remove-adjacent-ones-in-matrix) (Hard)
+- Remove All Ones With Row and Column Flips(remove-all-ones-with-row-and-column-flips) (Medium)
+- Remove All Ones With Row and Column Flips II(remove-all-ones-with-row-and-column-flips-ii) (Medium)

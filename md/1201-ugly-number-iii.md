@@ -92,3 +92,9 @@ def nthUglyNumber(n, a, b, c):
 
 ### Summary
 This approach uses **binary search on the answer** combined with **inclusion-exclusion** for fast counting — a common pattern for “find kᵗʰ smallest in a monotone sequence.” It’s useful in scheduling, sorted selection, GCD/LCM problems, and many LeetCode “find kth” variants where brute-force is not practical.
+
+### Tags
+Math(#math), Binary Search(#binary-search), Combinatorics(#combinatorics), Number Theory(#number-theory)
+
+### Similar Problems
+- Ugly Number II(ugly-number-ii) (Medium)

@@ -73,3 +73,9 @@ def array_last(arr):
 
 ### Summary
 This problem showcases the **prototype extension pattern** in JavaScript, enabling you to add custom methods globally to all array instances. It is a common interview task to test understanding of language prototypes, inheritance, and best practices in safe augmentation. The O(1) solution is simple: check for length, return -1 if the array is empty, otherwise return the last element. This pattern (return special value for empty structures) is widely applicable in both languages and systems that require robust API design.
+
+### Tags
+
+### Similar Problems
+- Snail Traversal(snail-traversal) (Medium)
+- Array Upper Bound(array-upper-bound) (Easy)

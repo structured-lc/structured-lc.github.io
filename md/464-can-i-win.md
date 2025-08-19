@@ -124,3 +124,13 @@ def canIWin(maxChoosableInteger, desiredTotal):
 
 ### Summary
 This problem exemplifies classic game theory using minimax with memoization. The key insights are representing game state efficiently (bitmask), recognizing that optimal play means choosing moves that put opponents in losing positions, and using memoization to avoid redundant calculations. This pattern appears in many two-player games and competitive scenarios where you need to determine optimal strategies assuming both players play perfectly.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Memoization(#memoization), Game Theory(#game-theory), Bitmask(#bitmask)
+
+### Similar Problems
+- Flip Game II(flip-game-ii) (Medium)
+- Guess Number Higher or Lower II(guess-number-higher-or-lower-ii) (Medium)
+- Predict the Winner(predict-the-winner) (Medium)
+- Find the Winning Player in Coin Game(find-the-winning-player-in-coin-game) (Easy)
+- Find the Number of Winning Players(find-the-number-of-winning-players) (Easy)

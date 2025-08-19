@@ -99,3 +99,10 @@ def largest_palindrome_divisible_by_k(n: int, k: int) -> str:
 This problem is a classic example of **palindrome generation by prefix mirroring** combined with a divisibility check.  
 The **key idea** is drastically reducing the search space from all n-digit numbers to only n-digit palindromes, enabling an efficient solution.  
 This prefix–mirror pattern is common in palindrome construction, and the technique is widely applicable in problems involving palindromic numbers or string patterns.
+
+### Tags
+Math(#math), String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Number Theory(#number-theory)
+
+### Similar Problems
+- Palindrome Number(palindrome-number) (Easy)
+- Find the Closest Palindrome(find-the-closest-palindrome) (Hard)

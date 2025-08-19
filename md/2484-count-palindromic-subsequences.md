@@ -112,3 +112,11 @@ This problem is a classic application of **dynamic programming on substrings**, 
 It appears in many related problems (count palindrome substrings, longest palindromic subsequence, etc).  
 The most challenging part is **avoiding double-counting** by inclusion-exclusion in overlapping cases.  
 The use of two pointers to find copies inside the substring s[i+1..j-1] is a common trick for such problems.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Arithmetic Slices II - Subsequence(arithmetic-slices-ii-subsequence) (Hard)
+- Count Different Palindromic Subsequences(count-different-palindromic-subsequences) (Hard)
+- Unique Length-3 Palindromic Subsequences(unique-length-3-palindromic-subsequences) (Medium)

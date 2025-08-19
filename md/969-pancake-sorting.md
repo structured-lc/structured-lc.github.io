@@ -115,3 +115,8 @@ This solution uses a **greedy, selection-sort-like approach** that places each m
 The main coding pattern is "bring-to-front, then to-position", which is applicable in variants of in-place sorting with limited operations.  
 This pattern also appears in problems that limit you to a particular operation (subarray flipping, reversal, etc.).  
 No advanced data structures required—just simulation and careful iteration.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

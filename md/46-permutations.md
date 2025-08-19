@@ -106,3 +106,12 @@ def permute(nums):
 This problem is a classic use-case for **backtracking**, a common coding interview pattern for exploring all possibilities (e.g., combinations, subsets, permutations).  
 Other typical applications include solving sudoku, n-queens, or word search puzzles.  
 Backtracking ensures every possible candidate arrangement is checked and constructed efficiently, then unwound—so all possible unique permutations are returned.
+
+### Tags
+Array(#array), Backtracking(#backtracking)
+
+### Similar Problems
+- Next Permutation(next-permutation) (Medium)
+- Permutations II(permutations-ii) (Medium)
+- Permutation Sequence(permutation-sequence) (Hard)
+- Combinations(combinations) (Medium)

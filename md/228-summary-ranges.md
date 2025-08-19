@@ -82,3 +82,11 @@ def summaryRanges(nums):
 
 ### Summary
 This problem uses a **two-pointer iteration** pattern to detect stretches of consecutive integers in a sorted array. It's a fundamental sequence-ranges pattern, often seen in interval merging, timeline grouping, and compression problems. The approach efficiently compresses consecutive values and can be adapted for similar range-grouping tasks in both interview settings and real-world applications.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Missing Ranges(missing-ranges) (Easy)
+- Data Stream as Disjoint Intervals(data-stream-as-disjoint-intervals) (Hard)
+- Find Maximal Uncovered Ranges(find-maximal-uncovered-ranges) (Medium)

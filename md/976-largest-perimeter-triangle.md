@@ -73,3 +73,9 @@ def largestPerimeter(nums):
 
 ### Summary
 This approach uses sorting followed by a single scan, a common greedy-plus-scan coding pattern. It efficiently finds the combination for the maximal perimeter using the triangle inequality and is useful in interview scenarios for problems requiring max/min selection after sorting. This technique also applies to other geometric or combinatorial selection problems.
+
+### Tags
+Array(#array), Math(#math), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Largest Triangle Area(largest-triangle-area) (Easy)

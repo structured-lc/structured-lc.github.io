@@ -71,3 +71,9 @@ def containsPattern(arr, m, k):
 
 ### Summary
 This problem demonstrates a clever use of a running counter to recognize repeated sequences within an array by comparing elements separated by m positions. The pattern is related to the sliding window and frequency counting techniques. This approach is also applicable to substring and subarray repetition detection in both strings and arrays.
+
+### Tags
+Array(#array), Enumeration(#enumeration)
+
+### Similar Problems
+- Maximum Repeating Substring(maximum-repeating-substring) (Easy)

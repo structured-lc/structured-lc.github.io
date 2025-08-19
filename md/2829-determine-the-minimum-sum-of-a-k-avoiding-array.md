@@ -100,3 +100,8 @@ The greedy approach (smallest eligible numbers, skip forbidden ones) ensures the
 Patterns like this commonly appear in problems dealing with *sum constraints, uniqueness, and array construction under pairing rules*.  
 The key pattern: **building a set under pairwise restrictions and minimizing a metric (here, the sum)**.  
 The array construction and forbidden pair tracking can be generalized to similar problems involving forbidden pairs or sums.
+
+### Tags
+Math(#math), Greedy(#greedy)
+
+### Similar Problems

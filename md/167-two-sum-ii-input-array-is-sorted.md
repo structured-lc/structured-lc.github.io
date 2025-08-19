@@ -89,3 +89,11 @@ def twoSum(numbers, target):
 
 ### Summary
 Used the **two-pointer technique** taking advantage of the sorted input for linear time and constant extra space. This pattern is common for problems involving sorted arrays and searching for pairs or ranges (e.g., 2 Sum, 3 Sum, sorted array range queries). It’s a classic and highly reusable approach in coding interviews for array-related questions.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)
+- Two Sum IV - Input is a BST(two-sum-iv-input-is-a-bst) (Easy)
+- Two Sum Less Than K(two-sum-less-than-k) (Easy)

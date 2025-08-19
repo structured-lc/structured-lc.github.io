@@ -101,3 +101,8 @@ def maximumTripletValue(nums):
 
 ### Summary
 This problem fits the "triplet enumeration" pattern where we want the optimal value under a strict combinatorial constraint. The O(n²) solution is acceptable for smaller n; for larger n, prefix/suffix data structures (like trees or BIT/Fenwick Tree) enable O(n log n) solutions. This strategy—precomputing best options to the left and right and combining them—is a powerful pattern for similar triplet or subarray optimization problems.
+
+### Tags
+Array(#array), Ordered Set(#ordered-set)
+
+### Similar Problems

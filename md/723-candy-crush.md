@@ -126,3 +126,8 @@ def candyCrush(board):
 
 ### Summary
 This problem is a **grid simulation** using repeated passes. The key patterns are board state scanning, marking to avoid premature overwriting, and simulating gravity. The same technique can be applied to match-3 game clones, Tetris-like simulations, or avalanche dynamics in physics models. No advanced data structures are needed—careful in-place updates and a loop until stabilization suffice.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems

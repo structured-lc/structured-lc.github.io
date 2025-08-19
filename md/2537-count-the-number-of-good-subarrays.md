@@ -98,3 +98,10 @@ def countGood(nums, k):
 We used a classic **sliding window + hash map (counting)** approach, efficiently tracking pair formation as the window expands and contracts.  
 This pattern is widely applicable in counting subarrays/substrings with frequency or pair constraints, e.g., "at most K different characters," "longest substring with at least K repetitions," and others.  
 The technique provides linear performance, optimal for large datasets and real-time analytics.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Count Number of Homogenous Substrings(count-number-of-homogenous-substrings) (Medium)
+- Maximum Sum of Distinct Subarrays With Length K(maximum-sum-of-distinct-subarrays-with-length-k) (Medium)

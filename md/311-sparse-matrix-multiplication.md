@@ -109,3 +109,8 @@ def multiply(mat1, mat2):
 
 ### Summary
 This approach uses **sparse matrix traversal** to efficiently multiply two matrices by focusing only on non-zero values. The pattern (sparse + memory-efficient preprocessing) is very common in handling large, mostly empty arrays/matrices—applied in fields like scientific computing, search engines, or machine learning when working with sparse data.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Matrix(#matrix)
+
+### Similar Problems

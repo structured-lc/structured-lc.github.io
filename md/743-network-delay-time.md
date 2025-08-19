@@ -105,3 +105,10 @@ def networkDelayTime(times, n, k):
 ### Summary
 This problem is a classic application of **Dijkstra’s algorithm** (graph traversal with positive weights and a source node). The pattern applies to many network communication and optimal route problems, such as computing **single-source shortest path**.  
 Variants include returning unreachable status, reconstructing paths, or adapting for dynamic graphs. This solution demonstrates efficient graph modeling, heap usage, and detection of unreachable nodes.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
+
+### Similar Problems
+- The Time When the Network Becomes Idle(the-time-when-the-network-becomes-idle) (Medium)
+- Second Minimum Time to Reach Destination(second-minimum-time-to-reach-destination) (Hard)

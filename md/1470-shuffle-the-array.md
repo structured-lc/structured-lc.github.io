@@ -57,3 +57,8 @@ def shuffle(nums, n):
 
 ### Summary
 A simple array manipulation problem, it reinforces index math and understanding how to interleave two lists. Patterns like two-pointer or index-mapping occur in merging/sort/shuffle-related interview questions.
+
+### Tags
+Array(#array)
+
+### Similar Problems

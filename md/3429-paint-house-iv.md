@@ -115,3 +115,9 @@ def minCost(cost):
 This problem is a **two-dimensional dynamic programming** extension of the classic "Paint House" family, incorporating extra **mirror constraints**.  
 The approach is to recursively select valid colorings, caching partial solutions (DP/memoization), and leveraging symmetry.  
 This coding pattern frequently appears in coloring, scheduling, or similar constraint-based optimization problems and can be adapted for various forms of mirrored or paired constraints.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Paint House III(paint-house-iii) (Hard)

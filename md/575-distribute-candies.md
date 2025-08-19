@@ -81,3 +81,10 @@ def distributeCandies(candies):
 
 ### Summary
 This problem is a classic **set/unique counting** scenario paired with a simple **capacity constraint** (can eat ⌊n/2⌋). The optimal solution uses a set to count unique items, then returns the minimum of this count and the limit allowed. This is a common **hashing and counting** pattern, applicable to any scenario where you must maximize diversity under a quantity constraint.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems
+- Minimum Number of Operations to Satisfy Conditions(minimum-number-of-operations-to-satisfy-conditions) (Medium)
+- Check if Grid Satisfies Conditions(check-if-grid-satisfies-conditions) (Easy)

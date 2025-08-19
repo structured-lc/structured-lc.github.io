@@ -78,3 +78,10 @@ def findPeaks(mountain):
 
 ### Summary
 This is a classic single-pass traversal pattern—using two pointers (current, neighbor)—to find local maxima efficiently. This method is commonly applied for peak-finding or local search problems, especially in arrays, and demonstrates how analyzing neighbor relationships leads to O(n) solutions.
+
+### Tags
+Array(#array), Enumeration(#enumeration)
+
+### Similar Problems
+- Find Peak Element(find-peak-element) (Medium)
+- Find a Peak Element II(find-a-peak-element-ii) (Medium)

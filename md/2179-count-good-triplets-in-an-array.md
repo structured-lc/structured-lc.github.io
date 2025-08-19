@@ -137,3 +137,13 @@ def countGoodTriplets(nums1, nums2):
 
 ### Summary
 This problem is a classic application of **coordinate compression + range query (Fenwick Tree/BIT)** pattern, commonly used for efficiently counting pairs or triplets with ordering constraints in permutations. The main technique generalizes to problems where you need to count increasing subsequence-like objects efficiently. You may see this technique in other combinatorial counting problems on permutations or arrays with unique elements.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Merge Sort(#merge-sort), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Count of Smaller Numbers After Self(count-of-smaller-numbers-after-self) (Hard)
+- Increasing Triplet Subsequence(increasing-triplet-subsequence) (Medium)
+- Create Sorted Array through Instructions(create-sorted-array-through-instructions) (Hard)
+- Number of Good Paths(number-of-good-paths) (Hard)
+- Count Increasing Quadruplets(count-increasing-quadruplets) (Hard)

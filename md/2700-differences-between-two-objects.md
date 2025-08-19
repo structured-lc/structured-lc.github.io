@@ -142,3 +142,9 @@ def obj_diff(obj1, obj2):
 This problem uses the **recursive deep-diff** pattern, traversing two structures in parallel and comparing shared keys/indices.  
 It's a common approach for **diff utilities, configuration comparisons, and state change tracking**.  
 Skills tested include recursion, handling nested data, and careful type checking—all of which are valuable for backend engineering and state management.
+
+### Tags
+
+### Similar Problems
+- JSON Deep Equal(json-deep-equal) (Medium)
+- Convert Object to JSON String(convert-object-to-json-string) (Medium)

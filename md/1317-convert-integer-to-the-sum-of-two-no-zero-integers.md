@@ -97,3 +97,8 @@ def getNoZeroIntegers(n):
 
 ### Summary  
 This problem uses the **brute-force search** pattern and checks integer properties (such as "does not contain 0" in decimal) efficiently due to small bounds. The pattern is applicable in other digit-constrained number problems, such as constructing numbers without certain digits, or splitting numbers by greedy or exhaustive checks where the solution count is small and verification is simple.
+
+### Tags
+Math(#math)
+
+### Similar Problems

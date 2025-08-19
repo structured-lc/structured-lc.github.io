@@ -106,3 +106,8 @@ def maskPII(s: str) -> str:
 
 ### Summary
 This problem is a **string parsing and manipulation** question, often seen in data sanitization/security domains. The approach—detecting format, normalizing input, and outputting masked result—is a common pattern for anonymizing personal identifiers and can be adapted for masking credit cards, SSNs, etc. The use of indexing and careful string building (no libraries for shortcuts) is directly applicable to similar data transformation and parsing tasks in interviews.
+
+### Tags
+String(#string)
+
+### Similar Problems

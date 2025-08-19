@@ -148,3 +148,11 @@ This problem is a classic **aggregation and JOIN** pattern in SQL, leveraging GR
 It is widely applicable in business analytics, order tracking, spending reports, etc.  
 Patterns: JOIN, GROUP BY, ORDER BY, computed aggregate columns.  
 Common in reporting, analytics, and data-driven product questions.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Product Sales Analysis I(product-sales-analysis-i) (Easy)
+- Product Sales Analysis II(product-sales-analysis-ii) (Easy)
+- Product Sales Analysis III(product-sales-analysis-iii) (Medium)

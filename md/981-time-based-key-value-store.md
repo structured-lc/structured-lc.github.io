@@ -141,3 +141,9 @@ The pattern applies to any **versioned data**, such as:
 - Document versioning
 - Undo stacks  
 Core pattern: Use list to store timestamped values for each key (since they are monotonic), then binary search to get efficient queries for largest value ≤ timestamp.
+
+### Tags
+Hash Table(#hash-table), String(#string), Binary Search(#binary-search), Design(#design)
+
+### Similar Problems
+- Stock Price Fluctuation (stock-price-fluctuation) (Medium)

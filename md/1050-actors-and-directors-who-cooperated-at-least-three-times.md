@@ -125,3 +125,8 @@ def actors_and_directors_at_least_three(records):
 
 ### Summary
 This problem leverages the **group-by and aggregation** pattern common in SQL/database questions, with a straightforward Python mapping using dictionaries. This approach is widely used for tasks involving counting occurrences of unique pairs or combinations in large datasets, and scales well both in SQL and in-memory dictionary-based computation. This is a very standard and practical pattern for analytics and data summarization tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems

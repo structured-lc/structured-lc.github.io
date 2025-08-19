@@ -142,3 +142,9 @@ def find_median(numbers):
 
 ### Summary
 We solved the problem using a **prefix sum / cumulative frequency** pattern common in histogram/weighted list questions. Instead of expanding the data, we efficiently used prefix sums to locate the median positions, dramatically reducing both time and space usage. This approach frequently appears in data stream algorithms, quantile calculations, and histogram queries.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Median Employee Salary(median-employee-salary) (Hard)

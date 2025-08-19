@@ -93,3 +93,17 @@ def minPathSum(grid):
 This problem is classic **dynamic programming on a grid**—sometimes called a “min path sum in a matrix” problem.  
 It teaches the pattern of building a solution using previously computed subproblem results, with DP transitions based on allowed moves (right and down).  
 This approach is broadly useful in pathfinding, robotics, and games, and is the foundation for variations like unique paths, maximal path sum, and obstacle grids.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems
+- Unique Paths(unique-paths) (Medium)
+- Dungeon Game(dungeon-game) (Hard)
+- Cherry Pickup(cherry-pickup) (Hard)
+- Minimum Path Cost in a Grid(minimum-path-cost-in-a-grid) (Medium)
+- Maximum Number of Points with Cost(maximum-number-of-points-with-cost) (Medium)
+- Minimum Cost Homecoming of a Robot in a Grid(minimum-cost-homecoming-of-a-robot-in-a-grid) (Medium)
+- Paths in Matrix Whose Sum Is Divisible by K(paths-in-matrix-whose-sum-is-divisible-by-k) (Hard)
+- Check if There is a Path With Equal Number of 0's And 1's(check-if-there-is-a-path-with-equal-number-of-0s-and-1s) (Medium)
+- Minimum Cost of a Path With Special Roads(minimum-cost-of-a-path-with-special-roads) (Medium)

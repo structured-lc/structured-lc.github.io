@@ -92,3 +92,8 @@ def gardenNoAdj(n, paths):
 
 ### Summary
 This is a **greedy graph coloring** problem, made tractable by the constraint that each node has degree ≤ 3 and 4 available flower types. The solution iterates through each garden, greedily picking the lowest flower type not used by any neighbor. This greedy pattern is common for scheduling, coloring, and assignment problems where constraints assure a solution (such as low-degree graphs with k colors).
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
+
+### Similar Problems

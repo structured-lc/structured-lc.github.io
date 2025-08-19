@@ -99,3 +99,13 @@ def trap(height):
 
 ### Summary
 This problem uses the "**two-pointer/trapping rain water**" pattern, which often appears when you’re required to collect, compare, or merge data from both ends of a list. It’s a classic **sliding window/two-pointer** style, and frequently arises in array and histogram-related interview questions (e.g., container with most water, largest rectangle in histogram, etc.). The key is recognizing that the local minimum of the max heights on each side defines the water trapped.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Dynamic Programming(#dynamic-programming), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Container With Most Water(container-with-most-water) (Medium)
+- Product of Array Except Self(product-of-array-except-self) (Medium)
+- Trapping Rain Water II(trapping-rain-water-ii) (Hard)
+- Pour Water(pour-water) (Medium)
+- Maximum Value of an Ordered Triplet II(maximum-value-of-an-ordered-triplet-ii) (Medium)

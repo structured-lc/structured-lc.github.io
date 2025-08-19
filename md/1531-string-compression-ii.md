@@ -127,3 +127,9 @@ def getLengthOfOptimalCompression(s: str, k: int) -> int:
 This problem exemplifies the **DP with state compression pattern**—storing subproblem solutions parameterized by position, operations left, and a limited summary of history.  
 It's a common approach in string edit and optimization problems with “delete/keep/replace” choices. The technique of bounding state (here, prev_count capped >100) and careful compression length transitions (digit boundaries in RLE) is a common interview theme.  
 This pattern is applicable in text compression, edit distance, and subsequence/subarray optimizations.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- String Compression III(string-compression-iii) (Medium)

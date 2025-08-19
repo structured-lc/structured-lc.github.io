@@ -97,3 +97,12 @@ def longest_subarray(nums):
 
 ### Summary
 This problem uses a simple sliding window/counting pattern, detecting the longest stretch of a repeated value. It’s a classic search for the longest block of a property (e.g., all 1’s, longest plateau) and shows how recognizing bitwise rules (AND can only decrease) lets you trim brute-force approaches into a clean O(n) sweep. This pattern applies to many substring/subarray search problems involving uniformity or max/min runs, such as maximum consecutive ones or zeros.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Brainteaser(#brainteaser)
+
+### Similar Problems
+- Number of Different Integers in a String(number-of-different-integers-in-a-string) (Easy)
+- Remove Colored Pieces if Both Neighbors are the Same Color(remove-colored-pieces-if-both-neighbors-are-the-same-color) (Medium)
+- Count Number of Maximum Bitwise-OR Subsets(count-number-of-maximum-bitwise-or-subsets) (Medium)
+- Smallest Subarrays With Maximum Bitwise OR(smallest-subarrays-with-maximum-bitwise-or) (Medium)

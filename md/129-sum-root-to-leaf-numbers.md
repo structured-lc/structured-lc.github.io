@@ -121,3 +121,11 @@ def sumNumbers(root):
 
 ### Summary
 This solution uses a classic **DFS backtracking** pattern for trees. It demonstrates how to pass partial results down the call stack and aggregate results conditionally (when a leaf is hit). It’s a foundational binary tree traversal technique with wide applicability whenever you need to accumulate or aggregate data along root-to-leaf paths, including path sum, path concatenation, and many other tree problems.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Path Sum(path-sum) (Easy)
+- Binary Tree Maximum Path Sum(binary-tree-maximum-path-sum) (Hard)
+- Smallest String Starting From Leaf(smallest-string-starting-from-leaf) (Medium)

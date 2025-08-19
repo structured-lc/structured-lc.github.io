@@ -62,3 +62,8 @@ def removePalindromeSub(s: str) -> int:
 
 ### Summary
 This problem is a very simple application of palindrome checking logic with a trick due to only two letters: the minimal removal steps are always 1 or 2.
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems

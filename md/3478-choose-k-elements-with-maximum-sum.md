@@ -124,3 +124,8 @@ This problem uses the **sorting with heap (priority queue) sliding max** pattern
 The key is to process items in increasing order of nums1, maintaining a heap of the largest k nums2 values seen so far.  
 This reduces the problem from quadratic to O(n log n), a common pattern for maximizing subarray/subset sums under ordering constraints.  
 The technique is broadly applicable in selection/subsequence maximization problems under monotonicity constraints.
+
+### Tags
+Array(#array), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

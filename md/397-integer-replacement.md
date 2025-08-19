@@ -92,3 +92,8 @@ def integerReplacement(n: int) -> int:
 
 ### Summary
 This problem uses a **greedy approach** with **bit manipulation** to choose the quickest path to 1, minimizing steps by exploiting binary patterns. The same logic appears in other problems that involve reducing numbers using basic operations (e.g., subtract/divide until you reach a target). This approach is common for "reduce to 1" type questions and illustrates how greedy + bit tricks can often yield O(log n) solutions.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Greedy(#greedy), Bit Manipulation(#bit-manipulation), Memoization(#memoization)
+
+### Similar Problems

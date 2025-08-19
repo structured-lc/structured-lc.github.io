@@ -79,3 +79,8 @@ def find_friendly_movies(logs, last_month):
 
 ### Summary
 This problem is solved using hashmaps and set intersections, which commonly arise in collaborative filtering, recommendations, or grouping tasks. Similar patterns can be applied to friendship recommendations, social graph clustering, or project collaboration filtering problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

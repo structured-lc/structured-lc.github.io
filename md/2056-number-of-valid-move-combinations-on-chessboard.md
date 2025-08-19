@@ -162,3 +162,8 @@ def countCombinations(pieces, positions):
 
 ### Summary
 This problem demonstrates advanced backtracking, simulation, and synchronizing multi-agent movement with collision rules. The pattern is "permutation combination+DFS+simulation", common for enumeration and movement/interleaving puzzles. The simulation can be adapted to any movement with strict anti-collision rules.
+
+### Tags
+Array(#array), String(#string), Backtracking(#backtracking), Simulation(#simulation)
+
+### Similar Problems

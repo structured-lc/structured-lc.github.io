@@ -98,3 +98,11 @@ This problem is a **bounded + unbounded knapsack** variant (coin change with a l
 It uses the well-known coin change DP pattern, but for each possible usage of the limited coin, solves a smaller unbounded knapsack.  
 This decomposition is commonly used when constraints on coin usage are small.  
 The pattern appears in problems that mix unlimited and limited coin usage, and is a standard technique for bounded/unbounded combinations.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Combination Sum(combination-sum) (Medium)
+- Climbing Stairs(climbing-stairs) (Easy)
+- Coin Change II(coin-change-ii) (Medium)

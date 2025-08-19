@@ -123,3 +123,8 @@ def wordSubsets(words1, words2):
 This problem is a classic "frequency mask" technique:  
 Combine requirements across multiple words into a single character frequency array, then scan the candidates once each.  
 This "consolidate requirement, validate in single pass" pattern is common in subset/multiset and anagram problems, and is often used for word filter and multitarget search tasks.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string)
+
+### Similar Problems

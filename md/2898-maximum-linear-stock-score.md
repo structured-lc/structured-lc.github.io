@@ -88,3 +88,8 @@ def maxLinearStockScore(prices):
 This problem uses the **grouping by invariant** pattern, exploiting that prices[i] - i is constant for valid linear subsequences.  
 This is a classic case for **hash map grouping by key**.  
 The pattern appears in problems involving sequences with fixed difference, or where a property is maintained over indices or values — similar to arithmetic subsequence or longest equal-difference subarray problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

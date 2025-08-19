@@ -119,3 +119,9 @@ def numSimilarGroups(strs):
 This problem is a classic application of **Union-Find / Disjoint Set Union** and the **connected components in a graph** pattern.  
 The pattern is broadly useful for grouping elements by connectivity/transitivity: e.g., grouping people by mutual friendship, islands in a grid, or synonym chains in dictionaries.  
 Similar string checking, combined with DSU, gives an efficient, easily generalizable solution.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find)
+
+### Similar Problems
+- Groups of Strings(groups-of-strings) (Hard)

@@ -113,3 +113,9 @@ def upsideDownBinaryTree(root):
 
 ### Summary
 The solution uses a **post-order recursive traversal** pattern to rewire parent/child pointers as we unwind recursion. This approach is commonly seen in problems involving transformation or reconstruction of trees, such as converting a binary tree to another form or flattening trees. Patterns here are similar to inverting linked lists, but node children are manipulated in pairs (left/right), which is unique to binary trees.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Reverse Linked List(reverse-linked-list) (Easy)

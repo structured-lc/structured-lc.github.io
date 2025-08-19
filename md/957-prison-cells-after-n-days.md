@@ -98,3 +98,8 @@ def prisonAfterNDays(cells, N):
 
 ### Summary
 This approach uses **cycle detection** in a small finite state space to accelerate a problem that at first appears to require huge simulation. This is a classic use case of **Floyd’s Tortoise-Hare** or **state-memoization** for optimizations, and is commonly applied in problems involving cellular automata, linked lists with cycles, or repeating simulations with small configuration space.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

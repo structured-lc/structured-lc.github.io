@@ -137,3 +137,9 @@ def splitBST(root, target):
 
 ### Summary
 This problem uses the **recursion and divide & conquer** pattern to split a BST, keeping in-place node relationships intact. The approach only modifies child pointers and never creates new nodes, making it both efficient and structural-preserving. The same logic can be applied to tree-partitioning and other BST modification tasks where minimal change to original structure is desired.
+
+### Tags
+Tree(#tree), Binary Search Tree(#binary-search-tree), Recursion(#recursion), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Delete Node in a BST(delete-node-in-a-bst) (Medium)

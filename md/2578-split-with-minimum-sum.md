@@ -78,3 +78,12 @@ def splitNum(num):
 
 ### Summary
 This problem is a classic **greedy digit distribution** problem: sorting and alternately assigning the smallest digits keeps both numbers as small as possible and their sum minimal. It’s a pattern seen in “minimum/maximum by digit allocation” problems and is especially optimal when combining sorting with a simple round-robin assignment. The approach is robust, handles zeros and repeated digits, and is very efficient due to the small input size.
+
+### Tags
+Math(#math), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Partition Equal Subset Sum(partition-equal-subset-sum) (Medium)
+- Minimum Cost to Move Chips to The Same Position(minimum-cost-to-move-chips-to-the-same-position) (Easy)
+- Partition Array Into Two Arrays to Minimize Sum Difference(partition-array-into-two-arrays-to-minimize-sum-difference) (Hard)
+- Minimum Sum of Values by Dividing Array(minimum-sum-of-values-by-dividing-array) (Hard)

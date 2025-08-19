@@ -98,3 +98,9 @@ def checkXMatrix(grid):
 
 ### Summary
 This problem is a classic **"matrix traversal with positional logic"** pattern. You perform a simple check based on coordinates, walking each cell and applying rules. It's similar in form to problems like "matrix diagonal sum", "check diagonal symmetry", or "set matrix zeroes"—a core building block for 2D grid reasoning. The O(n²) time is as good as possible for matrix-wide verification.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems
+- Matrix Diagonal Sum(matrix-diagonal-sum) (Easy)

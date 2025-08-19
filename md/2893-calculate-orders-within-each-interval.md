@@ -145,3 +145,8 @@ def calculate_orders_within_each_interval(orders):
 This problem applies the **group-by** or **bucketization** pattern, common in interval aggregation (windowing, histogram-bin counting, etc.).  
 The approach can be applied whenever you need to group records by time, index, or value range and then summarize within those groups.  
 This logic is routine in SQL and analytics, and optimizing the calculation of "interval buckets" generalizes to time-series, histogram, and sliding window statistics.
+
+### Tags
+Database(#database)
+
+### Similar Problems

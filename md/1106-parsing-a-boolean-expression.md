@@ -101,3 +101,8 @@ def parseBoolExpr(expression: str) -> bool:
 
 ### Summary
 This problem follows a classic **expression parsing** pattern, best handled with a stack to manage nested expressions and operator evaluation. The stack-based method avoids deep recursion and is robust for large, deeply-nested inputs—making it ideal for parsing and evaluating not just boolean, but also arithmetic or logic expressions with precedence and grouping. This parsing pattern appears in compilers, calculators, and interpreter implementations.
+
+### Tags
+String(#string), Stack(#stack), Recursion(#recursion)
+
+### Similar Problems

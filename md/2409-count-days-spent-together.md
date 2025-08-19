@@ -86,3 +86,10 @@ def countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob):
 
 ### Summary
 This problem is a classic interval-overlap task mapped onto dates. The main technique is **interval intersection**, implemented by computing the overlapping window and then calculating its size, with string-to-day-of-year conversion. This pattern is broadly applicable on calendars, booking problems, range overlaps, and event analysis.
+
+### Tags
+Math(#math), String(#string)
+
+### Similar Problems
+- Number of Days Between Two Dates(number-of-days-between-two-dates) (Easy)
+- Minimum Number of Operations to Convert Time(minimum-number-of-operations-to-convert-time) (Easy)

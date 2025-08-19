@@ -98,3 +98,8 @@ def findRadius(houses, heaters):
 
 ### Summary
 This problem uses the **closest element via binary search** pattern, commonly seen where you need to minimize maximum distances between points. It’s a powerful tweak for brute-force matching problems where both groups can be sorted. Variants are often found in allocation, coverage, k-closest, and facility location problems.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems

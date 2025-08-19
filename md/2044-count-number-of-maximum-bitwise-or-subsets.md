@@ -91,3 +91,11 @@ This problem is a classic **subsets enumeration + bit manipulation** task.
 Since n is small, bitmasking is a simple and efficient way to try every subset.  
 This approach and pattern frequently appear in combinatorial search/interview problems—counting or optimizing subsets, testing with masks, and performing quick stateful computations.  
 Common applications: subset sum/counting problems, finding subset properties, combinatorial search.
+
+### Tags
+Array(#array), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Enumeration(#enumeration)
+
+### Similar Problems
+- Subsets(subsets) (Medium)
+- Largest Combination With Bitwise AND Greater Than Zero(largest-combination-with-bitwise-and-greater-than-zero) (Medium)
+- Longest Subarray With Maximum Bitwise AND(longest-subarray-with-maximum-bitwise-and) (Medium)

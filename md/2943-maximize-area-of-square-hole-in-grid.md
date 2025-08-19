@@ -89,3 +89,10 @@ def maximizeSquareHoleArea(n, m, hBars, vBars):
 
 ### Summary
 This problem follows a *streaks and intervals* pattern, reducing the solution to finding longest consecutive streaks in sorted arrays. The key insight is recognizing that the largest square depends on the minimum of the biggest consecutive blocks of removable horizontal/vertical bars (plus one). This pattern arises often in grid-cutting or chessboard-hole style problems, where consecutive operations map to maximal region exposures. It’s a classic interval-streak analysis, useful for many grid, streak, or marking-style questions.
+
+### Tags
+Array(#array), Sorting(#sorting)
+
+### Similar Problems
+- Maximal Square(maximal-square) (Medium)
+- Maximum Square Area by Removing Fences From a Field(maximum-square-area-by-removing-fences-from-a-field) (Medium)

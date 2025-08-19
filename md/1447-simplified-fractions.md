@@ -59,3 +59,8 @@ def simplifiedFractions(n: int) -> list[str]:
 
 ### Summary
 We use a double loop and check coprimality (gcd) to list all unique simplified fractions. This coprime/gcd approach is a standard way to generate simplified ratios or fractions for problems involving number theory and rational enumeration.
+
+### Tags
+Math(#math), String(#string), Number Theory(#number-theory)
+
+### Similar Problems

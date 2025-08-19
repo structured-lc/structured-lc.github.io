@@ -166,3 +166,9 @@ class LockingTree:
 
 ### Summary
 The problem uses a standard tree modeling pattern where parent-child and lock status are managed explicitly. The common patterns here are tree traversal (DFS for subtrees, parent-walking for ancestors) and stateful mutation (locking/unlocking). This approach is directly applicable to problems like file system locks, permission propagation, or collaborative editors with hierarchical objects.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Design(#design)
+
+### Similar Problems
+- Throne Inheritance(throne-inheritance) (Medium)

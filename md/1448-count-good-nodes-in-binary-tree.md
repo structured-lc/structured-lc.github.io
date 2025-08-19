@@ -108,3 +108,8 @@ def goodNodes(root: TreeNode) -> int:
 
 ### Summary
 This problem uses the **DFS with path-parameter tracking** coding pattern: as you traverse, you carry information about the path (the current max). This approach is common for problems where ancestor/descendant relationships or path properties must be evaluated. Other similar problems include "Path Sum", "Maximum Depth", or "Longest ZigZag Path" in a tree.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

@@ -127,3 +127,10 @@ The problem is a **bit-manipulation + greedy + parity** pattern.
 The solution identifies where flipping increases value and greedily uses all such flips, honoring the requirement that flips are applied in pairs (parity).  
 This is a classic "flip to maximize gain while respecting operation constraints", similar to subarray XOR, and XOR toggling parity in trees.  
 Common pattern: Greedy + even/odd constraint, which appears in number partition, token game, or tree re-rooting problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Bit Manipulation(#bit-manipulation), Tree(#tree), Sorting(#sorting)
+
+### Similar Problems
+- Maximum Score After Applying Operations on a Tree(maximum-score-after-applying-operations-on-a-tree) (Medium)
+- Find Number of Coins to Place in Tree Nodes(find-number-of-coins-to-place-in-tree-nodes) (Hard)

@@ -147,3 +147,8 @@ def bank_account_summary_ii(users, transactions):
 ### Summary
 This is a typical **aggregate and join** database problem.  
 It maps to the SQL GROUP BY pattern for sum aggregation, filtering with HAVING, and joining user info. In code, the common pattern is **hash map accumulation** followed by filtering, which is broadly useful for summarizing or reducing data across categories. Variants of this approach apply in many analytics and financial domain tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems

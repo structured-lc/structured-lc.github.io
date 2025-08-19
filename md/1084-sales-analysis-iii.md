@@ -166,3 +166,9 @@ def sales_analysis_iii(products, sales):
 ### Summary
 This solution uses the classic **group-by/product-aggregation** pattern—find properties (here, min/max dates) per group, then filter based on range.  
 This pattern is often used for problems involving grouping transaction records to determine eligibility or thresholds (e.g., people with all transactions in a certain window, users only active in a given quarter).
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Sales Analysis II(sales-analysis-ii) (Easy)

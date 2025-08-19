@@ -90,3 +90,9 @@ def longestDecomposition(text):
 
 ### Summary
 This problem uses a greedy recursive (or iterative) "outside in" decomposition—matching the shortest prefix and suffix at each step. This is a **divide and conquer** pattern, common in palindromic or mirroring string problems, and can be adapted to scenarios where symmetry or repeated chunk pattern matching is needed. Rolling hash would help for further optimization in hashing chunk substrings.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Rolling Hash(#rolling-hash), Hash Function(#hash-function)
+
+### Similar Problems
+- Palindrome Rearrangement Queries(palindrome-rearrangement-queries) (Hard)

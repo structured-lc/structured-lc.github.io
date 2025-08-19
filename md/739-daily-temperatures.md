@@ -94,3 +94,10 @@ def dailyTemperatures(temperatures):
 
 ### Summary
 This problem uses the **Monotonic Stack** pattern, which is common when needing to find the "next greater (or smaller)" element to the right (or left) in a sequence. The stack maintains indices in decreasing order of their temperatures, enabling efficiently updating answers as soon as a "warmer" day is found. This pattern is also useful for problems like "Next Greater Element" and "Largest Rectangle in Histogram".
+
+### Tags
+Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Next Greater Element I(next-greater-element-i) (Easy)
+- Online Stock Span(online-stock-span) (Medium)

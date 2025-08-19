@@ -69,3 +69,8 @@ def distanceTraveled(mainTank: int, additionalTank: int) -> int:
 
 ### Summary
 This problem demonstrates a classic **simulation with step optimization**: you can often replace a loop with a mathematical formula if you analyze the pattern. Here, the transfer pattern is regular, so we use division and min to get the answer efficiently. This technique applies to many resource-simulation or refueling patterns, and is common in greedy, math, and simulation interview problems.
+
+### Tags
+Math(#math), Simulation(#simulation)
+
+### Similar Problems

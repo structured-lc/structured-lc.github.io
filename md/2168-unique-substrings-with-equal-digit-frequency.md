@@ -88,3 +88,10 @@ def equal_digit_frequency(s: str) -> int:
 
 ### Summary
 This is a **prefix sum** + **enumeration** problem, commonly appearing in string frequency problems. Storing substring frequencies in a set to ensure uniqueness is a typical pattern for substring uniqueness questions. Prefix sums (precomputed per character) greatly optimize retrieving frequency counts in any substring. This pattern arises in substring-counting, anagrams, or palindromic substring counting problems.
+
+### Tags
+Hash Table(#hash-table), String(#string), Rolling Hash(#rolling-hash), Counting(#counting), Hash Function(#hash-function)
+
+### Similar Problems
+- Number of Equal Count Substrings(number-of-equal-count-substrings) (Medium)
+- Substrings That Begin and End With the Same Letter(substrings-that-begin-and-end-with-the-same-letter) (Medium)

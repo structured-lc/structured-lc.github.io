@@ -1782,6 +1782,71 @@
           return `<h3><span class="markdown-difficulty-dot ${difficultyLower}"></span> LeetCode ${number}: ${title.trim()} <a href="${practiceLink}" target="_blank" rel="noopener noreferrer" style="background: #0969da; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; text-decoration: none; display: inline-block; margin-left: 0.5em; gap: 4px; transition: all 0.2s ease;" onmouseover="this.style.background='#0550ae'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#0969da'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'">Practice</a></h3>`;
         });
       
+      // Enhance Tags section
+      md = md.replace(/### Tags\s*\n([\s\S]*?)(?=\n###|\n\n###|$)/g, function(match, content) {
+        const trimmedContent = content.trim();
+        if (!trimmedContent) {
+          return ''; // Return empty string to completely remove the section
+        }
+        
+        // Parse tags in format: Tag Name(#tag-slug), separated by commas
+        let tagButtons = '';
+        const tagMatches = trimmedContent.match(/([^(),]+)\(#([^)]+)\)/g);
+        
+        if (tagMatches) {
+          tagMatches.forEach(tagMatch => {
+            const match = tagMatch.match(/([^(),]+)\(#([^)]+)\)/);
+            if (match) {
+              const cleanTagName = match[1].trim();
+              const cleanTagSlug = match[2].trim();
+              tagButtons += `<a href="http://localhost:8000/#tag-${cleanTagSlug}" class="tag-button">${cleanTagName}</a>`;
+            }
+          });
+        }
+        
+        if (!tagButtons) {
+          return ''; // Return empty string if no valid tags found
+        }
+        
+        return `### Tags\n<div class="tag-container">${tagButtons}</div>\n`;
+      });
+      
+      // Enhance Similar Problems section
+      md = md.replace(/### Similar Problems\s*\n([\s\S]*?)(?=\n###|\n\n###|$)/g, function(match, content) {
+        const trimmedContent = content.trim();
+        if (!trimmedContent) {
+          return ''; // Return empty string to completely remove the section
+        }
+        
+        // Parse similar problems in format: Problem Name(slug) (Difficulty)
+        const lines = trimmedContent.split('\n').filter(line => line.trim());
+        let problemButtons = '';
+        
+        lines.forEach(line => {
+          line = line.trim();
+          if (line.startsWith('- ')) {
+            line = line.substring(2).trim();
+          }
+          
+          // Match pattern: Problem Name(slug) (Difficulty)
+          const problemMatch = line.match(/^(.+?)\(([^)]+)\)\s*\(([^)]+)\)$/);
+          if (problemMatch) {
+            const [, problemName, slug, difficulty] = problemMatch;
+            const cleanProblemName = problemName.trim();
+            const cleanSlug = slug.trim();
+            const cleanDifficulty = difficulty.trim().toLowerCase();
+            
+            problemButtons += `<a href="http://localhost:8000/#leetcode-all/${cleanSlug}" class="similar-problem-button ${cleanDifficulty}">${cleanProblemName}</a>`;
+          }
+        });
+        
+        if (!problemButtons) {
+          return ''; // Return empty string if no valid problems found
+        }
+        
+        return `### Similar Problems\n<div class="similar-problems-container">${problemButtons}</div>\n`;
+      });
+      
       // Enhance explanation formatting (add bulb icon like desktop)
       md = md.replace(/\*Explanation:/g, 
         '💡 *Explanation:');
@@ -1801,6 +1866,71 @@
           const difficultyLower = difficulty.toLowerCase();
           return `<h3><span class="markdown-difficulty-dot ${difficultyLower}"></span> LeetCode ${number}: ${title.trim()} <a href="${practiceLink}" target="_blank" rel="noopener noreferrer" style="background: #0969da; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; text-decoration: none; display: inline-block; margin-left: 0.5em; gap: 4px; transition: all 0.2s ease;" onmouseover="this.style.background='#0550ae'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#0969da'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'">Practice</a></h3>`;
         });
+      
+      // Enhance Tags section
+      md = md.replace(/### Tags\s*\n([\s\S]*?)(?=\n###|\n\n###|$)/g, function(match, content) {
+        const trimmedContent = content.trim();
+        if (!trimmedContent) {
+          return ''; // Return empty string to completely remove the section
+        }
+        
+        // Parse tags in format: Tag Name(#tag-slug), separated by commas
+        let tagButtons = '';
+        const tagMatches = trimmedContent.match(/([^(),]+)\(#([^)]+)\)/g);
+        
+        if (tagMatches) {
+          tagMatches.forEach(tagMatch => {
+            const match = tagMatch.match(/([^(),]+)\(#([^)]+)\)/);
+            if (match) {
+              const cleanTagName = match[1].trim();
+              const cleanTagSlug = match[2].trim();
+              tagButtons += `<a href="http://localhost:8000/#tag-${cleanTagSlug}" class="tag-button">${cleanTagName}</a>`;
+            }
+          });
+        }
+        
+        if (!tagButtons) {
+          return ''; // Return empty string if no valid tags found
+        }
+        
+        return `### Tags\n<div class="tag-container">${tagButtons}</div>\n`;
+      });
+      
+      // Enhance Similar Problems section
+      md = md.replace(/### Similar Problems\s*\n([\s\S]*?)(?=\n###|\n\n###|$)/g, function(match, content) {
+        const trimmedContent = content.trim();
+        if (!trimmedContent) {
+          return ''; // Return empty string to completely remove the section
+        }
+        
+        // Parse similar problems in format: Problem Name(slug) (Difficulty)
+        const lines = trimmedContent.split('\n').filter(line => line.trim());
+        let problemButtons = '';
+        
+        lines.forEach(line => {
+          line = line.trim();
+          if (line.startsWith('- ')) {
+            line = line.substring(2).trim();
+          }
+          
+          // Match pattern: Problem Name(slug) (Difficulty)
+          const problemMatch = line.match(/^(.+?)\(([^)]+)\)\s*\(([^)]+)\)$/);
+          if (problemMatch) {
+            const [, problemName, slug, difficulty] = problemMatch;
+            const cleanProblemName = problemName.trim();
+            const cleanSlug = slug.trim();
+            const cleanDifficulty = difficulty.trim().toLowerCase();
+            
+            problemButtons += `<a href="http://localhost:8000/#leetcode-all/${cleanSlug}" class="similar-problem-button ${cleanDifficulty}">${cleanProblemName}</a>`;
+          }
+        });
+        
+        if (!problemButtons) {
+          return ''; // Return empty string if no valid problems found
+        }
+        
+        return `### Similar Problems\n<div class="similar-problems-container">${problemButtons}</div>\n`;
+      });
       
       // Enhance explanation formatting (add bulb icon like mobile)
       md = md.replace(/\*Explanation:/g, 

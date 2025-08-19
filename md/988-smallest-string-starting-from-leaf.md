@@ -116,3 +116,10 @@ class Solution:
 
 ### Summary
 This problem is a classic **root-to-leaf path enumeration** scenario with a lexicographic minimum applied. The main technique is DFS (Depth-First Search) with backtracking and path building, where string or sequence comparison is fundamental. This strategy generalizes to problems requiring "find the path with minimum/maximum [property]" for trees—one of the most frequent interview themes.
+
+### Tags
+String(#string), Backtracking(#backtracking), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Sum Root to Leaf Numbers(sum-root-to-leaf-numbers) (Medium)
+- Binary Tree Paths(binary-tree-paths) (Easy)

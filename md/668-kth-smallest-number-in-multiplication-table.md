@@ -50,3 +50,13 @@ Instead, notice that the table is not arbitrary: in each row i, values are i, 2i
 
 The key observation: **For any number x, you can count how many numbers in the table are ≤ x by summing, for each row i, how many columns j satisfy i × j ≤ x**.  
 - In row i, that's ⌊x/i⌋ (capped at n), so total count = sum over i=1 to m of min(n, ⌊x/i
+
+### Tags
+Math(#math), Binary Search(#binary-search)
+
+### Similar Problems
+- Kth Smallest Element in a Sorted Matrix(kth-smallest-element-in-a-sorted-matrix) (Medium)
+- Find K-th Smallest Pair Distance(find-k-th-smallest-pair-distance) (Hard)
+- K-th Smallest Prime Fraction(k-th-smallest-prime-fraction) (Medium)
+- Minimum Time to Eat All Grains(minimum-time-to-eat-all-grains) (Hard)
+- Kth Smallest Amount With Single Denomination Combination(kth-smallest-amount-with-single-denomination-combination) (Hard)

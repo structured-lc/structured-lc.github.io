@@ -88,3 +88,7 @@ It’s common in data pipelines, report generation, or systems that process even
 - Input validation edge cases
 
 Pattern applies to tasks like time/windowed iteration, and can be reused for other range or calendar problems.
+
+### Tags
+
+### Similar Problems

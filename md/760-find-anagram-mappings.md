@@ -90,3 +90,8 @@ def anagramMappings(A, B):
 This solution uses the **hash map** coding pattern—a common technique for mapping values to positions or frequencies, especially when handling duplicates.  
 It’s highly reusable in problems requiring element-to-index (or value-to-location) correspondences, such as “two sum”, “group anagrams”, and similar search tasks.  
 Efficient mapping via hash tables offers both speed and clarity for small and large input sizes.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

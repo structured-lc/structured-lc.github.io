@@ -84,3 +84,13 @@ def intersection(nums: List[List[int]]) -> List[int]:
 
 ### Summary
 This problem combines **counting** and **intersection** of arrays—core ideas for set-based and frequency-based interview questions. The solution leverages a fixed-size frequency array for efficient counting, a pattern useful whenever working within bounded integer ranges. More generally, array intersection and frequency counting appear in duplicate-element, majority-element, and range-counting problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems
+- Intersection of Two Arrays(intersection-of-two-arrays) (Easy)
+- Intersection of Two Arrays II(intersection-of-two-arrays-ii) (Easy)
+- Find Smallest Common Element in All Rows(find-smallest-common-element-in-all-rows) (Medium)
+- Intersection of Three Sorted Arrays(intersection-of-three-sorted-arrays) (Easy)
+- Find the Difference of Two Arrays(find-the-difference-of-two-arrays) (Easy)

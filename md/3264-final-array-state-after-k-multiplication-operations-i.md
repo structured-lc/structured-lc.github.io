@@ -95,3 +95,8 @@ def final_array_state(nums, k, multiplier):
 ### Summary
 This problem follows the *simulation with array scanning* pattern.  
 Each step's decision is deterministic and does not need greedy or DP approaches—just repeat the given command sequence. Scanning for min each time is slow for huge arrays, but matches the problem's first-occurrence requirement. This pattern arises in problems about applying repeated deterministic operations, where array scanning or simple queue/deque simulation is enough.
+
+### Tags
+Array(#array), Math(#math), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation)
+
+### Similar Problems

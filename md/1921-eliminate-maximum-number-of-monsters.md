@@ -96,3 +96,10 @@ def eliminateMaximum(dist, speed):
 
 ### Summary
 We use a **greedy scheduling pattern**: sort monsters by time to arrival, then eliminate those closest to the city first, stopping at the first conflict. This approach is common in conflict-minimizing problems, such as job scheduling, minimum meeting rooms, and greedy resource assignment. The pattern is applicable whenever you must process tasks under a constraint (here: one per minute) and want to defer "the furthest" as far as possible.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Health to Beat Game(minimum-health-to-beat-game) (Medium)
+- Minimum Time to Kill All Monsters(minimum-time-to-kill-all-monsters) (Hard)

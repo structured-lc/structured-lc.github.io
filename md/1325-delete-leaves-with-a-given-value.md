@@ -87,3 +87,8 @@ class Solution:
 
 ### Summary
 This solution uses the **post-order DFS** (Depth-First Search) traversal, which is a common pattern for problems requiring information about child nodes before making a decision at the parent. Such a recursive post-order pattern is broadly useful for problems like pruning, evaluating, or transforming tree structures based on subtree properties.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

@@ -105,3 +105,12 @@ class Solution:
 
 ### Summary
 The solution uses the **0/1 knapsack DP pattern**, a foundational dynamic programming technique for resource allocation under constraints. Recognizing the mapping between the problem and 0/1 knapsack is key. This pattern is broadly applicable in any scenario where you must choose a subset of items with weights and values under a total capacity. Similar patterns appear in problems on subset sums, partitioning, and resource-limited selection algorithms.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Best Time to Buy and Sell Stock(best-time-to-buy-and-sell-stock) (Easy)
+- Best Time to Buy and Sell Stock II(best-time-to-buy-and-sell-stock-ii) (Medium)
+- Best Time to Buy and Sell Stock III(best-time-to-buy-and-sell-stock-iii) (Hard)
+- Best Time to Buy and Sell Stock IV(best-time-to-buy-and-sell-stock-iv) (Hard)

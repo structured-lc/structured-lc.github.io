@@ -85,3 +85,9 @@ def addRungs(rungs, dist):
 
 ### Summary
 This problem uses a **greedy, gap-filling strategy** that iterates over the differences between known rungs and mathematically inserts just enough rungs to ensure every step is ≤dist. This is a classic "minimally add to fill gaps" pattern, applicable in scheduling, bandwidth splitting, or jump/game design problems where uniform maximum increments are enforced. The problem is solved cleanly in O(n) time with minimal state.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems
+- Cutting Ribbons(cutting-ribbons) (Medium)

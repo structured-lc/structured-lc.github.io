@@ -90,3 +90,11 @@ def maximumProduct(nums, k):
 
 ### Summary
 This problem is a classic example of *min-heap greedy allocation*: always apply resources (increments) to the weakest link (smallest element) to maximize overall outcome (product). This pattern frequently appears in resource distribution, balancing work/loads, or maximizing multiplicative output by leveling up low values. Optimizing increment allocation is widely useful, especially with priority queues.
+
+### Tags
+Array(#array), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Minimum Size Subarray Sum(minimum-size-subarray-sum) (Medium)
+- Minimum Increment to Make Array Unique(minimum-increment-to-make-array-unique) (Medium)
+- Minimum Operations to Make the Array Increasing(minimum-operations-to-make-the-array-increasing) (Easy)

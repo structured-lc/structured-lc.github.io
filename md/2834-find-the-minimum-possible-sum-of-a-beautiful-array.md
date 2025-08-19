@@ -110,3 +110,8 @@ def minimumPossibleSum(n: int, target: int) -> int:
 This problem uses the **greedy constructive approach**—always pick the smallest number not forbidden by current constraints. The exclusion of "mirror" pairs (that sum to target) defines which values are valid to use.  
 It's a classic for array construction under pairing constraints and demonstrates greedy plus set-tracking.  
 This approach can appear in other settings: **set construction with forbidden patterns**, **greedy assignments with exclusions**, and minimal-sum k-selection problems.
+
+### Tags
+Math(#math), Greedy(#greedy)
+
+### Similar Problems

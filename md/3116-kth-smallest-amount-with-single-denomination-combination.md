@@ -124,3 +124,10 @@ def findKthSmallest(coins, k):
 This problem is a classic use of **binary search on answer + inclusion-exclusion principle for counting**.  
 The key is to count efficiently how many distinct values ≤ X can be made by only one coin denomination at a time, using subset LCMs.  
 This fits a common “search on value + count by subsets/inclusion-exclusion” pattern, widely applicable to divisibility, generating non-overlapping sums, or similar resource allocation problems.
+
+### Tags
+Array(#array), Math(#math), Binary Search(#binary-search), Bit Manipulation(#bit-manipulation), Combinatorics(#combinatorics), Number Theory(#number-theory)
+
+### Similar Problems
+- Kth Smallest Number in Multiplication Table(kth-smallest-number-in-multiplication-table) (Hard)
+- Find the Number of Possible Ways for an Event(find-the-number-of-possible-ways-for-an-event) (Hard)

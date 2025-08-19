@@ -94,3 +94,8 @@ def class_performance(scores):
 
 ### Summary  
 The problem involves calculating the difference between the highest and lowest total scores among students, which is a straightforward aggregation pattern. The core is to sum row values and find min and max efficiently. This pattern applies broadly in SQL or array processing where aggregation is required over rows. The key technique is to reduce multiple values through simple operations (sum, min, max) without unnecessary complexity.
+
+### Tags
+Database(#database)
+
+### Similar Problems

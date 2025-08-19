@@ -90,3 +90,9 @@ def coloredCells(n: int) -> int:
 
 ### Summary
 This problem reduces to finding the mathematical pattern for the expansion of a diamond-shaped figure on a grid. The problem is a classic example of transforming a simulation into a closed formula based on recognizing and proving a pattern. This O(1) pattern-finding technique is common in “flood fill” and “layered expansion” interview problems, and is useful whenever you need to calculate the scope of influence or growth in regular increments on a grid.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Minimum Cuts to Divide a Circle(minimum-cuts-to-divide-a-circle) (Easy)

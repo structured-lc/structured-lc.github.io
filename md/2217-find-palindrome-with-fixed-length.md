@@ -85,3 +85,11 @@ def kthPalindrome(queries, intLength):
 
 ### Summary
 This problem uses the **constructive math pattern**—directly computing the answer by indexing and palindromic mirroring, not brute force enumeration. The construct-by-half approach is common for palindromic number, string, or sequence generation, and is directly reusable in other palindrome-related problems or digit-structure algorithms. The string manipulation and arithmetic is efficient and deterministic, avoiding expensive searches or precomputations.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems
+- Palindrome Number(palindrome-number) (Easy)
+- Find the Closest Palindrome(find-the-closest-palindrome) (Hard)
+- Lexicographically Smallest Beautiful String(lexicographically-smallest-beautiful-string) (Hard)

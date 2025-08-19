@@ -109,3 +109,10 @@ def maximumSum(nums):
 
 ### Summary
 The solution relies on **number theory grouping**: every valid complete subset consists of indices with the same square-free part. The core coding pattern is *group-by-invariant*, a very useful technique for problems with pairwise constraints tied to a mathematical property. This pattern can be applied to similar subset-selection problems involving products, GCDs, or group-theoretic symmetry.
+
+### Tags
+Array(#array), Math(#math), Number Theory(#number-theory)
+
+### Similar Problems
+- Constrained Subsequence Sum(constrained-subsequence-sum) (Hard)
+- Maximum Alternating Subsequence Sum(maximum-alternating-subsequence-sum) (Medium)

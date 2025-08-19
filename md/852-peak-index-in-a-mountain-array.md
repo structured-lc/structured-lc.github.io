@@ -83,3 +83,11 @@ def peakIndexInMountainArray(arr):
 
 ### Summary
 This problem uses the **binary search** pattern on a *unimodal* array to efficiently find the index of the maximum (peak) element. The approach exploits the strictly increasing then strictly decreasing structure, making it a classic application of binary search to geometric or monotonic sequences, also used in problems like "Find Peak Element" or searching for a maximum in bitonic arrays.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Find Peak Element(find-peak-element) (Medium)
+- Find in Mountain Array(find-in-mountain-array) (Hard)
+- Minimum Number of Removals to Make Mountain Array(minimum-number-of-removals-to-make-mountain-array) (Hard)

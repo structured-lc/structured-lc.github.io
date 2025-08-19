@@ -89,3 +89,8 @@ class RLEIterator:
 
 ### Summary  
 This problem is a classic iteration and simulation problem with run-length encoding. It focuses on efficient state tracking instead of decompressing the entire sequence, highlighting a design pattern to simulate lazy iteration over a compressed data set. Such patterns appear in streaming data processing, compressed data handling, and iterator implementation in data structures.
+
+### Tags
+Array(#array), Design(#design), Counting(#counting), Iterator(#iterator)
+
+### Similar Problems

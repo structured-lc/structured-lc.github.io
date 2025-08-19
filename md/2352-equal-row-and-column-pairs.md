@@ -85,3 +85,9 @@ def equalPairs(grid):
 
 ### Summary
 This problem is best solved with a **hashmap and tuple encoding** pattern, which is common for recognizing patterns within rows/columns (e.g., anagrams, grouping by frequency, subarrays). The key is to reduce multi-pass nested loops with a *preprocessing and lookup* approach—mapping one structure (rows), then querying with another (columns). This "hash-count and check" strategy is broadly useful in matrix and string problems that ask for equality or grouping by content.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems
+- Delete Greatest Value in Each Row(delete-greatest-value-in-each-row) (Easy)

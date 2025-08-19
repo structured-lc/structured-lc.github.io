@@ -89,3 +89,8 @@ def max_frequency(nums, k):
 ### Summary
 
 This problem uses a **sliding window / brute-force over subarrays** pattern and careful observation about how subarray addition aligns elements to k. The underlying pattern relates to **maximum frequency counting after transformation**, which connects to topics like greedy picking and window expansion. Similar logic can be applied to other problems where a single operation transforms a range of the input to a target value, or where maximizing frequency with constrained update is required.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Enumeration(#enumeration), Prefix Sum(#prefix-sum)
+
+### Similar Problems

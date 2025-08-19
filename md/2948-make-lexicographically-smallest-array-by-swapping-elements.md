@@ -120,3 +120,10 @@ def lexicographicallySmallestArray(nums, limit):
 This solution leverages **union-find (disjoint set union)** to model the allowed connected swaps, then sorts elements within components—classic connected-component reasoning using union-by-condition.  
 This pattern is broadly useful whenever set-rearrangement constraints can be expressed as a graph problem, such as swap-to-sorted, minimal swaps to group objects, or selecting orderings under pairing constraints.  
 The approach is **graph + greedy sorting within sets**, and is very standard in array rearrangement under swap limitations.
+
+### Tags
+Array(#array), Union Find(#union-find), Sorting(#sorting)
+
+### Similar Problems
+- Smallest String With Swaps(smallest-string-with-swaps) (Medium)
+- Minimize Hamming Distance After Swap Operations(minimize-hamming-distance-after-swap-operations) (Medium)

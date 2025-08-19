@@ -69,3 +69,9 @@ def nimGame(piles):
 
 ### Summary
 This is a direct application of combinatorial game theory (Nim Game), relying on XOR (Nim-sum) properties. The solution is a classic bit manipulation/game theory problem, commonly tested in interview settings and applies to various turn-based games with similar removal rules. The core insight and solution pattern apply to many impartial two-player games where moves reduce counts and the state can be encoded as XOR of independent piles or counters.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Brainteaser(#brainteaser), Game Theory(#game-theory)
+
+### Similar Problems
+- Subtree Removal Game with Fibonacci Tree(subtree-removal-game-with-fibonacci-tree) (Hard)

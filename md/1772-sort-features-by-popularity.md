@@ -114,3 +114,10 @@ def sortFeaturesByPopularity(features, responses):
 
 ### Summary
 This problem demonstrates the *hash map counting* and *custom sorting* pattern: use dictionaries for counting occurrences, then sort items using a lambda that combines count and input order. This approach is robust for leaderboard, bucket sort, and task scheduling alike, where primary and secondary sorting keys are used. The code handles edge cases and is easily extensible for variants like case insensitivity or phrase features.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting)
+
+### Similar Problems
+- Top K Frequent Elements(top-k-frequent-elements) (Medium)
+- Top K Frequent Words(top-k-frequent-words) (Medium)

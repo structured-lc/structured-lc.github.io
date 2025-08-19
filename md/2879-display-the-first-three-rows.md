@@ -97,3 +97,7 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 
 ### Summary
 This problem is a straightforward use of the pandas `.head()` method to select the first k rows of a DataFrame. It's a fundamental operation in data exploration and preprocessing, and the same pattern is widely applicable for tasks like data sampling, previewing content, and batch processing in ETL pipelines.
+
+### Tags
+
+### Similar Problems

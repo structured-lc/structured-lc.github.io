@@ -58,3 +58,8 @@ def bankAccountSummary(accounts):
 
 ### Summary
 Hashmap/dictionary grouping and aggregation; pattern is prevalent in database GROUP BY and summary aggregation tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -128,3 +128,8 @@ def find_invalid_ip_addresses(ip_list):
 ### Summary
 This problem is a **simulation + counting** problem, following validation/parsing rules.  
 The code uses **pattern matching, counting, and custom sorting**—a very common approach for data cleaning or QA on input logs. Such logic is often used in network security, backend services, and system monitoring, and requires careful attention to parsing and validation edge cases.
+
+### Tags
+Database(#database)
+
+### Similar Problems

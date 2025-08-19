@@ -101,3 +101,8 @@ def highestPeak(isWater):
 
 ### Summary
 This is a classic application of **multi-source BFS** in a grid, similar to the "01 Matrix" problem. The main pattern is BFS grid expansion from multiple sources. This technique is widely applicable to grid shortest path, flooding, or zone assignment problems where minimal expansion distance is needed from multiple origins.
+
+### Tags
+Array(#array), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems

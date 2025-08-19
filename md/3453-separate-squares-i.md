@@ -151,3 +151,8 @@ def separateSquares(squares):
 This problem is a **2D sweep-line + interval union** pattern, common for area/length union and geometric queries, especially when dealing with overlapping shapes and set-union areas.  
 The sweep-line technique allows us to efficiently manage the active set of intervals and compute both the union area and the y-cut position.  
 Variations of this pattern are frequently seen in interval problems, union-of-rectangles area, and histogram volume calculation.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems

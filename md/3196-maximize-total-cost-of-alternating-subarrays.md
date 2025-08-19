@@ -114,3 +114,8 @@ def maximize_total_cost(nums):
 
 ### Summary
 This problem employs a rolling dynamic programming approach using two states (“keep” and “flip”) reflecting alternated signing of the subarray cost. The solution is optimal and efficient, using O(n) time and O(1) space, and aligns with techniques seen in subarray maximization and greedy DP patterns (e.g., Kadane’s Algorithm variants). This pattern is useful in other problems involving alternating operations or maximizing segmented array metrics.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

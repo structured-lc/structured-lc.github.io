@@ -82,3 +82,9 @@ def countLatticePoints(circles):
 
 ### Summary
 This problem is a classic **geometry brute-force** set-counting task: iterate candidate grid points, check inclusion by the circle formula, and use a set for uniqueness. The pattern—a bounded grid brute-force filtered by mathematical constraints and deduplication via set—applies to many "unique points in geometric regions" scenarios. Optimizations may be needed if parameter ranges grow large, but for this scope, direct simulation is both clean and robust.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Geometry(#geometry), Enumeration(#enumeration)
+
+### Similar Problems
+- Queries on Number of Points Inside a Circle(queries-on-number-of-points-inside-a-circle) (Medium)

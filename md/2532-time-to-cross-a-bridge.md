@@ -146,3 +146,10 @@ def findCrossingTime(n, k, time):
 ### Summary
 This is a **simulation pattern** question with **event processing and priority management** — similar to real-time scheduling or resource queue problems.  
 Efficient use of heaps for event/action priority is critical for both correctness and performance. This kind of approach also appears in problems like *CPU task scheduling*, *factory lines*, and other resource-constrained flow simulations.
+
+### Tags
+Array(#array), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation)
+
+### Similar Problems
+- The Latest Time to Catch a Bus(the-latest-time-to-catch-a-bus) (Medium)
+- Total Cost to Hire K Workers(total-cost-to-hire-k-workers) (Medium)

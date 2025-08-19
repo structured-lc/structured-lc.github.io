@@ -103,3 +103,11 @@ def sortColors(nums):
 ### Summary
 This problem uses the **Dutch National Flag algorithm**—a classic case of in-place partitioning with multiple regions—also useful anywhere you need to segregate elements into distinct groups when the domain is small (e.g., 0/1 arrays, grouping negatives/positives/zeros, color sorting in image processing).  
 It demonstrates both pointer manipulation and in-place sorting patterns common to array problems in interviews.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Sorting(#sorting)
+
+### Similar Problems
+- Sort List(sort-list) (Medium)
+- Wiggle Sort(wiggle-sort) (Medium)
+- Wiggle Sort II(wiggle-sort-ii) (Medium)

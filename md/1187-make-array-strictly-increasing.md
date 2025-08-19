@@ -110,3 +110,9 @@ Key patterns:
 - State pruning with maps to reduce duplicate work
 - Efficient candidate searching with sorted/unique lists and binary search  
 Pattern can be applied to similar "make sequence X by minimal edits with constraints" problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
+
+### Similar Problems
+- Make Array Non-decreasing or Non-increasing(make-array-non-decreasing-or-non-increasing) (Hard)

@@ -67,3 +67,8 @@ def sum(num1: int, num2: int) -> int:
 
 ### Summary
 This problem demonstrates the basic operation of integer addition and direct return patterns. It’s a pure math problem with no tricky logic involved, representative of the “implement the formula” pattern. If asked to avoid the `+` operator or expand to more arguments, bitwise tricks or iteration across input collections could be used. The pattern is foundational for problems requiring combining or aggregating data.
+
+### Tags
+Math(#math)
+
+### Similar Problems

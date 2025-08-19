@@ -104,3 +104,9 @@ def maxNiceDivisors(primeFactors):
 ### Summary
 This problem is a variant of the classic **integer break/max product partition** problem – a common dynamic programming and greedy pattern where you split an integer to maximize the product of its parts. Optimally, the integer should be split into pieces of 3 (with rare adjustments for small remainders).  
 The efficient solution uses fast modular exponentiation for very large input, and is an excellent interview topic connecting combinatorics, number theory, and algorithm optimization.
+
+### Tags
+Math(#math), Recursion(#recursion), Number Theory(#number-theory)
+
+### Similar Problems
+- Integer Break(integer-break) (Medium)

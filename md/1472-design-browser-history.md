@@ -90,3 +90,9 @@ class BrowserHistory:
 
 ### Summary
 Classic design/implementation problem for browser command patterns. List+pointer is a standard way, and simulates stack-like back/forward efficiently. This question is similar to undo/redo editors and other command-history scenarios.
+
+### Tags
+Array(#array), Linked List(#linked-list), Stack(#stack), Design(#design), Doubly-Linked List(#doubly-linked-list), Data Stream(#data-stream)
+
+### Similar Problems
+- Design Video Sharing Platform(design-video-sharing-platform) (Hard)

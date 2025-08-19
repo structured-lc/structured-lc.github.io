@@ -110,3 +110,10 @@ def discountPrices(sentence: str, discount: int) -> str:
 This problem demonstrates classic **string parsing and simulation**: Split, validate, compute, format, and join.  
 Key aspects include robust word validation, safe numerical operations, and precision formatting— 
 skills common in parsing, data munging, and text-processing tasks. This pattern is widely useful for problems requiring conditional transformation of words or phrases within a larger text.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Multiply Strings(multiply-strings) (Medium)
+- Apply Discount Every n Orders(apply-discount-every-n-orders) (Medium)

@@ -108,3 +108,9 @@ def minConnectedGroups(intervals, k):
 This problem is a variant of interval merging, with a one-shot optimization leveraging careful analysis of gaps between merged interval groups.  
 The core pattern is **merge intervals, then use two pointers or binary search** to optimally select where to place a connecting interval.  
 It’s an example of "greedy interval merging", and the merging/gap-bridging technique also applies to coverage, range/paint problems, and network components.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Sorting(#sorting)
+
+### Similar Problems
+- Merge Intervals(merge-intervals) (Medium)

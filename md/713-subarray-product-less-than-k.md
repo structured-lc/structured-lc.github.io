@@ -93,3 +93,14 @@ def numSubarrayProductLessThanK(nums, k):
 
 ### Summary
 The **sliding window / two pointer** technique solves this problem efficiently, leveraging the monotonic nature of product across positive integers. This approach generalizes to count subarray sums, maximum/minimum windows, and is a common pattern for handling continuous subarray constraints. It avoids wasteful recomputation required by brute-force, turning a naive O(n²) problem into O(n).
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Maximum Product Subarray(maximum-product-subarray) (Medium)
+- Maximum Size Subarray Sum Equals k(maximum-size-subarray-sum-equals-k) (Medium)
+- Subarray Sum Equals K(subarray-sum-equals-k) (Medium)
+- Two Sum Less Than K(two-sum-less-than-k) (Easy)
+- Number of Smooth Descent Periods of a Stock(number-of-smooth-descent-periods-of-a-stock) (Medium)
+- Count Subarrays With Score Less Than K(count-subarrays-with-score-less-than-k) (Hard)

@@ -74,3 +74,9 @@ class Solution:
 
 ### Summary
 Uses the **DFS cycle-detection** and **topological sorting** pattern typical for problems finding safe nodes or terminals in directed graphs. Pattern is broadly useful in dependency resolution, deadlock detection, and other graph-cycle analysis tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Average Salary: Departments VS Company(average-salary-departments-vs-company) (Hard)

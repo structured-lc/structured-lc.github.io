@@ -102,3 +102,9 @@ def minimumFuelCost(roads, seats):
 
 ### Summary
 This problem uses a **tree DFS (post-order)** pattern to aggregate bottom-up values (representative counts). It’s a classic **tree DP / post-order aggregation pattern**, commonly seen in subtree calculations, root-to-leaf propagation, and any flow-consolidation problems. Similar strategies apply to problems such as **“Sum of Distances in Tree”**, or any variant requiring data to be merged up the hierarchy efficiently.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
+
+### Similar Problems
+- Binary Tree Postorder Traversal(binary-tree-postorder-traversal) (Easy)

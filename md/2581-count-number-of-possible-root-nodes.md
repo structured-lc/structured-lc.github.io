@@ -135,3 +135,9 @@ def rootCount(edges, guesses, k):
 ### Summary
 This problem uses the "tree rerooting" dynamic programming pattern—efficiently calculating answers for all roots by propagating answers as we shift the root from parent to children. The O(n + m) method is key for handling large trees, and the trick is tracking parent-child relationships during reroot using DFS and a hash set for fast lookups.  
 This rerooting + tree-DP approach also appears in problems such as calculating distances from all nodes to all others, or distributed computation in trees.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems
+- Closest Node to Path in Tree(closest-node-to-path-in-tree) (Hard)

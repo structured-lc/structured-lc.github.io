@@ -123,3 +123,14 @@ def lengthOfLIS(nums, k):
 This is a **dynamic programming with efficient range queries** problem, using a **segment tree** to answer max-len queries for valid previous elements in log-time.  
 It's an advanced form of the LIS pattern, especially for problems involving a maximum step/k constraint between elements.  
 Segment or Binary Indexed Trees and DP arrays with coordinate compression are common for extending LIS for range-constrained or value-constrained variants of LIS.
+
+### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer), Dynamic Programming(#dynamic-programming), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Queue(#queue), Monotonic Queue(#monotonic-queue)
+
+### Similar Problems
+- Longest Increasing Subsequence(longest-increasing-subsequence) (Medium)
+- Number of Longest Increasing Subsequence(number-of-longest-increasing-subsequence) (Medium)
+- Longest Continuous Increasing Subsequence(longest-continuous-increasing-subsequence) (Easy)
+- Longest Substring of One Repeating Character(longest-substring-of-one-repeating-character) (Hard)
+- Booking Concert Tickets in Groups(booking-concert-tickets-in-groups) (Hard)
+- Longest Subsequence With Decreasing Adjacent Difference(longest-subsequence-with-decreasing-adjacent-difference) (Medium)

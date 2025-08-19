@@ -123,3 +123,8 @@ def banned_accounts(logs: List[Dict]) -> List[int]:
 
 ### Summary
 This problem demonstrates the **interval overlap pattern** (pairwise comparison of session intervals within buckets) and can be solved via grouping and double-loop scan per account. The approach is similar to many "detect overlap/time conflict" interview questions, and generalizes to booking systems and meeting scheduler problems. It can also be solved efficiently in SQL via JOINs.
+
+### Tags
+Database(#database)
+
+### Similar Problems

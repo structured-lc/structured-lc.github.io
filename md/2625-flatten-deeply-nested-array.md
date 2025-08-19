@@ -78,3 +78,10 @@ def flatten(arr, n):
 
 ### Summary
 This problem is a classical use-case of *depth-controlled recursion* for processing nested data structures. The recursion pattern used here provides a robust and clear way to flatten nested lists with an easily tunable depth parameter. This pattern is common for tree/graph-like traversals and generic nested list processing, such as parsing nested JSON, XML, or directory structures.
+
+### Tags
+
+### Similar Problems
+- JSON Deep Equal(json-deep-equal) (Medium)
+- Convert Object to JSON String(convert-object-to-json-string) (Medium)
+- Nested Array Generator(nested-array-generator) (Medium)

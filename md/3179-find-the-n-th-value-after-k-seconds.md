@@ -98,3 +98,9 @@ def valueAfterKSeconds(n: int, k: int) -> int:
 
 ### Summary
 This problem uses the **combination (stars and bars)** pattern — mapping array transformations to combinatorics. This is a classic approach for repeated sum-updates and multi-step growth calculations, and applying modular combinations is efficient and widely applicable in similar problems (e.g., distributing coins into piles, counting paths with step constraints, or Pascal’s Triangle queries).
+
+### Tags
+Array(#array), Math(#math), Simulation(#simulation), Combinatorics(#combinatorics), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Left and Right Sum Differences(left-and-right-sum-differences) (Easy)

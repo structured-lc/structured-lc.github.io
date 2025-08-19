@@ -148,3 +148,8 @@ def match_from_node(head, node):
 This is a classic DFS/backtracking tree path search pattern: for every tree node, attempt a downward matching against an ordered pattern (the linked list).  
 This coding pattern commonly arises in substring/pattern matching problems, and can be optimized or adapted to other graph and tree path sequence matching scenarios.  
 No special data structures are required—just recursion and careful use of base cases.
+
+### Tags
+Linked List(#linked-list), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

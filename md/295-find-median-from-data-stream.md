@@ -96,3 +96,14 @@ class MedianFinder:
 
 ### Summary
 This problem uses the **two heaps pattern**, specifically a max-heap and min-heap to continually keep the lower and upper halves of the data stream. By balancing the heaps, you can add elements and find the running median efficiently. This is a classic streaming/online algorithm problem and the heap-balancing pattern applies to other problems involving medians or percentile computations in a dynamic list.
+
+### Tags
+Two Pointers(#two-pointers), Design(#design), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Data Stream(#data-stream)
+
+### Similar Problems
+- Sliding Window Median(sliding-window-median) (Hard)
+- Finding MK Average(finding-mk-average) (Hard)
+- Sequentially Ordinal Rank Tracker(sequentially-ordinal-rank-tracker) (Hard)
+- Minimum Operations to Make Median of Array Equal to K(minimum-operations-to-make-median-of-array-equal-to-k) (Medium)
+- Minimum Operations to Make Subarray Elements Equal(minimum-operations-to-make-subarray-elements-equal) (Medium)
+- Minimum Operations to Make Elements Within K Subarrays Equal(minimum-operations-to-make-elements-within-k-subarrays-equal) (Hard)

@@ -105,3 +105,8 @@ def paintWalls(cost, time):
 This problem is a classic **DP scheduling pattern** with resource parallelism: decide at each step whether to spend money (and unlock free painter time), or save, tracking residual work.  
 Pattern is common in "resource optimization with workers" problems (pick/skip state, minimizing cost).  
 Key is modeling *what the free resource truly enables* per paid action—a pattern used in job scheduling, project management, and bandwidth allocation problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

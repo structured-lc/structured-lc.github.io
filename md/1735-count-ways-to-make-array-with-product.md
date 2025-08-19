@@ -120,3 +120,11 @@ def waysToFillArray(queries):
 
 ### Summary
 This problem is a classic **stars-and-bars** combinatorics application layered with prime factorization—distribute all exponents of each prime among all array slots. The key pattern is multichoose/combination with repetition, combined with fast modular combination computation. This is a standard technique for math combinatorial questions and appears in problems about partitions, compositions, and distributing indistinguishable objects into bins.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics), Number Theory(#number-theory)
+
+### Similar Problems
+- Count the Number of Ideal Arrays(count-the-number-of-ideal-arrays) (Hard)
+- Smallest Value After Replacing With Sum of Prime Factors(smallest-value-after-replacing-with-sum-of-prime-factors) (Medium)
+- Closest Prime Numbers in Range(closest-prime-numbers-in-range) (Medium)

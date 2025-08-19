@@ -86,3 +86,8 @@ def find_drivers_with_improved_fuel_efficiency(trips):
 
 ### Summary
 Typical grouping and aggregation problem, using a hash map to collect per-driver, per-month stats and compare monthly means. Common "windowed comparison" pattern, useful for time-series business metrics.
+
+### Tags
+Database(#database)
+
+### Similar Problems

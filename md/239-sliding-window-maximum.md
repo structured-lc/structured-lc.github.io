@@ -97,3 +97,16 @@ def maxSlidingWindow(nums: List[int], k: int) -> List[int]:
 
 ### Summary  
 This problem uses the classic **sliding window** technique in conjunction with a **monotonic deque** (double-ended queue). The pattern (deque + window) is frequently used for problems that require fast updates and retrievals of sliding maximums or minimums, and appears in time series analytics, stock price windows, and many more real-world streaming scenarios.
+
+### Tags
+Array(#array), Queue(#queue), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue), Monotonic Queue(#monotonic-queue)
+
+### Similar Problems
+- Minimum Window Substring(minimum-window-substring) (Hard)
+- Min Stack(min-stack) (Medium)
+- Longest Substring with At Most Two Distinct Characters(longest-substring-with-at-most-two-distinct-characters) (Medium)
+- Paint House II(paint-house-ii) (Hard)
+- Jump Game VI(jump-game-vi) (Medium)
+- Maximum Number of Robots Within Budget(maximum-number-of-robots-within-budget) (Hard)
+- Maximum Tastiness of Candy Basket(maximum-tastiness-of-candy-basket) (Medium)
+- Maximal Score After Applying K Operations(maximal-score-after-applying-k-operations) (Medium)

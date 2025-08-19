@@ -123,3 +123,10 @@ def isValidSudoku(board):
 
 ### Summary
 This problem uses the **"set data structure for duplicate detection" pattern**—commonly applied in validation tasks. It generalizes to row/column/region constraints, applies to any matrix-based uniqueness-check, and is highly interview-relevant. It’s a frequent pattern for puzzles, constraint-checking, and even some graph traversals.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Matrix(#matrix)
+
+### Similar Problems
+- Sudoku Solver(sudoku-solver) (Hard)
+- Check if Every Row and Column Contains All Numbers(check-if-every-row-and-column-contains-all-numbers) (Easy)

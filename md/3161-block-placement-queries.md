@@ -117,3 +117,10 @@ def getResults(queries):
 
 ### Summary
 The problem is a variant of the *dynamic interval coverage* or *nearest occupied slot* pattern, efficiently solved using a balanced BST or binary search approach. The main trick is storing obstacle locations in sorted order, so for each placement query, we can quickly check if the relevant segment is clear. This approach is common for segment-union, parking lot, seat reservation, or interval-exclusion style problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
+
+### Similar Problems
+- Building Boxes(building-boxes) (Hard)
+- Fruits Into Baskets III(fruits-into-baskets-iii) (Medium)

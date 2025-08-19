@@ -101,3 +101,12 @@ def maxProfit(k, prices):
 ### Summary
 This problem uses the **dynamic programming / state machine** pattern, where the state represents the max profit after i transactions up to each day.  
 Key techniques are “profit-so-far,” optimizations for large k, and transition state compression. This pattern applies to many variations of stock-buy-sell questions and resource allocation optimization problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Best Time to Buy and Sell Stock(best-time-to-buy-and-sell-stock) (Easy)
+- Best Time to Buy and Sell Stock II(best-time-to-buy-and-sell-stock-ii) (Medium)
+- Best Time to Buy and Sell Stock III(best-time-to-buy-and-sell-stock-iii) (Hard)
+- Maximum Profit From Trading Stocks(maximum-profit-from-trading-stocks) (Medium)

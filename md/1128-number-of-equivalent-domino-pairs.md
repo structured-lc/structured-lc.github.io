@@ -70,3 +70,8 @@ def numEquivDominoPairs(dominoes):
 
 ### Summary
 This is a classic **counting pairs** problem using **hash maps** (or, due to constraints, simple array mapping). The core trick is always reducing items to a **canonical representation** (here, ordered pairs), which is a common pattern for problems involving equivalence allowing for symmetry or order-agnostic matches. The pattern is widely practical, including problems with anagrams, isomorphic graphs, or any time "equivalence up to order" arises.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Counting(#counting)
+
+### Similar Problems

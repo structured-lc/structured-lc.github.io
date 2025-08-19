@@ -96,3 +96,8 @@ def surfaceArea(grid):
 The solution uses a **grid traversal pattern** with immediate-neighbor subtraction to count visible faces efficiently. The key idea is to add the total possible surface, then subtract the hidden faces between adjacent stacks by scanning only rightward and downward neighbors for each cell.  
 This approach is typical of grid and geometry problems, where local interactions (adjacency) need to be accounted for efficiently.  
 This pattern occurs in problems like "Island Perimeter" and can be useful wherever you need to compute shared boundaries in grids.
+
+### Tags
+Array(#array), Math(#math), Geometry(#geometry), Matrix(#matrix)
+
+### Similar Problems

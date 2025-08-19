@@ -68,3 +68,8 @@ def sequentialDigits(low, high):
 
 ### Summary
 This problem uses a **sliding window** technique over a fixed string ('123456789') to generate candidate sequential digit numbers, illustrating an efficient filtering by construction. The sliding window and substring extraction patterns are common and applicable elsewhere, especially in digit-based number problems and windowed string analysis.
+
+### Tags
+Enumeration(#enumeration)
+
+### Similar Problems

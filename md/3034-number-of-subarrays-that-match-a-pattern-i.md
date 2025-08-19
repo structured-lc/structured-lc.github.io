@@ -110,3 +110,9 @@ def countMatchingSubarrays(nums, pattern):
 
 ### Summary
 This problem is a classic **sliding window + match pattern** variant: for each subarray window, check all pairwise constraints given by pattern. The main coding pattern is a double for-loop, where the inner loop checks validity efficiently and uses early termination for speed. This approach generalizes well to a variety of pattern-matching questions where pairwise relationships are tested across windows of an array.
+
+### Tags
+Array(#array), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
+
+### Similar Problems
+- Count the Number of Incremovable Subarrays I(count-the-number-of-incremovable-subarrays-i) (Easy)

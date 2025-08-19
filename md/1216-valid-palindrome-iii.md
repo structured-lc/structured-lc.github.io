@@ -82,3 +82,10 @@ def isValidPalindrome(s: str, k: int) -> bool:
 
 ### Summary
 This problem uses the **Longest Palindromic Subsequence** dynamic programming pattern, a classic example often seen in string DP challenges. The same pattern can help in questions asking for minimal edits to reach palindromic forms, or for comparing sequences for minimal transformations (like edit distance). The approach is efficient, and can often be optimized in space if only the last computed results are needed at any point.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Valid Palindrome II(valid-palindrome-ii) (Easy)
+- Valid Palindrome IV(valid-palindrome-iv) (Medium)

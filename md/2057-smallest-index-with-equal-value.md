@@ -89,3 +89,8 @@ def smallestEqual(nums):
 This problem is a classic single-pass linear search pattern — find the earliest index matching a property in an array.  
 It uses an early return loop and demonstrates how to compare an index property (`i % 10`) to corresponding values.  
 The same pattern applies to any situation where you need to find the smallest or first index that satisfies a value–index-based constraint.
+
+### Tags
+Array(#array)
+
+### Similar Problems

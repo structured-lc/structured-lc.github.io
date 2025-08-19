@@ -98,3 +98,8 @@ def averageSellingPrice(sales):
 
 ### Summary
 The pattern is standard aggregation by group and average. Useful for any reporting, analytics, or SQL processing problem.
+
+### Tags
+Database(#database)
+
+### Similar Problems

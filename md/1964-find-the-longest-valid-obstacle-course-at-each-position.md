@@ -107,3 +107,9 @@ def longestObstacleCourseAtEachPosition(obstacles):
 
 ### Summary
 This problem employs a **modified patience sorting/binary search** approach to efficiently compute the length of the longest non-decreasing subsequence ending at each index. It's a classic example of the **Longest Increasing/Non-Decreasing Subsequence** pattern optimized with binary search, and the pattern is widely applicable in scheduling, DP, and sequence analysis problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Binary Indexed Tree(#binary-indexed-tree)
+
+### Similar Problems
+- Longest Increasing Subsequence(longest-increasing-subsequence) (Medium)

@@ -132,3 +132,7 @@ This problem is a classic **table pivot**/reshaping pattern, often required in d
 The coding pattern is to build a mapping for (row, col) → value and then expand into the requested matrix.  
 It is relevant for problems about data transformation, spreadsheets, or reporting in any context where categorical axes are rearranged.  
 Practiced here without pandas, it underlines mapping, tabulation, and custom result formatting.
+
+### Tags
+
+### Similar Problems

@@ -93,3 +93,9 @@ This problem is an example of **bit manipulation** and **logarithmic math**.
 It leverages the pattern where the position in the sequence (in base-2) directly maps to how many "next letter" operations are applied.  
 The solution avoids brute-force construction and uses O(1) extra space by counting set bits in (k-1).  
 This approach generalizes to similar generative string or tree-based problems where the expansion follows recursive, repetitive rules.
+
+### Tags
+Math(#math), Bit Manipulation(#bit-manipulation), Recursion(#recursion), Simulation(#simulation)
+
+### Similar Problems
+- Shifting Letters(shifting-letters) (Medium)

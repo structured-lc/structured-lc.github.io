@@ -128,3 +128,10 @@ def maximumStrongPairXor(nums):
 
 ### Summary
 This problem is a classic use of the **trie for fast binary XOR queries** paired with a **two-pointer/sliding window technique** based on sorted input and custom window constraints. The pattern is frequently used for maximum XOR problems (e.g., maximum XOR of any two numbers in a list) and in problems involving "windowed" or range-limited pair selection. It's an efficient alternative to brute force for large n, especially when fast max/min queries within a dynamic subarray are needed.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Trie(#trie), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Maximum XOR of Two Numbers in an Array(maximum-xor-of-two-numbers-in-an-array) (Medium)
+- Maximum XOR With an Element From Array(maximum-xor-with-an-element-from-array) (Hard)

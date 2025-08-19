@@ -95,3 +95,9 @@ def catchMaximumAmountOfPeople(team, dist):
 
 ### Summary
 This problem uses the **two-pointer pattern for greedy matching**, which is common in interval or pairing problems (e.g., assign workers to jobs, minimum platforms for trains). It's a classic greedy assignment, ensuring optimal pairings with minimal iteration, and can be generalized to problems where entities can be paired under certain constraints.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems
+- Minimum Number of Food Buckets to Feed the Hamsters(minimum-number-of-food-buckets-to-feed-the-hamsters) (Medium)

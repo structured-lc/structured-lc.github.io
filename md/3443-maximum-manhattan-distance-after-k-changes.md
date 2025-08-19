@@ -90,3 +90,9 @@ def maxDistance(s: str, k: int) -> int:
 
 ### Summary
 This problem is a classic **greedy simulation with case enumeration**: for each of several “optimally aligned” directions, simulate the walk greedily making changes where most valuable, to maximize a one-sided metric (Manhattan distance). The pattern of **enumeration + greedy simulation** is common in path optimization problems, and the approach applies in many grid-walk, "fix K mistakes" or alignment-maximization scenarios.
+
+### Tags
+Hash Table(#hash-table), Math(#math), String(#string), Counting(#counting)
+
+### Similar Problems
+- As Far from Land as Possible(as-far-from-land-as-possible) (Medium)

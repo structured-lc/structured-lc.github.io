@@ -73,3 +73,8 @@ def numOfArrays(n, m, k):
 
 ### Summary
 Classic combinatorics DP: at each step, choose to increase the current maximum (new comparison) or pick a value ≤ current max. This coding pattern of DP with position and parameterized states applies to several "build arrays with constraints" style problems.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
+
+### Similar Problems

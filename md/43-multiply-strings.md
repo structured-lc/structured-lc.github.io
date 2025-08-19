@@ -106,3 +106,13 @@ def multiply(num1: str, num2: str) -> str:
 ### Summary
 This is a classic **simulation problem** of grade-school multiplication, requiring careful index and carry management, and string skipping of leading zeros.  
 It’s a common pattern for string-based arithmetic where native integer types are too small, and applies to other problems like **Add Strings**, **Add Two Numbers**, and arbitrary-precision math with strings.
+
+### Tags
+Math(#math), String(#string), Simulation(#simulation)
+
+### Similar Problems
+- Add Two Numbers(add-two-numbers) (Medium)
+- Plus One(plus-one) (Easy)
+- Add Binary(add-binary) (Easy)
+- Add Strings(add-strings) (Easy)
+- Apply Discount to Prices(apply-discount-to-prices) (Medium)

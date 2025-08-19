@@ -92,3 +92,12 @@ def rearrangeArray(nums):
 ### Summary
 This problem demonstrates the **two-list partitioning** pattern, then merging while preserving original order. This approach commonly appears in problems that require stable rearrangement (relative order) by some property (e.g. even-odd, sign, category). 
 The same logic can be adapted for alternate even-odd placement, or any two-group alternation where relative order matters. The key constraint (maintain order) makes O(n) space the cleanest solution.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Simulation(#simulation)
+
+### Similar Problems
+- Wiggle Subsequence(wiggle-subsequence) (Medium)
+- Sort Array By Parity II(sort-array-by-parity-ii) (Easy)
+- Partition Array According to Given Pivot(partition-array-according-to-given-pivot) (Medium)
+- Largest Number After Digit Swaps by Parity(largest-number-after-digit-swaps-by-parity) (Easy)

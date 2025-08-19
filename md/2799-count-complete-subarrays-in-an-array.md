@@ -100,3 +100,10 @@ def countCompleteSubarrays(nums):
 The core pattern here is **sliding window with hash tables** to count the number of unique elements efficiently.  
 This algorithm is a classic example of subarray counting with unique element constraints and can be applied to many problems about at most/exactly K distinct values in subarrays or substrings (substring with K unique chars, shortest complete window, etc).  
 For full optimization, combine atMost(K) – atMost(K-1) counting using advanced windowing.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Longest Substring Without Repeating Characters(longest-substring-without-repeating-characters) (Medium)
+- Subarrays with K Different Integers(subarrays-with-k-different-integers) (Hard)

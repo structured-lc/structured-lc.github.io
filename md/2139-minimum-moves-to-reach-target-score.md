@@ -92,3 +92,10 @@ def min_moves(target: int, maxDoubles: int) -> int:
 This problem is a **reverse greedy** game problem and a great application of “work backwards” and “greedy” strategies.  
 Every step is either halving (when allowed) or decrementing, and this same pattern appears in problems involving minimum steps, optimal reductions, and minimum operation reductions.  
 Common in competitive programming and algorithm interviews, where constraints push you toward optimal use of special operations within limits.
+
+### Tags
+Math(#math), Greedy(#greedy)
+
+### Similar Problems
+- Number of Steps to Reduce a Number to Zero(number-of-steps-to-reduce-a-number-to-zero) (Easy)
+- Number of Steps to Reduce a Number in Binary Representation to One(number-of-steps-to-reduce-a-number-in-binary-representation-to-one) (Medium)

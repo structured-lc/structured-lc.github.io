@@ -79,3 +79,10 @@ def captureForts(forts):
 
 ### Summary
 This is a classic **two-pointer / linear scan** problem, sometimes framed as finding the longest consecutive segment with a given property (in this case, enemy forts) that is "sandwiched" between two different markers. This scan pattern appears in substring and window problems, and knowing when to scan vs. iterate with nested loops distinguishes efficient interview solutions.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers)
+
+### Similar Problems
+- Max Consecutive Ones(max-consecutive-ones) (Easy)
+- Max Consecutive Ones III(max-consecutive-ones-iii) (Medium)

@@ -301,3 +301,8 @@ class AllOneSimple:
 
 ### Summary
 This problem demonstrates advanced data structure design requiring multiple components working together to achieve O(1) complexity. The key insight is using a doubly linked list to maintain count ordering while using hash maps for O(1) key lookups. The count buckets approach efficiently handles the dynamic nature of count changes while maintaining quick access to min/max elements. This pattern is fundamental in designing high-performance caching systems, real-time analytics, and database indexing structures where fast access to extremal values is crucial.
+
+### Tags
+Hash Table(#hash-table), Linked List(#linked-list), Design(#design), Doubly-Linked List(#doubly-linked-list)
+
+### Similar Problems

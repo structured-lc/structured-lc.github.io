@@ -125,3 +125,9 @@ class Solution:
 This problem uses **bitmask dynamic programming** over prime factors for all numbers up to 30, leveraging the small input domain.  
 The pattern 'DP on subset states' is common in counting constraint optimizations, especially where mutually exclusive features (like overlapping prime factors) must be tracked.  
 Similar approaches appear in "Subset Sum with Restrictions", "Product of Subsets", and problems involving "square-free" or "coprime" subset selections.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems
+- Distinct Prime Factors of Product of Array(distinct-prime-factors-of-product-of-array) (Medium)

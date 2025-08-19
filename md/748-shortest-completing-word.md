@@ -104,3 +104,8 @@ This pattern is frequently used in:
 - Permutation or anagram detection
 - Scrabble/word-game validation or puzzle-solving  
 It is efficient due to bounded alphabet size and scales well for moderate word lists.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string)
+
+### Similar Problems

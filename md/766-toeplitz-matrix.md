@@ -93,3 +93,9 @@ def isToeplitzMatrix(matrix):
 ### Summary
 The approach uses the **neighbor diagonal check** coding pattern, commonly seen in matrix-related problems (e.g. islands, flood fill, and DP on grids). 
 This problem is a classic in checking neighbor relations efficiently, and the pattern generalizes to validating sequential grid or matrix constraints with just local comparisons.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems
+- Valid Word Square(valid-word-square) (Easy)

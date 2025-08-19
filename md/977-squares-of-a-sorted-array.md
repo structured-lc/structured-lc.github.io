@@ -95,3 +95,10 @@ def sortedSquares(nums):
 
 ### Summary
 This problem uses the **two-pointer** technique to efficiently merge values from both ends of a sorted array where squaring might disrupt order. This pattern is common for problems involving sorted arrays and merging, and avoids the need for additional sorting after a transformation. The same approach is used in problems such as merging sorted arrays, partitioning, or finding max/min differences in sorted arrays.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Sorting(#sorting)
+
+### Similar Problems
+- Merge Sorted Array(merge-sorted-array) (Easy)
+- Sort Transformed Array(sort-transformed-array) (Medium)

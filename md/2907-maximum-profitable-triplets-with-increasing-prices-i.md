@@ -108,3 +108,8 @@ This solution uses a common **enumerate the middle element** pattern:
 For each possible "pivot" index, search left and right for the best candidates that satisfy the strictly increasing price property.  
 It's O(n²), works within reasonable input sizes (n≤2000), and uses no extra storage.
 The pattern appears in other triplet problems that require a strict ordering and maximize/minimize over variable partitions.
+
+### Tags
+Array(#array), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
+
+### Similar Problems

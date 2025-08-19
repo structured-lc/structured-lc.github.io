@@ -122,3 +122,12 @@ This is a **graph traversal** problem: model bombs as nodes and detonations as d
 Simulate the maximum possible chain reaction starting at each node, using BFS or DFS.  
 Pattern: “Try every start, collect reachables” — common in problems like “spread” or “contamination” in grids/graphs.  
 Useful for virus spread, influence maximization, or other reachability/cascade questions.
+
+### Tags
+Array(#array), Math(#math), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Geometry(#geometry)
+
+### Similar Problems
+- Minesweeper(minesweeper) (Medium)
+- Number of Provinces(number-of-provinces) (Medium)
+- Max Area of Island(max-area-of-island) (Medium)
+- Rotting Oranges(rotting-oranges) (Medium)

@@ -97,3 +97,9 @@ def maximumWhiteTiles(tiles, carpetLen):
 
 ### Summary
 This solution uses a standard **prefix sum plus sliding window with binary search** pattern, common for range-sum or maximum cover-type interval problems. It's especially useful for interval covering/partitioning scenarios and is a good example of combining prefix sums with two-pointer or binary search techniques. It also demonstrates handling partial overlaps efficiently—a recurring theme in scheduling and interval-coverage LeetCode problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Greedy(#greedy), Sliding Window(#sliding-window), Sorting(#sorting), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Maximum Number of Vowels in a Substring of Given Length(maximum-number-of-vowels-in-a-substring-of-given-length) (Medium)

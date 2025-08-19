@@ -1,5 +1,5 @@
 [
-    {"number": 164, "slug": "maximum-gap", "title": "Maximum Gap", "difficulty": "Medium"},
-    {"number": 912, "slug": "sort-an-array", "title": "Sort an Array", "difficulty": "Medium"},
-    {"number": 2343, "slug": "query-kth-smallest-trimmed-number", "title": "Query Kth Smallest Trimmed Number", "difficulty": "Medium"}
+    {"number": 164, "slug": "maximum-gap", "title": "Maximum Gap", "difficulty": "Medium", "tags": ["Array", "Sorting", "Bucket Sort", "Radix Sort"], "similar_problems": [{"slug": "widest-vertical-area-between-two-points-containing-no-points", "title": "Widest Vertical Area Between Two Points Containing No Points", "difficulty": "Easy"}, {"slug": "maximum-consecutive-floors-without-special-floors", "title": "Maximum Consecutive Floors Without Special Floors", "difficulty": "Medium"}]},
+    {"number": 912, "slug": "sort-an-array", "title": "Sort an Array", "difficulty": "Medium", "tags": ["Array", "Divide and Conquer", "Sorting", "Heap (Priority Queue)", "Merge Sort", "Bucket Sort", "Radix Sort", "Counting Sort"], "similar_problems": []},
+    {"number": 2343, "slug": "query-kth-smallest-trimmed-number", "title": "Query Kth Smallest Trimmed Number", "difficulty": "Medium", "tags": ["Array", "String", "Divide and Conquer", "Sorting", "Heap (Priority Queue)", "Radix Sort", "Quickselect"], "similar_problems": []}
 ]

@@ -92,3 +92,10 @@ def create_counter(n):
 This problem uses the **closure pattern** to keep state private to each function instance—an important coding concept.  
 It is a classic interview question for understanding closures, function factories, and encapsulation in any functional or object-oriented language.  
 Mastery here helps in asynchronous callbacks, event handlers, or any scenario where functions need private state tracking in applications.
+
+### Tags
+
+### Similar Problems
+- Memoize(memoize) (Medium)
+- Function Composition(function-composition) (Easy)
+- Counter II(counter-ii) (Easy)

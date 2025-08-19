@@ -110,3 +110,9 @@ def findLatestTime(s: str) -> str:
 
 ### Summary
 This problem is a classic example of **greedy character substitution** under digit constraints. The solution walks through each time digit, greedily picking the largest possible digit that forms a valid 12-hour time. This pattern (greedy string replacement within validation ranges) is common for problems involving masked numeric data, and variants of this appear in clock/time formatting, form validation, and partial data completion.
+
+### Tags
+String(#string), Enumeration(#enumeration)
+
+### Similar Problems
+- Latest Time by Replacing Hidden Digits(latest-time-by-replacing-hidden-digits) (Easy)

@@ -101,3 +101,9 @@ def maxScore(grid: List[List[int]]) -> int:
 
 ### Summary
 This problem is a classic **DP on grid** question, closely related to matrix prefix problems but requiring propagation of *min* values. The pattern of updating each cell based on top/left (or additional directions if allowed) is common and extends to many 2D DP/grid path problems, such as min path sum, unique paths, and boundary propagation scenarios.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems
+- Maximum Score From Grid Operations(maximum-score-from-grid-operations) (Hard)

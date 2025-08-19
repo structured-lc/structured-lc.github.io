@@ -104,3 +104,9 @@ def inorderSuccessor(node: 'Node') -> 'Node':
 This approach exploits the **parent pointer** for efficient O(h) search, following the binary search tree and inorder properties.  
 The solution is a classic example of searching ancestors or descendants for a node’s next or previous value.  
 This pattern appears frequently in tree traversal, successor/predecessor queries, and questions about relationships in binary trees.
+
+### Tags
+Tree(#tree), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Inorder Successor in BST(inorder-successor-in-bst) (Medium)

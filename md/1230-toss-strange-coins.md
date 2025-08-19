@@ -93,3 +93,8 @@ def probabilityOfHeads(probabilities: List[float], target: int) -> float:
 
 ### Summary
 This is a classic **probabilistic DP** problem, analogous to subset-sum but with probabilities. The in-place 1D DP update pattern is common for rolling window/counting problems, including subset counting, knapsack, and dice roll simulations. This approach is both time- and space-efficient and is applicable to many problems involving independent choices with probabilities.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Probability and Statistics(#probability-and-statistics)
+
+### Similar Problems

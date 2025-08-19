@@ -100,3 +100,12 @@ def fib(n):
 This is a classic **dynamic programming** problem demonstrating overlapping subproblems and optimal substructure.  
 The iterative solution is a direct application of bottom-up DP, specifically the space-optimized O(1) version for linear recurrences.  
 This same coding pattern is applicable anywhere you have recurrence relations where each term depends only on a few previous values (e.g., Tribonacci, climbing stairs, tiling problems, etc.).
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Recursion(#recursion), Memoization(#memoization)
+
+### Similar Problems
+- Climbing Stairs(climbing-stairs) (Easy)
+- Split Array into Fibonacci Sequence(split-array-into-fibonacci-sequence) (Medium)
+- Length of Longest Fibonacci Subsequence(length-of-longest-fibonacci-subsequence) (Medium)
+- N-th Tribonacci Number(n-th-tribonacci-number) (Easy)

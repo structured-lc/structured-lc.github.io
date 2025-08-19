@@ -96,3 +96,8 @@ def longestWPI(hours):
 The problem is a *prefix sum + hashmap* (monotonic mapping) variant, similar to finding the longest subarray with a sum > 0.  
 This pattern appears often in problems related to subarrays with certain sum properties, and is highly useful for large input constraints due to its linear time.  
 It's a canonical example for "transform to +1/−1, apply prefix sum, and optimize with hashmap."
+
+### Tags
+Array(#array), Hash Table(#hash-table), Stack(#stack), Monotonic Stack(#monotonic-stack), Prefix Sum(#prefix-sum)
+
+### Similar Problems

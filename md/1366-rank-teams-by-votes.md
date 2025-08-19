@@ -120,3 +120,9 @@ def rankTeams(votes):
 ### Summary
 This problem is about *vote counting* with custom multi-key sorting: collect for each team the count of votes it received at every place, then sort all teams by their vector of per-rank counts, falling back to alphabetical order.  
 The solution uses a frequency table and a custom comparator; this pattern is common in problems involving ranking and prioritized sorting, such as majority voting and the "top k" elements with several tiebreaker rules.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems
+- Online Election(online-election) (Medium)

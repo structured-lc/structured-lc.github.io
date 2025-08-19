@@ -131,3 +131,8 @@ def isPreorder(nodes):
 This problem uses the "Simulate the traversal + direct compare" pattern: construct the structure, then simulate the traversal, making sure it matches the input.  
 It is a classic use of DFS and tree construction from parent arrays.  
 This pattern is broadly applicable in tree validation, reconstruction, serialization, and various traversal ordering checks in binary/k-ary trees.
+
+### Tags
+Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems

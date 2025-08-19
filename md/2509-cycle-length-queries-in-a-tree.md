@@ -131,3 +131,11 @@ def cycleLengthQueries(n, queries):
 This problem uses the **binary tree parent-child index property** with bit manipulation (or integer division) for lowest common ancestor finding.  
 It’s a classic usage of "climbing ancestors" and is related to LCA finding, but simplified for perfect trees labeled level-order.  
 This technique also appears in other ancestor/path problems, especially on perfect/(almost) complete trees with labeled nodes.
+
+### Tags
+Array(#array), Tree(#tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Populating Next Right Pointers in Each Node(populating-next-right-pointers-in-each-node) (Medium)
+- Lowest Common Ancestor of a Binary Tree(lowest-common-ancestor-of-a-binary-tree) (Medium)
+- Path In Zigzag Labelled Binary Tree(path-in-zigzag-labelled-binary-tree) (Medium)

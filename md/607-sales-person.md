@@ -118,3 +118,8 @@ This is a classic “anti-join” problem: return records from one table not con
 Pattern used: set filtering with precomputation.  
 Common for SQL, analytics, and data-wrangling.  
 The set-based pattern is broadly applicable in problems needing "who *hasn’t* done X", "exclude who matches Y" scenarios.
+
+### Tags
+Database(#database)
+
+### Similar Problems

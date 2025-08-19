@@ -206,3 +206,8 @@ def maxDepthBST(order):
 We optimize the problem by using an ordered map (simulating TreeMap/SortedDict) to efficiently find the predecessor and successor, allowing us to compute the depth for each inserted node without building the actual tree structure.  
 This is a classic application of **BST + order-statistics** and a very common technique in BST order problems—useful in questions about number of greater/smaller elements and dynamic order maintenance.  
 Patterns: BST construction, order-statistic trees, predecessor/successor search.
+
+### Tags
+Array(#array), Tree(#tree), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree), Ordered Set(#ordered-set)
+
+### Similar Problems

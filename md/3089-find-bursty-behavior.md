@@ -215,3 +215,8 @@ def find_bursty_behavior(posts: List[Dict]) -> List[Dict]:
 
 ### Summary
 This problem uses the **sliding window (two pointers)** technique applied to sorted time series to efficiently solve an interval-aggregation problem. This pattern is common for consecutive counts, max in window, or streak analysis (e.g., leetcode "longest substring" or "most active users" problems). The solution groups by user, sorts on time, and finds the tightest qualifying interval in O(n log k) time—very typical and adaptable for behavioral analytics on time series activity logs.
+
+### Tags
+Database(#database)
+
+### Similar Problems

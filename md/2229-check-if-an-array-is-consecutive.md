@@ -97,3 +97,11 @@ def is_consecutive(nums):
 This problem is a classic use of the **set for duplicates** and **min/max for range validation** patterns.  
 The single-pass min/max/set pattern appears in many questions requiring range or uniqueness checks, such as detecting consecutive numbers, validating Sudoku rows/columns, or checking for missing numbers in a range.  
 The main insight is that an array is consecutive if there are no duplicates and its range (max-min) matches the array’s length minus 1. The code is optimal for time and space under typical constraints.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting)
+
+### Similar Problems
+- Binary Tree Longest Consecutive Sequence(binary-tree-longest-consecutive-sequence) (Medium)
+- Binary Tree Longest Consecutive Sequence II(binary-tree-longest-consecutive-sequence-ii) (Medium)
+- Consecutive Characters(consecutive-characters) (Easy)

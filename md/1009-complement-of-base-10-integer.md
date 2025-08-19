@@ -82,3 +82,8 @@ def bitwiseComplement(n: int) -> int:
 
 ### Summary
 This problem is a classic use-case for **bit manipulation**. The code uses a **masking pattern**: generate a mask of all 1’s covering the significant bits of n, then XOR to flip relevant bits. This approach is compact and avoids string conversion. The technique of generating dynamic bit masks applies broadly in digital logic, networking, and problems involving bitwise operations.
+
+### Tags
+Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

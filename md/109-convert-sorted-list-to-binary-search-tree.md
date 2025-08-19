@@ -131,3 +131,10 @@ def sortedListToBST(head):
 
 ### Summary
 This problem uses the **in-order traversal simulation** pattern to build a height-balanced BST directly from a sorted linked list, avoiding conversion to an array. It’s a classic recursive tree-building interview question and solidifies the pattern of “convert sorted structure to BST,” useful for trees and divide & conquer scenarios.
+
+### Tags
+Linked List(#linked-list), Divide and Conquer(#divide-and-conquer), Tree(#tree), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Convert Sorted Array to Binary Search Tree(convert-sorted-array-to-binary-search-tree) (Easy)
+- Create Binary Tree From Descriptions(create-binary-tree-from-descriptions) (Medium)

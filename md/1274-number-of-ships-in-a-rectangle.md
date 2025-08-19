@@ -89,3 +89,8 @@ def countShips(sea, topRight, bottomLeft):
 
 ### Summary
 This is a quad-tree divide-and-conquer search pattern, minimizing lookups in expensive or sparse search spaces. The approach is widely used in efficient range queries and spatial partitioning.
+
+### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer), Interactive(#interactive)
+
+### Similar Problems

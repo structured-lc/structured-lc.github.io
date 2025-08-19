@@ -148,3 +148,11 @@ def maxTrailingZeros(grid):
 
 ### Summary
 This problem showcases the **prefix sum** pattern over 2D matrices, applied to factor-counting rather than basic addition. The key trick is converting a numeric product problem into one about exponents, then summing over segments with prefix arrays. This principle is widely used in problems involving counting factors, range queries, or submatrix properties (“sum over L-shapes”, “sum over rectangles”, etc.).
+
+### Tags
+Array(#array), Matrix(#matrix), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Factorial Trailing Zeroes(factorial-trailing-zeroes) (Medium)
+- Bomb Enemy(bomb-enemy) (Medium)
+- Abbreviating the Product of a Range(abbreviating-the-product-of-a-range) (Hard)

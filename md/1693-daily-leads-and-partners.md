@@ -66,3 +66,8 @@ def daily_leads_and_partners(leads_and_partners):
 
 ### Summary
 Simple hash map aggregation is the standard approach for grouping and counting. This is a common data processing pattern, very useful for frequency counting, histogram building, or grouping operations in databases and logs.
+
+### Tags
+Database(#database)
+
+### Similar Problems

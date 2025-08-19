@@ -82,3 +82,9 @@ def balancedStringSplit(s: str) -> int:
 
 ### Summary
 This problem is a classic greedy pattern: make a decision whenever you have enough information (balance = 0) and proceed. The approach is simple, readable, and uses constant extra space. Similar greedy counters can be applied to problems involving substrings or intervals with balance conditions, such as parentheses matching or array balancing.
+
+### Tags
+String(#string), Greedy(#greedy), Counting(#counting)
+
+### Similar Problems
+- Split Strings by Separator(split-strings-by-separator) (Easy)

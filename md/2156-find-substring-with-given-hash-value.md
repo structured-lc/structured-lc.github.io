@@ -125,3 +125,9 @@ def subStrHash(s: str, power: int, modulo: int, k: int, hashValue: int) -> str:
 
 ### Summary
 This problem uses the **rolling hash** (like Rabin-Karp) to slide a window over a string and efficiently compute hash values for all substrings of fixed length, achieving O(n) performance. The pattern arises in substring search, duplicate substring detection, and is commonly used in bioinformatics and text search algorithms. The key insight is reversing the direction to fit the hash function so new characters are always at power⁰, simplifying modular math and implementation.
+
+### Tags
+String(#string), Sliding Window(#sliding-window), Rolling Hash(#rolling-hash), Hash Function(#hash-function)
+
+### Similar Problems
+- Distinct Echo Substrings(distinct-echo-substrings) (Hard)

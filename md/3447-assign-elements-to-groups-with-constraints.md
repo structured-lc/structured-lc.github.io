@@ -84,3 +84,8 @@ def assign_elements(groups, elements):
 
 ### Summary
 This problem leverages the **search for smallest valid index by condition** pattern, a frequent need in array-based coding challenges. The problem is approachable with a double for-loop, which is efficient for modest input sizes. Mastery of such array scanning patterns is fundamental for interviews, and similar patterns appear in resource assignment, scheduling, and matching problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

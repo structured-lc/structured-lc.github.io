@@ -92,3 +92,11 @@ def maxSumAfterPartitioning(arr, k):
 ### Summary
 This is a **DP on partitions** problem—similar to problems like word break, palindrome partitioning, etc., which involve breaking an array/string optimally.  
 The trick is to define dp[i] as the maximum sum for the prefix of length i, and for each position, try all possible partition sizes ending there, keeping space and time efficient. This approach applies to many “partition at any spot” optimization questions.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Subsequence of Size K With the Largest Even Sum(subsequence-of-size-k-with-the-largest-even-sum) (Medium)
+- Partition String Into Minimum Beautiful Substrings(partition-string-into-minimum-beautiful-substrings) (Medium)
+- Minimum Substring Partition of Equal Character Frequency(minimum-substring-partition-of-equal-character-frequency) (Medium)

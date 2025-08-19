@@ -79,3 +79,10 @@ def brokenCalc(startValue: int, target: int) -> int:
 
 ### Summary
 This is a classic **reverse-thinking greedy** problem: instead of moving forward from startValue, iteratively shrink and adjust the target _backwards_ to startValue, using division and addition. This pattern of inverting the operation is common for minimum-steps transformation problems, especially when forward choices can explode combinatorially, but a greedy backward path leads quickly to the answer.
+
+### Tags
+Math(#math), Greedy(#greedy)
+
+### Similar Problems
+- 2 Keys Keyboard(2-keys-keyboard) (Medium)
+- Minimum Operations to Make the Integer Zero(minimum-operations-to-make-the-integer-zero) (Medium)

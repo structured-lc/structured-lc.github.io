@@ -135,3 +135,8 @@ print(account_balance(transactions))
 This problem is a classic use-case for the **running sum/cumulative sum pattern** via window functions (in SQL) or prefix sums (in Python).  
 Common in financial, log, or ledger problems, this approach efficiently tracks real-time state after ordered events.  
 The solution pattern applies broadly to any scenario where a running total—partitioned/grouped and sorted—is required.
+
+### Tags
+Database(#database)
+
+### Similar Problems

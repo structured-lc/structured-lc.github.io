@@ -107,3 +107,9 @@ def validTicTacToe(board):
 
 ### Summary
 The approach relies on simulation and validation of game invariants: **counting**, **turn order**, and **winner detection** in all line directions. The pattern is commonly used for board game state checks and can be applied to other games needing sequential, rule-based validation of states.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems
+- Design Tic-Tac-Toe(design-tic-tac-toe) (Medium)

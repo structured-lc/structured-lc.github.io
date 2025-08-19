@@ -99,3 +99,9 @@ def findMaxAverage(nums, k):
 This problem uses the **binary search on the answer** (real numbers) pattern with **prefix sum** technique for feasibility testing.  
 This is a common pattern for problems asking for an optimal value under a continuous parameter, where the feasibility check can be done in linear time.  
 Other examples include the "Split Array Largest Sum", "Koko Eating Bananas", and "Maximize Distance to Closest Person" problems on LeetCode.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Maximum Average Subarray I(maximum-average-subarray-i) (Easy)

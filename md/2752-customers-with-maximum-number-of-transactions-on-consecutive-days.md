@@ -139,3 +139,8 @@ def customers_with_max_consecutive_transactions(transactions):
 This problem is a classic **sliding window / sequence streak** recognition problem that relies on sorting and scanning per group (per customer).  
 Patterns used: grouping, sorting, and simple streak traversal—common in sequence processing and log/data analysis.  
 Approach is widely reusable anywhere you need to compute consecutive streaks in event timelines per user/entity.
+
+### Tags
+Database(#database)
+
+### Similar Problems

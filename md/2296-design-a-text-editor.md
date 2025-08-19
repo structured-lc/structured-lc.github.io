@@ -130,3 +130,8 @@ class TextEditor:
 
 ### Summary
 This problem uses the **two-stack (left/right) pattern** for cursor-editable structures, a classic design for efficient edits and cursor moves. It's useful in simulating editors, calculators, or undo/redo—but for huge files or random-access, trees/ropes may be better. The approach here is a common, highly performant design for most real-world editors’ inner loops.
+
+### Tags
+Linked List(#linked-list), String(#string), Stack(#stack), Design(#design), Simulation(#simulation), Doubly-Linked List(#doubly-linked-list)
+
+### Similar Problems

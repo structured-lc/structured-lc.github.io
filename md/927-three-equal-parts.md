@@ -111,3 +111,8 @@ def threeEqualParts(arr):
 
 ### Summary
 This problem leverages **partitioning by number of 1s** and matching binary patterns — it’s a classic **two (or k) pointers** pattern plus careful edge handling. Recognizing invariants (like sum of 1s mod 3 == 0) is the core insight. This technique is valuable for any problem requiring splitting into parts with identical sums/values or patterns.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems

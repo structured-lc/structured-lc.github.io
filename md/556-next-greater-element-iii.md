@@ -104,3 +104,11 @@ def nextGreaterElement(n: int) -> int:
 
 ### Summary
 This problem uses the **next permutation** pattern, which is common in array permutation and combinatorial problems. Recognizing this pattern allows the solution to be both time- and space-efficient and is broadly applicable to other problems requiring sequence rearrangements—like generating combinations or enumerating orderings in lexicographic (dictionary) order.
+
+### Tags
+Math(#math), Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Next Greater Element I(next-greater-element-i) (Easy)
+- Next Greater Element II(next-greater-element-ii) (Medium)
+- Next Palindrome Using Same Digits(next-palindrome-using-same-digits) (Hard)

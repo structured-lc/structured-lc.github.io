@@ -111,3 +111,9 @@ def countPairs(n, edges):
 
 ### Summary
 This problem leverages a **connected components** pattern, commonly solved via DFS/BFS or Union-Find/Disjoint Set Union (DSU). The insight is to count unreachable pairs by treating each component as a “group” and counting inter-group pairs combinatorially. This approach is efficient and widely applicable to questions on cluster connectivity, counting pairs in split groups, and network reliability analysis.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
+
+### Similar Problems
+- Number of Islands(number-of-islands) (Medium)

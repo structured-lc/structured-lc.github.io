@@ -100,3 +100,8 @@ def minimumCost(nums):
 
 ### Summary
 This array partition problem is a **brute-force search within small bounds**, using nested loops to try every split. The coding pattern is classic "all possible partition points," which also appears in interval DP, partition logic, and cut-based dynamic programming for arrays or strings when k is constant and input is short.
+
+### Tags
+Array(#array), Sorting(#sorting), Enumeration(#enumeration)
+
+### Similar Problems

@@ -147,3 +147,10 @@ def minOperationsQueries(n, edges, queries):
 This problem uses classic **tree LCA (Lowest Common Ancestor)** and **root-to-node prefix queries** techniques, along with frequency arrays for efficient path queries.  
 It's a template for many path query problems on trees (count, max, freq, xor, etc), especially when the query is “path a–b” and preprocessing is allowed.  
 Key patterns: **DFS tree preprocessing, binary lifting, prefix sum/freq arrays, LCA query.**
+
+### Tags
+Array(#array), Tree(#tree), Graph(#graph), Strongly Connected Component(#strongly-connected-component)
+
+### Similar Problems
+- Kth Ancestor of a Tree Node(kth-ancestor-of-a-tree-node) (Hard)
+- Minimum Runes to Add to Cast Spell(minimum-runes-to-add-to-cast-spell) (Hard)

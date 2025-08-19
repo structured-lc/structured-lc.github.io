@@ -106,3 +106,11 @@ class Solution:
 
 ### Summary
 This problem is a variant of dependency graph cycle detection, where the dependencies are induced by rectangle containment. The pattern is similar to topological sorting, cycle detection in directed graphs, and is applicable to similar scheduling and dependency resolution problems where "actions" (prints) must obey a coverage or ordering constraint.
+
+### Tags
+Array(#array), Graph(#graph), Topological Sort(#topological-sort), Matrix(#matrix)
+
+### Similar Problems
+- Strange Printer(strange-printer) (Hard)
+- Longest Cycle in a Graph(longest-cycle-in-a-graph) (Hard)
+- Sort Array by Moving Items to Empty Space(sort-array-by-moving-items-to-empty-space) (Hard)

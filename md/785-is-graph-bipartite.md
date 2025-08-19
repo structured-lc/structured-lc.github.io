@@ -100,3 +100,9 @@ def isBipartite(graph):
 
 ### Summary
 This problem is a classic **two-coloring / graph traversal** paradigm. The DFS/BFS coloring pattern is widely applicable to problems requiring "partitioning" or "separation" of connected items subject to adjacency constraints—for example, checking bipartite status, scheduling problems, or separating conflicting tasks. Recognizing odd cycles as key obstructions is fundamental in graph theory.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
+
+### Similar Problems
+- Divide Nodes Into the Maximum Number of Groups(divide-nodes-into-the-maximum-number-of-groups) (Hard)

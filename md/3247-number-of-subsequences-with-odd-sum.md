@@ -89,3 +89,8 @@ def numberOfSubsequencesWithOddSum(nums):
 
 ### Summary
 The approach uses a **parity-based dynamic programming pattern** where we count subsequences with even and odd sum so far, updating with each element. It’s a classic example of **state compression DP** for counting, and this general pattern applies to any question where an invariant (like parity or mod k) in subsequences matters. The method is efficient (O(n)), robust, and avoids costly enumeration of all subsequences.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
+
+### Similar Problems

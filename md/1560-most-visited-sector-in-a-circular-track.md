@@ -88,3 +88,8 @@ def mostVisited(n, rounds):
 
 ### Summary
 This problem uses a **simulation pattern**: find the max-visited range on a circular array, applying careful interval logic to avoid full simulation. The O(n) solution leverages properties of modular arithmetic and wrap-arounds, and variants can appear in circular scheduling, token passing, or process rotation problems.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems

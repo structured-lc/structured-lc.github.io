@@ -115,3 +115,8 @@ def isRationalEqual(S: str, T: str) -> bool:
 ### Summary
 This problem uses **parsing** and **number theory** to precisely compare **rational values** represented as strings, transforming all forms (integer, decimal, periodic) into reduced fractions for **exact equivalence checking**.  
 The canonical fraction approach prevents issues with floating point precision and is a robust pattern for representing and comparing repeating decimals—used in problems involving rational numbers, periodic decimals, or when precise equality is required despite floating-point quirks.
+
+### Tags
+Math(#math), String(#string)
+
+### Similar Problems

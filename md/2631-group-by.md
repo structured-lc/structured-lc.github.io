@@ -90,3 +90,12 @@ This problem uses the "hash grouping" pattern: mapping elements to group identif
 This is very common for categorizing, bucketing, or aggregating data on a property or derived value—useful in both backend applications (e.g., log aggregation, histogram) and front-end (filtering UI data).  
 Similar grouping logic is seen in SQL’s GROUP BY, the `groupby` function in Python's itertools/pandas, and grouping operations in most languages’ collection libraries.  
 Key takeaway for interviews: using a dictionary to group items by a computed key is an efficient and clean coding pattern.
+
+### Tags
+
+### Similar Problems
+- Filter Elements from Array(filter-elements-from-array) (Easy)
+- Apply Transform Over Each Element in Array(apply-transform-over-each-element-in-array) (Easy)
+- Snail Traversal(snail-traversal) (Medium)
+- Array Reduce Transformation(array-reduce-transformation) (Easy)
+- Array Upper Bound(array-upper-bound) (Easy)

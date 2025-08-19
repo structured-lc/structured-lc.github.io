@@ -96,3 +96,9 @@ def minimum_deletions(word: str, k: int) -> int:
 This problem is a classic *frequency-balancing* task, using greedy enumeration over base frequencies and simulating deletions.  
 The core coding pattern here is **sliding over possible thresholds, frequency counting, and greedy balancing**, which is reusable for many "balance/delete to achieve property" string/array interview questions.  
 It's a good example of trading brute-force for enumeration over possible outcomes for a compact domain (frequencies).
+
+### Tags
+Hash Table(#hash-table), String(#string), Greedy(#greedy), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems
+- Minimum Deletions to Make Character Frequencies Unique(minimum-deletions-to-make-character-frequencies-unique) (Medium)

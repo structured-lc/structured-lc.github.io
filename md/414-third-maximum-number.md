@@ -101,3 +101,10 @@ def thirdMax(nums):
 This problem uses the **tracking minimums/maximums pattern** with constant variables, which is common for problems asking for the kth largest/smallest value when k is small.  
 Typical applications include leaderboards, real-time statistics, and similar logic for games or ranking lists.  
 Recognizing when duplicates should be ignored (focus on "distinct") is key. The approach is a variation of the classic “running maximum”/“running minimum” technique.
+
+### Tags
+Array(#array), Sorting(#sorting)
+
+### Similar Problems
+- Kth Largest Element in an Array(kth-largest-element-in-an-array) (Medium)
+- Neither Minimum nor Maximum(neither-minimum-nor-maximum) (Easy)

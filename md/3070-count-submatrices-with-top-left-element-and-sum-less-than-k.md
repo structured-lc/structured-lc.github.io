@@ -107,3 +107,8 @@ def countSubmatrices(grid, k):
 
 ### Summary
 This is a classic **prefix sum / precompute** pattern for fast range sum queries in a 2D grid. By precomputing the sums from top-left to each cell, we avoid redundant computation and can solve seemingly brute-force-slow problems efficiently. This pattern applies broadly to sum/range queries on immutable matrices, and is foundational for many matrix-related subarray problems.
+
+### Tags
+Array(#array), Matrix(#matrix), Prefix Sum(#prefix-sum)
+
+### Similar Problems

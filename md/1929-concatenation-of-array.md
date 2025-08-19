@@ -66,3 +66,8 @@ def getConcatenation(nums):
 
 ### Summary
 This problem is a basic application of array manipulation and a classic "construct a new array based on the input" pattern. The logic can be applied to any routine needing concatenation or simple mapping-from-input-to-output by positional rules. It relies on careful indexing and is best approached with a straightforward loop. Variants of this idea show up in problems requiring repetition, sliding windows, or modular access to array elements.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems

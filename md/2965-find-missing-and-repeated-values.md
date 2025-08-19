@@ -108,3 +108,8 @@ def findMissingAndRepeatedValues(grid):
 
 ### Summary
 This problem is a common instance of the "find the missing and duplicated number" pattern, which is often handled by counting occurrences. It illustrates counting/hash frequency methods, matrix traversal, and basic error detection in structured numeric data. The counting approach is a classic solution to problems involving finding duplicates and missing elements, and appears in various forms like finding a missing number in arrays, error detection, and matrix validation.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Matrix(#matrix)
+
+### Similar Problems

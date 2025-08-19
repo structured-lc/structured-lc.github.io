@@ -92,3 +92,8 @@ def maxEnergyBoost(energyDrinkA, energyDrinkB):
 This is a classic **dynamic programming, state-based DP** problem focusing on tracking the best result for each possible state ("end with drinkA" or "end with drinkB").  
 This pattern arises in many scheduling and path-dependent optimization problems, such as "Paint House," "House Robber," or job-schedule with cooldowns, where the next state depends only on the last state.  
 Optimizing state and transition logic is key to efficient solutions.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

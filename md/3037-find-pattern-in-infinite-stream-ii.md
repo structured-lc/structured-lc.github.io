@@ -116,3 +116,9 @@ class InfiniteStreamPatternFinder:
 
 ### Summary
 This problem uses the **KMP (Knuth-Morris-Pratt) string matching algorithm**, allowing efficient processing of an infinite or very long stream with fast state updates and constant-time pattern presence checks. This technique is highly reusable for "pattern in stream" and real-time substring/pattern detection scenarios, especially where brute force is too slow.
+
+### Tags
+Array(#array), Sliding Window(#sliding-window), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
+
+### Similar Problems
+- Number of Integers With Popcount-Depth Equal to K I(number-of-integers-with-popcount-depth-equal-to-k-i) (Hard)

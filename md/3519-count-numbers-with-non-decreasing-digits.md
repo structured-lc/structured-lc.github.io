@@ -127,3 +127,10 @@ def countNumbersWithNonDecreasingDigits(l: str, r: str, b: int) -> int:
 This problem is a classic **Digit DP** application: counting numbers with given digit constraints in a range.  
 It leverages recursion with memoization over digit positions, tight/limit propagation, and required digit ordering.  
 This pattern appears in problems that ask for counting numbers with certain digit properties—common in “number of X in [a,b]” queries—often requiring DP on digits for efficiency.
+
+### Tags
+Math(#math), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Count of Integers(count-of-integers) (Hard)
+- Number of Beautiful Integers in the Range(number-of-beautiful-integers-in-the-range) (Hard)

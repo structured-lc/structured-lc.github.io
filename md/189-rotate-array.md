@@ -88,3 +88,12 @@ def rotate(nums, k):
 
 ### Summary
 This problem is a classic use-case for the **in-place array reversal trick**, which is a space-efficient way of rotating or shifting sequences. The underlying pattern—reverse, then reverse subparts—is common in array manipulation problems, and it applies to linked lists and strings as well. Understanding it can help in problems involving shifts, cyclic changes, or composing/splitting intervals.
+
+### Tags
+Array(#array), Math(#math), Two Pointers(#two-pointers)
+
+### Similar Problems
+- Rotate List(rotate-list) (Medium)
+- Reverse Words in a String II(reverse-words-in-a-string-ii) (Medium)
+- Make K-Subarray Sums Equal(make-k-subarray-sums-equal) (Medium)
+- Maximum Number of Matching Indices After Right Shifts(maximum-number-of-matching-indices-after-right-shifts) (Medium)

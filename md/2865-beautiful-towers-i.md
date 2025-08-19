@@ -123,3 +123,11 @@ def maximumSumOfHeights(maxHeights):
 
 ### Summary
 This problem is a classic use of **monotonic stacks** and **greedy cascades** for array manipulation under monotonic constraints. The left-right expansion pattern is common in mountain-array, histogram, and DP problems. Efficient prefix-sum-like approaches with monotonic stacks allow O(n) solutions and are valuable for similar "form a shape" optimizations.
+
+### Tags
+Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Valid Mountain Array(valid-mountain-array) (Easy)
+- Minimum Number of Removals to Make Mountain Array(minimum-number-of-removals-to-make-mountain-array) (Hard)
+- Maximum Number of Books You Can Take(maximum-number-of-books-you-can-take) (Hard)

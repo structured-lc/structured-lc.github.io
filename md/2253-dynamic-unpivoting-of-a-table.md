@@ -170,3 +170,9 @@ This problem demonstrates the **dynamic unpivot** (also known as “melt” or �
 It's a very common pattern in ETL, data warehousing, and analytic workflows, especially when schema changes frequently.  
 The same approach can be used wherever table columns must be normalized into row records for downstream processing.  
 Key themes: iteration over dynamic columns, runtime schema handling, and output tuple construction.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Rearrange Products Table(rearrange-products-table) (Easy)

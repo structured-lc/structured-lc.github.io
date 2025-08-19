@@ -96,3 +96,14 @@ def subarraysDivByK(A, K):
 ### Summary
 This problem uses the **prefix sum** and **hash map counting** patterns—very common in subarray count and sum-divisibility problems.  
 The observation that equal prefix sum remainders imply a sum-divisible subarray is a broadly-used trick, also seen in questions like "Subarray Sum Equals K". This approach is optimal for large input arrays where brute-force would be infeasible.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Subarray Sum Equals K(subarray-sum-equals-k) (Medium)
+- Make Sum Divisible by P(make-sum-divisible-by-p) (Medium)
+- Count Number of Bad Pairs(count-number-of-bad-pairs) (Medium)
+- Find the Divisibility Array of a String(find-the-divisibility-array-of-a-string) (Medium)
+- Count of Interesting Subarrays(count-of-interesting-subarrays) (Medium)
+- Maximum Subarray Sum With Length Divisible by K(maximum-subarray-sum-with-length-divisible-by-k) (Medium)

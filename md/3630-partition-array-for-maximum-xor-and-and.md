@@ -128,3 +128,8 @@ This problem uses **bitmask DP**, **XOR basis**, and exhaustive subset enumerati
 The key trick is *reducing* the partition problem to fixed points (try all B) and splitting the rest optimally with XOR basis—a powerful tool in hard bitwise or partitioning problems.  
 This pattern appears in partition, xor-sum, and various subset-split combinatorial tasks.  
 Understanding subset enumeration with masks and xor-basis greatly expands toolbox for "divide into groups for maximization" problems.
+
+### Tags
+Array(#array), Math(#math), Greedy(#greedy), Enumeration(#enumeration)
+
+### Similar Problems

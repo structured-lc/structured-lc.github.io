@@ -122,3 +122,10 @@ def solve(board):
 
 ### Summary  
 The approach leverages **multi-source BFS/DFS** to efficiently explore regions from the border. This is a classic grid traversal/connectivity pattern, useful for problems about islands, connected components, and related concepts. The in-place marking step is a common trick for state tracking in modification problems on a grid.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
+
+### Similar Problems
+- Number of Islands(number-of-islands) (Medium)
+- Walls and Gates(walls-and-gates) (Medium)

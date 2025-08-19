@@ -159,3 +159,8 @@ def order_two_columns_independently(data):
 - This is an example of the **Rank/Row-Number** pattern, frequently used in SQL and analytical data scenarios.  
 - This method generalizes easily to more columns and other sorting/pairing combinations.  
 - A classic **sorting and pairing** problem with independent column treatment.
+
+### Tags
+Database(#database)
+
+### Similar Problems

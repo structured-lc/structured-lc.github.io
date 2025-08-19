@@ -102,3 +102,10 @@ def count_substrings(word: str, k: int) -> int:
 This problem is a classic use of **window technique** and character counting—especially for substring matching with multiple simultaneous constraints (count each type, check for presence, and control exact counts of another).  
 It's closely related to problems like "minimum window containing all characters" and "fixed/sum substrings", which are very popular interview patterns.  
 The brute-force is easy to implement but slow; sliding windows bring performance and show your ability to optimize when overlapping subproblems allow.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Longest Substring Of All Vowels in Order(longest-substring-of-all-vowels-in-order) (Medium)
+- Count Vowel Substrings of a String(count-vowel-substrings-of-a-string) (Easy)

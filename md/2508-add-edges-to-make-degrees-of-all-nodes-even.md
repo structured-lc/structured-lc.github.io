@@ -123,3 +123,9 @@ def isPossible(n, edges):
 This problem uses **parity and pairing** logic for node degrees in undirected graphs and explores **graph augmentation** with parity constraints.  
 It applies a pattern similar to "matching odd-degree nodes to make all degrees even," a concept relevant in Chinese Postman (Eulerian path/circuit) problems and even-degree subgraph construction.  
 Whenever a restricted number of edge insertions have to fix *global parity constraints*, analyzing parity and pairing remains a core scalable pattern.
+
+### Tags
+Hash Table(#hash-table), Graph(#graph)
+
+### Similar Problems
+- Minimum Degree of a Connected Trio in a Graph(minimum-degree-of-a-connected-trio-in-a-graph) (Hard)

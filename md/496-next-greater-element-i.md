@@ -121,3 +121,16 @@ def nextGreaterElementBruteForce(nums1, nums2):
 
 ### Summary
 This problem demonstrates the powerful monotonic stack pattern for solving "next/previous greater/smaller element" problems. The stack maintains elements in a specific order (monotonic decreasing in this case) and efficiently finds relationships between elements. This pattern is fundamental in many algorithmic problems involving element relationships and appears frequently in array processing, histogram problems, and optimization scenarios.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Next Greater Element II(next-greater-element-ii) (Medium)
+- Next Greater Element III(next-greater-element-iii) (Medium)
+- Daily Temperatures(daily-temperatures) (Medium)
+- Sum of Subarray Ranges(sum-of-subarray-ranges) (Medium)
+- Sum of Total Strength of Wizards(sum-of-total-strength-of-wizards) (Hard)
+- Next Greater Element IV(next-greater-element-iv) (Hard)
+- Remove Nodes From Linked List(remove-nodes-from-linked-list) (Medium)
+- Smallest Missing Integer Greater Than Sequential Prefix Sum(smallest-missing-integer-greater-than-sequential-prefix-sum) (Easy)

@@ -97,3 +97,10 @@ def validArrangement(pairs):
 
 ### Summary
 This problem is a classic application of the Eulerian path algorithm (specifically Hierholzer's algorithm) in directed graphs. It's a useful pattern in graph sequencing/rearrangement problems and efficient for large input sizes. This elegant solution generalizes to problems like reconstructing itinerary, word ladder paths, and DNA sequence assembly from k-mers.
+
+### Tags
+Depth-First Search(#depth-first-search), Graph(#graph), Eulerian Circuit(#eulerian-circuit)
+
+### Similar Problems
+- Reconstruct Itinerary(reconstruct-itinerary) (Hard)
+- Find if Path Exists in Graph(find-if-path-exists-in-graph) (Easy)

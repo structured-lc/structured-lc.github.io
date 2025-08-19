@@ -72,3 +72,9 @@ def decompressRLElist(nums):
 This problem demonstrates a direct mapping between a run-length encoded representation and the expanded form, using simple iteration.  
 It’s a classic use of the **two-pointer** / **pair grouping** coding pattern, and the process of "expand compressed data" is common in text decompression, bitmap processing, and many parser-type interview problems.  
 The core idea applies whenever you take a (count, value) compressed list and have to output a list with counts of each value in sequence.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- String Compression(string-compression) (Medium)

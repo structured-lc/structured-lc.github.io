@@ -107,3 +107,11 @@ def getModifiedArray(length, updates):
 
 ### Summary
 This problem is a textbook example of the *difference array* and *prefix sum* approach, simplifying range update problems to O(1) per operation. The same pattern is widely used in scenarios requiring efficient batch/range updates, such as range add/range sum queries in arrays, time series, and interval problem optimizations. Recognizing it enables transforming brute-force O(N²) solutions into O(N) or O(log N) via tree-based structures.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Range Addition II(range-addition-ii) (Easy)
+- Count Positions on Street With Required Brightness(count-positions-on-street-with-required-brightness) (Medium)
+- Shifting Letters II(shifting-letters-ii) (Medium)

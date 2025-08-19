@@ -85,3 +85,10 @@ def isReachable(targetX: int, targetY: int) -> bool:
 ### Summary
 This problem is a classic *number theory/GCD backtrack* type, where moving backward using GCD and powers of two efficiently solves the problem.  
 The pattern of reducing numbers by moving backward and checking GCD is common in grid-reachability and Diophantine equation-type interview questions. This problem also demonstrates how surprising constraints can often be turned into elegant bitwise and mathematical checks.
+
+### Tags
+Math(#math), Number Theory(#number-theory)
+
+### Similar Problems
+- Reaching Points(reaching-points) (Hard)
+- Check if the Rectangle Corner Is Reachable(check-if-the-rectangle-corner-is-reachable) (Hard)

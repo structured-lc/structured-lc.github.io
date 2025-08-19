@@ -81,3 +81,11 @@ def interchangeableRectangles(rectangles):
 
 ### Summary
 This problem applies the **hash map counting** pattern, converting floating point ratio comparison into integer fraction comparison using gcd for normalization. Such reduction is used in problems involving proportionality or colinearity (like "max points on a line"). This approach is robust to value range and floating point errors, and can be used wherever equivalent relationships are computed from pairs or groups of integer-valued inputs.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Counting(#counting), Number Theory(#number-theory)
+
+### Similar Problems
+- Number of Good Pairs(number-of-good-pairs) (Easy)
+- Count Nice Pairs in an Array(count-nice-pairs-in-an-array) (Medium)
+- Replace Non-Coprime Numbers in Array(replace-non-coprime-numbers-in-array) (Hard)

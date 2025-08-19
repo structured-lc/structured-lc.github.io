@@ -95,3 +95,8 @@ def minGroupsForValidAssignment(nums):
 
 ### Summary
 This problem uses the **grouping and frequency partitioning** pattern, commonly seen when splitting data into chunks with fairness/size constraints. The core trick is greedy search for the largest fair group size that works for all values, often implemented with a frequency map and a reverse search. This approach appears in load balancing, set partitioning, and round-robin scheduling problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy)
+
+### Similar Problems

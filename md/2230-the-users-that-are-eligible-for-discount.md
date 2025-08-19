@@ -154,3 +154,9 @@ def eligible_users(purchases, startDate, endDate, minAmount):
 This problem is a straightforward **scan/filter** and **deduplication** using a set.  
 It is a common pattern in data filtering or eligibility style questions, and can be adapted for more involved queries like finding users with repeated behavior, windowed event eligibility, or joining two filter criteria.  
 This approach is efficient for reasonably sized datasets, and the basic logic applies to many data filtering scenarios.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- The Number of Users That Are Eligible for Discount(the-number-of-users-that-are-eligible-for-discount) (Easy)

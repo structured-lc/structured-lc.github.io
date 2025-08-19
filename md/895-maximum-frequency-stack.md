@@ -115,3 +115,8 @@ class FreqStack:
 
 ### Summary
 The solution leverages two hash maps: one to track the frequency of each element, and another mapping frequencies to stacks of elements, which allows popping the most frequent (and most recent in case of ties) in O(1) time. This problem is an application of the "Stack of stacks"/"Group by frequency" pattern, and is also relevant for LRU/LFU cache designs, run-length encoding, and stack-based ordering with custom pop rules.
+
+### Tags
+Hash Table(#hash-table), Stack(#stack), Design(#design), Ordered Set(#ordered-set)
+
+### Similar Problems

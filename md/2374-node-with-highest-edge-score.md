@@ -101,3 +101,11 @@ def edgeScore(edges):
 This problem uses the **counting pattern**: scan the input to aggregate values into a summary structure (edge scores).  
 Such in-/out-degree-based counting is common in graph problems, tournaments, and voting tallies, and the technique generalizes to other aggregation-by-index problems.  
 All logic is O(n) with a minimal two-pass approach: one to record, one to decide the winner.
+
+### Tags
+Hash Table(#hash-table), Graph(#graph)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)
+- Sort Characters By Frequency(sort-characters-by-frequency) (Medium)
+- Sort Array by Increasing Frequency(sort-array-by-increasing-frequency) (Easy)

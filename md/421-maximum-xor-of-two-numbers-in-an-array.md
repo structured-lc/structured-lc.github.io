@@ -88,3 +88,14 @@ def findMaximumXOR(nums):
 
 ### Summary
 This solution uses the **bit manipulation and greedy prefix hashing pattern** to solve the problem efficiently, building the answer from the highest bit down. This is a common pattern for problems where you want to maximize (or minimize) a bitwise property across a set. Similar approaches can apply to prefix problems, stream queries, or variations on maximizing bitwise functions between pairs (for XOR, AND, OR).
+
+### Tags
+Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Trie(#trie)
+
+### Similar Problems
+- Maximum XOR With an Element From Array(maximum-xor-with-an-element-from-array) (Hard)
+- Maximum XOR After Operations (maximum-xor-after-operations) (Medium)
+- Sum of Prefix Scores of Strings(sum-of-prefix-scores-of-strings) (Hard)
+- Minimize XOR(minimize-xor) (Medium)
+- Maximum Strong Pair XOR I(maximum-strong-pair-xor-i) (Easy)
+- Maximum Strong Pair XOR II(maximum-strong-pair-xor-ii) (Hard)

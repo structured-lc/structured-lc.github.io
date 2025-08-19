@@ -94,3 +94,8 @@ def maximumPrimeDifference(nums):
 This problem is a scanning/index-difference coding pattern, optimal with a single-pass scan while maintaining tracking variables (`min_idx`, `max_idx`).  
 The approach leverages small input constraints (nums[i] ≤ 100) to precompute primes and check efficiently.  
 This scan-min/max-index technique can be generally applied to range-maximum-difference questions and is a common trick in problems involving positions of selected values in arrays.
+
+### Tags
+Array(#array), Math(#math), Number Theory(#number-theory)
+
+### Similar Problems

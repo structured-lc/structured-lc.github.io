@@ -93,3 +93,10 @@ def first_letter_to_appear_twice(s: str) -> str:
 
 ### Summary
 This problem is a classic "first duplicate" scan using a set or boolean array to track **seen characters**. The core pattern is *scanning with memory*—commonly used across problems involving **finding duplicates, single elements,** or **first occurrences**. Because the alphabet is small and fixed, space remains constant. This pattern recurs in various string, array, and hash/set questions.
+
+### Tags
+Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Counting(#counting)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)
+- First Unique Character in a String(first-unique-character-in-a-string) (Easy)

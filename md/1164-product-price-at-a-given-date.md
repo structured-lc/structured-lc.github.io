@@ -160,3 +160,8 @@ def prices_at_date(products, target_date):
 
 ### Summary
 This problem is a classic *window function / latest-in-group* pattern—very commonly used in SQL interviews as well as analytics work, e.g., for snapshotting user or product state at a given time. The approach is efficient and can be generalized for other "latest before cutoff" queries.
+
+### Tags
+Database(#database)
+
+### Similar Problems

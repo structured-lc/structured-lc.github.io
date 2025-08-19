@@ -91,3 +91,15 @@ def majorityElement(nums):
 ### Summary
 We use the **Boyer-Moore Voting Algorithm**, a classic pattern for problems involving majority occurrence and guaranteed existence. This algorithm leverages the problem's properties to efficiently "pair out" non-majority elements, resulting in O(n) time and O(1) space.  
 The pattern is common to problems involving "more than half" or "more than 1/k portion" occurrences, useful in data streams and arrays where memory efficiency is crucial.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Divide and Conquer(#divide-and-conquer), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems
+- Majority Element II(majority-element-ii) (Medium)
+- Check If a Number Is Majority Element in a Sorted Array(check-if-a-number-is-majority-element-in-a-sorted-array) (Easy)
+- Most Frequent Even Element(most-frequent-even-element) (Easy)
+- Minimum Index of a Valid Split(minimum-index-of-a-valid-split) (Medium)
+- Minimum Operations to Exceed Threshold Value I(minimum-operations-to-exceed-threshold-value-i) (Easy)
+- Find the Most Common Response(find-the-most-common-response) (Medium)
+- Find Valid Pair of Adjacent Digits in String(find-valid-pair-of-adjacent-digits-in-string) (Easy)

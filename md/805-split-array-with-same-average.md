@@ -110,3 +110,10 @@ def splitArraySameAverage(nums):
 This problem is a challenging variant of subset sum, with an added average constraint. The core is mathematical reduction (ensuring a valid k exists where sum can be exactly partitioned), and subset-sum DP.  
 The pattern (subset sum/count DP, bitmasking, early pruning by divisibility) is common for partitioning, knapsack, and similar partition/equal-sum problems.  
 Efficient handling arises from combining mathematical insights and dynamic programming. The pattern is reusable in other average or ratio-based array partitioning tasks.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems
+- Partition Array Into Two Arrays to Minimize Sum Difference(partition-array-into-two-arrays-to-minimize-sum-difference) (Hard)
+- Minimum Average Difference(minimum-average-difference) (Medium)

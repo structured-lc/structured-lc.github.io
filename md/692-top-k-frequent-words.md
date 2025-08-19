@@ -98,3 +98,13 @@ def topKFrequent(words, k):
 
 ### Summary
 This problem uses the **hashmap + sorting** pattern, common for many "top k" frequency/counting problems. In interviews, use a Counter/dictionary for counting, then sort with custom key. This pattern appears in problems involving logs, leaderboards, search indexes, and more—also with numbers, not just words. For further optimization (esp. if k ≪ n), a min-heap of size k may be used, but for medium-sized cases simple sort is clearest.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Trie(#trie), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Bucket Sort(#bucket-sort), Counting(#counting)
+
+### Similar Problems
+- Top K Frequent Elements(top-k-frequent-elements) (Medium)
+- K Closest Points to Origin(k-closest-points-to-origin) (Medium)
+- Sort Features by Popularity(sort-features-by-popularity) (Medium)
+- Sender With Largest Word Count(sender-with-largest-word-count) (Medium)
+- Maximum Number of Pairs in Array(maximum-number-of-pairs-in-array) (Easy)

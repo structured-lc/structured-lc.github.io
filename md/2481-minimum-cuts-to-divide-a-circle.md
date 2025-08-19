@@ -81,3 +81,10 @@ def numberOfCuts(n: int) -> int:
 
 ### Summary
 This is a classic **math and geometry pattern problem**, relying on parity (odd/even logic) and the properties of straight lines through a circle's center. The pattern is common in problems about **dividing shapes equally**, and the even/odd branch is frequently useful for O(1) solutions where symmetry is leveraged.
+
+### Tags
+Math(#math), Geometry(#geometry)
+
+### Similar Problems
+- Smallest Even Multiple(smallest-even-multiple) (Easy)
+- Count Total Number of Colored Cells(count-total-number-of-colored-cells) (Medium)

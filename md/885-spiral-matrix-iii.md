@@ -96,3 +96,11 @@ def spiralMatrixIII(rows, cols, rStart, cStart):
 This is a simulation problem using **spiral traversal** over a grid.  
 The approach generalizes to any spiral-walk/search pattern, and the key insight is adjusting step lengths as you change directions.  
 This pattern is widely used in **matrix traversal, array rotation**, and some geometric search applications.
+
+### Tags
+Array(#array), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems
+- Spiral Matrix(spiral-matrix) (Medium)
+- Spiral Matrix II(spiral-matrix-ii) (Medium)
+- Spiral Matrix IV(spiral-matrix-iv) (Medium)

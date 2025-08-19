@@ -79,3 +79,11 @@ def minIncrementForUnique(nums):
 
 ### Summary
 This problem uses the **greedy** approach and leverages **sorting** to simplify handling duplicates. At each step, we force every duplicate to be just bigger than the previous value, guaranteeing uniqueness with the minimum increments. This is a general pattern in greedy problems dealing with making elements distinct, and the **sorted-sweep** pattern is common in array manipulation interview questions.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting), Counting(#counting)
+
+### Similar Problems
+- Minimum Operations to Make the Array Increasing(minimum-operations-to-make-the-array-increasing) (Easy)
+- Maximum Product After K Increments(maximum-product-after-k-increments) (Medium)
+- Minimum Number of Operations to Make Elements in Array Distinct(minimum-number-of-operations-to-make-elements-in-array-distinct) (Easy)

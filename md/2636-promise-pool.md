@@ -101,3 +101,11 @@ This problem is a classic example of the “async concurrency/pool worker” pat
 The main technique is using parallel workers to maximize throughput under a concurrency constraint, and is applicable to rate-limited APIs, batch jobs, task schedulers, and more.  
 It's well-suited for scenarios where you want maximum parallelism without exceeding a resource or API quota.  
 Patterns used: semaphore/workers, async scheduling, dynamic task assignment.
+
+### Tags
+
+### Similar Problems
+- Sleep(sleep) (Easy)
+- Promise Time Limit(promise-time-limit) (Medium)
+- Cache With Time Limit(cache-with-time-limit) (Medium)
+- Throttle(throttle) (Medium)

@@ -120,3 +120,7 @@ def xorAfterQueries(nums, queries):
 This problem is an advanced variant of **range query and batch update** with stepwise intervals, similar to problems like "Range XOR Queries" or "Stepwise Range Multiplication".  
 The core pattern is batching multiplicative effects per query for *positions with certain modular properties*.  
 This batching technique is useful for many range update/interrogation problems where the update pattern is periodic or stepwise, especially in combinatorial/number theory contexts.
+
+### Tags
+
+### Similar Problems

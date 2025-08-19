@@ -77,3 +77,9 @@ def minimumOperations(nums):
 
 ### Summary
 The core idea is the **"count the number of unique positive values"** pattern. This problem is a classic use of greedy reasoning: reducing work to the simplest possible case by identifying that only unique positive entries require individual subtraction operations. It’s useful for problems where operations are "absorbed" or "consolidated" by duplicates—such as in set covering, minimum unique operations patterns, or deduplication-based logic.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation)
+
+### Similar Problems
+- Contains Duplicate(contains-duplicate) (Easy)

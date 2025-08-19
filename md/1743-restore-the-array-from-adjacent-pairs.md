@@ -89,3 +89,8 @@ def restoreArray(adjacentPairs):
 
 ### Summary
 This problem is a **graph path reconstruction** problem, where each input pair encodes an edge, and the underlying structure is always a simple path. The key insight is mapping node degrees to endpoints, then walking through neighbors. This linear technique is similar to problems like sequence reconstruction from pairs or "find Eulerian path/circuit" in graphs, and the "double-link" trick is a common coding interview pattern.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Depth-First Search(#depth-first-search)
+
+### Similar Problems

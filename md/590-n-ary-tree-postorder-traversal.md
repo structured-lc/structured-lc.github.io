@@ -141,3 +141,11 @@ def postorder(root):
 
 ### Summary
 This approach uses an **iterative DFS with postprocessing (reverse)** to compute the postorder traversal for N-ary trees. The logic is a standard pattern for tree traversals where recursion is simulated by an explicit stack. The pattern of “push node, store value, append children, then reverse at the end” comes up in many iterative tree traversals (postorder for binary and N-ary). This can be applied to any variant where the definition of "visit children before parent" holds.
+
+### Tags
+Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems
+- Binary Tree Postorder Traversal(binary-tree-postorder-traversal) (Easy)
+- N-ary Tree Level Order Traversal(n-ary-tree-level-order-traversal) (Medium)
+- N-ary Tree Preorder Traversal(n-ary-tree-preorder-traversal) (Easy)

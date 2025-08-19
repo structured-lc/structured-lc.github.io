@@ -75,3 +75,9 @@ def maxNumberOfFamilies(n, reservedSeats):
 
 ### Summary
 This solution uses a hash map to record reserved seats per row, and checks three block patterns. It's an application of set/bitmask pattern for range availability—pattern useful for seating, parking, meeting room, or interval block allocation questions.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Booking Concert Tickets in Groups(booking-concert-tickets-in-groups) (Hard)

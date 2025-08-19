@@ -79,3 +79,8 @@ def return_to_boundary_count(nums):
 The solution is a direct application of **prefix sum** and counting.  
 It's a classic example of maintaining a running state through an array.  
 This pattern — tracking running sums or states and counting when a property holds (sum == 0) — frequently appears in problems like subarray sum, zero-crossing, and simulation-style interview problems.
+
+### Tags
+Array(#array), Simulation(#simulation), Prefix Sum(#prefix-sum)
+
+### Similar Problems

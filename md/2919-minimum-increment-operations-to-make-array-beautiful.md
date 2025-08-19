@@ -97,3 +97,8 @@ def minIncrementOperations(nums, k):
 
 ### Summary
 We use a **rolling DP with three states** to track the minimum operation sum needed to guarantee, for every window, at least one element hits the threshold. This is a classic **dynamic programming with overlapping subproblems**—similar to some scheduling and interval problems. The key trick is to minimize increments by leveraging shared elements among windows and propagate optimal substructure using minimal updating of "active" states. This DP approach is broadly useful for tasks where window/interval satisfaction constraints overlap, like "painting houses" or "minimum jumps" problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

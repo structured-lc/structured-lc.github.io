@@ -93,3 +93,8 @@ def max_non_decreasing_length(nums):
 This problem is a **greedy** pattern, closely related to scanning for monotonic subsequences and segment merging.  
 The key trick is that every time you find a value at least as large as anything you’ve seen so far, you can start a new "block" that guarantees a non-decreasing order.  
 This pattern applies to problems where you have an unlimited number of subarray merges under monotonicity constraints—think stack/greedy approaches, longest non-decreasing subarrays, or block partitioning.
+
+### Tags
+Array(#array), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems

@@ -92,3 +92,11 @@ This problem uses the **two-pointer pattern** and character mapping for digit tr
 - It highlights validating symmetric properties and digit flipping.
 - The general approach works for problems requiring checking pairwise correspondence from both ends of a string, such as palindromes with twists.
 - This digit mapping + two-pointer combo recurs in other digit-mirroring, palindrome, and rotational symmetry problems.
+
+### Tags
+Hash Table(#hash-table), Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Strobogrammatic Number II(strobogrammatic-number-ii) (Medium)
+- Strobogrammatic Number III(strobogrammatic-number-iii) (Hard)
+- Confusing Number(confusing-number) (Easy)

@@ -111,3 +111,8 @@ def findMinimumCost(n, m, k):
 
 ### Summary
 This problem tests smart enumeration of possible cuts and combinatorial search to achieve a **minimal cost split**. It uses an **exhaustive search (brute-force) within well-bounded constraints**, which is common in interview problems with small fixed ranges. Patterns here apply to cut-splitting/partitioning, and are also relevant in **bin-packing** and **multiset selection** tasks.
+
+### Tags
+Math(#math)
+
+### Similar Problems

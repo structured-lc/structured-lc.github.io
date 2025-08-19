@@ -148,3 +148,12 @@ def pathSum(nums):
 
 ### Summary
 This problem is an application of the **DFS (Depth-First Search) on trees**, but with a twist: the tree is encoded as a flat list of three-digit numbers. By mapping each node's depth and position, you simulate traversal without building a node-pointer tree. This is a classic **tree path sum** problem that also reinforces encoding and decoding tree representations. The mapping-based traversal logic can be generally applied wherever trees are represented implicitly, not just explicitly.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Path Sum(path-sum) (Easy)
+- Path Sum II(path-sum-ii) (Medium)
+- Binary Tree Maximum Path Sum(binary-tree-maximum-path-sum) (Hard)
+- Path Sum III(path-sum-iii) (Medium)

@@ -83,3 +83,11 @@ def distanceLimitedPathsExist(n, edgeList, queries):
 
 ### Summary
 Classic offline union-find/DSU approach with sorting, used in Kruskal’s minimum/maximum spanning tree, component connectivity with edge limits, and batch-processing queries efficiently on static graphs.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Union Find(#union-find), Graph(#graph), Sorting(#sorting)
+
+### Similar Problems
+- Checking Existence of Edge Length Limited Paths II(checking-existence-of-edge-length-limited-paths-ii) (Hard)
+- Number of Good Paths(number-of-good-paths) (Hard)
+- Minimum Score of a Path Between Two Cities(minimum-score-of-a-path-between-two-cities) (Medium)

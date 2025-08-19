@@ -84,3 +84,9 @@ def largestCombination(candidates):
 
 ### Summary
 The approach relies on counting how many numbers have each bit set, and the largest such count tells us the largest subset whose AND is >0. This is a classic example of **bit manipulation** and **counting** in arrays, a pattern useful for problems where common bit properties or masks define subset properties. This avoids search/DP and leverages frequency of bits—efficient and robust for large-scale inputs.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Counting(#counting)
+
+### Similar Problems
+- Count Number of Maximum Bitwise-OR Subsets(count-number-of-maximum-bitwise-or-subsets) (Medium)

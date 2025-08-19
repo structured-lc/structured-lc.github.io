@@ -129,3 +129,9 @@ def gcdSort(nums):
 This is a **DSU/Union-Find + sieve of Eratosthenes with factorization** problem, common where “connected by shared property” is key.  
 The pattern can be applied to connectivity queries, grouping by shared prime factors (like in number-theoretic graphs or factor-based grouping, Minimum Spanning Tree variants, etc).  
 Efficient prime factorization plus DSU is a powerful way to group "swappable" elements under GCD-based constraints.
+
+### Tags
+Array(#array), Math(#math), Union Find(#union-find), Sorting(#sorting), Number Theory(#number-theory)
+
+### Similar Problems
+- Rank Transform of a Matrix(rank-transform-of-a-matrix) (Hard)

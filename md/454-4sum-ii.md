@@ -98,3 +98,9 @@ def fourSumCount(nums1, nums2, nums3, nums4):
 
 ### Summary
 This problem demonstrates the classic "meet in the middle" technique for reducing complexity from O(n⁴) to O(n²). By splitting the problem into two halves and using a hash map to store intermediate results, we can efficiently find all valid combinations. This pattern is commonly used in problems involving combinations or subsets where the search space is too large for brute force approaches.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems
+- 4Sum(4sum) (Medium)

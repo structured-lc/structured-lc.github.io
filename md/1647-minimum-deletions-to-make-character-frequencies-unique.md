@@ -95,3 +95,12 @@ def minDeletions(s):
 This pattern is a **Greedy / Hash Map / Set / Frequency Table** problem.  
 It is classic to “make all values unique with the minimum number of changes” and uses greedy frequency reduction.  
 Similar strategies are frequently found in string normalization, allocation problems, and greedy conflict resolution tasks.
+
+### Tags
+Hash Table(#hash-table), String(#string), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Deletions to Make Array Beautiful(minimum-deletions-to-make-array-beautiful) (Medium)
+- Removing Minimum and Maximum From Array(removing-minimum-and-maximum-from-array) (Medium)
+- Remove Letter To Equalize Frequency(remove-letter-to-equalize-frequency) (Easy)
+- Minimum Deletions to Make String K-Special(minimum-deletions-to-make-string-k-special) (Medium)

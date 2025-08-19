@@ -98,3 +98,13 @@ def goodDaysToRobBank(security, time):
 
 ### Summary
 This problem is a **prefix/suffix precomputation** problem or "two pointer with prefix statistics" pattern. This is similar to many problems where you need to quickly check consecutive properties in both directions (e.g., mountain arrays, longest plateau, etc). Precomputing prefix and suffix information per index is a powerful approach, and is commonly used in problems that check sliding window conditionals in both sides of each element.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Non-decreasing Array(non-decreasing-array) (Medium)
+- Longest Mountain in Array(longest-mountain-in-array) (Medium)
+- Find in Mountain Array(find-in-mountain-array) (Hard)
+- Maximum Ascending Subarray Sum(maximum-ascending-subarray-sum) (Easy)
+- Find All Good Indices(find-all-good-indices) (Medium)

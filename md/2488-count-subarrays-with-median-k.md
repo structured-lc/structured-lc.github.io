@@ -118,3 +118,11 @@ def countSubarrays(nums, k):
 This problem uses the **prefix sum and hash map** pattern, especially with the idea of tracking balance of greater/lesser-than-median values to efficiently count subarrays with a given median.  
 This approach is common for median/rank problems, and the prefix sum balancing trick appears in other hard subarray counting challenges (e.g., number of subarrays with sum K, number of subarrays with median/mean/mode constraints).  
 It demonstrates the power of prefix/mapping state compression in O(n) solutions for counting problems over contiguous subarrays.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Number of Subarrays with Bounded Maximum(number-of-subarrays-with-bounded-maximum) (Medium)
+- Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold(number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) (Medium)
+- Sum of Imbalance Numbers of All Subarrays(sum-of-imbalance-numbers-of-all-subarrays) (Hard)

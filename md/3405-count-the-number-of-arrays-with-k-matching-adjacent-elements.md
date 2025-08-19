@@ -127,3 +127,9 @@ def countGoodArrays(n, m, k):
 ### Summary
 
 This problem uses a **Dynamic Programming** and **state compression** approach: DP[i][j] encodes information about partial solutions, considering matches and state transitions (next can match or differ with previous). The pattern is classical: "count the number of ways to build a sequence with restricted transitions," and is seen commonly in combinatorics, coloring problems, and sequence construction (such as counting strings with no repeated consecutive letters, or similar sequence problems).
+
+### Tags
+Math(#math), Combinatorics(#combinatorics)
+
+### Similar Problems
+- Count Good Numbers(count-good-numbers) (Medium)

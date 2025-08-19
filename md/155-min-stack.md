@@ -99,3 +99,10 @@ class MinStack:
 
 ### Summary
 This problem leverages the “two stack” pattern, where one stack stores all items and the other tracks an auxiliary property (here, the minimum). It’s a classic for introducing auxiliary stacks and can be applied to similar problems like Max Stack, or designing advanced stacks with O(1) access to secondary properties. Common in stack/queue tracker interview questions.
+
+### Tags
+Stack(#stack), Design(#design)
+
+### Similar Problems
+- Sliding Window Maximum(sliding-window-maximum) (Hard)
+- Max Stack(max-stack) (Hard)

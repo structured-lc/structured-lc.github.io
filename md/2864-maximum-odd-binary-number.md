@@ -79,3 +79,8 @@ def maximumOddBinaryNumber(s):
 ### Summary
 The approach here is **greedy** and relies on **counting**, a very common pattern in binary digit/string rearrangement problems. This method is optimal because maximizing leftmost `'1'`s increases value, and the parity (odd requirement) is easily handled by fixing the rightmost bit.  
 Similar **count-and-place** patterns appear in problems involving string composition, majority elements, or digit/bit manipulation.
+
+### Tags
+Math(#math), String(#string), Greedy(#greedy)
+
+### Similar Problems

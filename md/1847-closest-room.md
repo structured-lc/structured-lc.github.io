@@ -124,3 +124,10 @@ def closestRoom(rooms, queries):
 
 ### Summary
 This problem demonstrates the **offline query processing** technique paired with **binary search** and **sorted data structures**. The core pattern is sorting both rooms and queries by constraints, enabling incremental candidate collection. This approach generalizes to many problems with constraints on queries and elements, such as "interval scheduling", "hotel booking", and more, where sorting and dynamic range queries are required.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sorting(#sorting), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Most Beautiful Item for Each Query(most-beautiful-item-for-each-query) (Medium)
+- Minimum Time to Kill All Monsters(minimum-time-to-kill-all-monsters) (Hard)

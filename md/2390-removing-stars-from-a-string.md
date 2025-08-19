@@ -96,3 +96,10 @@ def removeStars(s: str) -> str:
 This problem showcases a **classic stack simulation pattern** for "remove past items with a trigger" (like matching parentheses, backspace string compare).  
 The "process left to right, maintain an answer stack" is reusable for problems involving adjacent pair removals or historical undo/redos.  
 Efficient stack-based processing often leads to linear time and is a preferred interview pattern for such problems.
+
+### Tags
+String(#string), Stack(#stack), Simulation(#simulation)
+
+### Similar Problems
+- Backspace String Compare(backspace-string-compare) (Easy)
+- Remove All Adjacent Duplicates In String(remove-all-adjacent-duplicates-in-string) (Easy)

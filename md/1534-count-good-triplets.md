@@ -74,3 +74,10 @@ def countGoodTriplets(arr, a, b, c):
 
 ### Summary
 This problem is a classic example of enumerating combinations under constraints. The applied solution is the combinatorial/brute force pattern, leveraging the feasibility provided by small input bounds. This approach is frequently seen in problems where the search space is cubic or quadratic and constraints are tight enough for direct enumeration. Variants appear in triplet, quadruplet, and subarray counting problems in interviews and algorithms practice.
+
+### Tags
+Array(#array), Enumeration(#enumeration)
+
+### Similar Problems
+- Count Special Quadruplets(count-special-quadruplets) (Easy)
+- Number of Unequal Triplets in Array(number-of-unequal-triplets-in-array) (Easy)

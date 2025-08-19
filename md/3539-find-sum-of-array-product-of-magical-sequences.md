@@ -120,3 +120,10 @@ def findSumOfArrayProductOfMagicalSequences(nums, k, m):
 
 ### Summary
 This approach is an application of **combinatorial dynamic programming with bitmask state** (also called *subset DP*). It is a powerful pattern for "choose-subsequence/combination with property" problems, especially involving AND/OR/XOR statistics. Similar logic applies in problems involving subset sums, counting XOR combinations, or sum-based DP over subsequences. Optimizations include pruning by impossible masks and limiting to reachable DP states.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Combinatorics(#combinatorics), Bitmask(#bitmask)
+
+### Similar Problems
+- Product of Array Except Self(product-of-array-except-self) (Medium)
+- Smallest Number With All Set Bits(smallest-number-with-all-set-bits) (Easy)

@@ -130,3 +130,10 @@ class Solution:
 
 ### Summary
 This approach uses a **backtracking DFS (with one step return for each exploration)** to **explore and map the unknown grid** (as seen in "Robot Room Cleaner" types of problems), and then a standard **BFS** to compute the true shortest path. The **DFS + BFS pattern** is common in situations where the grid or graph is "discovered" on the fly before classic algorithms can operate. Variants of this pattern apply to real-world robotics, path planning, and search in unknown environments.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix), Interactive(#interactive)
+
+### Similar Problems
+- Robot Room Cleaner(robot-room-cleaner) (Hard)
+- Minimum Path Cost in a Hidden Grid(minimum-path-cost-in-a-hidden-grid) (Medium)

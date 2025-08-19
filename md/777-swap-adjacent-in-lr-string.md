@@ -108,3 +108,9 @@ def canTransform(start: str, end: str) -> bool:
 
 ### Summary
 This problem uses **greedy character matching**—focusing only on `'L'` and `'R'`—and **positional comparison** to enforce the movement rules. This idea, of in-place positional validation, is commonly applied in "can you transform X into Y with limited moves" questions. The key pattern: **reduce the problem by filtering out irrelevant symbols** and then enforce character-specific movement constraints using index comparisons.
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Move Pieces to Obtain a String(move-pieces-to-obtain-a-string) (Medium)

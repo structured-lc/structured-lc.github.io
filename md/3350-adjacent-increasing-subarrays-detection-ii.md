@@ -104,3 +104,8 @@ def max_increasing_adjacent_subarrays(nums):
 
 ### Summary
 This problem uses the **binary search on the answer** pattern, combined with **dynamic programming-style preprocessing** to enable O(1) window checks for strictly increasing subarrays. This pattern is common in problems asking for the "maximum/minimum value k such that some property holds" within subarrays, especially when efficient preprocessing (like prefix/suffix arrays) is possible. Binary search on answer can frequently reduce brute-force O(n²) approaches to O(n log n).
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems

@@ -117,3 +117,8 @@ def maximumSegmentSum(nums, removeQueries):
 This is a classic **disjoint-set (Union-Find) application**, tracking group sums as you add/merge back the elements.  
 It’s a pattern for problems involving dynamic grouping of elements with fast aggregation: can be used in dynamic connectivity, range merging, and online interval management problems.  
 Efficient segment sum maintenance with merges is the core trick.
+
+### Tags
+Array(#array), Union Find(#union-find), Prefix Sum(#prefix-sum), Ordered Set(#ordered-set)
+
+### Similar Problems

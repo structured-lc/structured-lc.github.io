@@ -107,3 +107,8 @@ This problem uses the **monotonic stack** pattern:
 - Sweep from the right and find widest valid ramps.
 This pattern is common in "nearest greater/smaller element" problems and can be applied where subarray relationships are involved (e.g., Largest Rectangle in Histogram, Stock Span, Next Greater Element).  
 Efficient, single-pass, and makes the most of order properties in the input array.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems

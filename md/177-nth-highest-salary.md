@@ -87,3 +87,9 @@ WHERE rk = n;
 This problem uses the **rank/ordering** SQL pattern, leveraging either window functions like `DENSE_RANK()` or subqueries with `ORDER BY` and `LIMIT/OFFSET`.  
 Handling duplicates is critical, and these approaches ensure correct behavior even when n exceeds the number of unique values.  
 This is a common interview and analytics pattern, directly applicable to leaderboard rankings, percentile calculations, and more.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- The Number of Users That Are Eligible for Discount(the-number-of-users-that-are-eligible-for-discount) (Easy)

@@ -107,3 +107,8 @@ def findInteger(k: int, digit1: int, digit2: int) -> int:
 
 ### Summary
 This problem employs a classic BFS search, generating numbers digit-by-digit in order of increasing length using only the allowed digits, and checks divisibility and magnitude constraints as it explores. This digit-constrained generation and state-tracking with modulo logic is a common coding pattern in problems like "smallest/largest X with given digits or divisibility", and extends naturally to problems with more digits or similar modular conditions.
+
+### Tags
+Math(#math), Enumeration(#enumeration)
+
+### Similar Problems

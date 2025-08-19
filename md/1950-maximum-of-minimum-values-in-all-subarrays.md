@@ -108,3 +108,8 @@ def max_of_minimums(nums):
 
 ### Summary
 This problem follows a **monotonic stack** pattern, where for every index we compute the indices of previous and next smaller elements to determine the largest window where an element can be the minimum. Such strategies are common in problems involving "maximum of minimum in range" or "next/previous less/greater element" queries, like Largest Rectangle in Histogram, or Sliding Window Minimum. The approach is efficient and widely applicable to range-based and window-related problems.
+
+### Tags
+Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems

@@ -117,3 +117,17 @@ def inorderTraversal(root):
 We explored recursive and iterative (using a stack) solutions to perform inorder traversal on a binary tree.  
 This is a classic DFS/tree traversal pattern which often shows up in binary tree problems — and understanding both approaches is helpful for similar problems, such as preorder, postorder traversals, or variants like "kth smallest in BST", "Validate BST", etc.  
 For more advanced follow-ups, Morris Traversal allows O(1) space traversal using tree threading, but it’s less common for "easy" interview screens.
+
+### Tags
+Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Validate Binary Search Tree(validate-binary-search-tree) (Medium)
+- Binary Tree Preorder Traversal(binary-tree-preorder-traversal) (Easy)
+- Binary Tree Postorder Traversal(binary-tree-postorder-traversal) (Easy)
+- Binary Search Tree Iterator(binary-search-tree-iterator) (Medium)
+- Kth Smallest Element in a BST(kth-smallest-element-in-a-bst) (Medium)
+- Closest Binary Search Tree Value II(closest-binary-search-tree-value-ii) (Hard)
+- Inorder Successor in BST(inorder-successor-in-bst) (Medium)
+- Convert Binary Search Tree to Sorted Doubly Linked List(convert-binary-search-tree-to-sorted-doubly-linked-list) (Medium)
+- Minimum Distance Between BST Nodes(minimum-distance-between-bst-nodes) (Easy)

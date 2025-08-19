@@ -125,3 +125,10 @@ def countGoodSubsequences(s: str) -> int:
 
 ### Summary
 This problem is a classic application of **combinatorial enumeration** with optimization through precomputed modular arithmetic. The key pattern is recognizing when to use combinations and inclusion-exclusion principles efficiently. Similar approaches can apply to subset or subsequence counting problems with frequency or group constraints (e.g., grouping anagrams, equal-frequency selections).
+
+### Tags
+Hash Table(#hash-table), Math(#math), String(#string), Combinatorics(#combinatorics), Counting(#counting)
+
+### Similar Problems
+- Number of Music Playlists(number-of-music-playlists) (Hard)
+- Count Ways to Build Rooms in an Ant Colony(count-ways-to-build-rooms-in-an-ant-colony) (Hard)

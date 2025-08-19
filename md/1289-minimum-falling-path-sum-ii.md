@@ -80,3 +80,9 @@ def minFallingPathSum(grid):
 
 ### Summary
 This is a good example of the **dynamic programming (row by row, state compression/min tracking)** pattern, optimized via min/second min tracking per row. This trick appears in unique DP grid/scheduling minimization questions.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems
+- Minimum Falling Path Sum(minimum-falling-path-sum) (Medium)

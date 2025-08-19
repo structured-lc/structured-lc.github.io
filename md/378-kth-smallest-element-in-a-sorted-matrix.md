@@ -85,3 +85,12 @@ def kthSmallest(matrix, k):
 
 ### Summary  
 This problem demonstrates a classic application of **binary search on value range** combined with matrix traversal exploiting *sorted properties*. Recognizing sorted 2D data allows O(1) extra space and much better-than-naive time. This pattern recurs in problems involving searching or counting in sorted grids, and is a good base for problems involving rank statistics in sorted/partially sorted data.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
+
+### Similar Problems
+- Find K Pairs with Smallest Sums(find-k-pairs-with-smallest-sums) (Medium)
+- Kth Smallest Number in Multiplication Table(kth-smallest-number-in-multiplication-table) (Hard)
+- Find K-th Smallest Pair Distance(find-k-th-smallest-pair-distance) (Hard)
+- K-th Smallest Prime Fraction(k-th-smallest-prime-fraction) (Medium)

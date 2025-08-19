@@ -107,3 +107,10 @@ def countInterestingSubarrays(nums, modulo, k):
 ### Summary
 This problem showcases a **prefix sum, frequency counting** coding pattern—common for subarray count or sum problems with constraints on the subarray statistics (parity, divisibility, etc).  
 The efficient solution leverages **prefix sums with modular arithmetic** and a hashmap, a technique that recurs in many similar subarray count problems (subarrays with sum divisible by K, subarrays with even/odd counts, etc).
+
+### Tags
+Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Subarray Sums Divisible by K(subarray-sums-divisible-by-k) (Medium)
+- Count Number of Nice Subarrays(count-number-of-nice-subarrays) (Medium)

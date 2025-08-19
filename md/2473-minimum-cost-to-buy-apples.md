@@ -153,3 +153,8 @@ def minimumCost(n, roads, appleCost, k):
 
 ### Summary
 This problem uses a classic **graph shortest path** pattern, but requires *two passes* with different cost regimes (normal vs. return with inflation). The main pattern is **multi-source Dijkstra with customized edge weights**, and combining the outbound/inbound paths for each city. This approach is similar to problems involving round-trip or asymmetric travel costs, and is especially relevant for questions with "return trip" penalties or benefits, e.g., package delivery with tolls, or cost-splitting over flexible paths.
+
+### Tags
+Array(#array), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
+
+### Similar Problems

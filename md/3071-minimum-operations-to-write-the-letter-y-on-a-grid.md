@@ -122,3 +122,8 @@ def minimumOperations(grid):
 
 ### Summary
 This problem is a classic "pattern transformation with minimum cost" type, frequently applicable in grid coloring, subgrid selection, and template matching problems. The solution uses value counting and brute-forces all possible choices efficiently. Knowing how to cleanly extract a pattern from a matrix and do frequency analysis is broadly useful for image processing, Sudoku- and Minesweeper-style puzzles, and interview challenges involving grids.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Matrix(#matrix), Counting(#counting)
+
+### Similar Problems

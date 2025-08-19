@@ -94,3 +94,13 @@ This problem is a classic example of **backtracking**: at every decision point, 
 - Permutations (all orderings)
 - Generating all subsequences  
 Recursive backtracking is clean for *pick/skip* logic and easy to modify for constraints (e.g., duplicates, size limits).
+
+### Tags
+Array(#array), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Subsets II(subsets-ii) (Medium)
+- Generalized Abbreviation(generalized-abbreviation) (Medium)
+- Letter Case Permutation(letter-case-permutation) (Medium)
+- Find Array Given Subset Sums(find-array-given-subset-sums) (Hard)
+- Count Number of Maximum Bitwise-OR Subsets(count-number-of-maximum-bitwise-or-subsets) (Medium)

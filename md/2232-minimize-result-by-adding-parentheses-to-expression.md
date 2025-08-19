@@ -90,3 +90,11 @@ def minimizeResult(expression: str) -> str:
 
 ### Summary
 This problem is a **string partitioning and simulation** challenge. The approach is a controlled brute-force using all split positions and evaluating each possibility, leveraging the small input size for efficiency. This "try all splits" strategy is common for parenthesis-placement, dynamic programming on partitions, and is useful in similar minimal/maximal expression problems.
+
+### Tags
+String(#string), Enumeration(#enumeration)
+
+### Similar Problems
+- Basic Calculator(basic-calculator) (Hard)
+- Different Ways to Add Parentheses(different-ways-to-add-parentheses) (Medium)
+- Solve the Equation(solve-the-equation) (Medium)

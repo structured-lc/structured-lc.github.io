@@ -69,3 +69,11 @@ def judgeCircle(moves: str) -> bool:
 
 ### Summary
 This problem uses a simple yet effective approach to track movement on a grid by balancing opposing moves. The pattern of counting opposing operations is common and can be applied to similar problems involving balancing or symmetry.
+
+### Tags
+String(#string), Simulation(#simulation)
+
+### Similar Problems
+- Number of Provinces(number-of-provinces) (Medium)
+- Execution of All Suffix Instructions Staying in a Grid(execution-of-all-suffix-instructions-staying-in-a-grid) (Medium)
+- Furthest Point From Origin(furthest-point-from-origin) (Easy)

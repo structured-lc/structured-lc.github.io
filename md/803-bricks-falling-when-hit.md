@@ -166,3 +166,10 @@ def hitBricks(grid, hits):
 
 ### Summary
 This is a classic **reverse processing** union-find (DSU) problem. Instead of simulating each removal and propagation, we simulate in reverse, restoring bricks and joining them up. This can be seen in other dynamic connectivity problems, like dynamic graph connectivity and percolation/physics on grids. The **reverse restoration + DSU** pattern is particularly efficient for problems that require multiple queries about component stability or connectivity after a series of changes.
+
+### Tags
+Array(#array), Union Find(#union-find), Matrix(#matrix)
+
+### Similar Problems
+- Last Day Where You Can Still Cross(last-day-where-you-can-still-cross) (Hard)
+- Number of Ways to Build Sturdy Brick Wall(number-of-ways-to-build-sturdy-brick-wall) (Medium)

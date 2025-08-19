@@ -117,3 +117,10 @@ This problem uses the **Dynamic Programming with constraint on consecutive eleme
 It’s very similar to classic string construction or valid sequences problems where there’s a maximum allowed run of any value (like "arrangements without more k consecutive identical numbers").  
 Such DP ideas are used in problems on **combinatorics with forbidden substrings**, **run-length upper-boundings**, and **balanced parentheses generation with restrictions**.  
 Efficient DP memoization yields solution even for large inputs within limits.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Contiguous Array(contiguous-array) (Medium)
+- Binary Subarrays With Sum(binary-subarrays-with-sum) (Medium)

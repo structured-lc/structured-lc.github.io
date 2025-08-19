@@ -150,3 +150,8 @@ def min_moves_to_reach_end(grid):
 
 ### Summary
 We used **0-1 BFS** with state = (cell position, portals used mask) because each portal can be used only once and teleportation is “free”. The key coding pattern is **BFS with stateful visited tracking**, common in grid shortest path problems with power-ups, keys, or other stateful objects. This approach is robust for stateful graph search and also appears in puzzles, mazes with keys/doors, and similar game-style search problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems

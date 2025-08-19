@@ -111,3 +111,13 @@ def minimumTime(n, relations, time):
 This problem is a classic application of **longest path in a DAG** using **topological sort + dynamic programming**.  
 It uses a common pattern for scheduling tasks with prerequisites and optimizing resource allocation.  
 Similar techniques are applied in "Course Schedule", "Project Scheduling", and "Critical Path Method" (CPM) problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Graph(#graph), Topological Sort(#topological-sort)
+
+### Similar Problems
+- Course Schedule III(course-schedule-iii) (Hard)
+- Parallel Courses(parallel-courses) (Medium)
+- Single-Threaded CPU(single-threaded-cpu) (Medium)
+- Process Tasks Using Servers(process-tasks-using-servers) (Medium)
+- Maximum Employees to Be Invited to a Meeting(maximum-employees-to-be-invited-to-a-meeting) (Hard)

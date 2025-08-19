@@ -96,3 +96,8 @@ def numKLenSubstrNoRepeats(s: str, k: int) -> int:
 This problem is a classic **sliding window & hashing** pattern, efficiently finding substrings with unique characters.  
 It's commonly used in substring, permutation, and windowed string problems.  
 The technique generalizes to many scenarios where we need to track properties of a *window* over a sequence.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems

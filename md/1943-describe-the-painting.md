@@ -95,3 +95,11 @@ def splitPainting(segments):
 
 ### Summary
 This problem uses a classic **sweep line and prefix sum/difference array** technique to efficiently track value changes and intervals. This approach is commonly applicable in range addition, interval painting, and event scheduling problems, especially when the number line can be sparse but with large bounds. The key is only processing at change-points, not every possible coordinate.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Average Height of Buildings in Each Segment(average-height-of-buildings-in-each-segment) (Medium)
+- Amount of New Area Painted Each Day(amount-of-new-area-painted-each-day) (Hard)
+- Shifting Letters II(shifting-letters-ii) (Medium)

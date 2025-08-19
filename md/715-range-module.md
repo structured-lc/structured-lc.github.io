@@ -160,3 +160,11 @@ class RangeModule:
 
 ### Summary
 This problem uses the **interval merging pattern**, maintaining a sorted list of intervals and modifying/removing efficiently. It's a classic approach for **range manipulation**, overlap problems, memory segments, and is commonly seen in interval scheduling and sweep line algorithms.
+
+### Tags
+Design(#design), Segment Tree(#segment-tree), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Merge Intervals(merge-intervals) (Medium)
+- Insert Interval(insert-interval) (Medium)
+- Data Stream as Disjoint Intervals(data-stream-as-disjoint-intervals) (Hard)

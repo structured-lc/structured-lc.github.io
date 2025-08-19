@@ -78,3 +78,9 @@ def minFlipsMonoIncr(s: str) -> int:
 This problem is a **prefix/suffix counting + dynamic programming** pattern, where at each index you determine the cost of possible "splits" using running summaries.  
 This pattern often appears in problems involving binary strings, minimum edits, or substring modifications for monotonicity or ordering.  
 It is also applicable to related challenges like **minimum flips for alternating patterns**, or making arrays non-decreasing with minimal changes.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Minimum Cost to Make All Characters Equal(minimum-cost-to-make-all-characters-equal) (Medium)

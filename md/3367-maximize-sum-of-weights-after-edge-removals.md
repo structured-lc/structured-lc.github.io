@@ -126,3 +126,9 @@ def maximize_sum_of_weights(n, edges, k):
 This problem uses a **greedy degree reduction on trees**, always removing the lowest-weighted edges from overfull nodes to maximize the remaining total.  
 The main pattern is "maintain local constraints via greedy global edge processing," which appears in network throttling, pruning DAGs, and degree-limited Steiner trees.  
 Patterns used: adjacency list construction, iterative/queue-batch processing, and greedy per-node edge removals.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search)
+
+### Similar Problems
+- Find Minimum Diameter After Merging Two Trees(find-minimum-diameter-after-merging-two-trees) (Hard)

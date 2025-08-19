@@ -112,3 +112,8 @@ def minSizeSubarray(nums, target):
 
 ### Summary  
 This problem is solved using the **prefix sum + hashmap** approach, a common coding pattern for subarray sum problems (e.g., "Subarray sum equals k"). We optimized for the infinite nature by handling full cycles and only searching for the remainder in a doubled array. This is a classic pattern for problems involving cyclic or repeated structures and can be broadly applied in other overlapping subarray, circular array, or repeated-pattern search scenarios.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems

@@ -106,3 +106,9 @@ def getAncestors(n, edges):
 
 ### Summary
 This problem leverages **topological sorting** and ancestor propagation in a DAG. The key coding pattern is **propagating information through BFS or topological order using graph traversal**. This approach (set-merging, topological sort in DAGs) is widely used in dependency graph/tree problems, Kahn's algorithm, and many static analysis tasks in compilers and build systems.
+
+### Tags
+Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort)
+
+### Similar Problems
+- Number of Restricted Paths From First to Last Node(number-of-restricted-paths-from-first-to-last-node) (Medium)

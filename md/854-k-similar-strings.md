@@ -92,3 +92,9 @@ Hint: In this case, it’s impossible to transform A into B with swaps if they a
 
 ### Summary  
 BFS is a standard approach for finding the minimum number of operations to transform one state (string) into another, especially when each operation (swap) leads to a new state. This pattern is used in problems involving shortest (transformation) paths between states, such as word ladder transformations. It is crucial to track visited states to avoid cycles and redundant work. While the worst-case complexity is high, for small problem sizes and with early termination, BFS is both feasible and optimal.
+
+### Tags
+Hash Table(#hash-table), String(#string), Breadth-First Search(#breadth-first-search)
+
+### Similar Problems
+- Couples Holding Hands(couples-holding-hands) (Hard)

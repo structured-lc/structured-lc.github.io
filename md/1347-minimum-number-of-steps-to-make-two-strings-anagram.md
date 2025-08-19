@@ -67,3 +67,11 @@ def minSteps(s: str, t: str) -> int:
 
 ### Summary
 This is a frequency-difference pattern – compare character frequencies, and sum up how many changes needed. It's a classic anagram difference method, widely used in string and frequency problems.
+
+### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Determine if Two Strings Are Close(determine-if-two-strings-are-close) (Medium)
+- Minimum Number of Steps to Make Two Strings Anagram II(minimum-number-of-steps-to-make-two-strings-anagram-ii) (Medium)
+- Minimum Operations to Make Character Frequencies Equal(minimum-operations-to-make-character-frequencies-equal) (Hard)

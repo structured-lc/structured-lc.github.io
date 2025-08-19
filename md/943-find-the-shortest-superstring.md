@@ -129,3 +129,11 @@ def shortestSuperstring(words):
 
 ### Summary
 This problem uses a dynamic programming with bitmasking pattern, very similar to solving TSP. It's common for problems where you need to consider all permutations of set items with pairwise costs and reconstruct a minimal path or sequence. The bitmask DP pattern is frequently seen in covering sets or sequences optimally, especially when n is small (≤ 20).
+
+### Tags
+Array(#array), String(#string), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems
+- Maximum Rows Covered by Columns(maximum-rows-covered-by-columns) (Medium)
+- Find the Minimum Cost Array Permutation(find-the-minimum-cost-array-permutation) (Hard)
+- Find the Shortest Superstring II(find-the-shortest-superstring-ii) (Easy)

@@ -109,3 +109,10 @@ def incremovableSubarrayCount(nums):
 This problem is an application of the two-pointer technique and precomputing prefixes/suffixes for checking array monotonicity.  
 The pattern is often used wherever merging two parts of a sequence efficiently while preserving an invariant is needed (e.g., longest increasing/decreasing subsequence problems, sliding windows, etc.).  
 Avoiding brute-force enumeration of subarrays is key to efficiency—even though subarray removal seems like O(n²), careful two-pointer reasoning unlocks the O(n) solution.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Enumeration(#enumeration)
+
+### Similar Problems
+- Shortest Subarray to be Removed to Make Array Sorted(shortest-subarray-to-be-removed-to-make-array-sorted) (Medium)
+- Number of Subarrays That Match a Pattern I(number-of-subarrays-that-match-a-pattern-i) (Medium)

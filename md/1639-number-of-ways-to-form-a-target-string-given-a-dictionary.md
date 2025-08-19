@@ -73,3 +73,8 @@ def numWays(words, target):
 
 ### Summary
 This is a DP problem with explicit states: letters to be matched and columns to choose from. Patterns similar to Edit Distance and Interleaving String, but grid traversal is column-constrained.
+
+### Tags
+Array(#array), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

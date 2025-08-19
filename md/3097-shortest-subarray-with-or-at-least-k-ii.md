@@ -108,3 +108,10 @@ def shortest_subarray_with_or_at_least_k(nums, k):
 ### Summary
 This problem uses the **sliding window** technique in combination with **bit manipulation** and a per-bit count array, a pattern useful for problems where we want to efficiently maintain a window over the array with certain bitwise properties.  
 Patterns like this apply to bitwise AND window problems, or other monotonic aggregation in subarrays.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Maximum Size Subarray Sum Equals k(maximum-size-subarray-sum-equals-k) (Medium)
+- Shortest Subarray with Sum at Least K(shortest-subarray-with-sum-at-least-k) (Hard)

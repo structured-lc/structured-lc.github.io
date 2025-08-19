@@ -92,3 +92,10 @@ def subsetsWithDup(nums):
 
 ### Summary
 This problem is a classic example of the **backtracking** pattern, augmented by sorting and careful duplicate-skipping to avoid redundant results. The approach can be generalized to other “powerset”-type problems where duplicates or combinatorial explosion are a concern, such as "Combination Sum II" and "Permutations II".
+
+### Tags
+Array(#array), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Subsets(subsets) (Medium)
+- Find Array Given Subset Sums(find-array-given-subset-sums) (Hard)

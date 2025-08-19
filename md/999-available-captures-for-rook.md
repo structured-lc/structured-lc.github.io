@@ -104,3 +104,12 @@ def numRookCaptures(board):
 ### Summary
 This is a classic **grid scanning** simulation problem using **direction vectors**—a frequent pattern in chessboard, grid, and matrix puzzles. 
 The method of “move outward in each possible direction until stopped” is widely applicable in games, path-finding, and some flood-fill algorithms. The fixed 8x8 board size allows a straightforward approach without optimization concerns.
+
+### Tags
+Array(#array), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems
+- Count Unguarded Cells in the Grid(count-unguarded-cells-in-the-grid) (Medium)
+- Minimum Moves to Capture The Queen(minimum-moves-to-capture-the-queen) (Medium)
+- Maximum Value Sum by Placing Three Rooks II(maximum-value-sum-by-placing-three-rooks-ii) (Hard)
+- Maximum Value Sum by Placing Three Rooks I(maximum-value-sum-by-placing-three-rooks-i) (Hard)

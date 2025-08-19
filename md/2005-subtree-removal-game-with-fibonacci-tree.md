@@ -74,3 +74,9 @@ def findGameWinner(n: int) -> bool:
 This problem is a classic example of **game theory** and **pattern finding**, where analysis of small cases leads to a modular arithmetic solution (mod 6).  
 This modular approach often applies in impartial game settings with regular structure and recurrence, such as in **Nim games** or subtree removal games on recursively constructed trees.  
 Recognizing these patterns helps reduce hard games to simple O(1) checks, highlighting the importance of mathematical insight in algorithmic game design.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Tree(#tree), Binary Tree(#binary-tree), Game Theory(#game-theory)
+
+### Similar Problems
+- Game of Nim(game-of-nim) (Medium)

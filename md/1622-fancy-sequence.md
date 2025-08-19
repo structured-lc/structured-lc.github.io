@@ -79,3 +79,8 @@ class Fancy:
 
 ### Summary
 Math pattern exploiting the distributive property and modular arithmetic for efficient updates. Similar to "prefix mul/add tracking" seen in persistent structures, common in advanced data structure problems.
+
+### Tags
+Math(#math), Design(#design), Segment Tree(#segment-tree)
+
+### Similar Problems

@@ -82,3 +82,8 @@ def numberGame(nums):
 
 ### Summary
 This problem uses the **sorting + pairing pattern** common in greedy ferrying or scheduling problems: preprocess input, then process in fixed-size chunks. By flattening the simulation to a sort + for loop, we greatly simplify the logic and avoid repeated scans. This is a common pattern for any "take min/k in order" scenarios, applicable to many scheduling and two-pointer questions.
+
+### Tags
+Array(#array), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation)
+
+### Similar Problems

@@ -121,3 +121,8 @@ def rectangles_area(points):
 
 ### Summary
 This problem is a classic pairwise-comparison challenge and a good example of generating and filtering pairs to satisfy geometric constraints. The coding pattern—nested loops for unique pairs and filtering based on property differences—is common in 2D computational geometry and can be applied to problems involving rectangular detection, pairwise distances, and more. For an SQL solution, the self join with the appropriate WHERE clause is the key insight.
+
+### Tags
+Database(#database)
+
+### Similar Problems

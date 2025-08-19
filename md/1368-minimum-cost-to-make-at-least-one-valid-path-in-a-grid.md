@@ -108,3 +108,10 @@ def minCost(grid):
 This problem is a classic **0-1 BFS / Shortest Path with zero-one edge weights**. It’s a common pattern for minimum-cost grid traversal where some transitions cost 0 and others cost 1.  
 This approach is widely applicable in board games, puzzles, or shortest-path questions where cost is incurred for certain transitions but not for others.  
 Core skills: graph traversal, BFS optimization, grid algorithms, shortest path with edge weights 0/1.
+
+### Tags
+Array(#array), Breadth-First Search(#breadth-first-search), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Minimum Weighted Subgraph With the Required Paths(minimum-weighted-subgraph-with-the-required-paths) (Hard)
+- Disconnect Path in a Binary Matrix by at Most One Flip(disconnect-path-in-a-binary-matrix-by-at-most-one-flip) (Medium)

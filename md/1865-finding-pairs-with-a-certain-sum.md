@@ -104,3 +104,11 @@ class FindSumPairs:
 
 ### Summary
 This problem is a classic example of using **hashmaps for fast frequency counting with two-pointer or combination counting patterns**. It requires maintaining the latest state of an array under increment updates, and efficiently answering repeated pair-sum queries. This approach is reusable for problems asking, “How many pairs from two lists sum to x?” or any multiplicity-based combination counting with limited modification support.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Design(#design)
+
+### Similar Problems
+- Count Number of Pairs With Absolute Difference K(count-number-of-pairs-with-absolute-difference-k) (Easy)
+- Number of Distinct Averages(number-of-distinct-averages) (Easy)
+- Count the Number of Fair Pairs(count-the-number-of-fair-pairs) (Medium)

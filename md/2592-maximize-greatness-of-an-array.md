@@ -95,3 +95,10 @@ def maximizeGreatness(nums):
 This problem is a classic **two-pointers greedy matching** problem, with sorting to enable optimal pairing between the original and permuted arrays.  
 This **greedy** technique is common in maximization problems where elements need to be matched under constraints (e.g., assign tasks, maximize events, assign resources).  
 Other examples with similar patterns: assign cookies to children, maximize number of content children, scheduling non-overlapping intervals.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- 3Sum Smaller(3sum-smaller) (Medium)
+- Maximum Matching of Players With Trainers(maximum-matching-of-players-with-trainers) (Medium)

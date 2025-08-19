@@ -103,3 +103,10 @@ def minimumTimeRequired(jobs, k):
 We used **backtracking with pruning**, exploiting the small constraint (n ≤ 12) and sorting jobs in descending order for early cutoff.  
 This is a classic "minimum makespan scheduling" problem, and the pattern appears frequently in job allocation, multiprocessor, or load balancing problems.  
 The pruning and early job placement are common tricks in backtracking problems to achieve practical efficiency.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
+
+### Similar Problems
+- Minimum Number of Work Sessions to Finish the Tasks(minimum-number-of-work-sessions-to-finish-the-tasks) (Medium)
+- Find Minimum Time to Finish All Jobs II(find-minimum-time-to-finish-all-jobs-ii) (Medium)

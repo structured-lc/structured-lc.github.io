@@ -108,3 +108,11 @@ def detectCapitalUse(word):
 ### Summary
 
 This problem employs simple **string pattern checking** (case analysis) and counting, a classic coding interview pattern. It's representative of situations where multiple rules can be verified with a **linear scan** and a couple of counters. The approach is efficient, clear, and generalizes well for similar pattern-validation questions.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Capitalize the Title(capitalize-the-title) (Easy)
+- Count the Number of Special Characters II(count-the-number-of-special-characters-ii) (Medium)
+- Count the Number of Special Characters I(count-the-number-of-special-characters-i) (Easy)

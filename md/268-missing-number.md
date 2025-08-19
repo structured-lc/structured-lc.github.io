@@ -91,3 +91,14 @@ def missingNumber(nums):
 
 ### Summary  
 This problem uses the **Math Summation** or **Bit Manipulation XOR** patterns, both allowing O(n) time and O(1) space algorithms. This "missing element by comparison to a completed set" pattern is common in array, cyclic, and checksum problems, and can be applied to related issues like finding duplicates or multiple missing numbers.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Binary Search(#binary-search), Bit Manipulation(#bit-manipulation), Sorting(#sorting)
+
+### Similar Problems
+- First Missing Positive(first-missing-positive) (Hard)
+- Single Number(single-number) (Easy)
+- Find the Duplicate Number(find-the-duplicate-number) (Medium)
+- Couples Holding Hands(couples-holding-hands) (Hard)
+- Find Unique Binary String(find-unique-binary-string) (Medium)
+- Find the Largest Almost Missing Integer(find-the-largest-almost-missing-integer) (Easy)

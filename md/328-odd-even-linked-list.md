@@ -106,3 +106,10 @@ def oddEvenList(head):
 
 ### Summary
 This problem uses the **linked list pointer manipulation** pattern, especially the two-pointer approach to preserve the original order within groups while grouping nodes in a single pass and constant space. The technique is common in linked list reordering problems—variants may include segregating nodes by value or partitioning at a certain node. Efficient pointer manipulation and keeping track of group heads are critical, which also makes this a useful pattern for track-and-merge, partition, or split-and-merge linked list problems.
+
+### Tags
+Linked List(#linked-list)
+
+### Similar Problems
+- Split Linked List in Parts(split-linked-list-in-parts) (Medium)
+- Transform Array by Parity(transform-array-by-parity) (Easy)

@@ -304,3 +304,10 @@ def addTwoNumbersInteger(l1, l2):
 
 ### Summary
 This problem extends the classic "Add Two Numbers" problem by reversing the digit order, requiring us to process from least significant to most significant digit. The stack-based approach elegantly handles this by naturally reversing the processing order. This pattern is useful in problems involving digit manipulation, arithmetic operations on large numbers, and scenarios where processing order matters. Understanding multiple approaches (stacks, recursion, list reversal) provides flexibility for different constraints and follow-up questions.
+
+### Tags
+Linked List(#linked-list), Math(#math), Stack(#stack)
+
+### Similar Problems
+- Add Two Numbers(add-two-numbers) (Medium)
+- Add Two Polynomials Represented as Linked Lists(add-two-polynomials-represented-as-linked-lists) (Medium)

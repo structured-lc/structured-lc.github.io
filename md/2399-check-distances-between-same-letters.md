@@ -93,3 +93,10 @@ def checkDistances(s, distance):
 
 ### Summary
 This is a classic **Hash Map First-Occurrence Position** pattern, often seen in substring, window, or index-gap problems. The idea of storing the first appearance and then checking on the second appearance fits many problems involving *distances* or *repeats*, such as finding duplicate distances, longest subarray between repeats, and so on. The approach is efficient, clear, and generalizes well to similar coding interview questions.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)
+- Shortest Distance to a Character(shortest-distance-to-a-character) (Easy)

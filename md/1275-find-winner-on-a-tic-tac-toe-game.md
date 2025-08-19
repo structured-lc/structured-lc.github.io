@@ -89,3 +89,9 @@ def tictactoe(moves):
 This solution uses the simulation/counters pattern and is highly efficient for fixed-size boards, avoiding explicit board storage.  
 The same technique can generalize to n × n games or any problem where you count contributions per row/col/diagonal to check for “win” states.  
 Detecting “victory via counters” is common in classic board game simulations.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems
+- Categorize Box According to Criteria(categorize-box-according-to-criteria) (Easy)

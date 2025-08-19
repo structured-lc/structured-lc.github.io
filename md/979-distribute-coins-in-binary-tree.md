@@ -118,3 +118,10 @@ class Solution:
 This problem is a classic *post-order DFS* on trees, a pattern useful for many redistribution or bottom-up calculations (e.g., subtree sum, balances).  
 The key is to propagate the "excess" of coins up the tree, accumulating the minimal move cost at each step.  
 Patterns like this arise when distributing or collecting resources or when local corrections need to be bubbled up through a tree.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Sum of Distances in Tree(sum-of-distances-in-tree) (Hard)
+- Binary Tree Cameras(binary-tree-cameras) (Hard)

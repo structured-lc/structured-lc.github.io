@@ -106,3 +106,9 @@ def non_special_count(l: int, r: int) -> int:
 This problem leverages **prime sieving** and the observation that only squares of primes have exactly two proper divisors (**special numbers**).  
 The solution is a variant of the classic "counting primes up to N" problem, only here, you count prime squares in a range.  
 This pattern (prime-based combinatorics, sieve-based counting in intervals) is seen in factorization, divisor-counting, and combinatorial number theory problems. It applies to problems where properties (like number of divisors) can be characterized using primes and their exponents.
+
+### Tags
+Array(#array), Math(#math), Number Theory(#number-theory)
+
+### Similar Problems
+- Count Primes(count-primes) (Medium)

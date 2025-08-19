@@ -84,3 +84,8 @@ def minimumOperations(nums):
 
 ### Summary
 This problem is a classic **multi-group partition DP**: partition the array into at most 3 groups in order, with minimal changes. The DP approach here (with group tracking) is a common trick for sequence and interval DP — it appears in problems like minimum changes to monotonic arrays, k-partition problems, and is widely useful for interview DP practice.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

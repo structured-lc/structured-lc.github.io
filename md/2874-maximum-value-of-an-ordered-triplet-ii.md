@@ -102,3 +102,11 @@ def maxTripletValue(nums):
 
 ### Summary
 This problem demonstrates a classic **preprocessing for range maximums** pattern: precompute max values to the left and right of each position for efficient queries. The sliding window or preprocessing pattern is common in range maximum/minimum, stock buy/sell, and subarray problems. By reformulating and optimizing brute-force loops, we achieve efficiency suitable for large inputs.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Trapping Rain Water(trapping-rain-water) (Hard)
+- Sum of Beauty in the Array(sum-of-beauty-in-the-array) (Medium)
+- Minimum Sum of Mountain Triplets II(minimum-sum-of-mountain-triplets-ii) (Medium)

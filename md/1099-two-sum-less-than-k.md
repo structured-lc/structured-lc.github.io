@@ -82,3 +82,12 @@ def twoSumLessThanK(nums, k):
 
 ### Summary
 This problem uses the **two-pointer** and **sorting** patterns to maximize pair sums under a limit — a classic variant of "Two Sum." The two-pointer method is efficient for sorted arrays and appears in many array/pair problems, especially in combination-style questions or those involving boundaries. This approach generalizes well to related "find k closest" or "min/max sum under constraint" tasks.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)
+- Two Sum II - Input Array Is Sorted(two-sum-ii-input-array-is-sorted) (Medium)
+- 3Sum Smaller(3sum-smaller) (Medium)
+- Subarray Product Less Than K(subarray-product-less-than-k) (Medium)

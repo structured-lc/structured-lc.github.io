@@ -85,3 +85,14 @@ def getAverages(nums, k):
 
 ### Summary
 This problem demonstrates the **sliding window** technique to process subarrays of fixed size efficiently. It's a classic application of keeping a running sum (for averages), similar to moving averages in data streams, substring problems, or stock price summaries. The pattern is useful in any situation requiring aggregate statistics over all subarrays/windows of constant length.
+
+### Tags
+Array(#array), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Minimum Size Subarray Sum(minimum-size-subarray-sum) (Medium)
+- Moving Average from Data Stream(moving-average-from-data-stream) (Easy)
+- Subarray Sum Equals K(subarray-sum-equals-k) (Medium)
+- Maximum Average Subarray I(maximum-average-subarray-i) (Easy)
+- Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold(number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) (Medium)
+- Find the Grid of Region Average(find-the-grid-of-region-average) (Medium)

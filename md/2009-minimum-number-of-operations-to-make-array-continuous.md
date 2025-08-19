@@ -92,3 +92,13 @@ def min_operations(nums):
 
 ### Summary
 This problem uses the **two pointer sliding window** and **greedy observation** that only windows containing the most possible unique numbers in a feasible "continuous" range need to be considered. The solution first deduplicates, sorts, and then checks every possible window for coverage. This pattern is common in problems seeking the "minimum replacements/deletions to get X consecutive/contiguous property", and is also seen in subarray/substring with at most k distinct/unique elements and other interval sweeping problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Longest Repeating Character Replacement(longest-repeating-character-replacement) (Medium)
+- Continuous Subarray Sum(continuous-subarray-sum) (Medium)
+- Moving Stones Until Consecutive II(moving-stones-until-consecutive-ii) (Medium)
+- Minimum One Bit Operations to Make Integers Zero(minimum-one-bit-operations-to-make-integers-zero) (Hard)
+- Minimum Adjacent Swaps for K Consecutive Ones(minimum-adjacent-swaps-for-k-consecutive-ones) (Hard)

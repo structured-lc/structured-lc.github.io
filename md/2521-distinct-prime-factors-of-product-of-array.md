@@ -108,3 +108,13 @@ def distinctPrimeFactors(nums):
 ### Summary
 This problem is a neat application of **collecting all prime factors from array elements**, specifically using a set to avoid redundant storage. The brute-force approach of calculating and factoring the product is avoided due to potential overflow and inefficiency.  
 This "union of small decompositions" pattern is common in GCD/LCM/subarray factorization tasks and can be seen in problems involving number-theoretic preprocessing for arrays.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Number Theory(#number-theory)
+
+### Similar Problems
+- 2 Keys Keyboard(2-keys-keyboard) (Medium)
+- Largest Component Size by Common Factor(largest-component-size-by-common-factor) (Hard)
+- Closest Divisors(closest-divisors) (Medium)
+- Smallest Value After Replacing With Sum of Prime Factors(smallest-value-after-replacing-with-sum-of-prime-factors) (Medium)
+- Count the Number of Square-Free Subsets(count-the-number-of-square-free-subsets) (Medium)

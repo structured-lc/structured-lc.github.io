@@ -275,3 +275,9 @@ def numberOfBoomerangsClean(points):
 
 ### Summary
 This problem demonstrates the power of grouping and counting techniques combined with geometric calculations. The key insight is recognizing that for each center point, we need to count how many ways we can choose 2 points from each distance group, where order matters (permutations). This pattern appears in many geometric problems involving equidistant points, clustering, and spatial analysis. Understanding how to efficiently group by calculated properties and apply combinatorial counting is fundamental for solving geometric optimization and analysis problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math)
+
+### Similar Problems
+- Line Reflection(line-reflection) (Medium)

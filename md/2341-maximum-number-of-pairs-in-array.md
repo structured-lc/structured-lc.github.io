@@ -94,3 +94,11 @@ def numberOfPairs(nums):
 This is a frequency-counting, “bucket” pattern problem—a common approach for situations involving grouping/pairing and element counting.  
 It's a useful pattern in problems like anagrams, majority element, and similar grouping exercises, especially when the input domain is bounded.  
 If the value range is unbounded, a hash map/dictionary generalizes the approach easily.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Counting(#counting)
+
+### Similar Problems
+- Sort Characters By Frequency(sort-characters-by-frequency) (Medium)
+- Top K Frequent Words(top-k-frequent-words) (Medium)
+- Sort Array by Increasing Frequency(sort-array-by-increasing-frequency) (Easy)

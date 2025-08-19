@@ -149,3 +149,9 @@ This problem is a classic database query for **left join and filtering**—a pat
 - Projects with missing milestone completions
 
 The pattern: **LEFT JOIN + WHERE (related missing OR value < threshold)**.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Combine Two Tables(combine-two-tables) (Easy)

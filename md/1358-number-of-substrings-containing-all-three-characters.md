@@ -94,3 +94,10 @@ def numberOfSubstrings(s):
 - This problem is a classic **sliding window**/two-pointer technique—recognize when *all substrings* from a valid window are valid and how to count them efficiently.
 - The trick is realizing that, for each valid window, its right endpoint gives you (n - right) valid substrings starting at left.
 - Pattern appears everywhere: substring/array range querying, smallest window containing all elements, minimum covering substring.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Vowels of All Substrings(vowels-of-all-substrings) (Medium)
+- Count Complete Substrings(count-complete-substrings) (Hard)

@@ -92,3 +92,10 @@ def maximizeSweetness(sweetness, K):
 
 ### Summary
 This problem is a classic application of **binary search on the answer** (maximize the minimum, greedy validation per try). The splitting check uses a greedy scan, which fits the contiguous subarray constraint. This pattern (maximize/minimize constraints on array splits using binary search) appears in other problems like Split Array Largest Sum, Allocate Books, and others where partition and fairness are required.
+
+### Tags
+Array(#array), Binary Search(#binary-search)
+
+### Similar Problems
+- Split Array Largest Sum(split-array-largest-sum) (Hard)
+- Capacity To Ship Packages Within D Days(capacity-to-ship-packages-within-d-days) (Medium)

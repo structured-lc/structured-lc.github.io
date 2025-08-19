@@ -86,3 +86,12 @@ def reverse(x: int) -> int:
 
 ### Summary
 This problem is a classic example of **digit manipulation and overflow checking** for integer problems. The approach is common and also applies to problems like integer palindrome checks. The main patterns are “process one digit at a time from right to left using modulus/division,” and “preemptively check for overflows before updating the result.” This strategy appears frequently in interview problems that require you to simulate number operations digit by digit.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- String to Integer (atoi)(string-to-integer-atoi) (Medium)
+- Reverse Bits(reverse-bits) (Easy)
+- A Number After a Double Reversal(a-number-after-a-double-reversal) (Easy)
+- Count Number of Distinct Integers After Reverse Operations(count-number-of-distinct-integers-after-reverse-operations) (Medium)

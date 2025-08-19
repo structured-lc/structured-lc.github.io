@@ -136,3 +136,10 @@ def reorderList(head):
 
 ### Summary
 This problem uses the **fast & slow pointer** pattern to find the middle, **in-place reversal** for the second half, and **two-pointer merging**. These are common interview techniques for linked lists and apply to questions like reverse a list, check for palindrome in a list, and alternate merge of two lists. Proper pointer manipulation and edge case awareness are key.
+
+### Tags
+Linked List(#linked-list), Two Pointers(#two-pointers), Stack(#stack), Recursion(#recursion)
+
+### Similar Problems
+- Delete the Middle Node of a Linked List(delete-the-middle-node-of-a-linked-list) (Medium)
+- Take K of Each Character From Left and Right(take-k-of-each-character-from-left-and-right) (Medium)

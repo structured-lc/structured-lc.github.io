@@ -139,3 +139,11 @@ class Skiplist:
 ### Summary
 This solution implements the classic **Skiplist** probabilistic data structure, leveraging randomization for O(log n) average-case efficiency in search, add, and erase.  
 Skiplist is a commonly tested data structure pattern — comparable to balanced BSTs — and is useful for design interviews, ordered maps/sets, and building in-memory indexes where fast insert/search and support for duplicates is needed.
+
+### Tags
+Linked List(#linked-list), Design(#design)
+
+### Similar Problems
+- Design HashSet(design-hashset) (Easy)
+- Design HashMap(design-hashmap) (Easy)
+- Design Linked List(design-linked-list) (Medium)

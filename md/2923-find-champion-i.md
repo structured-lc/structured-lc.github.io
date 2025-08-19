@@ -93,3 +93,8 @@ def findChampion(grid):
 
 ### Summary
 This problem uses a straightforward iteration pattern checking each row for a condition applied to all columns. Essentially, it's a typical 2D matrix scan pattern seen in adjacency matrix problems for graphs, especially for dominance or "universal winner" checks. It is a common pattern for tournament or graph dominance problems.
+
+### Tags
+Array(#array), Matrix(#matrix)
+
+### Similar Problems

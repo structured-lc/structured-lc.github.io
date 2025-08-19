@@ -254,3 +254,9 @@ def visualize_lexicographical_order(n):
 
 ### Summary
 This problem demonstrates the power of mathematical counting and trie traversal simulation. The key insight is recognizing that lexicographical order corresponds to a depth-first traversal of a 10-ary trie, and instead of building the trie explicitly, we can count subtree sizes mathematically. This pattern is useful in problems involving ordered structures, counting combinatorics, and efficient traversal of implicit tree structures. Understanding how to count elements in lexicographical ranges is fundamental for many string processing and ordering problems.
+
+### Tags
+Trie(#trie)
+
+### Similar Problems
+- Count Special Integers(count-special-integers) (Hard)

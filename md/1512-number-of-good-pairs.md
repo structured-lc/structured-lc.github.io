@@ -59,3 +59,10 @@ def numIdenticalPairs(nums):
 
 ### Summary
 This problem is a textbook use of hashmaps to count, enabling one-pass O(n) processing instead of nested loops. This counting pairs trick appears in Two Sum, anagrams, and various counting problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Counting(#counting)
+
+### Similar Problems
+- Number of Pairs of Interchangeable Rectangles(number-of-pairs-of-interchangeable-rectangles) (Medium)
+- Substrings That Begin and End With the Same Letter(substrings-that-begin-and-end-with-the-same-letter) (Medium)

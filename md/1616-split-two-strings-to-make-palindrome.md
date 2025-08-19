@@ -75,3 +75,8 @@ def checkPalindromeFormation(a, b):
 
 ### Summary
 A classic application of the **two-pointer** technique on strings. By tracking maximal matching prefixes and suffixes from both strings and verifying the remainder for being a palindrome, we reduce brute-force O(n²) to O(n). This pattern recurs in other palindromic and string merging problems.
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems

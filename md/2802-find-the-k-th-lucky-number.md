@@ -98,3 +98,8 @@ def kthLuckyNumber(k: int) -> str:
 
 ### Summary
 This problem uses a pattern similar to conversion between a number and its binary representation, but "4" and "7" replace "0" and "1." The solution efficiently determines the number of digits, and digit-by-digit constructs the answer by mapping the binary-like positions to "4" and "7." This approach is related to bit manipulation, combinatorial enumeration, and sometimes applies in "binary-like" base conversion problems in coding interviews.
+
+### Tags
+Math(#math), String(#string), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

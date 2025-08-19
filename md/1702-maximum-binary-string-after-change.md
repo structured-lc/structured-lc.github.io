@@ -110,3 +110,9 @@ def maximumBinaryString(binary: str) -> str:
 This is a classic greedy-pattern string transformation: convert all but one zero to ones, and position the remaining zero as far right (but not at the end) as allowed.  
 The approach relies on understanding how the operations interact and using counting and index tracking—no dynamic programming, backtracking, or explicit simulation is needed.  
 This greedy string manipulation approach can be seen in other problems involving transform-and-maximize/minimize goals on strings or arrays.
+
+### Tags
+String(#string), Greedy(#greedy)
+
+### Similar Problems
+- Longest Binary Subsequence Less Than or Equal to K(longest-binary-subsequence-less-than-or-equal-to-k) (Medium)

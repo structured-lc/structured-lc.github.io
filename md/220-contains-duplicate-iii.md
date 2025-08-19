@@ -115,3 +115,10 @@ def containsNearbyAlmostDuplicate(nums, k, t):
 The approach uses the **Bucketing** pattern: mapping values into "buckets" defined by the range t+1 allows efficient near-value checking in O(1).  
 Common for problems involving "almost" duplicates or sliding range queries.  
 This hash bucket sliding window technique avoids n² time and can be adapted to problems like "Contains Duplicate II" (which is simpler), or for maintaining rolling uniqueness with value tolerances.
+
+### Tags
+Array(#array), Sliding Window(#sliding-window), Sorting(#sorting), Bucket Sort(#bucket-sort), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Contains Duplicate(contains-duplicate) (Easy)
+- Contains Duplicate II(contains-duplicate-ii) (Easy)

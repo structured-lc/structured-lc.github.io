@@ -118,3 +118,10 @@ class FoodRatings:
 
 ### Summary
 This solution uses the **heap with lazy deletion** pattern, optimized for quick update and retrieval of maximum by using (negative rating, name) tuples. The pattern supports efficient priority/tie-breaking queries even as ratings are updated dynamically. This structure is often found in problems involving **live maximum/minimum retrieval with mutations**, such as leaderboards, live auction tracking, and real-time recommendation engines.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Design(#design), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set)
+
+### Similar Problems
+- Design a Number Container System(design-a-number-container-system) (Medium)
+- Most Popular Video Creator(most-popular-video-creator) (Medium)

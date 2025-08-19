@@ -99,3 +99,8 @@ def lemonadeChange(bills):
 This problem uses a **greedy greedy approach**, always giving change with the highest denominations available to conserve smaller bills for future transactions.  
 The core idea is counting and updating available change in real-time while processing the queue.  
 It’s a variant of the "can you make change?" pattern, useful in cashier systems, vending machines, and simulation of resource allocation.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems

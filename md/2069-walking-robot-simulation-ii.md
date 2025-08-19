@@ -160,3 +160,9 @@ class Robot:
 
 ### Summary
 This problem uses **simulation along a rectangular path**, optimizing via border-perimeter arithmetic to eliminate unnecessary step-by-step simulation. The approach leverages cycle-based math and direction management for constant-time boundary movement, a pattern useful in *cycle detection, path simulation, and toroidal/looped movement problems* (such as robotic vacuum simulators or board games with fixed tracks).
+
+### Tags
+Design(#design), Simulation(#simulation)
+
+### Similar Problems
+- Walking Robot Simulation(walking-robot-simulation) (Medium)

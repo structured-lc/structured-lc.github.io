@@ -161,3 +161,9 @@ This is a **graph connectivity problem** where nodes represent array indices and
 The main pattern is **Union-Find (Disjoint Set Union) + prime factorization** per node to efficiently group nodes via shared primes.  
 This pattern appears in problems involving "groups based on divisibility", prime factors, or "are all items connected under relation X".  
 It’s commonly used wherever equivalence relations by shared traits (divisibility, bits, substring overlap, etc.) are involved.
+
+### Tags
+Array(#array), Math(#math), Union Find(#union-find), Number Theory(#number-theory)
+
+### Similar Problems
+- Graph Connectivity With Threshold(graph-connectivity-with-threshold) (Hard)

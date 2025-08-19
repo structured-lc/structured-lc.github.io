@@ -99,3 +99,9 @@ def numOfPairs(nums, target):
 
 ### Summary
 The solution uses the "frequency map + string split" pattern, which is very efficient anytime you need all pairs of elements that together form a larger object (like concatenating to form a target). This double-counting technique (product of frequencies, with adjustment for self-pairs) is common in pair-count and substring problems, and can also be applied to other problems like counting pairs of words that form palindromes, anagrams, or other composite string properties.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Two Sum(two-sum) (Easy)

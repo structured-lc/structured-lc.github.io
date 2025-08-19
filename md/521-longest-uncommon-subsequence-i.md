@@ -78,3 +78,9 @@ def findLUSlength(a: str, b: str) -> int:
 This approach leverages the simple property that if two strings are not equal, the longer one itself is an uncommon subsequence.  
 This pattern of direct string comparison and maximal property can be applied in other subsequence-based problems when the definitions allow.  
 No advanced search or dynamic programming is needed for this variant. The solution is optimal and concise.
+
+### Tags
+String(#string)
+
+### Similar Problems
+- Longest Uncommon Subsequence II(longest-uncommon-subsequence-ii) (Medium)

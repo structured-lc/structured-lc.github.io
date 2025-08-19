@@ -112,3 +112,8 @@ def employees_with_deductions(employees, logs):
 ### Summary
 The key insight is to aggregate session durations *per employee*, round up each session to nearest minute, sum, and compare to needed hours.  
 This is a classic *aggregation and join* pattern used in SQL and similar problems (attendance, quota fulfillment, etc.), and can be adapted for other HR, attendance, or quota-based queries in databases.
+
+### Tags
+Database(#database)
+
+### Similar Problems

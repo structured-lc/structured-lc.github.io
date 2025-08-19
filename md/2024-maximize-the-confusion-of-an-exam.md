@@ -89,3 +89,13 @@ def maxConsecutiveAnswers(answerKey: str, k: int) -> int:
 
 ### Summary
 This problem is a prototypical application of the **sliding window** pattern, where you keep a window of interest and expand/contract based on constraints (here, at most `k` flips). It appears in problems about longest substrings/arrays with at most `k` mismatches or replacements—the technique is widely applicable for string and array questions involving a "with at most k operations" twist.
+
+### Tags
+String(#string), Binary Search(#binary-search), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Longest Substring with At Most K Distinct Characters(longest-substring-with-at-most-k-distinct-characters) (Medium)
+- Longest Repeating Character Replacement(longest-repeating-character-replacement) (Medium)
+- Max Consecutive Ones III(max-consecutive-ones-iii) (Medium)
+- Minimum Number of Days to Make m Bouquets(minimum-number-of-days-to-make-m-bouquets) (Medium)
+- Longest Nice Subarray(longest-nice-subarray) (Medium)

@@ -135,3 +135,8 @@ def find_total_time_spent_by_each_employee(employees):
 
 ### Summary
 The solution uses **dictionary aggregation** (hash map grouping pattern), which is a classical approach for frequency or sum-by-group problems. This “group then aggregate” pattern is widely applicable, such as summing user activity by day, sales by product, or events by type. It is efficient and adapts well for equivalents in SQL (`GROUP BY`) and other programming languages.
+
+### Tags
+Database(#database)
+
+### Similar Problems

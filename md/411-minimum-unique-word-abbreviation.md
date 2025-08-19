@@ -137,3 +137,11 @@ def minAbbreviation(target, dictionary):
 
 ### Summary
 The core of this problem is **bitmask state compression**, a common tactic for subset, permutation, or combinatorial search problems when n is small (like m ≤ 21 here). The "abbreviation via mask" technique is general—it's also used in word games, pattern matching, and limits-exploration where 2ᵐ is tractable. Using bitmasks to represent keep/abbreviate status is especially potent in string/word puzzles with abbreviation or masking constraints.
+
+### Tags
+Array(#array), String(#string), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Generalized Abbreviation(generalized-abbreviation) (Medium)
+- Valid Word Abbreviation(valid-word-abbreviation) (Easy)
+- Word Abbreviation(word-abbreviation) (Hard)

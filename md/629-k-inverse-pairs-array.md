@@ -89,3 +89,9 @@ def kInversePairs(n, k):
 This problem uses a classic dynamic programming approach with **prefix sums** to efficiently count ways to achieve exactly k inverse pairs while building up arrays from size 1 to n.  
 The pattern is closely related to DP for permutation problems, and prefix sums are a standard optimization to turn O(n²k) into O(nk) time.  
 This DP + prefix sum trick is very common in counting and partitioning problems.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Count the Number of Inversions(count-the-number-of-inversions) (Hard)

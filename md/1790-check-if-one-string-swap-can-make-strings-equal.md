@@ -93,3 +93,11 @@ This problem is a variation on string mismatch and swap.
 The core pattern is **comparing differences and simulating a minimal "fix" (in this case, swap)**; this pattern appears in anagram checks and error-correction problems.  
 It can be generalized for "at most k swaps" or "two-way swaps."  
 The solution is efficient, O(n), and needs only a simple differences check.
+
+### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Buddy Strings(buddy-strings) (Easy)
+- Make Number of Distinct Characters Equal(make-number-of-distinct-characters-equal) (Medium)
+- Count Almost Equal Pairs I(count-almost-equal-pairs-i) (Medium)

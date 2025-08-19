@@ -165,3 +165,8 @@ def max_common_follower_pairs(relations):
 
 ### Summary
 This problem involves pairing users based on shared relationships (followers), and is a classic example of set intersection and aggregation across pairs. The standard pattern is mapping users to sets, iterating all pairs, and using set intersection—this pattern can be applied to social network, recommendation, and friend suggestion problems. For large-scale data, further optimizations leveraging inverted indices or distributed computing may be necessary.
+
+### Tags
+Database(#database)
+
+### Similar Problems

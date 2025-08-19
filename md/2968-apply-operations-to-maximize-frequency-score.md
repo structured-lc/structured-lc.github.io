@@ -100,3 +100,9 @@ def maxFrequency(nums, k):
 
 ### Summary
 This problem uses the **sliding window** and **prefix sum** patterns on a **sorted** array to efficiently determine how many elements can be unified with limited changes, maximizing their frequency, under operation constraints. This is a classic greedy + windowing technique, also seen in "Min moves to equal array elements," "Max Consecutive Ones after k Flips," etc.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Sorting(#sorting), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Frequency of the Most Frequent Element(frequency-of-the-most-frequent-element) (Medium)

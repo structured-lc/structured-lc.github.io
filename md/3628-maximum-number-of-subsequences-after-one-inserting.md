@@ -128,3 +128,8 @@ def maximumNumberOfSubsequences(s: str) -> int:
 This problem is a **prefix-suffix counting and greedy string problem**. The key pattern is to reduce repeated work by precomputing aggregations to enable constant-time answer for each possible insertion spot.  
 This pattern is widely applicable in subsequence counting, optimal string insertions, and dynamic programming over character streams.  
 It exemplifies how optimizing brute force by analyzing constraints and leveraging counts/prefix sums leads to a scalable and efficient solution.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Prefix Sum(#prefix-sum)
+
+### Similar Problems

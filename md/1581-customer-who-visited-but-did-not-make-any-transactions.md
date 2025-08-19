@@ -54,3 +54,9 @@ def find_customers_without_transaction(visits, transactions):
 
 ### Summary
 This problem uses anti-join logic and is a classic example of data filtering with exclusion (LEFT JOIN/NOT IN). Mastering such queries is essential for data analytics, SQL interviews, and backend coding patterns.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Sellers With No Sales(sellers-with-no-sales) (Easy)

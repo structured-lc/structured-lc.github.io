@@ -158,3 +158,9 @@ def get_most_recent_three_orders(customers, orders):
 ### Summary
 This problem uses the **"top k elements in group"** pattern, often solved using window functions in SQL (ROW_NUMBER, RANK, DENSE_RANK) or sorting/grouping in code. These techniques are common when filtering the "latest N per group", such as logs, user events, payments, reviews, etc.  
 Understanding result ordering and partitioning logic is widely applicable for data reporting and analytics scenarios.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- The Most Recent Orders for Each Product(the-most-recent-orders-for-each-product) (Medium)

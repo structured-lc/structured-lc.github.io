@@ -96,3 +96,8 @@ def maxScore(nums):
 
 ### Summary
 This problem is all about **bitmask DP** and optimal pairing. It's a classic pattern for "pair n elements to maximize a score" problems, especially where decisions have long-term effects and combinatorial explosion must be avoided. This pattern is also found in assignment-type and scheduling problems with dependency or state, like the Minimum Cost to Connect Two Groups, Travelling Salesman Problem, and Matching Problems. Understanding how to encode states and recurse with memoization is central to mastering such hard combinatorial DP challenges.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Number Theory(#number-theory), Bitmask(#bitmask)
+
+### Similar Problems

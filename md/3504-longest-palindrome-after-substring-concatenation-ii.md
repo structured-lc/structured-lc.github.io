@@ -118,3 +118,9 @@ def longestPalindrome(s: str, t: str) -> int:
 This problem uses a **combination of dynamic programming for substring combination** and **brute force for single substrings**.  
 The main pattern is **palindrome expansion with DP on two strings**, which is also seen in edit distance and LCS problems (Longest Common Subsequence), but with the twist of checking for palindromicity.  
 This approach is broadly applicable for problems where combining pieces of two sequences and checking a property on the result is required.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Edit Distance(edit-distance) (Medium)

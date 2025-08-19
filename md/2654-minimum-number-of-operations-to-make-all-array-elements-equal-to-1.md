@@ -89,3 +89,8 @@ def min_operations(nums):
 
 ### Summary
 This problem uses **GCD** properties and a two-stage greedy-counting approach: First, reduce to the minimal number of operations to create a single 1 by searching for the shortest subarray with gcd 1 (brute-force two pointer). Then, since 1 can convert all surrounding numbers to 1 in one move per number, we simply count remaining steps. This "modular subproblem" and stepwise approach is common in interview problems dealing with **gcd, array reduction, and minimal operations**.
+
+### Tags
+Array(#array), Math(#math), Number Theory(#number-theory)
+
+### Similar Problems

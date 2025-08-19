@@ -78,3 +78,9 @@ def sortSentence(s):
 
 ### Summary
 The problem is a classic token parsing and order reconstruction task. The common coding pattern is mapping data (words) to their correct order by indices; it’s a flavor of bucket sort. Similar ideas apply in problems involving tagged data, “restore order” problems, and parse-and-place interview questions. The key: split, extract index, place, and join.
+
+### Tags
+String(#string), Sorting(#sorting)
+
+### Similar Problems
+- Check if Numbers Are Ascending in a Sentence(check-if-numbers-are-ascending-in-a-sentence) (Easy)

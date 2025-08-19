@@ -111,3 +111,10 @@ def minCapability(nums, k):
 
 ### Summary
 This is a classic "binary search on the answer" problem, where we guess the minimum feasible "capability" using a monotonic property (larger capabilities make the task easier). The greedy helper is a linear scan responding to the adjacency rule, often seen in dynamic-programming-pattern problems like "House Robber." The pattern — binary search + greedy/DP feasibility check — is very common in LeetCode hard/medium problems, such as "Minimum Maximum Distance" and related optimization / allocation problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
+
+### Similar Problems
+- Container With Most Water(container-with-most-water) (Medium)
+- House Robber(house-robber) (Medium)

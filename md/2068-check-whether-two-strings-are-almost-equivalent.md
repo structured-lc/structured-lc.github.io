@@ -96,3 +96,9 @@ def checkAlmostEquivalent(word1, word2):
 
 ### Summary
 This problem uses the **counting pattern**, specifically character frequency counting for string comparison within a fixed tolerance. The counter-array technique is **extremely common** for problems involving bounded alphabets, such as anagrams or frequency analysis tasks. It provides an efficient and clear solution that generalizes well for similar string-comparison challenges.
+
+### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting)
+
+### Similar Problems
+- Find the Occurrence of First Almost Equal Substring(find-the-occurrence-of-first-almost-equal-substring) (Hard)

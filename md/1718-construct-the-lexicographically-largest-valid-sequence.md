@@ -133,3 +133,10 @@ def constructDistancedSequence(n):
 This problem is a **backtracking with greedy choice** pattern—always try to place the largest numbers first, with constraint propagation.  
 It's an example of constraint-satisfaction search and "construct the lexicographically largest element" questions.  
 The template can be applied to similar puzzles involving placing items with spacing/distance constraints, or constructing max/min lexicographical orderings under rules.
+
+### Tags
+Array(#array), Backtracking(#backtracking)
+
+### Similar Problems
+- The Number of Beautiful Subsets(the-number-of-beautiful-subsets) (Medium)
+- Find the Lexicographically Largest String From the Box I(find-the-lexicographically-largest-string-from-the-box-i) (Medium)

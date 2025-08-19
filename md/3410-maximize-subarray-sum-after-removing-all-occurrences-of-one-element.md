@@ -128,3 +128,10 @@ def maxSumAfterRemoval(nums):
 
 ### Summary
 This problem generalizes the **maximum subarray sum (Kadane's algorithm)** by adding a "remove all of x" operation, and is solved by scanning fragments between all x's for each unique x. This is a clean application of **divide-and-conquer on array fragments** and an extension of dynamic programming for single/removal-deletion maximum subarray problems. Similar logic can be applied to mutation or split problems in arrays where segments are affected by a global operation.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Segment Tree(#segment-tree)
+
+### Similar Problems
+- Maximum Subarray(maximum-subarray) (Medium)
+- Maximum Subarray Sum with One Deletion(maximum-subarray-sum-with-one-deletion) (Medium)

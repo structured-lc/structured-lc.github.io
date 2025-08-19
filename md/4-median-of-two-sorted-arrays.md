@@ -99,3 +99,9 @@ def findMedianSortedArrays(nums1, nums2):
 
 ### Summary
 This problem uses the **binary search + two-way partitioning** pattern, which is fundamental in advanced array problems. It efficiently finds the median of two sorted arrays without merging, by exploiting the sorted structure to find a partition where all left elements are ≤ all right elements. The pattern appears in problems about finding the kᵗʰ smallest element, merging sorted stream data, and external data processing.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer)
+
+### Similar Problems
+- Median of a Row Wise Sorted Matrix(median-of-a-row-wise-sorted-matrix) (Medium)

@@ -118,3 +118,11 @@ def sort_array_by_moving_items_to_empty_space(nums):
 This problem is based on recognizing and maintaining invariants in permutation arrays and reducing sorting actions to aligning indices in two possible valid sorted states.  
 The approach demonstrates the usefulness of greedy and two-pointer scanning, as well as thinking about array “order” as strict segment matching.  
 The coding pattern applies for problems where you’re allowed to move any element into a special “hole”/empty slot, and you must count the minimum operations to reach a sorted or specific arrangement.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Course Schedule II(course-schedule-ii) (Medium)
+- Strange Printer II(strange-printer-ii) (Hard)
+- Create Sorted Array through Instructions(create-sorted-array-through-instructions) (Hard)

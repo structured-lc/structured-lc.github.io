@@ -90,3 +90,12 @@ def PredictTheWinner(nums):
   
 ### Summary
 This problem uses the classical **Minimax/DP pattern**, leveraging recursive game state evaluation with memoization. The pattern is common in turn-based two-player games (coin pick, stone game, etc.) involving optimal strategy and can be applied anytime you have a "pick from ends" scenario with optimal adversarial play. The DP approach makes it tractable for reasonably small input sizes while ensuring correct and optimal play.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Recursion(#recursion), Game Theory(#game-theory)
+
+### Similar Problems
+- Can I Win(can-i-win) (Medium)
+- Find the Winning Player in Coin Game(find-the-winning-player-in-coin-game) (Easy)
+- Find the Number of Winning Players(find-the-number-of-winning-players) (Easy)
+- Count The Number of Winning Sequences(count-the-number-of-winning-sequences) (Hard)

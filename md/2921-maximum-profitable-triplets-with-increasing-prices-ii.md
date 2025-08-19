@@ -167,3 +167,8 @@ def maximumProfitableTriplets(prices, profits):
 This problem uses the **range maximum query** pattern with **Binary Indexed Trees (Fenwick Trees)** — a highly optimized structure to quickly fetch and update maximum profit data for any prefix of prices.  
 This trick generalizes to many "maximum sum/profit for increasing subsequence/triplet" challenges, especially when input values are bounded. Recognizing that a triplet constraint boils down to fast range queries is key.  
 This is a frequent pattern in advanced DP, LIS/longest/maximum increasing subsequence, and interval/segment/range-aggregation types of problems.
+
+### Tags
+Array(#array), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
+
+### Similar Problems

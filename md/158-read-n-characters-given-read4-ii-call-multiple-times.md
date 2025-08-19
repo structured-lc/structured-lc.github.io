@@ -123,3 +123,9 @@ class Solution:
 This problem is a classic stateful buffer management question—handle *leftovers* across multiple API calls.  
 Key pattern: **internal buffering** with pointers/state, often used in file/stream operations. The same idea is useful in implementing input/output streams, sockets, chunked network reads, and other APIs where "partial reads" can happen.  
 Common in parsing, streaming, and producer-consumer designs.
+
+### Tags
+Array(#array), Simulation(#simulation), Interactive(#interactive)
+
+### Similar Problems
+- Read N Characters Given Read4(read-n-characters-given-read4) (Easy)

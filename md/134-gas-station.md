@@ -100,3 +100,9 @@ def canCompleteCircuit(gas, cost):
 
 ### Summary
 This problem uses a **greedy + cumulative sum** pattern: if at any segment you run out of "resources", the only place to look is after your failure point. This is a classic pattern for single-pass optimal subarray/cycle search (like Maximum Subarray/Kadane’s algorithm variant). The solution pattern can be applied wherever you have to find a feasible start under linear cumulative constraints with a cycle or wrap-around property.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems
+- Maximize the Topmost Element After K Moves(maximize-the-topmost-element-after-k-moves) (Medium)

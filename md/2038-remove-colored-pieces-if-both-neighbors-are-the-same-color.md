@@ -87,3 +87,9 @@ def winnerOfGame(colors: str) -> bool:
 
 ### Summary
 We used a **greedy counting approach** that avoids simulation: the winner depends only on the initial counts of potential moves (internal pieces in runs of the same color, for both players). This is a form of "counting blocks/subarrays" — a common string/game pattern, and is directly applicable to any game involving actions on runs/substrings (e.g., maximizing deletions in substrings, Nim variants).
+
+### Tags
+Math(#math), String(#string), Greedy(#greedy), Game Theory(#game-theory)
+
+### Similar Problems
+- Longest Subarray With Maximum Bitwise AND(longest-subarray-with-maximum-bitwise-and) (Medium)

@@ -100,3 +100,8 @@ def count_odd_letters_from_number(n):
 
 ### Summary
 This problem is a direct application of mapping digits to words, grouping and counting letters, and then aggregating based on parity. It follows a classic map/count/filter pattern — common in string counting, anagram, or histogram frequency questions. This pattern appears across problems involving counting unique objects with certain properties (e.g., letters with odd/even counts).
+
+### Tags
+Hash Table(#hash-table), String(#string), Simulation(#simulation), Counting(#counting)
+
+### Similar Problems

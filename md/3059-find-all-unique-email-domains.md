@@ -140,3 +140,8 @@ This approach uses the classic **hashmap counting** pattern: extract keys (email
 Sorting the results gives ordered output by domain name.  
 Such string parsing and counting is common in log analysis, user grouping, or basic report generation tasks.  
 This pattern also aligns well with SQL GROUP BY queries or MapReduce problems in distributed systems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

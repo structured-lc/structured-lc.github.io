@@ -128,3 +128,8 @@ def maxAverageRatio(classes, extraStudents):
 
 ### Summary
 This problem uses the **Greedy + Max-Heap** pattern to always assign resources to the class with maximum marginal benefit. The "always pick the best next choice" structure is a classic greedy optimization, and the heap allows efficient repeated access to the maximum gain. This design is widely applicable to problems where items/resources must be assigned one by one to maximize (or minimize) a global metric, such as scheduling, load balancing, or distribution problems.
+
+### Tags
+Array(#array), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

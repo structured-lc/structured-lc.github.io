@@ -89,3 +89,13 @@ def max_run_time(n, batteries):
 
 ### Summary
 This problem leverages the **binary search** on the answer technique—a key skill for interviewer and contestant alike. By testing if a global constraint can be met for a guessed value, we efficiently home in on the maximum feasible solution. This "binary search over answer space" applies widely, like in scheduling, resource allocation, and optimizing parallel task execution.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Minimum Moves to Equal Array Elements(minimum-moves-to-equal-array-elements) (Medium)
+- Sell Diminishing-Valued Colored Balls(sell-diminishing-valued-colored-balls) (Medium)
+- Maximum Number of Tasks You Can Assign(maximum-number-of-tasks-you-can-assign) (Hard)
+- Minimum Time to Complete Trips(minimum-time-to-complete-trips) (Medium)
+- Minimum Amount of Time to Fill Cups(minimum-amount-of-time-to-fill-cups) (Easy)

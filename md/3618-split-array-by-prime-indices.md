@@ -104,3 +104,8 @@ def splitArrayByPrimeIndices(nums):
 
 ### Summary
 This approach uses the classic Sieve of Eratosthenes pattern to preprocess prime indices for efficient array splitting. This problem is an example of the “index-based grouping” and “precompute/memoize to accelerate queries” patterns, both of which are very common in coding interviews. Variants often appear when you must bucket elements based on the properties of their indices, not values.
+
+### Tags
+Array(#array), Math(#math), Number Theory(#number-theory)
+
+### Similar Problems

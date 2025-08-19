@@ -95,3 +95,10 @@ def mincostTickets(days, costs):
 
 ### Summary
 This problem is a classic example of the **DP on time/intervals** pattern, commonly used for scheduling and cost minimization problems. The key idea is to use DP to store the minimum cost up to each relevant point, and for each step, consider *all options* and choose the optimal one. This pattern appears in problems like coin change, word segmentation, and others dealing with "covering" with the fewest or cheapest resources.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Coin Change(coin-change) (Medium)
+- Most Expensive Item That Can Not Be Bought(most-expensive-item-that-can-not-be-bought) (Medium)

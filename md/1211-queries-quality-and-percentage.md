@@ -144,3 +144,9 @@ def queries_quality_and_percentage(queries):
 
 ### Summary
 This problem uses the **group by and aggregation** pattern common in SQL and analytics interviews. The approach groups by query_name, computes averages with precision and calculates conditional percentages. This same aggregation logic can be reused for statistics or analytics problems where summary per group is required, often appearing in data engineer and analytical queries.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Percentage of Users Attended a Contest(percentage-of-users-attended-a-contest) (Easy)

@@ -131,3 +131,8 @@ def most_friends(friend_requests):
 ### Summary
 
 This is a **hash map counting** problem, similar to frequency count or finding top users in a dataset. The trick is to process **both columns** per row and aggregate friend counts symmetrically. Pattern generalizes to problems where relations form undirected graphs, and the goal is to find the node(s) with the highest degree.
+
+### Tags
+Database(#database)
+
+### Similar Problems

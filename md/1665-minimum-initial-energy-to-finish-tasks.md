@@ -68,3 +68,8 @@ def minimumEffort(tasks):
 
 ### Summary
 This solution uses **greedy sorting** by (minimum - actual) to minimize the "reserve" needed at every step, ensuring all tasks can be completed in some order. It's a classic greedy + prefix sum pattern.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

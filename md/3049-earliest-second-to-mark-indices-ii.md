@@ -113,3 +113,8 @@ def earliest_second_to_mark_indices(nums):
 
 ### Summary
 This problem uses the **binary search on answer** coding pattern: we guess the minimal second t, and for each guess, perform a greedy/feasibility check. This pattern is common when the goal is to minimize/maximize a numerical parameter with monotonic feasibility, such as schedule minimization, resource assignment, or batch processing. The technique is broadly applicable to various scheduling and time-bounded optimization problems.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

@@ -114,3 +114,9 @@ def maxSum(nums1, nums2):
 
 ### Summary
 This problem uses the **two pointers** technique, common for problems involving two sorted arrays. The greedy decisions at intersections and the efficient update of partial sums at each potential switch make this a classic optimization path problem. The same technique can be applied to other problems involving merging two sorted sequences, "take the greater sum" type of decisions, and processing optional jump/cross points. This is a key pattern for dealing with linear merges and conditional optimality when multiple paths are possible.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
+
+### Similar Problems
+- Maximum Score of a Node Sequence(maximum-score-of-a-node-sequence) (Hard)

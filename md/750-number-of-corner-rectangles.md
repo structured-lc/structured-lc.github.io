@@ -80,3 +80,8 @@ def countCornerRectangles(grid):
 
 ### Summary
 This problem uses the “count pairs” pattern, common in matrix, geometry, and combinatorics problems. The key realization is to reduce the search space from rectangles themselves to **pairs of rows where both have 1s in the same column(s)** — for each such pair, compute combinations. This approach is efficient, clear, and generalizes to other problems involving 2D grids and counting sub-rectangles/structures.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems

@@ -97,3 +97,10 @@ def countDigitOne(n: int) -> int:
 ### Summary
 
 This problem uses the **digit-place counting pattern**—a classic interview technique to efficiently count digit appearances without brute force. It's generic and adaptable, for example, to count any digit, solve similar "digit sum" problems, or answer how often a pattern appears in a number range. This technique is often found in digital root, digit DP, and base conversion interview problems.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Recursion(#recursion)
+
+### Similar Problems
+- Factorial Trailing Zeroes(factorial-trailing-zeroes) (Medium)
+- Digit Count in Range(digit-count-in-range) (Hard)

@@ -111,3 +111,14 @@ This problem demonstrates a classic **Dynamic Programming + Multiple Pointers** 
 - We build up the solution using previously computed values and avoid brute-force checking.  
 - This pattern appears in problems like generating super ugly numbers, merging sorted arrays, or other number sequence building blocks.  
 - Main takeaways: Use pointers to avoid duplicates and ensure sorted order.
+
+### Tags
+Hash Table(#hash-table), Math(#math), Dynamic Programming(#dynamic-programming), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Merge k Sorted Lists(merge-k-sorted-lists) (Hard)
+- Count Primes(count-primes) (Medium)
+- Ugly Number(ugly-number) (Easy)
+- Perfect Squares(perfect-squares) (Medium)
+- Super Ugly Number(super-ugly-number) (Medium)
+- Ugly Number III(ugly-number-iii) (Medium)

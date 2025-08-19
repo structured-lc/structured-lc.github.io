@@ -126,3 +126,11 @@ def minimumLines(points):
 This problem is a classic **bitmask DP (set cover)** on small sets, with state compression.  
 The core technique—DP on **subsets of coverage**—appears in problems like "minimum subset of sets to cover elements," "painting houses with color restrictions," and is a handy general tool for combinatorial search with small \(n\).  
 No greedy or direct geometry shortcut works here due to the "minimum" constraint, but bitmask DP is optimal for n ≤ 10.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Geometry(#geometry), Bitmask(#bitmask)
+
+### Similar Problems
+- Max Points on a Line(max-points-on-a-line) (Hard)
+- Min Cost to Connect All Points(min-cost-to-connect-all-points) (Medium)
+- Minimum Lines to Represent a Line Chart(minimum-lines-to-represent-a-line-chart) (Medium)

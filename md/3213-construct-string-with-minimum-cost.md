@@ -101,3 +101,10 @@ def minimumCost(target, words, costs):
 This problem uses the classic **DP on string construction** pattern, much like "Word Break II" or "Word Break" but with minimal-cost selection.  
 Building from the end (bottom-up), for each index, it explores all words that can be placed at that index, tracking the minimum cost.  
 It's a reusable approach where dynamic programming and careful pre-processing (prefix matching, optional Trie) are crucial. This pattern frequently appears in **combinatorial string DP**, and can handle various constraints (e.g., minimum steps, path reconstruction, or constraints on repeat use).
+
+### Tags
+Array(#array), String(#string), Dynamic Programming(#dynamic-programming), Suffix Array(#suffix-array)
+
+### Similar Problems
+- Minimum Number of Valid Strings to Form Target II(minimum-number-of-valid-strings-to-form-target-ii) (Hard)
+- Minimum Number of Valid Strings to Form Target I(minimum-number-of-valid-strings-to-form-target-i) (Medium)

@@ -145,3 +145,8 @@ def findXSumOfAllKLongSubarraysII(nums, k, x):
 ### Summary
 This problem is an advanced application of the **sliding window + top-k frequency map** pattern, pulling together hash tables (for freq counts) and ordered sets (for efficiently tracking the top x frequent items after each window step).  
 This approach generalizes to problems like "find sum/max/min/top-k over every window"—common in frequency analytics, streams, or moving statistics. Efficient windowed heap/multiset usage is a hallmark here.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

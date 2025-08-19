@@ -96,3 +96,10 @@ def isPerfectSquare(num: int) -> bool:
 
 ### Summary
 This is a classic **binary search** application on the answer space instead of an array. It efficiently checks if a number is a perfect square, avoiding floating-point imprecision, and is a great example of narrowing down possibilities based on monotonic numeric relationships. This binary search pattern can be applied to any scenario where you're searching for an integer answer based on a monotonically increasing or decreasing function—like finding square/cube roots, or solutions to quadratic/monotonic equations.
+
+### Tags
+Math(#math), Binary Search(#binary-search)
+
+### Similar Problems
+- Sqrt(x)(sqrtx) (Easy)
+- Sum of Square Numbers(sum-of-square-numbers) (Medium)

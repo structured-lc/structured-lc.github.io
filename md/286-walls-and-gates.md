@@ -148,3 +148,16 @@ def wallsAndGates(rooms):
 
 ### Summary
 This problem is a classic **multi-source BFS** on a grid, a core technique for shortest distance mapping with multiple sources. It’s similar to “rotting oranges”, “nearest exit in maze”, and other shortest-path-from-multiple-starts grid problems. It's highly applicable in pathfinding, networks, or map navigation interview scenarios and tests one's ability to optimize traversal by thinking about the *reverse* approach—starting from the destination(s).
+
+### Tags
+Array(#array), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- Surrounded Regions(surrounded-regions) (Medium)
+- Number of Islands(number-of-islands) (Medium)
+- Shortest Distance from All Buildings(shortest-distance-from-all-buildings) (Hard)
+- Battleships in a Board(battleships-in-a-board) (Medium)
+- Robot Room Cleaner(robot-room-cleaner) (Hard)
+- Rotting Oranges(rotting-oranges) (Medium)
+- Count the Number of Houses at a Certain Distance I(count-the-number-of-houses-at-a-certain-distance-i) (Medium)
+- Count the Number of Houses at a Certain Distance II(count-the-number-of-houses-at-a-certain-distance-ii) (Hard)

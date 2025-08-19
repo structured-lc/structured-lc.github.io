@@ -79,3 +79,10 @@ def findCheapestPrice(n, flights, src, dst, k):
 
 ### Summary  
 This problem demonstrates a modified **Bellman-Ford** dynamic programming approach for shortest path with bounded stops—a variation not directly handled by Dijkstra’s algorithm because of the extra constraint. The technique of iterating k+1 times and using backup arrays ensures correctness under the stop constraint. This pattern is commonly used in **"shortest path with extra constraints"** problems, appearing in networking and itinerary-planning contexts.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Maximum Vacation Days(maximum-vacation-days) (Hard)
+- Minimum Cost to Reach City With Discounts(minimum-cost-to-reach-city-with-discounts) (Medium)

@@ -101,3 +101,9 @@ def array_of_objects_to_matrix(arr):
 This problem uses the **recursion + hashmap flattening** pattern, central for any serialization of nested data.  
 Identifying unique paths as columns and organizing data accordingly is a common ETL/data wrangling problem, applicable to JSON-to-table conversion, log flattening, and spreadsheet construction.  
 The key details are path management, missing value handling, and column ordering.
+
+### Tags
+
+### Similar Problems
+- JSON Deep Equal(json-deep-equal) (Medium)
+- Convert Object to JSON String(convert-object-to-json-string) (Medium)

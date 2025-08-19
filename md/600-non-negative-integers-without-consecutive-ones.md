@@ -104,3 +104,12 @@ def findIntegers(n):
 This problem uses the **digit dynamic programming** pattern, closely related to counting binary strings with forbidden substrings.  
 By relating counts to the Fibonacci sequence and processing bit-by-bit, the code achieves efficient O(log n) complexity—typical in problems with constraints on binary patterns.  
 This approach generalizes to various forbidden patterns and is very common in advanced combinatorial counting and problems involving numbers with limited digits/bit patterns.
+
+### Tags
+Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- House Robber(house-robber) (Medium)
+- House Robber II(house-robber-ii) (Medium)
+- Ones and Zeroes(ones-and-zeroes) (Medium)
+- Generate Binary Strings Without Adjacent Zeros(generate-binary-strings-without-adjacent-zeros) (Medium)

@@ -129,3 +129,9 @@ def distanceK(root, target, K):
 This problem is a classic "convert tree to graph, then BFS for shortest distances" pattern.  
 It uses *graph traversal logic* (BFS), with added pre-processing (parent pointers via DFS) to enable "undirected" movement between tree nodes.  
 This approach appears in problems involving shortest paths, friend circles, social networks, and can be adapted to any structure where two-way movement is required but links are not explicitly stored.
+
+### Tags
+Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Amount of Time for Binary Tree to Be Infected(amount-of-time-for-binary-tree-to-be-infected) (Medium)

@@ -118,3 +118,11 @@ class NumArray:
 
 ### Summary
 This problem uses the classic **prefix sum + update** pattern, commonly solved using a Fenwick Tree (Binary Indexed Tree) or Segment Tree for efficient range query and point updates. The BIT provides logarithmic time for both operations, balancing speed with straightforward implementation. The pattern is widely applicable in scenarios where you need frequent updates and fast range aggregations, such as time series analytics, real-time data dashboards, and many competitive programming problems.
+
+### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer), Design(#design), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
+
+### Similar Problems
+- Range Sum Query - Immutable(range-sum-query-immutable) (Easy)
+- Range Sum Query 2D - Mutable(range-sum-query-2d-mutable) (Medium)
+- Shifting Letters II(shifting-letters-ii) (Medium)

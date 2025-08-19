@@ -103,3 +103,8 @@ This problem is a classic **DP with state: "What is my best outcome starting fro
 The core pattern is looking ahead to all possible options (i.e., “try all jumps”) and caching solutions for overlapping subproblems — a familiar pattern in "hopping/jump game" style DP.  
 Such problems frequently arise in game theory, "choose your own adventure" scoring, or even multi-stage scheduling with cost-to-go.  
 The O(n²) table-filling solution is easy to implement and debug, and the pattern is common in interview DP questions. If further constraints were given, monotonic stack or greedy may further optimize.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems

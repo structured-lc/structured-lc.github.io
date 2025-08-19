@@ -99,3 +99,9 @@ def minimumTimeToInitialState(word: str, k: int) -> int:
 This is a classic **string rotation**/simulation problem, optimized by recognizing periodicity. The approach here is related to checking for the order of a rotation operation, and appears in many cycle-detection and periodicity string questions.  
 Patterns: **Simulation**, **String Matching**, **Rotation**, **Cyclic pattern detection**.  
 Such techniques generalize to cycle problems, or modular arithmetic in array/string rotations.
+
+### Tags
+String(#string), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
+
+### Similar Problems
+- Longest Happy Prefix(longest-happy-prefix) (Hard)

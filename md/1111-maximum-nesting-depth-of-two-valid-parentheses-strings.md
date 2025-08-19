@@ -99,3 +99,9 @@ def maxDepthAfterSplit(seq):
 
 ### Summary
 This is a **parity, greedy, or depth splitting pattern** problem: Assign parentheses to two groups by alternating their assignment at each depth level, thereby balancing the nesting as evenly as possible. This approach avoids extra stack usage and is a common trick in parentheses splitting and depth minimization, and can be adapted to similar problems where grouping at balanced depths is needed.
+
+### Tags
+String(#string), Stack(#stack)
+
+### Similar Problems
+- Maximum Nesting Depth of the Parentheses(maximum-nesting-depth-of-the-parentheses) (Easy)

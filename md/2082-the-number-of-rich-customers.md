@@ -97,3 +97,9 @@ def number_of_rich_customers(store):
 This is a classic **set/build** or **filter and count distinct** problem.  
 Patterns in use include building a set for deduplication and filtering based on some property.  
 This type of logic is common in database queries and in-preprocessing data for analytics—whenever you need a unique count of something matching a criterion.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- The Winner University(the-winner-university) (Easy)

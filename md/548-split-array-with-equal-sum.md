@@ -111,3 +111,10 @@ def splitArray(nums):
 
 ### Summary
 This is a classic prefix sum + hash set problem, with **partitioning** and **subarray-sum manipulation.** The technique of fixing a middle cut and scanning both sides for possible splits (storing partial results in a set) is common in subarray partitioning problems and comes up in interview settings when optimizing nested loops. Variants can appear for any “split into parts with equal sum” style question, and the prefix sum trick is broadly reusable.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Fair Distribution of Cookies(fair-distribution-of-cookies) (Medium)
+- Number of Ways to Split a String(number-of-ways-to-split-a-string) (Medium)

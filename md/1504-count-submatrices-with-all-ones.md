@@ -62,3 +62,9 @@ def numSubmat(mat):
 
 ### Summary
 A **histogram-based matrix-DP** pattern, similar to maximal rectangle and largest rectangle in histogram, but adapted for counting instead of maximal area. Useful for counting structured subarrays/submatrices that satisfy a certain property.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Stack(#stack), Matrix(#matrix), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Count Submatrices With Equal Frequency of X and Y(count-submatrices-with-equal-frequency-of-x-and-y) (Medium)

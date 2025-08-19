@@ -97,3 +97,12 @@ def setZeroes(matrix):
 
 ### Summary  
 This problem applies the **in-place marking pattern**: reusing the matrix’s own rows/columns to track which rows and columns to zero, reducing space to O(1). This technique is broadly applicable for matrix-in-place problems, such as marking visited nodes or propagating special flags. The main coding pattern here is *state compression by reusing input array cells*.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Matrix(#matrix)
+
+### Similar Problems
+- Game of Life(game-of-life) (Medium)
+- Number of Laser Beams in a Bank(number-of-laser-beams-in-a-bank) (Medium)
+- Minimum Operations to Remove Adjacent Ones in Matrix(minimum-operations-to-remove-adjacent-ones-in-matrix) (Hard)
+- Remove All Ones With Row and Column Flips II(remove-all-ones-with-row-and-column-flips-ii) (Medium)

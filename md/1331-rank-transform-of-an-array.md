@@ -62,3 +62,10 @@ def arrayRankTransform(arr: List[int]) -> List[int]:
 
 ### Summary
 This problem is a classic **coordinate compression** application and ranking pattern — sort unique values, map to ranks, then transform the original array accordingly. Common in problems involving normalization or value discretization.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting)
+
+### Similar Problems
+- Rank Transform of a Matrix(rank-transform-of-a-matrix) (Hard)
+- Find Target Indices After Sorting Array(find-target-indices-after-sorting-array) (Easy)

@@ -106,3 +106,8 @@ def maxSumRangeQuery(nums, requests):
 ### Summary
 This problem is an excellent example of how greedy and counting approaches can outperform brute-force permutations.  
 The key trick—counting how often each index is accessed using a difference array, then greedily assigning the largest values—can be applied to any resource allocation problem where weights are known in advance. It's a classic pattern for maximizing sums under reordering constraints.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting), Prefix Sum(#prefix-sum)
+
+### Similar Problems

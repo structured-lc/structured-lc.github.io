@@ -66,3 +66,10 @@ def minOperations(n):
 
 ### Summary
 Use the observation about pairing closest-to-farthest elements to the median. This is a common symmetric-pairing pattern, where you only need to process half the array and multiply out the difference. Pattern is similar to minimizing the cost to equalize via pairwise balancing.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Minimum Number of Operations to Make Arrays Similar(minimum-number-of-operations-to-make-arrays-similar) (Hard)
+- Minimum Operations to Make Array Equal II(minimum-operations-to-make-array-equal-ii) (Medium)

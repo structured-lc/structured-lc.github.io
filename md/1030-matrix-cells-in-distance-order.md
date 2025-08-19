@@ -86,3 +86,9 @@ def allCellsDistOrder(rows, cols, rCenter, cCenter):
 
 ### Summary  
 This problem uses a **bucket sort pattern** (grouping data by a computed property—in this case, Manhattan distance—to avoid explicit sorting). Alternatively, BFS is an example of using traversal order to impose structure. This pattern is common in grid pathfinding, spatial problems (e.g., flood fill, distance transforms), and problems requiring sorted output by a metric.
+
+### Tags
+Array(#array), Math(#math), Geometry(#geometry), Sorting(#sorting), Matrix(#matrix)
+
+### Similar Problems
+- Cells in a Range on an Excel Sheet(cells-in-a-range-on-an-excel-sheet) (Easy)

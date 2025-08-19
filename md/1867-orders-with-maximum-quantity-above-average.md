@@ -141,3 +141,8 @@ This problem is a classic **aggregation** and **filtering** pattern, common in S
 - Key patterns: grouping, calculating aggregates per group, comparing to a global aggregate.
 - The solution uses grouping and aggregation; can be seen in sales analytics, fraud detection, and user leaderboard problems.  
 - Know how to efficiently compute group-wise statistics, and then select on a global condition.
+
+### Tags
+Database(#database)
+
+### Similar Problems

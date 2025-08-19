@@ -92,3 +92,9 @@ def isOneEditDistance(s: str, t: str) -> bool:
 This approach uses a linear scan and **two pointers** to check if the two strings differ by exactly one edit, handling insert, delete, and replace in one pass.  
 It leverages the property that valid single-edit transformations occur when lengths differ by at most one and mismatches are limited to just one.  
 The pattern is **two-pointer** and **string compare**, a common technique applicable to many "edit distance" and diff-style problems.
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems
+- Edit Distance(edit-distance) (Medium)

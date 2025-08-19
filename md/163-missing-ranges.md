@@ -96,3 +96,10 @@ def findMissingRanges(nums, lower, upper):
 ### Summary
 The main pattern here is **two-pointer sliding intervals** through a sorted sequence. This is a classic "missing elements in sorted array" variant and can be adapted for ranges, merging intervals, or even for summary ranges of present values.  
 Knowing how to walk and compare against both ends of an array/range is useful for edge handling. This is frequently used in range summary or merging problems.
+
+### Tags
+Array(#array)
+
+### Similar Problems
+- Summary Ranges(summary-ranges) (Easy)
+- Find Maximal Uncovered Ranges(find-maximal-uncovered-ranges) (Medium)

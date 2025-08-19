@@ -77,3 +77,8 @@ Hint: Instead of summing, collect subsets. This is a classic backtracking proble
 ### Summary
 
 This problem is about generating all subsets of an array, computing the XOR total for each, and summing them. The chosen solution uses DFS/backtracking to explore all subsets, tracking the current XOR total. This pattern—building all subsets recursively—is common in many combinatorial problems. The approach is efficient for small input sizes and showcases recursion and bitwise manipulation, important topics for technical interviews.
+
+### Tags
+Array(#array), Math(#math), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Combinatorics(#combinatorics), Enumeration(#enumeration)
+
+### Similar Problems

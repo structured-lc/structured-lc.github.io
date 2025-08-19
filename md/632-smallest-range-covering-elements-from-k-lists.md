@@ -117,3 +117,9 @@ def smallestRange(nums: List[List[int]]) -> List[int]:
 This problem uses the **k-way merge** (multi-way heap) pattern, a classic approach for interleaving sorted lists efficiently.  
 Key insights include using a min-heap to always advance from the smallest current candidate, and tracking the maximum element seen in the window.  
 This pattern is widely applicable: merging logs from multiple sources, finding overlapping intervals, or synchronizing streams.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sliding Window(#sliding-window), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Minimum Window Substring(minimum-window-substring) (Hard)

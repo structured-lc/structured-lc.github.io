@@ -109,3 +109,14 @@ def max_palindromes(s: str, k: int) -> int:
 This problem is a classic application of interval dynamic programming with palindrome detection as a preprocessing step.  
 The approach combines a 2D table for quick palindrome checks and a 1D DP for optimal substructure over non-overlapping intervals.  
 The pattern—interval/substring-based DP with palindrome checking—arises frequently in Leetcode Hard/Medium DP problems, including those involving cuts, splits, and substring parsing (e.g., Palindrome Partitioning, Longest Palindromic Substring).
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
+
+### Similar Problems
+- Longest Palindromic Substring(longest-palindromic-substring) (Medium)
+- Palindrome Partitioning(palindrome-partitioning) (Medium)
+- Palindrome Partitioning II(palindrome-partitioning-ii) (Hard)
+- Palindrome Partitioning III(palindrome-partitioning-iii) (Hard)
+- Maximum Number of Non-Overlapping Substrings(maximum-number-of-non-overlapping-substrings) (Hard)
+- Palindrome Partitioning IV(palindrome-partitioning-iv) (Hard)

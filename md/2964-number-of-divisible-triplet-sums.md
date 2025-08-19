@@ -108,3 +108,8 @@ def countDivisibleTriplets(nums, d):
 We used a combinatorial counting approach by tracking modulo residue counts and sum-pairs, allowing us to efficiently count valid triplets in O(n × d) time and O(d) space.  
 This is a classic application of **prefix mod + bucket counting**, a pattern commonly used for subarray or tuple sum divisibility/counting problems.  
 The pair/triplet residue summing trick works for similar questions involving summing tuples with modular constraints.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

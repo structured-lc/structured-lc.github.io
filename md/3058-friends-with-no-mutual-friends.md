@@ -132,3 +132,8 @@ def friends_with_no_mutual_friends(friends):
 ### Summary
 This uses an **adjacency set + unique pairs** pattern, common in graph problems requiring neighbor lookups and set math.  
 The approach is efficient by leveraging set intersection tests for fast detection of mutual friends, and is applicable in social network analysis, common friends counting, or problems involving direct vs. indirect connections.
+
+### Tags
+Database(#database)
+
+### Similar Problems

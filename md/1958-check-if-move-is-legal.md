@@ -149,3 +149,8 @@ def checkMove(board, rMove, cMove, color):
 ### Summary
 This problem is a classic *simulation on a constant-sized grid*, leveraging direction vectors and careful step-by-step checks.  
 The pattern used—directional grid traversal with early pruning—is common in board game logic (like Othello/Reversi), and can be applied in any such 2D "scan in directions" problem (e.g., word search, connect-4, path-finding with local constraints). The brute-force is justified by the small, fixed grid size.
+
+### Tags
+Array(#array), Matrix(#matrix), Enumeration(#enumeration)
+
+### Similar Problems

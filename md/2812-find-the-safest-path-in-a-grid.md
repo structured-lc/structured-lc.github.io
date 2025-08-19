@@ -136,3 +136,9 @@ def maximumSafenessFactor(grid):
 ### Summary
 
 This is a **multi-source BFS for safety labeling**, followed by a **maximum-minimum-path BFS/Dijkstra** on a grid. The “maximize the minimal value on a path” pattern is a classic application for heap-based search. The approach is broadly useful for "optimal bottleneck path" problems and grid escape/avoidance scenarios.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
+
+### Similar Problems
+- Path With Minimum Effort(path-with-minimum-effort) (Medium)

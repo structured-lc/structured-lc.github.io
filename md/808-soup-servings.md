@@ -115,3 +115,8 @@ def soupServings(n: int) -> float:
 
 This problem uses *recursive DP with memoization*, a common pattern when evaluating all possible paths with overlapping subproblems, especially when combined with scaling (to reduce the state space).  
 Similar ideas appear in probability simulation, game theory DP, and problems involving probability trees or branching with optimal early cut-offs.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Probability and Statistics(#probability-and-statistics)
+
+### Similar Problems

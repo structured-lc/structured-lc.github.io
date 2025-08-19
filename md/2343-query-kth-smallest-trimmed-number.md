@@ -101,3 +101,8 @@ def smallestTrimmedNumbers(nums, queries):
 This is a **custom sorting and substring/trim** problem, often seen in interviews for string manipulation and sort customization.  
 It’s grounded in classic sort patterns (key = trimmed string, tiebreak = index), as well as preprocessing (for efficiency if many queries share trims).  
 Applicable to problems like "kᵗʰ smallest of custom element representation," or where lexicographical comparison of substrings matters.
+
+### Tags
+Array(#array), String(#string), Divide and Conquer(#divide-and-conquer), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Radix Sort(#radix-sort), Quickselect(#quickselect)
+
+### Similar Problems

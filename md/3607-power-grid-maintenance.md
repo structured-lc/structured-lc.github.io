@@ -91,3 +91,8 @@ def powerGridMaintenance(n, edges, removals):
 
 ### Summary
 This problem uses the disjoint-set structure (DSU/Union-Find) and the offline processing pattern. This approach is commonly applied to dynamic graph connectivity and rollback problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set)
+
+### Similar Problems

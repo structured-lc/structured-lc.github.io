@@ -123,3 +123,11 @@ def minimumOperations(grid):
 
 ### Summary
 The problem reduces to **column-wise coloring with an adjacency constraint**, using a small fixed palette. This is a classic **dynamic programming with state compression** pattern, where states represent per-column value choices. Variations of this approach appear in painting, scheduling, and grid tiling problems where adjacent elements face a constraint. Efficiently leveraging a small state domain is key.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
+
+### Similar Problems
+- Candy(candy) (Hard)
+- Distribute Candies(distribute-candies) (Easy)
+- Minimum Cost of Buying Candies With Discount(minimum-cost-of-buying-candies-with-discount) (Easy)

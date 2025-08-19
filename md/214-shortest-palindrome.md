@@ -92,3 +92,13 @@ def shortestPalindrome(s: str) -> str:
 
 ### Summary
 This problem is a classic example of **string matching and pattern finding**, often used to illustrate the power of the KMP algorithm in non-obvious settings. The key trick is to recognize the need for finding the **longest palindromic prefix**, which can be solved efficiently. This reduction—connecting palindrome structure to prefix-suffix matches—is a valuable technique in problems related to palindromes, string transformation, and minimal extension. The KMP failure table/prefix array is a recurring pattern for substring overlap and duplication detection.
+
+### Tags
+String(#string), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
+
+### Similar Problems
+- Longest Palindromic Substring(longest-palindromic-substring) (Medium)
+- Find the Index of the First Occurrence in a String(find-the-index-of-the-first-occurrence-in-a-string) (Easy)
+- Palindrome Pairs(palindrome-pairs) (Hard)
+- Maximum Deletions on a String(maximum-deletions-on-a-string) (Hard)
+- Smallest Palindromic Rearrangement I(smallest-palindromic-rearrangement-i) (Medium)

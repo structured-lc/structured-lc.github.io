@@ -94,3 +94,9 @@ def maximumMinimumPath(grid):
 
 ### Summary
 This problem uses the **modified Dijkstra pattern** (with the max-heap prioritizing the maximal minimum along the path). The logic is similar to Dijkstra’s shortest path but instead of summing costs, you track the minimum along the path and always expand the most promising path first. This pattern is common in path-finding where the cost is not additive, such as finding *paths that maximize the smallest step* (also appears as "minimum bottleneck path" in graph theory).
+
+### Tags
+Array(#array), Binary Search(#binary-search), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
+
+### Similar Problems
+- Path With Minimum Effort(path-with-minimum-effort) (Medium)

@@ -122,3 +122,7 @@ function checkIfInstanceOf(obj, classFunc) {
 This problem focuses on understanding **prototype chains** in JavaScript and how instance relationships are defined.  
 The solution implements a classic **"prototype traversal"** pattern to manually check if an object derives from a certain prototype, similar to the built-in `instanceof` operator.  
 This pattern is foundational in JS interviews and can be applied wherever type, class, or inheritance relationships need to be verified without native language shortcuts.
+
+### Tags
+
+### Similar Problems

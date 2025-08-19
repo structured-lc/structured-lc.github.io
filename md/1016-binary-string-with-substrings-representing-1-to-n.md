@@ -89,3 +89,8 @@ def queryString(s: str, n: int) -> bool:
 ### Summary
 This approach mixes **brute-force checking** for each target binary number with a safe early-exit for impossible cases based on the size of s relative to n.  
 The pattern is “string search of fixed-length targets” using direct substring queries. The problem illustrates the importance of matching achievable search space (limited by |s|) to required outcome set (numbers 1…n), and applies well to any task where needing to check coverage of all “short patterns” in a given string. This is a typical **brute-force with observation-based pruning** setup, commonly seen in substring coverage and pattern-detection problems.
+
+### Tags
+Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Sliding Window(#sliding-window)
+
+### Similar Problems

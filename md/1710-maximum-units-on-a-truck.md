@@ -78,3 +78,9 @@ The approach uses a classic **greedy algorithm** pattern, specifically “sort a
 This is the same scheme used for some knapsack-like problems where every box is indistinguishable within its type.  
 The key insight is sorting by value (units per box), which ensures optimality when each item is independently available in quantity.  
 This pattern appears in scheduling, container loading, inventory selection, and resource allocation problems.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems
+- Maximum Bags With Full Capacity of Rocks(maximum-bags-with-full-capacity-of-rocks) (Medium)

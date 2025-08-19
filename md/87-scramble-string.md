@@ -108,3 +108,8 @@ def isScramble(s1: str, s2: str) -> bool:
 
 ### Summary
 This problem uses **dynamic programming** over substrings (a classic 3D DP pattern – similar to problems like palindrome partitioning, regular expression matching). The key ideas are recursive decomposition and memoization. Recognizing overlapping subproblems and substructure is essential for scalability. The DP pattern here appears for many substring comparison or string segment problems, and is good practice for tricky DP interviews.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems

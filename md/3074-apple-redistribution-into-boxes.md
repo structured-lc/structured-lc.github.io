@@ -95,3 +95,8 @@ def minimumBoxes(apple, capacity):
 
 ### Summary
 This problem uses a common *greedy covering* pattern: to minimize the number of containers needed to reach a total, iteratively choose the biggest available options. The same approach applies to bin packing, picking coins for change, or scheduling with deadlines. It's optimal here since apples can be split freely; otherwise, variants may need dynamic programming (e.g. for indivisible items or costs). Greedy selection based on size/capacity/efficiency is a key tactic in many real-world packing and covering problems.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

@@ -83,3 +83,9 @@ def maximumMatchingIndices(nums1, nums2):
 This problem uses the **circular array matching** pattern and a brute-force sliding window approach.  
 It’s a classic use case for O(n²) search over all cyclic shifts, which is standard when constraints are moderate (n ≤ 3000).  
 Patterns here apply to other problems involving maximal overlap after rotations or circular shifts, and can be optimized using advanced algorithms for larger inputs.
+
+### Tags
+Array(#array), Two Pointers(#two-pointers), Simulation(#simulation)
+
+### Similar Problems
+- Rotate Array(rotate-array) (Medium)

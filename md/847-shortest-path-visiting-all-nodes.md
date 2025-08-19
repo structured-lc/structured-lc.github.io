@@ -85,3 +85,9 @@ Can you extend the approach for graphs with a much larger number of nodes?
 ### Summary  
 This is a classic state-enhanced BFS, using bitmasking for visited node tracking. It is efficient for n ≤ 12, solving the Traveling Salesman Problem (TSP) variant for unweighted graphs. The pattern—augmenting BFS/Dijkstra with a bitmask—is useful in problems where you need to track visited subsets or configuration states, such as Hamiltonian Path, TSP, or puzzle-solving. This is a common pattern in problems requiring simultaneous exploration of both node/position and state.
 ```
+
+### Tags
+Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Breadth-First Search(#breadth-first-search), Graph(#graph), Bitmask(#bitmask)
+
+### Similar Problems
+- Find the Minimum Cost Array Permutation(find-the-minimum-cost-array-permutation) (Hard)

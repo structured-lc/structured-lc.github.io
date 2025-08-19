@@ -108,3 +108,10 @@ def inverseCoinChange(nums):
 ### Summary
 
 This problem uses a **DP reconstruction** pattern, essentially simulating the knapsack/coin change process in reverse. The approach is greedy+DP: for each position, we check if the current denominations "explain" the number of ways, and add new denominations as soon as necessary. This reconstruction/greedy+DP idea is common in inverse DP problems and is applicable wherever you need to deduce the input to a DP table from its output—sometimes seen in jobs like process mining or error correction in combinatorial structures.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Coin Change(coin-change) (Medium)
+- Coin Change II(coin-change-ii) (Medium)

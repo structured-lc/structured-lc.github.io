@@ -101,3 +101,9 @@ This problem is a direct application of **combinatorics** and **modular exponent
 - Counting sequences under certain digit rules leads to product of choices per position.
 - Handling big exponents efficiently is a classic use-case for binary exponentiation, which is a common pattern in **fast power**, **modulo arithmetic**, and combinatorial counting problems with large constraints.
 This technique generalizes to a wide range of digit-constrained counting questions and is a must-know pattern for coding interviews.
+
+### Tags
+Math(#math), Recursion(#recursion)
+
+### Similar Problems
+- Count the Number of Arrays with K Matching Adjacent Elements(count-the-number-of-arrays-with-k-matching-adjacent-elements) (Hard)

@@ -80,3 +80,11 @@ def arrayNesting(nums):
 
 ### Summary
 This problem is a classic example of **cycle detection** in an array, and the most efficient implementation uses in-place marking to avoid extra space, ensuring each node is processed exactly once. This technique is common in problems with permutation arrays, mapping cycles, or when detecting repeated work is key to reducing time complexity. The pattern applies in cycle finding, linked-list cycle detection, and in O(1) space traversals wherever array values carry index semantics.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search)
+
+### Similar Problems
+- Nested List Weight Sum(nested-list-weight-sum) (Medium)
+- Flatten Nested List Iterator(flatten-nested-list-iterator) (Medium)
+- Nested List Weight Sum II(nested-list-weight-sum-ii) (Medium)

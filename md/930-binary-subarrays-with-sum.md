@@ -82,3 +82,12 @@ def numSubarraysWithSum(nums, goal):
 
 ### Summary
 This problem uses the prefix sum + hashmap pattern, a common and powerful approach for subarray-sum problems. This technique can be applied wherever we need to count the number of subarrays with a certain sum efficiently, particularly if the array contains only a few unique elements (like binary arrays). Recognizing the constraint of only 0s and 1s enables further optimization using sliding window in specific cases, but prefix sum with hashmap remains robust and general.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Count Subarrays With Score Less Than K(count-subarrays-with-score-less-than-k) (Hard)
+- Ways to Split Array Into Good Subarrays(ways-to-split-array-into-good-subarrays) (Medium)
+- Find All Possible Stable Binary Arrays I(find-all-possible-stable-binary-arrays-i) (Medium)
+- Find All Possible Stable Binary Arrays II(find-all-possible-stable-binary-arrays-ii) (Hard)

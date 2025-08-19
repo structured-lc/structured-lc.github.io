@@ -119,3 +119,10 @@ def maxStarSum(vals, edges, k):
 This problem leverages greedy selection and sorting: For each node, select the k neighbors with the highest positive contribution.  
 This **"top-k selection per node" pattern** frequently occurs in network optimization, clustering, and graph filtering tasks.  
 Heap-based optimizations can be used for denser graphs or tighter time constraints, and this technique applies generally whenever subgraph sums with local constraints are maximized.
+
+### Tags
+Array(#array), Greedy(#greedy), Graph(#graph), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Number Of Ways To Reconstruct A Tree(number-of-ways-to-reconstruct-a-tree) (Hard)
+- Find Center of Star Graph(find-center-of-star-graph) (Easy)

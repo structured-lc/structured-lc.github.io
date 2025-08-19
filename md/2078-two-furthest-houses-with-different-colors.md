@@ -85,3 +85,11 @@ def maxDistance(colors):
 
 ### Summary
 This problem is a classic **two-pointer/edge scan** technique, optimized to O(n) by leveraging the property that maximal distances in a linear array always involve the ends. Recognizing this pattern allows avoiding brute-force O(n²) checks and is commonly used in interview problems involving ranges or subsequence boundaries. This strategy applies in problems like "find max/min subarrays with constraints," or "largest gap under a property" in a 1D array.
+
+### Tags
+Array(#array), Greedy(#greedy)
+
+### Similar Problems
+- Replace Elements with Greatest Element on Right Side(replace-elements-with-greatest-element-on-right-side) (Easy)
+- Maximum Distance Between a Pair of Values(maximum-distance-between-a-pair-of-values) (Medium)
+- Maximum Difference Between Increasing Elements(maximum-difference-between-increasing-elements) (Easy)

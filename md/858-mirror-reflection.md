@@ -84,3 +84,8 @@ def mirrorReflection(p: int, q: int) -> int:
 
 ### Summary
 The problem is a classic example of **mathematical geometry and symmetry**. Instead of brute-force simulation, we use the properties of mirrors and the idea of "tiling" the room with straight-line paths. The approach leverages **GCD** and **LCM** for efficient computation. This pattern recurs in problems involving cyclical behaviors, periodic paths, or geometric optics, and can apply in billiards, repeating cycles, or lattice travels.
+
+### Tags
+Math(#math), Geometry(#geometry), Number Theory(#number-theory)
+
+### Similar Problems

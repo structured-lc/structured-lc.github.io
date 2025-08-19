@@ -109,3 +109,8 @@ def minCostToEqualizeArray(nums, cost1, cost2):
 This problem is a **greedy-math and transform/simulation** problem: minimize cost by optimizing the use of the cheaper operation (pair or single) per increment.  
 The key coding pattern is "maximize the cheaper operation subject to restrictions, then fill in the rest," a powerful pattern for many greedy task-splitting problems (e.g., coin change variant, work scheduling, resource allocation).  
 Here, careful handling of the parity and operation cost trade-off is essential for correctness and efficiency.
+
+### Tags
+Array(#array), Greedy(#greedy), Enumeration(#enumeration)
+
+### Similar Problems

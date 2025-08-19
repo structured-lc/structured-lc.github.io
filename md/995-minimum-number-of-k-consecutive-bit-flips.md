@@ -101,3 +101,13 @@ def minKBitFlips(nums, k):
 
 ### Summary
 The optimal approach is a greedy algorithm scanning left-to-right, using a difference array or flip marker to track the current parity caused by previous flips. This “interval flip + prefix sum” trick is common in range-flip or operation tracking interview problems. It effectively reduces expensive subarray operations to efficient O(1) state tracking at each step, and the logic applies broadly to interval manipulation and event processing patterns in competitive coding.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Queue(#queue), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Bulb Switcher(bulb-switcher) (Medium)
+- Minimum Time to Remove All Cars Containing Illegal Goods(minimum-time-to-remove-all-cars-containing-illegal-goods) (Hard)
+- Number of Distinct Binary Strings After Applying Operations(number-of-distinct-binary-strings-after-applying-operations) (Medium)
+- Minimum Operations to Make Binary Array Elements Equal to One I(minimum-operations-to-make-binary-array-elements-equal-to-one-i) (Medium)
+- Smallest Number With All Set Bits(smallest-number-with-all-set-bits) (Easy)

@@ -90,3 +90,8 @@ def getHappyString(n, k):
 
 ### Summary
 This problem is a clear example of the backtracking/DFS pattern, generating valid strings under a set of adjacency constraints. The optimization of stopping after reaching k total outputs, plus pruning repeats, keeps the solution efficient for reasonable n. This coding pattern also applies to permutation/genration questions with adjacency rules or lexicographical ordering.
+
+### Tags
+String(#string), Backtracking(#backtracking)
+
+### Similar Problems

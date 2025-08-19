@@ -68,3 +68,8 @@ def breakPalindrome(palindrome: str) -> str:
 
 ### Summary
 This solution uses a greedy **first non-a replacement** to minimize the new string. This is a standard "modify to break property, while keeping result minimal lexicographically" problem — a common pattern when working with palindromic or near-palindromic strings.
+
+### Tags
+String(#string), Greedy(#greedy)
+
+### Similar Problems

@@ -122,3 +122,7 @@ Key implementation choices:
 - Handling safe element removal  
 - Preserving order and supporting robust unsubscribe logic  
 Pattern is useful for decoupling code, plugin architectures, or any scenario needing observer/listener behavior.
+
+### Tags
+
+### Similar Problems

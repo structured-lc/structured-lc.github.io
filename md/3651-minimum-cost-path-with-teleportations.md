@@ -106,3 +106,7 @@ def minCostPathWithTeleportation(grid, k):
 
 ### Summary
 This problem is a **multi-state shortest path** challenge extending the standard DP grid (min-path-sum) with a special "global jump" or teleport operation, handled as Dijkstra with an extra state. The pattern is common in graph problems involving resource-limited power-ups (like teleportations, edge reversals, or special free moves). Variants appear in competitive programming and in game state design, wherever cost-limited "jumps" or conversions are allowed.
+
+### Tags
+
+### Similar Problems

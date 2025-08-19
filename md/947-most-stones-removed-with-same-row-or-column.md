@@ -87,3 +87,9 @@ def removeStones(stones):
 ### Summary
 This problem is a classic **connected components counting** applied to a grid, often solved with **DFS or Union Find (DSU)**. The key idea is recognizing removals depend on groupings, and in any group, all but one can be removed.  
 This pattern (grouping by connections, counting components, removing all but one item) is common in union-find/DSU and graph traversal problems. It applies in network connectivity, friend circles, islands in grid, and more.
+
+### Tags
+Hash Table(#hash-table), Depth-First Search(#depth-first-search), Union Find(#union-find), Graph(#graph)
+
+### Similar Problems
+- Minimum Moves to Get a Peaceful Board(minimum-moves-to-get-a-peaceful-board) (Medium)

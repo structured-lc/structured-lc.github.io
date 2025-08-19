@@ -92,3 +92,9 @@ def countPathsWithXorValue(grid: List[List[int]], k: int) -> int:
 
 ### Summary
 This problem is a classic example of **DP on grids with state** (the state here being current cell and the XOR so far). Instead of storing all paths, we count ways for each distinct partial result, using memoization. This “DP with extra parameter” approach and subproblem reuse is common in grid DP, path counting with constraints, word search with constraints, or mahjong-like game move counting.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Matrix(#matrix)
+
+### Similar Problems
+- Count Pairs With XOR in a Range(count-pairs-with-xor-in-a-range) (Hard)

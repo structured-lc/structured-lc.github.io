@@ -83,3 +83,12 @@ def lengthOfLongestSubsequence(nums, target):
 This problem is a variation on the **subset sum** dynamic programming pattern, with an added twist to track the **maximum length** of valid subsequences, rather than mere existence.  
 The in-place 1D DP array pattern shown here is common for knapsack-type problems, especially where selection (not arrangement) of elements matters.  
 This approach generalizes to problems like "subset sum minimum/maximum subset length" or "knapsack with cardinality constraints."
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Coin Change(coin-change) (Medium)
+- Coin Change II(coin-change-ii) (Medium)
+- Find the Maximum Length of Valid Subsequence I(find-the-maximum-length-of-valid-subsequence-i) (Medium)
+- Find the Maximum Length of Valid Subsequence II(find-the-maximum-length-of-valid-subsequence-ii) (Medium)

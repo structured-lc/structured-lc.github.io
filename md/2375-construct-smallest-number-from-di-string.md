@@ -84,3 +84,9 @@ def smallestNumber(pattern: str) -> str:
 ### Summary
 This problem is a classic example of *greedy + monotonic stack*. Whenever pattern constraints involve relative ordering ("increasing"/"decreasing") and you want the minimal or maximal solution, the stack approach allows you to defer selections until necessary.  
 Patterns like this are common in permutation, array, or greedy algorithm tasks, such as "Find Permutation" or "Valid Parenthesis String" problems.
+
+### Tags
+String(#string), Backtracking(#backtracking), Stack(#stack), Greedy(#greedy)
+
+### Similar Problems
+- DI String Match(di-string-match) (Easy)

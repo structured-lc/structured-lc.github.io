@@ -88,3 +88,8 @@ def countSeniors(details):
 
 ### Summary
 This approach demonstrates the **array traversal and string parsing pattern**, often used when data is encoded in a uniform way. It’s a straightforward pass-through with substring access, which can be applied to similar fixed-format parsing problems (e.g., reading logs, simple file formats, or any record-based processing). No extra structures or optimization is needed due to the simplicity and constraints of the task.
+
+### Tags
+Array(#array), String(#string)
+
+### Similar Problems

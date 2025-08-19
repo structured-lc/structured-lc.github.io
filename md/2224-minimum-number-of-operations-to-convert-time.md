@@ -81,3 +81,11 @@ def convertTime(current: str, correct: str) -> int:
 
 ### Summary
 This problem is a **greedy** time-conversion scenario. The key insight is to work from largest to smallest increments to minimize operation count, a common pattern in making change (like counting coins in currency problems), thus it’s broadly useful for "min operations with limited choices" style problems.
+
+### Tags
+String(#string), Greedy(#greedy)
+
+### Similar Problems
+- Coin Change(coin-change) (Medium)
+- Design an ATM Machine(design-an-atm-machine) (Medium)
+- Count Days Spent Together(count-days-spent-together) (Easy)

@@ -135,3 +135,9 @@ def highest_grade_for_each_student(enrollments):
 
 ### Summary
 This approach uses a common grouping and aggregation pattern—"Group By then Aggregate/Filter"—which is widely used in database queries and in coding for problems involving classification and finding maximum/minimum per group. It's efficient (O(n)) and easily adapts to related group-aggregate problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Department Highest Salary(department-highest-salary) (Medium)

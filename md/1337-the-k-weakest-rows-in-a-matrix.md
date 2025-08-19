@@ -69,3 +69,8 @@ def kWeakestRows(mat: List[List[int]], k: int) -> List[int]:
 
 ### Summary
 This is a counting and sorting problem. Binary search leverages the 1s-before-0s pattern for optimal performance. Useful for row-ranking or top-k min/max selection tasks.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
+
+### Similar Problems

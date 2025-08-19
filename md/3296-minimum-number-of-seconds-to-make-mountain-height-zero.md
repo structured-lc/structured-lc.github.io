@@ -114,3 +114,8 @@ def minimumSecondsToZero(mountainHeight, workerTimes):
 
 ### Summary
 This problem uses **binary search on the answer** combined with a math formula (quadratic root) to quickly assign maximal workload to each worker within a time window. The pattern applies broadly to problems where work can be split among agents with increasing or non-uniform cost per unit, and is common in **scheduling, parallel processing load balancing, and capacity planning**.
+
+### Tags
+Array(#array), Math(#math), Binary Search(#binary-search), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems

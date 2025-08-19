@@ -117,3 +117,9 @@ def gameOfLife(board):
 
 ### Summary
 This approach leverages **in-place matrix encoding** as a space-efficient simulation pattern for problems where cell state transitions depend on neighbors. The trick of marking state changes with encoded values during an update sweep, then finalizing in a second pass, shows up in several grid or board game simulations and cellular automata. This general pattern of performing in-place updates while retaining access to the original state is broadly applicable in stateful 2D grid problems.
+
+### Tags
+Array(#array), Matrix(#matrix), Simulation(#simulation)
+
+### Similar Problems
+- Set Matrix Zeroes(set-matrix-zeroes) (Medium)

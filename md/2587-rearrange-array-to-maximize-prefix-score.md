@@ -85,3 +85,9 @@ def maxScore(nums):
 
 ### Summary
 This problem is a classic example of the *greedy* pattern: maximize some property step by step (here, prefix sum staying positive as long as possible). By sorting descending and accumulating, we achieve the most positive prefix sums. This “delay the negatives” idea comes up frequently in dynamic programming and greedy competitive programming problems.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Two City Scheduling(two-city-scheduling) (Medium)

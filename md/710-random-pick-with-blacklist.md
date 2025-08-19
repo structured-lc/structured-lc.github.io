@@ -127,3 +127,11 @@ class Solution:
 
 ### Summary
 This approach uses **remapping with a hashmap** to simulate random sampling from a set with exclusions, without the overhead of explicitly storing allowed numbers. The core pattern is **index remapping** and is a powerful technique when needing random selection under constraints on very large neighborhoods with sparse exceptions. This idea appears in sampling, shuffling, and problems involving random access while skipping forbidden elements.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Binary Search(#binary-search), Sorting(#sorting), Randomized(#randomized)
+
+### Similar Problems
+- Random Pick Index(random-pick-index) (Medium)
+- Random Pick with Weight(random-pick-with-weight) (Medium)
+- Find Unique Binary String(find-unique-binary-string) (Medium)

@@ -108,3 +108,12 @@ def removeNodes(head: ListNode) -> ListNode:
 This problem uses the classic "reverse, process, reverse" pattern to simulate a right-to-left scan in a singly-linked list, enabling a one-pass in-place solution.  
 Filtering nodes based on the maximum-to-right value comes up in various 'remove inferior elements' questions and is related to monotonic stack and reverse traversal techniques.  
 This is a great example of space-efficient data structure traversal and relinking, and the monotonic stack approach also applies to problems like Largest Rectangle in Histogram and Stock Span.
+
+### Tags
+Linked List(#linked-list), Stack(#stack), Recursion(#recursion), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Reverse Linked List(reverse-linked-list) (Easy)
+- Delete Node in a Linked List(delete-node-in-a-linked-list) (Medium)
+- Next Greater Element I(next-greater-element-i) (Easy)
+- Delete Nodes From Linked List Present in Array(delete-nodes-from-linked-list-present-in-array) (Medium)

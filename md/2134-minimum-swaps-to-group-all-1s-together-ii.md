@@ -107,3 +107,10 @@ def minSwaps(nums):
 ### Summary
 This is a classic **sliding window** pattern, extended to circular data by **array duplication**. It's O(n) and extremely efficient.  
 This technique can be applied to many window-based search or counting problems on circular arrays, including maximum/minimum sums, grouping characters, or subarray/window-based optimizations.
+
+### Tags
+Array(#array), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Minimum Swaps to Group All 1's Together(minimum-swaps-to-group-all-1s-together) (Medium)
+- Time Needed to Rearrange a Binary String(time-needed-to-rearrange-a-binary-string) (Medium)

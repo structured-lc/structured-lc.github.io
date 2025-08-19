@@ -113,3 +113,16 @@ def findKthLargest(nums, k):
 ### Summary
 This problem uses the **Quickselect** pattern—an efficient selection-based partition similar to Quicksort—to find the kᵗʰ largest element without fully sorting the array. Quickselect demonstrates a common interview technique for partial sorting or selection, and is widely applicable to "top k" or "ranked order" problems.  
 A **min-heap approach** is also commonly used for streaming data or when performance guarantees are more important than average-case speed.
+
+### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Quickselect(#quickselect)
+
+### Similar Problems
+- Wiggle Sort II(wiggle-sort-ii) (Medium)
+- Top K Frequent Elements(top-k-frequent-elements) (Medium)
+- Third Maximum Number(third-maximum-number) (Easy)
+- Kth Largest Element in a Stream(kth-largest-element-in-a-stream) (Easy)
+- K Closest Points to Origin(k-closest-points-to-origin) (Medium)
+- Find the Kth Largest Integer in the Array(find-the-kth-largest-integer-in-the-array) (Medium)
+- Find Subsequence of Length K With the Largest Sum(find-subsequence-of-length-k-with-the-largest-sum) (Easy)
+- K Highest Ranked Items Within a Price Range(k-highest-ranked-items-within-a-price-range) (Medium)

@@ -125,3 +125,8 @@ def user_activities_within_time_bounds(sessions: List[List]) -> List[int]:
 
 ### Summary
 This is a classic **group-by/sort + sliding window** pattern. Group and sort by keys to efficiently find qualifying pairs in O(n log n) time. The grouping/sorting by (user_id, session_type) is common in data-log analytics questions. Patterns here apply to session analysis, event sequence correlation, and many temporal database problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

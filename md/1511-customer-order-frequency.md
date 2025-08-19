@@ -51,3 +51,8 @@ GROUP BY customer_id;
 
 ### Summary
 This is a classic SQL aggregation pattern: group by a key, compute max/min/sum for each group. This pattern extends to many reporting/database analytics interview problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

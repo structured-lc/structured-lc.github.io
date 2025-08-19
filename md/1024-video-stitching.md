@@ -83,3 +83,8 @@ def videoStitching(clips, T):
 
 ### Summary
 This problem uses a **greedy interval covering** pattern, specifically by always extending coverage as far as possible at each step. This approach is common in other greedy "cover" problems like Jump Game II, activity selection, and scheduling. Recognizing the pattern enables an efficient solution that avoids exhaustive search and works for large inputs.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
+
+### Similar Problems

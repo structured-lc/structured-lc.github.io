@@ -126,3 +126,8 @@ def fractionToDecimal(numerator: int, denominator: int) -> str:
 
 ### Summary
 This problem uses a **long division simulation with remainder tracking**, a key method for detecting cycles in decimals. The main insight is mapping each remainder to its position, inserting parentheses when a repeat occurs. This same approach helps in converting fractions to decimals with cycles, and is a pattern useful in problems requiring detection of cycles or repeats within computational processes — such as in modulo- or state-tracking simulations.
+
+### Tags
+Hash Table(#hash-table), Math(#math), String(#string)
+
+### Similar Problems

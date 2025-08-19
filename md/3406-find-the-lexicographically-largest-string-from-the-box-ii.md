@@ -105,3 +105,8 @@ def answerString(word: str, numFriends: int) -> str:
 
 ### Summary
 This problem is a classic instance of **sliding window on strings**: find the largest contiguous substring of a certain length, which is an efficient pattern for extracting maximal substrings. The reasoning leverages constraints on how splits can be made, focusing the search to only the meaningful window sizes. Similar patterns occur in substring, windowing problems, and bioinformatics (finding repeated motifs).
+
+### Tags
+Two Pointers(#two-pointers), String(#string)
+
+### Similar Problems

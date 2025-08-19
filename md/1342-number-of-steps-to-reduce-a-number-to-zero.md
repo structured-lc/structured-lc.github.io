@@ -77,3 +77,10 @@ def numberOfSteps(num: int) -> int:
 
 ### Summary
 This problem is a classic simulation problem that can be solved using a basic loop and conditional statements. It also demonstrates how to recognize special patterns (halving, decrementing by one), and introduces bit manipulation for possible optimization. The coding template follows the simulation pattern, which is common for problems where the solution follows stepwise instructions. This logic is broadly applicable in digital operations, games, or scenarios where you repeatedly apply basic rules until a goal is met.
+
+### Tags
+Math(#math), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Minimum Moves to Reach Target Score(minimum-moves-to-reach-target-score) (Medium)
+- Count Operations to Obtain Zero(count-operations-to-obtain-zero) (Easy)

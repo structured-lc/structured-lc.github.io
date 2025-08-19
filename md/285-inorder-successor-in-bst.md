@@ -109,3 +109,11 @@ This problem utilizes the **BST property** that all right-side descendants are g
 It follows a classic “candidate update” pattern — whenever a node is greater than `p`, consider it and search left for a better fit.  
 This approach avoids full traversal and unnecessary extra space, making it ideal for large BSTs.  
 The pattern is broadly used in BST problems involving “closest value” or “range” searches.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Binary Tree Inorder Traversal(binary-tree-inorder-traversal) (Easy)
+- Binary Search Tree Iterator(binary-search-tree-iterator) (Medium)
+- Inorder Successor in BST II(inorder-successor-in-bst-ii) (Medium)

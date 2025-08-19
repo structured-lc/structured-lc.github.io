@@ -97,3 +97,9 @@ class MovingAverage:
 
 ### Summary
 This is a classic *sliding window* problem employing a fixed-size queue and a running sum, a common approach for real-time analytics over streaming data. Patterns here generalize to moving sums, windowed statistics, signal processing, and online algorithms where you only care about the latest k values and need O(1) efficiency per update.
+
+### Tags
+Array(#array), Design(#design), Queue(#queue), Data Stream(#data-stream)
+
+### Similar Problems
+- K Radius Subarray Averages(k-radius-subarray-averages) (Medium)

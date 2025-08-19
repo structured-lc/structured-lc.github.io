@@ -98,3 +98,9 @@ def largestSquareArea(bottomLeft, topRight):
 
 ### Summary
 This problem uses the classic geometry pattern of finding the intersection area between pairs of rectangles, then extracting a maximal inscribed square using min(width, height). It's a brute-force pair search (n²), but each step is fast and draws on the key realization that the maximal axis-aligned square within a rectangle is determined by its shorter side. This technique is widely applicable to other intersection, range, or containment queries in 2D geometry.
+
+### Tags
+Array(#array), Math(#math), Geometry(#geometry)
+
+### Similar Problems
+- Rectangle Area(rectangle-area) (Medium)

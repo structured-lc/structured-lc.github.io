@@ -93,3 +93,8 @@ def semiOrderedPermutation(nums):
 
 ### Summary
 This problem reduces to finding the minimum moves needed to bring 1 to the front and n to the end using **adjacent swaps**. The pattern is a classic **greedy + index calculation** frequently seen in permutation adjustment and minimum swaps problems. This approach—focusing just on the positions of the most crucial values—applies to a range of similar interview questions involving rearrangement with minimal moves.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems

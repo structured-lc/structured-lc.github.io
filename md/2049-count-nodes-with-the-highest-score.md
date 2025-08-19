@@ -130,3 +130,11 @@ def countHighestScoreNodes(parents):
 
 ### Summary
 This is a classic "tree DP", specifically using a postorder DFS to aggregate and propagate subtree sizes bottom-up. The key insight is that after removing any node, the sizes of the resulting forests can be written as the sizes of its child subtrees and the “rest of the tree,” enabling O(n) calculation. This pattern (postorder aggregation, then use of these aggregations for scoring) is common in problems involving subtree removals, rerooting, or partitioning trees.
+
+### Tags
+Array(#array), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Sum of Distances in Tree(sum-of-distances-in-tree) (Hard)
+- Delete Nodes And Return Forest(delete-nodes-and-return-forest) (Medium)
+- Maximum Product of Splitted Binary Tree(maximum-product-of-splitted-binary-tree) (Medium)

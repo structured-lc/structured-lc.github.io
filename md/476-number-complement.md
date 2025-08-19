@@ -97,3 +97,8 @@ def findComplement(num: int) -> int:
 
 ### Summary
 We used **bit manipulation** to dynamically generate a mask of all 1s matching the bit length of the input and then flipped the bits using XOR, all in O(log n) time and O(1) space. This approach is a classic example of binary manipulation, widely applicable to problems that require flipping bits, finding number complements, and masking bits up to the most significant 1.
+
+### Tags
+Bit Manipulation(#bit-manipulation)
+
+### Similar Problems

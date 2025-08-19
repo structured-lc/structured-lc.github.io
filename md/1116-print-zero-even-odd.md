@@ -104,3 +104,10 @@ class ZeroEvenOdd:
 
 ### Summary
 This problem is a classic example of the **Thread Coordination/Alternation** pattern using **semaphores**. It requires precise ordering of actions by different threads, a common need in producer-consumer or reader-writer problems. This pattern applies broadly for synchronizing threads for interleaved or round-robin output, and can be adapted for more complex concurrent workflows.
+
+### Tags
+Concurrency(#concurrency)
+
+### Similar Problems
+- Print FooBar Alternately(print-foobar-alternately) (Medium)
+- Fizz Buzz Multithreaded(fizz-buzz-multithreaded) (Medium)

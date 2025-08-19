@@ -125,3 +125,8 @@ def movesToStamp(stamp: str, target: str):
 This is a **reverse greedy simulation** problem—by “unstamping” the target string to all '?'s, we can guarantee all dependencies are met.  
 It’s a common pattern in problems where building up directly is too constrained or introduces circular dependencies (e.g. topological sorting, certain dynamic programming cases).  
 Thinking in “reverse” is very powerful for reconstructing operations that have forward constraints.
+
+### Tags
+String(#string), Stack(#stack), Greedy(#greedy), Queue(#queue)
+
+### Similar Problems

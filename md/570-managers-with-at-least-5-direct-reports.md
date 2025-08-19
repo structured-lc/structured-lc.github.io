@@ -129,3 +129,8 @@ def find_managers(employee):
 
 ### Summary
 This problem showcases the “**self-join**” or “group-by and join” pattern for organizational hierarchy problems. It’s widely applicable in employee-manager reporting, ancestry trees, or any domain where direct relationships must be counted and matched back for full data retrieval. Efficient group-by and filtering logic is key for such relationship-aggregation queries, both for database SQL and in-memory data processing.
+
+### Tags
+Database(#database)
+
+### Similar Problems

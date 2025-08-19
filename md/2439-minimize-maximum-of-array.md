@@ -85,3 +85,11 @@ def minimizeArrayValue(nums):
 
 ### Summary
 This uses the classic prefix sum and greedy “min-max leveling” pattern, common in redistribution and “minimize maximum” type problems. The main insight is that the minimal maximal value possible is the maximum of ⌈(nums+...+nums[k])/(k+1)⌉ for all k. This approach applies to similar problems about distributing resources or leveling arrays under operation constraints.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Maximum Candies Allocated to K Children(maximum-candies-allocated-to-k-children) (Medium)
+- Minimum Speed to Arrive on Time(minimum-speed-to-arrive-on-time) (Medium)
+- Minimum Time to Complete Trips(minimum-time-to-complete-trips) (Medium)

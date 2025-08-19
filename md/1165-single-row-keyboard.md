@@ -78,3 +78,8 @@ def calculateTime(keyboard: str, word: str) -> int:
 This problem uses **hash mapping** for fast character index lookups and iteratively sums per-step distances—an example of preprocessing for fast repeated queries.  
 The pattern of “pre-map for O(1) lookups, then scan input” is common in string, counting, or simulation problems.  
 No complex data structures required, only careful mapping and accumulation.
+
+### Tags
+Hash Table(#hash-table), String(#string)
+
+### Similar Problems

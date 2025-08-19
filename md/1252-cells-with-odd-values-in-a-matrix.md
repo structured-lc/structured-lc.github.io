@@ -68,3 +68,8 @@ def oddCells(m, n, indices):
 
 ### Summary
 This is standard simulation or counting problem. The key insight is to count row/column increments, then determine odds by math, not by explicit simulation. Pattern is widely applicable for grid operations.
+
+### Tags
+Array(#array), Math(#math), Simulation(#simulation)
+
+### Similar Problems

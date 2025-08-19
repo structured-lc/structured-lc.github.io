@@ -108,3 +108,9 @@ def distinctColors(limit, queries):
 This problem exemplifies a **hash map counting** pattern: use one mapping to track per-item status, and one to aggregate statistics over classes of values (here, each color's ball count).  
 This is a very common approach used for efficient management of state, such as "number of distinct X in current window" (sliding window/counting problems), or dynamic class sizes.  
 Learning this pattern is extremely useful for handling “distinct” or “occurrences in groups” problems in arrays, queries, or streaming data.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Simulation(#simulation)
+
+### Similar Problems
+- Maximum Number of Balls in a Box(maximum-number-of-balls-in-a-box) (Easy)

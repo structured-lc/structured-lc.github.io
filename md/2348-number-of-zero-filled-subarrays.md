@@ -80,3 +80,12 @@ def zero_filled_subarray(nums):
 
 ### Summary
 This problem uses the **running sum / prefix streak** pattern, where we accumulate counts while scanning the array. Recognizing patterns in streaks and their contribution to the count is a common trick in substring/subarray counting problems (e.g., counting subarrays of a target sum, or longest consecutive sequence). The key insight is not to recount, but use incremental build-up.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems
+- Arithmetic Slices(arithmetic-slices) (Medium)
+- Number of Smooth Descent Periods of a Stock(number-of-smooth-descent-periods-of-a-stock) (Medium)
+- Length of the Longest Alphabetical Continuous Substring(length-of-the-longest-alphabetical-continuous-substring) (Medium)
+- Find Consecutive Integers from a Data Stream(find-consecutive-integers-from-a-data-stream) (Medium)

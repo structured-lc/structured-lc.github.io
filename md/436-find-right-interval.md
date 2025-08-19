@@ -262,3 +262,9 @@ def findRightIntervalHeap(intervals):
 
 ### Summary
 This problem demonstrates the power of combining sorting with binary search for efficient range queries. The key insight is recognizing that we need to find the smallest element in a sorted sequence that satisfies a condition, which is a classic binary search application. This pattern appears frequently in interval problems, scheduling algorithms, and computational geometry. Understanding how to preserve original indices while sorting and performing efficient lookups is crucial for many algorithmic challenges involving data transformation and queries.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Sorting(#sorting)
+
+### Similar Problems
+- Data Stream as Disjoint Intervals(data-stream-as-disjoint-intervals) (Hard)

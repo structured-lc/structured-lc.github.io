@@ -96,3 +96,10 @@ def minimumIndex(nums):
 This problem uses the **prefix counting** and **dominant frequency check** pattern.  
 The key insight is that, since there’s a unique guaranteed dominant, you only need to track it and its running frequency, not recalculate everything at every split.  
 This optimized linear scan is common in problems about **majority elements** or **prefix/suffix frequency**, and similar ideas show up in vote-counting, subarray magic-split, and divide-and-conquer frequency problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting)
+
+### Similar Problems
+- Majority Element(majority-element) (Easy)
+- Partition Array into Disjoint Intervals(partition-array-into-disjoint-intervals) (Medium)

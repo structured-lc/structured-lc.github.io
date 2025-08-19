@@ -148,3 +148,11 @@ ORDER BY user_id, product_id;
 This problem is a classic case of *grouping, aggregation, and ranking* within SQL (or similar patterns in Pandas).  
 The central technique is grouping to compute per-group metrics, then using window or ranking functions to filter to the maximal value(s) per group.  
 This "Top-N per group" or "Max-per-group" pattern shows up often in analytics queries, leaderboards, and reporting tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Product Sales Analysis I(product-sales-analysis-i) (Easy)
+- Product Sales Analysis II(product-sales-analysis-ii) (Easy)
+- Product Sales Analysis III(product-sales-analysis-iii) (Medium)

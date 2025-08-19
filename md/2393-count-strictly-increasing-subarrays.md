@@ -100,3 +100,9 @@ def count_strictly_increasing_subarrays(nums):
 
 ### Summary
 This problem uses a classic **sliding window/run tracking** pattern to efficiently count strictly increasing subarrays. It’s closely related to problems counting runs, monotonic subarrays, and prefix sums. The O(n) enumeration is widely applicable to any problem where a property must hold on all adjacent elements in a contiguous block.
+
+### Tags
+Array(#array), Math(#math), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Maximum Ascending Subarray Sum(maximum-ascending-subarray-sum) (Easy)

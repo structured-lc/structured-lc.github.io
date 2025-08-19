@@ -116,3 +116,10 @@ def reachableNodes(n: int, edges: List[List[int]], restricted: List[int]) -> int
 
 ### Summary
 This approach uses a standard **DFS traversal pattern** with careful handling of restricted nodes, which is very common in tree and graph traversal problems. Marking restricted nodes as non-reachable before traversal is a simple way to block off certain parts of the graph. This pattern is widely useful for any graph search or constraint-based traversal, such as "flood fill" problems, reachability with forbidden zones, or navigating permissions/access in networks.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
+
+### Similar Problems
+- Open the Lock(open-the-lock) (Medium)
+- Minimum Jumps to Reach Home(minimum-jumps-to-reach-home) (Medium)

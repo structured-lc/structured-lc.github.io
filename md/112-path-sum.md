@@ -108,3 +108,13 @@ def hasPathSum(root, targetSum):
 
 ### Summary
 This problem is a classic application of the **DFS traversal** pattern with an early exit condition. The recursive approach checks all root-to-leaf paths, ensuring the sum matches `targetSum` only at leaves. The same pattern is used in related problems like finding maximum root-to-leaf sums or collecting all root-to-leaf paths, demonstrating the power of recursion in binary tree problems.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Path Sum II(path-sum-ii) (Medium)
+- Binary Tree Maximum Path Sum(binary-tree-maximum-path-sum) (Hard)
+- Sum Root to Leaf Numbers(sum-root-to-leaf-numbers) (Medium)
+- Path Sum III(path-sum-iii) (Medium)
+- Path Sum IV(path-sum-iv) (Medium)

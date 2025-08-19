@@ -116,3 +116,8 @@ def countTrapezoids(points):
 This problem combines **geometry**, **combinatorics**, and **hash mapping** for parallel side detection, and requires careful exclusion of parallelograms.  
 It's an example of "geometry + hashing"—the same grouping-by-slope or angle pattern appears in problems like "Number of Boomerangs," "Number of Colinear Triplets," or fast parallelogram counting.  
 Handling properties like convexity, parallelism, and side length without brute force is crucial for efficient solutions to many geometry-with-points problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Geometry(#geometry)
+
+### Similar Problems

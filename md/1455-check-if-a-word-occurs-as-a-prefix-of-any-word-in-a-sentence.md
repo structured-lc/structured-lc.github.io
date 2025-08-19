@@ -73,3 +73,10 @@ def isPrefixOfWord(sentence, searchWord):
 ### Summary
 This problem uses the **string scanning pattern**: process each word in a sentence sequentially, checking a prefix condition.  
 It’s a classic for practicing loops, string slicing, and indexing (especially for 1-based counting). The approach can be applied whenever you need to check for a property within a collection linearly and return the index of the first matching element.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), String Matching(#string-matching)
+
+### Similar Problems
+- Counting Words With a Given Prefix(counting-words-with-a-given-prefix) (Easy)
+- Count Prefixes of a Given String(count-prefixes-of-a-given-string) (Easy)

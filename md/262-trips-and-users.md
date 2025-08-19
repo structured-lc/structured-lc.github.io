@@ -184,3 +184,11 @@ Common patterns:
 - Group-by and aggregate (sum/count)  
 - Rounding to two decimals  
 This type of logic appears in ride sharing/app analytics and is useful in operations dashboards or business reports.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Hopper Company Queries I(hopper-company-queries-i) (Hard)
+- Hopper Company Queries II(hopper-company-queries-ii) (Hard)
+- Hopper Company Queries III(hopper-company-queries-iii) (Hard)

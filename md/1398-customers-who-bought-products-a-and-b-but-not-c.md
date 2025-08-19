@@ -70,3 +70,8 @@ ORDER BY customer_id ASC;
 
 ### Summary
 This problem is a typical SQL aggregation "group by with filter per group" pattern. The CASE in SUM is a classic way to do boolean matching per product per user. Applicable wherever group-wise presence/absence queries are needed.
+
+### Tags
+Database(#database)
+
+### Similar Problems

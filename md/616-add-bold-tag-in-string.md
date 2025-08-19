@@ -102,3 +102,10 @@ This problem uses **string masking to mark match intervals** and then scan once 
 - Mark or collect interval locations for events.  
 - Merge/flatten those intervals.  
 - Output/aggregate over the original input using the marked locations.
+
+### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Trie(#trie), String Matching(#string-matching)
+
+### Similar Problems
+- Merge Intervals(merge-intervals) (Medium)
+- Tag Validator(tag-validator) (Hard)

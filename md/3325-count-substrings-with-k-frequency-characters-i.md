@@ -100,3 +100,8 @@ def count_substrings_with_k_freq(s: str, k: int) -> int:
 
 ### Summary
 This problem is a classic use-case of the sliding window technique with character frequencies: for every substring, maintain a window and check the frequency condition. The key patterns are sliding window for substring enumeration, and frequency counting for constraint checking. This approach is broadly applicable in substring problems with frequency or uniqueness requirements, such as "Longest Substring with At Least K Repeating Characters," "Substring with at most K Distinct Characters," and related string analysis problems.
+
+### Tags
+Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
+
+### Similar Problems

@@ -87,3 +87,9 @@ def maxSubarrayLength(nums, k):
 
 ### Summary
 This problem is a classic **variable-sized sliding window** pattern, leveraging a hash map to dynamically track frequencies as the window expands and contracts. The same technique is frequently used in substring/subarray problems involving frequency constraints (e.g., longest substring with at most k distinct letters, longest subarray with sum ≤ k).
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Longest Substring with At Least K Repeating Characters(longest-substring-with-at-least-k-repeating-characters) (Medium)

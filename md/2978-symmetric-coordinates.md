@@ -129,3 +129,8 @@ def find_symmetric_coordinates(coordinates):
 This problem uses the **hash-set lookup pattern** to efficiently find coordinate pairs based on symmetry.  
 The key is to model the symmetry, ensure only unique pairs by always storing (min, max), and avoid quadratic search using a set.  
 Variations of this approach are common in two-sum/two-pointer problems and set membership tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems

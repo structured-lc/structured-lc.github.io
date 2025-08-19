@@ -95,3 +95,7 @@ def expect(val):
 This problem uses closures/objects to encapsulate a value and return assertion methods for strict equality (`toBe`) and inequality (`notToBe`).  
 It's a classic demonstration of function closures and is similar to building basic testing frameworks.  
 The pattern can be applied when designing fluent assertion libraries or APIs requiring method chaining with context-capturing.
+
+### Tags
+
+### Similar Problems

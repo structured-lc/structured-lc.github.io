@@ -81,3 +81,14 @@ def maxAreaOfIsland(grid):
 
 ### Summary
 This is a classic graph traversal problem, applying DFS/BFS to connected components in grids. The approach also works for questions that require marking/visiting islands, counting island perimeters, or similar "flood fill" operations—key topics in grid and matrix interview questions.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
+
+### Similar Problems
+- Number of Islands(number-of-islands) (Medium)
+- Battleships in a Board(battleships-in-a-board) (Medium)
+- Island Perimeter(island-perimeter) (Easy)
+- Largest Submatrix With Rearrangements(largest-submatrix-with-rearrangements) (Medium)
+- Detonate the Maximum Bombs(detonate-the-maximum-bombs) (Medium)
+- Maximum Number of Fish in a Grid(maximum-number-of-fish-in-a-grid) (Medium)

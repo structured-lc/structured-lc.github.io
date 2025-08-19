@@ -105,3 +105,11 @@ def swapNodes(head: 'ListNode', k: int) -> 'ListNode':
 ### Summary
 This problem uses the common two-pointer technique for linked lists to find specific nodes in place without extra memory, which is a key interview pattern for singly linked lists.  
 It's useful for swapping or accessing nodes at relative positions and can be generalized to many in-place node manipulation problems, such as reversing nodes in k-groups.
+
+### Tags
+Linked List(#linked-list), Two Pointers(#two-pointers)
+
+### Similar Problems
+- Remove Nth Node From End of List(remove-nth-node-from-end-of-list) (Medium)
+- Swap Nodes in Pairs(swap-nodes-in-pairs) (Medium)
+- Reverse Nodes in k-Group(reverse-nodes-in-k-group) (Hard)

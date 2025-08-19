@@ -97,3 +97,8 @@ def relativeSortArray(arr1, arr2):
 
 ### Summary  
 This problem uses a classic sorting pattern customized by a given order array. The key is combining hashing for frequency counting and then ordering according to the reference array, followed by sorting leftovers. This technique is common in problems dealing with custom sorting conditions or frequency-based sorting (like top-K elements by frequency, or sorting by another sequence's order). It is efficient and leverages both hash maps and sorting in a combined approach.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Counting Sort(#counting-sort)
+
+### Similar Problems

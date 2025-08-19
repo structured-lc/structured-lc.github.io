@@ -141,3 +141,8 @@ def find_products_with_three_consecutive_digits(products):
 
 ### Summary
 This problem uses a classic **regex filtering** pattern—searching for structural patterns within strings. The key trick is ensuring **boundary conditions** (not part of a longer digit sequence). This generalizes to data cleaning, parsing, and text validation problems commonly found in data engineering and backend work.
+
+### Tags
+Database(#database)
+
+### Similar Problems

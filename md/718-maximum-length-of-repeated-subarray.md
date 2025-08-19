@@ -98,3 +98,12 @@ def findLength(nums1, nums2):
 ### Summary
 This problem uses the **Dynamic Programming** pattern commonly seen in "Longest Common Substring" problems. The key idea is to build solutions for subproblems (matching ends of subarrays) and carry those results forward, always maintaining the maximum.  
 This approach is widely applicable to other string/array comparison problems involving contiguous blocks and can be optimized for space if only the last result is needed.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window), Rolling Hash(#rolling-hash), Hash Function(#hash-function)
+
+### Similar Problems
+- Minimum Size Subarray Sum(minimum-size-subarray-sum) (Medium)
+- Longest Common Subpath(longest-common-subpath) (Hard)
+- Find the Maximum Length of a Good Subsequence II(find-the-maximum-length-of-a-good-subsequence-ii) (Hard)
+- Find the Maximum Length of a Good Subsequence I(find-the-maximum-length-of-a-good-subsequence-i) (Medium)

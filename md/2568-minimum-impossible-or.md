@@ -101,3 +101,8 @@ def minImpossibleOR(nums):
 ### Summary
 This problem is an example of a **bit manipulation / powers-of-two** pattern. The key realization is that the *OR* operation accumulates bits permanently, so the smallest impossible result is the lowest power of two not present.  
 This pattern appears in other "minimal unconstructible number" problems, such as subset sum questions or coin change. Constructing a set and iterating through powers of two is a reusable technique for similar constraints.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Brainteaser(#brainteaser)
+
+### Similar Problems

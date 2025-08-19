@@ -93,3 +93,11 @@ def missingInteger(nums):
 This question is an example of using **prefix scanning** and a **hash set for missing number search**, often seen for "first missing positive" type problems. The logic is a mix of sequential prefix finding and classic set-based membership testing.  
 It makes use of the **greedy** technique (longest valid prefix) and **set lookups** (hash-based existence check).  
 This pattern appears in array manipulation and simulation problems, especially where you need to "fast forward" to the smallest integer not represented in a set of encountered numbers.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting)
+
+### Similar Problems
+- Longest Common Prefix(longest-common-prefix) (Easy)
+- First Missing Positive(first-missing-positive) (Hard)
+- Next Greater Element I(next-greater-element-i) (Easy)

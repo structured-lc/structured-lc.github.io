@@ -100,3 +100,8 @@ class Solution:
 ### Summary
 This approach leverages the **random sampling with mapping trick** that simulates array "shuffling" via a hashmap, common in design problems requiring random selection without replacement. It's highly efficient for large matrices and can be adapted for other "random pick without replacement" scenarios.  
 Common patterns used: hash mapping, random sampling, simulating compact data structures for large/sparse grids.
+
+### Tags
+Hash Table(#hash-table), Math(#math), Reservoir Sampling(#reservoir-sampling), Randomized(#randomized)
+
+### Similar Problems

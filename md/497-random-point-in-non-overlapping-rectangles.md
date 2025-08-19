@@ -111,3 +111,10 @@ class Solution:
 
 ### Summary
 This solution uses the common technique of *prefix sums + binary search* to perform efficient weighted random selection. This pattern is widely useful, such as for: random sampling from discrete weighted distributions, random interval selection, and allocating probabilities proportionally to group sizes.
+
+### Tags
+Array(#array), Math(#math), Binary Search(#binary-search), Reservoir Sampling(#reservoir-sampling), Prefix Sum(#prefix-sum), Ordered Set(#ordered-set), Randomized(#randomized)
+
+### Similar Problems
+- Random Pick with Weight(random-pick-with-weight) (Medium)
+- Generate Random Point in a Circle(generate-random-point-in-a-circle) (Medium)

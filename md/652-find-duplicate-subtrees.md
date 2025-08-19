@@ -149,3 +149,12 @@ class Solution:
 
 ### Summary
 This problem uses the **Tree Serialization + Hashing** pattern, where encoding subtree structures helps in fast duplicate detection. The DFS+serialization method is common for subtree or isomorphism problems, and can be applied to tree comparison, subtree checks, and similar problems where structural equality matters.
+
+### Tags
+Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
+
+### Similar Problems
+- Serialize and Deserialize Binary Tree(serialize-and-deserialize-binary-tree) (Hard)
+- Serialize and Deserialize BST(serialize-and-deserialize-bst) (Medium)
+- Construct String from Binary Tree(construct-string-from-binary-tree) (Medium)
+- Delete Duplicate Folders in System(delete-duplicate-folders-in-system) (Hard)

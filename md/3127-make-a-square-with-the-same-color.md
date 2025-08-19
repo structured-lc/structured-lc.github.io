@@ -114,3 +114,8 @@ def can_make_square(grid):
 We used **brute-force enumeration** of all possible cell changes because the grid is fixed and small.  
 The key pattern is simulation and subgrid detection on small matrices, which generalizes to sliding-window/grid problems.  
 Similar techniques apply whenever exhaustive simulation for small constraints is viable, such as games with grids, or tasks like Tic-Tac-Toe checking, and is also a practical pattern for interview settings with tight problem constraints.
+
+### Tags
+Array(#array), Matrix(#matrix), Enumeration(#enumeration)
+
+### Similar Problems

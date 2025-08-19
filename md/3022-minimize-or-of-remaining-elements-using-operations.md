@@ -98,3 +98,10 @@ def minimumOr(nums, k):
 This problem is a classic **bitwise greedy minimization pattern**, scanning from the highest bit to the lowest, always clearing as many high bits as permitted by the operation limit.  
 It appears in bitmasking, dynamic programming, and greedy problems where bit contribution to a function (like OR/AND/XOR) must be minimized or maximized by modifying selected numbers.  
 Key insight is that the OR only decreases if we zero out all instances of a set bit, so greedily processing high bits first always yields the minimum possible OR.
+
+### Tags
+Array(#array), Greedy(#greedy), Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Maximum XOR After Operations (maximum-xor-after-operations) (Medium)
+- Apply Operations on Array to Maximize Sum of Squares(apply-operations-on-array-to-maximize-sum-of-squares) (Hard)

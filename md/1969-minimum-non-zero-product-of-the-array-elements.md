@@ -90,3 +90,8 @@ def minNonZeroProduct(p):
 
 ### Summary
 This problem leverages combinatorial observations and modular exponentiation to optimize a process otherwise exponentially costly. The key is understanding that maximal bit difference, create-able via swaps, drives the minimal product, allowing you to reduce the array into repeated (1, 2ᵖ-2) pairs plus the max element. The coding pattern follows efficient modular power, which is very common in competitive math, crypto, or big-number problems. This pattern is widely applicable to any “power-product-modulo” style question.
+
+### Tags
+Math(#math), Greedy(#greedy), Recursion(#recursion)
+
+### Similar Problems

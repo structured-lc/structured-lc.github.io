@@ -91,3 +91,9 @@ def averageWaitingTime(customers):
 
 ### Summary
 This is a classic simulation problem that uses a running pointer ("current time") and cumulative calculation. It's a good example of the "Greedy / Timeline" pattern, where you process events in time order, maintaining state as you go. This pattern appears in scheduling, interval problems, and problems with queues or sequential dependencies.
+
+### Tags
+Array(#array), Simulation(#simulation)
+
+### Similar Problems
+- Average Height of Buildings in Each Segment(average-height-of-buildings-in-each-segment) (Medium)

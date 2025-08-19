@@ -102,3 +102,9 @@ def max_product_equivalent_subarray(nums):
 
 ### Summary
 This problem uses a **brute-force sliding window** with math invariants, leveraging the small array and element sizes. The main pattern is sliding window + progressive aggregation (gcd/lcm/product), frequently used in range queries with associative operations. This approach applies to other array range problems, especially those involving sequence properties or windowing with math calculations.
+
+### Tags
+Array(#array), Math(#math), Sliding Window(#sliding-window), Enumeration(#enumeration), Number Theory(#number-theory)
+
+### Similar Problems
+- Find Greatest Common Divisor of Array(find-greatest-common-divisor-of-array) (Easy)

@@ -100,3 +100,10 @@ def totalFruit(fruits):
 This is a classic **sliding window** problem, often called "Longest Substring with At Most 2 Distinct Characters" adapted for numbers.  
 The pattern can be generalized for "at most K distinct elements in a subarray/string".  
 Sliding window + hashmap is widely applicable in substring, subarray, and streaming window-type questions.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
+
+### Similar Problems
+- Longest Nice Subarray(longest-nice-subarray) (Medium)
+- Fruits Into Baskets II(fruits-into-baskets-ii) (Easy)

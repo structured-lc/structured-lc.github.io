@@ -120,3 +120,8 @@ def minimumTotalCost(nums1, nums2):
 This is a classic hard greedy + counting problem, often appearing with "spread apart values to avoid collision" constraints.  
 The core is finding "bottleneck" values in conflicts, then using *just enough* outside swaps to break deadlocks, always favoring swaps at lowest possible cost.  
 This “conflict resolve + greedy fixup” can be applied to array rearrangement, double-pointer mismatch fixing, or similar scheduling problems.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Counting(#counting)
+
+### Similar Problems

@@ -135,3 +135,10 @@ def platesBetweenCandles(s, queries):
 
 ### Summary
 This problem is a textbook example of the "prefix sum + nearest neighbor/marker index" pattern for handling range queries with precomputed auxiliary arrays. It's a common technique for substring/range counting problems where the answer depends on boundary features (“candle” as delimiter). Similar patterns show up in histogram queries, substring boundary finding, and event-interval counting problems.
+
+### Tags
+Array(#array), String(#string), Binary Search(#binary-search), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- Find First and Last Position of Element in Sorted Array(find-first-and-last-position-of-element-in-sorted-array) (Medium)
+- Can Make Palindrome from Substring(can-make-palindrome-from-substring) (Medium)

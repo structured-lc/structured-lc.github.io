@@ -74,3 +74,8 @@ def longestString(x: int, y: int, z: int) -> int:
 
 ### Summary
 This problem uses a **greedy alternation** pattern—maximizing the use of pairs, taking care not to exceed the rule (no three-in-a-row), and safely appending any substrings that cannot violate the rule (like "AB"). This is similar to other greedy string or sequence construction problems where local constraints (no consecutive triples) limit how to combine elements. The logic extends to any similar "no k-in-a-row" construction.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Brainteaser(#brainteaser)
+
+### Similar Problems

@@ -134,3 +134,8 @@ def friday_purchases(purchases):
 
 ### Summary
 This problem is an application of date manipulation, grouping, and aggregation—a classic data summarization pattern often used in analytics. The main patterns are hash-based aggregation and transforming dates into time buckets (weeks). This is common for sales analysis, scheduling, and reporting engines. Similar patterns arise in “group by week/day/month and sum values” scenarios, in both database queries and application code.
+
+### Tags
+Database(#database)
+
+### Similar Problems

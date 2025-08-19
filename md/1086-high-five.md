@@ -87,3 +87,9 @@ def highFive(items):
 
 ### Summary  
 This problem demonstrates a common *"group and aggregate"* pattern, specifically the use of heaps to track top-k elements per group efficiently. The *min-heap* pattern is useful anywhere you need to maintain k largest/smallest values in a stream or collection (e.g., leaderboard problems, k-th largest, moving averages). It also illustrates how sorting and data structure choices affect time complexity when aggregating grouped data.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
+
+### Similar Problems
+- Determine the Winner of a Bowling Game(determine-the-winner-of-a-bowling-game) (Easy)

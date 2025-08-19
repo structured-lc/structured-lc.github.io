@@ -156,3 +156,8 @@ This problem centers around the **DSU On Tree** technique ("small-to-large" merg
 It’s often used for subtree queries where you need to aggregate or rank distinct values per subtree efficiently, and is a common technique for answering "kᵗʰ" or frequency-based queries in trees with many overlapping subproblems.  
 Patterns: DSU on tree, subtree queries, XOR path, offline query bucketization.  
 Variants can occur in histogram-based subtree problems, mergeable structures, and range query optimizations.
+
+### Tags
+Array(#array), Tree(#tree), Depth-First Search(#depth-first-search), Ordered Set(#ordered-set)
+
+### Similar Problems

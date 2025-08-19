@@ -105,3 +105,9 @@ def find_largest_almost_missing_integer(nums, k):
 
 ### Summary
 This problem is a good application of **hash counting** and sliding window edge analysis. The insight is that, except for the window-size edge cases (`k == 1` or `k == n`), only the array ends can possibly be in exactly one window. It's a variant of frequency filtering and "window uniqueness," common in subarray/sliding window questions. The code pattern is similar to frequency hashmaps and selective maximum filtering, and can be applied in problems involving windowed uniqueness or boundary-only candidates.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems
+- Missing Number(missing-number) (Easy)

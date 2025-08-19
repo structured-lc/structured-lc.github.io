@@ -128,3 +128,10 @@ def hammingDistanceLookup(x, y):
 
 ### Summary
 This problem demonstrates fundamental bit manipulation techniques, particularly XOR operation and bit counting. The Hamming distance concept is widely used in error correction codes, cryptography, and similarity measures. The XOR + bit counting pattern is a common approach for problems involving bit differences, making it an essential technique for bit manipulation problems.
+
+### Tags
+Bit Manipulation(#bit-manipulation)
+
+### Similar Problems
+- Number of 1 Bits(number-of-1-bits) (Easy)
+- Total Hamming Distance(total-hamming-distance) (Medium)

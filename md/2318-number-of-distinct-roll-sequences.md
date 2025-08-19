@@ -99,3 +99,10 @@ def distinctSequences(n: int) -> int:
 
 ### Summary
 We use **top-down DP with memoization**, where each state is determined by the position and the last two rolled values. This is a classic DP/state compression pattern—tracking limited history to enforce roll constraints. This DP pattern is powerful for string/sequence construction under local windowed rules, and applies to scheduling, tiling, or Markov-model style problems.
+
+### Tags
+Dynamic Programming(#dynamic-programming), Memoization(#memoization)
+
+### Similar Problems
+- Dice Roll Simulation(dice-roll-simulation) (Hard)
+- Paint House III(paint-house-iii) (Hard)

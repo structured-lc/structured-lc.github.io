@@ -114,3 +114,8 @@ def countKConstraintSubstrings(s, k, queries):
 ### Summary
 This problem uses a **two-pointer sliding window** with **prefix sum** precomputation to answer range substring queries efficiently.  
 The main pattern—fast sliding window range counting—applies to many substring and subarray range-constraint problems, such as counting substrings with at most k distinct elements, k occurrences, or other frequency-based restrictions.
+
+### Tags
+Array(#array), String(#string), Binary Search(#binary-search), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems

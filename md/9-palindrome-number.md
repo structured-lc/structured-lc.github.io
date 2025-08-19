@@ -89,3 +89,14 @@ def isPalindrome(x: int) -> bool:
 
 ### Summary
 This problem uses the **reverse half approach**, a common coding pattern that efficiently avoids unnecessary space and overflow by comparing digits from both ends. It is a variation of the two-pointer and number-manipulation techniques found in palindrome problems (strings, arrays, linked lists). This approach is efficient and broadly applicable to palindromic checks across data types, especially when extra space is to be minimized.
+
+### Tags
+Math(#math)
+
+### Similar Problems
+- Palindrome Linked List(palindrome-linked-list) (Easy)
+- Find Palindrome With Fixed Length(find-palindrome-with-fixed-length) (Medium)
+- Strictly Palindromic Number(strictly-palindromic-number) (Medium)
+-   Count Symmetric Integers(count-symmetric-integers) (Easy)
+- Find the Count of Good Integers(find-the-count-of-good-integers) (Hard)
+- Find the Largest Palindrome Divisible by K(find-the-largest-palindrome-divisible-by-k) (Hard)

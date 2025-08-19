@@ -105,3 +105,8 @@ WHERE CHAR_LENGTH(content) > 15;
 
 ### Summary
 This problem uses the **basic SQL filtering pattern**, applying a condition to select specific rows. The important detail is string length handling, which may differ for characters vs. bytes, especially with Unicode. This query pattern is frequently used anywhere data needs to be filtered by string length, such as validation checks or formatting controls.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -132,3 +132,11 @@ This problem is a classic *bitmask subset DP* on small-dimension combinatorics.
 The key insight is leveraging the restriction that all nums[i] ≤ 30, allowing for per-value frequency tracking and DP "masking" by prime combinations.  
 The structure and DP pattern is common in subset-sum, bitmask-DP, and problems where you’re combining independent "traits" with overlap constraints.  
 This approach generalizes to many problems where you count valid subsets meeting non-overlapping feature or divisibility rules.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Counting(#counting), Number Theory(#number-theory), Bitmask(#bitmask)
+
+### Similar Problems
+- Smallest Sufficient Team(smallest-sufficient-team) (Hard)
+- Fair Distribution of Cookies(fair-distribution-of-cookies) (Medium)
+- Number of Ways to Wear Different Hats to Each Other(number-of-ways-to-wear-different-hats-to-each-other) (Hard)

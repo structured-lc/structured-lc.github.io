@@ -66,3 +66,8 @@ def printVertically(s):
 
 ### Summary
 This problem uses basic string and array manipulation with the column-major reading pattern. The approach is a variant of matrix transposition, a pattern common in formatting and ETL/data cleanup questions.
+
+### Tags
+Array(#array), String(#string), Simulation(#simulation)
+
+### Similar Problems

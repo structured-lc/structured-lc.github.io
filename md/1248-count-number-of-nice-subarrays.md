@@ -63,3 +63,12 @@ def numberOfSubarrays(nums, k):
 
 ### Summary
 This is a prefix sums with hashmap pattern, common in subarray sum/count problems. The key: mapping running counts and seeing how many times prior runs would have supported the current window.
+
+### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
+
+### Similar Problems
+- K Divisible Elements Subarrays(k-divisible-elements-subarrays) (Medium)
+- Count Subarrays With Fixed Bounds(count-subarrays-with-fixed-bounds) (Hard)
+- Ways to Split Array Into Good Subarrays(ways-to-split-array-into-good-subarrays) (Medium)
+- Count of Interesting Subarrays(count-of-interesting-subarrays) (Medium)

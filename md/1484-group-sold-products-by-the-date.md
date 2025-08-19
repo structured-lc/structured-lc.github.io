@@ -98,3 +98,9 @@ def group_sold_products_by_date(activities):
 
 ### Summary
 This is a classic "group by and aggregate" pattern. The key is to group records by the target attribute (here, sell date), collect unique values, and emit aggregate outputs per group. This SQL/data-table aggregation problem is common and applies to analytics, dashboards, and reporting use-cases.
+
+### Tags
+Database(#database)
+
+### Similar Problems
+- Finding the Topic of Each Post(finding-the-topic-of-each-post) (Hard)

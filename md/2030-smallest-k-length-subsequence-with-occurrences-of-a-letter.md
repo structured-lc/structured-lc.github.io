@@ -133,3 +133,11 @@ def smallestSubsequence(s: str, k: int, letter: str, repetition: int) -> str:
 
 ### Summary
 This problem uses the **Greedy + Monotonic Stack** pattern, common to many string optimization problems ("Remove K Digits", "Lexicographically Smallest Subsequence"), but adds constraints on the occurrence of a specific letter. Counting, careful skipping, and greedy stack manipulation are key. The general pattern is widely applicable in string problems where lexicographical and element number constraints must be balanced.
+
+### Tags
+String(#string), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
+
+### Similar Problems
+- Remove Duplicate Letters(remove-duplicate-letters) (Medium)
+- Subarray With Elements Greater Than Varying Threshold(subarray-with-elements-greater-than-varying-threshold) (Hard)
+- Find the Lexicographically Smallest Valid Sequence(find-the-lexicographically-smallest-valid-sequence) (Medium)

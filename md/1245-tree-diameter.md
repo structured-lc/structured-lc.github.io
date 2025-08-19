@@ -86,3 +86,10 @@ class Solution:
 
 ### Summary
 This problem uses the double BFS technique or recursive DFS for finding tree diameters—a classic "tree trick." It's useful in various problems involving longest paths or tree metrics.
+
+### Tags
+Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort)
+
+### Similar Problems
+- Count Subtrees With Max Distance Between Cities(count-subtrees-with-max-distance-between-cities) (Hard)
+- Find Minimum Diameter After Merging Two Trees(find-minimum-diameter-after-merging-two-trees) (Hard)

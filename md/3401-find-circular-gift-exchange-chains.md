@@ -173,3 +173,8 @@ def find_circular_gift_exchange_chains(secret_santa):
 This problem leverages the **cycle detection in directed graphs**, taking advantage of the "one out-edge per node" property.  
 The solution uses a visited set and per-node traversal to identify unique cycles efficiently.  
 Patterns here are applicable to problems like "Find all cycles in a functional graph," or "Group users by invitation cycles," seen commonly in social networks and gift circle analyses.
+
+### Tags
+Database(#database)
+
+### Similar Problems

@@ -91,3 +91,10 @@ def secondsToRemoveOccurrences(s: str) -> int:
 
 ### Summary
 This problem employs a **simulation with greedy tracking** pattern, but can be solved optimally in O(n) time by careful book-keeping—tracking how many zeros each '1' must cross and accounting for simultaneous moves. This "count an obstruction and propagate delay" approach appears in many "transform/arrange string by iterative swaps" problems, and is useful in sorting by adjacent swaps, scheduling tasks with dependencies, and motion-planning in discrete steps.
+
+### Tags
+String(#string), Dynamic Programming(#dynamic-programming), Simulation(#simulation)
+
+### Similar Problems
+- Minimum Swaps to Group All 1's Together(minimum-swaps-to-group-all-1s-together) (Medium)
+- Minimum Swaps to Group All 1's Together II(minimum-swaps-to-group-all-1s-together-ii) (Medium)

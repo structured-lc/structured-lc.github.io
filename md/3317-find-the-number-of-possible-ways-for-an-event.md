@@ -123,3 +123,9 @@ This problem is a **combinatorial counting** problem using **Stirling numbers of
 The approach precomputes dynamic programming values, factorials, and combinations.  
 This pattern is common in problems involving set partitions, assignments to groups, and combinatorial function compositions (common in both competition and real software for counting unique configurations).  
 It can also be seen in grouping/partitioning people into teams, assigning tasks, and distributing rewards in unique ways.
+
+### Tags
+Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
+
+### Similar Problems
+- Kth Smallest Amount With Single Denomination Combination(kth-smallest-amount-with-single-denomination-combination) (Hard)

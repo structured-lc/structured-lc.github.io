@@ -171,3 +171,12 @@ This problem demonstrates the **BFS + binary search** technique:
 - Use BFS for "wave-like" propagation (fire, person) and  
 - Use binary search when answers are monotonic with respect to some parameter (wait time).  
 This pattern appears often in problems involving *moving obstacles*, *escaping spreading danger*, or *min/max pathing under monotone constraints*.
+
+### Tags
+Array(#array), Binary Search(#binary-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- Rotting Oranges(rotting-oranges) (Medium)
+- Last Day Where You Can Still Cross(last-day-where-you-can-still-cross) (Hard)
+- Minimum Weighted Subgraph With the Required Paths(minimum-weighted-subgraph-with-the-required-paths) (Hard)
+- Maximum Number of Points From Grid Queries(maximum-number-of-points-from-grid-queries) (Hard)

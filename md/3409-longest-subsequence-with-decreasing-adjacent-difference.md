@@ -101,3 +101,10 @@ def longestSubsequence(nums):
 
 ### Summary
 This problem is a variation of the Longest Subsequence DP pattern, with constraints on adjacent differences. The DP solution maps each potential ending value and last difference state, leading to an O(R²) table. This stateful DP table is a common approach for sequence and subsequence problems involving constraints about order or difference, and can also be adapted for "Longest Arithmetic Subsequence" and "Longest Subsequence with Difference Condition" types of problems.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
+
+### Similar Problems
+- Longest Increasing Subsequence(longest-increasing-subsequence) (Medium)
+- Longest Increasing Subsequence II(longest-increasing-subsequence-ii) (Hard)

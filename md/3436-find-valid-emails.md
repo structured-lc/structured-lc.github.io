@@ -139,3 +139,8 @@ def find_valid_emails(users):
 
 ### Summary
 This solution sequentially checks each email for syntax conformity without relying on regex or libraries, making it robust for interviews and extensions. The underlying pattern is **string parsing/validation**, common in form validation, batch input cleaning, and custom filters. The coding style is clear and each check is independently modular, which applies easily to other validation or parsing tasks.
+
+### Tags
+Database(#database)
+
+### Similar Problems

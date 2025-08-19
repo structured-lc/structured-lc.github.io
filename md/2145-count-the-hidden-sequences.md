@@ -120,3 +120,8 @@ No extra storage scaling with input; only a few variables for computation.
 
 ### Summary
 This problem is a classic **prefix sum range analysis**. The key is to anchor the sequence at the starting value, shift constraints using min/max prefix sums, and intersect the allowed initial value intervals. This pattern — mapping cumulative constraints back to bounds on initial terms — appears in many difference array and reconstruction problems. Analytical reasoning with prefix sums is powerful in signal balancing, time-series reconstruction, and difference equations.
+
+### Tags
+Array(#array), Prefix Sum(#prefix-sum)
+
+### Similar Problems

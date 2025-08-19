@@ -91,3 +91,9 @@ def numberOfPairs(nums1, nums2, k):
 This problem exemplifies the classic double for-loop pattern—brute-force pairwise comparison.  
 It's commonly applied to problems involving all-pairs checks, such as the "count pairs that satisfy some property" family.  
 In more restrictive settings, hashing or divisor tricks might be appropriate, but O(n×m) is clear, robust, and directly answers the question for reasonable array sizes.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems
+- Count Array Pairs Divisible by K(count-array-pairs-divisible-by-k) (Hard)

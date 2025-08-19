@@ -112,3 +112,8 @@ def minimumXORSum(nums, k):
 This problem is a classic use case for **interval DP with memoization** (also called "partition DP") where you want to split an array into groups to optimize a worst-case statistic (here: the maximum XOR).  
 Patterns used include prefix XOR for O(1) subarray queries, recursion with memoization to avoid redundant computation, and careful attention to partition constraints.  
 This DP technique broadly applies to "partition array to minimize/maximize aggregate function" types of problems, such as **Minimize Largest Sum in k Partitions**, Stone Game variants, and others in interval/partitioning DP.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
+
+### Similar Problems

@@ -90,3 +90,8 @@ def maximumTotalSum(maximumHeight):
 ### Summary
 This is a classic sorting + greedy allocation problem, where maximizing under uniqueness constraints leads to a strictly decreasing assignment pattern.  
 The same pattern appears in maximizing unique values under bounded choices, common in subset/partition and greedy scheduling variants.
+
+### Tags
+Array(#array), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

@@ -70,3 +70,8 @@ ORDER BY travelled_distance DESC, u.name ASC;
 
 ### Summary
 This is a classic SQL aggregation and join pattern: LEFT JOIN to capture all users, SUM to total distances, and IFNULL/COALESCE to handle users with no rides. Ordering and tie-breaking are also common requirements for leaderboard or ranking queries.
+
+### Tags
+Database(#database)
+
+### Similar Problems

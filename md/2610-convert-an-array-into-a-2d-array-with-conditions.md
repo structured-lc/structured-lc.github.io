@@ -110,3 +110,8 @@ def findMatrix(nums):
 
 ### Summary
 This problem is a classic example of *grouping with minimal repeats*, using the observation that the minimal number of groups (rows) is set by the most frequent number. The approach applies *hash counting* and *round-robin distribution* for greedy partitioning. The same logic can be used in other problems involving “no repeats within a group” constraints, such as scheduling, seat assignment, or distributing tasks with frequency limits.
+
+### Tags
+Array(#array), Hash Table(#hash-table)
+
+### Similar Problems

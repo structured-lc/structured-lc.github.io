@@ -103,3 +103,9 @@ def sumOfEncryptedInt(nums):
 
 ### Summary
 This problem follows a **digit manipulation** and **accumulation** pattern, often seen in number-processing interviews (e.g., palindromes, digit sums, base conversions). The approach is brute-force but optimal within constraints, iterating through digits with elementary arithmetic. It generalizes to other problems where digits must be inspected, replaced, or counted.
+
+### Tags
+Array(#array), Math(#math)
+
+### Similar Problems
+- Encrypt and Decrypt Strings(encrypt-and-decrypt-strings) (Hard)

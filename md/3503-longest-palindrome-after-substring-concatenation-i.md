@@ -116,3 +116,8 @@ def longest_palindrome(s: str, t: str) -> int:
 This problem leverages the classic **brute-force substring generation with palindrome checking** pattern, which is feasible due to small constraints (n, m ≤ 30).  
 It demonstrates string manipulation, substring enumeration, and palindrome checking.  
 This logic (brute-forcing over substring pairs, then checking a property) can also apply to various string concatenation and matching problems in coding interviews.
+
+### Tags
+Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming), Enumeration(#enumeration)
+
+### Similar Problems

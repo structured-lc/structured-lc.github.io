@@ -141,3 +141,16 @@ class Trie:
 
 ### Summary
 This is the classic **Trie** (Prefix Tree) design pattern, enabling quick word and prefix lookups in O(L) time where L = length of input string, at the cost of increased memory usage. This pattern is fundamental for problems involving dictionary, autocomplete, and spellchecking functionalities, and is a standard approach in many string algorithm questions.
+
+### Tags
+Hash Table(#hash-table), String(#string), Design(#design), Trie(#trie)
+
+### Similar Problems
+- Design Add and Search Words Data Structure(design-add-and-search-words-data-structure) (Medium)
+- Design Search Autocomplete System(design-search-autocomplete-system) (Hard)
+- Replace Words(replace-words) (Medium)
+- Implement Magic Dictionary(implement-magic-dictionary) (Medium)
+- Encrypt and Decrypt Strings(encrypt-and-decrypt-strings) (Hard)
+- Implement Trie II (Prefix Tree)(implement-trie-ii-prefix-tree) (Medium)
+- Count Prefix and Suffix Pairs II(count-prefix-and-suffix-pairs-ii) (Hard)
+- Count Prefix and Suffix Pairs I(count-prefix-and-suffix-pairs-i) (Easy)

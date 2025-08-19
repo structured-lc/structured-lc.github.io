@@ -123,3 +123,8 @@ def number_of_passengers_in_each_bus(buses, passengers):
 
 ### Summary
 This problem leverages the two-pointer pattern — sorting both events (arrivals of buses and passengers), and then stepping through both in tandem. The in-order processing ensures optimal assignment of earliest-possible buses to each passenger, while respecting capacity. This solution is a classic greedy queue simulation, applicable in other "assign resource to earliest eligible" scheduling and matching problems.
+
+### Tags
+Database(#database)
+
+### Similar Problems

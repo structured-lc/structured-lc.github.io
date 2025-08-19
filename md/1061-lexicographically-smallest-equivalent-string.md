@@ -88,3 +88,9 @@ def smallestEquivalentString(s1: str, s2: str, baseStr: str) -> str:
 
 ### Summary
 This problem uses the **Union Find / Disjoint Set Union (DSU)** pattern for efficiently managing equivalence groups and enforcing lexicographical parent/root choice. This approach is common for grouping with transitive closure (e.g., friend circles, minimum equivalence classes, network grouping), and is powerful whenever you need to dynamically combine and query subsets or groups.
+
+### Tags
+String(#string), Union Find(#union-find)
+
+### Similar Problems
+- Lexicographically Smallest Generated String(lexicographically-smallest-generated-string) (Hard)

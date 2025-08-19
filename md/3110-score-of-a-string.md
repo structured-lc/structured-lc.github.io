@@ -75,3 +75,8 @@ def scoreOfString(s: str) -> int:
 This problem is a straightforward string traversal and difference-aggregation pattern.  
 It emphasizes careful handling of adjacent-pair logic, a pattern that recurs in problems like "wiggle sequence," windowed substring analysis, and local max/min pair differences.  
 The code and logic here are highly generalizable for similar neighbor-based operations on arrays or strings.
+
+### Tags
+String(#string)
+
+### Similar Problems

@@ -57,3 +57,8 @@ def xorQueries(arr, queries):
 
 ### Summary
 This problem is a classic use of prefix XOR array—a common coding pattern for subarray range queries involving XOR. The pattern can be similarly used for sum or other associative operations, and is foundational for range-aggregation problems.
+
+### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
+
+### Similar Problems

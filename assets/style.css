@@ -3691,6 +3691,18 @@ html, body {
     background: none !important;
     box-shadow: none !important;
   }
+  
+  /* Hide tags and similar problems sections from print */
+  .tag-container, 
+  .similar-problems-container {
+    display: none !important;
+  }
+  
+  /* Hide the last two h3 headings (likely Tags and Similar Problems) */
+  h3:nth-last-of-type(1),
+  h3:nth-last-of-type(2) {
+    display: none !important;
+  }
 }
 
 /* ===== DARK THEME SUPPORT ===== */
@@ -3754,4 +3766,173 @@ body.dark-theme blockquote {
   border-left-color: #60a5fa !important;
   background: rgba(96, 165, 250, 0.1) !important;
   color: #f3f4f6 !important;
+}
+
+/* ====================================
+   TAGS AND SIMILAR PROBLEMS STYLING
+   ==================================== */
+
+/* Base container styling for tags and similar problems sections */
+.tag-container, .similar-problems-container {
+  margin-top: calc(12px * var(--mobile-scale));
+  margin-bottom: calc(20px * var(--mobile-scale));
+  line-height: 1.5;
+}
+
+/* Tag button styling */
+.tag-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+  color: #3730a3;
+  text-decoration: none;
+  padding: calc(2px * var(--mobile-scale)) calc(6px * var(--mobile-scale));
+  margin: calc(1px * var(--mobile-scale)) calc(3px * var(--mobile-scale)) calc(1px * var(--mobile-scale)) 0;
+  border-radius: calc(8px * var(--mobile-scale));
+  font-size: calc(11px * var(--mobile-scale));
+  font-weight: 500;
+  border: 1px solid rgba(55, 48, 163, 0.2);
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.tag-button:hover {
+  background: linear-gradient(135deg, #c7d2fe 0%, #a5b4fc 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(55, 48, 163, 0.15);
+  text-decoration: none;
+  color: #312e81;
+}
+
+.tag-button:active {
+  transform: scale(0.95);
+}
+
+/* Similar problem button styling with difficulty colors */
+.similar-problem-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: calc(2px * var(--mobile-scale)) calc(6px * var(--mobile-scale));
+  margin: calc(1px * var(--mobile-scale)) calc(3px * var(--mobile-scale)) calc(1px * var(--mobile-scale)) 0;
+  border-radius: calc(8px * var(--mobile-scale));
+  font-size: calc(11px * var(--mobile-scale));
+  font-weight: 500;
+  border: 1px solid;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  line-height: 1.2;
+}
+
+.similar-problem-button:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.similar-problem-button:active {
+  transform: scale(0.95);
+}
+
+/* Difficulty-specific styling for similar problems */
+.similar-problem-button.easy {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  color: #15803d;
+  border-color: rgba(21, 128, 61, 0.2);
+}
+
+.similar-problem-button.easy:hover {
+  background: linear-gradient(135deg, #bbf7d0 0%, #86efac 100%);
+  box-shadow: 0 2px 4px rgba(21, 128, 61, 0.2);
+  color: #14532d;
+}
+
+.similar-problem-button.medium {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  color: #d97706;
+  border-color: rgba(217, 119, 6, 0.2);
+}
+
+.similar-problem-button.medium:hover {
+  background: linear-gradient(135deg, #fde68a 0%, #fcd34d 100%);
+  box-shadow: 0 2px 4px rgba(217, 119, 6, 0.2);
+  color: #92400e;
+}
+
+.similar-problem-button.hard {
+  background: linear-gradient(135deg, #fecaca 0%, #fca5a5 100%);
+  color: #dc2626;
+  border-color: rgba(220, 38, 38, 0.2);
+}
+
+.similar-problem-button.hard:hover {
+  background: linear-gradient(135deg, #fca5a5 0%, #f87171 100%);
+  box-shadow: 0 2px 4px rgba(220, 38, 38, 0.2);
+  color: #991b1b;
+}
+
+/* Desktop responsive adjustments */
+@media (min-width: 768px) {
+  .tag-container, .similar-problems-container {
+    margin-top: calc(12px * var(--desktop-scale));
+    margin-bottom: calc(20px * var(--desktop-scale));
+  }
+
+  .tag-button {
+    padding: calc(3px * var(--desktop-scale)) calc(8px * var(--desktop-scale));
+    margin: calc(2px * var(--desktop-scale)) calc(4px * var(--desktop-scale)) calc(2px * var(--desktop-scale)) 0;
+    border-radius: calc(10px * var(--desktop-scale));
+    font-size: calc(12px * var(--desktop-scale));
+  }
+
+  .similar-problem-button {
+    padding: calc(3px * var(--desktop-scale)) calc(8px * var(--desktop-scale));
+    margin: calc(2px * var(--desktop-scale)) calc(4px * var(--desktop-scale)) calc(2px * var(--desktop-scale)) 0;
+    border-radius: calc(10px * var(--desktop-scale));
+    font-size: calc(12px * var(--desktop-scale));
+  }
+}
+
+/* Dark theme support */
+body.dark-theme .tag-button {
+  background: linear-gradient(135deg, #312e81 0%, #3730a3 100%);
+  color: #c7d2fe;
+  border-color: rgba(199, 210, 254, 0.2);
+}
+
+body.dark-theme .tag-button:hover {
+  background: linear-gradient(135deg, #3730a3 0%, #4338ca 100%);
+  color: #e0e7ff;
+  box-shadow: 0 2px 4px rgba(67, 56, 202, 0.3);
+}
+
+body.dark-theme .similar-problem-button.easy {
+  background: linear-gradient(135deg, #14532d 0%, #15803d 100%);
+  color: #bbf7d0;
+  border-color: rgba(187, 247, 208, 0.2);
+}
+
+body.dark-theme .similar-problem-button.easy:hover {
+  background: linear-gradient(135deg, #15803d 0%, #16a34a 100%);
+  color: #dcfce7;
+}
+
+body.dark-theme .similar-problem-button.medium {
+  background: linear-gradient(135deg, #92400e 0%, #d97706 100%);
+  color: #fde68a;
+  border-color: rgba(253, 230, 138, 0.2);
+}
+
+body.dark-theme .similar-problem-button.medium:hover {
+  background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+  color: #fef3c7;
+}
+
+body.dark-theme .similar-problem-button.hard {
+  background: linear-gradient(135deg, #991b1b 0%, #dc2626 100%);
+  color: #fca5a5;
+  border-color: rgba(252, 165, 165, 0.2);
+}
+
+body.dark-theme .similar-problem-button.hard:hover {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  color: #fecaca;
 }

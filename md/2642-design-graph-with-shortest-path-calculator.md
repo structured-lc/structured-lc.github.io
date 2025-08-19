@@ -118,3 +118,10 @@ class Graph:
 This problem is a classic example of **graph design with dynamic shortest-path queries**.  
 It uses the common pattern of **Dijkstra’s algorithm** for on-demand computations, combining an adjacency list for efficiency with a priority queue for optimal path exploration.  
 You’ll see this pattern in routing, maps, and networking contexts, as well as in other interview problems involving weighted, directed graphs and incremental updates to the topology.
+
+### Tags
+Graph(#graph), Design(#design), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
+
+### Similar Problems
+- Number of Restricted Paths From First to Last Node(number-of-restricted-paths-from-first-to-last-node) (Medium)
+- Closest Node to Path in Tree(closest-node-to-path-in-tree) (Hard)

@@ -76,3 +76,8 @@ def maxSumDivThree(nums):
 
 ### Summary
 This is a standard **dynamic programming with modulus buckets** problem, common for “maximum sum with modular restriction” situations. The pattern—tracking the maximum result for each mod class and updating in-place as you iterate—can be applied to similar problems for different moduli and other subset-sum variants. It’s efficient, clean, and robust for large input sizes.
+
+### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Sorting(#sorting)
+
+### Similar Problems

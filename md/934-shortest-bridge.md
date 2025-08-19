@@ -132,3 +132,9 @@ def shortestBridge(grid):
 This problem follows a **two-phase flood fill/BFS** pattern (first mark, then expand).  
 The marking phase ensures only the *external surface* is considered for expansion, and multi-source BFS ensures we find the shortest unweighted bridge.  
 This grid + BFS technique is common in problems about shortest path, connected components, or expansion from a region—applicable in maze solving, network spread, and island-connecting puzzles.
+
+### Tags
+Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
+
+### Similar Problems
+- Minimum Number of Operations to Make X and Y Equal(minimum-number-of-operations-to-make-x-and-y-equal) (Medium)
