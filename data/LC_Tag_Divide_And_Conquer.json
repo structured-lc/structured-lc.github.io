@@ -49,5 +49,7 @@
     {"number": 3165, "slug": "maximum-sum-of-subsequence-with-non-adjacent-elements", "title": "Maximum Sum of Subsequence With Non-adjacent Elements", "difficulty": "Hard", "tags": ["Array", "Divide and Conquer", "Dynamic Programming", "Segment Tree"], "similar_problems": []},
     {"number": 3537, "slug": "fill-a-special-grid", "title": "Fill a Special Grid", "difficulty": "Medium", "tags": ["Array", "Divide and Conquer", "Matrix"], "similar_problems": []},
     {"number": 3624, "slug": "number-of-integers-with-popcount-depth-equal-to-k-ii", "title": "Number of Integers With Popcount-Depth Equal to K II", "difficulty": "Hard", "tags": ["Array", "Divide and Conquer", "Binary Indexed Tree", "Segment Tree"], "similar_problems": []},
-    {"number": 3636, "slug": "threshold-majority-queries", "title": "Threshold Majority Queries", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Binary Search", "Divide and Conquer", "Counting", "Prefix Sum"], "similar_problems": []}
+    {"number": 3636, "slug": "threshold-majority-queries", "title": "Threshold Majority Queries", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Binary Search", "Divide and Conquer", "Counting", "Prefix Sum"], "similar_problems": []},
+    {"number": 3653, "slug": "xor-after-range-multiplication-queries-i", "title": "XOR After Range Multiplication Queries I", "difficulty": "Medium", "tags": ["Array", "Divide and Conquer", "Simulation"], "similar_problems": []},
+    {"number": 3655, "slug": "xor-after-range-multiplication-queries-ii", "title": "XOR After Range Multiplication Queries II", "difficulty": "Hard", "tags": ["Array", "Divide and Conquer"], "similar_problems": []}
 ]
