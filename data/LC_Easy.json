@@ -888,5 +888,6 @@
     {"number": 3633, "slug": "earliest-finish-time-for-land-and-water-rides-i", "title": "Earliest Finish Time for Land and Water Rides I", "difficulty": "Easy", "tags": ["Array", "Two Pointers", "Binary Search", "Greedy", "Sorting"], "similar_problems": []},
     {"number": 3637, "slug": "trionic-array-i", "title": "Trionic Array I", "difficulty": "Easy", "tags": ["Array"], "similar_problems": []},
     {"number": 3642, "slug": "find-books-with-polarized-opinions", "title": "Find Books with Polarized Opinions", "difficulty": "Easy", "tags": [], "similar_problems": []},
-    {"number": 3643, "slug": "flip-square-submatrix-vertically", "title": "Flip Square Submatrix Vertically", "difficulty": "Easy", "tags": ["Array", "Two Pointers", "Matrix"], "similar_problems": []}
+    {"number": 3643, "slug": "flip-square-submatrix-vertically", "title": "Flip Square Submatrix Vertically", "difficulty": "Easy", "tags": ["Array", "Two Pointers", "Matrix"], "similar_problems": []},
+    {"number": 3658, "slug": "gcd-of-odd-and-even-sums", "title": "GCD of Odd and Even Sums", "difficulty": "Easy", "tags": [], "similar_problems": []}
 ]

@@ -91,5 +91,6 @@ def maxProfit(prices, strategy):
 This problem uses a **greedy simulation** and is a classic interview pattern for stock buy/sell questions. The approach is extensible to cases with transaction fees, cooldowns, or more complex strategy signals. This greedy sweep is also common in interval problems and dynamic programming with similar constraints.
 
 ### Tags
+Array(#array), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 
 ### Similar Problems

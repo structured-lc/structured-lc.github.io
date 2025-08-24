@@ -122,5 +122,6 @@ The core pattern is batching multiplicative effects per query for *positions wit
 This batching technique is useful for many range update/interrogation problems where the update pattern is periodic or stepwise, especially in combinatorial/number theory contexts.
 
 ### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer)
 
 ### Similar Problems

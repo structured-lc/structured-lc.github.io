@@ -3650,9 +3650,14 @@
     {"number": 3649, "slug": "number-of-perfect-pairs", "title": "Number of Perfect Pairs", "difficulty": "Medium", "tags": [], "similar_problems": []},
     {"number": 3650, "slug": "minimum-cost-path-with-edge-reversals", "title": "Minimum Cost Path with Edge Reversals", "difficulty": "Medium", "tags": [], "similar_problems": [{"slug": "minimum-cost-to-reach-destination-in-time", "title": "Minimum Cost to Reach Destination in Time", "difficulty": "Hard"}]},
     {"number": 3651, "slug": "minimum-cost-path-with-teleportations", "title": "Minimum Cost Path with Teleportations", "difficulty": "Hard", "tags": [], "similar_problems": []},
-    {"number": 3652, "slug": "best-time-to-buy-and-sell-stock-using-strategy", "title": "Best Time to Buy and Sell Stock using Strategy", "difficulty": "Medium", "tags": [], "similar_problems": []},
-    {"number": 3653, "slug": "xor-after-range-multiplication-queries-i", "title": "XOR After Range Multiplication Queries I", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3652, "slug": "best-time-to-buy-and-sell-stock-using-strategy", "title": "Best Time to Buy and Sell Stock using Strategy", "difficulty": "Medium", "tags": ["Array", "Sliding Window", "Prefix Sum"], "similar_problems": []},
+    {"number": 3653, "slug": "xor-after-range-multiplication-queries-i", "title": "XOR After Range Multiplication Queries I", "difficulty": "Medium", "tags": ["Array", "Divide and Conquer", "Simulation"], "similar_problems": []},
     {"number": 3654, "slug": "minimum-sum-after-divisible-sum-deletions", "title": "Minimum Sum After Divisible Sum Deletions", "difficulty": "Medium", "tags": [], "similar_problems": []},
-    {"number": 3655, "slug": "xor-after-range-multiplication-queries-ii", "title": "XOR After Range Multiplication Queries II", "difficulty": "Hard", "tags": [], "similar_problems": []},
-    {"number": 3656, "slug": "determine-if-a-simple-graph-exists", "title": "Determine if a Simple Graph Exists", "difficulty": "Medium", "tags": [], "similar_problems": []}
+    {"number": 3655, "slug": "xor-after-range-multiplication-queries-ii", "title": "XOR After Range Multiplication Queries II", "difficulty": "Hard", "tags": ["Array", "Divide and Conquer"], "similar_problems": []},
+    {"number": 3656, "slug": "determine-if-a-simple-graph-exists", "title": "Determine if a Simple Graph Exists", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3657, "slug": "find-loyal-customers", "title": "Find Loyal Customers", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3658, "slug": "gcd-of-odd-and-even-sums", "title": "GCD of Odd and Even Sums", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3659, "slug": "partition-array-into-k-distinct-groups", "title": "Partition Array Into K-Distinct Groups", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3660, "slug": "jump-game-ix", "title": "Jump Game IX", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3661, "slug": "maximum-walls-destroyed-by-robots", "title": "Maximum Walls Destroyed by Robots", "difficulty": "Hard", "tags": [], "similar_problems": []}
 ]

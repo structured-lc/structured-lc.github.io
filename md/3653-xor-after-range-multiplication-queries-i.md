@@ -82,5 +82,6 @@ def xorAfterQueries(nums, queries):
 The problem uses an in-place brute-force pattern to apply updates, as the constraints (Variant I) allow. The postprocessing XOR pass is also common in problems involving array mutation and aggregate reduction (like "range update + query"). This approach is classic for "brute-force allowed" range update and is frequently used for easy/medium range query problems. The pattern can be extended with advanced data structures for harder variants.
 
 ### Tags
+Array(#array), Divide and Conquer(#divide-and-conquer), Simulation(#simulation)
 
 ### Similar Problems
