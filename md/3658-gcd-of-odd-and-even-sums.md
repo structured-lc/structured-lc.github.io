@@ -83,5 +83,4 @@ This problem uses the **mathematical reduction** pattern, deriving a closed-form
 
 ### Tags
 
-
 ### Similar Problems

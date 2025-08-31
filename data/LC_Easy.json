@@ -889,5 +889,9 @@
     {"number": 3637, "slug": "trionic-array-i", "title": "Trionic Array I", "difficulty": "Easy", "tags": ["Array"], "similar_problems": []},
     {"number": 3642, "slug": "find-books-with-polarized-opinions", "title": "Find Books with Polarized Opinions", "difficulty": "Easy", "tags": [], "similar_problems": []},
     {"number": 3643, "slug": "flip-square-submatrix-vertically", "title": "Flip Square Submatrix Vertically", "difficulty": "Easy", "tags": ["Array", "Two Pointers", "Matrix"], "similar_problems": []},
-    {"number": 3658, "slug": "gcd-of-odd-and-even-sums", "title": "GCD of Odd and Even Sums", "difficulty": "Easy", "tags": [], "similar_problems": []}
+    {"number": 3658, "slug": "gcd-of-odd-and-even-sums", "title": "GCD of Odd and Even Sums", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3662, "slug": "filter-characters-by-frequency", "title": "Filter Characters by Frequency", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3663, "slug": "find-the-least-frequent-digit", "title": "Find The Least Frequent Digit", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3667, "slug": "sort-array-by-absolute-value", "title": "Sort Array By Absolute Value", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3668, "slug": "restore-finishing-order", "title": "Restore Finishing Order", "difficulty": "Easy", "tags": [], "similar_problems": []}
 ]

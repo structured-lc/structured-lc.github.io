@@ -78,5 +78,4 @@ The approach exploits the **pigeonhole principle**: no two identical elements ca
 
 ### Tags
 
-
 ### Similar Problems

@@ -861,5 +861,7 @@
     {"number": 3646, "slug": "next-special-palindrome-number", "title": "Next Special Palindrome Number", "difficulty": "Hard", "tags": ["Backtracking"], "similar_problems": []},
     {"number": 3651, "slug": "minimum-cost-path-with-teleportations", "title": "Minimum Cost Path with Teleportations", "difficulty": "Hard", "tags": [], "similar_problems": []},
     {"number": 3655, "slug": "xor-after-range-multiplication-queries-ii", "title": "XOR After Range Multiplication Queries II", "difficulty": "Hard", "tags": ["Array", "Divide and Conquer"], "similar_problems": []},
-    {"number": 3661, "slug": "maximum-walls-destroyed-by-robots", "title": "Maximum Walls Destroyed by Robots", "difficulty": "Hard", "tags": [], "similar_problems": []}
+    {"number": 3661, "slug": "maximum-walls-destroyed-by-robots", "title": "Maximum Walls Destroyed by Robots", "difficulty": "Hard", "tags": [], "similar_problems": []},
+    {"number": 3666, "slug": "minimum-operations-to-equalize-binary-string", "title": "Minimum Operations to Equalize Binary String", "difficulty": "Hard", "tags": [], "similar_problems": []},
+    {"number": 3671, "slug": "sum-of-beautiful-subsequences", "title": "Sum of Beautiful Subsequences", "difficulty": "Hard", "tags": [], "similar_problems": []}
 ]
