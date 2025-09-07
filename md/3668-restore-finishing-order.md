@@ -82,5 +82,4 @@ The pattern is **filtering a sequence based on membership in a set**, a very com
 
 ### Tags
 
-
 ### Similar Problems

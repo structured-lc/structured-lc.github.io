@@ -1909,5 +1909,8 @@
     {"number": 3664, "slug": "two-letter-card-game", "title": "Two-Letter Card Game", "difficulty": "Medium", "tags": [], "similar_problems": []},
     {"number": 3665, "slug": "twisted-mirror-path-count", "title": "Twisted Mirror Path Count", "difficulty": "Medium", "tags": [], "similar_problems": []},
     {"number": 3669, "slug": "balanced-k-factor-decomposition", "title": "Balanced K-Factor Decomposition", "difficulty": "Medium", "tags": [], "similar_problems": []},
-    {"number": 3670, "slug": "maximum-product-of-two-integers-with-no-common-bits", "title": "Maximum Product of Two Integers With No Common Bits", "difficulty": "Medium", "tags": [], "similar_problems": [{"slug": "partition-to-k-equal-sum-subsets", "title": "Partition to K Equal Sum Subsets", "difficulty": "Medium"}]}
+    {"number": 3670, "slug": "maximum-product-of-two-integers-with-no-common-bits", "title": "Maximum Product of Two Integers With No Common Bits", "difficulty": "Medium", "tags": [], "similar_problems": [{"slug": "partition-to-k-equal-sum-subsets", "title": "Partition to K Equal Sum Subsets", "difficulty": "Medium"}]},
+    {"number": 3672, "slug": "sum-of-weighted-modes-in-subarrays", "title": "Sum of Weighted Modes in Subarrays", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3675, "slug": "minimum-operations-to-transform-string", "title": "Minimum Operations to Transform String", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3676, "slug": "count-bowl-subarrays", "title": "Count Bowl Subarrays", "difficulty": "Medium", "tags": [], "similar_problems": []}
 ]

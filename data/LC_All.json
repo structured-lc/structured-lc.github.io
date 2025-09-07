@@ -3669,5 +3669,11 @@
     {"number": 3668, "slug": "restore-finishing-order", "title": "Restore Finishing Order", "difficulty": "Easy", "tags": [], "similar_problems": []},
     {"number": 3669, "slug": "balanced-k-factor-decomposition", "title": "Balanced K-Factor Decomposition", "difficulty": "Medium", "tags": [], "similar_problems": []},
     {"number": 3670, "slug": "maximum-product-of-two-integers-with-no-common-bits", "title": "Maximum Product of Two Integers With No Common Bits", "difficulty": "Medium", "tags": [], "similar_problems": [{"slug": "partition-to-k-equal-sum-subsets", "title": "Partition to K Equal Sum Subsets", "difficulty": "Medium"}]},
-    {"number": 3671, "slug": "sum-of-beautiful-subsequences", "title": "Sum of Beautiful Subsequences", "difficulty": "Hard", "tags": [], "similar_problems": []}
+    {"number": 3671, "slug": "sum-of-beautiful-subsequences", "title": "Sum of Beautiful Subsequences", "difficulty": "Hard", "tags": [], "similar_problems": []},
+    {"number": 3672, "slug": "sum-of-weighted-modes-in-subarrays", "title": "Sum of Weighted Modes in Subarrays", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3673, "slug": "find-zombie-sessions", "title": "Find Zombie Sessions", "difficulty": "Hard", "tags": [], "similar_problems": []},
+    {"number": 3674, "slug": "minimum-operations-to-equalize-array", "title": "Minimum Operations to Equalize Array", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3675, "slug": "minimum-operations-to-transform-string", "title": "Minimum Operations to Transform String", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3676, "slug": "count-bowl-subarrays", "title": "Count Bowl Subarrays", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3677, "slug": "count-binary-palindromic-numbers", "title": "Count Binary Palindromic Numbers", "difficulty": "Hard", "tags": [], "similar_problems": []}
 ]
