@@ -133,9 +133,27 @@ class ScaleSettingsManager {
       body.classList.add(expectedDesktopClass);
     }
     
-    // Apply theme
-    body.classList.toggle('dark-theme', this.settings.theme === 'dark');
-    body.classList.toggle('light-theme', this.settings.theme === 'light');
+    // Apply theme - including system theme detection
+    body.classList.remove('dark-theme', 'light-theme');
+    
+    if (this.settings.theme === 'system') {
+      // Follow system preference
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (prefersDark) {
+        body.classList.add('dark-theme');
+      } else {
+        body.classList.add('light-theme');
+      }
+    } else if (this.settings.theme === 'dark') {
+      body.classList.add('dark-theme');
+    } else if (this.settings.theme === 'light') {
+      body.classList.add('light-theme');
+    }
+    
+    // Notify the main theme system about the current theme
+    window.dispatchEvent(new CustomEvent('scaleSettingsChanged', {
+      detail: { type: 'theme', value: this.settings.theme }
+    }));
     
     // Also update the existing theme dropdowns if they exist
     const mobileThemeToggle = document.getElementById('mobile-theme-toggle');

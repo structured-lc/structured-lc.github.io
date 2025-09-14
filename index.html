@@ -16,26 +16,51 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <link rel="stylesheet" href="assets/style.css">
   <script>
-    // Apply scale settings immediately to prevent visual shifts
+    // Apply scale settings and theme immediately to prevent visual shifts
     (function() {
       try {
-        const saved = localStorage.getItem('interface_scale_settings');
-        const settings = saved ? JSON.parse(saved) : { mobile: 'normal', desktop: 'normal' };
+        const saved = localStorage.getItem('lc-handbook-scale-preferences');
+        const settings = saved ? JSON.parse(saved) : { mobile: 'normal', desktop: 'normal', theme: 'system' };
         
-        // Apply classes to html element immediately to ensure they're available before body
+        // Apply scale classes to html element immediately to ensure they're available before body
         const htmlElement = document.documentElement;
         htmlElement.className = `mobile-scale-${settings.mobile} desktop-scale-${settings.desktop}`;
+        
+        // Helper function to apply theme immediately
+        function applyThemeImmediately(themePreference = 'system') {
+          const body = document.body;
+          if (!body) return;
+          
+          // Remove existing theme classes
+          body.classList.remove('dark-theme', 'light-theme');
+          
+          if (themePreference === 'system') {
+            // Follow system preference
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (prefersDark) {
+              body.classList.add('dark-theme');
+            } else {
+              body.classList.add('light-theme');
+            }
+          } else if (themePreference === 'dark') {
+            body.classList.add('dark-theme');
+          } else if (themePreference === 'light') {
+            body.classList.add('light-theme');
+          }
+        }
         
         // Also prepare to apply to body when it's available
         document.addEventListener('DOMContentLoaded', function() {
           if (document.body) {
             document.body.className = `mobile-scale-${settings.mobile} desktop-scale-${settings.desktop}`;
+            applyThemeImmediately(settings.theme);
           }
         });
         
         // Apply immediately if body already exists
         if (document.body) {
           document.body.className = `mobile-scale-${settings.mobile} desktop-scale-${settings.desktop}`;
+          applyThemeImmediately(settings.theme);
         }
       } catch (e) {
         // Fallback to defaults on error
@@ -43,10 +68,21 @@
         document.addEventListener('DOMContentLoaded', function() {
           if (document.body) {
             document.body.className = 'mobile-scale-normal desktop-scale-normal';
+            // Apply default system theme on error
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+              document.body.classList.add('dark-theme');
+            } else {
+              document.body.classList.add('light-theme');
+            }
           }
         });
         if (document.body) {
           document.body.className = 'mobile-scale-normal desktop-scale-normal';
+          if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark-theme');
+          } else {
+            document.body.classList.add('light-theme');
+          }
         }
       }
     })();
@@ -381,6 +417,8 @@
   <script>
     // ENHANCED THEME SYSTEM - Works with settings (System/Light/Dark)
     function applyTheme(themePreference = 'system') {
+      if (!document.body) return;
+      
       // Remove existing theme classes
       document.body.classList.remove('dark-theme', 'light-theme');
       
