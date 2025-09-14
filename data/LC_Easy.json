@@ -894,5 +894,8 @@
     {"number": 3663, "slug": "find-the-least-frequent-digit", "title": "Find The Least Frequent Digit", "difficulty": "Easy", "tags": [], "similar_problems": []},
     {"number": 3667, "slug": "sort-array-by-absolute-value", "title": "Sort Array By Absolute Value", "difficulty": "Easy", "tags": [], "similar_problems": []},
     {"number": 3668, "slug": "restore-finishing-order", "title": "Restore Finishing Order", "difficulty": "Easy", "tags": [], "similar_problems": []},
-    {"number": 3674, "slug": "minimum-operations-to-equalize-array", "title": "Minimum Operations to Equalize Array", "difficulty": "Easy", "tags": [], "similar_problems": []}
+    {"number": 3674, "slug": "minimum-operations-to-equalize-array", "title": "Minimum Operations to Equalize Array", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3678, "slug": "smallest-absent-positive-greater-than-average", "title": "Smallest Absent Positive Greater Than Average", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3683, "slug": "earliest-time-to-finish-one-task", "title": "Earliest Time to Finish One Task", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3684, "slug": "maximize-sum-of-at-most-k-distinct-elements", "title": "Maximize Sum of At Most K Distinct Elements", "difficulty": "Easy", "tags": [], "similar_problems": []}
 ]

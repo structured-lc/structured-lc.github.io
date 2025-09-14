@@ -99,3 +99,4 @@ Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sorting(#sorting), Heap
 - Maximum Number of Weeks for Which You Can Work(maximum-number-of-weeks-for-which-you-can-work) (Medium)
 - Find Minimum Time to Finish All Jobs II(find-minimum-time-to-finish-all-jobs-ii) (Medium)
 - Task Scheduler II(task-scheduler-ii) (Medium)
+- Generate Schedule(generate-schedule) (Medium)

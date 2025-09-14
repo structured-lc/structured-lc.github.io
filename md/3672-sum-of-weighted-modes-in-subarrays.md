@@ -120,5 +120,4 @@ Could be adapted with advanced data structures (segment tree, heaps) for even fa
 
 ### Tags
 
-
 ### Similar Problems
