@@ -379,6 +379,55 @@
   </button>
 
   <script>
+    // ENHANCED THEME SYSTEM - Works with settings (System/Light/Dark)
+    function applyTheme(themePreference = 'system') {
+      // Remove existing theme classes
+      document.body.classList.remove('dark-theme', 'light-theme');
+      
+      if (themePreference === 'system') {
+        // Follow system preference
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (prefersDark) {
+          document.body.classList.add('dark-theme');
+        } else {
+          document.body.classList.add('light-theme');
+        }
+      } else if (themePreference === 'dark') {
+        document.body.classList.add('dark-theme');
+      } else if (themePreference === 'light') {
+        document.body.classList.add('light-theme');
+      }
+    }
+    
+    // Initialize theme system
+    function initializeTheme() {
+      // Check if settings manager has loaded preferences
+      if (window.scaleSettingsManager && window.scaleSettingsManager.settings) {
+        applyTheme(window.scaleSettingsManager.settings.theme);
+      } else {
+        // Default to system theme until settings load
+        applyTheme('system');
+      }
+    }
+    
+    // Apply theme on page load  
+    initializeTheme();
+    
+    // Listen for system theme changes (only when in system mode)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+      // Only apply system theme if current preference is system
+      if (!window.scaleSettingsManager || window.scaleSettingsManager.settings.theme === 'system') {
+        applyTheme('system');
+      }
+    });
+    
+    // Listen for theme setting changes from settings panel
+    window.addEventListener('scaleSettingsChanged', (e) => {
+      if (e.detail.type === 'theme') {
+        applyTheme(e.detail.value);
+      }
+    });
+
     // Global variable for desktop router state
     let desktopRouterInitialized = false;
     

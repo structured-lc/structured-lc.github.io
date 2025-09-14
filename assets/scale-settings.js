@@ -9,7 +9,7 @@ class ScaleSettingsManager {
     this.defaults = {
       mobile: 'normal',    // 1.0 scale
       desktop: 'normal',   // 0.9 scale
-      theme: 'light'       // light theme
+      theme: 'system'      // follow system theme (default)
     };
     
     this.mobileOptions = {
@@ -29,6 +29,7 @@ class ScaleSettingsManager {
     };
     
     this.themeOptions = {
+      'system': { label: 'System', description: 'Follow your system theme' },
       'light': { label: 'Light', description: 'Clean, bright interface' },
       'dark': { label: 'Dark', description: 'Easy on the eyes' }
     };
@@ -317,13 +318,14 @@ class ScaleSettingsManager {
         </div>
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
           <span style="font-size: 12px; color: #656d76;">Light</span>
+          <span style="font-size: 12px; color: #656d76;">System</span>
           <span style="font-size: 12px; color: #656d76;">Dark</span>
         </div>
         <div style="position: relative;">
-          <input type="range" id="mobile-theme-slider" min="0" max="1" step="1" 
-                 value="${this.settings.theme === 'dark' ? 1 : 0}"
+          <input type="range" id="mobile-theme-slider" min="0" max="2" step="1" 
+                 value="${this.settings.theme === 'light' ? 0 : (this.settings.theme === 'system' ? 1 : 2)}"
                  style="width: 100%; height: 6px; -webkit-appearance: none; appearance: none; 
-                        background: linear-gradient(90deg, #fbbf24 0%, #1f2937 100%); 
+                        background: linear-gradient(90deg, #fbbf24 0%, #667eea 50%, #1f2937 100%); 
                         border-radius: 3px; outline: none;">
         </div>
         <div style="font-size: 12px; color: #656d76; margin-top: 6px; text-align: center;" id="mobile-theme-description">
@@ -377,13 +379,14 @@ class ScaleSettingsManager {
         </div>
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
           <span style="font-size: 12px; color: #656d76;">Light</span>
+          <span style="font-size: 12px; color: #656d76;">System</span>
           <span style="font-size: 12px; color: #656d76;">Dark</span>
         </div>
         <div style="position: relative;">
-          <input type="range" id="desktop-theme-slider" min="0" max="1" step="1" 
-                 value="${this.settings.theme === 'dark' ? 1 : 0}"
+          <input type="range" id="desktop-theme-slider" min="0" max="2" step="1" 
+                 value="${this.settings.theme === 'light' ? 0 : (this.settings.theme === 'system' ? 1 : 2)}"
                  style="width: 100%; height: 6px; -webkit-appearance: none; appearance: none; 
-                        background: linear-gradient(90deg, #fbbf24 0%, #1f2937 100%); 
+                        background: linear-gradient(90deg, #fbbf24 0%, #667eea 50%, #1f2937 100%); 
                         border-radius: 3px; outline: none;">
         </div>
         <div style="font-size: 12px; color: #656d76; margin-top: 6px; text-align: center;" id="desktop-theme-description">
@@ -504,10 +507,27 @@ class ScaleSettingsManager {
       themeSlider.disabled = false;
       themeSlider.style.opacity = '1';
       themeSlider.style.cursor = 'pointer';
-      themeSlider.title = 'Switch between light and dark themes';
+      themeSlider.title = 'Switch between light, system, and dark themes';
       
       themeSlider.addEventListener('input', (e) => {
-        const themeValue = parseInt(e.target.value) === 1 ? 'dark' : 'light';
+        const sliderValue = parseInt(e.target.value);
+        let themeValue;
+        
+        switch (sliderValue) {
+          case 0:
+            themeValue = 'light';
+            break;
+          case 1:
+            themeValue = 'system';
+            break;
+          case 2:
+            themeValue = 'dark';
+            break;
+          default:
+            themeValue = 'system';
+            break;
+        }
+        
         const option = this.themeOptions[themeValue];
         
         // Update displays
@@ -557,10 +577,27 @@ class ScaleSettingsManager {
       themeSlider.disabled = false;
       themeSlider.style.opacity = '1';
       themeSlider.style.cursor = 'pointer';
-      themeSlider.title = 'Switch between light and dark themes';
+      themeSlider.title = 'Switch between light, system, and dark themes';
       
       themeSlider.addEventListener('input', (e) => {
-        const themeValue = parseInt(e.target.value) === 1 ? 'dark' : 'light';
+        const sliderValue = parseInt(e.target.value);
+        let themeValue;
+        
+        switch (sliderValue) {
+          case 0:
+            themeValue = 'light';
+            break;
+          case 1:
+            themeValue = 'system';
+            break;
+          case 2:
+            themeValue = 'dark';
+            break;
+          default:
+            themeValue = 'system';
+            break;
+        }
+        
         const option = this.themeOptions[themeValue];
         
         // Update displays
