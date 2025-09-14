@@ -4378,6 +4378,32 @@
       }
 
       // ==========================================
+      // PRINT BUTTON DARK MODE INTERCEPTOR
+      // ==========================================
+      
+      // Intercept print button clicks in dark mode
+      function interceptPrintClick(event) {
+        if (document.body.classList.contains('dark-theme')) {
+          event.preventDefault();
+          event.stopPropagation();
+          showMobileToast('Switch Theme to Light mode to Print');
+          return false;
+        }
+      }
+      
+      // Add click event listeners to all print buttons
+      document.addEventListener('click', function(event) {
+        // Check if clicked element is a print button
+        if (event.target.id === 'mobile-print-btn' || 
+            event.target.id === 'desktop-print-btn' ||
+            (event.target.getAttribute('data-action') === 'print') ||
+            event.target.getAttribute('onclick') === 'window.print()') {
+          
+          interceptPrintClick(event);
+        }
+      }, true); // Use capturing phase to intercept before onclick handlers
+
+      // ==========================================
       // END SIMPLE URL REPLAY SYSTEM
       // ==========================================
   </script>

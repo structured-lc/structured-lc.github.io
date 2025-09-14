@@ -494,19 +494,18 @@ class ScaleSettingsManager {
       });
     }
 
-    // Theme Slider (temporarily disabled)
+    // Theme Slider
     const themeSlider = section.querySelector('#mobile-theme-slider');
     const themeValueDisplay = section.querySelector('#mobile-theme-value');
     const themeDescription = section.querySelector('#mobile-theme-description');
     
     if (themeSlider) {
-      // Disable the theme slider temporarily
-      themeSlider.disabled = true;
-      themeSlider.style.opacity = '0.5';
-      themeSlider.style.cursor = 'not-allowed';
-      themeSlider.title = 'Theme switching coming soon';
+      // Enable the theme slider
+      themeSlider.disabled = false;
+      themeSlider.style.opacity = '1';
+      themeSlider.style.cursor = 'pointer';
+      themeSlider.title = 'Switch between light and dark themes';
       
-      /* Theme functionality temporarily disabled
       themeSlider.addEventListener('input', (e) => {
         const themeValue = parseInt(e.target.value) === 1 ? 'dark' : 'light';
         const option = this.themeOptions[themeValue];
@@ -520,7 +519,6 @@ class ScaleSettingsManager {
         // Update setting
         this.updateSetting('theme', themeValue);
       });
-      */
     }
   }
   
@@ -549,19 +547,18 @@ class ScaleSettingsManager {
       });
     }
 
-    // Theme Slider (temporarily disabled)
+    // Theme Slider
     const themeSlider = section.querySelector('#desktop-theme-slider');
     const themeValueDisplay = section.querySelector('#desktop-theme-value');
     const themeDescription = section.querySelector('#desktop-theme-description');
     
     if (themeSlider) {
-      // Disable the theme slider temporarily
-      themeSlider.disabled = true;
-      themeSlider.style.opacity = '0.5';
-      themeSlider.style.cursor = 'not-allowed';
-      themeSlider.title = 'Theme switching coming soon';
+      // Enable the theme slider
+      themeSlider.disabled = false;
+      themeSlider.style.opacity = '1';
+      themeSlider.style.cursor = 'pointer';
+      themeSlider.title = 'Switch between light and dark themes';
       
-      /* Theme functionality temporarily disabled
       themeSlider.addEventListener('input', (e) => {
         const themeValue = parseInt(e.target.value) === 1 ? 'dark' : 'light';
         const option = this.themeOptions[themeValue];
@@ -575,7 +572,6 @@ class ScaleSettingsManager {
         // Update setting
         this.updateSetting('theme', themeValue);
       });
-      */
     }
   }
   

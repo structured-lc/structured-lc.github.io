@@ -1023,6 +1023,26 @@ html, body {
   line-height: inherit;
 }
 
+/* Ensure proper font family for HLJS elements in desktop content */
+.desktop-content-inner .hljs,
+.mobile-content-inner .hljs {
+  font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+}
+
+.desktop-content-inner code.hljs,
+.mobile-content-inner code.hljs {
+  font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+  background: #f6f8fa;
+  color: #24292f;
+}
+
+.desktop-content-inner pre.hljs,
+.mobile-content-inner pre.hljs {
+  font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+  background: #f6f8fa;
+  color: #24292f;
+}
+
 /* Keywords (def, for, if, return, etc.) */
 .hljs-keyword {
   color: #d73a49;
@@ -1139,8 +1159,12 @@ html, body {
 }
 
 /* Ensure all text elements have consistent styling */
-.mobile-content-inner * {
+.mobile-content-inner *:not(button):not(.tag-button):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(code):not(.hljs) {
   color: inherit;
+  font-family: inherit;
+}
+
+.mobile-content-inner * {
   font-family: inherit;
 }
 
@@ -1723,7 +1747,7 @@ html, body {
   
   #mobile-lists-list a:hover,
   #mobile-file-list a:hover {
-    background: #21262d !important;
+    background: transparent !important;
   }
   
   .mobile-content-inner code {
@@ -2563,8 +2587,12 @@ html, body {
   }
 
   /* Ensure all text elements have consistent styling */
-  .desktop-content-inner * {
+  .desktop-content-inner *:not(button):not(.tag-button):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(code):not(.hljs) {
     color: inherit;
+    font-family: inherit;
+  }
+
+  .desktop-content-inner * {
     font-family: inherit;
   }
 
@@ -2596,13 +2624,33 @@ html, body {
     text-decoration: underline;
   }
   
-  /* Desktop-specific content wrapper with background */
+  /* Desktop-specific content wrapper with background - High Elevation Tile Design */
   .desktop-content-with-background {
-    background: #ffffff;
-    border-radius: calc(12px * var(--desktop-scale));
-    border: 1px solid #d1d5db;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 30%, #ffffff 100%);
+    border-radius: calc(16px * var(--desktop-scale));
+    border: 1px solid rgba(209, 213, 219, 0.6);
+    box-shadow: 
+      0 4px 8px rgba(0, 0, 0, 0.12),
+      0 8px 16px rgba(0, 0, 0, 0.08),
+      0 16px 32px rgba(0, 0, 0, 0.06),
+      0 24px 48px rgba(0, 0, 0, 0.04),
+      inset 0 2px 0 rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
     padding: 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    isolation: isolate;
+  }
+  
+  .desktop-content-with-background:hover {
+    box-shadow: 
+      0 8px 16px rgba(0, 0, 0, 0.15),
+      0 16px 32px rgba(0, 0, 0, 0.12),
+      0 24px 48px rgba(0, 0, 0, 0.08),
+      0 32px 64px rgba(0, 0, 0, 0.06),
+      inset 0 2px 0 rgba(255, 255, 255, 1);
+    border-color: rgba(209, 213, 219, 0.4);
   }
 
   /* Desktop action buttons styling within background */
@@ -3706,66 +3754,1064 @@ html, body {
 }
 
 /* ===== DARK THEME SUPPORT ===== */
+/* Smooth transitions for theme switching */
+/* Removed global transition - causes conflicts with inline button styles */
+
 body.dark-theme {
-  background: linear-gradient(135deg, #1f2937 0%, #111827 50%, #1f2937 100%) !important;
-  color: #f3f4f6 !important;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 50%, #1a1a1a 100%) !important;
+  color: #ffffff !important;
 }
 
 body.dark-theme .mobile-header {
-  background: rgba(17, 24, 39, 0.95) !important;
-  border-bottom-color: #374151 !important;
+  background: rgba(26, 26, 26, 0.95) !important;
+  border-bottom-color: #404040 !important;
+  backdrop-filter: blur(12px) !important;
 }
 
 body.dark-theme .desktop-header {
-  background: rgba(17, 24, 39, 0.95) !important;
-  border-bottom-color: #374151 !important;
+  background: rgba(26, 26, 26, 0.95) !important;
+  border-bottom-color: #404040 !important;
+  backdrop-filter: blur(12px) !important;
 }
 
 body.dark-theme .mobile-content-inner,
 body.dark-theme .desktop-content-inner {
-  background: rgba(17, 24, 39, 0.9) !important;
-  color: #f3f4f6 !important;
+  background: #1f1f1f !important;
+  color: #ffffff !important;
+  border: 1px solid #404040 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
 }
 
 body.dark-theme .mobile-content-inner h1,
 body.dark-theme .mobile-content-inner h2,
-body.dark-theme .mobile-content-inner h3,
 body.dark-theme .desktop-content-inner h1,
-body.dark-theme .desktop-content-inner h2,
-body.dark-theme .desktop-content-inner h3 {
-  color: #f3f4f6 !important;
+body.dark-theme .desktop-content-inner h2 {
+  color: #ffffff !important;
+  text-shadow: none !important;
 }
 
-body.dark-theme .mobile-content-inner a,
-body.dark-theme .desktop-content-inner a {
-  color: #60a5fa !important;
+body.dark-theme .mobile-content-inner h3,
+body.dark-theme .desktop-content-inner h3 {
+  color: #66b3ff !important;
+  text-shadow: none !important;
+  font-weight: 600 !important;
+}
+
+/* Make H3 styling more specific to override catch-all rules */
+body.dark-theme h3,
+body.dark-theme .mobile-content-inner h3,
+body.dark-theme .desktop-content-inner h3,
+body.dark-theme div h3 {
+  color: #66b3ff !important;
+  text-shadow: none !important;
+  font-weight: 600 !important;
+}
+
+body.dark-theme .mobile-content-inner a:not([style*="background:"]):not(.similar-problem-button):not(.tag-button),
+body.dark-theme .desktop-content-inner a:not([style*="background:"]):not(.similar-problem-button):not(.tag-button) {
+  color: #66b3ff !important;
+  transition: color 0.2s ease !important;
+}
+
+body.dark-theme .mobile-content-inner a:not([style*="background:"]):not(.similar-problem-button):not(.tag-button):hover,
+body.dark-theme .desktop-content-inner a:not([style*="background:"]):not(.similar-problem-button):not(.tag-button):hover {
+  color: #4da6ff !important;
+}
+
+body.dark-theme .mobile-content-inner p,
+body.dark-theme .desktop-content-inner p,
+body.dark-theme .mobile-content-inner li,
+body.dark-theme .desktop-content-inner li,
+body.dark-theme .mobile-content-inner span,
+body.dark-theme .desktop-content-inner span,
+body.dark-theme .mobile-content-inner div,
+body.dark-theme .desktop-content-inner div {
+  color: #ffffff !important;
+}
+
+/* Dark theme italic text - keep italic style, just change color */
+body.dark-theme .mobile-content-inner em,
+body.dark-theme .desktop-content-inner em {
+  color: #ffffff !important;
+  font-style: italic !important;
+}
+
+/* Dark theme bold text - change color and ensure bold weight */
+body.dark-theme .mobile-content-inner strong,
+body.dark-theme .desktop-content-inner strong {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+/* Ensure all text elements have proper contrast in dark mode */
+body.dark-theme .mobile-content-inner *:not(a):not(code):not(.tag-button):not(h3),
+body.dark-theme .desktop-content-inner *:not(a):not(code):not(.tag-button):not(h3) {
+  color: #ffffff !important;
 }
 
 body.dark-theme .mobile-modal-content,
 body.dark-theme .desktop-modal-content {
-  background: #1f2937 !important;
-  color: #f3f4f6 !important;
+  background: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #404040 !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6) !important;
 }
 
 body.dark-theme .mobile-modal-header,
 body.dark-theme .desktop-modal-header {
-  border-bottom-color: #374151 !important;
+  border-bottom-color: #404040 !important;
+  background: rgba(42, 42, 42, 0.9) !important;
+  color: #ffffff !important;
 }
 
-body.dark-theme code {
-  background: #374151 !important;
-  color: #fbbf24 !important;
+/* Dark theme code styling - only for inline code, not syntax highlighted blocks */
+body.dark-theme code:not(.hljs):not([class*="language-"]) {
+  background: #333333 !important;
+  color: #ffcc66 !important;
+  border: 1px solid #555555 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
 }
 
-body.dark-theme pre {
-  background: #111827 !important;
-  border-color: #374151 !important;
+body.dark-theme pre:not(.hljs):not([class*="language-"]) {
+  background: #2a2a2a !important;
+  border-color: #404040 !important;
+  color: #ffffff !important;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2) !important;
 }
 
 body.dark-theme blockquote {
-  border-left-color: #60a5fa !important;
-  background: rgba(96, 165, 250, 0.1) !important;
-  color: #f3f4f6 !important;
+  border-left-color: #66b3ff !important;
+  background: rgba(102, 179, 255, 0.1) !important;
+  color: #ffffff !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+/* Navigation Buttons Dark Theme */
+body.dark-theme .mobile-nav-btn {
+  background: #333333 !important;
+  color: #ffffff !important;
+  border: 1px solid #555555 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-theme .mobile-nav-btn::before {
+  background: linear-gradient(135deg, #4a90e2 0%, #7b68ee 100%) !important;
+}
+
+body.dark-theme .mobile-nav-btn:hover {
+  background: #404040 !important;
+  border-color: #666666 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-theme .mobile-nav-btn:active {
+  background: #4a4a4a !important;
+  transform: translateY(0) scale(0.98) !important;
+}
+
+@media (min-width: 1024px) {
+  body.dark-theme .desktop-nav-btn {
+    background: #333333 !important;
+    color: #ffffff !important;
+    border: 1px solid #555555 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  body.dark-theme .desktop-nav-btn::before {
+    background: linear-gradient(135deg, #4a90e2 0%, #7b68ee 100%) !important;
+  }
+
+  body.dark-theme .desktop-nav-btn:hover {
+    background: #404040 !important;
+    border-color: #666666 !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5) !important;
+  }
+
+  body.dark-theme .desktop-nav-btn:active {
+    background: #4a4a4a !important;
+    transform: translateY(-1px) scale(0.98) !important;
+  }
+}
+
+/* Form Elements Dark Theme */
+body.dark-theme .mobile-modal-body input[type="text"],
+body.dark-theme input[type="text"],
+body.dark-theme input[type="search"],
+body.dark-theme #desktop-search-input {
+  background: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #555555 !important;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+body.dark-theme .mobile-modal-body input[type="text"]:focus,
+body.dark-theme input[type="text"]:focus,
+body.dark-theme input[type="search"]:focus,
+body.dark-theme #desktop-search-input:focus {
+  border-color: #66b3ff !important;
+  box-shadow: 0 0 0 3px rgba(102, 179, 255, 0.2), inset 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+  outline: none !important;
+}
+
+body.dark-theme .mobile-setting-item select,
+body.dark-theme .desktop-setting-item select,
+body.dark-theme select {
+  background: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #555555 !important;
+}
+
+body.dark-theme .mobile-setting-item select:focus,
+body.dark-theme .desktop-setting-item select:focus,
+body.dark-theme select:focus {
+  border-color: #66b3ff !important;
+  box-shadow: 0 0 0 3px rgba(102, 179, 255, 0.2) !important;
+  outline: none !important;
+}
+
+body.dark-theme .desktop-search-filters input[type="checkbox"] {
+  accent-color: #66b3ff !important;
+}
+
+/* Breadcrumb Navigation Dark Theme */
+body.dark-theme .mobile-breadcrumb-nav {
+  background: rgba(26, 26, 26, 0.95) !important;
+  border-bottom: 1px solid #404040 !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+body.dark-theme .mobile-breadcrumb-link {
+  background: #333333 !important;
+  color: #ffffff !important;
+  border: 1px solid #555555 !important;
+}
+
+body.dark-theme .mobile-breadcrumb-link:hover {
+  background: #404040 !important;
+  color: #ffffff !important;
+  border-color: #666666 !important;
+}
+
+body.dark-theme .mobile-breadcrumb-arrow {
+  color: #cccccc !important;
+}
+
+/* Mobile Search Dark Theme */
+body.dark-theme #mobile-search-results {
+  background: #1f1f1f !important;
+  border: 1px solid #404040 !important;
+}
+
+body.dark-theme .mobile-search-result-item {
+  border-bottom: 1px solid #404040 !important;
+  color: #ffffff !important;
+}
+
+body.dark-theme .mobile-search-result-item:hover {
+  background: #2a2a2a !important;
+}
+
+body.dark-theme .mobile-search-result-title {
+  color: #ffffff !important;
+}
+
+body.dark-theme .mobile-search-result-meta {
+  color: #cccccc !important;
+}
+
+/* Mobile Search Results Difficulty Dark Theme - Match Desktop */
+body.dark-theme .mobile-search-result-difficulty.easy {
+  background: #28a745 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+body.dark-theme .mobile-search-result-difficulty.medium {
+  background: #ffa500 !important;
+  color: #000000 !important;
+  font-weight: 600 !important;
+}
+
+body.dark-theme .mobile-search-result-difficulty.hard {
+  background: #dc3545 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+/* Mobile Problem Title Dark Theme */
+body.dark-theme .mobile-problem-title {
+  color: #ffffff !important;
+}
+
+/* Mobile List Actions Dark Theme */
+body.dark-theme .mobile-list-actions {
+  background: #1f1f1f !important;
+  border: 1px solid #404040 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Mobile Action Buttons Dark Theme */
+body.dark-theme .mobile-action-button {
+  background: #333333 !important;
+  color: #ffffff !important;
+  border: 1px solid #555555 !important;
+}
+
+body.dark-theme .mobile-action-button:hover {
+  background: #404040 !important;
+  border-color: #666666 !important;
+}
+
+/* Preserve specific button colors in dark theme */
+body.dark-theme .mobile-start-button {
+  background: #10b981 !important;
+  color: #ffffff !important;
+  border: 1px solid #10b981 !important;
+}
+
+body.dark-theme .mobile-start-button:hover {
+  background: #059669 !important;
+  border-color: #059669 !important;
+}
+
+body.dark-theme .mobile-random-button {
+  background: #f59e0b !important;
+  color: #ffffff !important;
+  border: 1px solid #f59e0b !important;
+}
+
+body.dark-theme .mobile-random-button:hover {
+  background: #d97706 !important;
+  border-color: #d97706 !important;
+}
+
+body.dark-theme .mobile-back-button {
+  background: #0969da !important;
+  color: #ffffff !important;
+  border: 1px solid #0969da !important;
+}
+
+body.dark-theme .mobile-back-button:hover {
+  background: #0860ca !important;
+  border-color: #0860ca !important;
+}
+
+/* List Styles Dark Theme */
+body.dark-theme #mobile-lists-sidebar,
+body.dark-theme #mobile-file-list {
+  background: #1a1a1a !important;
+  border-right: 1px solid #404040 !important;
+}
+
+/* Fix mobile sidebar background and borders */
+body.dark-theme #mobile-sidebar {
+  background: #1a1a1a !important;
+  border-right: 1px solid #404040 !important;
+}
+
+/* Fix mobile content background */
+body.dark-theme #mobile-content {
+  background: #1a1a1a !important;
+}
+
+/* Fix mobile lists container background */
+body.dark-theme #mobile-lists-list {
+  background: #1a1a1a !important;
+  border: 1px solid #404040 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Mobile Lists - Force dark theme override with higher specificity */
+body.dark-theme #mobile-lists-list li,
+body.dark-theme #mobile-file-list li {
+  background: #1f1f1f !important;
+  border: 1px solid #404040 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-theme #mobile-lists-list li:hover,
+body.dark-theme #mobile-file-list li:hover {
+  background: #2a2a2a !important;
+  border-color: #555555 !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5) !important;
+  transform: translateY(calc(-2px * var(--mobile-scale))) !important;
+}
+
+body.dark-theme #mobile-lists-list a,
+body.dark-theme #mobile-file-list a {
+  color: #ffffff !important;
+}
+
+/* Fix mobile breadcrumb text color in dark theme */
+body.dark-theme .mobile-breadcrumb-text {
+    color: #ffffff !important;
+}
+
+body.dark-theme #mobile-breadcrumb-list {
+    color: #ffffff !important;
+}
+
+/* Fix mobile action buttons container in dark theme */
+body.dark-theme .mobile-action-buttons {
+    background: #1f1f1f !important;
+    border: 1px solid #404040 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Fix welcome message text color in dark theme */
+body.dark-theme .mobile-list-actions div {
+    color: #ffffff !important;
+}
+
+body.dark-theme .mobile-welcome-message div {
+    color: #ffffff !important;
+}
+
+/* Fix mobile list title color in dark theme */
+body.dark-theme .mobile-list-title {
+    color: #ffffff !important;
+}
+
+/* Fix mobile home view dark theme */
+body.dark-theme #mobile-home-content div[style*="background: white"] {
+    background: #1f1f1f !important;
+    border: 1px solid #404040 !important;
+}
+
+body.dark-theme #mobile-home-content h3[style*="color: #374151"] {
+    color: #66b3ff !important;
+}
+
+body.dark-theme #mobile-home-content p[style*="color: #6b7280"] {
+    color: #cccccc !important;
+}
+
+body.dark-theme #mobile-version-info {
+    background: #1f1f1f !important;
+    border-top: 1px solid #404040 !important;
+    color: #cccccc !important;
+}
+
+/* Preserve button colors - prevent inheritance override */
+.mobile-content-inner button,
+.desktop-content-inner button {
+    color: white !important;
+}
+
+/* Specific button color preservation */
+.mobile-content-inner button[style*="background: #6f42c1"],
+.desktop-content-inner button[style*="background: #6f42c1"] {
+    background: #6f42c1 !important;
+    color: white !important;
+}
+
+.mobile-content-inner button[style*="background: #f59e0b"],
+.desktop-content-inner button[style*="background: #f59e0b"] {
+    background: #f59e0b !important;
+    color: white !important;
+}
+
+.mobile-content-inner button[style*="background: #0969da"],
+.desktop-content-inner button[style*="background: #0969da"] {
+    background: #0969da !important;
+    color: white !important;
+}
+
+/* Fix individual button inline styles with maximum specificity */
+html body.dark-theme .mobile-action-buttons button[disabled] {
+    background: #333333 !important;
+    color: #666666 !important;
+    border: 1px solid #555555 !important;
+    cursor: not-allowed !important;
+}
+
+html body.dark-theme .mobile-action-buttons button#mobile-next-btn {
+    background: #6f42c1 !important;
+    color: white !important;
+    border: none !important;
+}
+
+html body.dark-theme .mobile-action-buttons button#mobile-random-btn {
+    background: #f59e0b !important;
+    color: white !important;
+    border: none !important;
+}
+
+html body.dark-theme .mobile-action-buttons button#mobile-print-btn {
+    background: #6b7280 !important;
+    color: #9ca3af !important;
+    border: 1px solid #4b5563 !important;
+    cursor: not-allowed !important;
+    opacity: 0.6 !important;
+}
+
+/* Fix button hover states with maximum specificity */
+html body.dark-theme .mobile-action-buttons button#mobile-next-btn:hover {
+    background: #5a2d8f !important;
+}
+
+html body.dark-theme .mobile-action-buttons button#mobile-random-btn:hover {
+    background: #d97706 !important;
+}
+
+html body.dark-theme .mobile-action-buttons button#mobile-print-btn:hover {
+    background: #6b7280 !important;
+    color: #9ca3af !important;
+    cursor: not-allowed !important;
+}
+
+body.dark-theme #mobile-lists-list a:hover,
+body.dark-theme #mobile-file-list a:hover {
+  background: transparent !important;
+  color: #ffffff !important;
+}
+
+/* Extra specificity for mobile lists dark theme */
+html body.dark-theme #mobile-lists-list li:hover,
+html body.dark-theme #mobile-file-list li:hover {
+  background: #2a2a2a !important;
+}
+
+html body.dark-theme #mobile-lists-list a:hover,
+html body.dark-theme #mobile-file-list a:hover {
+  background: transparent !important;
+}
+
+/* Additional mobile element overrides */
+body.dark-theme .mobile-list-icon-and-title {
+  color: #ffffff !important;
+}
+
+body.dark-theme .mobile-difficulty-badge {
+  border-color: #555555 !important;
+  color: #ffffff !important;
+}
+
+/* Override media query dark mode styles with manual dark theme */
+body.dark-theme #mobile-lists-list a:hover,
+body.dark-theme #mobile-file-list a:hover {
+  background: transparent !important;
+  color: #ffffff !important;
+}
+
+/* Difficulty Badges and Indicators Dark Theme */
+body.dark-theme .difficulty-badge {
+  border: 1px solid #555555 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-theme .difficulty-badge.easy {
+  background: #28a745 !important;
+  color: #ffffff !important;
+  border-color: #34ce57 !important;
+  font-weight: 600 !important;
+}
+
+body.dark-theme .difficulty-badge.medium {
+  background: #ffa500 !important;
+  color: #000000 !important;
+  border-color: #ffb733 !important;
+  font-weight: 600 !important;
+}
+
+body.dark-theme .difficulty-badge.hard {
+  background: #dc3545 !important;
+  color: #ffffff !important;
+  border-color: #e74c3c !important;
+  font-weight: 600 !important;
+}
+
+/* Difficulty Dots Dark Theme */
+body.dark-theme .mobile-difficulty-dot.easy,
+body.dark-theme .difficulty-dot-inline.easy,
+body.dark-theme .markdown-difficulty-dot.easy {
+  background: #28a745 !important;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.6) !important;
+}
+
+body.dark-theme .mobile-difficulty-dot.medium,
+body.dark-theme .difficulty-dot-inline.medium,
+body.dark-theme .markdown-difficulty-dot.medium {
+  background: #ffa500 !important;
+  box-shadow: 0 0 8px rgba(255, 165, 0, 0.6) !important;
+}
+
+body.dark-theme .mobile-difficulty-dot.hard,
+body.dark-theme .difficulty-dot-inline.hard,
+body.dark-theme .markdown-difficulty-dot.hard {
+  background: #dc3545 !important;
+  box-shadow: 0 0 8px rgba(220, 53, 69, 0.6) !important;
+}
+
+/* Desktop Search Results Difficulty Dark Theme */
+@media (min-width: 1024px) {
+  body.dark-theme .desktop-search-result-difficulty.easy {
+    background: #28a745 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+  }
+
+  body.dark-theme .desktop-search-result-difficulty.medium {
+    background: #ffa500 !important;
+    color: #000000 !important;
+    font-weight: 600 !important;
+  }
+
+  body.dark-theme .desktop-search-result-difficulty.hard {
+    background: #dc3545 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+  }
+
+  body.dark-theme .desktop-problem-difficulty.easy {
+    background: #28a745 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+  }
+
+  body.dark-theme .desktop-problem-difficulty.medium {
+    background: #ffa500 !important;
+    color: #000000 !important;
+    font-weight: 600 !important;
+  }
+
+  body.dark-theme .desktop-problem-difficulty.hard {
+    background: #dc3545 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+  }
+}
+
+/* Floating Action Buttons Dark Theme */
+body.dark-theme .mobile-feedback-fab {
+  background: #6f42c1 !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 8px 25px rgba(111, 66, 193, 0.4) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+body.dark-theme .mobile-share-fab {
+  background: #0969da !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 8px 25px rgba(9, 105, 218, 0.4) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+body.dark-theme .mobile-feedback-fab:hover {
+  background: #5a2d91 !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 12px 30px rgba(90, 45, 145, 0.5) !important;
+  transform: translateY(-2px) scale(1.05) !important;
+}
+
+body.dark-theme .mobile-share-fab:hover {
+  background: #0550ae !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 12px 30px rgba(5, 80, 174, 0.5) !important;
+  transform: translateY(-2px) scale(1.05) !important;
+}
+
+body.dark-theme .mobile-feedback-fab:active {
+  transform: translateY(-1px) scale(0.98) !important;
+  background: #4a2574 !important;
+}
+
+body.dark-theme .mobile-share-fab:active {
+  transform: translateY(-1px) scale(0.98) !important;
+  background: #044289 !important;
+}
+
+/* Action Buttons Dark Theme */
+body.dark-theme .mobile-action-btn {
+  background: #333333 !important;
+  color: #ffffff !important;
+  border: 1px solid #555555 !important;
+}
+
+body.dark-theme .mobile-action-btn:hover {
+  background: #404040 !important;
+  color: #ffffff !important;
+  border-color: #666666 !important;
+}
+
+body.dark-theme .mobile-action-btn:disabled {
+  background: #1a1a1a !important;
+  color: #666666 !important;
+  border-color: #333333 !important;
+}
+
+/* Close Buttons Dark Theme */
+body.dark-theme .mobile-close-btn {
+  background: #333333 !important;
+  color: #ffffff !important;
+  border: 1px solid #555555 !important;
+}
+
+body.dark-theme .mobile-close-btn:hover {
+  background: #dc3545 !important;
+  color: #ffffff !important;
+  border-color: #e74c3c !important;
+}
+
+@media (min-width: 1024px) {
+  body.dark-theme .desktop-close-btn {
+    background: #333333 !important;
+    color: #ffffff !important;
+    border: 1px solid #555555 !important;
+  }
+
+  body.dark-theme .desktop-close-btn:hover {
+    background: #dc3545 !important;
+    color: #ffffff !important;
+    border-color: #e74c3c !important;
+  }
+}
+
+/* Desktop Layout Dark Theme */
+body.dark-theme #desktop-content {
+  background: #0a0a0a !important;
+}
+
+/* Desktop Sidebars Dark Theme - Match Column 3 styling */
+body.dark-theme #desktop-lists-sidebar,
+body.dark-theme #desktop-problems-sidebar {
+  background: #0a0a0a !important;
+  border-right: 1px solid #404040 !important;
+}
+
+/* Desktop Lists and File Lists Dark Theme */
+body.dark-theme #desktop-lists-list,
+body.dark-theme #desktop-file-list {
+  background: transparent !important;
+}
+
+/* Desktop List Items Dark Theme - Match content area styling */
+body.dark-theme #desktop-lists-list li,
+body.dark-theme #desktop-file-list li {
+  background: #1f1f1f !important;
+  border: 1px solid #404040 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-theme #desktop-lists-list li:hover,
+body.dark-theme #desktop-file-list li:hover {
+  background: #2a2a2a !important;
+  border-color: #555555 !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Desktop List Links Dark Theme */
+body.dark-theme #desktop-lists-list a,
+body.dark-theme #desktop-file-list a {
+  color: #ffffff !important;
+}
+
+body.dark-theme #desktop-lists-list a:hover,
+body.dark-theme #desktop-file-list a:hover {
+  background: transparent !important;
+  color: #ffffff !important;
+}
+
+/* Active states for desktop lists */
+body.dark-theme #desktop-lists-list li.active,
+body.dark-theme #desktop-file-list li.active {
+  background: #2a2a2a !important;
+  border-color: #66b3ff !important;
+  box-shadow: 0 6px 16px rgba(102, 179, 255, 0.3) !important;
+}
+
+body.dark-theme #desktop-lists-list li.active a,
+body.dark-theme #desktop-file-list li.active a {
+  background: transparent !important;
+  color: #ffffff !important;
+}
+
+/* Desktop List Text Elements Dark Theme */
+body.dark-theme .desktop-list-title {
+  color: #ffffff !important;
+}
+
+body.dark-theme .desktop-list-count,
+body.dark-theme .desktop-list-description {
+  color: #cccccc !important;
+}
+
+body.dark-theme .desktop-problem-number {
+  color: #ffffff !important;
+  background: #2d3748 !important;
+  border-color: #4a5568 !important;
+  font-weight: 700 !important;
+}
+
+body.dark-theme .mobile-problem-number {
+  color: #ffffff !important;
+  background: #2d3748 !important;
+  border-color: #4a5568 !important;
+  font-weight: 700 !important;
+}
+
+body.dark-theme .desktop-problem-title {
+  color: #ffffff !important;
+}
+
+body.dark-theme .desktop-problem-meta {
+  color: #cccccc !important;
+}
+
+/* Desktop List Icons Dark Theme */
+body.dark-theme .desktop-list-icon {
+  background: linear-gradient(135deg, #4a90e2 0%, #7b68ee 100%) !important;
+  color: #ffffff !important;
+}
+
+/* Desktop Difficulty Indicators Dark Theme */
+body.dark-theme .desktop-difficulty-indicator {
+  background: rgba(42, 42, 42, 0.8) !important;
+  border: 1px solid #555555 !important;
+}
+
+body.dark-theme .desktop-difficulty-indicator.easy {
+  background: rgba(40, 167, 69, 0.2) !important;
+  border-color: #28a745 !important;
+}
+
+body.dark-theme .desktop-difficulty-indicator.medium {
+  background: rgba(255, 165, 0, 0.2) !important;
+  border-color: #ffa500 !important;
+}
+
+body.dark-theme .desktop-difficulty-indicator.hard {
+  background: rgba(220, 53, 69, 0.2) !important;
+  border-color: #dc3545 !important;
+}
+
+/* Desktop sidebar scrollbars - hidden by default like light mode */
+
+/* Desktop Search Modal Dark Theme */
+body.dark-theme #desktop-search-modal {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+body.dark-theme .desktop-search-modal-content {
+  background: #1f1f1f !important;
+  border: 1px solid #404040 !important;
+  color: #ffffff !important;
+}
+
+body.dark-theme .desktop-search-filters {
+  background: #2a2a2a !important;
+  border: 1px solid #404040 !important;
+}
+
+body.dark-theme .desktop-search-filters label {
+  color: #ffffff !important;
+}
+
+body.dark-theme #desktop-search-results {
+  background: #1f1f1f !important;
+  border: 1px solid #404040 !important;
+}
+
+body.dark-theme .desktop-search-result-item {
+  border-bottom: 1px solid #404040 !important;
+  color: #ffffff !important;
+}
+
+body.dark-theme .desktop-search-result-item:hover {
+  background: #2a2a2a !important;
+}
+
+body.dark-theme .desktop-search-result-title {
+  color: #ffffff !important;
+}
+
+body.dark-theme .desktop-search-result-meta {
+  color: #cccccc !important;
+}
+
+/* Desktop Container Dark Theme */
+body.dark-theme #desktop-container {
+  background: #0a0a0a !important;
+}
+
+/* Desktop Content Background Wrapper - High Elevation Tile Design */
+body.dark-theme .desktop-content-with-background {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 30%, #2a2a2a 100%) !important;
+  border: 1px solid rgba(64, 64, 64, 0.6) !important;
+  box-shadow: 
+    0 6px 12px rgba(0, 0, 0, 0.4) !important,
+    0 12px 24px rgba(0, 0, 0, 0.3) !important,
+    0 20px 40px rgba(0, 0, 0, 0.25) !important,
+    0 30px 60px rgba(0, 0, 0, 0.2) !important,
+    inset 0 2px 0 rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+body.dark-theme .desktop-content-with-background:hover {
+  box-shadow: 
+    0 12px 24px rgba(0, 0, 0, 0.5) !important,
+    0 20px 40px rgba(0, 0, 0, 0.4) !important,
+    0 32px 64px rgba(0, 0, 0, 0.3) !important,
+    0 48px 96px rgba(0, 0, 0, 0.25) !important,
+    inset 0 2px 0 rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(64, 64, 64, 0.4) !important;
+}
+
+/* Desktop Header (if exists) */
+body.dark-theme .desktop-header {
+  background: #1a1a1a !important;
+  border-bottom: 1px solid #404040 !important;
+  color: #ffffff !important;
+}
+
+/* Desktop sidebar headers and dividers */
+body.dark-theme .desktop-sidebar-header {
+  background: #2a2a2a !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #404040 !important;
+}
+
+/* Desktop list dividers */
+body.dark-theme .desktop-list-divider {
+  border-top: 1px solid #404040 !important;
+}
+
+/* Desktop problem navigation */
+body.dark-theme .desktop-problem-nav {
+  background: #2a2a2a !important;
+  border: 1px solid #404040 !important;
+}
+
+body.dark-theme .desktop-problem-nav a {
+  color: #66b3ff !important;
+}
+
+body.dark-theme .desktop-problem-nav a:hover {
+  color: #4da6ff !important;
+}
+
+/* Additional desktop elements */
+body.dark-theme .desktop-content-with-background {
+  background: transparent !important;
+}
+
+body.dark-theme .desktop-action-buttons {
+  background: rgba(26, 26, 26, 0.9) !important;
+  border-bottom: 1px solid #404040 !important;
+}
+
+/* Desktop action buttons styling */
+body.dark-theme .desktop-action-buttons button:not([style*="background:"]) {
+  background: #333333 !important;
+  color: #ffffff !important;
+  border: 1px solid #555555 !important;
+}
+
+body.dark-theme .desktop-action-buttons button:not([style*="background:"]):hover {
+  background: #404040 !important;
+  border-color: #666666 !important;
+}
+
+body.dark-theme .desktop-action-buttons button:disabled {
+  background: #1a1a1a !important;
+  color: #666666 !important;
+  border-color: #333333 !important;
+}
+
+/* Fix inline button styles in dark theme - maximum specificity */
+html body.dark-theme button[style*="background: #6f42c1"],
+html body.dark-theme .desktop-content-inner button[style*="background: #6f42c1"],
+html body.dark-theme .mobile-content-inner button[style*="background: #6f42c1"] {
+  background: #6f42c1 !important;
+  color: white !important;
+}
+
+html body.dark-theme button[style*="background: #f59e0b"],
+html body.dark-theme .desktop-content-inner button[style*="background: #f59e0b"],
+html body.dark-theme .mobile-content-inner button[style*="background: #f59e0b"] {
+  background: #f59e0b !important;
+  color: white !important;
+}
+
+html body.dark-theme button[style*="background: #0969da"],
+html body.dark-theme .desktop-content-inner button[style*="background: #0969da"],
+html body.dark-theme .mobile-content-inner button[style*="background: #0969da"] {
+  background: #0969da !important;
+  color: white !important;
+}
+
+/* Hover states for colored buttons in dark theme */
+html body.dark-theme button[style*="background: #6f42c1"]:hover,
+html body.dark-theme .desktop-content-inner button[style*="background: #6f42c1"]:hover,
+html body.dark-theme .mobile-content-inner button[style*="background: #6f42c1"]:hover {
+  background: #5a2d8f !important;
+  color: white !important;
+}
+
+html body.dark-theme button[style*="background: #f59e0b"]:hover,
+html body.dark-theme .desktop-content-inner button[style*="background: #f59e0b"]:hover,
+html body.dark-theme .mobile-content-inner button[style*="background: #f59e0b"]:hover {
+  background: #d97706 !important;
+  color: white !important;
+}
+
+html body.dark-theme button[style*="background: #0969da"]:hover,
+html body.dark-theme .desktop-content-inner button[style*="background: #0969da"]:hover,
+html body.dark-theme .mobile-content-inner button[style*="background: #0969da"]:hover {
+  background: #0860ca !important;
+  color: white !important;
+}
+
+/* Fix inline link styles in dark theme - maximum specificity */
+html body.dark-theme a[style*="background: #0969da"],
+html body.dark-theme .desktop-content-inner a[style*="background: #0969da"],
+html body.dark-theme .mobile-content-inner a[style*="background: #0969da"] {
+  background: #0969da !important;
+  color: white !important;
+}
+
+html body.dark-theme a[style*="background: #6f42c1"],
+html body.dark-theme .desktop-content-inner a[style*="background: #6f42c1"],
+html body.dark-theme .mobile-content-inner a[style*="background: #6f42c1"] {
+  background: #6f42c1 !important;
+  color: white !important;
+}
+
+html body.dark-theme a[style*="background: #f59e0b"],
+html body.dark-theme .desktop-content-inner a[style*="background: #f59e0b"],
+html body.dark-theme .mobile-content-inner a[style*="background: #f59e0b"] {
+  background: #f59e0b !important;
+  color: white !important;
+}
+
+/* Hover states for colored links in dark theme */
+html body.dark-theme a[style*="background: #0969da"]:hover,
+html body.dark-theme .desktop-content-inner a[style*="background: #0969da"]:hover,
+html body.dark-theme .mobile-content-inner a[style*="background: #0969da"]:hover {
+  background: #0550ae !important;
+  color: white !important;
+}
+
+html body.dark-theme a[style*="background: #6f42c1"]:hover,
+html body.dark-theme .desktop-content-inner a[style*="background: #6f42c1"]:hover,
+html body.dark-theme .mobile-content-inner a[style*="background: #6f42c1"]:hover {
+  background: #5a2d8f !important;
+  color: white !important;
+}
+
+html body.dark-theme a[style*="background: #f59e0b"]:hover,
+html body.dark-theme .desktop-content-inner a[style*="background: #f59e0b"]:hover,
+html body.dark-theme .mobile-content-inner a[style*="background: #f59e0b"]:hover {
+  background: #d97706 !important;
+  color: white !important;
 }
 
 /* ====================================
@@ -3893,46 +4939,352 @@ body.dark-theme blockquote {
 
 /* Dark theme support */
 body.dark-theme .tag-button {
-  background: linear-gradient(135deg, #312e81 0%, #3730a3 100%);
-  color: #c7d2fe;
-  border-color: rgba(199, 210, 254, 0.2);
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%) !important;
+  color: #ffffff !important;
+  border-color: #5ba0f2 !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 6px rgba(74, 144, 226, 0.3) !important;
 }
 
 body.dark-theme .tag-button:hover {
-  background: linear-gradient(135deg, #3730a3 0%, #4338ca 100%);
-  color: #e0e7ff;
-  box-shadow: 0 2px 4px rgba(67, 56, 202, 0.3);
+  background: linear-gradient(135deg, #357abd 0%, #2563eb 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 3px 8px rgba(74, 144, 226, 0.5) !important;
+  transform: translateY(-1px);
+  border-color: #3b82f6 !important;
+}
+
+body.dark-theme .tag-button:active {
+  transform: scale(0.95) !important;
+  box-shadow: 0 1px 3px rgba(74, 144, 226, 0.4) !important;
 }
 
 body.dark-theme .similar-problem-button.easy {
-  background: linear-gradient(135deg, #14532d 0%, #15803d 100%);
-  color: #bbf7d0;
-  border-color: rgba(187, 247, 208, 0.2);
+  background: #28a745 !important;
+  color: #ffffff !important;
+  border-color: #34ce57 !important;
+  font-weight: 600 !important;
 }
 
 body.dark-theme .similar-problem-button.easy:hover {
-  background: linear-gradient(135deg, #15803d 0%, #16a34a 100%);
-  color: #dcfce7;
+  background: #218838 !important;
+  color: #ffffff !important;
 }
 
 body.dark-theme .similar-problem-button.medium {
-  background: linear-gradient(135deg, #92400e 0%, #d97706 100%);
-  color: #fde68a;
-  border-color: rgba(253, 230, 138, 0.2);
+  background: #ffa500 !important;
+  color: #000000 !important;
+  border-color: #ffb733 !important;
+  font-weight: 600 !important;
 }
 
 body.dark-theme .similar-problem-button.medium:hover {
-  background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
-  color: #fef3c7;
+  background: #e69500 !important;
+  color: #000000 !important;
 }
 
 body.dark-theme .similar-problem-button.hard {
-  background: linear-gradient(135deg, #991b1b 0%, #dc2626 100%);
-  color: #fca5a5;
-  border-color: rgba(252, 165, 165, 0.2);
+  background: #dc3545 !important;
+  color: #ffffff !important;
+  border-color: #e74c3c !important;
+  font-weight: 600 !important;
 }
 
 body.dark-theme .similar-problem-button.hard:hover {
-  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
-  color: #fecaca;
+  background: #c82333 !important;
+  color: #ffffff !important;
+}
+
+/* Stats Grid Dark Theme - Fix invisible white text */
+body.dark-theme .stats-grid-4 > div {
+  background: #2a2a2a !important;
+  border: 1px solid #404040 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-theme .stats-grid-4 > div > div:nth-child(2),
+body.dark-theme .stats-grid-4 > div > div:nth-child(3) {
+  color: #ffffff !important;
+}
+
+/* Override inline styles for tiles and cards */
+body.dark-theme div[style*="background: white"],
+body.dark-theme div[style*="background:white"],
+body.dark-theme div[style*="background:#ffffff"],
+body.dark-theme div[style*="background: #ffffff"] {
+  background: #2a2a2a !important;
+  border: 1px solid #404040 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Fix text colors in tiles */
+body.dark-theme div[style*="background: white"] h3,
+body.dark-theme div[style*="background:white"] h3,
+body.dark-theme div[style*="background:#ffffff"] h3, 
+body.dark-theme div[style*="background: #ffffff"] h3 {
+  color: #66b3ff !important;
+}
+
+body.dark-theme div[style*="background: white"] p,
+body.dark-theme div[style*="background:white"] p,
+body.dark-theme div[style*="background:#ffffff"] p,
+body.dark-theme div[style*="background: #ffffff"] p {
+  color: #ffffff !important;
+}
+
+/* Override any inline text color styles that make text invisible */
+body.dark-theme h3[style*="color: #374151"],
+body.dark-theme h3[style*="color:#374151"] {
+  color: #66b3ff !important;
+}
+
+body.dark-theme p[style*="color: #6b7280"],
+body.dark-theme p[style*="color:#6b7280"] {
+  color: #ffffff !important;
+}
+
+/* HLJS Dark Theme - Remove horizontal lines and improve styling */
+body.dark-theme .hljs {
+  background: transparent !important;
+  color: #d4d4d4 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Enhanced specificity for desktop content HLJS elements */
+html body.dark-theme .desktop-content-inner .hljs,
+html body.dark-theme .mobile-content-inner .hljs {
+  background: transparent !important;
+  color: #d4d4d4 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+html body.dark-theme .desktop-content-inner code.hljs,
+html body.dark-theme .mobile-content-inner code.hljs {
+  background: transparent !important;
+  color: #d4d4d4 !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: calc(3px * var(--desktop-scale)) calc(6px * var(--desktop-scale)) !important;
+  font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;  
+}
+
+html body.dark-theme .desktop-content-inner pre.hljs,
+html body.dark-theme .mobile-content-inner pre.hljs {
+  background: #2a2a2a !important;
+  border: 1px solid #404040 !important;
+  color: #d4d4d4 !important;
+  font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+}
+
+body.dark-theme .hljs-keyword {
+  color: #569cd6 !important;
+  font-weight: 600 !important;
+}
+
+body.dark-theme .hljs-title.function_ {
+  color: #dcdcaa !important;
+  font-weight: 600 !important;
+}
+
+body.dark-theme .hljs-params {
+  color: #9cdcfe !important;
+}
+
+body.dark-theme .hljs-number {
+  color: #b5cea8 !important;
+  font-weight: 500 !important;
+}
+
+/* Enhanced specificity syntax highlighting for desktop/mobile content */
+html body.dark-theme .desktop-content-inner .hljs-keyword,
+html body.dark-theme .mobile-content-inner .hljs-keyword {
+  color: #569cd6 !important;
+  font-weight: 600 !important;
+}
+
+html body.dark-theme .desktop-content-inner .hljs-title.function_,
+html body.dark-theme .mobile-content-inner .hljs-title.function_ {
+  color: #dcdcaa !important;
+  font-weight: 600 !important;
+}
+
+html body.dark-theme .desktop-content-inner .hljs-params,
+html body.dark-theme .mobile-content-inner .hljs-params {
+  color: #9cdcfe !important;
+}
+
+html body.dark-theme .desktop-content-inner .hljs-number,
+html body.dark-theme .mobile-content-inner .hljs-number {
+  color: #b5cea8 !important;
+  font-weight: 500 !important;
+}
+
+html body.dark-theme .desktop-content-inner .hljs-comment,
+html body.dark-theme .mobile-content-inner .hljs-comment {
+  color: #6a9955 !important;
+  font-style: italic !important;
+}
+
+html body.dark-theme .desktop-content-inner .hljs-built_in,
+html body.dark-theme .mobile-content-inner .hljs-built_in {
+  color: #4ec9b0 !important;
+}
+
+body.dark-theme .hljs-comment {
+  color: #6a9955 !important;
+  font-style: italic !important;
+}
+
+body.dark-theme .hljs-built_in {
+  color: #4ec9b0 !important;
+  font-weight: 500 !important;
+}
+
+body.dark-theme .hljs-string {
+  color: #ce9178 !important;
+}
+
+body.dark-theme .hljs-operator {
+  color: #d4d4d4 !important;
+}
+
+body.dark-theme .hljs-punctuation {
+  color: #d4d4d4 !important;
+}
+
+body.dark-theme .hljs-attr,
+body.dark-theme .hljs-attribute {
+  color: #9cdcfe !important;
+}
+
+body.dark-theme .hljs-class .hljs-title {
+  color: #4ec9b0 !important;
+  font-weight: 600 !important;
+}
+
+body.dark-theme .hljs-variable,
+body.dark-theme .hljs-name {
+  color: #9cdcfe !important;
+}
+
+body.dark-theme .hljs-literal {
+  color: #569cd6 !important;
+}
+
+/* Action buttons styling - Practice, Prev, Next, Random, Print */
+/* Remove all transitions from buttons to prevent CSS conflicts */
+button, 
+button[data-action], 
+a[href*="leetcode.com"], 
+a[rel="noopener noreferrer"] {
+  transition: none !important;
+}
+
+/* Force white color for Practice buttons */
+.desktop-content-inner a[href*="leetcode.com"], 
+.mobile-content-inner a[href*="leetcode.com"],
+a[href*="leetcode.com"] {
+  color: white !important;
+}
+
+.desktop-content-inner a[href*="leetcode.com"]:hover, 
+.mobile-content-inner a[href*="leetcode.com"]:hover,
+a[href*="leetcode.com"]:hover {
+  color: white !important;
+}
+
+/* Force white color for tag buttons in dark mode only */
+body.dark-theme .desktop-content-inner .tag-button,
+body.dark-theme .mobile-content-inner .tag-button {
+  color: white !important;
+}
+
+/* Fix MD page navigation buttons - override inline styles with maximum specificity */
+html body.dark-theme .desktop-content-inner button[data-action="prev"]:not([style*="background:"]),
+html body.dark-theme .mobile-content-inner button[data-action="prev"]:not([style*="background:"]),
+html body.dark-theme .desktop-content-inner button[data-action="next"]:not([style*="background:"]),
+html body.dark-theme .mobile-content-inner button[data-action="next"]:not([style*="background:"]),
+html body.dark-theme .desktop-content-inner button[data-action="random"]:not([style*="background:"]),
+html body.dark-theme .mobile-content-inner button[data-action="random"]:not([style*="background:"]), 
+/* Print buttons in dark theme - disabled appearance */
+html body.dark-theme .desktop-content-inner button[data-action="print"]:not([style*="background:"]),
+html body.dark-theme .mobile-content-inner button[data-action="print"]:not([style*="background:"]),
+body.dark-theme button[data-action="print"]:not([style*="background:"]),
+html body.dark-theme button#desktop-print-btn[data-action="print"],
+html body.dark-theme .desktop-content-inner button#desktop-print-btn[data-action="print"] {
+  background: #6b7280 !important;
+  color: #9ca3af !important;
+  border: 1px solid #4b5563 !important;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+}
+
+/* Other action buttons in dark theme - normal appearance */
+body.dark-theme button[data-action="prev"]:not([style*="background:"]),
+body.dark-theme button[data-action="next"]:not([style*="background:"]),
+body.dark-theme button[data-action="random"]:not([style*="background:"]) {
+  background: #333333 !important;
+  color: #ffffff !important;
+  border: 1px solid #555555 !important;
+}
+
+html body.dark-theme .desktop-content-inner button[data-action="prev"]:not([style*="background:"]):hover,
+html body.dark-theme .mobile-content-inner button[data-action="prev"]:not([style*="background:"]):hover,
+html body.dark-theme .desktop-content-inner button[data-action="next"]:not([style*="background:"]):hover,
+html body.dark-theme .mobile-content-inner button[data-action="next"]:not([style*="background:"]):hover,
+html body.dark-theme .desktop-content-inner button[data-action="random"]:not([style*="background:"]):hover,
+html body.dark-theme .mobile-content-inner button[data-action="random"]:not([style*="background:"]):hover,
+/* Print buttons hover in dark theme - keep disabled appearance */
+html body.dark-theme .desktop-content-inner button[data-action="print"]:not([style*="background:"]):hover,
+html body.dark-theme .mobile-content-inner button[data-action="print"]:not([style*="background:"]):hover,
+body.dark-theme button[data-action="print"]:not([style*="background:"]):hover,
+html body.dark-theme button#desktop-print-btn[data-action="print"]:hover,
+html body.dark-theme .desktop-content-inner button#desktop-print-btn[data-action="print"]:hover {
+  background: #6b7280 !important;
+  color: #9ca3af !important;
+  cursor: not-allowed !important;
+}
+
+/* Other action buttons hover in dark theme - normal appearance */
+body.dark-theme button[data-action="prev"]:not([style*="background:"]):hover,
+body.dark-theme button[data-action="next"]:not([style*="background:"]):hover,
+body.dark-theme button[data-action="random"]:not([style*="background:"]):hover {
+  background: #404040 !important;
+  border-color: #666666 !important;
+}
+
+/* Fix disabled MD page navigation buttons with maximum specificity */
+html body.dark-theme .desktop-content-inner button[disabled],
+html body.dark-theme .mobile-content-inner button[disabled],
+body.dark-theme button[disabled] {
+  background: #1a1a1a !important;
+  color: #666666 !important;
+  border: 1px solid #333333 !important;
+}
+
+/* Also fix light theme disabled buttons to match layout */
+html .mobile-content-inner button[disabled],
+html .desktop-content-inner button[disabled],
+.mobile-content-inner button[disabled],
+.desktop-content-inner button[disabled] {
+  background: #f1f3f4 !important;
+  color: #8c959f !important;
+  border: 1px solid #d1d5db !important;
+}
+
+/* Ensure disabled buttons stay properly styled */
+button[disabled] {
+  transition: none !important;
+  background-color: #f6f8fa !important;
+  color: #8c959f !important;
+}
+
+button[disabled]:hover {
+  background-color: #f6f8fa !important;
+  color: #8c959f !important;
+  transform: none !important;
 }
