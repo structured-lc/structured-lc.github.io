@@ -3871,8 +3871,22 @@
               <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1; background-image: url('data:image/svg+xml,<svg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;><g fill=&quot;%23ffffff&quot; fill-opacity=&quot;0.4&quot;><circle cx=&quot;10&quot; cy=&quot;10&quot; r=&quot;2&quot;/><circle cx=&quot;50&quot; cy=&quot;10&quot; r=&quot;2&quot;/><circle cx=&quot;10&quot; cy=&quot;50&quot; r=&quot;2&quot;/><circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;2&quot;/></g></svg>'); background-size: calc(60px * var(--desktop-scale)) calc(60px * var(--desktop-scale));"></div>
               
               <div style="max-width: 700px; margin: 0 auto; position: relative; z-index: 2;">
-                <!-- Action Buttons - Integrated into header -->
-                <div style="display: flex; justify-content: center; margin-bottom: calc(1.5rem * var(--desktop-scale));">
+                <!-- Title Section -->
+                <div style="text-align: center; color: white; margin-bottom: calc(1.5rem * var(--desktop-scale));">
+                  <div style="display: inline-flex; align-items: center; justify-content: center; width: calc(64px * var(--desktop-scale)); height: calc(64px * var(--desktop-scale)); background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(20px); border-radius: calc(16px * var(--desktop-scale)); margin-bottom: calc(1rem * var(--desktop-scale)); border: 1px solid rgba(255, 255, 255, 0.3);">
+                    <span style="font-size: calc(1.8rem * var(--desktop-scale));">${listInfo ? getMobileListIcon(listInfo.name) : '📋'}</span>
+                  </div>
+                  
+                  <h1 style="font-size: calc(2.4rem * var(--desktop-scale)); font-weight: 800; color: white; margin-bottom: calc(0.75rem * var(--desktop-scale)); text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                    ${listName}
+                  </h1>
+                  <p style="font-size: calc(1.1rem * var(--desktop-scale)); color: rgba(255, 255, 255, 0.9); margin-bottom: 0; line-height: 1.6; max-width: calc(500px * var(--desktop-scale)); margin-left: auto; margin-right: auto;">
+                    ${listDesc}
+                  </p>
+                </div>
+                
+                <!-- Action Buttons - Below the title -->
+                <div style="display: flex; justify-content: center;">
                   <div style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(20px); border-radius: calc(16px * var(--desktop-scale)); padding: calc(8px * var(--desktop-scale)); display: flex; gap: calc(8px * var(--desktop-scale)); border: 1px solid rgba(255, 255, 255, 0.3);">
                     <button data-action="first-landing" data-list-slug="${listSlug}" 
                             style="background: rgba(16, 185, 129, 0.9); color: white; border: none; padding: calc(12px * var(--desktop-scale)) calc(24px * var(--desktop-scale)); border-radius: calc(12px * var(--desktop-scale)); cursor: pointer; font-weight: 600; font-size: calc(1rem * var(--desktop-scale)); display: inline-flex; align-items: center; gap: calc(8px * var(--desktop-scale)); transition: all 0.3s ease; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);" 
@@ -3891,20 +3905,6 @@
                       <span style="font-size: calc(1.2em * var(--desktop-scale));">🎲</span> Random
                     </button>
                   </div>
-                </div>
-                
-                <!-- Title Section -->
-                <div style="text-align: center; color: white;">
-                  <div style="display: inline-flex; align-items: center; justify-content: center; width: calc(64px * var(--desktop-scale)); height: calc(64px * var(--desktop-scale)); background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(20px); border-radius: calc(16px * var(--desktop-scale)); margin-bottom: calc(1rem * var(--desktop-scale)); border: 1px solid rgba(255, 255, 255, 0.3);">
-                    <span style="font-size: calc(1.8rem * var(--desktop-scale));">${listInfo ? getMobileListIcon(listInfo.name) : '📋'}</span>
-                  </div>
-                  
-                  <h1 style="font-size: calc(2.4rem * var(--desktop-scale)); font-weight: 800; color: white; margin-bottom: calc(0.75rem * var(--desktop-scale)); text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                    ${listName}
-                  </h1>
-                  <p style="font-size: calc(1.1rem * var(--desktop-scale)); color: rgba(255, 255, 255, 0.9); margin-bottom: 0; line-height: 1.6; max-width: calc(500px * var(--desktop-scale)); margin-left: auto; margin-right: auto;">
-                    ${listDesc}
-                  </p>
                 </div>
               </div>
             </div>
