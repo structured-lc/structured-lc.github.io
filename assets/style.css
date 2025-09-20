@@ -1043,74 +1043,74 @@ html, body {
   color: #24292f;
 }
 
-/* Keywords (def, for, if, return, etc.) */
+/* Enhanced Syntax Highlighting - GitHub Colors with Better Contrast */
 .hljs-keyword {
-  color: #d73a49;
-  font-weight: 600;
+  color: #cf222e !important;
+  font-weight: 600 !important;
 }
 
 /* Function names */
 .hljs-title.function_ {
-  color: #6f42c1;
-  font-weight: 600;
+  color: #8250df !important;
+  font-weight: 600 !important;
 }
 
 /* Parameters and variables */
 .hljs-params {
-  color: #e36209;
+  color: #953800 !important;
 }
 
 /* Numbers */
 .hljs-number {
-  color: #005cc5;
-  font-weight: 500;
+  color: #0550ae !important;
+  font-weight: 500 !important;
 }
 
 /* Comments */
 .hljs-comment {
-  color: #6a737d;
-  font-style: italic;
+  color: #656d76 !important;
+  font-style: italic !important;
   /* Better mobile readability for comments */
   line-height: 1.3;
 }
 
 /* Built-in functions (range, len) */
 .hljs-built_in {
-  color: #005cc5;
-  font-weight: 500;
+  color: #0550ae !important;
+  font-weight: 500 !important;
 }
 
 /* Strings */
 .hljs-string {
-  color: #032f62;
+  color: #0a3069 !important;
 }
 
 /* Operators */
 .hljs-operator {
-  color: #d73a49;
+  color: #cf222e !important;
 }
 
 /* General syntax elements */
 .hljs-punctuation {
-  color: #24292f;
+  color: #24292f !important;
 }
 
 /* Attributes and properties */
 .hljs-attr,
 .hljs-attribute {
-  color: #6f42c1;
+  color: #8250df !important;
 }
 
 /* Class names */
 .hljs-class .hljs-title {
-  color: #6f42c1;
-  font-weight: 600;
+  color: #8250df !important;
+  font-weight: 600 !important;
 }
 
 /* Variables and identifiers */
 .hljs-variable,
 .hljs-name {
-  color: #e36209;
+  color: #953800 !important;
 }
 
 .mobile-content-inner pre code {
@@ -1159,7 +1159,7 @@ html, body {
 }
 
 /* Ensure all text elements have consistent styling */
-.mobile-content-inner *:not(button):not(.tag-button):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(code):not(.hljs) {
+.mobile-content-inner *:not(button):not(.tag-button):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(code):not(.hljs):not(.heart) {
   color: inherit;
   font-family: inherit;
 }
@@ -1184,15 +1184,25 @@ html, body {
 .mobile-author-footnote {
   text-align: center;
   margin-top: calc(24px * var(--mobile-scale));
-  padding: calc(16px * var(--mobile-scale));
-  border-top: 1px solid #e1e4e8;
-  color: #656d76;
+  padding: calc(20px * var(--mobile-scale));
+  border-top: 2px solid #e2e8f0;
+  background: #ffffff;
+  color: #475569;
   font-size: calc(14px * var(--mobile-scale));
+  font-weight: 400;
 }
 
 .heart {
-  color: #ff6b6b;
-  animation: heartbeat 1.5s ease-in-out infinite;
+  color: #dc2626 !important;
+  font-weight: 600;
+  animation: heartbeat 2s ease-in-out infinite;
+  text-shadow: 0 1px 2px rgba(220, 38, 38, 0.4);
+}
+
+.mobile-author-footnote .heart,
+.desktop-content-inner .mobile-author-footnote .heart {
+  color: #dc2626 !important;
+  font-weight: 600;
 }
 
 @keyframes heartbeat {
@@ -1487,11 +1497,20 @@ html, body {
   transition: all 0.3s ease;
   max-width: calc(100vw - 40px);
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .mobile-toast.show {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
+}
+
+/* Dark theme toast styling */
+body.dark-theme .mobile-toast {
+  background: #f3f4f6 !important;
+  color: #1f2937 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid #d1d5db !important;
 }
 
 /* Loading Animation */
@@ -2529,7 +2548,7 @@ html, body {
   }
 
   /* Ensure all text elements have consistent styling */
-  .desktop-content-inner *:not(button):not(.tag-button):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(code):not(.hljs) {
+  .desktop-content-inner *:not(button):not(.tag-button):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(code):not(.hljs):not(.heart) {
     color: inherit;
     font-family: inherit;
   }
@@ -2605,10 +2624,12 @@ html, body {
   .desktop-content-inner .mobile-author-footnote {
     text-align: center;
     margin-top: 0;
-    padding: calc(12px * var(--desktop-scale));
-    border-top: 1px solid #e1e4e8;
-    color: #656d76;
+    padding: calc(20px * var(--desktop-scale));
+    border-top: 2px solid #e2e8f0;
+    background: #ffffff;
+    color: #475569;
     font-size: calc(14px * var(--desktop-scale));
+    font-weight: 400;
   }
 }
 
@@ -3785,9 +3806,9 @@ body.dark-theme .desktop-content-inner strong {
   font-weight: 600 !important;
 }
 
-/* Ensure all text elements have proper contrast in dark mode */
-body.dark-theme .mobile-content-inner *:not(a):not(code):not(.tag-button):not(h3),
-body.dark-theme .desktop-content-inner *:not(a):not(code):not(.tag-button):not(h3) {
+/* Ensure all text elements have proper contrast in dark mode - exclude syntax highlighting and heart */
+body.dark-theme .mobile-content-inner *:not(a):not(code):not(.tag-button):not(h3):not(.hljs):not(.hljs-keyword):not(.hljs-string):not(.hljs-comment):not(.hljs-number):not(.hljs-built_in):not(.hljs-title):not(.hljs-function_):not(.hljs-params):not(.hljs-operator):not(.hljs-punctuation):not(.hljs-attr):not(.hljs-attribute):not(.hljs-variable):not(.hljs-name):not(.hljs-literal):not(.hljs-class):not(.heart),
+body.dark-theme .desktop-content-inner *:not(a):not(code):not(.tag-button):not(h3):not(.hljs):not(.hljs-keyword):not(.hljs-string):not(.hljs-comment):not(.hljs-number):not(.hljs-built_in):not(.hljs-title):not(.hljs-function_):not(.hljs-params):not(.hljs-operator):not(.hljs-punctuation):not(.hljs-attr):not(.hljs-attribute):not(.hljs-variable):not(.hljs-name):not(.hljs-literal):not(.hljs-class):not(.heart) {
   color: #ffffff !important;
 }
 
@@ -5115,6 +5136,70 @@ body.dark-theme .hljs-name {
 
 body.dark-theme .hljs-literal {
   color: #569cd6 !important;
+}
+
+/* Enhanced specificity for additional syntax highlighting classes */
+html body.dark-theme .desktop-content-inner .hljs-string,
+html body.dark-theme .mobile-content-inner .hljs-string {
+  color: #ce9178 !important;
+}
+
+html body.dark-theme .desktop-content-inner .hljs-operator,
+html body.dark-theme .mobile-content-inner .hljs-operator {
+  color: #d4d4d4 !important;
+}
+
+html body.dark-theme .desktop-content-inner .hljs-punctuation,
+html body.dark-theme .mobile-content-inner .hljs-punctuation {
+  color: #d4d4d4 !important;
+}
+
+html body.dark-theme .desktop-content-inner .hljs-attr,
+html body.dark-theme .mobile-content-inner .hljs-attr,
+html body.dark-theme .desktop-content-inner .hljs-attribute,
+html body.dark-theme .mobile-content-inner .hljs-attribute {
+  color: #9cdcfe !important;
+}
+
+html body.dark-theme .desktop-content-inner .hljs-class .hljs-title,
+html body.dark-theme .mobile-content-inner .hljs-class .hljs-title {
+  color: #4ec9b0 !important;
+  font-weight: 600 !important;
+}
+
+html body.dark-theme .desktop-content-inner .hljs-variable,
+html body.dark-theme .mobile-content-inner .hljs-variable,
+html body.dark-theme .desktop-content-inner .hljs-name,
+html body.dark-theme .mobile-content-inner .hljs-name {
+  color: #9cdcfe !important;
+}
+
+html body.dark-theme .desktop-content-inner .hljs-literal,
+html body.dark-theme .mobile-content-inner .hljs-literal {
+  color: #569cd6 !important;
+}
+
+/* Dark theme footer styling - matching content background */
+html body.dark-theme .mobile-author-footnote,
+html body.dark-theme .desktop-content-inner .mobile-author-footnote,
+html body.dark-theme .mobile-content-inner .mobile-author-footnote {
+  background: #1f1f1f !important;
+  border-top: 2px solid #404040 !important;
+  color: #d1d5db !important;
+}
+
+html body.dark-theme .mobile-author-footnote p,
+html body.dark-theme .desktop-content-inner .mobile-author-footnote p,
+html body.dark-theme .mobile-content-inner .mobile-author-footnote p {
+  color: #d1d5db !important;
+}
+
+html body.dark-theme .heart,
+html body.dark-theme .mobile-author-footnote .heart,
+html body.dark-theme .desktop-content-inner .heart,
+html body.dark-theme .mobile-content-inner .heart {
+  color: #f87171 !important;
+  text-shadow: 0 1px 2px rgba(248, 113, 113, 0.4) !important;
 }
 
 /* Action buttons styling - Practice, Prev, Next, Random, Print */
