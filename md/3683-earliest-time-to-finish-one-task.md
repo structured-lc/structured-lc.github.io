@@ -80,5 +80,4 @@ This problem is a straightforward use of the **linear scan/min tracking pattern*
 
 ### Tags
 
-
 ### Similar Problems

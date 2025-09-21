@@ -96,6 +96,5 @@ The core coding pattern—cycle-based permutations and avoidance of consecutive 
 
 ### Tags
 
-
 ### Similar Problems
 - Task Scheduler(task-scheduler) (Medium)

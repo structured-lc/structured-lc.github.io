@@ -1916,5 +1916,7 @@
     {"number": 3679, "slug": "minimum-discards-to-balance-inventory", "title": " Minimum Discards to Balance Inventory", "difficulty": "Medium", "tags": [], "similar_problems": []},
     {"number": 3680, "slug": "generate-schedule", "title": "Generate Schedule", "difficulty": "Medium", "tags": [], "similar_problems": [{"slug": "task-scheduler", "title": "Task Scheduler", "difficulty": "Medium"}]},
     {"number": 3682, "slug": "minimum-index-sum-of-common-elements", "title": "Minimum Index Sum of Common Elements", "difficulty": "Medium", "tags": [], "similar_problems": []},
-    {"number": 3685, "slug": "subsequence-sum-after-capping-elements", "title": "Subsequence Sum After Capping Elements", "difficulty": "Medium", "tags": [], "similar_problems": []}
+    {"number": 3685, "slug": "subsequence-sum-after-capping-elements", "title": "Subsequence Sum After Capping Elements", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3689, "slug": "maximum-total-subarray-value-i", "title": "Maximum Total Subarray Value I", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3690, "slug": "split-and-merge-array-transformation", "title": "Split and Merge Array Transformation", "difficulty": "Medium", "tags": [], "similar_problems": []}
 ]

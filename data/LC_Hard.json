@@ -867,5 +867,6 @@
     {"number": 3673, "slug": "find-zombie-sessions", "title": "Find Zombie Sessions", "difficulty": "Hard", "tags": [], "similar_problems": []},
     {"number": 3677, "slug": "count-binary-palindromic-numbers", "title": "Count Binary Palindromic Numbers", "difficulty": "Hard", "tags": [], "similar_problems": []},
     {"number": 3681, "slug": "maximum-xor-of-subsequences", "title": "Maximum XOR of Subsequences", "difficulty": "Hard", "tags": [], "similar_problems": []},
-    {"number": 3686, "slug": "number-of-stable-subsequences", "title": "Number of Stable Subsequences", "difficulty": "Hard", "tags": [], "similar_problems": []}
+    {"number": 3686, "slug": "number-of-stable-subsequences", "title": "Number of Stable Subsequences", "difficulty": "Hard", "tags": [], "similar_problems": []},
+    {"number": 3691, "slug": "maximum-total-subarray-value-ii", "title": "Maximum Total Subarray Value II", "difficulty": "Hard", "tags": [], "similar_problems": []}
 ]
