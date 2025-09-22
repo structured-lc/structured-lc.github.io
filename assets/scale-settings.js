@@ -8,7 +8,7 @@ class ScaleSettingsManager {
     this.storageKey = 'lc-handbook-scale-preferences';
     this.defaults = {
       mobile: 'normal',    // 1.0 scale
-      desktop: 'normal',   // 0.9 scale
+      desktop: 'compact',  // 0.85 scale (High density)
       theme: 'system'      // follow system theme (default)
     };
     
