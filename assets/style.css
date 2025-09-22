@@ -2335,24 +2335,49 @@ body.dark-theme .mobile-toast {
   }
   
   /* Active states for desktop navigation */
+  /* Active selection - Enhanced styling */
   #desktop-lists-list li.active {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.2);
-    border-color: #667eea;
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    border-left: 5px solid #2563eb;
+    border-color: #3b82f6;
+    border-radius: calc(12px * var(--desktop-scale));
+    box-shadow: 
+      0 2px 8px rgba(37, 99, 235, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
   }
   
   #desktop-lists-list li.active a {
-    background: rgba(102, 126, 234, 0.05);
+    background: transparent;
+    font-weight: 600;
+    color: #1d4ed8;
   }
   
   #desktop-file-list li.active {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.2);
-    border-color: #667eea;
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    border-left: 5px solid #2563eb;
+    border-color: #3b82f6;
+    border-radius: calc(12px * var(--desktop-scale));
+    box-shadow: 
+      0 2px 8px rgba(37, 99, 235, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
   }
   
   #desktop-file-list li.active a {
-    background: rgba(102, 126, 234, 0.05);
+    background: transparent;
+    font-weight: 600;
+    color: #1d4ed8;
+  }
+  
+  /* Enhanced problem number styling in active state */
+  #desktop-file-list li.active .desktop-problem-number {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 0.85em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(37, 99, 235, 0.3);
   }
   
   /* Desktop List Header Styling (like mobile cards) */
@@ -4484,17 +4509,35 @@ body.dark-theme #desktop-file-list a:hover {
 }
 
 /* Active states for desktop lists */
+/* Dark theme - Enhanced styling to match light theme */
 body.dark-theme #desktop-lists-list li.active,
 body.dark-theme #desktop-file-list li.active {
-  background: #2a2a2a !important;
-  border-color: #66b3ff !important;
-  box-shadow: 0 6px 16px rgba(102, 179, 255, 0.3) !important;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+  border-left: 5px solid #60a5fa !important;
+  border-color: #475569 !important;
+  border-radius: calc(12px * var(--desktop-scale)) !important;
+  box-shadow: 
+    0 2px 8px rgba(96, 165, 250, 0.15) !important,
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
 }
 
 body.dark-theme #desktop-lists-list li.active a,
 body.dark-theme #desktop-file-list li.active a {
   background: transparent !important;
-  color: #ffffff !important;
+  color: #e2e8f0 !important;
+  font-weight: 600 !important;
+}
+
+/* Dark theme - Enhanced problem number styling in active state */
+body.dark-theme #desktop-file-list li.active .desktop-problem-number {
+  background: linear-gradient(135deg, #60a5fa, #3b82f6) !important;
+  color: #1e293b !important;
+  font-weight: 700 !important;
+  padding: 2px 8px !important;
+  border-radius: 6px !important;
+  font-size: 0.85em !important;
+  text-shadow: none !important;
+  box-shadow: 0 1px 3px rgba(96, 165, 250, 0.4) !important;
 }
 
 /* Desktop List Text Elements Dark Theme */
