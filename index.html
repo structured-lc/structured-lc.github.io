@@ -693,8 +693,9 @@
           throw new Error(`Problem "${problemSlug}" not found in list "${listSlug}"`);
         }
         
-        // Activate the problem in C2
-        const problemLinks = document.querySelectorAll('#desktop-file-list a[href*="/' + problemSlug + '"]');
+        // Activate the problem in C2 using exact hash match
+        const expectedHash = '#' + listSlug + '/' + problemSlug;
+        const problemLinks = document.querySelectorAll('#desktop-file-list a[href="' + expectedHash + '"]');
         if (problemLinks.length > 0) {
           document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
           const problemItem = problemLinks[0].closest('li');
@@ -2039,16 +2040,31 @@
     
     // Generate mobile navigation buttons (matching desktop styling)
     function generateMobileNavigationButtons(filename) {
+      // Enhanced navigation logic with debugging and consistency checks
       const currentIndex = currentListData.findIndex(p => 
         `${p.number}-${p.slug}.md` === filename
       );
       
+      // Debug logging (can be removed in production)
+      if (currentIndex === -1) {
+        console.warn(`Navigation: Could not find problem for filename "${filename}"`);
+        console.warn('Available problems:', currentListData.map(p => `${p.number}-${p.slug}.md`));
+      } else {
+        const currentProblem = currentListData[currentIndex];
+        console.log(`Navigation: Current problem #${currentProblem.number} at index ${currentIndex}`);
+        
+        if (currentIndex + 1 < currentListData.length) {
+          const nextProblem = currentListData[currentIndex + 1];
+          console.log(`Navigation: Next problem should be #${nextProblem.number} - ${nextProblem.title} at index ${currentIndex + 1}`);
+        }
+      }
+      
       const prevButton = currentIndex > 0 ? 
-        `<button id="mobile-prev-btn" style="background: #6f42c1; color: white; border: none; padding: 0.15em 0.4em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.6em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; gap: 3px; transition: all 0.2s ease;" onmouseover="this.style.background='#5a2d8f'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#6f42c1'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'"><span style="display: inline-flex; align-items: center;">← Prev</span></button>` :
+        `<button id="mobile-prev-btn" data-current-index="${currentIndex}" data-target-index="${currentIndex - 1}" style="background: #6f42c1; color: white; border: none; padding: 0.15em 0.4em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.6em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; gap: 3px; transition: all 0.2s ease;" onmouseover="this.style.background='#5a2d8f'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#6f42c1'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'"><span style="display: inline-flex; align-items: center;">← Prev</span></button>` :
         `<button disabled style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 0.15em 0.4em; border-radius: 3px; cursor: not-allowed; font-weight: 500; font-size: 0.6em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle;"><span style="display: inline-flex; align-items: center;">← Prev</span></button>`;
       
       const nextButton = currentIndex < currentListData.length - 1 ?
-        `<button id="mobile-next-btn" style="background: #6f42c1; color: white; border: none; padding: 0.15em 0.4em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.6em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; gap: 3px; transition: all 0.2s ease;" onmouseover="this.style.background='#5a2d8f'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#6f42c1'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'"><span style="display: inline-flex; align-items: center;">Next →</span></button>` :
+        `<button id="mobile-next-btn" data-current-index="${currentIndex}" data-target-index="${currentIndex + 1}" style="background: #6f42c1; color: white; border: none; padding: 0.15em 0.4em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.6em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle; gap: 3px; transition: all 0.2s ease;" onmouseover="this.style.background='#5a2d8f'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#6f42c1'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'"><span style="display: inline-flex; align-items: center;">Next →</span></button>` :
         `<button disabled style="background: #f6f8fa; color: #8c959f; border: 1px solid #e1e5e9; padding: 0.15em 0.4em; border-radius: 3px; cursor: not-allowed; font-weight: 500; font-size: 0.6em; display: inline-flex; align-items: center; justify-content: center; min-height: 20px; line-height: 1; vertical-align: middle;"><span style="display: inline-flex; align-items: center;">Next →</span></button>`;
       
       return {
@@ -2253,13 +2269,28 @@
     // Navigate to adjacent problem (with loading animation)
     function navigateToMobileAdjacentProblem(direction) {
       const { problemSlug } = mobileRouter.parseHash();
-      const currentIndex = currentListData.findIndex(p => p.slug === problemSlug);
       
-      if (currentIndex === -1) return;
+      // Enhanced navigation with index-based approach for consistency
+      // First try to find current problem by slug
+      let currentIndex = currentListData.findIndex(p => p.slug === problemSlug);
+      
+      // Debug logging
+      console.log(`Mobile Navigation: Looking for problem with slug "${problemSlug}"`);
+      console.log(`Mobile Navigation: Found at index ${currentIndex}`);
+      
+      if (currentIndex === -1) {
+        console.error(`Mobile Navigation: Could not find problem with slug "${problemSlug}"`);
+        console.error('Available slugs:', currentListData.map(p => p.slug));
+        return;
+      }
+      
+      const currentProblem = currentListData[currentIndex];
+      console.log(`Mobile Navigation: Current problem #${currentProblem.number} - ${currentProblem.title} at index ${currentIndex}`);
       
       const newIndex = currentIndex + direction;
       if (newIndex >= 0 && newIndex < currentListData.length) {
         const newProblem = currentListData[newIndex];
+        console.log(`Mobile Navigation: ${direction > 0 ? 'Next' : 'Previous'} problem #${newProblem.number} - ${newProblem.title} at index ${newIndex}`);
         
         // Mark as navigating to prevent router's loading animation
         mobileRouter.isNavigating = true;
@@ -2285,6 +2316,8 @@
         setTimeout(() => {
           mobileRouter.navigate(currentListSlug, newProblem.slug);
         }, 300);
+      } else {
+        console.log(`Mobile Navigation: Cannot navigate ${direction > 0 ? 'forward' : 'backward'} - ${direction > 0 ? 'last' : 'first'} problem reached`);
       }
     }
     
@@ -3397,12 +3430,15 @@
             
             // Load the problems first, then activate the specific problem
             renderDesktopProblems(listSlug, false).then(() => {
-              // Now find and activate the problem
-              const problemLinks = document.querySelectorAll('#desktop-file-list a[href*="/' + problemSlug + '"]');
+              // Now find and activate the problem using exact hash match
+              const expectedHash = '#' + listSlug + '/' + problemSlug;
+              const problemLinks = document.querySelectorAll('#desktop-file-list a[href="' + expectedHash + '"]');
               if (problemLinks.length > 0) {
                 const problemItem = problemLinks[0].closest('li');
                 problemItem.classList.add('active');
-                
+              }
+              
+              if (problemLinks.length > 0) {
                 // Use smooth scrolling for newly loaded content
                 scrollToActiveProblem({ delay: 150, behavior: 'smooth' });
                 
@@ -4065,9 +4101,12 @@
         );
         
         if (currentIndex === -1) {
+          console.warn(`Desktop Navigation: Could not find problem for filename "${filename}"`);
+          console.warn('Available problems:', currentListData.map(p => `${p.number}-${p.slug}.md`));
           return { top: '' };
         }
         
+        const currentProblem = currentListData[currentIndex];
         const prevProblem = currentIndex > 0 ? currentListData[currentIndex - 1] : null;
         const nextProblem = currentIndex < currentListData.length - 1 ? currentListData[currentIndex + 1] : null;
         
@@ -4227,14 +4266,16 @@
             loadDesktopProblemContent(currentListSlug, slug, number);
             // Update active state in problem list
             document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
-            const problemLinks = document.querySelectorAll('#desktop-file-list a[href*="/' + slug + '"]');
+            // Use exact hash match to avoid partial slug matches (e.g., "best-time-to-buy-and-sell-stock" vs "best-time-to-buy-and-sell-stock-ii")
+            const expectedHash = '#' + currentListSlug + '/' + slug;
+            const problemLinks = document.querySelectorAll('#desktop-file-list a[href="' + expectedHash + '"]');
             if (problemLinks.length > 0) {
               const problemItem = problemLinks[0].closest('li');
               problemItem.classList.add('active');
-              
-              // For prev/next navigation, always use proper centering
-              scrollToActiveProblem({ delay: 100, behavior: 'smooth' });
             }
+              
+            // For prev/next navigation, always use proper centering
+            scrollToActiveProblem({ delay: 100, behavior: 'smooth' });
             // Update URL
             window.location.hash = currentListSlug + '/' + slug;
             document.title = title + ' - LeetCode Handbook';
@@ -4248,7 +4289,9 @@
               loadDesktopProblemContent(currentListSlug, randomProblem.slug, randomProblem.number || randomProblem.id);
               // Update active state in problem list
               document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
-              const problemLinks = document.querySelectorAll('#desktop-file-list a[href*="/' + randomProblem.slug + '"]');
+              // Use exact hash match to avoid partial slug matches
+              const expectedHash = '#' + currentListSlug + '/' + randomProblem.slug;
+              const problemLinks = document.querySelectorAll('#desktop-file-list a[href="' + expectedHash + '"]');
               if (problemLinks.length > 0) {
                 problemLinks[0].closest('li').classList.add('active');
                 // Use smooth centered scrolling for random selection
