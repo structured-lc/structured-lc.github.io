@@ -7,7 +7,7 @@ class ScaleSettingsManager {
   constructor() {
     this.storageKey = 'lc-handbook-scale-preferences';
     this.defaults = {
-      mobile: 'normal',    // 1.0 scale
+      mobile: 'compact',   // 0.9 scale (High density)
       desktop: 'compact',  // 0.85 scale (High density)
       theme: 'system'      // follow system theme (default)
     };
