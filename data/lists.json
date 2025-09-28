@@ -8,16 +8,16 @@
       "lists": [
         {"name": "LeetCode-75", "url": "leetcode-75", "file": "LC_75.json", "description": "Essential problems for interview prep"},
         {"name": "Blind-75", "url": "blind-75", "file": "LC_Blind75.json", "description": "Essential problems for interview prep from Blind 75"},
-        {"name": "NeetCode-150", "url": "neetcode-150", "file": "LC_NeetCode150.json", "description": "Essential problems for interview prep from NeetCode 150"},
         {"name": "Top-50-Handbook", "url": "top-50-handbook", "file": "LC_Handbook.json", "description": "Curated selection of must-solve problems"},
-        {"name": "LeetCode-All", "url": "leetcode-all", "file": "LC_All.json", "description": "Complete collection of all LeetCode problems"},
-        {"name": "LeetCode-Easy", "url": "leetcode-easy", "file": "LC_Easy.json", "description": "Perfect for beginners and warm-up practice"},
-        {"name": "LeetCode-Medium", "url": "leetcode-medium", "file": "LC_Medium.json", "description": "Balanced difficulty for skill development"},
-        {"name": "LeetCode-Hard", "url": "leetcode-hard", "file": "LC_Hard.json", "description": "Advanced problems for expert preparation"},
+        {"name": "NeetCode-150", "url": "neetcode-150", "file": "LC_NeetCode150.json", "description": "Essential problems for interview prep from NeetCode 150"},
+        {"name": "Crash-Course-DSA", "url": "crash-course-dsa", "file": "LC_Explore_Card_DSA.json", "description": "Data structures and algorithms fundamentals"}
         {"name": "Top-Q-Easy", "url": "top-q-easy", "file": "LC_Top_Questions_Easy.json", "description": "Most popular easy-level interview questions"},
         {"name": "Top-Q-Medium", "url": "top-q-medium", "file": "LC_Top_Questions_Medium.json", "description": "Most popular medium-level interview questions"},
         {"name": "Top-Q-Hard", "url": "top-q-hard", "file": "LC_Top_Questions_Hard.json", "description": "Most popular hard-level interview questions"},
-        {"name": "Crash-Course-DSA", "url": "crash-course-dsa", "file": "LC_Explore_Card_DSA.json", "description": "Data structures and algorithms fundamentals"}
+        {"name": "LeetCode-Easy", "url": "leetcode-easy", "file": "LC_Easy.json", "description": "Perfect for beginners and warm-up practice"},
+        {"name": "LeetCode-Medium", "url": "leetcode-medium", "file": "LC_Medium.json", "description": "Balanced difficulty for skill development"},
+        {"name": "LeetCode-Hard", "url": "leetcode-hard", "file": "LC_Hard.json", "description": "Advanced problems for expert preparation"},
+        {"name": "LeetCode-All", "url": "leetcode-all", "file": "LC_All.json", "description": "Complete collection of all LeetCode problems"},
       ]
     },
     {
