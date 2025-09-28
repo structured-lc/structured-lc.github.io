@@ -166,11 +166,5 @@
     {"number": 3581, "slug": "count-odd-letters-from-number", "title": "Count Odd Letters from Number", "difficulty": "Easy", "tags": ["Hash Table", "String", "Simulation", "Counting"], "similar_problems": []},
     {"number": 3583, "slug": "count-special-triplets", "title": "Count Special Triplets", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Counting"], "similar_problems": []},
     {"number": 3591, "slug": "check-if-any-element-has-prime-frequency", "title": "Check if Any Element Has Prime Frequency", "difficulty": "Easy", "tags": ["Array", "Hash Table", "Math", "Counting", "Number Theory"], "similar_problems": []},
-    {"number": 3636, "slug": "threshold-majority-queries", "title": "Threshold Majority Queries", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Binary Search", "Divide and Conquer", "Counting", "Prefix Sum"], "similar_problems": []},
-    {"number": 3659, "slug": "partition-array-into-k-distinct-groups", "title": "Partition Array Into K-Distinct Groups", "difficulty": "Medium", "tags": [], "similar_problems": []},
-    {"number": 3662, "slug": "filter-characters-by-frequency", "title": "Filter Characters by Frequency", "difficulty": "Easy", "tags": [], "similar_problems": []},
-    {"number": 3663, "slug": "find-the-least-frequent-digit", "title": "Find The Least Frequent Digit", "difficulty": "Easy", "tags": [], "similar_problems": []},
-    {"number": 3664, "slug": "two-letter-card-game", "title": "Two-Letter Card Game", "difficulty": "Medium", "tags": [], "similar_problems": []},
-    {"number": 3672, "slug": "sum-of-weighted-modes-in-subarrays", "title": "Sum of Weighted Modes in Subarrays", "difficulty": "Medium", "tags": [], "similar_problems": []},
-    {"number": 3679, "slug": "minimum-discards-to-balance-inventory", "title": " Minimum Discards to Balance Inventory", "difficulty": "Medium", "tags": [], "similar_problems": []}
+    {"number": 3636, "slug": "threshold-majority-queries", "title": "Threshold Majority Queries", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Binary Search", "Divide and Conquer", "Counting", "Prefix Sum"], "similar_problems": []}
 ]

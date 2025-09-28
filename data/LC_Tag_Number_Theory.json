@@ -78,8 +78,5 @@
     {"number": 3605, "slug": "minimum-stability-factor-of-array", "title": "Minimum Stability Factor of Array", "difficulty": "Hard", "tags": ["Array", "Math", "Binary Search", "Greedy", "Segment Tree", "Number Theory"], "similar_problems": []},
     {"number": 3610, "slug": "minimum-number-of-primes-to-sum-to-target", "title": "Minimum Number of Primes to Sum to Target", "difficulty": "Medium", "tags": ["Array", "Math", "Dynamic Programming", "Number Theory"], "similar_problems": []},
     {"number": 3618, "slug": "split-array-by-prime-indices", "title": "Split Array by Prime Indices", "difficulty": "Medium", "tags": ["Array", "Math", "Number Theory"], "similar_problems": []},
-    {"number": 3629, "slug": "minimum-jumps-to-reach-end-via-prime-teleportation", "title": "Minimum Jumps to Reach End via Prime Teleportation", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Math", "Breadth-First Search", "Number Theory"], "similar_problems": []},
-    {"number": 3658, "slug": "gcd-of-odd-and-even-sums", "title": "GCD of Odd and Even Sums", "difficulty": "Easy", "tags": [], "similar_problems": []},
-    {"number": 3669, "slug": "balanced-k-factor-decomposition", "title": "Balanced K-Factor Decomposition", "difficulty": "Medium", "tags": [], "similar_problems": []},
-    {"number": 3671, "slug": "sum-of-beautiful-subsequences", "title": "Sum of Beautiful Subsequences", "difficulty": "Hard", "tags": [], "similar_problems": []}
+    {"number": 3629, "slug": "minimum-jumps-to-reach-end-via-prime-teleportation", "title": "Minimum Jumps to Reach End via Prime Teleportation", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Math", "Breadth-First Search", "Number Theory"], "similar_problems": []}
 ]

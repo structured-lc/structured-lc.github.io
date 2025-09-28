@@ -67,6 +67,5 @@
     {"number": 3523, "slug": "make-array-non-decreasing", "title": "Make Array Non-decreasing", "difficulty": "Medium", "tags": ["Array", "Stack", "Greedy", "Monotonic Stack"], "similar_problems": []},
     {"number": 3542, "slug": "minimum-operations-to-convert-all-elements-to-zero", "title": "Minimum Operations to Convert All Elements to Zero", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Stack", "Greedy", "Monotonic Stack"], "similar_problems": []},
     {"number": 3555, "slug": "smallest-subarray-to-sort-in-every-sliding-window", "title": "Smallest Subarray to Sort in Every Sliding Window", "difficulty": "Medium", "tags": ["Array", "Two Pointers", "Stack", "Greedy", "Sorting", "Monotonic Stack"], "similar_problems": [{"slug": "shortest-unsorted-continuous-subarray", "title": "Shortest Unsorted Continuous Subarray", "difficulty": "Medium"}]},
-    {"number": 3638, "slug": "maximum-balanced-shipments", "title": "Maximum Balanced Shipments", "difficulty": "Medium", "tags": ["Array", "Dynamic Programming", "Stack", "Greedy", "Monotonic Stack"], "similar_problems": []},
-    {"number": 3676, "slug": "count-bowl-subarrays", "title": "Count Bowl Subarrays", "difficulty": "Medium", "tags": [], "similar_problems": []}
+    {"number": 3638, "slug": "maximum-balanced-shipments", "title": "Maximum Balanced Shipments", "difficulty": "Medium", "tags": ["Array", "Dynamic Programming", "Stack", "Greedy", "Monotonic Stack"], "similar_problems": []}
 ]

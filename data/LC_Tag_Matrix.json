@@ -261,7 +261,5 @@
     {"number": 3568, "slug": "minimum-moves-to-clean-the-classroom", "title": "Minimum Moves to Clean the Classroom", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Bit Manipulation", "Breadth-First Search", "Matrix"], "similar_problems": []},
     {"number": 3603, "slug": "minimum-cost-path-with-alternating-directions-ii", "title": "Minimum Cost Path with Alternating Directions II", "difficulty": "Medium", "tags": ["Array", "Dynamic Programming", "Matrix"], "similar_problems": []},
     {"number": 3619, "slug": "count-islands-with-total-value-divisible-by-k", "title": "Count Islands With Total Value Divisible by K", "difficulty": "Medium", "tags": ["Array", "Depth-First Search", "Breadth-First Search", "Union Find", "Matrix"], "similar_problems": [{"slug": "number-of-islands", "title": "Number of Islands", "difficulty": "Medium"}]},
-    {"number": 3643, "slug": "flip-square-submatrix-vertically", "title": "Flip Square Submatrix Vertically", "difficulty": "Easy", "tags": ["Array", "Two Pointers", "Matrix"], "similar_problems": []},
-    {"number": 3651, "slug": "minimum-cost-path-with-teleportations", "title": "Minimum Cost Path with Teleportations", "difficulty": "Hard", "tags": [], "similar_problems": []},
-    {"number": 3665, "slug": "twisted-mirror-path-count", "title": "Twisted Mirror Path Count", "difficulty": "Medium", "tags": [], "similar_problems": []}
+    {"number": 3643, "slug": "flip-square-submatrix-vertically", "title": "Flip Square Submatrix Vertically", "difficulty": "Easy", "tags": ["Array", "Two Pointers", "Matrix"], "similar_problems": []}
 ]

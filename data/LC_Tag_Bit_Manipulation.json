@@ -245,15 +245,5 @@
     {"number": 3594, "slug": "minimum-time-to-transport-all-individuals", "title": "Minimum Time to Transport All Individuals", "difficulty": "Hard", "tags": ["Array", "Dynamic Programming", "Bit Manipulation", "Graph", "Heap (Priority Queue)", "Shortest Path", "Bitmask"], "similar_problems": []},
     {"number": 3595, "slug": "once-twice", "title": "Once Twice", "difficulty": "Medium", "tags": ["Array", "Bit Manipulation"], "similar_problems": []},
     {"number": 3599, "slug": "partition-array-to-minimize-xor", "title": "Partition Array to Minimize XOR", "difficulty": "Medium", "tags": ["Array", "Dynamic Programming", "Bit Manipulation", "Prefix Sum"], "similar_problems": []},
-    {"number": 3615, "slug": "longest-palindromic-path-in-graph", "title": "Longest Palindromic Path in Graph", "difficulty": "Hard", "tags": ["String", "Dynamic Programming", "Bit Manipulation", "Graph", "Bitmask"], "similar_problems": []},
-    {"number": 3621, "slug": "number-of-integers-with-popcount-depth-equal-to-k-i", "title": "Number of Integers With Popcount-Depth Equal to K I", "difficulty": "Hard", "tags": ["Math", "Dynamic Programming", "Combinatorics"], "similar_problems": [{"slug": "find-pattern-in-infinite-stream-ii", "title": "Find Pattern in Infinite Stream II", "difficulty": "Hard"}]},
-    {"number": 3630, "slug": "partition-array-for-maximum-xor-and-and", "title": "Partition Array for Maximum XOR and AND", "difficulty": "Hard", "tags": ["Array", "Math", "Greedy", "Enumeration"], "similar_problems": []},
-    {"number": 3632, "slug": "subarrays-with-xor-at-least-k", "title": "Subarrays with XOR at Least K", "difficulty": "Hard", "tags": [], "similar_problems": []},
-    {"number": 3644, "slug": "maximum-k-to-sort-a-permutation", "title": "Maximum K to Sort a Permutation", "difficulty": "Medium", "tags": [], "similar_problems": []},
-    {"number": 3646, "slug": "next-special-palindrome-number", "title": "Next Special Palindrome Number", "difficulty": "Hard", "tags": ["Backtracking"], "similar_problems": []},
-    {"number": 3670, "slug": "maximum-product-of-two-integers-with-no-common-bits", "title": "Maximum Product of Two Integers With No Common Bits", "difficulty": "Medium", "tags": [], "similar_problems": [{"slug": "partition-to-k-equal-sum-subsets", "title": "Partition to K Equal Sum Subsets", "difficulty": "Medium"}]},
-    {"number": 3674, "slug": "minimum-operations-to-equalize-array", "title": "Minimum Operations to Equalize Array", "difficulty": "Easy", "tags": [], "similar_problems": []},
-    {"number": 3677, "slug": "count-binary-palindromic-numbers", "title": "Count Binary Palindromic Numbers", "difficulty": "Hard", "tags": [], "similar_problems": []},
-    {"number": 3681, "slug": "maximum-xor-of-subsequences", "title": "Maximum XOR of Subsequences", "difficulty": "Hard", "tags": [], "similar_problems": []},
-    {"number": 3688, "slug": "bitwise-or-of-even-numbers-in-an-array", "title": "Bitwise OR of Even Numbers in an Array", "difficulty": "Easy", "tags": [], "similar_problems": []}
+    {"number": 3615, "slug": "longest-palindromic-path-in-graph", "title": "Longest Palindromic Path in Graph", "difficulty": "Hard", "tags": ["String", "Dynamic Programming", "Bit Manipulation", "Graph", "Bitmask"], "similar_problems": []}
 ]

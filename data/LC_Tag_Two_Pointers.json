@@ -221,8 +221,5 @@
     {"number": 3633, "slug": "earliest-finish-time-for-land-and-water-rides-i", "title": "Earliest Finish Time for Land and Water Rides I", "difficulty": "Easy", "tags": ["Array", "Two Pointers", "Binary Search", "Greedy", "Sorting"], "similar_problems": []},
     {"number": 3635, "slug": "earliest-finish-time-for-land-and-water-rides-ii", "title": "Earliest Finish Time for Land and Water Rides II", "difficulty": "Medium", "tags": ["Array", "Two Pointers", "Binary Search", "Greedy", "Sorting"], "similar_problems": []},
     {"number": 3643, "slug": "flip-square-submatrix-vertically", "title": "Flip Square Submatrix Vertically", "difficulty": "Easy", "tags": ["Array", "Two Pointers", "Matrix"], "similar_problems": []},
-    {"number": 3645, "slug": "maximum-total-from-optimal-activation-order", "title": "Maximum Total from Optimal Activation Order", "difficulty": "Medium", "tags": ["Array", "Two Pointers", "Greedy", "Sorting", "Heap (Priority Queue)"], "similar_problems": []},
-    {"number": 3649, "slug": "number-of-perfect-pairs", "title": "Number of Perfect Pairs", "difficulty": "Medium", "tags": [], "similar_problems": []},
-    {"number": 3667, "slug": "sort-array-by-absolute-value", "title": "Sort Array By Absolute Value", "difficulty": "Easy", "tags": [], "similar_problems": []},
-    {"number": 3685, "slug": "subsequence-sum-after-capping-elements", "title": "Subsequence Sum After Capping Elements", "difficulty": "Medium", "tags": [], "similar_problems": []}
+    {"number": 3645, "slug": "maximum-total-from-optimal-activation-order", "title": "Maximum Total from Optimal Activation Order", "difficulty": "Medium", "tags": ["Array", "Two Pointers", "Greedy", "Sorting", "Heap (Priority Queue)"], "similar_problems": []}
 ]

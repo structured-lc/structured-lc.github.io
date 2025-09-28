@@ -452,6 +452,7 @@
     {"number": 3534, "slug": "path-existence-queries-in-a-graph-ii", "title": "Path Existence Queries in a Graph II", "difficulty": "Hard", "tags": ["Array", "Binary Search", "Greedy", "Graph", "Sorting"], "similar_problems": []},
     {"number": 3536, "slug": "maximum-product-of-two-digits", "title": "Maximum Product of Two Digits", "difficulty": "Easy", "tags": ["Math", "Sorting"], "similar_problems": []},
     {"number": 3545, "slug": "minimum-deletions-for-at-most-k-distinct-characters", "title": "Minimum Deletions for At Most K Distinct Characters", "difficulty": "Easy", "tags": ["Hash Table", "String", "Greedy", "Sorting", "Counting"], "similar_problems": []},
+    {"number": 3547, "slug": "maximum-sum-of-edge-values-in-a-graph", "title": "Maximum Sum of Edge Values in a Graph", "difficulty": "Hard", "tags": ["Math", "Greedy", "Graph"], "similar_problems": []},
     {"number": 3551, "slug": "minimum-swaps-to-sort-by-digit-sum", "title": "Minimum Swaps to Sort by Digit Sum", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Sorting"], "similar_problems": []},
     {"number": 3555, "slug": "smallest-subarray-to-sort-in-every-sliding-window", "title": "Smallest Subarray to Sort in Every Sliding Window", "difficulty": "Medium", "tags": ["Array", "Two Pointers", "Stack", "Greedy", "Sorting", "Monotonic Stack"], "similar_problems": [{"slug": "shortest-unsorted-continuous-subarray", "title": "Shortest Unsorted Continuous Subarray", "difficulty": "Medium"}]},
     {"number": 3556, "slug": "sum-of-largest-prime-substrings", "title": "Sum of Largest Prime Substrings", "difficulty": "Medium", "tags": ["Hash Table", "Math", "String", "Sorting", "Number Theory"], "similar_problems": []},
@@ -465,11 +466,5 @@
     {"number": 3633, "slug": "earliest-finish-time-for-land-and-water-rides-i", "title": "Earliest Finish Time for Land and Water Rides I", "difficulty": "Easy", "tags": ["Array", "Two Pointers", "Binary Search", "Greedy", "Sorting"], "similar_problems": []},
     {"number": 3634, "slug": "minimum-removals-to-balance-array", "title": "Minimum Removals to Balance Array", "difficulty": "Medium", "tags": ["Array", "Sliding Window", "Sorting"], "similar_problems": []},
     {"number": 3635, "slug": "earliest-finish-time-for-land-and-water-rides-ii", "title": "Earliest Finish Time for Land and Water Rides II", "difficulty": "Medium", "tags": ["Array", "Two Pointers", "Binary Search", "Greedy", "Sorting"], "similar_problems": []},
-    {"number": 3645, "slug": "maximum-total-from-optimal-activation-order", "title": "Maximum Total from Optimal Activation Order", "difficulty": "Medium", "tags": ["Array", "Two Pointers", "Greedy", "Sorting", "Heap (Priority Queue)"], "similar_problems": []},
-    {"number": 3649, "slug": "number-of-perfect-pairs", "title": "Number of Perfect Pairs", "difficulty": "Medium", "tags": [], "similar_problems": []},
-    {"number": 3656, "slug": "determine-if-a-simple-graph-exists", "title": "Determine if a Simple Graph Exists", "difficulty": "Medium", "tags": [], "similar_problems": []},
-    {"number": 3661, "slug": "maximum-walls-destroyed-by-robots", "title": "Maximum Walls Destroyed by Robots", "difficulty": "Hard", "tags": [], "similar_problems": []},
-    {"number": 3667, "slug": "sort-array-by-absolute-value", "title": "Sort Array By Absolute Value", "difficulty": "Easy", "tags": [], "similar_problems": []},
-    {"number": 3684, "slug": "maximize-sum-of-at-most-k-distinct-elements", "title": "Maximize Sum of At Most K Distinct Elements", "difficulty": "Easy", "tags": [], "similar_problems": []},
-    {"number": 3685, "slug": "subsequence-sum-after-capping-elements", "title": "Subsequence Sum After Capping Elements", "difficulty": "Medium", "tags": [], "similar_problems": []}
+    {"number": 3645, "slug": "maximum-total-from-optimal-activation-order", "title": "Maximum Total from Optimal Activation Order", "difficulty": "Medium", "tags": ["Array", "Two Pointers", "Greedy", "Sorting", "Heap (Priority Queue)"], "similar_problems": []}
 ]

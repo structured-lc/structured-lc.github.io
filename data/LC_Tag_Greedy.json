@@ -428,11 +428,5 @@
     {"number": 3633, "slug": "earliest-finish-time-for-land-and-water-rides-i", "title": "Earliest Finish Time for Land and Water Rides I", "difficulty": "Easy", "tags": ["Array", "Two Pointers", "Binary Search", "Greedy", "Sorting"], "similar_problems": []},
     {"number": 3635, "slug": "earliest-finish-time-for-land-and-water-rides-ii", "title": "Earliest Finish Time for Land and Water Rides II", "difficulty": "Medium", "tags": ["Array", "Two Pointers", "Binary Search", "Greedy", "Sorting"], "similar_problems": []},
     {"number": 3638, "slug": "maximum-balanced-shipments", "title": "Maximum Balanced Shipments", "difficulty": "Medium", "tags": ["Array", "Dynamic Programming", "Stack", "Greedy", "Monotonic Stack"], "similar_problems": []},
-    {"number": 3645, "slug": "maximum-total-from-optimal-activation-order", "title": "Maximum Total from Optimal Activation Order", "difficulty": "Medium", "tags": ["Array", "Two Pointers", "Greedy", "Sorting", "Heap (Priority Queue)"], "similar_problems": []},
-    {"number": 3675, "slug": "minimum-operations-to-transform-string", "title": "Minimum Operations to Transform String", "difficulty": "Medium", "tags": [], "similar_problems": []},
-    {"number": 3680, "slug": "generate-schedule", "title": "Generate Schedule", "difficulty": "Medium", "tags": [], "similar_problems": [{"slug": "task-scheduler", "title": "Task Scheduler", "difficulty": "Medium"}]},
-    {"number": 3681, "slug": "maximum-xor-of-subsequences", "title": "Maximum XOR of Subsequences", "difficulty": "Hard", "tags": [], "similar_problems": []},
-    {"number": 3684, "slug": "maximize-sum-of-at-most-k-distinct-elements", "title": "Maximize Sum of At Most K Distinct Elements", "difficulty": "Easy", "tags": [], "similar_problems": []},
-    {"number": 3689, "slug": "maximum-total-subarray-value-i", "title": "Maximum Total Subarray Value I", "difficulty": "Medium", "tags": [], "similar_problems": []},
-    {"number": 3691, "slug": "maximum-total-subarray-value-ii", "title": "Maximum Total Subarray Value II", "difficulty": "Hard", "tags": [], "similar_problems": []}
+    {"number": 3645, "slug": "maximum-total-from-optimal-activation-order", "title": "Maximum Total from Optimal Activation Order", "difficulty": "Medium", "tags": ["Array", "Two Pointers", "Greedy", "Sorting", "Heap (Priority Queue)"], "similar_problems": []}
 ]

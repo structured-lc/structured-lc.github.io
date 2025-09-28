@@ -206,9 +206,6 @@
       <button id="mobile-settings-btn" class="mobile-nav-btn">
         <span class="btn-icon">⚙️</span>
       </button>
-      <button id="mobile-feedback-btn" class="mobile-nav-btn">
-        <span class="btn-icon">💬</span>
-      </button>
     </div>
   </div>
 
@@ -223,7 +220,6 @@
       <div id="desktop-ribbon-actions">
         <button id="desktop-search-btn" class="desktop-nav-btn"><span class="btn-icon">🔍</span><span class="btn-text"> Search</span></button>
         <button id="desktop-settings-btn" class="desktop-nav-btn"><span class="btn-icon">⚙️</span><span class="btn-text"> Settings</span></button>
-        <button id="desktop-feedback-btn" class="desktop-nav-btn"><span class="btn-icon">💬</span><span class="btn-text"> Feedback</span></button>
       </div>
     </div>
     
@@ -329,47 +325,6 @@
       </div>
       <div class="mobile-modal-body">
         <!-- Unified settings will be added via JavaScript -->
-      </div>
-    </div>
-  </div>
-
-  <!-- Feedback Modal -->
-  <div id="mobile-feedback-modal" class="mobile-modal">
-    <div class="mobile-modal-content">
-      <div class="mobile-modal-header">
-        <h3>💬 Send Feedback</h3>
-        <span class="mobile-close-btn" onclick="closeMobileFeedbackModal()">&times;</span>
-      </div>
-      <div class="mobile-modal-body">
-        <form id="mobile-feedback-form">
-          <div class="feedback-field">
-            <label for="mobile-feedback-title">Title</label>
-            <input type="text" id="mobile-feedback-title" placeholder="Brief description of your feedback" required>
-          </div>
-          <div class="feedback-field">
-            <label for="mobile-feedback-type">Type</label>
-            <select id="mobile-feedback-type" required>
-              <option value="">Select feedback type</option>
-              <option value="bug">🐛 Bug Report</option>
-              <option value="feature">💡 Feature Request</option>
-              <option value="improvement">⚡ Improvement</option>
-              <option value="question">❓ Question</option>
-              <option value="other">📝 Other</option>
-            </select>
-          </div>
-          <div class="feedback-field">
-            <label for="mobile-feedback-name">Name <span style="color: #888; font-size: 0.85em;">(optional)</span></label>
-            <input type="text" id="mobile-feedback-name" placeholder="Your name">
-          </div>
-          <div class="feedback-field">
-            <label for="mobile-feedback-description">Description</label>
-            <textarea id="mobile-feedback-description" placeholder="Describe your feedback in detail..." rows="6" required></textarea>
-          </div>
-          <div class="feedback-actions">
-            <button type="button" class="feedback-btn-cancel" onclick="closeMobileFeedbackModal()">Cancel</button>
-            <button type="submit" class="feedback-btn-submit">Send Feedback</button>
-          </div>
-        </form>
       </div>
     </div>
   </div>
@@ -2847,10 +2802,6 @@
         openMobileSearchModal();
       };
       
-      document.getElementById('mobile-feedback-btn').onclick = () => {
-        openMobileFeedback();
-      };
-      
       document.getElementById('mobile-settings-btn').onclick = () => {
         openMobileSettingsModal();
       };
@@ -3107,20 +3058,6 @@
     function closeMobileSettingsModal() {
       document.getElementById('mobile-settings-modal').style.display = 'none';
     }
-
-    function openMobileFeedbackModal() {
-      document.getElementById('mobile-feedback-modal').style.display = 'block';
-      // Focus on the first input
-      setTimeout(() => {
-        document.getElementById('mobile-feedback-title').focus();
-      }, 100);
-    }
-
-    function closeMobileFeedbackModal() {
-      document.getElementById('mobile-feedback-modal').style.display = 'none';
-      // Reset the form
-      document.getElementById('mobile-feedback-form').reset();
-    }
     
     // Desktop modals creation (only on desktop)
     function createDesktopModals() {
@@ -3167,54 +3104,9 @@
         </div>
       `;
       
-      // Create desktop feedback modal
-      const feedbackModal = document.createElement('div');
-      feedbackModal.id = 'desktop-feedback-modal';
-      feedbackModal.className = 'desktop-modal';
-      feedbackModal.innerHTML = `
-        <div class="desktop-modal-content">
-          <div class="desktop-modal-header">
-            <h3>💬 Send Feedback</h3>
-            <span class="desktop-close-btn" onclick="closeDesktopFeedbackModal()">&times;</span>
-          </div>
-          <div class="desktop-modal-body">
-            <form id="desktop-feedback-form">
-              <div class="desktop-feedback-field">
-                <label for="desktop-feedback-title">Title</label>
-                <input type="text" id="desktop-feedback-title" placeholder="Brief description of your feedback" required>
-              </div>
-              <div class="desktop-feedback-field">
-                <label for="desktop-feedback-type">Type</label>
-                <select id="desktop-feedback-type" required>
-                  <option value="">Select feedback type</option>
-                  <option value="bug">🐛 Bug Report</option>
-                  <option value="feature">💡 Feature Request</option>
-                  <option value="improvement">⚡ Improvement</option>
-                  <option value="question">❓ Question</option>
-                  <option value="other">📝 Other</option>
-                </select>
-              </div>
-              <div class="desktop-feedback-field">
-                <label for="desktop-feedback-name">Name <span style="color: #888; font-size: 0.85em;">(optional)</span></label>
-                <input type="text" id="desktop-feedback-name" placeholder="Your name">
-              </div>
-              <div class="desktop-feedback-field">
-                <label for="desktop-feedback-description">Description</label>
-                <textarea id="desktop-feedback-description" placeholder="Describe your feedback in detail..." rows="6" required></textarea>
-              </div>
-              <div class="desktop-feedback-actions">
-                <button type="button" class="desktop-feedback-btn-cancel" onclick="closeDesktopFeedbackModal()">Cancel</button>
-                <button type="submit" class="desktop-feedback-btn-submit">Send Feedback</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      `;
-      
       // Append to body
       document.body.appendChild(searchModal);
       document.body.appendChild(settingsModal);
-      document.body.appendChild(feedbackModal);
       
       // NOW set up event listeners after modals are created
       setupDesktopEventListeners();
@@ -3225,10 +3117,9 @@
       if (window.innerWidth < 1024) return; // Only on desktop
       
       try {
-        // Desktop search, settings, and feedback button listeners
+        // Desktop search and settings button listeners
         const desktopSearchBtn = document.getElementById('desktop-search-btn');
         const desktopSettingsBtn = document.getElementById('desktop-settings-btn');
-        const desktopFeedbackBtn = document.getElementById('desktop-feedback-btn');
         const desktopSearchInput = document.getElementById('desktop-search-input');
         
         if (desktopSearchBtn) {
@@ -3239,11 +3130,6 @@
         if (desktopSettingsBtn) {
           desktopSettingsBtn.addEventListener('click', () => {
             openDesktopSettingsModal();
-          });
-        }
-        if (desktopFeedbackBtn) {
-          desktopFeedbackBtn.addEventListener('click', () => {
-            openDesktopFeedbackModal();
           });
         }
         
@@ -3306,16 +3192,6 @@
           desktopSettingsModal.addEventListener('click', (e) => {
             if (e.target === desktopSettingsModal && typeof closeDesktopSettingsModal === 'function') {
               closeDesktopSettingsModal();
-            }
-          });
-        }
-
-        const desktopFeedbackModal = document.getElementById('desktop-feedback-modal');
-        
-        if (desktopFeedbackModal) {
-          desktopFeedbackModal.addEventListener('click', (e) => {
-            if (e.target === desktopFeedbackModal && typeof closeDesktopFeedbackModal === 'function') {
-              closeDesktopFeedbackModal();
             }
           });
         }
@@ -3585,223 +3461,6 @@
         modal.style.display = 'none';
       }
     }
-
-    function openDesktopFeedbackModal() {
-      if (window.innerWidth < 1024) return; // Safety check
-      const modal = document.getElementById('desktop-feedback-modal');
-      if (modal) {
-        modal.style.display = 'block';
-        // Focus on the first input
-        setTimeout(() => {
-          const titleInput = document.getElementById('desktop-feedback-title');
-          if (titleInput) titleInput.focus();
-        }, 100);
-      }
-    }
-
-    function closeDesktopFeedbackModal() {
-      if (window.innerWidth < 1024) return; // Safety check
-      const modal = document.getElementById('desktop-feedback-modal');
-      if (modal) {
-        modal.style.display = 'none';
-        // Reset the form
-        const form = document.getElementById('desktop-feedback-form');
-        if (form) form.reset();
-      }
-    }
-
-    // Feedback submission functionality
-    async function submitFeedback(title, type, description, isDesktop = false, name = '') {
-      const form = document.getElementById(isDesktop ? 'desktop-feedback-form' : 'mobile-feedback-form');
-      const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
-      const originalText = submitBtn ? submitBtn.textContent : 'Send Feedback';
-      
-      try {
-        // Update button state
-        if (submitBtn) {
-          submitBtn.disabled = true;
-          submitBtn.textContent = 'Submitting...';
-        }
-
-        // Get page information
-        const pageTitle = document.title.replace(' - LeetCode Handbook', '');
-        const pageUrl = window.location.href;
-        const layout = window.innerWidth < 1024 ? 'Mobile' : 'Desktop';
-        
-        // Get version info
-        let version = 'unknown';
-        let lastUpdated = 'unknown';
-        try {
-          const versionResponse = await fetch('version.json');
-          const versionData = await versionResponse.json();
-          version = versionData.version || 'unknown';
-          lastUpdated = versionData.lastUpdated || 'unknown';
-        } catch (e) {
-          // Use default values if version fetch fails
-        }
-
-        // Create GitHub issue body
-        const typeEmoji = {
-          'bug': '🐛',
-          'feature': '💡',
-          'improvement': '⚡',
-          'question': '❓',
-          'other': '📝'
-        };
-
-        // Build contact info if provided
-        let contactInfo = '';
-        if (name) {
-          contactInfo = `\n\n**Contact Information:**\n- **Name:** ${name}`;
-        }
-
-        const issueBody = `## ${typeEmoji[type] || '📝'} ${type.charAt(0).toUpperCase() + type.slice(1)}
-
-**Description:**  
-${description}${contactInfo}
-
-**Page Information:**
-- **Page:** ${pageTitle}
-- **URL:** ${pageUrl}
-- **Layout:** ${layout}
-- **Version:** v${version}`;
-
-        // Use the title as-is without any type prefixes (relying on GitHub labels instead)
-        const issueTitle = title;
-
-        // Prepare feedback data for Firebase Cloud Function
-        const feedbackData = {
-          title: issueTitle,
-          type: type,
-          description: description,
-          contactInfo: {
-            name: name
-          },
-          pageInfo: {
-            title: pageTitle,
-            url: pageUrl,
-            layout: layout,
-            version: version,
-            lastUpdated: lastUpdated
-          },
-          metadata: {
-            userAgent: navigator.userAgent,
-            timestamp: new Date().toISOString()
-          },
-          issueBody: issueBody
-        };
-
-        try {
-          if (FEEDBACK_CONFIG.functionUrl && !FEEDBACK_CONFIG.developmentMode) {
-            // Production: Submit to Firebase Cloud Function
-            const response = await fetch(FEEDBACK_CONFIG.functionUrl, {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify(feedbackData)
-            });
-
-            const result = await response.json();
-            
-            if (response.ok && result.success) {
-              showToast('Feedback submitted successfully! Thank you for your input.', 'success');
-              console.log('GitHub issue created:', result.issueUrl);
-            } else {
-              throw new Error(result.error || 'Submission failed');
-            }
-          } else {
-            // Development mode: Store locally and show success
-            const storedFeedback = JSON.parse(localStorage.getItem('pendingFeedback') || '[]');
-            storedFeedback.push({
-              ...feedbackData,
-              id: Date.now(),
-              submitted: false
-            });
-            localStorage.setItem('pendingFeedback', JSON.stringify(storedFeedback));
-            
-            showToast('Feedback saved locally (dev mode). Thank you!', 'success');
-            console.log('Feedback stored locally:', feedbackData);
-          }
-        } catch (error) {
-          console.error('Feedback submission error:', error);
-          showToast('Failed to submit feedback. Please try again later.', 'error');
-          return; // Don't close modal on error
-        }
-        
-        // Close modal and reset form
-        if (isDesktop) {
-          closeDesktopFeedbackModal();
-        } else {
-          closeMobileFeedbackModal();
-        }
-        
-      } catch (error) {
-        console.error('Error submitting feedback:', error);
-        showToast('Failed to submit feedback. Please try again.', 'error');
-      } finally {
-        // Reset button state
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalText;
-        }
-      }
-    }
-
-    // Show toast notification
-    function showToast(message, type = 'info') {
-      // Remove any existing toasts
-      const existingToasts = document.querySelectorAll('.mobile-toast, .desktop-toast');
-      existingToasts.forEach(toast => toast.remove());
-
-      const toast = document.createElement('div');
-      toast.className = window.innerWidth < 1024 ? 'mobile-toast' : 'desktop-toast';
-      
-      // Add type-specific styling
-      if (type === 'success') {
-        toast.style.background = '#10b981';
-        toast.style.color = '#ffffff';
-      } else if (type === 'error') {
-        toast.style.background = '#ef4444';
-        toast.style.color = '#ffffff';
-      }
-      
-      toast.textContent = message;
-      document.body.appendChild(toast);
-      
-      setTimeout(() => toast.classList.add('show'), 100);
-      setTimeout(() => {
-        toast.classList.remove('show');
-        setTimeout(() => toast.remove(), 300);
-      }, 4000);
-    }
-
-    // Developer utility: View stored feedback (call from console)
-    window.viewStoredFeedback = function() {
-      const storedFeedback = JSON.parse(localStorage.getItem('pendingFeedback') || '[]');
-      console.log('Stored Feedback:', storedFeedback);
-      return storedFeedback;
-    };
-
-    // Developer utility: Export feedback as JSON (call from console)
-    window.exportFeedback = function() {
-      const storedFeedback = JSON.parse(localStorage.getItem('pendingFeedback') || '[]');
-      const dataStr = JSON.stringify(storedFeedback, null, 2);
-      const dataBlob = new Blob([dataStr], { type: 'application/json' });
-      const url = URL.createObjectURL(dataBlob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = `feedback-export-${new Date().toISOString().split('T')[0]}.json`;
-      link.click();
-      URL.revokeObjectURL(url);
-      console.log(`Exported ${storedFeedback.length} feedback items`);
-    };
-
-    // Developer utility: Clear stored feedback (call from console)
-    window.clearStoredFeedback = function() {
-      localStorage.removeItem('pendingFeedback');
-      console.log('Stored feedback cleared');
-    };
     
     // Share URL function (updated to match desktop version)
     function shareMobileUrl(url, title) {
@@ -3851,26 +3510,8 @@ ${description}${contactInfo}
       }
     }
     
-    // Firebase Cloud Function configuration
-    const FEEDBACK_CONFIG = {
-      // Firebase Cloud Function URL
-      functionUrl: 'https://us-central1-structured-lc.cloudfunctions.net/submitFeedback',
-      
-      // Set to false for production, true for development/testing
-      developmentMode: false
-    };
-
-    // Open feedback modal (updated to use modal instead of direct GitHub redirect)
+    // Open mobile feedback (matching desktop version)
     function openMobileFeedback() {
-      if (window.innerWidth < 1024) {
-        openMobileFeedbackModal();
-      } else {
-        openDesktopFeedbackModal();
-      }
-    }
-
-    // Original function kept for reference but not used
-    function openMobileFeedbackOld() {
       let pageTitle = document.title.replace(' - LeetCode Handbook', '');
       let pageUrl = window.location.href;
       let layout = window.innerWidth < 1024 ? 'Mobile' : 'Desktop';
@@ -3896,9 +3537,7 @@ ${description}${contactInfo}
             '&labels=feedback';
           window.open(issueUrl, '_blank');
         });
-    }
-
-    // Show mobile toast
+    }    // Show mobile toast
     function showMobileToast(message) {
       const toast = document.createElement('div');
       toast.className = 'mobile-toast';
@@ -4046,41 +3685,6 @@ ${description}${contactInfo}
         if (e.key === 'Escape') {
           closeMobileSearchModal();
           closeMobileSettingsModal();
-          closeMobileFeedbackModal();
-          if (typeof closeDesktopFeedbackModal === 'function') {
-            closeDesktopFeedbackModal();
-          }
-        }
-      });
-
-      // Add feedback form submission handlers
-      const mobileFeedbackForm = document.getElementById('mobile-feedback-form');
-      if (mobileFeedbackForm) {
-        mobileFeedbackForm.addEventListener('submit', async (e) => {
-          e.preventDefault();
-          const title = document.getElementById('mobile-feedback-title').value;
-          const type = document.getElementById('mobile-feedback-type').value;
-          const name = document.getElementById('mobile-feedback-name').value;
-          const description = document.getElementById('mobile-feedback-description').value;
-          
-          if (title && type && description) {
-            await submitFeedback(title, type, description, false, name);
-          }
-        });
-      }
-
-      // Desktop feedback form handler (will be added when desktop modal is created)
-      document.addEventListener('submit', async (e) => {
-        if (e.target && e.target.id === 'desktop-feedback-form') {
-          e.preventDefault();
-          const title = document.getElementById('desktop-feedback-title').value;
-          const type = document.getElementById('desktop-feedback-type').value;
-          const name = document.getElementById('desktop-feedback-name').value;
-          const description = document.getElementById('desktop-feedback-description').value;
-          
-          if (title && type && description) {
-            await submitFeedback(title, type, description, true, name);
-          }
         }
       });
       
@@ -4088,16 +3692,12 @@ ${description}${contactInfo}
       window.addEventListener('click', (e) => {
         const searchModal = document.getElementById('mobile-search-modal');
         const settingsModal = document.getElementById('mobile-settings-modal');
-        const feedbackModal = document.getElementById('mobile-feedback-modal');
         
         if (e.target === searchModal) {
           closeMobileSearchModal();
         }
         if (e.target === settingsModal) {
           closeMobileSettingsModal();
-        }
-        if (e.target === feedbackModal) {
-          closeMobileFeedbackModal();
         }
       });
       

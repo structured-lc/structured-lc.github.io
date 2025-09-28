@@ -72,6 +72,5 @@
     {"number": 3508, "slug": "implement-router", "title": "Implement Router", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Binary Search", "Design", "Queue", "Ordered Set"], "similar_problems": []},
     {"number": 3510, "slug": "minimum-pair-removal-to-sort-array-ii", "title": "Minimum Pair Removal to Sort Array II", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Linked List", "Heap (Priority Queue)", "Simulation", "Doubly-Linked List", "Ordered Set"], "similar_problems": []},
     {"number": 3590, "slug": "kth-smallest-path-xor-sum", "title": "Kth Smallest Path XOR Sum", "difficulty": "Hard", "tags": ["Array", "Tree", "Depth-First Search", "Ordered Set"], "similar_problems": []},
-    {"number": 3607, "slug": "power-grid-maintenance", "title": "Power Grid Maintenance", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Depth-First Search", "Breadth-First Search", "Union Find", "Graph", "Heap (Priority Queue)", "Ordered Set"], "similar_problems": []},
-    {"number": 3672, "slug": "sum-of-weighted-modes-in-subarrays", "title": "Sum of Weighted Modes in Subarrays", "difficulty": "Medium", "tags": [], "similar_problems": []}
+    {"number": 3607, "slug": "power-grid-maintenance", "title": "Power Grid Maintenance", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Depth-First Search", "Breadth-First Search", "Union Find", "Graph", "Heap (Priority Queue)", "Ordered Set"], "similar_problems": []}
 ]
