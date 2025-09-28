@@ -478,7 +478,7 @@
         }
 
         // Clear all active states
-        document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
+        document.querySelectorAll('#desktop-lists-list li, .desktop-category-list-item').forEach(item => item.classList.remove('active'));
         document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
         document.getElementById('desktop-file-list').innerHTML = '';
         
@@ -516,17 +516,23 @@
           }, 0);
         }
         
+        // First, find which category contains this list and expand it if needed
+        await this.expandCategoryContainingList(listSlug);
+        
         // Find and activate the list
         const listLinks = document.querySelectorAll('#desktop-lists-list a[href="#' + listSlug + '"]');
         if (listLinks.length > 0) {
           // Clear previous selections
-          document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
+          document.querySelectorAll('#desktop-lists-list li, .desktop-category-list-item').forEach(item => item.classList.remove('active'));
           document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
           
           // Activate the list
-          const listItem = listLinks[0].closest('li');
-          listItem.classList.add('active');
-          scrollToActiveList();
+          const listItem = listLinks[0].closest('li, .desktop-category-list-item');
+          if (listItem) {
+            listItem.classList.add('active');
+          }
+          // Longer delay to account for category expansion animation
+          scrollToActiveList({ delay: 600, behavior: 'smooth' });
         }
         
         // Update state
@@ -558,13 +564,18 @@
           throw new Error(`List "${listSlug}" not found`);
         }
         
+        // First, expand the category containing this list
+        await this.expandCategoryContainingList(listSlug);
+        
         // Find and activate the list first
         const listLinks = document.querySelectorAll('#desktop-lists-list a[href="#' + listSlug + '"]');
         if (listLinks.length > 0) {
-          document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
-          const listItem = listLinks[0].closest('li');
-          listItem.classList.add('active');
-          scrollToActiveList();
+          document.querySelectorAll('#desktop-lists-list li, .desktop-category-list-item').forEach(item => item.classList.remove('active'));
+          const listItem = listLinks[0].closest('li, .desktop-category-list-item');
+          if (listItem) {
+            listItem.classList.add('active');
+          }
+          scrollToActiveList({ delay: 100, behavior: 'smooth' });
         }
         
         // Load list data dynamically just like mobile router - no complex state management
@@ -622,12 +633,48 @@
           document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
           const problemItem = problemLinks[0].closest('li');
           problemItem.classList.add('active');
-          scrollToActiveProblem({ delay: 100, behavior: 'smooth' });
+          scrollToActiveProblem({ delay: 800, behavior: 'smooth' });
         }
         
         // Load the problem content in C3
         document.title = `${problem.title} - LeetCode Handbook`;
         loadDesktopProblemContent(listSlug, problemSlug, problem.number || problem.id);
+      },
+
+      async expandCategoryContainingList(listSlug) {
+        // Get the categorized lists data
+        if (!window.categorizedLists) {
+          // If not loaded yet, try to load it
+          try {
+            const response = await fetch('./data/lists.json');
+            window.categorizedLists = await response.json();
+          } catch (error) {
+            console.error('Failed to load categories data:', error);
+            return;
+          }
+        }
+
+        // Find which category contains this list
+        const categories = window.categorizedLists.categories;
+        let targetCategory = null;
+
+        for (const category of categories) {
+          const foundList = category.lists.find(list => list.url === listSlug);
+          if (foundList) {
+            targetCategory = category;
+            break;
+          }
+        }
+
+        if (targetCategory) {
+          // Use the new accordion system to expand the category
+          const categoryContent = document.getElementById(`desktop-category-${targetCategory.name}`);
+          
+          if (categoryContent && categoryContent.classList.contains('collapsed')) {
+            // Use our new accordion system with scrolling for better focus
+            await toggleCategoryAccordion(targetCategory.name, 'desktop');
+          }
+        }
       }
     };
 
@@ -864,6 +911,9 @@
           await loadMobileLists();
         }
         
+        // First, expand the category containing this list
+        await this.expandCategoryContainingList(listSlug);
+        
         // ADD MOBILE SELECTION HIGHLIGHTING - Clear previous selections and highlight current list
         document.querySelectorAll('#mobile-lists-list li').forEach(item => item.classList.remove('active'));
         const currentListLink = document.querySelector(`#mobile-lists-list a[href="#${listSlug}"]`);
@@ -895,6 +945,9 @@
         if (currentLists.length === 0) {
           await loadMobileLists();
         }
+        
+        // First, expand the category containing this list
+        await this.expandCategoryContainingList(listSlug);
         
         const fileName = slugToFileMap[listSlug];
         if (!fileName) {
@@ -971,6 +1024,46 @@
             '<p><a href="#" onclick="mobileRouter.navigate(\'\')">← Back to Home</a></p>' +
           '</div>';
         document.title = title + ' - LeetCode Handbook';
+      },
+
+      async expandCategoryContainingList(listSlug) {
+        // Get the categorized lists data
+        if (!window.categorizedLists) {
+          // If not loaded yet, try to load it
+          try {
+            const response = await fetch('./data/lists.json');
+            window.categorizedLists = await response.json();
+          } catch (error) {
+            console.error('Failed to load categories data:', error);
+            return;
+          }
+        }
+
+        // Get the file name from the slug mapping
+        const fileName = slugToFileMap[listSlug];
+        if (!fileName) return;
+
+        // Find which category contains this list by file name
+        const categories = window.categorizedLists.categories;
+        let targetCategory = null;
+
+        for (const category of categories) {
+          const foundList = category.lists.find(list => list.file === fileName);
+          if (foundList) {
+            targetCategory = category;
+            break;
+          }
+        }
+
+        if (targetCategory) {
+          // Use the enhanced mobile accordion system with smooth animations
+          const categoryContent = document.getElementById(`mobile-category-${targetCategory.name}`);
+          
+          if (categoryContent && categoryContent.classList.contains('collapsed')) {
+            // Expand using enhanced mobile accordion with smooth animations
+            await toggleCategoryAccordion(targetCategory.name, 'mobile');
+          }
+        }
       }
     };
     
@@ -1211,11 +1304,20 @@
       // but can be used for cleanup if needed
     }
     
-    // Load lists (same logic as desktop)
+    // Load lists (updated for categorized structure)
     async function loadMobileLists() {
       try {
         const response = await fetch('data/lists.json');
-        currentLists = await response.json();
+        const listsData = await response.json();
+        
+        // Extract flat list from categories for backward compatibility
+        currentLists = [];
+        listsData.categories.forEach(category => {
+          currentLists = currentLists.concat(category.lists);
+        });
+        
+        // Store categories data for rendering
+        window.categorizedLists = listsData;
         
         const { slugMap, fileMap } = generateSlugMappings(currentLists);
         listSlugMap = slugMap;
@@ -1246,7 +1348,7 @@
       `;
     }
     
-    // Render mobile lists
+    // Render mobile lists with categories
     async function renderMobileLists() {
       const listsList = document.getElementById('mobile-lists-list');
       listsList.innerHTML = '';
@@ -1260,63 +1362,99 @@
         '</div>';
       listsList.appendChild(welcomeDiv);
       
-      // Load problem counts and difficulty distributions for all lists first
-      const listsWithCounts = await Promise.all(
-        currentLists.map(async (list) => {
-          const [count, difficultyDist] = await Promise.all([
-            getMobileListProblemCount(list.file),
-            getMobileListDifficultyDistribution(list.file)
-          ]);
-          return { ...list, problemCount: count, difficultyDistribution: difficultyDist };
-        })
-      );
+      if (!window.categorizedLists) return;
       
-      listsWithCounts.forEach(list => {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        const listSlug = listSlugMap[list.file];
-        const description = list.description || 'Curated collection of coding problems';
+      // Render each category
+      for (const category of window.categorizedLists.categories) {
+        // Create category header
+        const categoryLi = document.createElement('li');
+        categoryLi.className = 'category-header';
         
-        // Create difficulty indicators
-        const difficultyIndicators = generateDifficultyIndicators(list.difficultyDistribution);
+        const categoryHeader = document.createElement('div');
+        categoryHeader.className = 'category-title';
+        categoryHeader.innerHTML = `
+          <div class="category-toggle" onclick="toggleMobileCategory('${category.name}')">
+            <span class="category-icon">${category.icon}</span>
+            <span class="category-name">${category.name}</span>
+            <span class="category-arrow ${category.collapsed ? 'collapsed' : ''}">${category.collapsed ? '↑' : '↑'}</span>
+          </div>
+          <div class="category-description">${category.description}</div>
+        `;
         
-        // Create count text with elegant slash format (renderMobileLists)
-        const { easy, medium, hard } = list.difficultyDistribution;
-        const compactCountText = list.problemCount + ' problems • <span style="color: #15803d; font-weight: 600;">' + easy + '</span>/<span style="color: #ca8a04; font-weight: 600;">' + medium + '</span>/<span style="color: #dc2626; font-weight: 600;">' + hard + '</span>';
+        categoryLi.appendChild(categoryHeader);
+        listsList.appendChild(categoryLi);
         
-        a.href = '#' + listSlug;
-        a.innerHTML = 
-          '<div class="mobile-list-header">' +
-            '<div class="mobile-list-content">' +
-              '<div class="mobile-list-title-with-icon-and-dots">' +
-                '<div class="mobile-list-icon-and-title">' +
-                  '<span class="mobile-list-icon">' + getMobileListIcon(list.name) + '</span>' +
-                  '<div class="mobile-list-title">' + list.name + '</div>' +
+        // Create category content container
+        const categoryContent = document.createElement('li');
+        categoryContent.className = `category-content ${category.collapsed ? 'collapsed' : ''}`;
+        categoryContent.id = `mobile-category-${category.name}`;
+        
+        const categoryContentDiv = document.createElement('div');
+        categoryContentDiv.className = 'category-lists';
+        
+        // Load problem counts and difficulty distributions for all lists in this category
+        const listsWithCounts = await Promise.all(
+          category.lists.map(async (list) => {
+            const [count, difficultyDist] = await Promise.all([
+              getMobileListProblemCount(list.file),
+              getMobileListDifficultyDistribution(list.file)
+            ]);
+            return { ...list, problemCount: count, difficultyDistribution: difficultyDist };
+          })
+        );
+        
+        // Render lists in this category
+        listsWithCounts.forEach(list => {
+          const listDiv = document.createElement('div');
+          listDiv.className = 'category-list-item';
+          
+          const a = document.createElement('a');
+          const listSlug = listSlugMap[list.file];
+          const description = list.description || 'Curated collection of coding problems';
+          
+          // Create difficulty indicators
+          const difficultyIndicators = generateDifficultyIndicators(list.difficultyDistribution);
+          
+          // Create count text with elegant slash format
+          const { easy, medium, hard } = list.difficultyDistribution;
+          const compactCountText = list.problemCount + ' problems • <span style="color: #15803d; font-weight: 600;">' + easy + '</span>/<span style="color: #ca8a04; font-weight: 600;">' + medium + '</span>/<span style="color: #dc2626; font-weight: 600;">' + hard + '</span>';
+          
+          a.href = '#' + listSlug;
+          a.innerHTML = 
+            '<div class="mobile-list-header">' +
+              '<div class="mobile-list-content">' +
+                '<div class="mobile-list-title-with-icon-and-dots">' +
+                  '<div class="mobile-list-icon-and-title">' +
+                    '<span class="mobile-list-icon">' + getMobileListIcon(list.name) + '</span>' +
+                    '<div class="mobile-list-title">' + list.name + '</div>' +
+                  '</div>' +
+                  '<div class="mobile-list-difficulty-indicators">' + difficultyIndicators + '</div>' +
                 '</div>' +
-                '<div class="mobile-list-difficulty-indicators">' + difficultyIndicators + '</div>' +
+                '<div class="mobile-list-count">' + compactCountText + '</div>' +
+                '<div class="mobile-list-description">' + description + '</div>' +
               '</div>' +
-              '<div class="mobile-list-count">' + compactCountText + '</div>' +
-              '<div class="mobile-list-description">' + description + '</div>' +
-            '</div>' +
-          '</div>';
+            '</div>';
+          
+          a.onclick = (e) => {
+            e.preventDefault();
+            showMobileLoadingAnimation();
+            setTimeout(() => {
+              mobileRouter.navigate(listSlug);
+            }, 300);
+          };
+          
+          listDiv.appendChild(a);
+          categoryContentDiv.appendChild(listDiv);
+        });
         
-        a.onclick = (e) => {
-          e.preventDefault();
-          showMobileLoadingAnimation();
-          setTimeout(() => {
-            mobileRouter.navigate(listSlug);
-          }, 300);
-        };
-        
-        li.appendChild(a);
-        listsList.appendChild(li);
-      });
+        categoryContent.appendChild(categoryContentDiv);
+        listsList.appendChild(categoryContent);
+      }
       
       // Animate the lists container
       animateMobileContentContainer('mobile-lists-list', 'fade-in');
     }
     
-    // Render mobile lists without animation (for router transitions)
     // Render mobile lists without animation (for router transitions)
     async function renderMobileListsNoAnimation() {
       const listsList = document.getElementById('mobile-lists-list');
@@ -1331,60 +1469,305 @@
         '</div>';
       listsList.appendChild(welcomeDiv);
       
-      // Load problem counts and difficulty distributions for all lists first
-      const listsWithCounts = await Promise.all(
-        currentLists.map(async (list) => {
-          const [count, difficultyDist] = await Promise.all([
-            getMobileListProblemCount(list.file),
-            getMobileListDifficultyDistribution(list.file)
-          ]);
-          return { ...list, problemCount: count, difficultyDistribution: difficultyDist };
-        })
-      );
+      if (!window.categorizedLists) return;
       
-      listsWithCounts.forEach(list => {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        const listSlug = listSlugMap[list.file];
-        const description = list.description || 'Curated collection of coding problems';
+      // Render each category (same as renderMobileLists but without animation)
+      for (const category of window.categorizedLists.categories) {
+        // Create category header
+        const categoryLi = document.createElement('li');
+        categoryLi.className = 'category-header';
         
-        // Create difficulty indicators
-        const difficultyIndicators = generateDifficultyIndicators(list.difficultyDistribution);
+        const categoryHeader = document.createElement('div');
+        categoryHeader.className = 'category-title';
+        categoryHeader.innerHTML = `
+          <div class="category-toggle" onclick="toggleMobileCategory('${category.name}')">
+            <span class="category-icon">${category.icon}</span>
+            <span class="category-name">${category.name}</span>
+            <span class="category-arrow ${category.collapsed ? 'collapsed' : ''}">${category.collapsed ? '↑' : '↑'}</span>
+          </div>
+          <div class="category-description">${category.description}</div>
+        `;
         
-        // Create count text with elegant slash format (renderMobileListsNoAnimation)
-        const { easy, medium, hard } = list.difficultyDistribution;
-        const compactCountText = list.problemCount + ' problems • <span style="color: #15803d; font-weight: 600;">' + easy + '</span>/<span style="color: #ca8a04; font-weight: 600;">' + medium + '</span>/<span style="color: #dc2626; font-weight: 600;">' + hard + '</span>';
+        categoryLi.appendChild(categoryHeader);
+        listsList.appendChild(categoryLi);
         
-        a.href = '#' + listSlug;
-        a.innerHTML = 
-          '<div class="mobile-list-header">' +
-            '<div class="mobile-list-content">' +
-              '<div class="mobile-list-title-with-icon-and-dots">' +
-                '<div class="mobile-list-icon-and-title">' +
-                  '<span class="mobile-list-icon">' + getMobileListIcon(list.name) + '</span>' +
-                  '<div class="mobile-list-title">' + list.name + '</div>' +
+        // Create category content container
+        const categoryContent = document.createElement('li');
+        categoryContent.className = `category-content ${category.collapsed ? 'collapsed' : ''}`;
+        categoryContent.id = `mobile-category-${category.name}`;
+        
+        const categoryContentDiv = document.createElement('div');
+        categoryContentDiv.className = 'category-lists';
+        
+        // Load problem counts and difficulty distributions for all lists in this category
+        const listsWithCounts = await Promise.all(
+          category.lists.map(async (list) => {
+            const [count, difficultyDist] = await Promise.all([
+              getMobileListProblemCount(list.file),
+              getMobileListDifficultyDistribution(list.file)
+            ]);
+            return { ...list, problemCount: count, difficultyDistribution: difficultyDist };
+          })
+        );
+        
+        // Render lists in this category
+        listsWithCounts.forEach(list => {
+          const listDiv = document.createElement('div');
+          listDiv.className = 'category-list-item';
+          
+          const a = document.createElement('a');
+          const listSlug = listSlugMap[list.file];
+          const description = list.description || 'Curated collection of coding problems';
+          
+          // Create difficulty indicators
+          const difficultyIndicators = generateDifficultyIndicators(list.difficultyDistribution);
+          
+          // Create count text with elegant slash format
+          const { easy, medium, hard } = list.difficultyDistribution;
+          const compactCountText = list.problemCount + ' problems • <span style="color: #15803d; font-weight: 600;">' + easy + '</span>/<span style="color: #ca8a04; font-weight: 600;">' + medium + '</span>/<span style="color: #dc2626; font-weight: 600;">' + hard + '</span>';
+          
+          a.href = '#' + listSlug;
+          a.innerHTML = 
+            '<div class="mobile-list-header">' +
+              '<div class="mobile-list-content">' +
+                '<div class="mobile-list-title-with-icon-and-dots">' +
+                  '<div class="mobile-list-icon-and-title">' +
+                    '<span class="mobile-list-icon">' + getMobileListIcon(list.name) + '</span>' +
+                    '<div class="mobile-list-title">' + list.name + '</div>' +
+                  '</div>' +
+                  '<div class="mobile-list-difficulty-indicators">' + difficultyIndicators + '</div>' +
                 '</div>' +
-                '<div class="mobile-list-difficulty-indicators">' + difficultyIndicators + '</div>' +
+                '<div class="mobile-list-count">' + compactCountText + '</div>' +
+                '<div class="mobile-list-description">' + description + '</div>' +
               '</div>' +
-              '<div class="mobile-list-count">' + compactCountText + '</div>' +
-              '<div class="mobile-list-description">' + description + '</div>' +
-            '</div>' +
-          '</div>';
+            '</div>';
+          
+          a.onclick = (e) => {
+            e.preventDefault();
+            showMobileLoadingAnimation();
+            setTimeout(() => {
+              mobileRouter.navigate(listSlug);
+            }, 300);
+          };
+          
+          listDiv.appendChild(a);
+          categoryContentDiv.appendChild(listDiv);
+        });
         
-        a.onclick = (e) => {
-          e.preventDefault();
-          showMobileLoadingAnimation();
-          setTimeout(() => {
-            mobileRouter.navigate(listSlug);
-          }, 300);
-        };
-        
-        li.appendChild(a);
-        listsList.appendChild(li);
-      });
+        categoryContent.appendChild(categoryContentDiv);
+        listsList.appendChild(categoryContent);
+      }
       // No animation - view transition already handled by showMobileView
     }
     
+    // Enhanced mobile accordion system with smooth animations
+    function toggleMobileCategory(categoryName) {
+      // Use the same smooth accordion system as desktop
+      toggleCategoryAccordion(categoryName, 'mobile');
+    }
+    
+
+
+    // Toggle desktop category with clean accordion behavior
+    function toggleDesktopCategory(categoryName) {
+      toggleCategoryAccordion(categoryName, 'desktop');
+    }
+
+    // Clean accordion system with proper state management
+    let isAnimating = false;
+    
+    async function toggleCategoryAccordion(categoryName, layout, options = {}) {
+      // Prevent multiple simultaneous animations
+      if (isAnimating) return;
+      isAnimating = true;
+      
+      const { forceExpand = false, skipScroll = false } = options;
+      
+      const prefix = layout === 'mobile' ? 'mobile-category' : 'desktop-category';
+      const targetContent = document.getElementById(`${prefix}-${categoryName}`);
+      const targetArrow = document.querySelector(`[onclick="toggle${layout === 'mobile' ? 'Mobile' : 'Desktop'}Category('${categoryName}')"] .category-arrow`);
+      
+      if (!targetContent || !targetArrow || !window.categorizedLists) {
+        isAnimating = false;
+        return;
+      }
+      
+      const isCurrentlyCollapsed = targetContent.classList.contains('collapsed');
+      
+      // Step 1: Collapse all other categories first (if expanding or force expanding)
+      if (isCurrentlyCollapsed || forceExpand) {
+        const collapsePromises = [];
+        
+        for (const category of window.categorizedLists.categories) {
+          if (category.name !== categoryName) {
+            const otherContent = document.getElementById(`${prefix}-${category.name}`);
+            const otherArrow = document.querySelector(`[onclick="toggle${layout === 'mobile' ? 'Mobile' : 'Desktop'}Category('${category.name}')"] .category-arrow`);
+            
+            if (otherContent && !otherContent.classList.contains('collapsed')) {
+              collapsePromises.push(animateCollapse(otherContent, otherArrow));
+              category.collapsed = true;
+            }
+          }
+        }
+        
+        // Wait for all collapses to complete
+        await Promise.all(collapsePromises);
+        
+        // Step 2: Expand the target category (only if collapsed or force expanding)
+        if (isCurrentlyCollapsed) {
+          await animateExpand(targetContent, targetArrow);
+        }
+        
+        // Step 3: Scroll the expanded category to the top for focus (unless skipped)
+        if (!skipScroll) {
+          await scrollCategoryToTop(categoryName, layout);
+        }
+        
+        // Update state
+        const targetCategory = window.categorizedLists.categories.find(cat => cat.name === categoryName);
+        if (targetCategory) targetCategory.collapsed = false;
+        
+      } else {
+        // Just collapse the target category
+        await animateCollapse(targetContent, targetArrow);
+        
+        // Update state
+        const targetCategory = window.categorizedLists.categories.find(cat => cat.name === categoryName);
+        if (targetCategory) targetCategory.collapsed = true;
+      }
+      
+      isAnimating = false;
+    }
+    
+    function animateExpand(content, arrow) {
+      return new Promise((resolve) => {
+        // Add animating class to override display:none
+        content.classList.add('animating');
+        content.classList.remove('collapsed');
+        
+        // Reset any existing styles and get natural height
+        content.style.transition = 'none';
+        content.style.maxHeight = 'none';
+        content.style.overflow = 'visible';
+        const naturalHeight = content.scrollHeight;
+        
+        // Set to collapsed state instantly
+        content.style.maxHeight = '0px';
+        content.style.opacity = '0';
+        content.style.transform = 'translateY(-8px)';
+        content.style.overflow = 'hidden';
+        
+        // Update arrow
+        arrow.classList.remove('collapsed');
+        arrow.textContent = '↑';
+        
+        // Force reflow
+        content.offsetHeight;
+        
+        // Animate to expanded state
+        content.style.transition = 'max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease-out 0.1s, transform 0.2s ease-out 0.1s';
+        content.style.maxHeight = naturalHeight + 'px';
+        content.style.opacity = '1';
+        content.style.transform = 'translateY(0)';
+        
+        // Clean up after animation - set to auto for full flexibility
+        setTimeout(() => {
+          content.style.maxHeight = 'none';
+          content.style.overflow = 'visible';
+          content.style.transition = '';
+          content.style.opacity = '';
+          content.style.transform = '';
+          content.classList.remove('animating');
+          
+          resolve();
+        }, 300);
+      });
+    }
+    
+    function animateCollapse(content, arrow) {
+      return new Promise((resolve) => {
+        const currentHeight = content.scrollHeight;
+        
+        // Add animating class to keep visible during animation
+        content.classList.add('animating');
+        
+        // Set current height explicitly
+        content.style.transition = 'none';
+        content.style.maxHeight = currentHeight + 'px';
+        
+        // Update arrow
+        arrow.classList.add('collapsed');
+        arrow.textContent = '↑';
+        
+        // Force reflow
+        content.offsetHeight;
+        
+        // Animate to collapsed state
+        content.style.transition = 'opacity 0.15s ease-in, transform 0.15s ease-in, max-height 0.25s ease-in 0.1s';
+        content.style.opacity = '0';
+        content.style.transform = 'translateY(-8px)';
+        content.style.maxHeight = '0px';
+        
+        // Add collapsed class and clean up after animation
+        setTimeout(() => {
+          content.classList.add('collapsed');
+          content.classList.remove('animating');
+          content.style.transition = '';
+          content.style.maxHeight = '';
+          content.style.opacity = '';
+          content.style.transform = '';
+          resolve();
+        }, 400);
+      });
+    }
+    
+    function scrollCategoryToTop(categoryName, layout) {
+      return new Promise((resolve) => {
+        // Small delay to ensure expansion animation is visible first
+        setTimeout(() => {
+          const categoryToggle = document.querySelector(`[onclick="toggle${layout === 'mobile' ? 'Mobile' : 'Desktop'}Category('${categoryName}')"]`);
+          const categoryHeader = categoryToggle?.closest('.category-header') || categoryToggle?.closest('.desktop-category-header');
+          
+          if (!categoryHeader) {
+            resolve();
+            return;
+          }
+          
+          // Get the appropriate scrollable container
+          let scrollContainer;
+          if (layout === 'mobile') {
+            // For mobile, the scrollable container is the mobile-lists-view
+            scrollContainer = document.querySelector('#mobile-lists-view');
+          } else {
+            scrollContainer = document.querySelector('.desktop-sidebar');
+          }
+          
+          if (!scrollContainer) {
+            resolve();
+            return;
+          }
+          
+          // Calculate scroll position to bring category header to top
+          const containerRect = scrollContainer.getBoundingClientRect();
+          const headerRect = categoryHeader.getBoundingClientRect();
+          
+          // Add small padding from the top edge for better visual spacing
+          const topPadding = layout === 'mobile' ? 16 : 12;
+          
+          const targetScrollTop = scrollContainer.scrollTop + (headerRect.top - containerRect.top) - topPadding;
+          
+          // Smooth scroll to position
+          scrollContainer.scrollTo({
+            top: Math.max(0, targetScrollTop),
+            behavior: 'smooth'
+          });
+          
+          // Resolve after scroll completes
+          setTimeout(resolve, 600);
+        }, 100); // Small delay to let expansion start
+      });
+    }
+
     // Get list icon (same as desktop concept)
     function getMobileListIcon(listName) {
       if (listName.includes('75')) return '📋';
@@ -2381,7 +2764,7 @@
           showDesktopLoadingAnimation('content');
           
           // Clear all selections and states IMMEDIATELY  
-          document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
+          document.querySelectorAll('#desktop-lists-list li, .desktop-category-list-item').forEach(item => item.classList.remove('active'));
           document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
           document.getElementById('desktop-file-list').innerHTML = '';
           
@@ -3208,34 +3591,38 @@
     // Smart scrolling function to keep active list visible in lists sidebar
     function scrollToActiveList(options = {}) {
       setTimeout(() => {
-        const activeLi = document.querySelector('#desktop-lists-list li.active');
+        const activeLi = document.querySelector('#desktop-lists-list li.active, .desktop-category-list-item.active');
         if (activeLi) {
           const container = document.getElementById('desktop-lists-list').parentElement;
-          const containerRect = container.getBoundingClientRect();
-          const activeLiRect = activeLi.getBoundingClientRect();
           
-          // Add padding to trigger scroll before item goes completely out of view
-          const padding = 60; // pixels of buffer space
-          
-          // Check if link is outside visible area (with padding)
-          const isAbove = activeLiRect.top < (containerRect.top + padding);
-          const isBelow = activeLiRect.bottom > (containerRect.bottom - padding);
-          
-          if (isAbove || isBelow) {
-            // Calculate the position to center the active item
-            const containerScrollTop = container.scrollTop;
-            const containerHeight = container.clientHeight;
-            const activeLiOffsetTop = activeLi.offsetTop;
-            const activeLiHeight = activeLi.offsetHeight;
+          // Always use the normal edge-detection logic
+          {
+            // Original logic - only scroll if element is out of view
+            const containerRect = container.getBoundingClientRect();
+            const activeLiRect = activeLi.getBoundingClientRect();
             
-            // Center the item in the container
-            const targetScrollTop = activeLiOffsetTop - (containerHeight / 2) + (activeLiHeight / 2);
+            // Add padding to trigger scroll before item goes completely out of view
+            const padding = 60; // pixels of buffer space
             
-            // Smooth scroll to the target position
-            container.scrollTo({
-              top: Math.max(0, targetScrollTop),
-              behavior: options.behavior || 'smooth'
-            });
+            // Check if link is outside visible area (with padding)
+            const isAbove = activeLiRect.top < (containerRect.top + padding);
+            const isBelow = activeLiRect.bottom > (containerRect.bottom - padding);
+            
+            if (isAbove || isBelow) {
+              // Calculate the position to center the active item
+              const containerHeight = container.clientHeight;
+              const activeLiOffsetTop = activeLi.offsetTop;
+              const activeLiHeight = activeLi.offsetHeight;
+              
+              // Center the item in the container
+              const targetScrollTop = activeLiOffsetTop - (containerHeight / 2) + (activeLiHeight / 2);
+              
+              // Smooth scroll to the target position
+              container.scrollTo({
+                top: Math.max(0, targetScrollTop),
+                behavior: options.behavior || 'smooth'
+              });
+            }
           }
         }
       }, options.delay || 100); // Allow custom delay
@@ -3340,13 +3727,15 @@
           const listLinks = document.querySelectorAll('#desktop-lists-list a[href="#' + listSlug + '"]');
           if (listLinks.length > 0) {
             // Clear previous selections
-            document.querySelectorAll('#desktop-lists-list li').forEach(item => item.classList.remove('active'));
+            document.querySelectorAll('#desktop-lists-list li, .desktop-category-list-item').forEach(item => item.classList.remove('active'));
             document.querySelectorAll('#desktop-file-list li').forEach(item => item.classList.remove('active'));
             
             // Activate the list
-            const listItem = listLinks[0].closest('li');
-            listItem.classList.add('active');
-            scrollToActiveList({ delay: 50 });
+            const listItem = listLinks[0].closest('li, .desktop-category-list-item');
+            if (listItem) {
+              listItem.classList.add('active');
+            }
+            scrollToActiveList({ delay: 100, behavior: 'smooth' });
             currentDesktopList = listSlug;
             currentListSlug = listSlug;
             
@@ -3362,7 +3751,7 @@
               
               if (problemLinks.length > 0) {
                 // Use smooth scrolling for newly loaded content
-                scrollToActiveProblem({ delay: 150, behavior: 'smooth' });
+                scrollToActiveProblem({ delay: 800, behavior: 'smooth' });
                 
                 // Load the problem content
                 if (currentListData) {
@@ -3382,67 +3771,107 @@
       async function renderDesktopLists() {
         try {
           const response = await fetch('./data/lists.json');
-          const codeLists = await response.json();
+          const listsData = await response.json();
           
-          // Use the global listSlugMap that's already populated
-          const listsWithCounts = await Promise.all(
-            codeLists.map(async (list) => {
-              try {
-                const listResponse = await fetch(`./data/${list.file}`);
-                const listData = await listResponse.json();
-                const difficultyDistribution = await getMobileListDifficultyDistribution(list.file);
-                return {
-                  ...list,
-                  problemCount: listData.length,
-                  difficultyDistribution
-                };
-              } catch (error) {
-                console.error(`Error loading ${list.file}:`, error);
-                return {
-                  ...list,
-                  problemCount: 0,
-                  difficultyDistribution: { easy: 0, medium: 0, hard: 0 }
-                };
-              }
-            })
-          );
+          // Store categories data for rendering
+          if (!window.categorizedLists) {
+            window.categorizedLists = listsData;
+          }
           
           const listsList = document.getElementById('desktop-lists-list');
           listsList.innerHTML = '';
           
-          listsWithCounts.forEach(list => {
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            const listSlug = listSlugMap[list.file];
-            const description = list.description || 'Curated collection of coding problems';
+          // Render each category
+          for (const category of listsData.categories) {
+            // Create category header
+            const categoryLi = document.createElement('li');
+            categoryLi.className = 'category-header desktop-category-header';
             
-            // Create count text with elegant slash format
-            const { easy, medium, hard } = list.difficultyDistribution;
-            const compactCountText = `${list.problemCount} problems • <span style="color: #15803d; font-weight: 600;">${easy}</span>/<span style="color: #ca8a04; font-weight: 600;">${medium}</span>/<span style="color: #dc2626; font-weight: 600;">${hard}</span>`;
-            
-            a.href = `#${listSlug}`;
-            a.innerHTML = `
-              <div class="desktop-list-header">
-                <div style="display: flex; align-items: flex-start; gap: 12px;">
-                  <span class="desktop-list-icon">${getMobileListIcon(list.name)}</span>
-                  <div class="desktop-list-content">
-                    <div class="desktop-list-title">${list.name}</div>
-                    <div class="desktop-list-description">${description}</div>
-                  </div>
-                </div>
+            const categoryHeader = document.createElement('div');
+            categoryHeader.className = 'category-title desktop-category-title';
+            categoryHeader.innerHTML = `
+              <div class="category-toggle desktop-category-toggle" onclick="toggleDesktopCategory('${category.name}')">
+                <span class="category-icon">${category.icon}</span>
+                <span class="category-name">${category.name}</span>
+                <span class="category-arrow ${category.collapsed ? 'collapsed' : ''}">${category.collapsed ? '↑' : '↑'}</span>
               </div>
+              <div class="category-description desktop-category-description">${category.description}</div>
             `;
             
-            a.onclick = async (e) => {
-              e.preventDefault();
-              
-              // Just navigate using the router - let it handle all the loading logic
-              desktopRouter.navigate(listSlug);
-            };
+            categoryLi.appendChild(categoryHeader);
+            listsList.appendChild(categoryLi);
             
-            li.appendChild(a);
-            listsList.appendChild(li);
-          });
+            // Create category content container
+            const categoryContent = document.createElement('li');
+            categoryContent.className = `category-content desktop-category-content ${category.collapsed ? 'collapsed' : ''}`;
+            categoryContent.id = `desktop-category-${category.name}`;
+            
+            const categoryContentDiv = document.createElement('div');
+            categoryContentDiv.className = 'category-lists desktop-category-lists';
+            
+            // Load problem counts and difficulty distributions for all lists in this category
+            const listsWithCounts = await Promise.all(
+              category.lists.map(async (list) => {
+                try {
+                  const listResponse = await fetch(`./data/${list.file}`);
+                  const listData = await listResponse.json();
+                  const difficultyDistribution = await getMobileListDifficultyDistribution(list.file);
+                  return {
+                    ...list,
+                    problemCount: listData.length,
+                    difficultyDistribution
+                  };
+                } catch (error) {
+                  console.error(`Error loading ${list.file}:`, error);
+                  return {
+                    ...list,
+                    problemCount: 0,
+                    difficultyDistribution: { easy: 0, medium: 0, hard: 0 }
+                  };
+                }
+              })
+            );
+            
+            // Render lists in this category
+            listsWithCounts.forEach(list => {
+              const listDiv = document.createElement('div');
+              listDiv.className = 'category-list-item desktop-category-list-item';
+              
+              const a = document.createElement('a');
+              const listSlug = listSlugMap[list.file];
+              const description = list.description || 'Curated collection of coding problems';
+              
+              // Create count text with elegant slash format
+              const { easy, medium, hard } = list.difficultyDistribution;
+              const compactCountText = `${list.problemCount} problems • <span style="color: #15803d; font-weight: 600;">${easy}</span>/<span style="color: #ca8a04; font-weight: 600;">${medium}</span>/<span style="color: #dc2626; font-weight: 600;">${hard}</span>`;
+              
+              a.href = `#${listSlug}`;
+              a.innerHTML = `
+                <div class="desktop-list-header">
+                  <div style="display: flex; align-items: flex-start; gap: 12px;">
+                    <span class="desktop-list-icon">${getMobileListIcon(list.name)}</span>
+                    <div class="desktop-list-content">
+                      <div class="desktop-list-title">${list.name}</div>
+                      <div class="desktop-list-description">${description}</div>
+                    </div>
+                  </div>
+                </div>
+              `;
+              
+              a.onclick = async (e) => {
+                e.preventDefault();
+                
+                // Just navigate using the router - let it handle all the loading logic
+                desktopRouter.navigate(listSlug);
+              };
+              
+              listDiv.appendChild(a);
+              categoryContentDiv.appendChild(listDiv);
+            });
+            
+            categoryContent.appendChild(categoryContentDiv);
+            listsList.appendChild(categoryContent);
+          }
           
           // Add fade-in animation to C1 (lists)
           const listsSidebar = document.getElementById('desktop-lists-sidebar');
