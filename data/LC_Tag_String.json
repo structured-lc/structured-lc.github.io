@@ -806,5 +806,9 @@
     {"number": 3612, "slug": "process-string-with-special-operations-i", "title": "Process String with Special Operations I", "difficulty": "Medium", "tags": ["String", "Simulation"], "similar_problems": []},
     {"number": 3614, "slug": "process-string-with-special-operations-ii", "title": "Process String with Special Operations II", "difficulty": "Hard", "tags": ["String", "Simulation"], "similar_problems": []},
     {"number": 3615, "slug": "longest-palindromic-path-in-graph", "title": "Longest Palindromic Path in Graph", "difficulty": "Hard", "tags": ["String", "Dynamic Programming", "Bit Manipulation", "Graph", "Bitmask"], "similar_problems": []},
-    {"number": 3628, "slug": "maximum-number-of-subsequences-after-one-inserting", "title": "Maximum Number of Subsequences After One Inserting", "difficulty": "Medium", "tags": ["String", "Dynamic Programming", "Greedy", "Prefix Sum"], "similar_problems": []}
+    {"number": 3628, "slug": "maximum-number-of-subsequences-after-one-inserting", "title": "Maximum Number of Subsequences After One Inserting", "difficulty": "Medium", "tags": ["String", "Dynamic Programming", "Greedy", "Prefix Sum"], "similar_problems": []},
+    {"number": 3662, "slug": "filter-characters-by-frequency", "title": "Filter Characters by Frequency", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3664, "slug": "two-letter-card-game", "title": "Two-Letter Card Game", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3666, "slug": "minimum-operations-to-equalize-binary-string", "title": "Minimum Operations to Equalize Binary String", "difficulty": "Hard", "tags": [], "similar_problems": []},
+    {"number": 3675, "slug": "minimum-operations-to-transform-string", "title": "Minimum Operations to Transform String", "difficulty": "Medium", "tags": [], "similar_problems": []}
 ]

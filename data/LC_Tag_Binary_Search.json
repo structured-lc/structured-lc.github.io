@@ -315,5 +315,7 @@
     {"number": 3633, "slug": "earliest-finish-time-for-land-and-water-rides-i", "title": "Earliest Finish Time for Land and Water Rides I", "difficulty": "Easy", "tags": ["Array", "Two Pointers", "Binary Search", "Greedy", "Sorting"], "similar_problems": []},
     {"number": 3635, "slug": "earliest-finish-time-for-land-and-water-rides-ii", "title": "Earliest Finish Time for Land and Water Rides II", "difficulty": "Medium", "tags": ["Array", "Two Pointers", "Binary Search", "Greedy", "Sorting"], "similar_problems": []},
     {"number": 3636, "slug": "threshold-majority-queries", "title": "Threshold Majority Queries", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Binary Search", "Divide and Conquer", "Counting", "Prefix Sum"], "similar_problems": []},
-    {"number": 3639, "slug": "minimum-time-to-activate-string", "title": "Minimum Time to Activate String", "difficulty": "Medium", "tags": ["Array", "Binary Search"], "similar_problems": []}
+    {"number": 3639, "slug": "minimum-time-to-activate-string", "title": "Minimum Time to Activate String", "difficulty": "Medium", "tags": ["Array", "Binary Search"], "similar_problems": []},
+    {"number": 3656, "slug": "determine-if-a-simple-graph-exists", "title": "Determine if a Simple Graph Exists", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3661, "slug": "maximum-walls-destroyed-by-robots", "title": "Maximum Walls Destroyed by Robots", "difficulty": "Hard", "tags": [], "similar_problems": []}
 ]

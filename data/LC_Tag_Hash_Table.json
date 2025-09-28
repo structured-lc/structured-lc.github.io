@@ -719,5 +719,18 @@
     {"number": 3623, "slug": "count-number-of-trapezoids-i", "title": "Count Number of Trapezoids I", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Math", "Geometry"], "similar_problems": []},
     {"number": 3625, "slug": "count-number-of-trapezoids-ii", "title": "Count Number of Trapezoids II", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Math", "Geometry"], "similar_problems": []},
     {"number": 3629, "slug": "minimum-jumps-to-reach-end-via-prime-teleportation", "title": "Minimum Jumps to Reach End via Prime Teleportation", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Math", "Breadth-First Search", "Number Theory"], "similar_problems": []},
-    {"number": 3636, "slug": "threshold-majority-queries", "title": "Threshold Majority Queries", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Binary Search", "Divide and Conquer", "Counting", "Prefix Sum"], "similar_problems": []}
+    {"number": 3636, "slug": "threshold-majority-queries", "title": "Threshold Majority Queries", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Binary Search", "Divide and Conquer", "Counting", "Prefix Sum"], "similar_problems": []},
+    {"number": 3654, "slug": "minimum-sum-after-divisible-sum-deletions", "title": "Minimum Sum After Divisible Sum Deletions", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3659, "slug": "partition-array-into-k-distinct-groups", "title": "Partition Array Into K-Distinct Groups", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3662, "slug": "filter-characters-by-frequency", "title": "Filter Characters by Frequency", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3663, "slug": "find-the-least-frequent-digit", "title": "Find The Least Frequent Digit", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3664, "slug": "two-letter-card-game", "title": "Two-Letter Card Game", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3666, "slug": "minimum-operations-to-equalize-binary-string", "title": "Minimum Operations to Equalize Binary String", "difficulty": "Hard", "tags": [], "similar_problems": []},
+    {"number": 3668, "slug": "restore-finishing-order", "title": "Restore Finishing Order", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3672, "slug": "sum-of-weighted-modes-in-subarrays", "title": "Sum of Weighted Modes in Subarrays", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3678, "slug": "smallest-absent-positive-greater-than-average", "title": "Smallest Absent Positive Greater Than Average", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3679, "slug": "minimum-discards-to-balance-inventory", "title": " Minimum Discards to Balance Inventory", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3682, "slug": "minimum-index-sum-of-common-elements", "title": "Minimum Index Sum of Common Elements", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3684, "slug": "maximize-sum-of-at-most-k-distinct-elements", "title": "Maximize Sum of At Most K Distinct Elements", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3690, "slug": "split-and-merge-array-transformation", "title": "Split and Merge Array Transformation", "difficulty": "Medium", "tags": [], "similar_problems": []}
 ]

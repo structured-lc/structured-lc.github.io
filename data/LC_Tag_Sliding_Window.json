@@ -153,5 +153,7 @@
     {"number": 3578, "slug": "count-partitions-with-max-min-difference-at-most-k", "title": "Count Partitions With Max-Min Difference at Most K", "difficulty": "Medium", "tags": ["Array", "Dynamic Programming", "Queue", "Sliding Window", "Prefix Sum", "Monotonic Queue"], "similar_problems": [{"slug": "number-of-great-partitions", "title": "Number of Great Partitions", "difficulty": "Hard"}]},
     {"number": 3589, "slug": "count-prime-gap-balanced-subarrays", "title": "Count Prime-Gap Balanced Subarrays", "difficulty": "Medium", "tags": ["Array", "Math", "Queue", "Sliding Window", "Number Theory", "Monotonic Queue"], "similar_problems": []},
     {"number": 3634, "slug": "minimum-removals-to-balance-array", "title": "Minimum Removals to Balance Array", "difficulty": "Medium", "tags": ["Array", "Sliding Window", "Sorting"], "similar_problems": []},
-    {"number": 3652, "slug": "best-time-to-buy-and-sell-stock-using-strategy", "title": "Best Time to Buy and Sell Stock using Strategy", "difficulty": "Medium", "tags": ["Array", "Sliding Window", "Prefix Sum"], "similar_problems": []}
+    {"number": 3652, "slug": "best-time-to-buy-and-sell-stock-using-strategy", "title": "Best Time to Buy and Sell Stock using Strategy", "difficulty": "Medium", "tags": ["Array", "Sliding Window", "Prefix Sum"], "similar_problems": []},
+    {"number": 3672, "slug": "sum-of-weighted-modes-in-subarrays", "title": "Sum of Weighted Modes in Subarrays", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3679, "slug": "minimum-discards-to-balance-inventory", "title": " Minimum Discards to Balance Inventory", "difficulty": "Medium", "tags": [], "similar_problems": []}
 ]

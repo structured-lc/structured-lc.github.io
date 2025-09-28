@@ -605,5 +605,16 @@
     {"number": 3625, "slug": "count-number-of-trapezoids-ii", "title": "Count Number of Trapezoids II", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Math", "Geometry"], "similar_problems": []},
     {"number": 3627, "slug": "maximum-median-sum-of-subsequences-of-size-3", "title": "Maximum Median Sum of Subsequences of Size 3", "difficulty": "Medium", "tags": ["Array", "Math", "Greedy", "Sorting", "Game Theory"], "similar_problems": []},
     {"number": 3629, "slug": "minimum-jumps-to-reach-end-via-prime-teleportation", "title": "Minimum Jumps to Reach End via Prime Teleportation", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Math", "Breadth-First Search", "Number Theory"], "similar_problems": []},
-    {"number": 3630, "slug": "partition-array-for-maximum-xor-and-and", "title": "Partition Array for Maximum XOR and AND", "difficulty": "Hard", "tags": ["Array", "Math", "Greedy", "Enumeration"], "similar_problems": []}
+    {"number": 3630, "slug": "partition-array-for-maximum-xor-and-and", "title": "Partition Array for Maximum XOR and AND", "difficulty": "Hard", "tags": ["Array", "Math", "Greedy", "Enumeration"], "similar_problems": []},
+    {"number": 3648, "slug": "minimum-sensors-to-cover-grid", "title": "Minimum Sensors to Cover Grid", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3649, "slug": "number-of-perfect-pairs", "title": "Number of Perfect Pairs", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3658, "slug": "gcd-of-odd-and-even-sums", "title": "GCD of Odd and Even Sums", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3663, "slug": "find-the-least-frequent-digit", "title": "Find The Least Frequent Digit", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3666, "slug": "minimum-operations-to-equalize-binary-string", "title": "Minimum Operations to Equalize Binary String", "difficulty": "Hard", "tags": [], "similar_problems": []},
+    {"number": 3667, "slug": "sort-array-by-absolute-value", "title": "Sort Array By Absolute Value", "difficulty": "Easy", "tags": [], "similar_problems": []},
+    {"number": 3669, "slug": "balanced-k-factor-decomposition", "title": "Balanced K-Factor Decomposition", "difficulty": "Medium", "tags": [], "similar_problems": []},
+    {"number": 3671, "slug": "sum-of-beautiful-subsequences", "title": "Sum of Beautiful Subsequences", "difficulty": "Hard", "tags": [], "similar_problems": []},
+    {"number": 3677, "slug": "count-binary-palindromic-numbers", "title": "Count Binary Palindromic Numbers", "difficulty": "Hard", "tags": [], "similar_problems": []},
+    {"number": 3680, "slug": "generate-schedule", "title": "Generate Schedule", "difficulty": "Medium", "tags": [], "similar_problems": [{"slug": "task-scheduler", "title": "Task Scheduler", "difficulty": "Medium"}]},
+    {"number": 3681, "slug": "maximum-xor-of-subsequences", "title": "Maximum XOR of Subsequences", "difficulty": "Hard", "tags": [], "similar_problems": []}
 ]
