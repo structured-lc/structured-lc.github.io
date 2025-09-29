@@ -157,11 +157,11 @@
   --user-desktop-scale: var(--desktop-scale);
   
   /* Resizable Column Variables - User can adjust these */
-  --lists-width: 22%;
-  --problems-width: 26%;
-  --min-lists-width: 200px;
+  --lists-width: calc(22% * 2 / 3);
+  --problems-width: calc(26% * 2 / 3);
+  --min-lists-width: 250px;
   --max-lists-width: 400px;
-  --min-problems-width: 250px;
+  --min-problems-width: 300px;
   --max-problems-width: 500px;
   --resize-handle-width: 4px;
   
