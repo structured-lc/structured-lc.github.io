@@ -365,6 +365,10 @@
             <label for="mobile-feedback-description">Description</label>
             <textarea id="mobile-feedback-description" placeholder="Describe your feedback in detail..." rows="6" required></textarea>
           </div>
+          <div class="feedback-field">
+            <label for="mobile-feedback-repro-steps">Reproduction Steps <span style="color: #888; font-size: 0.85em;">(optional)</span></label>
+            <textarea id="mobile-feedback-repro-steps" placeholder="If reporting a bug, describe the steps to reproduce it..." rows="4"></textarea>
+          </div>
           <div class="feedback-actions">
             <button type="button" class="feedback-btn-cancel" onclick="closeMobileFeedbackModal()">Cancel</button>
             <button type="submit" class="feedback-btn-submit">Send Feedback</button>
@@ -3202,6 +3206,10 @@
                 <label for="desktop-feedback-description">Description</label>
                 <textarea id="desktop-feedback-description" placeholder="Describe your feedback in detail..." rows="6" required></textarea>
               </div>
+              <div class="desktop-feedback-field">
+                <label for="desktop-feedback-repro-steps">Reproduction Steps <span style="color: #888; font-size: 0.85em;">(optional)</span></label>
+                <textarea id="desktop-feedback-repro-steps" placeholder="If reporting a bug, describe the steps to reproduce it..." rows="4"></textarea>
+              </div>
               <div class="desktop-feedback-actions">
                 <button type="button" class="desktop-feedback-btn-cancel" onclick="closeDesktopFeedbackModal()">Cancel</button>
                 <button type="submit" class="desktop-feedback-btn-submit">Send Feedback</button>
@@ -3611,7 +3619,7 @@
     }
 
     // Feedback submission functionality
-    async function submitFeedback(title, type, description, isDesktop = false, name = '') {
+    async function submitFeedback(title, type, description, isDesktop = false, name = '', reproSteps = '') {
       const form = document.getElementById(isDesktop ? 'desktop-feedback-form' : 'mobile-feedback-form');
       const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
       const originalText = submitBtn ? submitBtn.textContent : 'Send Feedback';
@@ -3649,16 +3657,45 @@
           'other': '📝'
         };
 
+        // Detect system information
+        const userAgent = navigator.userAgent;
+        const os = /Mac|iPhone|iPad|iPod/.test(userAgent) ? 'macOS/iOS' : 
+                   /Windows/.test(userAgent) ? 'Windows' : 
+                   /Android/.test(userAgent) ? 'Android' : 
+                   /Linux/.test(userAgent) ? 'Linux' : 'Unknown';
+        
+        const browser = /Chrome/.test(userAgent) && !/Edge|Edg/.test(userAgent) ? 'Chrome' :
+                       /Safari/.test(userAgent) && !/Chrome/.test(userAgent) ? 'Safari' :
+                       /Firefox/.test(userAgent) ? 'Firefox' :
+                       /Edge|Edg/.test(userAgent) ? 'Edge' : 'Unknown';
+        
+        // Detect theme mode
+        const themeMode = document.body.classList.contains('dark-theme') ? 'Dark' : 'Light';
+
         // Build contact info if provided
         let contactInfo = '';
         if (name) {
           contactInfo = `\n\n**Contact Information:**\n- **Name:** ${name}`;
         }
 
+        // Build reproduction steps if provided
+        let reproSection = '';
+        if (reproSteps && reproSteps.trim()) {
+          reproSection = `\n\n**Reproduction Steps:**\n${reproSteps.trim()}`;
+        }
+
+        // No screenshot handling needed
+
         const issueBody = `## ${typeEmoji[type] || '📝'} ${type.charAt(0).toUpperCase() + type.slice(1)}
 
 **Description:**  
-${description}${contactInfo}
+${description}${reproSection}${contactInfo}
+
+**System Information:**
+- **OS:** ${os}
+- **Browser:** ${browser}
+- **Theme:** ${themeMode}
+- **User Agent:** ${userAgent}
 
 **Page Information:**
 - **Page:** ${pageTitle}
@@ -3674,8 +3711,16 @@ ${description}${contactInfo}
           title: issueTitle,
           type: type,
           description: description,
+          reproductionSteps: reproSteps,
+
           contactInfo: {
             name: name
+          },
+          systemInfo: {
+            os: os,
+            browser: browser,
+            theme: themeMode,
+            userAgent: navigator.userAgent
           },
           pageInfo: {
             title: pageTitle,
@@ -4062,9 +4107,10 @@ ${description}${contactInfo}
           const type = document.getElementById('mobile-feedback-type').value;
           const name = document.getElementById('mobile-feedback-name').value;
           const description = document.getElementById('mobile-feedback-description').value;
+          const reproSteps = document.getElementById('mobile-feedback-repro-steps').value;
           
           if (title && type && description) {
-            await submitFeedback(title, type, description, false, name);
+            await submitFeedback(title, type, description, false, name, reproSteps);
           }
         });
       }
@@ -4077,9 +4123,10 @@ ${description}${contactInfo}
           const type = document.getElementById('desktop-feedback-type').value;
           const name = document.getElementById('desktop-feedback-name').value;
           const description = document.getElementById('desktop-feedback-description').value;
+          const reproSteps = document.getElementById('desktop-feedback-repro-steps').value;
           
           if (title && type && description) {
-            await submitFeedback(title, type, description, true, name);
+            await submitFeedback(title, type, description, true, name, reproSteps);
           }
         }
       });
