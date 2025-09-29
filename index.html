@@ -230,10 +230,12 @@
     <!-- Desktop 3-Column Layout -->
     <nav id="desktop-lists-sidebar" class="desktop-sidebar">
       <ul id="desktop-lists-list"></ul>
+      <div class="column-resize-handle lists-problems-resize" data-resize="lists-problems"></div>
     </nav>
     
     <nav id="desktop-problems-sidebar" class="desktop-sidebar">
       <ul id="desktop-file-list"></ul>
+      <div class="column-resize-handle problems-content-resize" data-resize="problems-content"></div>
     </nav>
     
     <main id="desktop-content" class="desktop-main">
@@ -5344,6 +5346,243 @@ ${description}${reproSection}${contactInfo}
 
       // ==========================================
       // END SIMPLE URL REPLAY SYSTEM
+      // ==========================================
+      
+      // ==========================================
+      // COLUMN RESIZING SYSTEM
+      // ==========================================
+      
+      class ColumnResizer {
+        constructor() {
+          this.isResizing = false;
+          this.currentHandle = null;
+          this.startX = 0;
+          this.startWidths = {};
+          this.container = null;
+          
+          this.init();
+        }
+        
+        init() {
+          // Wait for DOM to be ready
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => this.setupResizeHandles());
+          } else {
+            this.setupResizeHandles();
+          }
+          
+          // Load saved column widths
+          this.loadColumnWidths();
+        }
+        
+        setupResizeHandles() {
+          const handles = document.querySelectorAll('.column-resize-handle');
+          this.container = document.getElementById('desktop-container');
+          
+          handles.forEach(handle => {
+            handle.addEventListener('mousedown', (e) => this.startResize(e));
+          });
+          
+          document.addEventListener('mousemove', (e) => this.doResize(e));
+          document.addEventListener('mouseup', () => this.stopResize());
+          
+          // Prevent text selection during resize
+          document.addEventListener('selectstart', (e) => {
+            if (this.isResizing) {
+              e.preventDefault();
+            }
+          });
+        }
+        
+        startResize(e) {
+          e.preventDefault();
+          this.isResizing = true;
+          this.currentHandle = e.target;
+          this.startX = e.clientX;
+          
+          // Add resizing class to container
+          if (this.container) {
+            this.container.classList.add('resizing');
+          }
+          
+          // Store current widths
+          const listsBar = document.getElementById('desktop-lists-sidebar');
+          const problemsBar = document.getElementById('desktop-problems-sidebar');
+          
+          this.startWidths = {
+            lists: listsBar.offsetWidth,
+            problems: problemsBar.offsetWidth,
+            containerWidth: this.container.offsetWidth
+          };
+          
+          document.body.style.cursor = 'col-resize';
+        }
+        
+        doResize(e) {
+          if (!this.isResizing || !this.currentHandle) return;
+          
+          const deltaX = e.clientX - this.startX;
+          const resizeType = this.currentHandle.dataset.resize;
+          const containerWidth = this.container.offsetWidth;
+          
+          if (resizeType === 'lists-problems') {
+            // Resizing between lists and problems columns
+            const newListsWidth = this.startWidths.lists + deltaX;
+            const minListsWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--min-lists-width'));
+            const maxListsWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--max-lists-width'));
+            
+            // Additional constraint: ensure content area maintains minimum width
+            const currentProblemsWidth = document.getElementById('desktop-problems-sidebar').offsetWidth;
+            const minContentWidth = 400; // minimum content area width
+            const maxAllowedListsWidth = containerWidth - currentProblemsWidth - minContentWidth;
+            
+            // Enforce all constraints
+            const constrainedWidth = Math.max(
+              minListsWidth, 
+              Math.min(maxListsWidth, maxAllowedListsWidth, newListsWidth)
+            );
+            const widthPercent = (constrainedWidth / containerWidth) * 100;
+            
+            document.documentElement.style.setProperty('--lists-width', `${widthPercent}%`);
+            
+          } else if (resizeType === 'problems-content') {
+            // Resizing between problems and content columns
+            const newProblemsWidth = this.startWidths.problems + deltaX;
+            const minProblemsWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--min-problems-width'));
+            const maxProblemsWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--max-problems-width'));
+            
+            // Additional constraint: ensure content area maintains minimum width  
+            const currentListsWidth = document.getElementById('desktop-lists-sidebar').offsetWidth;
+            const minContentWidth = 400; // minimum content area width
+            const maxAllowedProblemsWidth = containerWidth - currentListsWidth - minContentWidth;
+            
+            // Enforce all constraints
+            const constrainedWidth = Math.max(
+              minProblemsWidth, 
+              Math.min(maxProblemsWidth, maxAllowedProblemsWidth, newProblemsWidth)
+            );
+            const widthPercent = (constrainedWidth / containerWidth) * 100;
+            
+            document.documentElement.style.setProperty('--problems-width', `${widthPercent}%`);
+          }
+        }
+        
+        stopResize() {
+          if (!this.isResizing) return;
+          
+          this.isResizing = false;
+          this.currentHandle = null;
+          
+          // Remove resizing class from container
+          if (this.container) {
+            this.container.classList.remove('resizing');
+          }
+          
+          document.body.style.cursor = '';
+          
+          // Save the new column widths
+          this.saveColumnWidths();
+        }
+        
+        saveColumnWidths() {
+          const listsWidth = getComputedStyle(document.documentElement).getPropertyValue('--lists-width');
+          const problemsWidth = getComputedStyle(document.documentElement).getPropertyValue('--problems-width');
+          
+          const columnWidths = {
+            listsWidth: listsWidth.trim(),
+            problemsWidth: problemsWidth.trim()
+          };
+          
+          localStorage.setItem('lc-handbook-column-widths', JSON.stringify(columnWidths));
+        }
+        
+        loadColumnWidths() {
+          try {
+            const saved = localStorage.getItem('lc-handbook-column-widths');
+            if (saved) {
+              const columnWidths = JSON.parse(saved);
+              
+              if (columnWidths.listsWidth) {
+                document.documentElement.style.setProperty('--lists-width', columnWidths.listsWidth);
+              }
+              if (columnWidths.problemsWidth) {
+                document.documentElement.style.setProperty('--problems-width', columnWidths.problemsWidth);
+              }
+            }
+          } catch (error) {
+            console.warn('Failed to load column widths:', error);
+          }
+        }
+        
+        // Public method to reset columns to default
+        resetToDefault() {
+          document.documentElement.style.setProperty('--lists-width', '22%');
+          document.documentElement.style.setProperty('--problems-width', '26%');
+          this.saveColumnWidths();
+        }
+        
+        // Public method to get current column widths (for debugging)
+        getCurrentWidths() {
+          const listsBar = document.getElementById('desktop-lists-sidebar');
+          const problemsBar = document.getElementById('desktop-problems-sidebar');
+          const container = document.getElementById('desktop-container');
+          
+          if (!listsBar || !problemsBar || !container) return null;
+          
+          return {
+            lists: {
+              px: listsBar.offsetWidth,
+              percent: ((listsBar.offsetWidth / container.offsetWidth) * 100).toFixed(1)
+            },
+            problems: {
+              px: problemsBar.offsetWidth, 
+              percent: ((problemsBar.offsetWidth / container.offsetWidth) * 100).toFixed(1)
+            },
+            content: {
+              px: container.offsetWidth - listsBar.offsetWidth - problemsBar.offsetWidth,
+              percent: (((container.offsetWidth - listsBar.offsetWidth - problemsBar.offsetWidth) / container.offsetWidth) * 100).toFixed(1)
+            }
+          };
+        }
+      }
+      
+      // Initialize column resizer on desktop only
+      let columnResizer = null;
+      if (window.innerWidth >= 1024) {
+        columnResizer = new ColumnResizer();
+      }
+      
+      // Reinitialize on window resize if switching to/from desktop
+      window.addEventListener('resize', () => {
+        if (window.innerWidth >= 1024 && !columnResizer) {
+          columnResizer = new ColumnResizer();
+        } else if (window.innerWidth < 1024 && columnResizer) {
+          columnResizer = null;
+        }
+      });
+      
+      // Global functions for column management (accessible via console)
+      window.resetColumns = function() {
+        if (columnResizer) {
+          columnResizer.resetToDefault();
+          console.log('Column widths reset to default (Lists: 22%, Problems: 26%)');
+        } else {
+          console.log('Column resizer not available (desktop mode required)');
+        }
+      };
+      
+      window.getColumnWidths = function() {
+        if (columnResizer) {
+          const widths = columnResizer.getCurrentWidths();
+          console.log('Current column widths:', widths);
+          return widths;
+        } else {
+          console.log('Column resizer not available (desktop mode required)');
+          return null;
+        }
+      };
+      
+      // END COLUMN RESIZING SYSTEM
       // ==========================================
   </script>
   

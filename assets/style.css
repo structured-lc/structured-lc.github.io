@@ -155,6 +155,19 @@
   /* User preference classes for JavaScript control */
   --user-mobile-scale: var(--mobile-scale);
   --user-desktop-scale: var(--desktop-scale);
+  
+  /* Resizable Column Variables - User can adjust these */
+  --lists-width: 22%;
+  --problems-width: 26%;
+  --min-lists-width: 200px;
+  --max-lists-width: 400px;
+  --min-problems-width: 250px;
+  --max-problems-width: 500px;
+  --resize-handle-width: 4px;
+  
+  /* Responsive column constraints */
+  --min-content-width: 400px;
+  --max-combined-sidebars: 65%;
 }
 
 /* ========================================
@@ -2552,18 +2565,59 @@ body.dark-theme .desktop-feedback-btn-cancel:hover {
     flex-shrink: 0;
   }
   
-  /* Lists Sidebar - Responsive Width */
+  /* Lists Sidebar - Resizable Width */
   #desktop-lists-sidebar {
-    width: 22%;  /* ~22% of screen for lists sidebar */
-    min-width: 240px;
-    max-width: 320px;
+    width: var(--lists-width);
+    min-width: var(--min-lists-width);
+    max-width: var(--max-lists-width);
+    position: relative;
+    transition: width 0.2s ease;
   }
   
-  /* Problems Sidebar - Responsive Width */
+  /* Problems Sidebar - Resizable Width */
   #desktop-problems-sidebar {
-    width: 26%;  /* ~26% of screen for problems sidebar */
-    min-width: 280px;
-    max-width: 400px;
+    width: var(--problems-width);
+    min-width: var(--min-problems-width);
+    max-width: var(--max-problems-width);
+    position: relative;
+    transition: width 0.2s ease;
+  }
+  
+  /* Resize Handles */
+  .column-resize-handle {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: var(--resize-handle-width);
+    background: transparent;
+    cursor: col-resize;
+    z-index: 1000;
+    user-select: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .column-resize-handle:hover {
+    background-color: rgba(102, 126, 234, 0.3);
+  }
+  
+  .column-resize-handle:active {
+    background-color: rgba(102, 126, 234, 0.5);
+  }
+  
+  /* Lists-Problems resize handle */
+  .lists-problems-resize {
+    right: calc(var(--resize-handle-width) / -2);
+  }
+  
+  /* Problems-Content resize handle */  
+  .problems-content-resize {
+    right: calc(var(--resize-handle-width) / -2);
+  }
+  
+  /* Disable transitions during resize */
+  .desktop-container.resizing #desktop-lists-sidebar,
+  .desktop-container.resizing #desktop-problems-sidebar {
+    transition: none;
   }
   
   /* Main Content Area */
@@ -3011,6 +3065,9 @@ body.dark-theme .desktop-feedback-btn-cancel:hover {
 @media (min-width: 1440px) {
   :root {
     --desktop-scale: 0.95;
+    /* Allow larger columns on larger screens */
+    --max-lists-width: 450px;
+    --max-problems-width: 550px;
   }
 }
 
@@ -3018,6 +3075,9 @@ body.dark-theme .desktop-feedback-btn-cancel:hover {
 @media (min-width: 1680px) {
   :root {
     --desktop-scale: 1.0;
+    /* Even larger columns for ultra-wide screens */
+    --max-lists-width: 500px;
+    --max-problems-width: 600px;
   }
 }
 
