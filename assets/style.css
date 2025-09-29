@@ -1321,17 +1321,30 @@ html, body {
   background-color: rgba(0,0,0,0.5);
   backdrop-filter: blur(4px);
   animation: fadeIn 0.3s ease;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-modal.flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
 }
 
 .mobile-modal-content {
   background-color: #ffffff;
-  margin: 10% auto;
+  margin: 5vh auto;
   padding: 0;
   border-radius: calc(12px * var(--mobile-scale));
   width: 90%;
   max-width: calc(500px * var(--mobile-scale));
+  max-height: 70vh;
   box-shadow: 0 10px 40px rgba(0,0,0,0.2);
   animation: slideIn 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .mobile-modal-header {
@@ -1375,7 +1388,10 @@ html, body {
 }
 
 .mobile-modal-body {
-  padding: 20px;
+  padding: calc(16px * var(--mobile-scale));
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mobile-modal-body input[type="text"] {
@@ -1584,25 +1600,25 @@ body.dark-theme .desktop-toast {
 
 /* Feedback Modal Styles */
 .feedback-field {
-  margin-bottom: 20px;
+  margin-bottom: calc(16px * var(--mobile-scale));
 }
 
 .feedback-field label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: calc(6px * var(--mobile-scale));
   font-weight: 600;
   color: #24292f;
-  font-size: 14px;
+  font-size: calc(13px * var(--mobile-scale));
 }
 
 .feedback-field input[type="text"],
 .feedback-field select,
 .feedback-field textarea {
   width: 100%;
-  padding: 12px;
+  padding: calc(10px * var(--mobile-scale));
   border: 2px solid #d1d5db;
-  border-radius: 8px;
-  font-size: 14px;
+  border-radius: calc(6px * var(--mobile-scale));
+  font-size: calc(14px * var(--mobile-scale));
   color: #24292f;
   background: #ffffff;
   transition: border-color 0.2s ease;
@@ -1620,26 +1636,32 @@ body.dark-theme .desktop-toast {
 
 .feedback-field textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: calc(100px * var(--mobile-scale));
 }
 
 .feedback-actions {
   display: flex;
-  gap: 12px;
+  gap: calc(12px * var(--mobile-scale));
   justify-content: flex-end;
-  margin-top: 24px;
+  padding: calc(16px * var(--mobile-scale)) calc(16px * var(--mobile-scale));
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 0 0 calc(12px * var(--mobile-scale)) calc(12px * var(--mobile-scale));
+  flex-shrink: 0;
 }
 
 .feedback-btn-cancel,
 .feedback-btn-submit {
-  padding: 10px 20px;
+  padding: calc(10px * var(--mobile-scale)) calc(16px * var(--mobile-scale));
   border: none;
-  border-radius: 6px;
-  font-size: 14px;
+  border-radius: calc(6px * var(--mobile-scale));
+  font-size: calc(13px * var(--mobile-scale));
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  min-width: 100px;
+  min-width: calc(80px * var(--mobile-scale));
+  min-height: calc(40px * var(--mobile-scale)); /* Better touch target for mobile */
+  touch-action: manipulation; /* Prevent zoom on tap */
 }
 
 .feedback-btn-cancel {
@@ -1696,6 +1718,11 @@ body.dark-theme .feedback-btn-cancel {
 body.dark-theme .feedback-btn-cancel:hover {
   background: #30363d;
   border-color: #484f58;
+}
+
+body.dark-theme .feedback-actions {
+  border-color: #30363d;
+  background: #0d1117;
 }
 
 /* Dark theme desktop feedback modal styles */
@@ -6099,6 +6126,50 @@ body.dark-theme .desktop-category-list-item a {
 body.dark-theme .desktop-category-list-item:not(.active) a:hover {
   background: rgba(55, 65, 81, 0.3);
   border-radius: calc(12px * var(--desktop-scale));
+}
+
+/* Mobile feedback modal responsive improvements */
+@media (max-height: 600px) {
+  .mobile-modal-content {
+    margin: 2vh auto;
+    max-height: 75vh;
+  }
+}
+
+@media (max-height: 500px) {
+  .mobile-modal-content {
+    margin: 1vh auto;
+    max-height: 80vh;
+  }
+  
+  .mobile-modal-body {
+    padding: calc(15px * var(--mobile-scale));
+  }
+  
+  .feedback-field {
+    margin-bottom: calc(15px * var(--mobile-scale));
+  }
+  
+  .feedback-field textarea {
+    min-height: calc(80px * var(--mobile-scale));
+  }
+}
+
+/* Handle keyboard appearance on mobile */
+@media (max-height: 400px) {
+  .mobile-modal-content {
+    margin: 0 auto;
+    max-height: 100vh;
+    border-radius: 0;
+  }
+  
+  .mobile-modal-header {
+    border-radius: 0;
+  }
+  
+  .feedback-actions {
+    border-radius: 0;
+  }
 }
 
 body.dark-theme .desktop-category-list-item.active {

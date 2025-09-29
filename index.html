@@ -369,11 +369,11 @@
             <label for="mobile-feedback-repro-steps">Reproduction Steps <span style="color: #888; font-size: 0.85em;">(optional)</span></label>
             <textarea id="mobile-feedback-repro-steps" placeholder="If reporting a bug, describe the steps to reproduce it..." rows="4"></textarea>
           </div>
-          <div class="feedback-actions">
-            <button type="button" class="feedback-btn-cancel" onclick="closeMobileFeedbackModal()">Cancel</button>
-            <button type="submit" class="feedback-btn-submit">Send Feedback</button>
-          </div>
         </form>
+      </div>
+      <div class="feedback-actions">
+        <button type="button" class="feedback-btn-cancel" onclick="closeMobileFeedbackModal()">Cancel</button>
+        <button type="submit" class="feedback-btn-submit" form="mobile-feedback-form">Send Feedback</button>
       </div>
     </div>
   </div>
@@ -3113,7 +3113,9 @@
     }
 
     function openMobileFeedbackModal() {
-      document.getElementById('mobile-feedback-modal').style.display = 'block';
+      const modal = document.getElementById('mobile-feedback-modal');
+      modal.style.display = 'flex';
+      modal.classList.add('flex');
       // Focus on the first input
       setTimeout(() => {
         document.getElementById('mobile-feedback-title').focus();
@@ -3121,7 +3123,9 @@
     }
 
     function closeMobileFeedbackModal() {
-      document.getElementById('mobile-feedback-modal').style.display = 'none';
+      const modal = document.getElementById('mobile-feedback-modal');
+      modal.style.display = 'none';
+      modal.classList.remove('flex');
       // Reset the form
       document.getElementById('mobile-feedback-form').reset();
     }
