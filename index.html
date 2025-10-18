@@ -146,6 +146,85 @@
       opacity: 0.9 !important;
     }
 
+    /* Column Hiding and Floating Restore Buttons */
+    .desktop-sidebar.hidden {
+      width: 0 !important;
+      min-width: 0 !important;
+      max-width: none !important;
+      overflow: hidden;
+      border-right: none;
+      transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .desktop-sidebar.hidden .column-resize-handle {
+      display: none;
+    }
+    
+    .column-restore-button {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1500;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      min-height: 80px;
+      display: none;
+      pointer-events: auto; /* Ensure button is clickable but doesn't block everything */
+    }
+    
+    .column-restore-button:hover {
+      background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+      transform: translateY(-50%) translateX(2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    }
+    
+    #restore-lists-button {
+      left: 8px;
+    }
+    
+    #restore-problems-button {
+      left: calc(var(--lists-width) + 8px);
+    }
+    
+    /* When problems column is hidden, move its button away from the resize handle */
+    body.problems-hidden #restore-problems-button {
+      left: calc(var(--lists-width) + 20px); /* Move further right to avoid blocking resize handle */
+    }
+    
+    /* When lists is hidden, move problems button to left edge */
+    body.lists-hidden #restore-problems-button {
+      left: 8px;
+    }
+    
+    /* When both columns are hidden, stack buttons vertically */
+    body.lists-hidden.problems-hidden #restore-lists-button {
+      top: calc(50% - 50px);
+      transform: translateY(-50%);
+    }
+    
+    body.lists-hidden.problems-hidden #restore-problems-button {
+      top: calc(50% + 50px);
+      transform: translateY(-50%);
+      left: 8px;
+    }
+    
+    body.lists-hidden #restore-lists-button,
+    body.problems-hidden #restore-problems-button {
+      display: block !important;
+    }
+
     /* Print styles - ensure only desktop content prints and no stale mobile content */
     @media print {
       /* Hide landing content during print only when it's the default content */
@@ -245,6 +324,14 @@
         </div>
       </div>
     </main>
+    
+    <!-- Floating Column Restore Buttons -->
+    <button id="restore-lists-button" class="column-restore-button" onclick="restoreColumn('lists')" title="Show Lists">
+      📚 Lists
+    </button>
+    <button id="restore-problems-button" class="column-restore-button" onclick="restoreColumn('problems')" title="Show Problems">
+      📝 Problems
+    </button>
   </div>
 
   <!-- Mobile Container -->
@@ -5359,6 +5446,8 @@ ${description}${reproSection}${contactInfo}
           this.startX = 0;
           this.startWidths = {};
           this.container = null;
+          this.minColumnWidthBeforeHide = 200; // px - threshold for auto-hiding
+          this.hiddenColumns = new Set(); // Track which columns are hidden
           
           this.init();
         }
@@ -5392,10 +5481,45 @@ ${description}${reproSection}${contactInfo}
               e.preventDefault();
             }
           });
+          
+          // Keyboard shortcuts for column hiding/showing
+          document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey && e.shiftKey) {
+              if (e.key === 'L' || e.key === 'l') {
+                e.preventDefault();
+                if (this.hiddenColumns.has('lists')) {
+                  this.restoreColumn('lists');
+                } else {
+                  this.hideColumn('lists');
+                }
+              } else if (e.key === 'P' || e.key === 'p') {
+                e.preventDefault();
+                if (this.hiddenColumns.has('problems')) {
+                  this.restoreColumn('problems');
+                } else {
+                  this.hideColumn('problems');
+                }
+              }
+            }
+          });
         }
         
         startResize(e) {
           e.preventDefault();
+          
+          // Check if we should allow this resize based on column states
+          const resizeType = e.target.dataset.resize;
+          
+          // Don't allow resize if the LISTS column involved is hidden.
+          // If the PROBLEMS column is hidden, we still allow resizing so the user
+          // can expand/shrink the LISTS column into the content area.
+          if (resizeType === 'lists-problems' && this.hiddenColumns.has('lists')) {
+            return;
+          }
+          if (resizeType === 'problems-content' && this.hiddenColumns.has('problems')) {
+            return;
+          }
+          
           this.isResizing = true;
           this.currentHandle = e.target;
           this.startX = e.clientX;
@@ -5431,6 +5555,12 @@ ${description}${reproSection}${contactInfo}
             const minListsWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--min-lists-width'));
             const maxListsWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--max-lists-width'));
             
+            // Check if column should be hidden (when resized very small)
+            if (newListsWidth < this.minColumnWidthBeforeHide && deltaX < 0) {
+              this.hideColumn('lists');
+              return;
+            }
+            
             // Additional constraint: ensure content area maintains minimum width
             const currentProblemsWidth = document.getElementById('desktop-problems-sidebar').offsetWidth;
             const minContentWidth = 400; // minimum content area width
@@ -5450,6 +5580,12 @@ ${description}${reproSection}${contactInfo}
             const newProblemsWidth = this.startWidths.problems + deltaX;
             const minProblemsWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--min-problems-width'));
             const maxProblemsWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--max-problems-width'));
+            
+            // Check if column should be hidden (when resized very small)
+            if (newProblemsWidth < this.minColumnWidthBeforeHide && deltaX < 0) {
+              this.hideColumn('problems');
+              return;
+            }
             
             // Additional constraint: ensure content area maintains minimum width  
             const currentListsWidth = document.getElementById('desktop-lists-sidebar').offsetWidth;
@@ -5490,7 +5626,8 @@ ${description}${reproSection}${contactInfo}
           
           const columnWidths = {
             listsWidth: listsWidth.trim(),
-            problemsWidth: problemsWidth.trim()
+            problemsWidth: problemsWidth.trim(),
+            hiddenColumns: Array.from(this.hiddenColumns)
           };
           
           localStorage.setItem('lc-handbook-column-widths', JSON.stringify(columnWidths));
@@ -5508,6 +5645,30 @@ ${description}${reproSection}${contactInfo}
               if (columnWidths.problemsWidth) {
                 document.documentElement.style.setProperty('--problems-width', columnWidths.problemsWidth);
               }
+              
+              // Check if columns were hidden
+              if (columnWidths.hiddenColumns) {
+                columnWidths.hiddenColumns.forEach(columnType => {
+                  // Restore hidden state without animation on page load
+                  setTimeout(() => {
+                    const sidebar = document.getElementById(`desktop-${columnType}-sidebar`);
+                    const restoreButton = document.getElementById(`restore-${columnType}-button`);
+                    
+                    if (sidebar && restoreButton) {
+                      sidebar.classList.add('hidden');
+                      document.body.classList.add(`${columnType}-hidden`);
+                      this.hiddenColumns.add(columnType);
+                      restoreButton.style.display = 'block';
+                      document.documentElement.style.setProperty(`--${columnType}-width`, '0px');
+                    }
+                  }, 100); // Small delay to ensure DOM is ready
+                });
+                
+                // Update resize handle visibility after restoring hidden states
+                setTimeout(() => {
+                  this.updateResizeHandleVisibility();
+                }, 200);
+              }
             }
           } catch (error) {
             console.warn('Failed to load column widths:', error);
@@ -5516,9 +5677,113 @@ ${description}${reproSection}${contactInfo}
         
         // Public method to reset columns to default
         resetToDefault() {
-          document.documentElement.style.setProperty('--lists-width', '22%');
-          document.documentElement.style.setProperty('--problems-width', '26%');
+          document.documentElement.style.setProperty('--lists-width', '18%');
+          document.documentElement.style.setProperty('--problems-width', '22%');
           this.saveColumnWidths();
+        }
+        
+        // Hide a column and show restore button
+        hideColumn(columnType) {
+          const sidebar = document.getElementById(`desktop-${columnType}-sidebar`);
+          const restoreButton = document.getElementById(`restore-${columnType}-button`);
+          
+          if (!sidebar || !restoreButton) return;
+          
+          // Stop any current resize
+          this.stopResize();
+          
+          // Add hidden class and body class for styling
+          sidebar.classList.add('hidden');
+          document.body.classList.add(`${columnType}-hidden`);
+          this.hiddenColumns.add(columnType);
+          
+          // Show restore button
+          restoreButton.style.display = 'block';
+          
+          // Store original width before hiding (for restoration)
+          const originalWidth = getComputedStyle(document.documentElement).getPropertyValue(`--${columnType}-width`);
+          localStorage.setItem(`lc-handbook-${columnType}-width-before-hide`, originalWidth);
+          
+          // Set width to 0
+          document.documentElement.style.setProperty(`--${columnType}-width`, '0px');
+          
+          // Update resize handle visibility
+          this.updateResizeHandleVisibility();
+          
+          console.log(`${columnType} column hidden`);
+        }
+        
+        // Restore a hidden column
+        restoreColumn(columnType) {
+          const sidebar = document.getElementById(`desktop-${columnType}-sidebar`);
+          const restoreButton = document.getElementById(`restore-${columnType}-button`);
+          
+          if (!sidebar || !restoreButton) return;
+          
+          // Special case: if both columns are hidden and we're restoring lists, restore both
+          if (columnType === 'lists' && this.hiddenColumns.has('lists') && this.hiddenColumns.has('problems')) {
+            console.log('Both columns hidden, restoring both');
+            this.restoreColumn('problems');
+            // Continue to restore lists below
+          }
+          
+          // Define the exact default percentages we want
+          const defaultPercent = columnType === 'lists' ? 18 : 22;
+          
+          // Temporarily override min-width to 0 for smooth transition
+          const tempMinWidthVar = `--temp-min-${columnType}-width`;
+          document.documentElement.style.setProperty(tempMinWidthVar, '0%');
+          sidebar.style.minWidth = `var(${tempMinWidthVar})`;
+          
+          // Remove hidden class and body class
+          sidebar.classList.remove('hidden');
+          document.body.classList.remove(`${columnType}-hidden`);
+          this.hiddenColumns.delete(columnType);
+          
+          // Hide restore button
+          restoreButton.style.display = 'none';
+          
+          // Set the CSS custom property to the exact percentage - this will smoothly animate from 0 to target
+          document.documentElement.style.setProperty(`--${columnType}-width`, `${defaultPercent}%`);
+          
+          // After transition completes, restore the normal min-width
+          setTimeout(() => {
+            sidebar.style.minWidth = `var(--min-${columnType}-width)`;
+            document.documentElement.removeProperty(tempMinWidthVar);
+          }, 400); // Just after the 300ms transition + buffer
+          
+          console.log(`${columnType} column restored to ${defaultPercent}%`);
+          
+          // Update resize handle visibility
+          this.updateResizeHandleVisibility();
+          
+          // Save the restored state
+          this.saveColumnWidths();
+        }
+        
+        // Update resize handle visibility based on column states
+        updateResizeHandleVisibility() {
+          const listsProblemsHandle = document.querySelector('.lists-problems-resize');
+          const problemsContentHandle = document.querySelector('.problems-content-resize');
+          
+          // Only hide lists-problems handle if LISTS column is hidden
+          // Keep it visible when only problems column is hidden (so users can resize lists)
+          if (listsProblemsHandle) {
+            if (this.hiddenColumns.has('lists')) {
+              listsProblemsHandle.style.display = 'none';
+            } else {
+              listsProblemsHandle.style.display = 'block';
+            }
+          }
+          
+          // Hide problems-content handle if problems column is hidden
+          if (problemsContentHandle) {
+            if (this.hiddenColumns.has('problems')) {
+              problemsContentHandle.style.display = 'none';
+            } else {
+              problemsContentHandle.style.display = 'block';
+            }
+          }
         }
         
         // Public method to get current column widths (for debugging)
@@ -5532,11 +5797,13 @@ ${description}${reproSection}${contactInfo}
           return {
             lists: {
               px: listsBar.offsetWidth,
-              percent: ((listsBar.offsetWidth / container.offsetWidth) * 100).toFixed(1)
+              percent: ((listsBar.offsetWidth / container.offsetWidth) * 100).toFixed(1),
+              hidden: this.hiddenColumns.has('lists')
             },
             problems: {
               px: problemsBar.offsetWidth, 
-              percent: ((problemsBar.offsetWidth / container.offsetWidth) * 100).toFixed(1)
+              percent: ((problemsBar.offsetWidth / container.offsetWidth) * 100).toFixed(1),
+              hidden: this.hiddenColumns.has('problems')
             },
             content: {
               px: container.offsetWidth - listsBar.offsetWidth - problemsBar.offsetWidth,
@@ -5550,6 +5817,11 @@ ${description}${reproSection}${contactInfo}
       let columnResizer = null;
       if (window.innerWidth >= 1024) {
         columnResizer = new ColumnResizer();
+        console.log('✨ Column resizer initialized! Try these shortcuts:');
+        console.log('• Ctrl+Shift+L: Toggle Lists column');
+        console.log('• Ctrl+Shift+P: Toggle Problems column');
+        console.log('• testColumnHiding(): Demo the column hiding');
+        console.log('• resetColumns(): Reset all columns to default');
       }
       
       // Reinitialize on window resize if switching to/from desktop
@@ -5561,11 +5833,29 @@ ${description}${reproSection}${contactInfo}
         }
       });
       
+      // Global function for restoring columns (called by floating buttons)
+      window.restoreColumn = function(columnType) {
+        if (columnResizer) {
+          columnResizer.restoreColumn(columnType);
+        } else {
+          console.log('Column resizer not available (desktop mode required)');
+        }
+      };
+      
       // Global functions for column management (accessible via console)
       window.resetColumns = function() {
         if (columnResizer) {
+          // First restore any hidden columns
+          if (columnResizer.hiddenColumns.has('lists')) {
+            columnResizer.restoreColumn('lists');
+          }
+          if (columnResizer.hiddenColumns.has('problems')) {
+            columnResizer.restoreColumn('problems');
+          }
+          
+          // Then reset to default widths
           columnResizer.resetToDefault();
-          console.log('Column widths reset to default (Lists: 22%, Problems: 26%)');
+          console.log('All columns restored and reset to default (Lists: 18%, Problems: 22%)');
         } else {
           console.log('Column resizer not available (desktop mode required)');
         }
@@ -5579,6 +5869,48 @@ ${description}${reproSection}${contactInfo}
         } else {
           console.log('Column resizer not available (desktop mode required)');
           return null;
+        }
+      };
+      
+      window.hideColumn = function(columnType) {
+        if (columnResizer) {
+          columnResizer.hideColumn(columnType);
+        } else {
+          console.log('Column resizer not available (desktop mode required)');
+        }
+      };
+      
+      // Test function for demonstration
+      window.testColumnHiding = function() {
+        if (columnResizer) {
+          console.log('Testing column hiding functionality...');
+          console.log('1. Current widths:', columnResizer.getCurrentWidths());
+          
+          setTimeout(() => {
+            console.log('2. Hiding lists column...');
+            columnResizer.hideColumn('lists');
+          }, 1000);
+          
+          setTimeout(() => {
+            console.log('3. Hiding problems column...');
+            columnResizer.hideColumn('problems');
+          }, 2000);
+          
+          setTimeout(() => {
+            console.log('4. Restoring lists column...');
+            columnResizer.restoreColumn('lists');
+          }, 3000);
+          
+          setTimeout(() => {
+            console.log('5. Restoring problems column...');
+            columnResizer.restoreColumn('problems');
+          }, 4000);
+          
+          setTimeout(() => {
+            console.log('6. Final widths:', columnResizer.getCurrentWidths());
+          }, 5000);
+        } else {
+          console.log('Column resizer not available - switch to desktop mode (>1024px width)');
         }
       };
       

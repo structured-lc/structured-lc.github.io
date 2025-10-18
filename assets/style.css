@@ -157,13 +157,17 @@
   --user-desktop-scale: var(--desktop-scale);
   
   /* Resizable Column Variables - User can adjust these */
-  --lists-width: calc(22% * 2 / 3);
-  --problems-width: calc(26% * 2 / 3);
-  --min-lists-width: 250px;
-  --max-lists-width: 400px;
-  --min-problems-width: 300px;
-  --max-problems-width: 500px;
+  --lists-width: 18%;
+  --problems-width: 22%;
+  --min-lists-width: 12%;
+  --max-lists-width: 40%;
+  --min-problems-width: 15%;
+  --max-problems-width: 45%;
   --resize-handle-width: 4px;
+  
+  /* Column hiding thresholds */
+  --min-column-width-before-hide: 200px;
+  --hidden-column-width: 0px;
   
   /* Responsive column constraints */
   --min-content-width: 400px;
@@ -2571,7 +2575,7 @@ body.dark-theme .desktop-feedback-btn-cancel:hover {
     min-width: var(--min-lists-width);
     max-width: var(--max-lists-width);
     position: relative;
-    transition: width 0.2s ease;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   /* Problems Sidebar - Resizable Width */
@@ -2580,7 +2584,7 @@ body.dark-theme .desktop-feedback-btn-cancel:hover {
     min-width: var(--min-problems-width);
     max-width: var(--max-problems-width);
     position: relative;
-    transition: width 0.2s ease;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   /* Resize Handles */
@@ -2591,7 +2595,7 @@ body.dark-theme .desktop-feedback-btn-cancel:hover {
     width: var(--resize-handle-width);
     background: transparent;
     cursor: col-resize;
-    z-index: 1000;
+    z-index: 1600;
     user-select: none;
     transition: background-color 0.2s ease;
   }
@@ -3094,6 +3098,94 @@ body.dark-theme .desktop-feedback-btn-cancel:hover {
     margin: 0 auto;
   }
 }
+
+/* ========================================
+   COLUMN HIDING AND FLOATING BUTTONS
+   ======================================== */
+
+/* Hidden column states */
+.desktop-sidebar.hidden {
+  width: 0 !important;
+  min-width: 0 !important;
+  overflow: hidden;
+  border-right: none;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hide resize handles when columns are hidden */
+.desktop-sidebar.hidden .column-resize-handle {
+  display: none;
+}
+
+/* Floating column restore buttons */
+.column-restore-button {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1500;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: calc(12px * var(--desktop-scale)) calc(16px * var(--desktop-scale));
+  border-radius: calc(8px * var(--desktop-scale));
+  cursor: pointer;
+  font-size: calc(13px * var(--desktop-scale));
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  min-height: calc(80px * var(--desktop-scale));
+  display: none; /* Hidden by default */
+}
+
+.column-restore-button:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+  transform: translateY(-50%) translateX(2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.column-restore-button:active {
+  transform: translateY(-50%) translateX(1px) scale(0.98);
+}
+
+/* Lists column restore button - positioned at left edge */
+#restore-lists-button {
+  left: calc(8px * var(--desktop-scale));
+}
+
+/* Problems column restore button - positioned after lists column */
+#restore-problems-button {
+  left: calc(var(--lists-width) + 8px * var(--desktop-scale));
+}
+
+/* Adjust problems restore button position when lists is hidden */
+.desktop-sidebar#desktop-lists-sidebar.hidden ~ * #restore-problems-button,
+body.lists-hidden #restore-problems-button {
+  left: calc(8px * var(--desktop-scale));
+}
+
+/* Show restore buttons when columns are hidden */
+body.lists-hidden #restore-lists-button {
+  display: block;
+}
+
+body.problems-hidden #restore-problems-button {
+  display: block;
+}
+
+/* Ensure content area spans full width when sidebars are hidden */
+body.lists-hidden #desktop-content,
+body.problems-hidden #desktop-content,
+body.lists-hidden.problems-hidden #desktop-content {
+  flex: 1;
+}
+
+/* ========================================
+   END COLUMN HIDING STYLES
+   ======================================== */
 
 /* 4K+ Desktop (2560px+): Maintain readability */
 @media (min-width: 2560px) {
@@ -4921,9 +5013,7 @@ body.dark-theme #desktop-file-list li.active {
   border-left: 5px solid #60a5fa !important;
   border-color: #475569 !important;
   border-radius: calc(12px * var(--desktop-scale)) !important;
-  box-shadow: 
-    0 2px 8px rgba(96, 165, 250, 0.15) !important,
-    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 2px 8px rgba(96, 165, 250, 0.15) !important, inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
 }
 
 body.dark-theme #desktop-lists-list li.active:not(.category-header):not(.category-content):not(.desktop-category-header):not(.desktop-category-content) a,
@@ -5053,26 +5143,45 @@ body.dark-theme #desktop-container {
   background: #0a0a0a !important;
 }
 
+/* Desktop Column Resizing Dark Theme */
+body.dark-theme .column-resize-handle:hover {
+  background-color: rgba(96, 165, 250, 0.4) !important;
+}
+
+body.dark-theme .column-resize-handle:active {
+  background-color: rgba(96, 165, 250, 0.6) !important;
+}
+
+/* Desktop Column Restore Buttons Dark Theme */
+body.dark-theme .column-restore-button {
+  background: linear-gradient(135deg, #4a90e2 0%, #5a2d8f 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 4px 16px rgba(74, 144, 226, 0.4) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+body.dark-theme .column-restore-button:hover {
+  background: linear-gradient(135deg, #357abd 0%, #4a2574 100%) !important;
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+body.dark-theme .column-restore-button:active {
+  background: linear-gradient(135deg, #2563eb 0%, #3b1a5e 100%) !important;
+  box-shadow: 0 3px 12px rgba(74, 144, 226, 0.6) !important;
+}
+
 /* Desktop Content Background Wrapper - High Elevation Tile Design */
 body.dark-theme .desktop-content-with-background {
   background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 30%, #2a2a2a 100%) !important;
   border: 1px solid rgba(64, 64, 64, 0.6) !important;
-  box-shadow: 
-    0 6px 12px rgba(0, 0, 0, 0.4) !important,
-    0 12px 24px rgba(0, 0, 0, 0.3) !important,
-    0 20px 40px rgba(0, 0, 0, 0.25) !important,
-    0 30px 60px rgba(0, 0, 0, 0.2) !important,
-    inset 0 2px 0 rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.38) !important, inset 0 2px 0 rgba(255, 255, 255, 0.15) !important;
   backdrop-filter: blur(12px) !important;
 }
 
 body.dark-theme .desktop-content-with-background:hover {
-  box-shadow: 
-    0 12px 24px rgba(0, 0, 0, 0.5) !important,
-    0 20px 40px rgba(0, 0, 0, 0.4) !important,
-    0 32px 64px rgba(0, 0, 0, 0.3) !important,
-    0 48px 96px rgba(0, 0, 0, 0.25) !important,
-    inset 0 2px 0 rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.44) !important, inset 0 2px 0 rgba(255, 255, 255, 0.2) !important;
   border-color: rgba(64, 64, 64, 0.4) !important;
 }
 
