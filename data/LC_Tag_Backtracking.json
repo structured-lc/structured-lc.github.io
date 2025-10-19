@@ -107,5 +107,6 @@
     {"number": 3348, "slug": "smallest-divisible-digit-product-ii", "title": "Smallest Divisible Digit Product II", "difficulty": "Hard", "tags": ["Math", "String", "Backtracking", "Greedy", "Number Theory"], "similar_problems": [{"slug": "smallest-number-with-given-digit-product", "title": "Smallest Number With Given Digit Product", "difficulty": "Medium"}]},
     {"number": 3376, "slug": "minimum-time-to-break-locks-i", "title": "Minimum Time to Break Locks I", "difficulty": "Medium", "tags": ["Array", "Dynamic Programming", "Backtracking", "Bit Manipulation", "Depth-First Search", "Bitmask"], "similar_problems": []},
     {"number": 3437, "slug": "permutations-iii", "title": "Permutations III", "difficulty": "Medium", "tags": ["Array", "Backtracking"], "similar_problems": [{"slug": "permutations-iv", "title": "Permutations IV", "difficulty": "Hard"}]},
-    {"number": 3646, "slug": "next-special-palindrome-number", "title": "Next Special Palindrome Number", "difficulty": "Hard", "tags": ["Backtracking", "Bit Manipulation"], "similar_problems": []}
+    {"number": 3646, "slug": "next-special-palindrome-number", "title": "Next Special Palindrome Number", "difficulty": "Hard", "tags": ["Backtracking", "Bit Manipulation"], "similar_problems": []},
+    {"number": 3669, "slug": "balanced-k-factor-decomposition", "title": "Balanced K-Factor Decomposition", "difficulty": "Medium", "tags": ["Math", "Backtracking", "Number Theory"], "similar_problems": []}
 ]

@@ -185,5 +185,10 @@
     {"number": 3612, "slug": "process-string-with-special-operations-i", "title": "Process String with Special Operations I", "difficulty": "Medium", "tags": ["String", "Simulation"], "similar_problems": []},
     {"number": 3614, "slug": "process-string-with-special-operations-ii", "title": "Process String with Special Operations II", "difficulty": "Hard", "tags": ["String", "Simulation"], "similar_problems": []},
     {"number": 3616, "slug": "number-of-student-replacements", "title": "Number of Student Replacements", "difficulty": "Medium", "tags": ["Array", "Simulation"], "similar_problems": []},
-    {"number": 3653, "slug": "xor-after-range-multiplication-queries-i", "title": "XOR After Range Multiplication Queries I", "difficulty": "Medium", "tags": ["Array", "Divide and Conquer", "Simulation"], "similar_problems": []}
+    {"number": 3653, "slug": "xor-after-range-multiplication-queries-i", "title": "XOR After Range Multiplication Queries I", "difficulty": "Medium", "tags": ["Array", "Divide and Conquer", "Simulation"], "similar_problems": []},
+    {"number": 3679, "slug": "minimum-discards-to-balance-inventory", "title": " Minimum Discards to Balance Inventory", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Sliding Window", "Simulation", "Counting"], "similar_problems": []},
+    {"number": 3687, "slug": "library-late-fee-calculator", "title": "Library Late Fee Calculator", "difficulty": "Easy", "tags": ["Array", "Simulation"], "similar_problems": []},
+    {"number": 3688, "slug": "bitwise-or-of-even-numbers-in-an-array", "title": "Bitwise OR of Even Numbers in an Array", "difficulty": "Easy", "tags": ["Array", "Bit Manipulation", "Simulation"], "similar_problems": []},
+    {"number": 3701, "slug": "compute-alternating-sum", "title": "Compute Alternating Sum", "difficulty": "Easy", "tags": ["Array", "Simulation"], "similar_problems": [{"slug": "alternating-digit-sum", "title": "Alternating Digit Sum", "difficulty": "Easy"}]},
+    {"number": 3703, "slug": "remove-k-balanced-substrings", "title": "Remove K-Balanced Substrings", "difficulty": "Medium", "tags": ["String", "Stack", "Simulation"], "similar_problems": []}
 ]

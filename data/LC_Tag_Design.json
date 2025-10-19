@@ -126,5 +126,6 @@
     {"number": 3391, "slug": "design-a-3d-binary-matrix-with-efficient-layer-tracking", "title": "Design a 3D Binary Matrix with Efficient Layer Tracking", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Design", "Heap (Priority Queue)", "Matrix", "Ordered Set"], "similar_problems": []},
     {"number": 3408, "slug": "design-task-manager", "title": "Design Task Manager", "difficulty": "Medium", "tags": ["Hash Table", "Design", "Heap (Priority Queue)", "Ordered Set"], "similar_problems": []},
     {"number": 3484, "slug": "design-spreadsheet", "title": "Design Spreadsheet", "difficulty": "Medium", "tags": ["Array", "Hash Table", "String", "Design", "Matrix"], "similar_problems": [{"slug": "excel-sheet-column-title", "title": "Excel Sheet Column Title", "difficulty": "Easy"}]},
-    {"number": 3508, "slug": "implement-router", "title": "Implement Router", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Binary Search", "Design", "Queue", "Ordered Set"], "similar_problems": []}
+    {"number": 3508, "slug": "implement-router", "title": "Implement Router", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Binary Search", "Design", "Queue", "Ordered Set"], "similar_problems": []},
+    {"number": 3709, "slug": "design-exam-scores-tracker", "title": "Design Exam Scores Tracker", "difficulty": "Medium", "tags": ["Array", "Binary Search", "Design", "Prefix Sum"], "similar_problems": []}
 ]

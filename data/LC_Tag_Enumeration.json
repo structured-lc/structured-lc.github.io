@@ -121,5 +121,7 @@
     {"number": 3566, "slug": "partition-array-into-two-equal-product-subsets", "title": "Partition Array into Two Equal Product Subsets", "difficulty": "Medium", "tags": ["Array", "Bit Manipulation", "Recursion", "Enumeration"], "similar_problems": []},
     {"number": 3574, "slug": "maximize-subarray-gcd-score", "title": "Maximize Subarray GCD Score", "difficulty": "Hard", "tags": ["Array", "Math", "Enumeration", "Number Theory"], "similar_problems": []},
     {"number": 3588, "slug": "find-maximum-area-of-a-triangle", "title": "Find Maximum Area of a Triangle", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Math", "Greedy", "Geometry", "Enumeration"], "similar_problems": []},
-    {"number": 3630, "slug": "partition-array-for-maximum-xor-and-and", "title": "Partition Array for Maximum XOR and AND", "difficulty": "Hard", "tags": ["Array", "Math", "Greedy", "Bit Manipulation", "Enumeration"], "similar_problems": []}
+    {"number": 3630, "slug": "partition-array-for-maximum-xor-and-and", "title": "Partition Array for Maximum XOR and AND", "difficulty": "Hard", "tags": ["Array", "Math", "Greedy", "Bit Manipulation", "Enumeration"], "similar_problems": []},
+    {"number": 3664, "slug": "two-letter-card-game", "title": "Two-Letter Card Game", "difficulty": "Medium", "tags": ["Array", "Hash Table", "String", "Counting", "Enumeration"], "similar_problems": []},
+    {"number": 3713, "slug": "longest-balanced-substring-i", "title": "Longest Balanced Substring I", "difficulty": "Medium", "tags": ["Hash Table", "String", "Counting", "Enumeration"], "similar_problems": []}
 ]

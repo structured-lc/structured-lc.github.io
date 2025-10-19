@@ -250,5 +250,8 @@
     {"number": 3575, "slug": "maximum-good-subtree-score", "title": "Maximum Good Subtree Score", "difficulty": "Hard", "tags": ["Array", "Dynamic Programming", "Bit Manipulation", "Tree", "Depth-First Search", "Bitmask"], "similar_problems": []},
     {"number": 3585, "slug": "find-weighted-median-node-in-tree", "title": "Find Weighted Median Node in Tree", "difficulty": "Hard", "tags": ["Array", "Binary Search", "Dynamic Programming", "Tree", "Depth-First Search"], "similar_problems": []},
     {"number": 3590, "slug": "kth-smallest-path-xor-sum", "title": "Kth Smallest Path XOR Sum", "difficulty": "Hard", "tags": ["Array", "Tree", "Depth-First Search", "Ordered Set"], "similar_problems": []},
-    {"number": 3593, "slug": "minimum-increments-to-equalize-leaf-paths", "title": "Minimum Increments to Equalize Leaf Paths", "difficulty": "Medium", "tags": ["Array", "Dynamic Programming", "Tree", "Depth-First Search"], "similar_problems": []}
+    {"number": 3593, "slug": "minimum-increments-to-equalize-leaf-paths", "title": "Minimum Increments to Equalize Leaf Paths", "difficulty": "Medium", "tags": ["Array", "Dynamic Programming", "Tree", "Depth-First Search"], "similar_problems": []},
+    {"number": 3632, "slug": "subarrays-with-xor-at-least-k", "title": "Subarrays with XOR at Least K", "difficulty": "Hard", "tags": ["Array", "Bit Manipulation", "Tree", "Prefix Sum"], "similar_problems": []},
+    {"number": 3671, "slug": "sum-of-beautiful-subsequences", "title": "Sum of Beautiful Subsequences", "difficulty": "Hard", "tags": ["Array", "Math", "Tree", "Number Theory"], "similar_problems": []},
+    {"number": 3715, "slug": "sum-of-perfect-square-ancestors", "title": "Sum of Perfect Square Ancestors", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Math", "Tree", "Depth-First Search", "Counting", "Number Theory"], "similar_problems": []}
 ]
