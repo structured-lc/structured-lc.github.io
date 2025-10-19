@@ -78,7 +78,7 @@ class TreeAncestor:
 This problem is the textbook application of binary lifting on trees for range ancestor queries. This method also appears in LCA (Lowest Common Ancestor), and fast level jumps in many tree-based DS problems.
 
 ### Tags
-Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Design(#design)
+Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Design(#design)
 
 ### Similar Problems
 - Minimum Edge Weight Equilibrium Queries in a Tree(minimum-edge-weight-equilibrium-queries-in-a-tree) (Hard)

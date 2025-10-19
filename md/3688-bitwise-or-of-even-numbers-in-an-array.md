@@ -78,6 +78,6 @@ The even-number check using `num & 1` is a common trick for efficiency.
 This approach has broad applications in problems that require calculating any associative operation (like sum, product, bitwise AND/OR) on filtered elements of an array.
 
 ### Tags
-
+Array(#array), Bit Manipulation(#bit-manipulation), Simulation(#simulation)
 
 ### Similar Problems

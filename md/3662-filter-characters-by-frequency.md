@@ -82,5 +82,6 @@ def filterCharactersByFrequency(s: str, k: int) -> str:
 This problem is a classic application of the frequency counting (hash map or dictionary) pattern, followed by a filtering operation. The approach is highly efficient and generalizes to any string filtering problem where you first need aggregate info, then act on it in-order. Common in string/array preprocessing questions.
 
 ### Tags
+Hash Table(#hash-table), String(#string), Counting(#counting)
 
 ### Similar Problems

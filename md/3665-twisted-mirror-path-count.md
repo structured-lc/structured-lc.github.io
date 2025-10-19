@@ -138,5 +138,6 @@ Classic patterns:
 This technique applies to many variations: chessboard moves, constrained mazes, or robot path problems with extra actions or rules.
 
 ### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 
 ### Similar Problems

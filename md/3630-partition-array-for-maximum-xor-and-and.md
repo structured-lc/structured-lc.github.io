@@ -130,6 +130,6 @@ This pattern appears in partition, xor-sum, and various subset-split combinatori
 Understanding subset enumeration with masks and xor-basis greatly expands toolbox for "divide into groups for maximization" problems.
 
 ### Tags
-Array(#array), Math(#math), Greedy(#greedy), Enumeration(#enumeration)
+Array(#array), Math(#math), Greedy(#greedy), Bit Manipulation(#bit-manipulation), Enumeration(#enumeration)
 
 ### Similar Problems

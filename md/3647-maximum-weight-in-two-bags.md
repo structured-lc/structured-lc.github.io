@@ -92,5 +92,6 @@ def maximum_weight_in_two_bags(weights, w1, w2):
 This is a classic **multi-dimensional knapsack** problem, solved by dynamic programming (DP). Pattern: "0/1 knapsack with multiple containers, each item one container only." The approach generalizes to more than 2 bags (at a cost in complexity), or to optimize subsets over multiple groups. Common in packing, partitioning, resource allocation.
 
 ### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
 
 ### Similar Problems

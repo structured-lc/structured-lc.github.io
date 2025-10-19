@@ -116,5 +116,6 @@ This problem uses a **divisor sieve** technique and **inclusion-exclusion** to c
 It's a classic use of counting divisors and subtracting overlaps—a pattern common in combinatorial number theory and in problems involving subset properties such as GCD, LCM, or divisibility, and is highly relevant for interview questions involving **count-and-sum by group property**.
 
 ### Tags
+Array(#array), Math(#math), Tree(#tree), Number Theory(#number-theory)
 
 ### Similar Problems

@@ -110,5 +110,6 @@ def count_bin_palindromes(low: int, high: int) -> int:
 This problem leverages the **constructive generation of binary palindromes** rather than brute-force checking, using properties of binary palindromic structures and bit-manipulation. The approach is an application of *combinatorial search* and *bit operations*, and the constructive pattern occurs in other palindrome enumeration problems, such as generating kᵗʰ palindromes in base-N or finding palindromic IDs in a range.
 
 ### Tags
+Math(#math), Bit Manipulation(#bit-manipulation)
 
 ### Similar Problems

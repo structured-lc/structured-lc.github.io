@@ -82,5 +82,6 @@ def gcd_of_odd_even_sums(n):
 This problem uses the **mathematical reduction** pattern, deriving a closed-form for the result and avoiding brute-force computations. Recognizing patterns like arithmetic series and GCD properties provides instant O(1) solutions. Such techniques are broadly useful in problems asking for sums or GCDs over standard integer sequences.
 
 ### Tags
+Math(#math), Number Theory(#number-theory)
 
 ### Similar Problems

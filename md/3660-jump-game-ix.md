@@ -83,5 +83,6 @@ This is a classic greedy approach problem. The core pattern is **range extension
 This strategy is commonly applicable to similar jump/interval coverage problems and is a standard part of interview prep for optimizations over brute-force and DP.
 
 ### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
 
 ### Similar Problems

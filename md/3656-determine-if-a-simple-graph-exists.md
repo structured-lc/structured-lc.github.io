@@ -128,5 +128,6 @@ def isPossible(degrees):
 This problem is a direct application of the Havel-Hakimi algorithm—a greedy method for testing degree sequence graphicality. It's a classic greedy/graph theoretical question. The approach and its edge-case checks are standard and also useful in problems about graph construction from given constraints, scheduling, or network design.
 
 ### Tags
+Array(#array), Binary Search(#binary-search), Graph(#graph), Sorting(#sorting), Prefix Sum(#prefix-sum)
 
 ### Similar Problems

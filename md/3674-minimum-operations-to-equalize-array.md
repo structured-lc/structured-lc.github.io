@@ -91,5 +91,6 @@ If all elements are already equal, return 0; otherwise, 1 operation suffices by 
 This is a common pattern of "can we do this in one step?" and "check if already satisfied," seen in equalization, majority voting, and trivial game/array manipulation problems.
 
 ### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Brainteaser(#brainteaser)
 
 ### Similar Problems

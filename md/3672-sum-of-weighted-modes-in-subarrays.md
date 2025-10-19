@@ -119,5 +119,6 @@ This pattern is common in problems with subarray/statistics, and similar logic i
 Could be adapted with advanced data structures (segment tree, heaps) for even faster solutions if constraints are tighter.
 
 ### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Counting(#counting), Ordered Set(#ordered-set)
 
 ### Similar Problems

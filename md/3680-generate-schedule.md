@@ -95,6 +95,7 @@ Such patterns are common in tournament setups, sports leagues, and scheduling pa
 The core coding pattern—cycle-based permutations and avoidance of consecutive repeats—often appears in problems involving graph coloring, distributed meetings, or resource assignment.
 
 ### Tags
+Array(#array), Math(#math), Greedy(#greedy)
 
 ### Similar Problems
 - Task Scheduler(task-scheduler) (Medium)

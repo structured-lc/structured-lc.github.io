@@ -128,5 +128,6 @@ The coding pattern is *graph connectivity via disjoint sets* with additional con
 Understanding how constraints translate to connections is key to efficient algorithms for problems of this type.
 
 ### Tags
+Array(#array), Bit Manipulation(#bit-manipulation)
 
 ### Similar Problems

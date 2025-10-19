@@ -132,5 +132,6 @@ class Solution:
 The approach leverages the classic "subset sum generation + maximum XOR pair via Trie," a notable pattern for XOR maximum problems. This pattern is broadly useful in problems where you need to maximize XOR for any two values from a set, especially when set elements are constructed from subset/partition processes.
 
 ### Tags
+Array(#array), Math(#math), Greedy(#greedy), Bit Manipulation(#bit-manipulation)
 
 ### Similar Problems

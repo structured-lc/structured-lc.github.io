@@ -106,5 +106,6 @@ Balancing partitioning of multiplicative factors appears in several combinatoria
 The brute force is replaced by an efficient greedy approach that nearly always achieves the optimal max-min difference for such "balance by partitioning" problems.
 
 ### Tags
+Math(#math), Backtracking(#backtracking), Number Theory(#number-theory)
 
 ### Similar Problems

@@ -98,6 +98,6 @@ def maximum_subarray_value(nums, k):
 This problem is a classic example of **DP with subarray partitioning**, closely related to "maximum sum of k non-overlapping subarrays". The approach uses a DP table where each entry tracks the best possible sum for the first i elements and selecting j subarrays. The pattern applies to other partition-based dynamic programming problems (e.g., k-partition maximum sum, painter's partition problem).
 
 ### Tags
-
+Array(#array), Greedy(#greedy)
 
 ### Similar Problems

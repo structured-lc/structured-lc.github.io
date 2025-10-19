@@ -115,5 +115,6 @@ This uses the **sliding window + hashmap** pattern, a classic technique for prob
 This pattern often appears in frequency counting, substring, and unique/majority element problems, such as “Longest Substring with At Most K Distinct Characters,” moving average, etc.
 
 ### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Simulation(#simulation), Counting(#counting)
 
 ### Similar Problems

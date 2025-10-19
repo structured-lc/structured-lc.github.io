@@ -135,5 +135,6 @@ For small arrays, brute force suffices; for bit-constrained inputs, advanced bit
 The realized reduction and bit manipulation insight is a recurring theme for bitwise pair problems.
 
 ### Tags
+Array(#array), Math(#math), Two Pointers(#two-pointers), Sorting(#sorting)
 
 ### Similar Problems

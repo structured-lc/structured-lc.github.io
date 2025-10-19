@@ -88,6 +88,7 @@ The technique is widely used in problems like **Maximum Product of Word Lengths*
 It also reinforces preprocessing with hashmaps to quickly pair compatible or disjoint elements.
 
 ### Tags
+Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation)
 
 ### Similar Problems
 - Partition to K Equal Sum Subsets(partition-to-k-equal-sum-subsets) (Medium)

@@ -107,6 +107,6 @@ Related to classic "Best Time to Buy and Sell Stock" and "Maximum Subarray" prob
 Key idea: For every possible subarray ending at each position, compute the value and use dp to combine best non-overlapping picks.
 
 ### Tags
-
+Array(#array), Greedy(#greedy), Segment Tree(#segment-tree), Heap (Priority Queue)(#heap-priority-queue)
 
 ### Similar Problems

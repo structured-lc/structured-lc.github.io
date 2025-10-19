@@ -95,5 +95,6 @@ def find_least_frequent_digit(num):
 The core pattern is **frequency counting**, specifically for fixed-size entities (digits 0–9). This method is efficient because the digit space is constant. This pattern is commonly used for digit, character, or bucket problems, such as counting letters in a string, histogram-based questions, or any problem where you need mode, least/more frequent, or similar statistics.
 
 ### Tags
+Array(#array), Hash Table(#hash-table), Math(#math), Counting(#counting)
 
 ### Similar Problems

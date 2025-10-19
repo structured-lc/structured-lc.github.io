@@ -170,5 +170,6 @@ def max_walls_destroyed_by_robots(grid):
 This problem is a classic **maximum bipartite matching** (graph) question, with a twist: edges depend on dynamic line-of-sight in a grid. The approach is akin to finding maximum assignments, and the coding pattern is often used in assignment and matching problems, network flow, or team assignment situations. Problems like “assign workers to jobs” or “max tasks fulfilled” often use similar techniques.
 
 ### Tags
+Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
 
 ### Similar Problems

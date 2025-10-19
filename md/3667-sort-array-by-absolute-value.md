@@ -126,5 +126,6 @@ Implementing a comparison-based sort (like merge sort) with a custom comparator 
 Understanding how to write and apply custom comparators is useful and portable to many interview and job scenarios.
 
 ### Tags
+Array(#array), Math(#math), Two Pointers(#two-pointers), Sorting(#sorting)
 
 ### Similar Problems

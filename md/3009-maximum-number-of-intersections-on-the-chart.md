@@ -100,6 +100,6 @@ def maxIntersectionCount(y):
 This problem is a variation of the **sweep line/intersecting intervals** pattern. By converting the polyline crossing count to sweep events (interval start and end for each sloped segment), you use efficient event sorting and counting. This is similar to the "max number of overlapping intervals/rooms/active segments" problem, a common pattern in interval and computational geometry questions.
 
 ### Tags
-Array(#array), Math(#math), Binary Indexed Tree(#binary-indexed-tree), Geometry(#geometry)
+Array(#array), Hash Table(#hash-table), Math(#math), Binary Indexed Tree(#binary-indexed-tree), Geometry(#geometry), Line Sweep(#line-sweep), Sorting(#sorting)
 
 ### Similar Problems

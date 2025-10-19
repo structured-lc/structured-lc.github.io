@@ -109,5 +109,6 @@ def numberOfStableSubsequences(nums):
 This DP pattern falls into the family of **"counting restricted subsequences"** patterns, often seen in string or combinatorial subsequence problems where certain patterns must be avoided (motif-freeness). Similar techniques are used for problems about no more than k consecutive letters (runs), pattern avoidance, etc. The key is small state reduction: here, only the streak of parity matters, making the state space small and the DP efficient.
 
 ### Tags
+Array(#array), Dynamic Programming(#dynamic-programming)
 
 ### Similar Problems

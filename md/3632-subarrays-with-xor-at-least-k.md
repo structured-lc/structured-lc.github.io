@@ -137,5 +137,6 @@ This approach efficiently reduces O(n²) subarray checks to O(n) with bitwise Tr
 The Trie + prefix computation pattern is broadly applicable in XOR/range querying challenges.
 
 ### Tags
+Array(#array), Bit Manipulation(#bit-manipulation), Tree(#tree), Prefix Sum(#prefix-sum)
 
 ### Similar Problems

@@ -77,5 +77,6 @@ def max_subsequence_sum_capped(nums, cap):
 This problem uses the **greedy sum after transformation** pattern: transform each element (capping), then sum up for the maximum. This is common in array problems where you can preprocess values, then aggregate them for an optimal answer. This pattern is also seen when limiting contributions in profit/cost maximization problems.
 
 ### Tags
+Array(#array), Two Pointers(#two-pointers), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
 
 ### Similar Problems

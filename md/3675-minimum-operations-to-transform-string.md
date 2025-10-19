@@ -97,5 +97,6 @@ The optimal greedy solution is to process all unique non-'a' characters, with ea
 This pattern—minimizing steps via "grouping by unique value"—shows up in other batch-transformation, set-based interval, or bucket-type problems as well.
 
 ### Tags
+String(#string), Greedy(#greedy)
 
 ### Similar Problems

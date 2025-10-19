@@ -86,5 +86,6 @@ def maximizeSum(nums, k):
 The approach is a classic *greedy selection* problem: always take the largest available (distinct) elements to maximize the sum. This pattern—sorting unique values and selecting top k—is common in problems involving maximizing/minimizing from collections with duplicate constraints. Similar logic applies to frequency-limited selection, top-k queries, and set-restriction selection in competitive programming.
 
 ### Tags
+Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sorting(#sorting)
 
 ### Similar Problems

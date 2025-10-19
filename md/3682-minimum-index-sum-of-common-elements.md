@@ -110,5 +110,6 @@ The coding pattern mirrors many "array intersection" or "first occurrence" style
 You avoid brute-force nested loops and demonstrate optimization with O(N + M) time, and the technique applies to many similar array/string intersection problems.
 
 ### Tags
+Array(#array), Hash Table(#hash-table)
 
 ### Similar Problems

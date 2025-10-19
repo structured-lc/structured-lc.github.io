@@ -119,5 +119,6 @@ This problem elegantly uses the **frequency counting and pairing/matching patter
 The approach is similar to grouping and pairing tasks found in anagrams or pattern-matching problems, and it can be adapted for other settings with "differ in exactly one position" logic.
 
 ### Tags
+Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting), Enumeration(#enumeration)
 
 ### Similar Problems

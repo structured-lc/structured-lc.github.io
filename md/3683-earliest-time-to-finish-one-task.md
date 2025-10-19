@@ -79,5 +79,6 @@ def earliestTimeToFinishOneTask(startTime, duration):
 This problem is a straightforward use of the **linear scan/min tracking pattern**—for each task, calculate its finish time and keep the smallest. This approach is **general for finding an overall min (or max) through a list** and appears in array and stream-processing contexts. No dependencies mean we don't need sorting, heap, or advanced techniques.
 
 ### Tags
+Array(#array)
 
 ### Similar Problems

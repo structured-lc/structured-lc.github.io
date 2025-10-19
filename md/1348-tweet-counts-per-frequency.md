@@ -76,7 +76,7 @@ class TweetCounts:
 This problem is an application of ordered statistics (binary search on sorted lists) with window aggregation. Core pattern is to keep data sorted for fast interval counting, a classic for log-structured time series problems.
 
 ### Tags
-Hash Table(#hash-table), Binary Search(#binary-search), Design(#design), Sorting(#sorting), Ordered Set(#ordered-set)
+Hash Table(#hash-table), String(#string), Binary Search(#binary-search), Design(#design), Sorting(#sorting), Ordered Set(#ordered-set)
 
 ### Similar Problems
 - Design Video Sharing Platform(design-video-sharing-platform) (Hard)

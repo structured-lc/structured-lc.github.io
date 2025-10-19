@@ -115,3 +115,4 @@ Array(#array), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
 
 ### Similar Problems
 - Furthest Building You Can Reach(furthest-building-you-can-reach) (Medium)
+- Maximum Transactions Without Negative Balance(maximum-transactions-without-negative-balance) (Medium)

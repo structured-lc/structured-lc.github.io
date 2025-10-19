@@ -104,5 +104,6 @@ This problem is a good example of the **expansion-around-center** pattern and us
 The O(n) approach is often found in problems involving strictly monotonic subarrays, and the technique of precomputing range lengths appears in histogram/stack problems, as well as center-expansion methods in palindromes and mountain arrays.
 
 ### Tags
+Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
 
 ### Similar Problems

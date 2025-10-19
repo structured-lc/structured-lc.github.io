@@ -97,5 +97,6 @@ This pattern is common for problems involving “missing positive integer” (su
 It’s also a good reminder to handle edge cases of averages and positive integer ranges carefully.
 
 ### Tags
+Array(#array), Hash Table(#hash-table)
 
 ### Similar Problems
