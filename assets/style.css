@@ -179,18 +179,18 @@
    ======================================== */
 
 /* Mobile Scale Options */
-body.mobile-scale-small, html.mobile-scale-small { --mobile-scale: 0.85; }
-body.mobile-scale-compact, html.mobile-scale-compact { --mobile-scale: 0.9; }  
-body.mobile-scale-normal, html.mobile-scale-normal { --mobile-scale: 1.0; }
-body.mobile-scale-comfortable, html.mobile-scale-comfortable { --mobile-scale: 1.1; }
-body.mobile-scale-large, html.mobile-scale-large { --mobile-scale: 1.2; }
+body.mobile-scale-small, html.mobile-scale-small { --mobile-scale: 0.75; }
+body.mobile-scale-compact, html.mobile-scale-compact { --mobile-scale: 0.8; }  
+body.mobile-scale-normal, html.mobile-scale-normal { --mobile-scale: 0.9; }
+body.mobile-scale-comfortable, html.mobile-scale-comfortable { --mobile-scale: 1.0; }
+body.mobile-scale-large, html.mobile-scale-large { --mobile-scale: 1.1; }
 
 /* Desktop Scale Options */
-body.desktop-scale-tiny, html.desktop-scale-tiny { --desktop-scale: 0.75; }
-body.desktop-scale-compact, html.desktop-scale-compact { --desktop-scale: 0.85; }
-body.desktop-scale-normal, html.desktop-scale-normal { --desktop-scale: 0.9; }
-body.desktop-scale-comfortable, html.desktop-scale-comfortable { --desktop-scale: 1.0; }
-body.desktop-scale-large, html.desktop-scale-large { --desktop-scale: 1.1; }
+body.desktop-scale-tiny, html.desktop-scale-tiny { --desktop-scale: 0.65; }
+body.desktop-scale-compact, html.desktop-scale-compact { --desktop-scale: 0.75; }
+body.desktop-scale-normal, html.desktop-scale-normal { --desktop-scale: 0.8; }
+body.desktop-scale-comfortable, html.desktop-scale-comfortable { --desktop-scale: 0.9; }
+body.desktop-scale-large, html.desktop-scale-large { --desktop-scale: 1.0; }
 
 html, body {
   margin: 0 !important;
@@ -2598,6 +2598,13 @@ body.dark-theme .desktop-feedback-btn-cancel:hover {
     z-index: 1600;
     user-select: none;
     transition: background-color 0.2s ease;
+    /* Windows compatibility improvements */
+    touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
   }
   
   .column-resize-handle:hover {
@@ -5095,6 +5102,32 @@ body.dark-theme .desktop-difficulty-indicator.hard {
 }
 
 /* Desktop sidebar scrollbars - hidden by default like light mode */
+
+/* Hide scrollbars in desktop sidebars (C1 and C2) for cleaner appearance */
+#desktop-lists-sidebar,
+#desktop-problems-sidebar {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+#desktop-lists-sidebar::-webkit-scrollbar,
+#desktop-problems-sidebar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* Ensure the lists and file lists within sidebars also hide scrollbars */
+#desktop-lists-list,
+#desktop-file-list {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+#desktop-lists-list::-webkit-scrollbar,
+#desktop-file-list::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 
 /* Desktop Search Modal Dark Theme */
 body.dark-theme #desktop-search-modal {

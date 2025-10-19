@@ -5470,13 +5470,29 @@ ${description}${reproSection}${contactInfo}
           
           handles.forEach(handle => {
             handle.addEventListener('mousedown', (e) => this.startResize(e));
+            
+            // Windows compatibility: Also handle pointer events
+            handle.addEventListener('pointerdown', (e) => {
+              e.preventDefault();
+              this.startResize(e);
+            });
           });
           
+          // Universal event listeners with Windows compatibility
           document.addEventListener('mousemove', (e) => this.doResize(e));
+          document.addEventListener('pointermove', (e) => this.doResize(e));
           document.addEventListener('mouseup', () => this.stopResize());
+          document.addEventListener('pointerup', () => this.stopResize());
           
           // Prevent text selection during resize
           document.addEventListener('selectstart', (e) => {
+            if (this.isResizing) {
+              e.preventDefault();
+            }
+          });
+          
+          // Windows-specific drag prevention
+          document.addEventListener('dragstart', (e) => {
             if (this.isResizing) {
               e.preventDefault();
             }
@@ -5522,7 +5538,9 @@ ${description}${reproSection}${contactInfo}
           
           this.isResizing = true;
           this.currentHandle = e.target;
-          this.startX = e.clientX;
+          
+          // Windows compatibility: Use both clientX and newer pointer coordinates
+          this.startX = e.clientX || e.pageX || 0;
           
           // Add resizing class to container
           if (this.container) {
@@ -5540,12 +5558,19 @@ ${description}${reproSection}${contactInfo}
           };
           
           document.body.style.cursor = 'col-resize';
+          
+          // Windows: Capture pointer for better drag handling
+          if (e.target.setPointerCapture && e.pointerId) {
+            e.target.setPointerCapture(e.pointerId);
+          }
         }
         
         doResize(e) {
           if (!this.isResizing || !this.currentHandle) return;
           
-          const deltaX = e.clientX - this.startX;
+          // Windows compatibility: Use fallback coordinates
+          const currentX = e.clientX || e.pageX || 0;
+          const deltaX = currentX - this.startX;
           const resizeType = this.currentHandle.dataset.resize;
           const containerWidth = this.container.offsetWidth;
           

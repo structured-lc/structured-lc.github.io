@@ -13,19 +13,19 @@ class ScaleSettingsManager {
     };
     
     this.mobileOptions = {
-      'small': { scale: 0.85, label: 'Small', description: 'Compact, space-efficient' },
-      'compact': { scale: 0.9, label: 'Compact', description: 'Slightly smaller' },
-      'normal': { scale: 1.0, label: 'Normal', description: 'Default size' },
-      'comfortable': { scale: 1.1, label: 'Comfortable', description: 'Slightly larger' },
-      'large': { scale: 1.2, label: 'Large', description: 'Easy to read' }
+      'small': { scale: 0.75, label: 'Small', description: 'Compact, space-efficient' },
+      'compact': { scale: 0.80, label: 'Compact', description: 'Slightly smaller' },
+      'normal': { scale: 0.90, label: 'Normal', description: 'Default size' },
+      'comfortable': { scale: 0.98, label: 'Comfortable', description: 'Slightly larger' },
+      'large': { scale: 1.05, label: 'Large', description: 'Easy to read' }
     };
     
     this.desktopOptions = {
-      'tiny': { scale: 0.75, label: 'Tiny', description: 'Maximum information density' },
-      'compact': { scale: 0.85, label: 'Compact', description: 'High density' },
-      'normal': { scale: 0.9, label: 'Normal', description: 'Balanced (recommended)' },
-      'comfortable': { scale: 1.0, label: 'Comfortable', description: 'Spacious' },
-      'large': { scale: 1.1, label: 'Large', description: 'Maximum readability' }
+      'tiny': { scale: 0.65, label: 'Tiny', description: 'Maximum information density' },
+      'compact': { scale: 0.75, label: 'Compact', description: 'High density' },
+      'normal': { scale: 0.80, label: 'Normal', description: 'Balanced (recommended)' },
+      'comfortable': { scale: 0.90, label: 'Comfortable', description: 'Spacious' },
+      'large': { scale: 0.95, label: 'Large', description: 'Maximum readability' }
     };
     
     this.themeOptions = {
@@ -37,9 +37,89 @@ class ScaleSettingsManager {
     this.init();
   }
   
+  /**
+   * Get current mobile scale value (supports both legacy discrete and new continuous values)
+   */
+  getCurrentMobileScale() {
+    // If settings contain a direct scale value, use it
+    if (typeof this.settings.mobileScale === 'number') {
+      return this.settings.mobileScale;
+    }
+    // Otherwise, map from legacy discrete setting
+    return this.mobileOptions[this.settings.mobile]?.scale || 0.9;
+  }
+  
+  /**
+   * Get current desktop scale value (supports both legacy discrete and new continuous values)
+   */
+  getCurrentDesktopScale() {
+    // If settings contain a direct scale value, use it
+    if (typeof this.settings.desktopScale === 'number') {
+      return this.settings.desktopScale;
+    }
+    // Otherwise, map from legacy discrete setting
+    return this.desktopOptions[this.settings.desktop]?.scale || 0.8;
+  }
+  
+  /**
+   * Set continuous scale value and update corresponding discrete setting for backward compatibility
+   */
+  setContinuousScale(type, scaleValue) {
+    const roundedScale = Math.round(scaleValue * 100) / 100; // Round to 2 decimal places
+    
+    if (type === 'mobile') {
+      this.settings.mobileScale = roundedScale;
+      // Also set the closest discrete setting for backward compatibility
+      this.settings.mobile = this.findClosestDiscreteSetting(roundedScale, 'mobile');
+    } else if (type === 'desktop') {
+      this.settings.desktopScale = roundedScale;
+      // Also set the closest discrete setting for backward compatibility
+      this.settings.desktop = this.findClosestDiscreteSetting(roundedScale, 'desktop');
+    }
+  }
+  
+  /**
+   * Find the closest discrete setting for a given continuous scale value
+   */
+  findClosestDiscreteSetting(scaleValue, type) {
+    const options = type === 'mobile' ? this.mobileOptions : this.desktopOptions;
+    let closestKey = Object.keys(options)[0];
+    let smallestDiff = Math.abs(scaleValue - options[closestKey].scale);
+    
+    for (const [key, option] of Object.entries(options)) {
+      const diff = Math.abs(scaleValue - option.scale);
+      if (diff < smallestDiff) {
+        smallestDiff = diff;
+        closestKey = key;
+      }
+    }
+    
+    return closestKey;
+  }
+  
+  /**
+   * Force update CSS custom properties with current scale values
+   */
+  forceCSSUpdate() {
+    const currentMobileScale = this.getCurrentMobileScale();
+    const currentDesktopScale = this.getCurrentDesktopScale();
+    
+    // Set CSS custom properties with explicit values
+    document.documentElement.style.setProperty('--mobile-scale', currentMobileScale.toString());
+    document.documentElement.style.setProperty('--desktop-scale', currentDesktopScale.toString());
+    
+    console.log('🔧 CSS properties force updated:', {
+      mobile: currentMobileScale,
+      desktop: currentDesktopScale,
+      appliedMobile: document.documentElement.style.getPropertyValue('--mobile-scale'),
+      appliedDesktop: document.documentElement.style.getPropertyValue('--desktop-scale')
+    });
+  }
+  
   init() {
     this.loadSettings();
     this.applySettings();
+    this.forceCSSUpdate(); // Ensure CSS properties are set correctly
     this.addSettingsToModal();
     
     // Add retry mechanism for modal detection
@@ -120,17 +200,39 @@ class ScaleSettingsManager {
   applySettings() {
     const body = document.body;
     
-    const expectedMobileClass = `mobile-scale-${this.settings.mobile}`;
-    const expectedDesktopClass = `desktop-scale-${this.settings.desktop}`;
+    // Get current scale values (supports both continuous and discrete)
+    const currentMobileScale = this.getCurrentMobileScale();
+    const currentDesktopScale = this.getCurrentDesktopScale();
     
-    // Only apply changes if the current classes don't match expected
-    if (!body.classList.contains(expectedMobileClass) || !body.classList.contains(expectedDesktopClass)) {
-      // Remove existing scale classes
-      this.removeScaleClasses(body);
-      
-      // Apply current settings
+    // Set CSS custom properties directly for continuous scaling
+    // Apply on both root and body to ensure immediate precedence
+    document.documentElement.style.setProperty('--mobile-scale', String(currentMobileScale));
+    document.documentElement.style.setProperty('--desktop-scale', String(currentDesktopScale));
+    if (body) {
+      body.style.setProperty('--mobile-scale', String(currentMobileScale));
+      body.style.setProperty('--desktop-scale', String(currentDesktopScale));
+    }
+    
+    // Only set discrete classes if we're using legacy discrete values
+    // (This prevents CSS class overrides when using continuous scaling)
+    if (typeof this.settings.mobileScale !== 'number') {
+      // Using discrete setting - apply class
+      const expectedMobileClass = `mobile-scale-${this.settings.mobile}`;
+      this.removeScaleClasses(body, 'mobile');
       body.classList.add(expectedMobileClass);
+    } else {
+      // Using continuous scaling - remove discrete classes to prevent override
+      this.removeScaleClasses(body, 'mobile');
+    }
+    
+    if (typeof this.settings.desktopScale !== 'number') {
+      // Using discrete setting - apply class
+      const expectedDesktopClass = `desktop-scale-${this.settings.desktop}`;
+      this.removeScaleClasses(body, 'desktop');
       body.classList.add(expectedDesktopClass);
+    } else {
+      // Using continuous scaling - remove discrete classes to prevent override
+      this.removeScaleClasses(body, 'desktop');
     }
     
     // Apply theme - including system theme detection
@@ -165,14 +267,35 @@ class ScaleSettingsManager {
     if (desktopThemeToggle && desktopThemeToggle.value !== this.settings.theme) {
       desktopThemeToggle.value = this.settings.theme;
     }
+
+    // Force a reflow to ensure CSS variables are picked up immediately
+    // Reading offsetHeight forces the browser to recompute styles
+    void (body && body.offsetHeight);
+
+    // Optionally log current applied values for debugging
+    if (window && window.console && window.console.debug) {
+      console.debug('Scale applied', { mobile: currentMobileScale, desktop: currentDesktopScale });
+    }
   }
   
   /**
    * Remove all scale classes from element
    */
-  removeScaleClasses(element) {
-    const scaleClasses = element.classList.value.match(/(?:mobile|desktop)-scale-\w+/g) || [];
-    scaleClasses.forEach(cls => element.classList.remove(cls));
+  /**
+   * Remove scale classes from element
+   * @param {Element} element - Element to remove classes from
+   * @param {string} type - Optional type filter ('mobile', 'desktop', or undefined for all)
+   */
+  removeScaleClasses(element, type = null) {
+    if (type) {
+      // Remove only specific type
+      const scaleClasses = element.classList.value.match(new RegExp(`${type}-scale-\\w+`, 'g')) || [];
+      scaleClasses.forEach(cls => element.classList.remove(cls));
+    } else {
+      // Remove all scale classes
+      const scaleClasses = element.classList.value.match(/(?:mobile|desktop)-scale-\w+/g) || [];
+      scaleClasses.forEach(cls => element.classList.remove(cls));
+    }
   }
   
   /**
@@ -307,22 +430,23 @@ class ScaleSettingsManager {
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
           <label style="font-size: 14px; font-weight: 500; color: #24292f;">Layout Density</label>
           <span id="mobile-scale-value" style="font-size: 13px; font-weight: 600; color: #667eea; padding: 2px 8px; background: rgba(102, 126, 234, 0.1); border-radius: 12px;">
-            ${this.mobileOptions[this.settings.mobile].label}
+            ${Math.round(this.getCurrentMobileScale() * 100)}%
           </span>
         </div>
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
           <span style="font-size: 12px; color: #656d76;">Compact</span>
           <span style="font-size: 12px; color: #656d76;">Spacious</span>
         </div>
+
         <div style="position: relative;">
-          <input type="range" id="mobile-scale-slider" min="0" max="4" step="1" 
-                 value="${Object.keys(this.mobileOptions).indexOf(this.settings.mobile)}"
+     <input type="range" id="mobile-scale-slider" min="0.60" max="0.95" step="0.01" 
+       value="${this.getCurrentMobileScale()}"
                  style="width: 100%; height: 6px; -webkit-appearance: none; appearance: none; 
                         background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); 
                         border-radius: 3px; outline: none;">
         </div>
         <div style="font-size: 12px; color: #656d76; margin-top: 6px; text-align: center;" id="mobile-scale-description">
-          ${this.mobileOptions[this.settings.mobile].description}
+          Adjust mobile UI scaling
         </div>
       </div>
       
@@ -368,22 +492,23 @@ class ScaleSettingsManager {
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
           <label style="font-size: 14px; font-weight: 500; color: #24292f;">Layout Density</label>
           <span id="desktop-scale-value" style="font-size: 13px; font-weight: 600; color: #667eea; padding: 2px 8px; background: rgba(102, 126, 234, 0.1); border-radius: 12px;">
-            ${this.desktopOptions[this.settings.desktop].label}
+            ${Math.round(this.getCurrentDesktopScale() * 100)}%
           </span>
         </div>
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
           <span style="font-size: 12px; color: #656d76;">Compact</span>
           <span style="font-size: 12px; color: #656d76;">Spacious</span>
         </div>
+
         <div style="position: relative;">
-          <input type="range" id="desktop-scale-slider" min="0" max="4" step="1" 
-                 value="${Object.keys(this.desktopOptions).indexOf(this.settings.desktop)}"
+     <input type="range" id="desktop-scale-slider" min="0.60" max="0.95" step="0.01" 
+       value="${this.getCurrentDesktopScale()}"
                  style="width: 100%; height: 6px; -webkit-appearance: none; appearance: none; 
                         background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); 
                         border-radius: 3px; outline: none;">
         </div>
         <div style="font-size: 12px; color: #656d76; margin-top: 6px; text-align: center;" id="desktop-scale-description">
-          ${this.desktopOptions[this.settings.desktop].description}
+          Adjust desktop UI scaling
         </div>
       </div>
       
@@ -500,18 +625,50 @@ class ScaleSettingsManager {
     const scaleDescription = section.querySelector('#mobile-scale-description');
     
     if (scaleSlider) {
+      // Add throttling to prevent too many updates
+      let updateTimeout;
+      
       scaleSlider.addEventListener('input', (e) => {
-        const index = parseInt(e.target.value);
-        const scaleKeys = Object.keys(this.mobileOptions);
-        const selectedKey = scaleKeys[index];
-        const option = this.mobileOptions[selectedKey];
+        const scaleValue = parseFloat(e.target.value);
         
-        // Update displays
-        scaleValueDisplay.textContent = option.label;
-        scaleDescription.textContent = option.description;
+        // Immediate visual feedback for display
+        scaleValueDisplay.textContent = Math.round(scaleValue * 100) + '%';
+        scaleDescription.textContent = `Custom scale: ${Math.round(scaleValue * 100)}%`;
         
-        // Update setting
-        this.updateSetting('mobile', selectedKey);
+        // Throttle the actual scaling application
+        clearTimeout(updateTimeout);
+        updateTimeout = setTimeout(() => {
+          // Update setting with continuous value
+          this.setContinuousScale('mobile', scaleValue);
+          this.saveSettings();
+          
+          // Apply CSS custom properties immediately and update settings/classes
+          document.documentElement.style.setProperty('--mobile-scale', scaleValue.toString());
+          if (document.body) {
+            document.body.style.setProperty('--mobile-scale', scaleValue.toString());
+          }
+
+          // Ensure consistent application across the app
+          try {
+            this.applySettings();
+            this.forceCSSUpdate();
+          } catch (err) {
+            console.warn('Error applying settings immediately', err);
+          }
+
+          // Debug logging
+          console.log(`🔧 Mobile scale updated: ${Math.round(scaleValue * 100)}%`, {
+            scaleValue,
+            cssPropertyRoot: document.documentElement.style.getPropertyValue('--mobile-scale'),
+            cssPropertyBody: document.body && document.body.style.getPropertyValue('--mobile-scale'),
+            settings: this.settings
+          });
+
+          // Trigger custom event for other components
+          window.dispatchEvent(new CustomEvent('scaleSettingsChanged', {
+            detail: { type: 'mobile', value: scaleValue, settings: { ...this.settings } }
+          }));
+        }, 50); // 50ms throttle
       });
     }
 
@@ -570,18 +727,50 @@ class ScaleSettingsManager {
     const scaleDescription = section.querySelector('#desktop-scale-description');
     
     if (scaleSlider) {
+      // Add throttling to prevent too many updates
+      let updateTimeout;
+      
       scaleSlider.addEventListener('input', (e) => {
-        const index = parseInt(e.target.value);
-        const scaleKeys = Object.keys(this.desktopOptions);
-        const selectedKey = scaleKeys[index];
-        const option = this.desktopOptions[selectedKey];
+        const scaleValue = parseFloat(e.target.value);
         
-        // Update displays
-        scaleValueDisplay.textContent = option.label;
-        scaleDescription.textContent = option.description;
+        // Immediate visual feedback for display
+        scaleValueDisplay.textContent = Math.round(scaleValue * 100) + '%';
+        scaleDescription.textContent = `Custom scale: ${Math.round(scaleValue * 100)}%`;
         
-        // Update setting
-        this.updateSetting('desktop', selectedKey);
+        // Throttle the actual scaling application
+        clearTimeout(updateTimeout);
+        updateTimeout = setTimeout(() => {
+          // Update setting with continuous value
+          this.setContinuousScale('desktop', scaleValue);
+          this.saveSettings();
+          
+          // Apply CSS custom properties immediately and update settings/classes
+          document.documentElement.style.setProperty('--desktop-scale', scaleValue.toString());
+          if (document.body) {
+            document.body.style.setProperty('--desktop-scale', scaleValue.toString());
+          }
+
+          // Ensure consistent application across the app
+          try {
+            this.applySettings();
+            this.forceCSSUpdate();
+          } catch (err) {
+            console.warn('Error applying settings immediately', err);
+          }
+
+          // Debug logging
+          console.log(`🔧 Desktop scale updated: ${Math.round(scaleValue * 100)}%`, {
+            scaleValue,
+            cssPropertyRoot: document.documentElement.style.getPropertyValue('--desktop-scale'),
+            cssPropertyBody: document.body && document.body.style.getPropertyValue('--desktop-scale'),
+            settings: this.settings
+          });
+
+          // Trigger custom event for other components
+          window.dispatchEvent(new CustomEvent('scaleSettingsChanged', {
+            detail: { type: 'desktop', value: scaleValue, settings: { ...this.settings } }
+          }));
+        }, 50); // 50ms throttle
       });
     }
 
@@ -774,6 +963,17 @@ if (document.readyState === 'loading') {
   window.scaleSettingsManager = new ScaleSettingsManager();
 }
 
+// Debug helper - force re-evaluation of styles and output current state
+window.debugScaleSettings = function() {
+  if (window.scaleSettingsManager) {
+    window.scaleSettingsManager.forceCSSUpdate();
+    window.scaleSettingsManager.applySettings();
+    console.log('DEBUG scale settings:', window.scaleSettingsManager.getSettings());
+  } else {
+    console.warn('scaleSettingsManager not initialized yet');
+  }
+};
+
 // Add a temporary test interface (remove in production)
 window.testScaling = function() {
   const body = document.body;
@@ -806,5 +1006,49 @@ window.addDesktopScaleSettings = function() {
     console.log('Desktop settings added successfully');
   } else {
     console.log('Desktop modal not found or settings manager not initialized');
+  }
+};
+
+// Debug function to check current scale state
+window.debugScaleSettings = function() {
+  if (!window.scaleSettingsManager) {
+    console.log('❌ ScaleSettingsManager not initialized');
+    return;
+  }
+  
+  const manager = window.scaleSettingsManager;
+  const currentMobile = manager.getCurrentMobileScale();
+  const currentDesktop = manager.getCurrentDesktopScale();
+  
+  console.log('🔍 Current Scale Settings Debug:', {
+    settings: manager.settings,
+    mobileScale: currentMobile,
+    desktopScale: currentDesktop,
+    cssProperties: {
+      mobile: document.documentElement.style.getPropertyValue('--mobile-scale'),
+      desktop: document.documentElement.style.getPropertyValue('--desktop-scale')
+    },
+    computedValues: {
+      mobile: getComputedStyle(document.documentElement).getPropertyValue('--mobile-scale'),
+      desktop: getComputedStyle(document.documentElement).getPropertyValue('--desktop-scale')
+    },
+    bodyClasses: document.body.className
+  });
+  
+  return {
+    mobileScale: currentMobile,
+    desktopScale: currentDesktop,
+    cssApplied: {
+      mobile: document.documentElement.style.getPropertyValue('--mobile-scale'),
+      desktop: document.documentElement.style.getPropertyValue('--desktop-scale')
+    }
+  };
+};
+
+// Function to force CSS refresh
+window.forceScaleRefresh = function() {
+  if (window.scaleSettingsManager) {
+    window.scaleSettingsManager.forceCSSUpdate();
+    console.log('✅ Scale CSS properties refreshed');
   }
 };
