@@ -160,6 +160,10 @@ class MaxStack:
 ### Summary
 We used the **two-stack** pattern: one for normal stack operations, another for tracking the current maximum at every push. This enables O(1) for `push`, `pop`, `top`, and `peekMax`, while `popMax` is O(n). This is a classical approach seen in Min Stack (Leetcode 155), and is widely applicable to problems asking to track max/min/other aggregates alongside traditional stack operations. For more optimized requirements (all ops in O(log n)), one should consider advanced data structures like a doubly-linked list plus a balanced BST or TreeMap.
 
+
+### Flashcard
+Use two stacks: main stack for normal operations, and a max stack to track current maximum for O(1) peekMax and O(n) popMax.
+
 ### Tags
 Linked List(#linked-list), Stack(#stack), Design(#design), Doubly-Linked List(#doubly-linked-list), Ordered Set(#ordered-set)
 

@@ -149,6 +149,10 @@ def checkWays(pairs):
 ### Summary
 This problem uses a **graph+degree pattern, adjacency set checking, and greedy root assignment** to efficiently reconstruct possible trees from ambiguous ancestor-descendant constraints. The key insight is that the parent of each node should have all of its candidate’s neighbors, and the root must be universally connected. This pattern—**neighbor inclusion, degree sorting, and ambiguity detection**—can be applied to other tree reconstruction and hierarchy discovery problems from partial relationship data.
 
+
+### Flashcard
+Build graph from pairs; check for a single root connected to all, and for each node, parent must have ≥ neighbors—count valid rooted trees.
+
 ### Tags
 Tree(#tree), Graph(#graph)
 

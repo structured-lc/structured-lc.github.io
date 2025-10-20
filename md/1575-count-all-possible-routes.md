@@ -67,6 +67,10 @@ def countRoutes(locations, start, finish, fuel):
 ### Summary
 Classic **dynamic programming with memoization** on states (city, fuel). Pattern is common in path counting, grid traversal, and shortest path variants with resource constraints. Memoization is crucial for tractability in large state spaces.
 
+
+### Flashcard
+Use memoized DFS or DP to count all routes from start to finish, caching (city, fuel) states to avoid exponential recomputation; each arrival at finish counts as a valid route, even if fuel remains.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Memoization(#memoization)
 

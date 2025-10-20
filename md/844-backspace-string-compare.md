@@ -104,6 +104,10 @@ def backspaceCompare(S: str, T: str) -> bool:
 ### Summary
 This problem demonstrates the *two-pointer* technique for simulating edits from right-to-left in O(1) space, a classic approach for questions where operations (like stack pops or backspaces) can "cancel out" earlier characters. The stack approach is also common for string edit simulations but incurs O(n) space. The two-pointer pattern is reusable for "edit distance", "compare after operations", or "move-and-compare" problems, especially where backward comparison is needed.
 
+
+### Flashcard
+Simulate typing with stack for each string, handling '#' as backspace; compare final processed strings for equality.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Stack(#stack), Simulation(#simulation)
 

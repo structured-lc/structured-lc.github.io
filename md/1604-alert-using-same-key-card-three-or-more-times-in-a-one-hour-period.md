@@ -73,6 +73,10 @@ def alertNames(keyName, keyTime):
 ### Summary
 The main pattern here is windowed scan on sorted data. Converting to integer minutes simplifies comparisons. Similar scan-window patterns arise in logs, time-series, and pattern-detection problems.
 
+
+### Flashcard
+For each person, collect and sort their access times, then scan for any three entries within a 60-minute window to detect alerts.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting)
 

@@ -121,6 +121,10 @@ def numIslands(grid):
 
 This problem is a classic usage of **graph traversal (DFS/BFS) on a grid**. The key is to mark connected pieces of land as visited so each island is only counted once. This pattern—visiting all connected neighbors and marking visited—is very common and also is applied in problems like **flood fill**, **closed islands**, and **counting connected components in a graph**. Understanding this “infect and mark” approach is essential for many graph/grid problems.
 
+
+### Flashcard
+For each '1', use DFS or BFS to mark all connected land as visited; increment island count each time you start a new traversal.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
 

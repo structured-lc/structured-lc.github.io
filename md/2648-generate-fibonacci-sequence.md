@@ -111,6 +111,10 @@ The design is optimal for producing infinite or lazy computed sequences with O(1
 This approach is common in interview questions around random/infinite streams, sequence generation, or lazy evaluation.  
 Patterns are applicable for any recurrence-based or stream-based generation.
 
+
+### Flashcard
+Generate the Fibonacci sequence using a generator that yields values based on the sum of the previous two numbers.
+
 ### Tags
 
 ### Similar Problems

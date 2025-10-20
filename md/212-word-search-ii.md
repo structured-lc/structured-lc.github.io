@@ -132,6 +132,10 @@ def findWords(board, words):
 ### Summary
 This problem is a classic use of the **backtracking + Trie (prefix tree)** coding pattern. The Trie accelerates search for overlapping word prefixes, while DFS handles board traversal with state management for visited cells. This pattern appears in various **pattern-matching**, **word games**, and **grid search** problems, especially wherever prefix pruning or efficient lookup is helpful.
 
+
+### Flashcard
+Build a trie of all words, then DFS from each board cell, pruning paths not in the trie to efficiently find all matches.
+
 ### Tags
 Array(#array), String(#string), Backtracking(#backtracking), Trie(#trie), Matrix(#matrix)
 

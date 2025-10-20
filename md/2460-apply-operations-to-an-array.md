@@ -90,6 +90,10 @@ def applyOperations(nums):
 ### Summary
 This is a classic two-pass array processing problem. The first pass applies a specific set of update rules, and the second reorganizes the array via the "move all zeros to end" pattern (commonly seen in Leetcode problems like Move Zeroes). The solution only uses constant extra space and is linear time, making it optimal for this constraint set. This template applies to many array reordering tasks after a mutating operation phase.
 
+
+### Flashcard
+For each i, if nums[i] == nums[i+1], double nums[i] and set nums[i+1] to 0; after processing, move all zeros to the end.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Simulation(#simulation)
 

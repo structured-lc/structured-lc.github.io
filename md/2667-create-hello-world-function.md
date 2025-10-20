@@ -69,6 +69,10 @@ This solution uses the **closure** pattern: a function returning another functio
 Here, the pattern is used in its simplest form—no environment is captured, but the interface allows for customization with minimal changes.  
 This is a **factory pattern** use-case, and it's commonly seen in decorators, callback generators, and event handler setups.
 
+
+### Flashcard
+Return a function that ignores all arguments and always returns "Hello World".
+
 ### Tags
 
 ### Similar Problems

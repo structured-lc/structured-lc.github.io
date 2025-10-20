@@ -98,6 +98,10 @@ def smallestBeautifulString(s: str, k: int) -> str:
 ### Summary
 This problem is a classic **greedy construction** with backtracking for string generation under adjacency constraints. By incrementing and greedily filling each position respecting forbidden local patterns, we efficiently find the minimal valid next string. The pattern used here appears in lexicographical string generation with local no-repeat/adjacency constraints, and also relates to problems in de Bruijn sequences or combinatorial generation with forbidden substrings.
 
+
+### Flashcard
+Increment the rightmost valid character in s while ensuring no palindromes of length 2 or 3, backtracking when necessary and filling remaining positions with the smallest valid character.
+
 ### Tags
 String(#string), Greedy(#greedy)
 

@@ -85,6 +85,10 @@ def findMaxLength(nums):
 This problem uses a classic **prefix sum / hashmap** pattern, where element values are re-mapped (0→−1) to exploit balancing as prefix sum recurrence.  
 This trick is found in many balance/equalization subarray problems: subarray sum = K, longest well-performing interval, etc., where *prefix sum and first-occurrence hashmap* allow us to quickly identify intervals with special count properties.
 
+
+### Flashcard
+Replace 0 with -1, track prefix sums and their earliest indices; the longest subarray with equal 0s and 1s has the same prefix sum at two indices.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
 

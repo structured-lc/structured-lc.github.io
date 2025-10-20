@@ -83,6 +83,10 @@ def numberOfArithmeticSlices(nums):
 This uses the "count while running" dynamic programming pattern. Instead of recalculating for every possible subarray, we observe that every new valid element can extend previous arithmetic slices, and we accumulate the counts.  
 This pattern shows up in sequence/difference-based array DP (like counting subarrays with a property) and can generalize to other contiguous pattern detection problems.
 
+
+### Flashcard
+Track count of arithmetic slices ending at current position using DP—if current difference matches previous, extend count; each extension adds all previous slices plus new 3-element slice.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window)
 

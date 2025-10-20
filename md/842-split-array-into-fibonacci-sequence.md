@@ -103,6 +103,10 @@ def splitIntoFibonacci(num: str):
 ### Summary
 This problem uses the classic **backtracking** and **DFS with pruning** pattern: try and build a solution incrementally, revert when impossible, and use ruling-out constraints to minimize useless computation. Similar approaches are needed for permutation, combination, subsequence, and partitioning problems in strings and arrays. Backtracking solutions also naturally handle variants and constraints that arise in related interview problems.
 
+
+### Flashcard
+Try all splits for first two numbers, then backtrack to build Fibonacci sequence; if sequence uses all digits and length ≥ 3, return it.
+
 ### Tags
 String(#string), Backtracking(#backtracking)
 

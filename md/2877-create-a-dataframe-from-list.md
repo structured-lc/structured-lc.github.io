@@ -83,6 +83,10 @@ def createDataframe(student_data):
 ### Summary
 This problem demonstrates **basic data transformation using pandas**, a standard data analysis pattern. The approach uses direct DataFrame construction from a 2D list—a common technique for loading structured data. Such patterns are very applicable to scenarios like CSV ingest, data cleansing, and analytics pipelines, and highlight the importance of knowing how to bridge between raw data formats and structured representations.
 
+
+### Flashcard
+Use pandas.DataFrame constructor to convert a 2D list directly into a DataFrame, preserving row order and column labels.
+
 ### Tags
 
 ### Similar Problems

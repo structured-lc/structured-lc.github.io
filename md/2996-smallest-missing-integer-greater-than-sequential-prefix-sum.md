@@ -94,6 +94,10 @@ This question is an example of using **prefix scanning** and a **hash set for mi
 It makes use of the **greedy** technique (longest valid prefix) and **set lookups** (hash-based existence check).  
 This pattern appears in array manipulation and simulation problems, especially where you need to "fast forward" to the smallest integer not represented in a set of encountered numbers.
 
+
+### Flashcard
+Find the longest sequential prefix (each element = previous + 1) and compute its sum. Build a set of all array elements. Starting from prefix_sum, increment until finding the first integer not in the set.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting)
 

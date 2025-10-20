@@ -116,6 +116,10 @@ def minCostToSupplyWater(n, wells, pipes):
 ### Summary
 This problem models as a **minimum spanning tree (MST)** problem with a virtual source node. We use **Kruskal’s algorithm** (or Prim’s) and **union-find** for efficient connection and cycle detection. The reduction of construction/connection problems to MST is a common pattern and frequently appears in infrastructure, clustering, and network design problems.
 
+
+### Flashcard
+Model as a graph with a virtual node for wells; use Kruskal’s or Prim’s algorithm to find the minimum spanning tree connecting all houses and the water source.
+
 ### Tags
 Union Find(#union-find), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Minimum Spanning Tree(#minimum-spanning-tree)
 

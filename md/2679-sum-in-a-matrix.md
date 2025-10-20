@@ -97,6 +97,10 @@ def matrixSum(nums):
 ### Summary
 This problem is a classic example of **greedy algorithm** and **matrix manipulation**, specifically sorting rows to facilitate column-wise max picking. Sorting each row lets you always access the largest available values efficiently. This type of column-wise aggregation after row operations is common in problems involving simultaneous row/column operations, and the transposition idea can be applied in problems like "matrix diagonal sums," "pick from ends," or where order-independent selections are scored per operation.
 
+
+### Flashcard
+Sort each row in descending order, then for n rounds pick the first element from each row (the current max), sum their maximum across rows, remove those elements, and accumulate scores.
+
 ### Tags
 Array(#array), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Simulation(#simulation)
 

@@ -91,6 +91,10 @@ def isRobotBounded(instructions: str) -> bool:
 ### Summary
 This problem is a simulation + geometry cycle detection question. The key insight is that **robot orientation** and **position** after one cycle determine boundedness; you don’t actually need to run infinite cycles. This “directional state trick” is a common technique in robot simulation/grid traversal and can be applied to movement/cycle/bound problems in grids, mazes, and agent navigation.
 
+
+### Flashcard
+Simulate one cycle; robot is bounded if it returns to origin or is not facing north after one cycle.
+
 ### Tags
 Math(#math), String(#string), Simulation(#simulation)
 

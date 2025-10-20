@@ -124,6 +124,10 @@ def minimumTeachings(n, languages, friendships):
 ### Summary
 This problem is a strong example of **greedy covering**: select the language that maximizes overlap with the group in need, and quantify the minimum extra coverage required. Patterns similar to "minimum covering set," "set cover," or "minimum dominating set" frequently occur in resource allocation, network communication, and teaching/learning problems.
 
+
+### Flashcard
+Find friendships needing communication bridge; for each language, count how many non-speakers exist in that set; teach language maximizing coverage.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Greedy(#greedy)
 

@@ -104,6 +104,10 @@ def putMarbles(weights, k):
 This problem is a great example of reducing an exponential split-search problem to an O(n log n) greedy + sorting solution, hinging on understanding how adjacent splits impact cost.  
 The coding technique—preprocessing with an array of pairwise features, followed by sorting and window sum—is a common and powerful pattern for max/min difference problems where cuts or partitions must be chosen strategically.
 
+
+### Flashcard
+For each split, bag cost is first + last element; to optimize, sort all possible split points and pick the top and bottom k−1 values.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

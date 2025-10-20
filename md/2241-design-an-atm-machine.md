@@ -96,6 +96,10 @@ class ATM:
 ### Summary
 This problem is a classic greedy simulation: for each withdrawal, maximize the use of large denominations, greedy style. The ATM is modeled as a simple fixed-length array. This pattern—greedily taking the largest at each step—shows up in coin change, scheduling, and other resource allocation problems with hierarchical resources.
 
+
+### Flashcard
+Track banknote counts; withdraw greedily from largest to smallest denomination.
+
 ### Tags
 Array(#array), Greedy(#greedy), Design(#design)
 

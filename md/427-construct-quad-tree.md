@@ -142,6 +142,10 @@ def constructOptimized(grid):
 ### Summary
 This problem demonstrates the divide-and-conquer paradigm for building hierarchical data structures. The QuadTree efficiently represents spatial data by subdividing regions until they become uniform. This pattern is widely used in computer graphics, image compression, collision detection, and geographic information systems where spatial partitioning provides significant performance benefits.
 
+
+### Flashcard
+Divide grid into quadrants recursively; create leaf if uniform, else split and recurse on each quadrant.
+
 ### Tags
 Array(#array), Divide and Conquer(#divide-and-conquer), Tree(#tree), Matrix(#matrix)
 

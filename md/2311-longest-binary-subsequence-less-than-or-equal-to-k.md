@@ -97,6 +97,10 @@ This problem illustrates the **greedy** and **bit manipulation** patterns: alway
 It's a classic example of making locally optimal (greedy) choices to produce a globally optimal subsequence subject to a numeric constraint.  
 This approach applies to other settings, such as selecting digits for maximum/minimum number under a base or value restriction.
 
+
+### Flashcard
+Maximize subsequence length by taking all '0's and as many '1's as possible without exceeding k when interpreted as binary.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Memoization(#memoization)
 

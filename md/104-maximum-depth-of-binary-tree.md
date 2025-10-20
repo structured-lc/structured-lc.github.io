@@ -98,6 +98,10 @@ def maxDepth(root):
 ### Summary
 This problem is a classic use of the **recursive DFS/post-order traversal pattern** for trees. It demonstrates how to aggregate results up from child nodes to their parent, and consolidates the template for measuring tree depth or height. This approach is broadly useful for any "depth-like" tree calculations and can easily adapt to finding properties like tree diameter, balance, or longest path.
 
+
+### Flashcard
+Recursively return 1 + max(left_depth, right_depth) for each node, with base case returning 0 for null nodes.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

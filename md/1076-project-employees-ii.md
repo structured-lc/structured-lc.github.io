@@ -139,6 +139,10 @@ WHERE rk = 1;
 This problem is a classic **SQL aggregation** pattern—GROUP BY and aggregate (COUNT), then filtering using HAVING or a window function for max.  
 This technique is broadly applicable for finding “most popular, highest count, most frequent” rows per group in data analysis, dashboards, and reporting tasks.
 
+
+### Flashcard
+GROUP BY project_id with COUNT(employee_id), then filter using HAVING to find project(s) with maximum employee count.
+
 ### Tags
 Database(#database)
 

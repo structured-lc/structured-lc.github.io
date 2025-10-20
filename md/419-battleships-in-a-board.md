@@ -97,6 +97,10 @@ def countBattleships(board):
 ### Summary
 This is a **single-pass counting** pattern — visit each cell, and use local rules to identify features (start of a battleship) without global state or backtracking. It's a variant of "connected components" counting, but because of the non-touching guarantee, it avoids recursion/DFS entirely. This pattern is useful in grid processing when local relationships can uniquely identify larger structures — for example: mine detection, island counting (with separation rule), or text region detection in OCR.
 
+
+### Flashcard
+Count ships by only incrementing when encountering 'X' that has no 'X' directly above or to its left—this marks the top-left corner of each ship without extra space.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Matrix(#matrix)
 

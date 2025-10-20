@@ -75,6 +75,10 @@ def minCost(n, cuts):
 ### Summary
 This is a classic **interval DP** problem. The optimal substructure comes from minimizing on every possible first-cut in each segment interval, similar to matrix chain multiplication. Pattern is highly reusable for other interval partitioning problems.
 
+
+### Flashcard
+Use dynamic programming to calculate the minimum cost of cutting a stick by considering all possible cuts.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
 

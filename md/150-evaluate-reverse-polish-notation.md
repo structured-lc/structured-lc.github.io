@@ -92,6 +92,10 @@ def evalRPN(tokens):
 ### Summary
 The problem leverages the **stack** pattern, processing tokens left-to-right and evaluating on-the-fly. This is a classic example of stack applications, useful for evaluating postfix, prefix, or even infix expressions (with more work). Recognizing pattern-matching and stack-based processing is essential for many interview problems (like tree traversals, parenthesis matching, and interpreters).
 
+
+### Flashcard
+Use a stack to process tokens left-to-right; push numbers, pop two for each operator, compute, and push the result back—final stack value is the answer.
+
 ### Tags
 Array(#array), Math(#math), Stack(#stack)
 

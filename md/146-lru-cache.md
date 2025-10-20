@@ -150,6 +150,10 @@ This problem demonstrates the **Hash Map + Doubly Linked List** pattern, a class
 It's a common design used in memory caches, browser history, and session management—anywhere LRU eviction is beneficial.  
 Being able to design LRU structures efficiently is a must-have for system design and interviews targeting scalable, high-performance code.
 
+
+### Flashcard
+Use a doubly linked list for usage order and a hash map for O(1) access; move accessed keys to the front and evict least recently used.
+
 ### Tags
 Hash Table(#hash-table), Linked List(#linked-list), Design(#design), Doubly-Linked List(#doubly-linked-list)
 

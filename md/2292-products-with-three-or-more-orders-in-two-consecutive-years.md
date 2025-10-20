@@ -164,6 +164,10 @@ def productsWithThreeOrMoreOrdersInTwoConsecutiveYears(orders):
 ### Summary
 This problem uses the very common “group by key, filter by count, and window over time” pattern. It relies on grouping and then sequential scan for adjacency (consecutive years). This coding approach is applicable anywhere you need to check for thresholds per group in time-series or sequence data, such as user activity, sensor logs, or sales periods. Pattern also generalizes to “find windows of length k” or “find repeated events over periods.”
 
+
+### Flashcard
+For each product, find years with ≥3 orders, then check if any two such years are consecutive.
+
 ### Tags
 Database(#database)
 

@@ -129,6 +129,10 @@ This is a **standard DFS / recursive tree manipulation pattern** that leverages 
 It’s highly reusable: similar logic applies in problems about searching, validation, or selective tree modification when the tree has sorted (BST) characteristics.  
 The technique highlights how **recursive pruning** can shape data structures in-place with minimal overhead.
 
+
+### Flashcard
+Recursively trim BST; if node.val < low, return trimmed right subtree; if node.val > high, return trimmed left subtree; else trim both sides.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

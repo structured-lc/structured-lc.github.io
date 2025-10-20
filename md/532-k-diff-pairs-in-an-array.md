@@ -96,6 +96,10 @@ def findPairs(nums, k):
 ### Summary
 This problem is an application of the **hash set/hash map** pattern for fast unique pair lookups, related to the **Two Sum** problem. The approach efficiently counts unique pairs in O(n) time and is often used in problems involving unique value detection or recording element frequencies. The techniques here are widely applicable for problems requiring uniqueness constraints and difference calculations in arrays.
 
+
+### Flashcard
+For k > 0, use a set to find pairs (x, x+k); for k = 0, count duplicates—both cases avoid O(n²) brute-force.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
 

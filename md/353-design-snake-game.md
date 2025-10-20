@@ -183,6 +183,10 @@ class SnakeGame:
 ### Summary
 This approach combines two key data structures: a deque for the snake's body (to efficiently manage head/tail updates), and a set for O(1) collision checking. This is a classic simulation/design and queue+hashset pattern, frequently used in game design and similar search/grid traversal problems. The design is flexible and can extend to handle more complex rules, random food placement, or multiplayer games.
 
+
+### Flashcard
+Use a deque to track snake body positions and a set for O(1) collision checks; update head/tail on each move, and only grow when eating food.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Design(#design), Queue(#queue), Simulation(#simulation)
 

@@ -89,6 +89,10 @@ def longestPalindrome(s):
 
 This problem is a classic *hashmap counting / greedy* pattern—track frequencies, maximize paired usage, and optimize for a possible central character. It's a common template that applies to problems where element pairing, grouping, or symmetry is required, such as anagram or arrangement challenges.
 
+
+### Flashcard
+Count character frequencies; sum all even contributions (count/2 × 2) plus at most one odd character in center for maximum palindrome length.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Greedy(#greedy)
 

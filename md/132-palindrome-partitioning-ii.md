@@ -93,6 +93,10 @@ def minCut(s: str) -> int:
 Uses the **"Palindrome DP"** or "Minimum Cuts DP" pattern: precompute and reuse palindrome sub-results. Dynamic Programming is critical here for both checking substrings and propagating minimum cut results.  
 Patterns from this problem are widely reusable for toughest palindrome and substring splitting problems, including Leetcode 131, word breaks, and interval DP.
 
+
+### Flashcard
+Use DP to track minimum cuts; precompute palindrome substrings to avoid redundant checks, updating cuts as you iterate.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

@@ -169,6 +169,10 @@ def strongPasswordChecker(password: str) -> int:
 This problem leverages a **greedy algorithm** and careful case analysis, combining string scanning, sequence parsing, and length-focused optimizations.  
 The pattern—checking validations, then greedy edits—is widely applicable for “text correction” tasks and password/validation engines generally.
 
+
+### Flashcard
+Balance three constraints (length, missing types, repeating chars)—use deletions efficiently by prioritizing repeat groups where len%3==0 (deleting 1 breaks repeat and reduces length optimally).
+
 ### Tags
 String(#string), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
 

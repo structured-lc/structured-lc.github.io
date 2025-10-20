@@ -81,6 +81,10 @@ def countVowels(word: str) -> int:
 ### Summary
 This problem is a great example of **combinatorics plus string traversal**—the formula for substring presence of each character means you can count contributions in linear time, instead of brute-force substring enumeration. This approach—counting pattern contributions efficiently—is common in substring/suffix and window-based problems.
 
+
+### Flashcard
+Calculate vowel counts in substrings efficiently by considering each character's contribution.
+
 ### Tags
 Math(#math), String(#string), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
 

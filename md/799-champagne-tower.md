@@ -72,6 +72,10 @@ def champagneTower(poured: int, query_row: int, query_glass: int) -> float:
 ### Summary
 This is a **simulation and dynamic programming** problem — simulate flows row by row, carrying only the required data, using arrays for each row’s water content. The approach is efficient since the constraint is just 100 rows; for much larger pyramids, you’d optimize space further by only tracking current/next rows. The pattern shows up in problems with local overflow/propagation (like “water pouring”, “pascal’s triangle sum”, etc).
 
+
+### Flashcard
+Simulate pouring champagne row by row, splitting overflow equally to the two glasses below, until reaching the queried glass.
+
 ### Tags
 Dynamic Programming(#dynamic-programming)
 

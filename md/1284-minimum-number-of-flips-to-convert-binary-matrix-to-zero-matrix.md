@@ -93,6 +93,10 @@ def min_flips(mat):
 ### Summary
 This problem is a classic example of using BFS for shortest path in a state space. The pattern appears in grid puzzles and bitmask DP. For larger matrices, alternate strategies like algebraic methods or heuristics may be necessary.
 
+
+### Flashcard
+Model as a shortest path problem using BFS, where each flip operation is a state transition in a binary matrix represented as an integer bitmask.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

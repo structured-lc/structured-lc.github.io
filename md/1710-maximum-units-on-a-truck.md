@@ -79,6 +79,10 @@ This is the same scheme used for some knapsack-like problems where every box is 
 The key insight is sorting by value (units per box), which ensures optimality when each item is independently available in quantity.  
 This pattern appears in scheduling, container loading, inventory selection, and resource allocation problems.
 
+
+### Flashcard
+Sort box types by units per box descending; greedily take as many as possible from the highest unit type until truck is full.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

@@ -60,6 +60,10 @@ def sortByBits(arr):
 ### Summary
 This is a classic sorting problem using custom keys based on secondary criteria. The solution follows the "sort by mapped value" pattern, seen in problems needing custom, multi-stage sort logic.
 
+
+### Flashcard
+Sort numbers by (number of 1 bits, value) using bit counting (e.g., bin(x).count('1')) as primary key.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Sorting(#sorting), Counting(#counting)
 

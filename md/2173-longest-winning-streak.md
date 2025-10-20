@@ -145,6 +145,10 @@ This is a classical **group-by-and-scan** problem: process by key (player), sort
 Common in problems involving **longest consecutive runs**, **grouping and sorting**, and **window scanning** patterns.  
 Patterns here apply widely—to max subarray, sliding windows, and interval analysis in logs, time series, etc.
 
+
+### Flashcard
+For each player, sort matches by day, then find the longest consecutive win streak—requires sorting per player.
+
 ### Tags
 Database(#database)
 

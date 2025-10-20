@@ -119,6 +119,10 @@ This problem is a classic *post-order DFS* on trees, a pattern useful for many r
 The key is to propagate the "excess" of coins up the tree, accumulating the minimal move cost at each step.  
 Patterns like this arise when distributing or collecting resources or when local corrections need to be bubbled up through a tree.
 
+
+### Flashcard
+Use post-order DFS to compute coin excess/deficit at each node; total moves = sum of absolute excesses as coins are pushed up to the root.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

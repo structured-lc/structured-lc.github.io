@@ -99,6 +99,10 @@ def maxA(n: int) -> int:
 ### Summary
 We used **Dynamic Programming**: For each number of keystrokes, we computed the best result by considering all possible moments to start a copy-paste batch ("select-copy-paste" sequence), and compared this with simply pressing 'A'. This "optimal substructure" and reuse of smaller solutions make DP the standard approach for such "maximum output given sequence of operations" problems. The batching/copy-paste pattern here also appears in text editor automation, spreadsheet macros, and related optimization scenarios.
 
+
+### Flashcard
+For each keystroke, try all splits: press 'A' or start copy-paste sequence; use DP to maximize 'A's with given keystrokes.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming)
 

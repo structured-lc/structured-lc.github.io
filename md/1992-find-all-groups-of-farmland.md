@@ -97,6 +97,10 @@ def findFarmland(land):
 This uses the "connected components" and "rectangle detection" patterns, with a greedy scan tailored to the fact that every group is a distinct, non-overlapping rectangle.  
 The scan-and-mark pattern is common for grid traversal problems where groups are non-overlapping and well-structured, such as "number of islands" or "find rectangles in a binary matrix." This approach avoids recursion and extra data structures by leveraging problem constraints.
 
+
+### Flashcard
+For each unvisited '1', expand to bottom-right using DFS/BFS to mark the rectangle and record its coordinates.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

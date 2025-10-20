@@ -93,6 +93,10 @@ def matrixBlockSum(mat, k):
 ### Summary
 This problem uses the **2D prefix sum** (summed-area table) pattern, which is a typical approach for fast range-sum queries in matrices. It's highly efficient when multiple submatrix sums are needed, even if block sizes change. This technique appears in many other 2D problems, e.g., Range Sum 2D-Immutable, image processing, and subrectangle query problems.
 
+
+### Flashcard
+Build a 2D prefix sum matrix so any block sum can be computed in O(1); for each cell, use prefix sums to get its block sum efficiently.
+
 ### Tags
 Array(#array), Matrix(#matrix), Prefix Sum(#prefix-sum)
 

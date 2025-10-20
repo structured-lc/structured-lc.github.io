@@ -91,6 +91,10 @@ def minMoves2(nums):
 ### Summary
 This problem demonstrates the importance of understanding mathematical properties like the median minimizing absolute deviations. Unlike the first version of this problem, the ability to both increment and decrement elements makes the median the optimal target. This pattern appears in many optimization problems involving minimizing total distance or cost, such as facility location problems and data clustering. The key insight is recognizing when a problem reduces to finding the median.
 
+
+### Flashcard
+The minimum moves is the sum of absolute differences to the median, since the median minimizes total distance.
+
 ### Tags
 Array(#array), Math(#math), Sorting(#sorting)
 

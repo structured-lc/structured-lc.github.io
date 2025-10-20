@@ -86,6 +86,10 @@ This is a classic application of the **sorting** and **comparison** pattern.
 - If the range is small and known, **counting sort** provides linear-time optimization.  
 Pattern: "Sort and one-pass mismatch count" — frequently appears in array normalization, grading, or deviations-from-sorted-order interview problems.
 
+
+### Flashcard
+Compare the original heights array to its sorted version and count indices where values differ.
+
 ### Tags
 Array(#array), Sorting(#sorting), Counting Sort(#counting-sort)
 

@@ -97,6 +97,10 @@ class RecentCounter:
 ### Summary
 This problem is a classic use of the **queue** data structure and the *sliding window* pattern. By maintaining only relevant elements (within a time window), we achieve excellent efficiency. The approach of popping stale elements and keeping only valid candidates is broadly useful in rate limiting, time-based caches, moving averages, and more.
 
+
+### Flashcard
+Use a queue to store ping times; for each ping(t), enqueue t and dequeue all times < t−3000—queue size gives the count in [t−3000, t].
+
 ### Tags
 Design(#design), Queue(#queue), Data Stream(#data-stream)
 

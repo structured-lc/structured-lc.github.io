@@ -87,6 +87,10 @@ How would you handle this problem in a distributed environment where the array i
 ### Summary  
 The optimized approach exploits the independence of bit positions in numbers, counting the number of pairs with differing bits at each position and summing their contributions. This is a common pattern in bit manipulation problems, and similar approaches apply to problems involving binary features or pairwise differences in bitwise properties.
 
+
+### Flashcard
+For each bit position, count ones and zeros; total Hamming distance is sum of ones × zeros over all bit positions.
+
 ### Tags
 Array(#array), Math(#math), Bit Manipulation(#bit-manipulation)
 

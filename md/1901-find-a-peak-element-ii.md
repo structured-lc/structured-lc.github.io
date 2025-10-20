@@ -89,6 +89,10 @@ def findPeakGrid(mat):
 ### Summary
 The binary search in 2D applies a divide-and-conquer principle by examining a middle column (or row), finding its maximum, and recursing toward larger neighbors. This is an example of **two-dimensional peak finding**—an extension of binary search and a core paradigm in "advanced matrix problems." It works efficiently due to the guarantee that no two adjacent cells are equal, and can be adapted to similar structure-searching problems in grids.
 
+
+### Flashcard
+Binary search on rows (or columns), find the row max, compare with neighbors, and recurse toward the larger neighbor—peak is guaranteed in O(m log n) time.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Matrix(#matrix)
 

@@ -94,6 +94,10 @@ def findContentChildren(g, s):
 ### Summary
 This problem demonstrates the greedy algorithm pattern for optimization problems. The key insight is recognizing that giving the smallest sufficient cookie to each child (starting from least greedy) maximizes the total number of satisfied children. The sorting and two-pointer technique is a common pattern for matching problems where you want to pair elements optimally. This approach appears in many similar problems involving resource allocation and matching.
 
+
+### Flashcard
+Sort greed factors and cookie sizes, then use two pointers to greedily assign the smallest sufficient cookie to each child.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting)
 

@@ -142,6 +142,10 @@ The pattern applies to any **versioned data**, such as:
 - Undo stacks  
 Core pattern: Use list to store timestamped values for each key (since they are monotonic), then binary search to get efficient queries for largest value ≤ timestamp.
 
+
+### Flashcard
+Store (timestamp, value) pairs for each key; use binary search on timestamps for O(log n) retrieval of latest value ≤ given time.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Binary Search(#binary-search), Design(#design)
 

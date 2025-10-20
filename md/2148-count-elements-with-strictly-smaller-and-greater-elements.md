@@ -81,6 +81,10 @@ def countElements(nums):
 ### Summary
 This problem is a classic example of **single-pass min/max searching** and **counting elements in a range**, a common coding interview pattern. It's efficient and doesn’t require sorting, and the core logic applies to many problems involving finding values between extremes or counting non-boundary elements in arrays.
 
+
+### Flashcard
+Find min and max of array, then count elements strictly between them—only these satisfy having both smaller and greater elements.
+
 ### Tags
 Array(#array), Sorting(#sorting), Counting(#counting)
 

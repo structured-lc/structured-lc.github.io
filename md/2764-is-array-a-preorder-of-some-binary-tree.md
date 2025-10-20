@@ -132,6 +132,10 @@ This problem uses the "Simulate the traversal + direct compare" pattern: constru
 It is a classic use of DFS and tree construction from parent arrays.  
 This pattern is broadly applicable in tree validation, reconstruction, serialization, and various traversal ordering checks in binary/k-ary trees.
 
+
+### Flashcard
+Build tree from parent relationships, perform DFS preorder traversal, and verify it matches the given node order.
+
 ### Tags
 Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

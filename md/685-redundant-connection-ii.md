@@ -125,6 +125,10 @@ def findRedundantDirectedConnection(edges):
 ### Summary
 This problem leverages the **Union-Find (Disjoint Set Union) pattern** combined with extra bookkeeping for nodes with two parents. The key insight is to classify the added edge’s impact as either creating a cycle, introducing a node with two parents, or both—and address each possibility directly. This type of DSU-based cycle and parent tracking is a common pattern for graph problems involving tree restoration or minimal re-connection, and is widely applicable in network validation and dependency resolution tasks.
 
+
+### Flashcard
+Detect nodes with two parents and cycles using Union-Find; remove the last problematic edge to restore the rooted tree property.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

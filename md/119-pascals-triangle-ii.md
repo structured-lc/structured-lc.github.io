@@ -84,6 +84,10 @@ def getRow(rowIndex):
 ### Summary
 This problem uses the **Dynamic Programming** and **in-place array update** pattern, efficiently constructing a specific row from a triangle defined by local rules. This approach can be applied to other triangle-structured DP problems—such as minimum paths, triangle sums, or combinatorial tables—where prior row values determine the next state.
 
+
+### Flashcard
+Optimize space to O(rowIndex) by updating a single array in-place from right to left, where each element becomes sum of itself and its left neighbor.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

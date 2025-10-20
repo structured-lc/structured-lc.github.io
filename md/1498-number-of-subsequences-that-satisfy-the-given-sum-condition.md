@@ -75,6 +75,10 @@ def numSubseq(nums, target):
 ### Summary
 Uses two-pointer and precompute power-of-2 patterns. Widely applicable to sliding window, counting subsets with constraints, range-based DP, and pruning combinations based on min/max or sum bounds.
 
+
+### Flashcard
+Sort nums, use two pointers (i,j); for each nums[i]+nums[j] ≤ target, count 2^(j−i) subsequences, move pointers accordingly, and sum results.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
 

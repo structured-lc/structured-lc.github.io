@@ -83,6 +83,10 @@ This is a brute-force digit manipulation problem that relies on checking all pos
 The main pattern is checking all values in a bounded range and applying digit manipulation, which is common in palindrome and reverse-number problems (e.g., sum of palindrome numbers, reverse-integer).  
 This logic applies anywhere you need to check the relationship between a number and its digit-reversed counterpart.
 
+
+### Flashcard
+Iterate k from 0 to num, compute reverse(k), check if k + reverse(k) equals num. Return true on first match.
+
 ### Tags
 Math(#math), Enumeration(#enumeration)
 

@@ -93,6 +93,10 @@ def search(nums, target):
 ### Summary
 This solution uses a **modified binary search** pattern to efficiently search a rotated sorted array in O(log n) time without extra space. The binary search logic adapts to identify which section of the array is sorted, making it a robust technique that generalizes to many array search problems with slight modifications (e.g., searching in rotated arrays with duplicates or finding rotation pivots). This is a frequently encountered pattern in array/search interview questions.
 
+
+### Flashcard
+Apply modified binary search: at each step, determine which half is sorted and narrow search based on target’s position relative to mid and boundaries.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

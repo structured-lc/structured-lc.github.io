@@ -123,6 +123,10 @@ def solve(board):
 ### Summary  
 The approach leverages **multi-source BFS/DFS** to efficiently explore regions from the border. This is a classic grid traversal/connectivity pattern, useful for problems about islands, connected components, and related concepts. The in-place marking step is a common trick for state tracking in modification problems on a grid.
 
+
+### Flashcard
+Mark all 'O's connected to the border using BFS/DFS; flip remaining 'O's to 'X' since only non-border-connected regions are surrounded.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
 

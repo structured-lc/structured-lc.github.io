@@ -96,6 +96,10 @@ def checkPossibility(nums):
 This is a classic **greedy** pattern, focused on single-pass violation detection and local repair to enforce a global property (non-decreasing).  
 It often appears in array adjustment, streaming validation, and competitive problem settings. The logic can also be adapted to **k-change** questions and sequence consistency checks.
 
+
+### Flashcard
+Scan for violations of non-decreasing order; if more than one, return false; if one, check if modifying nums[i] or nums[i+1] can fix it.
+
 ### Tags
 Array(#array)
 

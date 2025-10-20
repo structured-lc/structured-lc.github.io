@@ -123,6 +123,10 @@ class StringIterator:
 The problem leverages *iterative parsing with lazy evaluation*, processing only what’s needed for the next/hasNext interface. No decompression is done; only char/count pairs are tracked and decremented as we go.  
 The pattern is common in string iterator, stream, and generator problems, and can be adapted to custom iteration logic with memory efficiency.
 
+
+### Flashcard
+Parse the compressed string into (char, count) pairs and iterate by tracking current character and remaining count, avoiding full decompression.
+
 ### Tags
 Array(#array), String(#string), Design(#design), Iterator(#iterator)
 

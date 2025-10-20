@@ -77,6 +77,10 @@ def get_top_three_employees(employees, departments, salaries):
 ### Summary
 A classic SQL result ranking pattern—solve via **table joins** and sort/limit operations. In Python, mimicking this with hash maps and sort steps is common in interview settings.
 
+
+### Flashcard
+Join tables to get employee data, sort by salary, and select the top three employees.
+
 ### Tags
 Database(#database)
 

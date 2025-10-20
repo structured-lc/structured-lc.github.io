@@ -69,6 +69,10 @@ def group_the_people(groupSizes):
 ### Summary
 This utilizes the bucket-sort/group-by pattern, often used in grouping/partitioning problems. The technique is applicable anywhere you must allocate resources or assign entities based on pre-specified group constraints.
 
+
+### Flashcard
+Group indices by group size, then partition each group into slices of the required size to form the final groups.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Greedy(#greedy)
 

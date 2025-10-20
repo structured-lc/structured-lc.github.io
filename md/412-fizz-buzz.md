@@ -99,6 +99,10 @@ def fizzBuzz(n):
 ### Summary
 This problem uses the **simple iteration pattern** and basic **conditional checks**. It's a common interview screen for testing logic and corner case handling, and the pattern of replacing outputs conditionally is broadly useful (e.g., custom print jobs, dynamic string formatting). Clean order of condition evaluation is crucial to get all rules right.
 
+
+### Flashcard
+Iterate 1 to n checking divisibility—use if-elif chain testing 15 first (for "FizzBuzz"), then 3 ("Fizz"), then 5 ("Buzz"), else return number as string.
+
 ### Tags
 Math(#math), String(#string), Simulation(#simulation)
 

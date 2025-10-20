@@ -188,6 +188,10 @@ def flight_occupancy_and_waitlist(flights, passengers):
 This problem is a classic example of "group by and aggregate" logic, often found in *relational joins* or *hash maps* questions. The key technique is to count (aggregate by id) and compare against a constraint (capacity). This coding pattern is common in problems like "top N per group", "meeting room assignment", or any "booking with limited resources" scenario.  
 Knowledge of hash maps/dictionaries, counters, and aggregation is directly transferable to other resource allocation or interval problems.
 
+
+### Flashcard
+Count bookings per flight_id, then for each flight, booked_cnt = min(bookings, capacity), waitlist_cnt = max(0, bookings - capacity).
+
 ### Tags
 Database(#database)
 

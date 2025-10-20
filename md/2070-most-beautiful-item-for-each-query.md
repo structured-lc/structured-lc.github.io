@@ -123,6 +123,10 @@ The approach is "offline queries + prefix-max preprocessing":
 - Answer each query efficiently via binary search  
 This pattern—preprocessing sorted data for fast lookups and then using binary search—applies broadly (e.g., "maximum up to value", range queries, offline query problems). It’s a key pattern for time-efficient query answering, especially when the input is static.
 
+
+### Flashcard
+Precompute maximum beauty for each price to efficiently answer queries.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sorting(#sorting)
 

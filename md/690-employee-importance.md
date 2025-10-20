@@ -100,6 +100,10 @@ class Solution:
 ### Summary
 This problem is a classic example of hierarchical aggregation on a graph/tree using **DFS** (Depth-First Search). The use of a hashmap for quick lookups is a standard coding pattern when working with id-based object references. This approach generalizes well to organizational chart, tree sum, and transitive closure/aggregate in graphs where nodes refer to each other by id.
 
+
+### Flashcard
+Build id → Employee map for O(1) lookup; use DFS to sum importance for each employee and all subordinates recursively.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
 

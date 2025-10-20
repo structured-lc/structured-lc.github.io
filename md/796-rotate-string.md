@@ -71,6 +71,10 @@ Hint: Think about log file rotation, or data streams that wrap around a circular
 This problem teaches a common pattern: checking whether a string is a rotation of another by verifying if it is a substring of the concatenation of the original string with itself. This is efficient, readable, and avoids the need to generate all rotations explicitly.  
 This technique is useful in circular buffer checks, log rotation detection, and similar problems involving circular or periodic data structures.
 
+
+### Flashcard
+Check if goal is a substring of s+s and both strings are the same length.
+
 ### Tags
 String(#string), String Matching(#string-matching)
 

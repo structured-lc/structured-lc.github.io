@@ -113,6 +113,10 @@ def numSmallerByFrequency(queries, words):
 This problem uses the **counting + binary search** pattern—sort a precalculated set, then answer multiple queries efficiently. The decisive optimization: leverage the small maximum possible value of f(s) (since s has at most 10 letters), allowing sorting/bucket counting for fast lookups.  
 This pattern is common in problems involving frequency comparison and range queries, such as number-of-smaller-elements and histogram-based solutions.
 
+
+### Flashcard
+Precompute and sort f-values (smallest char frequency) for words; for each query, use binary search to count words with greater f-value.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Binary Search(#binary-search), Sorting(#sorting)
 

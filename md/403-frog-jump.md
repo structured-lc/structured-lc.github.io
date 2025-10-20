@@ -103,6 +103,10 @@ Patterns: DP with states, set tracking, hash map memoization.
 Related to word ladder, jump game II, and other constrained path-finding questions.  
 Common technique: decompose the problem statefully (stone + last jump), avoid revisiting identical subproblems, and prune impossible paths early.
 
+
+### Flashcard
+Use DP with memoization keyed by (stone position, last jump size), trying k-1, k, k+1 jumps from each stone to avoid exponential DFS branching.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

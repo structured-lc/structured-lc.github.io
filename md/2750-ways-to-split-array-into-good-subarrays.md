@@ -80,6 +80,10 @@ def numberOfGoodSubarraySplits(nums):
 ### Summary
 We leveraged the observation that the only freedom in splitting comes from zeros between consecutive ones, resulting in a counting pattern based on gaps. The product-of-choices approach for each pair of '1's is classic combinatorics (multiplication principle). This is a common "gap between elements" product pattern, often seen in interval and string splitting questions.
 
+
+### Flashcard
+Count ways to split between consecutive ones by multiplying the number of zeros plus one for each gap between them.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming)
 

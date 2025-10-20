@@ -162,6 +162,10 @@ def human_traffic_of_stadium(stadium):
 ### Summary
 This problem demonstrates a classic **sliding window / grouping** approach, using simple iteration and sequence tracking to find consecutive data subsequences. The pattern appears widely in log analysis, time-series chunking, and event grouping in both SQL and in-memory coding (Python, Java, etc). Understanding how to identify and group consecutive records with certain properties is very common in analytics and interviews.
 
+
+### Flashcard
+Find all sequences of ≥3 consecutive ids with people ≥ 100; output all rows in such sequences.
+
 ### Tags
 Database(#database)
 

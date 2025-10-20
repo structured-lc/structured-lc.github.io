@@ -108,6 +108,10 @@ def minimumCoins(prices):
 
 In this problem, we use **Dynamic Programming (DP)** to model the two choices at each fruit (buy or skip) and their impacts due to the "buy-one-get-many" offers. The state `dp[i]` captures the minimal coins from fruit i onward, and building backwards efficiently computes the result. This pattern applies to other problems with index-dependent skipping, buy-and-get-free, and segment DP decisions.
 
+
+### Flashcard
+Use dynamic programming to memoize the minimum coins needed to buy fruits, considering the free fruits after each purchase.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Queue(#queue), Heap (Priority Queue)(#heap-priority-queue), Monotonic Queue(#monotonic-queue)
 

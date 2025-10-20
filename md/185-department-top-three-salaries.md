@@ -186,6 +186,10 @@ for row in output:
 ### Summary
 This approach uses the classic "group by and rank within group" calculation pattern, commonly solved using window functions in SQL (DENSE_RANK), or grouping and set operations in Python/Pandas. It’s useful in scenarios with department/group leaderboards, top-K per group summaries, or any “top per category” aggregation pattern. This coding pattern applies to ranking, filtering, and summarizing per-group statistics efficiently.
 
+
+### Flashcard
+Use DENSE_RANK() partitioned by department to assign salary ranks, then select employees with rank ≤ 3.
+
 ### Tags
 Database(#database)
 

@@ -103,6 +103,10 @@ This problem uses **string masking to mark match intervals** and then scan once 
 - Merge/flatten those intervals.  
 - Output/aggregate over the original input using the marked locations.
 
+
+### Flashcard
+Mark bold intervals in s for all word matches, merge overlaps, and insert <b> tags in the final string accordingly.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Trie(#trie), String Matching(#string-matching)
 

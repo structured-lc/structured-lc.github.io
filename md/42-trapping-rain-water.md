@@ -100,6 +100,10 @@ def trap(height):
 ### Summary
 This problem uses the "**two-pointer/trapping rain water**" pattern, which often appears when you’re required to collect, compare, or merge data from both ends of a list. It’s a classic **sliding window/two-pointer** style, and frequently arises in array and histogram-related interview questions (e.g., container with most water, largest rectangle in histogram, etc.). The key is recognizing that the local minimum of the max heights on each side defines the water trapped.
 
+
+### Flashcard
+Precompute left_max and right_max for each index; water at i is min(left_max, right_max) − height[i], summed over all bars.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Dynamic Programming(#dynamic-programming), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

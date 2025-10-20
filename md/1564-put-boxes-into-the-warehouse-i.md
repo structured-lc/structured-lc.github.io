@@ -71,6 +71,10 @@ def maxBoxesInWarehouse(boxes, warehouse):
 ### Summary
 A greedy, sort-and-process pattern. Generating running minimums is common for window constraints, and greedy assignment of resources by size is useful in packing or scheduling problems.
 
+
+### Flashcard
+Precompute prefix minimum heights for warehouse; sort boxes ascending; greedily fit smallest boxes into rightmost valid positions using two pointers.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

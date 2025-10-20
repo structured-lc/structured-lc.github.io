@@ -74,6 +74,10 @@ def toHexspeak(num: str) -> str:
 ### Summary
 This problem is a direct string and digit mapping with rejection for invalid characters. It’s an example of string sanitization and encoding pattern that can be reused for validating and transforming inputs (encoding/decoding).
 
+
+### Flashcard
+Convert number to hex, replace '0'→'O', '1'→'I', error if any digit is '2'-'9'; return result or "ERROR".
+
 ### Tags
 Math(#math), String(#string)
 

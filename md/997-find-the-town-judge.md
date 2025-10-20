@@ -86,6 +86,10 @@ def findJudge(n, trust):
 ### Summary
 This problem uses the **graph in-degree/out-degree pattern** to find a node (person) with very specific incoming and outgoing relationships. The counting trick using +1 for being trusted and -1 for trusting others is a common pattern for problems like "celebrity" or "judge" identification in a group. It can be broadly applied to social network, voting, or recommendation problems where such graph properties matter.
 
+
+### Flashcard
+For each person, track trust count (+1 for trusted, −1 for trusting); the judge is trusted by n−1 and trusts no one.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Graph(#graph)
 

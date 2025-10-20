@@ -143,6 +143,10 @@ A key challenge is correctly mapping “snaking” board positions and handling 
 This pattern is common for board games, state-space puzzles, and problems involving moves or transitions with uniform cost.  
 BFS is ideal here as it finds the minimum moves by exploring all one-step-away positions first.
 
+
+### Flashcard
+Use BFS to model the board as a graph, mapping square numbers to (row, col), and find the shortest path from 1 to n².
+
 ### Tags
 Array(#array), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

@@ -96,6 +96,10 @@ def findStrobogrammatic(n):
 ### Summary
 This problem uses a **recursive backtracking** pattern, building a number from its outside inward, enforcing symmetry at every step. The recursive approach leverages properties of digit pairing and strict constraints, closely related to generating palindromes or mirrored numbers. This coding pattern is broadly applicable to any problem where symmetric or center-mirrored construction is required, such as palindromic strings or certain combinatorial generation scenarios.
 
+
+### Flashcard
+Recursively build strobogrammatic numbers by adding valid pairs to front and back; avoid leading zeros except for single-digit numbers.
+
 ### Tags
 Array(#array), String(#string), Recursion(#recursion)
 

@@ -101,6 +101,10 @@ def minSkips(dist, speed, hoursBefore):
 ### Summary
 We used a 2-dimensional dynamic programming approach (`dp[i][k]` or compressed to one array) tracking the minimal time to reach each segment with a given number of skips. This makes it a classic DP on stages and decisions, with applications in path scheduling and resource allocation where discrete jumps (rest) and continuous progress (skipping) are options. This pattern appears in production scheduling, minimal cost path problems, and other transport/resource-constrained optimizations.
 
+
+### Flashcard
+Use dynamic programming to track the minimum time after each road, considering skips.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

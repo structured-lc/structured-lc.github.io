@@ -80,6 +80,10 @@ def numberOfPoints(nums):
 The approach leverages a **boolean array to mark all covered points**, which is a common and efficient method for union-of-intervals queries when the range is small and bounded.  
 This is an example of the interval coverage/counting pattern, also found in line sweep, difference array, and interval union problems. It's a good practice problem for optimizing range processing when domain constraints allow you to use direct array manipulation.
 
+
+### Flashcard
+Use difference array or set over range [1,100]; mark intervals, count unique covered points—O(n) with small constant range.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
 

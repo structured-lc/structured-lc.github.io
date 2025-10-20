@@ -74,6 +74,10 @@ def sumOfSquares(nums):
 ### Summary
 This problem uses a simple single-pass traversal pattern with index-based filtering — a common pattern for selection and transformation in arrays. The approach cleanly demonstrates mapping between 0-based and 1-based indices and is widely applicable to problems based on divisibility, special indices, or in-place filtering.
 
+
+### Flashcard
+For each index i (1-based), if n % i == 0, add nums[i-1]² to the sum; iterate once for O(n) time.
+
 ### Tags
 Array(#array), Enumeration(#enumeration)
 

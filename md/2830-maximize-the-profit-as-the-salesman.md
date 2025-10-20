@@ -97,6 +97,10 @@ def maximizeTheProfit(n, offers):
 ### Summary
 This is a textbook "Weighted Interval Scheduling" DP with profits, used when picking a subset of non-overlapping intervals for maximum value. The core idea combines sorting, DP, and binary search, and this pattern shows up in resource allocation, scheduling, and interval-packing problems. If you see "select non-overlapping offers for max value," think of this greedy + DP combo!
 
+
+### Flashcard
+Sort offers by end; use DP with binary search: dp[i] = max(dp[i–1], gold[i] + dp[last non-overlapping offer]).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
 

@@ -113,6 +113,10 @@ def maxSumOfThreeSubarrays(nums, k):
 This pattern is a classic optimization with *sliding window sum* and *precomputed prefix maxima/minima*, often seen in "maximum k subarray sum" problems.  
 Precomputing the "best candidate so far on the left/right" is a useful technique for problems needing lexicographically minimal answers and globally optimal triplets/quads. Variations appear in maximum subarrays, range query, and certain scheduling/interval selection problems.
 
+
+### Flashcard
+Precompute sums of all k-length subarrays; for each middle subarray, track best left/right subarrays using prefix arrays for O(n) solution.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

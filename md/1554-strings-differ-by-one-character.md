@@ -64,6 +64,10 @@ def differByOne(words):
 ### Summary
 Classic near-duplicate (single-edit distance-1) detection by masking/rolling hash. Generalizes to typo-detection or spell-check, similar to trie masking.
 
+
+### Flashcard
+For each character position i, mask all words by replacing character at i with wildcard; use set to detect duplicates—collision means two words differ only at position i.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Rolling Hash(#rolling-hash), Hash Function(#hash-function)
 

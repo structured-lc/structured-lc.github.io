@@ -80,6 +80,10 @@ def findMiddleIndex(nums):
 ### Summary
 This problem demonstrates the **prefix sum pattern** to achieve an efficient linear solution. Instead of recomputing sums for every index (brute-force), we use running totals to track "left sum" and derive "right sum" without extra arrays. This is a classic trick used in **pivot index**, **balanced partition**, and similar array problems.
 
+
+### Flashcard
+Use prefix sums to track left_sum as you iterate; the middle index is where left_sum equals total − left_sum − nums[i].
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

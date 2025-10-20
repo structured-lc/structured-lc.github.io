@@ -87,6 +87,10 @@ def maximumNumber(num: str, change: list[int]) -> str:
 ### Summary
 This is a **greedy single-pass substring mutation** problem, with a direct scan and maximal contiguous block approach. The "one-shot contiguous maximize" greedy methodology is standard for substring mutation/flip/intervention problems, and can be adapted to bit flipping and other one-block transform settings. The main pattern is **greedy left-to-right expansion based on partial gain, stop on first drop**.
 
+
+### Flashcard
+Greedily mutate the leftmost substring where change[d] > d, stopping at the first decrease.
+
 ### Tags
 Array(#array), String(#string), Greedy(#greedy)
 

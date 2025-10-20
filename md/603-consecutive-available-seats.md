@@ -119,6 +119,10 @@ def has_k_consecutive_available_seats(seats, k):
 ### Summary
 This problem uses the *sliding window / counting consecutive elements* pattern, leveraging a single traversal and a counter for efficiency. It's a classic pattern in substring, subarray, or "find k-in-a-row" detection, and can be applied in seating, parking, scheduling, and other resource allocation scenarios where blocks of consecutive states are key.
 
+
+### Flashcard
+Use SQL self-join to find all pairs of consecutive seats where both are free (free = 1) and seat_id values differ by 1.
+
 ### Tags
 Database(#database)
 

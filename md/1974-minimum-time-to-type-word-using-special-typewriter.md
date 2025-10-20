@@ -102,6 +102,10 @@ This problem is a **greedy pattern** around minimal incremental cost between cir
 It can be applied to ring-like data structures, minimum-walk on modulus/jump operations, and scenarios where cyclic distance (wrapping around) must be measured.  
 No advanced data structures are needed; the solution is optimized and purely arithmetic.
 
+
+### Flashcard
+For each letter, compute min(clockwise_distance, 26 - clockwise_distance) from current pointer position, add 1 second for typing; sum all movements plus n typings.
+
 ### Tags
 String(#string), Greedy(#greedy)
 

@@ -98,6 +98,10 @@ The core insight is recognizing **Partition Equal Subset Sum** as a Subset Sum (
 
 Recognizing problem reduction to subset sum and exploiting target-oriented state DP is a key dynamic programming tactic.
 
+
+### Flashcard
+Check if total sum is even, then use 1D DP array where dp[i] indicates if subset summing to i exists—update backwards to avoid using same element twice.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

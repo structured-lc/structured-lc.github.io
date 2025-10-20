@@ -83,6 +83,10 @@ def rowAndMaximumOnes(mat):
 ### Summary
 This problem demonstrates the **matrix row scanning pattern**, commonly found in array and matrix problems requiring global or row-level aggregation and comparisons. The logic—count and compare per row—applies to classic data processing, as well as variations involving sorted rows, streaming large data, or needing ties resolved by index. This pattern frequently appears in matrix/2D array interview questions.
 
+
+### Flashcard
+Identify the row with the most ones in a binary matrix by iterating through rows and counting ones.
+
 ### Tags
 Array(#array), Matrix(#matrix)
 

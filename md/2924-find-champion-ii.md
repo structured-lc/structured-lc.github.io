@@ -82,6 +82,10 @@ def findChampion(n, edges):
 ### Summary
 This is a classic **indegree counting** problem in a directed graph context. The main technique is to identify a unique "root" (in-degree 0), used in other settings like finding the source of a DAG, topological sort, and tournament/competition winner analysis. This pattern is broadly applicable in graph problems involving hierarchies, dependencies, or tournament eliminations.
 
+
+### Flashcard
+Find the node with zero incoming edges in the graph (never defeated); if unique, that’s the champion.
+
 ### Tags
 Graph(#graph)
 

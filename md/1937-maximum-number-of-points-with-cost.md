@@ -118,6 +118,10 @@ def maxPoints(points):
 We solved the problem using a **dynamic programming** approach with **row-wise rolling state**, and used the property of the cost function (|c₁ - c₂|) to enable two passes per row (left-to-right and right-to-left), reducing the time complexity to O(m × n) and space to O(n).  
 This is a classic pattern for "row-to-row DP with distance penalty," and similar methods appear in matrix games, optimal path with movement penalties, and 1D-to-1D DP with absolute difference costs.
 
+
+### Flashcard
+Use dynamic programming per row, tracking max points minus column movement cost from previous row.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

@@ -91,6 +91,10 @@ def buyChoco(prices, money):
 We use a **greedy two-pointer/min-heap**-like approach by first sorting prices and considering only the sum of the two cheapest (guaranteed minimal cost). Sorting ensures correctness in O(n log n) time, and the coding pattern is typical for "pick k smallest/largest" themed problems.  
 This "pick-two-smallest after sort" technique is broadly applicable for any "combine k items for minimal/maximal sum" variation. For tightest efficiency, we could do it in O(n) by linearly finding the two lowest prices instead of sorting.
 
+
+### Flashcard
+Sort prices and, if you can afford the two cheapest chocolates, subtract their sum from money; otherwise, return money.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

@@ -127,6 +127,10 @@ class SnapshotArray:
 ### Summary
 This problem uses the *sparse change recording* design pattern, where only modifications are logged, not entire snapshots. It's a variation of persistent data structures, with per-index histories and binary search for retrieval. This approach saves memory and is efficient for time-travel queries, and is widely applicable in persistent editors, versioned databases, and undo-redo implementations.
 
+
+### Flashcard
+For each index, store (snap_id, value) pairs; on get(index, snap_id), binary search for latest value ≤ snap_id.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Design(#design)
 

@@ -77,6 +77,10 @@ def isRectangleOverlap(rec1, rec2):
 ### Summary
 This is a classic **geometry/interval overlap** pattern problem, often asked to test understanding of axis-aligned bounding boxes and edge/corner cases. The approach is pure logic with primitive operations, and generalizes to other shapes (lines, boxes) for bounding box collision detection, a common pattern in computer graphics and game design.
 
+
+### Flashcard
+Rectangles overlap if left < right and bottom < top for their intersection; otherwise, they do not overlap.
+
 ### Tags
 Math(#math), Geometry(#geometry)
 

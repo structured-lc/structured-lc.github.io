@@ -96,6 +96,10 @@ def pushDominoes(dominoes: str) -> str:
 ### Summary
 This problem uses a **two-pointer and segment update pattern**. It avoids brute-force simulation by recording the last seen pushes and resolving stretches in a single scan. This efficient “fall toward each other” logic appears in other string transform, propagation, and spread problems. The technique is useful anywhere “nearest influence” is the main factor, and especially in 1-D chain reaction or propagation scenarios.
 
+
+### Flashcard
+For each domino, compute distance to nearest 'L' and 'R' by scanning left-to-right and right-to-left; set state based on which is closer.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming)
 

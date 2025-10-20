@@ -112,6 +112,10 @@ This problem is a classic application of **longest path in a DAG** using **topol
 It uses a common pattern for scheduling tasks with prerequisites and optimizing resource allocation.  
 Similar techniques are applied in "Course Schedule", "Project Scheduling", and "Critical Path Method" (CPM) problems.
 
+
+### Flashcard
+Use topological sorting to find the minimum time to complete all courses, considering each course's duration and prerequisites. The completion time of a course is its own duration plus the maximum completion time of its prerequisites.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Graph(#graph), Topological Sort(#topological-sort)
 

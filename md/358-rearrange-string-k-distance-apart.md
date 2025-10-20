@@ -105,6 +105,10 @@ def rearrangeString(s, k):
 This problem uses the **Greedy with Heap/Queue** pattern for scheduling under separation constraints.  
 It is a variant of interval (cooldown) task scheduling, rebalancing, or the "Least Recently Used" discipline, often seen in job/task schedulers, exam proctoring, or any scenario with "separation" and "frequency" constraints.
 
+
+### Flashcard
+Use a max-heap to always pick the most frequent available character, placing used chars in a cooldown queue of size k for valid spacing.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Counting(#counting)
 

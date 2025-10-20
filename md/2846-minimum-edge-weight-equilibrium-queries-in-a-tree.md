@@ -148,6 +148,10 @@ This problem uses classic **tree LCA (Lowest Common Ancestor)** and **root-to-no
 It's a template for many path query problems on trees (count, max, freq, xor, etc), especially when the query is “path a–b” and preprocessing is allowed.  
 Key patterns: **DFS tree preprocessing, binary lifting, prefix sum/freq arrays, LCA query.**
 
+
+### Flashcard
+LCA with binary lifting plus frequency array per node for each weight; query path = combine frequencies from a to LCA and b to LCA; answer = path_length – max_frequency.
+
 ### Tags
 Array(#array), Tree(#tree), Graph(#graph), Strongly Connected Component(#strongly-connected-component)
 

@@ -64,6 +64,10 @@ def hopperCompanyQueries(arr, queries):
 ### Summary
 Counting greater-right queries is a classic use of segment trees, BITs, or Mo's algorithm for optimizing range queries. The brute solution is clear but slow; ask about more efficient data structures for interviews.
 
+
+### Flashcard
+Optimize range queries using segment trees or Binary Indexed Trees.
+
 ### Tags
 Database(#database)
 

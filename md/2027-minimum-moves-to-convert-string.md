@@ -81,6 +81,10 @@ def minimumMoves(s: str) -> int:
 ### Summary
 This is a classic example of the **greedy walking pointer pattern**: sweep left-to-right, making optimal local decisions at each step ("flip when needed, then skip ahead"). This technique often appears in problems involving fixed-size operations (like k-group flips in arrays or strings) and can be adapted to sliding window scenarios when the operation is more flexible.
 
+
+### Flashcard
+Greedily flip every 'X' and skip next two positions—each move covers three consecutive characters, so scan left to right and flip as needed.
+
 ### Tags
 String(#string), Greedy(#greedy)
 

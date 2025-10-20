@@ -60,6 +60,10 @@ def threeConsecutiveOdds(arr):
 ### Summary
 A quick application of the **sliding window** pattern. Can generalize this to k consecutive properties, number of windows, or outputting indices.
 
+
+### Flashcard
+Check three consecutive elements for oddness using sliding window; return True on first match, else False after full scan.
+
 ### Tags
 Array(#array)
 

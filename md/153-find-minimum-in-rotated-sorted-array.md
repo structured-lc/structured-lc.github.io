@@ -94,6 +94,10 @@ def findMin(nums):
 - The key insight is that one half of the array is always sorted, and binary search efficiently eliminates half the array each step.
 - The same approach is useful for searching for elements in rotated arrays and handling a variety of sorted/rotated array problems.
 
+
+### Flashcard
+Use binary search; compare nums[mid] to nums[high] to decide which half contains the minimum in O(log n) time.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

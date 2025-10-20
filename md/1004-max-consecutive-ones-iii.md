@@ -92,6 +92,10 @@ def longestOnes(nums, k):
 ### Summary
 This problem is a classic example of the **sliding window** (two pointer) technique. It teaches how to optimize from an inefficient brute-force to a linear solution by maintaining a dynamic window with an invariant (at most k zeros). This pattern is also widely used in problems involving subarrays or substrings with constraints, like "Longest Substring with At Most K Distinct Characters" or "Minimum Window Substring".
 
+
+### Flashcard
+Use sliding window with two pointers to maintain ≤k zeros; expand right, shrink left when zeros exceed k, and track max window length.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

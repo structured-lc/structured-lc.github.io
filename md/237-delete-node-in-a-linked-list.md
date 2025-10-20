@@ -101,6 +101,10 @@ def deleteNode(node):
 The approach leverages pointer and value overwriting to "delete" a node from a singly linked list **without access to the head** or previous node.  
 This is a classic linked list in-place update trick that comes up in interview scenarios where pointer manipulation is restricted. The coding pattern applies whenever you’re constrained from accessing previous nodes in **singly-linked structures**—useful in interview questions about node-level access and pointer operations.
 
+
+### Flashcard
+Copy value from next node into current, then delete next node by skipping it (node.next = node.next.next).
+
 ### Tags
 Linked List(#linked-list)
 

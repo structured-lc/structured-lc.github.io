@@ -105,6 +105,10 @@ def subarraySum(nums, k):
 This problem uses the **Prefix Sum + Hashmap** sliding window pattern to count subarrays with a specific sum in O(n) time. It's a very standard, highly reusable pattern, especially when dealing with subarrays and required sums.  
 Similar techniques are broadly used in: finding longest/shortest subarray with target sum, zero sum subarrays, and even for multidimensional matrix problems.
 
+
+### Flashcard
+Use a hash map to store prefix sums and their counts; for each prefix sum, increment answer by the count of (current sum - k).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
 

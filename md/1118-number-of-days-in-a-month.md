@@ -79,6 +79,10 @@ This problem relies on *array lookup* and a simple *conditional check* for leap 
 The leap year rules or similar lookup-table patterns are common in date manipulation and calendar calculation problems.  
 This type of approach generalizes to scenarios where a fixed mapping exists with a handful of exceptions handled by business logic.
 
+
+### Flashcard
+Store days per month in array; for February check leap year (divisible by 4 AND (not by 100 OR by 400)).
+
 ### Tags
 Math(#math)
 

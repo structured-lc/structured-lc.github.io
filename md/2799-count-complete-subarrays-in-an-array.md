@@ -101,6 +101,10 @@ The core pattern here is **sliding window with hash tables** to count the number
 This algorithm is a classic example of subarray counting with unique element constraints and can be applied to many problems about at most/exactly K distinct values in subarrays or substrings (substring with K unique chars, shortest complete window, etc).  
 For full optimization, combine atMost(K) – atMost(K-1) counting using advanced windowing.
 
+
+### Flashcard
+Use a sliding window to count subarrays with exactly K distinct elements, where K is the number of unique elements in nums.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
 

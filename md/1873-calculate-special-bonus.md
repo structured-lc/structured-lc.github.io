@@ -128,6 +128,10 @@ def calculateSpecialBonus(employees):
 A straightforward filtering problem using condition checking per record. The design pattern here is: **scan and filter**, which is common in both algorithms and SQL.  
 This pattern applies widely: fraud detection, scoring systems, or any rules-based row evaluation.
 
+
+### Flashcard
+Iterate through employees to calculate special bonuses based on ID and name conditions.
+
 ### Tags
 Database(#database)
 

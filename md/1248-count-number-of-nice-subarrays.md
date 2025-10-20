@@ -64,6 +64,10 @@ def numberOfSubarrays(nums, k):
 ### Summary
 This is a prefix sums with hashmap pattern, common in subarray sum/count problems. The key: mapping running counts and seeing how many times prior runs would have supported the current window.
 
+
+### Flashcard
+Use prefix sum and hashmap to count subarrays where the number of odds so far minus k has been seen before.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

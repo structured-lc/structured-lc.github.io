@@ -103,6 +103,10 @@ def corpFlightBookings(bookings, n):
 This problem uses the prefix sum and difference array pattern for efficient range updates, avoiding a brute-force approach. It's a classic example of optimizing repeated range modifications, commonly useful in range update and interval sum query scenarios.  
 Similar logic often shows up in ray sweep, interval covering, and array manipulation problems.
 
+
+### Flashcard
+Use difference array: increment at booking start, decrement after booking end, then compute prefix sum for final seat counts.
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

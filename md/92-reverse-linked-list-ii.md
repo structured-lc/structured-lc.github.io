@@ -111,6 +111,10 @@ def reverseBetween(head, left, right):
 ### Summary
 This problem uses the **linked list reversal** pattern, especially “reverse a sublist in-place” with pointer manipulation. The dummy node trick is a standard way to handle head/tail edge cases in linked lists. Similar techniques are broadly useful for problems requiring sublist or groupwise operations, e.g., reversing nodes in k-groups, rotating lists, or swapping nodes in pairs.
 
+
+### Flashcard
+Use a dummy node and reverse the sublist in-place by iteratively moving nodes in the [left, right] range to the front of the sublist.
+
 ### Tags
 Linked List(#linked-list)
 

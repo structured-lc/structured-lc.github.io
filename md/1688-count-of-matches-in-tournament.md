@@ -58,6 +58,10 @@ def numberOfMatches(n: int) -> int:
 ### Summary
 The approach leverages the basic fact that each match removes a team, so (n-1) matches are needed to leave 1 champion. No simulation or extra data structure is needed. This is an example of the "count eliminations" arithmetic pattern, useful in many round-by-round reduction problems.
 
+
+### Flashcard
+Count of Matches in Tournament
+
 ### Tags
 Math(#math), Simulation(#simulation)
 

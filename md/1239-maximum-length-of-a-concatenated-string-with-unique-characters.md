@@ -106,6 +106,10 @@ def maxLength(arr):
 ### Summary  
 This problem uses a “backtracking with pruning” coding pattern, common in combinatorial search (e.g., subset/combination problems). Key optimizations: preprocess to filter bad inputs early, and use bitmasking for efficient character uniqueness checking. This approach applies wherever subsets/combinations must meet uniqueness or disjoint constraints (e.g., “Maximum length substring with unique chars”, “Disjoint sets problems”).
 
+
+### Flashcard
+Use backtracking to try all combinations, skipping strings with duplicate letters, and track max length with unique chars.
+
 ### Tags
 Array(#array), String(#string), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
 

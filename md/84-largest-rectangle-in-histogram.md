@@ -71,6 +71,10 @@ def largestRectangleArea(heights):
 ### Summary
 This problem is a classic use case for the monotonic stack pattern, which efficiently helps with problems asking for the previous or next "smaller/greater" element. This approach is used in many interval, histogram, and sliding window problems (like “Maximal Rectangle” in a binary 2D matrix). The stack preprocesses left/right bounds for each element in one pass, reducing brute-force O(n²) to O(n).
 
+
+### Flashcard
+Use a stack to track indices of increasing bars; for each bar, pop from the stack and calculate area when a lower bar is found, ensuring O(n) time.
+
 ### Tags
 Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

@@ -109,6 +109,10 @@ This problem uses the classic "reverse, process, reverse" pattern to simulate a 
 Filtering nodes based on the maximum-to-right value comes up in various 'remove inferior elements' questions and is related to monotonic stack and reverse traversal techniques.  
 This is a great example of space-efficient data structure traversal and relinking, and the monotonic stack approach also applies to problems like Largest Rectangle in Histogram and Stock Span.
 
+
+### Flashcard
+Process list right-to-left, keeping track of current max; remove nodes with values less than max.
+
 ### Tags
 Linked List(#linked-list), Stack(#stack), Recursion(#recursion), Monotonic Stack(#monotonic-stack)
 

@@ -121,6 +121,10 @@ def maxPathSum(root):
 ### Summary
 This is a classic tree **DFS recursion with post-order traversal** problem, using an auxiliary variable to track a global optimum. The key logic is that *while calculating the local maximum at each node (could fork in both directions), you can only pick one direction to propagate upwards*. This pattern reappears in many "maximum path sum"-style problems for trees and graphs, and closely relates to DP on trees—often called "tree DP."
 
+
+### Flashcard
+Use post-order recursion where each node calculates max single-path gain to return upward, while updating global maximum by considering node as bridge between left and right paths.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

@@ -119,6 +119,10 @@ Pattern used: set filtering with precomputation.
 Common for SQL, analytics, and data-wrangling.  
 The set-based pattern is broadly applicable in problems needing "who *hasn’t* done X", "exclude who matches Y" scenarios.
 
+
+### Flashcard
+Select salespeople whose IDs do not appear in any order linked to a company named "RED" using NOT IN or anti-join.
+
 ### Tags
 Database(#database)
 

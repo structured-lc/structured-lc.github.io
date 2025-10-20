@@ -105,6 +105,10 @@ def minSpeedOnTime(dist, hour):
 ### Summary
 This problem is a classic **binary search on answer** scenario, where the solution space is monotonic—higher speeds lead to lower arrival times. It also uses simulational logic to convert real constraints into a check function for the binary search. This approach is common for "min/max feasible parameter" (e.g., minimum days/capacity/speed/effort) problems and is applicable in scheduling, rate-minimization, and allocation problems.
 
+
+### Flashcard
+Apply binary search to find the minimum speed required to arrive on time.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

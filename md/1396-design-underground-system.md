@@ -127,6 +127,10 @@ class UndergroundSystem:
 ### Summary
 The solution is a classic example of efficient **hashmap-based tracking** and real-time aggregation. Data is normalized on check-out, ensuring O(1) per operation with minimal storage per active trip and per station-pair. This “aggregate statistics on the fly using dicts” pattern is common for interval/aggregate interview problems, and applies to network metering, event streams, and similar scenarios.
 
+
+### Flashcard
+Track check-in/check-out times per user; for station pairs, store total time and count for O(1) average.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Design(#design)
 

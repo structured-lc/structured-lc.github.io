@@ -85,6 +85,10 @@ def stringShift(s, shift):
 This is a classic case of **reducing multiple sequential operations into a single equivalent operation** by algebraic simplification. The key insight is that left and right shifts can be consolidated using addition and modulo arithmetic.  
 The solution demonstrates an efficient way to process bulk operations by combining them and minimizing work, a technique commonly applied in array, string, and queue manipulation problems.
 
+
+### Flashcard
+Combine left and right shifts into a net shift, then apply it to the string.
+
 ### Tags
 Array(#array), Math(#math), String(#string)
 

@@ -102,6 +102,10 @@ It tests sequential, non-overlapping block matching in arrays.
 The main coding pattern here—searching for subarrays in a larger array with order and non-overlap constraints—appears in problems like "string segmentation," "find sequence," and "windowed matching."  
 It's a good template for array scanning and pointer management interview problems.
 
+
+### Flashcard
+Use two pointers to match groups in order within nums, ensuring groups are disjoint and in sequence.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), String Matching(#string-matching)
 

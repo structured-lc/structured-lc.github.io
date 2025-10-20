@@ -113,6 +113,10 @@ def totalMoney(n):
 ### Summary
 This problem uses the **arithmetic progression** formula to aggregate repeated patterns efficiently, converting a row-by-row simulation into closed-form O(1) math. Such series tricks are common in problems with regular increments or sequences and appear in other “total after N days” or “repeating cycle” sum problems. Recognizing the step pattern and reducing repeated computation is the key pattern here.
 
+
+### Flashcard
+Calculate full weeks with arithmetic series, then add partial week deposits—sum all for total savings.
+
 ### Tags
 Math(#math)
 

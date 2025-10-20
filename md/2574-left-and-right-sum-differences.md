@@ -88,6 +88,10 @@ def leftRightDifference(nums):
 ### Summary
 This problem is a classic application of the prefix sum pattern. Efficiently tracks cumulative totals from both ends, updating them in one pass and assembling the answer in-place. This approach is common in range sum/array transformation problems, such as calculating running sums or subarray differences. Recognizing opportunities for prefix/suffix summing is a valuable skill for array-based interview problems.
 
+
+### Flashcard
+Precompute prefix and suffix sums; for each index, answer is absolute difference between left and right sums.
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

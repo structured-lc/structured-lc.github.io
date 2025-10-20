@@ -99,6 +99,10 @@ class FileSharing:
 ### Summary
 This problem is a clean application of **resource pooling**, **ownership tracking**, and **efficient ID reuse using a min-heap**. The coding pattern matches those used for resource allocation and recycling IDs in large pool-based systems, and similar approaches appear in many distributed or multi-user systems (like seat booking, distributed file sharing, and game lobby management).
 
+
+### Flashcard
+Design a file-sharing system using a min-heap for reusable user IDs and a dictionary to track chunk ownership. Assign the smallest available ID when a user joins, and reuse IDs when users leave.
+
 ### Tags
 Hash Table(#hash-table), Design(#design), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Data Stream(#data-stream)
 

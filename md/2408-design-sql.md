@@ -130,6 +130,10 @@ class SQL:
 ### Summary
 This problem demonstrates **practical use of hash maps for ID-based row access** and auto-increment logic, a key design pattern for simulating in-memory table-like data stores. These ideas are core for problems requiring implements of databases, ID mapping, or fast indexed lookup. The dictionary-of-dictionaries pattern (with counters) can be generally applied in programming whenever you need fast key-mapped records with deletion and controlled incremented IDs.
 
+
+### Flashcard
+Design a SQL database using dictionaries to map table names to rows and track row IDs.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Design(#design)
 

@@ -93,6 +93,10 @@ def largestAltitude(gain):
 We used a *prefix sum* pattern, tracking the running sum and the maximum value reached.  
 This single-pass, constant-space approach is common in cumulative problems like stock trading, running totals, and subarray computations.
 
+
+### Flashcard
+Track running sum of gain array starting from 0; maintain maximum altitude seen during single pass through gains.
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

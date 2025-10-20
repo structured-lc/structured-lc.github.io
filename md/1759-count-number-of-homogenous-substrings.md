@@ -107,6 +107,10 @@ This problem demonstrates the **run-length counting** pattern for substring prob
 - This pattern appears frequently in substring and sliding window counting, such as similar "count substrings with property X" problems.
 No extra data structures — just smart counting!
 
+
+### Flashcard
+For each run of k identical characters, add k × (k+1) / 2 homogenous substrings; sum over all runs.
+
 ### Tags
 Math(#math), String(#string)
 

@@ -124,6 +124,10 @@ This is a **dynamic programming with efficient range queries** problem, using a 
 It's an advanced form of the LIS pattern, especially for problems involving a maximum step/k constraint between elements.  
 Segment or Binary Indexed Trees and DP arrays with coordinate compression are common for extending LIS for range-constrained or value-constrained variants of LIS.
 
+
+### Flashcard
+Apply standard dynamic programming with constraints on differences between elements.
+
 ### Tags
 Array(#array), Divide and Conquer(#divide-and-conquer), Dynamic Programming(#dynamic-programming), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Queue(#queue), Monotonic Queue(#monotonic-queue)
 

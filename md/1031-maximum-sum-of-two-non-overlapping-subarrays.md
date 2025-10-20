@@ -80,6 +80,10 @@ def maxSumTwoNoOverlap(nums, firstLen, secondLen):
 ### Summary
 The approach is a **two-pass sliding window** combined with prefix sums and rolling maximums. It’s a variation of the “Maximum Subarray” (Kadane) and “Sliding Window” coding patterns, adapted for use with non-overlapping windows. This kind of handling is frequently used when combining fixed-interval optimizations on arrays (see also: “Maximum Sum of 3 Non-Overlapping Subarrays”, “Best Time to Buy and Sell Stock III”).
 
+
+### Flashcard
+Use prefix sums and sliding windows to track max sum of firstLen and secondLen subarrays in both orders, ensuring no overlap.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window)
 

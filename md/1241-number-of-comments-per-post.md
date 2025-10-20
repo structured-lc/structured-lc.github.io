@@ -136,6 +136,10 @@ def number_of_comments_per_post(submissions):
 ### Summary
 This problem uses the “group by/count distinct” pattern common in data processing and SQL. The key technique is deduplicating records by using sets. This pattern generalizes to log analysis, user statistics, and database query logic, and is a typical join/filter/count scenario.
 
+
+### Flashcard
+For each post (parent_id is null), count unique comments (sub_id) with parent_id matching the post’s sub_id.
+
 ### Tags
 Database(#database)
 

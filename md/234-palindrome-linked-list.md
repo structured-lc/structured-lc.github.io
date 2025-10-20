@@ -113,6 +113,10 @@ The approach uses the classic two-pointer (slow/fast) technique for linked list 
 This O(1) space trick is a staple in linked list patterns—also useful for problems involving list reordering, pairing, and cycle detection.  
 Common patterns: slow/fast pointers, in-place reversal, and pairwise comparison.
 
+
+### Flashcard
+Use slow/fast pointers to find the midpoint, reverse the second half, then compare both halves for palindrome check in O(n) time and O(1) space.
+
 ### Tags
 Linked List(#linked-list), Two Pointers(#two-pointers), Stack(#stack), Recursion(#recursion)
 

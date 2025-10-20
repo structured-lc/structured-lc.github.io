@@ -140,6 +140,10 @@ This problem is a strong example of **bitmask dynamic programming** combined wit
 The pattern of doing state transitions by picking valid subsets of options, while memoizing state results (here, the set of taken courses) is common in problems with constraints on combinations/selection (domino tiling, scheduling with caps, job assignment with limits, etc).  
 This approach is used any time the number of possibilities is exponential but the state can be efficiently encoded, such as TSP variants with pick caps, or minimum covering with dependencies.
 
+
+### Flashcard
+Use bitmask DP where each state is a set of taken courses; for each, try all subsets of up to k available courses whose prerequisites are met, and minimize semesters.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Graph(#graph), Bitmask(#bitmask)
 

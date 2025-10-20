@@ -132,6 +132,10 @@ def findMode(root):
 ### Summary
 This problem uses the **in-order traversal** pattern, which leverages the BST’s sorted structure by visiting nodes in order. Counting consecutive runs allows solving the problem without extra space for a hashmap, making the approach efficient and elegant for BSTs. This pattern applies in other settings, e.g., finding duplicates in a BST or performing range-queries.
 
+
+### Flashcard
+In-order traverse the BST, tracking current value count and max count to find all modes.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

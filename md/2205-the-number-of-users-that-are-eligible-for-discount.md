@@ -122,6 +122,10 @@ This problem is a classic example of using **set data structure** for unique cou
 The approach is linear and can be directly mapped to a SQL **SELECT DISTINCT** query, or solved efficiently in code.  
 This pattern applies wherever we need to count unique keys subject to specific filters, such as fraud analysis or user segmentation.
 
+
+### Flashcard
+Count unique users with at least one qualifying purchase; iterate purchases, add user to a set if conditions met, then return set size.
+
 ### Tags
 Database(#database)
 

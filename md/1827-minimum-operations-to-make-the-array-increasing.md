@@ -88,6 +88,10 @@ This is a classic greedy, "adjust-to-fit" array problem: fix local violations to
 Pattern: **Array, Greedy, Local-to-Global**.  
 Applicable to other problems where you increment/decrement to enforce order or minimum differences, e.g., "Minimum Moves to Make Array Complementary" or "Make Array Strictly Decreasing."
 
+
+### Flashcard
+Greedily scan left to right, increment each element to be exactly 1 more than the previous, summing the required operations in one pass.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

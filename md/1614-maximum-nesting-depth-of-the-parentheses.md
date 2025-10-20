@@ -66,6 +66,10 @@ def maxDepth(s: str) -> int:
 ### Summary
 This is a classic **parenthesis matching/counter pattern**. Core to many parsing tasks, including evaluating mathematical expressions or parsing code.
 
+
+### Flashcard
+Track depth with a counter on '(' and ')', updating the maximum depth encountered during the scan.
+
 ### Tags
 String(#string), Stack(#stack)
 

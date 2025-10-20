@@ -109,6 +109,10 @@ It’s based on **number theory** and is related to prime-checking and square-ro
 This reasoning pattern is common in divisor-counting and mathematical interview questions,  
 and can be adapted to sieve-based problems or problems about properties of divisors.
 
+
+### Flashcard
+A number has exactly three divisors if and only if it is the square of a prime.
+
 ### Tags
 Math(#math), Enumeration(#enumeration), Number Theory(#number-theory)
 

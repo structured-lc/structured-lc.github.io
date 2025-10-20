@@ -86,6 +86,10 @@ def jump(nums):
 ### Summary
 The core approach is a **greedy range expansion**, similar to BFS-levels: jump count increases only when you're forced to reach beyond the current jump's reach. This is a classic pattern in interval covering and problems where “minimum steps to reach destination” is required and the array encodes “jump length possibilities” per index. This solution is both time efficient and simple—commonly applies to similar single-source minimum-step problems.
 
+
+### Flashcard
+Use greedy jumps: track farthest reachable index and increment jump count only when current index reaches end of jump range.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

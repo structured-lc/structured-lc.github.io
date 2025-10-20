@@ -136,6 +136,10 @@ def highest_grade_for_each_student(enrollments):
 ### Summary
 This approach uses a common grouping and aggregation pattern—"Group By then Aggregate/Filter"—which is widely used in database queries and in coding for problems involving classification and finding maximum/minimum per group. It's efficient (O(n)) and easily adapts to related group-aggregate problems.
 
+
+### Flashcard
+Use window functions (RANK or ROW_NUMBER) partitioned by student_id, ordered by grade DESC then course_id ASC, select top-ranked rows.
+
 ### Tags
 Database(#database)
 

@@ -87,6 +87,10 @@ def minDistance(height, width, tree, squirrel, nuts):
 ### Summary
 This problem demonstrates a **greedy optimization pattern** mixed with mathematical simplification. By spotting that only the *first nut's collection* alters the starting point, the rest become deterministic. The technique relates to problems on minimizing round-trip costs where one initial leg can be optimized, a pattern applicable in logistics, robotics pickup/drop-off planning, and variations of the traveling salesman problem.
 
+
+### Flashcard
+Compute total distance as if starting from the tree for every nut, then for the first nut, replace tree→nut distance with squirrel→nut.
+
 ### Tags
 Array(#array), Math(#math)
 

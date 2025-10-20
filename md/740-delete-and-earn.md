@@ -89,6 +89,10 @@ def deleteAndEarn(nums):
 ### Summary
 This problem is a direct application of the "House Robber" dynamic programming pattern, where the adjacency constraint isn't physical neighbors in an array, but neighbors by value. We transform the problem into one where we pick or skip each value (after tallying their total points), ensuring we never pick adjacent values. This pattern is widely useful and appears in many DP problems involving adjacency and exclusion constraints.
 
+
+### Flashcard
+Transform to House Robber by summing points for each value; use DP where dp[i] = max(dp[i-1], dp[i-2] + points[i]).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming)
 

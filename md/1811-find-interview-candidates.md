@@ -194,6 +194,10 @@ def find_interview_candidates(contests, users):
 ### Summary
 This problem demonstrates **streak detection** and **grouped aggregation**—patterns common in competition analysis, daily activity streaks, and time-based achievements. The core trick is the contest_id − row_number window function grouping to catch consecutivity, and GROUP BY + HAVING for simple tallies. These ideas are broadly reusable across analytics and leaderboard problems.
 
+
+### Flashcard
+Find users with medals in 3+ consecutive contests (window function) OR gold medals in 3+ distinct contests; union both conditions.
+
 ### Tags
 Database(#database)
 

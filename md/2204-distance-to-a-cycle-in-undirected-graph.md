@@ -134,6 +134,10 @@ def distanceToCycle(n, edges):
 - The key patterns are **multi-source BFS** and cycle-finding via **iterative leaf stripping (topological-like approach for undirected graphs)**.
 - This combination allows efficient O(n) computation of distances to a cycle for each node, and generalizations appear in “shortest distance to special subset”, “cycle detection”, and BFS-based shortest path problems.
 
+
+### Flashcard
+For each node, find its shortest distance to the cycle; first identify cycle nodes by repeatedly removing leaves, then BFS from the cycle to all other nodes.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

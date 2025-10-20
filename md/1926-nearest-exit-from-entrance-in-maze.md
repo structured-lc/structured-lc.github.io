@@ -111,6 +111,10 @@ def nearestExit(maze, entrance):
 ### Summary
 This problem is a classic application of **Breadth-First Search (BFS)** in a 2D grid for shortest path finding. The BFS pattern is common for all scenarios where the shortest transformation sequence, minimum moves, or nearest exit is required in grids or unweighted graphs. Recognizing the immediate applicability of BFS here is crucial, as seen in problems like "Shortest Path in Binary Matrix", "Word Ladder", etc.
 
+
+### Flashcard
+Use BFS from entrance to find shortest path to any border cell; optimal for grid shortest path.
+
 ### Tags
 Array(#array), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

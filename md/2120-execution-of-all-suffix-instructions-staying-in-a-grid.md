@@ -89,6 +89,10 @@ def executeInstructions(n, startPos, s):
 ### Summary
 This problem uses the classic **simulation** coding pattern, where you directly track the problem statement's step-by-step logic. It's a textbook case of grid simulation, and the brute-force approach is optimal under provided limits. This pattern is useful in other robot navigation, bounded-walk, or game simulation problems where revisiting and state branching are allowed.
 
+
+### Flashcard
+For each suffix of instructions, simulate moves from startPos, counting steps until out of bounds.
+
 ### Tags
 String(#string), Simulation(#simulation)
 

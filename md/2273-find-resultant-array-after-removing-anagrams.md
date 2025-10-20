@@ -81,6 +81,10 @@ def removeAnagrams(words):
 ### Summary
 This problem fits the "adjacent duplicate removal" and "group by anagram" coding pattern. The main trick is to compare only adjacent words using their sorted signatures, which is a standard anagram-detection strategy. Variations of this technique appear in problems involving duplicate or anagram removal, such as grouping anagrams or deduplication in strings.
 
+
+### Flashcard
+Remove consecutive anagrams by comparing sorted strings; keep the first in each group of duplicates.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting)
 

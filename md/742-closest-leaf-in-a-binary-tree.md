@@ -131,6 +131,10 @@ This problem demonstrates the technique of *converting a tree to an undirected g
 It’s a common pattern in problems like “Lowest Common Ancestor”, “Distance Between Nodes in a Tree”, and any search where parent navigation is required.  
 Key ideas are **BFS for shortest path**, and using a hashmap to store parent links if not explicitly available.
 
+
+### Flashcard
+Convert tree to undirected graph (add parent pointers), then BFS from node k; first leaf encountered is closest by distance.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

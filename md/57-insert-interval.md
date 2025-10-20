@@ -99,6 +99,10 @@ def insert(intervals, newInterval):
 ### Summary
 This approach leverages the sorted nature of the input for an efficient O(n) solution, using the **sweep line** or **interval merging pattern**. This method is common in scheduling, merging calendars, and can be extended to problems like merging meeting times, handling reservations, or any sorted-interval batch insertion.
 
+
+### Flashcard
+Iterate through sorted intervals, add non-overlapping ones, merge overlaps with newInterval, then append remaining intervals.
+
 ### Tags
 Array(#array)
 

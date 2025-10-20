@@ -137,6 +137,10 @@ def minimumWeight(n, edges, src1, src2, dest):
 ### Summary
 This problem is a classical minimum sum-paths union, optimized with Dijkstra’s algorithm and the key insight of considering all possible "meeting points" i (splitting/joining nodes). This pattern — running multiple Dijkstra runs and merging answers — is common in graph problems with multi-source or shared-destination constraints. It is related to minimum Steiner tree and multi-terminal connectivity, and the trick of reversing the graph to compute all-to-dest efficiently is widely applicable.
 
+
+### Flashcard
+Find the minimal subgraph where both sources reach the destination; use Dijkstra’s or BFS from each source and the destination, then combine paths to minimize total edge weight.
+
 ### Tags
 Graph(#graph), Shortest Path(#shortest-path)
 

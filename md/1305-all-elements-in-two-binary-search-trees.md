@@ -87,6 +87,10 @@ def getAllElements(root1, root2):
 ### Summary
 This is a classic combination of **in-order tree traversal** and **merge two sorted arrays**. This two-step pattern is a staple in merge algorithms and takes advantage of the BST property directly.
 
+
+### Flashcard
+In-order traverse both BSTs to get two sorted lists, then merge them into a single sorted output (like merge sort).
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Sorting(#sorting), Binary Tree(#binary-tree)
 

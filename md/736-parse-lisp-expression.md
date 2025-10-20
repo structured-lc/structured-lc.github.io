@@ -150,6 +150,10 @@ class Solution:
 ### Summary
 This problem is a classic example of **recursive parsing and evaluation** with variable scoping, a pattern seen in language interpreters and some compilers. The approach centers around recursive descent parsing and scope management using dictionaries. This technique generalizes to many problems requiring parsing and interpreting nested/structured expressions, such as evaluating arithmetic expressions with variables, or implementing other scripting/DSL interpreters.
 
+
+### Flashcard
+Write recursive evaluator that parses expressions by type (let/add/mult), maintains variable scope dictionary, and handles nested expressions through recursion.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Stack(#stack), Recursion(#recursion)
 

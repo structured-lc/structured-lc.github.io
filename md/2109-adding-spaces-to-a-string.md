@@ -85,6 +85,10 @@ def addSpaces(s: str, spaces: list[int]) -> str:
 This problem uses the "two pointers" pattern to efficiently interleave modifications into a string while traversing it linearly.  
 The fundamental coding pattern—single pass over the input with a secondary pointer for tracking modifications—applies broadly to problems involving in-place modifications or merging multiple sources, such as merging sorted arrays, interval insertions, or building output with streaming input.
 
+
+### Flashcard
+Use two pointers to walk through s and spaces, building the result in one pass by inserting spaces at the given indices.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), String(#string), Simulation(#simulation)
 

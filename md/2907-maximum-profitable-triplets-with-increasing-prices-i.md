@@ -109,6 +109,10 @@ For each possible "pivot" index, search left and right for the best candidates t
 It's O(n²), works within reasonable input sizes (n≤2000), and uses no extra storage.
 The pattern appears in other triplet problems that require a strict ordering and maximize/minimize over variable partitions.
 
+
+### Flashcard
+For each middle index j, find best i < j with prices[i] < prices[j] for max profits[i], and best k > j with prices[k] > prices[j] for max profits[k]; combine for max triplet sum.
+
 ### Tags
 Array(#array), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
 

@@ -140,6 +140,10 @@ This problem uses the **post-order DFS** and a **greedy bottom-up strategy** to 
 The pattern appears often in covering problems, guard placements, sensor coverage, or dynamic programming on trees.  
 Key insight: *maximize coverage per camera placement* and process leaf-to-root. Very efficient for hierarchical resource allocation and tree-based DP.
 
+
+### Flashcard
+Use post-order DFS; place a camera at a node if any child is not covered, and count the minimum cameras needed to cover the whole tree.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

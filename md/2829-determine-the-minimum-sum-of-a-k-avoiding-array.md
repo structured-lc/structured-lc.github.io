@@ -101,6 +101,10 @@ Patterns like this commonly appear in problems dealing with *sum constraints, un
 The key pattern: **building a set under pairwise restrictions and minimizing a metric (here, the sum)**.  
 The array construction and forbidden pair tracking can be generalized to similar problems involving forbidden pairs or sums.
 
+
+### Flashcard
+Greedily pick smallest integers, skipping i if k–i already chosen; sum = 1+2+...+n with gaps where forbidden pairs exist.
+
 ### Tags
 Math(#math), Greedy(#greedy)
 

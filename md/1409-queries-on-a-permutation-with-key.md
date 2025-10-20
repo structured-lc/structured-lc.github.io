@@ -59,6 +59,10 @@ def processQueries(queries, m):
 ### Summary
 Simulate move-to-front queries directly using a Python list and index/insert operations. This is a classic simulation/data structure problem, with opportunities to optimize via hash maps or advanced trees for faster operations, commonly seen in list reordering interview questions.
 
+
+### Flashcard
+Simulate the process by maintaining a list of elements and moving queried elements to the front. For larger inputs, consider using a doubly linked list with a mapping for efficient index lookup.
+
 ### Tags
 Array(#array), Binary Indexed Tree(#binary-indexed-tree), Simulation(#simulation)
 

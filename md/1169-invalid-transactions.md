@@ -120,6 +120,10 @@ def invalidTransactions(transactions):
 ### Summary
 This problem uses **grouping** related by a key (user name), and **pairwise window comparison** within each group — patterns common when handling transactions or logs. It combines parsing, hash-based grouping, and indexing to efficiently solve the problem. Similar logic appears in fraud detection, duplicate detection, and log audit scenarios.
 
+
+### Flashcard
+Parse transactions; mark as invalid if amount > 1000 or if another transaction with the same name occurs in a different city within 60 minutes.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting)
 

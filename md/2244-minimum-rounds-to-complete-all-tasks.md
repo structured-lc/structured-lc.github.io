@@ -114,6 +114,10 @@ def minimumRounds(tasks):
 ### Summary
 This problem uses the **greedy grouping** pattern, minimizing rounds by forming the largest possible allowed group (here, 3), and only using smaller allowed groups (here, 2) when needed. Patterns like this are seen in problems involving partitioning numbers under grouping constraints. The logic—prefer large allowed group sizes to minimize the number of actions—applies universally in such settings (e.g. coin change, scheduling, packing problems).
 
+
+### Flashcard
+For each task frequency, if cnt = 1, return -1; else, rounds = ⌈cnt / 3⌉ (since 2 and 3 can sum to any n ≥ 2).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Greedy(#greedy), Counting(#counting)
 

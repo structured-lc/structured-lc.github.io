@@ -113,6 +113,10 @@ def maximumScore(nums, k):
 This solution uses the **monotonic stack pattern** to efficiently find and expand the largest possible interval for each candidate minimum value, which matches the core logic behind the "Largest Rectangle in Histogram" problem.  
 The approach is highly efficient (O(n)), exploits the importance of window size and minimum values, and is very reusable for other interval/min-max subarray problems.
 
+
+### Flashcard
+Fix each value as the minimum in a subarray and find the largest window to maximize the score.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

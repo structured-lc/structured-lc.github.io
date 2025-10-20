@@ -104,6 +104,10 @@ This problem uses the **binary search on timeline pattern**, often applied where
 Preprocessing with running leader lists lets us answer time-based leader queries quickly.  
 The pattern applies to any “prefix-winner” queries or tracking time-evolving values efficiently.
 
+
+### Flashcard
+Precompute the leader at each vote time, then answer queries in O(log n) using binary search on times[].
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Design(#design)
 

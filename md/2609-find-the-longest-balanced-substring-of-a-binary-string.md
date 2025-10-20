@@ -88,6 +88,10 @@ def findTheLongestBalancedSubstring(s: str) -> int:
 ### Summary
 This problem maps to a **grouped pair counting** pattern—by grouping adjacent zeros and ones and pairing the smallest group, we determine all possible balanced substrings in a single linear pass. It's similar to counting well-formed pairs or chunks (common in problems involving parenthesis or repeated blocks) and demonstrates a classic use of *two-pointer* or *grouping* strategies in string problems.
 
+
+### Flashcard
+For each group of consecutive 0’s followed by 1’s, the longest balanced substring is 2 × min(count of 0’s, count of 1’s).
+
 ### Tags
 String(#string)
 

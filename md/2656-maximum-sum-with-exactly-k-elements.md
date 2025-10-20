@@ -94,6 +94,10 @@ def maximizeSum(nums, k):
 ### Summary
 This greedy approach leverages **arithmetic sequences** and the insight that always picking the current maximum (and increasing it each time) yields the largest possible total. The problem is a classic “repeated pick with updating” pattern, similar to problems involving **greedy upgrades** or **repeated optimizations with a sliding maximum**. This pattern can be used in other "incremental maximize" situations where selections impact future possibilities.
 
+
+### Flashcard
+Pick the maximum value x for k operations; total score is k × x + (k × (k – 1))/2 using arithmetic series sum.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

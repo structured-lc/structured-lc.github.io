@@ -93,6 +93,10 @@ def sumOfMultiples(n):
 ### Summary
 This problem is a classic application of the **Inclusion-Exclusion Principle**, a common coding and math pattern for handling overlaps among multiple sets—here, numbers divisible by 3, 5, or 7. The key trick is finding the sum of multiples using arithmetic progression and then correcting for over-counting by subtracting and adding relevant sets. This approach is efficient and broadly applicable for similar "sum of multiples" queries and other combinatorial counting problems.
 
+
+### Flashcard
+Use inclusion-exclusion principle—sum multiples of 3, 5, and 7, subtract overlaps (lcm 15, 21, 35), add back triple overlap (lcm 105).
+
 ### Tags
 Math(#math)
 

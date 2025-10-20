@@ -94,6 +94,10 @@ def arraySign(nums):
 ### Summary
 This problem demonstrates the mathematical principle that the sign of a product depends only on the count of negative factors, not their actual values. It's an excellent example of optimization by avoiding unnecessary computation (actual multiplication) and focusing on the essential property (sign). This pattern appears in problems involving mathematical properties, overflow avoidance, and logical reasoning about numerical operations.
 
+
+### Flashcard
+Count negative numbers in array; return 0 if any zero exists, else return −1 if odd negatives, +1 if even negatives.
+
 ### Tags
 Array(#array), Math(#math)
 

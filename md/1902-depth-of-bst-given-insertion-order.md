@@ -207,6 +207,10 @@ We optimize the problem by using an ordered map (simulating TreeMap/SortedDict) 
 This is a classic application of **BST + order-statistics** and a very common technique in BST order problems—useful in questions about number of greater/smaller elements and dynamic order maintenance.  
 Patterns: BST construction, order-statistic trees, predecessor/successor search.
 
+
+### Flashcard
+Simulate BST insertion for each element, tracking depth; optimize by noting each insertion’s depth depends only on its immediate predecessor/successor in the current tree.
+
 ### Tags
 Array(#array), Tree(#tree), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree), Ordered Set(#ordered-set)
 

@@ -132,6 +132,10 @@ def constructMaximumBinaryTree(nums: List[int]) -> Optional[TreeNode]:
 ### Summary
 This problem uses **recursive divide-and-conquer** and mirrors algorithms like QuickSort. It’s a classic tree construction problem. The coding pattern applies in other recursive binary tree constructions where subtree relationships are defined by extremal values, such as building Cartesian Trees or some RMQ preprocessors.
 
+
+### Flashcard
+Recursively select the maximum element in each subarray as the root, building left and right subtrees from elements to the left and right of the max.
+
 ### Tags
 Array(#array), Divide and Conquer(#divide-and-conquer), Stack(#stack), Tree(#tree), Monotonic Stack(#monotonic-stack), Binary Tree(#binary-tree)
 

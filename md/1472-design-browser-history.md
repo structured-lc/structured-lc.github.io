@@ -91,6 +91,10 @@ class BrowserHistory:
 ### Summary
 Classic design/implementation problem for browser command patterns. List+pointer is a standard way, and simulates stack-like back/forward efficiently. This question is similar to undo/redo editors and other command-history scenarios.
 
+
+### Flashcard
+Use a list and a pointer for current page; on visit, truncate forward history, append new page, and update pointer; back/forward moves pointer within bounds.
+
 ### Tags
 Array(#array), Linked List(#linked-list), Stack(#stack), Design(#design), Doubly-Linked List(#doubly-linked-list), Data Stream(#data-stream)
 

@@ -143,6 +143,10 @@ It's an application of candidate generation, filtered by feasibility, and used i
 A similar pattern appears in "counted subsequence" problems, "maximum repeated pattern," or "greatest possible string with constraints."  
 Bounding the answer length using total frequency/k is the key insight that makes exhaustive search practical here.
 
+
+### Flashcard
+Find the longest subsequence repeated `k` times by considering only characters that appear at least `k` times.
+
 ### Tags
 String(#string), Backtracking(#backtracking), Greedy(#greedy), Counting(#counting), Enumeration(#enumeration)
 

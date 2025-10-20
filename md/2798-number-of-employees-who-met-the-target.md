@@ -66,6 +66,10 @@ def number_of_employees_who_met_target(hours, target):
 ### Summary
 This is a classic single-pass counting problem — a bread-and-butter pattern for many array and stream processing questions. It teaches direct condition-based counting, iteration, and basic input validation. This pattern appears everywhere in data analytics, search-and-filter queries, and quick stats problems.
 
+
+### Flashcard
+Count how many employees have hours ≥ target by iterating once through the hours array.
+
 ### Tags
 Array(#array)
 

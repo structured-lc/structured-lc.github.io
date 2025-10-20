@@ -111,6 +111,10 @@ def maximumANDSum(nums, numSlots):
 ### Summary
 This problem is a classic **state compression DP** via **bitmasking** (base-3 mask for multi-capacity). It generalizes the *assignment problem with capacity per slot*, and is applicable for problems where objects must be assigned to containers with small bounded size, maximizing some function of the pairing. Common in combinatorial optimization and puzzles involving "choose best grouping under capacity constraints."
 
+
+### Flashcard
+Use dynamic programming with a bitmask to represent slot assignments, maximizing the sum of (number AND slot) over all valid distributions.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

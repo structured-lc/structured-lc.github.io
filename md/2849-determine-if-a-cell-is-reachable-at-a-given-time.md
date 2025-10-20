@@ -86,6 +86,10 @@ def isReachableAtTime(sx, sy, fx, fy, t):
 This problem uses the **minimum steps calculation for 8-directional movement** on a grid (Chebyshev distance).  
 The main pattern is recognizing how the minimum number of steps is governed by max(dx, dy) for diagonal-capable grids, and dealing carefully with the must-move constraint when start == finish. This pattern appears in grid pathfinding with varying allowed moves, and is a classic interview problem for understanding movement dynamics and edge case reasoning.
 
+
+### Flashcard
+Minimum time = max(|fx–sx|, |fy–sy|); if t < min, impossible; if t = min, possible; if t > min, possible unless t=1 and already at destination (can't stay still).
+
 ### Tags
 Math(#math)
 

@@ -90,6 +90,10 @@ def next_day(year, month, day):
 This problem demonstrates careful handling of date arithmetic, especially leap year logic and month/year boundaries.  
 It is a classic *calendar math* pattern — common in scheduling, logging, and incremental date processing tasks, and is useful practice for clean edge case handling without relying on built-in helpers.
 
+
+### Flashcard
+Increment day with proper month/year rollover logic, accounting for month lengths and leap years for February.
+
 ### Tags
 
 ### Similar Problems

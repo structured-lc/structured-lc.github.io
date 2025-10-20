@@ -73,6 +73,10 @@ def filterRestaurants(restaurants: List[List[int]], veganFriendly: int, maxPrice
 ### Summary
 This solution is a direct application of **filter, then sort**. This coding pattern occurs often in data-driven problems, e.g., filtering/searching entries by multiple attributes and then sorting by priorities.
 
+
+### Flashcard
+Filter restaurants by vegan, price, and distance; sort by rating desc then id desc; return only the ids.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

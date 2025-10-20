@@ -94,6 +94,10 @@ def xorBeauty(nums):
 ### Summary
 This problem is an excellent example of exploiting symmetry and bitwise operation properties to simplify complex brute-force formulas. The "accumulate everything with XOR" pattern is common in bitwise trick questions (parity, unique numbers, etc.), and the approach generalizes to many LeetCode and interview problems involving pairwise or triplet combinations with XOR. Recognizing such reductions turns a seemingly hard O(n³) problem into a simple and efficient scan!
 
+
+### Flashcard
+For each bit position, the XOR-beauty is 1 if the count of nums[k] with that bit set is odd and at least one nums[i]|nums[j] has that bit set; else 0.
+
 ### Tags
 Array(#array), Math(#math), Bit Manipulation(#bit-manipulation)
 

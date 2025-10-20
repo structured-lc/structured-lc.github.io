@@ -84,6 +84,10 @@ def largestLocal(grid: List[List[int]]) -> List[List[int]]:
 ### Summary
 This solution uses a **fixed-size sliding window maximum pattern**. The core is scanning each possible 3×3 subgrid and recording its maximum—simple brute-force due to small data size. It's a classic approach applicable to other local filtering operations in images (e.g., local max pooling), and similar logic extends to other window and filter sizes.
 
+
+### Flashcard
+For each valid (i,j) position, scan the 3×3 window centered at (i+1, j+1) and record the maximum value. O(n²) time.
+
 ### Tags
 Array(#array), Matrix(#matrix)
 

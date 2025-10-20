@@ -97,6 +97,10 @@ def recoverArray(nums):
 ### Summary
 This problem is a strong example of **hashing and greedy pairing** after sorting. It highlights the pattern of candidate generation by checking all reasonable "differences" and verifying validity with hash counting. Variations of this technique appear in problems with "pair up" requirements, or when reconstructing arrays generated from deterministic operations on unknowns. The need to handle duplicates gracefully makes this a good hashmap/frequency practice problem.
 
+
+### Flashcard
+Sort nums; for each possible k (difference/2), greedily pair elements x and x+2k using a counter to reconstruct the original array.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Sorting(#sorting), Enumeration(#enumeration)
 

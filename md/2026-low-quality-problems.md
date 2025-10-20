@@ -113,6 +113,10 @@ ORDER BY problem_id;
 ### Summary
 This is a **filtering and ratio calculation problem** on tabular data, testing conditional logic and SQL expressions. The pattern is common: filtering rows based on a calculated column. Similar approaches are found in analytics, reporting, and dashboards wherever ratios or percentages define inclusion/exclusion criteria.
 
+
+### Flashcard
+Filter rows where likes / (likes + dislikes) < 0.6, handling division carefully to avoid zero denominator—use WHERE clause in SQL.
+
 ### Tags
 Database(#database)
 

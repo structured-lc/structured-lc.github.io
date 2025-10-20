@@ -90,6 +90,10 @@ We leveraged the property that all input arrays are sorted and applied a **multi
 This is a classic Two (or k) Pointer pattern—in general, used to merge or synchronize traversal across multiple sorted lists/arrays for intersection or union.  
 This approach can be generalized to intersect k sorted arrays, with either pointers or a min-heap to keep in sync.
 
+
+### Flashcard
+Use three pointers (i, j, k) to traverse the sorted arrays in sync, collecting elements present in all three.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Counting(#counting)
 

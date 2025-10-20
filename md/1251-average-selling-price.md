@@ -99,6 +99,10 @@ def averageSellingPrice(sales):
 ### Summary
 The pattern is standard aggregation by group and average. Useful for any reporting, analytics, or SQL processing problem.
 
+
+### Flashcard
+Group Sales by product_id and compute the average price for each, rounding as needed.
+
 ### Tags
 Database(#database)
 

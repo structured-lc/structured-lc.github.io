@@ -104,6 +104,10 @@ It's applicable in string pattern matching, genetics (DNA subpatterns), and text
 Patterns used: **2D DP with space optimization**, **subproblem state modeling**.  
 Similar: Leetcode 1143 (Longest Common Subsequence), Edit Distance, etc.
 
+
+### Flashcard
+Use 2D DP where dp[i][j] = ways to form t[0...j-1] from s[0...i-1], with recurrence: if s[i-1]=t[j-1] then dp[i][j] = dp[i-1][j-1] + dp[i-1][j], else dp[i][j] = dp[i-1][j].
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

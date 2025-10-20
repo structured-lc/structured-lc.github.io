@@ -90,6 +90,10 @@ def minimumSize(nums, maxOperations):
 ### Summary
 This problem is a classic example of **binary search on the answer** (also called search on the solution space), a common pattern for optimization problems where feasibility can be checked efficiently. It occurs in many array partitioning, scheduling, and resource allocation scenarios. The key insight is to convert the problem to a decision problem (can you achieve this penalty?) and binary search the minimal value.
 
+
+### Flashcard
+Binary search the minimum possible penalty; for each guess, greedily split bags until all are ≤ penalty, count splits.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

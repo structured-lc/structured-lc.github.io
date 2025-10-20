@@ -80,6 +80,10 @@ It uses a common pattern: tracking running segment lengths while iterating.
 Such segment-finding logic can be applied in problems like maximum consecutive ones, or any run-length encoding questions.  
 Efficient for both interview and production: O(n) time, O(1) space.
 
+
+### Flashcard
+Track the longest runs of '1's and '0's in a string.
+
 ### Tags
 String(#string)
 

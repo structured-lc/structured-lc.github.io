@@ -82,6 +82,10 @@ def maxSideLength(mat, threshold):
 ### Summary
 This problem is a classic use of **prefix sums/integral image**, **binary search on answer**, and region sum queries. Recognizing the monotonic property allows binary search, while prefix sums are a common and reusable pattern for efficient submatrix sum computations.
 
+
+### Flashcard
+Use binary search on possible square side lengths and prefix sums to efficiently check if any square's sum is ≤ threshold.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Matrix(#matrix), Prefix Sum(#prefix-sum)
 

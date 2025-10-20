@@ -94,6 +94,10 @@ This problem uses the **digit counting and pattern matching** technique — gene
 The approach is efficient, directly tests all possible outcomes, and avoids duplicate work with permutations.  
 This pattern — brute-forcing candidate numbers (with count checks) — is common in problems with combinatorial digit formation and strict counting constraints, e.g., "Number of unique digits numbers," "Find all valid time representations," etc.
 
+
+### Flashcard
+For each 3-digit even number, check if its digits are available in the input (respecting counts), and collect all valid numbers.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting), Enumeration(#enumeration)
 

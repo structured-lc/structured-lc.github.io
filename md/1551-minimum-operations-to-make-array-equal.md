@@ -67,6 +67,10 @@ def minOperations(n):
 ### Summary
 Use the observation about pairing closest-to-farthest elements to the median. This is a common symmetric-pairing pattern, where you only need to process half the array and multiply out the difference. Pattern is similar to minimizing the cost to equalize via pairwise balancing.
 
+
+### Flashcard
+Array is odd sequence [1,3,5,...]; median is n. Sum first ⌊n/2⌋ differences: (n-1) + (n-3) + ... = arithmetic series = n²/4 or (n²-1)/4 depending on parity.
+
 ### Tags
 Math(#math)
 

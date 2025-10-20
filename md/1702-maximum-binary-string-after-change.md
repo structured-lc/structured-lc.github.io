@@ -111,6 +111,10 @@ This is a classic greedy-pattern string transformation: convert all but one zero
 The approach relies on understanding how the operations interact and using counting and index tracking—no dynamic programming, backtracking, or explicit simulation is needed.  
 This greedy string manipulation approach can be seen in other problems involving transform-and-maximize/minimize goals on strings or arrays.
 
+
+### Flashcard
+Transform leading zeros into ones using "00"→"10", then use "10"→"01" to slide remaining zeros right—maximize leading ones for lex largest string.
+
 ### Tags
 String(#string), Greedy(#greedy)
 

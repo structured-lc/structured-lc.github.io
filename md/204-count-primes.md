@@ -87,6 +87,10 @@ def countPrimes(n: int) -> int:
 ### Summary
 This problem leverages the classic **Sieve of Eratosthenes** pattern—one of the most fundamental sieve techniques in computational number theory. The core idea is to iteratively mark non-primes, yielding an efficient O(n log log n) prime counting solution. This “marking multiples” approach is broadly useful for problems involving number properties over ranges, such as prime factorization, counting square-free numbers, and similar computational mathematics questions.
 
+
+### Flashcard
+Use Sieve of Eratosthenes—mark multiples of each prime up to √n as non-prime, then count remaining primes below n.
+
 ### Tags
 Array(#array), Math(#math), Enumeration(#enumeration), Number Theory(#number-theory)
 

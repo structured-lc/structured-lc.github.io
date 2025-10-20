@@ -111,6 +111,10 @@ def numSubmatrixSumTarget(matrix, target):
 ### Summary
 This problem combines **prefix sum**, **hash map subarray sum counting**, and reduction from 2D to 1D to efficiently compute the number of submatrices matching a target sum. The coding pattern is common in matrix subarray/submatrix problems and is widely applicable for other 2D substructure sum queries. Recognizing the row-pair approach and exploiting cumulative sum tricks are key insights for matrix scanning problems.
 
+
+### Flashcard
+For all pairs of rows, use prefix sums and a hash map to count subarrays (columns) whose sum equals the target.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Matrix(#matrix), Prefix Sum(#prefix-sum)
 

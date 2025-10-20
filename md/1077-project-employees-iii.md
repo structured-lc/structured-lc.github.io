@@ -164,6 +164,10 @@ def project_employees_iii(project, employee):
 
 This problem uses the **group-by and aggregation** pattern: for each group (project), compute a stat (max experience) and filter the group for matches. It's a classic SQL window function use case but easily implementable in Python via dictionaries and grouping, showcasing the general reduce/filter by max pattern seen in leaderboard, ranking, and “top-N per group” style problems.
 
+
+### Flashcard
+Use window functions (RANK/DENSE_RANK) partitioned by project_id and ordered by experience_years DESC to find employees with max experience per project.
+
 ### Tags
 Database(#database)
 

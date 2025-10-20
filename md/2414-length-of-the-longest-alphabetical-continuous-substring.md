@@ -82,6 +82,10 @@ This problem follows the classic sliding window or single-pass scan pattern, ide
 The key is translating the "alphabetically consecutive" condition into an ASCII code difference and tracking maximal runs on the fly.  
 This approach is commonly useful for longest increasing, non-decreasing, or other dynamic contiguous segment problems.
 
+
+### Flashcard
+Use a sliding window to track consecutive alphabetical characters.
+
 ### Tags
 String(#string)
 

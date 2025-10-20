@@ -150,6 +150,10 @@ This solution uses the classic **left join** and aggregation pattern, a common r
 It’s a generic "sum over parent + optional child" pattern, useful in accounting, resource aggregation, and any case with *optional hierarchical linked totals*.  
 Understanding joins and aggregation is essential for data-oriented questions.
 
+
+### Flashcard
+For each box, sum its own fruit and linked chest's fruit (if any) using a LEFT JOIN—aggregate totals for apples and oranges.
+
 ### Tags
 Database(#database)
 

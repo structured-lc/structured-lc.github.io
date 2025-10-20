@@ -81,6 +81,10 @@ def contains_duplicate(nums):
 This problem uses the classic **Hash Set for duplicate detection** pattern. Scanning while tracking seen values ensures we detect duplicates efficiently.  
 This coding pattern can be applied to other questions involving uniqueness or detecting repeats, such as finding the first repeating element or finding all duplicates in a list.
 
+
+### Flashcard
+Use a hash set to track seen numbers; if a duplicate is found during iteration, return true.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting)
 

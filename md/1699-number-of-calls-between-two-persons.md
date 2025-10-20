@@ -131,6 +131,10 @@ GROUP BY person1, person2
 ### Summary
 This problem utilizes **aggregation and pair normalization** in SQL. The pattern (`LEAST`, `GREATEST`, then `GROUP BY`) is common for **undirected relationships** in data (e.g., bidirectional friends, undirected edges). Useful in scenarios with relationship symmetry where (A,B) ≡ (B,A).
 
+
+### Flashcard
+Number of Calls Between Two Persons
+
 ### Tags
 Database(#database)
 

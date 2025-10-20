@@ -133,6 +133,10 @@ def bstToGst(root):
 ### Summary
 This problem uses the **reverse in-order traversal** coding pattern, leveraging the BST's in-order properties. Carrying a running sum during traversal naturally fits the requirement of summing greater or equal values. This is a classic tree-accumulation problem and similar patterns can be applied in any situation requiring dynamic aggregates during traversal, such as finding suffix sums in trees or augmenting trees for range queries.
 
+
+### Flashcard
+Traverse BST in reverse in-order (right→node→left), maintaining a running sum to update each node’s value.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

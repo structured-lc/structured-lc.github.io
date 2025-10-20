@@ -140,6 +140,10 @@ This problem is a classic **sliding window / sequence streak** recognition probl
 Patterns used: grouping, sorting, and simple streak traversal—common in sequence processing and log/data analysis.  
 Approach is widely reusable anywhere you need to compute consecutive streaks in event timelines per user/entity.
 
+
+### Flashcard
+For each customer, find the longest consecutive day streak from their transaction dates, then return all customers with the maximum streak length.
+
 ### Tags
 Database(#database)
 

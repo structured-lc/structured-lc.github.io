@@ -90,6 +90,10 @@ def dfs(boy, grid, match, visited):
 ### Summary
 This problem is a classic application of bipartite matching using augmenting paths. The key insight is using DFS to find paths that can improve the current matching by reassigning existing matches when necessary. This pattern appears in assignment problems, resource allocation, and any scenario involving optimal pairing between two distinct groups with constraints.
 
+
+### Flashcard
+Use bipartite matching with DFS/backtracking; for each boy, try assigning to available girl or recursively reassign previously matched girls.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Graph(#graph), Matrix(#matrix)
 

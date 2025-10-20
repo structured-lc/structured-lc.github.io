@@ -124,6 +124,10 @@ def isValidSudoku(board):
 ### Summary
 This problem uses the **"set data structure for duplicate detection" pattern**—commonly applied in validation tasks. It generalizes to row/column/region constraints, applies to any matrix-based uniqueness-check, and is highly interview-relevant. It’s a frequent pattern for puzzles, constraint-checking, and even some graph traversals.
 
+
+### Flashcard
+Track seen digits in each row, column, and 3×3 box using sets; if any digit repeats, the board is invalid.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Matrix(#matrix)
 

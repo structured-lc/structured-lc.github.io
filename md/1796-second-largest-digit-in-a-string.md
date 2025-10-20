@@ -88,6 +88,10 @@ This problem is a classic example of single-pass scanning while tracking the lar
 The pattern used is **tracking two variables for max and second max**; it’s a common coding pattern whenever “second largest”, “runner-up”, or similar properties are asked for.  
 This approach can be adapted for finding kᵗʰ largest, or when the values to be tracked are letters or other comparable items.
 
+
+### Flashcard
+Scan the string to track the largest and second largest unique digits.
+
 ### Tags
 Hash Table(#hash-table), String(#string)
 

@@ -79,6 +79,10 @@ def singleNumber(nums):
 ### Summary
 This problem is a classic application of the **Bitwise XOR pattern** for tracking duplicates in linear time with constant space. The approach is elegant and efficient, and appears frequently in interview settings—especially when constraints point towards avoiding extra space or using hash maps. This pattern can extend to more complex cases, such as when each element appears **k** times except for one.
 
+
+### Flashcard
+XOR all numbers together; pairs cancel out, leaving the single number that appears once.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

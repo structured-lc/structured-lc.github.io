@@ -180,6 +180,10 @@ def department_highest_salary(employees, departments):
 ### Summary
 This problem uses the **grouping and filtering** pattern: group by department, find max salary, then filter and output matching employees. It's a classic case of "top N per group" (in this case, top 1, potentially with ties). Commonly seen in SQL as well as in business data reporting tasks. This approach generalizes to leaderboard designs, grouped rankings, or finding best values within each subgroup.
 
+
+### Flashcard
+For each department, find the max salary and select all employees in that department with salary equal to the max.
+
 ### Tags
 Database(#database)
 

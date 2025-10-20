@@ -75,6 +75,10 @@ def countEven(num):
 ### Summary
 This is a classic *digit sum property* problem, often solved by brute-force for reasonable input bounds, but can be optimized using mathematical insights about number properties. The coding pattern is helpful in any problems involving properties of digits in a sequence — such as "count digit with even/odd sum," "find numbers under constraints on their digit sum," and so on. These ideas frequently appear in number theory, combinatorics, and digit dynamic programming problems.
 
+
+### Flashcard
+For 1 ≤ i ≤ num, count i if digit sum is even; sum digits for each i.
+
 ### Tags
 Math(#math), Simulation(#simulation)
 

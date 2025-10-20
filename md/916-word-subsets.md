@@ -124,6 +124,10 @@ This problem is a classic "frequency mask" technique:
 Combine requirements across multiple words into a single character frequency array, then scan the candidates once each.  
 This "consolidate requirement, validate in single pass" pattern is common in subset/multiset and anagram problems, and is often used for word filter and multitarget search tasks.
 
+
+### Flashcard
+For each letter, track the max count needed from words2, then check if each word in words1 meets all these counts.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string)
 

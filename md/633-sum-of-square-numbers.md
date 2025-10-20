@@ -95,6 +95,10 @@ This problem uses a classic two-pointer pattern due to the sorted nature of perf
 It's a variant of the classic "pair sum" problem, mapping naturally to two pointers for optimal time and constant space.  
 The idea is broadly applicable where valid pairs with constraints are sought over sorted ranges, such as two-sum or searching sorted arrays.
 
+
+### Flashcard
+Use two pointers: one starts at 0, other at ⌊√c⌋; check if a² + b² = c, move pointers inward based on sum.
+
 ### Tags
 Math(#math), Two Pointers(#two-pointers), Binary Search(#binary-search)
 

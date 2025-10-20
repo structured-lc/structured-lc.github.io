@@ -107,6 +107,10 @@ def smallestFactorization(num):
 This is a classic **greedy / digit factorization problem**. The major insight is breaking the number using largest possible digits (from 9 downward), since larger digits in lower places result in a smaller numeric value. Sorting the digits gives the minimum value required by the problem.  
 The approach is also seen in questions that ask for integer construction under product/digit constraints, and combines simple factorization with greedy assembly for smallest lexicographical order.
 
+
+### Flashcard
+Greedily divide num by digits 9→2, collecting factors; if num reduces to 1, sort digits to form result, else return -1.
+
 ### Tags
 Math(#math), Greedy(#greedy)
 

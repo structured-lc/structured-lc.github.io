@@ -97,6 +97,10 @@ def lengthLongestPath(input: str) -> int:
 ### Summary
 This is a classic **parsing and stack** pattern, frequently used whenever there's a need to reconstruct path-based or nested structures from a linear input (e.g., directory tree, HTML/XML tags, or expressions). It's efficient and avoids excessive string operations, and applies broadly across parsing problems with nested, indented, or token-based input formats.
 
+
+### Flashcard
+Track current path lengths at each depth using a stack or array; update max length when a file (contains '.') is found.
+
 ### Tags
 String(#string), Stack(#stack), Depth-First Search(#depth-first-search)
 

@@ -103,6 +103,10 @@ def minimizeXor(num1: int, num2: int) -> int:
 ### Summary
 This problem uses a *greedy bit manipulation pattern*. By matching the number of set bits and aligning as much as possible with the higher bits of num1, we minimize the XOR, achieving the closest possible value. This approach is highly efficient and applies to other problems involving set bit manipulation for XOR or AND/OR minimization.
 
+
+### Flashcard
+Greedily copy highest set bits from num1 first, then fill remaining bits from lowest positions to match num2's bit count for minimal XOR.
+
 ### Tags
 Greedy(#greedy), Bit Manipulation(#bit-manipulation)
 

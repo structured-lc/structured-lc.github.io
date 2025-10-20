@@ -161,6 +161,10 @@ print(find_cumulative_salary(data))
 ### Summary
 This problem illustrates the use of **windowing/rolling sum** (common in analytics/finance/SQL). The pattern—“for each row, sum up values from the last k periods, treating missing as 0”—is applicable in rolling statistics, time series, and sliding window problems. The code uses grouping, aggregation, and careful sorting, matching classic approaches in both Python and SQL.
 
+
+### Flashcard
+For each employee and month, sum salary over that and prior 2 months using a self-join or window function, skipping the latest month per employee.
+
 ### Tags
 Database(#database)
 

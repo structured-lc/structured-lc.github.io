@@ -113,6 +113,10 @@ def peopleAwareOfSecret(n, delay, forget):
 
 This problem uses the *difference array / sweep line* technique and a cumulative counting mechanism for events unfolding over days, making it a classic "scheduled state change" problem seen often in range query, propagation, and DP scenarios. The space and time approach generalizes well to similar problems involving contagious processes, cascade scheduling, or interval DP.
 
+
+### Flashcard
+Use a difference array or prefix sum to track how many people learn, share, and forget the secret each day; update counts efficiently to avoid simulating every person.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Queue(#queue), Simulation(#simulation)
 

@@ -73,6 +73,10 @@ def prefixesDivBy5(nums):
 ### Summary
 The problem uses an **iterative prefix and modulo pattern**: for each step, the prefix is updated in O(1) time, and we keep intermediate values small with `% 5`. This approach is common for problems involving divisibility checks over growing sequences ("prefix modular arithmetic"), and it can be generalized for divisibility by other numbers. The coding pattern is efficient and easy to apply to similar problems like "prefix sum is divisible by K" and real-time streaming checks.
 
+
+### Flashcard
+For each bit, update running value as curr = curr×2 + bit; check curr mod 5 for divisibility, append result.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

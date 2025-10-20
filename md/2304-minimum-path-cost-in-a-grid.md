@@ -96,6 +96,10 @@ This problem is a textbook example of **dynamic programming on a grid** with cus
 It’s related to "minimum cost path" problems—a common pattern useful for matrix pathfinding with nontrivial transition costs (such as grid travel with per-move penalties).  
 The rolling DP row pattern for space optimization is standard whenever transitions only depend on the previous row, and can be applied in various path or scheduling DP problems.
 
+
+### Flashcard
+Use DP: dp[i][j] = min cost to reach (i,j), computed from all possible parents in the previous row.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

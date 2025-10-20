@@ -127,6 +127,10 @@ def assignBikes(workers, bikes):
 The approach uses **greedy assignment** based on a precomputed and sorted list of all possible worker-bike pairs, ordered by increasing distance and tie-breakers on indices.  
 This matches the **minimum edge weight assignment** with stable tie-breaks, a pattern that appears in "assign n resources to m items based on preferences," and can be adapted for problems like "campus scooters," "best job-matching," or "closest facility allocation." Sorting tuples for greedy assignment with custom rules is a very common coding interview pattern.
 
+
+### Flashcard
+Precompute all (worker, bike, distance) pairs, sort by (distance, worker, bike), and greedily assign the closest available bike to each worker.
+
 ### Tags
 Array(#array), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

@@ -109,6 +109,10 @@ def openLock(deadends, target):
 The problem uses the **BFS pattern** for shortest-path-in-unweighted-graph problems, modeling each lock state as a node.  
 This is a standard approach for puzzles constrained by neighbors and forbidden states and applies to word ladder, sliding puzzles, and similar path search scenarios.
 
+
+### Flashcard
+Model as graph where each 4-digit combo is a node; use BFS from "0000" to target, skipping deadends, to find shortest path (minimum turns).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Breadth-First Search(#breadth-first-search)
 

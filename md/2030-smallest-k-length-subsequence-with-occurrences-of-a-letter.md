@@ -134,6 +134,10 @@ def smallestSubsequence(s: str, k: int, letter: str, repetition: int) -> str:
 ### Summary
 This problem uses the **Greedy + Monotonic Stack** pattern, common to many string optimization problems ("Remove K Digits", "Lexicographically Smallest Subsequence"), but adds constraints on the occurrence of a specific letter. Counting, careful skipping, and greedy stack manipulation are key. The general pattern is widely applicable in string problems where lexicographical and element number constraints must be balanced.
 
+
+### Flashcard
+Use a monotonic stack to build the smallest subsequence, ensuring enough target letter occurrences remain—greedily pop when a better character is found.
+
 ### Tags
 String(#string), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
 

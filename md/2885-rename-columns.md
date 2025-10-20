@@ -123,6 +123,10 @@ def renameColumns(students: pd.DataFrame) -> pd.DataFrame:
 ### Summary
 This problem uses the classic **column renaming pattern** in pandas, an essential data manipulation operation. The approach is direct and leverages built-in library functions, emphasizing data schema transformations over data content changes. This is highly reusable for any schema migration, data cleaning, or ETL process in real-world data engineering tasks.
 
+
+### Flashcard
+Use DataFrame.rename(columns={old: new}) to rename columns, passing a mapping dictionary for concise and safe renaming.
+
 ### Tags
 
 ### Similar Problems

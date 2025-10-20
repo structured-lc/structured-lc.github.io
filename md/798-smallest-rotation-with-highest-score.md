@@ -128,6 +128,10 @@ This problem is a classic use of "difference array" or "prefix sum range events"
 Whenever a brute-force solution would repeat a similar calculation for each position, always ask: can I mark where contributions *start* and *stop* and process them together?  
 This helps avoid O(n²) checks, and is valuable for interview performance on hard rotation/window/range questions.
 
+
+### Flashcard
+For each nums[i], mark the interval of k where it scores a point after rotation; use prefix sums to find the k with the highest score.
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

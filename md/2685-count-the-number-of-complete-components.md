@@ -112,6 +112,10 @@ def countCompleteComponents(n, edges):
 ### Summary
 This problem uses the **connected components** and **component property-checking** pattern, common in graph algorithms. The solution is efficient because it leverages BFS/DFS to identify components and simple counting logic to check completeness, making it broadly applicable to other problems involving component-wise properties in graphs (e.g., finding cliques or dense subgraphs).
 
+
+### Flashcard
+Find connected components via DFS/BFS; for each component with k nodes, check if edge count equals k × (k−1) / 2 (complete graph condition), count valid components.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

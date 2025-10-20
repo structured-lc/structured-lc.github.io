@@ -93,6 +93,10 @@ class Solution:
 ### Summary
 This problem demonstrates the **geometry + uniform random sampling** pattern, specifically the use of polar- or spherical-coordinates and radius transformation to ensure uniform density within a circle. Knowing how to sample uniformly inside circles/spheres is useful in computational geometry, Monte Carlo simulations, and gaming physics. The trick of taking the square root of the random variable is a classic technique whenever spatial density would otherwise be non-uniform due to the coordinate system.
 
+
+### Flashcard
+Generate random angle θ ∈ [0, 2π) and radius r ∈ [0, R) with r = R × sqrt(random), then convert to Cartesian coordinates.
+
 ### Tags
 Math(#math), Geometry(#geometry), Rejection Sampling(#rejection-sampling), Randomized(#randomized)
 

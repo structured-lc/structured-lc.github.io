@@ -140,6 +140,10 @@ def biggest_window_between_visits(user_visits):
 ### Summary
 This problem uses the "sliding window" and "window function" pattern, commonly found in data analytics and time series analysis. Approaches here (LEAD/LAG, grouping, window maximum) are standard for log-gap analysis, anomaly detection, and churn prediction in real-world business data or analytics platforms.
 
+
+### Flashcard
+For each user, sort visits by date, compute gaps between consecutive visits (including '2021-01-01' for last), return the max gap.
+
 ### Tags
 Database(#database)
 

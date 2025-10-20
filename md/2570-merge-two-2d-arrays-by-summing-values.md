@@ -103,6 +103,10 @@ def mergeArrays(nums1, nums2):
 ### Summary
 This problem is a classic application of the **two-pointer merge pattern**—a staple for handling two sorted arrays. Such logic applies to interval merging, sorted list intersections, and is a core part of merge sort. The sorted property is crucial and enables single-pass, in-place merging for optimal efficiency.
 
+
+### Flashcard
+Merge two sorted arrays of unique IDs by summing values for matching IDs, advancing pointers as in merge sort.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers)
 

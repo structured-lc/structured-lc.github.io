@@ -109,6 +109,10 @@ def robotSim(commands, obstacles):
 This problem is a classic **grid simulation** task involving direction tracking and efficient obstacle avoidance using a set.  
 The solution demonstrates direct simulation, leveraging coordinate math and direction cycling—a common pattern in robot, maze, or movement simulation questions. This approach is broadly applicable for similar grid traversal and movement constraint problems.
 
+
+### Flashcard
+Simulate robot moves with direction vectors; use a set for O(1) obstacle checks, track max Euclidean distance squared.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Simulation(#simulation)
 

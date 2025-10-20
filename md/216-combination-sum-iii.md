@@ -80,6 +80,10 @@ def combinationSum3(k, n):
 ### Summary
 This problem uses the **backtracking** pattern, exhaustively constructing combinations subject to constraints (set size, element sum, no repeats). The search is efficient due to constrained input and early pruning, and the pattern is fundamental for many subset, combination, or partitioning problems (e.g., N-Queens, subset sum, k-combinations, and others).
 
+
+### Flashcard
+Use backtracking to build k-sized combinations of 1–9 that sum to n; prune paths early if sum or size exceeds limits.
+
 ### Tags
 Array(#array), Backtracking(#backtracking)
 

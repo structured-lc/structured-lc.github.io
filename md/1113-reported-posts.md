@@ -117,6 +117,10 @@ ORDER BY
 ### Summary
 This problem utilizes the **group by + count distinct** pattern in SQL, essential for common analytics like deduplication and daily aggregation. It's a classic database query frequently encountered in business reporting, monitoring reported/flagged content, and user activity summarization. This pattern generalizes to any situation where you need unique entity counts over time or categories.
 
+
+### Flashcard
+Filter rows where action = 'report', GROUP BY action_date, COUNT(DISTINCT post_id) for each date.
+
 ### Tags
 Database(#database)
 

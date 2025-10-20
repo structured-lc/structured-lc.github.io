@@ -79,6 +79,10 @@ def cherryPickup(grid):
 ### Summary
 This is a classical DP with multiple agents/coordinates on a grid, a strong example of "multi-dimensional state DP" patterns. The state depends on row, col₁, col₂ (robot positions); applies when future state depends on multiple independent agents traversing the same structure.
 
+
+### Flashcard
+Use DP: dp[row][col₁][col₂] is max cherries collected by two robots at positions col₁ and col₂ on row; try all moves for both.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

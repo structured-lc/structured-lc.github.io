@@ -85,6 +85,10 @@ def differenceOfSums(n: int, m: int) -> int:
 ### Summary
 The approach demonstrates a classic application of **arithmetic progression formulas** and difference calculation, reducing an O(n) task to O(1) time. This pattern reappears in problems dealing with the sum of filtered numerical ranges, divisibility, and regular intervals. Recognizing these mathematical properties is key to optimizing performance in similar coding interviews.
 
+
+### Flashcard
+Compute total sum 1…n and sum of numbers divisible by m; subtract to get non-divisible sum, then return their difference.
+
 ### Tags
 Math(#math)
 

@@ -75,6 +75,10 @@ def sumOfDigits(nums):
 ### Summary
 This problem emphasizes **array scanning** and **simple digit manipulation**. The approach uses the common patterns of "find min" and then "operate on min". This technique (operating on the extremum of an array) is prevalent in interview questions involving arrays, statistics, or digit arithmetic.
 
+
+### Flashcard
+Find minimum value in array, sum its digits using modulo/division, return 1 if sum is even else 0.
+
 ### Tags
 Array(#array), Math(#math)
 

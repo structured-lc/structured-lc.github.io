@@ -137,6 +137,10 @@ def waysToBuildRooms(prevRoom):
 ### Summary
 This problem exemplifies **tree DP with combinatorics**, a pattern found in many "number of ways" tree questions. The multinomial coefficient combines subtree arrangements, and the DP propagates solutions up the tree. Precomputing factorials and their inverses is a reusable trick for modular multinomial/binomial coefficients, common in advanced combinatorics problems. This pattern is seen in subtree reordering, counting valid tournaments, and various graph-permutation enumeration tasks.
 
+
+### Flashcard
+The answer is the product of the sizes of subtrees, divided by the product of their factorial sizes, using modular arithmetic for large trees.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Tree(#tree), Graph(#graph), Topological Sort(#topological-sort), Combinatorics(#combinatorics)
 

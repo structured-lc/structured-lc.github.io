@@ -110,6 +110,10 @@ def getCollisionTimes(cars: List[List[int]]) -> List[float]:
 ### Summary
 The key idea is to process cars from the back, using a **monotonic stack** to track which cars (or fleets) can potentially be collided with, and efficiently skip those that can't be reached due to speed or earlier collisions. This pattern is similar to **monotonic stack** problems (e.g., Next Greater Element) and often applies where you need to compute non-overlapping sequential events in linear time.
 
+
+### Flashcard
+For Car Fleet II, process cars from right to left using a monotonic stack to efficiently track potential collisions and merged fleets.
+
 ### Tags
 Array(#array), Math(#math), Stack(#stack), Heap (Priority Queue)(#heap-priority-queue), Monotonic Stack(#monotonic-stack)
 

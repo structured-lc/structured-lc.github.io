@@ -119,6 +119,10 @@ class RangeFreqQuery:
 ### Summary
 This approach uses a classic binary search over preprocessed value→indices mapping to efficiently count frequencies in subarrays—a “coordinate mapping + search” pattern, common in static range query problems when updates are not allowed. It’s especially useful for immutable arrays and can appear in problems involving range counting, Kth order statistics, and frequency queries on static data.
 
+
+### Flashcard
+For each value, store sorted indices; answer queries by binary searching this list to count occurrences in [left, right].
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Design(#design), Segment Tree(#segment-tree)
 

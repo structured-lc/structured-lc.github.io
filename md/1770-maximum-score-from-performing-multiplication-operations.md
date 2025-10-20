@@ -145,6 +145,10 @@ This is a classic example of **dynamic programming on choices** -- optimizing ov
 It uses a 2D DP state and memoization (top-down) to efficiently compute the answer in O(m²) time/space.  
 This pattern appears in similar "pick from ends" interval DP problems, including coin games, optimal strategy for games, and variants where states depend on prefix/suffix choices.
 
+
+### Flashcard
+Dynamic programming with state (operations done, left picks): at each step, choose left or right end of nums.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

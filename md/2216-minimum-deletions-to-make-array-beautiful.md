@@ -93,6 +93,10 @@ def minDeletion(nums):
 ### Summary
 This problem uses a greedy, one-pass array construction pattern, focusing on minimal deletions by only looking at necessary local pairs and post-process length requirements. This is a classic greedy greedy/array-sweep, similar to “make string valid” or “remove minimal characters for property.” Patterns like this appear in string sanitization and two-pointer array/cursor problems.
 
+
+### Flashcard
+Greedily build a beautiful array by skipping elements that violate the even-odd alternation rule, tracking deletions needed.
+
 ### Tags
 Array(#array), Stack(#stack), Greedy(#greedy)
 

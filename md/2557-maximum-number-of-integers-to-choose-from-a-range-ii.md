@@ -96,6 +96,10 @@ def maxCount(banned, n, maxSum):
 ### Summary
 The problem uses a classic *greedy* + *set lookup* approach: always pick the smallest available (non-banned) numbers to maximize count before exceeding maxSum. The pattern arises in many "maximize choices under sum/constraint" problems. When n is massive but maxSum is small, early exit is crucial for efficiency. This method generalizes to problems where we need to count numbers under exclusions and a global cap.
 
+
+### Flashcard
+Same as 2554, but n can be huge—use the same greedy approach, skipping banned numbers, and stop when sum exceeds maxSum.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
 

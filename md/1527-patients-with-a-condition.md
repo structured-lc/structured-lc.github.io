@@ -154,6 +154,10 @@ This problem uses the **string scanning** pattern—break a string by delimiters
 It's a simple application of data search, and similar logic is common in word parsing, CSV scanning, and substring search problems.  
 Mastering this approach is useful in many data cleanup and filtering tasks where you identify key tokens or codes in textual fields.
 
+
+### Flashcard
+Split the conditions string by spaces and check if any word starts with "DIAB1" (case-insensitive) to identify relevant patients.
+
 ### Tags
 Database(#database)
 

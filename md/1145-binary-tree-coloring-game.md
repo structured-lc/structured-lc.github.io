@@ -117,6 +117,10 @@ This problem is an application of **binary tree traversal** and strategic partit
 By counting **regions around Player 1’s pick**, we transform the game to a region-maximization problem: if Player 2 can start in the largest region (with more than half the nodes), they can guarantee a win.  
 The pattern—divide the tree at a node and analyze the sizes of partitions—applies to problems like tree balance checks, "kth smallest in binary tree subregion," and network control simulations.
 
+
+### Flashcard
+Count nodes in left, right, and parent regions of chosen node; Player 2 can win if any region has > n/2 nodes.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

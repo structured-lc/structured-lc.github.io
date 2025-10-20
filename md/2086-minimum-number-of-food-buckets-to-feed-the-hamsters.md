@@ -88,6 +88,10 @@ def minimumBuckets(hamsters: str) -> int:
 ### Summary
 This problem is a classic example of the greedy covering pattern — always placing a bucket at the rightmost possible position next to a hamster maximizes coverage for future hamsters. It's related to interval covering and greedy placement in optimal resource allocation, and this pattern is common in other greedy minimization problems for single-pass "feed or cover" scenarios.
 
+
+### Flashcard
+Sweep left to right; greedily place buckets at empty spots to cover hamsters, and return -1 if impossible.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

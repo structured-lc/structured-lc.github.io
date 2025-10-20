@@ -84,6 +84,10 @@ def sumOddLengthSubarrays(arr):
 ### Summary
 This problem uses a combinatorial/counting technique to compute the contribution of each element efficiently—a common pattern in array subarray sum problems. The O(n) approach is much more efficient than brute-force and is useful in questions where each item's contribution can be analyzed by its position and the ways it can be chosen in subarray intervals. This pattern also appears in questions like subarray sum ranges, minimum/maximum subarray contributions, and frequently in sliding window problems.
 
+
+### Flashcard
+Sum all odd-length subarrays by iterating over all possible starts and ends, but optimize by counting each element’s contribution.
+
 ### Tags
 Array(#array), Math(#math), Prefix Sum(#prefix-sum)
 

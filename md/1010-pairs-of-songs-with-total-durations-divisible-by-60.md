@@ -82,6 +82,10 @@ def numPairsDivisibleBy60(time):
 ### Summary
 This problem is a classic example of the "two sum with a twist" pattern, where you use modulo (remainder) to reduce the search for complementing elements. Maintaining a running count of remainders lets you find pairings in linear time and constant space. This pattern is also useful for any problem involving subarrays or pairs with sums divisible by a given integer.
 
+
+### Flashcard
+For each song, count remainder mod 60; for remainder r, add count of (60−r) mod 60 seen so far to total pairs.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

@@ -87,6 +87,10 @@ The **two-pointer pattern** is used, which efficiently checks for a subsequence 
 This approach is commonly applied to problems involving the ordering or matching between two lists or strings (e.g., merging sorted arrays, validating shuffle patterns).  
 It's optimal for cases where order matters but contiguity isn't required.
 
+
+### Flashcard
+Use two pointers to scan s and t; advance s only when characters match, and check if s is fully traversed.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming)
 

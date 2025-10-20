@@ -118,6 +118,10 @@ def diffWaysToCompute(expression: str) -> list[int]:
 ### Summary  
 This problem demonstrates the **divide-and-conquer** pattern (recursive splitting on operators) with **memoization** for optimization—both are powerful strategies for expression evaluation. This approach generalizes well to similar problems involving all possible binary tree parenthesizations, or wherever you want all possible results from different ways to process binary operations on an input sequence.
 
+
+### Flashcard
+Recursively split at each operator, compute all results for left/right, combine; use memoization to cache subexpression results.
+
 ### Tags
 Math(#math), String(#string), Dynamic Programming(#dynamic-programming), Recursion(#recursion), Memoization(#memoization)
 

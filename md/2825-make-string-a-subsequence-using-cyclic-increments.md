@@ -92,6 +92,10 @@ def canMakeSubsequence(str1: str, str2: str) -> bool:
 ### Summary
 This problem leverages the **two-pointer** pattern often used to check for subsequences, but with an added flexibility of matching each character against its cyclic increment. This extends naturally to problems involving flexible matching or single-letter transformations, and is common in greedy and "match with one change/shift" patterns. Approaching it with a clear model of the single operation and per-letter simulation leads to an optimal and readable solution.
 
+
+### Flashcard
+Two-pointer greedy check—for each character in str1, match it or its cyclic increment (+1 mod 26) to current position in str2.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

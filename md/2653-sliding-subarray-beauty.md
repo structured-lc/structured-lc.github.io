@@ -111,6 +111,10 @@ Commonly appears when value range is fixed/small, enabling O(1) or O(r) updates 
 Pattern generalizes to: Sliding window median, k-th largest/smallest in window problems, especially when values are bounded.  
 Key insight: **Count array instead of sort or BST when value range is small.**
 
+
+### Flashcard
+Maintain a frequency array for negatives (–50 to –1) as the window slides; iterate from most negative upward to find the xᵗʰ smallest in O(50) per step.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
 

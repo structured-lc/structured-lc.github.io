@@ -77,6 +77,10 @@ def findingUsersActiveMinutes(logs, k):
 ### Summary
 This problem demonstrates the hash map + set pattern for counting unique occurrences. The key insight is recognizing that we need to count distinct minutes per user, then group users by their active minute counts. This pattern is common in problems involving grouping, counting distinct elements, and building frequency distributions.
 
+
+### Flashcard
+Use dict mapping userID to set of active minutes; count set sizes, then build answer array indexing by UAM count.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

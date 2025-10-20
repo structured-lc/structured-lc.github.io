@@ -100,6 +100,10 @@ def minSum(nums1, nums2):
 ### Summary
 This problem is a **greedy simulation** and minimal feasible value calculation. It's analogous to problems where you need to "fill in unknowns under constraints so as to equalize aggregates", such as array restoration or equalizing two multisets with minimal effort. The pattern: scan for zeros, evaluate minimal totals, and consider whether flexibility is enough to match the arrays. This method is used often in interview questions involving restoration and greedy distribution.
 
+
+### Flashcard
+Replace zeros with 1 in each array, then set both sums to max(sum₁ + zeros₁, sum₂ + zeros₂) for minimal equal sum.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

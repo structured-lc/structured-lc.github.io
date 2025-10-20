@@ -98,6 +98,10 @@ def smallestSubarrays(nums):
 ### Summary
 The solution uses bit manipulation and greedy right-to-left iteration. By tracking the latest position of each bit, we efficiently compute how far to extend the window to capture the maximal bitwise OR. This is a classic application of reverse array scanning and "bit contribution tracking." The sliding window + bitmask idea can also be seen in problems involving subarrays with bitwise constraints.
 
+
+### Flashcard
+Process from right to left, tracking the smallest subarray length where the bitwise OR equals the maximum possible.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Bit Manipulation(#bit-manipulation), Sliding Window(#sliding-window)
 

@@ -90,6 +90,10 @@ def max_run_time(n, batteries):
 ### Summary
 This problem leverages the **binary search** on the answer technique—a key skill for interviewer and contestant alike. By testing if a global constraint can be met for a guessed value, we efficiently home in on the maximum feasible solution. This "binary search over answer space" applies widely, like in scheduling, resource allocation, and optimizing parallel task execution.
 
+
+### Flashcard
+Binary search on runtime t; check if sum of min(battery, t) over all batteries ≥ n × t.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
 

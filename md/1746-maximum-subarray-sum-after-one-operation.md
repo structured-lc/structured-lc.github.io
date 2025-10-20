@@ -104,6 +104,10 @@ def maxSumAfterOperation(nums):
 ### Summary
 This problem uses a **dynamic programming extension of Kadane’s algorithm** with two running states ("used operation" and "not yet used"). It's a great example of how to handle "one modification" variants of subarray problems. This "split state DP" technique is broadly useful for max/min subarrays with a single edit (delete, replace, skip), often seen in competitive programming and interviews.
 
+
+### Flashcard
+Maintain two Kadane states: maxWithoutSquare and maxWithSquare; at each position, optionally square current element when transitioning from without to with state.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

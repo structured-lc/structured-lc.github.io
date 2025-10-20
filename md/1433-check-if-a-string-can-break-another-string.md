@@ -58,6 +58,10 @@ def checkIfCanBreak(s1, s2):
 ### Summary
 This is a classic example of greedy + sorting comparison by index. The pattern is common in "rearrange and compare" scenarios, especially when the question involves element-wise dominance.
 
+
+### Flashcard
+Sort both strings and compare them index by index to determine if one can break the other.
+
 ### Tags
 String(#string), Greedy(#greedy), Sorting(#sorting)
 

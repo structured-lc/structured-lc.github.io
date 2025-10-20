@@ -126,6 +126,10 @@ def recoverArray(n, sums):
 ### Summary
 This problem is a classic **reverse-combinatorics**/subset-reconstruction recursive problem, and the core approach is recursively extracting elements by observing how the subset sum multiset changes when including/excluding each found element. It’s related to subset-sum, bitmasking, recursive backtracking, and multiset manipulation—classic in problems involving subsets, powersets, and reconstructing from aggregate data.
 
+
+### Flashcard
+Reconstruct the array by recursively splitting sorted subset sums into those with and without each element, always extracting the smallest difference.
+
 ### Tags
 Array(#array), Divide and Conquer(#divide-and-conquer)
 

@@ -77,6 +77,10 @@ class TreeAncestor:
 ### Summary
 This problem is the textbook application of binary lifting on trees for range ancestor queries. This method also appears in LCA (Lowest Common Ancestor), and fast level jumps in many tree-based DS problems.
 
+
+### Flashcard
+Precompute up[node][j] as 2ʲ-th ancestor for each node (binary lifting); answer each query by jumping up in O(log k) using powers of two.
+
 ### Tags
 Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Design(#design)
 

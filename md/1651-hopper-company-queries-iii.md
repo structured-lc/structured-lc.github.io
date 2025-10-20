@@ -89,6 +89,10 @@ ORDER BY start_month;
 ### Summary
 This approach uses SQL querying to slide a fixed-size window (3 months) across aggregated monthly ride data, leveraging table joins and grouping. This pattern—fixed-size sliding window time aggregation—is widely applicable in analytics tasks over time series data.
 
+
+### Flashcard
+Use SQL window functions to aggregate ride data into sliding 3-month windows, then compute and round the average for each window.
+
 ### Tags
 Database(#database)
 

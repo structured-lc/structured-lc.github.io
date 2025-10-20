@@ -102,6 +102,10 @@ This problem uses a **Greedy / Insertion sort** pattern: sort an array by main c
 The trick is to sort to decouple dependencies (tallest-first) and handle insertion placements accordingly.  
 Similar ideas can be applied in other order-reconstruction problems where later elements' positions depend on the prior state, like building paper stacks, schedule synthesizing, or stable seating plans.
 
+
+### Flashcard
+Sort by height descending (then k ascending), then insert each person at index k—tallest first ensures their k value remains valid as shorter people insert.
+
 ### Tags
 Array(#array), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Sorting(#sorting)
 

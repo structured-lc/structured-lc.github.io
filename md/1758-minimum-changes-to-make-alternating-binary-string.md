@@ -84,6 +84,10 @@ def min_operations(s: str) -> int:
 ### Summary
 This problem uses the classic **pattern comparison** and **greedy counting** technique—scan the string, compare to both valid patterns, and pick the one needing fewer changes. It's an example of a "min cost to fit pattern" problem, which appears in string and array manipulation interviews. This logic applies to other pattern transformation problems, like converting to palindromes or matching certain templates.
 
+
+### Flashcard
+Count mismatches against both alternating patterns (start with '0' or '1'), return the minimum count of changes needed.
+
 ### Tags
 String(#string)
 

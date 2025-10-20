@@ -97,6 +97,10 @@ def minHeightShelves(books, shelfWidth):
 ### Summary
 This problem uses the **Interval DP / Partition DP** pattern, where at each index you decide partition points and solve subproblems recursively, memoizing as you go. The central challenge comes from the preservation of order and the local constraint on shelf width. This pattern is common in problems about grouping or segmenting sequences for minimal cost, e.g., "Word Break," "Palindrome Partitioning," and various scheduling/segmentation tasks.
 
+
+### Flashcard
+DP where dp[i] = minimum height to place first i books; try placing books[j:i] on a new shelf if width fits.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

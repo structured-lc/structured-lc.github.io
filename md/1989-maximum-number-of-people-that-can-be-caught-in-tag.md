@@ -96,6 +96,10 @@ def catchMaximumAmountOfPeople(team, dist):
 ### Summary
 This problem uses the **two-pointer pattern for greedy matching**, which is common in interval or pairing problems (e.g., assign workers to jobs, minimum platforms for trains). It's a classic greedy assignment, ensuring optimal pairings with minimal iteration, and can be generalized to problems where entities can be paired under certain constraints.
 
+
+### Flashcard
+Use two pointers to greedily match each "it" with the nearest uncaught "not it" within distance, maximizing pairs.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

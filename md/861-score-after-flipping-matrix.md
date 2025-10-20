@@ -94,6 +94,10 @@ def matrixScore(grid):
 ### Summary
 This problem leverages the **greedy** algorithmic pattern—by always flipping to maximize 1s in the most significant (leftmost) bit positions, you guarantee the largest possible sum. This pattern appears in other binary matrix maximization/minimization tasks, and also relates to **bit manipulation** and **dynamic programming** in broader contexts.
 
+
+### Flashcard
+Flip rows to make first column all 1s; for other columns, flip if 0s > 1s to maximize binary score.
+
 ### Tags
 Array(#array), Greedy(#greedy), Bit Manipulation(#bit-manipulation), Matrix(#matrix)
 

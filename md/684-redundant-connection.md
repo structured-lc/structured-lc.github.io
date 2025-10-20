@@ -90,6 +90,10 @@ This is a classic **cycle detection in undirected graph** problem, efficiently s
 Union-Find is a common coding pattern for questions involving connected components, cycles, network connectivity, and is widely used in Kruskal’s MST and other graph problems.  
 The problem demonstrates how to efficiently detect cycles in a streaming manner, with O(n) performance and minimal storage.
 
+
+### Flashcard
+Use Union-Find to detect cycles; the first edge that connects two nodes already in the same set is the redundant connection.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

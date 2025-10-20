@@ -113,6 +113,10 @@ def find132pattern(nums):
 ### Summary
 This problem demonstrates the power of monotonic stacks for solving complex pattern recognition problems. The key insight is to process the array from right to left while maintaining a stack of candidates and tracking the second-largest value seen so far. The stack maintains potential nums[j] values in decreasing order, allowing us to efficiently find valid 132 patterns. This technique of using stacks with auxiliary variables to track specific conditions is common in many array problems involving patterns or subsequences.
 
+
+### Flashcard
+Iterate right-to-left, using a stack to track potential "3" values and a variable for the "2" value, to detect a 132 pattern in O(n) time.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Stack(#stack), Monotonic Stack(#monotonic-stack), Ordered Set(#ordered-set)
 

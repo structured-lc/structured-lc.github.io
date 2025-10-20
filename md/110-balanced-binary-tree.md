@@ -113,6 +113,10 @@ def isBalanced(root):
 ### Summary
 This problem uses the **post-order traversal** recursion pattern and demonstrates how to return multiple values (balance status and height) from helper functions. This bottom-up approach is efficient for problems involving accumulating information from subtrees. It's a standard pattern for "tree status + summary" checks, also applicable in AVL tree construction, path-sum problems, and more.
 
+
+### Flashcard
+Use bottom-up recursion returning -1 for unbalanced subtrees, otherwise return height, checking at each node if |left_height - right_height| ≤ 1.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

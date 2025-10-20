@@ -85,6 +85,10 @@ This approach uses a "simulated addition" pattern—manual digit manipulation fr
 It’s very common whenever you have numbers split by digit in an array or list—common in problems that simulate calculators, big integers, or special number formats.  
 This code pattern applies to big integer addition, incrementing string-based numbers, or any scenario where you must avoid integer overflow for large input sizes.
 
+
+### Flashcard
+Add 1 from the end, set digits to 0 on carryover, and insert 1 at the front if all digits were 9.
+
 ### Tags
 Array(#array), Math(#math)
 

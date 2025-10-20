@@ -78,6 +78,10 @@ def has_trailing_zeros(nums):
 ### Summary
 This problem uses the **parity checking pattern**: identifying even elements to enable bitwise conditions across pairs. The approach is linear, O(n) time, O(1) space, and is broadly useful for any problem where the parity or the lowest bit matters, such as grouping, pair-counting, or bitmask problems. It demonstrates a common pattern of reducing a complex check to a problem on simple counts or properties.
 
+
+### Flashcard
+A bitwise OR has trailing zeros (is even) only if at least one number in the subset is even. Simply check if the array contains at least two even numbers using a single pass.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

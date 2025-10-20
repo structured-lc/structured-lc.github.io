@@ -135,6 +135,10 @@ This problem uses the **group-by** and **unique counting** pattern, a classic in
 It closely relates to **hashing/grouping by key and set membership** algorithms, seen in database engines and large-scale log processing.  
 The solution pattern generalizes to counting the number of distinct items per group, and is relevant in user analytics, logging, and category aggregation.
 
+
+### Flashcard
+Use a dictionary mapping each teacher_id to a set of subject_ids; iterate once through all rows and count set sizes at the end.
+
 ### Tags
 Database(#database)
 

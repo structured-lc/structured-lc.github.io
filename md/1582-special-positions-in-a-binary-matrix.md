@@ -55,6 +55,10 @@ def numSpecial(mat):
 ### Summary
 This problem utilizes prefix sum-style precomputation and is a staple for scanning matrices for isolated features. This approach applies to unique row/column conflicts, text editors, or image processing.
 
+
+### Flashcard
+For each '1' in the matrix, check if its row and column sums are both 1; precompute sums for O(mn) time.
+
 ### Tags
 Array(#array), Matrix(#matrix)
 

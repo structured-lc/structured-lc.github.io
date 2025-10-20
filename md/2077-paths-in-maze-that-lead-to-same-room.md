@@ -92,6 +92,10 @@ The efficient approach is to use adjacency sets and neighbor intersection, which
 The core pattern here is graph traversal with neighbor set intersection, a useful technique for detecting small cliques or cycles in graphs.  
 This pattern generalizes to k-clique counting (counting complete subgraphs of size k) and is a core idea in network motif analysis and cycle detection.
 
+
+### Flashcard
+For each edge (u, v), count common neighbors w (i.e., intersection of adj[u] and adj[v]) to efficiently find all triangles (cycles of length 3).
+
 ### Tags
 Graph(#graph)
 

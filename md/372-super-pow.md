@@ -89,6 +89,10 @@ def superPow(a, b):
 This problem is a classic use of modular exponentiation and recursion to handle extremely huge exponents that cannot fit in memory. The coding pattern is "divide the problem into last digit + the rest," a common trick in problems involving arrays as digits.  
 Similar strategies apply in RSA, cryptography, and problems involving modular powers with large sizes.
 
+
+### Flashcard
+Use modular exponentiation and recursion: aᵇ mod k = (aᵇ¹⁰ mod k)¹⁰ × (a^{last digit} mod k) mod k.
+
 ### Tags
 Math(#math), Divide and Conquer(#divide-and-conquer)
 

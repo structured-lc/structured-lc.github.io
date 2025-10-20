@@ -133,6 +133,10 @@ This problem is a classic **tree traversal with pruning** pattern. The binary tr
 The approach—searching for the smallest qualifying value strictly greater than the minimum—is similar to the "second minimum/unique value" problems, which commonly appear in both trees and arrays.  
 The **pattern** applies to other scenarios where finding the "runner-up" value under monotonicity properties is required.
 
+
+### Flashcard
+Traverse tree to find the smallest value greater than root.val; if none exists, return −1.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

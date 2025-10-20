@@ -101,6 +101,10 @@ def minScore(n, roads):
 ### Summary
 This problem exemplifies a "minimum edge in a component" pattern; a variation on connected component identification using BFS/DFS, where path traversals may revisit both nodes and edges. Such logic—tracing reachability, and aggregating node or edge data—applies to network reliability, bottleneck analysis, and "maximum bandwidth path" variations in graphs.
 
+
+### Flashcard
+Find the minimum edge in the connected component containing both cities—DFS/BFS suffices.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

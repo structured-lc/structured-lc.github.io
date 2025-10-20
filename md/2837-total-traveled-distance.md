@@ -120,6 +120,10 @@ This is a straightforward SQL *aggregation with LEFT JOIN* problem, where we avo
 This pattern is common for "compute roll-up metrics per entity even if no events/data exist" and applies to sales, transactions, etc.  
 Handling NULLs in aggregates after joins is a core SQL skill.
 
+
+### Flashcard
+LEFT JOIN Users and Rides on user_id; sum IFNULL(distance, 0) grouped by user_id, ordered ascending.
+
 ### Tags
 Database(#database)
 

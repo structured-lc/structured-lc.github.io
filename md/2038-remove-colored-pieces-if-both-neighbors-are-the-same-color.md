@@ -88,6 +88,10 @@ def winnerOfGame(colors: str) -> bool:
 ### Summary
 We used a **greedy counting approach** that avoids simulation: the winner depends only on the initial counts of potential moves (internal pieces in runs of the same color, for both players). This is a form of "counting blocks/subarrays" — a common string/game pattern, and is directly applicable to any game involving actions on runs/substrings (e.g., maximizing deletions in substrings, Nim variants).
 
+
+### Flashcard
+Count runs of ≥3 same-color pieces; each run of length k allows (k-2) removals—sum removals for Alice and Bob separately.
+
 ### Tags
 Math(#math), String(#string), Greedy(#greedy), Game Theory(#game-theory)
 

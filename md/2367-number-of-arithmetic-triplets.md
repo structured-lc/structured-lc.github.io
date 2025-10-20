@@ -82,6 +82,10 @@ def arithmeticTriplets(nums, diff):
 ### Summary
 This is a classic use of the **hash set for existence check** technique—often called "Hashing for fast lookups"—to reduce otherwise expensive triple nested loops down to a linear time algorithm. Variations of this pattern are common in substring/sequence detection and sum or difference-based problems.
 
+
+### Flashcard
+Convert nums to a set; for each num, check if num + diff and num + 2×diff exist in set—count such triplets. O(n) time.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Enumeration(#enumeration)
 

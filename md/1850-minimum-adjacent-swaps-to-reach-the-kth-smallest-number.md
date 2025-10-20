@@ -140,6 +140,10 @@ This problem is a blend of two classic patterns:
 - Count the minimum number of adjacent swaps via selection-sort-like logic, or by counting inversions, which comes up in sorting questions and string transformation.  
 The approach is efficient for small-to-medium k. Both parts of this pattern show up in other questions, such as minimum swaps to convert strings, bubble/selection sort simulation, and kᵗʰ permutation generation.
 
+
+### Flashcard
+Use the "next permutation" algorithm k times to find the kᵗʰ smallest wonderful integer. Then, calculate the minimum adjacent swaps by counting inversion pairs between the original and target arrangements.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Greedy(#greedy)
 

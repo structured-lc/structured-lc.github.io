@@ -108,6 +108,10 @@ def countStudents(students, sandwiches):
 ### Summary
 This problem uses the **hash/counting** pattern to optimize what appears to be a simulation problem. The key is to realize that only the count of each preference matters, not the individual order of students. This insight reduces simulation from O(n²) to O(n), a common pattern in queue/stack preference-matching problems. This approach is applicable in other problems where the order of agents is flexible and only aggregate preferences against a sequential supply matter.
 
+
+### Flashcard
+Count students who prefer each sandwich type; serve sandwiches in order, decrementing the matching student count until no more can be served—remaining students can't eat.
+
 ### Tags
 Array(#array), Stack(#stack), Queue(#queue), Simulation(#simulation)
 

@@ -79,6 +79,10 @@ This problem is a classic **Greedy** pattern — always make the locally optimal
 The algorithm pattern applies widely in maximizing choices given limited resources, such as activity selection, knapsack (greedy variant), and scheduling.  
 If all inputs are small integers, a counting/bucket sort pattern can be used for O(n) solutions.
 
+
+### Flashcard
+Sort costs, buy cheapest first until coins run out; greedy approach maximizes count.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Counting Sort(#counting-sort)
 

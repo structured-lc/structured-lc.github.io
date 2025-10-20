@@ -86,6 +86,10 @@ The problem uses a greedy "cycle detection" method—the answer increases each t
 This technique is common when all variants of elements must be sequentially observed (subset collection patterns).  
 The code avoids explicit combinatorial checks and is applicable to problems involving hitting all unique elements repeatedly in order.
 
+
+### Flashcard
+Count how many times you collect all k distinct faces while scanning rolls—that count plus 1 is the shortest impossible sequence length.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Greedy(#greedy)
 

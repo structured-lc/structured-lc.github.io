@@ -83,6 +83,10 @@ def canDivideIntoSubsequences(nums, k):
 ### Summary
 This problem uses a **greedy frequency counting** pattern, exploiting the fact that duplicates force splits into separate sequences. It’s common in problems involving subsequence partitioning and grouping by occurrence constraints, especially when input is sorted and strict order is required. Variants appear in interval scheduling and sequencing tasks.
 
+
+### Flashcard
+Count max frequency of any element; valid if len(nums) ≥ max_freq × k (ensures each duplicate gets its own length-k sequence).
+
 ### Tags
 Array(#array), Counting(#counting)
 

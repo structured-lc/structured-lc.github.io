@@ -133,6 +133,10 @@ This problem uses the **length-augmented tree traversal** pattern: at each node,
 This is a classic Rope problem: ropes are used in text editors for fast split/merge/index.  
 The core technique (descend left/right based on cumulative counts) applies to many range query problems on trees, e.g. order statistics in BSTs, Kᵗʰ smallest in segment trees, etc.
 
+
+### Flashcard
+Navigate tree by comparing k with left subtree length at each node: if k ≤ left.len descend left, else subtract left.len from k and descend right, until reaching leaf node where val[k−1] is the answer.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

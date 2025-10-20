@@ -74,6 +74,10 @@ def minDays(n):
 ### Summary
 Dynamic programming + memoization on n. Classic min-steps DP pattern where states can branch. Rarely possible with pure greedy, usually best with memoized recursion.
 
+
+### Flashcard
+Use memoized recursion; at each n, try eating 1 (cost 1 + dp(n-1)), eating n/2 after n%2 operations, or eating 2n/3 after n%3 operations; return minimum.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Memoization(#memoization)
 

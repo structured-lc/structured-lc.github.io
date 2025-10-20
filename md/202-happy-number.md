@@ -89,6 +89,10 @@ This is a classic example of *cycle detection in sequences*, specifically digit 
 The coding pattern is **hashing/visited set for cycle detection**, commonly extended to problems involving repeated number transformations or linked list cycle detection.  
 The same logic applies to other digit sum transformation or digital root-related problems.
 
+
+### Flashcard
+Repeatedly replace n with the sum of its digits squared; use a set to detect cycles—if you reach 1, it's happy, else a loop.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), Two Pointers(#two-pointers)
 

@@ -84,6 +84,10 @@ def maximizeSquareArea(m, n, hFences, vFences):
 ### Summary
 This problem uses the common "set of all differences" technique, where for a limited set of positions we enumerate all possible distance pairs. The intersection approach ensures only square sizes feasible in both axes are considered. This pattern of "possible rectangle/square sizes from fences/lines" is common, and set intersection is an efficient trick whenever possible distances must be matched in two dimensions.
 
+
+### Flashcard
+Find all pairwise distances between horizontal lines (including boundaries at 1 and m) and vertical lines (boundaries at 1 and n). Return the square of the largest distance present in both sets, or -1 if none exist.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Enumeration(#enumeration)
 

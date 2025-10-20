@@ -103,6 +103,10 @@ def similarPairs(words):
 This problem is a classic reduction to hashing for grouping identical "character sets", and then counting combinations from group sizes. The **bitmasking** pattern is highly efficient when elements map to a small, fixed alphabet (like lowercase English).  
 The **hashmap counting/combinatorics** technique seen here also applies to problems involving "counting pairs/sets" based on equivalence over a transformation (e.g., anagram grouping, similar attribute grouping).
 
+
+### Flashcard
+Encode each word's unique character set as bitmask (26 bits for a-z), count pairs with identical bitmasks using hash map frequency counts.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Counting(#counting)
 

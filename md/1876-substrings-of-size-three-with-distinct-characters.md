@@ -79,6 +79,10 @@ def countGoodSubstrings(s):
 ### Summary
 This is a classic *fixed-size sliding window* or *single pass substring* problem, but optimal here is a linear scan and direct character comparison because substring length is fixed and small. The same pattern (check each fixed-sized substring for a property) occurs in problems involving "substring of length k" with uniqueness/distinctness or character property checks, and can usually be solved with a sliding window and/or frequency counters for higher values of k.
 
+
+### Flashcard
+Iterate through all substrings of size 3, checking if characters are distinct. Use direct comparisons for efficiency.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window), Counting(#counting)
 

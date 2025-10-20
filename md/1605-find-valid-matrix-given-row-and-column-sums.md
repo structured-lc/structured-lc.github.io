@@ -63,6 +63,10 @@ def restoreMatrix(rowSum, colSum):
 ### Summary
 This is basically greedy resource allocation. The approach generalizes to supply-demand, transportation (min-cost flow), or coloring problems where we iteratively "fit as much as possible" until all quotas are met.
 
+
+### Flashcard
+Greedily fill each cell with the minimum of remaining row and column sums, then adjust both sums accordingly.
+
 ### Tags
 Array(#array), Greedy(#greedy), Matrix(#matrix)
 

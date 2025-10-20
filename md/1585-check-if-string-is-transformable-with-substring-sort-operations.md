@@ -67,6 +67,10 @@ def isTransformable(s, t):
 ### Summary
 This problem is a simulation of restricted bubble sort moves and applies greedy checks based on digit positions with multiple priority queues or deques. It's similar to checking transformability with adjacent swaps under constraints, useful for string and permutation problems.
 
+
+### Flashcard
+For each digit in target, ensure it can bubble left in source past only larger digits; use queues to track digit positions.
+
 ### Tags
 String(#string), Greedy(#greedy), Sorting(#sorting)
 

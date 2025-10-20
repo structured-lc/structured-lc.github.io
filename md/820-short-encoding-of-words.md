@@ -92,6 +92,10 @@ def minimumLengthEncoding(words):
 ### Summary
 This problem leverages **Suffix Elimination** and/or **Trie building** for suffix overlap detection efficiently. The key is removing redundancy by not encoding words that are suffixes of others. The core pattern applies broadly to problems of string compression, minimal encoding, and common prefix/suffix aggregation, with Tries being a go-to data structure for such scenarios.
 
+
+### Flashcard
+Remove all suffixes of each word from the set; the minimal encoding length is the sum of lengths of remaining words plus one '#' per word.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Trie(#trie)
 

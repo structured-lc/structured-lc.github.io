@@ -106,6 +106,10 @@ def countValidWords(sentence: str) -> int:
 ### Summary
 This approach demonstrates the **tokenization + validation** pattern, scanning each word and performing stepwise checks in linear time. The pattern is broadly useful: parsing or validating log lines, cleaning user input, or token classification in natural-language tasks. The function is easily adapted to related word validation questions with custom rules.
 
+
+### Flashcard
+For each token, check no digits, at most one hyphen (not first/last), at most one punctuation (only at end)—single left-to-right scan per token.
+
 ### Tags
 String(#string)
 

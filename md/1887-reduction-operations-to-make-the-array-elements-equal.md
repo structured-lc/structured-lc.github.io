@@ -87,6 +87,10 @@ def reductionOperations(nums):
 ### Summary
 The main approach is a "group counting after sorting" pattern: we process elements in order and accumulate the number of operations based on unique values encountered. This is a frequent strategy for problems involving reductions, merges, or aggregation by unique values. The solution avoids brute-force simulation by turning the problem into an efficient counting-with-sorting problem, a common technique in competitive programming and technical interviews.
 
+
+### Flashcard
+Sort the array and count reductions needed to make all elements equal.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

@@ -94,6 +94,10 @@ This problem is a classic example of the **graph traversal pattern**, specifical
 It’s a fundamental interview pattern for problems about visiting all nodes or components in a graph or network, and it regularly applies to problems involving unlocking, traversing, or marking visited elements.  
 Other examples: course schedule, number of connected components, islands in a grid, etc.
 
+
+### Flashcard
+Treat rooms as graph nodes; use DFS or BFS from room 0 to visit all reachable rooms, then check if all rooms are visited.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
 

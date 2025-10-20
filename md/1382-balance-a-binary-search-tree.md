@@ -87,6 +87,10 @@ def balanceBST(root):
 ### Summary
 This approach first linearizes the BST into a sorted sequence using in-order traversal, then reconstructs a balanced BST by recursively picking the middle node as root—commonly called the "sorted array to BST" pattern. This is a classic divide-and-conquer technique and a fundamental interview pattern for balanced tree construction.
 
+
+### Flashcard
+Flatten BST to sorted list via in-order traversal, then recursively build balanced BST from the middle.
+
 ### Tags
 Divide and Conquer(#divide-and-conquer), Greedy(#greedy), Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

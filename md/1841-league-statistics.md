@@ -164,6 +164,10 @@ def league_statistics(teams, matches):
 ### Summary
 This solution applies the “aggregate and sort by key” coding pattern that’s foundational in SQL and common in leaderboard-type problems. It’s a direct application of counting/group-by and then sorting by multiple criteria. The pattern is common in ranking problems, leaderboards, sports statistics, and can be adapted for analytics over partitioned/grouped data in many fields.
 
+
+### Flashcard
+Aggregate home and away stats per team; sum points, goals for/against, and compute goal difference.
+
 ### Tags
 Database(#database)
 

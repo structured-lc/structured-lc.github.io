@@ -86,6 +86,10 @@ def minimumEffortPath(heights):
 ### Summary
 Dijkstra's algorithm with a custom "maximum-so-far" updating rule solves this problem efficiently. It demonstrates the classic **Graph/Heap** pattern for minimum path finding with custom edge relaxations. The same technique is widely applicable to other grid-based or weighted path optimization problems.
 
+
+### Flashcard
+Use a path-finding approach to minimize the maximum effort along a path in a grid.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
 

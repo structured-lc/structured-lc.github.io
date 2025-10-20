@@ -91,6 +91,10 @@ def numberOfWays(s: str) -> int:
 ### Summary
 This problem is an example of prefix sum and counting pattern usage, a common and effective technique for problems involving subarray/subsequence queries in linear time. It applies a “fix-middle and count valid left/right pairs” strategy seen in problems with triple (or k-tuple) pattern selection, and the prefix approach is broadly applicable to interval and pattern-matching tasks.
 
+
+### Flashcard
+For each middle building, count valid triplets by multiplying prefix and suffix counts of the required alternating characters.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
 

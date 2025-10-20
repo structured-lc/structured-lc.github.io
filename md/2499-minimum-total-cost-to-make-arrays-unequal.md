@@ -121,6 +121,10 @@ This is a classic hard greedy + counting problem, often appearing with "spread a
 The core is finding "bottleneck" values in conflicts, then using *just enough* outside swaps to break deadlocks, always favoring swaps at lowest possible cost.  
 This “conflict resolve + greedy fixup” can be applied to array rearrangement, double-pointer mismatch fixing, or similar scheduling problems.
 
+
+### Flashcard
+Count "conflict" indices where nums1[i] = nums2[i]; swap with non-conflict values to resolve, minimizing total cost.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Greedy(#greedy), Counting(#counting)
 

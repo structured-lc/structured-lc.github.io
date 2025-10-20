@@ -96,6 +96,10 @@ def generateParenthesis(n):
 ### Summary
 This is a classic backtracking problem and a prime example of the "generate all combinations/strings under constraints" pattern. The solution leverages recursion and pruning (never adding invalid ')'), making it efficient compared to brute-force. This backtracking pattern is fundamental in problems like generating subsets, permutations, N-Queens, and more combinatorial generation problems.
 
+
+### Flashcard
+Use backtracking to build valid parentheses by adding '(' if open < n and ')' if close < open.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking)
 

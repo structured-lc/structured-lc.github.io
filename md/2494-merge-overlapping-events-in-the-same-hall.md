@@ -120,6 +120,10 @@ def merge_overlapping_events_in_same_hall(events):
 ### Summary
 This problem is a textbook application of the "merge intervals" pattern, but with an extra grouping step by hall. The standard pattern: **Sort**, then **greedily merge** overlapping intervals, is common for calendars, scheduling, and range-compression problems. The approach is efficient, proven, and reusable whenever you have overlapping intervals within groups.
 
+
+### Flashcard
+Group events by hall, sort by start, merge overlapping intervals within each group.
+
 ### Tags
 Database(#database)
 

@@ -98,6 +98,10 @@ def numSpecialEquivGroups(words):
 ### Summary
 The approach leverages the **normalizing-by-sorting pattern**—making use of the fact that only character position parity matters due to allowed swaps. This is a common technique for classifying anagrams and would apply to any problem where portions of a string can be reorganized independently (such as generalized group-anagrams problems).
 
+
+### Flashcard
+For each string, sort even and odd indexed letters separately; group strings by this signature to count special-equivalent groups.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting)
 

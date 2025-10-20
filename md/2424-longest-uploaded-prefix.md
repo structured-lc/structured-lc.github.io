@@ -114,6 +114,10 @@ class LUPrefix:
 ### Summary
 This approach uses prefix tracking and a set to efficiently simulate uploads and fetch the longest uploaded prefix in O(1) time per operation. The coding pattern is a sliding prefix pointer with set tracking, common in problems needing dynamic prefix/suffix updates or efficient prefix queries after random insertions. Similar ideas are useful in file streaming, segment tracking, and advancing fronts in greedy algorithms.
 
+
+### Flashcard
+Track the longest consecutive prefix of uploaded numbers.
+
 ### Tags
 Hash Table(#hash-table), Binary Search(#binary-search), Union Find(#union-find), Design(#design), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set)
 

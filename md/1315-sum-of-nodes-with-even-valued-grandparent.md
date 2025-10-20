@@ -114,6 +114,10 @@ def sumEvenGrandparent(root):
 ### Summary
 This problem is a classic recursive tree traversal with parameter passing. It uses depth-first search (DFS) and demonstrates how carrying ancestor information during recursion leads to elegant solutions. This pattern—passing parent/grandparent context down recursions—is commonly used in tree dynamic programming and ancestor-related queries on trees.
 
+
+### Flashcard
+DFS the tree, passing parent and grandparent values; if grandparent is even, add current node's value to the sum.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

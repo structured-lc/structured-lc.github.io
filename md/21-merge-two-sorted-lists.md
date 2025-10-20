@@ -98,6 +98,10 @@ def mergeTwoLists(list1, list2):
 ### Summary
 This problem demonstrates the **two-pointer** and **dummy node** design patterns, both commonly used for merging linked lists or solving problems that involve manipulating list nodes in-place. The approach makes use of the sorted property for efficient merging. The same principles apply when merging k sorted lists (often with a heap) or linked lists in various structures (doubly/circular, etc.), making this a foundational algorithm for data structure interviews.
 
+
+### Flashcard
+Merge two sorted lists by comparing heads and attaching the smaller node to the result list, advancing pointers as you go.
+
 ### Tags
 Linked List(#linked-list), Recursion(#recursion)
 

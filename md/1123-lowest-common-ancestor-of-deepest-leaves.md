@@ -140,6 +140,10 @@ This problem is a classic application of **DFS/Postorder Traversal** for trees, 
 It highlights patterns like recursive divide-and-conquer, LCA logic, and is broadly useful for binary/related tree problems.  
 This strategy is widely reusable for other “deepest node” and “LCA” related challenges.
 
+
+### Flashcard
+Post-order DFS returning (LCA, depth); if left_depth = right_depth = max, LCA is current node; otherwise return deeper subtree's result.
+
 ### Tags
 Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

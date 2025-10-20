@@ -101,6 +101,10 @@ def rotateTheBox(box):
 ### Summary
 This is a classic "matrix transformation" and "gravity simulation" problem, solved with a two-stage approach: simulate gravity on each row, then rotate the matrix by remapping coordinates. It demonstrates patterns common in game simulations (like Tetris), or matrix manipulation problems—optimizing for in-place updates and efficient axis-based transformations.
 
+
+### Flashcard
+Simulate gravity effects on stones in each row, then rotate the matrix.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Matrix(#matrix)
 

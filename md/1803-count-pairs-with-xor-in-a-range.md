@@ -124,6 +124,10 @@ class Solution:
 ### Summary
 Efficient counting of (i, j) pairs with a bitwise constraint is well-suited to the **0-1 Trie** coding pattern, often used for XOR or bitwise range queries. This approach enables O(n × L) complexity compared to brute force O(n²). This bitwise trie technique is common for problems involving queries on prefixes, number of pairs with XOR in a range, maximum XOR subarray, etc., and is a foundational tool for bitwise algorithm questions in interviews.
 
+
+### Flashcard
+Build trie of binary representations; for each number, query trie to count how many previous numbers give XOR in [low, high] range.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Trie(#trie)
 

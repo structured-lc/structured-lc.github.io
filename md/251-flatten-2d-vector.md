@@ -116,6 +116,10 @@ class Vector2D:
 ### Summary
 This problem demonstrates the **iterator pattern** for flattening nested data structures with per-operation efficiency and minimal space overhead, by managing explicit pointers into the original data. The key trick is to always keep the iterator pointing at the next available element, skipping over empty or completed sublists. This logic applies to similar interview problems on custom flattening or traversing N-dimensional or sparse data, common in data streaming, database, and filesystems work.
 
+
+### Flashcard
+Flatten 2D Vector
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Design(#design), Iterator(#iterator)
 

@@ -121,6 +121,10 @@ def employees_with_manager_left(employees):
 This is a classic set lookup and filtering pattern, often seen in SQL join and anti-join queries. The "missing parent" or "orphan record" pattern generalizes to tree/graph validation, find-orphan-nodes, and data consistency across linked records.  
 The pattern is common in database cleaning, organization hierarchies, and object reference validations.
 
+
+### Flashcard
+Use SQL LEFT JOIN or NOT IN to find employees with salary < 30,000 whose manager_id is missing from the employee_id column.
+
 ### Tags
 Database(#database)
 

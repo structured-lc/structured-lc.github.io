@@ -108,6 +108,10 @@ def minSwaps(nums):
 This is a classic **sliding window** pattern, extended to circular data by **array duplication**. It's O(n) and extremely efficient.  
 This technique can be applied to many window-based search or counting problems on circular arrays, including maximum/minimum sums, grouping characters, or subarray/window-based optimizations.
 
+
+### Flashcard
+Count total 1s, then slide a window of that size over doubled array (for circularity) and find window with minimum 0s.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window)
 

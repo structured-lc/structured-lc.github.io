@@ -93,6 +93,10 @@ def fairCandySwap(aliceSizes, bobSizes):
 ### Summary  
 This problem boils down to finding two values whose difference matches a precomputed fixed value. The solution uses the **set lookup pattern** for fast membership checking, which is common in “find pairs with sum/difference” problems. This pattern is widely applicable in array and hash-set based interview questions.
 
+
+### Flashcard
+Let diff = (sumA - sumB) / 2; use a set for Bob’s candies and find any pair (a, b) such that a - b = diff.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Sorting(#sorting)
 

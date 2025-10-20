@@ -113,6 +113,10 @@ def visibleMountains(peaks):
 ### Summary
 This problem uses a classic **interval covering** pattern by transforming each mountain into a 1D interval and sorting/merging to efficiently detect containment. The approach is efficient and similar to various problems involving interval nesting, coverage, or "skyline" algorithms. It is commonly applicable to overlapping rectangles, meeting intervals, and sweep-line algorithms.
 
+
+### Flashcard
+Represent each mountain as [x-y, x+y]; sort by left, then right descending; count mountains whose interval is not strictly contained by any previous.
+
 ### Tags
 Array(#array), Stack(#stack), Sorting(#sorting), Monotonic Stack(#monotonic-stack)
 

@@ -99,6 +99,10 @@ def maxSumSubmatrix(matrix, k):
 ### Summary
 This approach uses the "reduce 2D to 1D subarray" pattern: fix two boundaries, compress sums along the other axis, and then solve a 1D max subarray with constraints for each fixed slab. The sorted-prefix-sum + binary search trick for "max subarray sum ≤ k" is commonly used in advanced subarray sum problems and 2D interval sums. This pattern can be applied whenever you need constrained submatrix sums or to handle interval constraints after dimension reduction.
 
+
+### Flashcard
+For each pair of rows, reduce to a 1D array and use a TreeSet (or prefix sums + binary search) to find the max subarray sum ≤ k.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Matrix(#matrix), Prefix Sum(#prefix-sum), Ordered Set(#ordered-set)
 

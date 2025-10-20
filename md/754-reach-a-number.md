@@ -78,6 +78,10 @@ def reachNumber(target: int) -> int:
 ### Summary
 This problem uses **mathematical insight with greedy increment** and parity checking. It shows up often in problems dealing with sum of sequences and reachability using steps of increasing sizes. A similar pattern appears in subset sum types and greedy parity-based reachability questions. The main trick is realizing you only need to check when the overshoot is even, as signs can be flipped to adjust the total. This makes it much faster than backtracking or BFS.
 
+
+### Flashcard
+Find minimal n such that 1+2+…+n ≥ |target| and (sum−target) is even; flipping moves adjusts the total by 2×i.
+
 ### Tags
 Math(#math), Binary Search(#binary-search)
 

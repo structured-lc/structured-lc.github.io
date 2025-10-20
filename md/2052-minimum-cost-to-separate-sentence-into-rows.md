@@ -126,6 +126,10 @@ def minimumCost(sentence: str, k: int) -> int:
 This is a classic **DP partitioning** problem, similar to "Word Break" or text justification. The common pattern is "try all partitions, cache sub-solutions."  
 This technique is applicable to many string DP and optimal partitioning problems where grouping decisions are local and cost is combinable, e.g., word wrap, rod-cutting, segment-based scoring, etc.
 
+
+### Flashcard
+Apply dynamic programming with memoization to find the minimum cost of separating sentences into rows, avoiding exponential complexity.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

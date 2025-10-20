@@ -65,6 +65,10 @@ def restaurantGrowth(records):
 ### Summary
 This problem is an instance of the prefix sum pattern, which is common for running totals and cumulative aggregations in both SQL and code. It is foundational for time-series and data summarization problems.
 
+
+### Flashcard
+Sort records by day, then compute running sum per day by iterating and accumulating totals.
+
 ### Tags
 Database(#database)
 

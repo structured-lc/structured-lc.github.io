@@ -71,6 +71,10 @@ class ParkingSystem:
 ### Summary
 The solution uses simple state tracking with counters. The same pattern works for inventory counters or basic resource allocation.
 
+
+### Flashcard
+Maintain counters for each car type; on addCar, decrement the relevant counter if slots are available.
+
 ### Tags
 Design(#design), Simulation(#simulation), Counting(#counting)
 

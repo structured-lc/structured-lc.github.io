@@ -85,6 +85,10 @@ def isAcronym(words, s):
 This is a classic **character matching/iteration** pattern, where you check corresponding characters in two sequences.  
 It's straightforward but commonly appears in interview warmups or as substeps in more complex parsing/string problems. The logic can be reused in similar string transformation, validation, or abbreviation tasks.
 
+
+### Flashcard
+Check length match first; then verify first character of each word equals corresponding character in s.
+
 ### Tags
 Array(#array), String(#string)
 

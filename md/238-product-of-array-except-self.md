@@ -92,6 +92,10 @@ def productExceptSelf(nums):
 ### Summary
 This uses the **prefix and suffix product pattern**, a fundamental approach whenever you need to compute aggregate results for each element while excluding the element itself. This "all except self" aggregate is common, and prefix/suffix techniques generalize to sums, min/max, logical AND/OR, and more. This problem reinforces **in-place array computation** and **constant-space pass** techniques.
 
+
+### Flashcard
+Build prefix and suffix products in two passes; for each index, multiply left product and right product to get result without division.
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

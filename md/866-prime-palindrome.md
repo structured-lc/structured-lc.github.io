@@ -109,6 +109,10 @@ This problem combines two interview classics—palindrome checking and primality
 Key patterns: string reversal for palindromes, trial division for primality, and digit construction for generating odd-length palindromes.  
 This "generate candidate, filter condition" pattern is common for custom number generation problems, and optimizing by domain-specific math insights (e.g., primes and palindromes) can greatly speed up brute-force baseline algorithms.
 
+
+### Flashcard
+Generate odd-length palindromes ≥ n, check for primality; skip even-length palindromes (except 11).
+
 ### Tags
 Math(#math), Number Theory(#number-theory)
 

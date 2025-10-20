@@ -75,6 +75,10 @@ def isPossible(target):
 ### Summary
 This is a reverse simulation with max-heap, a smart variant of greedy approach seen often in problems where largest elements govern the state. Pattern applies to optimal allocation, incremental construction, and greedy-decompose problems.
 
+
+### Flashcard
+Work backwards using a max-heap; repeatedly subtract sum of others from the largest, check for impossibility or all ones.
+
 ### Tags
 Array(#array), Heap (Priority Queue)(#heap-priority-queue)
 

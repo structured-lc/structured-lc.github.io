@@ -113,6 +113,10 @@ def countUnguarded(m, n, guards, walls):
 ### Summary
 This problem uses grid simulation and **multi-source scanline**: for each source (guard), mark visibility outwards until an obstacle is hit. Patterns used include grid state marking, multi-directional scanning, and in-place state update. The core logic—scanning in four directions from marked points until barriers are encountered—is a pattern also useful in ray casting simulations, visibility/illumination problems, or robot vacuum cleaner/path coverage algorithms.
 
+
+### Flashcard
+For each guard, mark all visible cells in four directions until blocked; count remaining unmarked, unoccupied cells.
+
 ### Tags
 Array(#array), Matrix(#matrix), Simulation(#simulation)
 

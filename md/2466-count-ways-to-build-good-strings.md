@@ -97,6 +97,10 @@ The solution uses bottom-up DP to count ways to build up all possible string len
 This DP pattern appears in many problems: coin change, tiling, staircase, and integer compositions.  
 Understanding the recurrence and base cases is critical for these types of combinatorics/build problems.
 
+
+### Flashcard
+Use DP where dp[i] = number of ways to build length i; for each i, dp[i] = dp[i-zero] + dp[i-one], summing for i in [low, high].
+
 ### Tags
 Dynamic Programming(#dynamic-programming)
 

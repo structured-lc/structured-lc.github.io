@@ -93,6 +93,10 @@ def merge(intervals):
 ### Summary
 This problem uses a classic greedy and interval-merging pattern: sort by start, then iterate, merge overlapping intervals by expanding the current window’s right edge when possible. This is a common technique used in other merging and range queries, such as calendar bookings, interval coverage, and timeline processing.
 
+
+### Flashcard
+Sort intervals by start, then merge overlapping intervals in a single pass by comparing current start to previous end.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

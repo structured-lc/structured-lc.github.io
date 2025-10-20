@@ -67,6 +67,10 @@ def find_continuous_ranges(nums):
 ### Summary
 This is the typical two-pointer scanning pattern for interval/segment problems. It's efficient and applicable for summary-ranges-type queries in time series, logs, or numerical datasets.
 
+
+### Flashcard
+Iterate through the sorted array, tracking the start of each continuous range and recording intervals when the sequence breaks.
+
 ### Tags
 Database(#database)
 

@@ -112,6 +112,10 @@ class MajorityChecker:
 ### Summary
 This problem demonstrates **random sampling + binary search with precomputed indices** for sublinear-time queries in range frequency problems—*a major competitive programming and high-scale interview pattern*. The solution uses pre-indexing and random sampling due to high query speeds required. The approach is common for problems with *majority elements, range queries, or subarray statistics*, and variants appear in range mode/frequency queries and implicit data structure applications.
 
+
+### Flashcard
+Precompute sorted indices for each value; for each query, use random sampling and binary search on index lists to check if a value meets the threshold in the subarray.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Design(#design), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
 

@@ -100,6 +100,10 @@ def minCost(costs):
 This problem uses the **dynamic programming** pattern, similar to "House Robber" and "Delete and Earn". The key is modeling overlapping subproblems and optimizing via rolling arrays for space.  
 The space-optimized DP technique here can be applied to other problems requiring consecutive-element constraints, such as "Sticker Robber" and "Minimum Falling Path Sum".
 
+
+### Flashcard
+Paint House
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

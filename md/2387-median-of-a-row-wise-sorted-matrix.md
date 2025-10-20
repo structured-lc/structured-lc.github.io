@@ -105,6 +105,10 @@ def matrixMedian(grid):
 ### Summary
 This problem uses the **binary search on answer** pattern, where we leverage the sorted property (per row) to efficiently decide for a candidate value how many values are ≤ that candidate, by binary searching in each row. This lets us avoid needing to flatten and sort the whole matrix, keeping the solution efficient. The pattern is widely used in similar median or K-th smallest queries in matrices, and is seen in problems like "Kth Smallest Element in a Sorted Matrix".
 
+
+### Flashcard
+Binary search on possible median values; for each candidate, count elements ≤ candidate using binary search per row to find the (m × n + 1)/2-th smallest.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Matrix(#matrix)
 

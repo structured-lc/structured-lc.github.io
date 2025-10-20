@@ -95,6 +95,10 @@ def longestSubstring(s: str, k: int) -> int:
 ### Summary
 This is a classic **divide and conquer on substrings** pattern. For string problems where a frequency threshold matters and there are "invalid" splitters, this technique allows efficient pruning of the search space. It avoids brute-force enumerations and exploits string segmentation. This pattern appears in similar questions involving valid substring/partitioning based on character count constraints, such as splitting strings based on frequent/infrequent characters.
 
+
+### Flashcard
+Divide and conquer: split string on chars appearing < k times, recursively solve each part, and take the max length.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Divide and Conquer(#divide-and-conquer), Sliding Window(#sliding-window)
 

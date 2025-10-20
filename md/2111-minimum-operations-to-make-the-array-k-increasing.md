@@ -98,6 +98,10 @@ def kIncreasing(arr, k):
 ### Summary
 This problem is a variation of the Longest Increasing Subsequence (LIS) but across k independent subsequences. The technique of splitting the problem into groups based on mod k and using efficient binary search-based LNDS is crucial. This grouping/LIS pattern is common in problems where multiple crossing subsequences must all be partially ordered, such as in Leetcode 1671 or 2407. Use this approach whenever you need to break array by cyclic subgroups and optimize monotonicity within each.
 
+
+### Flashcard
+Split array into k groups by index mod k; for each, compute minimal replacements as group length minus length of its longest non-decreasing subsequence.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

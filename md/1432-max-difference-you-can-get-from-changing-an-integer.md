@@ -76,6 +76,10 @@ def maxDiff(num):
 ### Summary
 This problem uses a "greedy digit replacement" pattern and careful string handling—searching for the best candidate for maximizing/minimizing. This approach is recurring in number / digit transformation problems.
 
+
+### Flashcard
+Maximize by replacing the first non-9 digit with 9; minimize by replacing the first non-1 digit with 1 or 0.
+
 ### Tags
 Math(#math), Greedy(#greedy)
 

@@ -91,6 +91,10 @@ def guessNumber(n: int) -> int:
 ### Summary
 This approach uses the classic **binary search pattern**, which is highly efficient for sorted data or 'number range' search problems. It's a fundamental pattern also applicable in problems like finding square roots, searching in rotated arrays, or solving root-related math equations. The challenge demonstrates how leveraging problem feedback can lead to drastic improvements over brute-force methods in both time and efficiency.
 
+
+### Flashcard
+Use binary search, adjusting the guess range based on the feedback from the guess API.
+
 ### Tags
 Binary Search(#binary-search), Interactive(#interactive)
 

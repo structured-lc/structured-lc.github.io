@@ -116,6 +116,10 @@ The main coding pattern is "bring-to-front, then to-position", which is applicab
 This pattern also appears in problems that limit you to a particular operation (subarray flipping, reversal, etc.).  
 No advanced data structures required—just simulation and careful iteration.
 
+
+### Flashcard
+For each unsorted position from end to start, bring the max element to front (if needed), then flip it to its correct position, mimicking selection sort with prefix reversals.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting)
 

@@ -71,6 +71,10 @@ ORDER BY v.customer_id, v.visit_id;
 ### Summary
 This is a common SQL aggregation and join problem. The pattern—using LEFT JOIN and coalesce for missing data—arises in most reporting/BI tasks where you need all of one table and zero/more from a related fact table.
 
+
+### Flashcard
+LEFT JOIN Visits to Transactions, GROUP BY visit_id and customer_id, COUNT transactions and SUM amount, using COALESCE/IFNULL for visits with no transactions.
+
 ### Tags
 Database(#database)
 

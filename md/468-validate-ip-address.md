@@ -146,6 +146,10 @@ def validIPAddress(queryIP):
 ### Summary
 This problem demonstrates careful string parsing and validation with multiple sets of rules. The key is to separate the logic cleanly for each IP type and handle all edge cases systematically. The approach of first determining the likely IP type based on delimiters, then applying specific validation rules, makes the solution more readable and maintainable. This pattern of rule-based validation appears frequently in input parsing and data validation problems.
 
+
+### Flashcard
+Split by '.' or ':' to distinguish IPv4/IPv6, then validate each part according to strict format and value rules.
+
 ### Tags
 String(#string)
 

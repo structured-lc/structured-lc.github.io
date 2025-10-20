@@ -131,6 +131,10 @@ def sampleStats(count):
 ### Summary
 This problem uses the **"counting sort frequency array"** pattern to efficiently extract statistics without ever reconstructing the original array—even if the uncompressed sample would be huge. The overall design leverages constant range and simple cumulative counting, a common trick for fixed known domains (e.g., histogram, digit buckets). This pattern is generally applicable for stats on histograms, bucketed frequencies, and certain streaming or fixed-range problems.
 
+
+### Flashcard
+Single pass through count array (0–255)—track min/max indices, sum/total for mean, max frequency for mode; for median, calculate positions total/2 and (total+1)/2, accumulate frequencies until reaching those positions.
+
 ### Tags
 Array(#array), Math(#math), Probability and Statistics(#probability-and-statistics)
 

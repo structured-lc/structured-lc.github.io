@@ -81,6 +81,10 @@ def minFlips(target: str) -> int:
 ### Summary
 This is a classic case of counting state transitions: Every bit in target that is different from the previous (starting from '0') triggers a flip. This greedy, single-pass approach is efficient and a common pattern for problems involving minimum operation sequences under limited move types. Similar reasoning can be adapted to bulb-flipping and toggling problems.
 
+
+### Flashcard
+Determine the number of flips needed by comparing each bit to the previous target bit, considering the cumulative effect of flips.
+
 ### Tags
 String(#string), Greedy(#greedy)
 

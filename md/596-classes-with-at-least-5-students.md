@@ -147,6 +147,10 @@ This pattern is common in tasks like distinct counts, group-based filtering, or 
 It’s efficient in both Python and SQL, and directly aligns with database operations like `GROUP BY` + `HAVING`.  
 You can extend this logic to more complex group filters, or adapt for scale with streaming or distributed processing.
 
+
+### Flashcard
+Group by class, count distinct students per class, and select classes with count ≥ 5.
+
 ### Tags
 Database(#database)
 

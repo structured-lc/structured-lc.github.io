@@ -56,6 +56,10 @@ def busyStudent(startTime: list[int], endTime: list[int], queryTime: int) -> int
 ### Summary
 A simple interval membership scan suffices. This is a classic for-loop counting problem, common in work scheduling, event logs, or similar overlapping-interval tasks.
 
+
+### Flashcard
+For each student, check if queryTime is within [startTime, endTime]; count how many intervals include queryTime.
+
 ### Tags
 Array(#array)
 

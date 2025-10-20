@@ -100,6 +100,10 @@ This problem uses the classic **Kadane’s algorithm** pattern for max subarray 
 Key insight: The best swap corresponds exactly to the maximum-gain subarray in the difference array, which is a staple trick in array manipulation and interview settings.  
 This technique is widely applicable in problems that require maximizing or minimizing array sums by applying restricted subarray operations.
 
+
+### Flashcard
+Find the maximum subarray sum difference (Kadane’s) between the two arrays to determine the best swap interval.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

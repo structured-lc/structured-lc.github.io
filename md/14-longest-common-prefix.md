@@ -83,6 +83,10 @@ def longestCommonPrefix(strs):
 ### Summary
 This problem uses the **prefix scanning** pattern, where you repeatedly check a condition across multiple items and gradually narrow the candidate space. It’s often applied in string search, file path grouping, and directory tree processing. The character-by-character comparison is efficient, direct, and works well for small and moderate data sizes. This pattern is a classic in coding interviews and has practical applications in text processing and search autocompletion.
 
+
+### Flashcard
+Compare characters at each position across all strings; return the prefix up to the first mismatch.
+
 ### Tags
 Array(#array), String(#string), Trie(#trie)
 

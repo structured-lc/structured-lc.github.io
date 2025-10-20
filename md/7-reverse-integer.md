@@ -87,6 +87,10 @@ def reverse(x: int) -> int:
 ### Summary
 This problem is a classic example of **digit manipulation and overflow checking** for integer problems. The approach is common and also applies to problems like integer palindrome checks. The main patterns are “process one digit at a time from right to left using modulus/division,” and “preemptively check for overflows before updating the result.” This strategy appears frequently in interview problems that require you to simulate number operations digit by digit.
 
+
+### Flashcard
+Reverse digits one by one using modulus/division, checking for overflow before each append.
+
 ### Tags
 Math(#math)
 

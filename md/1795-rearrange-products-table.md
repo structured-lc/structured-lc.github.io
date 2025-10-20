@@ -149,6 +149,10 @@ It’s a pattern common in data warehousing/reporting tasks.
 The coding pattern is simple value checking and transformation per row.  
 The same pattern can be seen in CSV reshaping, data frame manipulations (e.g., Pandas melt), reporting pipelines, and wherever denormalization or flattening of database tables is needed.
 
+
+### Flashcard
+Unpivot the Products table to rearrange data into rows for each store.
+
 ### Tags
 Database(#database)
 

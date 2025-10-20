@@ -80,6 +80,10 @@ def makeConnected(n, connections):
 ### Summary
 This is a classic union-find (DSU) application to track connectivity and redundant edges in a network graph. The algorithm finds the number of connected components and checks if enough cables exist to connect everything, making it a template for similar connectivity and clustering problems.
 
+
+### Flashcard
+If connections < n-1, return -1; otherwise, use Union-Find to count connected components, answer is components-1.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

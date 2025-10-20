@@ -114,6 +114,10 @@ This problem is a variation of the greedy, two-pointer, and optimal swap strateg
 It's an example of focusing on *key elements* (min/max) and their *relative order*, and not getting distracted by the rest.  
 The greedy insight—adjust for overlaps when movement paths of min and max cross—is a common thread in swap/min-move array problems.
 
+
+### Flashcard
+Find leftmost min and rightmost max; swaps needed are min_index + (n-1 - max_index) minus one if min comes after max.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

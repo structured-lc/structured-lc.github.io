@@ -97,6 +97,10 @@ def largestMerge(word1: str, word2: str) -> str:
 ### Summary
 This problem is a classic example of **greedy algorithm** applications to string construction: always pick the lexicographically largest option for the current prefix. This pattern appears in problems like "maximum number" formations, string merge games, and in competitive programming wherever optimal ordering by local choice leads to global optimality. By comparing substrings at each step, we ensure that every decision maintains maximal potential for the remainder. This approach leverages two pointers, substring comparison, and efficient string building, which are frequently useful in complex string queries.
 
+
+### Flashcard
+Greedily pick the lexicographically larger remaining substring at each step to build the largest merge of two strings.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Greedy(#greedy)
 

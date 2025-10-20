@@ -92,6 +92,10 @@ def changeDatatype(students: pd.DataFrame) -> pd.DataFrame:
 ### Summary
 This problem is a classic example of **data cleaning** using Pandas, specifically column type casting. The .astype() method is efficient and widely applicable for DataFrame data transformation. Knowing how to handle type conversions, missing values, and preserving data integrity is key to robust data processing. This approach is common anytime you load, preprocess, or aggregate tabular data for analysis or ML pipelines.
 
+
+### Flashcard
+Use .astype(int) on the 'grade' column to efficiently convert all values from float to integer.
+
 ### Tags
 
 ### Similar Problems

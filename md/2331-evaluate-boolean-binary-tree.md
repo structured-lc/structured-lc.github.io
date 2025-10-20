@@ -116,6 +116,10 @@ def evaluateTree(root: TreeNode) -> bool:
 ### Summary
 This problem is a classic **expression tree evaluation**, following a *postorder traversal* pattern. The recursive approach is both simple and optimal for this structure. This coding pattern is common for evaluating arithmetic or boolean expression trees and parsing problems. It’s a foundational technique in compilers and calculators, and also appears in questions involving computation from tree leaves to root.
 
+
+### Flashcard
+Recursively evaluate the binary tree: leaves return value, internal nodes apply OR (2) or AND (3) to left/right subtree results.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

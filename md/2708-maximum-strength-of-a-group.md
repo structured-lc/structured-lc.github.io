@@ -101,6 +101,10 @@ def maxStrength(nums):
 ### Summary
 This problem uses the classical "maximum product subset" pattern, balancing positive, negative, and zero elements. It's related to the greedy-logic problems about maximizing or minimizing products in arrays with both signs. The key is to consider sign parity and avoid zeroing products unless forced. This approach is common in problems like finding the maximum product of a subset or subarray, often appearing in interview settings.
 
+
+### Flashcard
+To maximize product, multiply all nonzero numbers except the negative with the smallest absolute value if the count of negatives is odd.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Greedy(#greedy), Bit Manipulation(#bit-manipulation), Sorting(#sorting), Enumeration(#enumeration)
 

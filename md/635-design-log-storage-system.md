@@ -106,6 +106,10 @@ class LogSystem:
 ### Summary
 This solution applies a common pattern for **design questions with range retrieval** — store entries, and filter in O(n) per query. Slicing the timestamp by granularity leverages string ordering for zero-padded numbers, making comparison easy. This design pattern is broadly applicable to time-series storage and range queries where timestamp matches can be compressed to prefix matching.
 
+
+### Flashcard
+Store logs as (id, timestamp); for retrieval, slice timestamps by granularity and filter logs within [start, end] after truncation.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Design(#design), Ordered Set(#ordered-set)
 

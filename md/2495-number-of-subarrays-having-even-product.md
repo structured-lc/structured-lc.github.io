@@ -98,6 +98,10 @@ This problem leverages a **counting by exclusion** strategy—the key insight th
 The approach avoids brute force product calculation by translating the problem to: count all subarrays, subtract those with all odds.  
 This is a classic example of using **prefix scans and position tracking**—a widespread pattern for array problems involving subarrays with some property, e.g., "at least one occurrence", "no occurrence", etc. It demonstrates a reduction from candidate generation to combinatorial counting.
 
+
+### Flashcard
+Count all subarrays, subtract subarrays with only odd numbers (since even product requires at least one even).
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming)
 

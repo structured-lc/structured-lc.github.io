@@ -79,6 +79,10 @@ This problem uses **hash mapping** for fast character index lookups and iterativ
 The pattern of “pre-map for O(1) lookups, then scan input” is common in string, counting, or simulation problems.  
 No complex data structures required, only careful mapping and accumulation.
 
+
+### Flashcard
+Map each keyboard character to its index for O(1) lookup; sum absolute differences between consecutive character positions in word.
+
 ### Tags
 Hash Table(#hash-table), String(#string)
 

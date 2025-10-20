@@ -101,6 +101,10 @@ def maxSatisfied(customers, grumpy, minutes):
 ### Summary
 This is a classic *sliding window* pattern, used to find a maximum sum of convertible values in a fixed-length window over an array. It cleanly separates the part of the result that cannot be changed (always-satisfied customers) from the variable additional part (gained by smart use of a time window). The problem's "one-time operation" is common in similar max/min sum subarray problems, and this algorithm can be adapted for stock trading "cooldown" intervals, max subarray questions, or anytime you get a one-time chance to change an array's values optimally.
 
+
+### Flashcard
+Use a sliding window to maximize satisfied customers by "flipping" the owner's grumpiness for the best minutes-long interval.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window)
 

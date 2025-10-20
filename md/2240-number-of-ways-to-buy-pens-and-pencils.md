@@ -95,6 +95,10 @@ def waysToBuyPensPencils(total: int, cost1: int, cost2: int) -> int:
 ### Summary
 This problem uses the *combinatorial counting* pattern by fixing one variable (number of pens) and analytically counting the number of possibilities for the other (number of pencils). The key trick is to recognize the pattern in the constraints (linear budget equation) and avoid brute-force enumeration. This approach generalizes to many “number of solutions to linear equation under constraints” type problems.
 
+
+### Flashcard
+For each possible number of pens, compute max pencils fitting the remaining budget—sum all valid combinations.
+
 ### Tags
 Math(#math), Enumeration(#enumeration)
 

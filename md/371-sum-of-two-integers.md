@@ -86,6 +86,10 @@ def getSum(a: int, b: int) -> int:
 ### Summary
 The **bitwise carry-propagation** solution demonstrates a deep understanding of low-level data representation and is a classic example of simulating integer operations with bit manipulation. This pattern (decompose to sum and carry, repeat until done) is broadly applicable in interview settings, for questions like adding numbers without arithmetic, hardware simulation, and even implementing basic arithmetic logic units (ALUs).
 
+
+### Flashcard
+Use bitwise XOR for sum without carry, AND+shift for carry; repeat until carry is zero.
+
 ### Tags
 Math(#math), Bit Manipulation(#bit-manipulation)
 

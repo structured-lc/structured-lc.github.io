@@ -109,6 +109,10 @@ def crawl(startUrl, htmlParser):
 ### Summary
 This problem is a classic **graph traversal** question in disguise, solved effectively with BFS and a visited set. It’s closely related to crawling or exploring nodes in any linked data structure (graphs, trees, etc). The BFS/crawling pattern applies broadly in real-world applications such as indexing, dependency scanning, or link-based viral propagation across networks.
 
+
+### Flashcard
+Use BFS or DFS to crawl URLs, tracking visited URLs and filtering by hostname to avoid cycles and off-domain links.
+
 ### Tags
 String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Interactive(#interactive)
 

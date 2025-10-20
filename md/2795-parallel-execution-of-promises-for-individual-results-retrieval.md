@@ -138,6 +138,10 @@ def promiseAllSettled(functions):
 ### Summary
 This problem is a classic parallel asynchronous control pattern, closely related to how `Promise.allSettled` is implemented in JavaScript. The core idea is to start all operations in parallel and use `.then`/`.catch` to collect ordered results, regardless of fulfillment or rejection. Commonly used in asynchronous batch APIs, microservice calls, and test runners. The pattern also appears (with variations) in concurrency primitives and task orchestration frameworks.
 
+
+### Flashcard
+Run all promise-returning functions in parallel, capturing each result (or error) in order, and return an array of all settled outcomes.
+
 ### Tags
 
 ### Similar Problems

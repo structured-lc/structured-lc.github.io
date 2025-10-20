@@ -147,6 +147,10 @@ def findCrossingTime(n, k, time):
 This is a **simulation pattern** question with **event processing and priority management** — similar to real-time scheduling or resource queue problems.  
 Efficient use of heaps for event/action priority is critical for both correctness and performance. This kind of approach also appears in problems like *CPU task scheduling*, *factory lines*, and other resource-constrained flow simulations.
 
+
+### Flashcard
+Simulate bridge crossing with priority queues for each bank, processing events in time order to track total crossing time.
+
 ### Tags
 Array(#array), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation)
 

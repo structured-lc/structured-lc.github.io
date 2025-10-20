@@ -111,6 +111,10 @@ def nextPalindrome(num: str) -> str:
 ### Summary
 This uses the **next permutation** technique to generate the next lex greater left half, combining it with its mirror for palindrome formation. It leverages properties of palindromic numbers to optimize and avoid brute-force generation of all permutations. This pattern also appears in permutation-based next-value problems, string transformations, and palindromic sequence generation.
 
+
+### Flashcard
+Find next lex greater permutation of first half, mirror to form palindrome; skip invalid candidates.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

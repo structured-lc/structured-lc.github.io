@@ -124,6 +124,10 @@ The problem uses a **custom serialization pattern**, encoding each string as `[l
 It's a **common pattern** in network protocols, file formats, and database serialization: anywhere you need robust, delimiter-agnostic encoding/decoding.  
 The approach is clean, linear time, and very reliable for arbitrary string content.
 
+
+### Flashcard
+Encode and Decode Strings
+
 ### Tags
 Array(#array), String(#string), Design(#design)
 

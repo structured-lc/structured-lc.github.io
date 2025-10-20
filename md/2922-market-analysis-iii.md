@@ -127,6 +127,10 @@ This problem uses the **hash map / grouping** pattern and set tracking, common f
 The approach generalizes to data analysis problems where per-entity aggregations need to exclude or filter certain categories before tallying results.  
 SQL solutions use GROUP BY and filtering, while coding interviews expect neat dictionary/set logic with maximal efficiency.
 
+
+### Flashcard
+For each seller, count distinct items sold where item brand ≠ seller’s favorite brand; use hash maps for efficient lookup.
+
 ### Tags
 Database(#database)
 

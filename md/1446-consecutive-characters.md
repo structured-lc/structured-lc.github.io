@@ -62,6 +62,10 @@ def maxPower(s: str) -> int:
 ### Summary
 This is a classic sliding window / run-length problem with a linear scan. This pattern is useful for consecutive element detection, string runs, and basic sequence analysis.
 
+
+### Flashcard
+Iterate string, track current and max consecutive character count; reset count when character changes.
+
 ### Tags
 String(#string)
 

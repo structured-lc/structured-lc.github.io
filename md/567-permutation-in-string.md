@@ -96,6 +96,10 @@ def checkInclusion(s1: str, s2: str) -> bool:
 ### Summary
 This solution uses the **fixed-size sliding window** pattern with frequency counting, a fundamental technique for substring matching and anagram detection. It’s widely applicable in problems like “Find All Anagrams in a String,” “Minimum Window Substring,” and real-world tasks such as DNA matching or spell-checking.
 
+
+### Flashcard
+Use a sliding window and character frequency counts to check if any substring of s₂ matches the permutation of s₁.
+
 ### Tags
 Hash Table(#hash-table), Two Pointers(#two-pointers), String(#string), Sliding Window(#sliding-window)
 

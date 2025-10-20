@@ -87,6 +87,10 @@ def maxUncrossedLines(A, B):
 - The optimization for space (rolling arrays) is typical for LCS when only the result, not the actual paths, are needed.
 - Common in bioinformatics (sequence alignment), diff comparison algorithms, and many interview DP questions.
 
+
+### Flashcard
+Reduce to Longest Common Subsequence (LCS) problem; use DP to find max number of uncrossed lines.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

@@ -75,6 +75,10 @@ def removeVowels(s: str) -> str:
 
 This problem uses the **filtering pattern**, which is very common for string and array manipulation tasks—collect characters or elements that satisfy a condition, and skip others. It's a staple pattern that can be applied to problems like removing special characters, digits, or filtering based on various criteria in strings or lists.
 
+
+### Flashcard
+Iterate through string, skip characters in vowel set {'a','e','i','o','u'}, build result from remaining characters.
+
 ### Tags
 String(#string)
 

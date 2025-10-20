@@ -146,6 +146,10 @@ def sum_of_remoteness(grid):
 ### Summary
 This problem uses a classic **connected components** approach (DFS/BFS or Union-Find), paired with a global counting trick. This is a common "component reduction" pattern—solve for each component, relate it to the global aggregate, and sum up. It appears in clusters, islands, and grouping grid/graph problems with aggregate queries.
 
+
+### Flashcard
+For each connected component, all its cells have the same remoteness: (total open cells – component size) × component sum; use BFS/DFS to find components and precompute totals.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
 

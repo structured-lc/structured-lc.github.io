@@ -123,6 +123,10 @@ This problem is a classic example of **tree pruning** and modeling complex const
 The double-pruning technique exploits the collection radius and helps reduce the problem to counting essential edges.  
 This pattern, known as the "kernelization" or *minimal subtree covering all targets*, appears often in graph dynamics, such as message delivery, minimal travel, or Steiner tree problems in trees.
 
+
+### Flashcard
+Prune non-coin leaf nodes, then collect coins from nodes within 2-edge distance.
+
 ### Tags
 Array(#array), Tree(#tree), Graph(#graph), Topological Sort(#topological-sort)
 

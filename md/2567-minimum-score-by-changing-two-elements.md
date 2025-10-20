@@ -103,6 +103,10 @@ def minimizeScore(nums):
 ### Summary
 This problem uses the **"Sort and squeeze the ends" pattern**—a common idea for minimizing/maximizing ranges and gaps when restricted changes are allowed. The approach applies to a broad class of problems where moving the extremes has the greatest impact. Recognizing that only the largest and smallest values matter allows an O(n log n) solution, crucial for large input sizes.
 
+
+### Flashcard
+Sort the array; the minimal score is achieved by modifying the two largest or two smallest values to shrink the range.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

@@ -106,6 +106,10 @@ def kthSmallestSubarraySum(nums, k):
 ### Summary
 This problem employs a *binary search on the answer* (parametric search), paired with a sliding window (two pointers) subarray sum counting. This is a classic technique for problems asking for the kᵗʰ smallest/largest value over many possibilities, especially when brute-force enumeration is too slow or infeasible. The "count of subarrays ≤ target sum" is a useful subroutine and generalizes to several similar array and subarray order-statistics problems.
 
+
+### Flashcard
+Binary search possible subarray sums, counting how many subarrays have sum ≤ mid, to find the kᵗʰ smallest sum.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window)
 

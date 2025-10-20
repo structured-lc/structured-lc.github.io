@@ -90,6 +90,10 @@ def kthLargestValue(matrix, k):
 ### Summary
 This problem uses the 2D **prefix XOR** (analogous to prefix sums for XOR), a classic dynamic programming prep technique to speed up area submatrix queries. After calculating all coordinate XORs efficiently, the order statistic (kth largest) is retrieved. This technique is widely used in problems involving region-based aggregation (sum, min/max, or XOR) in 2D grids.
 
+
+### Flashcard
+Build 2D prefix XOR where prefix[i][j] = prefix[i−1][j] ⊕ prefix[i][j−1] ⊕ prefix[i−1][j−1] ⊕ matrix[i][j]; collect all values, find kth largest via sorting or heap.
+
 ### Tags
 Array(#array), Divide and Conquer(#divide-and-conquer), Bit Manipulation(#bit-manipulation), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Prefix Sum(#prefix-sum), Quickselect(#quickselect)
 

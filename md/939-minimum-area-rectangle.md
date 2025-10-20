@@ -85,6 +85,10 @@ def minAreaRect(points):
 This problem follows a common combinatorial geometry pattern — for each pair of diagonal points, check if the complementary pair also exist to form a rectangle, leveraging a set for fast lookup.  
 This diagonal+hashing technique is useful in other geometry problems involving point existence queries, rectangle detection, or axis-aligned rectangles in 2D point sets.
 
+
+### Flashcard
+For each pair of points with different x and y, check if the other two rectangle corners exist in the set; track min area.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Geometry(#geometry), Sorting(#sorting)
 

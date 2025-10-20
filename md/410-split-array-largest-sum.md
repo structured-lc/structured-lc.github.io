@@ -97,6 +97,10 @@ def splitArray(nums, k):
 ### Summary
 This problem is a classic application of **binary search on the answer** combined with greedy checking for partitioning feasibility. The pattern is useful whenever you need to split elements into "buckets" to minimize the largest bucket size—such as book allocation, job assignment, or bandwidth throttling scenarios.
 
+
+### Flashcard
+Binary search on answer range [max element, total sum], for each candidate use greedy check if array can split into ≤k subarrays without exceeding candidate.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Prefix Sum(#prefix-sum)
 

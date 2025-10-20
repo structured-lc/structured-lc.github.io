@@ -91,6 +91,10 @@ We used the **monotonic stack** pattern to maintain possible starting indices fo
 This reduces the brute-force O(n²) approach to O(n) by efficiently skipping subarrays where the condition cannot be met.  
 The pattern is common in problems where you want to maintain a history of candidates in a certain order (such as Next Greater Element, Largest Rectangle in Histogram), and can be applied to various range-interval or "first/last" element queries over arrays.
 
+
+### Flashcard
+For each end index r, track the leftmost l where nums[l] > nums[r]; update max length as r–l+1.
+
 ### Tags
 Array(#array), Stack(#stack), Sorting(#sorting), Monotonic Stack(#monotonic-stack)
 

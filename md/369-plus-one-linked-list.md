@@ -104,6 +104,10 @@ def plusOne(head: ListNode) -> ListNode:
 ### Summary
 The key challenge is that the least significant digit is at the end of a singly linked list. The **reversal pattern** allows us to efficiently handle carry propagations (like adding digits), which is a common trick for linked list arithmetic (see also reverse-add-two-numbers, multiply-lists, etc). Using a dummy head for simplicity and handling edge cases like all-9s is standard for robust linked list manipulation. This problem is a strong exercise in in-place, iterative list algebra.
 
+
+### Flashcard
+Reverse the list to add one from least significant digit, or use recursion to propagate carry from the tail forward.
+
 ### Tags
 Linked List(#linked-list), Math(#math)
 

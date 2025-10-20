@@ -120,6 +120,10 @@ This problem uses the classic **hash map grouping** pattern — collect items in
 Variations of this appear in problems such as "Group Anagrams", "Find Users with All Roles", or any multi-key existence check.  
 Efficient, easy to reason about, and adaptable to more complex grouping queries.
 
+
+### Flashcard
+Use a hash map from user_id to set of loan_types. Scan loans once to populate the map, then filter users whose set contains both "Mortgage" and "Refinance" in O(n) time.
+
 ### Tags
 Database(#database)
 

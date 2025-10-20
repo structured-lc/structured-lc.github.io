@@ -192,6 +192,10 @@ def user_purchase_platform(spending):
 This problem is about **grouping, classification, and aggregation**—core data summarization work, common in analytics and reporting systems.  
 The approach generalizes to any case where you want to classify grouped transactions into exclusive buckets and aggregate them, seen often in SQL/report generation and data engineering.
 
+
+### Flashcard
+Group purchases by user and date; for each day, classify users as "desktop", "mobile", or "both" based on platforms used, then count per category.
+
 ### Tags
 Database(#database)
 

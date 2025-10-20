@@ -108,6 +108,10 @@ def minCost(maxTime, edges, passingFees):
 ### Summary
 This problem uses a **modified Dijkstra's algorithm** to handle dual metrics: *minimizing cost subject to a total time constraint*. The key trick is to use a priority queue on cost and prune states where no improvement on time occurs. This algorithmic pattern—constrained shortest path with state tracking—is valuable for routing problems with extra constraints (e.g., time, budget, or resource limits).
 
+
+### Flashcard
+Use Dijkstra’s algorithm with a priority queue, tracking both accumulated time and cost, to find the minimum fee path from city 0 to n-1 within maxTime.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Graph(#graph)
 

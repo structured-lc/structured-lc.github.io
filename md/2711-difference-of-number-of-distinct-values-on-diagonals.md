@@ -115,6 +115,10 @@ def differenceOfDistinctValues(grid):
 ### Summary
 This problem is a classic double diagonal precompute problem—similar to prefix/suffix sum patterns, but extended to 2D with diagonal traversal. The optimized two-pass approach allows each diagonal to be processed efficiently in both directions, using sets or hash-maps to track uniqueness as we go. This pattern generalizes to other 2D problems where a property must be aggregated or compared along a diagonal relationship.
 
+
+### Flashcard
+For each cell, count distinct values on its top-left and bottom-right diagonals using sets and two passes.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Matrix(#matrix)
 

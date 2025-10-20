@@ -102,6 +102,10 @@ def canSeePersonsCount(heights):
 ### Summary
 This is a classic **monotonic stack** pattern, used to process "next greater (or equal)" or "who is visible/blocks view" type problems efficiently. The O(n) approach makes it ideal for large data and is common in stock span, histogram, and similar visibility scenarios.
 
+
+### Flashcard
+Process from right to left with a monotonic stack to count visible taller people for each position.
+
 ### Tags
 Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

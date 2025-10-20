@@ -97,6 +97,10 @@ def minOperations(nums1, nums2, k):
 ### Summary
 This problem is a classic **math + greedy pairing** pattern: transfer values while preserving array sum, grouping increments and decrements efficiently. It leverages counting and balance—if all per-index differences are multiples of k and total moves "balance out", you can greedily pair the increments and decrements for a minimal O(n) solution. The strategy is similar to certain redistribution and sorting by swapping problems.
 
+
+### Flashcard
+Check if array sums match; for each index, the difference must be divisible by k, and total operations must balance out.
+
 ### Tags
 Array(#array), Math(#math), Greedy(#greedy)
 

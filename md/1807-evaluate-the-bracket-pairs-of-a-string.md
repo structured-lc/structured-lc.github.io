@@ -101,6 +101,10 @@ This approach is a classic **parsing and dictionary lookup** pattern:
 - Scan string and substitute efficiently.
 This pattern is common in problems involving template replacement, basic parsing, and processing structured placeholders (e.g., HTML tags, variable interpolation). The problem tests comfortable hash map/data structure use and simple string parsing.
 
+
+### Flashcard
+Build dictionary from knowledge pairs; scan string extracting keys between parentheses, replace with dict lookup or "?" if missing.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string)
 

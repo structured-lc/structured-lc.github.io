@@ -104,6 +104,10 @@ Mapping each number is “decorating,” sorting by mapped value is sorting, the
 This pattern appears in custom-sorting questions, radix problems, or anywhere elements must be sorted by complicated transformations while preserving original order (or ties).  
 Familiar in string sorting, word transforms, and even digit/bitwise custom sorts.
 
+
+### Flashcard
+For each num, map its digits using mapping[], then sort by mapped value, preserving input order for ties.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

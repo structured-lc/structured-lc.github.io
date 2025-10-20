@@ -87,6 +87,10 @@ def maximumBobPoints(numArrows, aliceArrows):
 ### Summary
 We use a classic subset enumeration (bitmask) approach, since the problem size (2¹²) makes exhaustive checking possible and efficient. This falls under "subset-sum", "meet-in-the-middle", and "knapsack" patterns—widely applicable techniques for small-n combinatorial optimization. This template can also be used for small-sized resource allocation or maximization problems with binary (take/skip) decisions.
 
+
+### Flashcard
+Try all 2¹² subsets of sections; for each, check if total arrows ≤ limit, then pick the subset with maximum score, assigning leftover arrows arbitrarily.
+
 ### Tags
 Array(#array), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Enumeration(#enumeration)
 

@@ -168,6 +168,10 @@ def users_with_two_purchases_within_seven_days(purchases):
 ### Summary
 This problem uses **group by**, **sorting**, and **adjacent element comparison**—a common interview pattern for interval-based or difference problems. The optimized approach reduces the brute-force O(n²) idea to O(n log n) for practical scalability and leverages data grouping and windowing, which are transferable to "find k events in d days", time series analytics, and similar data processing tasks.
 
+
+### Flashcard
+Sort each user’s purchases by date, then check consecutive pairs for ≤7 day difference.
+
 ### Tags
 Database(#database)
 

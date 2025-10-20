@@ -99,6 +99,10 @@ def isMajorityElement(nums, target):
 ### Summary
 This problem demonstrates the **binary search lower/upper bound pattern** in sorted arrays—commonly used in element frequency queries or range search. It emphasizes improving brute-force O(n) solutions to O(log n) using sorted array properties, a recurring theme in problems involving frequency, range counting, or duplicates in sorted arrays.
 
+
+### Flashcard
+Use binary search to find the first and last positions of target, then check if its count (last - first) is greater than ⌊n/2⌋ in the sorted array.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

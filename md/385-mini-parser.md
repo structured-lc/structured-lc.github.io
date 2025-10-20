@@ -137,6 +137,10 @@ def deserialize(s):
 ### Summary
 This problem employs a stack-based parsing pattern, matching the recursive/nested (tree-like) nature of the input. Stack-based or DFS algorithms are common in problems dealing with parsing, evaluating, or reconstructing nested structures such as expressions, JSON, or tree serialization. Recognizing when to use a stack or recursion is essential for tackling these kinds of tasks efficiently.
 
+
+### Flashcard
+Use a stack to parse the string; push new NestedInteger on '[', pop and add on ']', and build numbers as you go.
+
 ### Tags
 String(#string), Stack(#stack), Depth-First Search(#depth-first-search)
 

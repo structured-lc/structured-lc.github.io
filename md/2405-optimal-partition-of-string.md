@@ -88,6 +88,10 @@ def partitionString(s: str) -> int:
 ### Summary
 This uses the **greedy partitioning** coding pattern, scanning while maintaining a set (or bitmask) of used characters. Every time a repeated character appears, it triggers a split. This is a classic method for substring partitioning with constraints. The design philosophy resembles that of "Longest Substring Without Repeating Characters" and "Partition Labels", and is applicable in scenarios where substrings must maintain uniqueness under some grouping rule.
 
+
+### Flashcard
+Scan the string left to right, starting a new substring whenever a duplicate character is found.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Greedy(#greedy)
 

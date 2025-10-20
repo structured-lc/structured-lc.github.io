@@ -96,6 +96,10 @@ def minKnightMoves(x, y):
 ### Summary
 This problem is a classic **shortest path on a grid** using **BFS** due to equal edge weights. Using symmetry (absolute value of x and y) and bounding box pruning improves efficiency. The BFS pattern for shortest steps is widely applicable, e.g. word ladder, sliding puzzles, and any chess moves on a board.
 
+
+### Flashcard
+Use BFS on infinite chessboard to find minimum knight moves—exploit symmetry for efficiency.
+
 ### Tags
 Breadth-First Search(#breadth-first-search)
 

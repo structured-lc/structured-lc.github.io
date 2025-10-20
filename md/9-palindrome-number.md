@@ -90,6 +90,10 @@ def isPalindrome(x: int) -> bool:
 ### Summary
 This problem uses the **reverse half approach**, a common coding pattern that efficiently avoids unnecessary space and overflow by comparing digits from both ends. It is a variation of the two-pointer and number-manipulation techniques found in palindrome problems (strings, arrays, linked lists). This approach is efficient and broadly applicable to palindromic checks across data types, especially when extra space is to be minimized.
 
+
+### Flashcard
+Reverse only half of the integer and compare with the other half to check for palindrome without converting to string.
+
 ### Tags
 Math(#math)
 

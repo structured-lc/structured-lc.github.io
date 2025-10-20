@@ -146,6 +146,10 @@ This problem follows the **“group by and filter”** pattern — find a minimu
 This approach is common for extracting first/latest events, for user analytics, or similar aggregate → join/filter use cases.  
 It generalizes: replace “min” with “rank-k”, or perform aggregations per group, across all analytics problems.
 
+
+### Flashcard
+For each player, find the device(s) used on their earliest event_date by joining the min-date result back to the original data.
+
 ### Tags
 Database(#database)
 

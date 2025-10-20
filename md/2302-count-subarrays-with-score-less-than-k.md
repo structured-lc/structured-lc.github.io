@@ -96,6 +96,10 @@ def countSubarrays(nums, k):
 ### Summary
 This problem uses the **sliding window** (two-pointer) pattern, vital for contiguous subarray problems where certain monotonic properties hold (e.g. all positive numbers). Whenever both sum and length grow as the window expands, sliding window can avoid redundant computation and give efficient O(n) solutions. The pattern is broadly applicable to problems about subarrays with constraints on sum, average, or custom scoring.
 
+
+### Flashcard
+Use sliding window to count subarrays where (sum × length) < k, expanding right and shrinking left as needed.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

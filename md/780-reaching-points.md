@@ -86,6 +86,10 @@ Instead of brute-force BFS/DFS, we solve it by working backwards, reducing the p
 The modulo trick dramatically cuts down redundant subtractions, making the algorithm efficient even for large coordinate ranges.  
 This reverse thinking approach is also useful for other grid/matrix reachability and number transformation problems.
 
+
+### Flashcard
+Work backwards from (tx, ty) to (sx, sy) by repeatedly subtracting the smaller from the larger (modulo), since only additions are allowed forward; check if you can reach (sx, sy) exactly.
+
 ### Tags
 Math(#math)
 

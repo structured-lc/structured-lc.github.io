@@ -149,6 +149,10 @@ def get_cumulative_games(activity):
 ### Summary
 This problem uses the **cumulative/running sum** pattern, commonly solved with window functions in SQL, or with groupby and accumulate in Python. It’s useful in scenarios requiring progressive totals by group, such as daily balances, progress tracking, or leaderboards. The key is to group by the appropriate id, sort by the relevant key (date), and accumulate.
 
+
+### Flashcard
+Use window functions (running sum) to compute cumulative games played per player over time, not O(n²) per-row sums.
+
 ### Tags
 Database(#database)
 

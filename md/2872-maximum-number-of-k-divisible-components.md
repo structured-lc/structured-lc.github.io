@@ -147,6 +147,10 @@ This approach uses a **DFS subtree pattern**, commonly used in tree problems tha
 It’s efficient and elegant, with similar structure to subtree sum, subtree size, or cutting trees on properties.  
 This general recursive pattern is widely applicable whenever you need to split or count components in trees based on subtree properties.
 
+
+### Flashcard
+Use DFS; for each subtree, if its sum is divisible by k, cut it and count as a component.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search)
 

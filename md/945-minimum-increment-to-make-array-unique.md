@@ -80,6 +80,10 @@ def minIncrementForUnique(nums):
 ### Summary
 This problem uses the **greedy** approach and leverages **sorting** to simplify handling duplicates. At each step, we force every duplicate to be just bigger than the previous value, guaranteeing uniqueness with the minimum increments. This is a general pattern in greedy problems dealing with making elements distinct, and the **sorted-sweep** pattern is common in array manipulation interview questions.
 
+
+### Flashcard
+Sort array; for each nums[i] ≤ nums[i−1], increment nums[i] to nums[i−1]+1 and add difference to total moves.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Counting(#counting)
 

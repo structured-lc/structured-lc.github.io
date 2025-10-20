@@ -119,6 +119,10 @@ def print_tenth_line():
 ### Summary
 This is a classic "kᵗʰ element in a stream" question, commonly solved with a counter. The coding pattern (single pass, constant space) is standard for problems where you need only a specific line or item from sequential input. This approach applies to finding any particular index in a file/stream, or simple parsing tasks where full context isn't needed.
 
+
+### Flashcard
+Read lines one by one, print the tenth line when the counter reaches 10.
+
 ### Tags
 Shell(#shell)
 

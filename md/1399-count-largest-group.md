@@ -59,6 +59,10 @@ def countLargestGroup(n):
 ### Summary
 This is a digit grouping/frequency problem, easy to solve via counting hashmap. Counting by digit sum is a pattern for number grouping questions.
 
+
+### Flashcard
+For 1 to n, count digit sums, find max group size, return number of sums with that size.
+
 ### Tags
 Hash Table(#hash-table), Math(#math)
 

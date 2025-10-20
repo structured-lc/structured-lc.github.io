@@ -154,6 +154,10 @@ def printTree(root):
 ### Summary
 This problem is a classic example of *tree recursion* and precise *grid placement* using mathematical position calculation. The recursive approach, with height-based row and column computation, makes it easy to keep all parts of the tree centered and visually balanced. This pattern is commonly useful for printing, visualizing, or laying out data that is inherently hierarchical, such as organization charts or directory trees.
 
+
+### Flashcard
+Compute tree height to size the grid, then recursively place each node at (row, col) with left/right children offset by powers of two for proper centering.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

@@ -113,6 +113,10 @@ def elementInNums(nums, queries):
 ### Summary
 This problem uses a **cyclic math/indexing pattern** to avoid brute-force simulation for time-dependent transformations. Recognizing the 2n-period of the cycle and direct mapping of each query lets us handle each in O(1) time, a strategy common in periodic array simulation and ring buffer problems. This can be applied to similar problems involving “state after t steps” in a repetitive process.
 
+
+### Flashcard
+Map query time t to its phase in the 2n cycle; compute the array state and answer based on whether in removal or restoration phase.
+
 ### Tags
 Array(#array)
 

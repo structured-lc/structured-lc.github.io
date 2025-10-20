@@ -87,6 +87,10 @@ This is a classic **dynamic programming** problem, with state representing the b
 It uses a one-dimensional DP array indexed by character, with transitions based only on nearby entries (by at most k positions). This “DP on letters” pattern is seen in many substring/subsequence optimization problems, especially when adjacency is restricted by a mathematical condition.  
 The pattern applies to problems like the longest increasing/decreasing subsequence with constraints, or problems limiting jumps based on alphabet/index differences.
 
+
+### Flashcard
+Track longest ideal subsequence ending at each character (26 letters); for each char, update by taking max from all characters within distance k. O(26n) time.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming)
 

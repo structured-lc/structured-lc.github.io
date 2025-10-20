@@ -102,6 +102,10 @@ def maxScoreIndices(nums):
 ### Summary
 This approach uses a **prefix sum/prefix sweep pattern**, tracking counts as you scan the array once. This is a frequent and efficient pattern for subarray and split-count problems, often useful for problems like maximum subarray, histogram/bar problems, or anywhere pre-computed running totals enable constant-time queries for each range or split point.
 
+
+### Flashcard
+Precompute total 1s, then iterate through the array, tracking left 0s and right 1s at each split to compute the score in O(n) time.
+
 ### Tags
 Array(#array)
 

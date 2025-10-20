@@ -118,6 +118,10 @@ print(customer_with_most_orders(orders1))  # Output: 3
 ### Summary
 We used a common “group-by and count” hash map approach—efficient and simple for frequency problems. This counting pattern is broadly applicable, for example: finding the most frequent element, user activity peaks, or any sort stat aggregation grouped by a key. It works well for problems with uniqueness constraints or where you need to return a key/value based on maximum frequency.
 
+
+### Flashcard
+Count orders per customer and return the customer(s) with the highest count.
+
 ### Tags
 Database(#database)
 

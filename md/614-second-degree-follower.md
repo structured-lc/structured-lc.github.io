@@ -165,6 +165,10 @@ def second_degree_follower(follow):
 This problem uses the **set intersection** and **dictionary aggregation** patterns: find intersection between two roles, then aggregate associated counts.  
 It’s a classic example of **graph degree counting** or “users by activity pattern,” commonly found in social network analysis, recommendation systems, or whenever participation criteria are “must be both source and target.”
 
+
+### Flashcard
+Count users who are both follower and followee by building sets for each and counting overlaps.
+
 ### Tags
 Database(#database)
 

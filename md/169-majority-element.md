@@ -92,6 +92,10 @@ def majorityElement(nums):
 We use the **Boyer-Moore Voting Algorithm**, a classic pattern for problems involving majority occurrence and guaranteed existence. This algorithm leverages the problem's properties to efficiently "pair out" non-majority elements, resulting in O(n) time and O(1) space.  
 The pattern is common to problems involving "more than half" or "more than 1/k portion" occurrences, useful in data streams and arrays where memory efficiency is crucial.
 
+
+### Flashcard
+Use Boyer-Moore Voting Algorithm; maintain a candidate and count, updating as you scan to find the majority element in O(n) time, O(1) space.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Divide and Conquer(#divide-and-conquer), Sorting(#sorting), Counting(#counting)
 

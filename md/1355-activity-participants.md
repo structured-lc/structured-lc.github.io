@@ -96,6 +96,10 @@ def activity_participants(activities, friends, participation):
 ### Summary
 Classic group-by counting pattern, especially in SQL/reporting interviews. This approach covers aggregation, deduplication (unique days), and filtering. Useful in attendance, streaks, and analytics problems.
 
+
+### Flashcard
+For each friend, count unique participation days and compare to total activity days; if equal, include friend.
+
 ### Tags
 Database(#database)
 

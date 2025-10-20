@@ -132,6 +132,10 @@ def promisify(fn):
 ### Summary
 This approach applies the **promisify** pattern—a common technique in converting callback-based code to promises, which drastically improves code readability and allows use of async/await. The pattern is widely reused in JavaScript (Node.js), and is key for legacy-to-modern async API transitions, and for writing clean, composable async code.
 
+
+### Flashcard
+Return a new function that wraps the callback-based API and returns a Promise, resolving on callback(result) and rejecting on callback(undefined, error).
+
 ### Tags
 
 ### Similar Problems

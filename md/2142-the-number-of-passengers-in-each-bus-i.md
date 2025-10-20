@@ -121,6 +121,10 @@ def count_passengers_in_each_bus(buses, passengers):
 This problem is a classic instance of the **sweep-line (multi-pointer / two-pointer merge)** pattern, with extra logic to assign events (passengers) to time slots (buses).  
 The solution sorts both lists and then sweeps through them in order, efficiently assigning each unassigned passenger to the earliest available bus they can board. This approach is common for event scheduling, merging intervals, and resource assignment in timeline-based scheduling problems.
 
+
+### Flashcard
+Sort buses and passengers by arrival time, then use two pointers to assign each passenger to first bus arriving at or after passenger's time.
+
 ### Tags
 Database(#database)
 

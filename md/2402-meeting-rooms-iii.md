@@ -115,6 +115,10 @@ def mostBooked(n, meetings):
 ### Summary
 The problem uses the **two min-heap pattern** (priority queues) common in scheduling and interval/merge-based problems. It ensures efficient assignment (and delays) following strict room-id/availability rules. The same pattern is found in problems like “Meeting Rooms II”, real-world resource scheduling, job servers, and cache replacement simulations.
 
+
+### Flashcard
+Use two min-heaps: one for available rooms and another for busy rooms, sorted by end time and room ID, to efficiently assign meetings.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation)
 

@@ -125,6 +125,10 @@ class Solution:
 ### Summary
 This problem leverages the **lowest common ancestor** pattern for multiple (possibly >2) nodes at maximum depth in a tree, efficiently solved via **post-order DFS** that bubbles up both depth and ancestor info at each call. This approach is common for tree-based subtree/LCA type problems, and can be adapted for variants involving multiple target nodes, substrings, or multi-way trees.
 
+
+### Flashcard
+Post-order DFS to return (deepest depth, LCA node); if both subtrees have same max depth, current node is the answer.
+
 ### Tags
 Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

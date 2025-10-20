@@ -123,6 +123,10 @@ This problem uses the **pairwise swapping pattern** based on indices or identifi
 The key trick is mapping each id to its swap target using simple arithmetic, so the solution is linear and does not require auxiliary data structures.  
 This is a common pattern—pairwise manipulation, window sliding, or adjacent transpositions—and is useful in problems with seatings, pairings, or matching.
 
+
+### Flashcard
+Swap names for every adjacent pair of ids (1⟷2, 3⟷4, etc); if odd count, last student remains in place.
+
 ### Tags
 Database(#database)
 

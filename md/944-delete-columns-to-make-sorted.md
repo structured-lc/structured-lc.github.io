@@ -108,6 +108,10 @@ This problem illustrates a **grid/column-wise traversal** pattern: treat a 2D st
 Such patterns appear in spreadsheet data-cleaning, lex sort checks, and are common in string grid or matrix alignment problems.  
 The final approach is a direct scan, often the most efficient route under simple constraints, and shows the value of **early loop break** for optimization.
 
+
+### Flashcard
+For each column, if any row below has a smaller char than the row above, count column for deletion.
+
 ### Tags
 Array(#array), String(#string)
 

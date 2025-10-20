@@ -83,6 +83,10 @@ def newInteger(n):
 ### Summary
 This problem maps to the classic pattern of base conversion, which allows rearrangement of regular counting to skip a digit. The trick is to treat the sequence as base-9 counting. This technique is commonly seen in digit-skipping and number representation problems, and highlights how thinking in number systems can avoid brute force. This is a good example of "math insight" leading to an O(1) solution for large input domains.
 
+
+### Flashcard
+The nᵗʰ number without digit '9' is simply n written in base 9.
+
 ### Tags
 Math(#math)
 

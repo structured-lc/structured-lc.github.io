@@ -67,6 +67,10 @@ async def addTwoPromises(promise1, promise2):
 ### Summary
 This problem illustrates the **Promise coordination** pattern, common in asynchronous programming: wait for multiple asynchronous results before combining them. The most idiomatic solution uses `async/await` or `Promise.all` to synchronize resolution, a crucial pattern for concurrent tasks in JavaScript. Similar approaches are broadly used when aggregating values from multiple asynchronous sources, such as fetching data in parallel or combining results from multiple APIs.
 
+
+### Flashcard
+Use Promise.all to wait for both promises, then resolve with their sum.
+
 ### Tags
 
 ### Similar Problems

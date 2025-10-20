@@ -102,6 +102,10 @@ This problem is a direct application of **combinatorics** and **modular exponent
 - Handling big exponents efficiently is a classic use-case for binary exponentiation, which is a common pattern in **fast power**, **modulo arithmetic**, and combinatorial counting problems with large constraints.
 This technique generalizes to a wide range of digit-constrained counting questions and is a must-know pattern for coding interviews.
 
+
+### Flashcard
+The count is 5^(⌈n/2⌉) × 4^(⌊n/2⌋)—use fast exponentiation for large n.
+
 ### Tags
 Math(#math), Recursion(#recursion)
 

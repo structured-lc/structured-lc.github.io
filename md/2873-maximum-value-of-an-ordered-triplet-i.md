@@ -106,6 +106,10 @@ def maximumTripletValue(nums):
 ### Summary
 This problem uses the **prefix/suffix maximums** technique—a common pattern for efficiently answering range queries and finding optimal triplets or subarrays. Precomputing maximums lets you reduce a brute-force O(n³) check down to an efficient linear scan and is a staple skill in coding interviews.
 
+
+### Flashcard
+Precompute max to the left and right for each j; for each j, compute (max_left[j] – nums[j]) × max_right[j] and take the max.
+
 ### Tags
 Array(#array)
 

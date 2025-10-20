@@ -82,6 +82,10 @@ def boxDelivering(boxes, maxBoxes, maxWeight):
 ### Summary
 This is a **dynamic programming + sliding window** problem: minimize a sum over intervals with constraints. Carefully tracking port changes and window sum makes the DP linear; this pattern is common in capacity-constrained delivery, shipment, or job-processing problems, especially when minimizing grouped trip costs.
 
+
+### Flashcard
+Delivering Boxes from Storage to Ports
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Segment Tree(#segment-tree), Queue(#queue), Heap (Priority Queue)(#heap-priority-queue), Prefix Sum(#prefix-sum), Monotonic Queue(#monotonic-queue)
 

@@ -89,6 +89,10 @@ This problem is a classic application of dynamic programming combined with a has
 The approach updates lengths map (DP) in a single pass and has many parallels to problems involving subsequences/strings and prefix-based logic.  
 This pattern appears in other arithmetic progression, jump game, and chain-building problems.
 
+
+### Flashcard
+Use a hash map to track the length of the longest subsequence ending at each value; for each num, set dp[num] = dp[num-diff] + 1.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming)
 

@@ -79,6 +79,10 @@ def isSameAfterReversals(num: int) -> bool:
 ### Summary
 This problem is a classic case for considering the effect of digit reversals and integer properties—particularly how trailing zeros are lost. The optimal approach requires only simple arithmetic checks, not actual reversals or string operations. This “parity or structure check” pattern appears often in interview problems, especially where mapping an original state to a restricted transformed state is irreversible under certain conditions.
 
+
+### Flashcard
+Return true if num = 0 or num does not end with 0; otherwise, double reversal loses trailing zeros and changes the number.
+
 ### Tags
 Math(#math)
 

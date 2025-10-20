@@ -109,6 +109,10 @@ def tupleSameProduct(nums):
 This problem is a classic example of using frequency maps to reduce "quadruple finding" into a pair counting and combinatorics problem, a common hashing + counting pattern.  
 This technique applies elsewhere for 4-sum, pair products, and problems where you count quadruples or combinations based on some shared value (like product, sum, or XOR).
 
+
+### Flashcard
+Use hash map to count pairs with same product; for each product appearing v times, add v×(v−1)/2×8 tuples (8 arrangements per pair combination).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

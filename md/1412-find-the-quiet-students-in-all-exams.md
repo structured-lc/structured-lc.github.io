@@ -166,6 +166,10 @@ It’s common in leaderboard, ranking, or statistical problems where you want to
 Key ideas: group aggregation, careful handling of ties, and “all” condition per entity.  
 Can be solved with SQL window functions, streaming, or in memory depending on data size and format.
 
+
+### Flashcard
+For each student and exam, check if their score is neither the highest nor the lowest. If a student never has the highest or lowest score in any exam, mark them as quiet.
+
 ### Tags
 Database(#database)
 

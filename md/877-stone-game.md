@@ -93,6 +93,10 @@ def stoneGameDP(piles):
 ### Summary
 This problem is a classic **minimax/dynamic programming** game logic scenario, but in its Leetcode form, it is reduced to a parity trick because of constraints (even number of piles, odd sum) guaranteeing Alice's win. The DP pattern (`dp[i][j] = max(piles[i] - dp[i+1][j], piles[j] - dp[i][j-1])`) is often used in competitive two-player “pick from ends” games. Variants of this appear in "Coins in a line", "Predict the Winner", and other two-player array games.
 
+
+### Flashcard
+DP with dp[i][j] as the best score difference for subarray i to j; choose the optimal end at each step.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Game Theory(#game-theory)
 

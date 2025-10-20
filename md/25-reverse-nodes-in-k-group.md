@@ -107,6 +107,10 @@ def reverseKGroup(head, k):
 ### Summary
 The problem uses the **k-group linked list reversal** pattern, utilizing dummy nodes and pointer manipulation to reverse linked list segments efficiently and robustly. The approach ensures only node connections are changed (not values), in O(n) time and O(1) space. This pattern appears in variants where parts of a linked list must be reversed or reorganized, such as “Reverse Linked List II,” “Swap Nodes in Pairs,” etc.
 
+
+### Flashcard
+Reverse nodes in each k-group in-place; if fewer than k nodes remain, leave them as is.
+
 ### Tags
 Linked List(#linked-list), Recursion(#recursion)
 

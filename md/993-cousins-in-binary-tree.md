@@ -133,6 +133,10 @@ def isCousins(root, x, y):
 This problem uses the **"root-to-node information gathering"** pattern common in tree problems: collect metadata (depth and parent) for targets during traversal, then compare.  
 Both **DFS** and **BFS** approaches apply, but the key is single-pass metadata collection for efficient cousin verification. This pattern appears in problems involving finding relatives or relationships in trees (e.g., siblings, ancestors, distances).
 
+
+### Flashcard
+Use BFS or DFS to find both nodes’ depth and parent in one traversal; nodes are cousins if depths match and parents differ.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

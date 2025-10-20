@@ -67,6 +67,10 @@ def rangeSum(nums, n, left, right):
 ### Summary
 The problem is a classic example of the **prefix sum and brute force with sorting** pattern. Many competition problems use this structure. Optimizations may be needed for larger constraints, such as using priority queues for k-th ranks.
 
+
+### Flashcard
+Calculate the sum of subarray sums within a given range by generating all possible subarray sums, sorting them, and summing the desired range.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting), Prefix Sum(#prefix-sum)
 

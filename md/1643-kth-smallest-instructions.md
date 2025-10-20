@@ -77,6 +77,10 @@ def kthSmallestPath(destination, k):
 ### Summary
 This problem relies on combinatorial counting and greedy character-by-character string construction. The approach appears in "k-th lexicographical permutations" and is a common pattern for grid/path enumeration problems.
 
+
+### Flashcard
+Determine the kth lexicographically smallest path by choosing 'H' or 'V' based on combinations.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
 

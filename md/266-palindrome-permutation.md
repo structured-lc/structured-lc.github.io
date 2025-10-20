@@ -89,6 +89,10 @@ def canPermutePalindrome(s):
 This problem uses the **hash table / frequency counting pattern**: map each character to its count and check a condition derived from palindrome properties.  
 This frequency-counting then odd-count-test is common for permutation and anagram related problems, and variants appear in questions involving rearrangements, palindromic substrings, and character pairings.
 
+
+### Flashcard
+Palindrome Permutation
+
 ### Tags
 Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation)
 

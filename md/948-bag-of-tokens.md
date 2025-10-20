@@ -98,6 +98,10 @@ def bagOfTokensScore(tokens, power):
 ### Summary
 This problem uses the **greedy + two-pointer** technique. Sorting allows greedy selection of smallest tokens for “face up” moves and largest for “face down” moves, maximizing score opportunities. This pattern is *common* when both spending and gaining resources are allowed in limited moves (e.g., maximizing score/money/energy with transactions). The same pattern applies to problems like maximizing profit in stock trading with buy/sell limits.
 
+
+### Flashcard
+Sort tokens; use two pointers—spend smallest for score, regain power with largest if needed, maximizing score.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting)
 

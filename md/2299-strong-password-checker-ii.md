@@ -109,6 +109,10 @@ This problem is a classing **string scanning and flag checking** pattern, with a
 Similar patterns are common in validation tasks, e.g., email/ID validation, and can be applied in any scenario needing all-or-none checks across a set of conditions in a single pass.  
 A clean scan with early exit is often optimal for these.
 
+
+### Flashcard
+Check password rules in one pass: length, character types, no two identical adjacent characters.
+
 ### Tags
 String(#string)
 

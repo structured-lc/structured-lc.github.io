@@ -106,6 +106,10 @@ def networkDelayTime(times, n, k):
 This problem is a classic application of **Dijkstra’s algorithm** (graph traversal with positive weights and a source node). The pattern applies to many network communication and optimal route problems, such as computing **single-source shortest path**.  
 Variants include returning unreachable status, reconstructing paths, or adapting for dynamic graphs. This solution demonstrates efficient graph modeling, heap usage, and detection of unreachable nodes.
 
+
+### Flashcard
+Use Dijkstra's algorithm from node k to find shortest path to all nodes; answer is maximum of all shortest paths (or -1 if any unreachable).
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
 

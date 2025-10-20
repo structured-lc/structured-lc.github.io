@@ -104,6 +104,10 @@ def removeInvalidParentheses(s):
 ### Summary
 This problem is a classic **DFS/backtracking + pruning + deduplication** challenge. It focuses on minimizing operations (removals) and generating all shortest possible solutions, combining **counting, stateful recursion, and combinatorial exploration**. This coding pattern is seen in problems needing “all optimal solutions” with constraints, and can be adapted for balanced substring problems, bracket matching, and string correction tasks.
 
+
+### Flashcard
+Optimize by counting extra parentheses and using backtracking to remove them, ensuring minimal removals and avoiding duplicates.
+
 ### Tags
 String(#string), Backtracking(#backtracking), Breadth-First Search(#breadth-first-search)
 

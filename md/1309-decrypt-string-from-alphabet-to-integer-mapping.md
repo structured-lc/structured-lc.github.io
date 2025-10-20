@@ -65,6 +65,10 @@ def freqAlphabets(s):
 ### Summary
 This is a classic string parsing and greedy lookahead problem. The pattern: look ahead to identify special multi-character patterns, otherwise consume single characters, is common in decoder/parser problems and practical tokenization.
 
+
+### Flashcard
+Scan left to right, decode two digits plus '#' as a letter for 10#–26#, otherwise decode single digits; build result incrementally.
+
 ### Tags
 String(#string)
 

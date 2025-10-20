@@ -86,6 +86,10 @@ def new21Game(n, k, maxPts):
 ### Summary
 This problem uses **dynamic programming with a sliding window** (a common optimization for DP transitions over ranges). It is a classic example of **probabilistic DP**, often used for games or random walks. The approach avoids explicit enumeration of all paths by capturing the recurrence efficiently. This pattern is applicable to problems involving sums over ranges, e.g., dice roll simulations, and Markov chains.
 
+
+### Flashcard
+Use DP: dp[x] = probability of reaching x; for x < k, dp[x] = average of dp[x+1] to dp[x+maxPts]; use sliding window to optimize.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window), Probability and Statistics(#probability-and-statistics)
 

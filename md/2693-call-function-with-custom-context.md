@@ -120,6 +120,10 @@ def callPolyfill(func, context, *args):
 ### Summary
 This approach leverages a common JS technique: temporarily attaching a method to an object to invoke it with the correct `this`, then cleaning up. This pattern is frequently used for polyfilling or implementing custom call/apply/bind behaviors and can be generalized to other programming languages that allow dynamic modification of objects (duck typing). It illustrates how JavaScript’s object model and `this` work, as well as safe property handling using Symbols/unique keys.
 
+
+### Flashcard
+Temporarily assign the function to context object as a unique property, call it with arguments, then delete the property and return result (simulates call without using built-in call/apply).
+
 ### Tags
 
 ### Similar Problems

@@ -94,6 +94,10 @@ This problem is a classic use-case for **counting** and **frequency arrays** (or
 It uses the pattern of scanning input for counts, then comparing those counts for some property (equality in this case).  
 The general approach is common and can be applied in tasks like checking anagrams, grouping, or other frequency-based string problems.
 
+
+### Flashcard
+Check if all character frequencies in the string are equal (count each, then compare nonzero counts).
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

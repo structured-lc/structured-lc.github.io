@@ -106,6 +106,10 @@ def countQuadruples(firstString: str, secondString: str) -> int:
 ### Summary
 This problem is a good test of recognizing when a brute-force substring search is unnecessary and that **single-character matching** suffices for optimality, allowing O(n × m) complexity instead of O(n⁴). This pattern appears frequently in substring and minimal-difference/constrained matching problems, where focusing on simpler matches yields optimality. The core principle is that **sometimes the minimum of an expression is achieved under the simplest case** (here, substring length 1). Techniques of frequency mapping and minimal comparisons are widely applicable in string processing questions.
 
+
+### Flashcard
+Optimize by focusing on shorter substrings to minimize the difference in indices.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Greedy(#greedy)
 

@@ -94,6 +94,10 @@ def amountPainted(paint):
 ### Summary  
 This problem uses the **interval skipping/jump pointer** approach, which avoids re-checking already painted areas. It’s a classic trick for “skipping” ranges in number line problems. The structure is similar to union-find (path compression) or dynamic interval trees. Patterns like this appear in problems involving merging intervals, range updates, or avoiding redundant work in overlapping segments.
 
+
+### Flashcard
+For each day, track painted intervals efficiently (e.g., with a sorted list or tree) to avoid recounting overlaps and sum newly painted points in O(n log n).
+
 ### Tags
 Array(#array), Segment Tree(#segment-tree), Ordered Set(#ordered-set)
 

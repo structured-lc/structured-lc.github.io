@@ -131,6 +131,10 @@ def meltTable(report: pd.DataFrame) -> pd.DataFrame:
 ### Summary
 This problem showcases the **wide-to-long dataframe transformation** pattern, essential in data analysis and common in ETL pipelines. Using pandas' `melt()` is an optimal, readable way to achieve this in Python. The same reshaping pattern is widely used in data cleaning, feature engineering, and reporting tasks.
 
+
+### Flashcard
+Use pandas.melt to convert wide format (multiple quarter columns) into long format with 'product', 'quarter', and 'sales' columns.
+
 ### Tags
 
 ### Similar Problems

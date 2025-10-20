@@ -173,6 +173,10 @@ WHERE income > 50000;
 ### Summary
 This problem is a classic case of **aggregation with conditional grouping**. The standard SQL technique is to use multiple `SELECT` statements with conditional `WHERE` clauses and combine them via `UNION ALL`. In coding interviews, similar logic appears in problems like histogram bucketing, category counts, and grouping by ranges/pivots. The logic is clean, linear, and easily generalizable for other interval groups.
 
+
+### Flashcard
+Use SQL CASE or UNION ALL to count accounts in each salary category (Low, Average, High) based on income thresholds.
+
 ### Tags
 Database(#database)
 

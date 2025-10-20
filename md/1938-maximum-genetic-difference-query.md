@@ -159,6 +159,10 @@ def maximumGeneticDifference(parents, queries):
 ### Summary
 This problem is an advanced combination of tree traversal with efficient range queries using a bitwise Trie. The key pattern is **offline batch query processing with path-dependent state**, a recurring technique in hard tree/XOR problems. This approach generalizes to many other "max over ancestor path" queries where the operation can be efficiently supported by a Trie or segment tree, especially for bit and XOR aggregations.
 
+
+### Flashcard
+For each query, find max XOR of val with any ancestor by walking up the tree (optimize with trie for batch queries).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Depth-First Search(#depth-first-search), Trie(#trie)
 

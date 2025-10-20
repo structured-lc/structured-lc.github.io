@@ -173,6 +173,10 @@ def minimumMoves(grid):
 ### Summary
 This is a classic **shortest path in state space** problem, using BFS to find minimal steps efficiently. The essential insight is to encode both **position and orientation**. Recognizing the grid as a type of implicit graph is broadly useful: this BFS + state modeling shows up in puzzles, robot movement, and sliding block problems.
 
+
+### Flashcard
+Use BFS where each state is (head_x, head_y, orientation); track visited states to find the minimum moves (including rotations) to reach the target.
+
 ### Tags
 Array(#array), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

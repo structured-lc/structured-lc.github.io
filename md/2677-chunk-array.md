@@ -69,6 +69,10 @@ def chunk_array(arr, size):
 ### Summary
 This problem is a classic example of the sliding window or fixed-size chunking technique. The core pattern—grouping contiguous elements—appears in data batching, pagination, and stream processing. It’s efficient, simple, and a useful building block for larger programs.
 
+
+### Flashcard
+Loop through array in steps of size, slice subarray from i to i+size for each chunk, push to result until all elements are grouped.
+
 ### Tags
 
 ### Similar Problems

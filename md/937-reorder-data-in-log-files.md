@@ -109,6 +109,10 @@ def reorderLogFiles(logs):
 ### Summary
 This problem uses the **custom sorting** and **list partitioning** approach, separating data based on type before applying the relevant sort. This pattern is common in interviews for log processing, string manipulation, and custom ordering tasks—applicable to many "process and re-sort by rules" problems in code interviews.
 
+
+### Flashcard
+Separate letter-logs and digit-logs; sort letter-logs by content then identifier, keep digit-logs in original order, and concatenate.
+
 ### Tags
 Array(#array), String(#string), Sorting(#sorting)
 

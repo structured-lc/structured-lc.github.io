@@ -130,6 +130,10 @@ This problem is best solved with a **dynamic programming** pattern, using carefu
 The key insight is to combine substring DP (similar to "palindrome partitioning") with local palindrome group checks for all possible divisors.  
 This pattern -- DP + substring property preprocessing -- frequently appears in hard string partitioning and transformation problems.
 
+
+### Flashcard
+Use DP: dp[i][j] = min cost to split first i chars into j semi-palindromic parts, where each part is made palindromic by minimal replacements.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming)
 

@@ -84,6 +84,10 @@ This problem uses an **enumerative math plus greedy check** approach, taking adv
 The pattern of cycling units digits makes the solution efficient because we only have to search up to 10.  
 It’s a classic example of math digit-based enumeration, useful for other digit cycling or residue class problems.
 
+
+### Flashcard
+Find the smallest n where n×k ≤ num and (num - n×k) is divisible by 10, else return -1.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Enumeration(#enumeration)
 

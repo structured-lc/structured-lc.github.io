@@ -127,6 +127,10 @@ The key insight is checking if the grid is already disconnected, then simulating
 This "try plus simulation plus theoretical shortcut" is a common approach for minimum-cut type grid questions.  
 Patterns used here (DFS for island count, simulating removals) are also fundamental in problems dealing with "breaking" or "partitioning" graphs or grids.
 
+
+### Flashcard
+Check if already disconnected (0 days); try removing each land cell and recount islands—if disconnected after removal, return 1; else return 2 (articulation point logic).
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix), Strongly Connected Component(#strongly-connected-component)
 

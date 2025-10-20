@@ -85,6 +85,10 @@ def countBinarySubstrings(s):
 ### Summary
 This problem uses the **counting runs/groups pattern:** count consecutive blocks of the same symbol, then use min(length₁, length₂) across group boundaries. This O(n) approach is common for substring counting in grouped or run-length encoded formats. This idea generalizes to problems involving pairing or segmenting runs of repeated elements.
 
+
+### Flashcard
+Count consecutive groups of 0's and 1's; for each boundary, add min(prev_group_len, curr_group_len) to total valid substrings.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

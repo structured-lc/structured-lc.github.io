@@ -106,6 +106,10 @@ def largestInteger(num: int) -> int:
 This is a "greedy with sorting by parity" pattern: separate into two groups based on a criterion (parity), sort each, and greedily assign the largest same-group element to each allowed position.  
 This pattern appears in some string/array rearrangement problems where swaps are restricted by some equivalence or property.
 
+
+### Flashcard
+Sort even and odd digits separately, then place largest available digit of matching parity in each position.
+
 ### Tags
 Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

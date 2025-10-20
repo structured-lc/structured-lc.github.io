@@ -108,6 +108,10 @@ For each substring query, we count all single characters, then for each characte
 This method is efficient for fixed-sized alphabets, commonly useful in substring statistics problems.  
 The coding pattern is relevant for string query problems, subarray statistics, combinatorial substrings, and frequency counting.
 
+
+### Flashcard
+For each query, count same-end substrings by tallying occurrences of each character in the range and using the formula c × (c + 1) / 2 for each character count c.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting), Prefix Sum(#prefix-sum)
 

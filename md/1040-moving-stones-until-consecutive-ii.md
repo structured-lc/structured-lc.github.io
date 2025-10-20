@@ -98,6 +98,10 @@ def numMovesStonesII(stones):
 ### Summary
 This problem uses the **sliding window** pattern on a sorted array to minimize moves, and a simple direct calculation for the maximal case. The approach is similar to "longest consecutive subsequence" problems and highlights careful handling of endpoint restrictions and special edge cases. This pattern is useful in **interval**, **window**, and **consecutive sequence** problems.
 
+
+### Flashcard
+Sort stones; max moves is the largest gap minus (n−2), min moves is n minus the largest window of consecutive stones.
+
 ### Tags
 Array(#array), Math(#math), Sliding Window(#sliding-window), Sorting(#sorting)
 

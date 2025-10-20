@@ -81,6 +81,10 @@ def findMaxAverage(nums, k):
 This problem is a **classic fixed-length sliding window**, which allows us to efficiently compute rolling sums (or averages) in \(O(n)\) time with \(O(1)\) space.  
 The sliding window approach is broadly applicable to problems involving contiguous subarrays, such as maximum sum/average/minimum, and appears frequently in coding interviews and algorithmic practices.
 
+
+### Flashcard
+Use sliding window of size k; compute sum of first k elements, then slide window by subtracting outgoing and adding incoming element to find max average.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window)
 

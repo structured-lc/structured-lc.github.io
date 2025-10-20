@@ -61,6 +61,10 @@ def canMakeArithmeticProgression(arr):
 ### Summary
 A simple array manipulation problem. Classic use of sorting then pairwise check for pattern. Similar checks used in finding geometric/sequences, collinearity, or regularity in datasets.
 
+
+### Flashcard
+Check if an array can form an arithmetic progression by sorting it and verifying that the differences between consecutive elements are equal.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

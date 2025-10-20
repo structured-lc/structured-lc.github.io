@@ -108,6 +108,10 @@ def removeZeroSumSublists(head: ListNode) -> ListNode:
 ### Summary
 This problem uses the "prefix sum with hashmap" pattern, a powerful tool for detecting zero-sum subarrays and efficiently skipping or removing them in linear time. The approach is broadly useful for many subarray/sublist sum detection problems, both in lists and arrays. The two-pass method (building a lookup, then making actual modifications) is also a common interview technique for problems requiring complex skip logic without backing up data structures.
 
+
+### Flashcard
+Use prefix sums and a hash map to detect and remove zero-sum consecutive node sequences in a single pass over the linked list.
+
 ### Tags
 Hash Table(#hash-table), Linked List(#linked-list)
 

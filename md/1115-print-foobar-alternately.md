@@ -90,6 +90,10 @@ class FooBar:
 ### Summary
 This problem is a classic example of thread synchronization, using the Semaphore pattern to enforce strict alternation. The key coding pattern is signaling (or "turn-taking") between threads, which also appears in problems like "Print Zero Even Odd" or three-thread alternation. Core ideas: efficient mutual exclusion, no busy-waiting, and clean, minimal resources. This problem builds strong understanding of concurrency primitives and concepts.
 
+
+### Flashcard
+Use two semaphores (foo starts at 1, bar at 0); foo prints then releases bar, bar prints then releases foo.
+
 ### Tags
 Concurrency(#concurrency)
 

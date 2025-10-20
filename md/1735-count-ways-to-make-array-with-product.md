@@ -121,6 +121,10 @@ def waysToFillArray(queries):
 ### Summary
 This problem is a classic **stars-and-bars** combinatorics application layered with prime factorization—distribute all exponents of each prime among all array slots. The key pattern is multichoose/combination with repetition, combined with fast modular combination computation. This is a standard technique for math combinatorial questions and appears in problems about partitions, compositions, and distributing indistinguishable objects into bins.
 
+
+### Flashcard
+Factorize k into prime powers; for each prime's exponent e, use stars-and-bars: C(e+n−1, n−1) ways to distribute among n positions; multiply results mod 10⁹+7.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics), Number Theory(#number-theory)
 

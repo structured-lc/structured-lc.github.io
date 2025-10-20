@@ -79,6 +79,10 @@ def isAnagram(s: str, t: str) -> bool:
 ### Summary
 This problem is a classic use of the **hashing/counter pattern** for character frequency comparison—a common pattern in anagram and frequency-matching problems. The fixed-size array (since input is restricted to lowercase English letters) allows for highly efficient O(n) time, O(1) space solution. Variants of this approach can be applied in word groupings, frequency map problems, and even for checking permutations.
 
+
+### Flashcard
+Sort both strings and compare, or count letter frequencies with an array and check for equality.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sorting(#sorting)
 

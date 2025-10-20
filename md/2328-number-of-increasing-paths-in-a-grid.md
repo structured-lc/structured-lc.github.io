@@ -94,6 +94,10 @@ def countPaths(grid):
 ### Summary
 We use **DFS with memoization** (top-down dynamic programming) to efficiently count the number of strictly increasing paths in a grid. Each cell is a subproblem, and overlapping subproblems are cached. This approach is a classic "DP on grid" pattern and can be applied to many path counting and graph traversal problems with constraints on allowed moves.
 
+
+### Flashcard
+Use DFS with memoization to count strictly increasing paths starting from each cell, caching results to avoid redundant computation.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort), Memoization(#memoization), Matrix(#matrix)
 

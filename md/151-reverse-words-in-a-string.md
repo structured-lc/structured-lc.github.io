@@ -108,6 +108,10 @@ def reverseWords(s: str) -> str:
 ### Summary
 This problem is a classic example of **string parsing and manipulation**. It tests the ability to extract substrings (words), handle spaces correctly, and reconstruct the result efficiently. The coding pattern is a mix of parsing and two-pointer technique for reversing the list. This approach can be reused in problems like word/substring reversal, normalizing text, and parsing tokens in strings.
 
+
+### Flashcard
+Split the string into words, reverse the list, and join with single spaces to reverse word order and remove extra spaces.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

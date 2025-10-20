@@ -72,6 +72,10 @@ def reduce(nums, fn, init):
 ### Summary
 This problem uses the classic **reduction** pattern to collapse an array into a single accumulated value. It highlights array iteration, the accumulator concept, and careful initial value handling. This pattern applies broadly, such as summing arrays, building products, chaining transformations, constructing objects, and beyond. It is a core pattern in data processing, functional programming, and foundational to languages like JavaScript and Python.
 
+
+### Flashcard
+Implement array reduce by iterating through the array, updating an accumulator with a given function, and returning the final accumulator value.
+
 ### Tags
 
 ### Similar Problems

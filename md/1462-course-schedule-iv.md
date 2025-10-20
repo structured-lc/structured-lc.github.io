@@ -74,6 +74,10 @@ def checkIfPrerequisite(numCourses, prerequisites, queries):
 ### Summary
 Uses classic graph transitive closure via Floyd-Warshall to answer reachability/precondition queries in O(1) per query after O(n³) setup. Common in DAG/path closure problems. Useful pattern for static graphs and repeated online queries.
 
+
+### Flashcard
+Precompute reachability between all course pairs (e.g., Floyd-Warshall), then answer each query by checking if u can reach v.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort)
 

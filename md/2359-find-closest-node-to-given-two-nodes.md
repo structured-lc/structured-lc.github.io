@@ -102,6 +102,10 @@ def closestMeetingNode(edges, node1, node2):
 ### Summary
 This problem leverages the pattern of distance-of-each-node-from-source precomputation using DFS/BFS or simple traversal due to the “one or zero outgoing edge” property. This approach is efficient for chain or cycle-like graphs, which avoids the overhead of generic BFS. The node-by-node comparison for the joint reachability and minimizing max distance is common in union path or meeting point problems (like minimal meeting node, shortest common ancestor, etc.). The pattern of “minimum value of the maximum distance” also appears often in collaborative path or rendezvous problems.
 
+
+### Flashcard
+Run one traversal from each source node to compute distances to all reachable nodes; for each node, take max of both distances and return node with smallest max distance.
+
 ### Tags
 Depth-First Search(#depth-first-search), Graph(#graph)
 

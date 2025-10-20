@@ -107,6 +107,10 @@ We use a **greedy single pass sliding window** to track when a window contains a
 This is a classic example of stateful two-pointer traversal, tracking state transitions (“block” of each vowel), allowing efficient O(n) time and O(1) space.  
 This pattern appears in "sliding window with distinct characters/ordered patterns" problems, such as “Longest substring with k distinct elements”, or “Longest substring with all required characters in order”.
 
+
+### Flashcard
+Slide window from each 'a', track valid "aeiou" sequence; expand while vowels are in order.
+
 ### Tags
 String(#string), Sliding Window(#sliding-window)
 

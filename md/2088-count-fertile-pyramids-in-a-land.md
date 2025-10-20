@@ -117,6 +117,10 @@ def countPyramids(grid):
 ### Summary
 This problem uses a classic *dynamic programming on grids* pattern, leveraging previous row computations for triangle/pyramid shapes. The "minimum of three DP values plus 1" is common for expanding symmetric figures with contiguous growth requirements—applicable in triangle counting, largest square/rectangle, and tiling problems. The pattern can be applied to count/aggregate patterns that grow outward symmetrically in grid-based puzzles.
 
+
+### Flashcard
+Use DP to compute for each cell the largest possible pyramid height (upright and inverted), then sum heights ≥ 2 for all cells.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

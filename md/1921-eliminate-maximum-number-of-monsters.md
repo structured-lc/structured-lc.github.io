@@ -97,6 +97,10 @@ def eliminateMaximum(dist, speed):
 ### Summary
 We use a **greedy scheduling pattern**: sort monsters by time to arrival, then eliminate those closest to the city first, stopping at the first conflict. This approach is common in conflict-minimizing problems, such as job scheduling, minimum meeting rooms, and greedy resource assignment. The pattern is applicable whenever you must process tasks under a constraint (here: one per minute) and want to defer "the furthest" as far as possible.
 
+
+### Flashcard
+Sort monsters by arrival time (dist[i]/speed[i]), eliminate in order, and stop when a monster reaches the city before its turn.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

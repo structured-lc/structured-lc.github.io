@@ -168,6 +168,10 @@ This problem uses classic **recursion and backtracking**—for each possible roo
 The approach is a "construct all structures" variant: very similar patterns occur in problems where all unique structures or arrangements are requested (e.g., all full binary trees, all bracket combinations).  
 It provides an example of recursive "divide and combine" for tree generation and is a great recursive enumeration template.
 
+
+### Flashcard
+Recursively generate all unique BSTs by picking each number as root and combining all left/right subtree possibilities for each range.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Tree(#tree), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

@@ -99,6 +99,10 @@ def findLUSlength(strs):
 ### Summary
 This problem uses the pattern of **comparing string subsequences** across all pairs to check for uniqueness. The two-pointer subsequence check is common for problems such as "is subsequence," and sorting the strings by length helps short-circuit the search for the maximal solution. This technique is useful in string processing, uniqueness queries, and subsequence-based challenges.
 
+
+### Flashcard
+For each string, check if it is not a subsequence of any other; return the length of the longest such string.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), String(#string), Sorting(#sorting)
 

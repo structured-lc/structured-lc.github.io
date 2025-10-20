@@ -157,6 +157,10 @@ The pattern is universal: keep only one "representative" per group, usually by c
 It's common in data cleansing, log processing, and database normalization.  
 In interviews, showing both a brute-force and an optimized (JOIN/subquery) approach is valued.
 
+
+### Flashcard
+For each duplicate email, delete all but the record with the smallest id.
+
 ### Tags
 Database(#database)
 

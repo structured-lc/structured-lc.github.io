@@ -131,6 +131,10 @@ def buildWall(height, width, bricks):
 ### Summary
 This problem is a classic application of **state compression dynamic programming** and **bitmasking** (if joint positions are coded as bitmasks), combined with graph compatibility (valid transitions between row patterns). It’s similar to tiling problems and featured often in DP/set-state interviews. The tree of valid patterns and compatibility computation is common in setup-heavy combinatorial DP, especially for 2D vital-parts adjacency constraints.
 
+
+### Flashcard
+Generate all unique row joint patterns, then use DP to count ways to stack rows with no aligned joints.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

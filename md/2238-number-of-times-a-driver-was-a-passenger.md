@@ -107,6 +107,10 @@ def num_times_driver_was_passenger(rides):
 ### Summary
 This problem is a variation of the *group by/count* pattern, common in aggregating and summarizing data. The optimized solution uses **hash maps** to count and lookup in linear time. This pattern is relevant for log analytics, event counting, and data pre-processing in SQL or distributed environments.
 
+
+### Flashcard
+For each driver, count how many times their ID appears as a passenger in the rides list.
+
 ### Tags
 Database(#database)
 

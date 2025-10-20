@@ -110,6 +110,10 @@ def maximumLengthOfRanges(nums):
 ### Summary
 The core pattern is **monotonic stack** for finding the next/previous greater element for each index. This is a very common trick in subarray-range queries (like sliding window maximum/minimum, histogram area, etc.), and it lets us solve the range-maximum expansion problem in O(n) time. Recognizing the connection to “boundaries” via stacks is crucial for efficient interview solutions.
 
+
+### Flashcard
+Use monotonic stack to find for each index the nearest larger elements left and right; range length = (right – left – 1).
+
 ### Tags
 Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

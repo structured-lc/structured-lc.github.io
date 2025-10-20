@@ -98,6 +98,10 @@ def solveNQueens(n):
 ### Summary
 This problem demonstrates classic **backtracking** with state tracking: the decision tree is pruned based on constraint violations (no sharing row, column, or diagonal). This is a common technique used in constraint satisfaction problems, permutations, and combinations. The pattern is highly reusable, for example in Sudoku, and problems involving unique arrangements under constraints.
 
+
+### Flashcard
+Use backtracking with sets or bitmasks to track columns and diagonals, placing one queen per row and pruning invalid placements early.
+
 ### Tags
 Array(#array), Backtracking(#backtracking)
 

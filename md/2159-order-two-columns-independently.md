@@ -160,6 +160,10 @@ def order_two_columns_independently(data):
 - This method generalizes easily to more columns and other sorting/pairing combinations.  
 - A classic **sorting and pairing** problem with independent column treatment.
 
+
+### Flashcard
+Sort first_col ascending and second_col descending, then align by row number—in SQL, use ROW_NUMBER() and join on the row index.
+
 ### Tags
 Database(#database)
 

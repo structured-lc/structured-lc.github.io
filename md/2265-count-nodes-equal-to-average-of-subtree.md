@@ -131,6 +131,10 @@ class Solution:
 ### Summary
 This problem is a classic example of post-order DFS in a binary tree to aggregate information from child subtrees before handling the parent. The approach is a common pattern for "attribute of subtree" problems (computing subtree sum, count, min, max, etc.) and can be repurposed for many variations involving tree DP or post-order aggregation.
 
+
+### Flashcard
+Use post-order DFS to compute subtree sum and count in O(n) time; compare node value to average at each step.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

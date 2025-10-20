@@ -139,6 +139,10 @@ class Solution:
 ### Summary
 This problem is a classic **Tree DFS (postorder)** application, where global information is updated using local results from each node. The key insight is always to track the **two largest depths among the children** at each step. This approach is reusable for other problems involving longest paths or combining subtree results (e.g., binary tree diameter, longest univalue path).
 
+
+### Flashcard
+Calculate the diameter of an N-ary tree by finding the longest path through any node, which is the sum of the two largest depths from its children.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search)
 

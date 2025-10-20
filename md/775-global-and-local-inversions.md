@@ -85,6 +85,10 @@ The key observation is that all non-local global inversions break the equality, 
 This translates to a single scan with abs(nums[i] - i) > 1.  
 This is a classic “index displacement” check, related to problems involving sorted order and inversions, and can be applied to permutation/array manipulations with constrained swaps.
 
+
+### Flashcard
+Check if for all i, nums[i] ≤ i+1; if any nums[i] > i+1, there exists a non-local global inversion.
+
 ### Tags
 Array(#array), Math(#math)
 

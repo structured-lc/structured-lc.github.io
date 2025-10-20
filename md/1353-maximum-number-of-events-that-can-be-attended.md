@@ -82,6 +82,10 @@ def maxEvents(events):
 ### Summary
 This is a greedy scheduling problem using a min-heap, a classic pattern for "max non-overlapping intervals/events attends". Useful in resource allocation, interval scheduling, and event processing.
 
+
+### Flashcard
+Sort events by start day; use a min-heap to greedily attend earliest-ending available event each day.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

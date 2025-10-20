@@ -97,6 +97,10 @@ def knightProbability(N, K, r, c):
 ### Summary
 This problem uses the **dynamic programming–tabulation** pattern (bottom-up DP on a grid with state transitions) for probabilistic path-counting—a pattern common in probability/Markov process simulations and grid-based DP problems. It can also be approached recursively with memoization for smaller k. Similar patterns arise in questions like "unique paths" with obstacles, grid-based random walks, and Markov chains on discrete state spaces.
 
+
+### Flashcard
+Use dynamic programming: dp[step][i][j] = probability knight is at (i, j) after step moves; sum probabilities for all positions after k steps.
+
 ### Tags
 Dynamic Programming(#dynamic-programming)
 

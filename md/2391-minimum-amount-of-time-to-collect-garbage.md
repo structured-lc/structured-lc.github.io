@@ -101,6 +101,10 @@ def garbageCollection(garbage, travel):
 ### Summary
 This follows the prefix-sum, last occurrence, and simulation coding patterns. The idea of "prefix sum for interval queries" is common in path, travel, or cumulative cost problems. The technique also applies to single-pass optimizations for "last index" and efficient multi-agent routing as seen in logistics, mail/bus routing, or pipeline scheduling tasks.
 
+
+### Flashcard
+Sum all garbage counts for collection time; for each truck type, find last house with that garbage and add travel[0..last-1] sum.
+
 ### Tags
 Array(#array), String(#string), Prefix Sum(#prefix-sum)
 

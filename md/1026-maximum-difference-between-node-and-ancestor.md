@@ -129,6 +129,10 @@ def maxAncestorDiff(root):
 ### Summary
 This is a classic recursive DFS problem where you carry state along the path (min and max values from ancestor nodes) to determine the answer at each position. The "carry state through recursion" or "backtracking with path state" pattern is common in binary tree ancestor/descendant or path problems, such as path sum, path min/max, or finding paths with specific properties. This approach avoids unnecessary recomputation and makes it efficient for large trees.
 
+
+### Flashcard
+Use DFS to track min/max values from root to each node; at each node, update the answer with max(|node−min|, |node−max|).
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

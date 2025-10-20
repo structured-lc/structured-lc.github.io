@@ -99,6 +99,10 @@ def compress(chars):
 ### Summary
 This uses the **two pointer pattern**—one pointer for reading input and another for writing output in-place. It's a classic pattern for array in-place modification and can also be applied to remove/remove duplicates, reordering, or compaction type problems. The key challenge is always keeping track of read/write positions and handling multi-digit numbers correctly.
 
+
+### Flashcard
+Compress string in-place with two pointers: read scans groups, write compacts and counts repeats.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

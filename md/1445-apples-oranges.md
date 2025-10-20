@@ -70,6 +70,10 @@ GROUP BY sale_date;
 ### Summary
 We use the conditional SUM aggregation pattern to efficiently compute apples - oranges per date with concise SQL logic. This pattern applies widely in difference and pivot-style reporting problems in SQL.
 
+
+### Flashcard
+Use conditional aggregation in SQL: SUM(sold_num) for apples, subtract SUM(sold_num) for oranges per sale_date to get apples−oranges.
+
 ### Tags
 Database(#database)
 

@@ -97,6 +97,10 @@ def maxAbsValExpr(arr1, arr2):
 ### Summary
 This problem is an excellent test of mathematical pattern recognition and reduction of brute-force combinations. The approach uses a transformation to reduce the exhaustive comparison of all pairs into four linear scans using the triangle/absolute value properties—a common but nontrivial interview trick that also appears in other "maximum Manhattan distance" type problems and can be generalized to higher dimensions or more arrays.
 
+
+### Flashcard
+For each sign combination, compute max of |arr₁[i] ± arr₁[j] + arr₂[i] ± arr₂[j] + i ± j|; track min/max for each case to get the answer.
+
 ### Tags
 Array(#array), Math(#math)
 

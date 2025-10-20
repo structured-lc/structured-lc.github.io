@@ -134,6 +134,10 @@ def find_missing_information(employees, salaries):
 ### Summary
 This problem uses a common **set union** and **dictionary lookup** pattern to find entities with incomplete linked data. The idea generalizes to any problem requiring *missing join keys* or partial record detection across multiple data sources—a pattern frequently used in data validation and database merging tasks.
 
+
+### Flashcard
+Use FULL OUTER JOIN or UNION of employee_id from both tables, then filter where name IS NULL or salary IS NULL to find missing information.
+
 ### Tags
 Database(#database)
 

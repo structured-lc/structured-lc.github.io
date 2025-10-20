@@ -144,6 +144,10 @@ def winning_candidate(votes, candidates):
 ### Summary
 This solution uses the **group by counting pattern** — widely used in SQL problems dealing with counts, rankings, voting or frequency. The pattern is applicable in finding most popular/frequent items, top-k queries, etc. The query illustrates efficient aggregation, joining, and limiting results for real-world analytics.
 
+
+### Flashcard
+Group votes by CandidateId, count votes, select the candidate with the highest count, and join to get the name.
+
 ### Tags
 Database(#database)
 

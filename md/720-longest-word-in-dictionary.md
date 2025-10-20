@@ -96,6 +96,10 @@ This solution uses **sorting** and **prefix checking** with a set for quick look
 The coding pattern is set-based validation with iteration over sorted inputs, common in "build-by-prefix" type problems.  
 Similar approaches work in **Trie prefix problems**, dictionary sequence validation, and word-ladder type questions.
 
+
+### Flashcard
+Sort words by length and lex order; for each word, check if all prefixes exist in a set, updating the answer if so.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Trie(#trie), Sorting(#sorting)
 

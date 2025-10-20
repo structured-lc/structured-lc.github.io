@@ -197,6 +197,10 @@ for row in output:
 ### Summary
 This problem uses the **grouping consecutive elements** or “merge ranges” pattern, often used in time-series analysis, intervals merging, and run-length encoding. The core is to label each day, then scan from oldest to newest, grouping consecutive days with the same state, and outputting each contiguous block as needed. This pattern is common in problems involving calendars, logs, or contiguous value segmentation.
 
+
+### Flashcard
+Scan all dates, label each as 'failed' or 'succeeded', then group consecutive dates with the same label to report contiguous intervals.
+
 ### Tags
 Database(#database)
 

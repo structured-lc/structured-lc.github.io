@@ -80,6 +80,10 @@ This problem leverages the **dynamic programming** pattern where results for pre
 which efficiently reduces the bit counting for each number to constant time.  
 This pattern (reuse of subproblem solutions and bitmask operations) appears in many bit manipulation and state compression DP problems, such as counting set bits, finding masks, or determining subsets.
 
+
+### Flashcard
+For i > 0, count of 1s in i is 1 + count in i & (i-1); build up results for 0 ≤ i ≤ n in O(n) time.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation)
 

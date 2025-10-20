@@ -86,6 +86,10 @@ def equalPairs(grid):
 ### Summary
 This problem is best solved with a **hashmap and tuple encoding** pattern, which is common for recognizing patterns within rows/columns (e.g., anagrams, grouping by frequency, subarrays). The key is to reduce multi-pass nested loops with a *preprocessing and lookup* approach—mapping one structure (rows), then querying with another (columns). This "hash-count and check" strategy is broadly useful in matrix and string problems that ask for equality or grouping by content.
 
+
+### Flashcard
+Convert each row to a tuple and count frequencies in a hash map; for each column tuple, look up its count and add to result. O(n²) time.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Matrix(#matrix), Simulation(#simulation)
 

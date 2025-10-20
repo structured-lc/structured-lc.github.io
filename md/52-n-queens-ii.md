@@ -100,6 +100,10 @@ def totalNQueens(n: int) -> int:
 ### Summary
 We use the **backtracking** pattern, a classic technique for constraint satisfaction, placing one queen per row and backtracking when a conflict arises. This problem is a textbook example of recursive search with pruning and is common in puzzles, constraint satisfaction, and combinatorics. Variants include solving Sudoku and placing non-attacking knights or bishops.
 
+
+### Flashcard
+Use backtracking to count valid placements, tracking columns and diagonals to avoid threats, and increment the count for each complete solution.
+
 ### Tags
 Backtracking(#backtracking)
 

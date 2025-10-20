@@ -83,6 +83,10 @@ def countSubTrees(n: int, edges: List[List[int]], labels: str) -> List[int]:
 ### Summary
 The algorithm leverages bottom-up **DFS** aggregation for tree-subtree properties—pattern is common in counting/aggregation problems on tree structures. Especially useful for subtree DPs and label-counting on trees.
 
+
+### Flashcard
+Count nodes in a subtree with the same label as the root by using DFS to aggregate counts from child nodes.
+
 ### Tags
 Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Counting(#counting)
 

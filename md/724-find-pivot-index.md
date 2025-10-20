@@ -78,6 +78,10 @@ def pivotIndex(nums):
 ### Summary
 The pattern used here is maintaining a **running prefix sum** and using the formula `left_sum == total_sum - left_sum - nums[i]` to efficiently determine the pivot index in a single pass. This "prefix-sum + total-sum" trick is a common pattern for balance or split-point problems and can be adapted for other subarray or partitioning challenges.
 
+
+### Flashcard
+Compute total sum; as you iterate, track left sum and check if left sum equals total sum minus left sum minus nums[i] for pivot index.
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

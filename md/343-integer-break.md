@@ -80,6 +80,10 @@ def integerBreak(n):
 ### Summary
 The approach here is a neat example of **greedy optimization**, using mathematical reasoning about how to maximize products via integer splits. This sort of logic (breaking a number to maximize/minimize a function over its parts) appears in both math competitions and dynamic programming problems, especially those involving integer partitions or optimization of sum/product relationships.
 
+
+### Flashcard
+For n ≥ 4, break into as many 3's as possible for maximum product; use DP or math for O(1) solution.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming)
 

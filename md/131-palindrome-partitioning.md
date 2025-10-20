@@ -97,6 +97,10 @@ This problem uses the **backtracking/cut and choose** pattern: at each index, tr
 It’s a classic candidate for backtracking, similar to *subsets* or *combination sum* problems, and can be further optimized if asked.  
 Patterns used here recur in word break, subset partitioning, and combination generation interview problems.
 
+
+### Flashcard
+Use backtracking to try every partition; at each step, extend the current substring and recurse only if it’s a palindrome.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking)
 

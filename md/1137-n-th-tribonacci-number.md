@@ -93,6 +93,10 @@ This problem leverages the **Dynamic Programming - rolling window** pattern, sim
 We reduce space by keeping only the minimal past state needed. This coding pattern is broadly applicable in linear DP problems requiring values from a fixed sliding window.  
 For extremely large n, advanced techniques such as **matrix exponentiation** can be applied to reduce computation time, a concept often seen in sequence problems.
 
+
+### Flashcard
+Use bottom-up DP to compute Tribonacci numbers: T₀=0, T₁=1, T₂=1, Tₙ=Tₙ₋₁+Tₙ₋₂+Tₙ₋₃ for n≥3.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Memoization(#memoization)
 

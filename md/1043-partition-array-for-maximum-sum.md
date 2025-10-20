@@ -93,6 +93,10 @@ def maxSumAfterPartitioning(arr, k):
 This is a **DP on partitions** problem—similar to problems like word break, palindrome partitioning, etc., which involve breaking an array/string optimally.  
 The trick is to define dp[i] as the maximum sum for the prefix of length i, and for each position, try all possible partition sizes ending there, keeping space and time efficient. This approach applies to many “partition at any spot” optimization questions.
 
+
+### Flashcard
+DP: dp[i] = max over all k (1 ≤ k ≤ K) of dp[i−k] + max(arr[i−k+1..i]) × k.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

@@ -74,6 +74,10 @@ def check(nums):
 ### Summary
 This problem uses the classic **rotation point** pattern—detecting the number of "drops" (where order breaks) in a circular array. The single-pass, constant-space approach is optimal. Such logic is also useful for searching in rotated sorted arrays and for problems on periodicity or array wrap-around. This is a common interview pattern for array rotation and order-checking.
 
+
+### Flashcard
+Check if the array is non-decreasing with at most one drop (where nums[i] > nums[i+1]); if drops > 1, it’s not a rotated sorted array.
+
 ### Tags
 Array(#array)
 

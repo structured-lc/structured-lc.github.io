@@ -163,6 +163,10 @@ class Solution:
 ### Summary
 This problem uses a **game theory DP with memoization and minimax-style recursion**, a common pattern in optimal two-player game simulations (chess, checkers, etc.), where both players pick the best move each turn. The coding technique generalizes to “win/loss/draw in two-player games with perfect information and deterministic moves.” Optimal DP key design and pruning make the solution tractable.
 
+
+### Flashcard
+Use BFS/DFS with memoization on state (mouse_pos, cat_pos, turn, moves); mouse wins if reaches food first within 1000 turns, draw if cycle detected.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Graph(#graph), Topological Sort(#topological-sort), Memoization(#memoization), Matrix(#matrix), Game Theory(#game-theory)
 

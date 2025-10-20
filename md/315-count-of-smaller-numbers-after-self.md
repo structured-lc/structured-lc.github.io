@@ -119,6 +119,10 @@ The coding pattern—“count while merging”—is powerful for any scenario wh
 It's widely applicable for inversion counts, “for each i, how many j > i <condition>” types of problems, and is a fundamental divide & conquer pattern.  
 Alternative patterns: BST/Order Statistic Tree, Fenwick Tree—also work well in streaming or real-time scenarios.
 
+
+### Flashcard
+Utilize a Binary Indexed Tree or BST to efficiently count smaller numbers after each element.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Merge Sort(#merge-sort), Ordered Set(#ordered-set)
 

@@ -74,6 +74,10 @@ def maximumEvenSplit(finalSum):
 ### Summary
 This problem uses a **greedy** growing sequence pattern: always take the smallest available unit to maximize count under a sum constraint. It's a well-known approach for "maximum number of summands" problems where all summands must be unique and come from an ordered set. Useful in cases where maximizing count takes precedence over value, and the problem has a clear smallest unit (here, the smallest even integer ≥2).
 
+
+### Flashcard
+Greedily pick smallest unused even numbers (2, 4, 6, …) until the next exceeds finalSum; if leftover, add to last.
+
 ### Tags
 Math(#math), Backtracking(#backtracking), Greedy(#greedy)
 

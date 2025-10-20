@@ -98,6 +98,10 @@ class Solution:
 ### Summary
 This problem is a classic use case for the **Reservoir Sampling** algorithm, which allows for random sampling over single-pass data with unknown size using constant space. The pattern appears in problems where you must randomly pick an occurrence from a set or stream, especially when pre-storage of all options is infeasible. Variants include picking k random elements or handling streaming data where only one pass is allowed.
 
+
+### Flashcard
+Use reservoir sampling to pick a random index of target in O(1) space and one pass per pick.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), Reservoir Sampling(#reservoir-sampling), Randomized(#randomized)
 

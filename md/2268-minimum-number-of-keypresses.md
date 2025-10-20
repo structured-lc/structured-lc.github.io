@@ -86,6 +86,10 @@ def minimumKeypresses(s: str) -> int:
 ### Summary
 The problem leverages a **greedy counting and sorting pattern**: always assign the most frequent items to the lowest-cost choices. This is a common approach in optimizing assignment problems (see also: Huffman coding, job assignment, minimizing sum of weighted costs). The key is recognizing that sorting by frequency and assigning to "cheapest" slots (button positions) produces an optimal solution.
 
+
+### Flashcard
+Assign most frequent letters to the first position on each key to minimize total keypresses—greedy frequency sort.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Greedy(#greedy), Sorting(#sorting), Counting(#counting)
 

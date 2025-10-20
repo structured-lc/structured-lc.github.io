@@ -69,6 +69,10 @@ def concatenatedBinary(n: int) -> int:
 ### Summary
 Classic use of bitwise operations and number theory. Popular coding pattern for optimized bit manipulations, such as rolling hashes and efficient encoding.
 
+
+### Flashcard
+Concatenation of Consecutive Binary Numbers
+
 ### Tags
 Math(#math), Bit Manipulation(#bit-manipulation), Simulation(#simulation)
 

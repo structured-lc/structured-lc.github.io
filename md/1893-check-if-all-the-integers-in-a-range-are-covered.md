@@ -86,6 +86,10 @@ def isCovered(ranges, left, right):
 ### Summary
 This problem demonstrates the "range coverage" pattern and is a classic application of the line sweep/difference array technique when the domain of possible numbers is small. The pattern is commonly used for range addition and prefix sum problems. Variations appear in calendar booking, event scheduling, or array modification with multiple overlapping ranges.
 
+
+### Flashcard
+Use a boolean array to mark covered numbers in the range.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
 

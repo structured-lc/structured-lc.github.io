@@ -94,6 +94,10 @@ This is a classic “state compression DP” used in stock trading variants.
 The two-variable ‘hold/cash’ pattern is common in problems where you can make as many transactions as you want, but are constrained to sell before you can buy again (no overlapping trades).  
 Related patterns: House Robber (choose-or-not-choose), and all "Best Time to Buy and Sell Stock" LeetCode variations.
 
+
+### Flashcard
+Use DP with two states: hold (max profit holding stock) and cash (max profit not holding); update each day considering transaction fee.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

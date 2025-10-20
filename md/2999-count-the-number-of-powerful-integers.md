@@ -132,6 +132,10 @@ def count_powerful(start: int, finish: int, limit: int, s: str) -> int:
 This is a classic **digit dynamic programming (digit DP)** problem, where we count numbers with certain digit constraints and fixed patterns.  
 Patterns using digit DP occur in problems that need to count numbers with digit bounds, e.g. "Numbers with equal digit sum", "Numbers with no repeated digits", and many leetcode problems involving custom number formation under bounds. Use of memoization and careful definition of states is key to efficient solutions.
 
+
+### Flashcard
+Use digit DP to count powerful integers ≤ finish minus those < start. For the prefix before suffix s, ensure each digit ≤ limit while maintaining tight bound tracking. Verify the final number ends with s and handle edge cases.
+
 ### Tags
 Math(#math), String(#string), Dynamic Programming(#dynamic-programming)
 

@@ -73,6 +73,10 @@ def minimumCostToConnectSticks(sticks):
 ### Summary
 This problem is best solved using a **min-heap** and a **greedy algorithm** pattern. Repeatedly connecting the two smallest elements at each step ensures the minimal possible buildup in connection cost, as in classic problems like Huffman encoding. This approach is common in minimum spanning tree-like problems and greedy optimization challenges where local optimal choices yield a global optimum.
 
+
+### Flashcard
+Use a min-heap to always connect the two smallest sticks, summing their lengths as cost, and repeat until one stick remains.
+
 ### Tags
 Array(#array), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
 

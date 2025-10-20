@@ -93,6 +93,10 @@ def rearrangeArray(nums):
 This problem demonstrates the **two-list partitioning** pattern, then merging while preserving original order. This approach commonly appears in problems that require stable rearrangement (relative order) by some property (e.g. even-odd, sign, category). 
 The same logic can be adapted for alternate even-odd placement, or any two-group alternation where relative order matters. The key constraint (maintain order) makes O(n) space the cleanest solution.
 
+
+### Flashcard
+Separate positives and negatives into two lists preserving order, then interleave starting with positive.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Simulation(#simulation)
 

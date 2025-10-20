@@ -108,6 +108,10 @@ def insertionSortList(head):
 ### Summary
 We used the **insertion sort** algorithm, leveraging the flexibility of linked lists to perform in-place inserts efficiently. This problem is a classic for practicing pointer manipulation and careful edge case handling with dummy nodes. The pattern—using dummy nodes for easy head insertions and stepwise building of a sorted partial list—is common, and appears in several linked list sorting and manipulation problems.
 
+
+### Flashcard
+For each node, find its correct spot in the sorted part using pointer manipulation; use a dummy head to simplify insertions.
+
 ### Tags
 Linked List(#linked-list), Sorting(#sorting)
 

@@ -77,6 +77,10 @@ def lengthOfLongestSubstring(s):
 ### Summary
 This problem uses the **sliding window** pattern—one of the most common approaches for substring and subarray problems in strings and arrays. It allows tracking a dynamic window of candidates, efficiently managing constraints (here, uniqueness) with fast lookup structures like sets or hashmaps. Sliding window strategies can be applied in many similar substring/search problems, such as "Longest Substring with At Most K Distinct Characters" and "Minimum Window Substring".
 
+
+### Flashcard
+Use a sliding window with a hash set to track unique characters, expanding right and shrinking left to maintain no repeats.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

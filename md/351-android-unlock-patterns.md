@@ -124,6 +124,10 @@ def numberOfPatterns(m, n):
 ### Summary
 This problem is a classic application of **backtracking with intelligent pruning and precomputed move validation**. Recognizing and exploiting the grid’s rotational and reflectional symmetry enables us to multiply results and greatly reduce code duplication. The backtracking pattern here (with conditional validity rules) is common in chessboard pathfinding, the Knight’s Tour, Hamiltonian path search, and similar combinatorial puzzles.
 
+
+### Flashcard
+Backtracking with precomputed skip map showing which intermediate key must be visited when jumping between non-adjacent keys; count valid paths of length m to n.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

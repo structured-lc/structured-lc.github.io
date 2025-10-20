@@ -93,6 +93,10 @@ This is a classic **if-else condition classification problem** with multiple ind
 The pattern applies to problems where multiple flags or conditions combine for output decision. Common elsewhere in rule engines or permission/gatekeeping logic.  
 Simple to code, yet highlights precision and careful boundary checking for interview evaluation.
 
+
+### Flashcard
+Check if box is Bulky (any dimension ≥ 10,000 or volume ≥ 1,000,000,000) or Heavy (mass ≥ 100), then return "Both", "Bulky", "Heavy", or "Neither" based on conditions.
+
 ### Tags
 Math(#math)
 

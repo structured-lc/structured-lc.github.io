@@ -93,6 +93,10 @@ This problem is a **reverse greedy** game problem and a great application of “
 Every step is either halving (when allowed) or decrementing, and this same pattern appears in problems involving minimum steps, optimal reductions, and minimum operation reductions.  
 Common in competitive programming and algorithm interviews, where constraints push you toward optimal use of special operations within limits.
 
+
+### Flashcard
+Work backwards from target to 1—if even and doubles remain, halve; otherwise decrement by 1 until reaching 1.
+
 ### Tags
 Math(#math), Greedy(#greedy)
 

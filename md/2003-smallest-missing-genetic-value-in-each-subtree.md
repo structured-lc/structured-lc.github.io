@@ -121,6 +121,10 @@ def smallestMissingValueSubtree(parents, nums):
 ### Summary
 This problem uses a smart subtree-marking technique where only certain paths need full DFS, based on tree value constraints. It’s a common pattern for tree problems: focus computation on relevant paths using ancestor/descendant relationships. This approach is related to tree DP, parent-to-root traversals, and prefix-set propagation, and can be adapted to other subtree-query or path-query problems in trees.
 
+
+### Flashcard
+Find the smallest missing genetic value in each subtree. Optimize by focusing on the path from the node with value 1 to the root.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Union Find(#union-find)
 

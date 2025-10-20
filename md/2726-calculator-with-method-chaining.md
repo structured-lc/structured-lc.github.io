@@ -131,6 +131,10 @@ class Calculator:
 ### Summary
 This problem uses the *method chaining* pattern to design a clean, user-friendly API for repeated operations on an internal state. The approach—returning `self` from each mutating method—is widely useful for data structure builders and query DSLs. This pattern shows up in string builders, fluent interfaces, and other customizable computation pipelines.
 
+
+### Flashcard
+Chain calculator methods by updating internal state and returning self; handle division by zero, enable chaining except for getResult.
+
 ### Tags
 
 ### Similar Problems

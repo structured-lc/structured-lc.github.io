@@ -107,6 +107,10 @@ def sumOfBeauties(nums):
 ### Summary
 This problem demonstrates a common pattern of precomputing prefix/suffix statistics (max, min) to enable O(1) range queries during an O(n) pass, avoiding repeated work. This template is useful in many range-based problems, such as trapping rain water, subarray statistics, and sliding window maximum.
 
+
+### Flashcard
+Calculate the beauty of an array by precomputing prefix max and suffix min arrays to efficiently identify local maxima.
+
 ### Tags
 Array(#array)
 

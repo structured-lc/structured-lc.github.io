@@ -99,6 +99,10 @@ def min_moves_to_make_palindrome(s: str) -> int:
 ### Summary
 This problem is a classic application of the **greedy two-pointer** technique and simulates *bubble sort swaps* to pair up matching characters from both ends. It’s closely related to making strings anagrams/palindromes with adjacent moves—patterns useful in adjacent swap sorting, greedy pairing, and palindrome construction problems. The main insight is to always pair characters as early as possible, minimizing unnecessary swaps.
 
+
+### Flashcard
+Greedily pair matching characters from ends inward, swapping as needed; each swap moves a character to its mirror position.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Greedy(#greedy), Binary Indexed Tree(#binary-indexed-tree)
 

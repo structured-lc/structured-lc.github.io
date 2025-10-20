@@ -157,6 +157,10 @@ This solution uses a classic hash map aggregation pattern (“group by two keys,
 It’s a common **group-by-and-find-max** pattern used in SQL (GROUP BY, aggregate, then window/partition) and can be generalized for time series, logs, analytics, and leaderboards.
 It’s widely applicable anywhere you need “find the keys with maximum value per group” logic.
 
+
+### Flashcard
+Group calls by (city, hour) and count occurrences. For each city, find the maximum call count, then collect all hours achieving that maximum. Use dictionary-of-dictionaries for efficient grouping.
+
 ### Tags
 Database(#database)
 

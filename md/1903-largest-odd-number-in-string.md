@@ -71,6 +71,10 @@ def largestOddNumber(num: str) -> str:
 ### Summary
 The approach uses **reverse scanning** (right-to-left traversal), a common pattern for problems involving properties determined by trailing digits (such as parity). Greedy logic applies: to maximize the value, keep as many leading digits as possible by stopping at the first odd digit from the end. This pattern is useful for string slicing questions, number manipulation in string-form, and questions involving number properties (odd/even, divisibility, etc.).
 
+
+### Flashcard
+The largest odd substring ends at the rightmost odd digit—scan from the end to find it.
+
 ### Tags
 Math(#math), String(#string), Greedy(#greedy)
 

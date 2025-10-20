@@ -89,6 +89,10 @@ def canConvertString(s: str, t: str, k: int) -> bool:
 ### Summary
 This problem is based on counting **minimum shifts required** per character and adjusting for multiple occurrences of the same shift (since each move uses a unique time). The solution follows a **hash map/greedy counting** approach, and knowing how to handle modulo arithmetic for wrapping is key. This pattern is valuable for similar scheduling/resource conflict problems and interval-based transformation challenges.
 
+
+### Flashcard
+Calculate shift distances needed to convert one string to another, ensuring no overlap in shift values.
+
 ### Tags
 Hash Table(#hash-table), String(#string)
 

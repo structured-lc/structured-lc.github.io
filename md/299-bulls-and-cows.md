@@ -91,6 +91,10 @@ def getHint(secret: str, guess: str) -> str:
 ### Summary
 This problem uses a “counting” pattern and careful bookkeeping with arrays to separate exact matches (bulls) from partial (cows). It's a classic digit/character counting task and shows up in problems where you need to compare multi-set relations, deal with duplicates, and track correct vs wrong positions. Variants appear in interview problems on anagrams, inventory matching, and card games.
 
+
+### Flashcard
+First pass counts bulls (exact position matches); second pass uses frequency arrays for remaining digits to count cows as min(secret_freq, guess_freq) per digit.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

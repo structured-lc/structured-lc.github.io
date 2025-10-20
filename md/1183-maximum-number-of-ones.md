@@ -126,6 +126,10 @@ Pattern: **Greedy selection of the max-frequency block cells**.
 This approach is related to "tiling," modular simulation, and greedy counting.  
 This technique also appears in periodic matrices, tessellations, and maximizing values with repeating constraints.
 
+
+### Flashcard
+Design a sideLength×sideLength block with maxOnes, then tile it—constraint repeats every sideLength rows/cols.
+
 ### Tags
 Math(#math), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

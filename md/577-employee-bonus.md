@@ -150,6 +150,10 @@ This problem is a classic database query for **left join and filtering**—a pat
 
 The pattern: **LEFT JOIN + WHERE (related missing OR value < threshold)**.
 
+
+### Flashcard
+LEFT JOIN Employee and Bonus tables; select employees with bonus < 1000 or no bonus (NULL).
+
 ### Tags
 Database(#database)
 

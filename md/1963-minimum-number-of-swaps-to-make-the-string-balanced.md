@@ -88,6 +88,10 @@ def minSwaps(s: str) -> int:
 ### Summary
 This problem is a **stack/balancing parentheses variant**, but can be solved with a single-pass and a counter. The core technique—tracking running balance and max imbalance—is commonly useful in similar bracket-matching or stack problems. This method also generalizes to related parenthesis matching problems and is a recurring theme in parsing and string-validation interview questions.
 
+
+### Flashcard
+Track running balance (open brackets minus close brackets); maximum negative balance reached equals unmatched closing brackets, then answer is ⌈max_imbalance/2⌉ swaps.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Stack(#stack), Greedy(#greedy)
 

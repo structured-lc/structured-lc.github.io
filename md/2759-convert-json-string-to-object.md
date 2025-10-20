@@ -171,6 +171,10 @@ def json_parse(s: str):
 ### Summary
 This problem is a classic **recursive descent parsing** exercise, building data structures directly from character streams. The pattern is widely applicable in compilers, configuration file parsing, interpreters, and similar problems requiring string-to-data translation based on a defined grammar.
 
+
+### Flashcard
+Use recursive descent parsing with a pointer to build nested objects/arrays from the JSON string character by character.
+
 ### Tags
 
 ### Similar Problems

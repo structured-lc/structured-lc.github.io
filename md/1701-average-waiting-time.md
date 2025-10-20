@@ -92,6 +92,10 @@ def averageWaitingTime(customers):
 ### Summary
 This is a classic simulation problem that uses a running pointer ("current time") and cumulative calculation. It's a good example of the "Greedy / Timeline" pattern, where you process events in time order, maintaining state as you go. This pattern appears in scheduling, interval problems, and problems with queues or sequential dependencies.
 
+
+### Flashcard
+Track chef's current time; for each customer, start cooking at max(arrival, current time), update current time, and sum finish time minus arrival for each.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

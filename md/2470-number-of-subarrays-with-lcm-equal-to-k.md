@@ -102,6 +102,10 @@ This problem is a classic example of the **enumerate all subarrays** pattern, ap
 Unlike the sum or GCD, the LCM does not have convenient invertibility, so prefix/suffix tricks don't work—thus, a two-loops approach is optimal up to moderate size.  
 The pattern applies to similar range-query problems where the operation isn't easily decomposed or recombined.
 
+
+### Flashcard
+For each subarray, compute LCM; if LCM equals k, increment count—break early if LCM exceeds k or is not a divisor.
+
 ### Tags
 Array(#array), Math(#math), Number Theory(#number-theory)
 

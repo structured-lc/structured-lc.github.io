@@ -92,6 +92,10 @@ def sortLinkedList(head):
 ### Summary
 This approach uses in-place pointer manipulation and a single traversal, which is a common pattern in linked list problems requiring reordering, such as reversing a sublist or partitioning based on a condition. Recognizing the structural property (negative numbers already in reverse order) allows us to achieve O(n) time and O(1) space efficiently. The in-place head insertion trick can be applied in problems like reverse linked list or partition list.
 
+
+### Flashcard
+Detach negative nodes and prepend to list as encountered—maintain relative order of positives, reverse negatives’ order.
+
 ### Tags
 Linked List(#linked-list), Two Pointers(#two-pointers), Sorting(#sorting)
 

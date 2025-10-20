@@ -99,6 +99,10 @@ def countBalls(lowLimit, highLimit):
 ### Summary
 The approach uses a simple counting pattern, hashing or array counting by the digit sum. It’s a frequent coding interview pattern: map items by a computation (sum of digits), then aggregate by those keys. This solution is efficient, direct, and easily generalizable for many similar “bucket by key and count” scenarios.
 
+
+### Flashcard
+Count balls per box using hash map where key = digit sum of ball number; iterate lowLimit to highLimit computing digit sums, return maximum count.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), Counting(#counting)
 

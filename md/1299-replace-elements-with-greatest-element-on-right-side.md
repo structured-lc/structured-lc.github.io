@@ -96,6 +96,10 @@ This problem is a classic example of the "right/left max scan" pattern, useful a
 The optimized O(n) one-pass solution uses a backwards traversal and running max tracker, a common and efficient idiom for this class of questions.  
 Knowing how to convert O(n²) two-loop scans into a clever single-scan solution is a key array skill for tech interviews.
 
+
+### Flashcard
+Traverse from right to left, updating each element with the maximum value to its right.
+
 ### Tags
 Array(#array)
 

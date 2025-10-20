@@ -80,6 +80,10 @@ def findGCD(nums):
 ### Summary
 This problem uses the classic **Euclidean algorithm** and array scanning techniques. The coding pattern—find extremes, then reduce with a classic algorithm—appears in problems involving LCM/GCD, array min/max, and more. The core takeaway: reduce the input array to the essential values for computing the answer, then solve with a well-known efficient method. This pattern is common in computational math and subarray/subsequence optimizations.
 
+
+### Flashcard
+Compute GCD of min and max in the array using the Euclidean algorithm.
+
 ### Tags
 Array(#array), Math(#math), Number Theory(#number-theory)
 

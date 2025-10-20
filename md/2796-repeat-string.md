@@ -83,6 +83,10 @@ The core pattern is *efficient string building*, and the recommended list-then-j
 This technique appears in problems like building large strings, logging patterns, or text expansion under constraints forbidding special methods or operators.  
 For advanced interviews, recognizing string exponentiation techniques is useful for extreme repetition counts.
 
+
+### Flashcard
+Repeat the string x times by creating an array of length x filled with the string, then join all elements for efficient concatenation.
+
 ### Tags
 
 ### Similar Problems

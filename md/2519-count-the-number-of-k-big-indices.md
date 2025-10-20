@@ -148,6 +148,10 @@ def countKBigIndices(nums, k):
 ### Summary
 This problem is a good application of **order statistics** and **coordinate compression** patterns, solved efficiently with a **Fenwick Tree (Binary Indexed Tree)** for prefix counting, in a two-pass approach. This strategy helps in efficiently counting the number of elements less than a given value to the left and right of each index, a common requirement in advanced array problems with constraints on both sides. This pattern is broadly applicable to subarray counting and precedence queries, especially with large array sizes.
 
+
+### Flashcard
+Use two Fenwick trees (BIT) or sorted containers: one processes left-to-right counting smaller elements before i, other right-to-left counting smaller after i.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Merge Sort(#merge-sort), Ordered Set(#ordered-set)
 

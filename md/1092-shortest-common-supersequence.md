@@ -117,6 +117,10 @@ def shortestCommonSupersequence(str1: str, str2: str) -> str:
 ### Summary
 This problem is a **classic dynamic programming pattern**, specifically an extension of the Longest Common Subsequence and Edit Distance problems. The DP approach aligns with many sequence alignment and merge problems in text processing and bioinformatics. The reconstruction technique is also widely used in DP-based path recovery, and the general structure—build table, then reconstruct by trace—appears often in Leetcode and technical interviews.
 
+
+### Flashcard
+Compute LCS of both strings using DP, then reconstruct shortest supersequence by merging str1 and str2 guided by LCS—include common chars once, non-common chars from both.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

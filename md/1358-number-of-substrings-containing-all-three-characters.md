@@ -95,6 +95,10 @@ def numberOfSubstrings(s):
 - The trick is realizing that, for each valid window, its right endpoint gives you (n - right) valid substrings starting at left.
 - Pattern appears everywhere: substring/array range querying, smallest window containing all elements, minimum covering substring.
 
+
+### Flashcard
+Use sliding window with character counts; for each right pointer, move left to ensure all 'a', 'b', 'c' are present, count substrings.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

@@ -131,6 +131,10 @@ def regionsBySlashes(grid):
 This problem is an excellent example of the **Union-Find (Disjoint Set Union)** pattern used to count *connected components* in non-trivial, partitioned domains. The clever part is mapping each grid cell to multiple logical regions (triangles), then performing merges according to both within-cell and between-cell logic.  
 This modeling can be applied to other problems involving arbitrary regions and graph connectivity — for example, counting *islands* in matrices, or analyzing regions in *puzzle* grids.
 
+
+### Flashcard
+Split each cell into 4 triangles, use Union-Find to merge connected triangles within and between cells, and count the number of connected components for the regions.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
 

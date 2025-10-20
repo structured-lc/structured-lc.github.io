@@ -102,6 +102,10 @@ This problem is a classic recursion/backtracking partitioning problem with pruni
 The pattern—partition a string and sum the parts to hit a target—is seen in numbers-and-strings problems and certain dynamic programming problems like word break and palindrome partitioning.  
 The approach of recursive substring splits with sum check can be applied in coding tasks involving arithmetic on string digits and combinatorial splits.
 
+
+### Flashcard
+For each i from 1 to n, recursively partition digits of i² into all possible splits, check if any partition's sum equals i using backtracking; if yes, add i² to punishment sum.
+
 ### Tags
 Math(#math), Backtracking(#backtracking)
 

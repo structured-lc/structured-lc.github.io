@@ -72,6 +72,10 @@ def maxProbability(n, edges, succProb, start, end):
 ### Summary
 This is a classic modification of Dijkstra's technique for max-product path, not sum. The pattern appears in stochastic pathfinding, probability networks, and anywhere max-likelihood or reliability is computed with multiplication along a path.
 
+
+### Flashcard
+Find the path with the maximum probability in a graph by modifying Dijkstra's algorithm to multiply probabilities instead of summing weights.
+
 ### Tags
 Array(#array), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
 

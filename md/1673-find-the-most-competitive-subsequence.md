@@ -87,6 +87,10 @@ This problem uses a classic **monotonic stack** / **greedy** pattern to compute 
 Similar patterns are used in problems like “Remove k Digits” or “Next Greater Element.”  
 Understanding when and how to use monotonic stacks for greedy deletion—while keeping the constraint of future availability in mind—is key for mastering a variety of sequence selection problems.
 
+
+### Flashcard
+Use a monotonic stack to build the lex smallest subsequence of length k by replacing larger elements when possible.
+
 ### Tags
 Array(#array), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
 

@@ -151,6 +151,10 @@ def manager_of_largest_department(employees):
 ### Summary
 This problem is a classic example of **group by aggregation + filtering on max value**, commonly used in database queries and analytics. The same pattern applies to "Find employee(s) with max salary," "Top-selling products," or "Most popular courses." Counting, mapping, and extracting maximums per group is a frequent pattern.
 
+
+### Flashcard
+Count employees per department using a hash map while tracking each department's manager. After one pass, find the maximum department size and return managers of all departments matching that size.
+
 ### Tags
 Database(#database)
 

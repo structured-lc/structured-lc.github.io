@@ -79,6 +79,10 @@ This problem is a **prefix/suffix counting + dynamic programming** pattern, wher
 This pattern often appears in problems involving binary strings, minimum edits, or substring modifications for monotonicity or ordering.  
 It is also applicable to related challenges like **minimum flips for alternating patterns**, or making arrays non-decreasing with minimal changes.
 
+
+### Flashcard
+Use prefix sums to track flips needed to make all left '0's and right '1's, minimizing over all split points.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

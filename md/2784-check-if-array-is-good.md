@@ -91,6 +91,10 @@ def isGood(nums):
 ### Summary
 This problem is a classic frequency counting and validation task. The coding pattern used is "Counting and Validation", which is commonly applicable to problems involving permutations, missing/duplicate elements, or set membership. No clever math or advanced data structures are needed, just a careful walk through the expected values and systematic validation with a counter.
 
+
+### Flashcard
+Count frequency of each number; array is good if 1..n-1 appear once, n appears twice, and no other numbers are present.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting)
 

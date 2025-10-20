@@ -114,6 +114,10 @@ This problem uses a **dynamic programming** approach with **monotonic optimizati
 The solution pattern (DP − sequence transforms + segment/map query for past optimums) is common for "generalized LIS/LDS" or "max subsequence sum with custom constraints" problems.  
 You can encounter this structure in variations of weighted LIS, increasing tuple chains, or sequence selection under complex relationships.
 
+
+### Flashcard
+For each index i, use dynamic programming to track the maximum sum of a balanced subsequence ending at i, updating only if nums[i] - nums[j] ≥ i - j for all previous j; optimize with segment tree or monotonic data structure for O(n log n) time.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
 

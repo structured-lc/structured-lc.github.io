@@ -90,6 +90,10 @@ This solution uses the simulation/counters pattern and is highly efficient for f
 The same technique can generalize to n × n games or any problem where you count contributions per row/col/diagonal to check for “win” states.  
 Detecting “victory via counters” is common in classic board game simulations.
 
+
+### Flashcard
+Track each player's counts for rows, columns, and both diagonals; if any count reaches 3 after a move, that player wins—otherwise, return "Draw" if all 9 moves played, or "Pending" if not.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Matrix(#matrix), Simulation(#simulation)
 

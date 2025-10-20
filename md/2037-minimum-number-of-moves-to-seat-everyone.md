@@ -89,6 +89,10 @@ def minMovesToSeat(seats, students):
 ### Summary
 This problem uses the **Greedy Two-Pointer approach after sorting** to achieve minimum assignment cost, a common pattern in minimum-matching and assignment problems in 1D. It's helpful to recognize sorting and greedy pairing as an optimal choice when moving costs are absolute differences, and is broadly applicable to similar matching/minimizing movement scenarios.
 
+
+### Flashcard
+Sort both arrays and pair students to seats in order—minimal total moves is sum of absolute differences between sorted lists.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Counting Sort(#counting-sort)
 

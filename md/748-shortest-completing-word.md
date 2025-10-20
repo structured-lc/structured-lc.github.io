@@ -105,6 +105,10 @@ This pattern is frequently used in:
 - Scrabble/word-game validation or puzzle-solving  
 It is efficient due to bounded alphabet size and scales well for moderate word lists.
 
+
+### Flashcard
+Count letter frequencies in license plate (ignore non-letters/case); check each word has sufficient counts, return shortest valid word.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string)
 

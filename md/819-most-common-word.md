@@ -123,6 +123,10 @@ def mostCommonWord(paragraph, banned):
 This approach follows the classic **hash map counting** pattern, with attention to string normalization and set lookup optimizations.  
 This general technique is widely applicable in problems involving **word frequency counts**, **filtering with exclusions**, and **case-insensitive, punctuation-robust text processing**—common in document analysis, spam filtering, and similar tasks.
 
+
+### Flashcard
+Normalize paragraph to lowercase words, count frequencies skipping banned words, and return the most frequent non-banned word.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting)
 

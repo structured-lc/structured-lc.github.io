@@ -107,6 +107,10 @@ This problem is a classic application of the “hash map for frequency counting�
 The two-pass approach (frequency count, then filter for unique nodes) is simple and efficient for detecting all duplicates in one go.  
 It’s a useful techique for unsorted data, and variations of this strategy work well in arrays and other structures where “all occurrences” need to be identified and handled efficiently.
 
+
+### Flashcard
+Count node values with a hash map, then rebuild list skipping duplicates; O(n) time and space.
+
 ### Tags
 Hash Table(#hash-table), Linked List(#linked-list)
 

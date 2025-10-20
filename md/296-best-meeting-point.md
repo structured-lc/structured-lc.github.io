@@ -102,6 +102,10 @@ def minTotalDistance(grid):
 This problem leverages the property that the **median minimizes the sum of absolute deviations** (key for 1D Manhattan metrics). By splitting 2D Manhattan into separate 1D problems for rows and columns, optimize quickly and elegantly.  
 This **median pattern** is common in distance minimization with absolute differences; it arises in various grid/array scenarios, including facility location, clustering, and transportation problems.
 
+
+### Flashcard
+Collect all row and column coordinates separately, sort each, then compute sum of Manhattan distances using median positions from both lists.
+
 ### Tags
 Array(#array), Math(#math), Sorting(#sorting), Matrix(#matrix)
 

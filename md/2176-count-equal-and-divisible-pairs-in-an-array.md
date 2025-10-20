@@ -83,6 +83,10 @@ def count_pairs(nums, k):
 ### Summary
 This is a classic "count valid pairs" technical screening problem and uses the brute-force double loop pattern. It's a good illustration of simulating constraints with direct pair-checking. The brute-force is efficient enough for small arrays; for massive arrays or other constraints, grouping and combinatorial math, or more advanced filtering might be considered. This general pattern of "searching all index pairs that meet constraints" appears in triangle problems, duplicate checks, and combinatorial filtering.
 
+
+### Flashcard
+Count all pairs 0 ≤ i < j < n with nums[i] = nums[j] and (i×j) divisible by k; brute-force is fine for small n.
+
 ### Tags
 Array(#array)
 

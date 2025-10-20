@@ -128,6 +128,10 @@ def totalCost(costs, k, candidates):
 ### Summary
 This is a classic **two-heap window min extraction** problem. We efficiently maintain two min-heaps for both left and right candidates, always hiring the minimum-cost worker. The approach is a type of *greedy algorithm* with heap window management. This *sliding window with heaps* technique is also applicable in problems where you must repeatedly pick the smallest (or largest) values from multiple moving windows or subsets, such as streaming data minimums or sliding window medians.
 
+
+### Flashcard
+Use two min-heaps for left and right candidate windows to always hire the lowest-cost worker from either end in O(k log candidates) time.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation)
 

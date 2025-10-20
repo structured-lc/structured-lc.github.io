@@ -80,6 +80,10 @@ This problem showcases the *binary search in rotated sorted arrays* pattern, wit
 The approach balances O(log n) efficiency with a fallback to O(n) in degenerate cases, making it a robust template for any rotated-with-duplicates scenario.  
 Similar logic applies to search/insert in rotated arrays and problems like "search in rotated sorted array II."
 
+
+### Flashcard
+Modified binary search; if nums[mid] == nums[high], decrement high to handle duplicates, else proceed as in Problem 153.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

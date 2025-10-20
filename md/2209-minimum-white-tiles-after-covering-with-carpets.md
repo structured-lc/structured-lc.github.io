@@ -104,6 +104,10 @@ def minimumWhiteTiles(floor: str, numCarpets: int, carpetLen: int) -> int:
 ### Summary
 This problem is a classic example of **dynamic programming** with overlapping subproblems and optimal substructure, using a 2D DP table. The same pattern applies to problems where you are allowed to take “blocks” or “chunks” of elements (e.g., covering intervals, partitioning, substring covering). Understanding how to express the decision (“cover” or “not cover” at each position) is essential, and similar DP strategies often appear in tiling, scheduling, and substring segmentation optimizations.
 
+
+### Flashcard
+Use dynamic programming: dp[i][k] = min whites visible on first i tiles with k carpets left; decide at each step whether to cover a white tile or not.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
 

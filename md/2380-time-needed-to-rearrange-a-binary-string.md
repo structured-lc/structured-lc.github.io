@@ -92,6 +92,10 @@ def secondsToRemoveOccurrences(s: str) -> int:
 ### Summary
 This problem employs a **simulation with greedy tracking** pattern, but can be solved optimally in O(n) time by careful book-keeping—tracking how many zeros each '1' must cross and accounting for simultaneous moves. This "count an obstruction and propagate delay" approach appears in many "transform/arrange string by iterative swaps" problems, and is useful in sorting by adjacent swaps, scheduling tasks with dependencies, and motion-planning in discrete steps.
 
+
+### Flashcard
+For each '1', count how many '0's precede it—that's how many swaps it needs; sum these counts for total seconds in O(n) time.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Simulation(#simulation)
 

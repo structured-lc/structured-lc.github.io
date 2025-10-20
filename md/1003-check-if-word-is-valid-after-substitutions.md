@@ -80,6 +80,10 @@ def isValid(s: str) -> bool:
 ### Summary
 This problem is a classic example of using a **stack-based pattern recognition** technique: process input left-to-right, push to a stack, and pop when a specific valid pattern (here, "abc") is detected. Such problems show up in **parsing, syntax checking, and bracket matching**. The stack ensures local order and efficiently captures the allowed nested insertions/removals. This is a common coding pattern for problems involving *balanced substrings* or reversible construction.
 
+
+### Flashcard
+Repeatedly remove "abc" substrings from s; if the string becomes empty, it was valid, otherwise not.
+
 ### Tags
 String(#string), Stack(#stack)
 

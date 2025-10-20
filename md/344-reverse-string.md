@@ -78,6 +78,10 @@ def reverseString(s):
 ### Summary
 This problem uses the **two-pointer swapping pattern**, which is common for reversing an array or subarray in-place, partitioning, or palindrome checks. It's an essential building block for problems involving symmetric updates or in-place rearrangement, and understanding it makes tackling more advanced problems (such as reversing linked lists or certain window algorithms) much easier.
 
+
+### Flashcard
+Use two pointers from both ends, swapping characters until they meet to reverse the string in-place.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

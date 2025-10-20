@@ -104,6 +104,10 @@ def maximumBeauty(nums, k):
 ### Summary
 This problem uses the **sweep line / event (prefix sum) over interval endpoints** pattern to solve the "maximum overlap" problem. The reduction to overlapping intervals is very common, and the method avoids brute forcing for every integer value. This approach applies to other problems involving maximum overlapping intervals, booking, calendar meeting conflicts, or interval intersection counting.
 
+
+### Flashcard
+For each nums[i], mark the interval [nums[i]-k, nums[i]+k], then use a sweep line/counting to find the value covered by the most intervals.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Sorting(#sorting)
 

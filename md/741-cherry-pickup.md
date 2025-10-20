@@ -125,6 +125,10 @@ def cherryPickup(grid):
 ### Summary
 This is an advanced **state-compression DP** problem, typical of grid and path collection questions. The central idea is simulating two people moving simultaneously with DP to avoid double-counting cherries and combinatorially reducing the problem from exponential to polynomial time using memoization. This pattern is applicable in many **multi-agent pathfinding, collection with constraints**, and grid-based DP competition problems.
 
+
+### Flashcard
+Model as two people moving simultaneously from (0,0) to (n-1,n-1); use DP with state (x₁, y₁, x₂, y₂) to maximize total cherries collected.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

@@ -126,6 +126,10 @@ This problem is a **concurrent graph traversal** limited by hostnames, requiring
 It’s a classic pattern useful in distributed crawling, parallel BFS/DFS, and any system that must safely discover and process connected resources in parallel.  
 Key parts: parallel work queue, visited set with concurrency, hostname filtering. This pattern also appears in parallel file/tree crawlers and scalable web/graph apps.
 
+
+### Flashcard
+Use thread-safe BFS with a shared queue and visited set; spawn threads to crawl URLs concurrently, filtering by hostname.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Concurrency(#concurrency)
 

@@ -123,6 +123,10 @@ def lowestCommonAncestor(root, nodes):
 ### Summary
 We used a **Tree DFS / post-order traversal** pattern to find the LCA of k nodes with a single pass, extending the standard two-node LCA method. The algorithm efficiently checks, for every node, whether all targets are present in its subtrees. This is a classic DFS application in tree problems and is widely used wherever subtree-based checks are required. The approach generalizes to any number of target nodes and can be adapted for various tree ancestry queries.
 
+
+### Flashcard
+Lowest Common Ancestor of a Binary Tree IV
+
 ### Tags
 Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

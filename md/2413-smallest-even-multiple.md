@@ -72,6 +72,10 @@ def smallestEvenMultiple(n):
 ### Summary
 This is a classic math-based problem that requires recognizing the relationship between parity and divisibility by two. The solution uses a constant-time parity check. This pattern (checking for divisibility and choosing minimal multiples) is common in LCM or "smallest common multiple" type interview questions. It’s also a good example of reducing an apparent search or simulation problem to a direct arithmetic result using problem constraints.
 
+
+### Flashcard
+If `n` is odd, the smallest even multiple is `n × 2`; if `n` is even, it's `n`.
+
 ### Tags
 Math(#math), Number Theory(#number-theory)
 

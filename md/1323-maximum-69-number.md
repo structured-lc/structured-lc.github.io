@@ -77,6 +77,10 @@ This is a classic **greedy** string manipulation problem — maximize a number b
 - Common coding patterns: digit manipulation, greedy, string handling, “first-occurrence” strategies.
 - This approach generalizes to other digit-flipping max-value problems (e.g., “minimum number with k changes”).
 
+
+### Flashcard
+Change the leftmost '6' in the number to '9' to maximize the value; if no '6', return the original number.
+
 ### Tags
 Math(#math), Greedy(#greedy)
 

@@ -90,6 +90,10 @@ def findArray(pref):
 This problem is a classic bit manipulation and array inversion problem, leveraging the property that XOR is its own inverse.  
 The approach uses a prefix-to-original reduction pattern, often used in both sum and XOR questions (prefix sums, decode xor-ed array, etc). This inversion technique, using a rolling difference/idempotent operation, is useful for a class of problems where cumulative/invertible results are stored instead of raw inputs.
 
+
+### Flashcard
+Use XOR inverse property: arr[i] = pref[i] ⊕ pref[i−1] for i≥1, and arr=pref. Reconstruct original array in O(n).
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

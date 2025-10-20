@@ -105,6 +105,10 @@ def numberOfWays(startPos: int, endPos: int, k: int) -> int:
 ### Summary
 This problem is a classic **combinatorics** and **dynamic programming** (DP) variant. The main insight is to map walks on a line to combinations (binomial coefficients) and rephrase the constraints to arithmetic equations on step counts. The coding pattern is widely used in problems involving walks or random walks with fixed steps and can be applied to similar variations in grid path counting, lattice walks, and related fields.
 
+
+### Flashcard
+Calculate the number of ways to reach `endPos` from `startPos` in exactly `k` steps by finding the number of right steps needed (`(k + endPos - startPos) / 2`) and using combinatorics to compute the result modulo `10^9 + 7`.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
 

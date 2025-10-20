@@ -80,6 +80,10 @@ def findBlackPixel(picture, N):
 ### Summary  
 The approach to solving LeetCode 533 involves precomputing row and column counts, identifying patterns by converting rows into strings, and checking each pixel's conditions for loneliness. This method optimizes time complexity by avoiding redundant comparisons. The solution is an example of optimizing a grid analysis problem using clever precomputation and pattern matching, a common pattern in grid-based problems.
 
+
+### Flashcard
+Precompute row patterns and counts to efficiently check pixel conditions, avoiding per-pixel brute-force validation.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Matrix(#matrix)
 

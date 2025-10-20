@@ -158,6 +158,10 @@ def leafSimilar(root1, root2):
 This problem uses a **recursive DFS pattern** to traverse binary trees, targeting only the leaf nodes. Collecting leaves in left-to-right order and directly comparing the resulting lists is a common approach for sequence comparison in trees.  
 The core coding pattern (collect-and-compare-leaf traversal) can also be applied to problems requiring subtree patterns, tree serialization, or path/value comparison problems.
 
+
+### Flashcard
+DFS both trees to collect leaf sequences; compare the sequences for equality.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

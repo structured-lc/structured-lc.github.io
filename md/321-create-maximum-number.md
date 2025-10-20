@@ -108,6 +108,10 @@ def maxNumber(nums1, nums2, k):
 ### Summary
 This problem uses a **greedy stack** pattern to extract the maximum subsequence from an array, combined with a **lexicographical merge** routine. Core skills include array manipulation, greedy choices, and "two subsequence merge." This approach and these patterns appear in many competitive programming problems involving ordering or selection of elements with constraints on their positions.
 
+
+### Flashcard
+Use a greedy stack approach to efficiently select the maximum digits for each split.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
 

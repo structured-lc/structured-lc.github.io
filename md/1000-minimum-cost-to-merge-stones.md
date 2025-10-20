@@ -100,6 +100,10 @@ def mergeStones(stones, K):
 ### Summary
 This problem is a classic example of **interval DP**, commonly encountered in “merge” or “split” transformation tasks with strict operation constraints. The key is to formalize subproblems (`dp[i][j][k]`) and figure out the transition for merging subintervals. This DP pattern appears in optimal matrix multiplication order, file merging, and burst balloon variants. Proper handling of impossible states and cost accumulation is crucial for correctness and efficiency.
 
+
+### Flashcard
+Use DP with state dp[i][j][k] for min cost to merge stones[i..j] into k piles; only possible if (n−1) mod (K−1) = 0, and merge K consecutive piles at each step.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
 

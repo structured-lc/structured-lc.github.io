@@ -118,6 +118,10 @@ def build_the_equation(terms):
 This problem is a **sorting and string building** exercise. The main trick is getting the formatting rules right for algebraic terms, especially sign management and power formatting.  
 It’s a classic **custom string formatting problem** and occurs often in print logic or report generation situations, as well as in some algebraic symbolic computation preprocessing tasks.
 
+
+### Flashcard
+Sort terms by descending power, format each as ±factor×X^power (special cases for power 0/1), and concatenate with =0.
+
 ### Tags
 Database(#database)
 

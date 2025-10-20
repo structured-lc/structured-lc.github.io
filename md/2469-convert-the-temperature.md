@@ -80,6 +80,10 @@ This is an example of a **direct formula application** pattern—just implement 
 It's common for introductory problems or places where the system’s behavior is defined entirely by well-known equations, such as unit conversions.  
 Patterns like this apply to weight conversions, unit conversions in physics, or currency converters, where the challenge is mainly accuracy and clarity.
 
+
+### Flashcard
+Apply formulas: Kelvin = Celsius + 273.15, Fahrenheit = Celsius × 1.80 + 32.00; return both as a list.
+
 ### Tags
 Math(#math)
 

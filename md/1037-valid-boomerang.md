@@ -81,6 +81,10 @@ def isBoomerang(points):
 ### Summary
 This problem leverages the concept of **collinearity in 2D geometry**, specifically using the cross product of vectors to avoid precision and division issues. The pattern—checking if three points are not on a line—is foundational in computational geometry and appears in many convex hull and polygon problems. The coding pattern is a direct, constant-time formula and highlights clean geometric reasoning.
 
+
+### Flashcard
+Check if three points are not collinear using the cross product: (y₂−y₁)×(x₃−x₂) ≠ (y₃−y₂)×(x₂−x₁).
+
 ### Tags
 Array(#array), Math(#math), Geometry(#geometry)
 

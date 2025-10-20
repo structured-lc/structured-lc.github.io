@@ -74,6 +74,10 @@ def sumFourDivisors(nums):
 ### Summary
 Pattern is divisor counting per number, classic for brute-force number theory + optimizations for semiprimes. Useful pattern for questions about divisor properties, often used in math/code interviews.
 
+
+### Flashcard
+For each number, count divisors up to √n; if exactly 4, sum them—optimize by breaking early if count exceeds 4.
+
 ### Tags
 Array(#array), Math(#math)
 

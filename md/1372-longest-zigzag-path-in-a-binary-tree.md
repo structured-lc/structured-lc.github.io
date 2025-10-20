@@ -139,6 +139,10 @@ This approach uses **DFS** with a direction indicator and path length state.
 By exploring both left and right starts for every node, we ensure all possible ZigZag paths are considered.  
 The pattern of passing state (direction, length) in recursion is a common binary tree DP technique and can be reused for diameter, balanced, or longest path problems.
 
+
+### Flashcard
+Recursively try ZigZag paths from each node in both directions; alternate left/right, track and update max length.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

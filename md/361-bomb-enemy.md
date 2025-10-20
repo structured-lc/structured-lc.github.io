@@ -115,6 +115,10 @@ def maxKilledEnemies(grid):
 This problem uses the *dynamic programming and sliding window* technique on a 2D matrix, optimizing by reusing calculations for segments divided by walls.  
 It’s a common pattern for matrix range queries (e.g., number of visible cells, max consecutive elements), applicable in problems like “maximum number of 1s after flipping,” or “flood fill” with barriers. The essence is segmenting the problem by natural blockers (walls) and reusing work within those segments.
 
+
+### Flashcard
+Precompute enemy counts for each row and column segment between walls, then sum for each empty cell to find the max kills.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

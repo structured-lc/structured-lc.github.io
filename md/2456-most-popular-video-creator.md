@@ -121,6 +121,10 @@ def mostPopularCreator(creators, ids, views):
 ### Summary
 This problem uses the classic hash map aggregation pattern: tallying totals, tracking per-group maxima, and doing a final pass to select best options per group. This approach is widely used in leaderboard-type, aggregation, and analytics coding problems. Patterns used here (grouping by key, selecting values by min/max, lexicographic tie-breaks) also commonly appear in data summarization and ranked retrieval problems.
 
+
+### Flashcard
+For each creator, track total views and their most-viewed video(s); return creators with max total views and their lex smallest top video ID.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

@@ -96,6 +96,10 @@ def countNumberOfTeams(rating):
 ### Summary
 This is a classic application of the “count by middle” or “fix one and count on both sides” pattern, a common trick in combinatorial array questions where element order matters. The approach leverages counting to build O(n²) on top of brute-force O(n³). This strategy is broadly applicable in problems about triplets with given properties, e.g., “number of triangles,” “count inversions,” and is a stepping stone to more advanced pair-counting with data structures (Fenwick/BIT/Segment trees) for O(n log n) solutions.
 
+
+### Flashcard
+For each middle index j, count valid i < j and k > j pairs; sum upward and downward teams.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
 

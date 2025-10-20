@@ -95,6 +95,10 @@ This problem leverages the **hashmap pattern** for O(1) cache-style lookup and u
 It’s analogous to rate-limiting, cache expiration, and “recently seen” patterns — common in logging, streaming, and load balancer design.  
 The solution is simple, efficient, and easily extended if the requirements evolve.
 
+
+### Flashcard
+Store each message's last printed timestamp in a hashmap for O(1) rate-limiting checks.
+
 ### Tags
 Hash Table(#hash-table), Design(#design), Data Stream(#data-stream)
 

@@ -74,6 +74,10 @@ def arrangeWords(text: str) -> str:
 ### Summary  
 This problem is a classic **sorting by custom key** with formatting/cleanup constraints: split string to words, make a stable sort on word length, and reconstruct the string with formatting. The pattern is widely used for tasks like sentence normalization, text formatting, and stable sorts for “bucket/group by” categories. The critical insight is Python’s stable sort and simple string manipulation.
 
+
+### Flashcard
+Split sentence into words, sort by length (stable sort), then join and capitalize the first letter for the result.
+
 ### Tags
 String(#string), Sorting(#sorting)
 

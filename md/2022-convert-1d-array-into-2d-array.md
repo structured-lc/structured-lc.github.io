@@ -85,6 +85,10 @@ This problem uses a classic array transformation (reshaping) pattern: chunking a
 It checks feasibility with a simple size comparison, then slices the input list into rows in a single loop.  
 This reshape pattern is common, appearing in matrix operations and data preprocessing, and is extendable to many application domains.
 
+
+### Flashcard
+Convert a 1D array into a 2D array by checking if the total elements match the desired dimensions and reshaping accordingly.
+
 ### Tags
 Array(#array), Matrix(#matrix), Simulation(#simulation)
 

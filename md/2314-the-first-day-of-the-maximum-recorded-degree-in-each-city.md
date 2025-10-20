@@ -96,6 +96,10 @@ def first_day_max_degree(weather):
 ### Summary
 This problem uses the **hash map/associative array** pattern for grouping and aggregating information per entity (here, per city). The approach is a textbook way to compute group-wise aggregates efficiently in one pass. This pattern often appears in database-style "group by" problems, such as finding top scores, min/max/earliest/latest per grouping, etc.
 
+
+### Flashcard
+For each city, track the max degree and the earliest day it was recorded during a single pass.
+
 ### Tags
 Database(#database)
 

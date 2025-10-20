@@ -97,6 +97,10 @@ def maxDotProduct(nums1, nums2):
 ### Summary
 This problem is a classic **dynamic programming on sequences** question. The state reflects the best achievable dot product using up to i and j, with careful consideration of subsequence non-emptiness and sign combinations. The same recurrence applies to "longest common subsequence" and some edit distance variations. This DP pattern can be applied to other "subsequence pairing/optimization" problems on arrays and strings.
 
+
+### Flashcard
+Use DP where dp[i][j] is the max dot product for subsequences ending at i in nums1 and j in nums2, considering pairing or skipping elements.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

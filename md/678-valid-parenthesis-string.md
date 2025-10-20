@@ -99,6 +99,10 @@ This is a **greedy/interval tracking pattern**—by maintaining a possible range
 It's a common idea for problems where characters have multiple valid roles or ambiguous choices, and you want to track "all possibilities" compactly through bounds.  
 This approach avoids 3ⁿ explosion by only recording necessary aggregate information, making it ideal for string processing and validation problems with ambiguous symbols.
 
+
+### Flashcard
+Track the possible range of open parentheses as you scan; for each '*', update min/max open count since '*' can be '(', ')', or empty—valid if range never goes negative and ends at zero.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Stack(#stack), Greedy(#greedy)
 

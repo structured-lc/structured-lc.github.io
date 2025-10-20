@@ -97,6 +97,10 @@ def numFriendRequests(ages):
 ### Summary
 This approach uses a **counting sort / buckets + prefix sums** pattern, which is common when input values operate over a small integer domain. It replaces nested loops by leveraging the frequency and prefix sum arrays to efficiently count eligible pairs for each age. This pattern appears in problems where valid pairs or counts depend on ranges or multiple constraints within a fixed bounded space.
 
+
+### Flashcard
+Count users by age, then for each age, use the friend request rules to count valid requests efficiently with prefix sums.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
 

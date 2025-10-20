@@ -125,6 +125,10 @@ def bstFromPreorder(preorder):
 ### Summary
 This problem centers on **recursively constructing a BST** from its preorder traversal using value bounds, a classic "build tree from traversal" pattern. This upper/lower bound method is widely applicable in tree deserialization and construction tasks, where order encodes the tree shape. Understanding efficient pointer/index management and range-limiting recursion is crucial for making your solution both optimal and elegant.
 
+
+### Flashcard
+Recursively build BST from preorder by maintaining bounds; each node splits left (< root) and right (> root) subtrees.
+
 ### Tags
 Array(#array), Stack(#stack), Tree(#tree), Binary Search Tree(#binary-search-tree), Monotonic Stack(#monotonic-stack), Binary Tree(#binary-tree)
 

@@ -62,6 +62,10 @@ def sumZero(n):
 ### Summary
 Very common **two-pointer symmetric construction** pattern to resolve fixed-sum problems with uniqueness. Pattern applies broadly to array sum constraints.
 
+
+### Flashcard
+Build the result using symmetric pairs (k, -k) for 1 ≤ k ≤ ⌊n/2⌋, and add 0 if n is odd, to get n unique integers summing to zero.
+
 ### Tags
 Array(#array), Math(#math)
 

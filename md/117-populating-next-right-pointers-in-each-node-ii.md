@@ -102,6 +102,10 @@ def connect(root: 'Node') -> 'Node':
 ### Summary
 This problem is a classic use case for level-order traversal without extra space by harnessing the next pointers as they're built. We use a dummy node at each level to simplify pointer manipulation for the next row. This "constant space BFS" trick applies to any linked structure where inter-level navigation is needed without queues or additional structures, such as "flatten binary tree" problems or "connect a doubly linked list at each level".
 
+
+### Flashcard
+Use dummy node per level to build next pointers in O(1) space—iterate current level via next pointers while constructing next level's connections through the dummy.
+
 ### Tags
 Linked List(#linked-list), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

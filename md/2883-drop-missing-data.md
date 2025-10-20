@@ -103,6 +103,10 @@ def dropMissingData(students: pd.DataFrame) -> pd.DataFrame:
 ### Summary
 The main coding pattern is **data filtering** based on missing values, a common data cleaning step. The problem leverages pandas' built-in functionality (`dropna` or boolean indexing with `notnull`). This approach generalizes to many real-world scenarios where incomplete data must be cleaned before analysis, and is foundational for data wrangling, ETL pipelines, and preprocessing in machine learning.
 
+
+### Flashcard
+Use dropna(subset=['name']) to remove rows where the 'name' column is missing (None or NaN).
+
 ### Tags
 
 ### Similar Problems

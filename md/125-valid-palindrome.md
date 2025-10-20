@@ -86,6 +86,10 @@ def isPalindrome(s: str) -> bool:
 ### Summary
 This problem uses the classic **two-pointer technique** for string comparison, a pattern that appears in many palindrome and substring problems. By intelligently skipping non-alphanumeric characters and ignoring case, we achieve an optimal solution with minimal space and linear time. The logic and pattern here can be directly applied to variants like "Valid Palindrome II" (where one removal is allowed) or checking mirrored substrings.
 
+
+### Flashcard
+Use two pointers (left, right) to scan inward, skipping non-alphanumeric chars and comparing case-insensitively; return false on mismatch, true if pointers cross.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

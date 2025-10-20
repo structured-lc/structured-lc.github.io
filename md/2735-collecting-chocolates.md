@@ -87,6 +87,10 @@ This problem fits the **"Greedy with rolling minimum"** pattern, updating the mi
 The same pattern applies in cases involving rotation-and-take problems, cost minimization across permutations, and rolling minimums.  
 Common for interview rounds on dynamic programming, greedy, and rotating window problems.
 
+
+### Flashcard
+For each possible rotation count, track the min cost to collect each chocolate type; sum min costs plus operation cost.
+
 ### Tags
 Array(#array), Enumeration(#enumeration)
 

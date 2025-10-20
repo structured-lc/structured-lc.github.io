@@ -113,6 +113,10 @@ def makeStringSorted(s: str) -> int:
 ### Summary
 This problem is a classic application of ranking permutations with duplicate elements, often seen in combinatorics and permutation index ranking. The core pattern uses factorial number system, frequency counts, and modular arithmetic including modular inverses for division under mod. Similar patterns show up in questions involving anagrams, unique arrangements, and generation or ranking of lexicographic permutations.
 
+
+### Flashcard
+Count permutations lex greater than current string; use combinatorics and modular arithmetic for efficiency.
+
 ### Tags
 Math(#math), String(#string), Combinatorics(#combinatorics)
 

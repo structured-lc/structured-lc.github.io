@@ -90,6 +90,10 @@ def maxConsecutiveAnswers(answerKey: str, k: int) -> int:
 ### Summary
 This problem is a prototypical application of the **sliding window** pattern, where you keep a window of interest and expand/contract based on constraints (here, at most `k` flips). It appears in problems about longest substrings/arrays with at most `k` mismatches or replacements—the technique is widely applicable for string and array questions involving a "with at most k operations" twist.
 
+
+### Flashcard
+Maximize exam confusion by using a sliding window to find the longest substring with at most `k` flips needed.
+
 ### Tags
 String(#string), Binary Search(#binary-search), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

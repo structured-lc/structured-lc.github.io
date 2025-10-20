@@ -84,6 +84,10 @@ def minimumRecolors(blocks: str, k: int) -> int:
 ### Summary
 We used the classic **sliding window** pattern for a fixed window: maintain a count while moving, updating efficiently in constant time per step. This pattern is commonly found in substring/count problems, especially when conditions are measured on a fixed-size substring. It’s effective for minimal operations, range queries, or any problem where overlapping windows are relevant.
 
+
+### Flashcard
+Use sliding window of size k to count white blocks; track minimum count across all windows in O(n) time.
+
 ### Tags
 String(#string), Sliding Window(#sliding-window)
 

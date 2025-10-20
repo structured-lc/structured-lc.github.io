@@ -102,6 +102,10 @@ def countCharacters(words, chars):
 This problem follows the **frequency array/counter pattern**, where you compare frequency requirements across two sources.  
 It can be applied in anagrams, subset string matches, inventory problems, and other resource-checking tasks where item counts matter. The solution is efficient due to the small and bounded alphabet, and direct array index use instead of repeated searches.
 
+
+### Flashcard
+Count letter frequencies in chars; for each word, check if its letter counts do not exceed those in chars to determine if it can be formed.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting)
 

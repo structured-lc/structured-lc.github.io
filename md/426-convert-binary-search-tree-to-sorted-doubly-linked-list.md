@@ -135,6 +135,10 @@ def treeToDoublyListIterative(root):
 ### Summary
 This problem demonstrates the elegant combination of tree traversal with linked list manipulation. The key insight is leveraging inorder traversal's sorted property for BSTs and building connections on-the-fly rather than storing intermediate results. This pattern appears in tree serialization, tree flattening, and converting between different data structure representations.
 
+
+### Flashcard
+Inorder traversal of BST yields sorted order; link nodes during traversal to form a sorted doubly linked list in-place.
+
 ### Tags
 Linked List(#linked-list), Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree), Doubly-Linked List(#doubly-linked-list)
 

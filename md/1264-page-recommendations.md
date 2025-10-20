@@ -81,6 +81,10 @@ WHERE L.page_id NOT IN (SELECT page_id FROM Likes WHERE user_id = 1)
 ### Summary
 This problem is an example of the **Relational Join + Anti-Join** pattern in SQL, very common for recommendation systems. It can be adapted to suggest content entity types (pages, items, videos) based on friends' (or similar users') activities, with additional filters for exclusions. The core join-exclude-distinct approach is broadly useful in social network analysis and collaborative filtering tasks.
 
+
+### Flashcard
+Find all friends of the user, collect pages liked by friends but not by the user, and return distinct recommended page ids.
+
 ### Tags
 Database(#database)
 

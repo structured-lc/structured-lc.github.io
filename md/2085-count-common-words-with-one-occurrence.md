@@ -87,6 +87,10 @@ def countWords(words1, words2):
 ### Summary
 This is a classic **hash map counting** problem: count word frequencies separately, then compare on the “exactly-once” condition. The **frequency counter** pattern is extremely popular and can be applied to matching, grouping, and deduplication scenarios in arrays/strings—especially when seeking “count exactly n times.” Common in counting anagrams, unique elements, or record deduplication.
 
+
+### Flashcard
+Count word frequencies in both arrays; count words that appear exactly once in each.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting)
 

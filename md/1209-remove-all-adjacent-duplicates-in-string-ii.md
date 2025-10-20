@@ -93,6 +93,10 @@ def removeDuplicates(s: str, k: int) -> str:
 This problem uses the **stack pattern** to efficiently manage and remove groups of adjacent duplicate elements—a common technique for problems involving repeated or paired removals (like removing parentheses, decode strings, or repeated elements).  
 This approach avoids unnecessary scanning and rebuilding of the string, achieving linear performance. The stack keeps track of the current sequence of characters and their counts, enabling efficient group detection and removal. Variations of this pattern are seen in string parsing, decoding algorithms, and editor simulation questions.
 
+
+### Flashcard
+Use a stack to track (char, count); remove the top when count reaches k, efficiently removing all k-adjacent duplicates in one pass.
+
 ### Tags
 String(#string), Stack(#stack)
 

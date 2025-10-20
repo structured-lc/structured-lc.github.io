@@ -85,6 +85,10 @@ def countDistinctIntegers(nums):
 ### Summary
 The approach leverages the *Set* pattern to efficiently count unique values after a data augmentation step (digit reversal). It avoids unnecessary storage or processing by combining insertion and reversal in a single scan. The same pattern is common for "count unique values after transformation" problems, which appear in string, number, or event-processing contexts.
 
+
+### Flashcard
+Add both original and reversed integers to hash set while iterating. Return set size for distinct count after all additions.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Counting(#counting)
 

@@ -74,6 +74,10 @@ def not_boring_movies(cinema):
 ### Summary
 This problem demonstrates **filtering** and **sorting** of structured data—classic steps in data-processing or SQL tasks. The approach is direct: filter to exclude the unwanted rows, sort the survivors, then output. This same coding pattern applies to numerous “find and order” problems where you need to select based on multiple conditions.
 
+
+### Flashcard
+Filter out movies with description "boring" and even ids, then sort remaining by rating descending.
+
 ### Tags
 Database(#database)
 

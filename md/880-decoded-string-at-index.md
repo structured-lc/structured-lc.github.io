@@ -91,6 +91,10 @@ This problem uses a **reverse decoding** and **modulo reduction** pattern, which
 Similar logic applies in compressed file expansions, run-length decoding, and tape simulation where only the result at a particular index is requested—never the whole output.  
 It emphasizes careful string traversal, pre-computation of cumulative sizes, and reverse engineering repeated structures.
 
+
+### Flashcard
+Compute decoded length by walking S; work backwards, modulo by repeated segment lengths to find the Kᵗʰ character.
+
 ### Tags
 String(#string), Stack(#stack)
 

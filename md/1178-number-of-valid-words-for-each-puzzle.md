@@ -141,6 +141,10 @@ def findNumOfValidWords(words, puzzles):
 ### Summary
 This problem leverages the **bitmask and subset enumeration** pattern, especially common when the problem space is “all combinations” of a small set (here, 2⁶). It efficiently reduces brute-force matching by using precomputed frequencies and bit operations, similar to how “subsets of sets” problems are handled—this pattern is common in subset DP and advanced set intersection queries.
 
+
+### Flashcard
+Encode words/puzzles as bitmasks, count word masks matching each puzzle’s mask and first letter.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Trie(#trie)
 

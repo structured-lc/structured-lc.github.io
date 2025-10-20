@@ -128,6 +128,10 @@ This problem exemplifies the **DP with state compression pattern**—storing sub
 It's a common approach in string edit and optimization problems with “delete/keep/replace” choices. The technique of bounding state (here, prev_count capped >100) and careful compression length transitions (digit boundaries in RLE) is a common interview theme.  
 This pattern is applicable in text compression, edit distance, and subsequence/subarray optimizations.
 
+
+### Flashcard
+Apply dynamic programming to optimize character deletion, leveraging optimal substructure and overlapping subproblems.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

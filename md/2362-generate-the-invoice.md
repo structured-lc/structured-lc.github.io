@@ -190,6 +190,10 @@ This approach uses the common **relational grouping, sum-aggregation, and join p
 
 This pattern is widely used for reporting, leaderboards, and summary statistics in business data applications.
 
+
+### Flashcard
+Join purchases with products, group by invoice_id and sum quantity × price; find max total (ties broken by smallest invoice_id), then output that invoice's details.
+
 ### Tags
 Database(#database)
 

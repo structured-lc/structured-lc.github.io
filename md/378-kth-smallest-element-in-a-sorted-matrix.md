@@ -86,6 +86,10 @@ def kthSmallest(matrix, k):
 ### Summary  
 This problem demonstrates a classic application of **binary search on value range** combined with matrix traversal exploiting *sorted properties*. Recognizing sorted 2D data allows O(1) extra space and much better-than-naive time. This pattern recurs in problems involving searching or counting in sorted grids, and is a good base for problems involving rank statistics in sorted/partially sorted data.
 
+
+### Flashcard
+Use binary search on value range: for each mid, count elements ≤ mid; adjust search bounds until kᵗʰ smallest is found.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
 

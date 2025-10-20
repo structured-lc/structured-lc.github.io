@@ -101,6 +101,10 @@ def minLengthAfterRemovals(nums):
 This approach uses the **greedy pairing** pattern: always try to pair most frequent elements with distinct others. It leverages counting and math to avoid unnecessary brute-force search or simulation.  
 This pattern is common in problems involving pairing, grouping, and matching in a sorted or partially sorted list, especially where the counts/frequencies heavily constrain what can be done.
 
+
+### Flashcard
+Count frequencies; if max frequency > ⌊n/2⌋, answer is 2 × max frequency – n, else answer is n mod 2.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Binary Search(#binary-search), Greedy(#greedy), Counting(#counting)
 

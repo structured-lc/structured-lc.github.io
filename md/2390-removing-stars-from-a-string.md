@@ -97,6 +97,10 @@ This problem showcases a **classic stack simulation pattern** for "remove past i
 The "process left to right, maintain an answer stack" is reusable for problems involving adjacent pair removals or historical undo/redos.  
 Efficient stack-based processing often leads to linear time and is a preferred interview pattern for such problems.
 
+
+### Flashcard
+Use stack to process characters left to right; push non-stars, pop when encountering '*' to remove closest left non-star in O(n) time.
+
 ### Tags
 String(#string), Stack(#stack), Simulation(#simulation)
 

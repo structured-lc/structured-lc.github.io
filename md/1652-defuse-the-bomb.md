@@ -81,6 +81,10 @@ def decrypt(code: List[int], k: int) -> List[int]:
 ### Summary
 This solution demonstrates handling of circular arrays and sliding window sums, a common coding pattern for ring-buffer or cyclic data manipulations.
 
+
+### Flashcard
+For each element, sum the next k (or previous k) values in the circular array, handling wrap-around with modulo arithmetic.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window)
 

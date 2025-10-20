@@ -83,6 +83,10 @@ def maximumNumberOfStringPairs(words):
 ### Summary
 In this problem, a **hash set** enables efficient pairing with only O(n) time and space. This is a classic example of the hashing/caching pattern, often seen when we need to quickly find complementary or matching items (e.g., Two Sum, matching parentheses). The approach demonstrates efficient use of lookup structures and pair-matching without double-counting or skipping candidates.
 
+
+### Flashcard
+Use a set to track unpaired words; for each word, check if its reverse is in the set to form a pair.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Simulation(#simulation)
 

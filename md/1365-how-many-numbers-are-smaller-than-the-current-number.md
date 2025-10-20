@@ -64,6 +64,10 @@ def smallerNumbersThanCurrent(nums):
 ### Summary
 This is a frequency counting and prefix sum pattern, common for problems with limited value range. The pattern generalizes to rank queries, counting numbers less than a threshold.
 
+
+### Flashcard
+Count frequency of each number; for each nums[i], use prefix sum to find how many numbers are smaller.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting), Counting Sort(#counting-sort)
 

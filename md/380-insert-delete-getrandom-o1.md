@@ -135,6 +135,10 @@ class RandomizedSet:
 For constant-time insert, delete, and getRandom, combine a **hash map** (for fast lookup and removal) with a **list** (for O(1) random access and compact removal by swapping).  
 This is a common pattern for data structures requiring both fast lookup and fast modification, and it shows up in randomized algorithms and custom LRU caches.
 
+
+### Flashcard
+Combine an array for O(1) random access and a hash map for O(1) insert/remove by swapping with the last element before deletion.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Design(#design), Randomized(#randomized)
 

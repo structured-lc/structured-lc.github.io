@@ -109,6 +109,10 @@ def isAdditiveNumber(num: str) -> bool:
 ### Summary
 This is a classic **string backtracking/search** problem, where you try all possible splits for the first two numbers and validate the additive property greedily for the remainder. The **key insight** is that once you choose the first two numbers, the entire sequence is determined. Variants of this approach (brute force partitioning, checking for special rules like no leading zeros) apply in many digit-splitting or sequence construction problems.
 
+
+### Flashcard
+Try all initial splits of the string to form the first two numbers, then validate if the rest of the string follows the additive sequence.
+
 ### Tags
 String(#string), Backtracking(#backtracking)
 

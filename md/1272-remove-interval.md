@@ -87,6 +87,10 @@ def removeInterval(intervals, toBeRemoved):
 ### Summary
 This is classic interval manipulation: scanning and splitting intervals by a removal range. Common in scheduling problems, video timeline cuts, and range updates.
 
+
+### Flashcard
+For each interval, output non-overlapping parts before and after toBeRemoved; skip intervals fully covered by toBeRemoved.
+
 ### Tags
 Array(#array)
 

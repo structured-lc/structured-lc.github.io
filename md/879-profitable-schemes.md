@@ -86,6 +86,10 @@ def profitableSchemes(n, minProfit, group, profit):
 ### Summary
 This problem uses the classic **multi-dimensional dynamic programming** (knapsack pattern), adapting for two constraints: number of members and profit threshold. This is frequently used where subset or selection problems must satisfy multiple limits. Clear examples include “target sum with limits,” 0/1 Knapsack, subset sum variants, and resource-constrained subset selection.
 
+
+### Flashcard
+3D DP (crimes × members × profit); count valid schemes where total members ≤ n and profit ≥ minProfit.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

@@ -101,6 +101,10 @@ def nextLargerNodes(head):
 ### Summary
 This problem uses the monotonic stack pattern, which is common in "Next Greater Element" problems. Converting the list to an array helps apply this pattern for O(n) efficiency. This stack pattern is broadly applicable in many problems needing “nearest greater/smaller to left/right,” including daily temperatures, stock span, and histogram area problems.
 
+
+### Flashcard
+Convert linked list to array, use stack to track indices; for each value, pop stack if current > stack top, set next greater.
+
 ### Tags
 Array(#array), Linked List(#linked-list), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

@@ -127,6 +127,10 @@ def getMaxRepetitions(s1, n1, s2, n2):
 ### Summary
 This problem demonstrates advanced string processing with cycle detection optimization. The key insight is recognizing that when dealing with repeated patterns, cycles will emerge that allow us to skip redundant computation. The state-based memoization approach captures these cycles efficiently. This pattern of cycle detection appears in many problems involving repeated operations or patterns, particularly those with large iteration counts that would otherwise lead to timeouts.
 
+
+### Flashcard
+Simulate matching s2 in s1, but detect cycles in the process to skip redundant work and speed up counting.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

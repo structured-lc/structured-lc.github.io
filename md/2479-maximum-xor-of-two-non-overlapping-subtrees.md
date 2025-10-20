@@ -208,6 +208,10 @@ def maximumXorSubtree(n, edges, values):
 This problem is a **classic combination of tree DFS and Trie (binary prefix tree) optimization for bitwise problems**. The pattern—use of subtree aggregation combined with Trie “rolling accumulation” for maximum XOR—is useful in various tree xor/maximization, bitwise, or path sum problems.  
 Similar techniques are widely reused in “maximum xor” queries in arrays, prefix-xor subarray problems, and dynamic programming over trees.
 
+
+### Flashcard
+For each node, compute subtree sums, then find maximum XOR between any two non-overlapping (non-ancestor/descendant) subtrees.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Graph(#graph), Trie(#trie)
 

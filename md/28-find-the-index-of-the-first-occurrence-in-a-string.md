@@ -76,6 +76,10 @@ def strStr(haystack: str, needle: str) -> int:
 ### Summary
 This problem demonstrates the **sliding window** and **naive string matching** patterns. The approach is simple: slide a window of length equal to *needle* over *haystack* and compare character by character. This solution is robust, readable, and foundational for learning more advanced pattern searching algorithms like **KMP** and **Rabin-Karp**, which are applicable to large-scale text searching and editor “find” features.
 
+
+### Flashcard
+Slide a window of length len(needle) over haystack and compare substrings; return the first matching start index or -1 if not found.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), String Matching(#string-matching)
 

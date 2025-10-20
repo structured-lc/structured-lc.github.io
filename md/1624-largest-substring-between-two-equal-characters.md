@@ -58,6 +58,10 @@ def max_length_between_equal_chars(s):
 ### Summary
 Uses a hash map/single-pass scan to get min/max index for each character. The pattern is useful for substring interval problems.
 
+
+### Flashcard
+Track the first and last occurrence of each character; the answer is the maximum last - first - 1 across all characters.
+
 ### Tags
 Hash Table(#hash-table), String(#string)
 

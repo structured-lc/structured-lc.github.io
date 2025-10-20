@@ -98,6 +98,10 @@ def maximumSwap(num: int) -> int:
 ### Summary
 This is a classic *greedy* digit-swapping problem, emphasizing largest-possible rearrangement with *one* operation. The efficient solution uses digit position mapping for O(n) performance. This technique of using last occurrence maps is widely applicable in string/digit manipulation to solve "maximize/minimize by one change" interview problems. The approach can also be extended for k swaps or different optimization criteria.
 
+
+### Flashcard
+For each digit, find the largest digit to its right and swap for maximal value; greedy approach ensures only one swap is needed.
+
 ### Tags
 Math(#math), Greedy(#greedy)
 

@@ -81,6 +81,10 @@ def zero_filled_subarray(nums):
 ### Summary
 This problem uses the **running sum / prefix streak** pattern, where we accumulate counts while scanning the array. Recognizing patterns in streaks and their contribution to the count is a common trick in substring/subarray counting problems (e.g., counting subarrays of a target sum, or longest consecutive sequence). The key insight is not to recount, but use incremental build-up.
 
+
+### Flashcard
+For each contiguous segment of k zeros, it contributes k×(k+1)/2 zero-filled subarrays; sum over all zero segments.
+
 ### Tags
 Array(#array), Math(#math)
 

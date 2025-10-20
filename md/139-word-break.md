@@ -94,6 +94,10 @@ This problem uses the classic **dynamic programming** pattern, specifically "sub
 It avoids redundant computation by storing results in can_break and efficiently checks word existence with a set.  
 This pattern appears in other substring decomposition problems, sentence parsing, and even in some variations of number factoring and coin change.
 
+
+### Flashcard
+Use DP: can_break[i] is true if s[:i] can be segmented; for each i, check all j < i if s[j:i] is in the dictionary and can_break[j] is true.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming), Trie(#trie), Memoization(#memoization)
 

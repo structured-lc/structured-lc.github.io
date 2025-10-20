@@ -119,6 +119,10 @@ def rotateGrid(grid, k):
 ### Summary
 This problem utilizes the **layer-by-layer perimeter traversal** ("onion peeling") pattern, commonly seen in matrix manipulation challenges (like spiral order, matrix rotation). We treat each layer as a 1D cycle, extract, rotate, and insert, processing each layer independently. This approach efficiently solves the problem in O(m × n) time with only minimal temporary storage per layer—for each layer, rotations are handled via list slicing, which is a standard and robust coding pattern for interview questions dealing with 2D grids and cyclic shifts.
 
+
+### Flashcard
+For each grid layer, treat as a 1D list, rotate by k mod layer length, then map back—no need for step-by-step rotation.
+
 ### Tags
 Array(#array), Matrix(#matrix), Simulation(#simulation)
 

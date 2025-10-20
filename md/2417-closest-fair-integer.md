@@ -96,6 +96,10 @@ def closestFair(n: int) -> int:
 ### Summary
 This problem is a **digit simulation** and subtle brute-force with optimizations. The main technique is to jump past impossible regions (odd-length numbers), and check only feasible candidates. The approach resembles classic “smallest number x satisfying property ≥ n,” such as next palindrome or next lucky number. The core pattern is useful for digit-based counting, digit DP, and constructing minimal numbers with digit constraints.
 
+
+### Flashcard
+Jump to the next even digit count if necessary and check for equal odd and even digit counts.
+
 ### Tags
 Math(#math), Enumeration(#enumeration)
 

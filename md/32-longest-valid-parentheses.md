@@ -88,6 +88,10 @@ def longestValidParentheses(s: str) -> int:
 ### Summary
 This problem uses the **stack** pattern for matching parentheses, and sometimes the DP pattern. Tracking indices lets us efficiently measure substring lengths. Parentheses matching, substrings, and balancing logic are common in parsing problems (e.g., stack-based parsing for expressions and compilers).
 
+
+### Flashcard
+Use a stack to track indices of '(', popping for ')' and calculating valid lengths; alternatively, scan left/right to count unmatched parentheses for O(n) solution.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Stack(#stack)
 

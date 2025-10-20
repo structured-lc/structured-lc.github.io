@@ -106,6 +106,10 @@ def houseOfCards(n):
 ### Summary
 The problem is a variation of classic integer partition with constraints, and is solved efficiently using top-down DP (recursion with memoization). Finds use in enumerative combinatorics and fits the "subset sum/partition" DP pattern, often used in tiling, stacking, and restricted composition problems.
 
+
+### Flashcard
+Use the formula row_cards = 3k - 1 for k triangles per row; DP over possible row counts to count valid house configurations.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming)
 

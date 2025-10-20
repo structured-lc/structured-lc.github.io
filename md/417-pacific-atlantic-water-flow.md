@@ -108,6 +108,10 @@ def pacificAtlantic(heights):
 ### Summary
 We use a dual DFS/BFS from both oceans' edges (graph multi-source traversal) to efficiently mark reachability, then combine results using set intersection. This *reverse flood* or *graph coloring from edge* approach is often used for multi-source reachability on grids, and shows up in problems involving propagation, influence, and region-filling (also known as multi-source BFS/DFS in grids).
 
+
+### Flashcard
+Run DFS/BFS from both ocean edges inward (Pacific from top/left, Atlantic from bottom/right), only traverse to cells of equal or lower height, return cells reachable from both.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

@@ -132,6 +132,10 @@ def kClosest(points, k):
 ### Summary
 This problem uses the "top-k" pattern, often solved via heap or partial quickselect. The heap-based approach is efficient for moderate k and allows us to process very large arrays in a streaming fashion. This pattern appears in problems like finding k largest/smallest elements, top-k frequent, or nearest neighbors. The solution avoids the performance costs of sorting the full array and is robust for interviews.
 
+
+### Flashcard
+Use a max heap of size k to keep the closest k points by Euclidean distance, or use Quickselect to partition and select the k closest.
+
 ### Tags
 Array(#array), Math(#math), Divide and Conquer(#divide-and-conquer), Geometry(#geometry), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Quickselect(#quickselect)
 

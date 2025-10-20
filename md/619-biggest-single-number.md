@@ -89,6 +89,10 @@ For the SQL query, the time complexity depends on the database's query execution
 ### Summary  
 The **Biggest Single Number** problem is solved using either a Python iteration approach or an optimized SQL query. The SQL approach is more scalable for large datasets due to its ability to leverage database indexing and grouping capabilities. This problem follows a common pattern of counting and filtering, which can be applied to various data analysis tasks.
 
+
+### Flashcard
+Group numbers, count occurrences, and select the largest number that appears exactly once.
+
 ### Tags
 Database(#database)
 

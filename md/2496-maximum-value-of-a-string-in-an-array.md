@@ -104,6 +104,10 @@ The main idea is classification by content (all digits or contains letters), the
 This pattern appears often: validate input, branch on content type (`isdigit` vs not), aggregate a property (here, max).  
 It applies to problems involving input validation, string parsing, and value comparison across mixed-type data.
 
+
+### Flashcard
+For each string, if all digits, convert to int; else, take length; track max value.
+
 ### Tags
 Array(#array), String(#string)
 

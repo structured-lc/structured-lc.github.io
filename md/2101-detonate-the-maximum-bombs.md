@@ -123,6 +123,10 @@ Simulate the maximum possible chain reaction starting at each node, using BFS or
 Pattern: “Try every start, collect reachables” — common in problems like “spread” or “contamination” in grids/graphs.  
 Useful for virus spread, influence maximization, or other reachability/cascade questions.
 
+
+### Flashcard
+Build a directed graph where an edge exists if one bomb can detonate another; for each bomb, DFS/BFS to count the total detonations.
+
 ### Tags
 Array(#array), Math(#math), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Geometry(#geometry)
 

@@ -112,6 +112,10 @@ This problem demonstrates a classic **Dynamic Programming + Multiple Pointers** 
 - This pattern appears in problems like generating super ugly numbers, merging sorted arrays, or other number sequence building blocks.  
 - Main takeaways: Use pointers to avoid duplicates and ensure sorted order.
 
+
+### Flashcard
+Ugly Number II
+
 ### Tags
 Hash Table(#hash-table), Math(#math), Dynamic Programming(#dynamic-programming), Heap (Priority Queue)(#heap-priority-queue)
 

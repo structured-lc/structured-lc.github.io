@@ -93,6 +93,10 @@ def findLengthOfLCIS(nums):
 This problem is an example of the **sliding window or counting pattern** on arrays, where you process items in a single pass and keep running counters or bounds. It's a common pattern, especially for problems involving subarrays or consecutive elements.  
 Recognizing that the problem requires a continuous subsequence and only needs O(1) extra space greatly simplifies the solution. Similar logic appears in problems like "Longest Substring Without Repeating Characters" and "Maximum Consecutive Ones".
 
+
+### Flashcard
+Linear scan, increment current length if nums[i] > nums[i−1], else reset; track and return the maximum length found.
+
 ### Tags
 Array(#array)
 

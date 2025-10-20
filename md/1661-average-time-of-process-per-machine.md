@@ -71,6 +71,10 @@ GROUP BY machine_id;
 ### Summary
 The core is SQL aggregation pattern: GROUP BY + AVG + ROUND. This is common for log aggregates, report generation, and dashboard summary queries.
 
+
+### Flashcard
+Group by machine_id, compute average processing_time, and round to 3 decimals in SQL.
+
 ### Tags
 Database(#database)
 

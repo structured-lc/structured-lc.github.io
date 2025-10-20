@@ -105,6 +105,10 @@ def shortestDistance(maze, start, destination):
 ### Summary
 This problem is a classic example of **shortest path in a grid with custom movement rules**—specifically, rolling until walls, not moving cell-by-cell. The **graph traversal pattern with Dijkstra’s algorithm** and a priority queue ensures minimum distance is found efficiently. This approach is broadly applicable to shortest path problems where edge costs (step sizes) vary, such as games, robots in a room, or automated navigation puzzles.
 
+
+### Flashcard
+Use Dijkstra’s algorithm with a priority queue to find the shortest distance, treating each straight roll as a weighted move until hitting a wall.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Shortest Path(#shortest-path)
 

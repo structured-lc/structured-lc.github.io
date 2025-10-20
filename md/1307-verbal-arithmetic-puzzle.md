@@ -114,6 +114,10 @@ def isSolvable(words, result):
 ### Summary
 A classic **backtracking** and **constraint satisfaction** problem that is as much about search pruning as brute-force checking. Applies to a broad class of puzzles (cryptarithmetic, alphametics) with combinatorial state and digit-assignment constraints.
 
+
+### Flashcard
+Use backtracking to assign digits to letters (max 10 unique), pruning early if a word would start with 0 or partial sums can't match.
+
 ### Tags
 Array(#array), Math(#math), String(#string), Backtracking(#backtracking)
 

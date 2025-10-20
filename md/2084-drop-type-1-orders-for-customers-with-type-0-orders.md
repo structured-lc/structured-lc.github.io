@@ -123,6 +123,10 @@ def drop_type1_orders(orders):
 ### Summary
 This problem uses the *hash set* or *grouping* pattern: build a lookup set in a first pass, then filter in a second. It’s common in problems involving global group-based rules, e.g., “filter by property across group.” This approach can be used for similar problems in SQL, Python, or any language, and scales to streaming or database join scenarios.
 
+
+### Flashcard
+First collect all customer_ids with type 0 orders; then keep only type 0 orders for those customers, and all orders for others.
+
 ### Tags
 Database(#database)
 

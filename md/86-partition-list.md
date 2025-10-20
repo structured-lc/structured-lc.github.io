@@ -116,6 +116,10 @@ def partition(head: ListNode, x: int) -> ListNode:
 ### Summary
 This is a classic **two-pointer (dummy node)** or **partitioning** problem commonly seen in linked list questions. The pattern—building two lists and merging—is reusable in problems requiring stable partitioning while preserving order, and is widely applicable in interview scenarios that deal with in-place node rearrangements.
 
+
+### Flashcard
+Use two dummy nodes to partition nodes into < x and ≥ x lists during traversal, then concatenate the two lists.
+
 ### Tags
 Linked List(#linked-list), Two Pointers(#two-pointers)
 

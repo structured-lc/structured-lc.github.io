@@ -90,6 +90,10 @@ def calculateMinimumHP(dungeon):
 ### Summary
 This problem uses the **Reverse DP** pattern, where we work from the goal back to the start to guarantee feasibility at each move. Similar patterns occur in "minimum cost path" and other grid-based DP problems with constraints that are tightest at the destination. This is a classic example of *backwards DP* and grid traversal.
 
+
+### Flashcard
+Use DP from bottom-right to top-left; at each cell, compute min health needed to survive, ensuring health never drops below 1.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

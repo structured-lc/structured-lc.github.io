@@ -125,6 +125,10 @@ class AuthenticationManager:
 ### Summary
 This problem is a classic **design for hashing / timestamp validation** and is solved using a simple dictionary (hash map) to store expiry times for fast updates, renewals, and expiries. The main pattern is mapping an identifier to a timestamp and comparing with current time. Similar approaches are used in **LRU cache**, **rate limiters**, **session management**, and other problems where expiration or cache validation based on timestamp is needed. The code and pattern generalize to many real-world token/session/caching expire-then-renew scenarios.
 
+
+### Flashcard
+Use a dictionary to efficiently manage token expiry times and counts.
+
 ### Tags
 Hash Table(#hash-table), Linked List(#linked-list), Design(#design), Doubly-Linked List(#doubly-linked-list)
 

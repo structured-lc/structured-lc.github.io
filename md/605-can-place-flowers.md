@@ -89,6 +89,10 @@ This problem is a classic *greedy placement* scenario, commonly seen in interval
 The pattern can be applied anywhere you must choose positions under adjacency or spacing constraints.  
 Key interview skills: array traversal, in-place modification, and careful boundary checking.
 
+
+### Flashcard
+For each 0, check if both neighbors (if any) are 0 or out of bounds; greedily plant and skip next spot to avoid adjacent flowers.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

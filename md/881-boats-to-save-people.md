@@ -86,6 +86,10 @@ def numRescueBoats(people, limit):
 ### Summary
 This problem uses a classic **two-pointer + greedy** approach, typical for "pairing" and "max utilization" scenarios: **pairing largest with smallest** to maximize space, minimize resources. This coding pattern applies to problems like "minimize taxis needed," "group the maximum number of people by sum requirement," or general container-packing and scheduling problems where greedy + sorting first is the most efficient solution.
 
+
+### Flashcard
+Sort weights, then use two pointers (lightest and heaviest); pair them if possible, otherwise send the heaviest alone—greedy pairing minimizes boats.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting)
 

@@ -128,6 +128,10 @@ def employees_earning_more_than_managers(employee_list):
 ### Summary
 This problem uses the **self-join pattern** both in SQL and in-memory table join (using a dictionary for fast id-to-employee lookup). It's a classic "match row to parent" scenario—common in organizational charts, family trees, directory structures, etc. The solution is efficient, clear, and immediately extendable for related relationship-lookup problems.
 
+
+### Flashcard
+Self-join Employee table on ManagerId to compare employee and manager salaries, selecting employees earning more than their managers.
+
 ### Tags
 Database(#database)
 

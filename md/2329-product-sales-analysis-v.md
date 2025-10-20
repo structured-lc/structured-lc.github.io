@@ -149,6 +149,10 @@ It is widely applicable in business analytics, order tracking, spending reports,
 Patterns: JOIN, GROUP BY, ORDER BY, computed aggregate columns.  
 Common in reporting, analytics, and data-driven product questions.
 
+
+### Flashcard
+Join Sales and Product tables, compute spending as quantity × price for each sale, group by user_id, sum, and sort by spending desc then user_id asc.
+
 ### Tags
 Database(#database)
 

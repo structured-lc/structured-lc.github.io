@@ -68,6 +68,10 @@ def mostExpensiveItem(primeOne, primeTwo):
 ### Summary
 This problem is a direct application of a math theorem (Chicken McNugget Theorem) for two coprime denominations, leading to an O(1) solution. The technique of reducing a combinatorial, subset-sum-style question to a number-theory formula is a powerful tool and sometimes appears in interview math-brain-teasers or optimization variants. The dynamic programming "coin change" or "unbounded knapsack" pattern is related for the more general question of which prices are constructible, especially if primes or coprimeness can’t be assumed.
 
+
+### Flashcard
+For two coprime primes p and q, the largest unbuyable amount is p × q - p - q (Chicken McNugget Theorem). Since primeOne and primeTwo are distinct primes, directly compute and return this formula.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Number Theory(#number-theory)
 

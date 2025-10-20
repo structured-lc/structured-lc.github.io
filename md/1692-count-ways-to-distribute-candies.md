@@ -78,6 +78,10 @@ def countWays(n, k, lower, upper):
 ### Summary
 This is a constrained integer partition problem, solved via "stars and bars with inclusion-exclusion principle". It's a classic in combinatorics and appears in many applications involving bounded resource allocation.
 
+
+### Flashcard
+Count Ways to Distribute Candies
+
 ### Tags
 Dynamic Programming(#dynamic-programming)
 

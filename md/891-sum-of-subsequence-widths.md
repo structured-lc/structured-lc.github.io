@@ -115,6 +115,10 @@ def sumSubseqWidths(A):
 - Sorting the array simplifies the process of counting.
 - The pattern of “element’s role as min vs. max in combinatorially different subsets” arises in various subset or combinatorial contribution problems, especially those involving sums across all subsets or subsequences.
 
+
+### Flashcard
+For each A[i], its contribution is (2ⁱ - 2ⁿ⁻¹⁻ⁱ) × A[i] after sorting; sum over all i for total width.
+
 ### Tags
 Array(#array), Math(#math), Sorting(#sorting)
 

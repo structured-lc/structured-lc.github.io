@@ -86,6 +86,10 @@ def toGoatLatin(sentence):
 ### Summary
 This problem uses the **string manipulation** pattern, processing each word with simple rules then recombining. It's common for interview questions involving "variants of Pig Latin" and exercises your ability to manage indexes, string slicing, and rule-based transformation. Similar techniques can be applied to sentence and word reversals, encryption transformations, and other token-by-token string problems.
 
+
+### Flashcard
+For each word, move the first letter to the end if not a vowel, add "ma", then append 'a' repeated by word index (1-based).
+
 ### Tags
 String(#string)
 

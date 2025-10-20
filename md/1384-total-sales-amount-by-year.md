@@ -76,6 +76,10 @@ def yearly_sales(sales):
 ### Summary
 This is a group-by aggregation problem, extremely common in database/data engineering interviews. Patterns: SQL GROUP BY + aggregate, or hash map/dictionary reduce. Similar logic applies to grouping/summarizing by any categorical field.
 
+
+### Flashcard
+Aggregate sales by year using a dictionary or SQL GROUP BY, then output totals sorted by year.
+
 ### Tags
 Database(#database)
 

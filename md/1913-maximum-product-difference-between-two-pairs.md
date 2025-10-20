@@ -105,6 +105,10 @@ This problem uses the **greedy pattern** and "find the top-k/largest values."
 The crux is that maximizing (a × b) - (c × d) means you want the largest two elements for one product, and the smallest two for the other, which is a pattern that arises in questions requiring maximization/minimization combinations.  
 No need for sorting or brute force due to the simplicity of the pairwise product structure. This approach is commonly applicable to problems involving selection of top/bottom values to maximize or minimize a function.
 
+
+### Flashcard
+The maximum product difference is (largest × second largest) − (smallest × second smallest)—find these four values in O(n) time.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

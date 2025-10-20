@@ -180,6 +180,10 @@ This problem combines union-find pattern with tree traversal, hash map lookups, 
 It leverages set/dictionary data structures to efficiently find where merges are possible and uses recursive traversal to perform merging and validation in one pass.  
 Such techniques are common in problems involving tree reconstruction, validation, and merge operations across disjoint data structures.
 
+
+### Flashcard
+Identify the unique root not a leaf in any tree, then merge subtrees by matching leaf values to other roots.
+
 ### Tags
 Hash Table(#hash-table), Binary Search(#binary-search), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

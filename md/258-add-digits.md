@@ -67,6 +67,10 @@ def addDigits(num: int) -> int:
 ### Summary
 This problem is a classic application of the **digital root** concept in number theory. The O(1) approach leverages a mathematical insight, avoiding explicit iteration or recursion. This pattern appears in problems dealing with digit manipulations or numeric cycles, and highlights the value of knowing number patterns and properties to optimize brute-force algorithms.
 
+
+### Flashcard
+Add Digits
+
 ### Tags
 Math(#math), Simulation(#simulation), Number Theory(#number-theory)
 

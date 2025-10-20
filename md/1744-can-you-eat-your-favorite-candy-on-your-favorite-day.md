@@ -121,6 +121,10 @@ def canEat(candiesCount, queries):
 ### Summary
 This problem is a great application of **prefix sums** for fast range computation. The central pattern is to precompute cumulative information for quick per-query lookups. This pattern is useful in a wide class of "cumulative constraint" problems, such as range-sum queries, scheduling, and simulation scenarios where order and limits matter.
 
+
+### Flashcard
+Compute prefix sums of candiesCount; for each query, check if favoriteDay range [favoriteDay, favoriteDay×dailyCap] overlaps with candy type range [prefixSum[type], prefixSum[type+1]−1].
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

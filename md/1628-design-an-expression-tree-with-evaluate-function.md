@@ -121,6 +121,10 @@ class TreeBuilder:
 ### Summary
 This is a classic recursive tree-building and evaluation problem, using stack for **postfix parsing** and **recursion for evaluation**. The pattern is directly reusable for interpreters and compilers.
 
+
+### Flashcard
+Build an expression tree using Reverse Polish Notation and evaluate it via postorder traversal.
+
 ### Tags
 Array(#array), Math(#math), Stack(#stack), Tree(#tree), Design(#design), Binary Tree(#binary-tree)
 

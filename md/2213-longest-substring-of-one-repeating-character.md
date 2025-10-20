@@ -178,6 +178,10 @@ The same coding pattern is applied in problems like:
 - Range Majority Queries with modifications
 It’s efficient, scalable, and supports both queries and updates in logarithmic time—a common real-world interviews pattern.
 
+
+### Flashcard
+After each update, find the longest run of the same character; use a segment tree to efficiently track and update maximum run lengths.
+
 ### Tags
 Array(#array), String(#string), Segment Tree(#segment-tree), Ordered Set(#ordered-set)
 

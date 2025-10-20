@@ -91,6 +91,10 @@ def containsNearbyDuplicate(nums, k):
 ### Summary
 This problem highlights the **hash map / dictionary** pattern for quick element lookups and associating values (here, latest indices) during a single pass. It’s closely related to the Sliding Window and Two Pointers pattern because you’re essentially checking for duplicates within a recent window. Similar logic can be applied to finding nearby duplicates, unique elements in a window, or the most recent previous occurrence of a value in O(1) time.
 
+
+### Flashcard
+Use a hash map to store last seen index of each number; if a duplicate is found within k indices, return true.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
 

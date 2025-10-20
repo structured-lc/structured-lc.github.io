@@ -108,6 +108,10 @@ This problem is a classic *undirected graph* “shortest cycle” pattern. The k
 This technique generalizes: to detect shortest cycles in any *unweighted undirected* graph, perform BFS from each node and look for “cross-edges” (back edges not to parent) that close a cycle.  
 This pattern shows up in cycle detection, shortest path, and connectivity problems in unweighted graphs.
 
+
+### Flashcard
+For each node, run BFS to find the shortest cycle containing it.
+
 ### Tags
 Breadth-First Search(#breadth-first-search), Graph(#graph)
 

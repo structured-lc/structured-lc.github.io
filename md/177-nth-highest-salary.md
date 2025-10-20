@@ -88,6 +88,10 @@ This problem uses the **rank/ordering** SQL pattern, leveraging either window fu
 Handling duplicates is critical, and these approaches ensure correct behavior even when n exceeds the number of unique values.  
 This is a common interview and analytics pattern, directly applicable to leaderboard rankings, percentile calculations, and more.
 
+
+### Flashcard
+Use DENSE_RANK() or subquery to rank distinct salaries in descending order and select the nᵗʰ highest.
+
 ### Tags
 Database(#database)
 

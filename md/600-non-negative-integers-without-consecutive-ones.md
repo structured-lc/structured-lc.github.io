@@ -105,6 +105,10 @@ This problem uses the **digit dynamic programming** pattern, closely related to 
 By relating counts to the Fibonacci sequence and processing bit-by-bit, the code achieves efficient O(log n) complexity—typical in problems with constraints on binary patterns.  
 This approach generalizes to various forbidden patterns and is very common in advanced combinatorial counting and problems involving numbers with limited digits/bit patterns.
 
+
+### Flashcard
+Count numbers ≤ n with no consecutive 1s using DP; number of k-bit such numbers follows Fibonacci sequence.
+
 ### Tags
 Dynamic Programming(#dynamic-programming)
 

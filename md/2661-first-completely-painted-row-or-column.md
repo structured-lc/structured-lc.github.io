@@ -102,6 +102,10 @@ def firstCompleteIndex(arr, mat):
 ### Summary
 This approach uses the efficient **counter pattern** by mapping each cell and updating row and column counts as we simulate the painting operations. It's a common pattern for "first completion among rows/cols" problems, and similar strategies are seen in problems like Bingo, matrix marking, and subgrid completeness. It shows a blend of hashmap-for-indexing and early-exit on aggregate counts.
 
+
+### Flashcard
+Map each value to its (row, col) in mat; as you process arr, increment row and column counters, returning the index when any counter reaches m or n.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Matrix(#matrix)
 

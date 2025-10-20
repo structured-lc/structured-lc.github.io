@@ -147,6 +147,10 @@ def findExpensiveCities(listings):
 ### Summary
 This problem uses the **group-by aggregation** coding pattern: accumulate statistics per group (sum, count), compute an overall aggregate, then filter on per-group vs. global value. This is a common approach in SQL and data-processing interviews, useful for "group-by and compare to aggregate" tasks, such as finding sales leaders by region, top predicting companies, etc.
 
+
+### Flashcard
+Calculate per-city average prices and overall average in separate aggregations. Filter cities where city_avg > overall_avg. Use GROUP BY for city aggregation and a scalar subquery for overall average.
+
 ### Tags
 Database(#database)
 

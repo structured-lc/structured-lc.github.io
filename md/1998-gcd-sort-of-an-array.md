@@ -130,6 +130,10 @@ This is a **DSU/Union-Find + sieve of Eratosthenes with factorization** problem,
 The pattern can be applied to connectivity queries, grouping by shared prime factors (like in number-theoretic graphs or factor-based grouping, Minimum Spanning Tree variants, etc).  
 Efficient prime factorization plus DSU is a powerful way to group "swappable" elements under GCD-based constraints.
 
+
+### Flashcard
+Use union-find to group numbers by shared prime factors; check if each sorted position can be reached within its GCD-connected component.
+
 ### Tags
 Array(#array), Math(#math), Union Find(#union-find), Sorting(#sorting), Number Theory(#number-theory)
 

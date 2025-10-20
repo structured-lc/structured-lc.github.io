@@ -114,6 +114,10 @@ def canPartitionKSubsets(nums, k):
 ### Summary
 This problem uses the classic **backtracking with pruning** pattern, focusing on the subset-sum/partitioning branch of problems. This method is effective when input size is small (n ≤ 16). Similar techniques are used in problems involving grouping, partitioning, and combinations with tight constraints.
 
+
+### Flashcard
+If sum is divisible by k, use backtracking to assign numbers to k subsets, pruning when subset sum exceeds target; sort nums descending for efficiency.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Memoization(#memoization), Bitmask(#bitmask)
 

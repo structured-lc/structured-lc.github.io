@@ -96,6 +96,10 @@ This problem uses closures/objects to encapsulate a value and return assertion m
 It's a classic demonstration of function closures and is similar to building basic testing frameworks.  
 The pattern can be applied when designing fluent assertion libraries or APIs requiring method chaining with context-capturing.
 
+
+### Flashcard
+Return an object with toBe and notToBe methods that compare the stored value using strict equality (===, !==) and throw an error if the assertion fails.
+
 ### Tags
 
 ### Similar Problems

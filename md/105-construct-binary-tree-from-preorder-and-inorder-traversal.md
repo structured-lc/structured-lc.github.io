@@ -136,6 +136,10 @@ def buildTree(preorder, inorder):
 ### Summary
 This problem uses the **recursive tree construction** pattern, taking advantage of traversal properties and index hash mapping for speed. The trick is to keep your boundaries and pointer bookkeeping correct, so every call uses the right window without array copying. The same approach is widely applied in related problems such as reconstructing from inorder + postorder, serializing/deserializing trees, and parsing recursion divisions.
 
+
+### Flashcard
+Use hashmap for O(1) inorder index lookup, track preorder index globally, and recursively build left/right subtrees by partitioning inorder ranges without array slicing.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Divide and Conquer(#divide-and-conquer), Tree(#tree), Binary Tree(#binary-tree)
 

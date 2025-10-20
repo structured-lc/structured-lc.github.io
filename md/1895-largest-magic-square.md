@@ -119,6 +119,10 @@ def largestMagicSquare(grid):
 ### Summary
 This problem uses the **2D prefix sum** pattern to efficiently compute sum checks for multiple submatrices (rows, columns, diagonals) within O(1) time per check, after preprocessing. This approach generalizes to any problem involving sum constraints over sliding windows or subgrids, e.g., maximum sum submatrix, uniform subgrid validation, and many grid-based search tasks.
 
+
+### Flashcard
+Compute prefix sums for rows and columns to efficiently check magic squares.
+
 ### Tags
 Array(#array), Matrix(#matrix), Prefix Sum(#prefix-sum)
 

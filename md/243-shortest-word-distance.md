@@ -82,6 +82,10 @@ This problem uses the **"two pointers / sliding window"** coding pattern on a li
 It demonstrates reducing brute-force nested loops to a single pass with O(1) auxiliary space by keeping track of minimal needed state.  
 This approach appears in other "shortest distance between elements" scenarios, such as shortest distance between two values in an array, processing streams, or in memory-efficient search tasks.
 
+
+### Flashcard
+Track latest indices of word1 and word2 during single pass; update minimum distance whenever either word is found.
+
 ### Tags
 Array(#array), String(#string)
 

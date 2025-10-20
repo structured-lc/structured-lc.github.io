@@ -103,6 +103,10 @@ def minimumLines(stockPrices):
 This problem is a **geometry/coding pattern** focused on identifying consecutive collinear points using slope equivalence via cross multiplication. It's a greedy one-pass scan pattern after sorting, frequently found in line simplification, polyline segmentation, GPS data compression, or collinear points detection in computational geometry.  
 The code builds the answer efficiently with minimal storage and high reliability by staying in the integer domain for slope checks.
 
+
+### Flashcard
+Sort points by x, then for each new point, check if it’s collinear with the last two; if not, start a new line.
+
 ### Tags
 Array(#array), Math(#math), Geometry(#geometry), Sorting(#sorting), Number Theory(#number-theory)
 

@@ -90,6 +90,10 @@ This problem is a classic single-pass linear search pattern — find the earlies
 It uses an early return loop and demonstrates how to compare an index property (`i % 10`) to corresponding values.  
 The same pattern applies to any situation where you need to find the smallest or first index that satisfies a value–index-based constraint.
 
+
+### Flashcard
+Iterate through the array to find the smallest index where i % 10 equals the value at that index.
+
 ### Tags
 Array(#array)
 

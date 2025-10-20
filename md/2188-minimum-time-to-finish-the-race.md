@@ -106,6 +106,10 @@ def minimumFinishTime(tires, changeTime, numLaps):
 ### Summary
 This problem is an application of **DP with segmented block optimization** and **preprocessing blocks for combinations**. The solution is analogous to problems like “minimum cost to reach n with allowed steps,” but here each “step” may be a variable-length block with variable cost. This pattern shows up in racing/game energy management, segmented cost problems, and sequence partitioning with per-segment costs.
 
+
+### Flashcard
+Precompute minimal time to do consecutive laps with each tire, then use DP to find minimal total time with tire changes.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

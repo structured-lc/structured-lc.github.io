@@ -96,6 +96,10 @@ def minBitFlips(start: int, goal: int) -> int:
 ### Summary
 This approach uses a classic **bit manipulation** and **count set bits** pattern. The use of XOR highlights how to detect differing bits efficiently. This coding method also appears in hamming distance, counting differing pixels, or bit flips in error correction contexts. It’s a standard and powerful trick for any interview involving binary numbers or bitwise operations.
 
+
+### Flashcard
+Count differing bits between start and goal using XOR; the number of set bits in (start ^ goal) gives the answer.
+
 ### Tags
 Bit Manipulation(#bit-manipulation)
 

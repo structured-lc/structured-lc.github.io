@@ -146,6 +146,10 @@ This problem showcases a classic **Kruskal’s MST pattern** with extensions for
 The key insight is treating MST computation as a “what if” simulation: forcibly leave out or include edges and compare outcomes to the baseline minimum.  
 Variants of this pattern arise in network reliability, circuit design, and understanding graph sensitivities. The solution is also a strong Union-Find application, helpful for many competitive programming and coding interviews.
 
+
+### Flashcard
+Compute MST weight; for each edge, exclude it to check if MST weight increases (critical), and forcibly include it to check if MST weight stays same (pseudo-critical).
+
 ### Tags
 Union Find(#union-find), Graph(#graph), Sorting(#sorting), Minimum Spanning Tree(#minimum-spanning-tree), Strongly Connected Component(#strongly-connected-component)
 

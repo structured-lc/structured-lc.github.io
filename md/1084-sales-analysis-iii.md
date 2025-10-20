@@ -167,6 +167,10 @@ def sales_analysis_iii(products, sales):
 This solution uses the classic **group-by/product-aggregation** pattern—find properties (here, min/max dates) per group, then filter based on range.  
 This pattern is often used for problems involving grouping transaction records to determine eligibility or thresholds (e.g., people with all transactions in a certain window, users only active in a given quarter).
 
+
+### Flashcard
+GROUP BY product_id, find MIN and MAX sale_date per product, filter where both dates fall within Q1 2019 (2019-01-01 to 2019-03-31).
+
 ### Tags
 Database(#database)
 

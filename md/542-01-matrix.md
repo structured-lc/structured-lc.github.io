@@ -141,6 +141,10 @@ def updateMatrix(mat):
 ### Summary
 This problem uses **multi-source BFS** to efficiently propagate the minimal distance from all zero cells to the rest of the cells, updating the distances layer by layer in O(m×n) time. The approach leverages a common matrix/graph traversal pattern that also appears in shortest path and "flood-fill" type problems. Similar patterns are found in solving **word ladder**, **rotting oranges**, and **nearest exit in a maze** problems.
 
+
+### Flashcard
+Multi-source BFS from all 0s propagates minimum distances to 1s efficiently, avoiding per-1 BFS.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

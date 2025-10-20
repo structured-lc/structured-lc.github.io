@@ -75,6 +75,10 @@ This problem is a classic example of the **"Are two multisets equal?"** check, w
 Patterns: Sorting for equality, Hash counting, Permutation equivalence.  
 This approach applies broadly in checking if two arrays, sets, or strings can be made equal via any sequence of swaps, reversals, or rearrangements.
 
+
+### Flashcard
+Arrays can be made equal by reversals if and only if their multisets (element counts) are identical.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting)
 

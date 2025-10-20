@@ -78,6 +78,10 @@ def findKthLargestNumber(nums, k):
 ### Summary
 This problem is a classic example of **custom sort/pq by numeric value using string properties**, avoiding conversion to integer for huge values. The pattern used—**string comparison by (length, lexicographical)** for large-number handling—applies to any large-number or "big integer" problems (e.g., highest-value string, custom numeric priority queues). It's also relevant for building k-largest or k-smallest string-based heaps.
 
+
+### Flashcard
+Sort strings by length, then lexicographically, to compare large integers without conversion; return the kᵗʰ largest.
+
 ### Tags
 Array(#array), String(#string), Divide and Conquer(#divide-and-conquer), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Quickselect(#quickselect)
 

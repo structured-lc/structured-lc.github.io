@@ -102,6 +102,10 @@ def queensAttacktheKing(queens, king):
 ### Summary
 This problem is an example of **directional search on a fixed grid** using efficient set lookup. The approach is a combination of simulation and set-based search, a pattern common in chess or board grid puzzles. This versatile pattern appears in problems like searching for threats in chess, checking paths, and exploring neighbors in 2D grids efficiently.
 
+
+### Flashcard
+For each of 8 directions from the king, find the first queen (if any) that can attack, skipping blocked paths.
+
 ### Tags
 Array(#array), Matrix(#matrix), Simulation(#simulation)
 

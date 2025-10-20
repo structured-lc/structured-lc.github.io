@@ -122,6 +122,10 @@ def subArrayRanges(nums):
 This problem fits the **contribution-counting pattern**—for each element, count the subarrays where it is min or max, and aggregate those contributions.  
 The **monotonic stack** approach is useful for many range-based problems: sum of subarray minimums, maximums, etc. This logic is common in problems dealing with spans, ranges, and next/previous less or greater elements.
 
+
+### Flashcard
+Compute sum of all subarray maximums minus sum of all subarray minimums using monotonic stacks for O(n) processing.
+
 ### Tags
 Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

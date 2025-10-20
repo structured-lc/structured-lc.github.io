@@ -121,6 +121,10 @@ def accountsMerge(accounts):
 ### Summary
 This problem uses the **Connected Components** pattern (via DFS or Union-Find). It’s common for problems like "find all groups/item clusters with overlap". The **graph traversal or disjoint set union (DSU/Union-Find)** techniques used here are widely applicable—for example, friend circles, network connectivity, or anything requiring merging of related items by shared property.
 
+
+### Flashcard
+Build a graph connecting emails in the same account; use DFS or Union-Find to merge accounts with shared emails.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Sorting(#sorting)
 

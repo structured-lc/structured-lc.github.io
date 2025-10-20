@@ -107,6 +107,10 @@ print(last_person_to_fit(queue))  # Output: "Bob"
 ### Summary
 This is a classic **prefix-sum / running total** problem where you stop at the last index before a cumulative threshold is exceeded. The SQL version uses window functions (`SUM(weight) OVER (ORDER BY turn)`) for the running total. Patterns from this problem generalize to boarding, scheduling, binning, and streaming with cumulative constraints. This is commonly seen in queue and streaming problems, as well as greedy algorithms for packing or scheduling.
 
+
+### Flashcard
+Use a running sum (window function or loop) ordered by turn to find the last person whose cumulative weight does not exceed 1000.
+
 ### Tags
 Database(#database)
 

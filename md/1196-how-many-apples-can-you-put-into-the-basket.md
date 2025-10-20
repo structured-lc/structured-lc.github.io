@@ -83,6 +83,10 @@ def maxNumberOfApples(weight):
 ### Summary
 This problem uses the classic **greedy selection** pattern, where choosing the smallest feasible element at each step is optimal when maximizing count under a sum constraint. This is a special case of the knapsack problem where all "values" (one per apple) are equal and "weights" are positive. The same idea applies to problems about deadline scheduling (scheduling most jobs, or most papers before due date, etc.) and resource allocation.
 
+
+### Flashcard
+Sort apples by weight, greedily add lightest first until basket is full.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

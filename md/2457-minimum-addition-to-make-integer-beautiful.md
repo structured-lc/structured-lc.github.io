@@ -102,6 +102,10 @@ It is efficient because it acts only where necessary, avoiding brute-force.
 The pattern is useful for any problem where you want to "increase up to the next threshold" for certain digit-based properties, such as "round up to all zeros after k digits", or "minimize additions so a property holds for the new number".  
 Similar logic can apply to making arrays palindromic with minimal change, or building numbers with certain divisibility properties.
 
+
+### Flashcard
+To minimize addition for beauty, round n up to the smallest number whose digit sum ≤ target by incrementally zeroing out lower digits.
+
 ### Tags
 Math(#math), Greedy(#greedy)
 

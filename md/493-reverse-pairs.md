@@ -115,6 +115,10 @@ def reversePairs(nums):
 ### Summary
 This problem is a classic variant of the inversion-counting problem, best solved using the divide-and-conquer (modified merge sort) pattern. The core idea is that sorting halves lets us efficiently count cross-boundary pairs. This "merge and count" approach is a key pattern for similar problems, like counting local/global inversions, number of smaller elements after self, etc.
 
+
+### Flashcard
+Use modified merge sort; count reverse pairs during merge step where left element > 2 × right element.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Merge Sort(#merge-sort), Ordered Set(#ordered-set)
 

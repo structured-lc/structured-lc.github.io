@@ -87,6 +87,10 @@ def deleteGreatestValue(grid):
 ### Summary
 The problem uses the **matrix sorting and column-wise maximum extraction** pattern. By sorting each row, the largest to delete appears at the end of the row for each round, turning the iterative process into efficient column max checks. This is similar to problems where repeated max/min extraction by round is needed, often seen in simulation or greedy array game problems.
 
+
+### Flashcard
+Sort each row, then sum the max of each column (transposed view) – after sorting, column i contains the iᵗʰ largest from each row.
+
 ### Tags
 Array(#array), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Simulation(#simulation)
 

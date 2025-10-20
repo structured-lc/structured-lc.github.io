@@ -101,6 +101,10 @@ def findNearestRightNode(root: TreeNode, u: TreeNode) -> TreeNode:
 ### Summary
 Level order traversal (BFS) is the standard approach to questions involving nodes at the same tree depth. The technique is also used in problems asking for "right/next sibling", "level order successor", or printing the tree by rows.
 
+
+### Flashcard
+Perform level-order (BFS) traversal, scan each level left to right, and return the node immediately right of the target if it exists at the same level.
+
 ### Tags
 Tree(#tree), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

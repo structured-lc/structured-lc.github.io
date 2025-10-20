@@ -105,6 +105,10 @@ def numberOfNodes(n, queries):
 ### Summary
 This problem uses root-to-leaf path propagation in a complete binary tree to optimize subtree toggling operations using DFS. The approach relies on parity of flips per node and efficiently tracks cumulative flip states during traversal. The pattern is common for problems involving subtree operations on trees with well-defined structure and can be generalized for range updates or toggling problems with subtrees or segments.
 
+
+### Flashcard
+Count queries affecting each node (query on ancestor affects entire subtree). Node has value 1 if flipped odd times by accumulated query counts.
+
 ### Tags
 Array(#array), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

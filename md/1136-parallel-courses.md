@@ -109,6 +109,10 @@ This problem uses the **topological sort** (level-order BFS) pattern to process 
 It's a classic scheduling and dependency-resolution problem, commonly found in course scheduling, build systems, and parallel processing.  
 The main coding pattern: **Kahn’s Algorithm** for topological order level-by-level, cueing semester rounds as BFS levels, with cycle detection by counting processed nodes.
 
+
+### Flashcard
+Use BFS/topological sort to find the longest path (max semesters); if a cycle is detected, return −1.
+
 ### Tags
 Graph(#graph), Topological Sort(#topological-sort)
 

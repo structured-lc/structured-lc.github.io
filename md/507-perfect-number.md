@@ -87,6 +87,10 @@ def checkPerfectNumber(num: int) -> bool:
 ### Summary
 This approach demonstrates the **divisor sum** coding pattern, looping only up to √n to efficiently find all proper divisors. The same logic is commonly used in problems asking for sum or count of divisors. It also shows handling of duplication for square roots and explicitly considers numbers with small inputs or special properties (like 1 or squares). The main trade-off is between brute-force O(n) and optimized O(√n) with the latter being highly efficient for this problem.
 
+
+### Flashcard
+Sum divisors up to √num (excluding num itself), adding both i and num//i for each divisor, and check if the sum equals num.
+
 ### Tags
 Math(#math)
 

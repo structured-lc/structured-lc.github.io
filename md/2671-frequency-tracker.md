@@ -130,6 +130,10 @@ class FrequencyTracker:
 ### Summary
 This problem is a solid example of the "two-hashmap" pattern, using one map for element-to-count and another for count-to-frequency. Such dual-tracking enables efficient O(1) queries for dynamic multi-frequency problems. This design pattern is common in "frequency query" or "count-data" interview questions and is directly applicable in problems like finding duplicates, leaderboards, word counts, and frequency analysis in streaming data.
 
+
+### Flashcard
+Maintain two hash maps—count_map for number frequencies and freq_map tracking how many numbers have each frequency—for O(1) operations.
+
 ### Tags
 Hash Table(#hash-table), Design(#design)
 

@@ -108,6 +108,10 @@ def kSum(nums, k):
 ### Summary
 This problem uses the **heap/priority queue k-th smallest/largest** pattern, applied to a combination sum space where each decision is a branch in exclude/include. This approach is common in problems such as "K-th smallest pair sum" or "K-th smallest path sum," and is particularly useful when the total number of possibilities is too large to enumerate, but you only need k of them. Key ideas: maximizing subsequence sum, converting to reductions, and heap-based enumeration.
 
+
+### Flashcard
+Use max heap starting with sum of all positive values; iteratively generate next smaller k-sum by either skipping current element or including next element in sorted order.
+
 ### Tags
 Array(#array), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

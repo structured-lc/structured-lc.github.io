@@ -106,6 +106,10 @@ def minimumOperationsToMakeEqual(x: int, y: int) -> int:
 ### Summary
 This problem demonstrates a classic **recursion with memoization / dynamic programming** approach to minimize operations by exploring all permitted manipulations at each state. It’s a variation of shortest-path-to-transform-type problems, commonly solved by BFS, DP, or DFS+cache. Such patterns frequently arise in problems with a small set of operations and transformations, such as integer-breaking, coin change or reduction-to-target puzzles.
 
+
+### Flashcard
+Use BFS or memoized DFS where each state is current value. From x, try four operations: increment, decrement, divide by 11 (if divisible), divide by 5 (if divisible). Return minimum steps to reach y using level-order traversal.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Breadth-First Search(#breadth-first-search), Memoization(#memoization)
 

@@ -121,6 +121,10 @@ def widthOfBinaryTree(root):
 ### Summary
 This problem uses the **BFS + position indexing** pattern to map nodes as if in a complete binary tree and easily measure the maximum width at each level. This level-index assignment trick is reusable in other scenarios where the tree's sparse structure must be encoded as a full structure, such as serializing trees or reconstructing tree levels.
 
+
+### Flashcard
+BFS level-order traversal, assign indices as in a full binary tree; width of each level is rightmost index − leftmost index + 1.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

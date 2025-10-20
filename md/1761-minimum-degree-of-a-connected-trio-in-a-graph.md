@@ -97,6 +97,10 @@ This problem is a classic example of triangle detection and degree computation i
 The pattern of "traversing all possible triplets and counting properties with adjacency checks" applies to social network analysis, triangle counting, and subgraph enumeration in graph theory.  
 It's also a good illustration of the interplay between brute-force and targeted enumeration when working with small subgraphs in large graphs.
 
+
+### Flashcard
+For each edge, check common neighbors to find trios (triangles), then compute the minimum degree among all such trios.
+
 ### Tags
 Graph(#graph), Enumeration(#enumeration)
 

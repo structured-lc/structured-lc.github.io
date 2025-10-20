@@ -73,6 +73,10 @@ def numSteps(s: str) -> int:
 ### Summary
 This is a simulation problem leveraging binary properties: bit manipulations and step counting. Working from right to left allows you to handle potential carries efficiently without converting to integers.
 
+
+### Flashcard
+Simulate Collatz-like steps on binary string: remove trailing 0 (/2), flip last 1 and carry (+1), count steps.
+
 ### Tags
 String(#string), Bit Manipulation(#bit-manipulation), Simulation(#simulation)
 

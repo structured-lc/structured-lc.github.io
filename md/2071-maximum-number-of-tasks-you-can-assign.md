@@ -140,6 +140,10 @@ def maxTaskAssign(tasks, workers, pills, strength):
 ### Summary
 This problem uses the **Binary Search + Greedy** assignment pattern: binary search on the answer, and greedy task-worker pairing with minimal pill usage in each scenario. This pattern commonly appears in resource allocation, scheduling, and assignment problems (like Minimum Number of Days to Make m Bouquets, or Assign Cookies). Sorting plus two-pointer/deque management is often used for optimal pairing under constraints.
 
+
+### Flashcard
+Use a greedy approach to assign tasks to workers based on strength and pills.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Greedy(#greedy), Queue(#queue), Sorting(#sorting), Monotonic Queue(#monotonic-queue)
 

@@ -83,6 +83,10 @@ def countTriples(n):
 ### Summary
 This problem demonstrates the brute-force to quadratic scan transition by using integer arithmetic and square root checks to count valid triples. The approach is a direct application of nested loops with order significance, and checking for perfect squares—a variant of the classic Pythagorean triple counting, but within a bounded domain and with ordered pairs considered. This pattern appears often in enumeration problems and in problems leveraging the number theory of Diophantine equations.
 
+
+### Flashcard
+For each pair (a, b) with 1 ≤ a, b ≤ n, check if a² + b² is a perfect square c² with c ≤ n; count all such ordered triples for O(n²) time.
+
 ### Tags
 Math(#math), Enumeration(#enumeration)
 

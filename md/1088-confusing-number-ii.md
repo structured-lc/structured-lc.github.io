@@ -126,6 +126,10 @@ This problem applies the *digit-by-digit backtracking* pattern, commonly used on
 - Checking for the “confusing” property is done only for legal candidates.
 - This pattern is powerful for scenarios where not all “numbers” in a range are allowed: it can be used, for example, with “pretty numbers”, “special” digit sets, or constructing numbers with certain properties under transformations.
 
+
+### Flashcard
+Build valid numbers using only {0,1,6,8,9} via DFS (skip leading zeros), prune if > N, rotate each candidate and count if rotation ≠ original.
+
 ### Tags
 Math(#math), Backtracking(#backtracking)
 

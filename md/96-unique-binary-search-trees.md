@@ -92,6 +92,10 @@ def numTrees(n):
 ### Summary
 This problem demonstrates the classic **DP on sequences** pattern, using the structure of BSTs and their combinatorial properties. The counting is linked to the Catalan sequence, which appears in many combinatorial problems like counting valid parentheses or polygon triangulations. The recursive DP pattern is commonly applicable to problems where a structure can be divided around a root or pivot in all possible ways.
 
+
+### Flashcard
+Use dynamic programming; the number of unique BSTs with n nodes is the sum over all roots i of (BSTs with i-1 nodes) × (BSTs with n-i nodes).
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Tree(#tree), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

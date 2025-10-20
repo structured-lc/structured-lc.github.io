@@ -89,6 +89,10 @@ def partitionArray(nums, k):
 ### Summary
 This problem uses the classic **greedy with sorting** pattern. Sort, then greedily extend groups as far as the rule allows, minimizing the number of groups. The same pattern is often seen in interval covering, scheduling, and grouping problems where "tight packing" is optimal. The greedy approach is provably optimal here due to the sorted structure and local optimality leading to global optimality.
 
+
+### Flashcard
+Sort the array, then greedily start a new group whenever current element exceeds group min by more than k.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

@@ -76,6 +76,10 @@ def deleteNodes(head, m, n):
 ### Summary
 This is a classic linked list pointer manipulation, exercising careful movement and connection skipping. Recognizing typical "pointer walking" patterns is key for interview problems involving sublist deletions, group reversals, or spaced traversals.
 
+
+### Flashcard
+Iterate through the list, skip m nodes, then delete next n nodes by adjusting pointers; repeat until end.
+
 ### Tags
 Linked List(#linked-list)
 

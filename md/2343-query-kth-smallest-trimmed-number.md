@@ -102,6 +102,10 @@ This is a **custom sorting and substring/trim** problem, often seen in interview
 It’s grounded in classic sort patterns (key = trimmed string, tiebreak = index), as well as preprocessing (for efficiency if many queries share trims).  
 Applicable to problems like "kᵗʰ smallest of custom element representation," or where lexicographical comparison of substrings matters.
 
+
+### Flashcard
+For each query, trim all numbers, pair with original index, sort by value and index, then pick kᵗʰ smallest; cache sorted lists for repeated trims.
+
 ### Tags
 Array(#array), String(#string), Divide and Conquer(#divide-and-conquer), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Radix Sort(#radix-sort), Quickselect(#quickselect)
 

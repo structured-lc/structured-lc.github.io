@@ -52,6 +52,10 @@ GROUP BY customer_id;
 ### Summary
 This is a classic SQL aggregation pattern: group by a key, compute max/min/sum for each group. This pattern extends to many reporting/database analytics interview problems.
 
+
+### Flashcard
+Find the latest order date for each customer by grouping orders by customer ID and selecting the maximum order date.
+
 ### Tags
 Database(#database)
 

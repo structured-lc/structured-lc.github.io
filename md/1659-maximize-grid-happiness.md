@@ -92,6 +92,10 @@ def getMaxGridHappiness(m: int, n: int, introvertsCount: int, extrovertsCount: i
 ### Summary
 This problem uses state compression DP and recursion with memoization. Similar techniques are applied in tiling, coloring, and grid-based DP with local constraints where optimizing global happiness or score is required.
 
+
+### Flashcard
+Use DP with state (cell, row mask, neighbors, remaining intro/extroverts) to maximize grid happiness, memoizing for efficiency.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Memoization(#memoization), Bitmask(#bitmask)
 

@@ -102,6 +102,10 @@ def deleteDuplicates(head):
 ### Summary
 This problem uses the **linked list two-pointer** pattern with a **dummy node** for edge-case handling. It leverages the sorted property to detect duplicates efficiently. The exact logic can be reused in other linked list deduplication or node-removal tasks, especially when adjacent groupings of data must be processed. Patterns like dummy node usage, one-pass traversal, and skip-over/rewire are very common for linked list questions.
 
+
+### Flashcard
+Use a dummy node and pointers to skip all nodes with duplicate values, ensuring only unique elements remain in the sorted list.
+
 ### Tags
 Linked List(#linked-list), Two Pointers(#two-pointers)
 

@@ -138,6 +138,10 @@ def pathSum(root, targetSum):
 ### Summary
 This problem uses the **Prefix Sum with Hash Map** pattern in trees—an advanced technique extending the common subarray sum approach from arrays to trees. This allows efficient O(n) solutions for path-sum problems and appears in many interview questions where you need to find path counts or segments adding up to a target—whether in arrays, linked lists, or trees.
 
+
+### Flashcard
+Use prefix sum hash map during DFS to count all downward paths summing to target, including negative values.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

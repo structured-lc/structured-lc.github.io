@@ -85,6 +85,10 @@ def decode(encoded, first):
 ### Summary
 This problem utilizes the **property that XOR is its own inverse** to reconstruct the original array from its encoded transformation. The pattern of reconstructing a sequence by walking through a derived array using prior context applies widely—for example, decoding prefix-sum arrays (with addition/subtraction), prefix-XORs, or reconstructing signal sequences. This is a classic step-wise decoding problem with O(n) time and space, and understanding XOR's reversible property is essential.
 
+
+### Flashcard
+Reconstruct original array from encoded using XOR: arr[i+1] = encoded[i] XOR arr[i]—iterate to build the full array.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

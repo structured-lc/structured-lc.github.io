@@ -101,6 +101,10 @@ def knights_tour(n):
 ### Summary
 This is a **classic backtracking/grid search** problem, much like N Queens and Sudoku, where you explore all options recursively and backtrack on failure. This coding pattern is often used for permutation, arrangement, and unique-path grid puzzles where each state depends on choices and visited constraints.
 
+
+### Flashcard
+Use backtracking DFS to try all eight knight moves from each cell, marking visited cells and recursing until all n² cells are visited in sequence.
+
 ### Tags
 Array(#array), Backtracking(#backtracking), Matrix(#matrix)
 

@@ -118,6 +118,10 @@ def heightOfTree(root):
 ### Summary
 The problem uses the standard **DFS / binary tree recursion** pattern, with extra care taken to recognize the special-cycled leaves and stop recursion at those. This pattern is widely used in tree problems where we need to aggregate information from leaves back up to the root. The main twist here is correct leaf/cycle detection for the special case, which can also appear in problems dealing with tree modifications or unconventional linkages.
 
+
+### Flashcard
+Perform DFS from root computing height recursively, but detect and skip leaf nodes forming a cycle to avoid infinite recursion.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

@@ -79,6 +79,10 @@ def to_lower_case(s: str) -> str:
 ### Summary  
 This problem demonstrates a classic **string iteration and transformation** pattern where each character is examined and selectively modified. It reinforces understanding of **character encoding (ASCII)** and efficient in-place conversion tricks. The pattern is broadly applicable to string sanitation, validation, or normalization problems, and forms a baseline for implementing methods typically handled by standard libraries.
 
+
+### Flashcard
+For each character, if it's 'A'-'Z', convert to lowercase by adding 32 to its ASCII value; otherwise, keep as is.
+
 ### Tags
 String(#string)
 

@@ -77,6 +77,10 @@ def replaceDigits(s: str) -> str:
 ### Summary
 This approach is a simple **string transformation pattern** applied in a single left-to-right pass. It combines type checking (digit/letter) and basic character shifting using ordinal values. The technique is commonly used in problems involving Caesar ciphers, digit-to-character conversions, and in-place string modifications.
 
+
+### Flashcard
+Iterate string, replace even indices with letters, odd indices with shifted letters from previous.
+
 ### Tags
 String(#string)
 

@@ -144,6 +144,10 @@ This problem uses the **2D matrix simulation** and **dependency parsing** patter
 It demonstrates tracking **static values OR dynamic formulas** for cells, parsing Excel-style address/range strings, and handling recursive dependency calculations.  
 This pattern is also found in other spreadsheet simulations, reactive programming, and cell dependency graphs in software configuration or computation grids.
 
+
+### Flashcard
+Store cell values and formulas; for sum, parse ranges and recursively compute dependent cell values to reflect updates automatically.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Graph(#graph), Design(#design), Topological Sort(#topological-sort), Matrix(#matrix)
 

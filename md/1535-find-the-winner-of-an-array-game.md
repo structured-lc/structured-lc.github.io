@@ -69,6 +69,10 @@ def getWinner(arr: List[int], k: int) -> int:
 ### Summary
 This problem exemplifies the sliding window & simulation pattern, using counters to keep track of a local game's state. The insight that the global maximum eventually wins if k is large avoids unnecessary simulation, providing an efficient solution. This type of direct simulation + early termination applies to many array/competition style problems.
 
+
+### Flashcard
+Track the current winner and its consecutive wins, stopping when the win count reaches k.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

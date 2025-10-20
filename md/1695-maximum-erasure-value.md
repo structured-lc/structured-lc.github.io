@@ -69,6 +69,10 @@ def maximumUniqueSubarray(nums):
 ### Summary
 Classic sliding window with hash set for unique window expansion. Common pattern for substring/array uniqueness, longest substring without repeats, etc.
 
+
+### Flashcard
+Maximum Erasure Value
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
 

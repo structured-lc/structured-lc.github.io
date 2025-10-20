@@ -101,6 +101,10 @@ def adsPerformance(logs):
 ### Summary
 This question is an example of grouped aggregation and fraction calculation, similar to online analytics tasks. Patterns here are widely used in click-through-rate, A/B testing, and data summarization interviews.
 
+
+### Flashcard
+Group by ads_id, count 'Clicked' and 'Viewed', then compute ctr = Clicked / (Clicked + Viewed), rounded to two decimals.
+
 ### Tags
 Database(#database)
 

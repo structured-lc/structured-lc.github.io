@@ -79,6 +79,10 @@ def maxSubArray(nums):
 ### Summary
 This problem uses the classic dynamic programming approach, specifically "Kadane’s Algorithm". It’s a well-known “prefix sum optimization” or “running window” pattern, and appears in problems involving contiguous subarrays with optimal properties. This coding pattern can be applied to similar maximum (or minimum) sum subarray problems, and has real-world applications in finance, time-series analysis, and computational genomics.
 
+
+### Flashcard
+Use Kadane’s algorithm: track current sum and reset if negative, keeping the maximum seen so far for O(n) time.
+
 ### Tags
 Array(#array), Divide and Conquer(#divide-and-conquer), Dynamic Programming(#dynamic-programming)
 

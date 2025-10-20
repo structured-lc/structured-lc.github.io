@@ -113,6 +113,10 @@ def rotate(matrix):
 ### Summary
 This problem is a classic example of **in-place array manipulation**. Rotating a 2D matrix by 90° clockwise elegantly combines the patterns of **reversing** (flip) and **transposing** (swap version of symmetry). These techniques often show up in grid-based algorithms, image processing, and matrix puzzles.
 
+
+### Flashcard
+Rotate matrix in place by first transposing, then reversing each row for 90° clockwise rotation.
+
 ### Tags
 Array(#array), Math(#math), Matrix(#matrix)
 

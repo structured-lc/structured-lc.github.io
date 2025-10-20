@@ -78,6 +78,10 @@ def countDigits(num: int) -> int:
 ### Summary
 This problem uses the “digit by digit scan” pattern — iterate through all the digits of a number and check a simple condition. The main coding pattern is extracting and examining each digit using arithmetic. This arises often in digit-based math problems, such as reversing numbers or finding palindromic numbers. Recognizing cases where you shouldn’t divide by zero is common and often tested as an interview pitfall.
 
+
+### Flashcard
+Extract each digit (via string or mod 10), count how many divide num evenly (num % digit == 0).
+
 ### Tags
 Math(#math)
 

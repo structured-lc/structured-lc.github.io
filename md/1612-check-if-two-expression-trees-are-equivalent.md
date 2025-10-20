@@ -68,6 +68,10 @@ class Solution:
 ### Summary
 This is a canonical **tree flattening + counting problem**. We reduce the trees to multisets (variable frequencies) since associative and commutative rules allow any grouping or order. This pattern appears in problems about “canonical form” for trees/expressions.
 
+
+### Flashcard
+Traverse both expression trees, count variable frequencies, and compare the multisets for equivalence.
+
 ### Tags
 Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree), Counting(#counting)
 

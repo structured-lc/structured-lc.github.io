@@ -154,6 +154,10 @@ This is a classic **divide and conquer** recursion problem that exploits the com
 The key is correctly handling leaf cases and merging children, and recognizing when we can collapse internal nodes to leaves. This coding pattern generalizes to many problems involving recursive merging of spatial or hierarchical data structures.  
 The recursive structure is common in quad-tree/octree merging, compressing, and logical operations over spatial indexes.
 
+
+### Flashcard
+Recursively merge quad-trees; if either node is a leaf with value 1, result is a leaf 1; otherwise, merge children and collapse if all are leaves with the same value.
+
 ### Tags
 Divide and Conquer(#divide-and-conquer), Tree(#tree)
 

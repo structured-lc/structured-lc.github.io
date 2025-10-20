@@ -118,6 +118,10 @@ def rangeAddQueries(n, queries):
 ### Summary
 This problem is a direct application of the **2D Difference Array + Prefix Sum** technique—a powerful optimization for range update queries on matrices. This pattern frequently arises in problems where you need to perform repeated rectangular updates or queries on grids. Understanding it enables efficient solutions for a wide class of advanced grid, submatrix, and interval update challenges.
 
+
+### Flashcard
+For each query, mark submatrix corners in a 2D difference array, then compute prefix sums to get the final matrix after all queries.
+
 ### Tags
 Array(#array), Matrix(#matrix), Prefix Sum(#prefix-sum)
 

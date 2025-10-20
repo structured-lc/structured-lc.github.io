@@ -150,6 +150,10 @@ def friday_purchases_ii(purchases):
 This problem uses the **date generation + left join + group by** coding pattern, common in reporting and event-tracking databases.  
 The core pattern—generating all required output records (dates), left joining facts (Purchases), and aggregating—appears in many analytic/reporting applications (attendance, sales reports, etc.), regardless of whether solving in SQL or a programming language.
 
+
+### Flashcard
+Generate all Fridays in November 2023 using recursive CTE or hardcoded list. LEFT JOIN with Purchases table and COALESCE sum to 0 for missing dates. Calculate week_of_month for each Friday.
+
 ### Tags
 Database(#database)
 

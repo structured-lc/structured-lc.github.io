@@ -58,6 +58,10 @@ def minPartitions(n: str) -> int:
 ### Summary
 This problem is a greedy digit selection: answer is just the maximum digit in the string. It's a good example of digit-based greedy choices, a pattern that recurs in other "partition to minimal components by position" problems.
 
+
+### Flashcard
+Partitioning Into Minimum Number Of Deci-Binary Numbers
+
 ### Tags
 String(#string), Greedy(#greedy)
 

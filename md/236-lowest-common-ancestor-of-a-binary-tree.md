@@ -113,6 +113,10 @@ def lowestCommonAncestor(root, p, q):
 ### Summary
 This solution follows the **post-order DFS** recursion pattern, often used for descendant-based tree questions. It efficiently finds the LCA in **O(n)** time and **O(h)** space without revisiting nodes or storing paths. Variations of this approach are popular in problems involving ancestry, subtree computation, or bottom-up information propagation in trees. This same pattern appears in other problems like finding distance between nodes, counting subtrees, or propagating values upwards in general trees.
 
+
+### Flashcard
+Recursively search left and right; if both return non-null, current node is LCA; otherwise, propagate non-null result up.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

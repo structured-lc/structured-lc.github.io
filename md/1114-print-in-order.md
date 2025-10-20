@@ -106,6 +106,10 @@ class Foo:
 ### Summary
 This is a classic **concurrency coordination pattern**: "ensure N threads run in sequence." The pattern uses signaling primitives like Events or Semaphores to orchestrate strict execution order. It's foundational in thread synchronization and appears often in parallel task orchestration, pipeline processing, or when splitting complex workflows into ordered stages.
 
+
+### Flashcard
+Use two semaphores initialized to 0; first() releases sem1, second() waits on sem1 then releases sem2, third() waits on sem2.
+
 ### Tags
 Concurrency(#concurrency)
 

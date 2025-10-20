@@ -90,6 +90,10 @@ def shortestSubarray(A, K):
 ### Summary
 The problem is a mix of prefix sum and monotonic deque techniques, crucial when dealing with subarrays with possible negative numbers and needing the shortest window. This coding pattern appears in several “maximum sum subarray” problems where a naive window fails due to negatives, and can be broadly useful in interval or range minimum/maximum queries.
 
+
+### Flashcard
+Use prefix sums and a monotonic deque to find the shortest subarray with sum ≥ K, handling negative values.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Queue(#queue), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue), Prefix Sum(#prefix-sum), Monotonic Queue(#monotonic-queue)
 

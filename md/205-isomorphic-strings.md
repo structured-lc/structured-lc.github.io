@@ -93,6 +93,10 @@ def isIsomorphic(s: str, t: str) -> bool:
 ### Summary
 This problem uses the **hashing and bijection mapping** pattern, where you ensure a one-to-one correspondence between items in two collections. The technique is common for mapping letters or bijective relationships, and applies to word pattern, course scheduling problems, and other assignment/mapping scenarios.
 
+
+### Flashcard
+Use two hash maps to ensure a one-to-one mapping between characters of s and t; check mapping consistency at each index.
+
 ### Tags
 Hash Table(#hash-table), String(#string)
 

@@ -81,6 +81,10 @@ class CustomStack:
 ### Summary
 This problem uses the **lazy propagation** trick for fast range updates, a common coding pattern seen in range sum/segment trees, and amortizing deferred work.
 
+
+### Flashcard
+Use a lazy increment stack: record pending increments and apply them on pop for O(1) operations.
+
 ### Tags
 Array(#array), Stack(#stack), Design(#design)
 

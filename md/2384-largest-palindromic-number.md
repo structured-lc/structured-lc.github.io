@@ -109,6 +109,10 @@ def largestPalindromic(num: str) -> str:
 ### Summary
 This uses a **hash/counting plus greedy assembly** coding pattern, combining digit counting with mirroring and placement logic. It's a classic greedy palindrome construction, similar to longest palindrome formation, and is widely applicable anywhere where optimal symmetric structure is desired under digit constraints.
 
+
+### Flashcard
+Count digit frequencies, place largest digits symmetrically using pairs from outside in; handle middle digit separately and avoid leading zeros.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Greedy(#greedy), Counting(#counting)
 

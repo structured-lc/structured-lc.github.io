@@ -70,6 +70,10 @@ ORDER BY product_id, order_date DESC, order_id DESC;
 ### Summary
 Classic SQL use case for **ROW_NUMBER() over PARTITION BY** pattern—extracts top-N per group efficiently, applicable to all top-N grouped extraction scenarios.
 
+
+### Flashcard
+Use SQL window functions to rank orders by date and select the most recent three for each product.
+
 ### Tags
 Database(#database)
 

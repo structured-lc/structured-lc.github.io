@@ -112,6 +112,10 @@ How would you solve this with **iterative in-order traversal** instead of recurs
 ### Summary  
 This problem is efficiently solved using **in-order traversal** of a BST, leveraging its sorted property to find the minimum absolute difference between adjacent values. It is a classic example of where knowing the structure and properties of your data allows for optimal algorithms. This pattern—**in-order traversal on BSTs for sorted property analysis**—is common in BST-related problems, such as validating BSTs, k-th smallest element, or finding ranges.
 
+
+### Flashcard
+Inorder traversal of BST yields sorted values; track previous node to find minimum absolute difference in O(n) time.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

@@ -131,6 +131,10 @@ We solved the problem using the "group by key + track max and collect IDs" patte
 This same grouping/aggregation template applies to SQL "find max per group", as well as in Python/interview coding.  
 It's common in frequency-based or max/min/group problems, and appears in event logs, statistics by category, and log/data stream aggregation.
 
+
+### Flashcard
+For each day, track max transaction amount and collect all matching IDs; use a hash map for O(n) grouping.
+
 ### Tags
 Database(#database)
 

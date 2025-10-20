@@ -75,6 +75,10 @@ def minProductSum(nums1, nums2):
 This problem is a **classic array pairing minimization** by sorting one array ascending and the other descending. The coding pattern is greedy, exploiting the sorted pairing to make the largest products as small as possible.  
 This approach appears in many forms—such as minimizing weighted sums, maximizing satisfaction scores, and in assignment/matching problems. Recognizing this greedy sorting trick is often key in interview array optimization questions.
 
+
+### Flashcard
+Pair the smallest elements in one array with the largest in another to minimize the product sum.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

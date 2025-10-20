@@ -120,6 +120,10 @@ The solution uses a **mapping and string manipulation** pattern. Building fast-a
 This pattern—mapping points of interest to quickly find valid pairs—is common for problems like interval merging, word ladders, and dynamic sentence construction.  
 The set and sort approach ensures duplicate removal and lexicographical order, which matches common requirements in interview and real-world problems involving text merging and deduplication.
 
+
+### Flashcard
+For each phrase pair, merge if last word of first matches first word of second; dedupe and sort results.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting)
 

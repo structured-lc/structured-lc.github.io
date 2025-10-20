@@ -101,6 +101,10 @@ This is a classic **dynamic programming** problem demonstrating overlapping subp
 The iterative solution is a direct application of bottom-up DP, specifically the space-optimized O(1) version for linear recurrences.  
 This same coding pattern is applicable anywhere you have recurrence relations where each term depends only on a few previous values (e.g., Tribonacci, climbing stairs, tiling problems, etc.).
 
+
+### Flashcard
+Use bottom-up DP or memoization to compute F(n) = F(n-1) + F(n-2) in O(n) time, or use two variables for O(1) space.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Recursion(#recursion), Memoization(#memoization)
 

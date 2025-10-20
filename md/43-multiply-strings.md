@@ -107,6 +107,10 @@ def multiply(num1: str, num2: str) -> str:
 This is a classic **simulation problem** of grade-school multiplication, requiring careful index and carry management, and string skipping of leading zeros.  
 It’s a common pattern for string-based arithmetic where native integer types are too small, and applies to other problems like **Add Strings**, **Add Two Numbers**, and arbitrary-precision math with strings.
 
+
+### Flashcard
+Simulate digit-by-digit multiplication, storing partial products in an array and handling carries for each position, then build the result string.
+
 ### Tags
 Math(#math), String(#string), Simulation(#simulation)
 

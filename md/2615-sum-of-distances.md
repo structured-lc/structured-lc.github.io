@@ -111,6 +111,10 @@ def distance(nums):
 ### Summary
 This problem uses the **grouping-by-value + prefix sums** technique for subarray calculations involving pairwise distances. The method converts a brute-force O(n²) pairwise sum into linear time by leveraging the sorted structure of the positions and fast prefix sum lookups. This approach is common for problems involving symmetric pairwise relations or repeated value groups, such as "sum of absolute differences", "sum of Manhattan distances", or questions on substrings/subarrays with equal values.
 
+
+### Flashcard
+Group indices by value, then for each group, compute the sum of distances using prefix sums.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
 

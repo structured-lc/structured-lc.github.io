@@ -83,6 +83,10 @@ def equalSubstring(s: str, t: str, maxCost: int) -> int:
 ### Summary
 This problem is a classic **sliding window** pattern for substrings with resource/constraint limits. It’s efficient (O(n)), easy to implement, and widely applicable to “longest/shortest subarray with constraints” problems (prime example: longest subarray with sum ≤ k, etc.). This window expansion/contraction method avoids brute force checking all substrings.
 
+
+### Flashcard
+Use a sliding window to maintain the longest substring where the sum of character change costs does not exceed maxCost.
+
 ### Tags
 String(#string), Binary Search(#binary-search), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

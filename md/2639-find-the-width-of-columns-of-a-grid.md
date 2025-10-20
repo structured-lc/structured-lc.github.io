@@ -89,6 +89,10 @@ def findColumnWidth(grid):
 ### Summary
 This problem leverages the **matrix traversal** pattern with a column-major order. The core operation—taking the string length of an integer—ensures that negative signs and digit counts are included properly. The approach is simple and efficient (O(m × n)), and the pattern applies to similar tasks like finding sums, max/min values, or other aggregations per column or row in 2D matrices.
 
+
+### Flashcard
+Find the maximum string length in each column of a grid to determine column widths.
+
 ### Tags
 Array(#array), Matrix(#matrix)
 

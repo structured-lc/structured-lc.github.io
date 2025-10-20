@@ -114,6 +114,10 @@ class Codec:
 ### Summary
 The problem uses a **bijective mapping** between long and short URLs. The common approach is to store the mapping (list, hash map), with the key detail being how you generate and look up the short URL component. This is a classic case of custom hashing/mapping, and appears in other areas like ID-shortening, file deduplication, or basic URL shortening system design. The pattern is “store-and-retrieve by key.”
 
+
+### Flashcard
+Map long URLs to short codes using a dictionary or list index; encoding appends, decoding retrieves by index.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Design(#design), Hash Function(#hash-function)
 

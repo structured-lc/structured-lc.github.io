@@ -110,6 +110,10 @@ def minimumOperations(nums):
 ### Summary
 This problem uses **frequency counting** and **greedy optimization** — a common pattern for finding minimum changes for sequences that require an alternation or repetition. The key trick is handling the conflict when the most common number for even and odd indices is the same by considering the second-most frequent for one of the positions. This pattern of "split-by-position analysis" is useful in similar problems requiring periodic sequence alternation or transformation.
 
+
+### Flashcard
+Find the most frequent number in even indices and the most frequent in odd indices; if different, use both; else, use the top two.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Greedy(#greedy), Counting(#counting)
 

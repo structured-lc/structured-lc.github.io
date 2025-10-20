@@ -76,6 +76,10 @@ def sumOfThree(num: int) -> list[int]:
 ### Summary
 This problem uses a direct **math equation pattern**: sum of three consecutive integers equals 3x + 3. After rearranging to solve for x, a divisibility check enables a one-liner solution. This pattern is common when asked to find equally-spaced values that sum to a total—seen in arithmetic progression and partitioning problems. The technique generalizes for k consecutive numbers or evenly distributed groupings of sums.
 
+
+### Flashcard
+If num mod 3 ≠ 0, return []; else, answer is [num//3 - 1, num//3, num//3 + 1].
+
 ### Tags
 Math(#math), Simulation(#simulation)
 

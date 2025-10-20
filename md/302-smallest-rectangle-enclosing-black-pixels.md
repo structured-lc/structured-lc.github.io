@@ -152,6 +152,10 @@ def minArea(image, x, y):
 This problem demonstrates a **binary search on boundaries** technique in a grid, which is useful for finding minimal bounding regions (e.g., for images, search spaces, or intervals where a condition is met).  
 The coding pattern involves scanning with boundary tracking using binary search, and it’s broadly applicable wherever you want to efficiently localize features in 2D matrices when full O(mn) scans are too costly.
 
+
+### Flashcard
+Instead of brute force, use binary search to efficiently find the bounds of the smallest enclosing rectangle around black pixels.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

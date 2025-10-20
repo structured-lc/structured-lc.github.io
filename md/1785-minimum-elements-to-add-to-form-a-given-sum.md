@@ -74,6 +74,10 @@ def minElements(nums, limit, goal):
 ### Summary
 This problem uses a **greedy algorithm**: always cover the gap using the largest allowed (by limit) step size, minimizing the number of insertions. This is a classic “cover-by-steps”/integer division ceil pattern, seen in coin change (unlimited coins, single denomination) and jump problems. The main coding pattern is basic arithmetic, combined with a greedy loop or division-based calculation.
 
+
+### Flashcard
+Calculate the minimum number of elements to add by dividing the sum difference by the limit and rounding up.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

@@ -79,6 +79,10 @@ def closetTarget(words, target, startIndex):
 The problem is a typical "distance in a circular array" type and is solved using modular arithmetic to handle wrap-around.  
 This is a common coding pattern for circular problems and can be applied to scenarios like clock faces, rotatable arrays, and cyclic data structures. The brute force approach is already optimal at O(n), as you must potentially inspect every element.
 
+
+### Flashcard
+For circular array, compute min of clockwise (i - start) mod n and counterclockwise (start - i) mod n distances to each target occurrence.
+
 ### Tags
 Array(#array), String(#string)
 

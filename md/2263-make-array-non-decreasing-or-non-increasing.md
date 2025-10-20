@@ -169,6 +169,10 @@ This is a **dynamic programming with monotonic substructure** problem.
 The technique of building up DP by tracking the minimum cost path for each index/value combo under ordering constraints is especially common in sequence transformation and alignment problems, such as edit distance, LIS modifications, and time series smoothing.  
 This pattern can also apply to problems that ask for *minimum adjustment* to satisfy a global property with local consecutive constraints.
 
+
+### Flashcard
+Transform array to non-decreasing or non-increasing by minimizing adjacent differences; optimal solution uses dynamic programming on possible target values.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

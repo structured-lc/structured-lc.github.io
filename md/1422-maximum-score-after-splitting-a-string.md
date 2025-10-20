@@ -64,6 +64,10 @@ def maxScore(s):
 ### Summary
 This problem demonstrates prefix/suffix scan and greedy optimization patterns. The prefix sum approach is very useful for range scan and split-style problems, often with O(N) efficiency.
 
+
+### Flashcard
+Count zeros to the left and ones to the right of each split position to find the maximum score.
+
 ### Tags
 String(#string), Prefix Sum(#prefix-sum)
 

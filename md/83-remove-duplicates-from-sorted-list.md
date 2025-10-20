@@ -104,6 +104,10 @@ def deleteDuplicates(head):
 ### Summary
 This problem is a classic example of the "Linked List in-place update" pattern, leveraging the fact that the list is sorted. It's a canonical use of fast/slow or single-pointer traversal to process duplicates efficiently in a linear scan. This technique can be applied to other sorted structure deduplication scenarios and helps practice pointer manipulation in linked lists.
 
+
+### Flashcard
+Traverse the sorted list and remove duplicates in-place by skipping nodes with the same value as the current node.
+
 ### Tags
 Linked List(#linked-list)
 

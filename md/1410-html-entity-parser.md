@@ -74,6 +74,10 @@ def entityParser(text):
 ### Summary
 Classic pattern matching and string replacement problem, suitable for substring, pointer, or regex solutions. The algorithm uses a map for structured lookups and iterates with pointer advancement, a common approach in custom string parsing interview problems.
 
+
+### Flashcard
+Create a dictionary mapping entity names to their literal replacements and iterate through the input string to replace valid occurrences.
+
 ### Tags
 Hash Table(#hash-table), String(#string)
 

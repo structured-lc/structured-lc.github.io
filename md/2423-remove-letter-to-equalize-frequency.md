@@ -102,6 +102,10 @@ def equalFrequency(word: str) -> bool:
 We use the **frequency count + simulation** pattern: count how often each letter appears, simulate each possible letter removal, and check if the resulting string's nonzero frequencies are all equal.  
 This approach is commonly used in problems about balancing or equalizing counts, and is seen in string frequency normalization, anagram checking, or balancing tasks.
 
+
+### Flashcard
+Remove a character and check if all remaining characters have equal frequencies.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

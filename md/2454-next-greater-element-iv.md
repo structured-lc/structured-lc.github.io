@@ -122,6 +122,10 @@ def secondGreater(nums):
 ### Summary
 This problem is a two-layer extension of the classic "next greater element" pattern, best solved using two monotonic stacks to track elements waiting for their first and second greater elements. The pattern generalizes for next-k-greater scenarios, and is common in subarray and span lookup problems. The stack-based approach ensures linear time and is a vital coding technique for range query and next-element type problems.
 
+
+### Flashcard
+Use two stacks to track indices waiting for their first and second greater elements; process from right to left to efficiently find the second greater for each index.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Stack(#stack), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Monotonic Stack(#monotonic-stack)
 

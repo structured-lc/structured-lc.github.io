@@ -64,6 +64,10 @@ def generateTheString(n: int) -> str:
 ### Summary
 This is a classic string construction problem, and the core trick is basic number parity (even/odd). It's a simple coding pattern: if n is odd, fill with one letter; if even, fill n-1 with one and the last with another. This parity trick appears often in combinatorial string/array problems.
 
+
+### Flashcard
+If n is odd, return 'a' × n; if even, return 'a' × (n-1) + 'b' (both counts odd).
+
 ### Tags
 String(#string)
 

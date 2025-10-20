@@ -74,6 +74,10 @@ def canArrange(arr, k):
 ### Summary
 This is a classic application of counting using mod arithmetic, related to the Two Sum and group-by-remainder pattern. Useful for other divisor, modulo, or complement group problems.
 
+
+### Flashcard
+Count frequency of each remainder mod k; for each r, need same count of k−r (or r=0: even count); check all pairs to ensure valid pairing.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

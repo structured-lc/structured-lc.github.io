@@ -102,6 +102,10 @@ The core idea leverages **math to minimize worst-case moves** by reducing potent
 This strategy appears in variants: general egg drop, finding critical thresholds, and optimizing search with constraints.  
 You could apply this approach for related real-world problems like circuit testing, breakpoints, or adversarial minimax.
 
+
+### Flashcard
+Optimize egg drops by strategically dividing the search space with the first egg.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming)
 

@@ -90,6 +90,10 @@ def sumGame(num: str) -> bool:
 ### Summary
 This problem taps into game theory and parity analysis: evaluating how "unknown" spots (question marks) distribute, and analyzing if a player can force an imbalance based on their position (first or second) and count of moves. The core pattern is turning the question into a deterministic sum-difference analysis, given any optimal choices left to both players — often seen in two-player, turn-based strategy games.
 
+
+### Flashcard
+If total '?' is odd, Alice wins; if even, compare known sums and question mark counts for possible tie.
+
 ### Tags
 Math(#math), String(#string), Greedy(#greedy), Game Theory(#game-theory)
 

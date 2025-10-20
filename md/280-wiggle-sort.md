@@ -90,6 +90,10 @@ def wiggleSort(nums):
 This problem uses a **greedy in-place single-pass pattern** where local swaps guarantee the global alternating order. It avoids unnecessary sorting or memory use.  
 This pattern is widely applicable when only a local-enforcement of invariants suffices for global correctness, such as for alternating peaks/valleys, “zig-zag” traversals, or locally sorted intervals.
 
+
+### Flashcard
+Single pass with greedy swaps: at even indices ensure nums[i] ≤ nums[i+1], at odd indices ensure nums[i] ≥ nums[i+1] by local swapping.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

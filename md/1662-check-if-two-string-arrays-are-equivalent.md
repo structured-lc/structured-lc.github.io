@@ -63,6 +63,10 @@ def arrayStringsAreEqual(word1, word2):
 ### Summary
 This problem is a classic example of **string concatenation and comparison**, which is a common array and string-processing pattern. The solution uses the join pattern but can be adapted to a two-pointer or iterator-based approach for efficiency in space-constrained or streaming contexts.
 
+
+### Flashcard
+Concatenate both string arrays and compare results for equality; for space optimization, compare character-by-character with iterators.
+
 ### Tags
 Array(#array), String(#string)
 

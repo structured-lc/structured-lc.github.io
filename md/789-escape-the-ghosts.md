@@ -92,6 +92,10 @@ This problem leverages the property of **Manhattan Distance** as a minimal-step 
 The key insight is that you only need to check whether you are strictly closer to the target than all ghosts—no simulation is necessary.  
 This is an example of the **greedy pattern** for shortest-path in grid movement without obstacles. Variations of this arise frequently in grid-based shortest-reach problems.
 
+
+### Flashcard
+Escape if your Manhattan distance to the target is strictly less than every ghost’s; otherwise, you cannot escape.
+
 ### Tags
 Array(#array), Math(#math)
 

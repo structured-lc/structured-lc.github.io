@@ -109,6 +109,10 @@ The approach is based on generating all possible subarrays (using start and end 
 This is a classic "find all unique subarrays with property" pattern, often used with sets or Tries for uniqueness, and early loop termination for efficiency.  
 This sliding window+set approach is reusable in other problems with similar subarray constraints.
 
+
+### Flashcard
+Generate all subarrays, count elements divisible by p, and use a set to deduplicate valid subarrays—O(n²) for small k.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Trie(#trie), Rolling Hash(#rolling-hash), Hash Function(#hash-function), Enumeration(#enumeration)
 

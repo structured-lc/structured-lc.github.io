@@ -84,6 +84,10 @@ def makeSubKSumEqual(arr: List[int], k: int) -> int:
 ### Summary
 This problem makes heavy use of *cycle decomposition* and *median minimization* (greedy, grouping by gcd), combining greedy and math insights. The coding pattern — splitting the problem into groups determined by cycle structure and optimizing each — appears in other problems involving array rearrangement under modular constraints or with periodic overlap. Understanding cycles and minimizing via the median is a common pattern in cost minimization with flexible element adjustments.
 
+
+### Flashcard
+For each group of indices with the same remainder modulo gcd(n, k), make all elements in the group equal to minimize operations.
+
 ### Tags
 Array(#array), Math(#math), Greedy(#greedy), Sorting(#sorting), Number Theory(#number-theory)
 

@@ -144,6 +144,10 @@ def numberOfCombinations(num: str) -> int:
 ### Summary
 This problem is a **DP with substring comparison** challenge. It utilizes a classic dynamic programming approach, but is made feasible by precalculating the **Longest Common Prefix (LCP)** table so number comparisons between segments are O(1) regardless of their length. This pattern—combining DP with string precomputations—arises in advanced string parsing, cryptographic protocols, or any case where “split and compare” is required.
 
+
+### Flashcard
+Use dynamic programming with substring comparison (optimized via precomputed LCP) to count ways to split into non-decreasing numbers with no leading zeros.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Suffix Array(#suffix-array)
 

@@ -140,6 +140,10 @@ The solution shows how to manage stateful data with expiry, and maintain “acti
 Variants of this pattern occur in session management, in-memory TTL caches, rate limiting, etc.  
 The trade-off is simplicity/efficiency for small sets; for larger data, one may introduce a heap or scheduling mechanism for quick global expiry.
 
+
+### Flashcard
+Store each key with its expiry time; on access, check if the key is still valid.
+
 ### Tags
 
 ### Similar Problems

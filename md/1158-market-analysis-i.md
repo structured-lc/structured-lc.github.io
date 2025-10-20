@@ -135,6 +135,10 @@ def market_analysis(users, orders):
 ### Summary
 This problem requires a **relational join** pattern: retaining all users (even those who did not match on join) and then aggregating matching data. It's foundational in SQL/ETL, and the thinking generalizes to problems where you must report data for all entities even if no related entries exist—typical in reporting, left joins, and anti-joins.
 
+
+### Flashcard
+Use LEFT JOIN to count 2019 orders per user, ensuring users with zero orders are included by grouping after the join, not filtering before.
+
 ### Tags
 Database(#database)
 

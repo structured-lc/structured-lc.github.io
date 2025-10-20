@@ -111,6 +111,10 @@ def sumOfLeftLeaves(root):
 ### Summary
 This problem is a classic use of binary tree traversal with a **conditional sum** pattern. The recursive DFS approach clearly matches both the tree structure and the "filter" step for left leaf detection. This pattern is common in LeetCode problems involving summation or aggregation of node values based on position (e.g., sum of left/right boundary, deepest leaves, etc.).
 
+
+### Flashcard
+DFS traverse tree with flag tracking if node is left child; when flag is true and node is leaf (no children), add its value to sum.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

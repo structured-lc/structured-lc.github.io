@@ -106,6 +106,10 @@ def numberOfArithmeticSlices(nums):
 ### Summary
 This problem demonstrates dynamic programming with hash tables for counting combinatorial structures. The key insight is to track arithmetic subsequences by their ending position and common difference, building longer sequences by extending shorter ones. The pattern of using DP with difference/ratio tracking appears in many sequence problems (arithmetic/geometric progressions, longest increasing subsequences with constraints, etc.). The technique of separating the counting of partial sequences (length ≥ 2) from valid answers (length ≥ 3) is a common optimization in combinatorial DP problems.
 
+
+### Flashcard
+Count arithmetic subsequences with dynamic programming—track difference sequences ending at each index.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

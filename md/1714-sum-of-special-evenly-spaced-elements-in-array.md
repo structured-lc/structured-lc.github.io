@@ -104,6 +104,10 @@ def sumOfSpecialEvenlySpacedElements(nums, queries):
 ### Summary
 This problem leverages the technique of hybrid precomputation (for small strides) and direct evaluation (for large strides) — a pattern seen in problems involving patterns (roots, steps, modulo) or repeated queries on arithmetic progressions. It's related to sqrt-decomposition and can be useful in range query optimization for static data.
 
+
+### Flashcard
+For small strides, precompute suffix sums; for large strides, sum on the fly—answer each query in optimal time based on stride size.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

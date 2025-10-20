@@ -85,6 +85,10 @@ def areConnected(n: int, threshold: int, queries: List[List[int]]) -> List[bool]
 ### Summary
 The problem is a clever use of **Union Find** on an **implicit graph where edges are factorizations**. Building connected components by divisor, not pairwise, is key. This is a common competitive programming pattern for implicit connectivity.
 
+
+### Flashcard
+Use Union-Find to group cities by common factors larger than the threshold, then check connectivity for each query.
+
 ### Tags
 Array(#array), Math(#math), Union Find(#union-find), Number Theory(#number-theory)
 

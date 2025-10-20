@@ -162,6 +162,10 @@ def maxCandies(status, candies, keys, containedBoxes, initialBoxes):
 ### Summary
 This problem is a variation of **multi-source BFS** / graph traversal, where boxes, keys, and box dependencies form a graph. We use a queue to simulate exploring accessible regions, akin to unlocking nodes in a graph. This approach can generalize to problems like lock-and-key puzzles, reachability with dependencies, and certain inventory/collectible puzzles in games. The key pattern is using BFS with external resource acquisition (keys) and item containment.
 
+
+### Flashcard
+Use BFS to simulate opening boxes with keys, tracking opened boxes and acquired keys.
+
 ### Tags
 Array(#array), Breadth-First Search(#breadth-first-search), Graph(#graph)
 

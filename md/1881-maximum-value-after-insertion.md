@@ -104,6 +104,10 @@ def maxValue(n: str, x: int) -> str:
 ### Summary
 A classic **greedy string insertion** pattern—scan once to find the optimal insertion point. This pattern is broadly useful for problems involving maximizing/minimizing numbers via digit manipulation, and for certain "optimal insertion" or "editing" string tasks.
 
+
+### Flashcard
+Insert x into n to maximize its value by placing x before the first digit less than x if n is positive, or at the end if n is negative.
+
 ### Tags
 String(#string), Greedy(#greedy)
 

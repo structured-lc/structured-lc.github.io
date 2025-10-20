@@ -126,6 +126,10 @@ This problem is a classic application of thread synchronization and deadlock avo
 The combination of per-resource (fork) locks and a global semaphore cleanly prevents cycles for deadlock.  
 This pattern is widely used for managing shared resources safely in concurrent programming and is foundational for operating system and multithreaded application design.
 
+
+### Flashcard
+Prevent deadlock by enforcing resource ordering (e.g., always pick up lower-numbered fork first) or limit concurrent eaters using a waiter or semaphore.
+
 ### Tags
 Concurrency(#concurrency)
 

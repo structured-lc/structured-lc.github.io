@@ -88,6 +88,10 @@ def smallestString(s: str) -> str:
 ### Summary
 This problem uses a **greedy scan and modify** pattern: modify the smallest possible prefix starting with the first non-'a' character to achieve the minimum lexicographic string after one operation. It's a classic example of minimizing string lexicographically with a single substring transformation, a paradigm seen in similar greedy optimization and substring-manipulation patterns in string algorithms.
 
+
+### Flashcard
+To get lex smallest string, find the first non-'a', decrement it and all following chars until another 'a' or end.
+
 ### Tags
 String(#string), Greedy(#greedy)
 

@@ -92,6 +92,10 @@ ORDER BY manager_id
 ### Summary
 This problem uses the recursive CTE (Common Table Expression) pattern for hierarchical queries, a common approach for organizational, category, or any tree-like data structures in SQL. Understanding this technique is valuable for any production system that stores hierarchies in relational databases.
 
+
+### Flashcard
+Use a recursive SQL CTE to find all subordinates for each manager, then sum their salaries for the subtree.
+
 ### Tags
 Database(#database)
 

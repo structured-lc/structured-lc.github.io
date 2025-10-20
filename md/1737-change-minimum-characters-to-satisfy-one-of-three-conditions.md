@@ -116,6 +116,10 @@ def minCharacters(a: str, b: str) -> int:
 ### Summary
 This problem uses the "counting + prefix sum" pattern, common in character frequency and range-comparison problems—efficient when the domain size is small (here, 26). It's a typical approach for "min operations to achieve some uniform/relation condition" when letters are involved and is applicable to similar "make strings uniform" or "get all values below/above a split" coding problems.
 
+
+### Flashcard
+For each condition (all a < all b, all b < all a, or make identical), compute minimum changes using frequency counts; return minimum across all three.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting), Prefix Sum(#prefix-sum)
 

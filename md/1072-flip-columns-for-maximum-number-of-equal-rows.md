@@ -87,6 +87,10 @@ def maxEqualRowsAfterFlips(matrix):
 ### Summary
 This problem uses a **hashing and pattern normalization** technique to reduce a combinatorial flipping problem to counting identical "delta" patterns, which is common in bit manipulation and equivalence-based grouping problems. This normalization trick can be applied whenever you must make items equal by inverting or toggling independent dimensions, such as making arrays/lists similar by flipping/subtracting in some positions.
 
+
+### Flashcard
+Normalize each row by flipping columns where the first element is 1, then count the most frequent normalized row.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Matrix(#matrix)
 

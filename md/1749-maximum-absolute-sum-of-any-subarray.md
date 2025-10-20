@@ -107,6 +107,10 @@ This problem is a direct modification of the **Maximum Subarray Sum** (Kadane’
 To solve, scan for both max and min subarray sums in one pass, then take the highest absolute value.  
 This dual-Kadane trick appears in several problems dealing with ranges or circularity, and efficiently solves all absolute-sum questions for subarrays in O(n) time.
 
+
+### Flashcard
+Find both maximum subarray sum (Kadane) and minimum subarray sum; return max(abs(maxSum), abs(minSum)) since absolute maximum is one of these.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

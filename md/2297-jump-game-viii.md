@@ -127,6 +127,10 @@ def minCost(nums, costs):
 This task applies the **monotonic stack DP pattern**, a powerful technique for reducing O(n²) transitions to O(n) in problems that involve range or order-based constraints.  
 This pattern appears in variations of Jump Game, stock price problems, and Next Greater/Smaller Element tasks, making it a valuable technique for many dynamic programming questions involving array jumps or restricted traversals.
 
+
+### Flashcard
+Use dynamic programming to track minimum cost to reach each index, updating from all valid previous jumps.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Stack(#stack), Graph(#graph), Monotonic Stack(#monotonic-stack), Shortest Path(#shortest-path)
 

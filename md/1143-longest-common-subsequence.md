@@ -80,6 +80,10 @@ def longestCommonSubsequence(text1: str, text2: str) -> int:
 ### Summary
 This problem is a classic example of the **dynamic programming** pattern, specifically the 2D DP table approach for sequence alignment problems. The key is recognizing overlapping subproblems and optimal substructure. This technique appears in DNA sequence alignment, text diff tools, and various edit distance computations. The code can be adapted for related problems like minimum insertions/deletions to convert one string to another.
 
+
+### Flashcard
+Use DP: dp[i][j] = dp[i−1][j−1]+1 if chars match, else max(dp[i−1][j], dp[i][j−1]); answer is dp[m][n].
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

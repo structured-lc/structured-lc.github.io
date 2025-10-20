@@ -65,6 +65,10 @@ def checkOnesSegment(s: str) -> bool:
 ### Summary
 This problem uses a simple pattern matching approach: **detecting the substring '01'** is the key insight to identifying splits in blocks of '1's. The coding pattern is an example of a **single scan with substring search** or **state tracking**, which is widely used for checking groupings or transitions in sequential data. The approach is highly efficient and directly applicable for problems involving **segment detection** in binary or character sequences.
 
+
+### Flashcard
+Check for at most one segment of ones by tracking transitions from '0' to '1' and ensuring no '01' pattern appears before the end.
+
 ### Tags
 String(#string)
 

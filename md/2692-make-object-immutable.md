@@ -151,6 +151,10 @@ This problem uses the **Proxy/Trap pattern** to recursively intercept all change
 This approach is critical in situations where data integrity and traceable error reasons are vital, especially with complex, nested configuration or state structures.  
 The **deep proxying pattern** is commonly seen in security wrappers, debugging libraries, and state managers in modern applications.
 
+
+### Flashcard
+Recursively wrap object and nested objects/arrays in Proxy; intercept set/deleteProperty traps to throw custom error, intercept array mutating methods (push, pop, shift, etc.) to throw error, return proxy for deep immutability.
+
 ### Tags
 
 ### Similar Problems

@@ -106,6 +106,10 @@ def findLonely(nums):
 ### Summary
 This problem leverages the **counting** and **hashing** patterns—first, count all elements (hash map/dictionary), then filter by frequency and neighbor criteria. It’s a classic scanning/filtering pattern, useful for problems where element frequency and neighborhood conditions apply (e.g., "lonely" or "unique" with constraints). Similar methodology is seen in problems like "single number", "majority element", and "unique number in a range".
 
+
+### Flashcard
+Use a frequency map to find numbers appearing exactly once, then check if their immediate neighbors (x-1, x+1) are absent—return all such "lonely" numbers.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

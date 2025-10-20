@@ -111,6 +111,10 @@ Key patterns:
 - Efficient candidate searching with sorted/unique lists and binary search  
 Pattern can be applied to similar "make sequence X by minimal edits with constraints" problems.
 
+
+### Flashcard
+Use dynamic programming to track min operations for strictly increasing arrays, replacing with arr2 when needed.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
 

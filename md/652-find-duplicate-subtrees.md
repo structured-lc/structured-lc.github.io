@@ -150,6 +150,10 @@ class Solution:
 ### Summary
 This problem uses the **Tree Serialization + Hashing** pattern, where encoding subtree structures helps in fast duplicate detection. The DFS+serialization method is common for subtree or isomorphism problems, and can be applied to tree comparison, subtree checks, and similar problems where structural equality matters.
 
+
+### Flashcard
+Serialize each subtree to a string; use hashmap to count occurrences, collect roots of subtrees appearing more than once.
+
 ### Tags
 Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

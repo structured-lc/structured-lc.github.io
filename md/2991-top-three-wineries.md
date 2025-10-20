@@ -201,6 +201,10 @@ This problem uses the classic **group-by and top-K selection** pattern, mixing a
 It’s most naturally solved by using a nested dictionary, sorting, and careful result building.  
 This coding pattern is often used for leaderboard problems, reporting, or when selecting the best (or worst) entities per category.
 
+
+### Flashcard
+Group by (country, winery) to sum points. For each country, sort wineries by total points descending (ties by name ascending), take top 3, and pad with empty entries if fewer than 3 exist.
+
 ### Tags
 Database(#database)
 

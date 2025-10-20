@@ -132,6 +132,10 @@ def minimumCost(n, highways, discounts):
 The core approach is a multi-state variant of **Dijkstra's algorithm** where each node’s state is defined by both city index and the number of discounts used so far. This "stateful Dijkstra" pattern naturally models problems where taking certain actions changes your ability or cost for later actions (discounts, jumps, coupons, etc.).  
 Problems involving dynamic resources—like "k edges you can traverse at a discount" or "k walls you can break"—can often be solved by extending the state-space in Dijkstra or BFS to include the extra resource as part of the node state.
 
+
+### Flashcard
+Use Dijkstra’s algorithm with state (city, discounts_left); for each edge, try both using and not using a discount.
+
 ### Tags
 Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
 

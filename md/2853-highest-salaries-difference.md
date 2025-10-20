@@ -109,6 +109,10 @@ This problem uses the **"find max/min across groups"** pattern, a classic in SQL
 It's a common pattern in many ranking, leaderboard, and analytics-style interview questions.  
 Efficient because it iterates once, with constant space for fixed keys. The approach generalizes to handling any department count or group criterion.
 
+
+### Flashcard
+Track the max salary for each department, then return the absolute difference between the two maxima.
+
 ### Tags
 Database(#database)
 

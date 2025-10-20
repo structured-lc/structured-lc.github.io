@@ -100,6 +100,10 @@ def numOfSubarrays(arr):
 This problem uses a **prefix sum parity** counting pattern which is a form of prefix sum with classification by parity. Optimizing from brute-force to O(n) time and O(1) space is achieved by leveraging how the number of prior even/odd prefix sums determines the number of possible odd-sum subarrays ending at each position.  
 This pattern applies to numerous subarray/count problems (subarrays with sum k, divisible by k, etc.) — always consider prefix statistics to optimize contiguous subarray questions.
 
+
+### Flashcard
+Count subarrays with an odd sum by tracking prefix sums and identifying parity changes.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
 

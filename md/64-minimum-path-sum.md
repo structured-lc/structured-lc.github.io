@@ -94,6 +94,10 @@ This problem is classic **dynamic programming on a grid**â€”sometimes called a â
 It teaches the pattern of building a solution using previously computed subproblem results, with DP transitions based on allowed moves (right and down).  
 This approach is broadly useful in pathfinding, robotics, and games, and is the foundation for variations like unique paths, maximal path sum, and obstacle grids.
 
+
+### Flashcard
+Use DP: min path sum to (i,j) = grid[i][j] + min(top, left); fill the grid in-place or with a DP table.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

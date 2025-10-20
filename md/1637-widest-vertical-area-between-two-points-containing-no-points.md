@@ -54,6 +54,10 @@ def maxWidthOfVerticalArea(points):
 ### Summary
 This is a classic application of sort-and-check-differences pattern, often seen in array gap or merge interval problems. Recognizing the problem boils down to one dimension, not two, is key here.
 
+
+### Flashcard
+Sort x-coordinates and find the maximum gap between consecutive points.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

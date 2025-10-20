@@ -86,6 +86,10 @@ def stoneGameV(stoneValue):
 ### Summary
 This is a classic DP on intervals, which is common in splitting, painting, or combining array subproblems. Using memoization and prefix sums for fast interval queries is a common and transferable technique.
 
+
+### Flashcard
+Interval DP with memoization; for each [i,j], try all split points k, keep smaller sum and recurse; use prefix sums for O(1) range queries.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Game Theory(#game-theory)
 

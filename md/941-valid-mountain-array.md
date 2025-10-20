@@ -92,6 +92,10 @@ def validMountainArray(arr):
 ### Summary
 This problem uses the **two-pointer/scan pattern**, often seen in array and sequence checking problems. It emphasizes recognizing sequence properties and efficiently detecting structure (mountain, valley, etc.). Variations of this logic are useful in problems like detecting valleys, stock buy/sell patterns, and longest increasing/decreasing subsequence detection.
 
+
+### Flashcard
+Walk up while increasing, then down while decreasing; valid mountain if peak is not at ends and all elements used.
+
 ### Tags
 Array(#array)
 

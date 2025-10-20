@@ -68,6 +68,10 @@ def minimumSwap(s1: str, s2: str) -> int:
 ### Summary
 The problem is a greedy/counter pairing classic. Only care about mismatches and their pairing; rest can be ignored. This is related to string transformation/minimum replacement by swap, with the pairing logic being the critical observation.
 
+
+### Flashcard
+Count XY and YX mismatches; swaps needed = XY//2 + YX//2 + 2×(XY%2); impossible if total mismatches is odd.
+
 ### Tags
 Math(#math), String(#string), Greedy(#greedy)
 

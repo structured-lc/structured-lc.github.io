@@ -109,6 +109,10 @@ This problem is a classic **0-1 BFS / Shortest Path with zero-one edge weights**
 This approach is widely applicable in board games, puzzles, or shortest-path questions where cost is incurred for certain transitions but not for others.  
 Core skills: graph traversal, BFS optimization, grid algorithms, shortest path with edge weights 0/1.
 
+
+### Flashcard
+Use 0-1 BFS or Dijkstra; treat grid as graph, cost 0 if moving in arrow direction, cost 1 otherwise.
+
 ### Tags
 Array(#array), Breadth-First Search(#breadth-first-search), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Shortest Path(#shortest-path)
 

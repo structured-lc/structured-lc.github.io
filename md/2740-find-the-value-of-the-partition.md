@@ -95,6 +95,10 @@ def findValueOfPartition(nums):
 ### Summary
 This problem is a classic application of the **Sorting** pattern, and specifically leverages the intuition that adjacent elements in a sorted list have the minimum absolute difference. The approach is optimal for partition-type questions where the goal is to minimize/maximize the result based on boundaries. Similar patterns appear in problems like minimizing the maximum gap, or optimal pairings from sorted lists.
 
+
+### Flashcard
+Sort array, then the minimal partition value is the smallest difference between adjacent elements after sorting.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

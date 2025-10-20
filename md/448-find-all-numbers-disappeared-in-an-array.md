@@ -110,6 +110,10 @@ def findDisappearedNumbersHashSet(nums):
 ### Summary
 This problem showcases the clever technique of using array indices to store metadata about element presence. The marking approach transforms a space-constrained problem into an elegant O(1) space solution by reusing the input array as auxiliary storage. This pattern appears in many array problems where you need to track element properties without additional space.
 
+
+### Flashcard
+Mark seen numbers by negating the value at their index; missing numbers are indices with positive values.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

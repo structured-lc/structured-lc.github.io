@@ -114,6 +114,10 @@ def leftMostColumnWithOne(binaryMatrix):
 ### Summary
 This problem uses the **matrix search** pattern, taking advantage of sorted structure in a 2D array—similar to the “Search a 2D Matrix” classic problem. The optimal O(n + m) approach is sometimes called the **"Staircase Search"** and is a key pattern for interview favorites involving monotonic 2D arrays. This pattern can be applied to many other search problems in sorted matrices, especially where monotonicity allows cutting down the search space efficiently.
 
+
+### Flashcard
+Use binary search on each row to find the first column with a 1, tracking the minimum column index across rows.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Matrix(#matrix), Interactive(#interactive)
 

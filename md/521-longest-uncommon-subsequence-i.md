@@ -79,6 +79,10 @@ This approach leverages the simple property that if two strings are not equal, t
 This pattern of direct string comparison and maximal property can be applied in other subsequence-based problems when the definitions allow.  
 No advanced search or dynamic programming is needed for this variant. The solution is optimal and concise.
 
+
+### Flashcard
+If strings are equal, return -1; otherwise, return the length of the longer string.
+
 ### Tags
 String(#string)
 

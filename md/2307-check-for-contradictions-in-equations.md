@@ -113,6 +113,10 @@ def checkContradictions(equations, values):
 ### Summary
 This problem used the **Union-Find with weights** (similar to evaluating division equations) to efficiently detect inconsistencies among ratio equations. This is a classic application of Disjoint Set data structures with multiplicative relations ("Union by Ratio"). The pattern appears in problems involving equivalence classes and weighted graph traversals with constraints, such as currency exchange, graph cycles with non-additive weights, or advanced constraint satisfaction.
 
+
+### Flashcard
+Use union-find with weighted edges to track variable ratios and detect contradictions during merges.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Union Find(#union-find), Graph(#graph)
 

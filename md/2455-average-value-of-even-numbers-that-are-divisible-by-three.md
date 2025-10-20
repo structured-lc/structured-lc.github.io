@@ -81,6 +81,10 @@ You can apply the pattern of “sum and count as you scan” to any array-based 
 Divisibility reductions via least common multiples can generalize this type of problem.  
 No sorting, extra memory, or advanced data structures are required.
 
+
+### Flashcard
+Sum and count numbers divisible by 6, then return sum // count (integer division); return 0 if no such numbers.
+
 ### Tags
 Array(#array), Math(#math)
 

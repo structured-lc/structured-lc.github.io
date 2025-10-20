@@ -130,6 +130,10 @@ def most_active_user_and_highest_rated_movie(users, movies, movie_ratings):
 ### Summary
 This problem combines **group-by aggregation**, **join logic**, **sorting**, and **tie-breaking**. The coding pattern is **top-N by group aggregate** with lexicographical tie-breaking, common in SQL/data engineering. Mastery here helps with leaderboard designs, analytics dashboards, and contest ranking logic.
 
+
+### Flashcard
+For users, group ratings by user_id and count; for movies, filter by month, group by movie_id and average; join to names/titles, order and limit for tie-breaking.
+
 ### Tags
 Database(#database)
 

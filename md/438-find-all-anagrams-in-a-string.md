@@ -107,6 +107,10 @@ Frequency arrays (or hash maps) are of fixed size—26 lowercase English letters
 
 This problem is a textbook sliding window + frequency counting task. We learned how to efficiently detect anagrams using a rolling window and character count maps. The pattern appears frequently in substring search, pattern matching, and problems requiring frequency analysis. Mastering it sets the foundation for solving similar window-search questions quickly and robustly.
 
+
+### Flashcard
+Sliding window with frequency counts to find all anagram substrings in O(n) time.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

@@ -79,6 +79,10 @@ def minSubarray(nums, p):
 ### Summary
 This approach uses the **prefix sum and hashmap** pattern, a classic and efficient way to solve subarray sum or remainder problems involving divisibility or modular arithmetic. It is widely used in problems where you need to find subarrays with certain sum constraints in linear time. The core insight here is reducing the problem to finding the shortest subarray whose sum mod p equals the remainder we need to cancel out.
 
+
+### Flashcard
+Find the smallest subarray whose sum mod p equals total_sum mod p; use prefix sums and a hashmap for O(n) time.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
 

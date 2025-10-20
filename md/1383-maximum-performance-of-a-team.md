@@ -77,6 +77,10 @@ def maxPerformance(n, speed, efficiency, k):
 ### Summary
 This solution uses a greedy + min-heap pattern: processing candidates sorted by the factor that limits team performance (efficiency), greedily keep the k highest speeds, and compute performance at every step. This is a classic modern greedy-heap interview approach, applicable wherever subset maximums are defined by a sorted bottleneck + sum constraint.
 
+
+### Flashcard
+Sort engineers by efficiency descending; for each, keep top k-1 speeds in a min-heap, track max performance.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

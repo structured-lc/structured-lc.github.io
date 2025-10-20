@@ -83,6 +83,10 @@ def validPalindrome(s: str) -> bool:
 ### Summary
 This problem uses the classic **two-pointer technique** for palindrome validation, with a controlled relaxation (removal of one character). This approach is common for string manipulation questions involving symmetry or mirroring, and applies to a variety of scenarios where at most one modification or "failure" is allowed. It's a useful strategy in both interviews and competitive programming.
 
+
+### Flashcard
+Use two pointers to check for palindrome; on mismatch, try skipping either side once and check if the substring is a palindrome.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Greedy(#greedy)
 

@@ -69,6 +69,10 @@ def minDifference(nums):
 ### Summary
 This is a **two-pointer/greedy** sorted difference minimization problem. It is widely applicable to scenarios where you have to restrict outliers or trim ends to optimize a range.
 
+
+### Flashcard
+Minimize the difference between the largest and smallest values by removing up to three elements and comparing the resulting differences.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

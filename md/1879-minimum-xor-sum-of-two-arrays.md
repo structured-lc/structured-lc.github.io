@@ -106,6 +106,10 @@ This patterns appears in problems involving pairing or permutation costs, like "
 Recognizing subproblem overlap and representing state efficiently with a mask is key.  
 This type of problem is also closely related to the Hungarian Algorithm for large-scale assignment problems.
 
+
+### Flashcard
+Use dynamic programming with a bitmask to efficiently explore permutations of nums2.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

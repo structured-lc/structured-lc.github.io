@@ -82,6 +82,10 @@ We use only a constant number of variables, no extra storage or recursion stack.
 ### Summary
 This is a classic “representation in base k” or “unique sum of powers” problem. The main insight is that a sum of distinct powers of 3 is analogous to a base-3 number where each digit is at most 1. This base-conversion technique is a common coding pattern and can be applied to similar problems for powers of 2 (“sum of distinct powers of 2”), or to “subset sum” variants with restricted item use.
 
+
+### Flashcard
+Convert the number to base 3 and observe that each digit can be either 0, 1, or 2, allowing for a greedy approach to check if the number is a sum of powers of three.
+
 ### Tags
 Math(#math)
 

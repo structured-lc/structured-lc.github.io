@@ -66,6 +66,10 @@ def numTimesAllBlue(flips: list[int]) -> int:
 ### Summary
 This is a simulation/tracking problem with a one-pass O(n) scan and simple maintenance of maximum and count. The idea of prefix alignment and keeping counters/thresholds appears frequently in array or stream prefix/suffix pattern problems.
 
+
+### Flashcard
+Track the max flipped position and count of ON LEDs; whenever max_flipped = count, the prefix is aligned—increment the answer each time this holds.
+
 ### Tags
 Array(#array)
 

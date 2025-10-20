@@ -89,6 +89,10 @@ def nextPermutation(nums):
 ### Summary  
 This solution uses a two-pointer approach to find the next lexicographical permutation in-place. It identifies a pivot, finds the correct element to swap, and reverses the suffix efficiently. This "next permutation" pattern is common for permutation generation, backtracking, and combinatorial problems.
 
+
+### Flashcard
+Scan from right to left to find the first decreasing pair, swap with next larger element, then reverse the suffix for next lexicographical permutation in-place.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers)
 

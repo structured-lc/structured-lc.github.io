@@ -106,6 +106,10 @@ def rotatedDigits(n):
 We use **digit DP** (bottom-up table) to check, for each number, whether it consists only of rotatable digits, and whether at least one digit changes on rotation. This is a classic state DP: each number can be classified as invalid, unchanged (not good), or good (valid, changes when rotated).  
 This **pattern** applies in similar digit transformation/counting problems, especially those where certain digits or transitions are restricted, e.g., "Confusing Number", "Mirror Reflection", or general digit-DP counting questions.
 
+
+### Flashcard
+For each number ≤ n, check if all digits are valid after rotation and at least one digit changes; count such numbers.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming)
 

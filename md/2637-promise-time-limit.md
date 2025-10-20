@@ -124,6 +124,10 @@ This problem is a classic example of controlling asynchronous execution and enfo
 The pattern appears frequently in **timeouts, debouncing, throttling, and resilience patterns** in modern async/server code.  
 It teaches clean async composition, edge cases, and explains when and how to enforce time limits.
 
+
+### Flashcard
+Implement a promise with a time limit by racing the original promise against a timeout promise.
+
 ### Tags
 
 ### Similar Problems

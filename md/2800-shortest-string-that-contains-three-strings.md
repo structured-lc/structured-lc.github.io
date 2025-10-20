@@ -101,6 +101,10 @@ This problem uses the "greedy merge on all permutations" approach, seeking maxim
 Patterns here relate to **superstring construction**, **greedy overlap merge**, and **permutation enumeration**, which also appear in DNA assembly, string deduction, and shortest path with complex state representations.  
 While brute-force is feasible for 3 strings, for larger cases more advanced string algorithms (like minimal superstring problem with DP) or optimized greedy heuristics may be required.
 
+
+### Flashcard
+Try all 6 permutations of the strings, greedily merge each pair with maximum overlap, and select the shortest (lexicographically smallest if tied).
+
 ### Tags
 String(#string), Greedy(#greedy), Enumeration(#enumeration)
 

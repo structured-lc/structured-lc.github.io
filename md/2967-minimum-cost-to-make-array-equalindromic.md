@@ -133,6 +133,10 @@ def minimumCost(nums):
 ### Summary
 This problem follows the **coordinate transformation / minimum cost transformation** pattern, with a twist that the target must be a palindrome. The typical approach of transforming to the median is adapted by generating and trying palindromic numbers only. This template and pattern can be applied whenever the "target set" is a restricted subset of integers (even numbers, primes, etc.) and you need to minimize total distance to that subset.
 
+
+### Flashcard
+Find the median of the array, then search nearby palindromic numbers to minimize the total cost of converting all elements.
+
 ### Tags
 Array(#array), Math(#math), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
 

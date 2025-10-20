@@ -95,6 +95,10 @@ def colorRed(n):
 ### Summary
 This problem is a variant of **grid propagation / influence spreading**. The optimal patterning here uses greedy construction with periodic edge and interior seeding, efficiently minimizing the needed start points. Patterns like this arise in problems involving cellular automata, percolation, and minimal “dominating sets” in graphs. The code is a form of constructive greedy logic with a fixed stride pattern, often used in grid induction problems.
 
+
+### Flashcard
+Color triangles red in a pattern to maximize spread by strategically placing initial red triangles.
+
 ### Tags
 Array(#array), Math(#math)
 

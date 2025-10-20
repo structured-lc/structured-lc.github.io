@@ -109,6 +109,10 @@ We used a combinatorial counting approach by tracking modulo residue counts and 
 This is a classic application of **prefix mod + bucket counting**, a pattern commonly used for subarray or tuple sum divisibility/counting problems.  
 The pair/triplet residue summing trick works for similar questions involving summing tuples with modular constraints.
 
+
+### Flashcard
+For each k, count pairs (i,j) with i < j < k where (nums[i] + nums[j] + nums[k]) is divisible by d using modulo precomputation.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

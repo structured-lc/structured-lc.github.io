@@ -91,6 +91,10 @@ def sortOlympicTable(table):
 ### Summary
 This is a classic **multi-key sorting** problem, often seen in leaderboard, table, or event ranking logic. The solution leverages tuple sort keys to express composite ordering efficiently. This coding pattern is broadly applicable wherever you need stable, weighted, or lexicographical ordering across several columns or attributes (e.g., job scheduling, leaderboard, or database-like logic).
 
+
+### Flashcard
+Sort rows by tuple (-gold, -silver, -bronze, country_name) using a custom key in O(n log n) time for multi-level sorting.
+
 ### Tags
 Database(#database)
 

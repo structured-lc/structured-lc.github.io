@@ -102,6 +102,10 @@ This problem uses the **recursion + hashmap flattening** pattern, central for an
 Identifying unique paths as columns and organizing data accordingly is a common ETL/data wrangling problem, applicable to JSON-to-table conversion, log flattening, and spreadsheet construction.  
 The key details are path management, missing value handling, and column ordering.
 
+
+### Flashcard
+Recursively flatten each object into path → value pairs using dot notation; collect all unique paths, sort lexicographically, then build matrix rows by matching each object's flattened pairs to the sorted column headers (use "" for missing values).
+
 ### Tags
 
 ### Similar Problems

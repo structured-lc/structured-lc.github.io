@@ -97,6 +97,10 @@ def rotateRight(head, k):
 ### Summary
 This problem is an example of the **"linked list manipulation and rotation"** pattern, which comes up in linked list problems involving breaking and reconnecting segments. The main insight is to reduce redundant work by normalizing k, and only rearrange pointers once after finding the correct new head and tail positions. This two-pass, O(n) approach is common for problems involving cycles or rotations in linked structures.
 
+
+### Flashcard
+Compute list length, connect tail to head to form a cycle, then break at the (n–k)ᵗʰ node to rotate right by k.
+
 ### Tags
 Linked List(#linked-list), Two Pointers(#two-pointers)
 

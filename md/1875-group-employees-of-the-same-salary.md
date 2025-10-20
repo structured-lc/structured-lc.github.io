@@ -176,6 +176,10 @@ def group_employees_of_same_salary(employees):
 ### Summary
 This problem demonstrates the **group-by** and **counting pattern** to identify duplicate groups, then assigns a sequential id based on sorted order. The approach—count, filter, assign id, join/filter—is typical in SQL-like group aggregation. It's a common pattern for data deduplication, group-based labeling, or bulk feature assignment, and can be applied in customer segmentation, fraud detection by group, or team formation tasks. The code emphasizes clear grouping logic, filtering, and ordering, which are all key for real-world database and analytics tasks.
 
+
+### Flashcard
+Group employees by salary, filtering for salaries with at least two employees. Assign a team_id based on the rank of salaries, with the lowest salary getting team_id = 1.
+
 ### Tags
 Database(#database)
 

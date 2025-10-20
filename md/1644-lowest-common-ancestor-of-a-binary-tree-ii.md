@@ -92,6 +92,10 @@ def lowestCommonAncestor(root, p, q):
 ### Summary
 Classic binary tree recursion/DFS problem, with modification to detect whether both targets are present. This pattern helps in "validate both nodes exist before returning their ancestor" questions.
 
+
+### Flashcard
+Find the lowest common ancestor in a binary tree, handling missing nodes.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

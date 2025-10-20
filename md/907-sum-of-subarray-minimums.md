@@ -102,6 +102,10 @@ def sumSubarrayMins(arr):
 ### Summary
 This problem demonstrates a classic use of the **monotonic stack** to efficiently identify previous and next less elements, avoiding brute force. It's a standard pattern in stack interview questions, widely used for histogram, stock span, and range query problems. The approach hinges on counting contributions of each element as the minimum across all subarrays in O(n) time. This reusable trick can be applied whenever a problem asks for aggregate contributions of local minimums or maximums in subarrays or intervals.
 
+
+### Flashcard
+For each arr[i], use a monotonic stack to find how many subarrays it is the minimum in, then sum arr[i] × (#subarrays) for all i.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

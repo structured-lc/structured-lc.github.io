@@ -76,6 +76,10 @@ def findLatestStep(arr, m):
 ### Summary
 This is a greedy union-find interval simulation, often used to track dynamic groupings. The length array at endpoints and counts for group-sizes allow O(1) updates, and is a general pattern for similar interval merge/split challenges.
 
+
+### Flashcard
+Track group sizes using length array at endpoints; for each new 1, merge adjacent groups and update count of size-m groups; record last step with count > 0.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Simulation(#simulation)
 

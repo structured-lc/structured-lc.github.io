@@ -144,6 +144,10 @@ print(find_multi_article_viewers(views))  # Output: [4, 5, 6]
 ### Summary
 This approach uses the **group by pattern** on composite keys (user, date), and aggregation with HAVING, a standard technique in analytics queries. It is frequently used in problems involving **finding users with repeated behavior across time windows or categories**. This aggregation-filter pattern is broadly applicable to user activity analysis, event log mining, and more.
 
+
+### Flashcard
+For each viewer and day, count distinct articles viewed; return viewers with count > 1 for any day, ensuring uniqueness.
+
 ### Tags
 Database(#database)
 

@@ -158,6 +158,10 @@ def game_play_analysis_v(activity):
 This problem uses a **grouping and aggregation pattern** on event logs: tracking installations by earliest date, then aggregating returns for retention calculation.  
 This pattern is common in user analytics, activity tracking, and cohort analysis—extensible to N-day retention, churn analysis, or engagement funnels in product analytics.
 
+
+### Flashcard
+Find each player's min event_date as install_date, count installs per date, count Day-1 retention (logins on install_date+1), compute retention_rate = Day-1 logins ÷ installs per install_date.
+
 ### Tags
 Database(#database)
 

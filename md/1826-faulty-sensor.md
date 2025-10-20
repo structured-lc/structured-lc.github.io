@@ -93,6 +93,10 @@ def badSensor(sensor1, sensor2):
 
 This problem is a **two-pointer comparison** with an early escape at the first sign of difference. The pattern applies to problems verifying arrays/sequences with a single questionable mutation or deletion and can be used in stream validation and typo/shift detection tasks. The code structure avoids unnecessary work by stopping at the first misalignment and only considers single skips, as permitted by the problem constraints.
 
+
+### Flashcard
+Find first mismatch index i; check if sensor1[i+1:] equals sensor2[i:] (sensor1 faulty) or sensor1[i:] equals sensor2[i+1:] (sensor2 faulty); return −1 if both match.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers)
 

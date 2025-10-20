@@ -76,6 +76,10 @@ def minNumberOfFrogs(croakOfFrogs):
 ### Summary
 The problem is solved using a greedy counting approach, updating stage counters for each croak sound. This exact method is common for sequence validation and concurrency management, applicable to event sequencing and resource management problems.
 
+
+### Flashcard
+Track the number of frogs at each croak step, ensuring the order is followed and counting concurrent frogs.
+
 ### Tags
 String(#string), Counting(#counting)
 

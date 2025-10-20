@@ -99,6 +99,10 @@ The DP follows a **combinatorial recurrence** and is similar to variants of the 
 This DP pattern applies to other problems involving “doing something special with the max element” or “arrangements with visibility/ordering constraints.”  
 It’s a key example of bottom-up DP with state compression.
 
+
+### Flashcard
+Fix the position of the tallest stick and recursively arrange other sticks to count visible sticks.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
 

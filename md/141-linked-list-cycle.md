@@ -95,6 +95,10 @@ def hasCycle(head):
 ### Summary  
 This problem uses the **Floyd's Tortoise and Hare** (two-pointer) pattern to efficiently detect cycles in linked lists. It's a fundamental pattern seen in many "cycle detection" problems in linked lists and graphs, and is a classic interview favorite due to its space efficiency and robustness. Recognizing when to apply two-pointer strategies is a key interview skill.
 
+
+### Flashcard
+Use Floyd’s Tortoise and Hare: advance slow by 1, fast by 2; if they meet, there’s a cycle, else if fast reaches null, no cycle.
+
 ### Tags
 Hash Table(#hash-table), Linked List(#linked-list), Two Pointers(#two-pointers)
 

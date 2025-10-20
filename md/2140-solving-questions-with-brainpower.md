@@ -89,6 +89,10 @@ def mostPoints(questions):
 ### Summary
 This problem is an application of **DP on an array**, similar to the "House Robber" pattern: for each index, decide to "take" or "skip" based on maximizing a local choice plus what's optimal for the rest. Recognizing overlapping subproblems and the fact that future optimal solutions only depend on later indices makes DP natural and efficient. This coding pattern is common in problems such as "Maximum Non-Adjacent Sum", "House Robber", and problems involving sequential exclusion-worth decisions.
 
+
+### Flashcard
+DP from end to start: dp[i] = max(solve question i and skip brainpower[i] positions, or skip to i+1).
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

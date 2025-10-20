@@ -99,6 +99,10 @@ This problem uses the **hash grouping/categorization** pattern, based on modulo 
 It is often applied where grouping by a pattern or fixed key (e.g., anagrams, remainders, time-intervals) is efficient, and frequency analysis is required.  
 This solution’s O(n) grouping + selection is a widely-used coding interview technique for counting and critical grouping tasks.
 
+
+### Flashcard
+Group nums by remainder modulo space, find the group with the most elements, and return the smallest x in that group.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

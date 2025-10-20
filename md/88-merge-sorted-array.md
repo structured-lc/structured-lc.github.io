@@ -101,6 +101,10 @@ def merge(nums1, m, nums2, n):
 
 The key pattern used here is the **two-pointer, reverse filling in-place** merge—a classic for sorted arrays with overflow capacity. This efficiently merges the arrays in O(m+n) time and constant extra space, and is a staple in problems involving merging data while minimizing extra storage. This idea also shows up in external sorting, merge sort’s merge step, and merging intervals or lists.
 
+
+### Flashcard
+Merge from the end using three pointers, filling nums1 from the back to avoid overwriting unprocessed elements.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Sorting(#sorting)
 

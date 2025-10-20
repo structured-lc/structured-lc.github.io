@@ -77,6 +77,10 @@ def minSubArrayLen(target, nums):
 ### Summary  
 This problem is a classic example of the **sliding window** pattern, especially effective when dealing with contiguous subarrays and all-positive numbers. It’s a common technique in problems involving minimum window length, target sums, or string substring/window questions. The ability to both grow and shrink the window efficiently is why this solution works in linear time.
 
+
+### Flashcard
+Use sliding window—expand right to increase sum, contract left to minimize length while sum ≥ target; track minimal window.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

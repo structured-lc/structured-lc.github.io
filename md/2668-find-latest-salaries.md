@@ -135,6 +135,10 @@ def find_latest_salaries(salary_table):
 ### Summary
 This is a classic *group-by and aggregate* pattern. It’s common for "latest record per group" or "find max/min per key" queries in database and analytics work. The grouping technique can be applied for deduplication, time-series last value per entity, or any "most recent per entity" problems.
 
+
+### Flashcard
+Group by emp_id and select MAX(salary) to get the latest salary for each employee.
+
 ### Tags
 Database(#database)
 

@@ -132,6 +132,10 @@ def min_operations(target, arr):
 ### Summary
 This problem is solved efficiently using the **Longest Increasing Subsequence** (LIS) pattern, taking advantage of the fact that **target** contains only distinct elements. Mapping arr's entries to target indices and finding LIS allows us to capture the largest possible subsequence already in order, and the rest are inserted. This pattern appears in problems that seek subsequence matching with order preserved and is a powerful tool for transforming sequence alignment problems involving insert-only steps.
 
+
+### Flashcard
+Find the longest subsequence of target present in arr—answer is len(target) minus this length (insert the rest).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Greedy(#greedy)
 

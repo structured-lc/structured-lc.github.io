@@ -105,6 +105,10 @@ def count_great_partitions(nums, k):
 ### Summary
 This problem is a strong example of **inclusion-exclusion** and **subset sum DP**, a dynamic programming pattern useful when you need to count or build up combinations with sum constraints. This approach avoids the exponential brute-force by exploiting symmetry and the ability to count “bad” cases efficiently. Subset sum DP is broadly applicable in knapsack-style problems or any situation needing "number of ways to pick subsets with sum ≤ X."
 
+
+### Flashcard
+Count bad partitions (where at least one group sum < k) using DP on subset sums < k, then subtract from 2ⁿ and divide by 2 for symmetry.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

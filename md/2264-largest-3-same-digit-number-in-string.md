@@ -74,6 +74,10 @@ def largestGoodInteger(num: str) -> str:
 ### Summary
 This is a classic example of the sliding window/string scanning pattern, checking each substring of a fixed length for a simple property. It’s commonly used in windowed substring, anagram, or pattern search problems, and demonstrates a straightforward O(n) solution without extra data structures.
 
+
+### Flashcard
+Scan the string for runs of three identical digits; keep the lexicographically largest such substring.
+
 ### Tags
 String(#string)
 

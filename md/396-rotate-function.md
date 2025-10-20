@@ -94,6 +94,10 @@ def maxRotateFunction(nums):
 ### Summary
 This problem is a classic example where a **mathematical recurrence relation** drastically improves efficiency from brute-force O(n²) to an O(n) **sliding sum** approach. This “mathematical transformation” trick is common in many array problems involving rotation, prefix or suffix updates, and offers a powerful way to optimize problems on cyclic or circular arrays.
 
+
+### Flashcard
+Use the relation F(k+1) = F(k) + total_sum − n × A[n−k] to compute all rotations in O(n) time.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming)
 

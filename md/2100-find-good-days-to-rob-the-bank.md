@@ -99,6 +99,10 @@ def goodDaysToRobBank(security, time):
 ### Summary
 This problem is a **prefix/suffix precomputation** problem or "two pointer with prefix statistics" pattern. This is similar to many problems where you need to quickly check consecutive properties in both directions (e.g., mountain arrays, longest plateau, etc). Precomputing prefix and suffix information per index is a powerful approach, and is commonly used in problems that check sliding window conditionals in both sides of each element.
 
+
+### Flashcard
+Precompute for each day the count of consecutive non-increasing days before and non-decreasing days after; a day is "good" if both counts are ≥ time.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
 

@@ -129,6 +129,10 @@ def guessMajority(reader):
 This approach uses the **comparison/query baseline** pattern: set a reference group, then compare remaining unknowns to it via queries. 
 The technique is similar to majority element finding (Boyer-Moore voting), except with queried side information instead of direct access. This pattern (divide and compare via indirect queries) is often found in interactive problems, and is robust to constraints where information is limited to group-wise observations or indirect evidence.
 
+
+### Flashcard
+Establish a baseline and iteratively query sets to deduce the majority element in a hidden array.
+
 ### Tags
 Array(#array), Math(#math), Interactive(#interactive)
 

@@ -80,6 +80,10 @@ This problem uses the *sorting and greedy/max-tracking* pattern, common for "dom
 By sorting strategically and keeping track of a running maximum, we avoid brute-force pairwise comparison.  
 This approach appears in skyline/rectangle problems and other 2D sweep-line or "non-dominated pairwise" scenarios.
 
+
+### Flashcard
+Sort by attack descending (defense ascending for ties); scan, tracking max defense so far, and count characters with lower defense.
+
 ### Tags
 Array(#array), Stack(#stack), Greedy(#greedy), Sorting(#sorting), Monotonic Stack(#monotonic-stack)
 

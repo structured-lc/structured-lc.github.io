@@ -86,6 +86,10 @@ def isPowerOfThree(n):
 
 This problem uses the repeated division pattern, a common way to check for membership in geometric progressions (powers of a base). The math trick leverages properties of divisibility among powers of a number, making for an efficient alternative. This pattern often applies when checking for powers of any constant base, and it’s often seen in integer decomposition questions.
 
+
+### Flashcard
+Repeatedly divide n by 3; if you reach 1 with no remainder at any step, n is a power of three.
+
 ### Tags
 Math(#math), Recursion(#recursion)
 

@@ -106,6 +106,10 @@ def maximumBooks(books):
 ### Summary
 The problem uses a classic **monotonic stack** in combination with **dynamic programming** to efficiently manage state transitions and optimal segments. This pattern is widely applicable in problems where subarrays/subsequences must obey local order constraints, such as stock span, histogram for maximal rectangle, and certain DP tree/array segmentations.
 
+
+### Flashcard
+For each shelf i, use a stack to track the farthest left index j where heights form a valid strictly increasing sequence; sum books using arithmetic series formula.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

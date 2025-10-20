@@ -105,6 +105,10 @@ The main pattern is like **"Longest Common Subsequence"**: choose or skip curren
 DP on substrings applies to problems such as **Palindrome Partitioning**, **Regular Expression Matching**, and **Edit Distance**.  
 Subsequence DP problems appear often when order matters but continuity does not.
 
+
+### Flashcard
+Use DP where dp[i][j] is the LPS length in s[i:j+1]; if s[i]==s[j], dp[i][j]=2+dp[i+1][j-1], else max of excluding either end.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

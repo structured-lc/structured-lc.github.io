@@ -78,6 +78,10 @@ def maxDistance(position, m):
 ### Summary
 Uses binary search on answer, a classic greedy + binary search mix for maximizing minimum pairwise distances (can also apply to cows-in-stalls, router placement, aggressive cows, etc). Very common interview pattern.
 
+
+### Flashcard
+Binary search on minimum distance (force); for each candidate, greedily place m balls checking feasibility in O(n) time after sorting positions.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sorting(#sorting)
 

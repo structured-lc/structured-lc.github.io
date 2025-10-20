@@ -85,6 +85,10 @@ def minimumDistance(word):
 ### Summary
 This problem is a classic example of dynamic programming with multidimensional state (two "pointers" or fingers). The approach is similar to the "paint house" and other sequence DP questions, where at each step, decisions are minimized over possible moves. This pattern is widely applicable in optimal path, cost-minimization, and multi-agent problems.
 
+
+### Flashcard
+Use DP with state (index, left_pos, right_pos), recursively try both fingers for each letter, memoizing results for efficiency.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

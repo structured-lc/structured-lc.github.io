@@ -82,6 +82,10 @@ def findCircleNum(isConnected):
 This problem is a classic example of the **connected components** pattern in graph theory, commonly solved using **DFS, BFS, or Union-Find**.  
 It's fundamental and appears in problems involving friend circles, grid islands, or connectivity queries. The DFS/BFS approach is both efficient and interview-friendly when adjacency matrices are given.
 
+
+### Flashcard
+Count connected components using DFS/BFS/Union-Find; each unvisited node starts a new component.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

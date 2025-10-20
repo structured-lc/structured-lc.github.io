@@ -119,6 +119,10 @@ This approach applies the **bounded-region search pattern**, commonly seen when 
 The method is a variant of BFS with an early exit condition (once outside potential trapping, we're "free"), and is a powerful tool for grid pathfinding with sparse obstacles.  
 Similar logic can be applied to large graphs or sparse maps where full search is infeasible but small-locale exhaustiveness is possible.
 
+
+### Flashcard
+BFS from source and target up to 20000 steps; if neither is enclosed by blockers, escape is possible.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
 

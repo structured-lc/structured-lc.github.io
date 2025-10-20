@@ -65,6 +65,10 @@ def minSubsequence(nums):
 ### Summary
 This problem showcases a greedy selection pattern: maximize your picked sum fast with fewest largest elements, common in minimizing choices while maximizing impact. Sorting and accumulating is a classic approach for greedy sum problems of this type.
 
+
+### Flashcard
+Sort array descending, pick largest elements until their sum exceeds the rest—minimal subsequence.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

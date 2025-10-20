@@ -149,6 +149,10 @@ def customers_who_bought_all_products(customers, products):
 ### Summary
 This problem uses the common SQL pattern of GROUP BY, COUNT(DISTINCT ...), and HAVING to solve set-completeness queries. The key insight is converting the "all products" requirement into a simple count comparison for each customer. This idiom can be applied to many similar business questions—e.g., users who completed all required steps, students who finished all assignments, etc.
 
+
+### Flashcard
+For each customer, count distinct products bought; select those whose count equals total number of products.
+
 ### Tags
 Database(#database)
 

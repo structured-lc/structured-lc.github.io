@@ -80,6 +80,10 @@ def countSubstrings(s: str) -> int:
 ### Summary
 We use the sliding window pattern (with two pointers) to efficiently count substrings without duplicate characters, reducing brute-force O(n³) to O(n) by leveraging the window of uniqueness property. This is a classic application of the two-pointer sliding window and hashmap idea, which appears in many similar substring/window substring problems such as "Longest substring without repeating characters" and others.
 
+
+### Flashcard
+Sliding window to count substrings with all unique chars—expand right, contract left on duplicates.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

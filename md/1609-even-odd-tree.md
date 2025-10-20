@@ -96,6 +96,10 @@ def isEvenOddTree(root):
 Level order traversal with explicit parity and order constraints on each level. Pattern: *BFS by levels with custom checks.*
 Useful for tree validation where properties alternate or depend on level index, such as Zebra trees, alternate value patterns, or level-dependent filters.
 
+
+### Flashcard
+Traverse the tree level by level; check that even levels have odd, strictly increasing values and odd levels have even, strictly decreasing values.
+
 ### Tags
 Tree(#tree), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

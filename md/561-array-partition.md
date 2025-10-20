@@ -71,6 +71,10 @@ def arrayPairSum(nums):
 
 This problem uses a classic **greedy sorting** pattern: sorting followed by optimal group selection (every other element). This kind of technique appears in maximization problems involving pairs or triplets. Patterns like this apply in other array partitioning or pairing minimization/maximization tasks, especially where ordering enables a simple direct computation.
 
+
+### Flashcard
+Sort the array and sum every second element (the smaller in each pair) to maximize the sum of pair minimums.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Counting Sort(#counting-sort)
 

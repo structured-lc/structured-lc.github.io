@@ -94,6 +94,10 @@ This problem uses the recursive generator pattern—a powerful tool for traversi
 Such recursive-yield logic is common in problems involving tree traversals, nested list flattening, and advanced iteration over composite data.  
 It’s extensible to iterators over tree-like objects, XML/JSON parsing, and more.
 
+
+### Flashcard
+Generate numbers from a nested array using a recursive generator function.
+
 ### Tags
 
 ### Similar Problems

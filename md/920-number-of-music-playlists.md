@@ -90,6 +90,10 @@ def numMusicPlaylists(n: int, goal: int, k: int) -> int:
 This problem is a classic **dynamic programming on combinations** pattern with constraints. The key is to define a 2D DP: “how many ways to create a playlist of length i with j unique songs.”  
 Techniques used here (combining permutations, with DP and constraints) are common in advanced combinatorics and can also be seen in problems about arrangement, assignment, and scheduling with minimum or maximum gaps.
 
+
+### Flashcard
+DP: dp[i][j] = #ways to make i-length playlist with j unique songs, adding either a new or a repeated song at each step.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
 

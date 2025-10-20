@@ -81,6 +81,10 @@ It’s a straightforward O(n) brute-force algorithm, suitable due to small n lim
 The direct count-down approach avoids storing unnecessary data (like a factor list), making it efficient in space.  
 Similar logic applies for finding divisors or factors in other math/number theory problems, and extensions can use factor pair logic for large-scale n.
 
+
+### Flashcard
+Iterate 1..n, count divisors; return the kᵗʰ one found, or -1 if fewer than k divisors.
+
 ### Tags
 Math(#math), Number Theory(#number-theory)
 

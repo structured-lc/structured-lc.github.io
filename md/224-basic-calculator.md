@@ -113,6 +113,10 @@ def calculate(s: str) -> int:
 ### Summary
 This problem is a classic **expression evaluation** scenario. The key pattern used is **stack-based parsing** to handle nested subexpressions, a fundamental parsing technique. This coding approach applies to arithmetic interpreters, compilers, and cases when you must parse or evaluate expressions with nesting and order. The pattern can also be seen in problems involving directory path simplification, evaluating reverse polish notation, and balanced parenthesis validation, among others.
 
+
+### Flashcard
+Parse string with a stack; handle numbers, signs, and parentheses by pushing/popping context and accumulating results.
+
 ### Tags
 Math(#math), String(#string), Stack(#stack), Recursion(#recursion)
 

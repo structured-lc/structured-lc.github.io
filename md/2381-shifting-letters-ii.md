@@ -107,6 +107,10 @@ This problem uses the **difference array / prefix sum** technique for efficient 
 It's a very common interview pattern for bulk range modifications (used for e.g., "Range addition," "Interval increment queries"), and helps reduce brute-force O(n × m) work to O(n + m).  
 Understanding this trick is extremely useful for algorithmic interviews, especially for string or array range update problems.
 
+
+### Flashcard
+Use difference array to mark shift ranges, then compute prefix sum to get net shift per index; apply modulo 26 arithmetic for final characters.
+
 ### Tags
 Array(#array), String(#string), Prefix Sum(#prefix-sum)
 

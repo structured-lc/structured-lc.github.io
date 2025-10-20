@@ -97,6 +97,10 @@ def camelMatch(queries, pattern):
 This problem uses the **two pointers** pattern to match a string pattern within another string, allowing "insertion" of lowercase characters but requiring strict order and presence of all uppercase letters.  
 This pattern is common for problems where you compare two strings with allowed skips or insertions, such as subsequence problems or pattern matching with wildcards.
 
+
+### Flashcard
+Use two pointers to match query and pattern; skip extra lowercase in query, fail if uppercase mismatch.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), String(#string), Trie(#trie), String Matching(#string-matching)
 

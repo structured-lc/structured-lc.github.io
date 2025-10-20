@@ -94,6 +94,10 @@ def customSortString(order: str, s: str) -> str:
 ### Summary
 This problem is a **string sorting/reordering** pattern where a custom order constraint overrides default lexicographical order. The counting map (or arrays if character set is small) is a classic prep step used to optimize multi-scan problems. Similar ideas are useful in **anagrams**, **bucket sort**, and problems with custom comparators. This pattern comes up wherever results have to maintain a prescribed order, not necessarily the default dictionary order.
 
+
+### Flashcard
+Count each character in s, then append characters in order as many times as they appear, followed by leftovers.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sorting(#sorting)
 

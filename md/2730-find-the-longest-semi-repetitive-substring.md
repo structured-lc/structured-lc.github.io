@@ -98,6 +98,10 @@ def longestSemiRepetitiveSubstring(s: str) -> int:
 We applied the **sliding window** pattern, tracking at most one consecutive repeated pair, and dynamically resizing the window to maintain this constraint.  
 This pattern is common for substring/window problems with "at most K" constraints, and is widely applicable for "longest/shortest substring with at most K distinct/repeated elements", "longest subarray with at most K violations", and similar problems.
 
+
+### Flashcard
+Use sliding window to find the longest substring with ≤1 pair of consecutive identical digits—expand right, shrink left if violations occur.
+
 ### Tags
 String(#string), Sliding Window(#sliding-window)
 

@@ -169,6 +169,10 @@ This approach uses a **set-union logic pattern** in SQL, efficiently combining t
 The pattern is common for problems requiring conditional grouping and record selection in SQL, and generalizes to cases where "fallback logic" is applied on groupings.  
 Such logic appears in other "pick primary/secondary roles, fallback to defaults" scenarios in database queries.
 
+
+### Flashcard
+Group by employee_id and apply logic to determine the primary department for each employee.
+
 ### Tags
 Database(#database)
 

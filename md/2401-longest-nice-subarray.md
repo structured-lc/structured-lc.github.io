@@ -103,6 +103,10 @@ This problem reduces to a sliding window with a bitmask. It’s a variant of the
 Common patterns: Sliding window, two pointers, and bitmasking to enforce non-overlapping bits.  
 This pattern appears in substring/subarray problems with uniqueness, mutual exclusion, or disjointness of elements.
 
+
+### Flashcard
+Optimize by using a bitmask to track set bits in the current window, ensuring no overlap in set bits among numbers in the window.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Sliding Window(#sliding-window)
 

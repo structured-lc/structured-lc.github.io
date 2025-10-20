@@ -91,6 +91,10 @@ def circularPermutation(n, start):
 ### Summary
 This solution leverages the **Gray code** generation pattern, a classic bit-manipulation sequence where consecutive numbers differ by one bit. Shifting the code by XOR with `start` rotates the starting position. This approach is efficient and direct whenever the problem requires consecutive *bit-difference-by-1* order, especially for permutations over all binary values. The Gray code trick is broadly useful in combinatorial generation and circuit design.
 
+
+### Flashcard
+Generate n-bit Gray code sequence, then rotate so it starts at 'start' to ensure each consecutive pair differs by one bit.
+
 ### Tags
 Math(#math), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
 

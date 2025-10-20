@@ -112,6 +112,10 @@ This problem is a classic **k-way merge**, most efficiently solved with a min-he
 The pattern used here extends naturally to merging sorted arrays, external sorting, and streaming data sources.  
 It’s a prototypical heap/priority queue and merge-sort application for algorithmic interviews and high-performance data merging.
 
+
+### Flashcard
+Use a min-heap to repeatedly extract the smallest node among k lists, building the merged list in O(n log k) time.
+
 ### Tags
 Linked List(#linked-list), Divide and Conquer(#divide-and-conquer), Heap (Priority Queue)(#heap-priority-queue), Merge Sort(#merge-sort)
 

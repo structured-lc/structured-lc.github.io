@@ -168,6 +168,10 @@ This problem uses the **range maximum query** pattern with **Binary Indexed Tree
 This trick generalizes to many "maximum sum/profit for increasing subsequence/triplet" challenges, especially when input values are bounded. Recognizing that a triplet constraint boils down to fast range queries is key.  
 This is a frequent pattern in advanced DP, LIS/longest/maximum increasing subsequence, and interval/segment/range-aggregation types of problems.
 
+
+### Flashcard
+For each middle index j, use segment tree or binary indexed tree to find max profit left of j with prices[i] < prices[j], and right of j with prices[k] > prices[j]; combine for O(n log n).
+
 ### Tags
 Array(#array), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
 

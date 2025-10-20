@@ -157,6 +157,10 @@ class Solution:
 
 This problem uses the **Linked List Reversal in Segmented Groups** pattern, common in problems like "Reverse Nodes in k-Group". The main challenge is determining group sizes and in-place reversal for only even-length groups. The dummy node and careful pointer updates reduce edge case complexity. Group-based pointer manipulation is a versatile pattern for advanced linked list operations.
 
+
+### Flashcard
+Reverse even-length groups in-place using pointers.
+
 ### Tags
 Linked List(#linked-list)
 

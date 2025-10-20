@@ -132,6 +132,10 @@ def magnificent_sets(n, edges):
 ### Summary
 This problem uses **multi-source BFS**, **graph traversal**, and **component analysis** to maximize group assignments under edge constraints. The idea of checking for bipartition and calculating graph **diameter** is recurrent in many network, scheduling, and coloring problems. Being able to reduce "distance constrained grouping" to BFS layers is a useful graph interview pattern.
 
+
+### Flashcard
+For each connected component, check if bipartite (no odd cycles); if yes, max groups is max BFS depth + 1.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

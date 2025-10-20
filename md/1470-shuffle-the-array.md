@@ -58,6 +58,10 @@ def shuffle(nums, n):
 ### Summary
 A simple array manipulation problem, it reinforces index math and understanding how to interleave two lists. Patterns like two-pointer or index-mapping occur in merging/sort/shuffle-related interview questions.
 
+
+### Flashcard
+Interleave the first n and last n elements: result[2i] = nums[i], result[2i+1] = nums[i+n] for 0 ≤ i < n.
+
 ### Tags
 Array(#array)
 

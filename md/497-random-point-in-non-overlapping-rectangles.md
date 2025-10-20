@@ -112,6 +112,10 @@ class Solution:
 ### Summary
 This solution uses the common technique of *prefix sums + binary search* to perform efficient weighted random selection. This pattern is widely useful, such as for: random sampling from discrete weighted distributions, random interval selection, and allocating probabilities proportionally to group sizes.
 
+
+### Flashcard
+Precompute area of each rectangle, build prefix sum; pick random integer in total area, binary search to find rectangle, then random point inside.
+
 ### Tags
 Array(#array), Math(#math), Binary Search(#binary-search), Reservoir Sampling(#reservoir-sampling), Prefix Sum(#prefix-sum), Ordered Set(#ordered-set), Randomized(#randomized)
 

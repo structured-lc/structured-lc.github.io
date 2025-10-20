@@ -99,6 +99,10 @@ def splitLoopedString(strs):
 This problem uses **string orientation optimization** (greedily set each string to its maximal form), and for each, simulates the effect of making the cut at every possible point in every string.  
 The key pattern is to optimize local choices then globally "cut" the combined result—found often in string problems, rotations, and array manipulations. This approach can be adapted for problems involving finding the optimal rotation or concatenation under constraints.
 
+
+### Flashcard
+For each string, choose its lexicographically larger version (original or reversed), then try all possible cuts to maximize the concatenated result.
+
 ### Tags
 Array(#array), String(#string), Greedy(#greedy)
 

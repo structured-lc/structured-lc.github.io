@@ -79,6 +79,10 @@ def canWin(currentState: str) -> bool:
 This problem is a classic *backtracking with memoization* scenario, closely related to game theory problems like Nim. The recursive structure checks all possible moves, with memoization caching each state to avoid redundant calculation.  
 This approach (and pattern) is reusable in any "two-player, perfect information, alternating move" games where each move can be tried independently and the outcome depends on the resulting subgame: e.g., variants of coin flipping, stone removal, or word games.
 
+
+### Flashcard
+Recursive backtracking with memoization: try all "++" flips, check if opponent has no winning move from resulting state using cached results.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Memoization(#memoization), Game Theory(#game-theory)
 

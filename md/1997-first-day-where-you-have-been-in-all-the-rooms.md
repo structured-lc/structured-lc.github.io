@@ -92,6 +92,10 @@ This problem is a classic example of **DP with dependency on prior computed stat
 The pattern (DP[i] = function of DP[i-1] and DP[nextVisit[i-1]]) is seen frequently in stateful path problems—especially where rules create cycles or alternate progression.  
 This approach can be applied in simulation/robot movement questions, puzzles with return/jump conditions, and more generally, problems needing efficient O(1) state transition between steps.
 
+
+### Flashcard
+Use DP where dp[i] is the first day room i is visited; recurrence involves dp[i] = 2 × dp[i−1] − dp[nextVisit[i−1]] + 2.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

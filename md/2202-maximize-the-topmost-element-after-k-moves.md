@@ -113,6 +113,10 @@ This is a **"simulation + greedy analysis"** problem, but the optimal solution i
 This pattern of simulating constrained sequence of removals and replacements to optimize some value (here, maximum top) is common in **stack manipulation** and game/priority queue problems.  
 Efficiently picking max from a prefix, and handling odd/even moves or "remaining move" parity, comes up in similar questions involving k-removals or k-operations on lists.
 
+
+### Flashcard
+To maximize the top element after k moves, consider removing up to k−1 elements and then adding back the largest available, or simply removing k elements if possible.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

@@ -86,6 +86,10 @@ def intersectionSizeTwo(intervals):
 ### Summary
 This is a classic greedy interval covering problem: the pattern is to sort intervals by their right ends, ensuring we reuse freshly picked points for as many future intervals as possible. The core trick is to keep track of how many of the most recent points overlap with the current interval, adding more points only if necessary. The underlying pattern also fits classical interval covering and set intersection problems seen in scheduling, resource allocation, and covering segments, and can be adapted for broader intersection size requirements.
 
+
+### Flashcard
+Sort intervals by end, then greedily pick the largest possible points to cover each interval with at least two shared points.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

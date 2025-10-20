@@ -55,6 +55,10 @@ def findNumbers(nums):
 ### Summary
 This is a straightforward **counting/digit property** problem, with the core pattern being evaluating an array and accumulating a property using a simple loop or comprehension. Such digit-counting logic is also found in digit sum/parity/divisibility problems.
 
+
+### Flashcard
+Count digits in each number by converting to string and check if the count is even.
+
 ### Tags
 Array(#array), Math(#math)
 

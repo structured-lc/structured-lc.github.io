@@ -73,6 +73,10 @@ def findLongestChain(pairs):
 ### Summary
 This problem uses the **greedy algorithm/interval scheduling** pattern, focusing on sorting by end time to optimize selection. The strategy is similar to activity selection and other interval problems, and the same greedy approach often applies in scheduling and selection problems where overlap constraints exist.
 
+
+### Flashcard
+Sort pairs by end; greedily select next pair whose start > current end, counting maximum chain length.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Sorting(#sorting)
 

@@ -90,6 +90,10 @@ def tallestBillboard(rods):
 ### Summary
 This problem uses a **Dynamic Programming with hashmap state**—a common “DP on difference” trick, useful when partitioning into equal sums/subsets. This approach also appears in subset sum variants, multi-way partitioning, and load balancing. The solution is a nice demonstration of efficient DP state compression and exploiting the problem’s symmetry.
 
+
+### Flashcard
+Use DP mapping difference→max sum; for each rod, update possible differences by adding to either side or skipping.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

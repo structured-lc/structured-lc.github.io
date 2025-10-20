@@ -96,6 +96,10 @@ def maxProduct(root: Optional['TreeNode']) -> int:
 ### Summary
 This is a tree DP / post-order traversal problem. The core is computing subtree sums and maximizing a derived property (subtree_sum × rest). This pattern is useful in subtree-splitting or divide-and-conquer DP.
 
+
+### Flashcard
+Use postorder DFS to compute subtree sums; for each, calculate product of subtree_sum × (total_sum − subtree_sum), and track the maximum.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

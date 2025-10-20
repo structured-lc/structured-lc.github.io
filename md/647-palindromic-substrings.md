@@ -87,6 +87,10 @@ def countSubstrings(s: str) -> int:
 This is a classic **expand-around-center** problem: for each position (and gap), expand outward to discover palindromic substrings.  
 The expand-center pattern is efficient for problems involving palindromic substrings or substrings with symmetry, and is frequently used in other palindrome or substring-related problems. For distinct substrings, use a set; for listing substrings, collect them in a list during expansion.
 
+
+### Flashcard
+Expand around each center (character or gap) to count palindromic substrings in O(n²) time.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming)
 

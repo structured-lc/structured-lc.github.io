@@ -112,6 +112,10 @@ def minimumTimeToKillAllMonsters(power):
 ### Summary
 This problem uses **bitmask DP/state compression**—a key technique for combinatorial optimization over subsets (when n ≤ 20). This is similar to TSP DP (“held-karp” algorithm). It is widely applicable for subset selection with order-dependent costs, such as scheduling, traveling salesman, and similar sequencing problems that have exponential states but compact transitions.
 
+
+### Flashcard
+Employ dynamic programming with state compression using a bitmask to represent killed monsters, tracking days, mana, and gain.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

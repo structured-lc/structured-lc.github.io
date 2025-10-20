@@ -119,6 +119,10 @@ GROUP BY
 ### Summary
 This problem uses the common **SQL aggregation** pattern, specifically `GROUP BY` and `SUM()`, to calculate grouped totals. It demonstrates a basic and reusable approach for any data summary tasks, like summing orders per customer, or hits per page, found in both SQL and analytics contexts.
 
+
+### Flashcard
+Group Sales by product_id and sum quantity for each to get total quantity sold per product.
+
 ### Tags
 Database(#database)
 

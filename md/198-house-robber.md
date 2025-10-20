@@ -83,6 +83,10 @@ def rob(nums):
 ### Summary
 This problem is a classic example of the **dynamic programming** pattern called "maximum sum of non-adjacent elements." The approach only needs to keep track of the last two best solutions, using the `max` function to determine whether to rob a house or skip it. This same underlying pattern appears in variants like "House Robber II" (circle) and some stock trading problems.
 
+
+### Flashcard
+Use dynamic programming: dp[i] = max(dp[i−1], dp[i−2] + nums[i]) to avoid robbing adjacent houses.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

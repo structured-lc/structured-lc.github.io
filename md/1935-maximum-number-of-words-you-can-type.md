@@ -78,6 +78,10 @@ This problem uses the **string parsing + set lookup pattern** to filter out unty
 The main pattern here is **word-level filtering with character exclusion**, which recurs in problems about keyboard input validation, spell checking, or text-based input restrictions.  
 This logic can be adapted to situations where you need to filter, validate, or count elements that *can't* have any forbidden characters/values.
 
+
+### Flashcard
+Count words in text where no letter is in brokenLetters (use a set for O(1) lookups).
+
 ### Tags
 Hash Table(#hash-table), String(#string)
 

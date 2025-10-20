@@ -93,6 +93,10 @@ def subarrayGCD(nums, k):
 ### Summary
 This problem uses the **two-pointer nested loop** technique, updating GCD on the fly as the subarray expands. The main trick is using the **Euclidean algorithm** for GCD and early termination when the GCD cannot meet the criteria. This pattern is common in subarray problems requiring dynamic aggregates (sum, min, GCD, LCM, etc.), and mastering it helps in a wide range of interval challenges.
 
+
+### Flashcard
+For each starting index, incrementally compute GCD while extending right. Break early if GCD drops below k or isn't divisible by k.
+
 ### Tags
 Array(#array), Math(#math), Number Theory(#number-theory)
 

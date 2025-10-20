@@ -113,6 +113,10 @@ def employees_with_deductions(employees, logs):
 The key insight is to aggregate session durations *per employee*, round up each session to nearest minute, sum, and compare to needed hours.  
 This is a classic *aggregation and join* pattern used in SQL and similar problems (attendance, quota fulfillment, etc.), and can be adapted for other HR, attendance, or quota-based queries in databases.
 
+
+### Flashcard
+Group logs by employee_id, sum CEIL(duration_in_seconds / 60) for each session, divide total by 60, and compare to needed_hours using SQL aggregation.
+
 ### Tags
 Database(#database)
 

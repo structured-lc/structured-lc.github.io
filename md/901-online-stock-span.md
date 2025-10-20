@@ -99,6 +99,10 @@ class StockSpanner:
 This problem uses the **monotonic stack** pattern to support efficient span computation for streaming prices.  
 The same approach is applicable to similar "previous greater element" and histogram area problems—any scenario where you need to track previous items that satisfy a monotonic property (e.g., greater, smaller, etc.) for efficient retrieval.
 
+
+### Flashcard
+Use a monotonic stack to track previous prices and their spans; pop while top price ≤ current, summing spans for O(1) amortized per query.
+
 ### Tags
 Stack(#stack), Design(#design), Monotonic Stack(#monotonic-stack), Data Stream(#data-stream)
 

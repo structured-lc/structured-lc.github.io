@@ -101,6 +101,10 @@ This is a classic **sliding window** problem, often called "Longest Substring wi
 The pattern can be generalized for "at most K distinct elements in a subarray/string".  
 Sliding window + hashmap is widely applicable in substring, subarray, and streaming window-type questions.
 
+
+### Flashcard
+Use sliding window to find the longest subarray with at most 2 fruit types; update max length as you expand and contract the window.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
 

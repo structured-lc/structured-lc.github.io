@@ -112,6 +112,10 @@ def searchRange(nums, target):
 This problem is a classic use of the **binary search** pattern, adapted to find leftmost/rightmost bound (not just existence).  
 It’s essential for efficiently handling **range queries** on sorted data. The approach is widely applicable in problems involving searching for the boundaries of a value in a sorted structure—such as finding the starting/ending timestamps, ranges of IDs, or event boundaries.
 
+
+### Flashcard
+Use two binary searches—one for first occurrence, one for last—to find the range of target in sorted array in O(log₂n) time.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

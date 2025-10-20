@@ -104,6 +104,10 @@ def combinationSum4(nums, target):
 This problem uses the **permutation dynamic programming** pattern, specifically bottom-up DP, similar to Coin Change, but with order of elements counting (so inner/outer loop order is swapped).  
 This pattern applies broadly to problems where the *order* of choices **matters**, and you want to count or generate all possible sequences that reach a specific goal using a bag of items repeatedly.
 
+
+### Flashcard
+Use DP where dp[t] = total ways to sum to t; for each t from 1 to target, sum dp[t−num] for all num in nums.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

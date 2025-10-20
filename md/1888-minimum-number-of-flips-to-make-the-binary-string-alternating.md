@@ -129,6 +129,10 @@ def minFlips(s: str) -> int:
 
 This problem uses the **sliding window** technique over a duplicated string, cleverly handling all cyclic shift possibilities in O(n) time. The alternating bit patterns form the check for flips, and the minimum among all possible windows is the answer. The same pattern applies to many cyclic and pattern-matching problems, e.g., finding minimum changes to achieve a repeated pattern within a string.
 
+
+### Flashcard
+Concatenate the string with itself to efficiently check cyclic shifts for alternation.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window)
 

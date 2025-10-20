@@ -222,6 +222,10 @@ def flattenClean(head):
 ### Summary
 This problem demonstrates the application of DFS traversal to linked list structures. The key insight is recognizing that child branches should be processed immediately (depth-first), requiring us to save continuation points and handle pointer manipulation carefully. The solution showcases both recursive and iterative approaches to tree/graph traversal patterns applied to linked list data structures, emphasizing the importance of proper pointer management in doubly linked lists.
 
+
+### Flashcard
+Flatten multilevel list with DFS—process child branches first, then reconnect to main list, using stack for iteration.
+
 ### Tags
 Linked List(#linked-list), Depth-First Search(#depth-first-search), Doubly-Linked List(#doubly-linked-list)
 

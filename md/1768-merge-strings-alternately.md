@@ -77,6 +77,10 @@ def mergeAlternately(word1: str, word2: str) -> str:
 ### Summary
 This problem is a classic string manipulation using the **two pointers** pattern. You increment pointers in both strings and alternate picking their characters. The technique is generalizable to scenarios where multiple sequences must be merged in a patterned fashion and is commonly seen in problems requiring element alternation or merging sorted sequences.
 
+
+### Flashcard
+Merge two strings alternately by picking characters from each in turn until both are exhausted.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

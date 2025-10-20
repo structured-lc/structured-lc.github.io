@@ -69,6 +69,10 @@ def oddCells(m, n, indices):
 ### Summary
 This is standard simulation or counting problem. The key insight is to count row/column increments, then determine odds by math, not by explicit simulation. Pattern is widely applicable for grid operations.
 
+
+### Flashcard
+Track row and column increment counts; a cell is odd if row_count[i] + col_count[j] is odd—count such cells for the answer.
+
 ### Tags
 Array(#array), Math(#math), Simulation(#simulation)
 

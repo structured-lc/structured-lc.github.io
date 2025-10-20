@@ -127,6 +127,10 @@ class Solution:
 ### Summary
 This uses a **postorder DFS traversal** with bottom-up aggregation to compute subtree sums and sizes, then calculates averages efficiently in one pass. The coding pattern (DFS aggregation) is common for tree-based problems where each node’s result depends on its descendants, and is reusable in problems like computing tree diameters, subtree sums, or most frequent subtree sums.
 
+
+### Flashcard
+Post-order DFS returning (sum, count) for each subtree; compute average = sum/count at each node, track maximum globally.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

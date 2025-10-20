@@ -90,6 +90,10 @@ def longestConsecutive(nums):
 ### Summary
 This problem is a classic example of using a hash set for fast lookup and deduplication patterns. The approach avoids repeated work by only starting chains at sequence beginnings, ensuring every integer is considered at most twice. The coding technique translates well to other scenarios involving range detection, hash-based scanning, and is particularly useful in problems building on **set-based O(n)** logic.
 
+
+### Flashcard
+Insert all numbers into a set; for each num, if num-1 isn’t in the set, count the length of the consecutive sequence starting at num for O(n) time.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Union Find(#union-find)
 

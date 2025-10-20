@@ -101,6 +101,10 @@ def numUniqueEmails(emails):
 This problem is classic **string normalization** with a **hash set** for uniqueness.  
 Pattern used here is **data cleaning and de-duplication**—applicable for text processing, log clean-up, and pre-processing for database storage of standardized records.
 
+
+### Flashcard
+Normalize each email by removing dots and ignoring everything after '+' in the local name, then combine with the domain and use a set to count unique results.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string)
 

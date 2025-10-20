@@ -69,6 +69,10 @@ def hammingWeight(n: int) -> int:
 ### Summary
 This problem emphasizes bit manipulation and counting—the classic **bit counting/hamming weight** pattern. The Brian Kernighan’s algorithm is highly efficient, running in proportion to the number of set bits rather than all bits. This pattern recurs in tasks like checking parity, performing bitwise checks, and working with masks in optimization or cryptography problems.
 
+
+### Flashcard
+Count set bits by repeatedly checking n & 1 and right-shifting n, or use n = n & (n−1) to clear lowest set bit each time.
+
 ### Tags
 Divide and Conquer(#divide-and-conquer), Bit Manipulation(#bit-manipulation)
 

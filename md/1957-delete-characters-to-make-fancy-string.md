@@ -76,6 +76,10 @@ def makeFancyString(s: str) -> str:
 This uses a **greedy string scan**—a common interview pattern. We maintain a rolling check of the last two characters to enforce the “no three in a row” rule.  
 This pattern is widely useful: for similar substring constraints, scheduling, or run-length encoding variants.
 
+
+### Flashcard
+Greedily build result by appending each character only if the last two characters differ from current, preventing three consecutive identical characters.
+
 ### Tags
 String(#string)
 

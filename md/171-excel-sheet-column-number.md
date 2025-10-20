@@ -74,6 +74,10 @@ def titleToNumber(columnTitle: str) -> int:
 ### Summary
 The problem is a classic **base conversion** pattern, commonly seen in variants such as number-to-string and string-to-number questions (with a custom mapping). It’s often encountered in problems dealing with spreadsheets, encodings, or anywhere a non-standard numeral system exists. Recognizing its base structure and how to generalize the conversion is the key insight for robust solutions.
 
+
+### Flashcard
+Convert the title to a number by mapping each letter to 1-26 and accumulating res = res × 26 + val for each character.
+
 ### Tags
 Math(#math), String(#string)
 

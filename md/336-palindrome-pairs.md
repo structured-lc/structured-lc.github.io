@@ -103,6 +103,10 @@ def palindromePairs(words):
 ### Summary
 This solution uses a *hashmap* for O(1) lookups and breaks down each word into all possible prefix/suffix splits to find matching palindrome combinations. This is an application of the “prefix/suffix pairing and reverse lookup” coding pattern, commonly seen in string manipulation and palindrome substring problems. Variations of this approach can be used in problems requiring pairing based on string transforms or symmetry.
 
+
+### Flashcard
+For each word, split into all prefix/suffix pairs; if one part is a palindrome, check if the reverse of the other part exists elsewhere.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Trie(#trie)
 

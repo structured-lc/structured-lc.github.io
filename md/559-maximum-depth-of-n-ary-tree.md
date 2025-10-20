@@ -101,6 +101,10 @@ def maxDepth(root):
 This problem is a classic **Tree/DFS** pattern. The key is recursive post-order traversal to compute and compare depths.  
 This coding pattern recurs frequently in tree problems: finding max/min path, validating structure, evaluating subtrees.
 
+
+### Flashcard
+Use DFS to recursively compute the maximum depth among all children; depth of a leaf is 1, and an empty tree is 0.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
 

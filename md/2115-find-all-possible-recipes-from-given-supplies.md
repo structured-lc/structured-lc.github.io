@@ -110,6 +110,10 @@ def findAllRecipes(recipes, ingredients, supplies):
 ### Summary
 This problem is a classic application of **topological sort** or **dependency resolution**. It uses a breadth-first approach to build up what's possible from available supplies and tracks recipe prerequisites in graph form. The pattern is common in build systems, package managers, and course scheduling problems. This interview pattern is useful for any scenario where there are tasks with prerequisite dependencies.
 
+
+### Flashcard
+Build a dependency graph and use topological sort (BFS/DFS) to determine which recipes can be made from supplies.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Graph(#graph), Topological Sort(#topological-sort)
 

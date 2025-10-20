@@ -84,6 +84,10 @@ The approach uses a classic **hash map counting pattern**, grouping by value and
 This pattern is widely used for "frequency" or "pair difference" problems.  
 Knowing how to apply hash maps for such counting/aggregation helps in many LeetCode array/sequence questions.
 
+
+### Flashcard
+Count frequencies; for each x, if x+1 exists, sum counts of x and x+1 for harmonious subsequence.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Sorting(#sorting), Counting(#counting)
 

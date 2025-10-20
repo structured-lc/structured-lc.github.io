@@ -95,6 +95,10 @@ def decode(encoded):
 ### Summary
 This is a classic bit manipulation problem leveraging the properties of XOR and the uniqueness of permutations. By using the cumulative XOR trick and rebuilding with prefix XORs, we recover the permutation in O(n) time and space. This pattern—recovering data by exploiting XOR chain properties and information redundancy—is useful in problems involving hidden state encoding, cryptography, or prefix-suffix computations.
 
+
+### Flashcard
+XOR all elements 1 to n to get total XOR; XOR odd-indexed encoded values to get even-position XOR; divide to find first, then decode rest.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

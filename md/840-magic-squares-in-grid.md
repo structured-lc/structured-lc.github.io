@@ -107,6 +107,10 @@ The brute-force O(n\*m) strategy is efficient due to grid size limits.
 Key patterns: fixed-size sliding window, subgrid checks, uniqueness via counting/sorting, and constant-time validation steps.  
 This technique applies to many grid problems, such as detecting submatrices with certain properties, Sudoku-like puzzles, and local region analysis.
 
+
+### Flashcard
+Check every 3×3 subgrid; if it contains all digits 1–9 once and every row, column, diagonal sums to 15, count as magic square.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Matrix(#matrix)
 

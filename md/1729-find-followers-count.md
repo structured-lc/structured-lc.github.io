@@ -106,6 +106,10 @@ ORDER BY
 ### Summary
 This problem uses the **SQL GROUP BY and aggregate pattern** to quickly process counting/grouping problems. It’s a standard frequency/counts question that also commonly appears in interview questions on user engagement, logs statistics, or social media analytics. Variations can include showing zeros using OUTER JOINs, reversing the aggregation, or deduplicating with DISTINCT.
 
+
+### Flashcard
+Use SQL GROUP BY user_id and COUNT(follower_id) to aggregate followers per user; include users with zero followers using LEFT JOIN or UNION.
+
 ### Tags
 Database(#database)
 

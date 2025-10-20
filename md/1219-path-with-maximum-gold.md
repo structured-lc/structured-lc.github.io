@@ -109,6 +109,10 @@ This problem is a classic example of **backtracking/DFS** with pruning.
 - You recursively explore all valid paths while marking and unmarking visited cells to avoid cycles.
 - This pattern is common for **grid traversal** problems (e.g., word search, island count, robot movement) and is broadly applicable wherever you need to enumerate all solutions with path constraints.
 
+
+### Flashcard
+For each gold cell, use DFS to explore all paths collecting gold, marking cells as visited to avoid revisiting.
+
 ### Tags
 Array(#array), Backtracking(#backtracking), Matrix(#matrix)
 

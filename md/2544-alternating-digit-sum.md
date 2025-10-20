@@ -73,6 +73,10 @@ def alternateDigitSum(n: int) -> int:
 ### Summary
 This problem uses a **single-pass iteration pattern** with basic alternation logic. It’s a good example of **digit-by-digit processing** and simple sign alternation. This pattern can also be applied to other problems involving alternate sign sums or digit manipulations, such as "subtract the sum of even and odd positioned digits" or similar integer digit transforms.
 
+
+### Flashcard
+Iterate digits left to right, alternating signs, and sum the results—convert to string for easy digit access.
+
 ### Tags
 Math(#math)
 

@@ -89,6 +89,10 @@ def minimumDeletions(nums):
 ### Summary
 This approach uses the classic **two pointers or scanning** pattern, and leverages the fact that deletions can only happen from the ends. It reduces the problem to checking three scenarios and picking the minimum, which is efficient and easy to generalize. This pattern applies to any "delete from ends" optimal reduction problem, commonly seen in greedy algorithms and array manipulation interview questions.
 
+
+### Flashcard
+Find indices of min and max; answer is min of: both from left, both from right, or one from each end.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

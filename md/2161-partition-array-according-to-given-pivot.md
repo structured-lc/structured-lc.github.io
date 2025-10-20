@@ -78,6 +78,10 @@ def pivotArray(nums, pivot):
 ### Summary
 This problem uses the stable, multi-pointer partitioning pattern: collect elements into multiple lists/buckets and merge. The approach is similar to "Dutch National Flag" or "Sort Colors" but stability is required, so extra space makes the logic straightforward and safe. This coding pattern is useful whenever you need to partition while maintaining original order.
 
+
+### Flashcard
+Partition nums into three lists (less, equal, greater than pivot), then concatenate—preserves relative order and runs in O(n) time.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Simulation(#simulation)
 

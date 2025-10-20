@@ -114,6 +114,10 @@ def snailTraversal(nums, rowsCount, colsCount):
 ### Summary
 This problem uses the **matrix traversal with alternate direction columns pattern**—a zigzag or "snail" fill. Similar approaches appear in printing/constructing 2D data with serpentine or wave order, and in problems that need controlled directional traversal by index parity. Techniques here apply anywhere staggered row/column iteration is needed, and are especially common in matrix or board-based coding problems.
 
+
+### Flashcard
+Fill a 2D array in a zigzag (snail) pattern: top-down for even columns, bottom-up for odd columns.
+
 ### Tags
 
 ### Similar Problems

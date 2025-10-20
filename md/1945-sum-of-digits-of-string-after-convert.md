@@ -95,6 +95,10 @@ def getLucky(s: str, k: int) -> int:
 ### Summary
 You map each character to its alphabet position to get a long digit string, then repeat sum-of-digits transformations. This is a **simulation problem** involving character encoding and repeated digital sum, showing up in digital root and digit manipulation tasks. The pattern is applicable to problems involving repeated transformation or simulations with small constraints.
 
+
+### Flashcard
+Convert letters to digits, concatenate, then sum digits k times (no optimization needed beyond brute force).
+
 ### Tags
 String(#string), Simulation(#simulation)
 

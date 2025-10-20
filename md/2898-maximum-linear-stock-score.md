@@ -89,6 +89,10 @@ This problem uses the **grouping by invariant** pattern, exploiting that prices[
 This is a classic case for **hash map grouping by key**.  
 The pattern appears in problems involving sequences with fixed difference, or where a property is maintained over indices or values — similar to arithmetic subsequence or longest equal-difference subarray problems.
 
+
+### Flashcard
+For each price[i], compute price[i] - i; group indices with same value and sum their prices for the maximum linear score.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

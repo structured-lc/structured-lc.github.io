@@ -66,6 +66,10 @@ class SubrectangleQueries:
 ### Summary
 This problem is about balancing update and query efficiency, a hallmark of 2D range query/interview patterns. Logging updates is ideal when updates far outnumber queries; segment trees or 2D difference techniques are used for more frequent/demanding queries.
 
+
+### Flashcard
+Log each subrectangle update as (row₁, col₁, row₂, col₂, val); for getValue(i,j), scan updates in reverse to find the latest covering (i,j), else return original.
+
 ### Tags
 Array(#array), Design(#design), Matrix(#matrix)
 

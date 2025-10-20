@@ -64,6 +64,10 @@ Hint: This shifts the problem to a lex order traversal of all binary strings, ch
 ### Summary  
 This problem uses a smart bit-flipping strategy (pigeonhole principle) to guarantee a unique solution efficiently. The pattern is a simple constructive approach, common in problems requiring constructing a counterexample. Similar constructive logic appears in problems that require you to find something guaranteed to exist due to the constraints (e.g., missing numbers, impossible configurations). The approach is both time- and space-efficient, avoiding brute-force enumeration.
 
+
+### Flashcard
+Construct a binary string by flipping the iᵗʰ bit of the iᵗʰ string (diagonal argument) to guarantee uniqueness.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Backtracking(#backtracking)
 

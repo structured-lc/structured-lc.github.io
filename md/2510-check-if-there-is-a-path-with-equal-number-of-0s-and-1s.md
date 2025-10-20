@@ -104,6 +104,10 @@ This problem uses the **DP on grids with state compression via difference (“ba
 It’s especially applicable where paths’ “global” properties (like equal numbers or sums) can be tracked recursively and reused via DP memoization.  
 Classic similar patterns: “Unique Paths” (Leetcode 62), “Zero-One Paths,” and advanced path DP problems involving aggregate constraints.
 
+
+### Flashcard
+Use DP tracking balance (count₀ - count₁) at each cell; return true if balance 0 is reachable at (m-1, n-1) with valid path lengths.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

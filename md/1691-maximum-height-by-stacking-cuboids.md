@@ -72,6 +72,10 @@ def maxHeight(cuboids):
 ### Summary
 This is an extension of the LIS/box-stacking DP pattern — standardize choices, sort, dp for best stacking ending at each cuboid. This is a classic and transferable technique in "stacking/subsequence under constraints" problems.
 
+
+### Flashcard
+Maximum Height by Stacking Cuboids
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
 

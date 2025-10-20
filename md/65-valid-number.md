@@ -129,6 +129,10 @@ def isNumber(s: str) -> bool:
 ### Summary
 This problem uses the **parsing pattern** to validate number syntax, with careful state-tracking for decimal points, exponents, and digit requirements. It's a classic for string parsing and is seen in input validation or lightweight interpreters. The main challenge lies in proper handling of all corner cases and not allowing forbidden sequences.
 
+
+### Flashcard
+Parse the string, handling optional sign, digits, decimal, and exponent, ensuring valid format for each component.
+
 ### Tags
 String(#string)
 

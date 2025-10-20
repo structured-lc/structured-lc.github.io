@@ -119,6 +119,10 @@ def longestDupSubstring(s):
 ### Summary
 This problem uses the **binary search + rolling hash (Rabin-Karp)** pattern to check for the existence of duplicated substrings efficiently. It’s a classic example of how substring searches in strings are optimized—other problems like "repeated substring pattern," "longest repeated substring using Trie/Suffix Array," and plagiarism detection use similar logic. Binary search divides possibilities, and rolling hash enables fast substring comparison.
 
+
+### Flashcard
+Binary search substring length; for each length, use rolling hash to check for duplicates in O(n), return longest found.
+
 ### Tags
 String(#string), Binary Search(#binary-search), Sliding Window(#sliding-window), Rolling Hash(#rolling-hash), Suffix Array(#suffix-array), Hash Function(#hash-function)
 

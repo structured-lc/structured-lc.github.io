@@ -89,6 +89,10 @@ def distinctEchoSubstrings(text):
 ### Summary
 This problem uses the **rolling hash/Rabin-Karp** pattern for fast substring equality checks, classic for substring search or duplicate substring problems. Core concept: reduce O(n³) brute-force to O(n²) by using precomputed hashes. This pattern is widely applicable in string matching, substring distinctness, and plagiarism detection problems. Optimizations like double-hashing or suffix automatons can make solutions robust for very large strings.
 
+
+### Flashcard
+Use rolling hash to compare all even-length substrings' halves efficiently, adding matches to a set for uniqueness.
+
 ### Tags
 String(#string), Trie(#trie), Rolling Hash(#rolling-hash), Hash Function(#hash-function)
 

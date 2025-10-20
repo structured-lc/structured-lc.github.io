@@ -120,6 +120,10 @@ def rangeSumBST(root, low, high):
 ### Summary
 This problem is a classic example of optimized BST traversal with range pruning—a fundamental interview pattern. By leveraging BST properties, unnecessary work is avoided. This recursive pruning approach also applies to finding/counting nodes within range, or other tree windowing questions. The tree recursion + pruning pattern is a common one found throughout coding interviews involving search and traversal.
 
+
+### Flashcard
+Traverse BST; skip left if node.val < low, skip right if node.val > high, else sum node and both subtrees.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

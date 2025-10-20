@@ -106,6 +106,10 @@ def combinationSum(candidates, target):
 ### Summary
 This problem uses the **backtracking / DFS** pattern to exhaustively search all combinations of numbers that sum up to a target, allowing each number to be reused. This coding pattern is commonly applied to other "combination" and "subset" style problems, and can be adapted for variants like using each element once (subset sum), or where input may have duplicates.
 
+
+### Flashcard
+Use backtracking DFS to explore all combinations; pick/reject each candidate, recurse, and add combination if sum matches target.
+
 ### Tags
 Array(#array), Backtracking(#backtracking)
 

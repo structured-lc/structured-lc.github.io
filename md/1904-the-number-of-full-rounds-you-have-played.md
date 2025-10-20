@@ -99,6 +99,10 @@ def numberOfRounds(startTime: str, finishTime: str) -> int:
 This problem uses an **interval alignment** and **greedy count** technique. "Rounding" the times to valid quarter hours avoids brute force looping.  
 The coding pattern is common in time-based scheduling and can be applied to any regular interval counting or booking system (calendar, logs, shifts, etc.).
 
+
+### Flashcard
+Convert times to minutes, round start up and finish down to nearest 15-minute marks, then count full 15-minute intervals between them.
+
 ### Tags
 Math(#math), String(#string)
 

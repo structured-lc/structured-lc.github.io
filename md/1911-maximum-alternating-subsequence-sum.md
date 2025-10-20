@@ -90,6 +90,10 @@ This problem uses the classic DP "pick or skip" pattern for subsequences, with s
 Similar state tracking patterns appear in problems like "House Robber" and "Stock Buy and Sell" where decisions for next step depend on past choices and alternate patterns.  
 The linear time DP approach is efficient and optimal for large input sizes.
 
+
+### Flashcard
+Track two DP states: max alternating sum ending at an even or odd index, updating based on whether the current number is added or skipped.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

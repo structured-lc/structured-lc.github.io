@@ -199,6 +199,10 @@ def modifyGraphEdges(n, edges, source, destination, target):
 ### Summary
 This problem combines **shortest path search (Dijkstra)** with **one-shot graph modification** of certain edges for target reachability. The approach is a greedy, carefully validated local adjustment, common in constrained path-reweighting problems. The pattern appears in network routing, constraint-based graph design, and minimum-cost path construction with modifiable elements.
 
+
+### Flashcard
+Run Dijkstra twice: first with all −1 edges set to infinity to check if path > target (impossible case); then binary search or greedily adjust −1 edges to make shortest path exactly target, using Dijkstra after each adjustment.
+
 ### Tags
 Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
 

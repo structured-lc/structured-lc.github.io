@@ -114,6 +114,10 @@ def hasAllCodes(s, k):
 ### Summary
 This problem uses the classic **sliding window with a lookup structure** (set/bitmask/boolean array) to efficiently check substring presence. The pattern is common in substring/sequence coverage questions and applies well to other problems requiring detection of all possible patterns of fixed size in a string or stream. Early termination checks and masking techniques are important optimization strategies for optimal runtime and memory usage when k is bounded.
 
+
+### Flashcard
+Slide a window of size k over s, collect all unique substrings; return true if set size is 2ᵏ.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Rolling Hash(#rolling-hash), Hash Function(#hash-function)
 

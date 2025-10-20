@@ -88,6 +88,10 @@ def findSpecialInteger(arr):
 ### Summary
 This problem uses a **sorted array counting/window** approach—by checking at likely candidates' key positions, we can locate the element in O(log n) rather than O(n). This pattern applies to sorted array majority/minority queries frequently seen in interviews.
 
+
+### Flashcard
+Check occurrences of elements at positions n/4, n/2, and 3n/4 in the sorted array to find an element appearing more than 25%.
+
 ### Tags
 Array(#array)
 

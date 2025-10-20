@@ -67,6 +67,10 @@ def findCenter(edges):
 ### Summary
 The pattern is to leverage the **uniqueness of the center in a star graph**, allowing you to check just the first two edges' overlap for the answer. This type of reasoning—**exploit graph/topology constraints for O(1) logic**—is common in "find the special node" or signature property problems, and appears in trees/graphs with similar characteristics elsewhere.
 
+
+### Flashcard
+Find the center of a star graph by checking which node appears in the first two edges.
+
 ### Tags
 Graph(#graph)
 

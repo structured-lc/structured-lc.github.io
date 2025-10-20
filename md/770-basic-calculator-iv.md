@@ -179,6 +179,10 @@ def basicCalculatorIV(expression, evalvars, evalints):
 ### Summary
 This problem applies the *expression parsing* and *evaluation* pattern, including custom operator precedence, variable/value substitution, and canonical result ordering. The techniques (tokenization, recursive descent parser, combining like terms using hash maps/Counters, dealing with operator precedence) are critical for custom interpreters, compilers, and advanced calculators. This pattern generalizes to polynomial arithmetic, symbolic algebra, and any context where parsing followed by structured domain-specific evaluation is needed.
 
+
+### Flashcard
+Parse and tokenize expression, substitute variables, and combine like terms using a map from variable tuples to coefficients.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), String(#string), Stack(#stack), Recursion(#recursion)
 

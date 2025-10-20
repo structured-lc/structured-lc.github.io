@@ -82,6 +82,10 @@ def differenceOfSum(nums):
 ### Summary
 This problem is a classic “digit sum” simulation, often used as an exercise in math and number manipulation. The coding pattern is simple iteration, digit extraction using `%` and integer division, and accumulating the results. This approach is also seen in problems involving digit root, checksum, or manipulating the representation of numbers.
 
+
+### Flashcard
+Compute element sum and digit sum (sum of all digits in all numbers), return their absolute difference—single pass through the array.
+
 ### Tags
 Array(#array), Math(#math)
 

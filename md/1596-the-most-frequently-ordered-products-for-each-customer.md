@@ -179,6 +179,10 @@ def most_frequent_products(customers, orders, products):
 ### Summary
 This problem is a typical example of group-by aggregation and selecting items by max value (for each key). The pattern here is **map grouping + max extraction** (“top-k or most frequent per group”), commonly needed in analytics, logs, and recommendation systems. The imperative coding pattern (dictionary of counters per group) is broadly applicable in histogram and summary statistics tasks.
 
+
+### Flashcard
+For each customer, count orders per product, then select products with the maximum count per customer; group-by and aggregation.
+
 ### Tags
 Database(#database)
 

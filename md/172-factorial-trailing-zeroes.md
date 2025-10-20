@@ -82,6 +82,10 @@ This solution is a classic use of **factor counting**, specifically for powers o
 No need to compute large factorials; instead, use **arithmetic + loop** to build a logarithmic-time answer.  
 Similar patterns occur in combinatorics and problems that involve divisibility/counting within large products.
 
+
+### Flashcard
+Count the number of times 5 divides into n, n/5, n/25, etc.; sum these to get the number of trailing zeroes in n!.
+
 ### Tags
 Math(#math)
 

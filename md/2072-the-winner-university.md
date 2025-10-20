@@ -140,6 +140,10 @@ The coding pattern is straightforward: filtering, counting, and then using condi
 Such patterns occur frequently in leaderboard, statistics, voting, and winner-determination problems across datasets.  
 No extra data structures beyond counters are needed, and the approach is both simple and efficient for large input.
 
+
+### Flashcard
+Compare counts of excellent students in each table using aggregation.
+
 ### Tags
 Database(#database)
 

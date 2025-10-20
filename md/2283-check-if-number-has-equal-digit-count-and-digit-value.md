@@ -97,6 +97,10 @@ def digitCount(num: str) -> bool:
 ### Summary
 This problem demonstrates the **counting/frequency table** pattern, commonly used for verifying conditions based on digit/letter frequency in a fixed-size input. This approach (count and verify) is broadly applicable to problems involving digit, letter or element frequencies, and is especially effective when there is a fixed range (here, digits 0–9). Similar techniques are used in anagram problems, palindrome checks, and digit-based puzzles.
 
+
+### Flashcard
+For each digit i, count its occurrences in the string and compare to the value at num[i]; all must match.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

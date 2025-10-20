@@ -73,6 +73,10 @@ def maxProfit(prices):
 ### Summary
 This problem uses the greedy pattern: iterate over the array to maintain the minimum price found and update the maximum profit accordingly. This pattern of tracking a running min/max is common in problems involving one-pass optimal substructure, such as maximum subarray sums (Kadane’s Algorithm), or when computing local peaks and valleys.
 
+
+### Flashcard
+Track minimum price seen so far while iterating, calculating potential profit at each day as current price minus minimum, keeping maximum profit found.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

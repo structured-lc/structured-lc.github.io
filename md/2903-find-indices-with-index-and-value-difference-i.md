@@ -89,6 +89,10 @@ The main insight is that—within the subarrays determined by indexDifference—
 This pattern is widely used in problems like "Best time to buy and sell stock", "Max/Min of all sliding windows", etc.  
 The code efficiently reduces the brute-force O(n²) solution to a linear O(n) one using a greedy scan and constant tracking.
 
+
+### Flashcard
+For each index i ≥ indexDifference, check if nums[i] differs by at least valueDifference from min/max in nums[0…i-indexDifference]; scan with sliding window for O(n) time.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers)
 

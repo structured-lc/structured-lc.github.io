@@ -68,6 +68,10 @@ def countSubstrings(s, t):
 ### Summary
 Sliding window plus brute force substring expansion is a common approach for substring comparison problems, especially when only one mismatch is allowed. Recognizing the alignment and early stopping with one difference is key for acceptable performance.
 
+
+### Flashcard
+Fix starting positions in two strings and expand substrings that differ by at most one character.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming), Enumeration(#enumeration)
 

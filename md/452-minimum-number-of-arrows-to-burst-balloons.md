@@ -80,6 +80,10 @@ def findMinArrowShots(points):
 ### Summary
 This problem uses a **greedy algorithm** to minimize the number of arrows by always targeting the end of the earliest-ending interval not yet burst. The main insight is that **covering overlapping intervals together** is optimal. This is a classic *interval scheduling/covering* pattern, used frequently for tasks such as activity selection, meeting room usage, or video streaming segment optimizations.
 
+
+### Flashcard
+Sort balloons by end coordinate, then greedily shoot arrows at the earliest end to burst all overlapping balloons with one arrow.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

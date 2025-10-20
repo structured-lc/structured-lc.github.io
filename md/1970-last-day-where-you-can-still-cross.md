@@ -120,6 +120,10 @@ def latestDayToCross(row: int, col: int, cells: List[List[int]]) -> int:
 ### Summary
 This problem uses the classic **binary search + BFS/DFS** pattern to find an earliest/latest day for a conditional path. The main twist is efficient simulation of a time-evolving grid and checking for dynamic connectivity. It is a fundamental grid traversal variation often seen in maze, island, or percolation-type interview questions. This problem is great practice for binary search on answers and flood/DFS/BFS patterns.
 
+
+### Flashcard
+Binary search on day d; for each candidate day simulate grid with cells flooded up to day d, then BFS/DFS to check if path exists from top row to bottom row.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
 

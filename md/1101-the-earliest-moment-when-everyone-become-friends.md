@@ -119,6 +119,10 @@ def earliestAcq(logs, n):
 ### Summary
 This problem uses the **Union-Find (Disjoint Set Union)** pattern, a classic approach for dynamic graph connectivity questions. By sorting the logs and merging groups as friendships form, we can efficiently find the earliest timestamp where everyone is in one group. This coding pattern is widely applicable in network connectivity, Kruskal’s algorithm for Minimum Spanning Tree, and dynamic component queries in graphs.
 
+
+### Flashcard
+Sort logs by timestamp, use Union-Find to merge friendships, return timestamp when component count reaches 1.
+
 ### Tags
 Array(#array), Union Find(#union-find), Sorting(#sorting)
 

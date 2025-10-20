@@ -108,6 +108,10 @@ This problem is an application of the **partial function pattern** using array m
 It’s a **functional programming pattern** useful for currying, callbacks, and event handler binding.  
 Variations appear in languages and frameworks allowing **partial application**, and the concept is foundational in JavaScript and Python FP-style code.
 
+
+### Flashcard
+Replace each "_" in args with values from restArgs in order, then append any leftover restArgs, and call fn with the final argument list.
+
 ### Tags
 
 ### Similar Problems

@@ -128,6 +128,10 @@ class AutocompleteSystem:
 ### Summary
 This solution uses a classic **Trie** augmented with sets/heaps and a hashmap for frequency counting—a pattern common in autocomplete, prefix search, and word suggestion engine problems. The patterns used here apply broadly to other string matching applications such as spell-check, search engines, and command line suggestions.
 
+
+### Flashcard
+Store sentences in a Trie; for each prefix, traverse Trie to efficiently find top 3 matches by frequency and lexicographical order.
+
 ### Tags
 String(#string), Depth-First Search(#depth-first-search), Design(#design), Trie(#trie), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Data Stream(#data-stream)
 

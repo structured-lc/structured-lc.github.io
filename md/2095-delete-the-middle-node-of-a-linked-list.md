@@ -116,6 +116,10 @@ def deleteMiddle(head: ListNode) -> ListNode:
 ### Summary
 This problem is a classic **two-pointer/tortoise-and-hare** technique for single-pass mid-point detection. The solution modifies pointers in-place and doesn't require extra memory, so it's both efficient and a common pattern in linked list manipulation—useful for problems like finding palindromes in lists, cycle detection, and splitting lists at midpoint.
 
+
+### Flashcard
+Use fast and slow pointers to find the middle node in one pass, then delete it by adjusting pointers.
+
 ### Tags
 Linked List(#linked-list), Two Pointers(#two-pointers)
 

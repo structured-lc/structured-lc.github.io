@@ -137,6 +137,10 @@ This problem uses the **sliding window with frequency dictionary** pattern, but 
 The modular exponentiation technique (binary exponentiation) is necessary to efficiently compute large exponents under modulo.  
 This technique/general approach is common for problems involving **windowed aggregations with dynamic frequency-based computations** (such as most frequent element in window, windowed power sums, etc).
 
+
+### Flashcard
+Sliding window of size k with frequency map; track score incrementally by updating x^freq terms when element enters/leaves, maintain maximum score seen.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Stack(#stack), Sliding Window(#sliding-window)
 

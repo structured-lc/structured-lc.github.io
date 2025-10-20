@@ -73,6 +73,10 @@ def squareIsWhite(coordinates: str) -> bool:
 ### Summary
 This problem is a classic **parity check pattern**—determining a property (here, color) based on whether the sum of two indices is odd or even. The approach generalizes to any 2D problem involving checkerboard‐like patterns (e.g. coloring grids, tiling). The resulting code is concise and easy to reason about, relying on ASCII codes and integer parity.
 
+
+### Flashcard
+Convert column letter to number; sum (column + row); return true if sum is odd (white square), false if even (black square).
+
 ### Tags
 Math(#math), String(#string)
 

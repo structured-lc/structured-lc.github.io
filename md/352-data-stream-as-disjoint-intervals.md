@@ -157,6 +157,10 @@ class SummaryRanges:
 ### Summary
 This problem uses the **interval merge** pattern and ordered data structures, such as binary search within a sorted list, to maintain a compact, always-updated set of merged disjoint intervals. This pattern is common in interval scheduling, calendar management, and range queries where endpoints may be dynamically inserted or merged.
 
+
+### Flashcard
+Maintain sorted list of disjoint intervals; on addNum, binary search insertion point and merge with adjacent/overlapping intervals in O(n) worst case per add.
+
 ### Tags
 Binary Search(#binary-search), Design(#design), Ordered Set(#ordered-set)
 

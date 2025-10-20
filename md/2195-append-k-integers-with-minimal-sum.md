@@ -95,6 +95,10 @@ def minimalKSum(nums, k):
 ### Summary
 This problem uses the **greedy pattern**—pick the smallest possible valid numbers, exploiting arithmetic progressions for fast summation. It combines sorting, deduplication, and interval arithmetic. This pattern for finding missing values or intervals shows up frequently in math-based greedy and set cover problems. It is also useful for minimum sum/subset problems or where "avoid duplication" in a set is required.
 
+
+### Flashcard
+Sort and deduplicate nums; scan from 1, picking k missing numbers not in nums, using arithmetic progression for sum.
+
 ### Tags
 Array(#array), Math(#math), Greedy(#greedy), Sorting(#sorting)
 

@@ -132,6 +132,10 @@ This problem demonstrates the **adjacent comparison** pattern: comparing each el
 The classic approach is a **self-join** in SQL or a **single-pass** in Python after sorting.  
 This is a common coding/interview pattern applicable in scenarios like finding increasing trends, detecting new peaks, or diff-based comparisons in time-series data.
 
+
+### Flashcard
+Self-join Weather table on recordDate = previous date + 1, select days where temperature > previous day's.
+
 ### Tags
 Database(#database)
 

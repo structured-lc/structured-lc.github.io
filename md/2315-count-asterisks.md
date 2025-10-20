@@ -82,6 +82,10 @@ We applied the **stateful linear scan** (flag-tracking) approach—typical for s
 This pattern is common in parsing and "between delimiters" substring counting, such as balanced parentheses, tags, or quotes.  
 It's efficient, simple, and easily adaptable to similar string-processing tasks.
 
+
+### Flashcard
+Count '*' only outside pairs of '|'; toggle a flag at each '|' to track inclusion/exclusion.
+
 ### Tags
 String(#string)
 

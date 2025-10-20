@@ -81,6 +81,10 @@ def maximumGroups(grades):
 ### Summary
 This problem boils down to finding the largest k such that 1 + 2 + ... + k ≤ n, which is a triangular number bound. It’s a "greedy grouping" pattern that appears in many partition/greedy sum problems—a classic interview topic that tests insight into number summations and translation of a seemingly complex grouping problem to a simple numeric formula.
 
+
+### Flashcard
+Maximum groups equals the largest integer m where m × (m+1)/2 ≤ n (the total number of students).
+
 ### Tags
 Array(#array), Math(#math), Binary Search(#binary-search), Greedy(#greedy)
 

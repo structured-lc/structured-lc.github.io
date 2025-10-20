@@ -165,6 +165,10 @@ def recoverTree(root):
 ### Summary
 This solution uses the **in-order traversal** property of BSTs to detect and fix misplaced nodes in-place with O(h) space and O(n) time. The core idea—identifying inverted pairs during in-order traversal—is a classic interview pattern for problems involving sorted order in BSTs. The method is applicable in other contexts where you need to restore order with limited modifications, especially in binary tree and BST correctness/restoration problems.
 
+
+### Flashcard
+Inorder traverse to find two nodes out of order; swap their values to recover the BST without extra space.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

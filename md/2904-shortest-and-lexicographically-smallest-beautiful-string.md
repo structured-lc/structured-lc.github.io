@@ -106,6 +106,10 @@ def shortestBeautifulSubstring(s: str, k: int) -> str:
 ### Summary
 This problem is a classic **two-pointer sliding window** application on strings: maintaining a dynamic window while enforcing constraints (here, count of '1's). The pattern is widely used for substring/window problems related to "at most", "exactly", or "at least" constraints on character or value frequency, such as "minimum window substring", "longest substring with at most k distinct characters", etc. Key to optimality is pruning search early and avoiding unnecessary substring enumeration.
 
+
+### Flashcard
+Use sliding window to find shortest substring with exactly k ones; among those, select the lexicographically smallest.
+
 ### Tags
 String(#string), Sliding Window(#sliding-window)
 

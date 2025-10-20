@@ -102,6 +102,10 @@ def minimumCosts(regular, express, expressCost):
 ### Summary
 This problem uses the **2D state Dynamic Programming pattern** with **"min cost to reach each stop in each mode"**. It's a classic case of modeling route selection with *stateful transitions* and is related to shortest path or min-cost multi-choice DP. The pattern is widely applicable in similar problems involving stateful route selection, like grid robots with different movement costs, or ticket purchase planning with various fare options.
 
+
+### Flashcard
+Use DP with two states per stop (regular/express); transition by adding travel cost plus switching cost if changing lines. O(n) time, O(1) space.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

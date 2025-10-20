@@ -122,6 +122,10 @@ This problem uses the **two pointer / sliding window** technique to efficiently 
 It's a common pattern for subarray problems where extensions to the right preserve some monotonic property.  
 This pattern is widely used for "number of subarrays with at least at most/exactly K (...) elements" and is efficient for large arrays.
 
+
+### Flashcard
+Identify all positions of the global maximum, then count subarrays containing at least k of these positions using combinatorics on index gaps.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window)
 

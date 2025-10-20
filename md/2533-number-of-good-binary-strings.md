@@ -81,6 +81,10 @@ This problem uses the classic **dynamic programming on integer compositions** (t
 The same technique applies to partitioning problems, tiling, coin change, and block segmentation in many string or array composition scenarios.  
 No recursion or advanced libraries are needed—just a 1D DP array and simple iteration.
 
+
+### Flashcard
+Count binary strings of length minLength to maxLength using only blocks of size oneGroup (1’s) and zeroGroup (0’s)—dynamic programming with states for current length and last block type.
+
 ### Tags
 Dynamic Programming(#dynamic-programming)
 

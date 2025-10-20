@@ -82,6 +82,10 @@ def numTriplets(nums1, nums2):
 ### Summary
 This is a classic hash table counting pattern—use dictionaries to precompute counts of all pair products, then check for each value's square in the other. It's a two-array two-pass hash map problem commonly seen in counting tuple/pair sum (or product) questions.
 
+
+### Flashcard
+For each square in one array, count all unordered pairs in the other array whose product matches; use frequency maps to avoid O(n³) brute force.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Two Pointers(#two-pointers)
 

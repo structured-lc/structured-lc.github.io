@@ -114,6 +114,10 @@ def minDistance(word1: str, word2: str) -> int:
 This problem is a classic example of **Dynamic Programming** applied to string transformation. The pattern—breaking down a problem into subproblems and building up a solution via a DP table—is standard in edit/sequence problems (like Longest Common Subsequence).  
 You can reuse this approach for spell checking, DNA/protein sequence analysis, and many other applications involving string transformations.
 
+
+### Flashcard
+DP: let dp[i][j] be min edits to convert first i chars of word1 to first j of word2; fill table using insert, delete, replace.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

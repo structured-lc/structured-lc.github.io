@@ -84,6 +84,10 @@ def shiftingLetters(s, shifts):
 ### Summary
 This approach uses a prefix-sum-style reverse traversal to efficiently precompute cumulative shifts and vectorizes the shifting process to O(n) time, rather than simulating each shift update in O(n²). The pattern is common in *range update* or *sweep line* problems, where you aggregate changes in advance and apply effects in a single pass, which can also be used for difference arrays or cumulative interval counting.
 
+
+### Flashcard
+Precompute suffix sums of shifts from right to left; for each char, shift by total and wrap around alphabet.
+
 ### Tags
 Array(#array), String(#string), Prefix Sum(#prefix-sum)
 

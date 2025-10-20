@@ -118,6 +118,10 @@ This is a classic **simulation** problem, emphasizing careful step-by-step model
 It uses the "left-first, then right, else settle" rule resembling greedy pathfinding.
 Techniques in the solution, especially the scanning for the lowest neighbor, are applicable to similar water-filling, rain-water trapping, or gravity-based simulation questions.
 
+
+### Flashcard
+Simulate each droplet by greedily moving left to the lowest spot, then right if left fails, always preferring the lowest reachable position.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

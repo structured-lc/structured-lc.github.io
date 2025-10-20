@@ -67,6 +67,10 @@ def removeCoveredIntervals(intervals):
 ### Summary
 This solution uses the **sort and linear scan/greedy** pattern, common for interval problems. This approach works for all cover/overlap/merge-type interview problems, provided some pre-sorting of intervals.
 
+
+### Flashcard
+Sort intervals by start and then by end in descending order; iterate to find non-covered intervals by tracking the maximum end seen.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

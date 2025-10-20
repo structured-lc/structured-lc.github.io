@@ -170,6 +170,10 @@ def unpopular_books(books, orders):
 
 This is a classic **filter-and-aggregate SQL pattern**, combining `JOIN`, range filtering, and `GROUP BY + HAVING`. It exemplifies *anti-join* or *find missing/low-count cases*, useful in finding inactive users, customers with low spend, or underutilized resources in analytics-heavy or reporting queries. The logic is easily adapted between SQL and code, and mastering this pattern is extremely useful for database and backend interviews.
 
+
+### Flashcard
+Filter books where available_from ≤ 2019-05-23, LEFT JOIN with Orders filtered by dispatch_date between 2018-06-23 and 2019-06-23, GROUP BY book_id having SUM(quantity) < 10 or NULL.
+
 ### Tags
 Database(#database)
 

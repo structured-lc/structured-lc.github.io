@@ -108,6 +108,10 @@ def numDecodings(s: str) -> int:
 ### Summary
 This problem highlights a **dynamic programming** approach, using previous results to build up the solution and handling combinatorial cases due to the wildcard. The pattern is common in decoding/encoding, partition DP, and subsequence/substring problems (like other variants of Decode Ways and string segmentation). The main insights are: scan left-to-right, combine ways to decode both as a single char and two-char for each step, and deeply consider wildcard expansions.
 
+
+### Flashcard
+Use dynamic programming; for each position, handle single and double character decoding, multiplying ways by 9 for '*' and considering all valid combinations.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

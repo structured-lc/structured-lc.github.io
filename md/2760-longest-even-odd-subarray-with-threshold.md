@@ -96,6 +96,10 @@ def longestAlternatingSubarray(nums, threshold):
 ### Summary
 This problem uses the **window expansion** (a variant of the brute-force + greedy one-pass), checking all possible starts that meet constraints and expanding as much as possible to find the longest "alternating" subarray. A classic application of **window scanning** for subarray problems under strict element/position constraints. This approach often appears in "longest XXX subarray" LeetCode-style problems and helps build intuition for sliding-window and greedy analysis.
 
+
+### Flashcard
+For each valid starting position (even and ≤ threshold), extend right while maintaining alternation and threshold constraints.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window)
 

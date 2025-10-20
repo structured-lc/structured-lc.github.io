@@ -65,6 +65,10 @@ def maximumXOR(nums):
 ### Summary
 This problem is a classic example of optimizing bitwise operations; the solution distills down to bitwise OR-ing all numbers to determine the maximum achievable XOR after any number of the allowed operations. This approach is efficient and generalizes to similar problems about controlling bits across an array using AND, OR, or XOR. This bit manipulation pattern also appears in minimized/maximum cover (set bits) problems in coding interviews.
 
+
+### Flashcard
+The max XOR is the bitwise OR of all numbers, since you can clear bits to maximize differing bits in the result.
+
 ### Tags
 Array(#array), Math(#math), Bit Manipulation(#bit-manipulation)
 

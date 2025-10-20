@@ -83,6 +83,10 @@ def finalValueAfterOperations(operations: List[str]) -> int:
 ### Summary
 This problem is a classic **simulation** and simple string-checking task; you process the instructions linearly and maintain a running total. The code demonstrates a pattern useful for similar instruction interpretation problems, especially where parsing and simulating a simple machine or state is required. This is common in basic interpreters, processor simulation, or beginner-level coding tasks.
 
+
+### Flashcard
+Simulate operations on a variable by iterating through each operation and updating the value accordingly.
+
 ### Tags
 Array(#array), String(#string), Simulation(#simulation)
 

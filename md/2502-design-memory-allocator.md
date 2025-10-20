@@ -145,6 +145,10 @@ Patterns: array manipulation, sliding window, two pointers for block search.
 Similar patterns arise in **interval management, process scheduling, and contiguous resource allocation**.  
 This technique is fundamental and prevalent in system design, memory management, and OS simulation interview problems.
 
+
+### Flashcard
+Use array of length n (0 = free, else mID); allocate scans for first fit of size zeros, free resets all matching mID to 0.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Design(#design), Simulation(#simulation)
 

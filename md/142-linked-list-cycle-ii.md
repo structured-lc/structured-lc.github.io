@@ -105,6 +105,10 @@ def detectCycle(head):
 ### Summary
 This problem utilizes the Floyd’s Cycle (Tortoise and Hare) detection pattern, a powerful technique for detecting cycles and their starting point with O(1) space in linked structures. This pattern applies broadly to any singly linked structure where you need to detect cycles and find entry points, such as linked lists, graphs, and function iterators. It’s a classic and highly efficient approach in interview settings.
 
+
+### Flashcard
+Use Floyd’s algorithm to detect a cycle; then reset one pointer to head and move both one step at a time to find the cycle’s entry point.
+
 ### Tags
 Hash Table(#hash-table), Linked List(#linked-list), Two Pointers(#two-pointers)
 

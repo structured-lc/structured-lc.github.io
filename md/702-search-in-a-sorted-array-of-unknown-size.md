@@ -100,6 +100,10 @@ This problem is a variant of **binary search with unknown array length**, relyin
 The pattern is common in scenarios with limited-access data (linked lists, streaming data, APIs with unbounded data, file readers).  
 The approach illustrates a key technique: *doubling search* to locate target boundaries efficiently, useful in many other blind-search contexts.
 
+
+### Flashcard
+Expand search bounds exponentially until reader.get(end) ≥ target or out-of-bounds, then binary search within bounds for O(log n) search.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Interactive(#interactive)
 

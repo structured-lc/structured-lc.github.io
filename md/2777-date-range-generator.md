@@ -89,6 +89,10 @@ It’s common in data pipelines, report generation, or systems that process even
 
 Pattern applies to tasks like time/windowed iteration, and can be reused for other range or calendar problems.
 
+
+### Flashcard
+Use a generator to yield each date from start to end, incrementing by step days and formatting as "YYYY-MM-DD" at each iteration.
+
 ### Tags
 
 ### Similar Problems

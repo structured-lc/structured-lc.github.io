@@ -115,6 +115,10 @@ def levelOrder(root):
 ### Summary  
 This problem is a classic example of the **Breadth-First Search (BFS) pattern** for trees. Using a queue to process nodes level by level cleanly separates each depth. The code pattern used here is a template for many binary tree problems involving “by levels” or “shortest path” style of traversal. This method is also applicable for problems such as finding the minimum depth, average of each level, or connecting nodes at the same level.
 
+
+### Flashcard
+Use BFS with a queue to process nodes level by level, collecting values at each level into separate lists for the result.
+
 ### Tags
 Tree(#tree), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

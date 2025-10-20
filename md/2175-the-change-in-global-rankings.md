@@ -190,6 +190,10 @@ This problem uses the **custom sorting and ranking** coding pattern, with tie-br
 - Problems requiring sort, rank assignments, and diff reporting  
 This approach (sort twice, hash team ids to rank, compute differences) generalizes well to leaderboard or competition ranking use-cases.
 
+
+### Flashcard
+For each team, compute old and new ranks by sorting (points, name), then output old_rank - new_rank after applying points change.
+
 ### Tags
 Database(#database)
 

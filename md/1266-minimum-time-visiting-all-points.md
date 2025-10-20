@@ -63,6 +63,10 @@ def minTimeToVisitAllPoints(points: List[List[int]]) -> int:
 ### Summary
 The problem is an example of the **greedy walk** pattern, using properties of 2D movement and maximums. The min time for each step comes from the "+king's move distance" rule—can move diagonally or orthogonally. Useful in grid, chess, or pathfinding scenarios.
 
+
+### Flashcard
+For each consecutive point, add max(|x₂-x₁|, |y₂-y₁|) to total time, since diagonal moves cover both axes.
+
 ### Tags
 Array(#array), Math(#math), Geometry(#geometry)
 

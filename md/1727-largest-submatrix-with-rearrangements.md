@@ -89,6 +89,10 @@ def largestSubmatrix(matrix):
 ### Summary
 This problem leverages the *histogram stacking* dynamic programming pattern, commonly used in questions about largest rectangles in binary matrices (i.e., "maximal rectangle" or "largest rectangle in histogram"). The major twist is the per-row column rearrangement, which is handled optimally by sorting. The O(m × n log n) approach is both efficient and generalizes well to other 2D rectangle counting problems involving binary matrices and stacking.
 
+
+### Flashcard
+Build histogram of consecutive 1s per column up to each row, sort each row's heights descending, then compute max rectangle area using histogram technique.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Matrix(#matrix)
 

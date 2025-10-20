@@ -55,6 +55,10 @@ def createTargetArray(nums, index):
 ### Summary
 Direct simulation problem, follows the instructions deterministically. The pattern is stepwise array manipulation using index-based insertions, often seen in constructive problems and sometimes in data structure challenges.
 
+
+### Flashcard
+Build target array by inserting nums[i] at index[i] for each i—simple simulation, but O(n²) due to inserts.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

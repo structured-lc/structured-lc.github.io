@@ -98,6 +98,10 @@ def maxSlidingWindow(nums: List[int], k: int) -> List[int]:
 ### Summary  
 This problem uses the classic **sliding window** technique in conjunction with a **monotonic deque** (double-ended queue). The pattern (deque + window) is frequently used for problems that require fast updates and retrievals of sliding maximums or minimums, and appears in time series analytics, stock price windows, and many more real-world streaming scenarios.
 
+
+### Flashcard
+Use a monotonic deque to keep track of max candidates; pop from back if smaller than new element, pop from front if out of window, front is always max.
+
 ### Tags
 Array(#array), Queue(#queue), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue), Monotonic Queue(#monotonic-queue)
 

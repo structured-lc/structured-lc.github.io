@@ -101,6 +101,10 @@ def valid_tree(n, edges):
 ### Summary
 This is a classic example of the **Union-Find (Disjoint Set Union) pattern** for detecting cycles and managing connected components in graphs. The edge-counting trick (n-1 edges for trees) provides a quick sanity check. This coding pattern is widely applicable to problems about connectivity, cycles, and equivalence relations in graphs.
 
+
+### Flashcard
+Graph Valid Tree
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

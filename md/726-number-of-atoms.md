@@ -125,6 +125,10 @@ def countOfAtoms(formula: str) -> str:
 ### Summary
 This approach uses the **stack and hash map** pattern, a common way to tackle problems involving parsing with nested scopes and accumulation (like matching parentheses or arithmetic expressions). It's robust, extendable, and straightforward for similar parsing problems such as evaluating expressions (“Basic Calculator”, etc.), XML parsing, or IR building in compilers.
 
+
+### Flashcard
+Use a stack to parse the formula; for each '(', push a new map, for each ')', pop and multiply counts, and merge back.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Stack(#stack), Sorting(#sorting)
 

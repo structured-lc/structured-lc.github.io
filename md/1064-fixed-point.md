@@ -93,6 +93,10 @@ def fixedPoint(arr):
 ### Summary
 This problem uses the classic **binary search** approach, exploiting the sorted and unique property of the input array to efficiently find the smallest fixed point (where arr[i] == i). The pattern is commonly used in interview problems that involve searching in sorted arrays, like finding a target value, first/last occurrences, or custom index/value relationships.
 
+
+### Flashcard
+Use binary search to find the smallest index where arr[i] == i in a sorted array of distinct integers.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

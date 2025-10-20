@@ -106,6 +106,10 @@ def minimumScore(s: str, t: str) -> int:
 ### Summary
 This solution uses the **two pointer** (prefix and suffix scan) pattern combined with preprocessing, a frequent pattern in substring and subsequence problems. It exploits the property of subsequences to efficiently determine for every possible split in **t** (removal window) whether the rest can match **s**, using precomputed prefix/suffix indices to drastically speed up the search. Variations of this approach are common in sequence comparison, windowing, and edit problems.
 
+
+### Flashcard
+Precompute prefix and suffix matches of t in s; find the minimal segment to remove so the remaining t is a subsequence of s.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Binary Search(#binary-search)
 

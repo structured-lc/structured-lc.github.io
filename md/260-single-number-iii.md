@@ -100,6 +100,10 @@ Uses the **bit manipulation/XOR pattern**:
 - Finds the distinguishing bit between uniques, partitions, and reveals each by cancellation in group.  
 This bitwise pattern is widely used (Single Number I, II, appearing once/twice/three times), and is a frequent trick for *finding unpaired elements* efficiently.
 
+
+### Flashcard
+Single Number III
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

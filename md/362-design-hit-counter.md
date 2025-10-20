@@ -120,6 +120,10 @@ class HitCounter:
 ### Summary
 This approach uses a **fixed-size circular buffer pattern**, counting hits in each second modulo 300 for O(1) operations and space. It’s an example of "time window aggregation" and is also applicable to rate limiting, moving window averages, or "sliding window" algorithm design where only a fixed interval of event history matters.
 
+
+### Flashcard
+Use a fixed-size queue or circular array to store hit counts per second, expiring entries older than 300 seconds for O(1) operations.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Design(#design), Queue(#queue), Data Stream(#data-stream)
 

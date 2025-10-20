@@ -99,6 +99,10 @@ def validSquare(p1, p2, p3, p4):
 ### Summary
 This is a classic **geometry + hashing/counter** pattern: compute all pairwise relations (here, distances), count their frequency, and check that the count pattern matches the requirements of a square. This “all-pairs with frequency counting” method is widely applicable for identifying structures in small sets of 2D or 3D points, including rectangles, rhombuses, or even other regular polygons. Using squared distances avoids precision problems and unnecessary root calculations.
 
+
+### Flashcard
+Compute all 6 pairwise distances; valid square has 2 unique nonzero distances (4 sides, 2 diagonals).
+
 ### Tags
 Math(#math), Geometry(#geometry)
 

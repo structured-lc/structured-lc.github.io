@@ -130,6 +130,10 @@ This problem is a classic example of SQL grouping and aggregation—**filtering 
 This “filter+GROUP BY+aggregate” pattern is used frequently, such as for earliest/latest events, maximum scores, tallest building per city, etc.  
 Efficient with index support on time_stamp/user_id and highly scalable for typical relational datasets.
 
+
+### Flashcard
+Filter logins for the year 2020 and find the maximum time_stamp for each user.
+
 ### Tags
 Database(#database)
 

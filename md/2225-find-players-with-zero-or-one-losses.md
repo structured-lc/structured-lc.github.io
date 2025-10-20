@@ -95,6 +95,10 @@ def findWinners(matches):
 ### Summary
 We used the **Counting** and **Hash Map** coding pattern to solve this, commonly found in problems requiring tallying frequencies (e.g., majority element, unique elements). The approach is space- and time-efficient for reasonable input sizes and can be adapted for related tournament statistics problems.
 
+
+### Flashcard
+Use a dictionary to count losses per player, then collect all players with 0 or 1 loss—sort both lists for output.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting), Counting(#counting)
 

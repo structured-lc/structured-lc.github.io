@@ -120,6 +120,10 @@ This problem uses the **“consecutive counter”** or **stateful tracking patte
 It’s highly efficient for stream processing and commonly appears when you need to spot runs of identical/fixed values, or detect breaches in sequence.  
 Related problems: longest consecutive sequence, sliding window all-equal or majority element detection, and event debouncing.
 
+
+### Flashcard
+Track a running count of consecutive target values in the stream; reset on mismatch, return true if count ≥ k—no need to store all elements.
+
 ### Tags
 Hash Table(#hash-table), Design(#design), Queue(#queue), Counting(#counting), Data Stream(#data-stream)
 

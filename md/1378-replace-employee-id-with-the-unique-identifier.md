@@ -49,6 +49,10 @@ ON e.id = eu.id;
 ### Summary
 This is a standard SQL **join** query (LEFT JOIN). This pattern is common when combining core and reference data tables.
 
+
+### Flashcard
+Perform a LEFT JOIN in SQL to replace employee IDs with unique identifiers.
+
 ### Tags
 Database(#database)
 

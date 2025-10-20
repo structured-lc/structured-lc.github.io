@@ -103,6 +103,10 @@ This problem is a classic example of:
 - Brute-force on a reasonably sized range  
 The approach is simple and robust; this bit-counting technique is extremely common and reusable in subsets/enumeration/bitmask DP problems. Precomputing a limited set of results (like primes up to 20) can often improve code clarity and performance.
 
+
+### Flashcard
+For each number in [L, R], count set bits and increment answer if the count is in a precomputed set of primes ≤ 20.
+
 ### Tags
 Math(#math), Bit Manipulation(#bit-manipulation)
 

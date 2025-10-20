@@ -126,6 +126,10 @@ def countGoodSubsequences(s: str) -> int:
 ### Summary
 This problem is a classic application of **combinatorial enumeration** with optimization through precomputed modular arithmetic. The key pattern is recognizing when to use combinations and inclusion-exclusion principles efficiently. Similar approaches can apply to subset or subsequence counting problems with frequency or group constraints (e.g., grouping anagrams, equal-frequency selections).
 
+
+### Flashcard
+For each possible frequency f, count how many subsets have every chosen letter appearing exactly f times—combinatorial counting with modular arithmetic.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), String(#string), Combinatorics(#combinatorics), Counting(#counting)
 

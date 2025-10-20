@@ -101,6 +101,10 @@ def clumsy(N: int) -> int:
 ### Summary
 This is a classic **operator precedence simulation** problem with a "nonstandard" factorial. The stack pattern is common where you need to process operators in a loop with changing precedence. For advanced optimization, recognizing the output pattern based on N % 4 allows for constant-time computation for large inputs, which is a typical technique in problems with cyclic or modular operator rules.
 
+
+### Flashcard
+Simulate operations in chunks of four: ×, //, +, −; for large N, use observed patterns based on N mod 4 for shortcut.
+
 ### Tags
 Math(#math), Stack(#stack), Simulation(#simulation)
 

@@ -103,6 +103,10 @@ This problem illustrates a **parallel asynchronous execution pattern** commonly 
 - Useful for implementing concurrency primitives, network batching, or custom resource managers.  
 Understanding this helps sharpen async handling, error propagation, and index management in real-world async workflows.
 
+
+### Flashcard
+Start all functions in parallel, collect results by index, and resolve when all succeed or reject immediately on any error.
+
 ### Tags
 
 ### Similar Problems

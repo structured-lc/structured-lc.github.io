@@ -89,6 +89,10 @@ def maxFont(text, w, h, fonts, fontInfo):
 This problem is a classic **binary search on answer** pattern. Because feasible font sizes are contiguous and sorted, binary search is much more efficient than linear scan.  
 This pattern is common in search for maximal/minimal feasible value: e.g., capacity checking, scheduling, allocation problems, and more.
 
+
+### Flashcard
+Binary search the sorted font sizes, testing each mid-point for fit against screen dimensions, and track the largest valid font.
+
 ### Tags
 Array(#array), String(#string), Binary Search(#binary-search), Interactive(#interactive)
 

@@ -97,6 +97,10 @@ This problem is a classic use case for a **monotonic stack** combined with **dyn
 The principle is: for each number, track how many "waves" it takes to become safe; propagate the removal steps using information about previously seen elements.  
 This pattern is common in problems smoothening arrays, removing obstacles, or simulating cascading removals, and appears in histogram, asteroid collision, and some interval problems.
 
+
+### Flashcard
+Each element can only be removed by a larger element to its left; use a stack to track blockers and count steps.
+
 ### Tags
 Array(#array), Linked List(#linked-list), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

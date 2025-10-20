@@ -100,6 +100,10 @@ It's an example of *string simulation* with two pointers: one for input, one for
 Patterns like this appear in cyclic group validation, stream validation, and substring chunking for custom rules (e.g., "reformat into pattern-X blocks").  
 The pointer cycling and greedy insertion is a valuable pattern for string problems where enforcing a repeated sub-structure is required.
 
+
+### Flashcard
+Minimize additions to make a string valid by matching it against a repeating pattern.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Stack(#stack), Greedy(#greedy)
 

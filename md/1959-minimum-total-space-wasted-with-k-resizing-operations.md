@@ -116,6 +116,10 @@ This problem uses the **DP on partitioning** pattern: for sequences and allowed 
 It's common in minimizing cost across k subarrays, such as **DP for k-Partitions** (e.g., Split Array Largest Sum, Painters Partition, etc.). Efficient prefix sums and maximizing per segment are typical techniques for this pattern.  
 This approach models the minimum wasted space for dynamic sizing, balancing between segmenting (resizing often) and fewer resize operations.
 
+
+### Flashcard
+Use DP where dp[i][j] = min wasted space for first i elements with j resizes; transition by trying all possible last segments and taking their max as array size.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

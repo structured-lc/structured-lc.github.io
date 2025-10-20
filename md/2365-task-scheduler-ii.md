@@ -107,6 +107,10 @@ def taskSchedulerII(tasks, space):
 ### Summary
 This problem is a variation of the "Task Scheduler" classic, applying *cooldown constraints* to forced task orders. The main coding pattern is simulating day-by-day task scheduling — using a hash map to efficiently track cooldowns, yielding fast O(n) time. This pattern appears in other cooldown/timestamp simulation scenarios, and is relevant for problems where cooldowns or temporal constraints matter, especially process scheduling or rate-limiting algorithms.
 
+
+### Flashcard
+Track each task's next allowed day in a hash map; if current day < next allowed, jump to that day; update next allowed to current_day + space + 1.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Simulation(#simulation)
 

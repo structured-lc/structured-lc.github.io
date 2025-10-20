@@ -162,6 +162,10 @@ The main pattern is **Union-Find (Disjoint Set Union) + prime factorization** pe
 This pattern appears in problems involving "groups based on divisibility", prime factors, or "are all items connected under relation X".  
 It’s commonly used wherever equivalence relations by shared traits (divisibility, bits, substring overlap, etc.) are involved.
 
+
+### Flashcard
+Use Union-Find to connect indices sharing a common prime factor; check if all indices are in the same connected component.
+
 ### Tags
 Array(#array), Math(#math), Union Find(#union-find), Number Theory(#number-theory)
 

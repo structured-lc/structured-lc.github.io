@@ -120,6 +120,10 @@ def findBottomLeftValue(root):
 ### Summary
 This problem uses the **BFS/level-order traversal** pattern. It’s a classic technique for any problem requiring "level by level" answers in trees, such as finding leftmost/rightmost nodes, bottom views, or average values per level. The overloaded queue approach (per-level processing) is a pattern frequently seen in binary tree BFS problems.
 
+
+### Flashcard
+Use BFS level-order traversal and record the first node at the last level as the bottom-left value.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

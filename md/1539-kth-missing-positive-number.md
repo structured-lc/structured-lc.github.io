@@ -90,6 +90,10 @@ def findKthPositive(arr, k):
 ### Summary
 This problem exemplifies the **"two pointers / binary search over answer"** pattern. The key trick is recognizing that the count of missing numbers up to an index can be computed directly, letting us binary search for the position before which k missing numbers occur. This pattern is powerful for problems involving "find kᵗʰ in absence/holes/gaps" in sorted data, as in range missing elements, locating missing IDs, etc.
 
+
+### Flashcard
+Count missing numbers by comparing array values to expected sequential numbers.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

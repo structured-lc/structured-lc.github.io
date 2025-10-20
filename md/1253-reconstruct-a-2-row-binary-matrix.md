@@ -86,6 +86,10 @@ def reconstructMatrix(upper, lower, colsum):
 ### Summary
 This is a greedy construction problem based on column-wise assignment and matching row sums. It's a unique but instructive example of constraint satisfaction seen in matrix or grid setting.
 
+
+### Flashcard
+For each colsum[i], assign 1s to both rows if colsum[i]=2, else greedily assign 1 to the row with remaining quota if colsum[i]=1; validate totals at the end.
+
 ### Tags
 Array(#array), Greedy(#greedy), Matrix(#matrix)
 

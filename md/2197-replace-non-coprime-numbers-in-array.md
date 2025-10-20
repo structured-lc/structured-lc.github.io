@@ -105,6 +105,10 @@ def replaceNonCoprimes(nums):
 ### Summary
 The optimal approach uses a stack to efficiently combine adjacent non-coprime numbers by merging them immediately as we traverse. This is a classic **adjacent merging / monotonic stack** pattern, used when local modifications can affect prior results, but resolving merges as you build up the solution makes the problem tractable. Similar reasoning appears in problems involving the removal or merging of adjacent elements if a condition is met.
 
+
+### Flashcard
+Use a stack; for each num, merge with stack top if not coprime (replace both with lcm), repeat until stack is coprime.
+
 ### Tags
 Array(#array), Math(#math), Stack(#stack), Number Theory(#number-theory)
 

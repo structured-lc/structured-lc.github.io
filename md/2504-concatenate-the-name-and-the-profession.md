@@ -126,6 +126,10 @@ def concatenate_name_and_profession(persons):
 ### Summary
 This problem is a *row-wise string transformation and sorting* task. It’s a direct application of string manipulation, common in SQL interview problems and sometimes seen in ETL data-cleaning tasks. The pattern—element wise transformation plus sorting—is foundational for SQL-based reporting and can extend to many business data scenarios.
 
+
+### Flashcard
+Concatenate name with first character of profession using string functions, order by person_id descending.
+
 ### Tags
 Database(#database)
 

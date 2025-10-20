@@ -155,6 +155,10 @@ This problem uses the **preprocessing with hashmap** pattern to trade one-off pr
 It's common in problems where potential queries are numerous but originate from a bounded set (like a dictionary).  
 Similar techniques are useful in **dictionary encoding**, **password management**, or any scenario where reverse-mapping from an obfuscated representation is required and the "search space" is limited by a fixed list.
 
+
+### Flashcard
+Encrypt by direct mapping; decrypt by checking all possible dictionary words against the encrypted string.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Design(#design), Trie(#trie)
 

@@ -142,6 +142,10 @@ def count_occurrences_in_text(files):
 ### Summary
 This approach uses a **regex / string scanning pattern** to detect whole-word matches, which is robust against substrings and punctuation. This is a classic technique useful in word-count, search-engine, and text-processing problems. Variants appear in search tools, spam detection, and document indexing.
 
+
+### Flashcard
+Count files containing “bull” or “bear” as whole words using regex or split—iterate and tally matches.
+
 ### Tags
 Database(#database)
 

@@ -123,6 +123,10 @@ The main pattern is "scan-and-accumulate coefficients/constants", which is commo
 This approach is **robust against tricky sign/coefficients** cases, and the scan-per-side pattern applies to polynomial sum parsing and integration problems.  
 You can use similar logic for general algebraic simplification or interpreter foundation tasks.
 
+
+### Flashcard
+Parse both sides of equation, sum x coefficients and constants; solve linear equation for x, handling infinite/no solution cases.
+
 ### Tags
 Math(#math), String(#string), Simulation(#simulation)
 

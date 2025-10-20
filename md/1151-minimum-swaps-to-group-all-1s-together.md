@@ -91,6 +91,10 @@ def minSwaps(data):
 ### Summary
 This problem is a classic use of the **sliding window** pattern. We convert a minimum-swap operation into finding the window with the highest number of already-in-place items (in this case, 1's) and compute how many elements are out of place. This pattern can be applied in problems involving grouping, such as maximum consecutive subarrays, or minimizing changes/swaps to meet some grouping criteria.
 
+
+### Flashcard
+Use a sliding window of size equal to the total number of 1's; the minimum swaps needed is the smallest number of 0's in any such window.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window)
 

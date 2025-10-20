@@ -97,6 +97,10 @@ This problem uses the *frequency mapping/presence counting* pattern: for each un
 Using set and dictionary data structures ensures the correct handling of duplicates and keeps the code simple and readable.  
 This approach generalizes well to any "present in at least k out of N groups" style tasks and is common in interview questions involving array/category intersection.
 
+
+### Flashcard
+For each integer, check if it appears in at least two of three arrays—use sets to deduplicate and count efficiently.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation)
 

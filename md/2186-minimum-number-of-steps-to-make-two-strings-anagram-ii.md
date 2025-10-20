@@ -100,6 +100,10 @@ This problem is a classic example of the **hash map / frequency counter pattern*
 Optimized for fixed, small alphabets, it generalizes to many anagram-related problems.  
 Commonly used in coding interviews, text processing tasks, or anywhere anagram checks or minimal mutations are involved.
 
+
+### Flashcard
+Count frequency of each character in both strings; sum absolute differences for all characters.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

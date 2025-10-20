@@ -72,6 +72,10 @@ def bestTeamScore(scores: List[int], ages: List[int]) -> int:
 ### Summary
 This problem fits the **Dynamic Programming + Greedy Sort** pattern. Sort by constraints to convert to a 1D subsequence problem, then use dp to track optimal team composition. Similar ideas arise in box stacking, Russian Doll envelopes, or any "choose maximal subset with pairwise constraints".
 
+
+### Flashcard
+Sort players by age and score, then find the maximum sum of non-decreasing scores using dynamic programming similar to the Longest Increasing Subsequence problem.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
 

@@ -112,6 +112,10 @@ class Solution:
 This problem is a classic application of the **Union-Find (Disjoint Set Union, DSU)** structure for dynamic connectivity checking, with the twist of rejection based on additional constraints. It's important to simulate the union and only commit if all constraints are satisfied.  
 This union-find-with-constraints approach is common in social network, grouping, and clustering problems, and appears in problems like Kruskal's algorithm with forbidden edges, or network security segmentation tasks.
 
+
+### Flashcard
+Use Union-Find (DSU) to track friend groups; before merging two, check if any restriction pair would end up in the same group—only merge if all restrictions are still respected.
+
 ### Tags
 Union Find(#union-find), Graph(#graph)
 

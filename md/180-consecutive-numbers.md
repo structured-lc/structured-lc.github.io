@@ -128,6 +128,10 @@ This problem is a classic example of the **sliding window** pattern, widely used
 It's useful in log analysis, stream processing, and wherever you need to detect “runs” of repeated values.  
 SQL solutions often use window functions (e.g., LAG/LEAD) or self-joins, but programmatically the window approach is simple and efficient.
 
+
+### Flashcard
+Find numbers appearing at least 3 times consecutively by comparing each Num with its neighbors in Id order.
+
 ### Tags
 Database(#database)
 

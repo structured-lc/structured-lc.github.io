@@ -77,6 +77,10 @@ def minOperations(logs):
 ### Summary
 This problem is a classic example of simulating stack-like navigation using a simple counter pattern, avoiding unnecessary data structures when possible. The approach is efficient and common for problems where only the "depth" or "balance" is tracked (e.g., parenthesis matching, mountain/valley counting).
 
+
+### Flashcard
+Simulate folder depth with a counter: increment for subfolders, decrement (but not below 0) for "../", ignore "./".
+
 ### Tags
 Array(#array), String(#string), Stack(#stack)
 

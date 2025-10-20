@@ -100,6 +100,10 @@ Follow-up question 3:
 
 This problem is solved using a single pass through the array, tracking the minimum sum encountered. It illustrates the pattern of using a single variable to track a minimum or maximum value in a sequence, which is a common approach in algorithmic problems. This technique can be applied to various problems involving sequences and cumulative sums.
 
+
+### Flashcard
+Calculate the minimum start value by finding the smallest running sum of the given numbers and adding 1 to ensure the sum stays positive.
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

@@ -103,6 +103,10 @@ def distinctDifferenceArray(nums):
 ### Summary
 This problem uses an efficient double-scan and prefix/suffix sets pattern, common in segment/count-based problems (like prefix sums, distinct elements in ranges, etc). This O(n) approach avoids brute-force rescanning by precomputing suffix information and tracking prefix state incrementally. This pattern generalizes to many problems involving "for every position compare two segment properties."
 
+
+### Flashcard
+Precompute suffix distinct counts from right to left; for each index, compute prefix distinct count on-the-fly and subtract suffix count.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

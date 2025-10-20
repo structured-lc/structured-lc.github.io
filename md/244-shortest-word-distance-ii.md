@@ -87,6 +87,10 @@ class WordDistance:
 ### Summary
 This problem uses the “preprocess indices” and “two-pointer merge” pattern—classic for repeated proximity or distance queries on sequences. The concept is widely applicable for finding minimum distances between repeating elements and can show up in word proximity, merging sorted data, and proximity queries in time series or event logs. Efficient pre-processing plus fast query answer is a frequent code interview expectation for problems with multiple, fast queries on static data.
 
+
+### Flashcard
+Preprocess word indices in a hashmap; for each query, use two pointers on index lists to find minimal distance efficiently.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), String(#string), Design(#design)
 

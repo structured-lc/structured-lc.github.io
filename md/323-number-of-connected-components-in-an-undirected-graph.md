@@ -117,6 +117,10 @@ def countComponents(n, edges):
 ### Summary
 This problem is a classic application of the graph traversal pattern—using DFS or BFS to explore all nodes in a connected component. The same pattern can be used for island counting (grid problems), finding friend circles, and general flood-fill algorithms. Union-Find is also a widely applicable pattern for component tracking, especially in dynamic connectivity problems.
 
+
+### Flashcard
+Use DFS/BFS with visited tracking to count connected components in a graph.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

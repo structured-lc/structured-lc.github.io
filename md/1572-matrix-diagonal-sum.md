@@ -67,6 +67,10 @@ def diagonalSum(mat):
 ### Summary
 This problem is an example of simple matrix traversal with index calculations. The pattern is typical for diagonal sums, anti-diagonal traversals, and related problems on square matrices. Counting overlaps (like the center) is a standard trick for O(n) efficient answers.
 
+
+### Flashcard
+Sum mat[i][i] and mat[i][n-1-i] for all i; subtract center element mat[n//2][n//2] once if n is odd to avoid double-counting.
+
 ### Tags
 Array(#array), Matrix(#matrix)
 

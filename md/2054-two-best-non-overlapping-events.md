@@ -110,6 +110,10 @@ def maxTwoEvents(events):
 ### Summary
 The problem uses a **Sorting + Prefix Max + Binary Search** pattern, a classic sweep for non-overlapping intervals. This is a common approach also seen in Weighted Interval Scheduling DP and non-overlapping interval selection problems. Mastery here helps solve advanced scheduling, calendar, and reservation-style interview problems.
 
+
+### Flashcard
+Sort events by end time and use binary search to find non-overlapping events efficiently.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

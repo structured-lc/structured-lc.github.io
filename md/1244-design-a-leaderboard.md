@@ -78,6 +78,10 @@ class Leaderboard:
 ### Summary
 This is a standard data structure design problem using a dictionary for O(1) updates and resets, plus a heap or sort for top-K queries. The pattern—hashtable + heap for K-largest—is common for leaderboard-type and running statistics problems. If queries for `top(K)` were very frequent, a balanced BST or self-balancing structure would be preferred.
 
+
+### Flashcard
+Use a hash map for player scores; for top(K), use a heap to efficiently retrieve K highest scores.
+
 ### Tags
 Hash Table(#hash-table), Design(#design), Sorting(#sorting)
 

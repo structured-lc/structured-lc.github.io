@@ -120,6 +120,10 @@ def throttle(fn, t):
 ### Summary
 This problem uses the **throttling** pattern for rate-limiting function executions, a common tool in UI and event handling (debounce, throttle). The key coding technique is careful management of pending state and timers to ensure only the *first* and *latest* events fire in each throttle window. This pattern applies in scroll listeners, search-as-you-type, or network polling control.
 
+
+### Flashcard
+Execute fn immediately on first call and start timer; during throttle period, store latest arguments; when timer expires, execute fn with stored arguments if any, then reset throttle flag.
+
 ### Tags
 
 ### Similar Problems

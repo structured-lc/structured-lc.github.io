@@ -95,6 +95,10 @@ def nthMagicalNumber(n, a, b):
 ### Summary
 This problem relies on **binary search over the answer space** and inclusion-exclusion counting. It's a classic approach for problems where you can efficiently count candidates but not generate them explicitly—found in scheduling, streaming, and numerical sequence intersection problems. The modular math and LCM/GCD logic frequently appear in problems dealing with divisibility and arithmetic progressions.
 
+
+### Flashcard
+Use binary search to find the smallest x such that count = ⌊x/a⌋ + ⌊x/b⌋ − ⌊x/lcm(a, b)⌋ ≥ n; answer is x mod 10⁹+7.
+
 ### Tags
 Math(#math), Binary Search(#binary-search)
 

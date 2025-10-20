@@ -73,6 +73,10 @@ def reformatDate(date: str) -> str:
 ### Summary
 This is a **string parsing and mapping** problem, common in data normalization and transformation. The direct mapping pattern applies widely in code that interfaces with dates from multiple sources.
 
+
+### Flashcard
+Reformat a date string by splitting it into day, month, and year, then reassembling it in the desired format.
+
 ### Tags
 String(#string)
 

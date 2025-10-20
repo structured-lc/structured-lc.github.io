@@ -103,6 +103,10 @@ def minWindow(s1: str, s2: str) -> str:
 ### Summary
 This problem uses a combination of the **two-pointer** and **greedy** approaches to scan s1 for the shortest window containing s2 as a subsequence, then tries to shrink the window from the left as much as possible. The pattern is related to advanced variations of the sliding window, and also shares ideas with subsequence dynamic programming. It’s common in substring search and window-based interview questions.
 
+
+### Flashcard
+Use two pointers to find each window in S containing T as a subsequence, then scan backward to minimize the window.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window)
 

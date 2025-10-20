@@ -70,6 +70,10 @@ def stoneGameIII(stoneValue):
 ### Summary
 This is a classic DP for two-player zero-sum games, with each player minimizing the other's potential. The difference-based DP is a standard minimax-with-memory (Game Theory) approach, reusable for similar multiple-take games.
 
+
+### Flashcard
+Employ dynamic programming to compute the maximum score difference Alice can achieve by considering all possible stone picks (1–3) and the opponent's best response.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Game Theory(#game-theory)
 

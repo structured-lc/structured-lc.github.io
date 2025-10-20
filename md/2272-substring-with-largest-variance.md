@@ -124,6 +124,10 @@ def largestVariance(s: str) -> int:
 The approach uses a clever variant of Kadane's algorithm to find, for every pair of distinct characters, the substring where the count difference is largest (while guaranteeing that both characters occur), iterating through all pairs for optimal answer.  
 This is a **two-pointer / optimized DP pattern** that is relevant for substring-subarray max/min difference problems, especially when reducing multi-character state to a ±1 array for pairwise analysis. It also illustrates how to optimize brute-force substring checking to linear scans with combinatorial tricks.
 
+
+### Flashcard
+For each pair of distinct characters, treat them as +1/-1 in substrings and apply Kadane’s algorithm to find max variance—O(26² × n).
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

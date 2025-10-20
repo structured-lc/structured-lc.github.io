@@ -75,6 +75,10 @@ class Solution:
 ### Summary
 Uses the **DFS cycle-detection** and **topological sorting** pattern typical for problems finding safe nodes or terminals in directed graphs. Pattern is broadly useful in dependency resolution, deadlock detection, and other graph-cycle analysis tasks.
 
+
+### Flashcard
+Identify safe countries by performing DFS to detect cycles in a directed graph. A country is safe if it doesn't reach a cycle.
+
 ### Tags
 Database(#database)
 

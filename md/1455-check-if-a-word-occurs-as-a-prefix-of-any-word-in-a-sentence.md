@@ -74,6 +74,10 @@ def isPrefixOfWord(sentence, searchWord):
 This problem uses the **string scanning pattern**: process each word in a sentence sequentially, checking a prefix condition.  
 It’s a classic for practicing loops, string slicing, and indexing (especially for 1-based counting). The approach can be applied whenever you need to check for a property within a collection linearly and return the index of the first matching element.
 
+
+### Flashcard
+Split sentence into words, return the 1-based index of the first word starting with searchWord, or -1 if none.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), String Matching(#string-matching)
 

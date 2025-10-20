@@ -98,6 +98,10 @@ def minCostII(costs):
 ### Summary  
 The solution uses a **dynamic programming** pattern, with space optimization by storing only the needed information from the previous row. This is a classic **row-by-row DP** with memory tweaks, commonly seen in grid problems and optimization with "previous row"/"current row" rolling arrays. The min/second-min trick is useful in any scenario where repetitive computations of min excluding a particular value are needed.
 
+
+### Flashcard
+Paint House II
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

@@ -208,6 +208,10 @@ print(active_users(accounts, logins))
 ### Summary
 This problem is a classic "find consecutive streaks" challenge, appearing often in user analytics. The optimal pattern is **group by user, sort unique events, and scan for consecutive runs**—which can be simulated by either sliding windows or by "normalizing" with ranks/differences in dates. This technique is generally applicable in problems like tracking customer retention, achievement streaks, and more.
 
+
+### Flashcard
+For each user, sort login dates and use a sliding window to check for any 5 consecutive days with logins.
+
 ### Tags
 Database(#database)
 

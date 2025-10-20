@@ -122,6 +122,10 @@ def countPalindromicSubsequences(s):
 This problem is a classic **Dynamic Programming over substrings + states** problem, using a 3D DP table to eliminate duplicates and efficiently count unique palindromic subsequences.  
 The DP patterns here (start/end constraints, inclusion-exclusion) are broadly applicable in many substring/subsequence and counting problems.
 
+
+### Flashcard
+Use DP with dp[i][j] counting distinct palindromic subsequences in s[i...j], considering only characters 'a'-'d' and handling duplicates carefully.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

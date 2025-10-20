@@ -80,6 +80,10 @@ def checkIfPangram(sentence: str) -> bool:
 ### Summary
 This problem follows a **hash set (deduplication)** pattern, where the task is to track the unique presence of a bounded set of elements—in this case, all letters a-z. Similar patterns are seen in problems like finding whether all elements of a range are present, or checking for duplicates. This is a foundational technique used in problems involving uniqueness, membership testing, and quick-likelihood checks.
 
+
+### Flashcard
+Use a set to track seen letters; return true if size ≥ 26, else false.
+
 ### Tags
 Hash Table(#hash-table), String(#string)
 

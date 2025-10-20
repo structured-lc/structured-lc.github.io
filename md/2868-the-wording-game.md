@@ -129,6 +129,10 @@ def wordingGame(a, b):
 ### Summary
 This problem is a **minimax-style turn-based game simulation with memoization**—a common pattern in two-player perfect information games. Here, the key is to model all states using compact information (bitmask for used words, turn indicator, last played word), and use recursion with memoization to check if the starting player (Alice) can guarantee victory. This approach is used in other combinatorial games with state spaces amenable to bitmask DP, such as "can you always win?" questions in Leetcode or classic board/puzzle games.
 
+
+### Flashcard
+Use memoized recursion to simulate all possible move sequences, tracking whose turn, remaining words, and last word played.
+
 ### Tags
 Array(#array), Math(#math), Two Pointers(#two-pointers), String(#string), Greedy(#greedy), Game Theory(#game-theory)
 

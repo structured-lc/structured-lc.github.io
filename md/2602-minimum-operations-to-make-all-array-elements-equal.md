@@ -106,6 +106,10 @@ def min_operations(nums, queries):
 ### Summary
 This problem uses the **prefix sum + binary search** pattern, which is common when you need to quickly compute sums/ranges based on sorted order and handle multiple queries. The approach generalizes to problems involving interval/range modifications and cost calculations over sorted values. Patterns like this also appear in problems that require solving for medians or minimizing distance/cost functions across subsets.
 
+
+### Flashcard
+Sort the array, use prefix sums and binary search to quickly compute the sum of absolute differences for each query.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sorting(#sorting), Prefix Sum(#prefix-sum)
 

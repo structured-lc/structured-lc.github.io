@@ -78,6 +78,10 @@ def percentageLetter(s, letter):
 This problem is a simple application of string traversal and basic math (frequency, percentages, integer division). The approach is linear scan, counting how often `letter` appears, then computing (count × 100) // length.  
 This scan-and-count pattern is common for histogram-building, statistics, and basic frequency-based analytics. It can generalize to more complex string analysis tasks.
 
+
+### Flashcard
+Count occurrences of the letter, divide by string length, multiply by 100, and floor the result.
+
 ### Tags
 String(#string)
 

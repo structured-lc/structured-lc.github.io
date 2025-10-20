@@ -108,6 +108,10 @@ def minSwap(A, B):
 ### Summary
 This problem uses a **dynamic programming** ("state compression DP") approach. Patterns like this—tracking cost both with and without an operation at each step—commonly appear in array swap-minimization and editing problems. The O(n) DP with only O(1) space is very efficient; this approach is reusable for various follow-up constraints (e.g., non-decreasing, different swap rules).
 
+
+### Flashcard
+Use DP: keep[i] and swap[i] track min swaps to make sequences increasing with/without swapping at i; update based on previous values.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

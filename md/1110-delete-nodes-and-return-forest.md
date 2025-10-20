@@ -125,6 +125,10 @@ def delNodes(root, to_delete):
 This problem is a classic **Tree DFS (post-order)** variation: you traverse, remove nodes, and dynamically split the tree into multiple forests. The key pattern is handling deletions by returning None to disconnect nodes, and adding new roots when subtrees become detached.  
 This approach is widely applicable in problems involving *dynamic tree modifications*, *forest creation*, or *on-the-fly reparenting/disconnection* during traversal.
 
+
+### Flashcard
+Post-order DFS: if node is in to_delete set, disconnect it and add non-deleted children to forest result list.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

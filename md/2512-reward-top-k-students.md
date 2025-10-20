@@ -140,6 +140,10 @@ This problem is a classic case of **scoring + sorting with tie-breakers**.
 The solution uses hashing for efficient look-up (Python set), iterates through each record, and uses a custom sort based on two keys.  
 Such scoring-and-ranking logic is a common pattern — applicable to problems like "rank athletes", "sort employees by performance", or "select top N items with multiple ranking criteria".
 
+
+### Flashcard
+Convert positive/negative word lists to sets, score each report by checking words against sets (+3/-1), sort by (score desc, id asc), return top k IDs.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

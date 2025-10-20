@@ -60,6 +60,10 @@ def kLengthApart(nums, k):
 ### Summary
 This is a linear scan/logical pointer (last-seen) problem; the template works for off-by-k checks in sequences, e.g., checking gaps or windows in bit masks.
 
+
+### Flashcard
+Track previous 1’s index; for each 1, check if gap to previous 1 is ≥ k, else return False.
+
 ### Tags
 Array(#array)
 

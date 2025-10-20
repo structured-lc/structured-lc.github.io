@@ -107,6 +107,10 @@ The key pattern is to always choose the largest possible aligned power-of-two bl
 This is a common pattern in address partitioning, interval grouping, or networking-related segmentation problems.  
 Other scenarios: memory segment partitioning, efficient resource allocation, block grouping algorithms.
 
+
+### Flashcard
+Greedily form largest CIDR block at each step based on IP alignment and remaining count n; use bit manipulation to find maximum valid block size.
+
 ### Tags
 String(#string), Bit Manipulation(#bit-manipulation)
 

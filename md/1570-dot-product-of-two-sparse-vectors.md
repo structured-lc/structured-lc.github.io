@@ -96,6 +96,10 @@ class SparseVector:
 This approach uses the **dictionary storage pattern** for sparse arrays—keeping only nonzero entries—which is common for sparsity optimization problems and is widely applicable in machine learning and compressed storage.  
 The core idea is to leverage the sparsity to optimize both memory and computation, avoiding unnecessary work with zero entries. This pattern also generalizes to operations like addition, norm, and finding overlaps in sparse data.
 
+
+### Flashcard
+Store only nonzero indices/values in hash map per vector; compute dot product by iterating smaller map and looking up in larger for O(min(nnz₁, nnz₂)).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Design(#design)
 

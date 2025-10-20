@@ -55,6 +55,10 @@ def getLastMoment(n, left, right):
 ### Summary
 Classic **simulation reduction**: after realizing collision is irrelevant to final result (label swap), can solve simply by considering max time for each direction. This pattern appears in problems where symmetry/indistinguishability allows ignoring intermediate interactions.
 
+
+### Flashcard
+Calculate the last moment before all ants fall off a plank by finding the maximum time it takes for any ant to reach the edge.
+
 ### Tags
 Array(#array), Brainteaser(#brainteaser), Simulation(#simulation)
 

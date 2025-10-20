@@ -165,6 +165,10 @@ GROUP BY
 ### Summary
 This is a **classic aggregation-and-join SQL/database problem**. The main pattern is **JOIN + GROUP BY + AGGREGATE**. This coding/data manipulation pattern is widely applicable in reporting, analytics, and survey-type business questions, and is highly common in both database queries and data processing with pandas or plain Python dicts.
 
+
+### Flashcard
+Join Project and Employee tables, GROUP BY project_id, compute AVG(experience_years), and ROUND to 2 decimals.
+
 ### Tags
 Database(#database)
 

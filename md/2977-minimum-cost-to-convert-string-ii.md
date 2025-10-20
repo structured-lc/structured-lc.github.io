@@ -143,6 +143,10 @@ def minimumCost(source, target, original, changed, cost):
 ### Summary
 This problem combines ideas from **all-pairs shortest path (Floyd-Warshall)** for chaining substring-to-substring transformations and **dynamic programming** to greedily apply the best conversion at each position. The transformation step is similar to word ladder/graph-of-words problems, while the DP breaking at substring positions is like jump game or string partition DP. This pattern is applicable in substring editing, advanced string transformations, and interval DP.
 
+
+### Flashcard
+Use DP where dp[i] = minimum cost to convert source[i:] to target[i:]. At each position, either match characters (cost 0) or try applying each transformation rule if the substring matches, then recurse. Use memoization to avoid recomputation.
+
 ### Tags
 Array(#array), String(#string), Dynamic Programming(#dynamic-programming), Graph(#graph), Trie(#trie), Shortest Path(#shortest-path)
 

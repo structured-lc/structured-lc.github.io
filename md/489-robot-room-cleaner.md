@@ -135,6 +135,10 @@ def cleanRoom(robot):
 ### Summary
 This problem is a classic **backtracking DFS with position marking**—used to explore an unknown environment. The "blind maze exploration" pattern appears in robotics, pathfinding, and AI. Managing *relative positioning* and *robot state* is critical. The core coding pattern works for online search, vacuum, and navigation simulation tasks.
 
+
+### Flashcard
+Use DFS to explore and clean all reachable cells, marking visited; backtrack after exploring each direction.
+
 ### Tags
 Backtracking(#backtracking), Interactive(#interactive)
 

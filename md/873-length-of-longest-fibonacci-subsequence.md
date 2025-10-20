@@ -82,6 +82,10 @@ def lenLongestFibSubseq(arr):
 ### Summary
 This problem uses the **dynamic programming on pairs** pattern, commonly applied in problems like finding arithmetic/geometric sequences or longest increasing subsequence variants. The key optimization is using a hashmap for O(1) lookups and updating based on subsequence extension, rather than recomputing from scratch for each new pair. This pattern is powerful in any problem involving sequence formation based on a relational property between elements.
 
+
+### Flashcard
+Use a hashmap for value-to-index; for each pair (i, j), find k where arr[k] + arr[i] = arr[j], track max subsequence length with DP.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming)
 

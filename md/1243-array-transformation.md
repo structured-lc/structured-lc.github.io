@@ -100,6 +100,10 @@ def transformArray(arr):
 ### Summary
 We used a straightforward **simulation** pattern: apply a rule repeatedly until no more changes are made. This deterministic simulation is a classic interview pattern, applicable in systems where updates depend on fixed left/right “neighbor” state (such as Conway’s Game of Life, heat flow, sandpile, etc). No advanced algorithmic tricks—just careful use of array copying and convergence checking.
 
+
+### Flashcard
+Simulate each day, updating inner elements based on neighbors until no changes occur; stop early if array stabilizes.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

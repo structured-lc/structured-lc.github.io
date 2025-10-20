@@ -102,6 +102,10 @@ def maxProfit(k, prices):
 This problem uses the **dynamic programming / state machine** pattern, where the state represents the max profit after i transactions up to each day.  
 Key techniques are “profit-so-far,” optimizations for large k, and transition state compression. This pattern applies to many variations of stock-buy-sell questions and resource allocation optimization problems.
 
+
+### Flashcard
+Use dynamic programming: dp[i][j] = max profit up to day j with at most i transactions, updating by tracking local/global maxima.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

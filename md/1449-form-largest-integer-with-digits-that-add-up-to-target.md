@@ -67,6 +67,10 @@ def largestNumber(cost: list[int], target: int) -> str:
 ### Summary
 This is a DP (unbounded knapsack) with strings as states, maximizing lex order and length. It’s a classic digit-dp problem, similar to coin change and integer composition with digit constraints.
 
+
+### Flashcard
+Use DP for unbounded knapsack; for each total cost, try all digits, updating dp[t] to largest number (prefer more digits and lexicographically larger).
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

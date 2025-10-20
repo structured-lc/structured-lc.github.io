@@ -85,6 +85,10 @@ def dividePlayers(skill):
 ### Summary
 This problem uses the **two-pointer + greedy pairing** pattern, leveraging array sorting to efficiently guarantee equal team sums. This is a classic approach in problems where elements must be paired to achieve uniformity, common in partitioning, load balancing, and team assignment tasks.
 
+
+### Flashcard
+Sort array, pair smallest with largest; all pairs must have same sum; if not, return -1.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Sorting(#sorting)
 

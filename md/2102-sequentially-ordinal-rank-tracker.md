@@ -145,6 +145,10 @@ By always keeping the best k elements (by score & lex order) in a max-heap and t
 This pattern is common in problems needing real-time top-k queries, like finding the kᵗʰ largest/smallest element or streaming median.  
 The key insight is careful heap balancing on both add and get.
 
+
+### Flashcard
+Maintain two heaps: a min-heap for the top k locations and a max-heap for the rest; on each get(), return the root of the min-heap and rebalance as needed for O(log n) add and O(log n) get.
+
 ### Tags
 Design(#design), Heap (Priority Queue)(#heap-priority-queue), Data Stream(#data-stream), Ordered Set(#ordered-set)
 

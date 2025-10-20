@@ -110,6 +110,10 @@ This problem is a classic application of interval dynamic programming with palin
 The approach combines a 2D table for quick palindrome checks and a 1D DP for optimal substructure over non-overlapping intervals.  
 The pattern—interval/substring-based DP with palindrome checking—arises frequently in Leetcode Hard/Medium DP problems, including those involving cuts, splits, and substring parsing (e.g., Palindrome Partitioning, Longest Palindromic Substring).
 
+
+### Flashcard
+Use DP to greedily select earliest palindromic substrings of length ≥ k, skipping to the next non-overlapping position each time.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

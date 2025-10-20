@@ -114,6 +114,10 @@ def successfulPairs(spells: List[int], potions: List[int], success: int) -> List
 This problem is a classic pairing/counting counts ≥ threshold pattern, using **sorting and binary search** to optimize brute-force pair enumeration.  
 The solution uses a **two-pointer/binary search pattern** that is common in sorted array queries, as seen in problems involving pair products, triplet sums, and subset counts. This combo is efficient for counting "at least X" relations between sorted arrays and appears often in coding interviews.
 
+
+### Flashcard
+Sort potions, then for each spell, binary search for the smallest potion where spell × potion ≥ success; count all potions from that point onward.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
 

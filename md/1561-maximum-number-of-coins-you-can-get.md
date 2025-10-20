@@ -68,6 +68,10 @@ def maxCoins(piles):
 ### Summary
 This is a classic greedy and sorting problem. By sorting and taking every second pile from ⌊n/3⌋ onward, you maximize your coins under the game's rules. The pattern here (greedily picking based on sorted order) is common in coin games, selecting intervals, or maximizing minimum/median elements under constraints.
 
+
+### Flashcard
+Sort piles; greedily take every second-largest from end by skipping smallest m values and then alternating between Alice's (skip) and yours (take).
+
 ### Tags
 Array(#array), Math(#math), Greedy(#greedy), Sorting(#sorting), Game Theory(#game-theory)
 

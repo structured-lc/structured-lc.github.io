@@ -109,6 +109,10 @@ def minimumDifference(nums):
 ### Summary
 This problem uses the "prefix-suffix with heaps" pattern, efficiently keeping track of optimal substructure sums by sliding windows and priority queues. It is a classic application of min/max heap and prefix/suffix partitioning, and this pattern appears in challenging split/partition subarray problems where a greedy or single pass approach may not suffice.
 
+
+### Flashcard
+After removing n elements, the two n-sized slices must be contiguous; use prefix sums and sliding window to find the minimal difference in sums.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Heap (Priority Queue)(#heap-priority-queue)
 

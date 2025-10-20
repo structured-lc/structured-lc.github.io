@@ -118,6 +118,10 @@ We explored recursive and iterative (using a stack) solutions to perform inorder
 This is a classic DFS/tree traversal pattern which often shows up in binary tree problems — and understanding both approaches is helpful for similar problems, such as preorder, postorder traversals, or variants like "kth smallest in BST", "Validate BST", etc.  
 For more advanced follow-ups, Morris Traversal allows O(1) space traversal using tree threading, but it’s less common for "easy" interview screens.
 
+
+### Flashcard
+Traverse the tree inorder (left, node, right) using recursion or a stack to collect node values in the correct order.
+
 ### Tags
 Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

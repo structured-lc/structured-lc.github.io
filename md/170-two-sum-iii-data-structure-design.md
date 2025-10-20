@@ -103,6 +103,10 @@ class TwoSum:
 ### Summary
 This problem leverages the **hash map counting** pattern: storing and looking up counts of elements for efficient pairwise sum checks. It appears frequently in "Two Sum"-style problems and is a classic for practicing trade-offs between brute-force and optimized hash map solutions. The pattern can be applied for problems needing quick checks for unions or pairs, and when working with frequency-based queries.
 
+
+### Flashcard
+Store counts in a hash map; for find(value), check if value-x exists for each x, handling duplicates if x == value-x.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Design(#design), Data Stream(#data-stream)
 

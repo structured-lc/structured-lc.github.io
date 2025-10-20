@@ -93,6 +93,10 @@ def reverseWords(s):
 ### Summary  
 This problem uses the two-pass reversal approach: reverse the whole character array first, then reverse each word to restore their order. The technique is a classic example of *reverse-in-place* and *two-pointer* patterns, commonly applied in array and string manipulation problems to achieve O(1) space solutions; for example, it is similar to tasks that reverse subarrays, rotate arrays, or rotate strings.
 
+
+### Flashcard
+Reverse the entire array, then reverse each word in place to achieve in-place word order reversal.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

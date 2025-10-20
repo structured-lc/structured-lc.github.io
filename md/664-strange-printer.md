@@ -107,6 +107,10 @@ def strangePrinter(s: str) -> int:
 
 This is a **2D interval dynamic programming** problem, where optimal solutions for substrings combine to make optimal solutions for the full string. Removing consecutive duplicates simplifies the state-space. This DP pattern is common in substring and interval merge problems, such as "Burst Balloons" and "Palindrome Partitioning". The core insight: Think of every unique segment as a subproblem and recursively build up to find the fewest print operations.
 
+
+### Flashcard
+Use DP where dp[i][j] is min turns to print s[i..j]; for each split, combine results, and optimize by merging same characters.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

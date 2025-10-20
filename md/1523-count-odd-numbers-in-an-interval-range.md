@@ -70,6 +70,10 @@ The main insight is recognizing the pattern that odd numbers appear every other 
 This is a classic *math trick* and is commonly seen in interval counting problems, not just for odds but for any regularly spaced property.  
 The pattern is useful for any task where you want to count elements matching a modulus over an interval.
 
+
+### Flashcard
+Count odd numbers in a range by using the formula ⌊(high+1)/2⌋ - ⌊low/2⌋.
+
 ### Tags
 Math(#math)
 

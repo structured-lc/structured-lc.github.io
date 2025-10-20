@@ -130,6 +130,10 @@ This problem is a classic "convert tree to graph, then BFS for shortest distance
 It uses *graph traversal logic* (BFS), with added pre-processing (parent pointers via DFS) to enable "undirected" movement between tree nodes.  
 This approach appears in problems involving shortest paths, friend circles, social networks, and can be adapted to any structure where two-way movement is required but links are not explicitly stored.
 
+
+### Flashcard
+Treat the tree as a graph; BFS from the target, tracking distance K in all directions (up and down).
+
 ### Tags
 Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

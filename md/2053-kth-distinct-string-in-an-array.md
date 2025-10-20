@@ -87,6 +87,10 @@ Count item frequencies, then in another pass, select the kᵗʰ item that fits a
 It’s a commonly used trick for "frequency in array" problems and shows up in favorites like "First Unique Character", "Top K Frequent", etc.  
 Efficient, order-preserving, and easy to reason about.
 
+
+### Flashcard
+Use a hash map to count string occurrences in one pass, then select the kth distinct string.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting)
 

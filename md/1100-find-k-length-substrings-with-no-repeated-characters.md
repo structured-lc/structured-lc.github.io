@@ -97,6 +97,10 @@ This problem is a classic **sliding window & hashing** pattern, efficiently find
 It's commonly used in substring, permutation, and windowed string problems.  
 The technique generalizes to many scenarios where we need to track properties of a *window* over a sequence.
 
+
+### Flashcard
+Use sliding window with hash map tracking character frequencies; window is valid when map size equals k (all characters unique).
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

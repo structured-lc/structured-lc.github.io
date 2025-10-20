@@ -101,6 +101,10 @@ def fallingSquares(positions):
 ### Summary
 This problem leverages the sweep line and interval management pattern. The optimal solution applies coordinate compression and interval (segment tree) methods to efficiently track and update heights. This pattern is widely used in range update and query problems, seen in histogram, skyline, and range scheduling challenges.
 
+
+### Flashcard
+Use segment tree or ordered map to track intervals and heights; for each new square, find max height in its range, stack, and update running max.
+
 ### Tags
 Array(#array), Segment Tree(#segment-tree), Ordered Set(#ordered-set)
 

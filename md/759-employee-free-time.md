@@ -119,6 +119,10 @@ This is a classic **merge intervals** pattern problem.
 You flatten and sort all intervals, merge them, then look for gaps—applying the same approach as for meeting rooms or calendar union/intersection.  
 This pattern reappears in range intersection, free/busy time calculations, and event timeline simulation problems.
 
+
+### Flashcard
+Merge all employee intervals, then find gaps between merged intervals to identify common free times.
+
 ### Tags
 Array(#array), Line Sweep(#line-sweep), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

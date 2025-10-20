@@ -117,6 +117,10 @@ This is a classic **dynamic programming** problem—**state machine DP** specifi
 Recognizing states and defining them properly is central and appears in many stock trading DP problems.  
 This exact pattern is useful for any scenario where constraints limit consecutive actions (e.g., limited cooldowns, transaction fees, buy/sell restrictions).
 
+
+### Flashcard
+Apply dynamic programming to track the best profit at each day, considering buy, sell, and cooldown states.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

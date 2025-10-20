@@ -81,6 +81,10 @@ def divisibilityArray(word: str, m: int) -> list[int]:
 ### Summary
 This problem uses a common **prefix property pattern**: processing “rolling” or progressively larger chunks of a sequence, updating a computation efficiently. The **running/modulo trick** is crucial for efficiency in string-to-integer problems, especially with very large numbers. This pattern is also used in problems involving rolling hash or checking divisibility without explicit integer conversion.
 
+
+### Flashcard
+Track the running remainder as you scan the string left to right; for each digit, update remainder = (remainder × 10 + digit) mod m and mark 1 if remainder is 0, else 0.
+
 ### Tags
 Array(#array), Math(#math), String(#string)
 

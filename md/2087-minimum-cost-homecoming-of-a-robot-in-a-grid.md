@@ -99,6 +99,10 @@ def minCost(startPos, homePos, rowCosts, colCosts):
 ### Summary
 This approach is a classic **greedy grid traverse** where path order doesn't matter because every step brings an unavoidable cost. Thus, adding all the required row and column transition costs on the path yields the minimum. This pattern is very common in grid shortest path problems *when movement costs are fixed per row/column or cell* and no obstacles exist, and can be extended to classic shortest path with obstacles by switching to BFS or Dijkstra's algorithm.
 
+
+### Flashcard
+The minimal cost is the sum of all row costs between start_row and home_row plus all column costs between start_col and home_col.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

@@ -81,6 +81,10 @@ def findMinFibonacciNumbers(k):
 ### Summary
 This is a classic greedy problem where at each step you subtract the largest Fibonacci number ≤ k, minimizing the number of required summands. This is related to Zeckendorf's theorem if restricted to distinct Fibonacci numbers, but here, repetition is allowed. The algorithm uses the "greedy reduction" coding pattern, which is a common way to minimize the number of terms or coins under such monotonic conditions. It can also be applied to greedy coin change and representation problems where denominations have similar properties.
 
+
+### Flashcard
+Use a greedy strategy to represent the target sum as a sum of Fibonacci numbers by always subtracting the largest possible Fibonacci number.
+
 ### Tags
 Math(#math), Greedy(#greedy)
 

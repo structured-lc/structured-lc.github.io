@@ -93,6 +93,10 @@ def maxConsecutive(bottom, top, special):
 ### Summary
 This problem fits the "finding maximum gap between sorted elements + start/end" pattern. The solution relies on sorting and then O(1) gap computation per interval, which is common when working with excluded or 'barrier' points segmenting a range. This technique is useful for maximum subarray problems, calendar booking, intervals between events, and seat allocation.
 
+
+### Flashcard
+Sort special floors, compute gaps between them and the ends; the largest gap is the answer.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

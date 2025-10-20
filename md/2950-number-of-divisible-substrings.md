@@ -113,6 +113,10 @@ It closely follows the “count all substrings matching a custom property” pat
 The mapping-step is a minor twist, but overall, this is a direct nesting-loop substring-counting algorithm.  
 This pattern of mapping-to-number + divisibility check can appear in string hash and “count subarrays/substrings with sum divisible by k” style questions.
 
+
+### Flashcard
+Map each character to a digit, then for every substring, check if the sum of its digits is divisible by its length using nested loops and a running sum.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting), Prefix Sum(#prefix-sum)
 

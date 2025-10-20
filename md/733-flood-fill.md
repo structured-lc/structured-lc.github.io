@@ -81,6 +81,10 @@ return image
 
 Flood Fill is a classic graph traversal problem on a 2D grid. The key is to start at the given pixel, explore all connected pixels (matching the original color) in the four directions, and change their color. DFS is concise and commonly used for interviews and is applicable to many 2D grid exploration tasks (such as “Number of Islands” or “Maze Solver”).
 
+
+### Flashcard
+Use DFS/BFS from starting pixel, recursively changing connected pixels with matching original color to new color; the color change itself prevents revisiting.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

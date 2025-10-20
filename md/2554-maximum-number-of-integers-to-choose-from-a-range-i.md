@@ -100,6 +100,10 @@ This is a classic **greedy selection problem**, maximizing count under a sum con
 The pattern "pick low to maximize count/value" shows up in knapsack/greedy cover/scheduling problems, and is applicable whenever you want max items under an upper-bound constraint.  
 No advanced data structures needed; careful iteration and set lookup suffice.
 
+
+### Flashcard
+Greedily pick the smallest available numbers (not banned) until sum exceeds maxSum; this maximizes count.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
 

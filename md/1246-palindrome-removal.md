@@ -73,6 +73,10 @@ def minimumMoves(arr):
 ### Summary
 This is a dynamic programming interval problem, similar to burst balloons, matrix multiplication, or palindrome partitioning. Keep the pattern "dp for all subarrays," trying all partitions.
 
+
+### Flashcard
+Use DP: dp[i][j] = min moves to remove arr[i..j]; try all splits and optimize when arr[i] == arr[j] for palindromic ends.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

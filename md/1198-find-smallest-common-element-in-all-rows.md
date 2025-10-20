@@ -89,6 +89,10 @@ def smallestCommonElement(mat):
 ### Summary
 This problem uses a **hashmap counting technique** to find intersection across multiple sorted lists, a pattern common in "find all common elements" questions. For sorted arrays, a multi-pointer technique inspired by merge algorithms or k-way merge is also efficient. Both strategies are frequently applied in problems involving list/array intersections or aggregating statistics across datasets.
 
+
+### Flashcard
+Count element frequencies across rows; the smallest element with count = row count is the answer.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Matrix(#matrix), Counting(#counting)
 

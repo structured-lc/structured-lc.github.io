@@ -109,6 +109,10 @@ This is a classic greedy, linear scan problem—a variant of the "longest increa
 The solution uses a **greedy two-pass** variable update pattern—a common approach in subsequence search problems—which can also be generalized for longer fixed-length increasing subsequences.  
 Patterns like this (tracking local minimums and mid-values) are broadly applicable to optimized, constant-space sequence problems.
 
+
+### Flashcard
+Track the smallest and second smallest values seen so far; if you find a number larger than both, an increasing triplet exists.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

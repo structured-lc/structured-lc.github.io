@@ -87,6 +87,10 @@ This problem is a classic **monotonic stack** / **greedy** pattern.
 The key is to always remove the "leftmost higher digits" to make the final number small, mirroring the logic of "find the next smaller element."  
 This approach is seen in problems such as "Next Greater Element", "Largest Rectangle in Histogram", and is common in competitive coding to optimize brute-force digit removal.
 
+
+### Flashcard
+Use greedy stack approach—iterate left to right, pop stack when current digit is smaller than top (and removals remain), ensuring largest digits at significant positions are removed first.
+
 ### Tags
 String(#string), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
 

@@ -105,6 +105,10 @@ def minimumBeautifulSubstrings(s: str) -> int:
 ### Summary
 This problem uses the **backtracking + DP (memoization)** pattern over all substring partitions, alongside a precomputed set for fast "beautiful" checks. Such approaches are common for minimum cuts, palindrome partitions, and word break problems, especially when input size is small and properties can be checked quickly using hashing or set membership.
 
+
+### Flashcard
+Use DP where dp[i] = minimum splits for prefix s[0:i], trying all valid beautiful substrings ending at i.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking)
 

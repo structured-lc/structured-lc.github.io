@@ -92,6 +92,10 @@ def dominantIndex(nums):
 This problem uses a **single pass max and runner-up max search**—a frequent pattern for “top-k” or “dominant/majority” style problems.  
 It’s efficient (O(n), O(1)) and easy to reason about, and this pattern regularly appears in leaderboards, majority element, and similar “dominant” checks.
 
+
+### Flashcard
+Find largest number and second-largest in one pass; return index if max ≥ 2 × second_max, else -1.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

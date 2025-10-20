@@ -105,6 +105,10 @@ This problem uses the **modified Dijkstra’s algorithm** pattern — instead of
 It’s a classic application of “minimize the maximum” along a path, common in problems with obstacles or variable path costs (see also: Path with Minimum Effort, 1631).  
 This pattern is very useful in grid pathfinding scenarios where *bottleneck constraints* are key, rather than total sum.
 
+
+### Flashcard
+Use a min-heap (Dijkstra) to always expand the cell with the lowest elevation, tracking the max elevation along the path; the answer is the minimal max elevation needed to reach (n−1, n−1).
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
 

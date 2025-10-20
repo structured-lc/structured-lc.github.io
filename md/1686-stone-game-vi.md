@@ -72,6 +72,10 @@ def stoneGameVI(a, b):
 ### Summary
 This uses the **greedy maximum denial pattern**: rather than maximizing single-player gain, players maximize their value *plus* the value denied to their opponent. This sorting-based pick-order also appears in other combinatorial games, resource allocation, or two-player greedy setups.
 
+
+### Flashcard
+Stone Game VI
+
 ### Tags
 Array(#array), Math(#math), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Game Theory(#game-theory)
 

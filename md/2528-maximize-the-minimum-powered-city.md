@@ -129,6 +129,10 @@ This is a **Binary Search on Answer** combined with a greedy sweep (range coveri
 This pattern is widely used for “maximize the minimum” style allocation, interval/coverage, load balancing, and “can we reach X with ≤Y additions” network/resource planning problems.  
 Typical features: test function simulates (greedily) and steers the binary search—common in scheduling, resource distribution, and “painter’s partition” family of problems.
 
+
+### Flashcard
+Binary search the minimum power x; for each x, greedily place stations to cover all cities, checking if ≤ k stations suffice.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy), Queue(#queue), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

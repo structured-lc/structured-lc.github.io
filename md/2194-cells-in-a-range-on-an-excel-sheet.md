@@ -76,6 +76,10 @@ def cellsInRange(s: str) -> list[str]:
 ### Summary
 This problem uses a straightforward nested iteration pattern—a flat Cartesian product between the specified column and row ranges. Parsing and character arithmetic allow you to cleanly walk through columns and rows without extra space or complexity. This matrix/combination pattern is common in problems where ranges or 2D grid coordinates must be enumerated, such as chessboard traversal, spreadsheet manipulations, or coordinate-based dynamic programming.
 
+
+### Flashcard
+Parse start/end columns and rows, iterate over all column-row pairs, and output cell names in order.
+
 ### Tags
 String(#string)
 

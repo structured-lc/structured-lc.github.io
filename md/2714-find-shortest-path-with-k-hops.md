@@ -123,6 +123,10 @@ This pattern is common for problems where states have multiple resources (e.g., 
 It’s directly applicable in any weighted graph where you must make k-cost-altering choices along shortest paths.  
 The main insight is state augmentation and careful relaxation in Dijkstra’s algorithm.
 
+
+### Flashcard
+Modify Dijkstra's algorithm to track (node, hops_used) state, allowing up to k hops (zero-cost edges) per path.
+
 ### Tags
 Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
 

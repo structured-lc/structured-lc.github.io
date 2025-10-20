@@ -89,6 +89,10 @@ def smallestEquivalentString(s1: str, s2: str, baseStr: str) -> str:
 ### Summary
 This problem uses the **Union Find / Disjoint Set Union (DSU)** pattern for efficiently managing equivalence groups and enforcing lexicographical parent/root choice. This approach is common for grouping with transitive closure (e.g., friend circles, minimum equivalence classes, network grouping), and is powerful whenever you need to dynamically combine and query subsets or groups.
 
+
+### Flashcard
+Use Union Find to group equivalent characters, always linking to the smallest letter, then build the result by mapping each character to its group's root.
+
 ### Tags
 String(#string), Union Find(#union-find)
 

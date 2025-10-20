@@ -74,6 +74,10 @@ def numWays(steps, arrLen):
 ### Summary
 This problem is a classic **bounded 1D DP** (state compression), reusing rows for efficiency. The pattern often appears in random walks, probability paths, and state machine transitions constrained by boundaries.
 
+
+### Flashcard
+Use DP: dp[step][pos] = ways to reach pos at step; transition by moving left, right, or staying, bounded by steps and arrLen.
+
 ### Tags
 Dynamic Programming(#dynamic-programming)
 

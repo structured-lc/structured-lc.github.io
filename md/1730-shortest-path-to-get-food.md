@@ -105,6 +105,10 @@ def getFood(grid):
 ### Summary
 This problem is a textbook application of the **BFS shortest path in a matrix/grid** pattern. BFS is chosen for its efficiency and guarantee of minimal path length in unweighted undirected grids. The problem is analogous to shortest path search in mazes, robot pathfinding, and can be extended for weighted graphs or other movement patterns (diagonal, knight’s moves, etc.).
 
+
+### Flashcard
+BFS from starting position '*' exploring 4 directions until reaching food '#'; return step count when food found, −1 if unreachable.
+
 ### Tags
 Array(#array), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

@@ -78,6 +78,10 @@ This is a classic functional programming technique, useful in **pipelines**, **m
 The identity function as default is a standard base case seen elsewhere (e.g., with reduce).  
 This pattern is reusable for any "reduce over functions" style chaining in codebases.
 
+
+### Flashcard
+Implement function composition by chaining unary functions from right to left, applying each function in sequence.
+
 ### Tags
 
 ### Similar Problems

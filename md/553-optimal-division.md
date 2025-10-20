@@ -70,6 +70,10 @@ def optimalDivision(nums):
 ### Summary  
 This approach relies on **greedy grouping**: maximize the numerator, minimize the denominator. It's a classic example of searching for an optimal parenthesization in arithmetic expressions, but the division operation’s non-associativity leads to a direct greedy solution rather than exhaustive search or dynamic programming. The string operations (join, format) are common patterns, especially for constructing arithmetic expressions from lists. This reasoning is applicable to other optimal parenthesization problems, particularly with non-commutative and non-associative operators.
 
+
+### Flashcard
+Place parentheses around nums₁/nums₂/…/numsₙ₋₁ to minimize the denominator and maximize the result; for n ≥ 3, output as nums₀/(nums₁/nums₂/…/numsₙ₋₁).
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming)
 

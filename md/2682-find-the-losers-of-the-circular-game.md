@@ -93,6 +93,10 @@ def circularGameLosers(n, k):
 ### Summary
 This solution uses the **simulation** and **boolean tracking** pattern. This is common for problems with circular iteration and "history of visitation", such as hot potato, Josephus problem, or rotational simulations. The method is robust for small or moderate n, simple to write, and easy to debug. It is widely applicable in interview problems with round-robin or repeated-process mechanics.
 
+
+### Flashcard
+Simulate passing the ball with step k × pass_number (mod n), mark receivers; stop when someone receives twice, return unmarked friends sorted.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Simulation(#simulation)
 

@@ -105,6 +105,10 @@ def numDistinctIslands(grid):
 ### Summary
 This problem uses a **DFS traversal** and path encoding pattern to uniquely describe and distinguish each island shape in the grid. The key pattern is the use of traversal “signatures” (movement patterns during DFS) to detect sameness. This approach and encoding trick is broadly useful in grid-based **flood-fill** or pattern matching problems, and can generalize to similar “distinct shape” or “distinct area” detection tasks.
 
+
+### Flashcard
+Use DFS/BFS to traverse each island; record relative coordinates to normalize shape, store shapes in a set to count distinct islands.
+
 ### Tags
 Hash Table(#hash-table), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Hash Function(#hash-function)
 

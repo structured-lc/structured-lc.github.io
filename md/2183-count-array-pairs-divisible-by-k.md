@@ -87,6 +87,10 @@ def countPairs(nums, k):
 This solution uses the "math plus hash map" pattern, turning a brute-force O(n²) problem into an O(n × d) one by leveraging properties of divisibility and gcd.  
 This technique of using gcd and careful frequency counting is widely applicable in number theory problems, especially those involving divisibility of products or pairs.
 
+
+### Flashcard
+For each num, count gcd(num, k); for each pair of gcds g₁, g₂, if g₁×g₂ mod k = 0, add count₁×count₂ to answer.
+
 ### Tags
 Array(#array), Math(#math), Number Theory(#number-theory)
 

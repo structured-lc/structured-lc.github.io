@@ -119,6 +119,10 @@ This problem is based on recognizing and maintaining invariants in permutation a
 The approach demonstrates the usefulness of greedy and two-pointer scanning, as well as thinking about array “order” as strict segment matching.  
 The coding pattern applies for problems where you’re allowed to move any element into a special “hole”/empty slot, and you must count the minimum operations to reach a sorted or specific arrangement.
 
+
+### Flashcard
+The minimum moves equals n minus the length of the longest sorted subsequence (excluding the empty space).
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

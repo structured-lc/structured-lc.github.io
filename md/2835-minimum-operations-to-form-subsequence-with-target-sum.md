@@ -108,6 +108,10 @@ def minOperations(nums, target):
 ### Summary
 This problem uses a **Greedy + Bitmasking** coding pattern: decompose the target into binary bits, and try to meet those needs using available powers in nums, greedily splitting larger powers as few times as possible to make up missing ones. This kind of pattern—matching target binary representation by combining/splitting available numbers—is widely applicable for power-of-two, resource consolidation, or chip-fabrication style problems. The key insight is how to efficiently break and assemble necessary parts with minimal intervention, always deferring to the next available larger bit for splits.
 
+
+### Flashcard
+Count frequency of each power of 2; greedily split larger powers when needed to build target bitwise; operations = splits required.
+
 ### Tags
 Array(#array), Greedy(#greedy), Bit Manipulation(#bit-manipulation)
 

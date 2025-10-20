@@ -85,6 +85,10 @@ This is a direct metadata query pattern, commonly used with pandas DataFrames.
 The main concept is accessing `.shape`.   
 This is a simple example of using built-in data structure properties to efficiently obtain structural metadata, and the approach generalizes to other data containers (arrays, matrices, lists of lists) where size information is readily available.
 
+
+### Flashcard
+Use DataFrame.shape to get (rows, cols) and convert to a list for the DataFrame’s size.
+
 ### Tags
 
 ### Similar Problems

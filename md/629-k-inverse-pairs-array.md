@@ -90,6 +90,10 @@ This problem uses a classic dynamic programming approach with **prefix sums** to
 The pattern is closely related to DP for permutation problems, and prefix sums are a standard optimization to turn O(n²k) into O(nk) time.  
 This DP + prefix sum trick is very common in counting and partitioning problems.
 
+
+### Flashcard
+Use dynamic programming: dp[n][k] = sum of dp[n−1][k−i] for 0 ≤ i < n, representing ways to insert n at each position to create i new inverse pairs.
+
 ### Tags
 Dynamic Programming(#dynamic-programming)
 

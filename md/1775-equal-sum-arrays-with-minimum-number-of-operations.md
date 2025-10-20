@@ -116,6 +116,10 @@ def minOperations(nums1, nums2):
 ### Summary
 This problem is a classic greedy pattern: always make the operation with the biggest gain toward your goal. Sorting possible single-step changes (gains) and applying the largest first is optimal. The core pattern applies to other 'minimize operation count to reach target using step-gain set' problems, especially those with finite, small-value domains.
 
+
+### Flashcard
+To equalize sums of two arrays with minimum operations, sort both arrays and iteratively adjust the largest numbers in the larger sum array and the smallest numbers in the smaller sum array until the sums are equal.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Greedy(#greedy), Counting(#counting)
 

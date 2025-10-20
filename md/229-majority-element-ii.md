@@ -102,6 +102,10 @@ def majorityElement(nums: List[int]) -> List[int]:
 ### Summary
 We used the extended **Boyer-Moore Voting Algorithm** to solve for elements appearing more than ⌊n/3⌋ times with O(n) time and O(1) space. The same pattern can be generalized to finding elements that appear more than ⌊n/k⌋ times by keeping k−1 candidates and their counts. This is a classic frequent elements pattern, widely applicable in voting, streaming, and summary statistics problems.
 
+
+### Flashcard
+Use Boyer-Moore Voting to find up to two candidates appearing >⌊n/3⌋ times, then verify counts in a second pass.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting), Counting(#counting)
 

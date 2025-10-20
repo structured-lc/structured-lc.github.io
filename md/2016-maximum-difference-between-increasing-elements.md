@@ -87,6 +87,10 @@ def maximumDifference(nums):
 ### Summary
 This problem uses the **one-pass tracking pattern**, maintaining a running minimum and comparing on-the-fly, which is common in maximum subarray or minimum/maximum difference tasks. This approach is efficient (O(n), O(1)) and frequently seen in array scanning, stock-buy-sell type, and sliding window variations.
 
+
+### Flashcard
+Find the maximum difference between increasing elements by tracking the minimum element seen so far.
+
 ### Tags
 Array(#array)
 

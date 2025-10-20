@@ -88,6 +88,10 @@ It utilizes the “string starts with” coding pattern, which is common in subs
 The approach is direct, efficient for small strings, and easily generalizes to related problems like suffix checks or substring searches.  
 Patterns here are applicable in Trie/string-search problems, token scanning, and text preprocessing.
 
+
+### Flashcard
+For each word, check if it is a prefix of s by comparing characters; count matches—O(n × m) where n is words, m is max word length.
+
 ### Tags
 Array(#array), String(#string)
 

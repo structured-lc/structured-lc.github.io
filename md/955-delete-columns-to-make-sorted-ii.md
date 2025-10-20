@@ -93,6 +93,10 @@ This is a classic **greedy column-by-column** check, relying on logical marks to
 The “lock adjacency” trick is also used in problems like “Merge Intervals”, “Tracking Sorted Slices”, etc.  
 Key insight: Delete only columns that necessarily cause disorder, and track sorted pairs to minimize redundant checks.
 
+
+### Flashcard
+For each column left to right, if any unsorted adjacent pair exists, mark column for deletion and lock sorted pairs.
+
 ### Tags
 Array(#array), String(#string), Greedy(#greedy)
 

@@ -141,6 +141,10 @@ def maximumBeauty(flowers, newFlowers, target, full, partial):
 ### Summary
 This approach uses **greedy reasoning + sorting + binary search** (a common combo for maximizing statistics under constraints). It mirrors patterns like "maximize minimum" with fixed resources, which is recurrent in resource allocation and "minimizing the maximum" problems (e.g., LeetCode 1283, 875). The technique of prefix sums plus binary search for value upgrade under budget is also broadly applicable.
 
+
+### Flashcard
+Sort flowers, try all possible x complete gardens, and fill the rest as high as possible.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting), Enumeration(#enumeration), Prefix Sum(#prefix-sum)
 

@@ -83,6 +83,10 @@ def balancedStringSplit(s: str) -> int:
 ### Summary
 This problem is a classic greedy pattern: make a decision whenever you have enough information (balance = 0) and proceed. The approach is simple, readable, and uses constant extra space. Similar greedy counters can be applied to problems involving substrings or intervals with balance conditions, such as parentheses matching or array balancing.
 
+
+### Flashcard
+Scan the string, incrementing a balance counter for 'L' and decrementing for 'R'; whenever balance is zero, increment the split count.
+
 ### Tags
 String(#string), Greedy(#greedy), Counting(#counting)
 

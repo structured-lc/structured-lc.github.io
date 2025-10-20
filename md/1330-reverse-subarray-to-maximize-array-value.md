@@ -79,6 +79,10 @@ def maxValueAfterReverse(nums: List[int]) -> int:
 ### Summary
 This approach uses greedy analysis and local improvement by only checking how reversing a subarray affects the boundaries rather than recalculating the whole sum. The solution is a textbook application of the greedy optimization pattern, focusing on local modifications and their global effects. This pattern (focus on boundary contributions when subarrays are reversed) occurs in many interval and sequence manipulation problems.
 
+
+### Flashcard
+Only boundary pairs change when reversing a subarray; compute original sum, then try all boundaries to maximize the value efficiently.
+
 ### Tags
 Array(#array), Math(#math), Greedy(#greedy)
 

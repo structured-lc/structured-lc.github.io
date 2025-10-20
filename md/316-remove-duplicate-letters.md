@@ -105,6 +105,10 @@ This problem uses a **monotonic stack** approach, combined with greedy logic and
 Variants of this pattern can be found in other "remove duplicate" or "smallest/largest subsequence" style questions, such as "Smallest Subsequence of Distinct Characters."  
 Understanding the **greedy and stack** combination is essential and widely applicable in substring/subsequence optimization problems.
 
+
+### Flashcard
+Construct the result greedily, ensuring lexicographical order by removing larger characters when possible.
+
 ### Tags
 String(#string), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
 

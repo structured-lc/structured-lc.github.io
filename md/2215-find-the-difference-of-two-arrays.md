@@ -95,6 +95,10 @@ def findDifference(nums1, nums2):
 This approach uses the **hash set pattern** — convert arrays to sets for efficient membership checks and uniqueness.  
 It's a common pattern for array difference, union, and intersection problems and is broadly applicable in deduplication, membership, and comparison scenarios.
 
+
+### Flashcard
+Convert both arrays to sets; return elements unique to each set for the difference.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

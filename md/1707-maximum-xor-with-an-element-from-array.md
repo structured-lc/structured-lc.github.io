@@ -147,6 +147,10 @@ This problem uses a *bitwise Trie* (binary prefix tree) to efficiently find the 
 This tree-based pattern is common for bitmask and XOR maximization over dynamic or filtered sets, especially for "all-pairs" queries with constraints. This pattern also appears in "Maximum XOR of Two Numbers in an Array" and similar bitwise search problems.  
 Key idea: Reduce per-query work to O(bit-length), use sorting for efficient eligibility, and process in two-pointer style to maintain optimal Trie state for each query.
 
+
+### Flashcard
+For each query, use a bitwise trie to find max XOR between x and any number in nums ≤ m—efficiently handle large input.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Trie(#trie)
 

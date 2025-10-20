@@ -144,6 +144,10 @@ class WordDictionary:
 ### Summary
 This problem is a classic **Trie design** problem with backtracking to handle wildcard (dot) queries. The Trie enables quick lookups and pruning of non-matching paths, making searches efficient even with some wildcards. This pattern is widely applicable for autocomplete, prefix/suffix matching, regex engines, and dictionary-based problems.
 
+
+### Flashcard
+Store words in a trie; for search, use DFS to handle '.' wildcards by exploring all possible child nodes at each position.
+
 ### Tags
 String(#string), Depth-First Search(#depth-first-search), Design(#design), Trie(#trie)
 

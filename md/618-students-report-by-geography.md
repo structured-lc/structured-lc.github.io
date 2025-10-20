@@ -163,6 +163,10 @@ print(students_report_by_geography(students))
 ### Summary
 This is a classic **pivot** or **group-by with row-number** pattern, useful for *transforming rows into columns*. It’s especially common in reporting, business intelligence, and data analytics tasks. The pattern generalizes to any grouping and pivoting problem where categorical columns become table headers and elements are selected by rank or order.
 
+
+### Flashcard
+Assign row numbers to students per continent (ordered by name), then pivot so each continent is a column and students are aligned by row number.
+
 ### Tags
 Database(#database)
 

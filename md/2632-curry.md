@@ -82,6 +82,10 @@ This is a classic **closure and partial application** (currying) functional prog
 It shows up anywhere you want to delay evaluation, enable dependency injection, or create partially applied utility methods.  
 Closures, recursion, and argument accumulation are the central strategies applied here.
 
+
+### Flashcard
+Curry a function by accumulating arguments until the full set is collected, then applying the original function.
+
 ### Tags
 
 ### Similar Problems

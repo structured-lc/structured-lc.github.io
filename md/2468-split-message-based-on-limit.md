@@ -114,6 +114,10 @@ def splitMessage(message: str, limit: int) -> list[str]:
 ### Summary
 This is a **greedy + simulation** problem: for each possible split (increasing number of parts), see if the available space (given suffix overheads) can encode the message. It blends **string manipulation** and dynamic bounds checking—useful in messaging/buffering-related problems or when reconstructing encoded data. Binary search can further optimize finding the minimal valid split. This pattern is common in “split fit with overhead” contexts (e.g., message chunking, packetization).
 
+
+### Flashcard
+For each possible number of parts k, check if message can be split so each part (with suffix <a/b>) fits within limit; binary search k for efficiency.
+
 ### Tags
 String(#string), Binary Search(#binary-search), Enumeration(#enumeration)
 

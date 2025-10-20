@@ -70,6 +70,10 @@ class NumArray:
 ### Summary
 This problem is a classic application of the **prefix sum** pattern, enabling efficient O(1) range sum queries after linear-time preprocessing. The approach is common and can be extended to mutable arrays with Segment Trees or Fenwick Trees, and adapted to multidimensional range sum problems. It’s an effective way of trading a bit of extra memory for drastic speedup in query performance for immutable data.
 
+
+### Flashcard
+Preprocess the array into a prefix sum array to enable O(1) range sum queries.
+
 ### Tags
 Array(#array), Design(#design), Prefix Sum(#prefix-sum)
 

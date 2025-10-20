@@ -126,6 +126,10 @@ def minimumHammingDistance(source, target, allowedSwaps):
 This problem uses the **Union-Find pattern** to break a permutation-rearrangement question into independently swappable components, and **multiset counting** to greedily minimize mismatches within each.  
 This approach is common for **graph connectivity** and **grouped matching** problems and can be seen in problems like account merging, similar string groups, or reconstructing arrays with swaps.
 
+
+### Flashcard
+Group indices into connected components via allowed swaps; within each group, match source and target value frequencies to minimize mismatches.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Union Find(#union-find)
 

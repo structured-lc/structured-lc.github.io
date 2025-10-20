@@ -128,6 +128,10 @@ This problem uses the **greedy + combinatorial** pattern: always select the k mo
 The pattern appears in problems related to *top-K selection*, combinations with duplicates, or maximizing set-based scores.  
 Key techniques: counter, combinatorics, modular arithmetic, careful handling of ties.
 
+
+### Flashcard
+Pick k chars with highest frequencies; for ties at boundary, use combinatorics to count ways; beauty = product of frequencies × combinations.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), String(#string), Greedy(#greedy), Combinatorics(#combinatorics)
 

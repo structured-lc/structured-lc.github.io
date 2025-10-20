@@ -86,6 +86,10 @@ def minmaxGasDist(stations, k):
 ### Summary  
 This problem is a classic application of **binary search on the answer**: we use binary search to find the smallest max distance (penalty) such that placing k new gas stations achieves it. The approach is efficient and avoids the combinatorial explosion of placing each individual station, and applies generally to problems where you need to minimize the maximum across subdivided intervals. This pattern appears in load balancing, job scheduling, and array partitioning problems.
 
+
+### Flashcard
+Binary search the minimal possible max distance; for each guess, greedily place stations to check if k stations suffice.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

@@ -79,6 +79,10 @@ def modifyString(s: str) -> str:
 ### Summary
 This problem applies a common greedy replacement pattern, where for each position we make a locally optimal choice (pick the first available letter not matching neighbors). The approach is linear and very efficient. This pattern is common in string and greedy problems where the choice at each index only depends on immediate neighbors.
 
+
+### Flashcard
+Iterate through the string, replacing each '?' with a letter (a, b, or c) that differs from both neighbors; three letters always suffice to avoid consecutive repeats.
+
 ### Tags
 String(#string)
 

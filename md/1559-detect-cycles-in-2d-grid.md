@@ -97,6 +97,10 @@ The approach uses **DFS with parent tracking** to avoid trivial cycles (immediat
 It’s a common interview pattern, useful in maze problems, region finding, and grid cycle detection.  
 The solution can be adapted with BFS or Union Find; the DFS method here is a general graph traversal template used across grid/search problems.
 
+
+### Flashcard
+DFS from each unvisited cell tracking parent direction; if revisiting same-valued cell from different direction with path length ≥4, cycle exists.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
 

@@ -95,6 +95,10 @@ This is a frequency-counting, “bucket” pattern problem—a common approach f
 It's a useful pattern in problems like anagrams, majority element, and similar grouping exercises, especially when the input domain is bounded.  
 If the value range is unbounded, a hash map/dictionary generalizes the approach easily.
 
+
+### Flashcard
+Count frequency of each number; total pairs is sum of count // 2 for all numbers, leftovers are count % 2.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

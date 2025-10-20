@@ -66,6 +66,10 @@ def percentage_attended(users, register):
 ### Summary
 A simple **set** and **division** problem often posed as an SQL data query—common in analytics and business dashboard scenarios.
 
+
+### Flashcard
+Calculate the percentage of users who attended a contest by dividing the number of attendees by the total number of users.
+
 ### Tags
 Database(#database)
 

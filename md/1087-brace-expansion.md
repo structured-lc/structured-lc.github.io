@@ -96,6 +96,10 @@ def expand(s: str):
 ### Summary
 This problem is a classic **combinatorial recursion/backtracking** task: parse the structured input into a list of choices, then enumerate all possible outputs by generating one choice per position in a depth-first manner. DFS/backtracking is a common pattern—also applicable to word/number permutations, n-ary cartesian products, and matrix fill problems. Parsing the string carefully to handle brace groups is key. The output is sorted lexicographically by always processing each options group in sorted order.
 
+
+### Flashcard
+Parse input to extract option-lists per position (split braces by comma, sort each group), then use DFS/backtracking to generate all combinations in lexicographic order.
+
 ### Tags
 String(#string), Backtracking(#backtracking), Stack(#stack), Breadth-First Search(#breadth-first-search), Sorting(#sorting)
 

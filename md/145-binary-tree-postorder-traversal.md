@@ -96,6 +96,10 @@ def postorderTraversal(root):
 This problem uses the classic **Depth-First Search** (DFS) traversal pattern for trees, specifically the "left-right-root" postorder variant. It’s a staple recursion technique for tree-based problems, helpful for solving problems involving subtree calculations, deletions, and post-processing scenarios.  
 Recursive DFS is the most straightforward approach, but understanding iterative methods is valuable for environments with recursion depth limits.
 
+
+### Flashcard
+Postorder traversal: visit left, right, then root; recursion is natural, or use a stack for iterative approach.
+
 ### Tags
 Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

@@ -68,6 +68,10 @@ WHERE t2.id IS NULL;
 ### Summary
 The question is a classic "find missing from full set" task. The **set difference** pattern is common in data problems, and easily translates between SQL and Python.
 
+
+### Flashcard
+Generate the full ID sequence, then find the difference between this set and the given IDs to identify missing values.
+
 ### Tags
 Database(#database)
 

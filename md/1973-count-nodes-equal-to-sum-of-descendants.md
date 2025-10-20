@@ -110,6 +110,10 @@ def equalToDescendants(root):
 ### Summary
 This problem uses the **postorder DFS pattern** for trees, which is a classic approach whenever child-to-parent aggregation is required (bottom-up). The same pattern is seen in sum-of-subtree, diameter of tree, and balanced tree checking problems. It’s efficient (O(n)), clear, and robust for all binary tree structures.
 
+
+### Flashcard
+DFS postorder traversal computes subtree sum for each node; count nodes where node value equals sum of all descendant values (excluding node itself).
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

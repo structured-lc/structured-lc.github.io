@@ -75,6 +75,10 @@ class WarehouseManager:
 ### Summary
 This problem demonstrates a classic **hash map** (dictionary) pattern for stateful updates and queries keyed by a unique identifier. The approach is common for caching, inventory systems, and any scenario requiring fast update and lookup by ID. The solution is simple, scalable, and robust for the basic variant, with lots of room to explore more advanced data structures as requirements grow.
 
+
+### Flashcard
+Use hash map for O(1) inventory operations per product; cap sells at available stock to prevent negatives; queries answered in constant time.
+
 ### Tags
 Database(#database)
 

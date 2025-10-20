@@ -103,6 +103,10 @@ def triangleNumber(nums):
 This problem uses the **two pointers after sorting** pattern, which converts a triple-nested loop into double loops, yielding significant speed-up.  
 It’s a classic example where **ordering** the data lets you make stronger pruning and counts. Similar approaches apply to problems like three sum, counting triplets with a sum under a target, etc.
 
+
+### Flashcard
+Sort nums, then for each k, use two pointers i and j (i<j<k) to count pairs where nums[i]+nums[j]>nums[k], yielding O(n²) time.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
 

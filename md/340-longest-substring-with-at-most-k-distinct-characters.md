@@ -93,6 +93,10 @@ This problem is a classic use-case for the **sliding window** and hash counting 
 Sliding window ensures linear scan, and the hash map allows efficient tracking of character counts.  
 Variations of this approach appear in problems like "Longest Substring Without Repeating Characters", "Minimum Window Substring", and more.
 
+
+### Flashcard
+Use a sliding window with a hash map to track character counts; shrink the window from the left when unique chars exceed k.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

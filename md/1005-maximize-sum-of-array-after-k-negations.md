@@ -100,6 +100,10 @@ def largestSumAfterKNegations(nums, k):
 This problem uses the **Greedy + Sorting** pattern: always flip the most negative values until flips run out, handling even/odd leftovers by flipping the smallest absolute value (if k is odd).  
 This pattern (greedily fixing the worst elements first, then dealing with leftovers) appears in problems about maximizing/minimizing sums with repeated limited operations, or when sign changes can be applied flexibly.
 
+
+### Flashcard
+Sort array, flip as many negatives as possible, then flip the smallest absolute value if flips remain; sum the result.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

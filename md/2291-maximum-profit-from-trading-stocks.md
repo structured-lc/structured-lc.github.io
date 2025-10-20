@@ -106,6 +106,10 @@ class Solution:
 ### Summary
 The solution uses the **0/1 knapsack DP pattern**, a foundational dynamic programming technique for resource allocation under constraints. Recognizing the mapping between the problem and 0/1 knapsack is key. This pattern is broadly applicable in any scenario where you must choose a subset of items with weights and values under a total capacity. Similar patterns appear in problems on subset sums, partitioning, and resource-limited selection algorithms.
 
+
+### Flashcard
+Classic 0/1 knapsack: dp[j] = max profit with budget j, considering each stock’s cost and profit.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

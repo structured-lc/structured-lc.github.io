@@ -100,6 +100,10 @@ def countCollisions(directions: str) -> int:
 ### Summary
 This problem is a string traversal leveraging the observation that only the "middle" cars (not those exiting freely) can ever collide. The pattern—trimming irrelevant prefix/suffix and linear pass—appears in similar simulation or sweep-line problems. The solution avoids actual simulation by transforming the problem into a simple count, which is common in optimal interview solutions.
 
+
+### Flashcard
+Only cars between the first non-L and last non-R can collide; count all L and R in this region as they will eventually become stationary.
+
 ### Tags
 String(#string), Stack(#stack), Simulation(#simulation)
 

@@ -105,6 +105,10 @@ def minNumberOfHours(initialEnergy, initialExperience, energy, experience):
 ### Summary
 This problem is a classic *greedy simulation* of incremental requirements. You use greedy pre-processing for energy, and stepwise per-iteration checking for experience. This minimum training model is common in interval schedule, XP/level-up, and resource accumulation problems, and closely aligns with simulation and dynamic threshold adjustment patterns in games and optimization.
 
+
+### Flashcard
+Precompute total energy needed (sum of all opponent energies + 1); for experience, simulate matches in order and train whenever current experience ≤ opponent's.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

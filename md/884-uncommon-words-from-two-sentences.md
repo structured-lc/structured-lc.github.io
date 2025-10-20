@@ -93,6 +93,10 @@ def uncommonFromSentences(s1, s2):
 ### Summary
 This problem demonstrates a classic *hashmap counting* approach. This collection-and-filtering pattern is common for problems involving counting distinctive elements—especially word or character frequency. It's frequently applied in problems like finding unique/non-repeated items, majority voting, or frequency maps in text analytics.
 
+
+### Flashcard
+Count all word occurrences in both sentences; uncommon words appear exactly once in total.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

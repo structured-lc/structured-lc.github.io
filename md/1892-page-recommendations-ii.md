@@ -162,6 +162,10 @@ This problem is a classic **relational join/group-by** pattern, simulating recom
 The coding technique draws from database-style grouping (often implemented in interviews using Python dictionaries).  
 This pattern is often used in "collaborative filtering" for recommendations, social networks (mutual friends, friend-of-friend), and many graph-based suggestion tasks.
 
+
+### Flashcard
+Build a friendship network and count page likes among friends.
+
 ### Tags
 Database(#database)
 

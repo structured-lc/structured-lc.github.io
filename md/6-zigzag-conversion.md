@@ -106,6 +106,10 @@ def convert(s: str, numRows: int) -> str:
 ### Summary
 This approach is a classic **simulation** pattern: traverse with state (direction, row), build the output incrementally. Useful also in similar problems with *patterned string transformations* or *matrix traversals*. The code is simple, avoids unnecessary grids, and efficiently solves the problem with one pass and minimal space.
 
+
+### Flashcard
+Simulate zigzag by appending each character to the correct row string, changing direction at the top or bottom row.
+
 ### Tags
 String(#string)
 

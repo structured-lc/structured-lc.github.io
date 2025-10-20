@@ -84,6 +84,10 @@ def maximumPrice(items, capacity):
 ### Summary
 This problem is a classic **fractional knapsack** greedy pattern: always take as much as possible from the most "valuable" items (by price per unit weight) until reaching the target. The greedy approach is both optimal and efficient for this version because items can be split arbitrarily. This pattern applies anywhere you need to maximize some value under a capacity/constraint and can split the resources—logistics, resource allocation, etc.
 
+
+### Flashcard
+Fractional knapsack—always take the highest price-per-weight item first until the bag is full.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

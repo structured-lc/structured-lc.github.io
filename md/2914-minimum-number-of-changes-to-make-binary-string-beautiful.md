@@ -87,6 +87,10 @@ This problem demonstrates the **greedy pairing** technique: you solve globally o
 It’s a classic example of string manipulation, greedy algorithms, and "make-by-pair" partitioning; similar patterns arise in problems about painting stripes or cleaning up groups in a string.  
 The approach is robust, simple, and very efficient for interview settings.
 
+
+### Flashcard
+For each pair of adjacent characters, if they differ, increment changes; total changes = number of differing pairs.
+
 ### Tags
 String(#string)
 

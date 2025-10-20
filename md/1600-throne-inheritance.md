@@ -115,6 +115,10 @@ class ThroneInheritance:
 ### Summary
 This approach uses a combination of tree (adjacency list) and DFS to model family relationships and inheritance order. It's a classic *design + traversal* problem: each query is handled by a DFS that follows ordered children and skips dead people by checking a set. This pattern is widely applicable in problems about genealogy, filesystem navigation, and organization hierarchies.
 
+
+### Flashcard
+Model the family tree as a graph, use DFS to traverse children in birth order, and skip dead people when listing the inheritance order.
+
 ### Tags
 Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Design(#design)
 

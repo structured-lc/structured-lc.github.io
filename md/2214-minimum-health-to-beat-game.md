@@ -95,6 +95,10 @@ It's a simple linear scan to sum and get the max in the array.
 This pattern is used in resource allocation, cost minimization, or any "use a one-time power for maximum global effect" problems.  
 No advanced data structures needed; it's clean, O(n), and teaches you how to convert simulation problems to analytical expressions leveraging constraints.
 
+
+### Flashcard
+Minimum starting health = total damage − min(max damage, armor) + 1; use armor on the largest damage instance for maximum reduction.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

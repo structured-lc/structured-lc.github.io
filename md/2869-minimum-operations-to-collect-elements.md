@@ -84,6 +84,10 @@ def min_operations(nums, k):
 ### Summary
 We used a **right-to-left scan** with a set to track collected numbers ≤ k, stopping as soon as all required numbers are seen. This solution leverages the **greedy**/hash set pattern and is a direct simulation of the process. Similar patterns arise in problems where you have to cover a collection of required elements using a sliding window or by popping/dropping items from a sequence.
 
+
+### Flashcard
+Pop from the end, collecting numbers ≤ k in a set; stop when all 1..k are collected, and return the number of pops.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation)
 

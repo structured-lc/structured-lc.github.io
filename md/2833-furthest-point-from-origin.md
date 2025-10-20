@@ -89,6 +89,10 @@ The logic is simple: maximize |countL − countR| by using all available unconst
 The pattern is common in problems that allow flexible assignment to maximize or minimize a metric (e.g., consecutive operations, maximizing imbalance).  
 Similar strategies are seen in array manipulation, flipping, or when there's a “wildcard” operator that can be freely assigned.
 
+
+### Flashcard
+Count L, R, and underscore; maximum distance = |countL – countR| + count_underscore by assigning all underscores to the dominant direction.
+
 ### Tags
 String(#string), Counting(#counting)
 

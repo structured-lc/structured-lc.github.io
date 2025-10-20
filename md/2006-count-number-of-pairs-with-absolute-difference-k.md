@@ -79,6 +79,10 @@ def countKDifference(nums, k):
 ### Summary
 This problem is a classic example of counting with a hash (or array) map to optimize pairwise difference checks. The core idea is using the pattern "previous occurrences can form a pair with the current value" whenever a fixed difference is desired. This is a frequent pattern in array difference/counting problems (like Two Sum, or finding subarrays with a given sum) and can be generalized with hashmaps for larger input ranges.
 
+
+### Flashcard
+Count pairs with an absolute difference of `k` by using a hash map to track the frequency of numbers as you iterate through the array.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

@@ -170,6 +170,10 @@ def closestNodes(root, queries):
 ### Summary
 This problem is a classic mix of BST traversal and the sorted array binary search pattern. The efficient solution uses in-order traversal to turn tree queries into array lookups, then pairs binary search to answer range/closest-value questions in O(log n) per query. This "flatten + binary search" pattern is very common for repeated min/max/find/range lookups on static BSTs, and is widely applicable to interval/neighbor queries on ordered data.
 
+
+### Flashcard
+In-order traverse BST to get sorted list, then for each query, binary search for floor (largest ≤ query) and ceiling (smallest ≥ query) values.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

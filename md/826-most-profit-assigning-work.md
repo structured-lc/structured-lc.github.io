@@ -108,6 +108,10 @@ def maxProfitAssignment(difficulty, profit, worker):
 ### Summary
 This problem leverages the **sorting and greedy** pattern: sort both jobs and workers, greedily assign each worker the best job within their skill set, updating our maximum profit as we go. The efficient scan ensures O(n + m) after sorting. This pattern appears in problems involving assignment and maximizing/minimizing some criteria efficiently, such as interval scheduling, task assignment, and resource allocation.
 
+
+### Flashcard
+Sort jobs by difficulty and workers by ability; for each worker, assign the highest profit job they can do using a running max.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
 

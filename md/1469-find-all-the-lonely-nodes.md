@@ -109,6 +109,10 @@ def find_lonely_nodes(root):
 ### Summary
 The problem fits the tree traversal (DFS/BFS) pattern. Recognizing tree parent-child relationships and checking for existence of a single child is a classic binary tree interview pattern. Variations frequently occur in tree path, sibling, or relationship questions.
 
+
+### Flashcard
+Traverse the tree; if a node has exactly one child, add that child’s value to the result list.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

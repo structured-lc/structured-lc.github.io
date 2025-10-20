@@ -99,6 +99,10 @@ def onesMinusZeros(grid):
 ### Summary
 This problem is a classic example of the "precompute row/column stats to answer per-cell queries efficiently" pattern, commonly seen in 2D matrix problems. Here, precomputing counts allows O(1) lookup per cell for fast matrix computation. This approach (row/column prefix sums or counts) is broadly reusable for questions requiring you to aggregate or compare across rows/columns, such as finding submatrix sums, computing regions, or data summarization in grids.
 
+
+### Flashcard
+Precompute row and column 1s/0s counts, then fill result matrix in one pass using these counts.
+
 ### Tags
 Array(#array), Matrix(#matrix), Simulation(#simulation)
 

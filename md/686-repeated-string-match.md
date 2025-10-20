@@ -95,6 +95,10 @@ def repeatedStringMatch(a: str, b: str) -> int:
 ### Summary
 This problem fits the **sliding window** and **string duplication/concatenation** pattern. The core insight is realizing you only ever need to try up to ⌈len(b)/len(a)⌉ + 2 repeats because any possible overlap will be within that range. This pattern often appears in problems where partial matches may occur at the ends of repeated segments, useful in string processing, circular arrays, and pattern matching situations.
 
+
+### Flashcard
+Repeat string a enough times (at least ⌈len(b)/len(a)⌉), check if b is a substring; if not, try one more repeat to cover overlaps.
+
 ### Tags
 String(#string), String Matching(#string-matching)
 

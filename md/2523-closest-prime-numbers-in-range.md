@@ -108,6 +108,10 @@ def closest_primes(left: int, right: int) -> list[int]:
 ### Summary
 This problem is a classic application of the **Sieve of Eratosthenes** for fast prime detection, combined with the observation that the minimal difference between two primes in a range always occurs between adjacent primes. This approach is general for “primes in an interval” and “closest/farthest pair”-type interview questions, and this coding pattern appears often in problems involving prime gaps, segment analysis, and interval scanning.
 
+
+### Flashcard
+Sieve primes up to right, collect in sorted list, find consecutive pair with minimum gap; return [-1,-1] if fewer than 2 primes exist.
+
 ### Tags
 Math(#math), Number Theory(#number-theory)
 

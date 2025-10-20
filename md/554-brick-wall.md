@@ -89,6 +89,10 @@ def leastBricks(wall):
 ### Summary
 This problem leverages the **hashing and prefix-sum pattern**: instead of simulating every line, we count prefix positions of bricks and find the optimal vertical alignment. It’s a classic frequency-counting approach that is efficient and broadly applicable to tasks involving event alignment or aggregation by position—such as histogram problems or interval overlap counting.
 
+
+### Flashcard
+Use a hash map to count brick edge positions (excluding the wall's right edge); the answer is total rows minus the max edge count.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

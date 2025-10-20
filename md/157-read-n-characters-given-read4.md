@@ -90,6 +90,10 @@ This approach is a classic application of the **"Read in chunks using buffer, co
 The loop structure, temporary buffer, and careful character counting are standard for any file streaming situation where the underlying access method is limited.  
 This technique is not only useful for Leetcode "Read4"-style questions, but also for real-world file readers, stream processors, and network packet consumers.
 
+
+### Flashcard
+Repeatedly call read4 into a temp buffer, copy up to n chars into the result, and stop when n is reached or read4 returns less than 4.
+
 ### Tags
 Array(#array), Simulation(#simulation), Interactive(#interactive)
 

@@ -86,6 +86,10 @@ def countPairs(deliciousness):
 ### Summary
 This problem is a classic **hash map + enumeration** pattern, often used in “pair sum” problems but with a twist—matching sums to a set of dynamic (power of two) targets. This technique is common in subarray sum, 2-sum, and similar problems where you process in one pass and look up complements using a counter or map.
 
+
+### Flashcard
+Use a hash map to count elements; for each element, check all possible powers of two for complements in the map—sum valid pairs.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

@@ -92,6 +92,10 @@ def middleNode(head):
 ### Summary  
 This is a classic example of the fast-and-slow pointer ("runner") pattern, commonly used for linked list problems where you need to find a midpoint or detect cycles. The pattern is efficient, requires minimal space, and can be applied to problems such as checking for a palindrome, finding the start of a cycle, etc. The key interview takeaway: using two pointers at different speeds is often a fast path to midpoints and intersections in linked lists.
 
+
+### Flashcard
+Use slow and fast pointers; when fast reaches the end, slow is at the middle.
+
 ### Tags
 Linked List(#linked-list), Two Pointers(#two-pointers)
 

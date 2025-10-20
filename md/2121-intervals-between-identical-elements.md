@@ -114,6 +114,10 @@ The process is: **group → sort → prefix sum → interval aggregation** per e
 It’s a classic case of "group-by-then-process," common in tasks that ask for all relationships within identical elements, such as: subarray sums by value, minimal movement grouping, or k-sum techniques.  
 Mastery of prefix sums, group mapping, and efficient aggregation is broadly useful in interviews for reducing O(n²) tasks to O(n).
 
+
+### Flashcard
+For each unique value, precompute all indices; use prefix sums to compute total distances for each occurrence in O(n).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
 

@@ -107,6 +107,10 @@ It's commonly seen in browser history stacks, undo-redo implementations, or IRL 
 With only two stateful variables—the list of seen elements and count of consecutive lookbacks—it’s both space and time efficient.  
 This indexed history lookup pattern also applies to command history, call logs, and any context where recent actions need to be revisited or recalled in order.
 
+
+### Flashcard
+Track all seen integers; for each "prev" command, return the kᵗʰ last seen integer, or -1 if not enough history.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

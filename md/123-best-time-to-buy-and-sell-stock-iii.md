@@ -114,6 +114,10 @@ def maxProfit(prices):
 This problem uses a classic **Dynamic Programming (DP, state machine)** pattern where you iterate through the list, updating the optimal choice at each step by tracking the states of transactions.  
 The four-state DP is also common for "Buy and Sell Stock" series, and is easily extended to k transactions. This approach avoids nested loops and is easy to extend or adapt for more complex stock-related interview problems.
 
+
+### Flashcard
+Use 4-state DP tracking buy1, sell1, buy2, sell2 profits, updating each state based on previous states while iterating through prices for O(n) time and O(1) space.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

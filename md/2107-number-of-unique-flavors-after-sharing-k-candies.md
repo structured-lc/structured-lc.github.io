@@ -110,6 +110,10 @@ def shareCandies(candies, k):
 ### Summary
 This problem is a classic use of the **fixed-length sliding window** technique, combined with frequency counting (hashmaps). By keeping track of the count of each flavor and updating it as the “window” of given-away candies moves, we efficiently determine the maximal unique flavors retained. This pattern is common in questions dealing with subarrays, substrings, or segments, and is useful in many string and array sliding window problems.
 
+
+### Flashcard
+Use a sliding window of size k and a hash map to track unique flavors outside the window, updating the count as the window moves.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
 

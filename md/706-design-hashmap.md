@@ -153,6 +153,10 @@ class MyHashMap:
 This problem is a classic example of **hash table design with separate chaining**. It exercises knowledge of hash functions, collision resolution, and space-time tradeoffs.  
 The approach is widely used in building dictionaries, sets, and caches, and forms the foundation for many real-world data structures.
 
+
+### Flashcard
+Use an array of buckets (hash table) with chaining to store (key, value) pairs, enabling O(1) put, get, and remove for a map.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Linked List(#linked-list), Design(#design), Hash Function(#hash-function)
 

@@ -97,6 +97,10 @@ def validPartition(nums):
 ### Summary
 This is a classic **dynamic programming** problem on sequences/arrays, specifically for partitioning with block rules. The pattern is often called **DP with block states** and is the same as for many tiling or segmentation problems. Useful anywhere you need to check for segmenting an array into intervals of allowed “types,” such as number splitting, jump games, word breaks, and decoding messages.
 
+
+### Flashcard
+Use DP where dp[i] = True if nums[0..i−1] can be partitioned; check if last 2 or 3 elements form valid blocks and transition accordingly.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

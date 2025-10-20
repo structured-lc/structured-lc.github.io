@@ -213,6 +213,10 @@ def frequencySortList(s):
 ### Summary
 This problem demonstrates frequency counting and custom sorting techniques. The key insight is that we need to group identical characters together and order these groups by frequency. The bucket sort approach is optimal for this problem since frequencies are bounded by string length, but the standard sorting approach is more general and easier to implement. This pattern appears frequently in problems involving frequency analysis, top-k elements, and custom ordering requirements.
 
+
+### Flashcard
+Count character frequencies, then sort or bucket-sort characters by frequency to build the result string in descending order.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Bucket Sort(#bucket-sort), Counting(#counting)
 

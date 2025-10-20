@@ -144,6 +144,10 @@ This problem is a classic application of **recursion + combinatorics** in tree p
 It relies on breaking the problem into left/right subtrees, then using binomial coefficients to count interleavings that preserve subtree orderings.  
 The pattern appears in counting unique BSTs, reconstructing trees, and combinatorial problems where order and structure are constrained—making it a key idea for advanced interviews.
 
+
+### Flashcard
+Recursively split by root into left/right subtrees; multiply combinations C(left_size + right_size, left_size) × ways(left) × ways(right); use modular arithmetic.
+
 ### Tags
 Array(#array), Math(#math), Divide and Conquer(#divide-and-conquer), Dynamic Programming(#dynamic-programming), Tree(#tree), Union Find(#union-find), Binary Search Tree(#binary-search-tree), Memoization(#memoization), Combinatorics(#combinatorics), Binary Tree(#binary-tree)
 

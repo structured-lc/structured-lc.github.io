@@ -184,6 +184,10 @@ WHERE p1.product_name = 'S8'
 ### Summary
 This problem is a classic **set operation/filtering** task, mapping closely to set difference: find all buyers buying S8, exclude those who bought iPhone. The pattern is common for "A but not B" or "exclusive group" queries, found in both SQL and Python. The coding approach leverages dictionaries and sets for efficient lookup, and the SQL solution makes use of JOIN and subqueries with IN/NOT IN for accurate filtering.
 
+
+### Flashcard
+Join Product and Sales tables, filter buyers who purchased S8 but exclude those who also purchased iPhone using set operations or conditional aggregation.
+
 ### Tags
 Database(#database)
 

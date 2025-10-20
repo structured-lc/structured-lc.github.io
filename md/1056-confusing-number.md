@@ -101,6 +101,10 @@ def confusingNumber(N: int) -> bool:
 ### Summary
 The solution uses a **digit mapping pattern** and classic number reversal logic: for each digit, check validity, assemble the rotated number, and compare. This approach is simple and efficient for problems involving digit-level checks, especially for palindrome and strobogrammatic patterns. This rotating-digit idea appears in other LeetCode problems, as well as in certain "mirror image" or "number transformation" variants.
 
+
+### Flashcard
+Check if all digits are rotatable, build the rotated number, and return true if it differs from the original.
+
 ### Tags
 Math(#math)
 

@@ -108,6 +108,10 @@ def accepted_candidates(candidates, rounds):
 ### Summary
 This problem demonstrates the "group-by and aggregate-filter" pattern, which is fundamental in both SQL and data processing. When checking that all items in a group meet a condition (e.g., min(score) == 1 means all passed), this pattern is highly efficient. It's common in reporting, data analytics, and any problem requiring "all-matching" or "none-fail" conditions by group.
 
+
+### Flashcard
+Group by candidate, filter out any with a failed round (min(score) = 1)—use SQL aggregation to find fully passing candidates.
+
 ### Tags
 Database(#database)
 

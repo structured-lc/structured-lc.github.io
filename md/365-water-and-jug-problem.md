@@ -91,6 +91,10 @@ def canMeasureWater(jug1Capacity: int, jug2Capacity: int, targetCapacity: int) -
 ### Summary
 This problem highlights **number theory meets BFS/state search**. The mathematical solution—checking divisibility by the GCD—is a classic trick for measuring problems, and offers a massively efficient alternative to brute-force. This pattern is common whenever you’re tasked to reach some target using additive combinations of two or more fixed measurements, like weighing-puzzle variants and classic pouring-jug puzzles.
 
+
+### Flashcard
+The problem reduces to checking if target is a multiple of gcd(x, y) and ≤ x + y (Bézout's lemma).
+
 ### Tags
 Math(#math), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
 

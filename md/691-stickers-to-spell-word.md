@@ -115,6 +115,10 @@ This problem is a classic **"stateful recursion with memoization"** pattern: red
 It appears frequently in problems where you must minimize operations/resources for string formation or covering sets, such as Word Break (DP + recursion), Coin Change, and Set Cover problems.  
 Efficiently handling state (string or tuple) and aggressive pruning are crucial for acceptable runtime.
 
+
+### Flashcard
+Use DFS with memoization; for each target state, try using each sticker to cover as many letters as possible, recurse for the rest, and minimize sticker count.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Memoization(#memoization), Bitmask(#bitmask)
 

@@ -61,6 +61,10 @@ def finalPrices(prices):
 ### Summary
 This is a classic monotonic stack problem, often used for "next smaller/greater" type questions. Mastering this pattern is extremely helpful for array/stack-based interview questions, such as those on histogram area and stock span.
 
+
+### Flashcard
+Use a monotonic stack to find the next price ≤ current to the right; subtract it for each item in one O(n) pass.
+
 ### Tags
 Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

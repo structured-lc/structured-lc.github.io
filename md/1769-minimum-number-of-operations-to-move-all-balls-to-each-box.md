@@ -97,6 +97,10 @@ def minOperations(boxes: str) -> list[int]:
 ### Summary
 This is a classic prefix sum / bidirectional traversal problem: for each box, you sum the distance from every other box with a ball, which can be efficiently computed in O(n) using two passes. This technique of rolling cumulative counts and costs appears frequently in interval, range-update, and "gather to one location" problems in arrays and strings.
 
+
+### Flashcard
+Use prefix sums to compute total operations to move all balls to each box in O(n) time.
+
 ### Tags
 Array(#array), String(#string), Prefix Sum(#prefix-sum)
 

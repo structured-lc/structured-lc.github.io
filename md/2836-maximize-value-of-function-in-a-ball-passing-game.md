@@ -107,6 +107,10 @@ def getMaxFunctionValue(receiver, k):
 ### Summary
 This problem leverages the **binary lifting** (jump pointers/doubling) pattern, often used for efficient simulation over immutable paths and jumps, especially when k is large. This is a common technique in tree ancestor queries (like Lowest Common Ancestor, jump k-steps) and can be applied to simulating repeated transitions or processing fast-forwarding in linked lists or other graphs with immutable transitions. Binary lifting lets us replace linear-in-k simulation with logarithmic steps using preprocessed jump tables.
 
+
+### Flashcard
+Binary lifting precomputes 2ᵏ-step jumps and path sums; decompose k into powers of 2, accumulate values in O(log k) per query.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation)
 

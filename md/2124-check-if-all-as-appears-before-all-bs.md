@@ -79,6 +79,10 @@ def checkString(s: str) -> bool:
 ### Summary
 This problem uses the **single-pass scan with state flag** pattern—extremely common for string validation problems that have _ordering_ constraints. It’s a direct application of validating “all x’s appear before all y’s” which shows up in array and string questions often. The same concept is applicable in validating sorted runs, partitioning elements, and streaming/real-time validation.
 
+
+### Flashcard
+Scan string; after first 'b', if any 'a' appears, return false—otherwise, all 'a's precede all 'b's.
+
 ### Tags
 String(#string)
 

@@ -133,6 +133,10 @@ The core idea is "reset and delay" — ensuring only the last call within a wind
 This is a standard interview pattern, with applications in both frontend (JS) and backend (async jobs, rate limiting).  
 Patterns learned here generalize to throttling, batching, or any "defer and coalesce" workflow.
 
+
+### Flashcard
+Debounce a function by delaying execution until after a specified time `t` has passed since the last call, canceling any pending execution if called again within `t` ms.
+
 ### Tags
 
 ### Similar Problems

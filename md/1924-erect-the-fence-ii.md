@@ -167,6 +167,10 @@ How would you extend this to 3D (spheres) or higher dimensions?
 ### Summary  
 This problem asks for the smallest enclosing circle of a 2D point set—a classic in computational geometry. The optimal solution is Welzl’s randomized algorithm, balancing clever recursion with expected linear runtime. The pattern—recursively reduce the problem size by moving boundary points in/out—is rare but powerful. The same idea appears in some Voronoi, Delaunay, and higher-D minimum enclosing sphere problems. For interviews, understand both the brute-force and randomized solutions, and be able to hand-write the key math for a triangle’s circumcircle.
 
+
+### Flashcard
+Find the smallest enclosing circle for all points using Welzl’s randomized algorithm—no need to check all triplets.
+
 ### Tags
 Array(#array), Math(#math), Geometry(#geometry)
 

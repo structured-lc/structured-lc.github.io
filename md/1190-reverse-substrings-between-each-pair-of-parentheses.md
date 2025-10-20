@@ -105,6 +105,10 @@ def reverseParentheses(s: str) -> str:
 ### Summary
 This solution uses the **stack** pattern, common in problems involving nested structures or paired delimiters. It's highly applicable for tasks like expression parsing, validating brackets, or evaluating mathematical expressions. The stack efficiently supports backtracking and reversal for nested layers, ensuring that inner substrings are processed before outer ones.
 
+
+### Flashcard
+Use stack to manage nested parentheses—push/pop to reverse substrings between each pair.
+
 ### Tags
 String(#string), Stack(#stack)
 

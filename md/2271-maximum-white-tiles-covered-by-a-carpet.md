@@ -98,6 +98,10 @@ def maximumWhiteTiles(tiles, carpetLen):
 ### Summary
 This solution uses a standard **prefix sum plus sliding window with binary search** pattern, common for range-sum or maximum cover-type interval problems. It's especially useful for interval covering/partitioning scenarios and is a good example of combining prefix sums with two-pointer or binary search techniques. It also demonstrates handling partial overlaps efficiently—a recurring theme in scheduling and interval-coverage LeetCode problems.
 
+
+### Flashcard
+Sort intervals, use sliding window and prefix sums to find maximum tiles covered by a carpet of fixed length—O(n log n).
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy), Sliding Window(#sliding-window), Sorting(#sorting), Prefix Sum(#prefix-sum)
 

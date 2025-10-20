@@ -99,6 +99,10 @@ def findLength(nums1, nums2):
 This problem uses the **Dynamic Programming** pattern commonly seen in "Longest Common Substring" problems. The key idea is to build solutions for subproblems (matching ends of subarrays) and carry those results forward, always maintaining the maximum.  
 This approach is widely applicable to other string/array comparison problems involving contiguous blocks and can be optimized for space if only the last result is needed.
 
+
+### Flashcard
+Use DP where dp[i][j] is the length of the longest common subarray ending at nums1[i-1] and nums2[j-1]; answer is the max dp value.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window), Rolling Hash(#rolling-hash), Hash Function(#hash-function)
 

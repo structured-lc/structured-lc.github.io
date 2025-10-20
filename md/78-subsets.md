@@ -95,6 +95,10 @@ This problem is a classic example of **backtracking**: at every decision point, 
 - Generating all subsequences  
 Recursive backtracking is clean for *pick/skip* logic and easy to modify for constraints (e.g., duplicates, size limits).
 
+
+### Flashcard
+Use backtracking to explore all subsets by including or excluding each element, generating 2ⁿ possible subsets.
+
 ### Tags
 Array(#array), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
 

@@ -109,6 +109,10 @@ def detectCapitalUse(word):
 
 This problem employs simple **string pattern checking** (case analysis) and counting, a classic coding interview pattern. It's representative of situations where multiple rules can be verified with a **linear scan** and a couple of counters. The approach is efficient, clear, and generalizes well for similar pattern-validation questions.
 
+
+### Flashcard
+Check if all letters are uppercase, all lowercase, or only the first is uppercase and the rest lowercase.
+
 ### Tags
 String(#string)
 

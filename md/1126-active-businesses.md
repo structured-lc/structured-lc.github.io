@@ -145,6 +145,10 @@ def active_businesses(events):
 This solution uses the **grouping and window average pattern**—group by event_type to get averages, then filter and count per business.  
 This is a common SQL interview pattern for above-average queries and can be used for similar "ranking" or "active-user" scenarios, especially where the "active" definition depends on being better than peers across categories.
 
+
+### Flashcard
+For each business, count event types where its occurrences exceed the event type's average; return businesses with count > 1.
+
 ### Tags
 Database(#database)
 

@@ -87,6 +87,10 @@ class Solution:
 ### Summary
 This is a classic greedy interval covering problem, closely related to the Jump Game II pattern. Transforming each tap into an interval, and greedily "jumping" as far as possible at each step, leads to the optimal minimum tap count. Useful for interval-related challenges or continuous coverage/selection problems.
 
+
+### Flashcard
+Convert taps to intervals, then greedily jump to the farthest reachable tap at each step, counting jumps to cover the garden.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

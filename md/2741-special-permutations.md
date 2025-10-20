@@ -99,6 +99,10 @@ This problem models **DP with bitmask** and permutation, similar to "Traveling S
 Key pattern: Recursion with bitmask and memoization to prune repeated work.  
 This pattern is very common in classic combinatorial and constraint-oriented problems on permutations, especially when n ≤ 14–16. Understanding this approach is powerful for all constraint-satisfying permutation counting problems.
 
+
+### Flashcard
+Use DP with bitmask to count permutations where adjacent elements are divisible—state is (mask, last), transition by valid next.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

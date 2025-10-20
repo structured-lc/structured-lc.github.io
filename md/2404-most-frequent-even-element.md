@@ -94,6 +94,10 @@ def mostFrequentEven(nums):
 ### Summary
 This problem uses the classic **frequency counting** pattern—a hashmap to tally occurrences, followed by a tie-breaker based on value. This pattern applies to other frequency-based problems (e.g., finding top k frequent elements). Filtering while counting saves time and space. The tie-breaking requirement (smallest element) is a common interview twist.
 
+
+### Flashcard
+Count even element frequencies in a single pass using a dictionary and select the most frequent smallest even number.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

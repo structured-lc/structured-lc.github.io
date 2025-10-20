@@ -84,6 +84,10 @@ def validSubarraySplit(nums):
 ### Summary
 This problem is a good example of **DP on intervals/positions** and using a greedy extension with a GCD condition. The coding pattern (dp[i] = min number of valid splits from i onward) is common in **array partitioning** and **min-cut segmentation** problems, seen in string segmentation or jump game variants. The problem also emphasizes classic GCD logic and thinking about contiguous subarrays efficiently.
 
+
+### Flashcard
+Use DP where dp[i] = min splits for nums[i:]; for each j ≥ i, if GCD(nums[i..j]) > 1, try splitting at j+1.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Number Theory(#number-theory)
 

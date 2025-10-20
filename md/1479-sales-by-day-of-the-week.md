@@ -70,6 +70,10 @@ ORDER BY i.item_category, FIELD(d.day_of_week,'Monday','Tuesday','Wednesday','Th
 ### Summary
 This problem tests multi-dimensional SQL aggregation, use of date functions, and the need for full cross-group reporting even for missing data. The cross join plus left join pattern is a standard for ensuring completeness in reporting grids.
 
+
+### Flashcard
+Use SQL GROUP BY item_category and day_of_week (extracted from date), aggregate SUM(quantity), and CROSS JOIN with all weekdays/categories to include zero-sales days.
+
 ### Tags
 Database(#database)
 

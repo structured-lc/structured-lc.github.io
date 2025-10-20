@@ -169,6 +169,10 @@ This problem is a **window function and left join pattern**, common in SQL data 
 It can be generalized to "Nth event" problems and preference matching, which often come up in market analytics and business logic interviews.  
 Understanding ranking, partitioning, and joining user attributes is essential here.
 
+
+### Flashcard
+For each seller, rank their sales by date, select the second, join to items for brand, and compare with favorite_brand; if no second sale, answer is "no".
+
 ### Tags
 Database(#database)
 

@@ -117,6 +117,10 @@ def findRotateSteps(ring: str, key: str) -> int:
 ### Summary
 This problem uses the **DP with state memoization** pattern over a circular structure. The subproblem is defined by current position and key index, solving recursively. This approach is broadly applicable in optimal control of systems with cyclic dependencies (e.g., rotors, wheels, ring buffers, and circular DP). The pattern generalizes to other problems where you exhaustively search all choices with overlapping subproblems and combine results for optimality.
 
+
+### Flashcard
+Use DP with memoization on (ring_position, key_index), recursively trying all positions for each key character and minimizing rotation steps.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
 

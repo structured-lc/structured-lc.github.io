@@ -104,6 +104,10 @@ def minimizedMaximum(n, quantities):
 This problem uses the **binary search + greedy feasibility check** pattern, common for "minimize the maximum" and similar workload allocation/balancing problems.  
 Patterns like this appear in "Split Array Largest Sum", "Capacity to Ship Packages Within D Days", etc., where binary search helps tune a target threshold and a greedy/counting check validates feasibility each step.
 
+
+### Flashcard
+Use binary search to find the minimum maximum products per store.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy)
 

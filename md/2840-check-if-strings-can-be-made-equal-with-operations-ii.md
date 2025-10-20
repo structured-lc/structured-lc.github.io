@@ -81,6 +81,10 @@ def can_be_equal(s1: str, s2: str) -> bool:
 ### Summary
 This problem uses the **bucket grouping and rearrangement** pattern—identifying transformation invariants under restricted swaps. Analyzing which positions are interchangeable leads to an efficient check using character counts or sorted arrays per index parity. This pattern appears in several problems, especially those with "swap only certain positions" or "groupwise operation" rules.
 
+
+### Flashcard
+Count frequency of even-indexed chars and odd-indexed chars separately for both strings; equal multisets mean swappable.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sorting(#sorting)
 

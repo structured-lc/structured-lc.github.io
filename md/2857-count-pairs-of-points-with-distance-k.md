@@ -114,6 +114,10 @@ def countPairs(coordinates, k):
 This approach leverages bitwise properties and targeted hashmap lookups, making a classic **hash-based complement counting** pattern—very common for problems involving pairwise sums or differences (like "Two Sum", or distance-based pair counts).  
 The key trick is “guessing” the possible partner coordinates for each split d (from 0 … k) and using a hash map to count previously seen matches efficiently. The same hashing pattern generalizes to higher-dimension XOR/bitwise pair problems and is applicable whenever you can “invert” a distance formula to recover potential partners for a pair.
 
+
+### Flashcard
+For each point (x, y), for all 0 ≤ d ≤ k, check if (x⊕d, y⊕(k–d)) exists in the set; use a hashmap for O(nk) counting.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation)
 

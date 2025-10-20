@@ -94,6 +94,10 @@ def minimumAddedCoins(coins, target):
 ### Summary
 This problem uses a **greedy patching pattern**—always extend the constructed number range by the smallest missing value, similar to the classic "Patching Array" type problems. The greedy choice can maximally increase reach in every step, ensuring minimum additions. This approach (greedily "patching" the current smallest missing sum) is common in problems that cover an interval with minimal objects—very applicable anywhere you're asked how to achieve all sums/ranges with minimal insertions/extensions.
 
+
+### Flashcard
+Sort coins, greedily extend the maximum reachable value by adding the smallest missing coin until you cover the target.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

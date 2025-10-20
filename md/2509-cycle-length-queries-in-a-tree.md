@@ -132,6 +132,10 @@ This problem uses the **binary tree parent-child index property** with bit manip
 It’s a classic usage of "climbing ancestors" and is related to LCA finding, but simplified for perfect trees labeled level-order.  
 This technique also appears in other ancestor/path problems, especially on perfect/(almost) complete trees with labeled nodes.
 
+
+### Flashcard
+In complete binary tree with level-order labels, parent of node i is i/2; find LCA by walking both nodes to root via parent pointers, count total steps plus 1.
+
 ### Tags
 Array(#array), Tree(#tree), Binary Tree(#binary-tree)
 

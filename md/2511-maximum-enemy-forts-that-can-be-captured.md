@@ -80,6 +80,10 @@ def captureForts(forts):
 ### Summary
 This is a classic **two-pointer / linear scan** problem, sometimes framed as finding the longest consecutive segment with a given property (in this case, enemy forts) that is "sandwiched" between two different markers. This scan pattern appears in substring and window problems, and knowing when to scan vs. iterate with nested loops distinguishes efficient interview solutions.
 
+
+### Flashcard
+Single pass tracking last position of 1 or -1; when switching between them with only 0's between, count enemies captured equals distance minus 1.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers)
 

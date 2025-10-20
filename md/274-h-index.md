@@ -74,6 +74,10 @@ def hIndex(citations):
 This problem uses the **array manipulation and sorting** coding pattern, specifically sorting with a controlled iteration. Recognizing how to map the tricky mathematical definition to sorted order and indexed comparison is key.  
 This pattern commonly appears in *selection* or *threshold counting* problems, and is a classic "find the largest k such that..." style seen in rankings, selection, and percentile problems.
 
+
+### Flashcard
+H-Index
+
 ### Tags
 Array(#array), Sorting(#sorting), Counting Sort(#counting-sort)
 

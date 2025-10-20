@@ -111,6 +111,10 @@ This problem is a challenging variant of subset sum, with an added average const
 The pattern (subset sum/count DP, bitmasking, early pruning by divisibility) is common for partitioning, knapsack, and similar partition/equal-sum problems.  
 Efficient handling arises from combining mathematical insights and dynamic programming. The pattern is reusable in other average or ratio-based array partitioning tasks.
 
+
+### Flashcard
+Use DP and subset sum: for 1 ≤ k ≤ n//2, check if any subset of size k sums to S×k/n (where S is total sum); if so, a split with equal average exists.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

@@ -65,6 +65,10 @@ def maxUniqueSplit(s: str) -> int:
 ### Summary
 This is a classic backtracking problem asking for maximal splits under uniqueness constraints. It maps to subset/split and permutation counting, and it's a good example of how to use sets and recursive control flow to exhaust possibilities with pruning.
 
+
+### Flashcard
+Use backtracking to split the string into the maximum number of unique substrings, tracking used substrings with a set.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Backtracking(#backtracking)
 

@@ -112,6 +112,10 @@ def findSubstringInWraproundString(s):
 ### Summary
 This problem demonstrates a clever dynamic programming approach that avoids the naive O(n³) solution of checking all substrings. The key insight is that for the wraparound alphabet, we only need to track the maximum length of valid substring ending with each character. This automatically handles uniqueness and provides an efficient O(n) solution. This pattern of using character-based state tracking appears in many string DP problems where the order or relationships between characters matter.
 
+
+### Flashcard
+For each character, track the maximum length of valid consecutive substrings ending at that character; sum these for the answer.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

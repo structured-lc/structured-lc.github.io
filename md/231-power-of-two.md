@@ -80,6 +80,10 @@ This problem is a classic use-case for **bit manipulation**, specifically the si
 It’s a pattern that appears in problems testing binary properties or counting set bits, and can be adapted to questions about powers of other numbers with similar approaches (loop with modulus/division).  
 Commonly, this technique appears in coding interviews and competitive programming for efficiency.
 
+
+### Flashcard
+n is a power of two if n > 0 and n & (n-1) == 0; only one bit set in binary.
+
 ### Tags
 Math(#math), Bit Manipulation(#bit-manipulation), Recursion(#recursion)
 

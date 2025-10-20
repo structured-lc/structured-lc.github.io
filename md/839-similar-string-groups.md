@@ -120,6 +120,10 @@ This problem is a classic application of **Union-Find / Disjoint Set Union** and
 The pattern is broadly useful for grouping elements by connectivity/transitivity: e.g., grouping people by mutual friendship, islands in a grid, or synonym chains in dictionaries.  
 Similar string checking, combined with DSU, gives an efficient, easily generalizable solution.
 
+
+### Flashcard
+Build graph where edges connect similar strings (differ in 0 or 2 positions); count connected components using DFS or Union-Find.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find)
 

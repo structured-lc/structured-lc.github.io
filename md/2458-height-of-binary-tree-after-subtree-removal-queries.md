@@ -181,6 +181,10 @@ class Solution:
 ### Summary
 This problem uses the **binary tree + precomputation pattern**: we preprocess subtree heights and node depths for all nodes using DFS. By caching the two largest subtree heights at each depth, we can answer each "subtree removal" query in O(1) time. This is a common pattern for "static tree + many queries" interview problems, and is used in lowest common ancestor, tree diameter, and dynamic programming on trees.
 
+
+### Flashcard
+Precompute depth and subtree heights for all nodes; for each query, the new tree height is the max depth outside the removed subtree.
+
 ### Tags
 Array(#array), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

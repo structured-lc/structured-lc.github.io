@@ -114,6 +114,10 @@ def findGoodStrings(n, s1, s2, evil):
 ### Summary
 Dynamic programming with memorized state for each position, prefix match of evil, and whether we're at the bounds. KMP prefix automaton is used for substring matching. This is a **digit DP** with anti-substring constraint, a classic advanced string DP technique.
 
+
+### Flashcard
+Use DP with KMP state to count strings in [s1, s2] without evil as a substring—avoid brute-force generation.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), String Matching(#string-matching)
 

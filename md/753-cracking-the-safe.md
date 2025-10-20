@@ -83,6 +83,10 @@ def crackSafe(n: int, k: int) -> str:
 ### Summary
 This problem is a classic example of generating de Bruijn sequences, using Hierholzer's algorithm for Eulerian circuits. The key insight is modeling the sequence coverage as traveling edges in a de Bruijn graph to systematically cover all possible n-length substrings efficiently. This approach often appears in combinatorial generation, string reconstruction, and cryptographic settings.
 
+
+### Flashcard
+Construct a de Bruijn sequence by finding an Eulerian circuit in a k-ary graph of n−1 length nodes, ensuring every n-length substring appears exactly once.
+
 ### Tags
 Depth-First Search(#depth-first-search), Graph(#graph), Eulerian Circuit(#eulerian-circuit)
 

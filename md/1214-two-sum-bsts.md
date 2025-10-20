@@ -133,6 +133,10 @@ def twoSumBSTs(root1, root2, target):
 ### Summary
 For the Two Sum BSTs problem, leveraging BST structure and in-order traversals to obtain sorted lists is key. The solution uses the classic sorted two-pointer technique, a pattern widely used for problems involving searching for sums in sorted arrays. This approach optimizes both time and space, is cleanly applicable to similar BST or two-list sum problems, and scales well to large trees.
 
+
+### Flashcard
+In-order traverse both BSTs to get sorted lists, then use two pointers to find if any pair sums to target.
+
 ### Tags
 Two Pointers(#two-pointers), Binary Search(#binary-search), Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

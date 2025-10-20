@@ -93,6 +93,10 @@ This problem uses a **single-pass scan** with simple max tracking, a classic cod
 - Proper tie-breaking using employee ids.
 This pattern applies to cases where max/min value and their position/owner are needed in a sequential data stream.
 
+
+### Flashcard
+Single pass tracking prev_end time and max duration. For ties, choose smaller employee ID. Update max and corresponding ID as you iterate.
+
 ### Tags
 Array(#array)
 

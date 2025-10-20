@@ -108,6 +108,10 @@ This problem uses the multiple sliding window and segment partitioning patterns.
 We segment the input at large adjacent differences, then for each segment, apply a sliding window over each possible window size (unique \* k), efficiently tracking character counts to identify valid "complete" substrings.  
 This pattern generalizes to problems involving substring uniqueness and frequency constraints, and showcases careful window state maintenance and segmentation techniques.
 
+
+### Flashcard
+Split string into segments with adjacent differences ≤ 2, then for each segment, count substrings where each unique character appears exactly k times.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

@@ -102,6 +102,10 @@ This problem uses the **counting pattern**: scan the input to aggregate values i
 Such in-/out-degree-based counting is common in graph problems, tournaments, and voting tallies, and the technique generalizes to other aggregation-by-index problems.  
 All logic is O(n) with a minimal two-pass approach: one to record, one to decide the winner.
 
+
+### Flashcard
+Iterate through edges array once; for each node i pointing to edges[i], add i to the score of edges[i]; return node with highest score (ties broken by smallest index).
+
 ### Tags
 Hash Table(#hash-table), Graph(#graph)
 

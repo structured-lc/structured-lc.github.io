@@ -88,6 +88,10 @@ def highFive(items):
 ### Summary  
 This problem demonstrates a common *"group and aggregate"* pattern, specifically the use of heaps to track top-k elements per group efficiently. The *min-heap* pattern is useful anywhere you need to maintain k largest/smallest values in a stream or collection (e.g., leaderboard problems, k-th largest, moving averages). It also illustrates how sorting and data structure choices affect time complexity when aggregating grouped data.
 
+
+### Flashcard
+Group scores by student ID, maintain min-heap of size 5 for each student's top scores, compute average using integer division, sort results by ID.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

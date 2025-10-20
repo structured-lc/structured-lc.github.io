@@ -148,6 +148,10 @@ def minimumFlips(root, result):
 ### Summary
 This problem leverages **tree DP** with **post-order DFS** and memoization, a common pattern in evaluating and optimizing structured boolean/arithmetical expressions over binary trees. The same design is applicable for expressions with minimal edit/change/flip operations for desired results, such as "minimum swaps to evaluate expression" or "minimum operations in expression trees."
 
+
+### Flashcard
+Recursively compute min flips for each subtree to reach target (0 or 1), memoizing results for efficiency.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

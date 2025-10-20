@@ -98,6 +98,10 @@ def findDiagonalOrder(nums):
 ### Summary
 This approach uses the "HashMap of lists" pattern to group by diagonal numbers (i + j), which is common for any diagonal/anti-diagonal or sum-index based traversals. It's a classic pattern that can also be seen in problems like diagonal traversal in binary trees, matrix spiral, or word search by column/diagonal. The output flattening from sorted keys ensures correct traversal order.
 
+
+### Flashcard
+Group elements by diagonal number and process them in row order to traverse diagonals efficiently.
+
 ### Tags
 Array(#array), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

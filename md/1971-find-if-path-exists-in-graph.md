@@ -101,6 +101,10 @@ def validPath(n, edges, source, destination):
 This problem is a classic **graph traversal** question, falling under the *path-existence* or *connected components* category. Common patterns used here are **BFS**, **DFS**, or **Union-Find** for fast connectivity checks.  
 This pattern is directly applicable to tasks such as checking network connectivity, determining if two people are connected in a social network, or ensuring communication in distributed systems.
 
+
+### Flashcard
+Build adjacency list from edges, then use BFS or DFS with visited set to check if source can reach destination in the undirected graph.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

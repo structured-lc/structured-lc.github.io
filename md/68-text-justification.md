@@ -118,6 +118,10 @@ def fullJustify(words, maxWidth):
 ### Summary
 This is a classic **greedy** and **string manipulation** problem, often asked to assess ability to handle intricate formatting logic. The solution patterns used include greedy packing, math for space distribution, and careful string assembly. These are common in formatting outputs (text editors, tables, reports), and also useful for interview tasks needing granular control over string layout.
 
+
+### Flashcard
+Greedily pack words into lines, then distribute spaces evenly (extra spaces to the left slots); last line is left-justified.
+
 ### Tags
 Array(#array), String(#string), Simulation(#simulation)
 

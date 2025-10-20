@@ -87,6 +87,10 @@ def bulbSwitch(n):
 ### Summary
 This problem uses the **math and divisors pattern**, a classic interview trick. If an index has an odd number of divisors (perfect square), the bulb is ON. Thus, the answer is ⌊√n⌋. This same **count-perfect-square** idea is useful in other toggling, factor-counting, and divisor parity problems. The final algorithm is extremely efficient and bypasses simulation entirely.
 
+
+### Flashcard
+Identify bulbs that are toggled an odd number of times by recognizing perfect squares.
+
 ### Tags
 Math(#math), Brainteaser(#brainteaser)
 

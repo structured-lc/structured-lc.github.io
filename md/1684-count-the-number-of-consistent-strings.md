@@ -60,6 +60,10 @@ def countConsistentStrings(allowed, words):
 ### Summary
 This solution uses the **set lookup pattern**: convert constraints to a set for fast membership checks, and filter the main list accordingly. Applicable for string constraint filtering problems and membership validation.
 
+
+### Flashcard
+Count of Matches in Tournament
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Counting(#counting)
 

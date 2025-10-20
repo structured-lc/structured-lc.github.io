@@ -115,6 +115,10 @@ This solution uses **digit-wise simulation** to add negabinary numbers, handling
 The pattern mirrors traditional base-B addition but requires specific case checks for negabinary's carry over rules.  
 This approach generalizes to any base addition with minor tweaks and is found in other problems involving custom numeral systems and bitwise math.
 
+
+### Flashcard
+Simulate negabinary addition digit by digit, handling carries according to base -2 rules.
+
 ### Tags
 Array(#array), Math(#math)
 

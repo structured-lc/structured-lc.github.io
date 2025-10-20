@@ -94,6 +94,10 @@ def numSubarrayProductLessThanK(nums, k):
 ### Summary
 The **sliding window / two pointer** technique solves this problem efficiently, leveraging the monotonic nature of product across positive integers. This approach generalizes to count subarray sums, maximum/minimum windows, and is a common pattern for handling continuous subarray constraints. It avoids wasteful recomputation required by brute-force, turning a naive O(n²) problem into O(n).
 
+
+### Flashcard
+Use a sliding window to maintain a product < k; for each right, expand window, and for each left, shrink when product ≥ k, counting subarrays.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

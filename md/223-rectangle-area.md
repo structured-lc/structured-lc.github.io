@@ -88,6 +88,10 @@ def computeArea(ax1, ay1, ax2, ay2, bx1, by1, bx2, by2):
 ### Summary  
 This approach is based on **geometry and interval intersection**. It calculates the possible overlap, avoids double-counting, and returns the right area. The coding pattern of "break the problem into simple arithmetic and then combine" is common, especially in problems involving grids, rectangles, and intervals. This pattern generalizes to interval union, sweep-line, and event-based geometric algorithms.
 
+
+### Flashcard
+Area = area₁ + area₂ − overlap; compute overlap as max(0, min(x₂)−max(x₁)) × max(0, min(y₂)−max(y₁)).
+
 ### Tags
 Math(#math), Geometry(#geometry)
 

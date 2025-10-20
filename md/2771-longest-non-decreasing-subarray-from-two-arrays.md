@@ -90,6 +90,10 @@ def maxNonDecreasingLength(nums1, nums2):
 ### Summary
 This problem uses a classic **dynamic programming** pattern: maintaining the best "ending" value for two paths and propagating them forward in O(n) time. Such patterns commonly occur in array-chaining or combining scenarios. This approach is particularly useful in situations where at each step, the choice is between a small constant number of options dependent only on the previous state—found in sequence building, "choose from multiple lists," or variants of LIS/array DP problems.
 
+
+### Flashcard
+Track two DP states at each position: longest non-decreasing subarray ending here if choosing nums1[i] or nums2[i].
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

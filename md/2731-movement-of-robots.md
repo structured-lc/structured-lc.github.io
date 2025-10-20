@@ -99,6 +99,10 @@ def sumDistance(nums, s, d):
 ### Summary
 This problem uses the common prefix sum + sorting trick to efficiently compute the sum of all pairwise absolute differences after a transformation (robots' movement). The main insight is that collisions (bouncing) don’t affect the set of final positions or answers—so the task reduces to a standard 1D absolute pairwise distances sum. This pattern applies to "distance in a straight line after simultaneous movement" problems as well as some 1D physics and logistics optimizations.
 
+
+### Flashcard
+Simulate robot movement; collisions don’t affect final positions or pairwise distances due to symmetry, so ignore collisions.
+
 ### Tags
 Array(#array), Brainteaser(#brainteaser), Sorting(#sorting), Prefix Sum(#prefix-sum)
 

@@ -97,6 +97,10 @@ It’s a classic way to check for possible subarray partitions.
 This approach is common for "partition with equal sum" problems when partitions must be contiguous.  
 Recognizing sum divisibility and using either scan-from-ends or a running counter are core techniques.
 
+
+### Flashcard
+If sum(arr) not divisible by 3, return False; scan for two partitions with sum == total//3 and at least one element between.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

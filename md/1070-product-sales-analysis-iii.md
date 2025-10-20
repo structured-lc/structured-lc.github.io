@@ -139,6 +139,10 @@ This is a classic **group by minimum value for each group** problem (group by pr
 It's a very common pattern for "first/last event per group" in data analysis, and translates directly between SQL and pandas.  
 The approach is efficient and scales well, and appears in many sales analysis, churn, and time-series questions.
 
+
+### Flashcard
+For each product, find the minimum year sold, then filter sales to only those with that product and year.
+
 ### Tags
 Database(#database)
 

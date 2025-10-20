@@ -74,6 +74,10 @@ def cloneTree(root):
 ### Summary
 This problem is a classic **tree recursion/deep cloning pattern**—clone the root, then recursively clone all children. The solution generalizes to copying any graph-like structure (with a hashmap for cycles), and commonly appears in problems involving deep copy, graph/tree traversal, or when duplicating entire data structures.
 
+
+### Flashcard
+Recursively DFS/BFS clone each node and its children, creating new nodes and attaching cloned children to the new parent.
+
 ### Tags
 Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
 

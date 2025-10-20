@@ -122,6 +122,10 @@ def insertIntoBST(root, val):
 ### Summary  
 This problem is a classic example of **binary search tree manipulation** using recursion, which relies on the BST property to ensure efficient insertion. The recursive approach closely reflects the logical structure of decision-making in a BST, and this coding pattern—traverse left/right based on comparisons—arises frequently in tree problems such as searching, validating BSTs, or deleting nodes.
 
+
+### Flashcard
+Recursively insert val into BST: go left if val < node, right if val > node, insert at null child to maintain BST property.
+
 ### Tags
 Tree(#tree), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

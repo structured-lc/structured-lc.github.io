@@ -87,6 +87,10 @@ def addToArrayForm(num, k):
 ### Summary
 We used the **digit-by-digit addition** coding pattern, a common technique for problems requiring manipulating very large numbers as arrays. This avoids integer overflow and is widely used in problems like “Add One to Number,” “Multiply Strings,” and linked-list addition. The pattern is efficient and intuitive for base-10 arithmetic on array-represented integers.
 
+
+### Flashcard
+Add k to the array-form number digit by digit from the end, handling carry, and prepend any remaining carry at the front.
+
 ### Tags
 Array(#array), Math(#math)
 

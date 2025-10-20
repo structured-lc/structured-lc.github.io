@@ -150,6 +150,10 @@ def increasingBST(root):
 ### Summary
 This problem is a classic application of in-order DFS traversal for BSTs, reflecting the *flatten* and *threaded tree* patterns. The recursive in-place approach is memory-efficient and well-suited for problems asking you to output a "linked list" view of tree structure. This pattern is common in problems seeking ordered traversals or conversions between tree and list forms.
 
+
+### Flashcard
+In-order traverse the BST, relinking nodes so each node’s left is null and right points to the next node in order.
+
 ### Tags
 Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

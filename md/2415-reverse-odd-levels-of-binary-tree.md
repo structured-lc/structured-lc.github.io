@@ -117,6 +117,10 @@ def reverseOddLevels(root):
 ### Summary
 This problem applies a **level order traversal (BFS)** to manipulate a tree based on levels, specifically reversing values at odd-numbered levels. It's a classic example of **tree modification by level**, a pattern that appears in inverting trees, level reversals, and zigzag traversals. Mastering both BFS and DFS for such structured symmetric problems is widely applicable in tree-based interview questions.
 
+
+### Flashcard
+Traverse the binary tree level by level and reverse node values at odd levels.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

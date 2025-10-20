@@ -97,6 +97,10 @@ def countTheNumOfKFreeSubsets(nums, k):
 ### Summary
 This problem reduces to **partitioning nums into modulus-k groups**, then, for each, running a "no two adjacent selected" DP (house robber) pattern. The result is the **product** of valid subset counts from all groups. This DP pattern is standard in subset/adjacency/interval selection problems (e.g., House Robber, Fibonacci-tiling). The grouping trick is due to the forbidden difference property, which creates **independent chains** that are processed separately.
 
+
+### Flashcard
+Count subsets where no two elements differ by `k` by analyzing the graph of connected elements.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Sorting(#sorting), Combinatorics(#combinatorics)
 

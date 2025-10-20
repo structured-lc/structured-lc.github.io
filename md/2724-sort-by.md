@@ -79,6 +79,10 @@ The use of a `key` function or comparator is standard in Python, JavaScript, and
 The approach is efficient, readable, and widely applicable—great for interviews when custom orderings are required.  
 Common pattern: decorate-sort-undecorate (aka Schwartzian transform), or just built-in sort with key/comparator.
 
+
+### Flashcard
+Sort the array using the provided function as the key, e.g., arr.sort(fn).
+
 ### Tags
 
 ### Similar Problems

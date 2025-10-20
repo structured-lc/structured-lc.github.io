@@ -101,6 +101,10 @@ def minimumTime(time: List[int], totalTrips: int) -> int:
 The solution uses a **binary search on answer** technique, common for problems where you have a monotonic condition based on a numeric threshold (here, time). By quickly narrowing the answer space, we avoid slow iteration, even for very large inputs.  
 This pattern, "search for minimum/maximum parameter to satisfy a constraint," is crucial in scheduling, production-line, or batching problems—other classic LeetCode problems using it include "Koko Eating Bananas," "Capacity to Ship Packages Within D Days," etc.
 
+
+### Flashcard
+Use binary search on time T; for each T, sum ⌊T/timeᵢ⌋ over all buses and find minimal T with total ≥ totalTrips.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

@@ -71,6 +71,10 @@ This problem is straightforward array element placement using index mapping, a v
 - Mapping values or objects to new positions based on keys.
 The clean, direct index assignment technique is very useful in array and string manipulation questions.
 
+
+### Flashcard
+Directly map characters to their specified positions using an array, then join the array into a string for efficient rearrangement.
+
 ### Tags
 Array(#array), String(#string)
 

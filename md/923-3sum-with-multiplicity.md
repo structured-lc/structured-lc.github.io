@@ -101,6 +101,10 @@ def threeSumMulti(arr, target):
 ### Summary
 This problem uses the **combinatorics with frequency counting** pattern, exploiting limited value range for efficient O(1) time (per value range). The classic 3-sum is modified to account for element frequencies and index ordering, demonstrating the benefit of "reduce to counting" approaches. This pattern generalizes to k-sum with small integer ranges and can appear in problems involving triplets, subsets, or any group counting with duplicates.
 
+
+### Flashcard
+Count frequency of each value, then for all 0 ≤ x ≤ y ≤ z ≤ 100 with x+y+z=target, count triplets using combinations.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Sorting(#sorting), Counting(#counting)
 

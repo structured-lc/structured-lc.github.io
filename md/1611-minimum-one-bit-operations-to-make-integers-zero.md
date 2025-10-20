@@ -65,6 +65,10 @@ def minimumOneBitOperations(n: int) -> int:
 ### Summary
 The key is recognizing the link to **Gray code sequences** and recursion based on the highest bit set. This pattern is a variation of bitmask dynamic programming and conditional flipping, a common advanced topic. The recursive, divide-and-conquer reduction pattern is useful for problems involving flipping or transforming bits to a desired state.
 
+
+### Flashcard
+Use recursive bit manipulation based on the highest set bit, similar to Gray code transformations, to count minimum operations to zero.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Memoization(#memoization)
 

@@ -96,6 +96,10 @@ def matchPlayersAndTrainers(players, trainers):
 ### Summary
 This problem uses a **greedy two-pointers after sorting** coding pattern—a classic technique for various matching, interval scheduling, or resource allocation problems where ordering both sides allows efficient lookup. The core pattern is applicable wherever "assign in order, moving up both pointers when matched" ensures optimal results, such as in scheduling meetings, task-to-worker assignments, or movie showtiming seatings.
 
+
+### Flashcard
+Match players with trainers by sorting both arrays and using two pointers.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting)
 

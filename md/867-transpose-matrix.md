@@ -92,6 +92,10 @@ The pattern—traversing a matrix and swapping dimensions—is common in data ma
 The approach shown focuses on clear index mapping and space allocation, and illustrates how to work with 2D arrays directly.  
 Patterns here apply to other problems involving “reshape” or transformation of 2D data.
 
+
+### Flashcard
+Create a new matrix with swapped dimensions; output[c][r] = input[r][c] for all 0 ≤ r < rows, 0 ≤ c < cols.
+
 ### Tags
 Array(#array), Matrix(#matrix), Simulation(#simulation)
 

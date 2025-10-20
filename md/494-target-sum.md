@@ -98,6 +98,10 @@ def findTargetSumWays(nums, target):
 ### Summary
 This problem uses the classic **"decision tree" with DP memoization** pattern, common in subset sum and partition problems. Brute-forcing all sign assignments leads to exponential time, but **recursion with memoization** reduces it to polynomial in input size and sum range. The same template extends to problems like Partition Equal Subset Sum, Coin Change, and Subset Sum Variations.
 
+
+### Flashcard
+Use DFS with memoization or DP; at each index, branch to plus/minus, count ways to reach target sum.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking)
 

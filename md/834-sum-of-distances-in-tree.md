@@ -130,6 +130,10 @@ def sumOfDistancesInTree(N, edges):
 ### Summary
 This approach exploits **tree dynamic programming with rerooting**—a common technique for tree-based problems where information about parent/child relationships lets you propagate results efficiently. The pattern is widely applicable for problems involving per-node aggregates that depend on subtree and "rest-of-tree" properties. Examples include problems about subtree sums, distances, or influence propagation in hierarchical data.
 
+
+### Flashcard
+Use two DFS passes: post-order to compute subtree sizes and distance sums, then pre-order to propagate total distances to all nodes efficiently.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Graph(#graph)
 

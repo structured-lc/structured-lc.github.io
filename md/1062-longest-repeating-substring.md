@@ -102,6 +102,10 @@ This is a classic **binary search on answer**, coupled with set-based substring 
 The core trick is translating "find the longest X for which a boolean test returns true" into a binary search, and efficiently using hash sets to check for repeated substrings.  
 Related techniques include Rabin–Karp hashing (for rolling substring checks), and suffix array/LCP array (for all substring match problems).
 
+
+### Flashcard
+Binary search substring length and use a hash set to check for repeating substrings of that length.
+
 ### Tags
 String(#string), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Rolling Hash(#rolling-hash), Suffix Array(#suffix-array), Hash Function(#hash-function)
 

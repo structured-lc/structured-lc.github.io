@@ -92,6 +92,10 @@ def countGoodRectangles(rectangles):
 ### Summary
 The approach here is a simple **single-pass max/min and counting problem**, common in ad-hoc/greedy problems. It demonstrates how to scan a list while maintaining best-so-far and frequency counts, a pattern frequently needed for interview questions requiring O(n) solutions with minimal space. This concept of "track best value and its count" appears in problems like finding mode, max frequency, or most recent value in a stream.
 
+
+### Flashcard
+For each rectangle, take min(length, width) as the largest square side; track the max side found and count how many rectangles achieve it in one pass.
+
 ### Tags
 Array(#array)
 

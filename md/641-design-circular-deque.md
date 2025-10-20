@@ -181,6 +181,10 @@ class MyCircularDeque:
 This problem leverages the fixed-size **circular buffer** pattern to allow efficient double-ended O(1) operations by careful pointer arithmetic. It’s a classic example of how ring buffers work for producer-consumer queues and circular scheduling.  
 The same pattern is used for classic circular queues, round-robin tasks, and some memory-mapped applications.
 
+
+### Flashcard
+Use a fixed-size array and two pointers (front, rear) to implement circular deque with O(1) insert/delete at both ends.
+
 ### Tags
 Array(#array), Linked List(#linked-list), Design(#design), Queue(#queue)
 

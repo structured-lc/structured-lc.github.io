@@ -133,6 +133,10 @@ The key insight is leveraging the restriction that all nums[i] ≤ 30, allowing 
 The structure and DP pattern is common in subset-sum, bitmask-DP, and problems where you’re combining independent "traits" with overlap constraints.  
 This approach generalizes to many problems where you count valid subsets meeting non-overlapping feature or divisibility rules.
 
+
+### Flashcard
+Use DP with bitmasking over numbers 1–30, tracking valid subsets whose product is square-free (distinct primes only).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Counting(#counting), Number Theory(#number-theory), Bitmask(#bitmask)
 

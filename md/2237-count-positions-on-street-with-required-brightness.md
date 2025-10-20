@@ -120,6 +120,10 @@ Key ideas: convert range updates into two-point modifications, then prefix sum t
 Similar problems: **Range Addition** (Leetcode 370), skyline problems, subarray sum with updates, and some 2D image manipulation cases.  
 Pattern is widely used for interval increment/count operations in competitive programming and real-world scenarios like event scheduling, lamps coverage, parking lots, etc.
 
+
+### Flashcard
+Use a difference array to mark lamp ranges, then prefix sum to count brightness at each position.
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

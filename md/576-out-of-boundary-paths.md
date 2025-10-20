@@ -100,6 +100,10 @@ def findPaths(m, n, maxMove, startRow, startColumn):
 ### Summary
 This problem uses the classic **DFS with memoization (Top-Down DP for grid state)** pattern. It's a standard "count all paths under constraints" problem, which appears often in grid walks, robot movement, and board games like chess. The idea of encoding the state by (cell, remaining moves) and caching results is powerful and broadly applicable to any path-counting or minimum-step problems on grids with limited actions.
 
+
+### Flashcard
+Use memoized DFS to count paths from each cell with moves left; sum ways to go out of bounds in ≤ maxMove moves.
+
 ### Tags
 Dynamic Programming(#dynamic-programming)
 

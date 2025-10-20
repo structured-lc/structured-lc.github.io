@@ -83,6 +83,10 @@ def isCircularSentence(sentence: str) -> bool:
 ### Summary
 This problem uses the pattern of comparing adjacent pairs in a sequence, including wrap-around, which is common in circular buffer or cycle detection problems. The solution is simple string manipulation and iteration, with an emphasis on index and boundary handling. This approach applies to similar problems where you must validate relationships in a circular or cyclic structure.
 
+
+### Flashcard
+Check that each word's last char matches next word's first char, and last word's last char matches first word's first char.
+
 ### Tags
 String(#string)
 

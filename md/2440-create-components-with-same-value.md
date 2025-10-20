@@ -131,6 +131,10 @@ This problem is a classic **tree-partition by subtree sum** pattern, leveraging 
 It generalizes to problems like splitting trees by value, checking valid subtree structure, or enforcing balanced partitions in distributed computations.  
 The key insight is to try all possible k and greedily cut off subtrees summing to the required target, stopping when the maximal valid k is found.
 
+
+### Flashcard
+Try each divisor k of total sum S. Use DFS to check if tree can be partitioned into components each summing to S/k by cutting edges.
+
 ### Tags
 Array(#array), Math(#math), Tree(#tree), Depth-First Search(#depth-first-search), Enumeration(#enumeration)
 

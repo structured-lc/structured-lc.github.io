@@ -108,6 +108,10 @@ def isValid(s: str) -> bool:
 ### Summary
 This problem is a **stack** pattern classic, used to check for correct matching of nested structures. Stacks enable elegant solutions for properly nested bracket problems and are commonly used in parsing, expression evaluation, and compilers. Recognizing when a problem requires "last opened, first closed" is a vital interview skill. This pattern is also applicable for binary tree traversals, undo operations, and depth-first search.
 
+
+### Flashcard
+Use a stack to match each closing bracket with the most recent unclosed opening bracket; valid if stack is empty at the end.
+
 ### Tags
 String(#string), Stack(#stack)
 

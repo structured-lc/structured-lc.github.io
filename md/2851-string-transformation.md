@@ -107,6 +107,10 @@ def stringTransformation(s: str, t: str, k: int) -> int:
 ### Summary
 This problem uses a circular DP pattern over string rotations (a Markov chain over rotation states). The insight is that the transformation is equivalent to rotating the string, and moving suffixes maps directly to these rotations. By recognizing all occurrences of t as a rotation of s, and calculating the number of ways the Markov process lands at those positions after k steps, we avoid expensive enumeration and gain an efficient solution. This pattern also appears in string periodicity, KMP/Z-algorithm tasks, and modular DP cycles.
 
+
+### Flashcard
+All reachable strings are rotations of s; count the number of ways to reach t in exactly k moves by analyzing rotation cycles and using combinatorics.
+
 ### Tags
 Math(#math), String(#string), Dynamic Programming(#dynamic-programming), String Matching(#string-matching)
 

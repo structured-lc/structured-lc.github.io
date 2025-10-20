@@ -96,6 +96,10 @@ def maxDistance(grid):
 ### Summary
 This problem is a classic example of the **Multi-Source BFS** pattern for shortest paths in an unweighted grid. The pattern applies to any scenario where many sources expand and we want to track the shortest reach to each target class. This approach is common in problems like "rot all oranges", "zombie in matrix", or “walls and gates”.
 
+
+### Flashcard
+Multi-source BFS from all land cells simultaneously; the farthest water cell reached gives the maximum distance from land.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

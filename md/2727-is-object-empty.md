@@ -87,6 +87,10 @@ The approach uses a straightforward type check and length check, a common **type
 This is a generic, reusable check that appears in many API validation, serialization, and defensive programming settings.  
 The same technique (checking `len()` or equivalent) is widely applicable to data validation, input wrappers, or language-agnostic type-check logic.
 
+
+### Flashcard
+Check if a dict or list is empty by verifying length is zero; avoid built-ins by manually checking for any elements.
+
 ### Tags
 
 ### Similar Problems

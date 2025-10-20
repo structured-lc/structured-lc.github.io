@@ -129,6 +129,10 @@ The approach uses the **preorder traversal pattern**: process root, left, then r
 Both recursive and iterative forms are direct; recursive is more elegant, and iterative is robust for deep trees.  
 This pattern underpins many tree problems, including tree cloning, serialization, and evaluating/printing hierarchies.
 
+
+### Flashcard
+Preorder traversal: visit root, then left, then right; use recursion or a stack for iterative solution.
+
 ### Tags
 Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

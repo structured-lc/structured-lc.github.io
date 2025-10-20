@@ -102,6 +102,10 @@ def nearestPalindromic(n: str) -> str:
 This is a classic **"mirror/candidate set + scan"** problem: generate all reasonable palindrome candidates by mirroring around the "center" and adjusting (prefix±1). Handle length change cases, check all candidates, and pick the closest one.  
 This pattern—generating minimal variants and picking by metric—shows up in palindrome, number game, and string-to-target-difference problems.
 
+
+### Flashcard
+Mirror the first half of n to form palindrome candidates, adjust by ±1 for edge cases, and pick the closest (excluding n itself).
+
 ### Tags
 Math(#math), String(#string)
 

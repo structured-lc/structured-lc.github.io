@@ -84,6 +84,10 @@ def minGroups(intervals):
 ### Summary
 This problem uses the **sweep line / interval overlap counting** pattern, also common in "meeting rooms II", "minimum number of platforms", and event scheduling problems. The core technique is to track how many intervals are active at any point; the maximum is the required groups. This approach is efficient, elegant, and widely applicable to overlapping intervals or resource allocation problems.
 
+
+### Flashcard
+Sort interval endpoints and sweep through the timeline to find the maximum number of overlapping intervals.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Prefix Sum(#prefix-sum)
 

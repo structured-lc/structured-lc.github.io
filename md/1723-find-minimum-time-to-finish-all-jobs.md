@@ -104,6 +104,10 @@ We used **backtracking with pruning**, exploiting the small constraint (n ≤ 12
 This is a classic "minimum makespan scheduling" problem, and the pattern appears frequently in job allocation, multiprocessor, or load balancing problems.  
 The pruning and early job placement are common tricks in backtracking problems to achieve practical efficiency.
 
+
+### Flashcard
+Use backtracking with pruning: assign largest jobs first, bound by best-known answer, and skip equivalent worker assignments.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

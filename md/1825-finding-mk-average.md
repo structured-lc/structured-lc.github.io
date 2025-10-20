@@ -150,6 +150,10 @@ class MKAverage:
 ### Summary
 This problem follows the **maintain sliding window with efficient order-statistics** pattern, frequently appearing in "rolling median" or "sliding percentile" problems. The key data structure is a balanced multiset or sorted list, supporting efficient in-window insertion, deletion, partitioning, and sum maintenance. The technique generalizes to problems that require order-based statistics or dynamic summary over a rolling window.
 
+
+### Flashcard
+Maintain three balanced multisets for the sliding window: smallest k, largest k, and middle m-2k; update and rebalance on each add/remove for O(log m) operations, and compute MK average as floor(sum of middle / (m-2k)).
+
 ### Tags
 Design(#design), Queue(#queue), Heap (Priority Queue)(#heap-priority-queue), Data Stream(#data-stream), Ordered Set(#ordered-set)
 

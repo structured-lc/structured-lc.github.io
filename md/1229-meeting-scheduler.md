@@ -90,6 +90,10 @@ def minAvailableDuration(slots1: List[List[int]], slots2: List[List[int]], durat
 ### Summary
 This problem uses a classic **interval intersection** and **two-pointer** approach on two sorted lists. It's a common pattern for scheduling, calendar merging, and finding joint intervals across two sources. The careful calculation of overlaps and advancing the correct pointer is critical and generalizes to related problems.
 
+
+### Flashcard
+Sort both schedules, use two pointers to find earliest overlapping slot of required duration.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Sorting(#sorting)
 

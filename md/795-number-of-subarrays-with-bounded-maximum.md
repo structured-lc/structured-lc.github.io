@@ -91,6 +91,10 @@ def numSubarrayBoundedMax(nums, left, right):
 ### Summary  
 This problem uses the classic two-pass or difference-of-counting window technique. The core coding pattern ― sliding window with resets when constraints break ― is broadly applicable to subarray range queries. The prefix sum–like `count(bound)` logic is also common for problems involving "at most"/"less than or equal" conditions.
 
+
+### Flashcard
+Count subarrays with max ≤ right and subtract those with max < left; use a sliding window to count in O(n) time.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers)
 

@@ -101,6 +101,10 @@ def sortTransformedArray(nums, a, b, c):
 ### Summary
 This problem uses the **two-pointer pattern** for arrays with a monotonic property (here, transformed by a quadratic) to fill an output array efficiently based on the function’s shape. This pattern often appears when merging, reversing, or reconciling different sorted sections of data—common also in problems like "Merge Sorted Array", "Squares of a Sorted Array", etc. Recognizing properties of monotonicity and function behavior enables performance gains over brute force approaches.
 
+
+### Flashcard
+Use two pointers from both ends (since input is sorted) to fill the result array from the correct side based on the quadratic's direction.
+
 ### Tags
 Array(#array), Math(#math), Two Pointers(#two-pointers), Sorting(#sorting)
 

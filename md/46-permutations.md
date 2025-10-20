@@ -107,6 +107,10 @@ This problem is a classic use-case for **backtracking**, a common coding intervi
 Other typical applications include solving sudoku, n-queens, or word search puzzles.  
 Backtracking ensures every possible candidate arrangement is checked and constructed efficiently, then unwound—so all possible unique permutations are returned.
 
+
+### Flashcard
+Use backtracking to build permutations by recursively picking unused elements and backtracking after each choice.
+
 ### Tags
 Array(#array), Backtracking(#backtracking)
 

@@ -90,6 +90,10 @@ def removeDigit(number: str, digit: str) -> str:
 ### Summary
 The solution uses a **greedy approach** for string digit manipulation: it identifies the optimal occurrence of the specified digit to remove, maximizing the resulting integer by prioritizing positional significance. This is a classic string scan and greedy pattern—often used in digit and substring maximization/minimization challenges (e.g., removing k digits to get the smallest/largest result).
 
+
+### Flashcard
+Remove the leftmost occurrence of digit where the next digit is larger; if none, remove the last occurrence to maximize result.
+
 ### Tags
 String(#string), Greedy(#greedy), Enumeration(#enumeration)
 

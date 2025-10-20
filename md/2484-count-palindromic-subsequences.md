@@ -113,6 +113,10 @@ It appears in many related problems (count palindrome substrings, longest palind
 The most challenging part is **avoiding double-counting** by inclusion-exclusion in overlapping cases.  
 The use of two pointers to find copies inside the substring s[i+1..j-1] is a common trick for such problems.
 
+
+### Flashcard
+DP on substrings: if s[i] = s[j], dp[i][j] = dp[i+1][j] + dp[i][j-1] - dp[i+1][j-1] + (dp[i+1][j-1] + 1).
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

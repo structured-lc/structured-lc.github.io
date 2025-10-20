@@ -99,6 +99,10 @@ def digitsCount(d: int, low: int, high: int) -> int:
 
 This problem is a classic use-case for **digit DP**: calculating properties (like digit frequencies) over number ranges efficiently, by recursively iterating possible digits and using memoization to avoid redundant subproblems. This pattern appears in a range of combinatorial digit constraints and range-counting scenarios in coding interviews. Mastery of digit DP is invaluable for similar "count in range" or "avoid forbidden patterns" number problems.
 
+
+### Flashcard
+Use digit DP to count occurrences of digit d up to high and low-1, then subtract to get the count in [low, high].
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming)
 

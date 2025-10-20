@@ -160,6 +160,10 @@ class StockPrice:
 This problem is a classic example of **lazy deletion** with min/max heaps, combined with a primary mapping to determine staleness. The data structure efficiently answers four real-time queries despite corrections and disorder in input.  
 The technique—primary authoritative storage with one or more auxiliary data structures and lazy removal—is widely applicable for problems involving dynamic stats or consolidation over time, such as live event tracking, leaderboard maintenance, and sliding window aggregates.
 
+
+### Flashcard
+Use a dictionary for O(1) updates and latest price, plus heaps or trees for O(log n) min/max queries—combine fast access with ordered structures.
+
 ### Tags
 Hash Table(#hash-table), Design(#design), Heap (Priority Queue)(#heap-priority-queue), Data Stream(#data-stream), Ordered Set(#ordered-set)
 

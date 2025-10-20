@@ -108,6 +108,10 @@ def countPartitions(nums):
 ### Summary
 This problem uses a **greedy/cutting algorithm with last occurrence tracking**, a classic way to enforce value constraints over segments. It relates to patterns like "partition labels" or "merge intervals" and is often useful in problems requiring unique element handling over subarrays. Recognizing the key constraint (all occurrences grouped) enables an O(n) solution.
 
+
+### Flashcard
+Partition the array such that all occurrences of each value are in the same segment; count valid partitions by tracking last occurrence of each value.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Combinatorics(#combinatorics)
 

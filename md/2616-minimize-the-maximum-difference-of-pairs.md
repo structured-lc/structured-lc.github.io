@@ -111,6 +111,10 @@ This "binary search on answer + greedy checker" approach is common in array part
 - Aggressive Cows (partitioning stalls), etc.  
 Very efficient and robust for problems asking "minimize some maximum/minimum over subsets subject to constraints."
 
+
+### Flashcard
+Sort the array, then binary search the minimum possible maximum difference for p pairs.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Sorting(#sorting)
 

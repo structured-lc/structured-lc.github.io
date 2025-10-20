@@ -101,6 +101,10 @@ This problem is a classic **backtracking** and **duplicate-pruning** pattern. Th
 You efficiently prune duplicates by sorting, tracking element usage, and only allowing swaps when no smaller duplicate could have been moved instead.  
 This technique is commonly used in permutation generation when the collection has duplicates and is broadly useful in problems like "Subsets II," "Combination Sum II," etc.
 
+
+### Flashcard
+Sort nums and use backtracking; skip duplicate elements at the same recursion depth to avoid repeated permutations.
+
 ### Tags
 Array(#array), Backtracking(#backtracking), Sorting(#sorting)
 

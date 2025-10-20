@@ -116,6 +116,10 @@ def numberOfPairs(nums1, nums2, diff):
 ### Summary
 This problem uses a common "count of pairs with a difference condition" pattern, closely related to reverse pair counting. The main coding techniques are coordinate compression and Binary Indexed Tree (BIT) or segment tree. This is a classic approach for competitive problems needing efficient query and update operations over compressed value ranges, applicable also in problems like inversion count, reverse pairs, or 2D range queries.
 
+
+### Flashcard
+Transform inequality to arr[i] ≤ arr[j]+diff where arr[k]=nums1[k]−nums2[k]. Use merge sort or Fenwick tree to count inversions in O(n log n).
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Merge Sort(#merge-sort), Ordered Set(#ordered-set)
 

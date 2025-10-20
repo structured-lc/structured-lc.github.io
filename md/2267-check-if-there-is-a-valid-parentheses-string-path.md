@@ -123,6 +123,10 @@ This problem applies typical **stateful DFS/BFS with memoization**, a pattern wi
 Key to efficiency: encode the correct state (row, col, balance) and aggressively prune invalid search branches.  
 This approach is broadly applicable for grid path problems where mid-path validity (not just final state) must be maintained—such as string balancing, energy constraints, or specific resource tracking along the path.
 
+
+### Flashcard
+Use memoized DFS tracking open parentheses count; ensure balance never goes negative and ends at zero for valid path.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

@@ -92,6 +92,10 @@ This problem is an example of the **counting + modulus pattern** — a common te
 Knowing how to model state using frequency arrays/hash maps, and using simple divisibility checks, often leads to simple yet powerful solutions in interview scenarios.  
 This pattern appears in grouping, redistribution, and many "can you partition equally" problems.
 
+
+### Flashcard
+Check if combined letters can be evenly distributed among strings.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

@@ -117,6 +117,10 @@ def loudAndRich(richer, quiet):
 ### Summary
 This problem is a *graph dependency* problem efficiently solved using **DFS with memoization**. The main insight is to reverse the relationship to “who is richer than” and memoize. This pattern of “dependency propagation” appears often in questions about inheritance, scheduling, and reachability, and closely relates to **topological sorting** and **dynamic programming on DAGs**.
 
+
+### Flashcard
+Build richer-than graph; for each person, DFS to find all richer or equal people, then pick the quietest among them.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Graph(#graph), Topological Sort(#topological-sort)
 

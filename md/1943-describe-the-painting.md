@@ -96,6 +96,10 @@ def splitPainting(segments):
 ### Summary
 This problem uses a classic **sweep line and prefix sum/difference array** technique to efficiently track value changes and intervals. This approach is commonly applicable in range addition, interval painting, and event scheduling problems, especially when the number line can be sparse but with large bounds. The key is only processing at change-points, not every possible coordinate.
 
+
+### Flashcard
+Use a sweep line (difference array) to track color sums at segment starts/ends, then output intervals with unique sums.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting), Prefix Sum(#prefix-sum)
 

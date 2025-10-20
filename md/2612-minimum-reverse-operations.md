@@ -112,6 +112,10 @@ def minReverseOperations(n, p, banned, k):
 ### Summary
 This problem is essentially a shortest path in a *virtual* unweighted graph, making BFS ideal. Parity and set tricks allow efficient search/pruning of reachable indices. Patterns used here include *BFS for minimal steps*, *state modeling*, and use of sets for fast lookup—these techniques are broadly applicable to problems involving minimal transformations, state transitions, and sliding window operations.
 
+
+### Flashcard
+Use BFS to find the minimum number of reverse operations to reach all possible positions, avoiding banned indices.
+
 ### Tags
 Array(#array), Breadth-First Search(#breadth-first-search), Ordered Set(#ordered-set)
 

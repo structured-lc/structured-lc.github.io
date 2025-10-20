@@ -91,6 +91,10 @@ def minimumAbsDifference(arr):
 ### Summary
 This problem uses the **sorting** and **adjacent pair comparison** pattern, a common coding pattern for difference/gap problems with distinct values. It leverages the fact that after sorting, the minimum difference must exist between two consecutive numbers. This pattern can also apply to other problems involving closest or farthest pairs or detecting duplicates in a range.
 
+
+### Flashcard
+Sort the array, then scan consecutive pairs to find the minimum absolute difference; collect all adjacent pairs with this minimum.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

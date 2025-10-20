@@ -139,6 +139,10 @@ This pattern is also commonly applied in related problems like:
 - "Diagonal Traversal"
 - Any problem where node grouping depends on position or depth properties.
 
+
+### Flashcard
+Use BFS to traverse the binary tree level by level, sorting nodes by column index.
+
 ### Tags
 Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Sorting(#sorting), Binary Tree(#binary-tree)
 

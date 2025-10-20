@@ -115,6 +115,10 @@ def minSideJumps(obstacles):
 We used a dynamic programming pattern—a rolling DP array to represent the minimum sidejumps needed to reach each lane at every position, updating in-place for efficiency.  
 This problem is a type of "stateful shortest path" in a grid/track, and the same pattern can be applied to obstacle-avoidance and path-finding variants with lane switches, e.g., robot grid navigation or video game pathing.
 
+
+### Flashcard
+DP with state dp[pos][lane] = min sidejumps to reach (pos, lane); transition by moving forward or sidejumping, handle obstacles blocking lanes.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

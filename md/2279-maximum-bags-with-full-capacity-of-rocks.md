@@ -81,6 +81,10 @@ def maximumBags(capacity, rocks, additionalRocks):
 ### Summary
 This is a classic greedy problem: always fully fill bags that need the least to become full first. The pattern—"sort deficits, greedy allocation"—is common in knapsack-like or resource allocation problems. This approach is optimal when maximizing count, and the greedy strategy works because the cost (rocks per bag) is independent across bags, so locally optimal choices lead to a globally optimal result.
 
+
+### Flashcard
+Sort bags by deficit (capacity − rocks), fill those with smallest deficit first to maximize number of full bags.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

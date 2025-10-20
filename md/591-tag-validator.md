@@ -136,6 +136,10 @@ def isValid(code: str) -> bool:
 ### Summary
 The main approach is *manual parsing with a stack* to enforce proper tag nesting, root wrapping, and CDATA handling. This is a classic application of state-machine parsing. This pattern is very common for XML/HTML validation, parenthesis matching, and structured document parsing, and is broadly applicable to similar "well-formedness" problems.
 
+
+### Flashcard
+Use a stack to track open tags, handle CDATA as raw text, and validate tag names and nesting for correct XML structure.
+
 ### Tags
 String(#string), Stack(#stack)
 

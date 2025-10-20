@@ -71,6 +71,10 @@ ORDER BY customer_id;
 ### Summary
 This problem demonstrates basic SQL filtering with multiple conditions using AND operator. It's a fundamental pattern for database queries involving time-based filtering and numerical comparisons. This approach is commonly used in business analytics, financial reporting, and data analysis scenarios where you need to segment data by time periods and performance metrics.
 
+
+### Flashcard
+Filter Customers table where year = 2021 AND revenue > 0, return distinct customer_id.
+
 ### Tags
 Database(#database)
 

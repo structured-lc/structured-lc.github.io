@@ -94,6 +94,10 @@ def lengthOfLongestSubstringTwoDistinct(s):
 ### Summary
 This problem fits the "sliding window with hash map" pattern, common for substring/array window optimizations dealing with constraints like "at most k distinct elements". Recognizing the opportunity for O(n) processing by expanding and contracting a window is a key insight. This technique generalizes to problems like "Longest Substring with At Most K Distinct Characters", "Longest Substring Without Repeating Characters", and others.
 
+
+### Flashcard
+Use a sliding window with a hash map to track character counts, expanding and shrinking the window to maintain at most two distinct characters.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

@@ -95,6 +95,10 @@ def decodeString(s):
 ### Summary
 This problem uses the **stack pattern**, commonly seen in problems involving nested structures (parentheses, XML parsing, etc.). The stack enables you to process nested and repeated elements in a single pass as you parse the string left-to-right. This approach is efficient, intuitive for nested decoding, and easily adapted for other similar parsing tasks.
 
+
+### Flashcard
+Use a stack to decode nested k[encoded_string] patterns; push numbers and strings, pop and repeat as needed.
+
 ### Tags
 String(#string), Stack(#stack), Recursion(#recursion)
 

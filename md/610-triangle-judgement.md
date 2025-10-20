@@ -79,6 +79,10 @@ for sides in inputs:
 ### Summary
 This problem demonstrates direct application of the triangle inequality theorem for three numbers. It uses constant-time logical checks, a pattern common in geometric validation problems and input filtering. The approach is simple, robust, and often appears in simulation, graphics, or geometry-related coding interviews.
 
+
+### Flashcard
+For three sides x, y, z, check all: x+y>z, x+z>y, y+z>x; if all true, it's a triangle.
+
 ### Tags
 Database(#database)
 

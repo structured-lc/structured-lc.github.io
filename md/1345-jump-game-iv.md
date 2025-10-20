@@ -118,6 +118,10 @@ def minJumps(arr):
 ### Summary
 This problem is a classic example of **BFS for shortest path in an implicit graph**. Each array index is a graph node; edges exist to i±1 and all same-value indices. Hash-mapping values to indices and clearing them after expansion is key for efficiency. This pattern applies to many graph or board-jumping problems — for instance, word ladders, chess moves, and shortest escape paths in grids.
 
+
+### Flashcard
+Use BFS to find minimum jumps from index 0 to n−1, allowing jumps to i±1 and any j with arr[j]=arr[i]; preprocess value-to-indices for fast lookup.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Breadth-First Search(#breadth-first-search)
 

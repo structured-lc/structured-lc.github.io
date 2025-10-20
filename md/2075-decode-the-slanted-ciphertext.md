@@ -103,6 +103,10 @@ def decodeCiphertext(encodedText: str, rows: int) -> str:
 ### Summary
 This problem is a classic **matrix simulation** and **string traversal** pattern, commonly encountered in grid-based encoding/decoding, and diagonal or pattern-based reconstruction questions (e.g., Zigzag Conversion, Spiral Matrix). The main skills are converting between flat-indexed strings and 2D simulated traversals, and properly handling corner cases like trailing spaces and varying dimensions.
 
+
+### Flashcard
+For each column in the matrix, traverse diagonally down-right, collecting characters at positions i × cols + j, and trim trailing spaces from the result.
+
 ### Tags
 String(#string), Simulation(#simulation)
 

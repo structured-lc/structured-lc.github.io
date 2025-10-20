@@ -90,6 +90,10 @@ def leastInterval(tasks: List[str], n: int) -> int:
 ### Summary
 This solution applies the **Greedy** and **Counting** pattern. By focusing on the frequency of the most common tasks and their constraints, we transform the problem into a mathematical formula that yields optimal time. This scheduling framework is common in similar “cooldown” or “task assignment with gaps” problems. The counting-and-framing trick is widely useful in both greedy and combinatorial scheduling scenarios.
 
+
+### Flashcard
+Count task frequencies; minimum time is max(total tasks, (maxFreq-1)×(n+1)+numMaxFreqTasks), filling idle slots as needed.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Counting(#counting)
 

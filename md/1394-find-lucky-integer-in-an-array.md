@@ -77,6 +77,10 @@ def findLucky(arr):
 ### Summary
 The problem leverages the **frequency counting pattern**—useful when you need to relate/count element occurrences in an array quickly. Here, value constraints allow a simple fixed-size array, but for unbounded or large value ranges, a hash map would be the general solution. This approach appears in problems relating to "majority elements", "modes", or "frequencies matching a property". The key pattern is count, scan, then filter on the count.
 
+
+### Flashcard
+Count frequency of each number; return largest number where frequency equals value, or -1 if none.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

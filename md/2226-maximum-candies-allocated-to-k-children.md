@@ -97,6 +97,10 @@ def maximumCandies(candies, k):
 ### Summary
 This problem uses the **binary search on the answer pattern**, common in allocation/partitioning problems when feasibility for a fixed value can be checked efficiently. The counting logic is O(n), and binary search efficiently narrows down the maximum number of candies per child. This approach is widely applicable—e.g., distributing other resources (wood, ribbons), maximizing minimums, etc.
 
+
+### Flashcard
+Binary search for the maximum m where sum(pile // m for pile in piles) ≥ k.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

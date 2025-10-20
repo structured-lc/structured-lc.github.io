@@ -106,6 +106,10 @@ def countHouses(street, k):
 This problem is a classic example of “marking visited nodes with available local state” and is related to cycle detection in a circular data structure.  
 The pattern is frequently seen where you must detect rounds or cycles in doubly-linked lists, circular buffers, or robots moving on a circular path with limited local memory.
 
+
+### Flashcard
+Traverse a circular street by marking the start house, moving right, and stopping when you return to the marked house—no extra memory, just door state.
+
 ### Tags
 Array(#array), Interactive(#interactive)
 

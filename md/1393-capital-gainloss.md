@@ -127,6 +127,10 @@ def capital_gain_loss(stocks):
 ### Summary
 This problem is a classic example of a **running sum/group-by pattern**, widely applied in any financial or aggregation-related data processing. It highlights how even real-world calculations like capital gain/loss reduce to a simple sum with correct sign handling and grouping; this pattern is very common in both programming (hash maps/dictionaries) and SQL (GROUP BY + CASE). The core approach is efficient, both for coding interviews and real systems.
 
+
+### Flashcard
+For each stock, sum buys as negative and sells as positive—aggregate in one pass using a dictionary.
+
 ### Tags
 Database(#database)
 

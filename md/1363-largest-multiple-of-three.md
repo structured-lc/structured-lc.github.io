@@ -78,6 +78,10 @@ def largestMultipleOfThree(digits):
 ### Summary
 The solution partitions digits by mod 3, removes the minimum set to make the sum a multiple of 3, then outputs the largest number using the remaining sorted digits. Common greedy/digit manipulation pattern, useful in divisibility and maximum arrangement problems.
 
+
+### Flashcard
+Sort digits descending; remove minimal digits to make sum divisible by 3, then join—return "0" if all digits are zero.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Sorting(#sorting)
 

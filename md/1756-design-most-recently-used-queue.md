@@ -169,6 +169,10 @@ This is a classic case of applying the **sqrt decomposition (chunked array)** pa
 - The same approach (buckets/chunks) is common for dynamic lists with moving/removing/inserting operations, like in "block linked lists", dequeue operations, or problems like "LRU cache" where usage order matters.
 - It trades a little complexity and extra space for big improvements in runtime, and is a very practical design for "access and move" or "frequency-lists" tasks.
 
+
+### Flashcard
+Use a balanced BST or order statistic tree to support O(log n) fetch(k) and move-to-end operations for the MRU queue.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Stack(#stack), Design(#design), Binary Indexed Tree(#binary-indexed-tree), Ordered Set(#ordered-set)
 

@@ -64,6 +64,10 @@ def find_least_num_of_unique_ints(arr, k):
 ### Summary
 This is a classic greedy + frequency-counting problem. The key is to always remove the least costly-to-remove unique integers first for minimal uniqueness, a pattern found in several removal/minimization scenarios involving counts or resources.
 
+
+### Flashcard
+Count frequencies, sort by frequency, and greedily remove numbers with lowest frequency first until k removals are used; remaining unique numbers is the answer.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sorting(#sorting), Counting(#counting)
 

@@ -84,6 +84,10 @@ def minimumPerimeter(neededApples):
 This problem is an instance of **math simulation, greedy bounds, and binary search** for a minimum value. The key insight is deriving the summation formula for apples within a square of given layer, and using binary search to quickly find the smallest square side needed.  
 This coding pattern (mathematical reduction to summation, then binary search for least/first occurrence) appears in problems involving accumulating totals, minimum thresholds, or exponential growth boundaries. Common in resource allocation and geometric covering problems.
 
+
+### Flashcard
+Binary search on side length k using closed-form formula 2k(k+1)(2k+1) for total apples in square of half-side k; return 8k when formula ≥ neededApples.
+
 ### Tags
 Math(#math), Binary Search(#binary-search)
 

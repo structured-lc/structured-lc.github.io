@@ -109,6 +109,10 @@ def isWinner(player1, player2):
 ### Summary
 We used a direct simulation approach, traversing turn-by-turn and tallying scores per the problem’s strike doubling rule. This is a *scoring simulation* pattern, often seen in games or competition score-tracking questions. This logic can generalize to many sports/score-keeping variants with “score modifiers” depending on historical events.
 
+
+### Flashcard
+For each player, sum pins, doubling current score if either of the previous two rolls was 10; compare final totals.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

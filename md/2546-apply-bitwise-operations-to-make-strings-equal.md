@@ -75,6 +75,10 @@ def makeStringsEqual(s: str, target: str) -> bool:
 This problem showcases a **bit-parity/symmetry** observation: the core of the problem is about the spread (or lack) of 1-bits and not about their initial exact arrangement. Such "can you reach by a group move?" problems often boil down to structural properties rather than simulation.  
 Pattern: reducing state space by key bit signatures (existence or absence of a type of bit), often useful in transformation problems where operations don't increase the bit complexity of the data.
 
+
+### Flashcard
+If either string has no '1's, they can only be equal if both are all '0's; else, any '1' in one can be propagated to match the other.
+
 ### Tags
 String(#string), Bit Manipulation(#bit-manipulation)
 

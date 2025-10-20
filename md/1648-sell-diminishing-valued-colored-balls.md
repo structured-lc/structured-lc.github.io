@@ -128,6 +128,10 @@ def maxProfit(inventory, orders):
 ### Summary
 This problem uses a **greedy with arithmetic series** pattern, batching the sale of balls at each price-tier across all max-valued colors, to maximize sum efficiently. It's common for resource allocation, profit maximization, and heap-based greedy problems; similar batching and arithmetic-progressions ideas apply in scheduling, auction, and priority-queue greedys.
 
+
+### Flashcard
+Sell colored balls by optimizing inventory with a heap.
+
 ### Tags
 Array(#array), Math(#math), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

@@ -84,6 +84,10 @@ def sumOfUnique(nums):
 This problem uses the **frequency counting pattern**, a powerful and efficient way to detect unique elements in a collection.  
 It is especially simple here because of the tight value range. This approach is widely applicable to similar problems, such as finding duplicates, missing values, or any kind of element frequency analysis in arrays. The pattern shines most when you are asked for “uniqueness”, “duplicates”, or “frequency-related” questions in interview or coding contests.
 
+
+### Flashcard
+Count frequency of each element using hash map; sum all elements appearing exactly once in the frequency table.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

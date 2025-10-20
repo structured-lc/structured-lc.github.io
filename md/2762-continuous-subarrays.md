@@ -125,6 +125,10 @@ This problem uses the **sliding window with two pointers** technique, enhanced b
 This pattern is common for problems requiring "subarrays/substrings where some property is true for all elements", particularly when the property can be checked or updated efficiently (like monotonic min/max, frequency counts).  
 The sliding window and monotonic deque idea is key in many modern array, string, and interval problems.
 
+
+### Flashcard
+Use sliding window with min/max tracking, expand right while max-min ≤ 2, contract left otherwise, count valid subarrays.
+
 ### Tags
 Array(#array), Queue(#queue), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set), Monotonic Queue(#monotonic-queue)
 

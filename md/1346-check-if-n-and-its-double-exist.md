@@ -65,6 +65,10 @@ def checkIfExist(arr):
 ### Summary
 We used the Hashing (set) finding pattern to check for complements in O(n) time. This is common for pair-checking problems, such as "Two Sum" and similar array membership detections.
 
+
+### Flashcard
+Use a set to track seen numbers; for each num, check if 2×num or num//2 (if even) is in the set for O(n) solution.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
 

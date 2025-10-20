@@ -101,6 +101,10 @@ def superEggDrop(k, n):
 ### Summary
 This problem uses **dynamic programming with state compression**; or alternatively, a novel DP formulation by inverting the state so that moves (not floors) are the iteration dimension. This “how many floors can you cover in m moves” pattern is rare but powerful for “minimum moves in worst-case” questions. It is also a standard variation in classic egg drop/decision minimax DP, and can be used in other resource-constrained search problems.
 
+
+### Flashcard
+Use DP where dp(k, n) is min moves for k eggs and n floors; optimize with binary search to minimize the worst-case number of drops.
+
 ### Tags
 Math(#math), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming)
 

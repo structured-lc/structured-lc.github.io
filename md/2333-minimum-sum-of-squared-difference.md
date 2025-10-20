@@ -113,6 +113,10 @@ def minSumSquareDiff(nums1, nums2, k1, k2):
 ### Summary
 This problem utilizes the **greedy reduction** pattern: always reduce the largest contributor to a convex cost function (here x²) first, since decreasing the largest difference by 1 has the most impact. This is a classic example of greedy + counting/frequency array optimization—this pattern appears in **minimizing variances**, **heap-like job scheduling**, and **cost minimization** when single-step moves have additive effects.
 
+
+### Flashcard
+Always reduce the largest absolute differences first using available moves to minimize the sum of squared differences (greedy approach).
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

@@ -106,6 +106,10 @@ def minimumCost(n, connections):
 ### Summary
 This problem implements the **Greedy** and **Union-Find/Disjoint Set** coding patterns, specifically using **Kruskal's MST Algorithm**. It's a standard pattern for network connectivity under cost constraints and is widely applicable in network design, clustering, and social network analysis where optimal and efficient connectivity is needed.
 
+
+### Flashcard
+Sort edges by cost and use Kruskal’s algorithm with Union-Find to build a minimum spanning tree connecting all cities.
+
 ### Tags
 Union Find(#union-find), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Minimum Spanning Tree(#minimum-spanning-tree)
 

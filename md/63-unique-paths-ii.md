@@ -99,6 +99,10 @@ def uniquePathsWithObstacles(obstacleGrid):
 ### Summary
 This solution demonstrates a classic **dynamic programming grid traversal** pattern: each DP state depends only on top and left, making it ideal for 2D array DP. Recognizing that obstacles change transition behavior is key. This pattern is common in grid-based path problems (e.g., variations with costs, matching, or with more restricted movement).
 
+
+### Flashcard
+Use DP with obstacles: dp[i][j] = 0 if obstacle, else sum of top and left cells; handle first row/col carefully.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

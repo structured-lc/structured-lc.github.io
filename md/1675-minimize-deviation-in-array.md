@@ -122,6 +122,10 @@ def minimumDeviation(nums):
 ### Summary
 This problem demonstrates the "heap for dynamic max/min tracking" pattern—a greedy approach often used when the goal is to repeatedly minimize (or maximize) a range metric after element-wise choices. Transforming all numbers to even where possible, and always reducing the current maximum while monitoring the minimum, leads to an efficient solution. This pattern appears in scheduling, resource balancing, and optimization problems involving arrays and dynamic choices.
 
+
+### Flashcard
+Minimize Deviation in Array
+
 ### Tags
 Array(#array), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set)
 

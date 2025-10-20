@@ -77,6 +77,10 @@ def waysToMakeFair(nums):
 ### Summary
 The key insight is recognizing how indices shift after removal, and how **prefix sums** help correct for it in O(n). This is a classic parity and prefix-sum based solution.
 
+
+### Flashcard
+Use prefix sums to track even/odd sums before and after each index; count where removal makes remaining sums equal.
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

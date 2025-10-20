@@ -107,6 +107,10 @@ def canBeValid(s: str, locked: str) -> bool:
 ### Summary
 This problem uses a classic greedy scan technique for parenthesis balancing, extended to handle "locked" (fixed) and "unlocked" (flexible) positions. The pattern is widely applicable in parentheses/string validation tasks, particularly where multiple characters can play different roles depending on constraints. The memory usage is constant, making it suitable for long strings as well.
 
+
+### Flashcard
+Scan left-to-right and right-to-left, tracking min/max possible open parentheses using locked info; valid if min never negative and ends at zero.
+
 ### Tags
 String(#string), Stack(#stack), Greedy(#greedy)
 

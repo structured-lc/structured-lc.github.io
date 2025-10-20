@@ -63,6 +63,10 @@ def minInsertions(s):
 ### Summary
 This classic problem reduces to finding longest palindromic subsequence and uses the DP table over all substrings. It's an archetype of dynamic programming on substrings, commonly seen in editing distance and palindromic sequence problems.
 
+
+### Flashcard
+The answer is len(s) minus the length of the longest palindromic subsequence; compute LPS using DP.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

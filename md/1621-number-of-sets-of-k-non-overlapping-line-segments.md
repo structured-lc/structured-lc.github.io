@@ -67,6 +67,10 @@ def count_combinations(n, k):
 ### Summary
 Use a dynamic programming pattern for pick or skip, similar to combinatorial subset selection with additional non-overlapping constraint. Optimize inner sum via prefix sums for better performance. Useful for interval selection/counting problems.
 
+
+### Flashcard
+Use dynamic programming to count the number of ways to choose k non-overlapping segments from n points, considering subproblems based on the last used point.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
 

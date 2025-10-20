@@ -105,6 +105,10 @@ This problem uses the **sorting + sliding window** pattern, efficiently expandin
 This approach is widely applicable to problems involving "make all elements equal under a budget", "max subarray under sum constraint", or similar transformation scenarios.  
 Key trick: pre-sort and use window total to avoid re-counting work.
 
+
+### Flashcard
+Sort array, use sliding window to find the longest subarray where sum of increments ≤ k; track max frequency.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy), Sliding Window(#sliding-window), Sorting(#sorting), Prefix Sum(#prefix-sum)
 

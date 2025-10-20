@@ -71,6 +71,10 @@ def largestSubarray(nums, k):
 ### Summary
 This problem is a classic example of *windowed selection with greedy choice*. When all values are unique, the optimal solution is to search for the highest possible prefix (the largest first element possible for a k-length subarray); this greedy method leverages lexicographic comparison properties. The approach is very efficient (O(n)), straightforward, and frequently appears in sliding window and greedy algorithm problems. Variants of this problem can surface in max/min subarray or string substring selection scenarios.
 
+
+### Flashcard
+The lex largest subarray of length k starts at the maximum value in nums[0..n-k]—pick the leftmost max if duplicates exist.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

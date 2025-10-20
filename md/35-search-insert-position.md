@@ -88,6 +88,10 @@ def searchInsert(nums, target):
 ### Summary
 This problem is a **classic binary search template** application on a sorted array to determine either the target's index or the correct insertion point. It's a pattern commonly seen in search-related problems and variant interview questions, making mastery valuable for array and sorted data structure problems.
 
+
+### Flashcard
+Use binary search to find the first index where nums[i] ≥ target; return i as insert position or found index.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

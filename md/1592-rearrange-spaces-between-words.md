@@ -68,6 +68,10 @@ def reorderSpaces(text: str) -> str:
 ### Summary
 This problem uses string parsing, counting, and recombining. It is a good practice for split, join, and managing edge cases in string manipulation, and can generalize to other even-distribution and in-place problems.
 
+
+### Flashcard
+Count total spaces, split into words, distribute spaces evenly between words, and append any remainder at the end.
+
 ### Tags
 String(#string)
 

@@ -79,6 +79,10 @@ def sortPeople(names, heights):
 ### Summary
 The solution uses the classic **sorting by a custom key** pattern, pairing related values and sorting the result, then projecting the sorted result. This approach is common when jointly sorting parallel arrays or objects based on an attribute. It's efficient for moderate input sizes and widely applicable to "sort by attribute, then report" interview problems.
 
+
+### Flashcard
+Sort names by height in descending order to arrange people by height.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting)
 

@@ -105,6 +105,10 @@ def nextGreaterElement(n: int) -> int:
 ### Summary
 This problem uses the **next permutation** pattern, which is common in array permutation and combinatorial problems. Recognizing this pattern allows the solution to be both time- and space-efficient and is broadly applicable to other problems requiring sequence rearrangements—like generating combinations or enumerating orderings in lexicographic (dictionary) order.
 
+
+### Flashcard
+Apply the "next permutation" algorithm to the digits of n: find the first decreasing digit from the right, swap with the next larger digit, then reverse the suffix.
+
 ### Tags
 Math(#math), Two Pointers(#two-pointers), String(#string)
 

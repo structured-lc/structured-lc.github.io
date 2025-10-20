@@ -102,6 +102,10 @@ def minAreaFreeRect(points):
 ### Summary
 This problem uses geometry and hash maps for grouping (a hash-by-feature pattern). The elegant part is encoding mathematical symmetry―by bisection, diagonals with matching length and midpoint guarantee potential rectangles. This pattern appears in problems involving symmetry or uniqueness by derived features rather than raw coordinates, such as in collinear points, circle detection, and matching geometric objects by invariants.
 
+
+### Flashcard
+For each pair of points, store midpoint and diagonal length; if two pairs share both, they can form a rectangle—compute area for all such combinations and return the minimum.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Geometry(#geometry)
 

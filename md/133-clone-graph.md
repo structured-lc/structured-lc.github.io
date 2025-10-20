@@ -131,6 +131,10 @@ This is a classic **graph traversal + hashmap** pattern, commonly used in situat
 The solution uses recursive DFS for simplicity; the same idea applies to BFS.  
 This pattern appears in many problems involving deep copying or traversing possibly cyclic graphs, and is also foundational for serializing/deserializing graphs and dealing with complex pointer structures.
 
+
+### Flashcard
+Traverse the graph with DFS/BFS, cloning each node and using a visited map to handle cycles and ensure each node is cloned once.
+
 ### Tags
 Hash Table(#hash-table), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
 

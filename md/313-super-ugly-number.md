@@ -81,6 +81,10 @@ def nthSuperUglyNumber(n, primes):
 ### Summary
 This is a classic application of the multiple-pointers and dynamic programming pattern, generalizing the Ugly Number II approach. The problem teaches efficient sequence generation and deduplication using pointers or indices per factor. The core idea is broadly applicable to merging k sorted lists, finding generalized number sequences, and related DP optimization problems.
 
+
+### Flashcard
+Employ dynamic programming with multiple pointers to efficiently generate super ugly numbers.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming)
 

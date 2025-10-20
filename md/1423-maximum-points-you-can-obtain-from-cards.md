@@ -76,6 +76,10 @@ def maxScore(cardPoints, k):
 ### Summary
 This problem is a classic example of the sliding window pattern. Instead of checking every pick at both ends, we model the picking process as leaving a window of n-k cards unpicked. By finding the minimal sum of n-k consecutive cards to leave behind, we can determine the maximal score efficiently. The technique applies to other "pick-from ends" problems as well, especially those that reduce to an exclusion window.
 
+
+### Flashcard
+Use a sliding window approach to maximize the sum of k cards picked from both ends.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

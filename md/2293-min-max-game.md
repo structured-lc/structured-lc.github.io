@@ -87,6 +87,10 @@ def minMaxGame(nums):
 ### Summary
 This problem uses the "array simulation" pattern. The approach involves repeatedly rewriting the array at half its size, applying min/max alternately, until one element remains. The key insight is to process pairs (either in place or into a new array) and reduce, similar to tournament or pyramid reduction problems. This pattern can be applied to problems like pairing elimination, tournament winner determination, and other structured iterative reductions.
 
+
+### Flashcard
+Simulate the min/max game rounds until one element remains; modify array in place for efficiency.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

@@ -104,6 +104,10 @@ This problem uses the **bit manipulation** coding pattern—key for parsing byte
 It is a classic example for situations where sequence rules are strict: you must track not just the current element but also state and context from preceding elements (in this case, how many more bytes are expected).  
 This pattern is seen in problems like parsing network protocols, instruction decoders, or even more advanced string encoding/decoding problems.
 
+
+### Flashcard
+For each byte, check leading bits to determine UTF-8 length; ensure following bytes start with '10' and sequence is valid.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

@@ -95,6 +95,10 @@ def dietPlanPerformance(calories, k, lower, upper):
 ### Summary
 This problem is a classic example of the **sliding window** pattern—efficient for situations where you need to maintain information over contiguous subarrays of fixed size. Recognizing when to use this pattern is vital for many array and sequence problems, such as maximum/minimum sum subarrays, averages, or running statistics over time-series data.
 
+
+### Flashcard
+Sliding window sums over k-day windows; update score by comparing each sum to lower/upper bounds.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window)
 

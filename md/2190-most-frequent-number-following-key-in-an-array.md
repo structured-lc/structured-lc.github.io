@@ -80,6 +80,10 @@ def most_frequent(nums, key):
 The approach is a classic **linear scan with frequency counting**—a typical pattern for finding most/least frequent elements in a list, or following a particular event.  
 Using an array as a frequency map leverages the limited possible values for O(1) space and fast lookups. This pattern generalizes to problems like finding the most common adjacent pair, or other fixed-range counting questions.
 
+
+### Flashcard
+For each i, if nums[i] = key, increment count of nums[i+1]; return the number with highest count.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

@@ -86,6 +86,10 @@ def firstBadVersion(n: int) -> int:
 ### Summary
 This problem is a direct application of **binary search** for monotonic sequences (once bad, always bad). The coding pattern applies anywhere you need to find the first occurrence of a property in a sorted or monotonic range (e.g., first true in a list of bools, minimum index meeting some condition). It's a foundational interview pattern for range-based searching and API call minimization.
 
+
+### Flashcard
+Binary search on version range [1,n]; if isBadVersion(mid) is true, search left half (r = mid), else search right half (l = mid+1).
+
 ### Tags
 Binary Search(#binary-search), Interactive(#interactive)
 

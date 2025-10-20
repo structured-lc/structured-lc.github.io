@@ -119,6 +119,10 @@ def isMatch(s: str, p: str) -> bool:
 ### Summary
 This problem is a classic example of **DP for pattern/string matching**, similar to regular expression matching and edit distance problems. The DP pattern of matching prefixes with careful wildcard handling appears in multiple forms (sequence alignment, regex, etc.). Key patterns: two-pointer state transitions, row/column dependencies, and wildcard character decisions.
 
+
+### Flashcard
+Use dynamic programming table dp[i][j] to track matches between s[0:i] and p[0:j], handling '*' and '?' with recurrence relations.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Recursion(#recursion)
 

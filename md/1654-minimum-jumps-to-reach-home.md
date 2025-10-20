@@ -90,6 +90,10 @@ def minimumJumps(forbidden: List[int], a: int, b: int, x: int) -> int:
 ### Summary
 This problem demonstrates **BFS with state tracking** for minimum steps with constraints, a pattern frequently used for shortest path problems with additional rules.
 
+
+### Flashcard
+Use BFS with state (position, last jump direction) to find the minimum jumps to reach home, avoiding forbidden positions and cycles.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Breadth-First Search(#breadth-first-search)
 

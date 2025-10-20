@@ -91,6 +91,10 @@ def generateAbbreviations(word):
 ### Summary
 This problem follows a classic **recursion/backtracking** pattern, exploring all binary choices per character (abbreviate or not). This technique is broadly applicable for “all combinations” or “power set” styled problems, where the number of combinations is exponential, and each step can be modeled as an include/exclude decision. The main challenge is managing the abbreviation count (buffering it until a letter is appended), which is also common in substring and grouping problems.
 
+
+### Flashcard
+Apply backtracking to generate all possible abbreviations of a string.
+
 ### Tags
 String(#string), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
 

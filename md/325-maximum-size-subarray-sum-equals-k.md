@@ -91,6 +91,10 @@ def maxSubArrayLen(nums, k):
 ### Summary
 This is a classic **prefix sum + hashmap** problem. The key insight is recognizing that we can identify subarrays with sum=k by tracking previous sums and their earliest occurrences. The coding pattern is very common—it's similar to the two-sum pattern or longest subarray with sum <= k. This is also widely applicable to problems involving contiguous range queries, especially when the target can be formed by the difference between two prefix sums.
 
+
+### Flashcard
+Use a hash map to store earliest prefix sums; for each index, check if (current sum - k) was seen before to find the longest subarray with sum k in O(n) time.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
 

@@ -105,6 +105,10 @@ class ZeroEvenOdd:
 ### Summary
 This problem is a classic example of the **Thread Coordination/Alternation** pattern using **semaphores**. It requires precise ordering of actions by different threads, a common need in producer-consumer or reader-writer problems. This pattern applies broadly for synchronizing threads for interleaved or round-robin output, and can be adapted for more complex concurrent workflows.
 
+
+### Flashcard
+Use three semaphores to coordinate: zero prints and alternately releases even/odd semaphore based on current number parity.
+
 ### Tags
 Concurrency(#concurrency)
 

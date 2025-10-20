@@ -128,6 +128,10 @@ def countOperationsToEmptyArray(nums):
 ### Summary
 This problem utilizes the *Simulation* and *Order Statistics* pattern, commonly involving Fenwick/BIT or balanced BSTs for efficient removal and range count queries. Variants arise in problems requiring k-th removal, permutation operations, or rotation order, useful for understanding order statistics and interval removal strategies.
 
+
+### Flashcard
+Sort elements by value with indices, then simulate circular removal by calculating rotation distances using index offsets modulo current array length.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Sorting(#sorting), Ordered Set(#ordered-set)
 

@@ -87,6 +87,10 @@ def getMaximumConsecutive(coins):
 This problem uses the **greedy plus prefix extension pattern**: always extend the range of possible sums as much as small coins permit, stopping at the first gap.  
 It's a classic example of a sorted scan where the minimal "next unreachable" logic is vital, and similar reasoning can be seen in interval covering, change-making, and coverage range algorithms.
 
+
+### Flashcard
+Sort coins and extend the consecutive range by adding coins that do not exceed the current sum.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

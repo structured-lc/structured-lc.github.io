@@ -77,6 +77,10 @@ def is_path_crossing(path: str) -> bool:
 ### Summary
 This problem is a classic application of hash set membership checking and path simulation. The pattern used here—tracking state while iterating over a sequence—applies broadly to cycle detection, grid navigation, and simulation problems.
 
+
+### Flashcard
+Track (x, y) positions in a set; if a position is revisited, path crosses itself—return True if duplicate found.
+
 ### Tags
 Hash Table(#hash-table), String(#string)
 

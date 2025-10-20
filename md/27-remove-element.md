@@ -83,6 +83,10 @@ def removeElement(nums, val):
 ### Summary
 This problem uses the **two pointers** (read/write) pattern for in-place array manipulation. It’s a standard, efficient coding technique used when overwriting or compressing elements within arrays while minimizing space usage. Similar patterns appear in problems like **Remove Duplicates from Sorted Array**, **Move Zeroes**, and general in-place filtering problems.
 
+
+### Flashcard
+Use a write pointer to overwrite elements not equal to val as you scan; final write index gives new length after in-place removals.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers)
 

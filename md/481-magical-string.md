@@ -106,6 +106,10 @@ def magicalString(n):
 ### Summary
 This problem uses the **two-pointers technique** to simulate the construction of a self-describing sequence. The key idea is to iteratively construct the sequence by following its self-referential rules, counting 1s as you go. The pattern—one pointer for generation, another for interpreting run-lengths—also appears in problems dealing with data compression, run-length encoding, and sequence simulation.
 
+
+### Flashcard
+Build the magical string by reading counts and appending alternating 1s and 2s; count number of 1s up to n.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

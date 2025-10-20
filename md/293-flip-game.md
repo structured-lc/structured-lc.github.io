@@ -78,6 +78,10 @@ def generatePossibleNextMoves(currentState: str) -> list[str]:
 ### Summary
 This problem is a classic application of the *scan & construct* pattern for string-manipulation problems. The approach is a simple linear scan, looking for substrings to manipulate independently. This type of pattern is commonly found in competitive string, simulation, and game problems and forms a building block for deeper state-space search optimizations in more advanced variations.
 
+
+### Flashcard
+Linear scan for consecutive "++" pairs; create new string with those two characters flipped to "--" and add to results.
+
 ### Tags
 String(#string)
 

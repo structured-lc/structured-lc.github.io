@@ -91,6 +91,10 @@ def findNumberOfLIS(nums):
 ### Summary
 This problem is a classic example of dynamic programming, where we track and update the length and count of the longest increasing subsequences ending at each position in the array. The dynamic programming approach simplifies the problem from exponential to quadratic time complexity, making it efficient for arrays of moderate size. This pattern is commonly used in sequence-related problems.
 
+
+### Flashcard
+Use DP to track length and count of LIS ending at each index; sum counts for all indices with maximal LIS length.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
 

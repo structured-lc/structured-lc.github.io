@@ -80,6 +80,10 @@ def brokenCalc(startValue: int, target: int) -> int:
 ### Summary
 This is a classic **reverse-thinking greedy** problem: instead of moving forward from startValue, iteratively shrink and adjust the target _backwards_ to startValue, using division and addition. This pattern of inverting the operation is common for minimum-steps transformation problems, especially when forward choices can explode combinatorially, but a greedy backward path leads quickly to the answer.
 
+
+### Flashcard
+Work backwards from target: if even, halve; if odd, increment; count steps until reaching startValue.
+
 ### Tags
 Math(#math), Greedy(#greedy)
 

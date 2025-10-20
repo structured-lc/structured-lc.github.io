@@ -136,6 +136,10 @@ This problem uses classic **hash map accumulation** and a **post-processing max/
 It’s a fundamental coding pattern for tally-and-select problems, often used in frequency counting, leaderboard tallying, log/stat analysis, or any "top-N ranking" question.  
 The lexicographical check is a subtle requirement and highlights attention to output constraints.
 
+
+### Flashcard
+For each sender, sum word counts across messages; return the sender with the highest total (lex largest if tie).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting)
 

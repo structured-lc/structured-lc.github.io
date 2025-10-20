@@ -92,6 +92,10 @@ def advantageCount(nums1, nums2):
 ### Summary
 This problem uses the **greedy two-pointer** pattern, common in scheduling and assignment-type questions. By assigning the smallest winning value where possible and sacrificing elsewhere, it maximizes the win count efficiently. This is a classic approach that’s also useful for interval scheduling, "matching" problems, and optimal resource allocation.
 
+
+### Flashcard
+Sort both arrays; greedily assign the smallest nums1 that beats each nums2, or sacrifice the smallest nums1 for the largest nums2 left.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting)
 

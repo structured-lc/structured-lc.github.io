@@ -96,6 +96,10 @@ def numberOfPaths(grid, k):
 ### Summary
 This is a classic **dynamic programming on grid** problem with an extra state dimension (modulo sum). The main pattern is **DP with extra state** (value modulo k), where only the current sum's remainder affects future state. This pattern appears in problems with "modulo constraint" on path or subsequence problems, such as subset sum modulo, or counting paths with parity or divisibility constraints. Common optimizations involve reducing DP dimensions when only recent rows/columns matter.
 
+
+### Flashcard
+DP with states dp[i][j][rem] = number of ways to reach cell (i,j) with path sum mod k = rem. Only right/down moves allowed.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

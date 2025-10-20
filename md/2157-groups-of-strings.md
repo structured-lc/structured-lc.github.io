@@ -149,6 +149,10 @@ def groupStrings(words):
 ### Summary
 We model each word with a bitmask to use set operations efficiently. By connecting masks using Union-Find for all valid add/remove/replace connections, we can count disjoint groups and largest group sizes. This bitmask + DSU approach is a classic solution for connectivity problems over sets/subsets and arises in word/path graphs, "similar words", and genetic mutation problem patterns.
 
+
+### Flashcard
+Encode each string as a 26-bit mask; two strings are connected if their masks differ by one bit (add/remove) or have a single bit swap (replace)—use union-find to group.
+
 ### Tags
 String(#string), Bit Manipulation(#bit-manipulation), Union Find(#union-find)
 

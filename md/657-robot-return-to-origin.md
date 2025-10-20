@@ -70,6 +70,10 @@ def judgeCircle(moves: str) -> bool:
 ### Summary
 This problem uses a simple yet effective approach to track movement on a grid by balancing opposing moves. The pattern of counting opposing operations is common and can be applied to similar problems involving balancing or symmetry.
 
+
+### Flashcard
+Track net x and y movement; robot returns to origin if right = left and up = down.
+
 ### Tags
 String(#string), Simulation(#simulation)
 

@@ -103,6 +103,10 @@ This problem follows the **palindromic substring partitioning pattern**, using D
 The precomputation trick is common in palindromic partitioning and works well whenever multiple direct substring palindrome queries are required.  
 Such patterns apply in k-partition palindrome problems, minimum cuts, and even dynamic partitioning scenarios.
 
+
+### Flashcard
+Precompute 2D DP table isPalindrome[i][j] for all substrings; enumerate all valid split points (i,j) where 0<i<j<n and check if all three parts are palindromes.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

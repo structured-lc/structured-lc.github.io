@@ -112,6 +112,10 @@ def isRectangleCover(rectangles):
 This problem is a **geometry/bitmasking pattern**, using set corner manipulation to check for exact coverage. The algorithm ensures both **area matching** and **corner parity**: no overlaps, no gaps, and corners appear either once (for the bounding rectangle) or even-numbered times otherwise.  
 Similar patterns can be seen in problems involving **perfect cover, tiling, grid masking, or region validation**.
 
+
+### Flashcard
+Check total area equals bounding rectangle area and that all corners appear even times except four corners, which appear once.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Geometry(#geometry), Line Sweep(#line-sweep)
 

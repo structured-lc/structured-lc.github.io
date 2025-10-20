@@ -82,6 +82,10 @@ def maxAreaOfIsland(grid):
 ### Summary
 This is a classic graph traversal problem, applying DFS/BFS to connected components in grids. The approach also works for questions that require marking/visiting islands, counting island perimeters, or similar "flood fill" operations—key topics in grid and matrix interview questions.
 
+
+### Flashcard
+For each unvisited land cell, use DFS/BFS to compute area, mark visited cells, and track the maximum area found.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
 

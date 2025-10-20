@@ -91,6 +91,10 @@ def PredictTheWinner(nums):
 ### Summary
 This problem uses the classical **Minimax/DP pattern**, leveraging recursive game state evaluation with memoization. The pattern is common in turn-based two-player games (coin pick, stone game, etc.) involving optimal strategy and can be applied anytime you have a "pick from ends" scenario with optimal adversarial play. The DP approach makes it tractable for reasonably small input sizes while ensuring correct and optimal play.
 
+
+### Flashcard
+Use DP with minimax: dp(i, j) = max(nums[i] − dp(i+1, j), nums[j] − dp(i, j−1)); player wins if dp(0, n−1) ≥ 0.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Recursion(#recursion), Game Theory(#game-theory)
 

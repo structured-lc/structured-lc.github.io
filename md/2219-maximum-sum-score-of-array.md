@@ -98,6 +98,10 @@ def maximumSumScore(nums):
 ### Summary
 This problem demonstrates the prefix sum trick, a very common pattern when needing range sums; by leveraging cumulative sums and the relationship between prefix and suffix, we achieve a linear solution. The same approach can be adapted for problems involving ranges, divides, or partitions where sums up to or from an index are needed.
 
+
+### Flashcard
+Precompute prefix sums; for each index, suffix sum = total sum − prefix sum before index; track the maximum of prefix and suffix at each position.
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

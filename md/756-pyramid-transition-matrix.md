@@ -127,6 +127,10 @@ def pyramidTransition(bottom, allowed):
 ### Summary
 This problem is a textbook example of applying **DFS backtracking with memoization** to efficiently explore all ways to build a structure by recursively stacking blocks according to local constraints. The technique is widely used in puzzles, constraint-satisfaction problems (CSP), and can apply to problems like word ladders, sudoku, or any scenario where you build upward/forward from small pieces under local rules. It highlights the importance of early pruning, state caching, and transforming input data into a fast-access structure for efficient lookups.
 
+
+### Flashcard
+Recursively build each pyramid layer using allowed triples, memoizing failed states and pruning impossible branches for efficiency.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
 

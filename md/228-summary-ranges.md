@@ -83,6 +83,10 @@ def summaryRanges(nums):
 ### Summary
 This problem uses a **two-pointer iteration** pattern to detect stretches of consecutive integers in a sorted array. It's a fundamental sequence-ranges pattern, often seen in interval merging, timeline grouping, and compression problems. The approach efficiently compresses consecutive values and can be adapted for similar range-grouping tasks in both interview settings and real-world applications.
 
+
+### Flashcard
+Use two pointers to track range starts and ends; extend ranges for consecutive numbers and add completed ranges to output in a single pass.
+
 ### Tags
 Array(#array)
 

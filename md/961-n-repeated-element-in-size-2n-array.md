@@ -75,6 +75,10 @@ The set-based approach is a classic **hashing duplicate check** pattern, efficie
 It's similar to solving "find the duplicate number" type questions and works due to the clear constraints of this problem.  
 This coding pattern is widely applicable for problems where you need to detect repeats or non-uniques quickly within a collection.
 
+
+### Flashcard
+Iterate through nums, return the first element seen twice using a set for O(1) lookup.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

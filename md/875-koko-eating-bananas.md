@@ -103,6 +103,10 @@ def minEatingSpeed(piles, h):
 ### Summary
 The approach uses **binary search over the answer**, a classic pattern when the feasibility of a target (here, hours needed for eating speed \(k\)) is monotonic. This strategy is common for resource allocation, minimum/maximum threshold, or "smallest/largest value satisfying conditions" problems. Practical in bandwidth allocation, job scheduling, and throughput optimization problems.
 
+
+### Flashcard
+Binary search on eating speed k; for each k, sum hours needed to eat all piles, find the minimal k where total ≤ h.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

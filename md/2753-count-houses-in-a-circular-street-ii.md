@@ -95,6 +95,10 @@ class CircularStreetCounter:
 ### Summary
 This problem leverages the **"mark and traverse" pattern** in circular structures: mark each node (house) visited, then traverse until you hit a marker (closed door) indicating you made a full round. No extra storage is needed because the door's open/closed state works as the traversal mark. This is a useful and commonly seen approach in circular linked list problems, and is a specialized variation of the "tortoise and hare" or "cycle detection" approach, adapted for marker-based state.
 
+
+### Flashcard
+Close each open door as you traverse clockwise to mark visited houses, stop when you return to a closed door (full circle).
+
 ### Tags
 
 ### Similar Problems

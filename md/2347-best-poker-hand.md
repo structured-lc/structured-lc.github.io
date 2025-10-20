@@ -101,6 +101,10 @@ def best_poker_hand(ranks, suits):
 ### Summary
 The approach is a classic "frequency count" plus early-exit property-checking pattern. It's common in problems asking for "best among categories", where you check for the best-case (rarer) conditions first. Simpler patterns like these can be found in small input string/array classification problems, hand evaluation, and survey vote-counting systems.
 
+
+### Flashcard
+Check for flush (all suits same); else, count rank frequencies: ≥3 is "Three of a Kind", 2 is "Pair", else "High Card".
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

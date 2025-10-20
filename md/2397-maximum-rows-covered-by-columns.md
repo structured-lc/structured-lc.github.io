@@ -119,6 +119,10 @@ def maximumRows(matrix, numSelect):
 This solution uses a **bitmasking + combinations** pattern, exploiting the small number of columns to enumerate all possible sets of chosen columns.  
 This combinatorial subsetting via bitmask is a common approach for subset selection and "covering" problems when n is small, and is applicable to set cover, scheduling, and assignment problems where the search space can be efficiently represented as bitmasks.
 
+
+### Flashcard
+Enumerate all C(n, numSelect) column subsets using bitmask; for each subset count rows where all 1-bits are covered by selected columns.
+
 ### Tags
 Array(#array), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Matrix(#matrix), Enumeration(#enumeration)
 

@@ -82,6 +82,10 @@ def convertTime(current: str, correct: str) -> int:
 ### Summary
 This problem is a **greedy** time-conversion scenario. The key insight is to work from largest to smallest increments to minimize operation count, a common pattern in making change (like counting coins in currency problems), thus it’s broadly useful for "min operations with limited choices" style problems.
 
+
+### Flashcard
+Convert times to minutes, compute difference, then greedily use the largest possible time increments (60, 15, 5, 1) to minimize operations.
+
 ### Tags
 String(#string), Greedy(#greedy)
 

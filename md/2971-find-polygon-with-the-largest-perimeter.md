@@ -71,6 +71,10 @@ def largestPerimeter(nums):
 ### Summary  
 The problem is solved by sorting the array and using a greedy approach with prefix sums to efficiently find the largest valid perimeter. This pattern is similar to problems that involve checking sequence properties after sorting and is a common strategy for subset sum or sequence verification tasks, especially when the sum of a subset is compared against its largest element.
 
+
+### Flashcard
+Sort the array, then find the largest subset where the sum of the first k-1 elements is greater than the kᵗʰ element.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Prefix Sum(#prefix-sum)
 

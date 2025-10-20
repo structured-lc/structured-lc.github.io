@@ -83,6 +83,10 @@ def numSubarraysWithSum(nums, goal):
 ### Summary
 This problem uses the prefix sum + hashmap pattern, a common and powerful approach for subarray-sum problems. This technique can be applied wherever we need to count the number of subarrays with a certain sum efficiently, particularly if the array contains only a few unique elements (like binary arrays). Recognizing the constraint of only 0s and 1s enables further optimization using sliding window in specific cases, but prefix sum with hashmap remains robust and general.
 
+
+### Flashcard
+Use prefix sum and a hashmap to count subarrays with sum equal to goal in O(n) time.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

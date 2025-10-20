@@ -149,6 +149,10 @@ def findWordsFunctional(words):
 ### Summary
 This problem tests string processing and set operations. The key insight is recognizing that we need to check if all characters in a word belong to the same subset (keyboard row). Using sets provides an elegant solution with subset operations, while character mapping offers an alternative approach with explicit row tracking. Both approaches handle the case-insensitive requirement and demonstrate different ways to solve membership testing problems.
 
+
+### Flashcard
+Map each letter to its keyboard row, then check if all letters in a word belong to the same row.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string)
 

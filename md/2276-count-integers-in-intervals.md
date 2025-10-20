@@ -140,6 +140,10 @@ class CountIntervals:
 ### Summary
 This problem uses the **interval merges and non-overlapping interval maintenance** coding pattern, commonly used in range interval problems like calendar booking, summary ranges, and merge intervals. Key skills are interval handling, sorted insertion, and efficient counting of non-overlapping coverage. The solution is highly reusable for other problems requiring merging and counting over large integer intervals.
 
+
+### Flashcard
+Maintain a sorted list of non-overlapping intervals; merge new intervals on insert, and sum interval lengths for count.
+
 ### Tags
 Design(#design), Segment Tree(#segment-tree), Ordered Set(#ordered-set)
 

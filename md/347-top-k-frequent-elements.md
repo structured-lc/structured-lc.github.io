@@ -111,6 +111,10 @@ Bucket sort enables linear time since the frequency range is capped at the input
 The pattern arises in many "top-k" frequency or histogram scenarios, such as word counts, most common objects, or log analysis.  
 Common alternative: Use heaps when k ≪ n or when frequencies change dynamically.
 
+
+### Flashcard
+Count frequencies with a hash map, then use a heap or bucket sort to extract the k most frequent elements in O(n) time.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Divide and Conquer(#divide-and-conquer), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Bucket Sort(#bucket-sort), Counting(#counting), Quickselect(#quickselect)
 

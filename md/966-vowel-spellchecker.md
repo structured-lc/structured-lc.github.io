@@ -118,6 +118,10 @@ def spellchecker(wordlist, queries):
 ### Summary
 The core approach uses **map lookups for efficient spellcheck**: by mapping both case-insensitive and vowel-agnostic versions of each word to their first occurrence, we cut query time to constant. This is a classic **preprocessing and hash map lookup** pattern, common in problems involving fast lookups for multiple forms of string equivalence, such as spelling correction, fuzzy matching, or search query normalization.
 
+
+### Flashcard
+Preprocess wordlist into sets/maps for exact, case-insensitive, and vowel-error matches; for each query, check in priority order and return the first match found.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string)
 

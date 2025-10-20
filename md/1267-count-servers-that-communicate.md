@@ -70,6 +70,10 @@ def countServers(grid):
 ### Summary
 This problem demonstrates the **row/column aggregation** pattern, counting and then filtering based on those aggregates. Similar logic appears in problems about friends of friends, 2D grouping, or matrix-wide connectivity.
 
+
+### Flashcard
+Count servers in each row and column; a server communicates if its row or column has more than one server.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix), Counting(#counting)
 

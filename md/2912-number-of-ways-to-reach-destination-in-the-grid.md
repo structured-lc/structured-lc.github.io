@@ -104,6 +104,10 @@ This solution uses the “DP on grids with precomputed row/col sums” pattern, 
 This is common in path-counting grid problems, chessboard moves, and state DP with multi-way transitions.  
 Key idea: optimize per-step transitions by precomputing aggregate info, and save time with 2D DP states.
 
+
+### Flashcard
+Use DP: dp[r][c][steps] = number of ways to reach (r, c) in given steps, updating only by changing row or column at each move.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
 

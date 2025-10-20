@@ -82,6 +82,10 @@ def findTheLongestSubstring(s: str) -> int:
 ### Summary
 This problem leverages the **prefix XOR / bit state** pattern, where the parity (even/odd) of certain events can be compressed into a bitmask as we iterate through the string. The trick is to recognize that revisiting the same state implies the substring in between must have all vowels occur an even number of times. This bitmask-state idea is common in problems involving tracking the "parity" of counts or events, and can also be used for related substring problems involving even/odd constraints.
 
+
+### Flashcard
+Use bitmask to track parity of vowels; store earliest index for each mask, and update max length when mask repeats.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
 

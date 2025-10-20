@@ -118,6 +118,10 @@ def countNodes(root: TreeNode) -> int:
 ### Summary
 This problem uses the **complete binary tree** structural property to improve upon the brute-force O(n) counting. By comparing leftmost and rightmost paths, we can detect perfect subtrees and count their nodes in constant time, leading to a classic **"divide and conquer + bit manipulation"** coding pattern. This pattern is also applicable to problems where “quick computations for perfect (sub)structure” can save traversal—like checking if a subtree is balanced or perfect, calculating power-of-two-related properties, etc.
 
+
+### Flashcard
+For each subtree, if left and right depths are equal, count nodes as 2ʰ-1; else, recurse left and right for total count.
+
 ### Tags
 Binary Search(#binary-search), Bit Manipulation(#bit-manipulation), Tree(#tree), Binary Tree(#binary-tree)
 

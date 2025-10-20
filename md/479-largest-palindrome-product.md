@@ -88,6 +88,10 @@ def largestPalindrome(n: int) -> int:
 ### Summary
 This problem uses the pattern of palindrome construction plus reverse factor checking. It's a neat variation of search plus mathematical properties (palindrome structure, factorization). The approach leverages descending order generation and early loop breaks for efficiency, commonly seen in problems focused on maximizing a structured value under constraints. Pattern: generate-and-test with early pruning by structural insight. This methodology is useful in related palindrome problems and certain divisor/factor-check optimizations.
 
+
+### Flashcard
+Generate palindromes in descending order and check if they can be factored into two n-digit numbers.
+
 ### Tags
 Math(#math), Enumeration(#enumeration)
 

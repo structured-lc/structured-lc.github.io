@@ -99,6 +99,10 @@ def bestCoordinate(towers, radius):
 ### Summary
 This problem uses a brute-force search across a small bounded grid to select a best coordinate via *aggregation pattern* and max-tracking. The "check every cell and aggregate contribution" technique generalizes to classic "sweep grid" variants and can be used for other grid aggregation or heatmap problems, especially when both grid and contributing sources are small. The key is reducing the brute force to manageable scale by leveraging input constraints and lexicographic tie-breaking logic.
 
+
+### Flashcard
+For each grid cell, sum quality from all towers within radius, rounding down, and track the cell with maximum total quality (prefer smallest x, then y on ties).
+
 ### Tags
 Array(#array), Enumeration(#enumeration)
 

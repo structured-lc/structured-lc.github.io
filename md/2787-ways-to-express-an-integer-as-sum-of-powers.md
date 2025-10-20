@@ -108,6 +108,10 @@ It highlights the standard pattern:
 - Update ways to reach each sum without using any number twice (right-to-left DP update)  
 The approach generalizes to similar subset-sum and combinational sum problems, and is common for Leetcode DP, knapsack, and combinatorial counting interview questions.
 
+
+### Flashcard
+Use DP for subset sum: dp[i] = number of ways to write i as sum of unique jˣ (1 ≤ j ≤ upper bound), updating for each power.
+
 ### Tags
 Dynamic Programming(#dynamic-programming)
 

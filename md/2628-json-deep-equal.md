@@ -121,6 +121,10 @@ It is a direct application of divide-and-conquer for nested data.
 The same pattern can be applied to serialization, checksum validation, or other structure-sensitive comparisons.  
 Key takeaways: always check for base cases (like primitives and null), match types, and recurse only when structure matches, being careful of Python's quirks with null and type checking.
 
+
+### Flashcard
+Check if two JSON objects are deeply equal by recursively comparing primitives, arrays, and objects, ensuring matching keys and values.
+
 ### Tags
 
 ### Similar Problems

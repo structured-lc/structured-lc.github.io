@@ -83,6 +83,10 @@ def maxCoinValue(piles, k):
 ### Summary  
 This problem uses a dynamic programming approach with memoization to efficiently calculate the maximum value of coins that can be collected from multiple piles under the constraint of a limited number of selections. This pattern is commonly used in problems that involve optimizing over multiple options with limited resources. It can be applied to similar scenarios where you need to optimize a total value by selecting items from different sets with constraints.
 
+
+### Flashcard
+Use dynamic programming: dp[pile][coins] = max value from first pile piles with coins coins; consider taking 0 to min(coins, pile size) from each pile.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
 

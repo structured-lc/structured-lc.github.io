@@ -103,6 +103,10 @@ def critical_connections(n, connections):
 ### Summary
 This problem is a classic example of **bridge-finding in undirected graphs**, solved efficiently with **Tarjan’s Algorithm (DFS + low-link values)**. The core pattern is traversing the graph, recording discovery and lowest reachable times, then detecting when a child node cannot reach ancestors without its parent. This pattern is common for detecting bridges, articulation points, and strongly connected components in networks.
 
+
+### Flashcard
+Find all bridges (critical edges) in a graph using Tarjan’s algorithm (DFS with discovery/low times).
+
 ### Tags
 Depth-First Search(#depth-first-search), Graph(#graph), Biconnected Component(#biconnected-component)
 

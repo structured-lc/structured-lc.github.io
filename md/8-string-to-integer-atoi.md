@@ -122,6 +122,10 @@ def myAtoi(s: str) -> int:
 ### Summary
 This problem uses the **state machine/scanning pattern**, processing input step-by-step and handling conditions as encountered, a common approach for parser-like problems. The code is structured to handle edge conditions and overflow efficiently, with only constant extra space. This pattern is often seen in implementing custom parsers, language interpreters, or data ingress pipelines where strict input validation is required.
 
+
+### Flashcard
+Parse the string step by step: skip whitespace, handle sign, read digits, and clamp to 32-bit integer bounds if overflow.
+
 ### Tags
 String(#string)
 

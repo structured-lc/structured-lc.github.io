@@ -74,6 +74,10 @@ def findFinalValue(nums, original):
 ### Summary
 This is a classic **hash set value existence**/lookup pattern, commonly used to trade O(n) memory for O(1) search speed. This coding pattern frequently appears in problems requiring repeated element existence checks or transformations: e.g., finding missing/duplicate numbers, repeated operations, or value propagation in a sequence. The approach is efficient, avoids unnecessary work, and cleanly separates data preparation from the actual search step.
 
+
+### Flashcard
+Convert nums to a set for O(1) lookups; repeatedly double original while it exists in the set, stopping when it’s not found.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting), Simulation(#simulation)
 

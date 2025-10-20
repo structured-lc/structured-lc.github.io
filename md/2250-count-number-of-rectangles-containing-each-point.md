@@ -111,6 +111,10 @@ def countRectangles(rectangles, points):
 ### Summary
 This problem uses **bucketing/grouping** (by rectangle height) and **binary search** for efficient queries—a pattern useful for range-counting with integer-bounded constraints. Similar approaches apply to geometric counting (e.g., grid search, prefix sums in 2D, sweep-line with ranges). Efficient preprocessing and per-group searching make brute force unnecessary, highlighting **bucket + search** as a key coding pattern.
 
+
+### Flashcard
+Group rectangles by height, sort lengths for each height, and for each point, count rectangles with height ≥ y and length ≥ x using binary search for O(100 × log n) per point.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Binary Indexed Tree(#binary-indexed-tree), Sorting(#sorting)
 

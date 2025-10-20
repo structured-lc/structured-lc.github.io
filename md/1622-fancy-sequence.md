@@ -80,6 +80,10 @@ class Fancy:
 ### Summary
 Math pattern exploiting the distributive property and modular arithmetic for efficient updates. Similar to "prefix mul/add tracking" seen in persistent structures, common in advanced data structure problems.
 
+
+### Flashcard
+Store appended values with the cumulative effect of pending operations; on query, apply the inverse of future operations modulo 10⁹+7 to get the current value.
+
 ### Tags
 Math(#math), Design(#design), Segment Tree(#segment-tree)
 

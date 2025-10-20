@@ -68,6 +68,10 @@ def stoneGameVII(stones):
 ### Summary
 This is a classic "optimal strategy game" DP. Build solutions for all subproblems, use prefix sums for O(1) sum query. This DP approach is broadly applicable in two-player, take-away game settings.
 
+
+### Flashcard
+Stone Game VII
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Game Theory(#game-theory)
 

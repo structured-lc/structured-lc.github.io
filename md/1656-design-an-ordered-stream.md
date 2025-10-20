@@ -71,6 +71,10 @@ class OrderedStream:
 ### Summary
 This problem demonstrates a classic pointer + array approach for streaming, in-order processing, and batching. This sliding pointer technique is applicable to problems like file chunking, event sequencing, and buffer flush strategies where data must be processed in order, but may arrive out-of-order.
 
+
+### Flashcard
+Use an array and a pointer to track the next chunk; insert at idKey−1, then collect all consecutive filled values from the pointer.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Design(#design), Data Stream(#data-stream)
 

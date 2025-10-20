@@ -154,6 +154,10 @@ print(max_hires(candidates, budget))  # Output: [1, 2, 5]
 ### Summary
 This problem is a variation of the **0/1 Knapsack** pattern, where you split candidates by type, try all combinations for one group (seniors), then maximize for the second group (juniors) with the leftover budget. The brute-force approach is feasible only for small senior groups; otherwise, a dynamic programming solution is needed. The concept applies to resource allocation and maximum profit/hiring subject to constraints.
 
+
+### Flashcard
+Optimize hiring seniors and juniors by sorting salaries and using accumulated sums to maximize the number of seniors and juniors hired.
+
 ### Tags
 Database(#database)
 

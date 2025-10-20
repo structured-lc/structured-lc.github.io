@@ -95,6 +95,10 @@ def search(nums, target):
 The solution demonstrates the classic **binary search** pattern—a key technique for sorted arrays and logarithmic search problems.  
 It is fundamental in coding interviews and applies wherever you need efficient search over ordered data, such as searching in search trees, finding insert positions, or searching ranges with monotonic properties.
 
+
+### Flashcard
+Use binary search on the sorted array: repeatedly halve the search range until you find the target or exhaust the array.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

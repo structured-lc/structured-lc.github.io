@@ -93,6 +93,10 @@ def numberOfUniqueCategories(n, categoryHandler):
 ### Summary
 This problem falls under **interactive simulation** for categories/DSU patterns. The main trick is recognizing that, without knowing labels, you must compare each item to possible existing categories and create a new one if there's no match. The key insight is simulating category detection with pairwise queries—very similar to union-by-representative DSU, but without path compression due to constraints. This is a basic but useful pattern for **interactive category detection**, and variants occur in clustering, grouping, and judge/oracle-based algorithms.
 
+
+### Flashcard
+For each element, check if it matches any existing category using the provided interface; count unique representatives for O(n²) time.
+
 ### Tags
 Union Find(#union-find), Interactive(#interactive), Counting(#counting)
 

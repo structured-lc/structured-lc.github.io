@@ -88,6 +88,10 @@ def missingElement(nums, k):
 ### Summary  
 The problem is a classic application of *binary search on the answer space* rather than on the array values directly. Using a helper function to count missing numbers up to a position enables efficient search for the kᵗʰ missing number. This approach can be applied in any scenario where missing or irregular values appear in sorted sequences, helping reduce linear scans to logarithmic time.
 
+
+### Flashcard
+Use binary search to find the smallest index where the count of missing numbers up to that point reaches k.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

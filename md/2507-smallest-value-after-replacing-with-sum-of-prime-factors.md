@@ -116,6 +116,10 @@ This problem uses a classic **prime factorization and replacement loop**: repeat
 The core coding pattern is **loop until no change/fixed point**, and the prime factorization as a helper function. This pattern appears in other problems involving iterative mathematical transformations, e.g., digital root, repeated transformations, and dynamic process stabilization.  
 The factorization code is direct and easily adaptable; this “replace and repeat” style is a useful tool for other number theory and convergence pattern problems.
 
+
+### Flashcard
+Repeatedly factorize n and sum its prime factors (with repetition) until value stops decreasing – optimized by trial division up to √n.
+
 ### Tags
 Math(#math), Simulation(#simulation), Number Theory(#number-theory)
 

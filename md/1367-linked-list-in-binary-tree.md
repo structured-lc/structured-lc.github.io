@@ -149,6 +149,10 @@ This is a classic DFS/backtracking tree path search pattern: for every tree node
 This coding pattern commonly arises in substring/pattern matching problems, and can be optimized or adapted to other graph and tree path sequence matching scenarios.  
 No special data structures are required—just recursion and careful use of base cases.
 
+
+### Flashcard
+For each tree node, recursively check if linked list matches downward path (left or right) starting at that node.
+
 ### Tags
 Linked List(#linked-list), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

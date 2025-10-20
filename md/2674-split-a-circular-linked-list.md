@@ -91,6 +91,10 @@ def splitCircularLinkedList(head):
 ### Summary
 We used the **two-pointer (hare & tortoise) technique** to efficiently split a circular singly linked list into two separate circular lists. This is a classic fast–slow pointer pattern. The method avoids extra space, handles all edge cases, and can be adapted for k-way or non-circular splits—common in linked list splitting or partitioning scenarios.
 
+
+### Flashcard
+Use fast and slow pointers to find the middle in one traversal; split by adjusting pointers so each half maintains circularity.
+
 ### Tags
 Linked List(#linked-list), Two Pointers(#two-pointers)
 

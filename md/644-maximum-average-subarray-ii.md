@@ -100,6 +100,10 @@ This problem uses the **binary search on the answer** (real numbers) pattern wit
 This is a common pattern for problems asking for an optimal value under a continuous parameter, where the feasibility check can be done in linear time.  
 Other examples include the "Split Array Largest Sum", "Koko Eating Bananas", and "Maximize Distance to Closest Person" problems on LeetCode.
 
+
+### Flashcard
+Use binary search on possible averages; for each candidate, check if a subarray of length ≥ k has average ≥ candidate using prefix sums.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Prefix Sum(#prefix-sum)
 

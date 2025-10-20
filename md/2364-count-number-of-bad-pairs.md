@@ -110,6 +110,10 @@ def count_bad_pairs(nums):
 ### Summary
 This problem is a classic example of **counting pairs with a key transformation** (index - value), which converts a seemingly complex relationship into a frequency counting problem. The approach uses a hash map and combinatorial math to count “good pairs” and deduce “bad pairs.” Variants of this pattern show up in prefix sum-subarray counting, two-sum logic, and problems involving unique-value pairing. The solution is efficient and typical for interview problems on pairwise relationships.
 
+
+### Flashcard
+Count good pairs where j − i = nums[j] − nums[i] by hashing (i − nums[i]); total bad pairs = n × (n−1)/2 minus good pairs count.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Counting(#counting)
 

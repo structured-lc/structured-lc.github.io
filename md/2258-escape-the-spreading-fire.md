@@ -172,6 +172,10 @@ This problem demonstrates the **BFS + binary search** technique:
 - Use binary search when answers are monotonic with respect to some parameter (wait time).  
 This pattern appears often in problems involving *moving obstacles*, *escaping spreading danger*, or *min/max pathing under monotone constraints*.
 
+
+### Flashcard
+Binary search over possible wait times, precompute fire arrival times with BFS, then check if a path exists where you reach each cell before the fire.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

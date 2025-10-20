@@ -89,6 +89,10 @@ def constructArray(n, k):
 
 The solution utilizes a pattern of alternating between the smallest and largest numbers to achieve the desired number of distinct differences. It's a common pattern in combinatorial problems where certain constraints need to be satisfied by carefully selecting elements. This approach can be applied to similar problems involving permutations and sequences where specific conditions must be met.
 
+
+### Flashcard
+Build array by alternating smallest and largest numbers for k steps, then fill remaining with consecutive numbers for exactly k distinct adjacent differences.
+
 ### Tags
 Array(#array), Math(#math)
 

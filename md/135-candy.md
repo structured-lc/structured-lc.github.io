@@ -99,6 +99,10 @@ This problem is a classic **greedy/array manipulation** problem.
 The two-pass scan (left-to-right, then right-to-left) is a common pattern for enforcing local ordering constraints when each element depends on both neighbors.  
 Patterns like this apply to problems involving hills/valleys, stock buy/sell with two positions, or similar “enforce min/max in both directions” tasks.
 
+
+### Flashcard
+Do two passes: left-to-right and right-to-left, updating candies based on neighbor ratings; sum final candies for minimum distribution.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

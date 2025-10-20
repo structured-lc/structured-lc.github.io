@@ -83,6 +83,10 @@ def max_product(words: List[str]) -> int:
 ### Summary
 We used **bitmasking** to efficiently represent sets of characters, allowing O(1) comparison for character overlap and reducing a seemingly slow O(n² × L) algorithm to a practical O(n²) solution. This **bitmasking pattern** is widely used for problems involving “set overlap” between objects and also appears in problems like "maximum number of non-overlapping sets", "counting pairs without common features", etc. The solution is concise and well-suited for large input sizes, as long as the character set is limited.
 
+
+### Flashcard
+Use bit manipulation to efficiently check for common letters between word pairs.
+
 ### Tags
 Array(#array), String(#string), Bit Manipulation(#bit-manipulation)
 

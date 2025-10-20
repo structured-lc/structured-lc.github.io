@@ -92,6 +92,10 @@ This uses the **buckets queue** or **multiple pointers/buckets** pattern, groupi
 Every character in **s** advances the 'waiting list' for matching subsequences, so the work for each character and each word is done only once and in order.  
 This pattern is common for sequence matching, task pipelines, and event simulation.
 
+
+### Flashcard
+Bucket words by their next needed character; scan s left to right, advancing word pointers and counting matches as you go.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Trie(#trie), Sorting(#sorting)
 

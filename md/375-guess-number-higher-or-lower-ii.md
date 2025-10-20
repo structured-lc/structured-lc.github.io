@@ -102,6 +102,10 @@ This problem is a **minimax DP** classic: you build up solutions for small range
 It uses a DP table to remember solutions for each subrange and simulates all possible initial guesses for each range to guarantee minimum loss.  
 This pattern—breaking a range, picking a "pivot," and minimizing the largest subproblem—is common in problems about worst-case performance and can be applied to other guess, search, or interval DP challenges.
 
+
+### Flashcard
+Use DP minimax: for range [l, r], try every guess x, cost is x + max(dp[l][x−1], dp[x+1][r]); take the minimum over all x to guarantee the lowest worst-case cost.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Game Theory(#game-theory)
 

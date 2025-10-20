@@ -55,6 +55,10 @@ ORDER BY p.product_id;
 ### Summary
 This solution uses a classic **JOIN** and **DISTINCT** pattern in SQL to get unique records matching criteria. Common in reporting problems, product-lookup, and filtering logic.
 
+
+### Flashcard
+Join Orders and Products tables, filter by date range, and select distinct product IDs ordered in the period.
+
 ### Tags
 Database(#database)
 

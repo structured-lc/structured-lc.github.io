@@ -114,6 +114,10 @@ FROM
 ### Summary
 This problem leverages **conditional aggregation** and **date extraction** functions to partition and count data based on day-of-week properties. The pattern is common in reporting tasks requiring temporal grouping or filtering, and is highly applicable in business analytics, attendance tracking, and time-based KPI dashboards.
 
+
+### Flashcard
+Use SQL’s WEEKDAY() to count tasks submitted on weekend days (Saturday/Sunday).
+
 ### Tags
 Database(#database)
 

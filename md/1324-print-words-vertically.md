@@ -67,6 +67,10 @@ def printVertically(s):
 ### Summary
 This problem uses basic string and array manipulation with the column-major reading pattern. The approach is a variant of matrix transposition, a pattern common in formatting and ETL/data cleanup questions.
 
+
+### Flashcard
+For each character column up to the longest word, build vertical words by taking the iᵗʰ letter from each word or space if missing, then right-strip spaces.
+
 ### Tags
 Array(#array), String(#string), Simulation(#simulation)
 

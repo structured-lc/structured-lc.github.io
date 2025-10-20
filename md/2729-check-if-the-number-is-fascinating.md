@@ -89,6 +89,10 @@ Core steps:
 - Set or sorted comparison to validate exactly one of each digit
 Patterns like this are used for validation of unique element presence, common in coding interviews.
 
+
+### Flashcard
+Concatenate n, 2n, 3n as strings; check if the result has exactly the digits 1–9 with no duplicates or zeros.
+
 ### Tags
 Hash Table(#hash-table), Math(#math)
 

@@ -96,6 +96,10 @@ def largestTimeFromDigits(A):
 ### Summary
 The approach is a straight application of the **permutation + filter** pattern, well-suited to small input sets. Very similar brute-force tricks are useful for "find arrangement/combination with min/max property" questions, such as password or code-number problems where exhaustive checking is feasible.
 
+
+### Flashcard
+Try all 4! digit permutations; for each, check if hour < 24 and minute < 60, track max valid time.
+
 ### Tags
 Array(#array), String(#string), Backtracking(#backtracking), Enumeration(#enumeration)
 

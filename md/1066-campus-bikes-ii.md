@@ -96,6 +96,10 @@ def assignBikes(workers, bikes):
 This problem is a **combinatorial assignment problem**, handled efficiently via **bitmask DP/backtracking with memoization** owing to tight input constraints.  
 The pattern is common for small \( n \) optimization over permutations (DFS+bitmask), also seen in scheduling, robot assignment, and distributed resource allocation problems.
 
+
+### Flashcard
+Use backtracking or bitmask DP to assign bikes to workers, minimizing total distance by exploring all assignments (N ≤ 10).
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

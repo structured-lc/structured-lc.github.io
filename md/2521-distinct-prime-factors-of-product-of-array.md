@@ -109,6 +109,10 @@ def distinctPrimeFactors(nums):
 This problem is a neat application of **collecting all prime factors from array elements**, specifically using a set to avoid redundant storage. The brute-force approach of calculating and factoring the product is avoided due to potential overflow and inefficiency.  
 This "union of small decompositions" pattern is common in GCD/LCM/subarray factorization tasks and can be seen in problems involving number-theoretic preprocessing for arrays.
 
+
+### Flashcard
+For each number in array, find its prime factors via trial division up to √num, collect all unique primes in a set, return set size.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Number Theory(#number-theory)
 

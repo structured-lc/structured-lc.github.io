@@ -125,6 +125,10 @@ class Solution:
 ### Summary
 This problem demonstrates the **binary search tree traversal** pattern, leveraging the BST property to guide search efficiently. It's a key example of applying divide-and-conquer and recursive/iterative strategies for trees. This approach generalizes to other BST operations (insert, delete, lower/upper bound, etc.), and the core logic mirrors classic binary search.
 
+
+### Flashcard
+Traverse BST comparing val to node; go left if val < node, right if val > node, return node if equal—classic binary search in tree.
+
 ### Tags
 Tree(#tree), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

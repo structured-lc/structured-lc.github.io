@@ -85,6 +85,10 @@ def readBinaryWatch(turnedOn):
 ### Summary
 This problem is a classic enumeration/combinatorics pattern where the total state space is small. Brute-force iteration over all possible combinations is feasible and, in fact, the simplest and most readable approach. The core trick is counting set bits in binary representations, a common pattern in bit manipulation problems. This technique is applicable in subset enumeration, combinatorial state exploration, and problems involving digital representations.
 
+
+### Flashcard
+Brute-force all 720 possible times (12 hours × 60 minutes), count set bits in binary representations of hour and minute, and filter where total bits equal turnedOn.
+
 ### Tags
 Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
 

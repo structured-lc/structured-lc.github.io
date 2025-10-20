@@ -97,6 +97,10 @@ def countOrders(n):
 ### Summary
 This is a typical combinatorics/permutation problem with constraints, leading to a product formula, similar to catalan numbers in structure. It's solved using a recurrence/formula and can often be tackled with DP or counting techniques. This pattern arises in problems involving pairing objects and order constraints, such as valid parentheses, handshakes, or other stack-based sequence validations.
 
+
+### Flashcard
+Use recurrence: answer = answer × (2n-1) × n for each n, since each new pair can be inserted in 2n-1 positions.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
 

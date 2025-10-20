@@ -108,6 +108,10 @@ def countQuadruplets(nums):
 ### Summary
 This problem is a variation on subarray counting and order-statistic queries. The pattern — "count the number of valid pairs/triples/etc. with order constraints" — can be seen in classic problems like counting inversions (merge sort), increasing subsequences (DP), or quadruplets with constraints (prefix/suffix technique). Optimizations usually involve prefix sums, value compression, or Binary Indexed Trees for real interviews.
 
+
+### Flashcard
+Fix j and k, count i < j with nums[i] < nums[k] and l > k with nums[j] < nums[l]; multiply counts for each (j,k) pair.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Binary Indexed Tree(#binary-indexed-tree), Enumeration(#enumeration), Prefix Sum(#prefix-sum)
 

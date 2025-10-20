@@ -104,6 +104,10 @@ This problem uses a **greedy** and **monotonic stack** pattern for lexicographic
 It's similar to problems like **"Remove Duplicate Letters"**, **"Valid Parentheses"**, and **"Monotonic Stack"** questions, where stack and frequency tracking help decide the best moment to pop.  
 Understanding such patterns helps in parsing, string construction, and resource scheduling problems.
 
+
+### Flashcard
+Greedily pop from stack whenever top is ≤ smallest remaining character in s. Use precomputed suffix minimums for O(1) lookahead to decide optimal pop timing.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Stack(#stack), Greedy(#greedy)
 

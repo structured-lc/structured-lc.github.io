@@ -73,6 +73,10 @@ def minimumDeletions(s: str) -> int:
 ### Summary
 This problem uses a common **prefix/suffix scan** technique to find the minimum split, similar to minimum flips or 0-1 partition problems in arrays.
 
+
+### Flashcard
+Scan left to right, track misplaced 'b's, and find the split point where deleting all 'b's left and 'a's right is minimized.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Stack(#stack)
 

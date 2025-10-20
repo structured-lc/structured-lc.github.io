@@ -143,6 +143,10 @@ def countPaths(n, edges):
 The approach uses **tree-DFS** and combinatorics from each prime node's perspective to count unique valid paths.  
 It's an example of **divide-and-conquer in trees**, and often reappears in problems related to counting paths or subtrees meeting global constraints, especially where properties are rare (e.g., node is “special” or “prime”). This “split at property nodes and combine subtrees” trick is very powerful in tree DP and tree counting problems.
 
+
+### Flashcard
+Use DFS to count, for each prime node, the number of non-prime nodes in its subtree and above; total valid paths is sum over all primes.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Number Theory(#number-theory)
 

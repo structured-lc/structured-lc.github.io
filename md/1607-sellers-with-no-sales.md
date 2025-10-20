@@ -59,6 +59,10 @@ def sellers_with_no_sales(sellers, orders):
 ### Summary
 This is the classic set subtraction problem, where the goal is to find entities in one group not present in another. Very commonly solved using sets, hash-maps, or anti-joins. Pattern applies anywhere group membership and exclusions are needed.
 
+
+### Flashcard
+Collect seller IDs from orders into a set, then return sellers not present in that set.
+
 ### Tags
 Database(#database)
 

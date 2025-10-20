@@ -164,6 +164,10 @@ def handleQuery(nums1, nums2, queries):
 ### Summary
 This problem requires advanced use of the segment tree with lazy propagation, a classic technique for handling range updates and range queries efficiently. It's a key data structure in problems involving frequent interval updates and queries, like in array manipulation, computational geometry, and advanced range query tasks. Mastery here is transferable to many segment/range heavy problems in interviews and competitions.
 
+
+### Flashcard
+Use a segment tree with lazy propagation to handle range flips and efficient counting of 1s for multiply operations.
+
 ### Tags
 Array(#array), Segment Tree(#segment-tree)
 

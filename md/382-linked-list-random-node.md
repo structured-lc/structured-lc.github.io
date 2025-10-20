@@ -99,6 +99,10 @@ class Solution:
 ### Summary
 The main coding pattern here is **reservoir sampling**, which is ideal for uniform random selection from a stream (or linked list) without knowing the length up front. This pattern is extremely useful in single-pass algorithms, especially with big data, where storing the entire data in memory isn't feasible (e.g. streaming data, sampling huge logs, shuffling playlists, etc.). Reservoir sampling ensures all elements are equally likely to be picked with only O(1) space.
 
+
+### Flashcard
+Use reservoir sampling to select a random node in one pass with O(1) space, ensuring each node is equally likely.
+
 ### Tags
 Linked List(#linked-list), Math(#math), Reservoir Sampling(#reservoir-sampling), Randomized(#randomized)
 

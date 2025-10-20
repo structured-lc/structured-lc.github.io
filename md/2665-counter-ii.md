@@ -113,6 +113,10 @@ This is a classic **closure/object pattern** problem, where you must encapsulate
 It’s similar to implementing private variables in OOP, and the idea generalizes to things like cache wrappers or rate limiters, where you want API-protected state.  
 You’ll see this in designing **API wrappers** and “reactive” variables in frontend frameworks, or even simple interview “design a class/closure” rounds.
 
+
+### Flashcard
+Return an object with increment(), decrement(), and reset() methods that close over an initial value and current counter state.
+
 ### Tags
 
 ### Similar Problems

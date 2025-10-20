@@ -102,6 +102,10 @@ def minKBitFlips(nums, k):
 ### Summary
 The optimal approach is a greedy algorithm scanning left-to-right, using a difference array or flip marker to track the current parity caused by previous flips. This “interval flip + prefix sum” trick is common in range-flip or operation tracking interview problems. It effectively reduces expensive subarray operations to efficient O(1) state tracking at each step, and the logic applies broadly to interval manipulation and event processing patterns in competitive coding.
 
+
+### Flashcard
+Greedily flip at every 0 using a difference array to track flip effects; if a flip would exceed array bounds, return −1.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Queue(#queue), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

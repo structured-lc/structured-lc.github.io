@@ -130,6 +130,10 @@ def numDupDigitsAtMostN(n: int) -> int:
 ### Summary
 This problem is a classic example of **digit DP** and **combinatorics**: instead of brute-force enumeration, we "count by construction" the valid (non-repeating) numbers and take the complement. The pattern and reasoning are common for problems about digits/statistics within numbers, and can be extended to problems like "numbers without a certain digit", "numbers with K unique digits", or even general constraints on digit usage. This approach is much faster and is key for large input sizes.
 
+
+### Flashcard
+Count numbers ≤n with all unique digits using combinatorics; answer is n minus this count.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming)
 

@@ -139,6 +139,10 @@ class Solution:
 ### Summary
 This problem exemplifies a **recursive traversal + structural insertion** pattern, recurring in BST and heap insertions. The key was recognizing only the rightmost chain is affected by an appended value in the max binary tree, allowing efficient in-place updates. The pattern is common for problems where modifications at the end of a "rooted" structure only influence extremal paths—useful for heap-like, max/min tree, or append-based tree operations.
 
+
+### Flashcard
+Recursively insert val into the rightmost path; if val > root, make val new root with old tree as left child.
+
 ### Tags
 Tree(#tree), Binary Tree(#binary-tree)
 

@@ -97,6 +97,10 @@ This is a simulation problem using **spiral traversal** over a grid.
 The approach generalizes to any spiral-walk/search pattern, and the key insight is adjusting step lengths as you change directions.  
 This pattern is widely used in **matrix traversal, array rotation**, and some geometric search applications.
 
+
+### Flashcard
+Simulate spiral movement with direction and step counters; record cells within grid bounds until all are visited.
+
 ### Tags
 Array(#array), Matrix(#matrix), Simulation(#simulation)
 

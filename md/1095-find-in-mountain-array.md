@@ -109,6 +109,10 @@ This problem uses the **multiple binary search** pattern: once to find the peak,
 This pattern is commonly used in interview problems involving arrays with **multiple sorted regions** or **peak/valley** characteristics (e.g. find peak element, search bitonic sequence).  
 The algorithm efficiently leverages the mountain array structure for optimal search.
 
+
+### Flashcard
+Binary search for peak index, then binary search on ascending left half, if not found binary search on descending right half; return smallest index found or -1.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Interactive(#interactive)
 

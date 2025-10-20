@@ -102,6 +102,10 @@ The main technique is using parallel workers to maximize throughput under a conc
 It's well-suited for scenarios where you want maximum parallelism without exceeding a resource or API quota.  
 Patterns used: semaphore/workers, async scheduling, dynamic task assignment.
 
+
+### Flashcard
+Manage concurrent promise execution up to a limit `n`, starting new tasks as others complete.
+
 ### Tags
 
 ### Similar Problems

@@ -185,6 +185,10 @@ Common patterns:
 - Rounding to two decimals  
 This type of logic appears in ride sharing/app analytics and is useful in operations dashboards or business reports.
 
+
+### Flashcard
+Trips and Users
+
 ### Tags
 Database(#database)
 

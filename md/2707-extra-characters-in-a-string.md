@@ -83,6 +83,10 @@ def minExtraChar(s, dictionary):
 ### Summary
 This problem uses a **dynamic programming** pattern similar to word-break or segment string problems. Build a dp array from right to left, minimizing at each index the extra character count with or without taking dictionary words. The pattern is classic "string segmentation with dictionary" DP and appears in various leetcode problems, often whenever substrings can be matched from a dictionary with optimal cuts.
 
+
+### Flashcard
+Use dynamic programming where dp[i] is the minimum extra characters for s[i:], checking all dictionary matches at each position.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming), Trie(#trie)
 

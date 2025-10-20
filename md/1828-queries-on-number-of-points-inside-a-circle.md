@@ -93,6 +93,10 @@ def countPoints(points, queries):
 Simple geometric brute-force using the distance property for circles.  
 This pattern—check each object against every query object—is a classic double-loop for range-counting problems; if needed for large input, spatial data structures can improve performance. Similar approaches appear in nearest neighbor, collision, or region-counting queries in 2D computational geometry.
 
+
+### Flashcard
+For each circle, count points where (x−x₀)² + (y−y₀)² ≤ r²; brute-force is O(q×n) but efficient for moderate sizes.
+
 ### Tags
 Array(#array), Math(#math), Geometry(#geometry)
 

@@ -96,6 +96,10 @@ def checkValid(matrix):
 ### Summary
 This problem is a matrix/array validation pattern, closely linked to checking permutations and constraints like in Valid Sudoku (row/column uniqueness). The overall approach uses direct validation via auxiliary arrays per row/column (hashing or fixed-size booleans), which is a common trick when the input range is limited and performance matters. This coding pattern also applies to puzzles, grid validation, and game logic.
 
+
+### Flashcard
+For each row and column, check that its set of values equals {1, 2, ..., n} using a set or boolean array.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Matrix(#matrix)
 

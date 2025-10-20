@@ -89,6 +89,10 @@ def maximumElementAfterDecrementingAndRearranging(arr):
 ### Summary
 This problem uses a **greedy sorting and adjustment** approach. The major coding pattern is "sort, then process with local constraints," which is very common in problems where absolute differences or ranges are limited (e.g., forming consecutive sequences, scheduling). Similar logic appears in restoring arrays to sequences, “jump game” variants, and array normalization tasks.
 
+
+### Flashcard
+Sort array, set arr[i] = min(arr[i], arr[i−1]+1) starting with arr=1; answer is last element.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

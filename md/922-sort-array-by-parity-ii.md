@@ -95,6 +95,10 @@ def sortArrayByParityII(nums):
 This problem is a classic **two-pointer in-place partitioning** scenario, related to Dutch National Flag, and common in questions that rearrange elements by some simple rule (parity, sign, color, etc).  
 This approach can be generalized wherever two groups of equal count need to be placed at specific positions—like alternating gender seating, or zero/nonzero partitioning with arrangement constraints.
 
+
+### Flashcard
+Place even numbers at even indices and odd numbers at odd indices using two pointers.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Sorting(#sorting)
 

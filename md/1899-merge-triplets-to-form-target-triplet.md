@@ -96,6 +96,10 @@ def mergeTriplets(triplets, target):
 ### Summary
 This problem uses a **simulation reduction** approach: by careful observation of the merge operation (coordinate-wise max), we avoid brute-force and use a **greedy flag-match** strategy to verify if each target coordinate can be "supplied" by some triplet under the constraints. This “contribution by position” is a common pattern in similar merge/combine/compose array problems where the operation is monotonic (only increases or only decreases), and can be applied in other coordinate-combine or multi-target construction problems.
 
+
+### Flashcard
+Merge triplets only if they do not exceed the target in any coordinate.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

@@ -87,6 +87,10 @@ def countOperations(num1: int, num2: int) -> int:
 ### Summary
 This problem is a variant of the classic Euclidean algorithm (used for GCD), but instead of just finding the divisor, we keep track of all the subtraction (division) steps as our answer. The coding pattern is similar to the one used for GCD, where we repeatedly reduce the size of the problem. This approach and optimization (jumping ahead by dividing instead of repeatedly subtracting) is a common one for problems revolving around "repeated reduction," and is applicable to areas involving division-based process reduction or number theory operations.
 
+
+### Flashcard
+Repeatedly subtract the smaller number from the larger until one is zero, counting operations—optimize with division for large differences.
+
 ### Tags
 Math(#math), Simulation(#simulation)
 

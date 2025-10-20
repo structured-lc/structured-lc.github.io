@@ -113,6 +113,10 @@ def minimizeSet(divisor1, divisor2, uniqueCnt1, uniqueCnt2):
 ### Summary
 This problem uses a **binary search on the answer** strategy, paired with efficient inclusive-exclusive counting for divisibility constraints. This is a common pattern in "find minimal/maximal feasible value" problems with complex counting logic. Variants appear in range queries and combinatorial problems involving overlaps and set construction given constraints.
 
+
+### Flashcard
+Binary search on maximum value x; for each x check if we can fill both arrays using inclusion-exclusion on divisibility counts by divisor₁, divisor₂, and lcm.
+
 ### Tags
 Math(#math), Binary Search(#binary-search), Number Theory(#number-theory)
 

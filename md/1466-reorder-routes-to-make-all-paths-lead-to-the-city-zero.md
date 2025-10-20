@@ -134,6 +134,10 @@ def minReorder(n, connections):
 
 This problem is a textbook example of DFS/BFS tree traversal with a focus on *edge orientation*. The checked pattern is "counting necessary changes via traversal from a fixed root." This algorithm is widely applicable to problems on directed trees, edge reversals, and reachability. You can adapt the approach to variant problems involving different traversal costs or non-tree graphs with care.
 
+
+### Flashcard
+Treat roads as undirected, traverse from city 0; count edges that must be reversed to ensure all paths lead to 0.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
 

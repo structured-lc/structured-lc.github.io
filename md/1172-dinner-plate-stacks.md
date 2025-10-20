@@ -152,6 +152,10 @@ class DinnerPlates:
 ### Summary
 This problem is a practical example of *multiple stack simulation* with efficient support for sparse and dynamic indices. It leverages **heap/min-heap or balanced BST** to quickly find leftmost non-full stacks, a **list** for direct indexable storage, and careful management to pop from the rightmost. This pattern—*coordinate heap/priority structure plus dynamic array*—also appears in problems like merging k sorted lists, CPU scheduling, and resource-allocation simulations.
 
+
+### Flashcard
+Use a min-heap to track the leftmost non-full stack and a list for stacks; push to leftmost non-full, pop from rightmost non-empty efficiently.
+
 ### Tags
 Hash Table(#hash-table), Stack(#stack), Design(#design), Heap (Priority Queue)(#heap-priority-queue)
 

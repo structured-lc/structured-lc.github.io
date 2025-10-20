@@ -100,6 +100,10 @@ def findItinerary(tickets):
 This problem is a classic application of **graph traversal with lexical priority**—in particular, a variant of Hierholzer’s algorithm for finding Eulerian paths, combined with lexical ordering using sorted adjacency lists (or min-heaps).  
 This pattern (DFS with order constraints) appears in itinerary reconstruction, dependency resolution, and word ladder-type problems. The key takeaway is how to combine traversal algorithms with ordering constraints for unique sequence recovery.
 
+
+### Flashcard
+Build a graph and use DFS with a min-heap for each node to always pick the lexicographically smallest next destination, constructing the Eulerian path.
+
 ### Tags
 Depth-First Search(#depth-first-search), Graph(#graph), Eulerian Circuit(#eulerian-circuit)
 

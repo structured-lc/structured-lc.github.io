@@ -99,6 +99,10 @@ def minMoves(nums):
 ### Summary
 This problem demonstrates an important problem-solving technique: reframing the problem to see it from a different perspective. Instead of thinking about incrementing n-1 elements, we think about the relative differences between elements and the minimum element. The mathematical insight that all elements need to "catch up" to the same level leads to the elegant O(n) solution. This pattern of finding mathematical relationships appears frequently in array manipulation problems.
 
+
+### Flashcard
+The minimum moves equals the sum of all elements minus n × min value, since incrementing n-1 elements is like decrementing one element each time.
+
 ### Tags
 Array(#array), Math(#math)
 

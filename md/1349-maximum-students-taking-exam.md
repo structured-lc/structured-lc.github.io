@@ -87,6 +87,10 @@ def maxStudents(seats):
 ### Summary
 This is a classic bitmask DP for seating/placement with adjacency constraints. Pattern is common: DP[state] over bit-encoded states – similar to tiling, coloring, and hardware assignment problems.
 
+
+### Flashcard
+Use bitmask DP: for each row, enumerate valid seatings, check compatibility with previous row, and update dp[row][state] for max students.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Matrix(#matrix), Bitmask(#bitmask)
 

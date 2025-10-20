@@ -97,6 +97,10 @@ This is a classic **sliding window + hashmap** problem for "subarrays with at mo
 The approach generalizes to a variety of related substring/subarray problems and is a powerful pattern for interviews.  
 Commonly reused for problems counting subarrays with unique, at most/at least constraints, and more.
 
+
+### Flashcard
+Number of subarrays with exactly K distinct = subarrays with ≤K distinct − subarrays with ≤K−1 distinct, both found via sliding window.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Counting(#counting)
 

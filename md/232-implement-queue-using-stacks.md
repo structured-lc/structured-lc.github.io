@@ -142,6 +142,10 @@ This problem uses the **two-stack simulation** technique to invert LIFO behavior
 It’s a classic interview favorite and can be applied wherever order-reversal is required, such as queue implementation or undo-redo systems.  
 The core insight is leveraging stacks’ reversal property to manage queue state efficiently and with low overhead.
 
+
+### Flashcard
+Use two stacks; push to input stack, pop from output stack (refilling output from input when empty) to maintain FIFO order.
+
 ### Tags
 Stack(#stack), Design(#design), Queue(#queue)
 

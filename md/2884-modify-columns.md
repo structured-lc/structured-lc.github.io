@@ -100,6 +100,10 @@ def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
 ### Summary
 This problem demonstrates the classic *vectorized operation* pattern for data manipulation with pandas, where a column can be transformed with a single assignment. This pattern is not limited to doubling values—it generalizes to any column-wise math, and is fundamental in data preprocessing for analytics, modeling, or ETL work.
 
+
+### Flashcard
+Double the 'salary' column in place using employees['salary'] = employees['salary'] × 2 for efficient column-wise modification.
+
 ### Tags
 
 ### Similar Problems

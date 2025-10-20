@@ -105,6 +105,10 @@ def threeSumClosest(nums, target):
 ### Summary
 This problem uses the **two-pointer** technique, often combined with sorting, which is a classic approach for subset-sum search problems involving arrays. The coding pattern is prevalent in problems like 2Sum, 3Sum, 4Sum, and their "closest" variants. The two-pointer pattern provides a big efficiency boost over brute force for problems with sorted data and fixed-size subset searching.
 
+
+### Flashcard
+Sort the array, then for each index, use two pointers to find the triplet sum closest to the target.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Sorting(#sorting)
 

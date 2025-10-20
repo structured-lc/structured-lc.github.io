@@ -73,6 +73,10 @@ It’s a direct application of string containment and is a foundational check in
 Variants of this pattern appear in plagiarism checking, log scanning, and many string problems.  
 For harder scenarios, the multi-pattern search can be solved efficiently by Trie-based or automaton-based approaches.
 
+
+### Flashcard
+For each pattern in patterns, check if pattern appears as substring in word using built-in substring search; count matches.
+
 ### Tags
 Array(#array), String(#string)
 

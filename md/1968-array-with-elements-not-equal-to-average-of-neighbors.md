@@ -106,6 +106,10 @@ def rearrangeArray(nums):
 ### Summary
 This problem relies on **sorting and careful rearrangement** so that no three (potentially consecutive) numbers are placed in a way where a number could become the average of its neighbors. The alternation/interleaving pattern is a common trick for avoiding certain relationships between consecutive elements, and shows up often in problems involving local order constraints, such as wiggle sort or separating evens and odds for distributed placement.
 
+
+### Flashcard
+Sort array, then interleave smallest and largest halves alternately (zigzag pattern) so no element equals average of neighbors.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

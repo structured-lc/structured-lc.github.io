@@ -93,6 +93,10 @@ def compareVersion(version1: str, version2: str) -> int:
 ### Summary
 The key insight is breaking down and comparing each revision as an integer, handling missing revisions as 0. This problem leverages the **two-pointer** or **parallel iteration** pattern and robust input parsing. This pattern recurs in problems needing synchronized traversal of two sequences, such as merging sorted lists or comparing strings/arrays elementwise.
 
+
+### Flashcard
+Split both version strings by '.', compare each revision as integers left to right, treating missing revisions as 0.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

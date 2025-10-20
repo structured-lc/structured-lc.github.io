@@ -130,6 +130,10 @@ def findLadders(beginWord, endWord, wordList):
 The problem uses a **BFS for layer/path discovery** followed by **backtracking (DFS) for reconstruction of all shortest sequences**.  
 This pattern—BFS for minimum-length paths in unweighted graphs, combined with backtracking for result reconstruction—is common in many shortest-path and "find all minimum solutions" problems, such as: All shortest paths in undirected graphs, solving word-morph games, and minimum-step state transitions.
 
+
+### Flashcard
+Use BFS to build a graph of words (edges: one-letter difference), then backtrack from endWord to reconstruct all shortest transformation paths.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Backtracking(#backtracking), Breadth-First Search(#breadth-first-search)
 

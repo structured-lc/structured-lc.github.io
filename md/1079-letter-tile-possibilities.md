@@ -87,6 +87,10 @@ def numTilePossibilities(tiles: str) -> int:
 ### Summary
 This is a classic **backtracking permutation of multiset** pattern, where the problem is to count all the ways to arrange letters allowing for duplicates but not for repeated use of the same tile in a string. This technique is common for problems like anagrams, combinations/permutations with duplicates, and can be adapted for related sequence or path-finding questions.
 
+
+### Flashcard
+Backtracking with frequency map—for each letter, try adding it to current sequence if count > 0, recurse, then restore count; count all non-empty sequences generated.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Backtracking(#backtracking), Counting(#counting)
 

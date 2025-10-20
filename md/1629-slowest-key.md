@@ -64,6 +64,10 @@ def slowestKey(releaseTimes: List[int], keysPressed: str) -> str:
 ### Summary
 This is a typical **iteration and comparison** problem; tracks maximum with tiebreaker. Useful for logs or stream monitoring.
 
+
+### Flashcard
+Track the longest key press duration and lexicographically largest key in case of ties.
+
 ### Tags
 Array(#array), String(#string)
 

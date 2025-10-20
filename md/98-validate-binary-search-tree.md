@@ -110,6 +110,10 @@ def isValidBST(root):
 ### Summary
 This problem is a classic example of the **DFS with range constraint pattern**. The approach is core for verifying recursive global properties in trees, especially when each node depends not just on local but also ancestral constraints. Commonly used in BST validation and problems involving numeric boundaries on paths (e.g., path sum, Kth smallest/largest in BST).
 
+
+### Flashcard
+Use DFS with min/max bounds; for each node, ensure its value is within (min, max) and recursively validate left and right subtrees.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

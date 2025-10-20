@@ -144,6 +144,10 @@ def latestTimeCatchTheBus(buses, passengers, capacity):
 ### Summary
 This problem is a strong example of the **two pointers** and **simulation** coding patterns. Sorting allows efficient step-wise boarding simulation. Using a set for O(1) conflict checks is key. This pattern is broadly applicable to "board in order with capacity" and "find latest/earliest available slot" problems, such as task scheduling, resource allocation with deadlines, or meeting room usage.
 
+
+### Flashcard
+Sort buses and passengers; simulate boarding for each bus up to capacity, then for the last bus, find the latest time not taken by a passenger to catch it.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
 

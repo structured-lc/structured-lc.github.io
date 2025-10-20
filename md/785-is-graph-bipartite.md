@@ -101,6 +101,10 @@ def isBipartite(graph):
 ### Summary
 This problem is a classic **two-coloring / graph traversal** paradigm. The DFS/BFS coloring pattern is widely applicable to problems requiring "partitioning" or "separation" of connected items subject to adjacency constraints—for example, checking bipartite status, scheduling problems, or separating conflicting tasks. Recognizing odd cycles as key obstructions is fundamental in graph theory.
 
+
+### Flashcard
+Use BFS or DFS to color the graph with two colors; if any adjacent nodes have the same color, the graph is not bipartite.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

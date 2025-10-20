@@ -133,6 +133,10 @@ class Solution:
 ### Summary
 This problem is a classic multi-source message-passing simulation reduced by using shortest-path computation (BFS from a root in an unweighted graph), combined with periodic event calculation based on each server’s patience. The key pattern is "Shortest Path + Simulation Math," which often appears in network propagation, gossip protocol, and minimum time-to-inform problems. Knowing how to combine BFS for distances and mod math for resends is crucial for large-scale simulations.
 
+
+### Flashcard
+For each node, compute shortest path to master, then derive idle time from round-trip and patience—use BFS for shortest paths.
+
 ### Tags
 Array(#array), Breadth-First Search(#breadth-first-search), Graph(#graph)
 

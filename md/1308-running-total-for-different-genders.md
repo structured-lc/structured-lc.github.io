@@ -96,6 +96,10 @@ def running_total(records):
 ### Summary
 The problem is a variant of the cumulative sum (running total) per group pattern, partitioned by a field (here, "gender") and ordered by another ("name"). This approach is common in analytics, window aggregation, and can be extended to any number of groups or orderings.
 
+
+### Flashcard
+Sort records by name, then maintain separate running totals for male and female as you iterate, updating the appropriate total per row.
+
 ### Tags
 Database(#database)
 

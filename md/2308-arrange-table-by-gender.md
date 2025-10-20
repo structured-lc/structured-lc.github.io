@@ -150,6 +150,10 @@ This problem uses the **"interleaving by round robin"** pattern for merging mult
 The solution is a form of grouped alternation combined with order-by-within-group. This pattern is useful anywhere you need to fairly distribute elements from multiple groups in priority order, such as fair scheduling, team rotations, or merging sequenced events with "fairness" guarantees.  
 The problem is also a great example of using either multi-pointer strategies in code or window functions (ROW_NUMBER, RANK) in SQL.
 
+
+### Flashcard
+Rotate through sorted gender lists, picking the smallest available user_id from each in turn until all are exhausted.
+
 ### Tags
 Database(#database)
 

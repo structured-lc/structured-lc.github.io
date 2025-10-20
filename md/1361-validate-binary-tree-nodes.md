@@ -113,6 +113,10 @@ def validateBinaryTreeNodes(n, leftChild, rightChild):
 ### Summary
 This approach uses in-degree counting to detect multiple roots or parents, then DFS from the root to detect connectivity and cycles. These are standard tree-validation steps and fit the general connected-component/cycle-detection pattern in graphs. The pattern is common in organizational chart validation, serializing/deserializing trees, and parent-child pointer validations.
 
+
+### Flashcard
+Check in-degree for each node (should be ≤1), ensure exactly one root, and verify all nodes are reachable from root.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph), Binary Tree(#binary-tree)
 

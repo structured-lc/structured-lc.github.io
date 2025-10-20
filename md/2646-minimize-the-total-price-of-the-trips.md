@@ -164,6 +164,10 @@ def minimumTotalPrice(n, edges, price, trips):
 ### Summary
 This problem uses **tree dynamic programming** with subtree states, leveraging the "robbery without adjacent" (House Robber III) pattern. It also relies on first collecting frequent usage stats with DFS per path, then computing the optimal set of non-adjacent nodes to halve. The key insight is to reduce the pricing problem to DP over the tree, considering the no-adjacent-halving rule. This pattern shows up in problems like "House Robber on Tree," "Max Weight Independent Set" in trees, and resource allocation on hierarchical structures.
 
+
+### Flashcard
+Minimize the total price of trips in a graph by optimizing node selections based on trip frequencies.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Graph(#graph)
 

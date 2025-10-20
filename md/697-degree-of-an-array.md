@@ -102,6 +102,10 @@ This strategy is very common:
 - And using these for windowing or optimizing subarray spans.  
 Hashmaps/dictionaries to track element statistics are central here, and similar patterns occur in problems like Longest Substring with K Distinct Characters, or Minimum Window Substring.
 
+
+### Flashcard
+Track first/last index and frequency for each element; for elements with max frequency (degree), compute min subarray length covering all occurrences.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

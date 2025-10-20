@@ -98,6 +98,10 @@ class MovingAverage:
 ### Summary
 This is a classic *sliding window* problem employing a fixed-size queue and a running sum, a common approach for real-time analytics over streaming data. Patterns here generalize to moving sums, windowed statistics, signal processing, and online algorithms where you only care about the latest k values and need O(1) efficiency per update.
 
+
+### Flashcard
+Use a queue to store the last k values and a running sum; add new value, remove oldest if needed, and return sum ÷ window size.
+
 ### Tags
 Array(#array), Design(#design), Queue(#queue), Data Stream(#data-stream)
 

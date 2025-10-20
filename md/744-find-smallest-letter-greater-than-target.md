@@ -90,6 +90,10 @@ def nextGreatestLetter(letters, target):
 ### Summary
 This problem uses the classic **binary search pattern** with a twist (circular array wrap-around). This pattern is common anywhere you need to efficiently locate insert positions or boundaries in sorted arrays, like searching for the "next" unique element, lower_bound/upper_bound problems, or handling rotations. The solution demonstrates efficient traversal with minimal auxiliary space.
 
+
+### Flashcard
+Binary search on sorted array to find smallest letter > target; if none found, return first letter (wraparound behavior).
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

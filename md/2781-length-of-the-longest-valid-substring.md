@@ -97,6 +97,10 @@ The key is to quickly check, at each character, whether the current window conta
 This solution pattern is common for substring and interval problems, especially when constraints allow bounding the look-back/check range (similar to "Longest Substring Without Repeating Characters", but with forbidden patterns instead of character uniqueness).  
 A trie or Aho-Corasick automaton could generalize further if forbidden words were unbounded in length.
 
+
+### Flashcard
+Use a sliding window and a set of forbidden words (up to length 10) to check recent substrings efficiently, updating the max valid substring length.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

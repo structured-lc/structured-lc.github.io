@@ -93,6 +93,10 @@ def maximum_subarray_sum(nums, k):
 ### Summary
 We solved the problem with an efficient **sliding window+hash map** approach, a common pattern for finding properties in subarrays of fixed size with uniqueness constraints. This pattern is broadly useful for substring/subarray questions involving distinct/unique elements, such as “longest substring with k distinct chars” and similar interval problems.
 
+
+### Flashcard
+Use a sliding window of size k and a hash map to track unique elements; update max sum when window contains k distinct elements.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
 

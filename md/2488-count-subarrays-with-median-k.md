@@ -119,6 +119,10 @@ This problem uses the **prefix sum and hash map** pattern, especially with the i
 This approach is common for median/rank problems, and the prefix sum balancing trick appears in other hard subarray counting challenges (e.g., number of subarrays with sum K, number of subarrays with median/mean/mode constraints).  
 It demonstrates the power of prefix/mapping state compression in O(n) solutions for counting problems over contiguous subarrays.
 
+
+### Flashcard
+For subarrays containing k, track balance of elements >k vs <k to left/right; use prefix sums for O(n) counting.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
 

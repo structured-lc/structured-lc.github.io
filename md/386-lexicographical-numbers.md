@@ -88,6 +88,10 @@ def lexicalOrder(n: int) -> list[int]:
 ### Summary
 The problem is a classic example of a lex order (dictionary/order-as-strings) traversal—essentially a pre-order traversal over a conceptual N-ary tree rooted at 1–9, expanding by appending digits. The iterative DFS solution is efficient, elegant, and avoids explicit string sorting. This pattern is broadly helpful for problems involving permutations, unique orderings, and tree-like enumerations.
 
+
+### Flashcard
+Use DFS to build numbers in lexicographical order, starting from 1 to 9 and recursively appending digits until n is reached.
+
 ### Tags
 Depth-First Search(#depth-first-search), Trie(#trie)
 

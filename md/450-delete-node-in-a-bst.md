@@ -135,6 +135,10 @@ class Solution:
 ### Summary
 The approach uses **BST traversal with recursion** to efficiently find and remove a node while preserving BST properties. Uses the in-order successor for cases with two children. This pattern—find, modify subtree if needed, return root—is **common for tree modification problems** (insert, delete). The recursion framework for BSTs is widely used for tree-based questions.
 
+
+### Flashcard
+To delete a node in a BST, find the node, then: if it has no children, remove it; if one child, replace with its child; if two children, replace with its in-order successor (smallest in right subtree) and delete the successor.
+
 ### Tags
 Tree(#tree), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

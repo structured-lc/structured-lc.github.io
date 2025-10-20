@@ -111,6 +111,10 @@ class Solution:
 ### Summary
 This problem is a classic **backtracking with pruning** pattern, minimized unfairness being the "max of partitions". It uses recursion, state space pruning, and symmetry breaking — concepts common in fair allocation and load balancing domains. Variants appear in multi-way partition problems, task scheduling, or distributing objects with a fairness criterion.
 
+
+### Flashcard
+Backtrack to assign each bag to a child, pruning when current unfairness exceeds the best found so far.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

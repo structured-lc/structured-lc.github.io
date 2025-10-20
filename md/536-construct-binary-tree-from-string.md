@@ -130,6 +130,10 @@ def str2tree(s: str) -> TreeNode:
 ### Summary
 This problem is a direct application of recursive tree construction from a preorder-encoded nested string. The coding pattern—parse root value, then recursively left/right subtree based on parentheses—is common in tree problems and also applies to tasks like serializing/deserializing trees or evaluating arithmetic expressions in nested formats.
 
+
+### Flashcard
+Parse tree string recursively, matching parentheses to identify left/right subtrees; recursion handles nesting naturally.
+
 ### Tags
 String(#string), Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

@@ -103,6 +103,10 @@ def isUnivalTree(root):
 ### Summary
 This problem follows a classic **tree traversal** pattern and is a textbook example of DFS with an early return on failure. It’s commonly applied to problems where a single property must be checked across all nodes, such as symmetry, BST validity, or computing maximum depth. Mastering recursive (and iterative) traversals of binary trees is essential for coding interviews.
 
+
+### Flashcard
+Recursively DFS the tree, returning False if any node's value differs from the root; otherwise, return True.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

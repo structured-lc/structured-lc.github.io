@@ -87,6 +87,10 @@ class Solution:
 ### Summary
 This problem uses the double BFS technique or recursive DFS for finding tree diameters—a classic "tree trick." It's useful in various problems involving longest paths or tree metrics.
 
+
+### Flashcard
+Find tree diameter by two BFS/DFS passes: first from any node, then from the farthest node found.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort)
 

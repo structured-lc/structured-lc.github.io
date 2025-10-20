@@ -110,6 +110,10 @@ def minLength(s: str) -> int:
 This problem uses the **stack** pattern, where you process elements and cancel out adjacent pairs matching certain patterns. It's commonly seen in problems involving reductions, adjacent deletions, or nested structure checks (like parentheses matching).  
 The approach guarantees optimality since every qualifying pair is greedily removed as soon as possible, and the stack efficiently keeps track of potential new pairs formed by adjacent shifts. This technique is widely applicable to symbol reduction and parsing problems.
 
+
+### Flashcard
+Use stack to track characters; for each char, if it pairs with stack top ("AB" or "CD"), pop stack, else push char; final stack size is minimum length after all removals.
+
 ### Tags
 String(#string), Stack(#stack), Simulation(#simulation)
 

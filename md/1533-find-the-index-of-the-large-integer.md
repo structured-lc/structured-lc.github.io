@@ -112,6 +112,10 @@ No extra storage used besides a few integer pointers.
 ### Summary
 This problem is a nice example of **binary search on an answer space**, adapting to a "black-box" array with restricted queries. The partitioning and subarray comparisons are commonly used in "find a unique outlier" questions, and similar logic applies to majority element problems and search-in-unknown APIs. This approach is directly portable to many "find the unique element" paradigms, especially when only custom or expensive access to data is allowed.
 
+
+### Flashcard
+Employ a binary search variant to find the unique largest index by comparing subarray sums.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Interactive(#interactive)
 

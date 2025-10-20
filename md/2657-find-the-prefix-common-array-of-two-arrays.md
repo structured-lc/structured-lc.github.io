@@ -98,6 +98,10 @@ This problem is a two-pointer/prefix set intersection simulation, efficiently so
 The main coding pattern is **prefix accumulation with set membership tracking**—commonly useful for “count until now” or evolving prefix/statistics queries, especially when working with permutations or unique elements.  
 Patterns like this often appear in problems involving running intersection/union, prefix queries, and can be generalized to intervals or other “seen-so-far” statistics.
 
+
+### Flashcard
+Track seen elements in two sets as you scan both arrays; increment count when an element appears in both sets for the first time.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation)
 

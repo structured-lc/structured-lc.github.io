@@ -86,6 +86,10 @@ This is a classic **modified binary search** pattern: find the *last* occurrence
 This coding pattern (variant of binary search) comes up whenever locating boundaries or extreme positions (first, last, insert position, etc.) for a target value in a sorted collection.  
 Mastering these tweaks is critical for efficient searching tasks in interviews and when working with range queries.
 
+
+### Flashcard
+Use modified binary search that continues right when nums[mid] = target to find the last (rightmost) occurrence index.
+
 ### Tags
 
 ### Similar Problems

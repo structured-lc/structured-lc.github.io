@@ -87,6 +87,10 @@ This problem uses the **grouped scanning** pattern: scan the input with pointers
 It's a very common coding pattern for problems involving consecutive groupings, substrings, or counting runs.  
 This same approach is useful for compressing data (Run-Length Encoding), grouping by value, or parsing event logs with repeated timestamps.
 
+
+### Flashcard
+Scan string, track start of each group; when group ends, if length ≥ 3, record [start, end].
+
 ### Tags
 String(#string)
 

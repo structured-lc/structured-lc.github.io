@@ -73,6 +73,10 @@ def findBuildings(heights):
 ### Summary
 This problem uses a classic **monotonic decreasing traversal pattern** when scanning from the right to find buildings taller than those to their right. This pattern is common in skyline or visibility problems and is efficient for linear-time scanning problems involving comparisons with aggregates from one side.
 
+
+### Flashcard
+Iterate from right to left, track max height; any building taller than current max has an ocean view.
+
 ### Tags
 Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

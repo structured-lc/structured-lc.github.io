@@ -91,6 +91,10 @@ def matrixReshape(mat, r, c):
 ### Summary
 This problem is a classic example of **index mapping** in arrays/matrices. The core is to compute the 1D flattened index and translate between 2D and 1D coordinates using division and modulus. The coding pattern is broadly useful for image transformations, memory layout changes, or any data reshaping where order preservation and correct mapping are required.
 
+
+### Flashcard
+Flatten the matrix, then reshape by slicing into rows of length c; if total elements mismatch, return the original matrix.
+
 ### Tags
 Array(#array), Matrix(#matrix), Simulation(#simulation)
 

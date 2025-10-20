@@ -99,6 +99,10 @@ def maxVowels(s: str, k: int) -> int:
 ### Summary
 This problem is a textbook example of the **sliding window** pattern for substrings or subarrays with fixed length and counting/swapping elements as the window moves. The pattern is broadly applicable for max/min/sum calculations in subarrays and is much more efficient than brute force, reducing O(n\*k) methods to O(n) for one-pass solutions.
 
+
+### Flashcard
+Use a sliding window of size k to track and update the count of vowels, maintaining the maximum seen.
+
 ### Tags
 String(#string), Sliding Window(#sliding-window)
 

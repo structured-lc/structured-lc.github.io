@@ -97,6 +97,10 @@ The problem is a *prefix sum + hashmap* (monotonic mapping) variant, similar to 
 This pattern appears often in problems related to subarrays with certain sum properties, and is highly useful for large input constraints due to its linear time.  
 It's a canonical example for "transform to +1/−1, apply prefix sum, and optimize with hashmap."
 
+
+### Flashcard
+Convert to prefix sum (+1 for tiring, −1 for non-tiring); track first occurrence of each prefix value, find longest subarray with positive sum.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Stack(#stack), Monotonic Stack(#monotonic-stack), Prefix Sum(#prefix-sum)
 

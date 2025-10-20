@@ -103,6 +103,10 @@ def minOperations(grid, x):
 ### Summary
 This is a classic “meeting at the median” pattern for minimizing L₁ distances. We use a mathematical preprocessing step (divisibility/modulo check) followed by reducing the problem to minimizing total moves to the median in a 1D list of step units. This coding pattern applies to many “minimum moves to equalize array/grid” problems with constant step costs.
 
+
+### Flashcard
+All values must be reachable from each other in steps of x; pick median of flattened grid as target for minimal operations.
+
 ### Tags
 Array(#array), Math(#math), Sorting(#sorting), Matrix(#matrix)
 

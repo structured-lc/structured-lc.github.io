@@ -96,6 +96,10 @@ def deleteString(s: str) -> int:
 ### Summary
 This problem uses the **DP with memoization and preprocessing for substring comparison** pattern, building on LCP or hash-based string matching. It's an important template for problems where a substring needs to be compared to another substring efficiently, and where optimal substructure and overlapping subproblems make DP effective. Similar techniques are used in "Longest Duplicate Substring" and "String Compression" type problems.
 
+
+### Flashcard
+Use DP with memoization: dp[i] = max deletions from s[i:]. Precompute LCP array for O(1) substring equality checks to avoid exponential branching.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
 

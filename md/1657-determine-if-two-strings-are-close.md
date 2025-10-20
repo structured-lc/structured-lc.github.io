@@ -100,6 +100,10 @@ def closeStrings(word1, word2):
 ### Summary
 This is a classic example of the **"frequency equivalence" pattern** — using character or value counts and comparing sorted patterns or sets, instead of the direct elements. It highlights that **for certain transformations, only the multiset structure and set membership matter**, not the actual arrangement. This pattern also appears in permutation problems and anagram checks.
 
+
+### Flashcard
+Check if both strings have the same character set and frequency multiset (order and identity don’t matter, just counts).
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sorting(#sorting), Counting(#counting)
 

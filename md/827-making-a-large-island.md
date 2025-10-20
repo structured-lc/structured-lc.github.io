@@ -120,6 +120,10 @@ def largestIsland(grid):
 This problem uses a **coloring/labeling islands** pattern—very common in matrix problems like "Number of Islands" or "Max Area of Island." The key optimization is not recomputing the area for each possible flip, but labeling first, then doing constant-time lookups for each 0.  
 This approach is widely useful for problems involving grid connectivity, labeling, and one-step modifications.
 
+
+### Flashcard
+Label each island with DFS and record its area; for each 0, sum areas of neighboring islands (unique labels) if flipped, and track the max.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
 

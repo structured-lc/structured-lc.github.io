@@ -78,6 +78,10 @@ def split_words_by_separator(words, separator):
 ### Summary
 The approach uses basic string traversal and substring-building—classic for custom parsing problems, especially where use of high-level split/join is discouraged. This pattern frequently appears in log parsing, custom delimiters in data files, and anywhere fine-tuned string processing is required, and it trains careful attention to string boundaries and empty substring handling.
 
+
+### Flashcard
+For each word, split by separator, collect non-empty substrings, and flatten all results into a single list.
+
 ### Tags
 Array(#array), String(#string)
 

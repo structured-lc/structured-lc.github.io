@@ -378,6 +378,10 @@ class CodecBinary:
 ### Summary
 BST serialization leverages the unique property that preorder traversal alone is sufficient to reconstruct the tree. This makes it more compact than general tree serialization. The bounds-based deserialization technique efficiently reconstructs the tree by using the BST property to determine where each node belongs. This pattern is fundamental in data persistence, network transmission of tree structures, and database index serialization. Understanding how to exploit data structure properties for more efficient serialization is crucial for system design and optimization problems.
 
+
+### Flashcard
+Serialize BST with preorder traversal; deserialize using BST property to split left/right subtrees without null markers.
+
 ### Tags
 String(#string), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Design(#design), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

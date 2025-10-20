@@ -104,6 +104,10 @@ This is a **range distribution** problem: given a fixed sum and bounds per posit
 The coding pattern is "greedy distribution + math check," common in problems where we reconstruct a possible set or array under element-wise constraints (e.g., exam scores, equal splits, dice rolls).  
 Efficient, scalable, leverages the min/max constraints, and avoids brute-force search.
 
+
+### Flashcard
+Calculate missing sum, then distribute it as n numbers between 1 and 6—use math to find feasible distribution, not brute-force combinations.
+
 ### Tags
 Array(#array), Math(#math), Simulation(#simulation)
 

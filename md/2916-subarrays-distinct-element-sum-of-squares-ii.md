@@ -119,6 +119,10 @@ The brute-force approach considers all subarrays and counts the unique numbers i
 It uses the **hashmap + two pointers** pattern, common for sliding window subarray uniqueness/count problems.  
 More advanced approaches (for very large arrays) may involve segment trees, Mo’s algorithm, or contribution techniques—but for interview and practical competitive code this pattern is highly adaptable for substring/subarray distinct element statistics.
 
+
+### Flashcard
+Use optimized sliding window or hashing to maintain distinct count for each subarray, square and sum; avoid O(n³) brute-force.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
 

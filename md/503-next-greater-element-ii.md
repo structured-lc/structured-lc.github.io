@@ -85,6 +85,10 @@ def nextGreaterElements(nums):
 
 This problem is a classic use of the **monotonic stack** pattern to optimize “next greater element” queries, made slightly trickier by the circular wrap-around constraint (handled by traversing the array twice). This approach generalizes to next smaller (or other monotonic) queries and is common in array, stack, and scheduling contexts.
 
+
+### Flashcard
+Use a monotonic stack and traverse the array twice to simulate circularity, assigning each element its next greater value or -1 if none exists.
+
 ### Tags
 Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

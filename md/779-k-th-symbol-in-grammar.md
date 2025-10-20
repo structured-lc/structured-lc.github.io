@@ -94,6 +94,10 @@ def kthGrammar(n: int, k: int) -> int:
 ### Summary
 This problem is a classic example of a **recursion / divide-and-conquer** pattern based on self-similarity and parent-child relationships, tightly related to binary trees. Recognizing the flipping relationship, and efficiently mapping positions from the current row to the previous row, is typical for problems involving recursively-built structures like binary trees, Gray codes, and fractal strings.
 
+
+### Flashcard
+Recursively determine the kᵗʰ symbol by noting it flips whenever k is odd in its parent; use k//2 to trace up and count flips.
+
 ### Tags
 Math(#math), Bit Manipulation(#bit-manipulation), Recursion(#recursion)
 

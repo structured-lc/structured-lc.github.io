@@ -107,6 +107,10 @@ class Solution:
 ### Summary
 The approach used here is a common pattern for solving problems involving tree traversals, especially those requiring maximum or minimum path lengths. The key is to use DFS to efficiently explore the tree and update relevant metrics (in this case, the diameter) as you traverse. This pattern can be applied to various tree-based problems, making it a useful skill for any developer working with graph data structures.
 
+
+### Flashcard
+DFS calculates subtree heights, updating max diameter whenever left + right height exceeds current max.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

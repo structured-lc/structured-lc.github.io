@@ -91,6 +91,10 @@ This problem is a classic **prefix sum** and **one-pass scan** pattern, common i
 Optimization comes from avoiding redundant sum computations by using cumulative totals.  
 The coding approach and pattern here can be applied in subarray partition, “find kth split” and many “sliding window” like interview problems.
 
+
+### Flashcard
+Precompute total sum, iterate with running prefix sum, and count splits where left sum ≥ right sum—O(n) time.
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

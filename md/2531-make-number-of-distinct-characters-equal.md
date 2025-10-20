@@ -112,6 +112,10 @@ This approach uses brute-force over a restricted search space (26 × 26 max swap
 The pattern is “frequency map simulation”, often used in string, anagram, and distinctiveness problems.  
 It’s widely applicable when possible transitions depend more on sets or multisets of characters than on actual word structure or order.
 
+
+### Flashcard
+For each possible letter swap between words, update frequency counts and check if distinct counts match—only 26×26 swaps needed.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

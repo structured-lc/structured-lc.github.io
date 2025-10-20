@@ -76,6 +76,10 @@ def get_longest_subsequence(words, groups):
 ### Summary
 This is a classic **greedy pattern** where the global optimum is built incrementally by always picking the next valid element if it preserves the required property (adjacent groups must differ). Variations of this pattern apply to problems like "longest alternating subarray," "wiggle subsequence," or any adjacency constraint sequence problems. The challenge is recognizing that "lookback by one" with local decision always yields a globally optimal solution.
 
+
+### Flashcard
+Greedily build the longest subsequence by including each word whose group differs from the previous; skip words with the same group as the last included.
+
 ### Tags
 Array(#array), String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

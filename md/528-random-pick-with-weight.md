@@ -100,6 +100,10 @@ class Solution:
 ### Summary
 This problem uses the **Prefix Sum + Binary Search** pattern for efficient weighted random sampling. The approach ensures O(n) setup and O(log n) per query, balancing time and space well for most applications. This design is commonly used in algorithms requiring non-uniform probability selection, such as weighted lottery systems, sharding based on load, or simulating biased dice.
 
+
+### Flashcard
+Use prefix sum array and binary search to pick an index with probability proportional to its weight, avoiding brute-force expansion.
+
 ### Tags
 Array(#array), Math(#math), Binary Search(#binary-search), Prefix Sum(#prefix-sum), Randomized(#randomized)
 

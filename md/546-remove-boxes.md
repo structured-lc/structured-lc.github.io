@@ -121,6 +121,10 @@ def removeBoxes(boxes):
 ### Summary
 This problem is a classic example of **interval DP with extra parameters**, specifically a 3D DP due to the "carry" of adjoining same-color blocks (k). This approach is seen in hard dynamic programming sequence/partitioning problems—variations show up anywhere future merges or grouping strategy can affect the total reward, such as burst balloons, matrix chain multiplication, and similar DP optimizations in combinatorial structures.
 
+
+### Flashcard
+DP with memoization on subarrays and counts of adjacent same-color boxes avoids exponential brute-force.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Memoization(#memoization)
 

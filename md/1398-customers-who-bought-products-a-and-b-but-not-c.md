@@ -71,6 +71,10 @@ ORDER BY customer_id ASC;
 ### Summary
 This problem is a typical SQL aggregation "group by with filter per group" pattern. The CASE in SUM is a classic way to do boolean matching per product per user. Applicable wherever group-wise presence/absence queries are needed.
 
+
+### Flashcard
+Select customers who bought both A and B but not C using GROUP BY and HAVING with conditional sums.
+
 ### Tags
 Database(#database)
 

@@ -91,6 +91,10 @@ def minimizeResult(expression: str) -> str:
 ### Summary
 This problem is a **string partitioning and simulation** challenge. The approach is a controlled brute-force using all split positions and evaluating each possibility, leveraging the small input size for efficiency. This "try all splits" strategy is common for parenthesis-placement, dynamic programming on partitions, and is useful in similar minimal/maximal expression problems.
 
+
+### Flashcard
+Try all possible parenthesis placements around the '+' and compute each partition’s value to find the minimum.
+
 ### Tags
 String(#string), Enumeration(#enumeration)
 

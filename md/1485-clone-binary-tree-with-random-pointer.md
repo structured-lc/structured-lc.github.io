@@ -98,6 +98,10 @@ def copyRandomBinaryTree(root):
 ### Summary
 This problem follows the classic "clone graph with random pointer" pattern. Use a hash map to relate original to cloned nodes, enabling accurate reconstruction of arbitrary/random connections. This is a common data structure clone/copy scenario and is widely applicable in serialization and deep-copy use-cases.
 
+
+### Flashcard
+Use a hash map to map original nodes to their clones; first clone all nodes, then set left, right, and random pointers using the map.
+
 ### Tags
 Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

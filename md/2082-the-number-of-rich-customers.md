@@ -98,6 +98,10 @@ This is a classic **set/build** or **filter and count distinct** problem.
 Patterns in use include building a set for deduplication and filtering based on some property.  
 This type of logic is common in database queries and in-preprocessing data for analytics—whenever you need a unique count of something matching a criterion.
 
+
+### Flashcard
+Use a set to collect unique customer_ids with amount > 500, then return the set's size.
+
 ### Tags
 Database(#database)
 

@@ -105,6 +105,10 @@ def numRookCaptures(board):
 This is a classic **grid scanning** simulation problem using **direction vectors**—a frequent pattern in chessboard, grid, and matrix puzzles. 
 The method of “move outward in each possible direction until stopped” is widely applicable in games, path-finding, and some flood-fill algorithms. The fixed 8x8 board size allows a straightforward approach without optimization concerns.
 
+
+### Flashcard
+From the rook’s position, scan in all four directions; count the first pawn encountered before any bishop or edge in each direction.
+
 ### Tags
 Array(#array), Matrix(#matrix), Simulation(#simulation)
 

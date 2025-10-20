@@ -172,6 +172,10 @@ def containVirus(isInfected):
 ### Summary
 This problem combines **graph traversal** (for region detection using DFS/BFS), **greedy selection** (always wall off the most threatening region), and **simulation** (stepwise virus spreading). The pattern is a generic connected region expansion and containment scenario, often seen in grid-based problems (such as island, flooding, or contagion simulation challenges).
 
+
+### Flashcard
+Each day, identify all infected regions via DFS, compute walls needed and threatened cells per region; quarantine region threatening most cells, repeat until no spread.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix), Simulation(#simulation)
 

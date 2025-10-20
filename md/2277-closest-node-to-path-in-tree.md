@@ -181,6 +181,10 @@ def closestNode(n, edges, queries):
 ### Summary
 This problem leverages the classic **tree LCA, depth, and path-reconstruction** patterns to solve efficient multi-query tree distance and path-node problems. The pattern is a standard **offline tree query** approach (binary lifting) and can be seen in problems involving **distance queries, subtree queries, and path property queries** on trees.
 
+
+### Flashcard
+Precompute all-pairs shortest paths in the tree, then for each query, find the closest node on the path from start to end.
+
 ### Tags
 Array(#array), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
 

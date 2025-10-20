@@ -94,6 +94,10 @@ def maxNumberOfBalloons(text):
 ### Summary
 This problem is an example of the "counter/frequency map" pattern, common in string problems that ask for assembling words or anagrams given letter availability. It generalizes to any problem where you must form target sets with fixed frequency requirements, such as building ransom notes, anagrams, or recipes from ingredients. The main insight is to count and limit by the bottleneck character.
 
+
+### Flashcard
+Count each letter in “balloon”; the answer is the min count for each letter, halving ‘l’ and ‘o’.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

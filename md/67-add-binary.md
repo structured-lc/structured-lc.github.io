@@ -92,6 +92,10 @@ def addBinary(a: str, b: str) -> str:
 ### Summary
 This problem demonstrates the standard **string, two-pointer, and carry-over addition** pattern, often seen in linked list sum and base conversion problems. It’s a very common pattern for simulating manual addition/subtraction on numbers represented as strings or arrays. This technique can also apply to problems in base \(B\), or to adding numbers represented as linked lists (such as Leetcode 2: Add Two Numbers).
 
+
+### Flashcard
+Add binary strings from right to left with carry, appending digits and reversing the result at the end.
+
 ### Tags
 Math(#math), String(#string), Bit Manipulation(#bit-manipulation), Simulation(#simulation)
 

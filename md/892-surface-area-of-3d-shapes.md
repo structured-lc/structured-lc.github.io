@@ -97,6 +97,10 @@ The solution uses a **grid traversal pattern** with immediate-neighbor subtracti
 This approach is typical of grid and geometry problems, where local interactions (adjacency) need to be accounted for efficiently.  
 This pattern occurs in problems like "Island Perimeter" and can be useful wherever you need to compute shared boundaries in grids.
 
+
+### Flashcard
+For each cell, add 4 × height + 2, then subtract 2 × min(adjacent heights) for each right and bottom neighbor to account for hidden faces.
+
 ### Tags
 Array(#array), Math(#math), Geometry(#geometry), Matrix(#matrix)
 

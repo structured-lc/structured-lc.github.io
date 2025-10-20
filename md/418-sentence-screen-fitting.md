@@ -110,6 +110,10 @@ def wordsTyping(sentence, rows, cols):
 ### Summary
 This approach leverages **cycle detection and modular arithmetic** for fast simulation—common in string wrap/fitting/grid problems. The key is recognizing repeated patterns and precomputing how the pointer advances, a pattern useful in problems such as text editors, dynamic table layout, and periodic grid traversal. This avoids brute-force per-row simulation and scales efficiently for large screens.
 
+
+### Flashcard
+Precompute for each starting word position how many sentence completions fit in one row, then use this lookup table to skip simulating individual rows.
+
 ### Tags
 Array(#array), String(#string), Dynamic Programming(#dynamic-programming)
 

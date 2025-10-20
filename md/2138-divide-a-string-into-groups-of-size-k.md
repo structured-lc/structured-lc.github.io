@@ -81,6 +81,10 @@ def divideString(s: str, k: int, fill: str) -> list[str]:
 ### Summary
 This problem uses the *string slicing* and *simulation* coding patterns. The approach is direct: iterate in steps, slice, and pad as needed. It’s commonly seen in problems involving data grouping, message chunking, or text formatting. This fundamental method is applicable whenever dividing data into fixed-size chunks, handling leftovers with padding or fillers.
 
+
+### Flashcard
+Split string into chunks of size k; pad last chunk with fill character if shorter than k.
+
 ### Tags
 String(#string), Simulation(#simulation)
 

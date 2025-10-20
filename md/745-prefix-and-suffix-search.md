@@ -89,6 +89,10 @@ The method takes advantage of **word length constraints**, storing all combinati
 This technique is often seen in "all pairs" problems, especially with short list/sequence length constraints.  
 Common coding pattern: **precompute all combinations** for fast query time, trading increased build time and space.
 
+
+### Flashcard
+Preprocess words into tries by combining prefix and suffix patterns (e.g., "prefix{suffix"), then query returns highest index matching both.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Design(#design), Trie(#trie)
 

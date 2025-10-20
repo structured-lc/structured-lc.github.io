@@ -82,6 +82,10 @@ This problem demonstrates **operator overloading** and **encapsulation** in Pyth
 Defining special ("dunder") methods allows custom classes to behave like built-in types for basic operations.  
 The pattern is widely applicable for customizing how objects interact in arithmetic, output, and container contexts.
 
+
+### Flashcard
+Implement valueOf() to return sum of wrapped array elements for addition, implement toString() to return JSON.stringify format for string conversion; allows custom + and String() behavior.
+
 ### Tags
 
 ### Similar Problems

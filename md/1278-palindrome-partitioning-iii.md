@@ -109,6 +109,10 @@ Core patterns:
 - **DP for cuts/partitioning** (2D, over substring and partition count)
 - This approach applies to similar "split into k blocks minimizing/optimizing cost" scenarios, like word break, palindrome cuts, and edit distance segmentations.
 
+
+### Flashcard
+Precompute min changes to make any substring a palindrome, then use DP: dp[i][k] = min changes to partition s[i:] into k palindromic substrings.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

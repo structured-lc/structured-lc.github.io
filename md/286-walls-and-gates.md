@@ -149,6 +149,10 @@ def wallsAndGates(rooms):
 ### Summary
 This problem is a classic **multi-source BFS** on a grid, a core technique for shortest distance mapping with multiple sources. It’s similar to “rotting oranges”, “nearest exit in maze”, and other shortest-path-from-multiple-starts grid problems. It's highly applicable in pathfinding, networks, or map navigation interview scenarios and tests one's ability to optimize traversal by thinking about the *reverse* approach—starting from the destination(s).
 
+
+### Flashcard
+Multi-source BFS from all gates simultaneously; propagate distance+1 outward, only updating cells with larger current values.
+
 ### Tags
 Array(#array), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

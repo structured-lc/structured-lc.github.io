@@ -112,6 +112,10 @@ class Solution:
 ### Summary
 This problem is a **variation of the sliding window and heap/priority queue techniques**. Fixing the "minimum multiplier" and maximizing the chosen set subject to that minimum is a clever greedy + heap usage that applies to other "choose k maximize (sum or prod)" problems. Recognizing the trade-off between sum and multiplier is the key pattern here.
 
+
+### Flashcard
+Sort pairs by nums₂ in descending order; use a min-heap to track top k nums₁, updating max score as you iterate.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

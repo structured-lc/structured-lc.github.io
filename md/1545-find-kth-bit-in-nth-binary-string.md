@@ -74,6 +74,10 @@ def findKthBit(n: int, k: int) -> str:
 ### Summary
 This is a **recursive divide-and-conquer** problem based on palindromic/self-inverting string construction. The pattern is related to string construction with symmetry and bit flipping; seen in some binary/gray-code or fractal structure problems as well.
 
+
+### Flashcard
+Recursively find the kth bit in a binary string by mirroring positions and inverting bits as needed.
+
 ### Tags
 String(#string), Recursion(#recursion), Simulation(#simulation)
 

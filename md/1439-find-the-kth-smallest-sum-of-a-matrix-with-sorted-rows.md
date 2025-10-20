@@ -63,6 +63,10 @@ def kthSmallest(mat, k):
 ### Summary
 This is a heap-based k-way merging pattern, applicable in combining multiple sorted lists for minimum result-set extraction—common in databases, schedulers, and median/sum selection problems.
 
+
+### Flashcard
+Use a min-heap to merge k smallest sums row by row, keeping only k candidates at each step to efficiently find the kᵗʰ smallest sum.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
 

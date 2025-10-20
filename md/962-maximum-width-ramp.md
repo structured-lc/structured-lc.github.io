@@ -108,6 +108,10 @@ This problem uses the **monotonic stack** pattern:
 This pattern is common in "nearest greater/smaller element" problems and can be applied where subarray relationships are involved (e.g., Largest Rectangle in Histogram, Stock Span, Next Greater Element).  
 Efficient, single-pass, and makes the most of order properties in the input array.
 
+
+### Flashcard
+Build a stack of indices with decreasing values, then for each index from right to left, pop from the stack to maximize width where nums[i] ≤ nums[j].
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

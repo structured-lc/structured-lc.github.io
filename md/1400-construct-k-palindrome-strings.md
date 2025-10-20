@@ -58,6 +58,10 @@ def canConstruct(s, k):
 ### Summary
 This problem tests knowledge about palindrome composition from character counts, especially odd/even letter frequencies. A useful reduction to parity and feasibility.
 
+
+### Flashcard
+To construct k palindrome strings from s, count letters with odd frequency; it’s possible if odd-count letters ≤ k ≤ len(s).
+
 ### Tags
 Hash Table(#hash-table), String(#string), Greedy(#greedy), Counting(#counting)
 

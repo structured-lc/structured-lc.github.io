@@ -142,6 +142,10 @@ class Trie:
 ### Summary
 This is the classic **Trie** (Prefix Tree) design pattern, enabling quick word and prefix lookups in O(L) time where L = length of input string, at the cost of increased memory usage. This pattern is fundamental for problems involving dictionary, autocomplete, and spellchecking functionalities, and is a standard approach in many string algorithm questions.
 
+
+### Flashcard
+Implement a trie where each node is a character; insert/search by traversing children, marking word ends with a flag.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Design(#design), Trie(#trie)
 

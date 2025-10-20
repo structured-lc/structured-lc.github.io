@@ -120,6 +120,10 @@ print(reformat_department_table(department_table))
 ### Summary
 This problem is a classic **pivot table** transformation, often used for reporting and business intelligence. The solution uses *conditional aggregation* to map individual row values into columns, a common approach for SQL pivot operations. Understanding this pattern is useful for a wide array of data transformation interview problems, both in SQL and in programming languages when simulating group and pivot operations.
 
+
+### Flashcard
+Pivot monthly revenue by department using SQL conditional aggregation (SUM with CASE/IF).
+
 ### Tags
 Database(#database)
 

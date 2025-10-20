@@ -145,6 +145,10 @@ def queries_quality_and_percentage(queries):
 ### Summary
 This problem uses the **group by and aggregation** pattern common in SQL and analytics interviews. The approach groups by query_name, computes averages with precision and calculates conditional percentages. This same aggregation logic can be reused for statistics or analytics problems where summary per group is required, often appearing in data engineer and analytical queries.
 
+
+### Flashcard
+For each query_name, use SQL aggregation to compute AVG(rating/position) and the percentage of rows with rating < 3, both rounded to 2 decimals.
+
 ### Tags
 Database(#database)
 

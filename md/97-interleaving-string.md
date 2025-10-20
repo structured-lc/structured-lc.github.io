@@ -88,6 +88,10 @@ The problem uses the **dynamic programming** pattern, optimizing a brute-force r
 It’s a classical *string DP* problem seen in parsing, edit distance, and merge problems.  
 This pattern is broadly applicable anywhere you need to check if one sequence can be built by interleaving multiple sub-sequences while preserving their internal ordering.
 
+
+### Flashcard
+Use DP where dp[i][j] is true if s1[0..i) and s2[0..j) can form s3[0..i+j); check if next char matches s1 or s2 and recurse.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

@@ -72,6 +72,10 @@ def minOperations(nums: list[int], x: int) -> int:
 ### Summary
 This problem is reduced to finding the longest subarray sum, a two pointers/sliding window pattern, and then computing the minimum removes as n - (max window). This pattern appears in problems that constrain prefix and suffix sums.
 
+
+### Flashcard
+Find the longest subarray with sum = totalSum−x using sliding window; min deletions = n − window length.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

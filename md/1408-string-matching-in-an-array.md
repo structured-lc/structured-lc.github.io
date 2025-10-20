@@ -58,6 +58,10 @@ def stringMatching(words):
 ### Summary
 This problem is a variant of the substring search pattern. The brute-force nested loop is acceptable for small input. This code shows how to implement clear pairwise substring checks common in interview string manipulation questions.
 
+
+### Flashcard
+Iterate through each word in the array, checking if it is a substring of any other word. Use a set to collect unique matching substrings.
+
 ### Tags
 Array(#array), String(#string), String Matching(#string-matching)
 

@@ -150,6 +150,10 @@ def sortItems(n, m, group, beforeItems):
 ### Summary
 This problem leverages the classic **topological sort** at two levels: group and item. By handling ungrouped items as "single-item groups", and modeling dependencies as directed graphs, we ensure both group-adjacency and dependency satisfaction. This is a common graph + sorting pattern, applicable in build systems, task execution scheduling, and dependency resolution in package managers.
 
+
+### Flashcard
+Topologically sort groups and items separately; assign unique group IDs to ungrouped items, then sort groups and items within groups to respect all dependencies.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort)
 

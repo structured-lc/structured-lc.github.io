@@ -105,6 +105,10 @@ def repeatLimitedString(s: str, repeatLimit: int) -> str:
 ### Summary
 This problem follows a **greedy + frequency counting** pattern, where you greedily try to build the lexicographically largest string at every step, only limited by consecutive appearance rules. The technique is broadly useful in "construct the largest/smallest string under constraints" problems, which often pop up in competition and interview settings. Using frequency arrays (or priority queues for general alphabets) is a classic pattern for letter arrangement constraints.
 
+
+### Flashcard
+Use a max-heap to greedily pick the largest available character up to repeatLimit times, then break with next largest if needed.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue), Counting(#counting)
 

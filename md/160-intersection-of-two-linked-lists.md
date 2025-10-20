@@ -107,6 +107,10 @@ def getIntersectionNode(headA: ListNode, headB: ListNode) -> ListNode:
 ### Summary
 This problem leverages the **two-pointer** technique, a common pattern in linked lists for efficiently detecting intersections, cycles, or synchronization. The approach avoids explicit list length calculations and extra space, making it optimal for both time and memory. The pointer-switching trick is reusable for problems involving unequal length data structures and detecting overlap in list traversal.
 
+
+### Flashcard
+Use two pointers; traverse both lists, switching heads when reaching the end, so they align and meet at the intersection node if one exists.
+
 ### Tags
 Hash Table(#hash-table), Linked List(#linked-list), Two Pointers(#two-pointers)
 

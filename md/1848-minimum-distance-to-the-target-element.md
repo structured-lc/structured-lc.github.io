@@ -76,6 +76,10 @@ def getMinDistance(nums, target, start):
 This is a classic *linear scan / minimum tracking* pattern. It applies broadly to problems seeking closest/nearest values in a list, such as "minimum distance to X", "closest value to Y", or "find left/right neighbor."  
 The implementation is straightforward, and can be directly reused wherever "find min (distance or difference) to target" logic is needed.
 
+
+### Flashcard
+Scan array, for each target, compute |i−start| and track minimum; O(n) time, no extra space.
+
 ### Tags
 Array(#array)
 

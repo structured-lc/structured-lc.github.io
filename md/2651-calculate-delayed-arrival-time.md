@@ -68,6 +68,10 @@ This problem uses the classic modulo pattern for cyclic values (time arithmetic)
 The key is `result = (arrivalTime + delayedTime) % 24`, ensuring hour wrap-around.  
 Modulo math for clock arithmetic is a universal coding pattern that appears in scheduling, queue rounding, and circular buffer problems.
 
+
+### Flashcard
+Add arrivalTime and delayedTime, then return (arrivalTime + delayedTime) % 24 to wrap at midnight.
+
 ### Tags
 Math(#math)
 

@@ -115,6 +115,10 @@ This problem uses the advanced **Trie-based Memoization** pattern, enabling cach
 It’s particularly useful for dynamic programming, recursive calls, or expensive pure functions where input variety is high.  
 This design applies wherever standard hash/dict-based caches would fail (e.g., arguments are mutable, or equality by reference is required rather than by value).
 
+
+### Flashcard
+Memoize a function using a dictionary or trie to store results based on arguments, handling mutable objects by reference.
+
 ### Tags
 
 ### Similar Problems

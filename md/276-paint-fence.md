@@ -126,6 +126,10 @@ def numWays(n: int, k: int) -> int:
 ### Summary
 This problem uses a **dynamic programming pattern**—specifically, a "ways to reach here" rolling recurrence with overlapping subproblems. By focusing on "same" and "different" state transitions, we quickly solve the problem in O(n) time and O(1) space, a classic example of state compression in DP. This can be extended to other "no more than m in a row" coloring, tiling, or arrangement tasks.
 
+
+### Flashcard
+Use DP; for each post, track ways to paint with same or different color as previous, ensuring no more than two adjacent posts share a color.
+
 ### Tags
 Dynamic Programming(#dynamic-programming)
 

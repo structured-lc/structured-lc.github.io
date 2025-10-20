@@ -132,6 +132,10 @@ This problem is a **geometric binary search pattern** combined with *interval/k-
 Translating the problem into (u, v) space makes the intersection check straightforward and avoids unnecessary grid simulation.  
 The pattern of binary searching for minimal parameter (e.g., number of days, window width) that satisfies a frequency/intersection property is common and appears in other grid or geometric "spread with overlap" questions.
 
+
+### Flashcard
+For each cell, compute arrival day = Manhattan distance from each variant's source; sort these days and check if the kᵗʰ smallest ≤ candidate day using binary search on day.
+
 ### Tags
 Array(#array), Math(#math), Binary Search(#binary-search), Geometry(#geometry), Enumeration(#enumeration)
 

@@ -119,6 +119,10 @@ def sumScores(s: str) -> int:
 ### Summary
 This problem is a classic **Z-algorithm / prefix-function** application for efficiently finding the longest prefix match for all suffixes of a string. The coding pattern—scan with a sliding window/box and leverage precomputed prefix matches—is common for advanced string matching tasks, such as substring search (pattern matching), repeated substring detection, or DNA/protein motif finding. You can apply the same approach for **pattern searching** (e.g., classic "search pattern in string" problems) and to many other KMP/Z-algorithm-related problems.
 
+
+### Flashcard
+For each suffix, find its longest prefix match with the whole string; use the Z-algorithm for O(n) time.
+
 ### Tags
 String(#string), Binary Search(#binary-search), Rolling Hash(#rolling-hash), Suffix Array(#suffix-array), String Matching(#string-matching), Hash Function(#hash-function)
 

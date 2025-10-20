@@ -95,6 +95,10 @@ def countMatches(items, ruleKey, ruleValue):
 ### Summary  
 This problem is a straightforward example of **filtering and counting** within a 2D list structure, using **mapping from rule strings to column indices**. The approach shown here—mapping key strings to indices, looping with a predicate, and counting matches—is a common pattern for problems involving structured data filtering, and is widely applicable in CSV parsing, database-type querying, or log file analysis.
 
+
+### Flashcard
+Map ruleKey to item index, then count items where the value at that index matches ruleValue.
+
 ### Tags
 Array(#array), String(#string)
 

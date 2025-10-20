@@ -113,6 +113,10 @@ It dynamically calculates imbalance as subarrays expand, using a set to keep tra
 Patterns: set expansion, incremental property maintenance.  
 This approach is common in substring/subarray statistics (“count X over all substrings/subarrays”), and similar strategies apply in substring uniqueness/counting, frequency windowing, and other sliding window or prefix-sum optimizations.
 
+
+### Flashcard
+For each subarray, maintain sorted elements and count gaps >1 between consecutive values, optimizing with incremental updates.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Ordered Set(#ordered-set)
 

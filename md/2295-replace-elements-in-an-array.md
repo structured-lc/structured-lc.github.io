@@ -87,6 +87,10 @@ def arrayChange(nums, operations):
 ### Summary
 This problem is a classic use case for a *hash map* (dictionary) to maintain mapping from values to indices, allowing O(1) updates and lookups. It's an example of "offline queries" applied efficiently, showing that preprocessing + smart data structures can often beat brute force. The approach also appears in similar problems like dynamic index/value updates, swap/replace operations, and mapping-based simulations.
 
+
+### Flashcard
+Use a hash map to track value positions; for each replacement, update the map and array in O(1) per operation.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Simulation(#simulation)
 

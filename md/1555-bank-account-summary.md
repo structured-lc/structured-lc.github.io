@@ -59,6 +59,10 @@ def bankAccountSummary(accounts):
 ### Summary
 Hashmap/dictionary grouping and aggregation; pattern is prevalent in database GROUP BY and summary aggregation tasks.
 
+
+### Flashcard
+Use hash map to group by name and sum values; return sorted list of [name, total] pairs in O(n) time.
+
 ### Tags
 Database(#database)
 

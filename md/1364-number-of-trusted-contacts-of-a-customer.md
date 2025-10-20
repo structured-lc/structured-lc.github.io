@@ -83,6 +83,10 @@ ORDER BY
 ### Summary
 This problem is a classic SQL aggregation (GROUP BY + COUNT with WHERE filter); useful for rollups, counting, and statistics by attribute.
 
+
+### Flashcard
+GROUP BY user_id and COUNT(*) where trusted_status = 'YES'; include only users with at least one trusted contact.
+
 ### Tags
 Database(#database)
 

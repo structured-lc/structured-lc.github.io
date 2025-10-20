@@ -85,6 +85,10 @@ def removeAlmostEqualCharacters(word: str) -> int:
 ### Summary
 This problem is a classic example of a **greedy string transformation**, where the configuration for each local adjacent pair can be fixed independently without affecting optimality. The greedy scan-and-fix method is frequently used in “string cleaning” or “local conflict resolution” problems, and applies whenever changes have only local effects with no long-distance dependencies.
 
+
+### Flashcard
+Scan left to right, incrementing a counter whenever adjacent characters are almost equal, then skip ahead to avoid double-counting.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

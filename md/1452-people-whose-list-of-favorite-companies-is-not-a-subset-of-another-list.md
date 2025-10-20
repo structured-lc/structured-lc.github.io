@@ -100,6 +100,10 @@ def peopleIndexes(favoriteCompanies):
 ### Summary
 This is a classic **nested scan + subset** problem—convert lists to sets and check each set for being a subset of any other. This set-based approach is general, clear, and avoids superfluous complexity, optimizing for input sizes expected in interviews. This coding pattern (all-pairs subset checking with sets) generalizes to intersection, superset, and anti-chain problems in set theory.
 
+
+### Flashcard
+For each person, check if their favorite companies set is not a subset of any other person's set; collect such indices.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string)
 

@@ -118,6 +118,10 @@ This problem uses the **k-way merge** (multi-way heap) pattern, a classic approa
 Key insights include using a min-heap to always advance from the smallest current candidate, and tracking the maximum element seen in the window.  
 This pattern is widely applicable: merging logs from multiple sources, finding overlapping intervals, or synchronizing streams.
 
+
+### Flashcard
+Use a min-heap to track current minimum among k lists; expand range by advancing the list with the current min, keeping track of smallest range covering all lists.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sliding Window(#sliding-window), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

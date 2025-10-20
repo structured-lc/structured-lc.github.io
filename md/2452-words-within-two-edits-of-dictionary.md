@@ -111,6 +111,10 @@ This problem is a classic *fuzzy string matching* pattern with a fixed small edi
 This pattern applies to other error-tolerant matching tasks such as spell checking, suggestion engines, and DNA sequence matching where you only care about "close enough" matches.  
 For higher edit budgets or larger input, more advanced data structures (e.g., BK-trees, tries, precomputed variants, or hashing) can be used for efficient approximate search.
 
+
+### Flashcard
+For each query word, check all dictionary words and count character mismatches; if mismatches ≤ 2, it's a match—brute-force O(Q × D × L).
+
 ### Tags
 Array(#array), String(#string), Trie(#trie)
 

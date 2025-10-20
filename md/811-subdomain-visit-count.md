@@ -104,6 +104,10 @@ Common patterns:
 - Used in log processing, file system analytics, and hierarchical counters.
 No tricky data structures; just systematic string handling and aggregation using dictionaries.
 
+
+### Flashcard
+For each domain, split into subdomains and accumulate visit counts in a map; output total visits for each subdomain.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting)
 

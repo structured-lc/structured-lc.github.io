@@ -96,6 +96,10 @@ def possibleBipartition(n, dislikes):
 ### Summary
 This problem uses the **bipartite graph** checking pattern, common whenever you must split nodes into two sets under mutual exclusion constraints. BFS (or DFS) graph coloring is a classic technique here. The same technique applies to problems about checking two-colorability or scheduling tasks under pairwise conflicts.
 
+
+### Flashcard
+Model as a graph coloring problem; use BFS/DFS to check if the graph is bipartite (2-colorable).
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

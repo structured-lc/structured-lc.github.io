@@ -93,6 +93,10 @@ This problem uses the **closure pattern** to keep state private to each function
 It is a classic interview question for understanding closures, function factories, and encapsulation in any functional or object-oriented language.  
 Mastery here helps in asynchronous callbacks, event handlers, or any scenario where functions need private state tracking in applications.
 
+
+### Flashcard
+Use a closure to maintain a persistent counter variable across function calls.
+
 ### Tags
 
 ### Similar Problems

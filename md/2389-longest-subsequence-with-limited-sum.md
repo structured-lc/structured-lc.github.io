@@ -93,6 +93,10 @@ def answerQueries(nums, queries):
 ### Summary
 This problem uses a **Sorting + Prefix Sum + Binary Search** pattern, which is a common and powerful combination for maximizing counts under a budget/constraint (“largest k such that sum ≤ target”). This approach can be applied in other problems where we want as many elements as possible while obeying some overall constraint—classic for array and greedy optimization techniques.
 
+
+### Flashcard
+Sort nums ascending, compute prefix sums, then for each query use binary search on prefix array to find longest subsequence ≤ query.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting), Prefix Sum(#prefix-sum)
 

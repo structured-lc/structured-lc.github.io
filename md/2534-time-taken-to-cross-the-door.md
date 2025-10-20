@@ -143,6 +143,10 @@ This problem is a **simulation using two queues** with **priority rules**—a cl
 The approach is general for single-resource contention problems; this pattern shows up in OS process scheduling, railway crossing, or server-throttling scenarios.  
 Understanding how to efficiently simulate real-world sequential events is an important interview pattern, and handling edge cases (equal arrivals, unused gaps, right initial states) is key.
 
+
+### Flashcard
+Simulate door crossing with two queues (enter/exit), always serving the correct queue based on rules and tracking current time.
+
 ### Tags
 Array(#array), Queue(#queue), Simulation(#simulation)
 

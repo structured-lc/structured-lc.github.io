@@ -60,6 +60,10 @@ def numIdenticalPairs(nums):
 ### Summary
 This problem is a textbook use of hashmaps to count, enabling one-pass O(n) processing instead of nested loops. This counting pairs trick appears in Two Sum, anagrams, and various counting problems.
 
+
+### Flashcard
+Count good pairs in an array by using a hashmap to efficiently count occurrences of each number.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Counting(#counting)
 

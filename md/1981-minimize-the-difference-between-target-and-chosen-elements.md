@@ -98,6 +98,10 @@ This problem is a **dynamic programming/knapsack pattern**: for each row, constr
 Variants of this approach apply to subset sum, coin change, knapsack, and other problems where decisions build up a set of partial results.  
 Common patterns: propagate “reached” or “possible” states in layers as you make choices row by row (or item by item).
 
+
+### Flashcard
+Use DP to track all possible sums row by row, updating reachable sums and minimizing |sum − target| at the end.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

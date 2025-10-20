@@ -126,6 +126,10 @@ def numOfWays(m, n):
 ### Summary
 This problem is a **DP with State Compression** (tritmask/bitmask DP) classic. It's common in grid coloring, tiling, or "no adjacent same" constraint problems, especially when one dimension is small. Enumerate all local states, and use transitions to propagate valid configurations across the larger dimension. This pattern is widely applied in advanced DP, especially for problems involving tight local constraints on grids or sequences.
 
+
+### Flashcard
+Use dynamic programming on column colorings, ensuring no adjacent same-color cells within or across columns.
+
 ### Tags
 Dynamic Programming(#dynamic-programming)
 

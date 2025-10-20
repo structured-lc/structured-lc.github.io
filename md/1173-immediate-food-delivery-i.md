@@ -80,6 +80,10 @@ FROM Delivery;
 ### Summary
 This problem is an example of **conditional aggregation** and **percentage calculation** using boolean expressions. It's commonly seen in data analysis interviews and can be solved with simple SQL or Python. The method scales linearly and the pattern (average of boolean comparison) is very useful for similar "percentage of rows matching a condition" computations in SQL and analytics.
 
+
+### Flashcard
+Count orders where order_date equals customer_pref_delivery_date, then compute the percentage of such orders out of all orders.
+
 ### Tags
 Database(#database)
 

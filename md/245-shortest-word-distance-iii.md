@@ -91,6 +91,10 @@ This is a **two-pointer/single-pass scan** pattern often used for minimum distan
 It illustrates careful handling when the two search targets may be identical.  
 This type of pattern also appears in string, array, or interval difference problems where you seek the minimum/maximum gap between elements that match certain criteria.
 
+
+### Flashcard
+Track latest indices for both words during single pass; if word1 == word2, avoid comparing same index, always update minimum distance.
+
 ### Tags
 Array(#array), String(#string)
 

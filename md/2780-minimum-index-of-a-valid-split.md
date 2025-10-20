@@ -97,6 +97,10 @@ This problem uses the **prefix counting** and **dominant frequency check** patte
 The key insight is that, since there’s a unique guaranteed dominant, you only need to track it and its running frequency, not recalculate everything at every split.  
 This optimized linear scan is common in problems about **majority elements** or **prefix/suffix frequency**, and similar ideas show up in vote-counting, subarray magic-split, and divide-and-conquer frequency problems.
 
+
+### Flashcard
+Track the dominant element and its counts on both sides as you iterate; return the smallest index where it remains dominant in both splits.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting)
 

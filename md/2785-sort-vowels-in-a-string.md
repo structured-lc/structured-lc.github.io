@@ -104,6 +104,10 @@ def sortVowels(s: str) -> str:
 - The approach is similar to two-pointer or stream-reconstruction patterns, useful in problems asking to reorder or filter subsequence elements in place without disturbing the overall structure.
 - Counting sort provides speedup due to limited character alphabet; pattern applies to selective character sorting under constraints.
 
+
+### Flashcard
+Extract and sort all vowels, then place them back into their original positions in the string, leaving consonants unchanged.
+
 ### Tags
 String(#string), Sorting(#sorting)
 

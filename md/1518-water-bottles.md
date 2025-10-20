@@ -60,6 +60,10 @@ def numWaterBottles(numBottles: int, numExchange: int) -> int:
 ### Summary
 Simulate the **exchange process** step by step: drink, exchange, drink again. This is a classic greedy/resource consumption pattern. Can apply to other "consume-and-exchange" resource problems (like candy wrappers, bottles, or tickets).
 
+
+### Flashcard
+Calculate the total number of water bottles consumed by simulating the process of drinking and exchanging bottles.
+
 ### Tags
 Math(#math), Simulation(#simulation)
 

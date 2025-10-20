@@ -99,6 +99,10 @@ This is a classic "find peak with smaller neighbors" problem—**pattern: iterat
 The approach is O(n²) brute scan, easy to code and clear. Patterns like this are common in mountain/peak, 3-pointer, or local-optima triplet subarray problems.  
 Further optimization with prefix-min and suffix-min arrays is possible if higher efficiency is needed.
 
+
+### Flashcard
+For each peak index j, find smallest nums[i] < nums[j] to the left and smallest nums[k] < nums[j] to the right; sum and track minimum.
+
 ### Tags
 Array(#array)
 

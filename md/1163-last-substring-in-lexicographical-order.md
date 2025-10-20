@@ -100,6 +100,10 @@ This problem uses the **two pointer** pattern for substring comparison, avoiding
 It’s closely related to problems about lexicographical ordering, substring search, and Suffix Arrays but solved here via an elegant linear scan.  
 This approach generalizes to related interview questions: e.g., finding repeated substrings, Suffix Automaton, or lexicographical minimal substring.
 
+
+### Flashcard
+The last lexicographical substring is the largest suffix; compare suffixes starting at different indices to find the maximal one.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

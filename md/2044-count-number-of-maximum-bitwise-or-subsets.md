@@ -92,6 +92,10 @@ Since n is small, bitmasking is a simple and efficient way to try every subset.
 This approach and pattern frequently appear in combinatorial search/interview problems—counting or optimizing subsets, testing with masks, and performing quick stateful computations.  
 Common applications: subset sum/counting problems, finding subset properties, combinatorial search.
 
+
+### Flashcard
+Brute-force all subsets (up to 2¹⁶), track max bitwise OR, count how many subsets achieve it—global max OR is OR of all elements.
+
 ### Tags
 Array(#array), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Enumeration(#enumeration)
 

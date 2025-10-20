@@ -98,6 +98,10 @@ def isValidSerialization(preorder: str) -> bool:
 This problem uses the **"slot counting"** pattern to simulate binary tree construction. Each non-null node generates 2 new slots (for children), and each node fills one slot. The serialization is valid if and only if every slot is filled exactly as nodes are processed.  
 This technique is *common* in problems that involve checking structure (e.g., validating preorder traversal, parsing tree-like representations), and is efficient in both time and space. The slot-filling pattern generalizes to trees with different arity, and can be adapted for other traversal orders with modifications.
 
+
+### Flashcard
+Track available "slots" as you read the preorder string; non-null nodes add slots, null nodes consume them—valid if slots reach zero exactly at the end.
+
 ### Tags
 String(#string), Stack(#stack), Tree(#tree), Binary Tree(#binary-tree)
 

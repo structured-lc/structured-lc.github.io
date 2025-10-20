@@ -115,6 +115,10 @@ def mctFromLeafValues(arr):
 ### Summary
 This is a classic application of **monotonic stack** and a variant of "min/merge cost" greedy algorithms. The greedy stack pattern appears in problems like "Sum of Subarray Minimums" and "Largest Rectangle in Histogram". If asked for the structure, use DP/MCM style. The key pattern is greedy combining of the smallest nearby pairs to minimize costly later merges.
 
+
+### Flashcard
+Use DP on subarrays; for each split, cost = left DP + right DP + max(left) × max(right), and memoize results for efficiency.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
 

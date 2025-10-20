@@ -95,6 +95,10 @@ This solution uses a **monotonic stack** pattern to merge overlapping chunks:
 If the current number is "smaller" than what's in the stack, merge with previous chunk(s) to ensure that after sorting, the final concatenation is globally sorted.  
 The pattern of maintaining prefix-max or monotonic stacks appears in other chunking, histogram, and subarray boundary problems — especially those involving order and partitioning logic.
 
+
+### Flashcard
+For each index, if max so far (left) ≤ min ahead (right), a chunk can end here; count such splits for maximal chunks.
+
 ### Tags
 Array(#array), Stack(#stack), Greedy(#greedy), Sorting(#sorting), Monotonic Stack(#monotonic-stack)
 

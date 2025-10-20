@@ -107,6 +107,10 @@ def combinationSum2(candidates, target):
 ### Summary
 This problem is a classic example of **backtracking with deduplication**, a recurring pattern in subset and combination search problems. The critical insight is to sort the candidates for easy duplicate handling and prune the search tree as soon as the current sum is greater than target. The deduplication strategy used here is applicable in other problems where input values can repeat, but each must be used no more than its available count—examples include "Subsets II", "Permutation II", and some coin-change problems.
 
+
+### Flashcard
+Sort candidates and use backtracking, skipping duplicates and picking each number at most once per combination to avoid repeated subsets.
+
 ### Tags
 Array(#array), Backtracking(#backtracking)
 

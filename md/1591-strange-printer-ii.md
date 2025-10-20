@@ -107,6 +107,10 @@ class Solution:
 ### Summary
 This problem is a variant of dependency graph cycle detection, where the dependencies are induced by rectangle containment. The pattern is similar to topological sorting, cycle detection in directed graphs, and is applicable to similar scheduling and dependency resolution problems where "actions" (prints) must obey a coverage or ordering constraint.
 
+
+### Flashcard
+For each color, find its bounding rectangle; validate that no earlier color’s rectangle contains an uncovered cell of a later color.
+
 ### Tags
 Array(#array), Graph(#graph), Topological Sort(#topological-sort), Matrix(#matrix)
 

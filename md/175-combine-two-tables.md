@@ -108,6 +108,10 @@ ON
 ### Summary
 This problem uses the **Left Join** pattern, a canonical and fundamental SQL technique for merging data where one table has all rows and the other may have data or not. It’s commonly used in SQL reporting, data analytics, and database design whenever you want all entities—from a “primary” table—with optional details from another. The same pattern can be applied to user/activity/reporting-type queries across many SQL interviews.
 
+
+### Flashcard
+Use LEFT JOIN to combine Person with Address, ensuring all people appear even if address fields are null.
+
 ### Tags
 Database(#database)
 

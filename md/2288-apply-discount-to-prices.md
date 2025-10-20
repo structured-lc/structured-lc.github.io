@@ -111,6 +111,10 @@ This problem demonstrates classic **string parsing and simulation**: Split, vali
 Key aspects include robust word validation, safe numerical operations, and precision formatting— 
 skills common in parsing, data munging, and text-processing tasks. This pattern is widely useful for problems requiring conditional transformation of words or phrases within a larger text.
 
+
+### Flashcard
+For each word starting with $, parse the number, apply discount, format to two decimals, and reconstruct the sentence.
+
 ### Tags
 String(#string)
 

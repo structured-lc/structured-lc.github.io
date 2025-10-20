@@ -96,6 +96,10 @@ This problem is a **weighted median** application, which appears in scenarios wh
 The process leverages sorting with prefix sums and cumulative logic, a common and powerful coding interview pattern for minimizing costs or distances with per-element weights.  
 This pattern is highly reusable in other problems involving total cost minimization with weighted moves, like minimizing array move costs, fair schedules, or equitable distributions.
 
+
+### Flashcard
+Cost function is convex with respect to target value. Use ternary search or weighted median of values (weighted by costs) to find minimum.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting), Prefix Sum(#prefix-sum)
 

@@ -101,6 +101,10 @@ def shortestToChar(s: str, c: str) -> list[int]:
 ### Summary
 This uses the classic **two-pass array scan pattern**, where left-to-right and right-to-left traversals each record partial results; the final answer at each position is the minimum from both directions. This pattern is very effective for minimum distance or accumulations where information from both left and right neighbors is needed, and is widely applicable in strings and arrays (see: shortest distance to 1s in binary arrays, dynamic programming with dependencies, etc).
 
+
+### Flashcard
+Make two passes: left-to-right and right-to-left, tracking the nearest occurrence of c and updating the shortest distance for each character.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), String(#string)
 

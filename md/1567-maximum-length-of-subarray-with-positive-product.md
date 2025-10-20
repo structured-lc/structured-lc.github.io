@@ -99,6 +99,10 @@ def getMaxLen(nums):
 ### Summary
 This problem uses the **prefix dynamic state & greedy** sliding segment pattern. It efficiently tracks the length of valid subarrays, leveraging properties of products and the effect of zeros and negatives. This pattern is recurring in problems involving subarrays with certain sign or value properties, and relates to variations like Maximum Product Subarray. The state swap and update logic is commonly useful whenever an operation (like negation) inverts the "goodness" of a running segment.
 
+
+### Flashcard
+Track positive/negative subarray lengths separately; reset at zeros; positive if even count of negatives, swap lengths when encountering negative number.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

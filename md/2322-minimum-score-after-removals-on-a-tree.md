@@ -172,6 +172,10 @@ def minimumScore(nums, edges):
 This problem uses **tree dynamic programming and ancestor-descendant relationships** to efficiently simulate removing two edges and partitioning the tree. The core trick is to use a single DFS to preprocess the XOR of all subtrees, then in O(1) time for any pair of edge removals, use entry/exit time to determine overlap, and compute XORs for each component.  
 The coding pattern is a classic **tree DP + interval/ancestor queries**, which is also useful in many cut/partition problems on trees and graphs.
 
+
+### Flashcard
+For each edge pair, split the tree into three parts and compute XOR scores; optimize by leveraging tree structure.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Tree(#tree), Depth-First Search(#depth-first-search)
 

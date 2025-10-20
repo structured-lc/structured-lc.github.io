@@ -86,6 +86,10 @@ def countSymmetricIntegers(low: int, high: int) -> int:
 ### Summary
 This is a typical **brute-force/search and validation** problem, best solved by iterating through the range and checking properties using string operations. It demonstrates handling digit splits and sum logic, a common pattern in number property and combinatorics questions. For larger ranges, digit DP or stateful search may be applied, but for the given constraints, brute force is clear and effective.
 
+
+### Flashcard
+Iterate low to high; skip odd-length numbers; for even-length, check if sum of first half digits equals sum of second half.
+
 ### Tags
 Math(#math), Enumeration(#enumeration)
 

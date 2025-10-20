@@ -124,6 +124,10 @@ def circularArrayLoop(nums):
 ### Summary
 This problem combines cycle detection (Floyd's algorithm) with additional constraints about direction consistency and cycle length. The key insight is using fast and slow pointers while carefully checking direction consistency at each step. The optimization of marking invalid paths ensures we don't waste time on previously explored paths. This pattern appears in many graph traversal problems where you need to detect specific types of cycles or paths with constraints.
 
+
+### Flashcard
+Use fast and slow pointers to detect cycles, ensuring all elements in the cycle have the same direction and length > 1.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers)
 

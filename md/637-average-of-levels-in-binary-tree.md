@@ -121,6 +121,10 @@ def averageOfLevels(root):
 ### Summary
 This problem is a direct application of the BFS (level-order traversal) coding pattern, frequently used when you need to process nodes level by level. The same approach is useful for other "per-level computation" tasks in trees, such as zigzag level order traversal, finding the largest value per level, or counting nodes per depth. The BFS approach is simple, robust for large input, and easy to maintain.
 
+
+### Flashcard
+Use BFS to traverse tree level by level; for each level, compute average by summing node values and dividing by count.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

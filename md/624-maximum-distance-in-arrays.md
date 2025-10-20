@@ -94,6 +94,10 @@ def maxDistance(arrays: List[List[int]]) -> int:
 ### Summary
 This problem uses the **two-pointer** and **greedy** approach, leveraging the array's **sorted** property. You just need to keep track of global min and max across arrays for the largest absolute difference between endpoints from different arrays. The same logic can be applied for a number of "max difference" problems when working with sequences partitioned across sublists.
 
+
+### Flashcard
+Since arrays are sorted, track global min and max across arrays; for each array, compute max difference with min/max from other arrays.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

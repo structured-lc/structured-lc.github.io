@@ -91,6 +91,10 @@ def partitionDisjoint(nums):
 ### Summary
 This approach uses the **prefix/suffix maxima/minima** (array scan with dynamic updating) coding pattern, commonly found in subarray partitioning and range problems. Tightening boundaries dynamically is a good trick when one side must be as small (or large) as possible while maintaining a global property. Can be applied to any "partition with max/min" problem variants.
 
+
+### Flashcard
+Precompute max_left and min_right arrays, then find the smallest i where max_left[i] ≤ min_right[i].
+
 ### Tags
 Array(#array)
 

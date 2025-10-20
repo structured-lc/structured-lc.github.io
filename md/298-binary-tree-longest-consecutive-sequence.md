@@ -114,6 +114,10 @@ class Solution:
 ### Summary
 This approach uses **DFS and parent-tracking**—a classic recursion pattern for tree path property problems. It avoids redundant computation by passing critical state (parent value and running length) during the descent and compares for consecutiveness at each step. This pattern is common in other **tree path-based** questions (max depth, path sum, etc.).
 
+
+### Flashcard
+Single DFS tracking current sequence length; compare each node with parent (if value = parent+1, extend length, else reset to 1), update global max.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

@@ -95,6 +95,10 @@ class NestedIterator:
 ### Summary
 This solution uses the **preprocessing + flatten** pattern via DFS recursion. It trades memory for fast iteration, a common design in iterator implementations when data fits in memory. For interviews, it's clear, easy to reason about, and usually a good starting point. Variants of this pattern appear in problems dealing with list flattening, custom iterators, and tree traversals. For massive or mutating datasets, a stack-based **lazy flattening** (on-demand exploration) is preferable.
 
+
+### Flashcard
+Use a stack to flatten nested lists on-the-fly; only expand deeper when needed for next() or hasNext() calls.
+
 ### Tags
 Stack(#stack), Tree(#tree), Depth-First Search(#depth-first-search), Design(#design), Queue(#queue), Iterator(#iterator)
 

@@ -91,6 +91,10 @@ This solution uses the **hash map** coding pattern—a common technique for mapp
 It’s highly reusable in problems requiring element-to-index (or value-to-location) correspondences, such as “two sum”, “group anagrams”, and similar search tasks.  
 Efficient mapping via hash tables offers both speed and clarity for small and large input sizes.
 
+
+### Flashcard
+Map each value in B to its indices using a hash map, then for each value in A, pop an unused index from the map for O(n) mapping.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

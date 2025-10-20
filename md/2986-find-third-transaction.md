@@ -100,6 +100,10 @@ def find_third_transaction(transactions):
 ### Summary
 This problem highlights the **windowing** pattern, common in both SQL and Python for time-series or sequential record analysis. The key technique is sorting (for sequence), then using a window of fixed size (three transactions) to compare values. Variations of this arise in fraud detection, sales trend analysis, and leaderboard rankings. The solution emphasizes clear grouping, ordering, and fixed-window logic—widely applicable in analytics.
 
+
+### Flashcard
+Use window functions (ROW_NUMBER or RANK) to number each user's transactions by date. Filter for row_number = 3, then check if that transaction's spend exceeds both previous transactions using self-joins or LAG functions.
+
 ### Tags
 Database(#database)
 

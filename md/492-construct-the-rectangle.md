@@ -73,6 +73,10 @@ def constructRectangle(area: int):
 ### Summary
 This approach uses a math/number-theory pattern: start from √n and look for divisors to minimize the difference between the two factors. This is a classic “closest to square root divisor” search, and can be adapted for other problems involving factor pairs with minimal difference or optimal shapes (e.g. distributing items into balanced rows and columns). No extra data structures are needed.
 
+
+### Flashcard
+Start from w = floor(sqrt(area), decrement w; if area % w == 0, return [area // w, w] for minimal difference.
+
 ### Tags
 Math(#math)
 

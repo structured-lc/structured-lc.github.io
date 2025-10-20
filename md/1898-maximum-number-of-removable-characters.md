@@ -101,6 +101,10 @@ def maximumRemovals(s, p, removable):
 ### Summary
 This problem is a classic **binary search on the answer** with an inner helper check for **subsequence matching** using two pointers pattern. It is efficient for large inputs due to O(log k) calls. This pattern (search by answer, check via twin pointer greedy) is common in string manipulation, scheduling, and array-removal type problems.
 
+
+### Flashcard
+Use binary search to find the maximum number of removable characters.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), String(#string), Binary Search(#binary-search)
 

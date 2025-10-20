@@ -112,6 +112,10 @@ def fillMissingValues(products):
 ### Summary
 This is a classic **data cleaning** problem using pandas: *filling missing values in a column*. The solution uses the `fillna` method, which is efficient and highly readable, and is a pattern widely used in data preprocessing for machine learning, data analytics, and ETL pipelines. The concept generalizes well to feature engineering and is frequently relevant in various real-world, production-grade data tasks.
 
+
+### Flashcard
+Use fillna(0) on the 'quantity' column to replace missing values with 0 in a vectorized manner.
+
 ### Tags
 
 ### Similar Problems

@@ -65,6 +65,10 @@ def maxProfit(prices):
 ### Summary
 This is a classic greedy problem: every time there is an increase, we take that profit. The pattern used is “greedy acceptance of local improvements,” common for interval merging, scheduling, and profit-collection problems. This optimal substructure makes this approach both fast and elegant. A variant appears everywhere there’s a need to accumulate “all positive changes,” and it’s a useful trick for array manipulation and financial modeling.
 
+
+### Flashcard
+Sum all positive differences between consecutive days—each upward price move represents a profitable buy-sell opportunity to capture.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

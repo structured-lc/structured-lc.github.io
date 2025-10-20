@@ -82,6 +82,10 @@ class Solution:
 ### Summary
 This is a classic DP on subarrays with circle/adjacency constraints. The major coding pattern is 2-pass DP, similar to House Robber II. This pattern is widely useful for interval select problems, especially with non-adjacent choices and circular structure.
 
+
+### Flashcard
+Use circular DP (House Robber II style): run DP twice, excluding first or last slice, pick max of n non-adjacent slices.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
 

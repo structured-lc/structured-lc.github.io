@@ -86,6 +86,10 @@ def closedIsland(grid):
 ### Summary
 Classical grid DFS/BFS pattern for counting closed islands. The core idea is marking boundary-connected land as unclosed, then counting internal, fully surrounded land regions. This approach generalizes to grid-surrounded region marking and is a variant of "flood fill" problems frequently seen in interviews.
 
+
+### Flashcard
+Use DFS/BFS on each unvisited land cell (0); return 0 if any cell touches the grid boundary, else increment closed island count. Mark all border-connected 0s first to skip them.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
 

@@ -135,6 +135,10 @@ This problem is a classic example of **shortest path on a grid with special edge
 The core coding pattern is **Dijkstra’s algorithm** applied to a dynamic graph structure defined by key positions and special routes.  
 This approach is general and can be applied to other shortest-path problems where movement is cheap and “teleport”/special moves supplement with varying cost.
 
+
+### Flashcard
+Model as a graph with start, target, and special road endpoints as nodes; run Dijkstra to find minimum cost path considering both Manhattan distances and special road shortcuts.
+
 ### Tags
 Array(#array), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
 

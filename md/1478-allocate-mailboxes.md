@@ -75,6 +75,10 @@ def minDistance(houses, k):
 ### Summary
 This problem exemplifies interval DP and precomputation. The key idea is medians minimize sum of absolute deviations, so group calculations by medians and use DP to track minimal overall costs. This approach appears in problems around optimal partitioning, scheduling, and clustering.
 
+
+### Flashcard
+Use DP where dp[i][k] is min total distance for first i houses with k mailboxes; precompute cost for each group as sum of distances to median, and fill dp by trying all splits.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
 

@@ -138,6 +138,10 @@ class FizzBuzz:
 ### Summary
 This problem uses the classic **multi-condition, multi-thread, producer pattern**. The solution applies coordination via a shared state and synchronized condition variables, allowing exactly one appropriate thread to act at each point. This pattern is broadly useful for ordered processing by multiple actors, queue consumers, or thread-driven pipelines with strict sequencing requirements.
 
+
+### Flashcard
+Synchronize threads with a shared counter—each thread prints only when counter matches its condition.
+
 ### Tags
 Concurrency(#concurrency)
 

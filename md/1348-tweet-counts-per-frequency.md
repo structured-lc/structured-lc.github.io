@@ -75,6 +75,10 @@ class TweetCounts:
 ### Summary
 This problem is an application of ordered statistics (binary search on sorted lists) with window aggregation. Core pattern is to keep data sorted for fast interval counting, a classic for log-structured time series problems.
 
+
+### Flashcard
+Store sorted times for each tweet; for each query, binary search window bounds and count tweets per frequency interval.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Binary Search(#binary-search), Design(#design), Sorting(#sorting), Ordered Set(#ordered-set)
 

@@ -75,6 +75,10 @@ def stoneGameII(piles):
             # Next player starts at i + x, new M = max(m, x)
             # Bob will take best from remaining
 
+
+### Flashcard
+Use DP with memoization; for each state (index, M), try all X (1 ≤ X ≤ 2M), recursively maximize stones for current player.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum), Game Theory(#game-theory)
 

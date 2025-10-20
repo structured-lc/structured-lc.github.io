@@ -83,6 +83,10 @@ This is a classic *Unbounded Knapsack* (all-coins-unlimited) dynamic programming
 It’s very similar to the classic subset sum/combinations/count-ways DP, and appears in problems involving monetary change, combinations, or any scenario where an unlimited supply of items must fill a target sum.  
 The core coding pattern (1D DP, filling by outer loop on coins and inner loop on target amount) allows highly efficient, order-insensitive combination counting.
 
+
+### Flashcard
+Use DP where dp[a] is the number of ways to make amount a; for each coin, update dp[a] += dp[a-coin] for all a ≥ coin.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

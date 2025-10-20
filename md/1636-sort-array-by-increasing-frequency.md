@@ -63,6 +63,10 @@ def frequencySort(nums):
 ### Summary
 This problem uses the custom sorting pattern combined with frequency counting. The pattern of custom comparators is frequently found in problems where you sort based on more than value, such as with strings or tuples considering multiple keys. Works well in problems with limited input size and value range.
 
+
+### Flashcard
+Sort an array by frequency and then by value in descending order.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting)
 

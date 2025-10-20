@@ -140,6 +140,10 @@ def strong_friendship(friendships):
 ### Summary
 This problem applies the **hashtable & set intersection** pattern, commonly used for efficiently counting overlaps between user groups or connections in social graphs. The strategy of representing friendships as sets allows quick determination of common connections—an approach used in friend-of-friend recommendations, graph problems, and SQL-style joins. Pattern familiarity in set operations and association mapping can speed up development for social network or graph analytics tasks.
 
+
+### Flashcard
+For each friendship, count common friends by intersecting friend sets; output if ≥3 and user1 < user2.
+
 ### Tags
 Database(#database)
 

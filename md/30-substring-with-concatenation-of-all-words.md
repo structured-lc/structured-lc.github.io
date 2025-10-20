@@ -114,6 +114,10 @@ def findSubstring(s, words):
 ### Summary
 This problem is a classic example of the **sliding window + hash map** pattern, specifically tailored for substring search with fixed-length words. It's commonly encountered in problems involving strings, frequency matching, and substring verification. The core optimization is aligning the sliding window to word boundaries, leveraging hash maps for O(1) lookups, and skipping over irrelevant substrings early. Similar patterns appear in topics like "find all anagrams in a string" or substring search problems.
 
+
+### Flashcard
+Slide a window of total_words × word_length over s, using a hash map to count word frequencies and check if all words are present in any order.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

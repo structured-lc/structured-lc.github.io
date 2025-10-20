@@ -165,6 +165,10 @@ def mostProfitablePath(edges, bob, amount):
 ### Summary
 This problem uses a **tree DFS with time tracking** and a precomputation for rival movement (Bob). The **"label times in tree DFS"** technique is a frequent pattern for problems where competitors/rivals are moving through a graph/tree. This is applicable to pursuit/evader, two-agent grid/tree-based problems, and is a good variant of root-to-leaf DFS with path-specific constraints.
 
+
+### Flashcard
+Precompute Bob's arrival times for all nodes; simulate Alice's path, adjusting income based on who arrives first at each node.
+
 ### Tags
 Array(#array), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
 

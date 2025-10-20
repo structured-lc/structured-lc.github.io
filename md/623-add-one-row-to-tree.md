@@ -147,6 +147,10 @@ def addOneRow(root, val, depth):
 
 This problem uses the **DFS with level tracking** pattern, a common technique for modifying tree structures at certain depths. The key idea is to find all nodes at the level just above where you want to insert new nodes, then splice in new nodes and rewire pointers accordingly. Variations of this pattern appear in various tree manipulation, serialization, or subtree cloning problems. Both recursive and iterative solutions are possible; the core insight is to re-link subtrees correctly to preserve structure.
 
+
+### Flashcard
+Traverse to depth-1, insert new nodes with given value as left/right children, and reattach original subtrees below.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

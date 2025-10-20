@@ -96,6 +96,10 @@ def mincostTickets(days, costs):
 ### Summary
 This problem is a classic example of the **DP on time/intervals** pattern, commonly used for scheduling and cost minimization problems. The key idea is to use DP to store the minimum cost up to each relevant point, and for each step, consider *all options* and choose the optimal one. This pattern appears in problems like coin change, word segmentation, and others dealing with "covering" with the fewest or cheapest resources.
 
+
+### Flashcard
+Use dynamic programming: for each travel day, compute min cost by considering 1, 7, or 30-day pass and memoize results.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

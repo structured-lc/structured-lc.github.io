@@ -101,6 +101,10 @@ def minDifference(nums, queries):
 ### Summary
 This problem uses the prefix sum/count pattern, boosted by a small value domain ([1,100]), enabling efficient per-query access to value frequency. The idea is also related to range queries with small value domains — a pattern appearing in frequency-counting, histogram range queries, and some advanced segment trees.
 
+
+### Flashcard
+For each query, use a frequency array to collect all unique values in the range, then find the minimum absolute difference between consecutive values.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

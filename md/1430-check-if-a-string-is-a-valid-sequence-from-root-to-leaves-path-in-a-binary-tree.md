@@ -76,6 +76,10 @@ class Solution:
 ### Summary
 This is a classic DFS tree + path simulation problem. The logic (walk matching node to array, check at leaf and at correct index) is common for "path matches in tree" or "word search in tree" type interview scenarios.
 
+
+### Flashcard
+Perform a recursive DFS to check if a string matches a root-to-leaf path in a binary tree.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

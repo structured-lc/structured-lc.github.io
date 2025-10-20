@@ -98,6 +98,10 @@ def countDigitOne(n: int) -> int:
 
 This problem uses the **digit-place counting pattern**—a classic interview technique to efficiently count digit appearances without brute force. It's generic and adaptable, for example, to count any digit, solve similar "digit sum" problems, or answer how often a pattern appears in a number range. This technique is often found in digital root, digit DP, and base conversion interview problems.
 
+
+### Flashcard
+For each digit position, count how many times '1' appears by analyzing higher, current, and lower digits; sum across all positions for O(log₁₀n) time.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Recursion(#recursion)
 

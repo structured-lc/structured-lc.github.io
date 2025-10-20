@@ -90,6 +90,10 @@ def maximumOr(nums, k):
 ### Summary
 This approach uses the **prefix-suffix pattern** for array problems: efficiently maintaining cumulative state from left and right. Greedy "all-or-nothing on one index" is optimal here due to OR monotonicity and k being small. This pattern is commonly used in problems involving range-based operations and cumulative statistics (e.g., product or sum excluding the ith element).
 
+
+### Flashcard
+Sort array, then for each index i, compute prefix OR of elements before i and suffix OR after i; try giving all k doublings to nums[i], calculate resulting OR as prefixOR | (nums[i] × 2ᵏ) | suffixOR, track maximum.
+
 ### Tags
 Array(#array), Greedy(#greedy), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
 

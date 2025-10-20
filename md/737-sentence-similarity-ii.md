@@ -120,6 +120,10 @@ def areSentencesSimilarTwo(words1, words2, pairs):
 ### Summary
 This is a classic **Union Find / Disjoint Set** problem and follows the connectivity pattern in graphs. Similar approaches are used in problems involving connected components, equivalence classes, and "friend circles." It's useful in clustering, accounts merging, and many algorithms that revolve around the concept of "are two things in the same group?"
 
+
+### Flashcard
+Build undirected graph from pairs and use Union-Find (or DFS) to group similar words into equivalence classes; verify all positions belong to same class.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find)
 

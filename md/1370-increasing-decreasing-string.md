@@ -89,6 +89,10 @@ def sortString(s: str) -> str:
 ### Summary
 This problem involves simulation and frequency counting. The key pattern is using a fixed-size array to count character frequencies for quick lookup and ordered traversal. This counting method is common in problems requiring grouping or sorting by character, such as anagrams, bucket sort, or character frequency analysis. It shows the power of using the constraints (only lowercase letters) to improve efficiency.
 
+
+### Flashcard
+Use a 26-letter count array; repeatedly append smallest unused letters in order, then largest, until string is built.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

@@ -111,6 +111,10 @@ def spiralMatrix(m, n, head):
 ### Summary
 The approach uses the **spiral matrix traversal** pattern, leveraging pointer boundaries to efficiently fill the matrix in-place from a linked list, handling edge and corner cases with clear boundary checks. This general spiral technique is common in matrix manipulation problems and is broadly useful for both interview coding and situational programming tasks that involve 2D data traversal.
 
+
+### Flashcard
+Fill an m×n matrix in spiral order using four boundaries (top, bottom, left, right), placing linked list values as you traverse each layer.
+
 ### Tags
 Array(#array), Linked List(#linked-list), Matrix(#matrix), Simulation(#simulation)
 

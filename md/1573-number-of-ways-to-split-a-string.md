@@ -70,6 +70,10 @@ def numWays(s):
 ### Summary
 This problem uses prefix sum techniques and combinatorics together. It's a typical pattern for substrings or partitioning strings/arrays, especially when global properties like equal sum or counts must be maintained.
 
+
+### Flashcard
+Count total 1s; if not divisible by 3 return 0; if zero 1s return C(n-1,2); else count positions where prefix sum equals total/3 and 2×total/3, multiply counts.
+
 ### Tags
 Math(#math), String(#string)
 

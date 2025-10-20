@@ -130,6 +130,10 @@ def beautiful_pairs(nums1, nums2):
 ### Summary
 This problem is a classic application of divide and conquer for the Closest Pair of Points problem, adapted for Manhattan (L₁) distance. Hashmap detects duplicates instantly. The geometric approach ensures O(n log n) performance, making it feasible for large datasets. The same divide and conquer pattern appears in computational geometry, where it’s used for minimal pairing and proximity queries.
 
+
+### Flashcard
+If any pair has identical values, return them; else, find the pair with minimal Manhattan distance.
+
 ### Tags
 Array(#array), Math(#math), Divide and Conquer(#divide-and-conquer), Geometry(#geometry), Sorting(#sorting), Ordered Set(#ordered-set)
 

@@ -126,6 +126,10 @@ def find_customer_referee(customers):
 ### Summary
 This problem is a classic example of **filtering based on field criteria**, handling both standard and null values. The core pattern—filtering data with simple logical predicates—is widely applicable in data processing, SQL, and ETL tasks. Mastery of such filters is crucial for scalable, readable solutions in data engineering and backend development.
 
+
+### Flashcard
+Filter customers where referee_id ≠ 2 or referee_id is NULL.
+
 ### Tags
 Database(#database)
 

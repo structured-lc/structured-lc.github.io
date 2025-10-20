@@ -123,6 +123,10 @@ class MagicDictionary:
 
 This problem uses the **Dictionary with One Modification Pattern**, where all one-off wildcard patterns of each dictionary word are precomputed to optimize search. It highlights efficient pattern matching and preprocessing techniques, common in problems like spell-checkers and fuzzy string matching. This approach can be adapted for k-modifications, edit distance, and approximate string matching challenges.
 
+
+### Flashcard
+Store wildcarded patterns for each word; for search, check if any pattern matches a dictionary word differing by exactly one character.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Depth-First Search(#depth-first-search), Design(#design), Trie(#trie)
 

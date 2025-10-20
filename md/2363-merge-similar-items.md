@@ -83,6 +83,10 @@ It’s a classic instance of merging/aggregating items by key, which is common i
 If the value range is small and dense, a counting array is fastest; otherwise, dictionaries (maps) generalize to wider input domains.  
 The coding pattern is highly reusable for aggregating properties by identifier.
 
+
+### Flashcard
+Use a hash map to accumulate weights for each value across both lists, then convert to sorted list of [value, total_weight] pairs.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting), Ordered Set(#ordered-set)
 

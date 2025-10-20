@@ -112,6 +112,10 @@ This is a classic use of **bitmasking for subset search**, leveraging exhaustive
 The pattern—try all settings and check if each satisfies complex logical constraints—is common for "maximum consistent group/assignment" problems with restriction that makes brute-force feasible.  
 This method also appears in logic puzzles and scenarios where all interactions between agents must be reconciled.
 
+
+### Flashcard
+Enumerate all 2ⁿ possible good/bad assignments, validate each by ensuring every "good" person’s statements are consistent, and track the maximum number of "good" people.
+
 ### Tags
 Array(#array), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Enumeration(#enumeration)
 

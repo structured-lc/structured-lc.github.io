@@ -101,6 +101,10 @@ class KthLargest:
 This problem is a classic example of the **Heap (Priority Queue) pattern**, where you maintain a fixed-size min-heap to track k largest elements in a dynamic stream.  
 The approach is very efficient and broadly applicable, such as in finding top-k elements in logs, leaderboard systems, or real-time analytics.
 
+
+### Flashcard
+Use a min-heap of size k to keep the k largest elements; the heap's top is always the kᵗʰ largest after each add(val).
+
 ### Tags
 Tree(#tree), Design(#design), Binary Search Tree(#binary-search-tree), Heap (Priority Queue)(#heap-priority-queue), Binary Tree(#binary-tree), Data Stream(#data-stream)
 

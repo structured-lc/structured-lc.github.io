@@ -122,6 +122,10 @@ This problem demonstrates the power of bitmask dynamic programming for subset pa
 The core pattern is **combinatorial subset DP** (classic in problems like traveling salesman, partitioning, and set cover).  
 The DP with bitmask is a high-leverage tool for medium-sized n (10 ≤ n ≤ 20). Similar patterns can be used for problems that require grouping or partitioning items with subset constraints.
 
+
+### Flashcard
+Use bitmask DP where f[mask] is the minimum sessions needed for tasks in mask; try all submasks that fit in a session.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

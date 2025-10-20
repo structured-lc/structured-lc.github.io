@@ -93,6 +93,10 @@ def maximumTastiness(price, k):
 ### Summary
 This problem uses a **binary search on the answer** pattern, combined with a greedy check for feasibility at each step. This is common in problems where you want to maximize or minimize some minimum or maximum value under selection constraints — such as aggressive cows (minimum distance among k items), split array variants, or distributing objects with separation requirements. The core pattern (sort, greedy check, binary search on answer) is widely reusable for candy distribution, aggressive placements, and packing type problems.
 
+
+### Flashcard
+Binary search on tastiness value; for each candidate, greedily select k prices from sorted array maintaining minimum gap ≥ candidate.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
 

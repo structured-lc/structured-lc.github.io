@@ -123,6 +123,10 @@ def buildTree(inorder, postorder):
 ### Summary
 This problem is a textbook example of **tree reconstruction from traversal orders**, specifically combining **inorder** with **postorder**. The key insight is that postorder's last node is always the root, and inorder naturally partitions subtrees. Mapping values to indices and careful index handling avoid inefficiency. This recursive D&C pattern, and hashmap optimization, is widely applicable in other tree construction or subtree identification problems.
 
+
+### Flashcard
+Use hashmap for inorder indices, process postorder from right to left (build right subtree first), and partition inorder by indices to avoid O(n²) array copying.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Divide and Conquer(#divide-and-conquer), Tree(#tree), Binary Tree(#binary-tree)
 

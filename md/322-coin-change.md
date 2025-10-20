@@ -85,6 +85,10 @@ This problem is a classic **Dynamic Programming (DP) – unbounded knapsack** va
 - This technique applies to other minimum/maximum path sum or coin combination problems.  
 - If you need the list of coins, you can backtrack from the DP array using a "parent" pointer array.
 
+
+### Flashcard
+Apply dynamic programming to find the minimum number of coins needed to reach a target amount.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Breadth-First Search(#breadth-first-search)
 

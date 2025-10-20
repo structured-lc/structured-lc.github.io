@@ -170,6 +170,10 @@ class Trie:
 ### Summary
 This problem is a classic application of the Trie (prefix tree) data structure, which is highly effective for prefix and whole-word counting operations and enables fast insert/search/delete for strings. This structure is widely used in autocomplete, word dictionaries, and search engines. The pattern of maintaining per-node prefix and end counters is also applicable to other variants like pattern-matching tries.
 
+
+### Flashcard
+Trie node stores end_count (words ending here) and prefix_count (words passing through); update both counts on insert/erase for O(L) operations.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Design(#design), Trie(#trie)
 

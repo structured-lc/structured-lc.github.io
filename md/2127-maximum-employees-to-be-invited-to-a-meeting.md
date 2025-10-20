@@ -121,6 +121,10 @@ def maximumInvitations(favorite):
 ### Summary
 This problem uses advanced **graph theory and DFS/topological sorting** to reduce the solution to cycle and chain detection. The core pattern is "detecting cycles in directed graphs, and maximizing the sum of non-overlapping structures". This is a reusable technique in scheduling, seating, and dependency resolution problems where constraints have a cyclic or chain-based nature.
 
+
+### Flashcard
+Model as directed graph where each employee points to favorite; valid arrangements are cycles, so find all cycles and calculate maximum total arrangement size respecting adjacency constraints.
+
 ### Tags
 Depth-First Search(#depth-first-search), Graph(#graph), Topological Sort(#topological-sort)
 

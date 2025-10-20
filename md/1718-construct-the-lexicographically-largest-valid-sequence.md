@@ -134,6 +134,10 @@ This problem is a **backtracking with greedy choice** pattern—always try to pl
 It's an example of constraint-satisfaction search and "construct the lexicographically largest element" questions.  
 The template can be applied to similar puzzles involving placing items with spacing/distance constraints, or constructing max/min lexicographical orderings under rules.
 
+
+### Flashcard
+Use backtracking, always placing the largest available number first at each step to maximize lex order—enforce placement constraints.
+
 ### Tags
 Array(#array), Backtracking(#backtracking)
 

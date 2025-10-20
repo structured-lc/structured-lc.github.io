@@ -101,6 +101,10 @@ Both focus on validating that every prefix of a candidate exists; this is a clas
 Similar logic applies in problems like 'Longest Word in Dictionary' and 'Buildable Words'.  
 The key insight is that you can reduce redundant checks by ordering the search or utilizing fast lookup structures for prefix validation.
 
+
+### Flashcard
+Check if all prefixes of a word exist in a set, optimizing the search for the longest word with all prefixes.
+
 ### Tags
 Array(#array), String(#string), Depth-First Search(#depth-first-search), Trie(#trie)
 

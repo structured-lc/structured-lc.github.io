@@ -86,6 +86,10 @@ def maxDistance(colors):
 ### Summary
 This problem is a classic **two-pointer/edge scan** technique, optimized to O(n) by leveraging the property that maximal distances in a linear array always involve the ends. Recognizing this pattern allows avoiding brute-force O(n²) checks and is commonly used in interview problems involving ranges or subsequence boundaries. This strategy applies in problems like "find max/min subarrays with constraints," or "largest gap under a property" in a 1D array.
 
+
+### Flashcard
+The answer is max(|i-j|) where colors[i] ≠ colors[j]; check both ends for the furthest house with a different color.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

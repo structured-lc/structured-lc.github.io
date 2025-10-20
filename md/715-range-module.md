@@ -161,6 +161,10 @@ class RangeModule:
 ### Summary
 This problem uses the **interval merging pattern**, maintaining a sorted list of intervals and modifying/removing efficiently. It's a classic approach for **range manipulation**, overlap problems, memory segments, and is commonly seen in interval scheduling and sweep line algorithms.
 
+
+### Flashcard
+Store non-overlapping intervals in a sorted list; use binary search to add, remove, or query ranges efficiently.
+
 ### Tags
 Design(#design), Segment Tree(#segment-tree), Ordered Set(#ordered-set)
 

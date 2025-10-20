@@ -125,6 +125,10 @@ def canIWin(maxChoosableInteger, desiredTotal):
 ### Summary
 This problem exemplifies classic game theory using minimax with memoization. The key insights are representing game state efficiently (bitmask), recognizing that optimal play means choosing moves that put opponents in losing positions, and using memoization to avoid redundant calculations. This pattern appears in many two-player games and competitive scenarios where you need to determine optimal strategies assuming both players play perfectly.
 
+
+### Flashcard
+Use recursion with memoization and bitmasking to represent used numbers; a player can win if any move puts the opponent in a losing state.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Memoization(#memoization), Game Theory(#game-theory), Bitmask(#bitmask)
 

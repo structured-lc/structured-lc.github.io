@@ -105,6 +105,10 @@ def minInteger(num: str, k: int) -> str:
 ### Summary
 This problem is a good illustration of the **greedy pattern** paired with an efficient data structure (Fenwick Tree) to keep certain queries fast. The greedy decision picks the smallest digit available within reach and moves it to its ideal place, gradually building up the minimal number.
 
+
+### Flashcard
+Minimize the integer value by greedily swapping digits within a limited number of swaps, using a Binary Indexed Tree for efficient tracking.
+
 ### Tags
 String(#string), Greedy(#greedy), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
 

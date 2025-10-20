@@ -89,6 +89,10 @@ def countSeniors(details):
 ### Summary
 This approach demonstrates the **array traversal and string parsing pattern**, often used when data is encoded in a uniform way. It’s a straightforward pass-through with substring access, which can be applied to similar fixed-format parsing problems (e.g., reading logs, simple file formats, or any record-based processing). No extra structures or optimization is needed due to the simplicity and constraints of the task.
 
+
+### Flashcard
+Extract age substring from positions 11–12 for each passenger string, convert to integer, count how many exceed 60.
+
 ### Tags
 Array(#array), String(#string)
 

@@ -110,6 +110,10 @@ def can_make_palindrome(s, queries):
 The solution uses the classic **palindrome permutation** check with prefix **bitmask for parity** of character counts, a smart use of bitwise manipulation for O(1) substring checks.  
 This technique is common in palindrome substring, even/odd count tracking, and fast range queries; it's broadly applicable to problems involving parity or subset frequency queries.
 
+
+### Flashcard
+Precompute prefix frequency arrays for characters a-z. For each query's two substrings, extract character counts in O(1) and check if both can form palindromes (≤1 character with odd count each) using frequency comparison.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Prefix Sum(#prefix-sum)
 

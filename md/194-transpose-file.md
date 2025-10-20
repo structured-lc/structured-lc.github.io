@@ -130,6 +130,10 @@ This approach uses the common “matrix transpose” pattern—collect items col
 Applicable to CSV parsing, spreadsheet operations, and other table processing problems.  
 The coding pattern is standard for 2D array manipulation and is a good demonstration of scan-and-aggregate logic.
 
+
+### Flashcard
+Read file into a matrix, then output columns by collecting iᵗʰ element from each row for all columns.
+
 ### Tags
 Shell(#shell)
 

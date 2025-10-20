@@ -216,6 +216,10 @@ def isOneCharDiff(gene1, gene2):
 ### Summary
 This problem is a classic application of BFS for finding shortest paths in unweighted graphs. The key insights are recognizing it as a graph problem where valid gene strings are nodes connected by single-character mutations, and using BFS to guarantee the minimum number of mutations. The solution demonstrates how string manipulation problems can often be transformed into graph traversal problems, and showcases the power of BFS for shortest path problems in unweighted scenarios.
 
+
+### Flashcard
+Find shortest mutation path with BFS on gene graph—nodes differ by one char, edges connect valid mutations.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Breadth-First Search(#breadth-first-search)
 

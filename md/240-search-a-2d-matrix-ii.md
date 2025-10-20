@@ -85,6 +85,10 @@ def searchMatrix(matrix, target):
 ### Summary
 This is a classic "2D matrix search with sorted rows and columns" problem, leveraging the fact that both dimensions are sorted. The efficient O(m+n) solution relies on greedy elimination from a matrix corner (top-right or bottom-left). This diagonal reduction strategy can also be applied to problems involving row/column sorted matrices, range queries in sorted 2D data, and certain pathfinding scenarios on monotonic grids.
 
+
+### Flashcard
+Start from top-right; move left if current > target, move down if current < target, repeat until found or out of bounds.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer), Matrix(#matrix)
 

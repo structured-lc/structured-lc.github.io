@@ -103,6 +103,10 @@ def beautySum(s: str) -> int:
 ### Summary
 We use an **O(n²)** approach by expanding every substring and maintaining char frequencies per window, then calculating max and min freq in O(1) since the alphabet size is constant (English lowercase letters). This is a classic substring / two-pointer pattern with static window stats—patterns like these appear whenever per-substring statistics are required and counting all substrings is feasible (n ≲ 1000).
 
+
+### Flashcard
+Optimize by expanding substrings from a fixed starting point, updating character counts to efficiently calculate the beauty of all substrings.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

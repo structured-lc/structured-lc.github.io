@@ -84,6 +84,10 @@ ORDER BY year, month;
 ### Summary
 Classic SQL reporting aggregation with grouping and distinct counts, applicable to many transaction summary/analytics problems.
 
+
+### Flashcard
+SQL aggregation grouping by EXTRACT(YEAR/MONTH FROM OrderDate); count distinct CustomerID and OrderID per group.
+
 ### Tags
 Database(#database)
 

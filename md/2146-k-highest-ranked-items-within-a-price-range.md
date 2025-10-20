@@ -132,6 +132,10 @@ def highestRankedKItems(grid, pricing, start, k):
 ### Summary
 This problem is a classic BFS + multi-key sorting application, common for pathfinding with tie-breaker ranking conditions. BFS is preferred because it ensures shortest paths (so distance is always minimal), and sorting is needed for tie-breaking beyond distance. This coding pattern (BFS for minimum distance; sorting for custom ranking) shows up in variant grid-based ranking/search problems, e.g., shortest path with priorities or nearest resource by multiple rules.
 
+
+### Flashcard
+BFS from start, collect all reachable items with valid price; sort by (distance, price, row, col) and return first k.
+
 ### Tags
 Array(#array), Breadth-First Search(#breadth-first-search), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
 

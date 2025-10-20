@@ -111,6 +111,10 @@ def arrangeCoinsMath(n):
 ### Summary
 This problem demonstrates multiple solution approaches to the same mathematical problem. The key insight is recognizing the triangular number pattern and choosing the most appropriate method based on constraints. The mathematical approach shows how algebraic manipulation can lead to O(1) solutions, while binary search provides a more general framework that works even when closed-form solutions aren't available.
 
+
+### Flashcard
+Solve k(k+1)/2 ≤ n for k using binary search or quadratic formula to find max complete rows of coins.
+
 ### Tags
 Math(#math), Binary Search(#binary-search)
 

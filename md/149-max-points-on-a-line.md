@@ -119,6 +119,10 @@ def maxPoints(points):
 ### Summary
 We leveraged the "group-by-slope-from-each-anchor" technique—a common hash map pattern to avoid unnecessary recomputation and to efficiently count groupings. This pattern applies in various 2D geometry problems, like collinear groups or finding clusters/shapes by relation. The core trick: represent relations (like slopes) in a normalized, comparable way to count fast.
 
+
+### Flashcard
+For each point, compute slopes to all others and count occurrences; the max count for any slope from a point gives the answer.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Geometry(#geometry)
 

@@ -90,6 +90,10 @@ def searchMatrix(matrix, target):
 ### Summary
 This approach uses the **binary search** coding pattern, taking advantage of the matrix’s sorted "flattened" property. It’s a classic example of reducing the search space by recognizing sorted sequence patterns, and is commonly applicable in variations of matrix and grid search problems. Other matrix search questions (like "Search a 2D Matrix II") rely on similar observations about sorting within rows or columns.
 
+
+### Flashcard
+Treat matrix as sorted 1D array; use binary search and map index to (row, col) to check target.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Matrix(#matrix)
 

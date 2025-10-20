@@ -104,6 +104,10 @@ def suggestedProducts(products, searchWord):
 The problem is primarily a **prefix search** problem. The most interview-friendly and efficient solution is: **Sort the product list** and, for each prefix, use **binary search** to find the first candidate, then add up to 3 lexically smallest matches. The approach is efficient, simple, and leverages classic search patterns. This same pattern is applicable to auto-complete widgets, command suggestion tools, or anywhere prefix lookups are required.  
 The **Trie** method generalizes better for frequent dynamic operations or bulk prefix searches.
 
+
+### Flashcard
+Sort products, then for each prefix of searchWord, use binary search to find matching products and return up to 3 lex smallest.
+
 ### Tags
 Array(#array), String(#string), Binary Search(#binary-search), Trie(#trie), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

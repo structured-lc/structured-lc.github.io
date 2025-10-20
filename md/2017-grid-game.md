@@ -110,6 +110,10 @@ def gridGame(grid):
 ### Summary
 This problem is a classic "minimax with prefix sums" grid variant. The insight is that, due to movement constraints, Robot 1's only real choice is where to drop down. By precomputing prefix sums, we convert a potentially exponential simulation into a linear-time sweep. The prefix sum trick for interval queries is a key reusable pattern for 1D grid problems and path-planning with exclusive access.
 
+
+### Flashcard
+Optimize the grid game by focusing on Robot 1's column choice and simulating Robot 2's best response.
+
 ### Tags
 Array(#array), Matrix(#matrix), Prefix Sum(#prefix-sum)
 

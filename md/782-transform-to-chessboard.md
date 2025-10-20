@@ -121,6 +121,10 @@ This approach appears in problems involving board normalization or grid state tr
 It uses bit manipulation, pattern matching, and minimal swap counting.  
 Efficient in time and space, avoids combinatorial explosion by leveraging board properties.
 
+
+### Flashcard
+Check that all rows and columns are either one template or its complement; count swaps needed to alternate, and if impossible, return -1.
+
 ### Tags
 Array(#array), Math(#math), Bit Manipulation(#bit-manipulation), Matrix(#matrix)
 

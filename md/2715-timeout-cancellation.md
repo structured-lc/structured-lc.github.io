@@ -96,6 +96,10 @@ def cancellable(fn, args, t):
 ### Summary
 This is a classic use of closures to encapsulate a reference to a timer, making it possible to cancel scheduled asynchronous work. The pattern appears frequently in user interfaces (debounced actions, delayed notifications) and is foundational to event-driven programming.
 
+
+### Flashcard
+Use setTimeout to schedule fn, return a cancel function that calls clearTimeout to prevent execution.
+
 ### Tags
 
 ### Similar Problems

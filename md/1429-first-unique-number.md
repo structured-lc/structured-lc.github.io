@@ -87,6 +87,10 @@ class FirstUnique:
 ### Summary
 This uses the classic "first unique" or queue + hash map pattern: efficient adding, frequency checking, and order tracking with Counter and queue. Similar logic can be used in LRU cache, streaming data uniqueness, and "first non-repeating character" types of problems.
 
+
+### Flashcard
+Use a counter and an ordered data structure to track unique elements and find the first unique number in the queue.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Design(#design), Queue(#queue), Data Stream(#data-stream)
 

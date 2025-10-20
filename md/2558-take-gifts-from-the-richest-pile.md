@@ -107,6 +107,10 @@ def pickGifts(gifts, k):
 ### Summary
 This problem is a classic example of *priority queue* optimization, specifically using a max-heap for greedy extraction and update of the maximum element. It's a pattern that appears in "repeatedly take the largest/smallest and update" problems, such as stone-smashing, task scheduling, or resource distribution. Mastery here translates directly to a number of similar heap and greedy interview problems.
 
+
+### Flashcard
+Use a max-heap to always pick the richest pile, take its square root, and repeat k times for optimal speed.
+
 ### Tags
 Array(#array), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation)
 

@@ -104,6 +104,10 @@ def getPermutation(n, k):
 This problem is a classic application of the factorial number system, leveraging combinatorics to find the kᵗʰ permutation directly without generating all possible sequences.  
 The coding pattern is “construct the answer one digit at a time based on counting”, and this idea is applicable for combinatorial ranking/unranking, such as Sudoku generation, serialization of orderings, and direct index access in large permutation sets.
 
+
+### Flashcard
+Build the kᵗʰ permutation by selecting digits using (n–1)! blocks to determine each position, removing used digits as you go.
+
 ### Tags
 Math(#math), Recursion(#recursion)
 

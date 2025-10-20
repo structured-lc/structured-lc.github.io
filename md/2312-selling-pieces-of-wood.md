@@ -95,6 +95,10 @@ def sellingWood(m, n, prices):
 ### Summary
 This problem exemplifies the "interval DP" technique where subproblems depend on all possible partitions (cuts) of a rectangle. The idea generalizes to questions like "matrix chain multiplication" and "stick cutting". Here, DP exploits overlapping subproblems and optimal substructure, leading to a substantial speedup over naïve recursion. It’s a classic divide-and-conquer DP extended to 2D with price constraints and can be applied to various resource-splitting maximization problems.
 
+
+### Flashcard
+Use DP/memoization to maximize profit by considering all possible horizontal and vertical cuts for each sub-rectangle.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Memoization(#memoization)
 

@@ -105,6 +105,10 @@ def recyclable_and_low_fat_products(products):
 ### Summary
 This problem is a straightforward example of **filtering rows based on multiple conditions**, applicable in almost any scenario where multiple boolean attributes dictate selection. The coding pattern is a standard database selection with `AND` filters, also mirrored in Python with simple list/dictionary iteration. This pattern is common in CRUD applications, data reporting, and anything involving attribute-based filtering.
 
+
+### Flashcard
+Filter rows where both low_fats and recyclable are 'Y'—simple SQL WHERE clause suffices.
+
 ### Tags
 Database(#database)
 

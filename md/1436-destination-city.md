@@ -60,6 +60,10 @@ def destCity(paths):
 ### Summary
 This uses a hash set for quick membership lookup — a classic set difference task, common for graph endpoint detection and unique elements in lists.
 
+
+### Flashcard
+Collect all source cities in a set, then return the destination city that never appears as a source.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string)
 

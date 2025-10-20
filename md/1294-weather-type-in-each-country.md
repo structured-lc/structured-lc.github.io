@@ -85,6 +85,10 @@ FROM Weather;
 ### Summary
 This is a classic SQL question testing basic familiarity with the DISTINCT keyword to obtain unique row pairs. Such patterns are widely used in SQL for deduplication and relationship extraction tasks.
 
+
+### Flashcard
+Use SQL's DISTINCT keyword to select unique combinations of Country and WeatherType.
+
 ### Tags
 Database(#database)
 

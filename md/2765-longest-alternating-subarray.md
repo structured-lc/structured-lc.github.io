@@ -96,6 +96,10 @@ This problem uses a sliding window/two-pointer scan to efficiently find the long
 The main insight is that the alternation pattern constraint allows you to validate possible windows in one forward pass.  
 This "pattern detection" approach appears in problems like substring with alternating parity, or maximum-length wiggle subarrays.
 
+
+### Flashcard
+For each index where nums[i+1] - nums[i] = +1, extend right while differences alternate between +1 and -1.
+
 ### Tags
 Array(#array), Enumeration(#enumeration)
 

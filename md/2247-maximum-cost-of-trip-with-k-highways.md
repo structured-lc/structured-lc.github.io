@@ -144,6 +144,10 @@ This problem is a textbook example of **bitmask DP on graphs** to enumerate all 
 It appears in variants of the "travel salesman" and "exact path" problems, which frequently show up in interviews when n is small (≤20).  
 Core patterns: State compression, dynamic programming with mask, k-length path search in undirected graphs.
 
+
+### Flashcard
+Use dynamic programming with bitmask to track visited cities and maximize cost over exactly k edges.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Graph(#graph), Bitmask(#bitmask)
 

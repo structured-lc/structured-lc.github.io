@@ -109,6 +109,10 @@ def dropDuplicateEmails(customers: pd.DataFrame) -> pd.DataFrame:
 ### Summary
 The approach leverages pandas' built-in `drop_duplicates` method, a common data-cleaning pattern for deduplication. This is highly efficient, readable, and standard for DataFrame operations in Python. The pattern recurs in many data preprocessing tasks in industry, especially when preparing datasets for machine learning, analytics, or reporting.
 
+
+### Flashcard
+Use drop_duplicates(subset='email', keep='first') to remove duplicate rows based on the 'email' column.
+
 ### Tags
 
 ### Similar Problems

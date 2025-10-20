@@ -103,6 +103,10 @@ def findOriginalArray(changed):
 This problem is a great example of the "hash map counting" or "greedy map pairing" pattern commonly seen in array reconstruction and frequency validation questions.  
 Sorting before pairing is a key insight to avoid premature matches. The same approach appears in problems involving pairs, doubles, or triplets in sorted or frequency-based arrays.
 
+
+### Flashcard
+Reconstruct the original array from a doubled array by ensuring each number and its double are present. If the doubled array's length is odd, return an empty array.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Greedy(#greedy), Sorting(#sorting)
 

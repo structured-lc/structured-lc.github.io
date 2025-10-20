@@ -141,6 +141,10 @@ This is a common pattern useful for questions involving level-wise processing, s
 The space and time efficiency make it suitable even for large trees, given memory is sufficient for the tree’s width.  
 Can also be solved (slightly less directly) by **DFS** with recursion and a list/array to track sums at each depth.
 
+
+### Flashcard
+Use BFS (level-order traversal) to compute the sum of node values at each tree level and return the level with the maximum sum.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

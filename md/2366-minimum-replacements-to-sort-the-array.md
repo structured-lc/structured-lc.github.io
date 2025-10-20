@@ -101,6 +101,10 @@ def minimumReplacement(nums):
 ### Summary
 This problem uses a **greedy right-to-left scan with math for optimal splitting**, a classic pattern for "make array satisfy a property with minimum local changes" type problems. Similar greedy approaches apply to "min operations to strictly increase/decrease, split/merge arrays for constraints, etc." and other array transformation questions where moves are localized and options must be minimized.
 
+
+### Flashcard
+Iterate backwards; for each nums[i] > nums[i+1], split nums[i] into ⌈nums[i]/nums[i+1]⌉ parts minimizing splits while keeping all parts ≤ nums[i+1].
+
 ### Tags
 Array(#array), Math(#math), Greedy(#greedy)
 

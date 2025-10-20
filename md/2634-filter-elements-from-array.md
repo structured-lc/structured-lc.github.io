@@ -71,6 +71,10 @@ def filter(arr, fn):
 ### Summary
 This problem exemplifies the **manual array filter pattern**—iterating and conditionally collecting items—which is fundamental in both imperative and functional programming. It’s a direct application of array traversal, and the exact logic generalizes to many contexts: stream processing, in-place partitioning, and lazy evaluation in generators. Problems involving selection or predicate-based filtering will build on this pattern.
 
+
+### Flashcard
+Filter array elements by applying a given function to each element and including it in the result if the function returns true.
+
 ### Tags
 
 ### Similar Problems

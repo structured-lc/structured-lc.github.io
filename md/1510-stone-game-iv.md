@@ -67,6 +67,10 @@ def winnerSquareGame(n: int) -> bool:
 ### Summary
 This problem uses classical DP patterns in combinatorial game theory. Knowing if a state is 'winning' or 'losing' for the first player is key—DP encodes the answer for every state. This approach works for a large class of games (e.g., Nim, coin games) and is a foundational competitive programming and interview pattern.
 
+
+### Flashcard
+Solve the Stone Game IV using dynamic programming to determine winning states based on the number of stones left.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Game Theory(#game-theory)
 

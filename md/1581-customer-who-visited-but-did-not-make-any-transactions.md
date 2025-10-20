@@ -55,6 +55,10 @@ def find_customers_without_transaction(visits, transactions):
 ### Summary
 This problem uses anti-join logic and is a classic example of data filtering with exclusion (LEFT JOIN/NOT IN). Mastering such queries is essential for data analytics, SQL interviews, and backend coding patterns.
 
+
+### Flashcard
+Find customers with visits not in Transactions using anti-join (LEFT JOIN, NOT IN, or NOT EXISTS); deduplicate and sort results.
+
 ### Tags
 Database(#database)
 

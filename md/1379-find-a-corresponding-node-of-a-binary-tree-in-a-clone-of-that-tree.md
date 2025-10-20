@@ -107,6 +107,10 @@ def getTargetCopy(original, cloned, target):
 ### Summary
 This problem uses the **tree traversal (DFS/BFS)** coding pattern. You traverse both trees in lockstep and match by pointer to the target. The pattern appears in tree comparison, cloning, structural synchrony, and more. The pointer-based comparison is critical when values may be duplicated.
 
+
+### Flashcard
+Traverse both original and cloned trees in sync; when original node matches target, return the corresponding cloned node—structure, not value, matters.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

@@ -102,6 +102,10 @@ This problem is a perfect illustration of the **two-pointer** pattern on sorted 
 By leveraging the sorted and disjoint properties of each interval list, we avoid unnecessary comparisons and maintain linear time complexity.  
 This two-pointer technique frequently appears in problems related to interval merging, timeline sweeps, and array traversals—widely used in scheduling, event processing, or when merging sorted datasets.
 
+
+### Flashcard
+Use two pointers to scan both sorted interval lists; at each step, add intersection if intervals overlap, then advance pointer with smaller endpoint.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Line Sweep(#line-sweep)
 

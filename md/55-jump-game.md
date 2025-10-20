@@ -74,6 +74,10 @@ def canJump(nums):
 ### Summary  
 This problem is a classic example of the **Greedy algorithm** pattern. The approach centers on iteratively tracking the furthest reachable index and making decisions based only on this value, discarding any need to keep history. The greedy solution ensures optimal time (O(n)) and is often used for "reachability" or "cover" type tasks, such as "Jump Game II," "minimum number of platforms," and "candy distribution" problems.
 
+
+### Flashcard
+Greedily track the furthest reachable index as you iterate; if you reach or pass the last index, return True, else False.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

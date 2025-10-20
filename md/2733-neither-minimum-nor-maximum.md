@@ -81,6 +81,10 @@ def findNonMinOrMax(nums):
 This question tests basic **array traversal and element filtering** logic. The core pattern is simple linear search with filtering conditions.  
 It’s a foundational type of question that comes up whenever you must exclude certain boundary values from consideration, which is a common constraint filtering pattern in coding interviews.
 
+
+### Flashcard
+If array has <3 elements, return -1; else, find any element that is neither min nor max—can be done in one pass.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

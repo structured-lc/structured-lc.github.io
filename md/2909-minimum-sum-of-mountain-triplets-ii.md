@@ -103,6 +103,10 @@ def minimumSum(nums):
 ### Summary
 This is a classic example of an array "pre-processing + forward scan" pattern: you precompute a running min/max (for subarrays left and right of each position), then efficiently answer per-position queries in O(1) based on this auxiliary structure. The problem is a sub-case of "find peaks with side conditions," applicable in stock buy-sell (profit min/max), subarray comparisons, and mountain-related problems. Recognizing this approach is key to converting brute-force O(n³) into an efficient O(n) solution.
 
+
+### Flashcard
+Precompute for each j the minimal nums[i] < nums[j] to the left and minimal nums[k] < nums[j] to the right; use these to efficiently find minimum mountain triplet sum.
+
 ### Tags
 Array(#array)
 

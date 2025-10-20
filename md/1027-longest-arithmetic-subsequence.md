@@ -88,6 +88,10 @@ This problem uses the **dynamic programming with hashmap/memoization** pattern, 
 It's a classic **DP on subsequences** problem, similar to Longest Increasing Subsequence (LIS), but generalized to arbitrary difference rather than one specific gap.  
 This approach is found in problems involving counting/length-finding on sequences with varying relationships and is widely applicable whenever the state depends on both index and a "feature" (like difference, ratio, etc).
 
+
+### Flashcard
+For each index, use a hash map to store the length of the longest arithmetic subsequence ending there for every possible difference.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming)
 

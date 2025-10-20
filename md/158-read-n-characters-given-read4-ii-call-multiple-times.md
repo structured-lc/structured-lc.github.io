@@ -124,6 +124,10 @@ This problem is a classic stateful buffer management question—handle *leftover
 Key pattern: **internal buffering** with pointers/state, often used in file/stream operations. The same idea is useful in implementing input/output streams, sockets, chunked network reads, and other APIs where "partial reads" can happen.  
 Common in parsing, streaming, and producer-consumer designs.
 
+
+### Flashcard
+Use an internal buffer to store leftover chars from read4 between calls, ensuring no data is lost across multiple reads.
+
 ### Tags
 Array(#array), Simulation(#simulation), Interactive(#interactive)
 

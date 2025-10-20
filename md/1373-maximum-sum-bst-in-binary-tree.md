@@ -125,6 +125,10 @@ def maxSumBST(root: TreeNode) -> int:
 ### Summary
 The post-order traversal plus tuple return pattern is common for subtree-aggregating problems. At each node, you check its children's info, and "bubble up" constraints (like BST or not, range, sum) efficiently. You see similar approaches in validation (isBST), diameter, or bottom-up sum/height tree problems.
 
+
+### Flashcard
+Post-order traverse; at each node, check if subtree is BST and sum values, track max BST sum found.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

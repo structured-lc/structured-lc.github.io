@@ -150,6 +150,10 @@ def checkMove(board, rMove, cMove, color):
 This problem is a classic *simulation on a constant-sized grid*, leveraging direction vectors and careful step-by-step checks.  
 The pattern used—directional grid traversal with early pruning—is common in board game logic (like Othello/Reversi), and can be applied in any such 2D "scan in directions" problem (e.g., word search, connect-4, path-finding with local constraints). The brute-force is justified by the small, fixed grid size.
 
+
+### Flashcard
+From the placed cell, check all 8 directions: must have ≥1 opposite-color cell followed by a same-color endpoint with no gaps or empty cells in between.
+
 ### Tags
 Array(#array), Matrix(#matrix), Enumeration(#enumeration)
 

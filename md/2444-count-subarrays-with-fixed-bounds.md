@@ -114,6 +114,10 @@ This is a classic **sliding window with index tracking** pattern.
 By maintaining the position of the last occurrence of `minK`, `maxK`, and the last invalid element, we can efficiently count all valid subarrays in one pass, O(n), with O(1) space.  
 A similar logic is often used for "count occurrences of a target with constraints" problems, and knowing how to derive sliding window endpoints using index math is valuable in subarray counting problems.
 
+
+### Flashcard
+Track last positions of minK, maxK, and last invalid element. For each index, count subarrays ending there using these positions in O(n).
+
 ### Tags
 Array(#array), Queue(#queue), Sliding Window(#sliding-window), Monotonic Queue(#monotonic-queue)
 

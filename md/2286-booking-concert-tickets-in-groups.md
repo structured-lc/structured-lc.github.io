@@ -153,6 +153,10 @@ This problem combines priority allocation, interval queries, and state updatesâ€
 Our approach simulates booking row by row with O(n) per query, a solid baseline. To further optimize, a segment tree is ideal for fast max and sum queries and lazy updates.  
 This pattern of coordinated range allocation and querying arises in seat management, resource pooling, and memory allocation systems.
 
+
+### Flashcard
+Use a segment tree or similar to track available seats per row, always allocating from lowest rows/seats first.
+
 ### Tags
 Binary Search(#binary-search), Design(#design), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
 

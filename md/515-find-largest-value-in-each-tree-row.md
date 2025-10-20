@@ -134,6 +134,10 @@ Pattern applies to:
 - Tree zigzag or spiral order  
 - Level-wise sums, averages, or other reduction operations
 
+
+### Flashcard
+Traverse the tree level by level (BFS), recording the maximum value at each level.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

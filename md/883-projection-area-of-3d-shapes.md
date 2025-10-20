@@ -94,6 +94,10 @@ def projectionArea(grid):
 ### Summary
 We use a simple geometry/counting pattern: count visible areas when projecting a set of cubes onto the xy, yz, and zx planes. For each projection, we scan either rows or columns for the tallest cube or count nonzero cells. This is a direct application of 2D traversal and maximum finding—a frequent pattern in "matrix projections" and "2D grid shadows." This pattern also applies to other problems such as skyline silhouette, shadow casting, and 2D compression of 3D shapes.
 
+
+### Flashcard
+Compute projection area as sum of nonzero grid cells (top view), max in each row (side view), and max in each column (front view).
+
 ### Tags
 Array(#array), Math(#math), Geometry(#geometry), Matrix(#matrix)
 

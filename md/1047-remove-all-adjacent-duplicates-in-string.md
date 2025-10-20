@@ -82,6 +82,10 @@ def removeDuplicates(s: str) -> str:
 ### Summary
 This problem is a classic **stack** pattern question, used here to efficiently simulate removing adjacent duplicates in a string. The stack approach processes each character in one pass for O(n) time and is simple to implement. This same pattern frequently appears in string reduction, parsing, and editor simulation problems.
 
+
+### Flashcard
+Use a stack to remove adjacent duplicates in one pass; push if not equal to top, pop if equal.
+
 ### Tags
 String(#string), Stack(#stack)
 

@@ -142,6 +142,10 @@ class NumberContainers:
 ### Summary
 This design uses a combination of hash maps and min-heaps (priority queues) to efficiently support update and minimum lookup operations. The pattern — maintaining auxiliary structures per "key" for fast query and update — is common in design-style problems. Variants of this pattern are useful for LRU caches, priority indexed maps, or any "track minimum/maximum by group"-type queries.
 
+
+### Flashcard
+Map each number to a sorted set of indices; for change, update sets; for find, return smallest index in set for the number, or -1 if not present.
+
 ### Tags
 Hash Table(#hash-table), Design(#design), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set)
 

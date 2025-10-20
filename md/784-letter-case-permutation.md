@@ -85,6 +85,10 @@ def letterCasePermutation(s: str) -> List[str]:
 ### Summary
 This problem is a classic use-case for **backtracking** — generating all possible combinations given toggling choices at specific positions. The permutation/backtracking pattern applies widely, including problems about combination generation, subsets, and string manipulation. Recursive construction is natural and clear for problems where each step involves independent binary choices.
 
+
+### Flashcard
+Use backtracking (DFS) to branch at each letter for both lowercase and uppercase, building all possible case permutations.
+
 ### Tags
 String(#string), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
 

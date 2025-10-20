@@ -65,6 +65,10 @@ def isGoodArray(nums):
 ### Summary
 This is a direct application of greatest common divisor properties and Bézout's Lemma from number theory. The approach is classic and common in mathematical and coding challenges related to Diophantine equations.
 
+
+### Flashcard
+Use Bézout's Lemma—array is "good" if gcd of all elements is 1; compute gcd(nums) and return True if result is 1, else False.
+
 ### Tags
 Array(#array), Math(#math), Number Theory(#number-theory)
 

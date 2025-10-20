@@ -99,6 +99,10 @@ def matrixRankTransform(matrix):
 ### Summary
 A combination of **Union Find** and greedy incremental assignment allows us to compute consistent minimal ranks with respect to row/col constraints. The same pattern appears in constraint satisfaction and other problems needing structure propagation through a bipartite graph.
 
+
+### Flashcard
+Process elements in increasing order, using Union-Find to group equal elements and assign ranks.
+
 ### Tags
 Array(#array), Union Find(#union-find), Graph(#graph), Topological Sort(#topological-sort), Sorting(#sorting), Matrix(#matrix)
 

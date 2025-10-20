@@ -98,6 +98,10 @@ A classic sliding window with character frequency check, iterating by decreasing
 This pattern—enumerate substring lengths, use sliding window, validate with simple checks—is common for substring counting problems with small input.  
 For larger inputs, adapt via prefix sums, hashing, or precomputing runs ("run-length encoding") for efficiency.
 
+
+### Flashcard
+For each length from n down to 1, iterate through characters a-z and count consecutive runs of that character with that exact length. Return the first length where any character appears ≥3 times.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Binary Search(#binary-search), Sliding Window(#sliding-window), Counting(#counting)
 

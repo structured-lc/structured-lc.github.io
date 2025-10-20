@@ -93,6 +93,10 @@ This approach uses a linear scan and **two pointers** to check if the two string
 It leverages the property that valid single-edit transformations occur when lengths differ by at most one and mismatches are limited to just one.  
 The pattern is **two-pointer** and **string compare**, a common technique applicable to many "edit distance" and diff-style problems.
 
+
+### Flashcard
+Compare s and t character by character; if lengths differ by ≤1, check for at most one insert, delete, or replace to determine one edit distance.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

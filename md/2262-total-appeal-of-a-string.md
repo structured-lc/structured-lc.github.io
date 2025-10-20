@@ -116,6 +116,10 @@ This problem uses the "last occurrence" tracking pattern, common in substring an
 The key idea is to count, for each character at position i, in how many substrings it is newly distinct, using last seen indices to avoid brute force substring enumeration.  
 This pattern frequently appears in string problems requiring counts over all substrings, and can be adapted for more complex versions such as distinct letters, unique windows, and combinatorial substring sums.
 
+
+### Flashcard
+For each character, count substrings where it appears as a new distinct character by tracking its last occurrence—O(n) with clever indexing.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming)
 

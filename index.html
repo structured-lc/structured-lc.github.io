@@ -467,6 +467,21 @@
     </div>
   </div>
 
+  <!-- Flashcard Modal -->
+  <div id="mobile-flashcard-modal" class="mobile-modal">
+    <div class="mobile-modal-content">
+      <div class="mobile-modal-header">
+        <h3>⚡ Quick Review Flashcard</h3>
+        <span class="mobile-close-btn" onclick="closeMobileFlashcardModal()">&times;</span>
+      </div>
+      <div class="mobile-modal-body">
+        <div id="mobile-flashcard-content" class="flashcard-content">
+          <!-- Content will be populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Desktop modals will be created dynamically on desktop only -->
 
   <!-- Feedback FAB -->
@@ -478,6 +493,21 @@
   <button id="mobile-share-fab" class="mobile-share-fab">
     <span>🔗</span>
   </button>
+
+  <!-- Flashcard Modal -->
+  <div id="flashcard-modal" class="mobile-modal">
+    <div class="mobile-modal-content">
+      <div class="mobile-modal-header">
+        <h3>🧠 Quick Review</h3>
+        <span class="mobile-close-btn" onclick="closeFlashcardModal()">&times;</span>
+      </div>
+      <div class="mobile-modal-body">
+        <div id="flashcard-content" style="padding: 20px; line-height: 1.6; font-size: 16px;">
+          <!-- Flashcard content will be inserted here -->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script>
     // ENHANCED THEME SYSTEM - Works with settings (System/Light/Dark)
@@ -2226,6 +2256,9 @@
             hidePracticeLinksForPrint();
             setupMobileNavigationListeners();
             
+            // Add flashcard button after DOM is ready
+            showFlashcardButton();
+            
             document.querySelectorAll('pre code').forEach((block) => {
               // Convert 4-space indentation to 3-space for better mobile readability
               optimizeMobileCodeIndentation(block);
@@ -2320,6 +2353,23 @@
           return `<h3><span class="markdown-difficulty-dot ${difficultyLower}"></span> LeetCode ${number}: ${title.trim()} <a href="${practiceLink}" target="_blank" rel="noopener noreferrer" style="background: #0969da; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; text-decoration: none; display: inline-block; margin-left: 0.5em; gap: 4px; transition: all 0.2s ease;" onmouseover="this.style.background='#0550ae'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#0969da'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'">Practice</a></h3>`;
         });
       
+      // Transform Flashcard section - store content for button instead of inline display
+      let flashcardContent = null;
+      md = md.replace(/### Flashcard\s*\n([\s\S]*?)(?=\n###|\n\n###|$)/g, function(match, content) {
+        const trimmedContent = content.trim();
+        if (trimmedContent) {
+          flashcardContent = trimmedContent;
+        }
+        return ''; // Remove the section from markdown
+      });
+      
+      // Store flashcard content globally for button access
+      if (flashcardContent) {
+        window.currentFlashcardContent = flashcardContent;
+      } else {
+        window.currentFlashcardContent = null;
+      }
+      
       // Enhance Tags section
       md = md.replace(/### Tags\s*\n([\s\S]*?)(?=\n###|\n\n###|$)/g, function(match, content) {
         const trimmedContent = content.trim();
@@ -2404,6 +2454,23 @@
           const difficultyLower = difficulty.toLowerCase();
           return `<h3><span class="markdown-difficulty-dot ${difficultyLower}"></span> LeetCode ${number}: ${title.trim()} <a href="${practiceLink}" target="_blank" rel="noopener noreferrer" style="background: #0969da; color: white; border: none; padding: 0.2em 0.5em; border-radius: 3px; cursor: pointer; font-weight: 500; font-size: 0.65em; text-decoration: none; display: inline-block; margin-left: 0.5em; gap: 4px; transition: all 0.2s ease;" onmouseover="this.style.background='#0550ae'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#0969da'; this.style.transform='translateY(0)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='translateY(-1px)'">Practice</a></h3>`;
         });
+      
+      // Transform Flashcard section - store content for button instead of inline display
+      let flashcardContent = null;
+      md = md.replace(/### Flashcard\s*\n([\s\S]*?)(?=\n###|\n\n###|$)/g, function(match, content) {
+        const trimmedContent = content.trim();
+        if (trimmedContent) {
+          flashcardContent = trimmedContent;
+        }
+        return ''; // Remove the section from markdown
+      });
+      
+      // Store flashcard content globally for button access
+      if (flashcardContent) {
+        window.currentFlashcardContent = flashcardContent;
+      } else {
+        window.currentFlashcardContent = null;
+      }
       
       // Enhance Tags section
       md = md.replace(/### Tags\s*\n([\s\S]*?)(?=\n###|\n\n###|$)/g, function(match, content) {
@@ -2955,6 +3022,332 @@
       document.getElementById('mobile-share-fab').onclick = () => {
         shareMobileUrl(window.location.href, document.title);
       };
+    }
+    
+    // Flashcard Button and Modal Functions
+    function showFlashcardButton() {
+      // Remove any existing flashcard button
+      const existingButton = document.getElementById('flashcard-button');
+      if (existingButton) {
+        existingButton.remove();
+      }
+      
+      // Try to find the content container with multiple fallbacks
+      let contentContainer = null;
+      
+      // Determine if we're in mobile or desktop mode
+      const isMobileMode = document.body.classList.contains('mobile-mode') || 
+                           window.innerWidth <= 768 || 
+                           !document.body.classList.contains('desktop-mode');
+      
+      // Try different possible containers based on current mode
+      let selectors;
+      if (isMobileMode) {
+        selectors = [
+          '.mobile-content-inner',
+          '#mobile-content .mobile-content-inner',
+          '#mobile-content',
+          '.content-inner'
+        ];
+      } else {
+        selectors = [
+          '.desktop-content-inner', 
+          '#desktop-content .desktop-content-inner',
+          '#desktop-content',
+          '.content-inner'
+        ];
+      }
+      
+      for (const selector of selectors) {
+        contentContainer = document.querySelector(selector);
+        if (contentContainer) {
+          break;
+        }
+      }
+      
+      if (contentContainer) {
+        // Check if container is visible
+        const isVisible = contentContainer.offsetParent !== null;
+        
+        if (!isVisible) {
+          contentContainer = null; // Force fallback
+        } else {
+          // Create flashcard button
+          const button = document.createElement('button');
+          button.id = 'flashcard-button';
+          button.className = 'flashcard-button';
+          
+          // Add available class if flashcard content exists
+          if (window.currentFlashcardContent) {
+            button.classList.add('available');
+          }
+          
+          button.innerHTML = '<span>⚡</span>';
+          button.title = 'Quick Review Flashcard';
+          button.onclick = openFlashcardModal;
+          
+          // Add the button to the content container
+          contentContainer.insertBefore(button, contentContainer.firstChild);
+        }
+      }
+      
+      if (!contentContainer) {
+        // As fallback, add to body
+        const button = document.createElement('button');
+        button.id = 'flashcard-button';
+        button.className = 'flashcard-button-fallback';
+        
+        // Add available class if flashcard content exists
+        if (window.currentFlashcardContent) {
+          button.classList.add('available');
+        }
+        
+        button.innerHTML = '<span>⚡</span>';
+        button.title = 'Quick Review Flashcard';
+        button.onclick = openFlashcardModal;
+        button.style.cssText = `
+          position: fixed !important;
+          top: 180px !important;
+          right: 20px !important;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          box-shadow: 0 3px 12px rgba(255, 167, 38, 0.3);
+          z-index: 1000;
+        `;
+        document.body.appendChild(button);
+      }
+    }
+    
+    function hideFlashcardButton() {
+      const button = document.getElementById('flashcard-button');
+      if (button) {
+        button.remove();
+      }
+    }
+    
+    function showFlashcardTooltip() {
+      showToast('Flashcard not present for this problem yet!', 'info');
+    }
+
+    function openFlashcardModal() {
+      // If no flashcard content, show tooltip instead
+      if (!window.currentFlashcardContent) {
+        showFlashcardTooltip();
+        return;
+      }
+      
+      // Determine if we're in mobile or desktop mode
+      const isMobileMode = document.body.classList.contains('mobile-mode') || 
+                           window.innerWidth <= 768 || 
+                           !document.body.classList.contains('desktop-mode');
+      
+      if (isMobileMode) {
+        openMobileFlashcardWithAnimation();
+      } else {
+        // Desktop modal - create dynamically like settings modal
+        createDesktopFlashcardModal();
+      }
+    }
+    
+    function openMobileFlashcardWithAnimation() {
+      const modal = document.getElementById('mobile-flashcard-modal');
+      const modalContent = modal.querySelector('.mobile-modal-content');
+      const flashcardContent = document.getElementById('mobile-flashcard-content');
+      const button = document.getElementById('flashcard-button');
+      
+      if (!modal || !modalContent || !flashcardContent) return;
+      
+      // Animate the button
+      if (button) {
+        button.classList.add('expanding');
+        setTimeout(() => {
+          button.classList.remove('expanding');
+        }, 600);
+      }
+      
+      // Set the flashcard content
+      if (window.currentFlashcardContent) {
+        flashcardContent.innerHTML = window.currentFlashcardContent;
+      } else {
+        flashcardContent.innerHTML = `
+          <div style="text-align: center; padding: 40px 20px;">
+            <div style="font-size: 48px; margin-bottom: 16px;">📚</div>
+            <h3 style="color: #666; margin-bottom: 12px;">Flashcard not available</h3>
+            <p style="color: #888; line-height: 1.5;">Flashcard not present for this problem yet!</p>
+          </div>
+        `;
+      }
+      
+      // Calculate button position relative to viewport
+      let buttonRect = { top: 55, right: 16 }; // Default fallback
+      if (button) {
+        const rect = button.getBoundingClientRect();
+        buttonRect = {
+          top: rect.top + rect.height / 2,
+          left: rect.left + rect.width / 2
+        };
+      }
+      
+      // Calculate transform values to animate from button to center
+      const viewportCenterX = window.innerWidth / 2;
+      const viewportCenterY = window.innerHeight / 2;
+      const startX = buttonRect.left - viewportCenterX;
+      const startY = buttonRect.top - viewportCenterY;
+      
+      // Set CSS custom properties for animation
+      modalContent.style.setProperty('--start-x', `${startX}px`);
+      modalContent.style.setProperty('--start-y', `${startY}px`);
+      
+      // Show modal and start animation
+      modal.style.display = 'block';
+      modal.classList.add('flashcard-expanding');
+      modalContent.classList.add('flashcard-expanding');
+      
+      // Add click outside to close (remove any existing listeners first)
+      modal.removeEventListener('click', modal._flashcardClickHandler);
+      modal._flashcardClickHandler = function(e) {
+        if (e.target === modal) {
+          closeMobileFlashcardModal();
+        }
+      };
+      modal.addEventListener('click', modal._flashcardClickHandler);
+    }
+    
+    function closeMobileFlashcardModal() {
+      const modal = document.getElementById('mobile-flashcard-modal');
+      const modalContent = modal.querySelector('.mobile-modal-content');
+      const button = document.getElementById('flashcard-button');
+      
+      if (!modal || !modalContent) return;
+      
+      // Calculate button position for collapse animation
+      let buttonRect = { top: 55, right: 16 }; // Default fallback
+      if (button) {
+        const rect = button.getBoundingClientRect();
+        buttonRect = {
+          top: rect.top + rect.height / 2,
+          left: rect.left + rect.width / 2
+        };
+      }
+      
+      // Calculate transform values to animate from center to button
+      const viewportCenterX = window.innerWidth / 2;
+      const viewportCenterY = window.innerHeight / 2;
+      const endX = buttonRect.left - viewportCenterX;
+      const endY = buttonRect.top - viewportCenterY;
+      
+      // Set CSS custom properties for collapse animation
+      modalContent.style.setProperty('--end-x', `${endX}px`);
+      modalContent.style.setProperty('--end-y', `${endY}px`);
+      
+      // Remove expanding class and any inline styles from expand animation
+      modal.classList.remove('flashcard-expanding');
+      modalContent.classList.remove('flashcard-expanding');
+      modalContent.style.removeProperty('transform');
+      modalContent.style.removeProperty('opacity');
+      modalContent.style.removeProperty('border-radius');
+      
+      // Start collapse animation
+      modal.classList.add('flashcard-collapsing');
+      modalContent.classList.add('flashcard-collapsing');
+      
+      // Listen for animation end to handle cleanup smoothly
+      const handleCollapseEnd = (e) => {
+        if (e.target === modalContent && e.animationName === 'flashcardCollapse') {
+          modalContent.removeEventListener('animationend', handleCollapseEnd);
+          
+          // Clean up everything
+          modal.style.display = 'none';
+          modal.classList.remove('flashcard-collapsing');
+          modalContent.classList.remove('flashcard-collapsing');
+          modalContent.classList.remove('flashcard-stable');
+          
+          // Clean up CSS properties
+          modalContent.style.removeProperty('--start-x');
+          modalContent.style.removeProperty('--start-y');
+          modalContent.style.removeProperty('--end-x');
+          modalContent.style.removeProperty('--end-y');
+        }
+      };
+      
+      modalContent.addEventListener('animationend', handleCollapseEnd);
+    }
+    
+    function closeFlashcardModal() {
+      // Determine if we're in mobile or desktop mode
+      const isMobileMode = document.body.classList.contains('mobile-mode') || 
+                           window.innerWidth <= 768 || 
+                           !document.body.classList.contains('desktop-mode');
+      
+      if (isMobileMode) {
+        closeMobileFlashcardModal();
+      } else {
+        // Close desktop modal
+        const desktopModal = document.getElementById('desktop-flashcard-modal');
+        if (desktopModal) {
+          desktopModal.style.display = 'none';
+          desktopModal.remove();
+        }
+      }
+    }
+    
+    function createDesktopFlashcardModal() {
+      // Remove existing desktop flashcard modal if any
+      const existingModal = document.getElementById('desktop-flashcard-modal');
+      if (existingModal) {
+        existingModal.remove();
+      }
+      
+      // Create desktop flashcard modal
+      const modal = document.createElement('div');
+      modal.id = 'desktop-flashcard-modal';
+      modal.className = 'desktop-modal';
+      modal.innerHTML = `
+        <div class="desktop-modal-content">
+          <div class="desktop-modal-header">
+            <h3>⚡ Quick Review Flashcard</h3>
+            <span class="desktop-close-btn" onclick="closeDesktopFlashcardModal()">&times;</span>
+          </div>
+          <div class="desktop-modal-body">
+            <div id="desktop-flashcard-content" class="flashcard-content">
+              ${window.currentFlashcardContent || `
+                <div style="text-align: center; padding: 40px 20px;">
+                  <div style="font-size: 48px; margin-bottom: 16px;">📚</div>
+                  <h3 style="color: #666; margin-bottom: 12px;">Flashcard not available</h3>
+                  <p style="color: #888; line-height: 1.5;">Flashcard not present for this problem yet!</p>
+                </div>
+              `}
+            </div>
+          </div>
+        </div>
+      `;
+      
+      document.body.appendChild(modal);
+      modal.style.display = 'block';
+      
+      // Add click outside to close
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          closeDesktopFlashcardModal();
+        }
+      });
+    }
+    
+    function closeDesktopFlashcardModal() {
+      const modal = document.getElementById('desktop-flashcard-modal');
+      if (modal) {
+        modal.style.display = 'none';
+        modal.remove();
+      }
     }
     
     // Filter problems list (mobile) - for inline filtering within problem lists
@@ -5095,6 +5488,9 @@ ${description}${reproSection}${contactInfo}
           void contentInner.offsetWidth; // Force reflow
           contentInner.classList.add('fade-in');
           
+          // Add flashcard button after DOM is ready
+          showFlashcardButton();
+          
           // Setup desktop random button functionality - handled by event delegation
           const desktopRandomBtn = document.getElementById('desktop-random-btn');
           // Random button click is handled by document event delegation below
@@ -5857,6 +6253,7 @@ ${description}${reproSection}${contactInfo}
           columnResizer = null;
         }
       });
+      
       
       // Global function for restoring columns (called by floating buttons)
       window.restoreColumn = function(columnType) {

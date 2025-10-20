@@ -92,6 +92,10 @@ This problem uses the **bit manipulation** or **Hamming distance** pattern — c
 It’s a classic interview technique for XOR transformations and minimal modification problems, and it appears in tasks involving parity, mismatched bits, or fault-tolerant designs.  
 Recognizing that any differing bit between the array's XOR and k must be flipped—and each flip can happen anywhere in the array—is key to the optimal solution.
 
+
+### Flashcard
+Compute xor_all = XOR of all array elements. The minimum operations equals the number of differing bits between xor_all and k, calculated as popcount(xor_all XOR k) or bin(xor_all XOR k).count('1').
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

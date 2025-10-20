@@ -83,6 +83,10 @@ This is a classic **dynamic programming** problem—subsequence, not subarray, a
 It demonstrates a _DP + two-pointer/scan_ pattern, and can be optimized with binary search.  
 This pattern is widely used in sequence problems like LIS, Longest Increasing Path in Matrix, or versions on strings and more.
 
+
+### Flashcard
+Use dynamic programming to track the length of the longest increasing subsequence ending at each position, updating `dp[i]` based on previous smaller elements.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming)
 

@@ -103,6 +103,10 @@ It’s closely related to "decode ways" and "word break" style problems: whereve
 Key tricks: limit the substring window to the number of digits in k, check for leading zeros, and use a rolling integer construction to avoid the expense of substring conversion.  
 Pattern is common for parsing, dynamic programming on strings, and combinatorial counts over segmentations.
 
+
+### Flashcard
+Use dynamic programming with memoization to efficiently split the string into numbers between 1 and k, avoiding leading zeros.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

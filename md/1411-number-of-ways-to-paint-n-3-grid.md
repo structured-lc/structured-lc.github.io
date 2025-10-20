@@ -63,6 +63,10 @@ def numOfWays(n):
 ### Summary
 This problem is a typical 2D grid coloring DP with adjacent constraints, compressed to small state variables by observing the structure. The approach generalizes to more colors or columns, using state DP and pattern transitions, a key dynamic programming pattern in grid/graph problems.
 
+
+### Flashcard
+Use dynamic programming to track possible color patterns for each row, ensuring no vertical color matches with the previous row.
+
 ### Tags
 Dynamic Programming(#dynamic-programming)
 

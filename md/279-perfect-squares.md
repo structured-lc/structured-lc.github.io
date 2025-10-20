@@ -103,6 +103,10 @@ It’s applicable anywhere you want to minimize the “number of moves” or “
 Breadth‑first search can also be used here as a shortest path over implicit “states”.  
 The number theoretic result (Lagrange’s Four-Squares Theorem) guarantees every n can be written as sum of at most four squares, which allows for optimization in some advanced solutions.
 
+
+### Flashcard
+Use DP where dp[i] = min number of squares summing to i; for each i, try all squares j² ≤ i and take min(dp[i], dp[i-j²]+1).
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Breadth-First Search(#breadth-first-search)
 

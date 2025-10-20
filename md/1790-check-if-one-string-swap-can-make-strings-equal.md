@@ -94,6 +94,10 @@ The core pattern is **comparing differences and simulating a minimal "fix" (in t
 It can be generalized for "at most k swaps" or "two-way swaps."  
 The solution is efficient, O(n), and needs only a simple differences check.
 
+
+### Flashcard
+Compare strings index by index to check if one swap can make them equal.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

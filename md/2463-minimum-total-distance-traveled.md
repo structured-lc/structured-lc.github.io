@@ -110,6 +110,10 @@ This problem uses a typical **DP with grouping/knapsack pattern**, where transit
 Such patterns also appear in scheduling with resource limits, interval assignment, and capacitated facility location problems.  
 Sorting inputs first and considering group assignments makes the DP transitions efficient and manageable for hard constrained assignment problems.
 
+
+### Flashcard
+Sort robots and factories; use DP where dp[i][j] is the min distance to assign first i robots to first j factories, respecting capacities.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
 

@@ -107,6 +107,10 @@ def maxEqualFreq(nums):
 ### Summary
 This solution uses the "count of counts" pattern (sometimes called frequency-of-frequency) to enable rapid checking of potential balance-conditions after one removal in a prefix, in O(1) at each step. This approach can also be applied to other problems requiring frequency balancing, such as validating strings for identical character counts after limited changes. It's a classic example of frequency map and hash map usage in arrays.
 
+
+### Flashcard
+Track both the count of each number and the count of each frequency; after each step, check if removing one element could make all frequencies equal.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

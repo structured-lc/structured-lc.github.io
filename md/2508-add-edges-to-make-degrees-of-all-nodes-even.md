@@ -124,6 +124,10 @@ This problem uses **parity and pairing** logic for node degrees in undirected gr
 It applies a pattern similar to "matching odd-degree nodes to make all degrees even," a concept relevant in Chinese Postman (Eulerian path/circuit) problems and even-degree subgraph construction.  
 Whenever a restricted number of edge insertions have to fix *global parity constraints*, analyzing parity and pairing remains a core scalable pattern.
 
+
+### Flashcard
+Count nodes with odd degree; if count is 0/2/4, check if adding 1-2 edges can balance parities without duplicating existing edges.
+
 ### Tags
 Hash Table(#hash-table), Graph(#graph)
 

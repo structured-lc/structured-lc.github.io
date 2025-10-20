@@ -171,6 +171,10 @@ It's a very common pattern in ETL, data warehousing, and analytic workflows, esp
 The same approach can be used wherever table columns must be normalized into row records for downstream processing.  
 Key themes: iteration over dynamic columns, runtime schema handling, and output tuple construction.
 
+
+### Flashcard
+Use dynamic SQL to UNPIVOT any number of store columns into rows, mapping each price to its store name—requires parsing column names at runtime.
+
 ### Tags
 Database(#database)
 

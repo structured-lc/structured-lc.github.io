@@ -176,6 +176,10 @@ print(confirmation_rate(signups, confirmations))
 ### Summary
 This problem is a classic **left join and aggregation** scenario, mapping well to SQL joins or dictionary counting in Python. The core pattern is finding the "rate" or "percentage" for an event among total occurrences for a group. This pattern is common in analyzing conversion rates, error rates, or ratios in data tables—making it a practical building block for real-world analytics and reporting queries.
 
+
+### Flashcard
+For each user, left join to confirmations, then compute confirmed/total as rate (include users with zero confirmations).
+
 ### Tags
 Database(#database)
 

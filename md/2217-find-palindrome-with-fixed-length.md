@@ -86,6 +86,10 @@ def kthPalindrome(queries, intLength):
 ### Summary
 This problem uses the **constructive math pattern**—directly computing the answer by indexing and palindromic mirroring, not brute force enumeration. The construct-by-half approach is common for palindromic number, string, or sequence generation, and is directly reusable in other palindrome-related problems or digit-structure algorithms. The string manipulation and arithmetic is efficient and deterministic, avoiding expensive searches or precomputations.
 
+
+### Flashcard
+Generate the kᵗʰ palindrome by constructing its first half, then mirroring; handle even and odd lengths separately.
+
 ### Tags
 Array(#array), Math(#math)
 

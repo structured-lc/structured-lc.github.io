@@ -106,6 +106,10 @@ It's an example of how, for a target "maximize to all-bits-1", xor with mask yie
 Pattern: rolling aggregates (e.g., prefix xor), greedy bitmasking.  
 Common in problems requiring maximizing/minimizing bitwise results after changes.
 
+
+### Flashcard
+For each query, set k = (2ᵐᵃˣᶦᵐᵘᵐᴮᶦᵗ − 1) XOR cumulative_xor to maximize result; no need to try all k.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
 

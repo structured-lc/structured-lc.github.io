@@ -126,6 +126,10 @@ This problem uses **bitmask dynamic programming** over prime factors for all num
 The pattern 'DP on subset states' is common in counting constraint optimizations, especially where mutually exclusive features (like overlapping prime factors) must be tracked.  
 Similar approaches appear in "Subset Sum with Restrictions", "Product of Subsets", and problems involving "square-free" or "coprime" subset selections.
 
+
+### Flashcard
+Use dynamic programming with bitmask to track primes in subsets, ensuring products are square-free.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

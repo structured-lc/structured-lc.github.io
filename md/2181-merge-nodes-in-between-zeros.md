@@ -116,6 +116,10 @@ This problem is a classic example of **Linked List Traversal with Sentinel/Marke
 The pattern is: process segments separated by special values (here zeros), summarize data in those segments, and build a new representation.
 This is a common approach for delimiter-based partitioning problems and can be applied to arrays, lists, or streams where segment boundaries are marked by specific values.
 
+
+### Flashcard
+Traverse list, sum values between zeros, and output the sums as new nodes; skip zeros.
+
 ### Tags
 Linked List(#linked-list), Simulation(#simulation)
 

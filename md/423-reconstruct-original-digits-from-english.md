@@ -111,6 +111,10 @@ def originalDigits(s: str) -> str:
 ### Summary
 This problem uses **counting and deduction**, exploiting unique features of digit words to efficiently reconstruct the original sequence from a set of scrambled letters. The key insight is to use uniquely identifying letters for some digits, then work through dependencies for the rest. This is a classic counting and deduction approach, similar to other string reconstruction or frequency analysis problems. It’s a great example of how recognizing unique characteristics can optimize a brute-force combinatorial challenge.
 
+
+### Flashcard
+Count unique marker letters first (z→0, w→2, u→4, x→6, g→8), then non-unique letters after subtracting (f→5, s→7, h→3, i→9, o→1), output digits in ascending order.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), String(#string)
 

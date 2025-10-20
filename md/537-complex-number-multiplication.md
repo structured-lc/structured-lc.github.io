@@ -83,6 +83,10 @@ This problem is a classic *parsing + math* question.
 The key step is robust extraction of components from the input string, and then applying a well-known multiplication formula for complex numbers.  
 The pattern of parsing composite string representations, performing element-wise operations, and re-assembling output is common in interview settings and appears in problems involving fractions, dates, intervals, and rational numbers.
 
+
+### Flashcard
+Parse complex numbers into real/imaginary parts, multiply using (a×c - b×d) + (a×d + b×c)i, then format the result.
+
 ### Tags
 Math(#math), String(#string), Simulation(#simulation)
 

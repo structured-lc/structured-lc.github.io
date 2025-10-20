@@ -114,6 +114,10 @@ def findKthLargest(nums, k):
 This problem uses the **Quickselect** pattern—an efficient selection-based partition similar to Quicksort—to find the kᵗʰ largest element without fully sorting the array. Quickselect demonstrates a common interview technique for partial sorting or selection, and is widely applicable to "top k" or "ranked order" problems.  
 A **min-heap approach** is also commonly used for streaming data or when performance guarantees are more important than average-case speed.
 
+
+### Flashcard
+Use a min-heap of size k to keep track of k largest elements; the heap top is the kᵗʰ largest after processing all numbers.
+
 ### Tags
 Array(#array), Divide and Conquer(#divide-and-conquer), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Quickselect(#quickselect)
 

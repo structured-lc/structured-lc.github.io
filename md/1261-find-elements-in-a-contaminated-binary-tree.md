@@ -156,6 +156,10 @@ class FindElements:
 ### Summary
 This problem uses the **tree DFS traversal and hash set** design pattern. The DFS recovers values as we traverse, and the set provides fast O(1) lookup for queries. This is a classic space-for-speed trade-off and is seen in many problems needing repeated fast existence-checks after a batch precomputation. The recursive DFS is fundamental for tree recovery, and the membership set pattern is common for fast lookups.
 
+
+### Flashcard
+Recover tree values using root=0, left=2×parent+1, right=2×parent+2; store all values in a set for O(1) find.
+
 ### Tags
 Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Design(#design), Binary Tree(#binary-tree)
 

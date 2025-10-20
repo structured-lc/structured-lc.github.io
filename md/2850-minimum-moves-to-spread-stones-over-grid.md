@@ -114,6 +114,10 @@ def minimumMoves(grid):
 ### Summary
 This problem is a classic assignment/minimum-cost matching problem, made tractable by the small 3×3 size. We use bitmask DP to optimally assign surplus stones to zero cells, minimizing total Manhattan distance moved. This general **assignment pattern** appears in many grid-matching, task-assignment, or resource-allocation problems, especially where minimal global cost must be found across permutations. For larger instances, more advanced algorithms (Hungarian method or min-cost flow) may be needed.
 
+
+### Flashcard
+Model as an assignment problem—match surplus stones to deficit cells and minimize total moves by summing Manhattan distances for each stone moved.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

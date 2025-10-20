@@ -80,6 +80,10 @@ def uniquePaths(m, n):
 ### Summary
 This problem uses the **dynamic programming (DP) - grid traversal** pattern. It’s a classic interview favorite and can be found in variations such as "unique paths with obstacles" or "minimum path sum" problems. The solution relies on breaking down a big problem (total paths) into smaller subproblems (paths to each cell) and building up using the relationships between subproblems. This pattern commonly appears in grid-based DP problems, robot movement, word search in a matrix, etc.
 
+
+### Flashcard
+Use DP: unique paths to cell (i,j) = paths from above + paths from left; fill the grid row by row.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
 

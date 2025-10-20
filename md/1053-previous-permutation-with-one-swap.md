@@ -114,6 +114,10 @@ def prevPermOpt1(arr):
 This problem uses a common **greedy permutation pattern**, much like the "Next Permutation" problem, but constrained to a **single swap**. The critical insight is identifying the rightmost point where the order drops, and then swapping with the **largest rightmost smaller element** to its right, handling duplicates carefully.  
 This efficient O(n) solution is commonly applicable to single-swap or one-move permutation problems, and relates to array manipulation and greedy candidate selection.
 
+
+### Flashcard
+Scan right-to-left to find the first decreasing pair, then swap arr[i-1] with the largest element to its right that is smaller than arr[i-1].
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

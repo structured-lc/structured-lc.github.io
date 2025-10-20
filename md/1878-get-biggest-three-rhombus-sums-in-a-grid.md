@@ -115,6 +115,10 @@ def getBiggestThree(grid):
 ### Summary
 This approach leverages **brute-force grid simulation** with a set to deduplicate and manual perimeter tracing, a common grid-traversal pattern. Diagonal sum precomputing is a universal grid trick that optimizes many border-shape problems. Similar simulation and prefix-sum ideas apply to matrix shape queries like largest border/diamond/square/triangle-sum problems.
 
+
+### Flashcard
+Brute-force by treating each cell as a rhombus center. Optimize by observing rhombus properties and grid constraints.
+
 ### Tags
 Array(#array), Math(#math), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Prefix Sum(#prefix-sum)
 

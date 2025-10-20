@@ -102,6 +102,10 @@ def makeTheIntegerZero(num1: int, num2: int) -> int:
 ### Summary
 This problem uses a **bit manipulation** and **enumeration over possible numbers of operations**. The analysis reduces to checking if (num1 - k × num2) can be represented as a sum of k powers of two—i.e., the count of set bits is ≤ k. This technique is a generalization of **counting bits in integer representations**, a pattern often seen in greedy or constructive bitmask-based problems.
 
+
+### Flashcard
+For each k, check if num1 − k × num2 is positive and can be written as the sum of k powers of two.
+
 ### Tags
 Bit Manipulation(#bit-manipulation), Brainteaser(#brainteaser), Enumeration(#enumeration)
 

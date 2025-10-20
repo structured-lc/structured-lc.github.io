@@ -146,6 +146,10 @@ This problem applies the **group-by** or **bucketization** pattern, common in in
 The approach can be applied whenever you need to group records by time, index, or value range and then summarize within those groups.  
 This logic is routine in SQL and analytics, and optimizing the calculation of "interval buckets" generalizes to time-series, histogram, and sliding window statistics.
 
+
+### Flashcard
+Group rows by interval_no = ceil(minute/6), then sum order_count for each group to get orders per interval.
+
 ### Tags
 Database(#database)
 

@@ -133,6 +133,10 @@ This problem is solved in two phases:
 
 This mapping-followed-by-pathfinding split is a common pattern in grid-related interactive or partially observable search problems—including robot navigation and maze exploration. The coding pattern applies to any situation where direct, global grid access is unavailable, but local exploration is allowed.
 
+
+### Flashcard
+DFS with backtracking to map hidden grid and costs; then run Dijkstra on discovered graph to find minimum path cost to target.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Interactive(#interactive), Shortest Path(#shortest-path)
 

@@ -115,6 +115,10 @@ def closestSubsequenceSum(nums, goal):
 ### Summary
 The problem uses a classic **meet-in-the-middle** strategy to tame exponential enumeration of subset sums when n is moderately small (n ≤ 40). By splitting into two halves, building all possible subset sums for each, and efficiently searching with binary search, we achieve a practical and elegant solution. This divide-and-conquer pattern is common in subset-related and knapsack problems when full enumeration is otherwise prohibitive.
 
+
+### Flashcard
+Split array into two halves, generate all subset sums for each, then use binary search to find the closest sum to goal from combined halves.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Sorting(#sorting), Bitmask(#bitmask)
 

@@ -80,6 +80,10 @@ def firstUniqChar(s):
 ### Summary  
 This problem demonstrates the classic **frequency-counting approach** with a hash map to efficiently answer queries about element uniqueness and order—the core of the "First Unique" pattern. This strategy is widely useful for string or array questions requiring quick membership or frequency lookups, such as "First Non-repeating Element," "Majority Element," and other variations.
 
+
+### Flashcard
+Count occurrences of each character, then scan the string to find the first character with count 1.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Queue(#queue), Counting(#counting)
 

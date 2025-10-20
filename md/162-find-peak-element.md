@@ -82,6 +82,10 @@ def findPeakElement(nums):
 
 This problem leverages the **binary search** pattern but applies it to a "property" (peak detection) instead of a value. It's an example of using binary search to detect a condition that divides the search space, not simply to find a target. Similar ideas arise in problems involving "mountain arrays", searching for threshold crossings, or unimodal array peaks.
 
+
+### Flashcard
+Binary search for a peak by comparing nums[mid] and nums[mid+1]; move towards the higher neighbor for O(log n) time.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

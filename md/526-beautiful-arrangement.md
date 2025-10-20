@@ -102,6 +102,10 @@ def countArrangement(n: int) -> int:
 
 This problem is a great example of classic **backtracking with pruning**, leveraging permutation generation with custom constraints. The solution pattern applies to many problems involving arrangements or placements with "positional rules", such as N-Queens, Sudoku, or seating charts with preferences. Efficient pruning via precomputation or dynamic checks is key to making solutions tractable for large input sizes.
 
+
+### Flashcard
+Use backtracking to build permutations, only placing numbers at position i if num % i == 0 or i % num == 0, and count valid arrangements.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

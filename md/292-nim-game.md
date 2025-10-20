@@ -81,6 +81,10 @@ def canWinNim(n: int) -> bool:
 ### Summary
 This problem uses **game theory** and **pattern observation** rather than simulation or recursion. The optimal solution is mathematical and checks divisibility by 4. This is a common pattern in combinatorial games, and knowing this approach is helpful for variants like multi-heap Nim and "take-away" games with arbitrary move limits.
 
+
+### Flashcard
+Pattern recognition: you win if n is not divisible by 4; otherwise opponent can always mirror your move and force you to lose.
+
 ### Tags
 Math(#math), Brainteaser(#brainteaser), Game Theory(#game-theory)
 

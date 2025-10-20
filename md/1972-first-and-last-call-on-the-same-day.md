@@ -132,6 +132,10 @@ This problem is a classic *windowed grouping and aggregation* pattern commonly f
 - Efficient solution leverages either SQL window functions or a lightweight per-group sort in imperative code.  
 This approach can also be used in problems about first/last transactions, recurring meeting patterns, or other “sequence per group” analytics.
 
+
+### Flashcard
+For each user and day, find their first and last call partner (treating calls bidirectionally); count days where first partner equals last partner and both had ≥2 calls.
+
 ### Tags
 Database(#database)
 

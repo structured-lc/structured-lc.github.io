@@ -139,6 +139,10 @@ def calcEquation(equations, values, queries):
 ### Summary
 We modeled the equation relationships as a **weighted bidirectional graph**, using **DFS** to search for a path between query variables and multiply weights along the path. This is a classic graph search pattern, often called "Evaluate Path Product" or "Connected Components with Weights", and can be used in currency conversion, chemical ratio networks, and relationship inference problems.
 
+
+### Flashcard
+Model equations as a weighted graph; use DFS or BFS to find product of weights along path for each query.
+
 ### Tags
 Array(#array), String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph), Shortest Path(#shortest-path)
 

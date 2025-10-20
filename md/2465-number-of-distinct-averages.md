@@ -90,6 +90,10 @@ def distinctAverages(nums):
 ### Summary
 This problem follows the "two pointers" pattern on a sorted array to pair extremes in O(n) time after sorting. Using a set, it efficiently computes the number of unique results. This method applies to other pairing or matching problems where order or symmetry is involved, especially when the pairing always consists of symmetric elements (like min and max).
 
+
+### Flashcard
+Sort nums, pair smallest and largest each time, and count the number of distinct averages formed.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Sorting(#sorting)
 

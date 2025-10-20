@@ -79,6 +79,10 @@ def removeSubfolders(folder):
 ### Summary
 The optimal solution sorts folder paths to easily group subfolders directly after their parents. This leverages lexicographical order and the folder separator (`/`) to quickly filter out subfolders in a single pass. The pattern — sorting to make hierarchical relationships adjacent — is very common for prefix-based problems. This approach avoids more complex Trie building and is efficient for this task, but understanding Tries is still useful for more dynamic or complex prefix tree manipulations.
 
+
+### Flashcard
+Sort folder paths lexicographically, then add a folder to the result only if it’s not a subfolder of the previous result entry.
+
 ### Tags
 Array(#array), String(#string), Depth-First Search(#depth-first-search), Trie(#trie)
 

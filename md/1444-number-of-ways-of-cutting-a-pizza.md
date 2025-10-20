@@ -96,6 +96,10 @@ def ways(pizza, k):
 ### Summary
 This is a classic DP with memoization pattern on subregions, combined with clever region-sum counting (via prefix sum). Such rectangular DP/memoization occurs in other grid partitioning, rectangle DP, and string cut/merge problems.
 
+
+### Flashcard
+Use DP with memoization and prefix sum table; for each cut, recursively count ways to partition pizza ensuring each piece has at least one apple.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Memoization(#memoization), Matrix(#matrix), Prefix Sum(#prefix-sum)
 

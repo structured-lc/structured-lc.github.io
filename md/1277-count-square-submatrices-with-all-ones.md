@@ -90,6 +90,10 @@ def countSquares(matrix):
 This uses a classic **dynamic programming** pattern on a 2D grid, where you build up a solution based on smaller subproblems (left, top, top-left neighbors) to answer a local query at each cell.  
 It’s an example of local DP table building for 2D matrix substructure problems, which is similar to the maximal square problem. Variations of this approach apply to other 2D grid/rectangle/square counting problems.
 
+
+### Flashcard
+Use DP: dp[i][j] = size of largest square ending at (i,j); sum all dp[i][j] to count total squares of ones.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

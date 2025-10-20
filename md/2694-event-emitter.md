@@ -123,6 +123,10 @@ Key implementation choices:
 - Preserving order and supporting robust unsubscribe logic  
 Pattern is useful for decoupling code, plugin architectures, or any scenario needing observer/listener behavior.
 
+
+### Flashcard
+Store map from event name to array of callbacks; subscribe adds callback and returns unsubscribe closure that removes it; emit iterates callbacks in order, calls each with args, collects return values.
+
 ### Tags
 
 ### Similar Problems

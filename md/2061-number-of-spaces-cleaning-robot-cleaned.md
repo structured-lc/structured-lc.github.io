@@ -97,6 +97,10 @@ def numberOfCleanRooms(room):
 ### Summary
 This problem illustrates *simulation with state tracking*, using a set for (position, direction) to prevent infinite loops. It's a classic grid robot/path simulation problem, and this pattern (track (cell, direction)) is widely applicable to grid exploration, stateful automata, and similar simulation problems where direction and position matter.
 
+
+### Flashcard
+Track visited states to avoid infinite loops and count unique cells cleaned by the robot.
+
 ### Tags
 Array(#array), Matrix(#matrix), Simulation(#simulation)
 

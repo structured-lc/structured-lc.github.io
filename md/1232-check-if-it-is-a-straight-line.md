@@ -75,6 +75,10 @@ This approach uses the **cross product pattern** to robustly check for collinear
 It’s a common trick for collinearity in computational geometry and comes up often in vector-based and line-detection problems.  
 Works with O(n) time and O(1) space — simple, reliable, and powerful for interview use.
 
+
+### Flashcard
+Check if all points have the same slope using cross multiplication to avoid division and floating-point errors.
+
 ### Tags
 Array(#array), Math(#math), Geometry(#geometry)
 

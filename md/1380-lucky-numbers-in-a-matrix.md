@@ -66,6 +66,10 @@ def luckyNumbers (matrix):
 ### Summary
 This involves element-wise matrix processing — a frequent coding pattern in matrix, DP, and grid traversal problems.
 
+
+### Flashcard
+For each row, find the min; for each column, find the max; collect numbers that are both row min and column max.
+
 ### Tags
 Array(#array), Matrix(#matrix)
 

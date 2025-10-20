@@ -106,6 +106,10 @@ def get_highest_answer_rate_question(survey_log):
 ### Summary
 This problem uses a common **hash map counting** technique and a simple max-tracking pattern, suitable wherever frequency ratios are needed by unique key. The solution is efficient, scales well, and the code pattern is useful in survey analytics, user event logs, and A/B testing scenarios.
 
+
+### Flashcard
+For each question, compute answer rate = answers ÷ shows; return the question with the highest rate (break ties by smallest question_id).
+
 ### Tags
 Database(#database)
 

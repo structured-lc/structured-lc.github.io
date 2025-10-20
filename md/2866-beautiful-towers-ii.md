@@ -123,6 +123,10 @@ def maximumSumOfHeights(maxHeights):
 ### Summary
 This problem uses the **monotonic stack** together with prefix and suffix sums to efficiently compute, for every peak, the best possible mountain within the constraints. This general approach (using stack for prefix/suffix min/max) appears in a variety of sum/max-of-min problems (e.g., largest rectangle in histogram, sum of subarray minimums, etc.), making it a common and powerful pattern for dealing with restricted monotonic interval problems.
 
+
+### Flashcard
+For each peak, use a monotonic stack to compute max possible left/right heights in O(n), then sum for the best peak.
+
 ### Tags
 Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

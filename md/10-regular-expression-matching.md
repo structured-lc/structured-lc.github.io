@@ -117,6 +117,10 @@ def isMatch(s: str, p: str) -> bool:
 
 This problem uses the classic **dynamic programming with memoization** pattern for recursive, overlapping subproblems. The branching logic for `*` (zero-or-more) is essential to efficient regex-style matching. This approach generalizes to other pattern-matching problems like wildcard/glob matching, string edit distance, and parsing-based DP problems.
 
+
+### Flashcard
+Use dynamic programming with memoization to match string and pattern, handling '.' and '*' by exploring all valid paths.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Recursion(#recursion)
 

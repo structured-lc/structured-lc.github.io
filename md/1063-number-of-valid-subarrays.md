@@ -101,6 +101,10 @@ This problem uses the **monotonic stack pattern**, a common tool for dealing wit
 This is highly efficient for problems where you scan linearly but need retroactive knowledge about order (like histogram largest rectangle, daily temperatures, etc.).  
 Understanding this pattern is extremely valuable for a range of subarray and range-query questions.
 
+
+### Flashcard
+Use a monotonic stack to count, for each index, how far right the subarray can extend while maintaining non-increasing order.
+
 ### Tags
 Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

@@ -122,6 +122,10 @@ def nextGreaterElementBruteForce(nums1, nums2):
 ### Summary
 This problem demonstrates the powerful monotonic stack pattern for solving "next/previous greater/smaller element" problems. The stack maintains elements in a specific order (monotonic decreasing in this case) and efficiently finds relationships between elements. This pattern is fundamental in many algorithmic problems involving element relationships and appears frequently in array processing, histogram problems, and optimization scenarios.
 
+
+### Flashcard
+Use monotonic stack to precompute next greater for nums2, store in map; lookup results for nums1.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

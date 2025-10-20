@@ -61,6 +61,10 @@ def numSub(s):
 ### Summary
 This is a classic 'prefix/group block' problem with a key mathematical formula for summing substrings in runs. The pattern applies widely—counting substrings by group, range, streak, etc.—enabling O(n) solutions where naive approaches would take O(n²).
 
+
+### Flashcard
+Count substrings with only '1's by scanning the string and summing the number of substrings for each block of consecutive '1's.
+
 ### Tags
 Math(#math), String(#string)
 

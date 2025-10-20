@@ -93,6 +93,10 @@ def longestStrChain(words):
 ### Summary
 This problem is a classic example of **Dynamic Programming on Strings**, using sorting to ensure bottom-up evaluation by word length and mapping each word to its chain length. The main technique—breaking bigger problems into subproblems by deletion/insertion—is a pattern useful in edit distance problems, and in graph longest path approaches when edges are implicitly defined by string transformations.
 
+
+### Flashcard
+Sort words by length; for each word, try removing one letter to find a predecessor, and use DP to track longest chain.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
 

@@ -100,6 +100,10 @@ This problem uses a **greedy greedy approach**, always giving change with the hi
 The core idea is counting and updating available change in real-time while processing the queue.  
 It’s a variant of the "can you make change?" pattern, useful in cashier systems, vending machines, and simulation of resource allocation.
 
+
+### Flashcard
+Track $5 and $10 bills; give change greedily (prefer $10+$5 for $20), return false if change is impossible.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

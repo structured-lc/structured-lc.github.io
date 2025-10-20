@@ -98,6 +98,10 @@ def leadsToDestination(n, edges, source, destination):
 ### Summary
 The approach uses pattern matching for **graph cycle detection** (standard DFS with state flags) and **leaf/dead-end validation**. This is the classic cycle-detection and post-order marking technique commonly used for topological sorting, deadlock detection, safe path checking, and "eventual safety" problems in directed graphs.
 
+
+### Flashcard
+Use DFS with cycle detection and memoization to ensure all paths from source end at destination and never at a dead end.
+
 ### Tags
 Graph(#graph), Topological Sort(#topological-sort)
 

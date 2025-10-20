@@ -143,6 +143,10 @@ This problem uses the **recursive deep-diff** pattern, traversing two structures
 It's a common approach for **diff utilities, configuration comparisons, and state change tracking**.  
 Skills tested include recursion, handling nested data, and careful type checking—all of which are valuable for backend engineering and state management.
 
+
+### Flashcard
+Recursively compare shared keys/indices; for each, if both are objects/arrays, recurse, else if primitives differ or types differ, record [val1, val2]; only include keys where values differ and exist in both.
+
 ### Tags
 
 ### Similar Problems

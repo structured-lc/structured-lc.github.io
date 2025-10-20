@@ -89,6 +89,10 @@ def characterReplacement(s: str, k: int) -> int:
 This problem uses the classic **sliding window** pattern to efficiently maintain a window with the optimal number of same-character replacements. The key trick is only needing to track the count of the most frequent character within the window to compute the required replacements.  
 Sliding window is a versatile pattern and commonly applies to substring or subarray optimization problems where operations (replacement, removal, addition) are restricted by a count or cost.
 
+
+### Flashcard
+Sliding window tracking max frequency character count in current window—expand right, shrink left when window_size - max_count > k, maximizing valid window length.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

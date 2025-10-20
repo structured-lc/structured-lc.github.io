@@ -149,6 +149,10 @@ This problem is a classic case of *grouping, aggregation, and ranking* within SQ
 The central technique is grouping to compute per-group metrics, then using window or ranking functions to filter to the maximal value(s) per group.  
 This "Top-N per group" or "Max-per-group" pattern shows up often in analytics queries, leaderboards, and reporting tasks.
 
+
+### Flashcard
+Group sales by user and product, sum spend, then use window functions to find each user’s top product.
+
 ### Tags
 Database(#database)
 

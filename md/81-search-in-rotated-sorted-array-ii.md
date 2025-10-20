@@ -102,6 +102,10 @@ def search(nums, target):
 ### Summary
 This problem is a variation on **binary search in rotated sorted arrays**, but complicated by the presence of duplicates. The main pattern is the use of pointers and modified binary search logic to manage ambiguous situations caused by repeated elements. This approach is applicable not just here, but in any rotated or nearly-sorted structures where duplicates can occur—classic "search in rotated sorted array" with extensions for duplicate handling.
 
+
+### Flashcard
+Use modified binary search; when duplicates prevent determining the sorted side, increment left or decrement right to shrink the search space.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

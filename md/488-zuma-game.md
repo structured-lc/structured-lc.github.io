@@ -129,6 +129,10 @@ class Solution:
 ### Summary
 This problem uses DFS with memoization to efficiently explore the sequence of *board* and *hand* states caused by insertions and chain reactions. The main coding pattern is Backtracking + State Memoization, a common technique in combinatorial game state search, similar to "remove boxes", "minimax game", and some two-player game DP problems. This pattern applies to optimization problems where state grows with sequence and branching actions.
 
+
+### Flashcard
+Use DFS with memoization; for each board/hand state, try all insertions, remove groups of 3+, and recurse for minimal steps.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Stack(#stack), Breadth-First Search(#breadth-first-search), Memoization(#memoization)
 

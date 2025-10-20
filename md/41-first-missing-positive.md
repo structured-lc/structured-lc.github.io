@@ -91,6 +91,10 @@ def firstMissingPositive(nums):
 ### Summary
 This problem is a classic example of **cyclic sorting** (also called “Index Placement” trick), commonly used when a sequence can be placed in O(1) space by using the indices of the array as targets for the in-place reordering. This approach is powerful for “find the missing or duplicate” in consecutive ranges. Variants show up in sorting cyclic lists, finding duplicates, or marking arrays using index flipping. The in-place technique eliminates the need for extra memory and is a valuable coding pattern for interviews.
 
+
+### Flashcard
+Place each positive x ≤ n at index x-1; after rearrangement, the first index i where nums[i] ≠ i+1 gives the smallest missing positive.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

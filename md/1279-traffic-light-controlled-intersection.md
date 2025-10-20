@@ -95,6 +95,10 @@ class TrafficLight:
 ### Summary
 This problem is a classic **synchronization and mutual exclusion pattern** in multi-threaded design, commonly solved with locks and state variables. It's a simulation of resource arbitration—ensuring only one party can use a resource (the intersection) at a time. The technique is widely applicable in threading, system design (like elevators, printers), and anywhere race conditions may arise.
 
+
+### Flashcard
+Synchronize cars using a lock and track current green road; cars wait if their road is red, and only one road is green at a time.
+
 ### Tags
 Concurrency(#concurrency)
 

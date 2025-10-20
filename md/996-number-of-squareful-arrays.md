@@ -107,6 +107,10 @@ def numSquarefulPerms(nums):
 ### Summary
 This problem is a classic case of backtracking/permutations with constraints and duplicate handling—similar to "Permutations II" but with custom adjacency rules. The core is graph-building for "valid neighbor" relations, and recursive permutation construction. This pattern is useful for constraint-driven arrangements and can apply anywhere arrangement/permutation rules depend on dynamic pairwise relationships.
 
+
+### Flashcard
+Backtrack through all unique permutations, only proceeding if adjacent pair sums are perfect squares; use counter to avoid duplicates.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

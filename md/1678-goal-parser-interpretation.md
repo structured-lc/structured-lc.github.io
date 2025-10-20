@@ -76,6 +76,10 @@ def interpret(command: str) -> str:
 ### Summary
 A simple parsing/string manipulation problem, classic pattern for scanner or interpreter. Checking substring slices and incrementing pointer. Applies to situations where you need to implement a lightweight domain-specific interpreter.
 
+
+### Flashcard
+Goal Parser Interpretation
+
 ### Tags
 String(#string)
 

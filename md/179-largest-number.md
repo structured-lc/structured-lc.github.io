@@ -89,6 +89,10 @@ def largestNumber(nums):
 ### Summary
 This problem leverages the **custom sorting pattern**—a core greedy technique whereby local pairwise choices yield a globally optimal result. The custom comparator is crucial for correct ordering, with string manipulation playing a key role to prevent overflow and respect digit positions. Recognizing and handling edge cases, like all-zeroes, is typical for this kind of string-number hybrid problem. This pattern is commonly seen in problems involving "largest/smallest arrangement" and "min/max concatenation."
 
+
+### Flashcard
+Sort numbers as strings using a custom comparator: for a and b, order by which of a+b or b+a forms a larger number.
+
 ### Tags
 Array(#array), String(#string), Greedy(#greedy), Sorting(#sorting)
 

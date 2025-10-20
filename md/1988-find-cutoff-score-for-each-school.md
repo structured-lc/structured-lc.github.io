@@ -123,6 +123,10 @@ def find_cutoff_score_for_each_school(exam, school):
 This problem demonstrates the *selection* pattern—finding a kᵗʰ element efficiently using sorting.  
 It’s related to problems like "top K elements," "kᵗʰ largest number," and can be optimized with heaps for streaming/large data, or solved with binary search. This is a common interview topic on processing rankings and selection from a list.
 
+
+### Flashcard
+For each school, sort scores descending and pick the lowest score among the top capacity students as the cutoff.
+
 ### Tags
 Database(#database)
 

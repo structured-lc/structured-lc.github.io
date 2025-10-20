@@ -87,6 +87,10 @@ def canBeIncreasing(nums):
 ### Summary
 The core approach is to scan for violations of the strictly increasing property, and at the first violation, try removing either the previous or current element. This "greedy + one pass" pattern is very common in array modification or single-allowed-fault type questions. The pattern is also seen in "Longest Increasing Subsequence with at most one removal" or "Make Array Monotonic" variants.
 
+
+### Flashcard
+At the first violation of strict increase, try removing either the violating element or its predecessor and check if the rest is strictly increasing.
+
 ### Tags
 Array(#array)
 

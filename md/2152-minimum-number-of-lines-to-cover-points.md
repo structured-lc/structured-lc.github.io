@@ -127,6 +127,10 @@ This problem is a classic **bitmask DP (set cover)** on small sets, with state c
 The core technique—DP on **subsets of coverage**—appears in problems like "minimum subset of sets to cover elements," "painting houses with color restrictions," and is a handy general tool for combinatorial search with small \(n\).  
 No greedy or direct geometry shortcut works here due to the "minimum" constraint, but bitmask DP is optimal for n ≤ 10.
 
+
+### Flashcard
+For small n, try all subsets of points; use bitmask to represent covered points and find the minimum number of collinear subsets (lines) needed to cover all points.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Geometry(#geometry), Bitmask(#bitmask)
 

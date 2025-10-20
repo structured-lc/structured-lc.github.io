@@ -110,6 +110,10 @@ class Solution:
 ### Summary
 The approach uses post-order DFS and tracks the longest path with consecutive, identical node values, updating a global maximum. It's a classic example of the *"tree dynamic programming / bottom-up DFS"* pattern, commonly used for subtree or path-based computations in trees. This recursive method is both efficient and easy to generalize to similar path problems on trees.
 
+
+### Flashcard
+Recursively compute longest univalue path for each node; combine left/right paths if child values match parent, track global maximum.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

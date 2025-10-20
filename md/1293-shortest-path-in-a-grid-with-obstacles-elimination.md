@@ -84,6 +84,10 @@ def shortestPath(grid, k):
 ### Summary
 The problem illustrates **BFS in a grid with an expanded state space** (tracking both coordinates and an obstacle-elimination counter). Tracking seen states across this extra dimension is a classic BFS optimization for limited resource pathfinding.
 
+
+### Flashcard
+Apply BFS with states (row, col, remaining_k) to find the shortest path while eliminating obstacles.
+
 ### Tags
 Array(#array), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

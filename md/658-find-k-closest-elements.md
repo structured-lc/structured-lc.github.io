@@ -84,6 +84,10 @@ def findClosestElements(arr, k, x):
 This problem is a classic use of the "**Binary Search for Window on Sorted Array**" pattern. It's especially effective when you want to select a subarray/window that optimizes a property in terms of distance to a target and the array is already sorted.  
 Similar ideas can be found in minimizing/maximizing subarray, sliding window median, and range queries on sorted lists.
 
+
+### Flashcard
+Use two pointers to remove elements farthest from x until k remain, or use binary search to find the left bound of the k closest elements.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sliding Window(#sliding-window), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

@@ -136,6 +136,10 @@ class Solution:
 ### Summary
 This problem uses the **DFS with backtracking** pattern for trees, maintaining and combining counts for increasing and decreasing paths at each node. Techniques here—computing values on the way back up the tree, and merging child results at their parent—are common in binary tree “consecutive path,” “diameter,” and “single/dual path” problems (like longest path, balanced tree checks, etc.). Great to remember for any tree path dynamic programming variant.
 
+
+### Flashcard
+DFS returns increasing/decreasing sequence lengths from each node; track global max of left + right - 1.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

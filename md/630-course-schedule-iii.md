@@ -101,6 +101,10 @@ def scheduleCourse(courses):
 ### Summary
 This problem is an application of the **Greedy + Heap (priority queue) pattern** for interval/capacity scheduling problems, especially where local optimal choices (course swaps) yield global optimum under certain constraints. The technique is also useful for scheduling lectures, jobs, or tasks with deadlines and durations, where maximizing the count (or value) of non-overlapping intervals is desired. The classical job-scheduling, lecture room allocation, and some resource management variations map to the same core greedy heap-based logic.
 
+
+### Flashcard
+Sort courses by deadline; greedily add courses with earliest deadlines, using a max-heap to drop longest-duration course if total time exceeds current deadline.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

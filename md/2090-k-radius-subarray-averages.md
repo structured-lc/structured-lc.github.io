@@ -86,6 +86,10 @@ def getAverages(nums, k):
 ### Summary
 This problem demonstrates the **sliding window** technique to process subarrays of fixed size efficiently. It's a classic application of keeping a running sum (for averages), similar to moving averages in data streams, substring problems, or stock price summaries. The pattern is useful in any situation requiring aggregate statistics over all subarrays/windows of constant length.
 
+
+### Flashcard
+Use a sliding window of size 2k+1 to compute averages efficiently; if not enough elements on either side, output -1.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window)
 

@@ -101,6 +101,10 @@ def numPermsDISequence(S: str) -> int:
 ### Summary
 This is a dynamic programming problem, using permutations constrained by a string pattern. The core pattern is similar to "counting DP with state transitions based on prefix sums," common in permutation count and sequence arrangement problems. The optimization of summing valid states with prefix/postfix sums, and reducing from 2D to 1D states, is widely applicable, including pattern-restricted subarray counts and interval DP.
 
+
+### Flashcard
+Use DP where dp[i][j] = number of ways to arrange first i+1 numbers ending with jᵗʰ smallest unused; for each 'I', sum dp[i-1][0..j-1], for each 'D', sum dp[i-1][j..i-1], yielding O(n²) time.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
 

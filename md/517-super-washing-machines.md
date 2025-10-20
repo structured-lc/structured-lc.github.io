@@ -105,6 +105,10 @@ def find_min_moves(machines):
 ### Summary
 This problem uses a **greedy and prefix sum** pattern to efficiently find the number of moves required to balance an array under local transfer constraints. The approach demonstrates that bottlenecks are determined not by direct transfers alone, but the accumulation of imbalance through the array. This idea of cumulative load balancing is powerful and commonly appears in “balance by transfer” and “water pouring” problems.
 
+
+### Flashcard
+If total dresses isn’t divisible by n, return -1; otherwise, track running sum of differences and take the max of abs(running sum) and local diff.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

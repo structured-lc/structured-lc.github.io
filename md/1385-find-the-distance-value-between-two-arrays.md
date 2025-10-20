@@ -70,6 +70,10 @@ def findTheDistanceValue(arr1, arr2, d):
 ### Summary
 This is a classic application of binary search for window/range queries on a sorted array, a common interview technique for distance/separation types of questions.
 
+
+### Flashcard
+Sort arr2, use binary search to check if any arr2 element is within d of each arr1 element—count safe elements.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
 

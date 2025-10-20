@@ -106,6 +106,10 @@ This problem is a classic **DP scheduling pattern** with resource parallelism: d
 Pattern is common in "resource optimization with workers" problems (pick/skip state, minimizing cost).  
 Key is modeling *what the free resource truly enables* per paid action—a pattern used in job scheduling, project management, and bandwidth allocation problems.
 
+
+### Flashcard
+DP choice: pay to paint a wall (cost increases, free time unlocked) or use free time (cost stays same)—minimize total cost.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

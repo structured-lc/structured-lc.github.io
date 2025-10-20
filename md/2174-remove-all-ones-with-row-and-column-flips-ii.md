@@ -152,6 +152,10 @@ This pattern—using DFS/BFS/DP with bitmask state for all grids or graphs with 
 Useful for all problems where the state space is large but compressible and the operation has complex global effects.  
 Common in puzzles, grid-flipping, and multi-move game simulations.
 
+
+### Flashcard
+Encode the grid as a bitmask, then use BFS/DFS to find the minimum sequence of row/column flips that clears all 1s—state compression for small grids.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

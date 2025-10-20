@@ -51,6 +51,10 @@ Instead, notice that the table is not arbitrary: in each row i, values are i, 2i
 The key observation: **For any number x, you can count how many numbers in the table are ≤ x by summing, for each row i, how many columns j satisfy i × j ≤ x**.  
 - In row i, that's ⌊x/i⌋ (capped at n), so total count = sum over i=1 to m of min(n, ⌊x/i
 
+
+### Flashcard
+Binary search for the smallest number x such that there are at least k numbers ≤ x in the m×n multiplication table.
+
 ### Tags
 Math(#math), Binary Search(#binary-search)
 

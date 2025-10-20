@@ -104,6 +104,10 @@ This is a classic **bounded subset sum** problem (bounded knapsack with counts),
 The technique applies to any problem counting subset sums with usage limits, and is common for knapsack with frequency bounds, dice roll probabilities, and coin change when each coin is limited.  
 Patterns: Bounded knapsack, DP over sums, prefix sum DP optimization.
 
+
+### Flashcard
+Use knapsack-style DP: for each value v with frequency f, update dp[s] for all sums s by adding ways to use v 0…f times, counting sub-multisets with sum in [l, r].
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window)
 

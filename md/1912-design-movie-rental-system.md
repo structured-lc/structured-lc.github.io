@@ -205,6 +205,10 @@ This problem showcases data design patterns for *marketplace-style* queries usin
 Pattern: Maintain state in synchronised, query-optimized structures (here, per-movie and global heaps), using lazy deletion when direct removal isn't possible.  
 You’ll find similar patterns in problems involving top-k queries, booking/reserving systems, and event dispatch queues.
 
+
+### Flashcard
+For each movie, maintain a sorted list of available (price, shop) pairs for fast search, and track rented movies separately for reporting.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Design(#design), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set)
 

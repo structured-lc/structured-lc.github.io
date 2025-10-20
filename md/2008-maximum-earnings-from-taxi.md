@@ -108,6 +108,10 @@ def maxTaxiEarnings(n, rides):
 ### Summary
 This problem uses a classic **dynamic programming** pattern similar to weighted activity/job scheduling, where we process intervals and choose non-overlapping ones for maximum profit. Grouping rides by their ending position allows us to build DP efficiently. This pattern is common for maximizing resource usage among time/space intervals. Similar ideas arise in event scheduling and maximum profit questions with time constraints.
 
+
+### Flashcard
+Maximize taxi earnings by selecting non-overlapping rides with the highest tips, similar to activity selection problems.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
 

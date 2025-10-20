@@ -78,6 +78,10 @@ def numberOfSteps(num: int) -> int:
 ### Summary
 This problem is a classic simulation problem that can be solved using a basic loop and conditional statements. It also demonstrates how to recognize special patterns (halving, decrementing by one), and introduces bit manipulation for possible optimization. The coding template follows the simulation pattern, which is common for problems where the solution follows stepwise instructions. This logic is broadly applicable in digital operations, games, or scenarios where you repeatedly apply basic rules until a goal is met.
 
+
+### Flashcard
+Simulate: if num is even, divide by 2; if odd, subtract 1; repeat until zero, counting steps.
+
 ### Tags
 Math(#math), Bit Manipulation(#bit-manipulation)
 

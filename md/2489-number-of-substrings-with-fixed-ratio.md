@@ -83,6 +83,10 @@ def fixedRatio(s: str, num1: int, num2: int) -> int:
 ### Summary
 We used a prefix sum and hashmap pattern, commonly seen in subarray or substring sum/count problems (like subarray sum equals k). By encoding the ratio with n₁ \* num₁ - n₀ \* num₂, the count reduces to tracking previously seen prefix states. This approach is fast (O(n)), space-efficient, and widely applicable in substring/subarray problems involving frequency or sum ratios.
 
+
+### Flashcard
+Track running counts of 0s and 1s; for each position, check if (count₀, count₁) ratio matches target using hash map.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), String(#string), Prefix Sum(#prefix-sum)
 

@@ -159,6 +159,10 @@ def minOperationsToFlip(expression: str) -> int:
 ### Summary
 This problem is a variant of dynamic programming on expressions, using stacks to simulate computation while storing DP states for each subexpression. The method of keeping two possible minimal costs per subexpression is common in expression evaluation, and is similar to techniques in "Evaluate Boolean Expression to True," circuit design, and parsing arithmetic expressions for minimum/maximum value. The flexible stack-based parsing pattern is reusable for other expression or formula evaluation variants.
 
+
+### Flashcard
+Use a stack to simulate expression evaluation and track the cost of flipping symbols.
+
 ### Tags
 Math(#math), String(#string), Dynamic Programming(#dynamic-programming), Stack(#stack)
 

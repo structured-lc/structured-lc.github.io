@@ -110,6 +110,10 @@ Used the "two-pass and merge" partitioning pattern:
 - This logic is common for "group-and-reorder" class problems, which arise in questions about alternate, wave, or multigroup sorting.
 - The pattern is also applicable for problems requiring multiple independent sorts and then restoring or interleaving results.
 
+
+### Flashcard
+Split even and odd indices into separate lists, sort even ascending and odd descending, then interleave to rebuild the array.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

@@ -82,6 +82,10 @@ def partitionLabels(s):
 This problem is a classic example of the **Greedy algorithm pattern** using the **two-pointer technique**. By recording the last positions, and expanding partitions to the farthest constraint, we solve efficiently in a single pass.  
 The pattern of "expand window until you can be sure of a boundary" is seen in other partitioning and sliding window problems, such as **minimum window substring**, **split array into consecutive subsequences**, and certain greedy scheduling problems.
 
+
+### Flashcard
+Track last occurrence of each character, expand partition to the furthest last index seen so far, and cut when current index matches partition end.
+
 ### Tags
 Hash Table(#hash-table), Two Pointers(#two-pointers), String(#string), Greedy(#greedy)
 

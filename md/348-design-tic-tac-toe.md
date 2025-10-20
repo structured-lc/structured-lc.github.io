@@ -131,6 +131,10 @@ class TicTacToe:
 ### Summary
 This approach uses the counting pattern to efficiently detect win conditions by maintaining row, column, and diagonal counts per player. It avoids storing the entire board and enables O(1) move processing, a technique valuable for scalable grid games or generalized "connect-k" rule checkers. This pattern is widely seen in array and grid-based design problems.
 
+
+### Flashcard
+Track row, column, and diagonal counts for each player; after each move, check if any count reaches n for a win in O(1) time.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Design(#design), Matrix(#matrix), Simulation(#simulation)
 

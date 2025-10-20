@@ -81,6 +81,10 @@ def calculateTax(brackets, income):
 ### Summary
 This problem uses the **interval simulation** coding pattern, similar to processing event ranges or scanline algorithms. It’s appropriate when calculations depend on sequential, partitioned segments of data. The design is simple, linear time, and highly readable. This sort of pattern also appears in progressive tax calculation, segmented pricing models, or histogram interval operations.
 
+
+### Flashcard
+Iterate tax brackets, compute tax for each bracket’s range up to income, sum results.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

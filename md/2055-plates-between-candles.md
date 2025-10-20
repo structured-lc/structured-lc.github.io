@@ -136,6 +136,10 @@ def platesBetweenCandles(s, queries):
 ### Summary
 This problem is a textbook example of the "prefix sum + nearest neighbor/marker index" pattern for handling range queries with precomputed auxiliary arrays. It's a common technique for substring/range counting problems where the answer depends on boundary features (“candle” as delimiter). Similar patterns show up in histogram queries, substring boundary finding, and event-interval counting problems.
 
+
+### Flashcard
+Precompute prefix sums and nearest candles for efficient query processing.
+
 ### Tags
 Array(#array), String(#string), Binary Search(#binary-search), Prefix Sum(#prefix-sum)
 

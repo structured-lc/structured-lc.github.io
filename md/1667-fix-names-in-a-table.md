@@ -70,6 +70,10 @@ ORDER BY user_id;
 ### Summary
 This problem uses core SQL string manipulation: splitting a string, modifying character case, and combining results. The pattern applies to general string normalization tasks, e.g., cleaning up raw user data, standardizing input for search, or preparing names for display. Functions like UPPER, LOWER, SUBSTRING, CONCAT are essential in SQL data cleansing.
 
+
+### Flashcard
+Use SQL string functions to uppercase the first letter and lowercase the rest for each name.
+
 ### Tags
 Database(#database)
 

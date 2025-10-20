@@ -63,6 +63,10 @@ def diagonalSort(mat: list[list[int]]) -> list[list[int]]:
 ### Summary
 This solution leverages a **Hash Map by (i-j) diagonal index** to group and sort each diagonal, which is a common matrix manipulation pattern. Useful for problems involving diagonal traversal, custom orderings, or matrix group-wise processing.
 
+
+### Flashcard
+Group matrix elements by diagonal (i−j), sort each group, and write back to restore diagonals in sorted order.
+
 ### Tags
 Array(#array), Sorting(#sorting), Matrix(#matrix)
 

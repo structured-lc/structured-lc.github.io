@@ -143,6 +143,10 @@ def matrixSumQueries(n, queries):
 ### Summary
 We use a **reverse-processing overwriting sweep**: since each row/col overwrite trumps previous ones, handling queries from last to first lets us count only the truly active assignments. No actual matrix is built, yielding O(n + q) time and O(n) space. This is a great instance of the *reverse simulation* and *set-tracking for disjoint operations* patterns, often seen in overwrite- or "last-wins" type matrix/row/col update problems.
 
+
+### Flashcard
+Track the last value set for each row and column; sum up the contributions for all unique row and column assignments.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

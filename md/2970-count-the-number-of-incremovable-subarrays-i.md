@@ -110,6 +110,10 @@ This problem is an application of the two-pointer technique and precomputing pre
 The pattern is often used wherever merging two parts of a sequence efficiently while preserving an invariant is needed (e.g., longest increasing/decreasing subsequence problems, sliding windows, etc.).  
 Avoiding brute-force enumeration of subarrays is key to efficiency—even though subarray removal seems like O(n²), careful two-pointer reasoning unlocks the O(n) solution.
 
+
+### Flashcard
+For each possible subarray removal, check if the remaining array is strictly increasing by verifying the join between prefix and suffix.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Enumeration(#enumeration)
 

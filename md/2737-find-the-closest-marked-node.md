@@ -93,6 +93,10 @@ def find_closest_marked_node(n, edges, s, marked):
 ### Summary
 This problem is a **classic single-source to multiple-target shortest-path** search in a weighted directed graph, solved optimally with Dijkstra's algorithm. Recognizing this graph pattern—especially searching from one node to a set of nodes—can speed up finding the right solution approach. This pattern appears frequently in network routing, GPS/maps, and multi-destination pathfinding problems.
 
+
+### Flashcard
+Run Dijkstra’s from source s, then find the minimum distance to any marked node—optimal for weighted graphs.
+
 ### Tags
 Array(#array), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
 

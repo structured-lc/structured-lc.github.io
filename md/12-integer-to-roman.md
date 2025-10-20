@@ -104,6 +104,10 @@ def intToRoman(num: int) -> str:
 This problem uses a **greedy algorithm** and simple mapping. It’s a classic case for applying mapping arrays and iterative subtraction, matching the **integer-to-string conversion** and **decoding** pattern.
 The pattern is common in problems requiring mapping one set of representations to another with rules — e.g., similar to Roman to integer conversion, integer to other numeral systems, or custom encoding tasks.
 
+
+### Flashcard
+Greedily subtract the largest possible Roman value at each step, appending its symbol, until the number is reduced to zero.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), String(#string)
 

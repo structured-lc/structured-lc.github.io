@@ -88,6 +88,10 @@ This problem leverages **subsequence generation**, **bit manipulation**, and the
 The crucial insight is that the OR of all sums is captured by OR’ing the prefix sums and values themselves, making the solution **linear** in time and **constant** in space.  
 This pattern—summarizing over all subsequences using bitwise properties—occasionally appears in combinatorial problems, dynamic programming on subsets, and when asked for “union” or “aggregate” properties over all subsets or subsequences.
 
+
+### Flashcard
+Compute total sum of all elements; bitwise OR of all subsequence sums typically equals all bits set up to total sum (2^(log₂(total)+1) - 1).
+
 ### Tags
 Array(#array), Math(#math), Bit Manipulation(#bit-manipulation), Brainteaser(#brainteaser), Prefix Sum(#prefix-sum)
 

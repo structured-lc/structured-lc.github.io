@@ -65,6 +65,10 @@ def specialArray(nums):
 ### Summary
 Classic search for a self-defining statistic -- check candidate x, count "at least x" elements, compare. This is a Counting + Linear Scan pattern. Applies in core problems such as H-index, bucket/statistics queries, and self-referencing conditions.
 
+
+### Flashcard
+For each x from 0 to n, count how many numbers are ≥ x; return x if count matches x, else -1.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sorting(#sorting)
 

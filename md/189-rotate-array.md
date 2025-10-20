@@ -89,6 +89,10 @@ def rotate(nums, k):
 ### Summary
 This problem is a classic use-case for the **in-place array reversal trick**, which is a space-efficient way of rotating or shifting sequences. The underlying pattern—reverse, then reverse subparts—is common in array manipulation problems, and it applies to linked lists and strings as well. Understanding it can help in problems involving shifts, cyclic changes, or composing/splitting intervals.
 
+
+### Flashcard
+Reverse the entire array, then reverse the first k and last n−k elements to rotate in-place.
+
 ### Tags
 Array(#array), Math(#math), Two Pointers(#two-pointers)
 

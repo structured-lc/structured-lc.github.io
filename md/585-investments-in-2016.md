@@ -145,6 +145,10 @@ def investments_in_2016(policies):
 ### Summary
 This problem is a classic example of "aggregating with group counts and filtering", often found in reporting and analytics. Key coding patterns used include hash map counting, conditional aggregation, and precise floating point rounding. This approach applies broadly whenever unique group membership and shared values need to be cross-checked, such as in de-duplication tasks or fraud/uniqueness detection.
 
+
+### Flashcard
+Sum TIV_2016 for rows where TIV_2015 is duplicated and (LAT, LON) is unique.
+
 ### Tags
 Database(#database)
 

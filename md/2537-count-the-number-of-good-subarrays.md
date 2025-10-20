@@ -99,6 +99,10 @@ We used a classic **sliding window + hash map (counting)** approach, efficiently
 This pattern is widely applicable in counting subarrays/substrings with frequency or pair constraints, e.g., "at most K different characters," "longest substring with at least K repetitions," and others.  
 The technique provides linear performance, optimal for large datasets and real-time analytics.
 
+
+### Flashcard
+Use sliding window with a hash map to count pairs; expand window while pairs < k, contract while pairs ≥ k, count valid subarrays.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
 

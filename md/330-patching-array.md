@@ -105,6 +105,10 @@ def minPatches(nums, n):
 ### Summary
 Uses a **greedy, range-expanding algorithm**: always patch with the smallest unreached number to maximize coverage per patch. This is a classic greedy pattern, sometimes called “covering the range." Variants of this idea show up in interval problems, sum construction, and data completeness scenarios.
 
+
+### Flashcard
+Greedily patch the array by always adding the smallest missing sum (miss) until you can form all sums up to n.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

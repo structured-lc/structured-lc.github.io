@@ -110,6 +110,10 @@ It follows a classic “candidate update” pattern — whenever a node is great
 This approach avoids full traversal and unnecessary extra space, making it ideal for large BSTs.  
 The pattern is broadly used in BST problems involving “closest value” or “range” searches.
 
+
+### Flashcard
+Use BST property: traverse tree tracking potential successor; when root.val > p.val, update successor and go left, else go right.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Search Tree(#binary-search-tree), Binary Tree(#binary-tree)
 

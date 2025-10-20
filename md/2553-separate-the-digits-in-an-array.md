@@ -80,6 +80,10 @@ def separateDigits(nums):
 This is a classic array and digit manipulation problem using simple iteration and type conversion. The use of string conversion to access digits in order is both expressive and efficient in high-level languages.  
 This extraction pattern — breaking down numbers into their digits and reassembling or processing them — is common in problems like integer palindrome, digit sum, and digit product calculations.
 
+
+### Flashcard
+For each number, convert to string, split into digits, and append to result—no need for modulus or reversal.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

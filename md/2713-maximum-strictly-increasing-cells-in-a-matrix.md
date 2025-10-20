@@ -112,6 +112,10 @@ def maxIncreasingCells(matrix):
 ### Summary
 This problem showcases an efficient DP approach for grid problems with row and column movement restrictions and monotonic value requirements. The main idea is to use grouping and process values in order, so that DP states can be built incrementally with correct dependencies. This is a general pattern used in 2D DP with monotonicity and preprocessing, which also appears in problems like "Longest Increasing Path in a Matrix" and row/column DP grid optimizations.
 
+
+### Flashcard
+Use DP to track the longest strictly increasing path from each cell, updating by row and column in order of increasing value.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Memoization(#memoization), Sorting(#sorting), Matrix(#matrix), Ordered Set(#ordered-set)
 

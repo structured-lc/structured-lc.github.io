@@ -97,6 +97,10 @@ class MedianFinder:
 ### Summary
 This problem uses the **two heaps pattern**, specifically a max-heap and min-heap to continually keep the lower and upper halves of the data stream. By balancing the heaps, you can add elements and find the running median efficiently. This is a classic streaming/online algorithm problem and the heap-balancing pattern applies to other problems involving medians or percentile computations in a dynamic list.
 
+
+### Flashcard
+Maintain two heaps (max-heap for lower half, min-heap for upper half) balanced in size; median is top of larger heap or average of both tops.
+
 ### Tags
 Two Pointers(#two-pointers), Design(#design), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Data Stream(#data-stream)
 

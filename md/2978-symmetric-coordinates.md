@@ -130,6 +130,10 @@ This problem uses the **hash-set lookup pattern** to efficiently find coordinate
 The key is to model the symmetry, ensure only unique pairs by always storing (min, max), and avoid quadratic search using a set.  
 Variations of this approach are common in two-sum/two-pointer problems and set membership tasks.
 
+
+### Flashcard
+Store all coordinates in a set for O(1) lookup. For each (x, y) where x ≤ y, check if (y, x) exists in the set. This finds symmetric pairs in O(n) time with a single pass.
+
 ### Tags
 Database(#database)
 

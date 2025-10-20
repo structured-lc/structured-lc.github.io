@@ -87,6 +87,10 @@ The approach is a **greedy scan of transition boundaries**, always taking the mi
 This is a common greedy or prefix-suffix boundary-flipping pattern, similar to "minimum flips to make string monotonic" and related prefix/suffix optimization problems.  
 It’s highly efficient due to the additive greedy breakdown, and the trick is recognizing when/where flips are necessary.
 
+
+### Flashcard
+Only flip at boundaries where characters change; the answer is the minimum number of such boundaries.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

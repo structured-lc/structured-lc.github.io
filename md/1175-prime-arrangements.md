@@ -96,6 +96,10 @@ def numPrimeArrangements(n):
 ### Summary
 The main pattern here is **combinatorics with constraints**, split into independent factorial subproblems based on problem properties (e.g., primes-to-prime-indices). This is a classic counting problem reduced to "divide into slots based on type, fill each independently," and is common in arrangement and permutation interview questions with placement constraints.
 
+
+### Flashcard
+Count primes ≤ n, then answer is (primes!) × (non-primes!), modulo 10⁹+7—permute primes to prime indices, non-primes to the rest.
+
 ### Tags
 Math(#math)
 

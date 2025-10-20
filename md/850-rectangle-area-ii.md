@@ -125,6 +125,10 @@ class Solution:
 ### Summary
 This problem is a classic example of the **line sweep** (or scanline) algorithm combined with interval/segment counting. The key is to process vertical events and maintain a dynamic set of covered y-intervals, allowing for efficient computation of union of possibly overlapping rectangles. This pattern can be extended to union of 1D/2D intervals, area of polygons, and similar "counting union of regions" in computational geometry.
 
+
+### Flashcard
+Use sweep line: for each rectangle edge, update active intervals with segment tree, and sum covered lengths between events to get area.
+
 ### Tags
 Array(#array), Segment Tree(#segment-tree), Line Sweep(#line-sweep), Ordered Set(#ordered-set)
 

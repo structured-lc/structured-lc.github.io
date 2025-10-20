@@ -82,6 +82,10 @@ def chalkReplacer(chalk, k):
 ### Summary
 This problem leverages the "cyclic elimination" and "modulo sum reduction" patterns seen in circular queue and resource-depletion scenarios. The key insight is reducing k by cycles for efficiency. This general reduction approach is useful whenever repetitive, cyclic resource usage occurs, and direct simulation is too slow. Patterns and techniques seen here are applicable to circular array simulation, resource scheduling, and similar allocation problems.
 
+
+### Flashcard
+Simulate the process with optimization by considering the remainder of chalk after complete cycles.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Simulation(#simulation), Prefix Sum(#prefix-sum)
 

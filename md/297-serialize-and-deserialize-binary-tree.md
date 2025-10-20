@@ -117,6 +117,10 @@ class Codec:
 ### Summary
 This problem is a classic use of the "Tree DFS — Serialize/Deserialize" pattern, where preorder traversal and explicit null encoding guarantees a single-string representation of any binary tree. The approach generalizes to other structures requiring reliable save/restore, and is commonly used in distributed systems, file formats, and network protocols. The code pattern closely mirrors recursive tree traversal, and is highly reusable for binary tree problems.
 
+
+### Flashcard
+Preorder DFS with null markers (e.g., "1,2,#,#,3,#,#"); deserialize by recursively building left and right subtrees from token stream.
+
 ### Tags
 String(#string), Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Design(#design), Binary Tree(#binary-tree)
 

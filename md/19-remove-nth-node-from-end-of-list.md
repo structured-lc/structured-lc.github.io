@@ -106,6 +106,10 @@ def removeNthFromEnd(head: ListNode, n: int) -> ListNode:
 ### Summary
 This problem is a classic illustration of the "two pointers" or fast & slow pointer technique, which efficiently finds the position from the end in a singly linked list with O(1) space and O(n) time. It’s a recurring pattern for nth-from-end, detect cycles, or split lists, and is broadly useful in list processing and interview problems. Using a **dummy node** is a common coding pattern for reliably handling edge cases at the head of the list.
 
+
+### Flashcard
+Use two pointers; move the fast pointer n steps ahead, then move both until fast reaches the end to remove the nᵗʰ node from the end.
+
 ### Tags
 Linked List(#linked-list), Two Pointers(#two-pointers)
 

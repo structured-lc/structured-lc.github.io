@@ -89,6 +89,10 @@ def findMaximumXOR(nums):
 ### Summary
 This solution uses the **bit manipulation and greedy prefix hashing pattern** to solve the problem efficiently, building the answer from the highest bit down. This is a common pattern for problems where you want to maximize (or minimize) a bitwise property across a set. Similar approaches can apply to prefix problems, stream queries, or variations on maximizing bitwise functions between pairs (for XOR, AND, OR).
 
+
+### Flashcard
+Build maximum XOR bit-by-bit from MSB to LSB using hash set of prefixes—at each bit position, assume bit is 1 and check if corresponding prefix pair exists.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Trie(#trie)
 

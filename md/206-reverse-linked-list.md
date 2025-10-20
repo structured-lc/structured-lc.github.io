@@ -124,6 +124,10 @@ It is fundamental to master, as similar pointer-rewiring logic extends to more a
 No extra space is needed, and the main challenge is tracking pointers correctly to avoid losing parts of the list.  
 Common in many technical interviews to test basic understanding of linked lists and pointer manipulation.
 
+
+### Flashcard
+Iteratively reverse the list by re-pointing each node’s next to the previous node; track prev and curr pointers.
+
 ### Tags
 Linked List(#linked-list), Recursion(#recursion)
 

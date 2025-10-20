@@ -87,6 +87,10 @@ def minimumMountainRemovals(nums):
 ### Summary
 This is a dynamic programming and two-pass LIS/LDS problem—commonly tested. The bipartite DP pattern (prefix and suffix DPs) is broadly applicable: for unimodal arrays, valley/peak questions, and palindromic sequence questions.
 
+
+### Flashcard
+For each index, compute longest increasing subsequence ending there and longest decreasing starting there; mountain length is inc[i] + dec[i] − 1.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

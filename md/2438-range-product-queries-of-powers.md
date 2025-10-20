@@ -88,6 +88,10 @@ def productQueries(n, queries):
 ### Summary
 This problem uses classic **bit manipulation** to find subset powers of 2 that sum up to `n` (“power decomposition”), and then processes *range product queries* over that list. The brute-force approach is already efficient, but for many queries, prefix product precomputation (array: prefix[i] = powers×…×powers[i]) applies the “range query with preprocessing” pattern. This method recurs in similar problems, such as range sum or product queries on special decomposed arrays.
 
+
+### Flashcard
+Extract powers of 2 from binary representation of n. For each query, multiply corresponding powers with mod 10⁹+7 at each step.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
 

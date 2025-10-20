@@ -111,6 +111,10 @@ This problem uses the **greedy constructive approach**—always pick the smalles
 It's a classic for array construction under pairing constraints and demonstrates greedy plus set-tracking.  
 This approach can appear in other settings: **set construction with forbidden patterns**, **greedy assignments with exclusions**, and minimal-sum k-selection problems.
 
+
+### Flashcard
+Pick 1, 2, ..., but skip i if target–i already picked; when blocked, jump to target onwards to minimize sum.
+
 ### Tags
 Math(#math), Greedy(#greedy)
 

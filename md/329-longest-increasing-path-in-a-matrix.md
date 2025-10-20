@@ -96,6 +96,10 @@ def longestIncreasingPath(matrix):
 ### Summary
 The approach uses the classic pattern of **DFS with memoization** (“top-down DP”) on a 2D grid. This pattern—using recursive exploration with caching per state—is very common for matrix problems involving longest paths, islands, or reachability. The same pattern can be applied to word ladders, grid games, and problems involving unique state transitions on graphs.
 
+
+### Flashcard
+Use DFS with memoization to cache the longest increasing path from each cell, avoiding redundant work for O(m×n) time.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort), Memoization(#memoization), Matrix(#matrix)
 

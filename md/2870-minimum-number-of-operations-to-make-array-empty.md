@@ -114,6 +114,10 @@ def minOperations(nums):
 ### Summary
 We approached the problem as a **frequency-grouping and greedy decomposition** task. Grouping as many threes as possible (then twos as needed) guarantees the smallest number of steps by minimizing leftovers and maximizing batch removal per operation. This "frequency + greedy grouping" pattern is common for problems where you must partition counts into fixed blocks, applicable to coin change, grouping, and multiset partitioning tasks.
 
+
+### Flashcard
+For each value's frequency, greedily use as many 3's as possible, then 2's; if not possible, return –1.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Greedy(#greedy), Counting(#counting)
 

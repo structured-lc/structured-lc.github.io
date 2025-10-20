@@ -98,6 +98,10 @@ def count_visited_nodes(edges):
 ### Summary
 This problem leverages the *cycle detection in directed graphs* and *memoization* pattern. It uses DFS with state marking and answer caching, efficiently avoiding duplicate work. The approach is widely applicable to cycle-based and repeat/loop-detection style graph problems, including problems with function composition, linked lists, or finding "eventually safe" nodes in graphs.
 
+
+### Flashcard
+Use DFS with memoization to count unique nodes visited from each start; detect cycles and reuse results for nodes inside cycles to avoid redundant traversals.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Graph(#graph), Memoization(#memoization)
 

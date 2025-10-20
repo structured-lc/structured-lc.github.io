@@ -164,6 +164,10 @@ Patterns:
 - Friend-graph queries  
 This technique is widely useful in collaborative filtering, social network analytics, and co-occurrence problems.
 
+
+### Flashcard
+For each friend pair, count days with ≥3 overlapping songs using efficient joins and grouping, avoiding duplicates.
+
 ### Tags
 Database(#database)
 

@@ -117,6 +117,10 @@ class Solution:
 This problem uses the **post-order traversal** pattern, which is especially useful when child information is required before processing the parent (as for sum and tilt calculations).  
 This approach avoids redundant computations by ensuring each node’s sum and tilt are computed exactly once, making it a classic **tree DFS** pattern that applies to problems involving subtree aggregation (sums, heights, counts, etc).
 
+
+### Flashcard
+Use post-order traversal to compute subtree sums and node tilt in one pass; accumulate tilts for the final answer.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

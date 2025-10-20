@@ -103,6 +103,10 @@ class MyStack:
 This problem leverages the classic technique of simulating one data structure (**stack**) with another (**queue**). The trick is to always maintain stack order — so the most recently added is always the first out.  
 This is a great example of the **queue-to-stack simulation** pattern, which can also be inverted (stack-to-queue) and is a common interview topic to test understanding of abstract data structure operations.
 
+
+### Flashcard
+Use two queues; for push(x), enqueue x to helper queue, move all elements from main queue behind x, then swap queues so newest is always at the front for O(1) pop/top.
+
 ### Tags
 Stack(#stack), Design(#design), Queue(#queue)
 

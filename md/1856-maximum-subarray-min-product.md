@@ -111,6 +111,10 @@ def maxSumMinProduct(nums):
 This problem uses the **monotonic stack** pattern, similar to "Largest Rectangle in Histogram". It efficiently identifies maximal windows for which each element is the minimum, using prefix sums for efficient subarray sum computation.  
 This technique is broadly applicable to problems involving range queries with monotonicity, such as histogram largest area, subarray min/max queries, and variants.
 
+
+### Flashcard
+For each element, extend subarrays while maintaining it as the minimum, optimizing the computation of the maximum subarray min-product.
+
 ### Tags
 Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack), Prefix Sum(#prefix-sum)
 

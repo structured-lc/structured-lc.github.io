@@ -103,6 +103,10 @@ def maxCompatibilitySum(students, mentors):
 ### Summary
 This is a classic **assignment problem** (maximum bipartite matching with cost), solved here using backtracking/DFS due to small size. The same pattern applies to scheduling, pairing, or other matching/max-sum problems with constraints (e.g., tasks to workers, jobs to machines). For larger input, you would use DP + bitmask or the Hungarian algorithm for efficiency.
 
+
+### Flashcard
+Precompute all student-mentor scores, then use backtracking to find the max sum assignment (m ≤ 8).
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

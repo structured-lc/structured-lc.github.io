@@ -121,6 +121,10 @@ def minHeightTrees(n, edges):
 ### Summary
 This problem uses the *topological trimming* or *layered leaf peel* pattern, which is closely related to finding the center(s) of a tree. The final algorithm is efficient (O(n)) and is especially relevant for tree topology analysis, such as in network design and data structure optimizations. The methodology can be applied to other problems requiring centroid/radial decomposition or multi-source BFS.
 
+
+### Flashcard
+Identify the tree's center by iteratively removing leaves to find the minimum height.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort)
 

@@ -105,6 +105,10 @@ def constructProductMatrix(grid):
 This approach applies the standard “product of array except self” pattern adapted to 2D: we use prefix and suffix product sweeps (scan from ends, combine) so each cell’s value is built from O(1) operations, no division. This pattern is also seen in “product of array except self” and subarray-product problems.  
 Careful index handling and modulo arithmetic are key, and the approach generalizes to 1D or flattened N-D grids as well.
 
+
+### Flashcard
+Flatten grid to 1D, precompute prefix and suffix products, then for each cell, product except self = prefix × suffix at that position.
+
 ### Tags
 Array(#array), Matrix(#matrix), Prefix Sum(#prefix-sum)
 

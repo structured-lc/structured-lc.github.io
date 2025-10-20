@@ -101,6 +101,10 @@ def maxFreq(s, maxLetters, minSize, maxSize):
 This problem is an application of the fixed window sliding window pattern, combined with frequency counting using a hash map. The key insight is that, due to repetition likelihood, only the smallest allowed substring size (minSize) needs to be checked for maximum frequency, greatly simplifying the solution.  
 This pattern can be applied to other substring-counting problems with complexity constraints, especially where "most frequent" or "at most/unusual letters" requirements are present.
 
+
+### Flashcard
+Focus on the smallest allowed substring size to efficiently find the most frequent substring with ≤ maxLetters unique characters.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

@@ -91,6 +91,10 @@ def boldWords(words, s):
 ### Summary
 This problem is an instance of interval merging and string manipulation. The greedy interval mark-and-merge pattern is common for highlighting or tagging problems (e.g., highlighting overlapping substrings, merging calendar intervals). It is also related to keyword search problems, where trie/Aho-Corasick optimizations apply for larger data. The solution demonstrates a clean simulation approach suitable for small- to medium-sized constraints.
 
+
+### Flashcard
+Mark bold intervals for each keyword in s, then merge overlapping intervals and insert <b> tags only at transitions.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Trie(#trie), String Matching(#string-matching)
 

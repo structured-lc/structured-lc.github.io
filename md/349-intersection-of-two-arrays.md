@@ -91,6 +91,10 @@ def intersection(nums1, nums2):
 This problem uses the **hash set** pattern: sets provide O(1) lookup and enforce uniqueness, making them a natural fit for intersection tasks.  
 This is a foundation for problems involving fast membership checks, such as finding union, distinct elements, or differences between sets.
 
+
+### Flashcard
+Convert both arrays to sets and return their intersection for unique common elements in O(n + m) time.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
 

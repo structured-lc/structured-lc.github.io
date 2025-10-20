@@ -74,6 +74,10 @@ def isMonotonic(nums):
 ### Summary
 This is a **single pass two-pointer pattern**, commonly used for array monotonicity, sortedness, and sequence evaluation. The pattern generalizes to problems that involve comparing adjacent elements under various constraints, such as consecutive duplicates, peaks/valleys, or plateau detection. The "track-two-flags" trick is a frequently recurring technique for verifying properties that could go in either direction.
 
+
+### Flashcard
+Check if the array is entirely non-decreasing or non-increasing by scanning once for both trends.
+
 ### Tags
 Array(#array)
 

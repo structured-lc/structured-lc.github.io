@@ -155,6 +155,10 @@ This problem is a straightforward **scan/filter** and **deduplication** using a 
 It is a common pattern in data filtering or eligibility style questions, and can be adapted for more involved queries like finding users with repeated behavior, windowed event eligibility, or joining two filter criteria.  
 This approach is efficient for reasonably sized datasets, and the basic logic applies to many data filtering scenarios.
 
+
+### Flashcard
+Use a set to collect users with qualifying purchases between start and end dates.
+
 ### Tags
 Database(#database)
 

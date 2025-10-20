@@ -84,6 +84,10 @@ def maxAscendingSum(nums):
 ### Summary
 This problem is a classic example of the **"sliding window for subarray problems"** or **"one-pass cumulative sum with reset"** pattern. It's efficient, uses constant space, and can be adapted for related problems like finding maximum sum of non-decreasing or other monotonic subarrays. The approach is common in interview settings for array segment optimizations.
 
+
+### Flashcard
+Track running sum of current strictly ascending subarray; reset sum when element ≤ previous, update max throughout O(n) scan.
+
 ### Tags
 Array(#array)
 

@@ -111,6 +111,10 @@ def daily_active_users(activity):
 ### Summary
 This problem follows a **group-by and count-distinct** pattern, extremely common in SQL analytics and analytics coding interviews. Filtering data in a date window, grouping by a field (like day), and aggregation (like counting unique users) are universal techniques, useful in churn analysis, DAU/WAU/MAU reporting, and more reporting scenarios.
 
+
+### Flashcard
+For each of the last 30 days, count distinct user_ids with activity using GROUP BY and COUNT DISTINCT in SQL.
+
 ### Tags
 Database(#database)
 

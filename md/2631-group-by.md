@@ -91,6 +91,10 @@ This is very common for categorizing, bucketing, or aggregating data on a proper
 Similar grouping logic is seen in SQL’s GROUP BY, the `groupby` function in Python's itertools/pandas, and grouping operations in most languages’ collection libraries.  
 Key takeaway for interviews: using a dictionary to group items by a computed key is an efficient and clean coding pattern.
 
+
+### Flashcard
+Group array elements by applying a function to each element and using its result as a key in an object.
+
 ### Tags
 
 ### Similar Problems

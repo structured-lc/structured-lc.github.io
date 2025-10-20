@@ -86,6 +86,10 @@ This problem is a classic example of the **hash map** (dictionary) lookup patter
 It's foundational for interview prep, and the same pattern appears in related problems like "Two Sum II" (sorted input), subsets with given sum, and pair-finding for other constraints.  
 Hash maps are the natural solution for complement-type array problems—recognize and apply this template widely.
 
+
+### Flashcard
+Use a hash map to store seen numbers; for each num, check if target - num is in the map for O(n) lookup of the complement.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

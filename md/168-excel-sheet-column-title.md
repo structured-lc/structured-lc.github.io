@@ -73,6 +73,10 @@ def convertToTitle(columnNumber: int) -> str:
 ### Summary
 The problem is a clever variant of "base conversion" with a non-zero starting digit. Key nuance: adjust index by subtracting 1 before modulo, so output matches Excel's unique mapping. The coding pattern is common for "number to string/base" conversions and can be reused for similar encoding challenges.
 
+
+### Flashcard
+Convert to base-26, subtract 1 before modulo, and map remainder to 'A'-'Z' for each digit to build the column title.
+
 ### Tags
 Math(#math), String(#string)
 

@@ -135,6 +135,10 @@ It’s a versatile technique, useful for optimizing recursive algorithms (like F
 The solution can be adapted to add features like cache expiry, LRU-eviction, and argument normalization for real-world use-cases.  
 Commonly seen in dynamic programming (with recursion), and in UI frameworks or database query optimization.
 
+
+### Flashcard
+Cache function results by arguments; return cached value if present, else compute and store.
+
 ### Tags
 
 ### Similar Problems

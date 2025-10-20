@@ -101,6 +101,10 @@ def colorBorder(grid, r0, c0, color):
 ### Summary
 This problem uses the classic **flood fill** and **component border detection** pattern. It’s a common application of DFS/BFS with border identification—a pattern that also appears in image region segmentation, game map traversal, and advanced paint-fill tools. Detecting and processing only border cells is key, differentiating this problem from full-region/coloring variants.
 
+
+### Flashcard
+Use DFS/BFS to find the connected component, marking border cells (adjacent to edge or different color), then color only the border.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

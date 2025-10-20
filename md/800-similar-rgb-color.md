@@ -109,6 +109,10 @@ This problem uses a *digit grouping & rounding pattern*: each channel is mapped 
 Rounding to the nearest fixed step and reconstructing a string is a pattern seen in quantization, color compression, and binning problems.  
 The direct mathematical rounding makes this a classic interview problem for recognizing patterns and avoiding unnecessary brute-force.
 
+
+### Flashcard
+For each RGB channel, round to the nearest multiple of 17 (hex 0x11) to get the closest shorthand value.
+
 ### Tags
 Math(#math), String(#string), Enumeration(#enumeration)
 

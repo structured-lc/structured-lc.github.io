@@ -89,6 +89,10 @@ def countLetters(s: str) -> int:
 ### Summary
 This approach leverages the mathematical pattern for the count of substrings in a run of identical characters (run-length encoding). It’s an efficient and classic use of the "grouping" pattern and the arithmetic sum formula. The core coding pattern is useful for substring count problems and string run-length analysis in general.
 
+
+### Flashcard
+For each run of k identical chars, add k×(k+1)/2 to count—sum over all such runs.
+
 ### Tags
 Math(#math), String(#string)
 

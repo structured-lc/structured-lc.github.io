@@ -82,6 +82,10 @@ def theMaximumAchievableX(num: int, t: int) -> int:
 ### Summary
 This problem is a direct application of **distance bounding using operations**, relying on the insight that a single operation closes the gap by 2. The coding pattern is common in mathematical optimization and greedy approaches, and the solution generalizes to problems involving symmetric operations on two values. Can be applied wherever two entities can move toward each other under fixed-step symmetric rules.
 
+
+### Flashcard
+Maximum x equals num + 2×t, since each operation moves both numbers one step closer (total distance reduction of 2).
+
 ### Tags
 Math(#math)
 

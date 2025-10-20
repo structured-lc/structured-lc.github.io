@@ -86,6 +86,10 @@ def pivotInteger(n):
 ### Summary
 This problem uses a **math insight pattern**, reducing a search to a simple property of arithmetic series: x² = n×(n+1)/2. The trick is to check if the total sum up to n is a perfect square — then its root is the answer. This “use math to avoid iteration” pattern is common, especially in digit, sum, and index pivot problems. It’s useful in any situation involving balancing sums or symmetry in arithmetic series.
 
+
+### Flashcard
+Find x where x² = n × (n+1)/2; if no integer solution, return -1.
+
 ### Tags
 Math(#math), Prefix Sum(#prefix-sum)
 

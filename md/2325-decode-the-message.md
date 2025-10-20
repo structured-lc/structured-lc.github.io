@@ -100,6 +100,10 @@ def decodeMessage(key: str, message: str) -> str:
 ### Summary
 This problem follows the **character mapping** pattern, which is common in problems involving substitution ciphers or character replacement. The technique of creating a mapping by scanning an input key, then using that map to transform/decode another string is widely applicable in problems involving translation, encoding/decoding, or input normalization. The core pattern (first-seen mapping) is also seen in bijective mapping and custom sort problems.
 
+
+### Flashcard
+Build a mapping from each unique letter in key (first appearance) to 'a'..'z', then decode message by substituting each character using this mapping; spaces remain unchanged.
+
 ### Tags
 Hash Table(#hash-table), String(#string)
 

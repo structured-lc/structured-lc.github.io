@@ -113,6 +113,10 @@ def getOrder(tasks):
 ### Summary
 This problem uses the **heap + two pointer pattern** for simulating a scheduling process, combining a sorted list for chronological scanning and a min-heap for task prioritization. This approach is common for process/task scheduling problems and anywhere you need to dynamically choose the *best* available item by some criteria (e.g. Dijkstra’s, interval merging, etc). The use of a priority queue for minimum selection is broadly applicable in real-world scheduling and resource allocation scenarios.
 
+
+### Flashcard
+Sort tasks by enqueue time, use min-heap to always pick shortest available task; simulate time steps efficiently.
+
 ### Tags
 Array(#array), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

@@ -84,6 +84,10 @@ def reverseBits(n: int) -> int:
 ### Summary
 This problem uses the classic **bit manipulation** pattern, where you process and shift bits directly using bitwise operations. The approach is constant time due to the fixed bit-width. It's an excellent illustration of bitwise AND, OR, and shifts. This pattern is also useful in reversing bytes, mirroring data, and cryptographic applications.
 
+
+### Flashcard
+For each of 32 bits, shift result left, add n & 1, then right shift n to reverse all bits.
+
 ### Tags
 Divide and Conquer(#divide-and-conquer), Bit Manipulation(#bit-manipulation)
 

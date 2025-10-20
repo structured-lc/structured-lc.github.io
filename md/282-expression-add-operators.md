@@ -105,6 +105,10 @@ class Solution:
 ### Summary
 This problem uses the **backtracking** pattern to exhaustively search all valid operator insertions between digits. Special attention is paid to operator precedence and handling multi-digit segments without leading zeros. The core principles are similar to other backtracking combinatorial search problems, such as generating all valid equations, all parentheses combinations, or partitioning strings.
 
+
+### Flashcard
+Backtrack through all positions to insert +, -, or × operators; track previous operand separately to handle multiplication precedence correctly.
+
 ### Tags
 Math(#math), String(#string), Backtracking(#backtracking)
 

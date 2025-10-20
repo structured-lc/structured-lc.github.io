@@ -112,6 +112,10 @@ def assignTasks(servers, tasks):
 ### Summary
 This problem uses the **two-heap** simulation pattern: one min-heap for selecting the next available/idle server (by weight/index), and another min-heap to track when busy servers become available again (by free_time). This pattern is very common when you need optimal resource allocation with ordering constraints and can also apply to problems about bandwidth, parallel job scheduling, and real-time control. Key insight: Use min-heaps to efficiently handle dynamic assignment and release ordering.
 
+
+### Flashcard
+Use min-heaps for available and busy servers to efficiently assign tasks.
+
 ### Tags
 Array(#array), Heap (Priority Queue)(#heap-priority-queue)
 

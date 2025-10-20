@@ -103,6 +103,10 @@ This problem follows a classic **recursive divide-and-conquer** pattern: recursi
 The method leverages properties of "special binary strings" and appears in problems about parsing/balanced substrings, e.g., valid parentheses, Dyck words, etc.  
 Sorting at each recursion ensures lexicographic optimality— a standard trick with recursively-defined strings and reordering.
 
+
+### Flashcard
+Recursively split into maximal special substrings, sort them in descending order, and concatenate for the lexicographically largest result.
+
 ### Tags
 String(#string), Recursion(#recursion)
 

@@ -100,6 +100,10 @@ This is a classic linear-scan counting problem that can be solved using the **Co
 The optimal approach is to count how many numbers are less than and equal to the target, then construct the answer range—no sorting required, so it's both fast and memory-efficient.  
 This technique generalizes to problems where you need to find the position/range of elements after “virtual” sorting.
 
+
+### Flashcard
+Count elements less than target and occurrences of target; target indices after sorting are range [less, less+count).
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sorting(#sorting)
 

@@ -112,6 +112,10 @@ def average_height_of_buildings(buildings):
 ### Summary
 This is a classic **line sweep** (or "critical points") interval merging pattern, commonly used in interval covering, skyline, and event-based segment aggregation problems. The same logic applies to problems like the Skyline, union of rectangles/perimeters, or weighted interval queries, whenever changes only happen at known discrete points. The key is to preprocess and only update state at those points, which keeps the algorithm fast and efficient.
 
+
+### Flashcard
+Calculate the average height of buildings in each segment by using a line sweep approach to track changes in building heights.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

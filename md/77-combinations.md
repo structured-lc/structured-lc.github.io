@@ -92,6 +92,10 @@ This problem is a classic example of the **backtracking** (recursive decision tr
 It efficiently builds up solutions by exploring only valid extensions, avoiding duplicates by always moving forward in the candidate space (“start” grows).  
 This approach is very common for generating combinations, subsets, permutations, and has applications in problems like N-Queens, subset sums, and generating all valid parenthesis strings.
 
+
+### Flashcard
+Use backtracking to build combinations by recursively adding numbers from current start to n, ensuring each combination is unique and in order.
+
 ### Tags
 Backtracking(#backtracking)
 

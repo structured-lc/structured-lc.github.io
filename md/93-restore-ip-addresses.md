@@ -133,6 +133,10 @@ This is a standard **backtracking** problem: try all possible splits while pruni
 Typical for “restore with splitting under constraints” style questions.  
 Similar backtracking patterns are broadly applicable in “string segmentation”, “combination sum”, and “palindrome partitioning” interview problems.
 
+
+### Flashcard
+Use backtracking to place three dots, ensuring each segment is valid (0–255, no leading zeros), and collect all valid IP addresses.
+
 ### Tags
 String(#string), Backtracking(#backtracking)
 

@@ -99,6 +99,10 @@ This approach uses the **dummy node** linked list pattern—a common way to hand
 It's a single-pass, in-place algorithm and demonstrates fundamental linked list manipulation techniques.  
 Patterns here are helpful for similar problems: deleting a node, removing duplicates, partitioning a list, etc.
 
+
+### Flashcard
+Use a dummy node before head; iterate and relink next pointers to skip nodes with value equal to val.
+
 ### Tags
 Linked List(#linked-list), Recursion(#recursion)
 

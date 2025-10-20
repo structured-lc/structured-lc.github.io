@@ -88,6 +88,10 @@ def singleNumber(nums):
 ### Summary
 This problem uses the **Bit Manipulation** and **Bitwise Counting** pattern, optimizing for O(1) space by tracking the number of times each bit appears using just two integer variables. This approach is a classic trick useful for similar problems where numbers appear *k* times and you need the unique element. This technique can also be adapted for other values of *k*, making it a broadly applicable pattern for interview settings.
 
+
+### Flashcard
+For each bit position, count set bits across all numbers; the unique number’s bits are those where count mod 3 ≠ 0.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

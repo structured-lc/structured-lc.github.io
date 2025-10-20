@@ -125,6 +125,10 @@ class Solution:
 ### Summary
 This problem is a classic **linked list deep copy** task, where extra (random) pointers increase complexity. The in-place interleaving solution is a space-optimized pointer manipulation trick frequently applicable in *copying complex data structures with random connections*, and variants of it often appear with trees or graphs. It’s a common interview pattern showcasing pointer manipulation and two-pass or three-pass approaches, and appears across many Leetcode “copy a structure with random/back/other” pointer problems.
 
+
+### Flashcard
+Interleave copied nodes with originals, set random pointers in a second pass, then split the lists to restore original and extract the copy.
+
 ### Tags
 Hash Table(#hash-table), Linked List(#linked-list)
 

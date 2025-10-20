@@ -72,6 +72,10 @@ def watchedVideosByFriends(watchedVideos, friends, id, level):
 ### Summary
 This problem combines BFS for graph level traversal with grouping and multi-key sorting. It is a canonical example of layered traversal in social graphs and aggregation/sorting for analytics, and uses common coding graph- and counting-patterns.
 
+
+### Flashcard
+Use BFS to find all friends at the given level, collect their watched videos, count frequencies, then sort by frequency and lex order.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Breadth-First Search(#breadth-first-search), Graph(#graph), Sorting(#sorting)
 

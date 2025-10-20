@@ -86,6 +86,10 @@ def sum_indices_with_k_set_bits(nums, k):
 ### Summary
 This problem is a **bit manipulation + enumeration** pattern: for each index, count properties about its binary representation and selectively sum values. Such approaches are common in bitmask dynamic programming, subset sum enumeration, and questions where index properties govern computation. The key concept is mapping problem properties ("k set bits") to computational checks and using simple loops for an O(n) solution.
 
+
+### Flashcard
+For each index, if its binary representation has k set bits, add nums[i] to the sum; use bit counting for O(n) time.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

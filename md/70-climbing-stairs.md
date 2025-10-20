@@ -74,6 +74,10 @@ def climbStairs(n):
 ### Summary  
 This problem is a textbook example of **dynamic programming** and a direct application of the Fibonacci sequence. The iterative O(1) space solution is both efficient and elegant. This coding pattern is commonly applied in problems involving counting distinct ways with overlapping subproblems, such as coin change, staircase jumps with different step sizes, and tiling problems.
 
+
+### Flashcard
+DP or Fibonacci: ways to reach step n = ways to (n–1) + ways to (n–2); use O(1) space if desired.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Memoization(#memoization)
 

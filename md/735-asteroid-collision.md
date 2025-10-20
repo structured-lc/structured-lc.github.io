@@ -93,6 +93,10 @@ def asteroidCollision(asteroids):
 ### Summary
 This problem uses the **stack simulation** pattern: pushing and popping elements based on conditional state transitions. It’s common in scenarios with sequential, one-directional interactions (see: Valid Parentheses, Daily Temperatures, Next Greater Element). The key is efficiently tracking chain-reaction events and only keeping survivors, making it ideal for stack use.
 
+
+### Flashcard
+Use a stack to track right-moving asteroids; when left-moving asteroid arrives, pop smaller right-moving ones until collision resolves or stack empty.
+
 ### Tags
 Array(#array), Stack(#stack), Simulation(#simulation)
 

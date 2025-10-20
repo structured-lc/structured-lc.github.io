@@ -73,6 +73,10 @@ def longestSubarray(nums, limit):
 ### Summary
 This is a classic monotonic deque / sliding window maximum/minimum pattern, vital in windowed signal, price or statistical analysis. Template generalizes to problems involving window-based range constraints.
 
+
+### Flashcard
+Use two monotonic deques to maintain window max/min for sliding window; expand right, shrink left when max−min > limit.
+
 ### Tags
 Array(#array), Queue(#queue), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set), Monotonic Queue(#monotonic-queue)
 

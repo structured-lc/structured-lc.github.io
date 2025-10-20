@@ -67,6 +67,10 @@ def checkArithmeticSubarrays(nums: List[int], l: List[int], r: List[int]) -> Lis
 ### Summary
 A simple combination of **array slicing, sorting, and uniform difference check**. The arithmetic property is a classic pattern in questions involving sorted subarrays, intervals, or permutations.
 
+
+### Flashcard
+Extract subarrays, sort them, and check if differences between adjacent elements are constant.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting)
 

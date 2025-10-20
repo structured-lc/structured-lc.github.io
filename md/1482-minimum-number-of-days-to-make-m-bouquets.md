@@ -73,6 +73,10 @@ def minDays(bloomDay, m, k):
 ### Summary
 This problem is a pattern for binary search on the answer. Whenever checking a "minimum number to satisfy a condition" where possible answers are monotonic, try binary search with a predicate function.
 
+
+### Flashcard
+Binary search on days; for each candidate day, check if at least m bouquets of k adjacent bloomed flowers can be made by scanning the array.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

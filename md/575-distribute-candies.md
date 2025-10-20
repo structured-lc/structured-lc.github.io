@@ -82,6 +82,10 @@ def distributeCandies(candies):
 ### Summary
 This problem is a classic **set/unique counting** scenario paired with a simple **capacity constraint** (can eat ⌊n/2⌋). The optimal solution uses a set to count unique items, then returns the minimum of this count and the limit allowed. This is a common **hashing and counting** pattern, applicable to any scenario where you must maximize diversity under a quantity constraint.
 
+
+### Flashcard
+The answer is min(number of unique candy types, n/2), since Alice can eat at most n/2 candies.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

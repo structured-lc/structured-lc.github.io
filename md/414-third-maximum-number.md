@@ -102,6 +102,10 @@ This problem uses the **tracking minimums/maximums pattern** with constant varia
 Typical applications include leaderboards, real-time statistics, and similar logic for games or ranking lists.  
 Recognizing when duplicates should be ignored (focus on "distinct") is key. The approach is a variation of the classic “running maximum”/“running minimum” technique.
 
+
+### Flashcard
+Maintain three variables (first, second, third) for top distinct maximums, update in single O(n) pass by comparing and shifting values when new distinct maximum found.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

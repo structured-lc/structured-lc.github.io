@@ -132,6 +132,10 @@ def flipBinaryTree(root, leaf):
 ### Summary
 This uses **tree path reversal** and pointer manipulation—an example of recursion along a unique path with careful parent/child rewiring. Related to **tree root changing and path reversal** interview patterns.
 
+
+### Flashcard
+Reverse parent pointers along the path from root to leaf, making each parent the right child of its child recursively.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

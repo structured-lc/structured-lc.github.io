@@ -96,6 +96,10 @@ def numMovesStones(a: int, b: int, c: int):
 This problem is a good example of reasoning about **intervals and greedy movement** on a number line. It uses the **min-max pattern**: find the smallest and largest number of steps given constraints.  
 The key insight is to avoid brute-force by leveraging the invariant that only endpoints can move and by analyzing position gaps. This approach—sorting and working with adjacent differences—can be found in other consecutive or rearrangement problems (like minimum moves to equal array elements, or arranging tokens on a line).
 
+
+### Flashcard
+Sort stones; min moves is 1 or 2 based on gaps, max moves is (z−x+1)−3.
+
 ### Tags
 Math(#math), Brainteaser(#brainteaser)
 

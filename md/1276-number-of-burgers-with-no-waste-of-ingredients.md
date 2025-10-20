@@ -119,6 +119,10 @@ This problem is a classic system of equations scenario, solved via algebraic man
 This “simultaneous equations with item counts” pattern is common in resource allocation, coin change, and combination problems.  
 It highlights translating real-world constraints into equations, and quickly testing solution validity.
 
+
+### Flashcard
+Solve equations 4×x+2×y=tomatoSlices and x+y=cheeseSlices for integer x,y≥0; return [x, y] if valid, else [].
+
 ### Tags
 Math(#math)
 

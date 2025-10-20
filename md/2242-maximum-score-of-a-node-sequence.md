@@ -110,6 +110,10 @@ def maximumScore(scores, edges):
 This problem depends on efficiently pruning candidates using the graph structure, specifically by leveraging the top-k neighbors for each node.  
 It’s a graph enumeration + best-candidates pattern, and similar optimizations appear in problems involving friend circles, k-way path finding, or clique/subgraph enumeration where maximal-structure scores are needed.
 
+
+### Flashcard
+For each edge (u, v), find the best a connected to u and b connected to v (a ≠ v, b ≠ u) to form a 4-node sequence.
+
 ### Tags
 Array(#array), Graph(#graph), Sorting(#sorting), Enumeration(#enumeration)
 

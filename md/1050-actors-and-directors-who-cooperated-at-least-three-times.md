@@ -126,6 +126,10 @@ def actors_and_directors_at_least_three(records):
 ### Summary
 This problem leverages the **group-by and aggregation** pattern common in SQL/database questions, with a straightforward Python mapping using dictionaries. This approach is widely used for tasks involving counting occurrences of unique pairs or combinations in large datasets, and scales well both in SQL and in-memory dictionary-based computation. This is a very standard and practical pattern for analytics and data summarization tasks.
 
+
+### Flashcard
+Use GROUP BY on (actor_id, director_id) and HAVING COUNT(*) ≥ 3 to find pairs who cooperated at least three times.
+
 ### Tags
 Database(#database)
 

@@ -110,6 +110,10 @@ This is a **greedy + sorting + split point** problem, closely related to countin
 The core trick is to use a sorted array so you can check, for each possible group size, if all selected students and all unselected students are happy via their threshold relative to the group size.  
 This pattern of enumerating partitions based on "left vs right" satisfaction under sorted order is common and can be reused in problems like minimizing the unfairness, energy problems, or partitioning arrays by satisfaction constraints.
 
+
+### Flashcard
+Sort nums; for each possible group size k, check if exactly k students have nums[i] < k and n–k have nums[i] ≥ k.
+
 ### Tags
 Array(#array), Sorting(#sorting), Enumeration(#enumeration)
 

@@ -104,6 +104,10 @@ def maxScore(edges):
 ### Summary
 This problem uses the classic **Dynamic Programming on Trees** pattern, specifically handling the constraint where chosen elements (edges) must not be adjacent. By propagating optimal subproblem solutions upward via DFS, we efficiently maximize the non-adjacent edge subset sum. This pattern is broadly useful, e.g., "House Robber III" or vertex/edge selection under adjacency constraints in trees.
 
+
+### Flashcard
+Use tree DP where each node tracks two states: max score if parent edge is selected vs not selected; recur on children respecting adjacency constraints.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search)
 

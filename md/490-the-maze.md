@@ -93,6 +93,10 @@ def hasPath(maze, start, destination):
 ### Summary
 This problem is a classic **graph search** disguised as a maze simulation and leverages **BFS** to efficiently explore all possible stopping points that the ball can reach under rolling constraints, avoiding cycles with a visited set. The coding pattern used (BFS, directional movement simulation) is applicable in pathfinding, grid traversal (robot movement, game puzzles), and other constraint-based search problems.
 
+
+### Flashcard
+Use BFS to roll ball in all directions until hitting a wall; mark visited stop positions to avoid cycles.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

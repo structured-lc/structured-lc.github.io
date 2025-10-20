@@ -130,6 +130,10 @@ This is a classical greedy + binary search ("binary search the answer") problem.
 2. Use binary search for optimal t,  
 3. For each t, efficiently check feasibility via greedy or simulation.
 
+
+### Flashcard
+Binary search the answer t; for each t, check if hens can eat all grains within t seconds.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
 

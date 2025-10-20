@@ -90,6 +90,10 @@ This problem is a classic **backtracking** question with deduplication, often ca
 This approach of recursively deciding to include or exclude each element and using sets for deduplication applies to other problems, such as generating **unique combinations, subsets with restrictions**, or **permutations with deduplication**.  
 Understanding this pattern builds a foundation for tackling many combinatorial search and generation problems in coding interviews.
 
+
+### Flashcard
+Use backtracking to build subsequences, only adding numbers that maintain non-decreasing order; use set to avoid duplicates.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
 

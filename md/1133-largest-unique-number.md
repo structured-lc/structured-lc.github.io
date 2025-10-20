@@ -71,6 +71,10 @@ How would you handle streaming data where you can’t store the whole array?
 ### Summary  
 This problem trains you to use hash tables for counting frequencies—a fundamental technique in array and string manipulation. The pattern is widely used in problems involving uniqueness, duplicates, or majority elements. The approach is efficient and clear, and similar logic applies to other “count and filter” problems.
 
+
+### Flashcard
+Count frequencies with a hash map; return the largest number with frequency 1, or −1 if none.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting)
 

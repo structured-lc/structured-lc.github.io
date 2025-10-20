@@ -91,6 +91,10 @@ def canFinish(numCourses, prerequisites):
 ### Summary
 This problem is a classic application of **cycle detection in a directed graph**. Using DFS with visited states (unvisited, visiting, visited) efficiently checks for cycles. It’s a prototypical problem for practicing **graph traversal** and especially **topological sort**; the same strategy often appears in project task scheduling, build pipeline ordering, and course planning scenarios.
 
+
+### Flashcard
+Model courses as a directed graph; use DFS or BFS to detect cycles—if any, return false (cannot finish all courses).
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort)
 

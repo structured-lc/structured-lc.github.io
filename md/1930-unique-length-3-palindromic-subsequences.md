@@ -107,6 +107,10 @@ This problem uses a **pattern of sliding window/interval search for first-and-la
 This pattern applies wherever you need to fix outer structure and enumerate middle variations, especially with small alphabets or fixed-size subsequences.  
 Common in problems involving **palindromic substrings/subsequences, two pointers, character frequency, or set-based uniqueness.**
 
+
+### Flashcard
+For each unique character, find its leftmost and rightmost positions, then count unique middle characters between them for all possible palindromes.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
 

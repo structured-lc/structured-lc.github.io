@@ -126,6 +126,10 @@ This is a **sorting + binary search** problem, a direct application of the inter
 The key trick is to pre-sort start and end times, so queries asking "how many intervals cover this point?" are answered in O(log N) each.  
 This pattern applies broadly: sweep line problems, calculating concurrent intervals, or answering range-count queries efficiently.
 
+
+### Flashcard
+Preprocess sorted start and end times, then for each person, use binary search to count flowers in bloom as (started by t) minus (ended before t).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Sorting(#sorting), Prefix Sum(#prefix-sum), Ordered Set(#ordered-set)
 

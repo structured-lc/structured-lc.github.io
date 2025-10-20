@@ -133,6 +133,10 @@ class DistanceLimitedPathsExist:
 ### Summary
 This problem is a classic application of the **offline query+union-find+sorting** paradigm. It leverages the fact that query constraints on edge weights can be handled by batch-processing, reminiscent of Kruskal’s MST approach. The same pattern is useful in problems involving dynamic connectivity under constraints, such as connectivity queries on graphs with changing edge cost limits.
 
+
+### Flashcard
+For offline queries, sort edges and queries by limit, use Union-Find to dynamically connect edges—answer each query based on current connectivity.
+
 ### Tags
 Union Find(#union-find), Graph(#graph), Minimum Spanning Tree(#minimum-spanning-tree)
 

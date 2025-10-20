@@ -98,6 +98,10 @@ def reorganizeString(s: str) -> str:
 ### Summary  
 This problem involves rearranging characters in a string to avoid adjacent duplicates, which can be solved using a greedy strategy with a max heap. The key insight is ensuring no character appears more than ⌊(n+1)/2⌋ times, making it a classic example of resource allocation and optimization problems. This pattern is commonly used in scheduling and resource distribution scenarios.
 
+
+### Flashcard
+Use a max heap to place the most frequent characters first, always separating same characters to avoid adjacent duplicates.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Counting(#counting)
 

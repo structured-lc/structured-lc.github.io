@@ -82,6 +82,10 @@ def minimumSum(num: int) -> int:
 This is a greedy digit-allocation problem: **sort the digits, put smallest in higher places** in both numbers for minimum sum. This digit-placement-by-greedy-order is a recurring trick in similar digit rearrangement or partitioning problems.  
 Common in “minimum/maximum value by rearrangement” questions with permutations. Pattern: sorting, then careful positional assignment to optimize sum or difference.
 
+
+### Flashcard
+Sort the four digits, place the smallest two in the tens place and the largest two in the units place of two numbers to minimize their sum.
+
 ### Tags
 Math(#math), Greedy(#greedy), Sorting(#sorting)
 

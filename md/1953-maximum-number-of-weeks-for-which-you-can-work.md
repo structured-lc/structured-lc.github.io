@@ -81,6 +81,10 @@ def numberOfWeeks(milestones: List[int]) -> int:
 ### Summary
 This problem uses a **greedy/analytical** approach—identifying a constraint boundary (dominant single-project count) to decide between two scenarios: finish all, or finish as many as alternating rules permit. The core coding pattern is counting and bounding based on max/sum, a useful trick in task scheduling, job allocation, or whenever "no consecutive" constraints are imposed. This pattern commonly appears in round-robin scheduling and competitive task assignment problems.
 
+
+### Flashcard
+If the largest project’s tasks ≤ sum of others + 1, you can finish all; else, max weeks = 2 × sum of others + 1.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

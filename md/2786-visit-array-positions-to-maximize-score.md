@@ -117,6 +117,10 @@ This problem uses the **"two-state DP"** or **"separate track for each parity"**
 Common in problems with "one or few switching penalties" and when all moves can only get better by considering the best so far for each class (parity here).  
 Pattern appears in stock buy/sell problems, coloring, even/odd walking, and simplified state transitions.
 
+
+### Flashcard
+Use dynamic programming to track max score for even and odd positions, updating scores and applying penalty only when parity changes.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

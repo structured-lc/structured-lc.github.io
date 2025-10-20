@@ -107,6 +107,10 @@ This problem uses the convex hull pattern, specifically *Andrew's monotone chain
 It’s commonly applicable in computational geometry for “smallest enclosing polygon” type questions—used in fencing, clustering, shape analysis, and graphics.  
 The pattern emphasizes a two-pass scan (lower, upper), using cross products to maintain hull invariants and include all boundary points, even in colinear cases.
 
+
+### Flashcard
+Use a convex hull algorithm (e.g., monotone chain) to find the minimal fence enclosing all trees, including colinear boundary points.
+
 ### Tags
 Array(#array), Math(#math), Geometry(#geometry)
 

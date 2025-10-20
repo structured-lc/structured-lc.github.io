@@ -112,6 +112,10 @@ def lowestCommonAncestor(p, q):
 ### Summary
 This problem leverages the **two-pointer technique** (common in linked list intersection problems) due to the parent pointer in each node. Recognizing that you can traverse from any node up to the root allows elegant O(1) space and O(h) time. This pattern—tracing ancestors with parent links and resetting pointers—is widely applicable in tree traversal when upward navigation is available.
 
+
+### Flashcard
+Store all ancestors of p in a set, then walk up from q until you find the first shared ancestor—this is the LCA, leveraging parent pointers for O(h) time and space.
+
 ### Tags
 Hash Table(#hash-table), Two Pointers(#two-pointers), Tree(#tree), Binary Tree(#binary-tree)
 

@@ -91,6 +91,10 @@ def unequalTriplets(nums):
 ### Summary
 This problem uses the **counting by frequency** pattern, separating the array into partitions and using combinatorics to count valid combinations efficiently instead of brute-force enumeration. The same pattern appears in problems that ask for counting unique pairs or triplets with specific constraints based on occurrences.
 
+
+### Flashcard
+Count frequency of each value, then for each triplet of distinct values, multiply their counts to get total unequal triplets.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting)
 

@@ -151,6 +151,10 @@ def minimumOperations(root):
 ### Summary
 This approach leverages two classic patterns: **level-order BFS** for trees and **cycle decomposition** for minimum swaps to sort an array. Recognizing that these problems combine to solve each level efficiently is a common pattern in tree and permutation sort problems, and can be applied whenever you need to transform a structure using minimal local operations.
 
+
+### Flashcard
+For each tree level, count minimum swaps to sort using cycle decomposition; total swaps is the sum over all levels.
+
 ### Tags
 Tree(#tree), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

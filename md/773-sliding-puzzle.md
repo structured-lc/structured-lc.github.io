@@ -138,6 +138,10 @@ def slidingPuzzle(board):
 
 This problem is a classic **BFS on state space/search space** for finding a shortest path, with optional optimizations using A\* and heuristics. This pattern—serializing state, avoiding duplicates, exploring neighbors—appears in puzzles, word ladder, and transformation/graph traversal interview questions. For small state spaces, BFS is efficient and easy to reason about. For larger boards or puzzles, informed search and smarter heuristics become crucial.
 
+
+### Flashcard
+Serialize board state and use BFS to find the minimum moves, tracking visited states to avoid cycles.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Breadth-First Search(#breadth-first-search), Memoization(#memoization), Matrix(#matrix)
 

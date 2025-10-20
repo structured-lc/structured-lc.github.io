@@ -100,6 +100,10 @@ def sumEvenAfterQueries(nums, queries):
 ### Summary
 This solution is an example of the **running sum with state management** coding pattern. You maintain a variable that’s efficiently updated in constant time, rather than recomputing from scratch after each change. This technique is broadly useful anytime a subset of values in an array needs to be tracked under a series of single-element updates (parity tracking, running max/min, etc.).
 
+
+### Flashcard
+Maintain running sum of even numbers; for each query, update sum by removing old even value and adding new if result is even.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

@@ -116,6 +116,10 @@ This problem uses the **bitmask** and **bitwise operations** pattern, exploiting
 The key is recognizing the constraint on column sums and leveraging binary properties.  
 This technique is broadly useful anywhere substructures are small and combinatorially search is warranted, e.g., other coding problems with tight constraints on binary arrays or feature activation.
 
+
+### Flashcard
+For matrix subsets, check if any row is all zeros (trivial solution); otherwise, try small subsets since large ones are impractical.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Matrix(#matrix)
 

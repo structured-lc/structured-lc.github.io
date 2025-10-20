@@ -83,6 +83,10 @@ def divisorGame(n: int) -> bool:
 This problem is classic game theory and parity (even-odd) analysis. The coding pattern is pattern recognition; the optimal move depends on maintaining an even/odd status.  
 Related: “Nim Game”, “Stone Game”, and similar take-away games that rely more on mathematical insight than brute simulation.
 
+
+### Flashcard
+If n is even, Alice can always win by making n odd for Bob; so Alice wins iff n is even.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Brainteaser(#brainteaser), Game Theory(#game-theory)
 

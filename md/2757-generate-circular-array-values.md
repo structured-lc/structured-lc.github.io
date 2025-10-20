@@ -86,6 +86,10 @@ This problem is a classic circular array traversal using modular arithmetic.
 The pattern — index wrapping with modulo, generator/yield for lazy evaluation — is powerful for cyclic data structures, periodic queues, or round-robin scheduling.  
 This pattern frequently arises in problems involving periodic or infinite-like structures and is a fundamental building block for ring buffers, simulations, and iterator patterns in general.
 
+
+### Flashcard
+Use modular arithmetic (index + jump) % n to handle circular wrapping in both directions for constant-time moves.
+
 ### Tags
 
 ### Similar Problems

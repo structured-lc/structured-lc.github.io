@@ -118,6 +118,10 @@ def fractionAddition(expression):
 ### Summary
 This problem is a classic exercise in parsing and simulating arithmetic with rational numbers and strings. The core pattern is parsing input, incremental arithmetic (combining fractions by scaling to a common denominator), and reducing the result by dividing by the GCD. This is a common pattern whenever problems require exact fraction arithmetic or rational simulation without built-in types, and can be reused in parsing calculators, implementing custom numerical classes, etc.
 
+
+### Flashcard
+Parse and sum fractions by converting to common denominators; reduce result to lowest terms at the end.
+
 ### Tags
 Math(#math), String(#string), Simulation(#simulation)
 

@@ -161,6 +161,10 @@ Key takeaways:
 - Using a “promise race” between the intended work and a cancellation notification makes cancellation handling **reactive and prompt**.
 - This applies in orchestrating network requests, async pipelines, event handlers, and more wherever cooperative cancellation or pausing/resuming is desired.
 
+
+### Flashcard
+Race each yielded promise with a cancelPromise—when cancel() is called, reject the race and throw "Cancelled" to the generator immediately.
+
 ### Tags
 
 ### Similar Problems

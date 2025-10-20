@@ -85,6 +85,10 @@ The solution loops until it finds the next number matching a rare property, chec
 With small enough constraints, this approach is effective and easy to read—ideal for interviews, as it trades a bit of efficiency for clarity.  
 The pattern frequently applies when finding next/previous numbers matching constraints (e.g., the next palindrome, next number with unique digits, etc.).
 
+
+### Flashcard
+Increment n and check each number for digit balance (count of d == d)—brute-force is feasible due to small constraint.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), Backtracking(#backtracking), Counting(#counting), Enumeration(#enumeration)
 

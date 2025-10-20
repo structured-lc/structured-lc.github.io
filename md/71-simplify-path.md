@@ -105,6 +105,10 @@ def simplifyPath(path: str) -> str:
 ### Summary
 The solution uses the **stack** pattern, simulating path traversal as Unix-like shells do. This canonicalization is a classic example of using stacks for "undo" or "backtracking" style operations, and similar logic appears in file path normalization, browser history navigation, parsing matching parentheses, etc. Efficient, straightforward, and robust—handling all expected directory rules cleanly.
 
+
+### Flashcard
+Use a stack to process path segments: push names, pop for "..", ignore "." and empty; join stack for canonical path.
+
 ### Tags
 String(#string), Stack(#stack)
 

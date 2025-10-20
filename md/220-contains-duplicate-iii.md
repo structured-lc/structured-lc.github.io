@@ -116,6 +116,10 @@ The approach uses the **Bucketing** pattern: mapping values into "buckets" defin
 Common for problems involving "almost" duplicates or sliding range queries.  
 This hash bucket sliding window technique avoids n² time and can be adapted to problems like "Contains Duplicate II" (which is simpler), or for maintaining rolling uniqueness with value tolerances.
 
+
+### Flashcard
+Use a sliding window with a balanced BST or buckets to check if any value in the last k indices is within t of nums[i].
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window), Sorting(#sorting), Bucket Sort(#bucket-sort), Ordered Set(#ordered-set)
 

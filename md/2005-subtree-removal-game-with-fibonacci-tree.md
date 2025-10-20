@@ -75,6 +75,10 @@ This problem is a classic example of **game theory** and **pattern finding**, wh
 This modular approach often applies in impartial game settings with regular structure and recurrence, such as in **Nim games** or subtree removal games on recursively constructed trees.  
 Recognizing these patterns helps reduce hard games to simple O(1) checks, highlighting the importance of mathematical insight in algorithmic game design.
 
+
+### Flashcard
+Analyze the subtree removal game on a Fibonacci tree by identifying patterns rather than simulating all possible moves.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Tree(#tree), Binary Tree(#binary-tree), Game Theory(#game-theory)
 

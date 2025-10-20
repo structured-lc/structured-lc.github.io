@@ -102,6 +102,10 @@ def reverseVowels(s: str) -> str:
 ### Summary
 This is a classic **two pointers** string problem: both pointers scan towards the center, swapping target characters (here, vowels). It’s efficient and requires very little extra space. This technique is widely useful in reversals (e.g., reverse words, reverse subarrays, partitioning, etc.). The key pattern: "reverse subset in place with two pointers."
 
+
+### Flashcard
+Use two pointers to find vowels from both ends, swapping them until they cross to reverse only the vowels.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

@@ -85,6 +85,10 @@ def intersection(nums: List[List[int]]) -> List[int]:
 ### Summary
 This problem combines **counting** and **intersection** of arrays—core ideas for set-based and frequency-based interview questions. The solution leverages a fixed-size frequency array for efficient counting, a pattern useful whenever working within bounded integer ranges. More generally, array intersection and frequency counting appear in duplicate-element, majority-element, and range-counting problems.
 
+
+### Flashcard
+Count occurrences of each integer across all arrays; those with count equal to the number of arrays are in the intersection.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting), Counting(#counting)
 

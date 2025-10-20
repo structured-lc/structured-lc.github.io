@@ -75,6 +75,10 @@ def isUgly(n: int) -> bool:
 ### Summary
 The main approach is repeatedly **dividing by 2, 3, and 5** to "strip away" any allowed prime factors. The division stops when it’s no longer possible, and if the remaining number is 1, the original number is "ugly." This **prime factors reduction** is a common pattern in number theory problems, useful also in problems that ask for numbers with only certain factors, like "super ugly numbers" or custom factor sets.
 
+
+### Flashcard
+Ugly Number
+
 ### Tags
 Math(#math)
 

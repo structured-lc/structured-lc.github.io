@@ -70,6 +70,10 @@ def closestDivisors(num):
 ### Summary
 The approach is to check for divisors as close to the square root as possible for num+1 and num+2, minimizing the difference between factors. This minimizes |a-b|. Very efficient and commonly used for factor closest pair brute-force.
 
+
+### Flashcard
+For num+1 and num+2, search divisors from √n down; pick the pair (i, n//i) with minimal |i - n//i|.
+
 ### Tags
 Math(#math)
 

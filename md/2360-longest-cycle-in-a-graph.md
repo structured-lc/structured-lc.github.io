@@ -118,6 +118,10 @@ This problem uses a **single-path/linked-list-style graph traversal** with marki
 It demonstrates a variant of **cycle detection** using path-mapping within DFS/BFS, but thanks to problem constraints (at most one outgoing edge), it behaves more like handling components in an array. The global `visited` ensures no repeated work — a common Linked List Cycle pattern adapted for the "single fork" digraph case.  
 This trick is broadly useful in linked list cycle detection, path simulation, and "graph where each node only points to one other node" situations.
 
+
+### Flashcard
+Track visit time for each node during DFS; when revisiting a node in current path, compute cycle length as (current_time − visit_time[node]).
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort)
 

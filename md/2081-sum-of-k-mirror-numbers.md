@@ -140,6 +140,10 @@ def k_mirror(k, n):
 ### Summary
 We use the **"palindrome enumeration" pattern**: systematically generate all palindromic numbers in base-10 (by length and structure), and for each, check if its base-k representation is also palindromic. This skips unnecessary checking for numbers that are not decimal palindromes, resulting in significant speed-up. This **generation-and-filter** strategy is common in problems involving structural constraints (like digit-palindromic numbers), and can be adapted for various cross-base or cross-criteria search problems.
 
+
+### Flashcard
+Generate palindromic numbers in base-10, check if they're also palindromic in base-k, and sum the first n such numbers.
+
 ### Tags
 Math(#math), Enumeration(#enumeration)
 

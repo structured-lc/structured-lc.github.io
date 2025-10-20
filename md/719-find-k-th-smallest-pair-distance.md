@@ -102,6 +102,10 @@ Efficient pair counting with two pointers is a classic "window on sorted array" 
 The approach is common in other "find k-th in pairwise metric" problems, such as k-th smallest/largest pair sums, medians of pairwise differences, and so on.  
 Recognizing when to avoid brute-force O(n²) enumeration by binary searching on computed values is a crucial skill in algorithm design.
 
+
+### Flashcard
+Sort nums, then binary search the answer d; for each d, count pairs with distance ≤ d using two pointers, and find the smallest d with ≥ k pairs.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
 

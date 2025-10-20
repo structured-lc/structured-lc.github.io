@@ -95,6 +95,10 @@ def allow_one_function_call(fn):
 This problem uses the **closure** pattern to encapsulate state across function calls, implementing a classic “once”/singleton invocation decorator.  
 The solution is related to patterns like memoization, singleton, and idempotent wrappers, and generalizes well (with small changes) to “allow up to N calls,” debounce, or throttle. It is broadly applicable for managing side-effectful actions in APIs and event handling.
 
+
+### Flashcard
+Use a closure with a boolean flag to track if the function has been called; return fn's result on first call, undefined thereafter.
+
 ### Tags
 
 ### Similar Problems

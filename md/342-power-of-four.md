@@ -93,6 +93,10 @@ This problem is a classic example of **bit manipulation** and pattern recognitio
 The solution uses three quick checks: positivity, single set bit (power of 2), and set bit in an even position.  
 This bit-pattern idea pops up in similar “power of k” or bitmasks problems, and is a common test of bitwise mastery in interviews.
 
+
+### Flashcard
+n must be positive, have exactly one bit set, and that bit must be in an even position (n & (n-1) == 0 and n & 0xAAAAAAAA == 0).
+
 ### Tags
 Math(#math), Bit Manipulation(#bit-manipulation), Recursion(#recursion)
 

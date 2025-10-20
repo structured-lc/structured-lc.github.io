@@ -131,6 +131,10 @@ def maximumScoreAfterOperations(edges, values):
 ### Summary
 This problem uses the **tree DP / post-order DFS pattern**, similar to "minimum vertex cover on trees" or constrained subtree selection. The approach generalizes to problems requiring preserved paths or states along root-to-leaf traversal, making it widely applicable in subtree optimization and dynamic programming on trees.
 
+
+### Flashcard
+On each root-leaf path, at least one node must remain nonzero; maximize score by zeroing as many nodes as possible while ensuring every path keeps one nonzero node (use tree DP to track path constraints).
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search)
 

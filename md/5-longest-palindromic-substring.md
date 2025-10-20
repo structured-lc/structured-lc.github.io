@@ -116,6 +116,10 @@ The dynamic programming variant is also standard for such substring problems.
 This approach also hints at techniques used in other string problems (e.g., word breaks, palindromic partitioning, or even longest common substring).  
 The center-expansion method is an efficient, easy-to-code pattern that’s broadly applicable to palindrome substring variants.
 
+
+### Flashcard
+Expand around each center (character or gap) to find the longest palindrome in O(n²) time.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming)
 

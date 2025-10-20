@@ -84,6 +84,10 @@ def minScoreTriangulation(A):
 ### Summary
 This problem is a classic example of **interval dynamic programming** for optimal substructure problems with splitting points. The pattern closely resembles matrix chain multiplication and can be generalized for many problems that ask for optimal ways to “break” or “group” intervals. DP allows us to systematically try all splits while avoiding recomputation via memoization.
 
+
+### Flashcard
+Use DP: dp[i][j] = min triangulation score for polygon vertices i to j; try all k between i and j to split.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

@@ -167,6 +167,10 @@ class MyCircularQueue:
 ### Summary
 The **array-based circular queue with front/rear pointers** is a classic data structure pattern, providing maximum efficiency for fixed-size ring buffers. It's widely used in scenarios like producer/consumer buffering, network packet processing, and IO streaming—anywhere a bounded buffer with wrap-around is critical. This problem is an excellent way to practice handling **circular array** logic and pointer arithmetic.
 
+
+### Flashcard
+Use a fixed-size array with front and rear pointers (modulo k) to implement O(1) enqueue and dequeue in a circular queue.
+
 ### Tags
 Array(#array), Linked List(#linked-list), Design(#design), Queue(#queue)
 

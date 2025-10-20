@@ -79,6 +79,10 @@ def minInsertions(s: str) -> int:
 ### Summary
 This is a **greedy parentheses matching** problem with a twist: each '(' needs two consecutive ')'. The pattern is closely related to standard parentheses validation but careful accounting for both required and surplus right parentheses is key. The approach generalizes to other k-matching paren problems as well.
 
+
+### Flashcard
+Traverse the string, tracking needed parentheses and inserting them as necessary.
+
 ### Tags
 String(#string), Stack(#stack), Greedy(#greedy)
 

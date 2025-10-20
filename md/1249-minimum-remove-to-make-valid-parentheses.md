@@ -90,6 +90,10 @@ def minRemoveToMakeValid(s: str) -> str:
 ### Summary
 This problem uses a classic stack/parenthesis validation pattern, often called the "Valid Parentheses" or "Balance Parenthesis" problem. The two-pass scan or stack-based approach ensures only the minimum removals are made. It's a fundamental string and stack technique applicable in similar expression-validation or balancing problems.
 
+
+### Flashcard
+Two-pass scan: remove excess ')' in left-to-right, then excess '(' in right-to-left, to make parentheses valid.
+
 ### Tags
 String(#string), Stack(#stack)
 

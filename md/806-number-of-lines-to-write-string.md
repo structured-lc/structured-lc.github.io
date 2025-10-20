@@ -87,6 +87,10 @@ def numberOfLines(widths, s):
 This is a classic **greedy filling** or **simulation** problem. You process elements one by one, filling the "container" (here, a line up to 100 pixels), and start a new container whenever the fill limit is exceeded.  
 Patterns like this are common in **bin packing**, **string formatting**, and classic **greedy line breaking** logic. The approach is optimal for problems where you need to split input data into bucketed groups with a threshold.
 
+
+### Flashcard
+Simulate writing each character, starting a new line if width exceeds 100; count lines and track the last line's width.
+
 ### Tags
 Array(#array), String(#string)
 

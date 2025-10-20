@@ -102,6 +102,10 @@ This problem uses the **Greedy + Sorting** pattern and parity partitioning to en
 By separating odds and evens, and matching their sorted orders, we minimize the total "unit shift distance" efficiently.  
 This pattern is common in problems involving operations that preserve certain mathematical properties (like parity), and reappears in array transformation, difference minimization, and balance problems.
 
+
+### Flashcard
+Separate odds and evens, sort both arrays and target arrays. Minimum operations = sum of |nums_odd[i] − target_odd[i]|/2 + sum for evens.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

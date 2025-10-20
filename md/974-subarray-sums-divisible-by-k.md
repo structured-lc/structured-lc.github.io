@@ -97,6 +97,10 @@ def subarraysDivByK(A, K):
 This problem uses the **prefix sum** and **hash map counting** patterns—very common in subarray count and sum-divisibility problems.  
 The observation that equal prefix sum remainders imply a sum-divisible subarray is a broadly-used trick, also seen in questions like "Subarray Sum Equals K". This approach is optimal for large input arrays where brute-force would be infeasible.
 
+
+### Flashcard
+Use a hashmap to count prefix sum mod K frequencies; for each prefix, increment result by the count of the same mod value seen so far.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
 

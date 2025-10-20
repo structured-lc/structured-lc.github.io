@@ -123,6 +123,10 @@ This problem is a classic **backtracking with memoization** (top-down dynamic pr
 It's similar to other "construct all sentences/ways" or **partitioning** problems, especially those that require generating actual solutions, not just counting them.  
 Building recursion trees from prefixes, memoizing to optimize overlapping subproblems, and constructing paths as you return up the call stack is a common pattern in many substring segmentation or combinatorial construction variants.
 
+
+### Flashcard
+Use backtracking with memoization; for each start index, try all dictionary words, recursively build sentences, and cache results for efficiency.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Trie(#trie), Memoization(#memoization)
 

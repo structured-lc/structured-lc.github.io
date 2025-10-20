@@ -131,6 +131,10 @@ This problem is a notable example of the **group-and-resolve** pattern sometimes
 It uses a **progressive disambiguation** strategy, incrementally growing prefixes for words with abbreviation conflicts until all are distinct, while always checking that the abbreviation stays efficient.  
 A similar pattern is used in resolved naming in compilers, or in minimization of identifiers, and has natural extensions to problems where efficient, non-clashing naming is needed.
 
+
+### Flashcard
+Iteratively increase abbreviation prefix length for conflicting words, grouping and resolving until all abbreviations are unique.
+
 ### Tags
 Array(#array), String(#string), Greedy(#greedy), Trie(#trie), Sorting(#sorting)
 

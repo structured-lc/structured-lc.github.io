@@ -97,6 +97,10 @@ def maxProduct(s: str) -> int:
 ### Summary
 This problem uses the **Manacher’s Algorithm** pattern for detecting all odd-length palindromic substrings efficiently, combined with precomputing maximal values over prefixes/suffixes (“max on left/right up to i”). It’s a classic case where O(n²) is hopeless but string palindrome symmetry + clever precomputation + split tries unlock an O(n) solution. This approach is also useful for substring or range-based optimal substructure problems, especially involving palindromes.
 
+
+### Flashcard
+Precompute for each position the longest odd palindrome ending there (via Manacher's) and starting there; iterate split points to maximize product of left-max and right-max palindrome lengths.
+
 ### Tags
 String(#string), Rolling Hash(#rolling-hash), Hash Function(#hash-function)
 

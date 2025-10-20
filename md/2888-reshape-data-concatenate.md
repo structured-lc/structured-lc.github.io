@@ -145,6 +145,10 @@ def concatenateTables(df1, df2):
 ### Summary
 This problem uses a straightforward *data concatenation* pattern: appending one collection to another. It's a common routine in data preprocessing, merging log sources, or vertically stacking tabular data. The emphasis is on preserving input order and column alignment, and the solution can be generalized for any number of compatible tables.
 
+
+### Flashcard
+Concatenate df1 and df2 vertically using pandas.concat([df1, df2]), preserving column order.
+
 ### Tags
 
 ### Similar Problems

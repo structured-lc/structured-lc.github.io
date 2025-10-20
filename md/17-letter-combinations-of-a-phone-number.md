@@ -99,6 +99,10 @@ def letterCombinations(digits):
 
 This problem is a classic use of the **backtracking pattern** for generating all combinations. It's especially useful for scenarios where each stage involves a choice among a set of options (letters mapped to phone digits). The approach is widely applicable to areas such as permutation generation, combinations, password brute-forcing, and more.
 
+
+### Flashcard
+Use backtracking to generate all possible letter combinations by mapping each digit to its corresponding letters.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Backtracking(#backtracking)
 

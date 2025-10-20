@@ -65,6 +65,10 @@ def numOfMinutes(n: int, headID: int, manager: list[int], informTime: list[int])
 ### Summary
 This is a tree DFS problem for computing the maximum path sum in a rooted tree, where branching delays can act in parallel. Similar tree DP/DFS patterns appear in organizational modeling, file/directory processing, and network dissemination problems.
 
+
+### Flashcard
+Build a reporting tree and use DFS to calculate the maximum inform time.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
 

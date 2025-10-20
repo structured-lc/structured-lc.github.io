@@ -75,6 +75,10 @@ def findLengthOfShortestSubarray(arr):
 ### Summary
 This is a classic application of the **two-pointer** and **prefix/suffix** non-decreasing subarray concepts. The techniques are widely useful in interval problems, sorted merging, and minimum operation substructures.
 
+
+### Flashcard
+Find longest sorted prefix and suffix; use two pointers to find minimum removal between them where remaining portions can be joined while maintaining sorted order.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

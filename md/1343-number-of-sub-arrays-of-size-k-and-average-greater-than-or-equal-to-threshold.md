@@ -100,6 +100,10 @@ This solution is a textbook example of the sliding window pattern, a powerful an
 Sliding window avoids redundant work by maintaining state (here, the sum) as you move, turning an O(nk) brute force into O(n).  
 This coding pattern is broadly useful for subarray problems involving sums, averages, or maximum/minimum in a fixed-size window—like Maximum Sum Subarray, Minimum Size Subarray Sum, or Moving Average from Data Stream.
 
+
+### Flashcard
+Use sliding window to maintain sum of k elements; for each window, check if average ≥ threshold and count.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window)
 

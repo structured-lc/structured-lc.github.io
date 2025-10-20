@@ -92,6 +92,10 @@ We used the **two-pointer technique** ("slow and fast pointer") to move all non-
 This in-place pattern avoids extra space usage and preserves the relative order efficiently.  
 It’s a typical "stable partition" or "array manipulation" problem—this idea is broadly useful in removing/segregating values in-place, such as in Remove Element, Partition List, and Dutch National Flag problems.
 
+
+### Flashcard
+Two-pointer technique: iterate with one pointer, use another to track next non-zero insertion position, then fill remaining with zeros.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers)
 

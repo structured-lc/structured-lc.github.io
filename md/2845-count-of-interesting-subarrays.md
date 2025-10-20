@@ -108,6 +108,10 @@ def countInterestingSubarrays(nums, modulo, k):
 This problem showcases a **prefix sum, frequency counting** coding pattern—common for subarray count or sum problems with constraints on the subarray statistics (parity, divisibility, etc).  
 The efficient solution leverages **prefix sums with modular arithmetic** and a hashmap, a technique that recurs in many similar subarray count problems (subarrays with sum divisible by K, subarrays with even/odd counts, etc).
 
+
+### Flashcard
+Mark elements where nums[i] % modulo == k; use prefix sum and hash map to count subarrays where (prefix[j] – prefix[i]) % modulo == k.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
 

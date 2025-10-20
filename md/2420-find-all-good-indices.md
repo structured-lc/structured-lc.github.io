@@ -106,6 +106,10 @@ def goodIndices(nums, k):
 ### Summary
 This problem uses the *prefix/suffix streaks* pattern, precomputing for each position the length of the longest non-increasing and non-decreasing sequences. It converts what appears to be a sliding window monotonicity check into efficient O(n) derived information with auxiliary arrays—a common technique in array streak or range problems. This pattern is also applicable in problems like "Maximum Size Subarray with k Properties" and others leveraging streaks or windowed segment properties.
 
+
+### Flashcard
+Precompute prefix lengths of non-increasing sequences to efficiently find good indices.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
 

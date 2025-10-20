@@ -142,6 +142,10 @@ def viewers_turned_streamers(sessions):
 ### Summary
 This problem is a *group-by and aggregation* challenge with a filtering twist—processing time-order per group. It’s common for reporting, log processing, and event stream analysis tasks in data engineering. The windowing/pivoting pattern and tracking “first” per-user appears in churn modeling, onboarding flows, and custom cohort analysis.
 
+
+### Flashcard
+Window functions to find each user's first session (MIN session_start). Filter users whose first session_type = "Viewer", then count their "Streamer" sessions. Exclude users with zero streamer sessions and sort by count desc, user_id desc.
+
 ### Tags
 Database(#database)
 

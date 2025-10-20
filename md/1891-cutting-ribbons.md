@@ -95,6 +95,10 @@ This problem uses the **binary search on answer** pattern — a powerful techniq
 Classic applications include cutting objects into k parts (paper, wood, cable, etc), maximizing the minimum or minimizing the maximum, etc.  
 The helper function checks for feasibility, and binary search efficiently narrows down the optimal value. This approach works whenever the problem exhibits monotonicity (if a solution is possible for x, also possible for x-1), which is common in resource allocation and partitioning problems.
 
+
+### Flashcard
+Use binary search to find the maximum length that can cut at least k ribbons.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

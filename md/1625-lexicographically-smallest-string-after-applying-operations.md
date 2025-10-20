@@ -78,6 +78,10 @@ def find_lex_smallest_string(s, a, b):
 ### Summary
 This is a BFS/visited pattern on the state space of digit-strings, leveraging mod operations and rotations. It's a classic search/enumerate structure for problems with a small enough state space and reversible operations.
 
+
+### Flashcard
+Apply two operations—add a to odd indices and rotate the string—to find the lexicographically smallest reachable string. Use BFS or DFS with a visited set to avoid infinite loops.
+
 ### Tags
 String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Enumeration(#enumeration)
 

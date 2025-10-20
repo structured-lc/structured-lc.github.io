@@ -90,6 +90,10 @@ def numsSameConsecDiff(n, k):
 ### Summary
 This problem is a classic example of **Digit DP / Backtracking**, very similar to "Letter Combinations of a Phone Number" but with custom digit constraints. The recursive (DFS) pattern to build each possible number stepwise and filter via constraints is common. This technique applies well to combinatorial generation of codes, PINs, or digit strings with constraints.
 
+
+### Flashcard
+Use DFS/backtracking starting from digits 1–9, at each step append next digit ±k (if valid), until length n is reached.
+
 ### Tags
 Backtracking(#backtracking), Breadth-First Search(#breadth-first-search)
 

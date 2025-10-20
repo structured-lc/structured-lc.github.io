@@ -87,6 +87,10 @@ def oddString(words):
 ### Summary
 The approach leverages *hashing* of difference arrays and grouping, a common *frequency-count* technique for "find the unique" problems. Patterns used here are broadly applicable to string hashing, grouping anagrams, or checking for unique characteristics in large datasets. This problem also illustrates efficient ways to convert string manipulations to mathematical comparisons.
 
+
+### Flashcard
+Convert each word to its difference array (adjacent letter differences), then find and return the word whose difference array is unique among all words.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string)
 

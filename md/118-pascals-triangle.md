@@ -88,6 +88,10 @@ def generate(numRows):
 ### Summary
 This approach employs a **dynamic programming** pattern—each row builds upon the prior. This pattern is common when subproblems overlap, such as calculating triangle numbers, Fibonacci, etc. Pascal’s Triangle and its iterative row-by-row build is classic for practicing 2D array construction and subproblem reuse.
 
+
+### Flashcard
+Build each row by starting and ending with 1, computing middle elements as sum of two adjacent elements from previous row for O(numRows²) time.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

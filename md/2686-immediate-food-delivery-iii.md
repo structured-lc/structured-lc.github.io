@@ -132,6 +132,10 @@ Output:
 This is a classic SQL grouping and aggregation problem: compute statistics (ratios or percentages) over groups, with basic conditional counting.  
 This pattern (conditional aggregation per group) is used frequently in reporting, dashboards, and KPI calculations. Examples include attendance rates, daily conversion percentages, or per-day event success/failure rates.
 
+
+### Flashcard
+GROUP BY order_date, compute immediate orders as SUM(IF(customer_pref_delivery_date = order_date, 1, 0)), divide by COUNT(*) and multiply by 100, round to 2 decimals, order by date.
+
 ### Tags
 Database(#database)
 

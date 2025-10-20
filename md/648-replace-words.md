@@ -114,6 +114,10 @@ def replaceWords(dictionary, sentence):
 
 This problem is a classic example of *string prefix matching*, efficiently solved with the **Trie pattern**. The approach is especially suitable for text normalization and stemming problems. Trie is a frequently used data structure whenever there are prefix/grouping queries on strings — other use cases include word search, autocomplete, and implementing dictionaries for compilers.
 
+
+### Flashcard
+Build a Trie of root words; for each word in sentence, replace with shortest matching root prefix found in Trie.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Trie(#trie)
 

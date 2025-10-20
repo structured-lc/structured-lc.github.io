@@ -84,6 +84,10 @@ This problem is a variation on the **subset sum** dynamic programming pattern, w
 The in-place 1D DP array pattern shown here is common for knapsack-type problems, especially where selection (not arrangement) of elements matters.  
 This approach generalizes to problems like "subset sum minimum/maximum subset length" or "knapsack with cardinality constraints."
 
+
+### Flashcard
+Use DP: dp[s] = max length of subsequence summing to s; for each num, update dp[s + num] = max(dp[s + num], dp[s] + 1).
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

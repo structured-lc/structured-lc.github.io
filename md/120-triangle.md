@@ -83,6 +83,10 @@ def minimumTotal(triangle):
 ### Summary
 This problem uses the classic **bottom-up dynamic programming** pattern, where optimal substructure allows solving from simpler subproblems (smallest rows) up to the answer. The pattern is common in path minimization and triangle/grids, and appears in similar problems (e.g., minimum falling path sum in a matrix). The space optimization, reducing from O(n²) to O(n), is a practical application of "rolling array" DP.
 
+
+### Flashcard
+Use bottom-up DP starting from last row, updating each cell as itself plus minimum of two adjacent cells below, reducing space to O(n) by overwriting triangle in-place.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

@@ -94,6 +94,10 @@ def digitSum(s: str, k: int) -> str:
 ### Summary
 The approach uses direct simulation and grouping, relying on repeated partitioning, digit summing, and rebuliding the string each round. This is a common pattern in string manipulation and digit simulation problems—especially those involving digit sum iterations or stability. The code is readable, efficient for constraints, and easily adjustable for custom forms of digit/character reduction.
 
+
+### Flashcard
+Repeatedly group the string into chunks of size k, sum digits in each, and rebuild until length ≤ k.
+
 ### Tags
 String(#string), Simulation(#simulation)
 

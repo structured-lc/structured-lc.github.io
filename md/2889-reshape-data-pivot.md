@@ -133,6 +133,10 @@ The coding pattern is to build a mapping for (row, col) → value and then expan
 It is relevant for problems about data transformation, spreadsheets, or reporting in any context where categorical axes are rearranged.  
 Practiced here without pandas, it underlines mapping, tabulation, and custom result formatting.
 
+
+### Flashcard
+Use pivot(index='month', columns='city', values='temperature') to reshape data so months are rows and cities are columns.
+
 ### Tags
 
 ### Similar Problems

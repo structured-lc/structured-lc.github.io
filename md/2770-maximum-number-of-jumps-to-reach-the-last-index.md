@@ -76,6 +76,10 @@ def maximumJumps(nums, target):
 ### Summary
 This problem demonstrates the classic **1D DP over prefixes** pattern with a quadratic nested loop, similar to the "Longest Increasing Subsequence" (LIS) DP pattern but adapted for a custom jump condition. It highlights the use of dp[i] to track optimal solutions for subproblems and is applicable to other problems with similar "from any j<i to i if reachable" constraints.
 
+
+### Flashcard
+Use DP where dp[i] = maximum jumps to reach index i, checking all valid previous positions j where |nums[i]-nums[j]| ≤ target.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

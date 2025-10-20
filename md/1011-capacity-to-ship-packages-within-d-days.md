@@ -110,6 +110,10 @@ def shipWithinDays(weights, D):
 ### Summary
 This problem uses the **binary search on the answer** (a.k.a. parametric/binary search), which is a widely used pattern in scheduling and load-balancing questions. This technique applies when the solution space is monotonic with respect to a parameter, and checking feasibility for a candidate value can be done efficiently. This pattern appears in interval-splitting, minimax cost, and similar problems in interviews.
 
+
+### Flashcard
+Use binary search for ship capacity between max(weights) and sum(weights); for each guess, simulate shipping to check if ≤D days.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

@@ -65,6 +65,10 @@ def fixProductName(name: str) -> str:
 ### Summary
 This is a **string formatting** problem, common for data cleanup and UI display. Uses a split/capitalize/join pattern, applicable to many problems involving title-casing or normalization of user input.
 
+
+### Flashcard
+Capitalize the first letter of each word and make the rest lowercase to standardize product names.
+
 ### Tags
 Database(#database)
 

@@ -103,6 +103,10 @@ This problem leverages **hashing with canonicalization**—finding a unique sign
 The approach uses *hash map grouping by difference pattern*, a pattern seen in many group-by-feature problems (like "Group Anagrams").  
 The concept of a *normalized form as grouping key* can apply to several string transformation/grouping challenges.
 
+
+### Flashcard
+For each string, compute the difference pattern between consecutive letters modulo 26; group strings by identical patterns.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string)
 

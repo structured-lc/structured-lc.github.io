@@ -118,6 +118,10 @@ def ambiguousCoordinates(s: str):
 ### Summary
 This problem demonstrates a **string backtracking/enumeration** pattern—partitioning, generating variants with rules, and filtering on validity. The core is a helper function to enumerate all "insert decimal point" options, given constraints on digit validity. This technique applies to "ambiguous parsing", number string validation, and some combinatorial string generation problems.
 
+
+### Flashcard
+For all possible splits of the digits into x and y, generate all valid decimal placements (no leading/trailing zeros) for each, and combine.
+
 ### Tags
 String(#string), Backtracking(#backtracking), Enumeration(#enumeration)
 

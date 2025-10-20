@@ -78,6 +78,10 @@ def intersect(nums1, nums2):
 ### Summary
 This approach uses the **hash map counting pattern**, very common for intersection/union/count questions. This pattern is also useful for finding duplicates, grouping elements by frequency, and counting occurrences efficiently. It avoids sorting unless required, and handles all element types quickly and space-efficiently. If arrays are sorted or can be sorted easily, two pointers might be more space-efficient.
 
+
+### Flashcard
+Use a hash map to count frequencies in one array, then for each element in the other array, add to result if count > 0 and decrement; ensures correct duplicates and O(n) time.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Binary Search(#binary-search), Sorting(#sorting)
 

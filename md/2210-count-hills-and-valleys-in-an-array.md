@@ -83,6 +83,10 @@ def countHillValley(nums):
 ### Summary
 The key insight is to preprocess the array to remove consecutive duplicates before searching for hills or valleys, dramatically simplifying comparisons. This uses the **"scan-and-filter"** pattern, which is widely applicable in problems involving local peaks, valleys, or monotonicity after flattening out duplicate runs. Patterns involving nearest distinct neighbors and sequence cleaning often use a similar filtering step.
 
+
+### Flashcard
+Remove adjacent duplicates, then for each element (except ends), check if it’s a hill (greater than neighbors) or valley (less than neighbors).
+
 ### Tags
 Array(#array)
 

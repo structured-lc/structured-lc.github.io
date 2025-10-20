@@ -91,6 +91,10 @@ def reversePrefix(word: str, ch: str) -> str:
 This is a classic string manipulation problem that tests the ability to locate an index and reverse part of a string—common in interviews. The approach uses the "find-part-reverse-concatenate" pattern, and the optimal method in Python leverages string slicing and reversal.  
 This pattern appears frequently, for example in palindrome checking, substring reversals, and sliding window problems.
 
+
+### Flashcard
+Reverse the prefix of a word up to the first occurrence of a character `ch`. If `ch` is not found, return the original word. Use slicing or two pointers to efficiently reverse the prefix.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Stack(#stack)
 

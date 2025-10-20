@@ -116,6 +116,10 @@ def rob(root: TreeNode) -> int:
 ### Summary
 This is a typical **DFS + DP on Trees** problem, using the "choose or skip" principle at each node. The pattern of returning two values for each subtree (rob, not rob) is often used for tree DP where strict parent-child constraints exist. This approach generalizes to many problems with mutually exclusive choices at hierarchical (tree or DAG) relationships.
 
+
+### Flashcard
+Use DFS to compute two values at each node: max if you rob it (can't rob children) and max if you don't (can rob children); return the larger.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Binary Tree(#binary-tree)
 

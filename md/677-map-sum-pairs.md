@@ -110,6 +110,10 @@ class MapSum:
 ### Summary
 This is a classic **Trie (Prefix Tree)** pattern, enhanced to store prefix sums. It enables efficient insert and prefix sum in O(k) time per operation (where k is string length). The approach is commonly used for any prefix-based search, autocomplete, or dictionary applications, and variants apply in problems like [implementing prefix search](https://leetcode.com/problems/implement-trie-prefix-tree), [word search](https://leetcode.com/problems/word-search-ii), and more.
 
+
+### Flashcard
+Use Trie to store prefix sums; for sum(prefix), traverse Trie to node matching prefix and return its cumulative value.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Design(#design), Trie(#trie)
 

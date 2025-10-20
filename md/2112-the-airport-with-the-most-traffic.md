@@ -128,6 +128,10 @@ def airportWithMostTraffic(flights):
 ### Summary
 This problem highlights the **hash map aggregation** pattern for summarizing grouped counts in one pass. It's a classic approach for real-world analytics on tabular data, such as counting most common users, items, or cities. This solution is efficient (O(n)), robust to ties, and common for group-by style problems in interviews and SQL/data engineering roles.
 
+
+### Flashcard
+Use a hash map to count flights for each airport (both departures and arrivals); return the airport with the highest count.
+
 ### Tags
 Database(#database)
 

@@ -125,6 +125,10 @@ def possibleToStamp(grid, stampHeight, stampWidth):
 ### Summary
 This is a classic 2D range query and interval update task, solved via 2D prefix sums (for O(1) rectangular "zero check") and 2D difference matrices (for quick marking of covered regions). The coding pattern is widely useful in range update/counting, with applications in image processing, dynamic programming, and grid-rectangle problems.
 
+
+### Flashcard
+Use 2D prefix sums to check in O(1) if any stamp placement is valid, then verify every empty cell is covered by at least one valid stamp position.
+
 ### Tags
 Array(#array), Greedy(#greedy), Matrix(#matrix), Prefix Sum(#prefix-sum)
 

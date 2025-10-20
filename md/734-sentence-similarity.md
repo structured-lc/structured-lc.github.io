@@ -92,6 +92,10 @@ def areSentencesSimilar(words1, words2, pairs):
 ### Summary
 This problem demonstrates the "hash set for pair membership" pattern, which is useful when you need to efficiently check for symmetric relationships between elements. It is a common approach for word-ladder, transformations, synonym/antonym checks, and other string similarity or relation problems. No advanced data structure is required here because the relation is not transitive; all checks are performed directly with a preprocessed set.
 
+
+### Flashcard
+Check same length, then for each position verify words match exactly or appear as a pair in the similarity set (preprocess pairs for O(1) lookup).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string)
 

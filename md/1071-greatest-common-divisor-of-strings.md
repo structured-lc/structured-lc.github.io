@@ -87,6 +87,10 @@ def gcdOfStrings(str1: str, str2: str) -> str:
 The problem is a variant of the **String Division/GCD** pattern: find the largest substring which both original strings can be constructed from via repetition.  
 The key insight is checking string concatenation equality and using the GCD of the lengths for the candidate substring—an elegant combination of string handling and number theory. This technique generalizes to related string period or pattern problems.
 
+
+### Flashcard
+The GCD string is the largest prefix that can construct both str1 and str2 by repetition and satisfies str1 + str2 == str2 + str1.
+
 ### Tags
 Math(#math), String(#string)
 

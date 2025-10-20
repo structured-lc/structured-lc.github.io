@@ -92,6 +92,10 @@ This is a classic **self-join/cross-product** SQL and combinatorics problem — 
 It’s a common pattern in scheduling, tournament table generation, and combinatorial problems involving pairs/permutations.  
 No advanced data structures are required; a nested loop or a SQL cross join with filter suffices.
 
+
+### Flashcard
+Use SQL self-join to pair every team with every other (excluding itself), output both home/away orderings for all matches.
+
 ### Tags
 Database(#database)
 
