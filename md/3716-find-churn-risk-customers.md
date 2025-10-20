@@ -151,5 +151,4 @@ This approach is common in SQL, pandas, and event-tracking problems, and can be 
 
 ### Tags
 
-
 ### Similar Problems
