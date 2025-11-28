@@ -56,5 +56,7 @@
     {"number": 3291, "slug": "minimum-number-of-valid-strings-to-form-target-i", "title": "Minimum Number of Valid Strings to Form Target I", "difficulty": "Medium", "tags": ["Array", "String", "Binary Search", "Dynamic Programming", "Trie", "Segment Tree", "Rolling Hash", "String Matching", "Hash Function"], "similar_problems": [{"slug": "minimum-cost-to-convert-string-ii", "title": "Minimum Cost to Convert String II", "difficulty": "Hard"}, {"slug": "construct-string-with-minimum-cost", "title": "Construct String with Minimum Cost", "difficulty": "Hard"}]},
     {"number": 3485, "slug": "longest-common-prefix-of-k-strings-after-removal", "title": "Longest Common Prefix of K Strings After Removal", "difficulty": "Hard", "tags": ["Array", "String", "Trie"], "similar_problems": []},
     {"number": 3491, "slug": "phone-number-prefix", "title": "Phone Number Prefix", "difficulty": "Easy", "tags": ["Array", "String", "Trie", "Sorting"], "similar_problems": []},
-    {"number": 3597, "slug": "partition-string", "title": "Partition String ", "difficulty": "Medium", "tags": ["Hash Table", "String", "Trie", "Simulation"], "similar_problems": []}
+    {"number": 3597, "slug": "partition-string", "title": "Partition String ", "difficulty": "Medium", "tags": ["Hash Table", "String", "Trie", "Simulation"], "similar_problems": []},
+    {"number": 3632, "slug": "subarrays-with-xor-at-least-k", "title": "Subarrays with XOR at Least K", "difficulty": "Hard", "tags": ["Array", "Bit Manipulation", "Trie", "Prefix Sum"], "similar_problems": []},
+    {"number": 3758, "slug": "convert-number-words-to-digits", "title": "Convert Number Words to Digits", "difficulty": "Medium", "tags": ["String", "Trie"], "similar_problems": []}
 ]

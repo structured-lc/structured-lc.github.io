@@ -44,7 +44,7 @@
     {"number": 619, "slug": "biggest-single-number", "title": "Biggest Single Number", "difficulty": "Easy", "tags": ["Database"], "similar_problems": []},
     {"number": 620, "slug": "not-boring-movies", "title": "Not Boring Movies", "difficulty": "Easy", "tags": ["Database"], "similar_problems": []},
     {"number": 626, "slug": "exchange-seats", "title": "Exchange Seats", "difficulty": "Medium", "tags": ["Database"], "similar_problems": []},
-    {"number": 627, "slug": "swap-salary", "title": "Swap Salary", "difficulty": "Easy", "tags": ["Database"], "similar_problems": []},
+    {"number": 627, "slug": "swap-sex-of-employees", "title": "Swap Sex of Employees", "difficulty": "Easy", "tags": ["Database"], "similar_problems": []},
     {"number": 1045, "slug": "customers-who-bought-all-products", "title": "Customers Who Bought All Products", "difficulty": "Medium", "tags": ["Database"], "similar_problems": []},
     {"number": 1050, "slug": "actors-and-directors-who-cooperated-at-least-three-times", "title": "Actors and Directors Who Cooperated At Least Three Times", "difficulty": "Easy", "tags": ["Database"], "similar_problems": []},
     {"number": 1068, "slug": "product-sales-analysis-i", "title": "Product Sales Analysis I", "difficulty": "Easy", "tags": ["Database"], "similar_problems": [{"slug": "product-sales-analysis-ii", "title": "Product Sales Analysis II", "difficulty": "Easy"}, {"slug": "product-sales-analysis-iv", "title": "Product Sales Analysis IV", "difficulty": "Medium"}, {"slug": "product-sales-analysis-v", "title": "Product Sales Analysis V", "difficulty": "Easy"}]},

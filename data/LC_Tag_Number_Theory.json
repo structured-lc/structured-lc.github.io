@@ -82,5 +82,6 @@
     {"number": 3658, "slug": "gcd-of-odd-and-even-sums", "title": "GCD of Odd and Even Sums", "difficulty": "Easy", "tags": ["Math", "Number Theory"], "similar_problems": []},
     {"number": 3669, "slug": "balanced-k-factor-decomposition", "title": "Balanced K-Factor Decomposition", "difficulty": "Medium", "tags": ["Math", "Backtracking", "Number Theory"], "similar_problems": []},
     {"number": 3671, "slug": "sum-of-beautiful-subsequences", "title": "Sum of Beautiful Subsequences", "difficulty": "Hard", "tags": ["Array", "Math", "Tree", "Number Theory"], "similar_problems": []},
-    {"number": 3715, "slug": "sum-of-perfect-square-ancestors", "title": "Sum of Perfect Square Ancestors", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Math", "Tree", "Depth-First Search", "Counting", "Number Theory"], "similar_problems": []}
+    {"number": 3715, "slug": "sum-of-perfect-square-ancestors", "title": "Sum of Perfect Square Ancestors", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Math", "Tree", "Depth-First Search", "Counting", "Number Theory"], "similar_problems": []},
+    {"number": 3725, "slug": "count-ways-to-choose-coprime-integers-from-rows", "title": "Count Ways to Choose Coprime Integers from Rows", "difficulty": "Hard", "tags": ["Array", "Math", "Dynamic Programming", "Matrix", "Combinatorics", "Number Theory"], "similar_problems": []}
 ]

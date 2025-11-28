@@ -619,5 +619,14 @@
     {"number": 3693, "slug": "climbing-stairs-ii", "title": "Climbing Stairs II", "difficulty": "Medium", "tags": ["Array", "Dynamic Programming"], "similar_problems": []},
     {"number": 3699, "slug": "number-of-zigzag-arrays-i", "title": "Number of ZigZag Arrays I", "difficulty": "Hard", "tags": ["Dynamic Programming", "Prefix Sum"], "similar_problems": []},
     {"number": 3700, "slug": "number-of-zigzag-arrays-ii", "title": "Number of ZigZag Arrays II", "difficulty": "Hard", "tags": ["Math", "Dynamic Programming"], "similar_problems": []},
-    {"number": 3704, "slug": "count-no-zero-pairs-that-sum-to-n", "title": "Count No-Zero Pairs That Sum to N", "difficulty": "Hard", "tags": ["Math", "Dynamic Programming"], "similar_problems": []}
+    {"number": 3704, "slug": "count-no-zero-pairs-that-sum-to-n", "title": "Count No-Zero Pairs That Sum to N", "difficulty": "Hard", "tags": ["Math", "Dynamic Programming"], "similar_problems": []},
+    {"number": 3717, "slug": "minimum-operations-to-make-the-array-beautiful", "title": "Minimum Operations to Make the Array Beautiful", "difficulty": "Medium", "tags": ["Array", "Dynamic Programming"], "similar_problems": []},
+    {"number": 3725, "slug": "count-ways-to-choose-coprime-integers-from-rows", "title": "Count Ways to Choose Coprime Integers from Rows", "difficulty": "Hard", "tags": ["Array", "Math", "Dynamic Programming", "Matrix", "Combinatorics", "Number Theory"], "similar_problems": []},
+    {"number": 3738, "slug": "longest-non-decreasing-subarray-after-replacing-at-most-one-element", "title": "Longest Non-Decreasing Subarray After Replacing at Most One Element", "difficulty": "Medium", "tags": ["Array", "Dynamic Programming"], "similar_problems": []},
+    {"number": 3742, "slug": "maximum-path-score-in-a-grid", "title": "Maximum Path Score in a Grid", "difficulty": "Medium", "tags": ["Array", "Dynamic Programming", "Matrix"], "similar_problems": []},
+    {"number": 3743, "slug": "maximize-cyclic-partition-score", "title": "Maximize Cyclic Partition Score", "difficulty": "Hard", "tags": ["Array", "Dynamic Programming"], "similar_problems": []},
+    {"number": 3747, "slug": "count-distinct-integers-after-removing-zeros", "title": "Count Distinct Integers After Removing Zeros", "difficulty": "Medium", "tags": ["Math", "Dynamic Programming"], "similar_problems": []},
+    {"number": 3751, "slug": "total-waviness-of-numbers-in-range-i", "title": "Total Waviness of Numbers in Range I", "difficulty": "Medium", "tags": ["Math", "Dynamic Programming", "Enumeration"], "similar_problems": []},
+    {"number": 3753, "slug": "total-waviness-of-numbers-in-range-ii", "title": "Total Waviness of Numbers in Range II", "difficulty": "Hard", "tags": ["Math", "Dynamic Programming"], "similar_problems": []},
+    {"number": 3757, "slug": "number-of-effective-subsequences", "title": "Number of Effective Subsequences", "difficulty": "Hard", "tags": ["Array", "Math", "Dynamic Programming", "Bit Manipulation", "Combinatorics"], "similar_problems": []}
 ]
