@@ -95,5 +95,6 @@ The brute-force stepwise scan with sets fits small/medium input, and teaches how
 For harder variations or larger constraints, patterns from "prefix sum with state hashing" or "two-pointer with value tracking" would be applied, which are useful in many substring/subarray balancing/interleaving problems.
 
 ### Tags
+Array(#array), Hash Table(#hash-table), Divide and Conquer(#divide-and-conquer), Segment Tree(#segment-tree), Prefix Sum(#prefix-sum)
 
 ### Similar Problems

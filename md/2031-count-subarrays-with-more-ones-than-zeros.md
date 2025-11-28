@@ -149,7 +149,7 @@ The core approach uses **prefix sums** converting the 0/1 array to -1/+1, and co
 Replace 0s with -1, 1s with 1, then count prefix sums where prefix[i] > prefix[j] for j < i—convert to a prefix sum dominance problem.
 
 ### Tags
-Array(#array), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Merge Sort(#merge-sort), Ordered Set(#ordered-set)
+Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Merge Sort(#merge-sort), Ordered Set(#ordered-set)
 
 ### Similar Problems
 - Ones and Zeroes(ones-and-zeroes) (Medium)

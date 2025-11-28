@@ -102,3 +102,4 @@ This is a typical brute-force with filtering, fits the permutations/combinatoric
 Array(#array), Hash Table(#hash-table), Recursion(#recursion), Enumeration(#enumeration)
 
 ### Similar Problems
+- Finding 3-Digit Even Numbers(finding-3-digit-even-numbers) (Easy)

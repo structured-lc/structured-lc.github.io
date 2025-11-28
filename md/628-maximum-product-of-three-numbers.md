@@ -103,3 +103,4 @@ Array(#array), Math(#math), Sorting(#sorting)
 
 ### Similar Problems
 - Maximum Product Subarray(maximum-product-subarray) (Medium)
+- Maximum Product of Three Elements After One Replacement(maximum-product-of-three-elements-after-one-replacement) (Medium)

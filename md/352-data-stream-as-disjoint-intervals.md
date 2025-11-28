@@ -162,7 +162,7 @@ This problem uses the **interval merge** pattern and ordered data structures, su
 Maintain sorted list of disjoint intervals; on addNum, binary search insertion point and merge with adjacent/overlapping intervals in O(n) worst case per add.
 
 ### Tags
-Binary Search(#binary-search), Design(#design), Ordered Set(#ordered-set)
+Hash Table(#hash-table), Binary Search(#binary-search), Union Find(#union-find), Design(#design), Data Stream(#data-stream), Ordered Set(#ordered-set)
 
 ### Similar Problems
 - Summary Ranges(summary-ranges) (Easy)

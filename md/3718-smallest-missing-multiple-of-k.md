@@ -79,5 +79,6 @@ The problem is a variant of "First Missing Positive" or "First Missing Multiple"
 This coding pattern is widely used for presence/absence questions and can also appear in integer sequence or modulo-based problems.
 
 ### Tags
+Array(#array), Hash Table(#hash-table)
 
 ### Similar Problems

@@ -174,7 +174,7 @@ This is a classic case of applying the **sqrt decomposition (chunked array)** pa
 Use a balanced BST or order statistic tree to support O(log n) fetch(k) and move-to-end operations for the MRU queue.
 
 ### Tags
-Array(#array), Hash Table(#hash-table), Stack(#stack), Design(#design), Binary Indexed Tree(#binary-indexed-tree), Ordered Set(#ordered-set)
+Array(#array), Linked List(#linked-list), Divide and Conquer(#divide-and-conquer), Design(#design), Simulation(#simulation), Doubly-Linked List(#doubly-linked-list)
 
 ### Similar Problems
 - LRU Cache(lru-cache) (Medium)

@@ -88,7 +88,7 @@ Efficient simulation using a heap (for busy servers) and sorted structure or bal
 Use a min-heap for busy servers and a sorted set for available servers; at each request, release finished servers and assign the next available in round-robin order.
 
 ### Tags
-Array(#array), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set)
+Array(#array), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation), Ordered Set(#ordered-set)
 
 ### Similar Problems
 - Meeting Rooms III(meeting-rooms-iii) (Hard)

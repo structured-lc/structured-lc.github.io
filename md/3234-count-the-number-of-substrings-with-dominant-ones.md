@@ -125,7 +125,7 @@ The windowed two-pointer trick for every zero count keeps this O(√n × n), whi
 This pattern also works for problems like substring sums in restricted ranges, or substrings with unique frequency counts.
 
 ### Tags
-String(#string), Sliding Window(#sliding-window), Enumeration(#enumeration)
+String(#string), Enumeration(#enumeration)
 
 ### Similar Problems
 - Count Binary Substrings(count-binary-substrings) (Easy)

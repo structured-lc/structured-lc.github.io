@@ -110,5 +110,6 @@ def lexicographically_smallest_permutation_greater_than_target(nums, target):
 This problem uses the "next permutation" coding pattern—an important approach for generating the next lexicographically ordered sequence—which frequently appears in combinatorics and string/array ordering problems. The same pattern can be applied to related questions like generating all permutations, finding previous permutation, or working with a subset of permutations given constraints.
 
 ### Tags
+Hash Table(#hash-table), String(#string), Greedy(#greedy), Counting(#counting), Enumeration(#enumeration)
 
 ### Similar Problems

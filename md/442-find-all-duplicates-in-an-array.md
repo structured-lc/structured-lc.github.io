@@ -254,7 +254,7 @@ This problem showcases a clever use of array indices as a hash table, exploiting
 Mark seen numbers by negating the value at their index; duplicates appear where value is already negative.
 
 ### Tags
-Array(#array), Hash Table(#hash-table)
+Array(#array), Hash Table(#hash-table), Sorting(#sorting)
 
 ### Similar Problems
 - Find All Numbers Disappeared in an Array(find-all-numbers-disappeared-in-an-array) (Easy)

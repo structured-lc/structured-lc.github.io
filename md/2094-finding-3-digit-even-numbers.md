@@ -99,7 +99,8 @@ This pattern — brute-forcing candidate numbers (with count checks) — is comm
 For each 3-digit even number, check if its digits are available in the input (respecting counts), and collect all valid numbers.
 
 ### Tags
-Array(#array), Hash Table(#hash-table), Sorting(#sorting), Enumeration(#enumeration)
+Array(#array), Hash Table(#hash-table), Recursion(#recursion), Sorting(#sorting), Enumeration(#enumeration)
 
 ### Similar Problems
 - Find Numbers with Even Number of Digits(find-numbers-with-even-number-of-digits) (Easy)
+- Unique 3-Digit Even Numbers(unique-3-digit-even-numbers) (Easy)

@@ -117,6 +117,6 @@ This problem is essentially a shortest path in a *virtual* unweighted graph, mak
 Use BFS to find the minimum number of reverse operations to reach all possible positions, avoiding banned indices.
 
 ### Tags
-Array(#array), Breadth-First Search(#breadth-first-search), Ordered Set(#ordered-set)
+Array(#array), Hash Table(#hash-table), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Ordered Set(#ordered-set)
 
 ### Similar Problems

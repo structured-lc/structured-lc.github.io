@@ -132,6 +132,6 @@ This problem is a textbook example of applying **DFS backtracking with memoizati
 Recursively build each pyramid layer using allowed triples, memoizing failed states and pruning impossible branches for efficiency.
 
 ### Tags
-Hash Table(#hash-table), String(#string), Bit Manipulation(#bit-manipulation), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
+Hash Table(#hash-table), String(#string), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
 
 ### Similar Problems
