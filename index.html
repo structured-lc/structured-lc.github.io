@@ -509,7 +509,434 @@
     </div>
   </div>
 
+  <!-- Hints/Tutorial System -->
+  <div id="hints-overlay" class="hints-overlay">
+    <button class="hint-skip-all" onclick="skipAllHints()">Skip Tutorial</button>
+    <div id="hint-spotlight" class="hint-spotlight"></div>
+    <div id="hint-tooltip" class="hint-tooltip">
+      <div class="hint-title">
+        <span id="hint-icon">💡</span>
+        <span id="hint-title-text">Welcome!</span>
+      </div>
+      <div class="hint-description" id="hint-description">
+        Let's take a quick tour of LeetCode Handbook!
+      </div>
+      <div class="hint-controls">
+        <div class="hint-step-counter" id="hint-step-counter">Step 1 of 5</div>
+        <div class="hint-buttons">
+          <button class="hint-button" onclick="previousHint()" id="hint-prev-btn" style="display: none;">Previous</button>
+          <button class="hint-button primary" onclick="nextHint()" id="hint-next-btn">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Hints Trigger Button -->
+  <button id="hints-trigger" class="hints-trigger" onclick="startHints()" title="Take a tour">💡</button>
+
+  <!-- Hints/Tutorial System -->
+  <div id="hints-overlay" class="hints-overlay">
+    <button class="hint-skip-all" onclick="skipAllHints()">Skip Tutorial</button>
+    <div id="hint-spotlight" class="hint-spotlight"></div>
+    <div id="hint-tooltip" class="hint-tooltip">
+      <div class="hint-title">
+        <span id="hint-icon">💡</span>
+        <span id="hint-title-text">Welcome!</span>
+      </div>
+      <div class="hint-description" id="hint-description">
+        Let's take a quick tour of LeetCode Handbook!
+      </div>
+      <div class="hint-controls">
+        <div class="hint-step-counter" id="hint-step-counter">Step 1 of 5</div>
+        <div class="hint-buttons">
+          <button class="hint-button" onclick="previousHint()" id="hint-prev-btn" style="display: none;">Previous</button>
+          <button class="hint-button primary" onclick="nextHint()" id="hint-next-btn">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Hints Trigger Button -->
+  <button id="hints-trigger" class="hints-trigger" onclick="startHints()" title="Take a tour">💡</button>
+
   <script>
+    // ========================================
+    // HINTS/TUTORIAL SYSTEM
+    // ========================================
+    
+    // Hints configuration
+    const hintsConfig = {
+      desktop: [
+        {
+          target: '#desktop-home-btn',
+          title: 'Welcome to LeetCode Handbook!',
+          description: 'This is your home for structured LeetCode problem preparation. Click here anytime to return to the homepage. Let\'s explore the key features together!',
+          icon: '🏠',
+          position: 'bottom'
+        },
+        {
+          target: '#desktop-lists-sidebar',
+          title: 'Problem Collections',
+          description: 'Browse curated problem lists here - from LeetCode 75 to company-specific collections. Each list is organized by difficulty and topic.',
+          icon: '📚',
+          position: 'right'
+        },
+        {
+          target: '#desktop-problems-sidebar',
+          title: 'Problem List',
+          description: 'After selecting a collection, individual problems appear here. You can see difficulty levels and navigate through them easily.',
+          icon: '📝',
+          position: 'right'
+        },
+        {
+          target: '#desktop-content',
+          title: 'Problem Content',
+          description: 'Detailed explanations, solutions, and analysis appear in this main area. Every problem follows the same consistent template for better learning.',
+          icon: '📖',
+          position: 'left'
+        },
+        {
+          target: '#desktop-search-btn',
+          title: 'Smart Search',
+          description: 'Search through problems by title, number, or difficulty. When a list is selected, it searches within that list first, then falls back to all problems.',
+          icon: '🔍',
+          position: 'bottom'
+        },
+        {
+          target: '#desktop-settings-btn',
+          title: 'Customize Experience',
+          description: 'Adjust text size, theme, and layout preferences. You can also resize columns by dragging the borders between them!',
+          icon: '⚙️',
+          position: 'bottom'
+        },
+        {
+          target: '#desktop-feedback-fab',
+          title: 'Share Feedback',
+          description: 'Have suggestions, found bugs, or want to request features? Click here to send feedback and help improve the platform.',
+          icon: '💬',
+          position: 'left'
+        },
+        {
+          target: '#mobile-share-fab',
+          title: 'Share Problems',
+          description: 'Share interesting problems or your progress with friends and colleagues using this quick share button.',
+          icon: '🔗',
+          position: 'left'
+        }
+      ],
+      mobile: [
+        {
+          target: '#mobile-home-btn',
+          title: 'Welcome to LeetCode Handbook!',
+          description: 'Your mobile-friendly LeetCode preparation companion. Tap here anytime to return home. Let\'s explore how to navigate efficiently on mobile!',
+          icon: '🏠',
+          position: 'bottom'
+        },
+        {
+          target: '#mobile-breadcrumb-nav',
+          title: 'Navigation Breadcrumbs',
+          description: 'Keep track of your location and navigate back easily using these breadcrumbs. They appear when browsing lists and problems.',
+          icon: '🧭',
+          position: 'bottom'
+        },
+        {
+          target: '#mobile-browse-collections-btn',
+          title: 'Problem Collections',
+          description: 'Tap here to browse curated problem collections. Each collection shows difficulty distribution with colored dots and problem counts.',
+          icon: '📚',
+          position: 'bottom'
+        },
+        {
+          target: '#mobile-search-btn',
+          title: 'Smart Search',
+          description: 'Find problems instantly by title, number, or difficulty. Searches within the current list first, then expands to all problems if needed.',
+          icon: '🔍',
+          position: 'bottom'
+        },
+        {
+          target: '#mobile-settings-btn',
+          title: 'Personalize',
+          description: 'Adjust text size, theme, and other preferences for the best mobile reading experience.',
+          icon: '⚙️',
+          position: 'bottom'
+        },
+        {
+          target: '#mobile-feedback-fab',
+          title: 'Send Feedback',
+          description: 'Share suggestions, report bugs, or request new features. Your feedback helps make the app better for everyone.',
+          icon: '💬',
+          position: 'left'
+        },
+        {
+          target: '#mobile-share-fab',
+          title: 'Share Content',
+          description: 'Easily share problems, solutions, or your study progress with friends and study groups using this floating share button.',
+          icon: '🔗',
+          position: 'left'
+        }
+      ]
+    };
+    
+    let currentHintIndex = 0;
+    let currentHints = [];
+    let isHintsActive = false;
+    let hintsCompleted = false;
+    
+    // Check if user has seen hints before
+    function hasSeenHints() {
+      return localStorage.getItem('lc-handbook-hints-completed') === 'true';
+    }
+    
+    // Mark hints as completed
+    function markHintsCompleted() {
+      localStorage.setItem('lc-handbook-hints-completed', 'true');
+      hintsCompleted = true;
+    }
+    
+    // Start hints system
+    function startHints() {
+      if (isHintsActive) return;
+      
+      isHintsActive = true;
+      currentHintIndex = 0;
+      
+      // Determine which hints to show based on screen size
+      const isMobile = window.innerWidth < 1024;
+      currentHints = isMobile ? hintsConfig.mobile : hintsConfig.desktop;
+      
+      const overlay = document.getElementById('hints-overlay');
+      overlay.classList.add('active');
+      
+      showCurrentHint();
+    }
+    
+    // Show current hint
+    function showCurrentHint() {
+      if (currentHintIndex >= currentHints.length) {
+        endHints();
+        return;
+      }
+      
+      const hint = currentHints[currentHintIndex];
+      const target = document.querySelector(hint.target);
+      
+      if (!target) {
+        // Skip this hint if target not found
+        currentHintIndex++;
+        showCurrentHint();
+        return;
+      }
+      
+      // Update hint content
+      document.getElementById('hint-icon').textContent = hint.icon;
+      document.getElementById('hint-title-text').textContent = hint.title;
+      document.getElementById('hint-description').textContent = hint.description;
+      document.getElementById('hint-step-counter').textContent = `Step ${currentHintIndex + 1} of ${currentHints.length}`;
+      
+      // Update button visibility
+      const prevBtn = document.getElementById('hint-prev-btn');
+      const nextBtn = document.getElementById('hint-next-btn');
+      
+      prevBtn.style.display = currentHintIndex > 0 ? 'block' : 'none';
+      nextBtn.textContent = currentHintIndex === currentHints.length - 1 ? 'Finish' : 'Next';
+      
+      // Position spotlight and tooltip
+      positionHintElements(target, hint.position);
+    }
+    
+    // Position spotlight and tooltip
+    function positionHintElements(target, preferredPosition) {
+      const spotlight = document.getElementById('hint-spotlight');
+      const tooltip = document.getElementById('hint-tooltip');
+      
+      // Get target position
+      const targetRect = target.getBoundingClientRect();
+      const viewportWidth = window.innerWidth;
+      const viewportHeight = window.innerHeight;
+      
+      // Position spotlight
+      spotlight.style.left = (targetRect.left - 10) + 'px';
+      spotlight.style.top = (targetRect.top - 10) + 'px';
+      spotlight.style.width = (targetRect.width + 20) + 'px';
+      spotlight.style.height = (targetRect.height + 20) + 'px';
+      
+      // Position tooltip
+      const tooltipRect = tooltip.getBoundingClientRect();
+      let position = preferredPosition;
+      
+      // Smart positioning logic
+      let left, top;
+      
+      // Reset classes
+      tooltip.className = 'hint-tooltip';
+      
+      switch (position) {
+        case 'top':
+          left = targetRect.left + (targetRect.width / 2) - (tooltipRect.width / 2);
+          top = targetRect.top - tooltipRect.height - 20;
+          if (top < 10) position = 'bottom'; // Fallback
+          break;
+          
+        case 'bottom':
+          left = targetRect.left + (targetRect.width / 2) - (tooltipRect.width / 2);
+          top = targetRect.bottom + 20;
+          if (top + tooltipRect.height > viewportHeight - 10) position = 'top'; // Fallback
+          break;
+          
+        case 'left':
+          left = targetRect.left - tooltipRect.width - 20;
+          top = targetRect.top + (targetRect.height / 2) - (tooltipRect.height / 2);
+          if (left < 10) position = 'right'; // Fallback
+          break;
+          
+        case 'right':
+          left = targetRect.right + 20;
+          top = targetRect.top + (targetRect.height / 2) - (tooltipRect.height / 2);
+          if (left + tooltipRect.width > viewportWidth - 10) position = 'left'; // Fallback
+          break;
+      }
+      
+      // Apply fallback if needed
+      if (position !== preferredPosition) {
+        switch (position) {
+          case 'top':
+            left = targetRect.left + (targetRect.width / 2) - (tooltipRect.width / 2);
+            top = targetRect.top - tooltipRect.height - 20;
+            break;
+          case 'bottom':
+            left = targetRect.left + (targetRect.width / 2) - (tooltipRect.width / 2);
+            top = targetRect.bottom + 20;
+            break;
+          case 'left':
+            left = targetRect.left - tooltipRect.width - 20;
+            top = targetRect.top + (targetRect.height / 2) - (tooltipRect.height / 2);
+            break;
+          case 'right':
+            left = targetRect.right + 20;
+            top = targetRect.top + (targetRect.height / 2) - (tooltipRect.height / 2);
+            break;
+        }
+      }
+      
+      // Clamp to viewport
+      left = Math.max(10, Math.min(left, viewportWidth - tooltipRect.width - 10));
+      top = Math.max(10, Math.min(top, viewportHeight - tooltipRect.height - 10));
+      
+      tooltip.style.left = left + 'px';
+      tooltip.style.top = top + 'px';
+      tooltip.classList.add(position);
+    }
+    
+    // Next hint
+    function nextHint() {
+      currentHintIndex++;
+      showCurrentHint();
+    }
+    
+    // Previous hint
+    function previousHint() {
+      if (currentHintIndex > 0) {
+        currentHintIndex--;
+        showCurrentHint();
+      }
+    }
+    
+    // Skip all hints
+    function skipAllHints() {
+      endHints();
+    }
+    
+    // End hints
+    function endHints() {
+      isHintsActive = false;
+      const overlay = document.getElementById('hints-overlay');
+      overlay.classList.remove('active');
+      markHintsCompleted();
+    }
+    
+    // Auto-start hints for first-time users
+    function checkAutoStartHints() {
+      // Only auto-start if user hasn't seen hints before
+      if (!hasSeenHints() && !hintsCompleted) {
+        // Small delay to ensure page is fully loaded
+        setTimeout(() => {
+          startHints();
+        }, 1500);
+      }
+    }
+    
+    // Handle window resize
+    function handleHintsResize() {
+      if (isHintsActive && currentHints.length > 0) {
+        // Re-show current hint with updated positioning
+        setTimeout(() => {
+          showCurrentHint();
+        }, 100);
+      }
+    }
+    
+    // Keyboard shortcuts for hints
+    function handleHintsKeydown(event) {
+      if (!isHintsActive) return;
+      
+      switch (event.key) {
+        case 'ArrowRight':
+        case 'Enter':
+        case ' ':
+          event.preventDefault();
+          nextHint();
+          break;
+        case 'ArrowLeft':
+          event.preventDefault();
+          previousHint();
+          break;
+        case 'Escape':
+          event.preventDefault();
+          skipAllHints();
+          break;
+      }
+    }
+    
+    // Initialize hints system
+    function initializeHints() {
+      // Add event listeners
+      window.addEventListener('resize', handleHintsResize);
+      document.addEventListener('keydown', handleHintsKeydown);
+      
+      // Auto-start hints for new users after page load
+      if (document.readyState === 'complete') {
+        checkAutoStartHints();
+      } else {
+        window.addEventListener('load', checkAutoStartHints);
+      }
+    }
+    
+    // Start hints initialization when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initializeHints);
+    } else {
+      initializeHints();
+    }
+    
+    // Debug function to reset hints (for testing)
+    function resetHints() {
+      localStorage.removeItem('lc-handbook-hints-completed');
+      hintsCompleted = false;
+      console.log('✅ Hints reset! Refresh the page to see the tutorial again.');
+    }
+    
+    // Make functions available globally
+    window.startHints = startHints;
+    window.nextHint = nextHint;
+    window.previousHint = previousHint;
+    window.skipAllHints = skipAllHints;
+    window.resetHints = resetHints;
+    
+    // Log hints system availability 
+    console.log('🎯 LeetCode Handbook Hints System Loaded!');
+    console.log('💡 Type resetHints() in console to test the tutorial again');
+    console.log('🚀 Type startHints() to manually start the tutorial');
+
     // ENHANCED THEME SYSTEM - Works with settings (System/Light/Dark)
     function applyTheme(themePreference = 'system') {
       if (!document.body) return;

@@ -175,6 +175,338 @@
 }
 
 /* ========================================
+   HINTS/TUTORIAL OVERLAY SYSTEM
+   ======================================== */
+
+/* Hints overlay container */
+.hints-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(1px);
+  z-index: 9999;
+  display: none;
+  pointer-events: auto;
+}
+
+.hints-overlay.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Hint spotlight effect */
+.hint-spotlight {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid #667eea;
+  border-radius: 12px;
+  pointer-events: none;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 0 0 4px rgba(102, 126, 234, 0.3),
+    0 0 30px rgba(102, 126, 234, 0.4),
+    inset 0 0 20px rgba(255, 255, 255, 0.1);
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 
+      0 0 0 4px rgba(102, 126, 234, 0.3),
+      0 0 30px rgba(102, 126, 234, 0.4),
+      inset 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 0 8px rgba(102, 126, 234, 0.4),
+      0 0 50px rgba(102, 126, 234, 0.6),
+      inset 0 0 30px rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Hint tooltip */
+.hint-tooltip {
+  position: absolute;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px 24px;
+  border-radius: 16px;
+  max-width: 320px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+  z-index: 10000;
+  pointer-events: auto;
+  box-shadow: 
+    0 20px 60px rgba(102, 126, 234, 0.3),
+    0 8px 24px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: slideInTooltip 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes slideInTooltip {
+  from {
+    opacity: 0;
+    transform: translateY(15px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Tooltip arrow */
+.hint-tooltip::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.hint-tooltip.top::before {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px 10px 0 10px;
+  border-color: #667eea transparent transparent transparent;
+}
+
+.hint-tooltip.bottom::before {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #667eea transparent;
+}
+
+.hint-tooltip.left::before {
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #667eea;
+}
+
+.hint-tooltip.right::before {
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #667eea transparent transparent;
+}
+
+/* Hint content */
+.hint-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hint-description {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  opacity: 0.95;
+}
+
+.hint-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.hint-step-counter {
+  font-size: 12px;
+  opacity: 0.8;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+.hint-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.hint-button {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hint-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.hint-button:active {
+  transform: scale(0.95);
+}
+
+.hint-button.primary {
+  background: rgba(255, 255, 255, 0.9);
+  color: #667eea;
+  font-weight: 700;
+}
+
+.hint-button.primary:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-1px);
+}
+
+/* Skip all button */
+.hint-skip-all {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hint-skip-all:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Mobile responsive hints */
+@media (max-width: 768px) {
+  .hint-tooltip {
+    max-width: calc(100vw - 40px);
+    font-size: 14px;
+    padding: 16px 20px;
+  }
+  
+  .hint-title {
+    font-size: 16px;
+  }
+  
+  .hint-description {
+    font-size: 13px;
+  }
+  
+  .hint-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  
+  .hint-buttons {
+    justify-content: center;
+  }
+  
+  .hint-step-counter {
+    text-align: center;
+  }
+}
+
+/* Animated hint indicator */
+.hint-indicator {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 10001;
+  animation: bounce-indicator 1.5s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes bounce-indicator {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Hints trigger button (bottom corner) */
+.hints-trigger {
+  position: fixed;
+  bottom: calc(140px + (48px * var(--mobile-scale)));
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 200;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  animation: subtle-pulse 3s infinite ease-in-out;
+}
+
+/* Subtle pulsing animation to draw attention */
+@keyframes subtle-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hints-trigger {
+    bottom: 140px;
+  }
+}
+
+.hints-trigger:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.hints-trigger:active {
+  transform: scale(0.95);
+}
+
+/* Hide hints trigger when hints are active */
+.hints-overlay.active ~ .hints-trigger {
+  display: none;
+}
+
+/* ========================================
    USER SCALE PREFERENCE CLASSES
    ======================================== */
 
