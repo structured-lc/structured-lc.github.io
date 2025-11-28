@@ -163,6 +163,10 @@ def maximumCoins(coins, k):
 ### Summary
 This approach applies **coordinate compression** and **sweep-line/prefix sum** patterns, converting arbitrary intervals into a manageable array for efficient range update and querying. The problem is a hybrid of **interval coverage** and **maximum sliding window**—both frequent in competitive programming and coding interviews. The technique generalizes to scenarios where we need to aggregate or count items across many overlapping ranges, such as range sum queries, event counting, or "active intervals" queries.
 
+
+### Flashcard
+For each k-length window, use a sweep-line or two-pointer technique to count how many bags (intervals) overlap it; accumulate coin sums efficiently.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy), Sliding Window(#sliding-window), Sorting(#sorting), Prefix Sum(#prefix-sum)
 

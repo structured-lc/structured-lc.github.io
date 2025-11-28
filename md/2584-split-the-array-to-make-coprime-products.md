@@ -133,6 +133,10 @@ def findValidSplit(nums):
 ### Summary
 This problem uses the **prefix attribute tracking** pattern, similar to union-find intervals, but specifically leverages properties of the primes for efficient lookups. The blocking-pointer technique elegantly avoids expensive product/gcd calculations, making this approach suitable for input up to n=10⁴. The "factor overlap tracking" trick shows up in a few hard number-theory interview problems, such as "Least Common Multiple Split" or interval coverage with factor tracking.
 
+
+### Flashcard
+Track prime factorization of prefix and suffix products; two products are coprime iff they share no common prime factors.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Number Theory(#number-theory)
 

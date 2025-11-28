@@ -74,6 +74,10 @@ def process_string(s: str) -> str:
 ### Summary
 This is a straightforward **string simulation** problem, suitable for practicing array/list edits and simulating editor-like commands. The pattern is common in undo/redo, stack-machine simulations, and text processing tools.
 
+
+### Flashcard
+Simulate string operations using a list: append characters, handle `#` (duplicate), `*` (remove last), `%` (reverse), and `@` (clear).
+
 ### Tags
 String(#string), Simulation(#simulation)
 

@@ -69,6 +69,10 @@ def longestSubsequence(nums):
 
 3. **Non-Zero XOR with Constraints:** What if you had additional constraints on the subsequence, such as having a specific minimum length or sum of elements? How would you adjust your approach?
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

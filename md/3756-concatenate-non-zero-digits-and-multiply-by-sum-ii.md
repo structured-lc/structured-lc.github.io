@@ -156,6 +156,10 @@ This problem uses the **prefix precomputation pattern** to answer range queries 
 
 This pattern appears frequently in range query problems where we need to combine multiple properties (sums, counts, string concatenations) and later extract ranges without recalculating. It's similar to prefix sum arrays but extended to handle more complex operations and modular arithmetic.
 
+
+### Flashcard
+For each query range, extract non-zero digits to form x, sum x's digits, multiply x × sum; precompute prefix sums for efficient range queries.
+
 ### Tags
 Math(#math), String(#string), Prefix Sum(#prefix-sum)
 

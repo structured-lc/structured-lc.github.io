@@ -78,6 +78,10 @@ def minimize_max_component_cost(n: int, edges: list) -> int:
 ### Summary
 This is a classic **min-max partition** using binary search or simple selection. For this specific version, the answer reduces to the minimum edge cost because you can always split into many single-edge or singleton-node components.
 
+
+### Flashcard
+Binary search on maximum edge cost X; for each X, check if keeping only edges with cost ≤ X results in all components having max edge cost ≤ X.
+
 ### Tags
 Binary Search(#binary-search), Union Find(#union-find), Graph(#graph), Sorting(#sorting)
 

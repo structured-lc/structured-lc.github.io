@@ -137,6 +137,10 @@ Classic patterns:
 - *Memoized recursion with direction state* is useful for problems with “twists” on vanilla grid path counting.  
 This technique applies to many variations: chessboard moves, constrained mazes, or robot path problems with extra actions or rules.
 
+
+### Flashcard
+Track DP state as dp[i][j][direction] to count paths reaching (i, j) from a specific direction; mirrors constrain movement based on entry direction.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

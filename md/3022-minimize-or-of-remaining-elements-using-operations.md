@@ -99,6 +99,10 @@ This problem is a classic **bitwise greedy minimization pattern**, scanning from
 It appears in bitmasking, dynamic programming, and greedy problems where bit contribution to a function (like OR/AND/XOR) must be minimized or maximized by modifying selected numbers.  
 Key insight is that the OR only decreases if we zero out all instances of a set bit, so greedily processing high bits first always yields the minimum possible OR.
 
+
+### Flashcard
+Minimize OR of Remaining Elements Using Operations (Hard)
+
 ### Tags
 Array(#array), Greedy(#greedy), Bit Manipulation(#bit-manipulation)
 

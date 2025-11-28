@@ -106,6 +106,10 @@ def findLexSmallestString(s: str, a: int, b: int) -> str:
 ### Summary
 This problem is an application of BFS/DFS for state-space search, tracking visited configurations to avoid cycles, with string transformations as graph edges. The classic BFS "minimum-lex" exploration pattern applies when searching for minimal arrangements under allowed operations. This approach generalizes well to many combinatorial reordering and string transformation problems.
 
+
+### Flashcard
+BFS/simulation: apply operations (add 'a' to odd indices, rotate by b) in all possible orders, track visited strings, return lexicographically smallest.
+
 ### Tags
 String(#string), Greedy(#greedy), String Matching(#string-matching)
 

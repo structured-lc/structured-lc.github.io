@@ -69,6 +69,10 @@ def reportSpamMessage(message, bannedWords):
 ### Summary
 This problem uses the **hash set membership pattern**: transform the bannedWords list to a set for efficient detection of matches. It's a direct application of set for O(1) lookup, a foundational pattern in coding interviews for de-duplication and fast existence checking. This pattern is prevalent in problems such as “intersection of two arrays,” “word break,” and “longest substring without repeating characters.”
 
+
+### Flashcard
+Convert bannedWords to a set for O(1) lookup; iterate through message words, counting matches in the banned set and returning True as soon as count reaches 2.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string)
 

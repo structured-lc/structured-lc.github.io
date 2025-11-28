@@ -108,6 +108,10 @@ def maximum_removal_queries(nums, queries):
 ### Summary
 This problem illustrates the interval DP pattern, where the optimal solution for a range depends on choices at the ends. The single allowed subsequence operation means we must try every possible starting subarray, turning the task into maximizing the removal process for each possible interval. This DP/trial-all-intervals pattern is common in problems with removal from ends, like "Palindrome Removal" and "Burst Balloons."
 
+
+### Flashcard
+Maximum Number of Removal Queries That Can Be Processed I (Hard)
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

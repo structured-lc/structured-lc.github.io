@@ -128,6 +128,10 @@ def maximumPoints(n, k, stayScore, travelScore):
 This problem is a classic **DP on sequences with state transitions**. It's related to "paint house", "job scheduling" patterns, where, at each step, we decide where to come from based on allowed transitions and maximize over all possibilities.  
 Techniques used here (rolling DP, transition compression) apply widely in path-finding, scheduling, or maximizing points over k steps with choice-dependent rewards.
 
+
+### Flashcard
+DP with state f[day][city] = max score at city on day; transition by staying (add stayScore) or traveling from another city (add travelScore), take maximum over all options.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

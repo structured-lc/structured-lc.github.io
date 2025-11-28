@@ -106,6 +106,10 @@ class Solution:
 ### Summary
 This problem uses the **dynamic programming with Trie** pattern, a variant of "word break" with word cost minimization. It's a classic use case for Trie prefix matching combined with DP memoization for optimal substructure and overlapping subproblems. This approach generalizes to any "construct by concatenation" + "minimal cost" questions, such as word segmentation, sentence assembly, and minimal cost composition problems.
 
+
+### Flashcard
+Use DP with Trie to find minimum cost—dp[i] = min cost to build target[0:i], and Trie accelerates word-matching at each position.
+
 ### Tags
 
 ### Similar Problems

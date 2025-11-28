@@ -123,6 +123,10 @@ def countTriplets(nums):
 ### Summary
 The approach uses the parity of set bits and combinatorial counting rather than brute-force enumeration of triplets. By grouping on even/odd set bits and leveraging combinations, we reduce the problem to O(n) time, a big improvement over O(n³). This combinatorial technique (parity grouping + combinations) is useful in many parity or subset-related counting problems in arrays, not just limited to XOR or set bits.
 
+
+### Flashcard
+Precompute parity of set bits for each number; count triplets where (parity[i] ⊕ parity[j] ⊕ parity[k]) == 0 using combinatorics.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

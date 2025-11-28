@@ -158,6 +158,10 @@ This is a **two-phase BFS** algorithm:
 - Second BFS finds the shortest safe path from 'S' to 'D', avoiding entering a cell after it floods.
 This is a classical pattern for grid problems with "dynamic hazard"—applicable to other pathfinding under spreading obstacles (like fire, poison, etc.).
 
+
+### Flashcard
+Precompute flood time for each cell via multi-source BFS from all water cells; use BFS from start, only visit cell at time t if t < flood_time[cell].
+
 ### Tags
 Array(#array), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

@@ -105,6 +105,10 @@ Patterns used:
 - **Distance/gap-finding with wraparound (circular array)**
 This approach and pattern often appears in problems about simultaneous spread, wavefronts, or circular adjacency, such as problems involving infection, voting, or minimum propagation time in rings.
 
+
+### Flashcard
+For each value, find all positions where it appears; the bottleneck is the largest gap between consecutive positions (with wraparound)—divide by 2 and round up.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

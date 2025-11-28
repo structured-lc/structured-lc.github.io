@@ -78,6 +78,10 @@ def alternatingGroupsII(colors, k):
 This problem is a straightforward sliding window check where, for each possible window (accounting for circularity), we validate that the window alternates colors.  
 The core idea—flattening circularity into a straight array with duplication—is a robust trick for many array/circle problems. The pairwise adjacency check is a standard pattern for alternation questions and appears in string processing and cycle detection problems.
 
+
+### Flashcard
+Slide a k-length window through the circular array; count windows where all adjacent pairs alternate in color.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window)
 

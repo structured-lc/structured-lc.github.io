@@ -121,6 +121,10 @@ def shiftDistance(s, t, nextCost, previousCost):
 ### Summary
 This problem applies a **precomputation + lookup** pattern for minimal letter transformation cost, leveraging circular (ring) arithmetic for alphabets. The main technique is all-pairs cost precomputation for efficient online queries. This pattern is common in problems involving letter shifting, ring-buffer DP, or shortest-path on small graphs. It can be extended to similar problems with customized character cost transformations.
 
+
+### Flashcard
+For each character pair, compute both forward and backward shift costs (accounting for wrap-around), then pick the minimum for each position.
+
 ### Tags
 Array(#array), String(#string), Prefix Sum(#prefix-sum)
 

@@ -81,6 +81,10 @@ def minimumMoves(nums):
 
 This problem demonstrates a **greedy optimization** pattern. The key insight is recognizing that when you can only move in one direction (increment), the optimal target is always at the extreme boundary (maximum). This transforms a potentially complex optimization problem into a simple linear calculation. The pattern applies to similar problems where you need to make values equal with uni-directional operations—always target the boundary that requires no movement for the optimal element, then calculate total adjustments needed for others.
 
+
+### Flashcard
+Target must be the maximum element (no benefit going higher); sum differences between max and all other elements.
+
 ### Tags
 Array(#array), Math(#math)
 

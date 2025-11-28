@@ -80,6 +80,10 @@ def buttonWithLongestPushTime(events):
 ### Summary  
 This problem uses a single-pass iteration pattern to efficiently find the maximum time difference between consecutive events in a sorted array. The key insights are tracking the maximum time and updating it based on comparisons during the iteration. This approach is common in problems involving sequences and maximum or minimum values and can be applied to various scenarios involving time-series data.
 
+
+### Flashcard
+Iterate through events, track maximum time difference between consecutive events; return button with largest push duration.
+
 ### Tags
 Array(#array)
 

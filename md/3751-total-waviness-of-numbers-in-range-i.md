@@ -111,6 +111,10 @@ def totalWaviness(num1: int, num2: int) -> int:
 
 This problem uses a **brute-force enumeration** approach combined with **string digit extraction**. For each number in the range, we convert it to a string and check each middle digit to see if it forms a peak or valley. This pattern is common in digit-manipulation problems and serves as a foundation before advancing to digit DP solutions for even larger ranges. The key insight is recognizing that comparing adjacent digits as integers requires only O(1) space and the overall complexity remains acceptable for the given constraints.
 
+
+### Flashcard
+Use digit DP to count peaks and valleys; for each number in range, check if each digit is strictly greater/less than neighbors.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Enumeration(#enumeration)
 

@@ -164,6 +164,10 @@ def applyOperations(nums, k):
 This problem uses a combination of number theory (counting prime factors), **monotonic stack** (previous/next greater by prime score) to efficiently count intervals, and **greedy selection** to maximize multiplicative score within k moves.  
 The monotonic stack + interval counting is a classic for **"subarray contribution"** problems, and exponentiation under modulus is a common pattern for products over large counts. This approach is useful in various maximization/minimization in arrays based on index ranges.
 
+
+### Flashcard
+Greedily select k subarrays with highest prime-factor scores; multiply selected elements—prioritize large values with high prime contributions.
+
 ### Tags
 Array(#array), Math(#math), Stack(#stack), Greedy(#greedy), Sorting(#sorting), Monotonic Stack(#monotonic-stack), Number Theory(#number-theory)
 

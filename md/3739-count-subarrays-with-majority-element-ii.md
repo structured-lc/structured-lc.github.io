@@ -111,6 +111,10 @@ def countMajoritySubarrays(self, nums: List[int], target: int) -> int:
 ### Summary
 This problem uses the **prefix sum transformation trick** combined with **binary search on a sorted structure**. The core insight is converting a "majority element" condition into a "positive subarray sum" condition via the +1/-1 transformation. Then, counting valid subarrays reduces to counting pairs of indices with the correct prefix sum relationship. This pattern appears in many subarray problems (e.g., subarrays with sum equal to k, target sum, etc.). For production-grade code, upgrading to a Fenwick tree achieves O(n log n) and is suitable for larger constraints.
 
+
+### Flashcard
+Transform array to +1 for target, -1 for others; count pairs (l, r) where prefix_sum[l] < prefix_sum[r] using sorted list with binary search.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Divide and Conquer(#divide-and-conquer), Segment Tree(#segment-tree), Merge Sort(#merge-sort), Prefix Sum(#prefix-sum)
 

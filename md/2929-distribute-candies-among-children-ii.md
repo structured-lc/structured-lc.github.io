@@ -78,6 +78,10 @@ def distribute_candies(n, limit):
 ### Summary
 This approach uses **bounded brute-force enumeration for small k** (here, 3), leveraging that it's feasible for reasonable `limit` and `n`. The problem is a variation of **integer partitioning with capped summands**, a classic combinatorics/interview topic. The same logic extends (using more efficient methods) to k children—e.g., by inclusion-exclusion principle, or generating functions for advanced cases. This pattern is seen in distributing items with upper-limits, like dice counting, resource allocation, or bounded knapsack subproblems.
 
+
+### Flashcard
+Iterate a from 0 to min(limit,n), then b from 0 to min(limit,n-a), compute c=n-a-b, and count if 0 ≤ c ≤ limit. O(limit²) is tractable for 3 children.
+
 ### Tags
 Math(#math), Combinatorics(#combinatorics), Enumeration(#enumeration)
 

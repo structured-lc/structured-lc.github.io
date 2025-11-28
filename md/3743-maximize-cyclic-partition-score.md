@@ -123,6 +123,10 @@ def maximizeCyclicPartitionScore(nums, k):
 ### Summary
 This problem combines **cyclic array handling** with **DP-based partition optimization**. The key insight is recognizing that each element's contribution depends on whether it's a max or min in its subarray, allowing us to decompose the problem into DP states tracking max contributions. The pattern is common in optimization problems where you partition sequences and score based on aggregate properties. Similar patterns appear in "Partition Array for Maximum Sum" and "Max Sum of Rectangle in Matrix" problems. The main challenge is efficiently handling the cyclic nature without exponential enumeration of partition configurations.
 
+
+### Flashcard
+Each element contributes as either maximum (+value) or minimum (−value); use DP to track partitions and maximize total score.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

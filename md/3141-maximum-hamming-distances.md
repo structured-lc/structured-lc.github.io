@@ -115,6 +115,10 @@ def max_hamming_distances(nums, m):
 This problem uses a rare but clever **reverse BFS + bitmasking** strategy: instead of scanning every pair, we use BFS from all actual nums elements, propagating *bit-flip distances* in Hamming space to precompute minimum distances to all possible combinations.  
 The final answer is derived by a complement trick. This BFS-on-bitmasks pattern is powerful in bit manipulation problems—can apply in searching shortest bit-reachability, code word channels (error correction), and other max/min Hamming distance problems.
 
+
+### Flashcard
+For each number x, its max Hamming distance is achieved with its bitwise complement; if complement not in nums, find closest alternative via BFS on bit flips.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Breadth-First Search(#breadth-first-search)
 

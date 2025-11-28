@@ -125,6 +125,10 @@ The key is to process items in increasing order of nums1, maintaining a heap of 
 This reduces the problem from quadratic to O(n log n), a common pattern for maximizing subarray/subset sums under ordering constraints.  
 The technique is broadly applicable in selection/subsequence maximization problems under monotonicity constraints.
 
+
+### Flashcard
+Sort nums1 while tracking indices, use min-heap to maintain k largest nums2 values as you process sorted nums1 in order—efficiently accumulate valid candidates.
+
 ### Tags
 Array(#array), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

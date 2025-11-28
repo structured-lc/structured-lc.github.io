@@ -132,6 +132,10 @@ This problem is a combinatorial search for the *maximum sum over independent opt
 The key pattern here is **"select k elements, no two share row/column, maximize sum"**, which appears in job assignments or maximum bipartite matching variants.  
 The brute approach is viable for k=3, but is not scalable. Generalizing leads to assignment problems (Hungarian Algorithm for bigger k), and can also arise in more classic combinatoric design and grid planning problems.
 
+
+### Flashcard
+Brute-force all combinations of 3 cells in different rows and columns (O(m²n²)), or optimize by precomputing top values per row/column.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix), Enumeration(#enumeration)
 

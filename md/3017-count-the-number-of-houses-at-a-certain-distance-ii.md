@@ -106,6 +106,10 @@ This is a **graph distances** problem where most paths are predictable (linear),
 The approach is a classic **all-pairs shortest path** enumeration, optimized by math for the linear (path) case but brute-forced for the shortcut.  
 This counting pattern arises in **distance queries** on trees/paths with perturbations (e.g., “how many pairs at distance k?”), **combinatorial counting**, and can be made efficient by exploiting symmetry when there are no cycles.
 
+
+### Flashcard
+Count the Number of Houses at a Certain Distance II (Hard)
+
 ### Tags
 Graph(#graph), Prefix Sum(#prefix-sum)
 

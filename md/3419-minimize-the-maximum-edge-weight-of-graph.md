@@ -139,6 +139,10 @@ def min_max_edge_weight(n, edges, threshold):
 ### Summary
 This problem uses the **binary search + BFS/DFS validation** template, common for "minimize the maximum... under constraints" style questions. The trick is to search for the minimum feasible max weight, and for each guess, verify the *connectivity* and *degree* conditions by simulating allowed edges and running a linear scan / traversal. This approach appears in various Leetcode problems involving *threshold minimization* on graphs or arrays.
 
+
+### Flashcard
+Binary search on the maximum edge weight; for each candidate weight, keep only edges ≤ that weight and check if all nodes can reach node 0 with degree ≤ threshold.
+
 ### Tags
 Binary Search(#binary-search), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Shortest Path(#shortest-path)
 

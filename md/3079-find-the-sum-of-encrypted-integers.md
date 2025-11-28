@@ -104,6 +104,10 @@ def sumOfEncryptedInt(nums):
 ### Summary
 This problem follows a **digit manipulation** and **accumulation** pattern, often seen in number-processing interviews (e.g., palindromes, digit sums, base conversions). The approach is brute-force but optimal within constraints, iterating through digits with elementary arithmetic. It generalizes to other problems where digits must be inspected, replaced, or counted.
 
+
+### Flashcard
+For each number, find its maximum digit, then construct encrypted value by repeating that digit for the original length; sum all encrypted values.
+
 ### Tags
 Array(#array), Math(#math)
 

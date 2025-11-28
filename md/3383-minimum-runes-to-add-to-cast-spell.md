@@ -111,6 +111,10 @@ def minimumRunnsToAdd(n, crystals, flowFrom, flowTo):
 ### Summary
 This problem is a type of **directed graph connectivity**, where you want to ensure all nodes are reachable from at least one designated "source" node (crystal). The standard BFS/DFS approach works efficiently due to the small number of crystals and the linearity of graph traversals. The problem is related to finding the number of **unreachable connected components** and is a variant of *minimum connections (edges) to make a directed graph source-connected*, a recurring pattern in directed graph design and maintenance algorithms. These techniques are broadly used in controlling reachability or dependency in systems and networks.
 
+
+### Flashcard
+Mark all nodes reachable from crystals via BFS/DFS; unreachable nodes each need a rune; if multiple unreachable components exist, connect them with additional runes.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph), Topological Sort(#topological-sort)
 

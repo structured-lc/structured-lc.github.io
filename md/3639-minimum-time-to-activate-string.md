@@ -121,6 +121,10 @@ This problem uses a **binary search** over the minimal time t, and at each step,
 This reduces the complexity from brute-force cubic to O(n log n).  
 This pattern is common in problems that ask for the minimal time or step to reach a threshold and where the process is monotonic, enabling binary search.
 
+
+### Flashcard
+At each time t, replace up to t+1 characters. Count substrings containing at least one '*' using: total substrings − substrings with no '*' (segments between '*'s).
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

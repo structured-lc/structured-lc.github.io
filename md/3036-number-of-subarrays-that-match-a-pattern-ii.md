@@ -104,6 +104,10 @@ def countMatchingSubarrays(nums, pattern):
 ### Summary
 This problem demonstrates an application of **"string search / KMP"** on transformed numeric arrays, where adjacent differences are mapped to small categorical values. Transforming the problem to subarray "pattern matching" and using efficient substring search is a common technique, useful in DNA matching, plagiarism detection, and time-series motif search. The coding pattern is efficient search via pre-processing (KMP), and learning this is helpful in many advanced array/string matching scenarios.
 
+
+### Flashcard
+Transform nums into diff array (1 for >, 0 for =, −1 for <); use KMP to find pattern matches in diff array.
+
 ### Tags
 Array(#array), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
 

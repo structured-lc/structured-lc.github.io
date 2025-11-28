@@ -99,6 +99,10 @@ It uses the well-known coin change DP pattern, but for each possible usage of th
 This decomposition is commonly used when constraints on coin usage are small.  
 The pattern appears in problems that mix unlimited and limited coin usage, and is a standard technique for bounded/unbounded combinations.
 
+
+### Flashcard
+Brute-force over 4-coin usage (0, 1, or 2 times); for each case, solve the classic coin-change DP with coins [1, 2, 6] for the remaining sum.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

@@ -137,6 +137,10 @@ This problem is a "find all windows matching given substrings, with proximity" p
   - Standard substring search—common in text, DNA, or log analytics.
   - Efficient interval containment using binary search in sorted arrays.
 
+
+### Flashcard
+Find Beautiful Indices in the Given Array II (Hard)
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Binary Search(#binary-search), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
 

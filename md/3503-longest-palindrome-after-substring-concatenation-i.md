@@ -117,6 +117,10 @@ This problem leverages the classic **brute-force substring generation with palin
 It demonstrates string manipulation, substring enumeration, and palindrome checking.  
 This logic (brute-forcing over substring pairs, then checking a property) can also apply to various string concatenation and matching problems in coding interviews.
 
+
+### Flashcard
+Try all substring pairs from s and t, concatenate, and check if palindrome in O(n⁴) time—acceptable since n ≤ 30.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming), Enumeration(#enumeration)
 

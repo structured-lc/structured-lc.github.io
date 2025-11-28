@@ -83,6 +83,10 @@ def minimum_operations(nums):
 ### Summary
 This problem leverages the **set uniqueness** and **sliding window/group removal** pattern. The optimal O(n) idea is to traverse from the end, and the earliest duplicate tells us how many elements we must remove, grouped into ⌈(i+1)/3⌉ operations. This pattern arises in array/window problems where element uniqueness is the property to maintain.
 
+
+### Flashcard
+Repeatedly remove first 3 elements until remaining array is all distinct; return number of removal operations needed.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

@@ -121,6 +121,10 @@ print(analyze_user_permissions(perms))
 ### Summary
 This problem is a classic *aggregation with bitwise operations* pattern, commonly found in permissions/feature flag analysis and bitmap indexes. The solution relies on O(n) single-pass bitwise reduction (AND/OR), which is both elegant and highly efficient, directly suited for SQL’s `BIT_AND`, `BIT_OR` functions and extremely easy to implement with for-loops in Python as shown. This pattern can be leveraged in any domain where boolean features are stored as bitmasks and global or grouped analysis is needed.
 
+
+### Flashcard
+Scan all permissions while maintaining running AND and OR values; final answer is the aggregated bitwise result across all users.
+
 ### Tags
 Database(#database)
 

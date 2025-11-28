@@ -122,6 +122,10 @@ def longestBalanced(s: str) -> int:
 ### Summary
 The core approach is a *prefix sum with state hashing*—a powerful pattern for substring and subarray problems where balance or difference invariants need tracking. This technique applies to problems like Longest Subarray with Sum Zero, Equal Number of 0s and 1s, and generalizes to more characters and constraints with careful state management.
 
+
+### Flashcard
+Track prefix differences (count_a − count_b, count_a − count_c); if the same pair appears at two indices, the substring between them has equal character frequencies.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Prefix Sum(#prefix-sum)
 

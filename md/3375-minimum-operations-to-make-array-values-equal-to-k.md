@@ -101,6 +101,10 @@ This problem uses the **set** and **greedy reduction** pattern—track unique va
 The solution is efficient thanks to direct use of sets for tracking disturbed values, and it's a typical application of "count distinct states needing conversion."  
 The approach, and recognizing impossible configurations early, shows up in a variety of problems where only monotonic changes (increase or decrease) are allowed.
 
+
+### Flashcard
+If any value < k exists, return −1; otherwise, count distinct values > k (each requires one operation to reach k).
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

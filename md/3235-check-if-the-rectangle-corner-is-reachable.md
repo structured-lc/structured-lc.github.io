@@ -113,6 +113,10 @@ def check_rectangle_corner_is_reachable(X, Y, circles):
 ### Summary
 This problem uses the **Union-Find (Disjoint Set)** pattern to efficiently group obstacles and check for blockade formation. The key is modeling whether the union of forbidden regions forms a vertical or horizontal barrier. This pattern—a "connectivity causes blockage" check—appears often in grid and geometry problems involving connected obstacles, walls, or percolation. Variants arise in connectivity, flood-fill, and pathfinding with impassable regions.
 
+
+### Flashcard
+Check if circles form a "barrier" connecting opposite rectangle sides using union-find on circle clusters.
+
 ### Tags
 Array(#array), Math(#math), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Geometry(#geometry)
 

@@ -90,6 +90,10 @@ This problem is a classic string manipulation challenge, illustrating the “sca
 The map-transform-join style is broadly applicable: title-casing names, correcting headings, or standardizing natural language input before further processing.  
 It’s common in preprocessing stages for NLP, user-input normalization, and data cleaning tasks.
 
+
+### Flashcard
+Iterate through the string and capitalize the first letter of each word (after spaces or at the start); convert other letters to lowercase.
+
 ### Tags
 Database(#database)
 

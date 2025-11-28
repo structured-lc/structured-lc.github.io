@@ -89,6 +89,10 @@ This is a classic greedy partitioning problem, using a sliding window and set fo
 It demonstrates the greedy pattern: at each character, extend the current segment as long as possible without violating the uniqueness condition.  
 Variants of this pattern are common in substring/partition/unique-letter type problems (e.g., Longest Substring Without Repeating Characters).
 
+
+### Flashcard
+Greedy approach—iterate left to right, extend current segment while characters are unique, start new segment when duplicate found.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Trie(#trie), Simulation(#simulation)
 

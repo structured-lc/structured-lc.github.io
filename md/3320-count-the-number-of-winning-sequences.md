@@ -113,6 +113,10 @@ def countWinningSequences(s):
 Dynamic programming with memoization, tracking current position, score difference, and last move, provides an efficient way to generate all non-repeating-move sequences for Bob such that he wins.  
 This pattern—**DP over position, summary state, and history**—is common for sequence/restriction/turn-based games, and appears in problems about generating valid move strings, subarray games, or simulating adversarial sequences.
 
+
+### Flashcard
+Use DP with memoization: state = (position, score_diff, last_move); for each move, if different from last, update score and recurse; count sequences where Bob wins > Alice.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

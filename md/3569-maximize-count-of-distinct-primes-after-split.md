@@ -149,6 +149,10 @@ def maximize_count_of_distinct_primes_after_split(nums, queries):
 ### Summary
 This problem uses the **prefix/suffix sweep pattern** with set counting and optimization via Sieve of Eratosthenes for prime detection. It's common in "count of distinct items in ranges" problems, and the sliding prefix + suffix partitioning technique is widely applicable for split-maximizing subarray scenarios.
 
+
+### Flashcard
+Use a sieve to precompute primes; for each query, update the array and compute distinct primes in all prefixes and suffixes; return the maximum sum of distinct primes across any split.
+
 ### Tags
 Array(#array), Math(#math), Segment Tree(#segment-tree), Number Theory(#number-theory)
 

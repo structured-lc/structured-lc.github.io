@@ -94,6 +94,10 @@ This problem demonstrates simple **classification pattern** based on numerical p
 Key patterns: input validation, conditionals, setting up clear decision logic.  
 Variants of this problem (triangle validity, object classification) appear frequently in interviews and competitive programming.
 
+
+### Flashcard
+Check triangle inequality (sum of any two sides > third), then classify by equality: all equal = Equilateral, two equal = Isosceles, all different = Scalene.
+
 ### Tags
 Database(#database)
 

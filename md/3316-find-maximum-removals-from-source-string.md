@@ -101,6 +101,10 @@ def maxRemovals(source: str, pattern: str, targetIndices: list[int]) -> int:
 ### Summary
 This problem uses the classic "binary search on the answer" pattern in combination with a two-pointer subsequence check. It's an example of the feasibility search technique—efficiently searching the maximal limit for an operation under constraints. These ideas are widely applicable for problems where a predicate can be checked in deterministic time, and you need the maximal/minimal such that the predicate remains true (e.g., longest subarray, max/min resource thresholds, etc.).
 
+
+### Flashcard
+Use binary search on the number of deletions k; for each k, check if pattern remains a subsequence after removing first k indices from targetIndices using greedy matching.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming)
 

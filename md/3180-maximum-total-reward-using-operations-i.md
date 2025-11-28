@@ -109,6 +109,10 @@ def maxTotalReward(rewardValues):
 ### Summary
 This problem is solved via a **greedy + sorting** approach, processing rewards in increasing order and only accepting adding a reward if it increases total reward according to rules. This allows maximizing the number of pickable rewards, leading to the highest possible total. This pattern is common in greedy algorithms, especially when step eligibility depends on current state and action history (like "can only pick values strictly larger than sum-so-far"). This can be paralleled with the "scheduling without overlap" or "select as many as possible by increasing order" category in greedy problems.
 
+
+### Flashcard
+Greedy approach—sort values and pick the smallest available value > x each time, since smaller picks increase x slowly and allow more future picks.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

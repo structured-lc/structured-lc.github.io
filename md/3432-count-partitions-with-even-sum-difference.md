@@ -80,6 +80,10 @@ def countPartitions(nums):
 ### Summary
 This is a classic prefix sum and parity problem: the even/odd property of the total sum determines the answer in O(n) time, and relates to partition problems where the core insight is a global property (not dynamic programming). This parity-checking trick often appears in subarray, partition, and bitmask problems.
 
+
+### Flashcard
+Partition has even sum difference ⟺ left and right sums have same parity; count positions where prefix_sum and (total_sum − prefix_sum) are both even or both odd.
+
 ### Tags
 Array(#array), Math(#math), Prefix Sum(#prefix-sum)
 

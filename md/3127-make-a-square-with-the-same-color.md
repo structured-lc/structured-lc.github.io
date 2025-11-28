@@ -115,6 +115,10 @@ We used **brute-force enumeration** of all possible cell changes because the gri
 The key pattern is simulation and subgrid detection on small matrices, which generalizes to sliding-window/grid problems.  
 Similar techniques apply whenever exhaustive simulation for small constraints is viable, such as games with grids, or tasks like Tic-Tac-Toe checking, and is also a practical pattern for interview settings with tight problem constraints.
 
+
+### Flashcard
+Only 4 possible 2×2 squares in a 3×3 grid. For each cell, simulate color change and check if any 2×2 square becomes uniform; return True if found, else False.
+
 ### Tags
 Array(#array), Matrix(#matrix), Enumeration(#enumeration)
 

@@ -80,6 +80,10 @@ def addedInteger(nums1, nums2):
 ### Summary
 The problem uses the **difference pattern** and relies on linear scanning for the minimum value in each array, making it efficient and robust. This approach and code pattern appear in other problems involving transformations by a constant (additive) across arrays or sequences. It's a common pattern for "find the constant shift" questions.
 
+
+### Flashcard
+Sort both arrays; x = sorted_nums2 − sorted_nums1 works for any index since transformation is uniform.
+
 ### Tags
 Array(#array)
 

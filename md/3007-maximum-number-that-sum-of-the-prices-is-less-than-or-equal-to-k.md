@@ -94,6 +94,10 @@ def maximumNumber(k: int, x: int) -> int:
 ### Summary
 We used a **binary search** over possible num values and, for each mid, computed the cumulative price efficiently. The key pattern is to view the problem as a monotonic search for the maximum num such that a cost (defined by a bit-manipulation rule) does not exceed a given budget. This approach often appears in problems dealing with cumulative or constrained costs, classic for bitmask & binary search blend problems.
 
+
+### Flashcard
+Maximum Number That Sum of the Prices Is Less Than or Equal to K (Medium)
+
 ### Tags
 Math(#math), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation)
 

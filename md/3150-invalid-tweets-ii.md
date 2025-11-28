@@ -137,6 +137,10 @@ This problem demonstrates the **"single-pass scan"** string checking pattern:
 - The same technique applies for input validation, log parsing, limit enforcement, and similar line-by-line data cleansing problems.  
 It's simple, fast, robust to changes, and easy to code and explain in interviews.
 
+
+### Flashcard
+For each tweet, check if length > 140 OR count(@) > 3 OR count(#) > 3; mark as invalid if any condition holds.
+
 ### Tags
 Database(#database)
 

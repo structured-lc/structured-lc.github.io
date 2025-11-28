@@ -111,6 +111,10 @@ def countMatchingSubarrays(nums, pattern):
 ### Summary
 This problem is a classic **sliding window + match pattern** variant: for each subarray window, check all pairwise constraints given by pattern. The main coding pattern is a double for-loop, where the inner loop checks validity efficiently and uses early termination for speed. This approach generalizes well to a variety of pattern-matching questions where pairwise relationships are tested across windows of an array.
 
+
+### Flashcard
+Brute-force all subarrays of length m+1; for each, validate all m pairwise comparisons against pattern.
+
 ### Tags
 Array(#array), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
 

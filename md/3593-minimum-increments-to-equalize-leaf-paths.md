@@ -144,6 +144,10 @@ This problem uses the DFS aggregation pattern on trees: compute values for subtr
 It commonly arises in path-equalizing problems, such as distributing work, synchronizing schedules in trees, and processing root-to-leaf dependencies.  
 It's a classic example of bottom-up tree dynamic programming where local adjustments must be made to obtain global equality among paths.
 
+
+### Flashcard
+DFS to compute max leaf-path sum in each subtree; propagate upward, incrementing each node so all leaf paths in its subtree reach the maximum.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search)
 

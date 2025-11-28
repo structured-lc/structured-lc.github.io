@@ -92,6 +92,10 @@ def maximumDamage(power):
 ### Summary
 This problem is a variation of the "House Robber" or "Delete and Earn" DP pattern, often used when selections must avoid adjacent values or value ranges. The grouping, value compression, and DP progression are widely useful in subsets, robber, and optimal selection DP problems. Problems with "can't pick adjacent or nearby values" frequently map to similar solutions.
 
+
+### Flashcard
+Group spells by damage value; use DP where for each unique damage, decide to cast all spells of that value or none (casting any blocks neighbors within ±2).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Two Pointers(#two-pointers), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sorting(#sorting), Counting(#counting)
 

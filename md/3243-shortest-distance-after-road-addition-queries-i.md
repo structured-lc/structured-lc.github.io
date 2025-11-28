@@ -122,6 +122,10 @@ def shortestDistance(n, queries):
 ### Summary
 This problem applies the classic BFS (Breadth-First Search) pattern for shortest path in unweighted graphs. For each query, we leverage a simple on-demand graph update and search. The approach is robust to cycles or edge multiplicity, and is a common interview pattern for dynamic graph path queries and for problems involving one-off changes to a static structure.
 
+
+### Flashcard
+Run BFS after each query to find shortest path from 0 to n-1; acceptable since base graph is a line (O(n) per query).
+
 ### Tags
 Array(#array), Breadth-First Search(#breadth-first-search), Graph(#graph)
 

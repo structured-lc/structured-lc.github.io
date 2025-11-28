@@ -156,6 +156,10 @@ This problem is a **shortest-path search on exponential state space** (Bitmask D
 The main pattern is **bitmask state + prioritization** (use BFS/PQ to avoid TLE), common in boat/bridge crossing, card game simulations, or puzzle sequence optimization.  
 Reusable idea: **state = [groupings, belongings, timeline position]**; apply to problems with repeated decisions and group actions, especially with cycling constraints.
 
+
+### Flashcard
+Use bitmask DP where state = (people left at base, boat position); for each state, try moving up to k people and compute minimum time.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path), Bitmask(#bitmask)
 

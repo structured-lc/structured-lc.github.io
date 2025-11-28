@@ -117,6 +117,10 @@ def maxFruitsCollected(grid):
 ### Summary
 This problem is an example of **multi-agent path DP on grids** with the constraint of **no overlap except endpoints**, which often arises in "cherry pickup" or "robot collection" type LeetCode DP problems. The core pattern is **State Compression DP/Memoization**: cache the state for all positions and recurse on possible moves. This approach is highly transferable to problems with multiple agents moving in a grid with conflict-avoidance constraints.
 
+
+### Flashcard
+Model as a DP on two non-overlapping paths in a grid; use state (row₁, col₁, row₂, col₂) with memoization to maximize total fruits collected.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

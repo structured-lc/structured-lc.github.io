@@ -161,6 +161,10 @@ This is a **multi-stage DP problem with extra constraints** on the placement of 
 It demonstrates a common "DP with window" or "partition with cost and restriction" pattern, highly applicable to partition, painting, duty scheduling, and k-grouping problems.  
 Sliding window minima, dynamic programming, and careful constraint management are key tools for such hard partition optimization problems.
 
+
+### Flashcard
+Divide an Array Into Subarrays With Minimum Cost II (Hard)
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue)
 

@@ -102,6 +102,10 @@ def minimumSteps(s: str) -> int:
 This problem is an example of greedy accumulation, specifically a **prefix counting** trick. The core pattern is similar to **counting inversions** but restricted to adjacent swaps, so the total minimum equals the sum of black balls before every white ball.  
 This approach frequently appears when arranging binary strings, sorting by adjacent swaps, or moving elements with minimal steps under similar constraints. Remember the counting prefix strategy in adjacent swap and two-grouping problems!
 
+
+### Flashcard
+To move all white balls left of black balls via adjacent swaps, count: for each black ball, how many white balls are to its right. Sum these counts—each white to the right requires one swap.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Greedy(#greedy)
 

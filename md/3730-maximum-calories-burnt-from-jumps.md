@@ -97,6 +97,10 @@ def maximumCaloriesBurnt(heights):
 ### Summary
 This problem uses a **greedy alternating strategy** to maximize squared differences. By alternating between seeking the highest and lowest unvisited blocks, we ensure large height differences on every jump. The deque data structure is critical for efficient extraction from both ends. This pattern appears in optimization problems where ordering matters and we want to exploit extremes—commonly seen in stock trading, interval scheduling, and resource allocation problems.
 
+
+### Flashcard
+Maximize sum of squared height differences by alternating between extremes; use a greedy deque strategy to always jump to the highest/lowest unvisited block.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting)
 

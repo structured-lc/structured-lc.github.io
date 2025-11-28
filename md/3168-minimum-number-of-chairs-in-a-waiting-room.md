@@ -96,6 +96,10 @@ This problem uses a **running counter pattern**—increment for entry, decrement
 It's a classic simulation or counting problem and this approach is common for maximum interval overlap (meeting room, parking lot, elevator capacity).  
 Key pattern: one-pass scan + running max = robust, efficient solution.
 
+
+### Flashcard
+Single pass simulation: increment counter on 'E', decrement on 'L', track maximum counter value reached.
+
 ### Tags
 String(#string), Simulation(#simulation)
 

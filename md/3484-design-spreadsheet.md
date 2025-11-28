@@ -131,6 +131,10 @@ class Spreadsheet:
 ### Summary
 This problem uses the ["Design a data structure"] pattern with simple hash map/dictionary storage for nonzero spreadsheet cells. Formula parsing is straightforward string processing. This pattern is common in custom caching, memoization, or database row modeling. The key idea is: only store non-default data (sparse representation), and parse basic expressions using tokenization; extensible to more complex dependency or evaluation logic as needed.
 
+
+### Flashcard
+Store cell values in a dictionary (defaulting to 0), parse formulas by splitting on '+', and look up cell references or parse integers.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Design(#design), Matrix(#matrix)
 

@@ -92,6 +92,10 @@ def maxOperations(s: str) -> int:
 ### Summary
 This solution uses a **greedy counting strategy** for moving 1s over 0s whenever adjacent, counting the total number of valid swaps. The core is recognizing each "zero after one" segment as an opportunity to move all prior 1s past that zero. This problem is a variation of the “minimum hops” and “adjacent swap” pattern, applicable to group shifting, bubble sort, and sliding window problems.
 
+
+### Flashcard
+Count operations by tracking how many '1's can move past each group of '0's—each '1' moves once per '0' group to its right.
+
 ### Tags
 String(#string), Greedy(#greedy), Counting(#counting)
 

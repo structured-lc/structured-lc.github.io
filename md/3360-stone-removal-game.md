@@ -85,6 +85,10 @@ def stoneGame(n):
 ### Summary
 This problem uses **turn-based simulation** with a loop until a move is impossible. The logic is based on parity of turns—if Alice's last, she wins. The method is a straightforward **game simulation** often used for simple game theory and greedy move problems. The same pattern appears in other take-away stone games, "Nim game" variants, or questions where each step's action size changes.
 
+
+### Flashcard
+Simulate the game: Alice removes 10, Bob removes 9, alternating with one fewer stone each turn; the player who cannot move loses.
+
 ### Tags
 Math(#math), Simulation(#simulation)
 

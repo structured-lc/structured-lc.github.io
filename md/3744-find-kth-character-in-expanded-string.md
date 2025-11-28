@@ -99,6 +99,10 @@ def kthCharacter(k: int) -> str:
 ### Summary
 This problem leverages a clever mathematical insight: the bit representation of an index encodes the recursive structure of the expanded string. By counting set bits in `k - 1`, we determine how many times a position has been transformed without building the actual string. This transforms a potentially exponential simulation into a logarithmic solution. This pattern is common in problems involving recursive string/array doubling, binary trees indexed by position, and problems where the answer depends on the binary decomposition of an index.
 
+
+### Flashcard
+Instead of building entire string, use recursion to find which character at position k by tracking transformation depth and position within each level.
+
 ### Tags
 String(#string)
 

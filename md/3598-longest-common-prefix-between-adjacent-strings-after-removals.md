@@ -100,6 +100,10 @@ def longest_common_prefix_after_removals(words):
 ### Summary
 We use a **precompute-and-sweep** pattern: preprocess LCPs for all adjacent pairs, then for each removal, combine unaffected prefix/suffix ranges and (if needed) compute a new LCP for the merged adjacent pair. This reduces a potentially quadratic problem to a linear solution with smart range queries and direct local recomputation, a pattern useful for moving window or "remove one" aggregation problems.
 
+
+### Flashcard
+Precompute LCP for all adjacent pairs; for each removal, only two adjacent pairs change; answer is max LCP among unaffected pairs and the new adjacent pair.
+
 ### Tags
 Array(#array), String(#string)
 

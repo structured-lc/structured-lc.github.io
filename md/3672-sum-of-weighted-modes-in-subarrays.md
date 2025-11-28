@@ -118,6 +118,10 @@ It focuses on efficiently updating frequency and tracking the mode (with tie-bre
 This pattern is common in problems with subarray/statistics, and similar logic is used in maximum subarray, longest repeating character, and range frequency queries.  
 Could be adapted with advanced data structures (segment tree, heaps) for even faster solutions if constraints are tighter.
 
+
+### Flashcard
+For each starting index, extend right endpoint while maintaining frequency map; track mode and its frequency incrementally; O(n²) with optimized mode tracking.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Counting(#counting), Ordered Set(#ordered-set)
 

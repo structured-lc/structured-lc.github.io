@@ -124,6 +124,10 @@ This approach uses the **prefix sum pattern with sorted binary search**, leverag
 It's an efficient design for range sum queries on immutable data, a pattern widely used in interval sum problems, logs/statistics, or time-series queries.  
 Can be adapted to mutable or unordered data using balanced trees or segment trees.
 
+
+### Flashcard
+Maintain a sorted list of timestamps with prefix sums of scores; use binary search to find the range [startTime, endTime] and compute the sum in O(log n).
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Design(#design), Prefix Sum(#prefix-sum)
 

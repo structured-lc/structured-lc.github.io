@@ -125,6 +125,10 @@ def repairCars(ranks, cars):
 ### Summary
 This problem is a classic example of **binary search on the answer** (searching for the minimum feasible value), which is commonly used when feasibility can be checked quickly but the search space is large. The quadratic cost model per mechanic naturally leads to capacity estimation via integer square root. This pattern appears in load balancing and scheduling optimization problems.
 
+
+### Flashcard
+Binary search on answer (max time); for each candidate time, greedily check if all cars can be repaired within that time.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

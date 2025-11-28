@@ -122,6 +122,10 @@ This is a **heap/greedy coding pattern**: always merge the smallest to grow quic
 Patterns involving min-heap for repeated merging of minimums appear in greedy optimization, Huffman coding, and resource consolidation scenarios.  
 This approach is robust for any scenario where local minimum greediness leads to global optimality.
 
+
+### Flashcard
+Use min-heap to always extract and combine the two smallest numbers; repeat until all ≥ k.
+
 ### Tags
 Array(#array), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation)
 

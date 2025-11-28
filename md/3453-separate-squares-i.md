@@ -152,6 +152,10 @@ This problem is a **2D sweep-line + interval union** pattern, common for area/le
 The sweep-line technique allows us to efficiently manage the active set of intervals and compute both the union area and the y-cut position.  
 Variations of this pattern are frequently seen in interval problems, union-of-rectangles area, and histogram volume calculation.
 
+
+### Flashcard
+Use binary search on y-coordinate; as y increases, area below increases monotonically, so find where areas balance.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

@@ -143,6 +143,10 @@ This problem is a **multi-state BFS/bitmask** search, where each state is positi
 It fits the **"collect all targets minimally"** pattern, often seen in grid pathfinding (e.g., "minimum steps to visit all keys" or "clean the room" types).  
 The use of bitmask to track collectibles and BFS to guarantee minimal steps is canonical and broadly applicable for small numbers of targets. Pattern applies to robot vacuum, traveling salesman grid variants, and key/lock puzzles.
 
+
+### Flashcard
+Use BFS with state (row, col, bitmask_of_collected_litter, energy_left); when stepping on 'R', reset energy to max; find the minimum moves to collect all litter and return to 'S'.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Breadth-First Search(#breadth-first-search), Matrix(#matrix)
 

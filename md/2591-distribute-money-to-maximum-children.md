@@ -116,6 +116,10 @@ The problem uses a **greedy + constructive** approach:
 - Iteratively try the largest feasible number of children to get exactly 8 dollars by distributing 8 dollars as much as possible and checking constraints for the rest.
 - Pattern closely relates to greedy maximization with direct feasibility checking/early rejection — useful in constrained splitting/partitioning problems, such as fair share allocation with forbidden amounts.
 
+
+### Flashcard
+Give each child $1 minimum; greedily maximize children receiving exactly $8 from remaining money while avoiding $4.
+
 ### Tags
 Math(#math), Greedy(#greedy)
 

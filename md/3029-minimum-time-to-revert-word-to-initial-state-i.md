@@ -100,6 +100,10 @@ This is a classic **string rotation**/simulation problem, optimized by recognizi
 Patterns: **Simulation**, **String Matching**, **Rotation**, **Cyclic pattern detection**.  
 Such techniques generalize to cycle problems, or modular arithmetic in array/string rotations.
 
+
+### Flashcard
+After t operations, word rotates left by k×t positions; find smallest t where (k×t) mod n = 0.
+
 ### Tags
 String(#string), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
 

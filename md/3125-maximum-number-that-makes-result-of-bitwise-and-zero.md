@@ -83,6 +83,10 @@ def maxNumber(n: int) -> int:
 ### Summary
 This problem is a variant of **bit-manipulation tricks** and relies on understanding how sequences of contiguous integers toggle bits. The core approach is applicable for any problem where we need to cover all bit combinations within a range, a pattern sometimes called "covering all bits in a range." This style of thinking surfaces often in *range-AND/OR* problems and is essential in high-efficiency number manipulation for large scales.
 
+
+### Flashcard
+AND of range [x, n] is zero iff the range includes numbers with all bits set up to the highest bit in n. Binary search or observe that x must be ≤ highest_power_of_2 ≤ n.
+
 ### Tags
 String(#string), Greedy(#greedy), Sorting(#sorting)
 

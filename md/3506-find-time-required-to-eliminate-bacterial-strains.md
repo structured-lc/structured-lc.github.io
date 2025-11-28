@@ -125,6 +125,10 @@ def minTimeToEliminateBacteria(timeReq, splitTime):
 This is an instance of a **scheduling DP/partitioning** problem, where splitting increases parallelism at fixed cost. The recursive, memoized solution explores all possible ways to split and assign the workload, minimizing the time for completion.  
 This pattern (subset DP and recursive partitioning) appears in hard parallel job scheduling, process tree building, and some optimal binary tree grouping problems.
 
+
+### Flashcard
+Model as DP with bitmask: dp(mask) = minimum time to eliminate strains in mask; pay split cost to increase parallelism from 1 WBC to multiple.
+
 ### Tags
 Array(#array), Math(#math), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
 

@@ -93,6 +93,10 @@ def min_area_cover_all_ones(grid):
 ### Summary
 This problem uses the classic **minimum bounding rectangle** pattern for a set of points in a grid. The solution is a single linear scan tracking the furthest top, bottom, left, and right 1’s to define the rectangle. This pattern is common whenever you need to enclose or process a group of related coordinates, such as image processing, map bounding boxes, or clustering problems.
 
+
+### Flashcard
+Find the bounding box: min_row, max_row, min_col, max_col of all 1s; the minimum rectangle area is (max_row − min_row + 1) × (max_col − min_col + 1).
+
 ### Tags
 Array(#array), Matrix(#matrix)
 

@@ -100,6 +100,10 @@ def kth_nearest_obstacle_queries(k, queries):
 ### Summary
 This problem uses the "top K elements" pattern, best solved with a size-k max-heap to efficiently maintain the current k closest values. This pattern is common in stream processing, online statistics, and leaderboard designs, and appears in many LeetCode problems (like "Kth Largest Element in a Stream", "Top K Frequent Elements", etc.).
 
+
+### Flashcard
+Maintain a max-heap of size k; for each obstacle, compute distance and push to heap; if size > k, pop max; answer is heap top if size ≥ k, else -1.
+
 ### Tags
 Array(#array), Heap (Priority Queue)(#heap-priority-queue)
 

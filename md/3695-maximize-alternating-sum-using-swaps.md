@@ -133,6 +133,10 @@ def maximize_alternating_sum(nums, swaps):
 ### Summary
 This problem uses a **connected component + greedy sort** pattern: each swap group acts as an independent pool for optimal assignment. Identifying components (Union-Find/DSU) followed by **greedy assignment** per group allows the alternating sum to be maximized efficiently. This technique is broadly applicable wherever permutation constraints exist due to restricted swap pairs—common in graph and network problems with local rearrangement or optimization requirements.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Array(#array), Greedy(#greedy), Union Find(#union-find), Sorting(#sorting)
 

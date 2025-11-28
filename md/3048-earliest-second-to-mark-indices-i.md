@@ -200,6 +200,10 @@ def earliestSecondToMarkIndices(nums, changeIndices):
 ### Summary
 This problem uses the **binary search on the answer** pattern combined with a **greedy scheduling** technique. It's especially relevant when you must allocate limited actions over time subject to strict scheduling constraints. This approach applies to many scheduling problems, deadline-based task execution, and similar "minimum time" optimizations under resource or timing constraints.
 
+
+### Flashcard
+Binary search on seconds; for each candidate second, use greedy/DP to check if all indices can be marked.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

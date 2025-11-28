@@ -87,6 +87,10 @@ def min_number_of_increasing_subseq(nums):
 ### Summary
 This problem leverages a classic greedy + binary search approach to compute the minimum number of strictly increasing subsequences covering the entire array—by reducing it to computing the length of the longest non-increasing subsequence (LNIS). This is a rare but highly efficient application of patience sorting, which is commonly used for LIS/LNIS, and is a core pattern in advanced sequence partitioning and scheduling problems.
 
+
+### Flashcard
+By Dilworth's Theorem, minimum strictly increasing subsequences needed equals the length of the longest non-increasing subsequence.
+
 ### Tags
 Array(#array), Binary Search(#binary-search)
 

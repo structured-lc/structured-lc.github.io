@@ -112,6 +112,10 @@ This problem uses the **window scanning and sort/difference** approach, a hybrid
 The key technique is identifying which minimal continuous segment can make a window sorted, by comparing original and sorted windows.  
 This pattern appears in "minimum subarray sorting", "check if almost sorted", and related array reordering interview questions.
 
+
+### Flashcard
+For each sliding window, find the leftmost and rightmost indices where the window differs from its sorted version; return the subarray length between them (or 0 if sorted).
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Stack(#stack), Greedy(#greedy), Sorting(#sorting), Monotonic Stack(#monotonic-stack)
 

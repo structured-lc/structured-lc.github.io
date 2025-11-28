@@ -114,6 +114,10 @@ def lex_smallest_after_adjacent_removals(s: str) -> str:
 This problem leverages **DP over bitmask state** with recursion/memoization—a pattern common in *"removal games"* and *optimal outcome/lexicographically minimal subsequence* challenges. The approach memorizes the minimal result per subset of characters, pruning redundant work.  
 Such techniques appear in other substring removal, zero-sum games, and character elimination variants, and wherever "try all orders" but prune repeated computation by caching state.
 
+
+### Flashcard
+Use BFS or memoized recursion to explore all possible removal sequences; at each state, try removing every valid adjacent consecutive pair and keep track of the lexicographically smallest result.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

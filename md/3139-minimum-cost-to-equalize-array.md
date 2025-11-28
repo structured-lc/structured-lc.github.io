@@ -110,6 +110,10 @@ This problem is a **greedy-math and transform/simulation** problem: minimize cos
 The key coding pattern is "maximize the cheaper operation subject to restrictions, then fill in the rest," a powerful pattern for many greedy task-splitting problems (e.g., coin change variant, work scheduling, resource allocation).  
 Here, careful handling of the parity and operation cost trade-off is essential for correctness and efficiency.
 
+
+### Flashcard
+Calculate total increments needed; use as many pair operations as possible (cost₂ < 2×cost₁ makes pairs efficient), then fill remainder with single ops.
+
 ### Tags
 Array(#array), Greedy(#greedy), Enumeration(#enumeration)
 

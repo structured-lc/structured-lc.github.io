@@ -126,6 +126,10 @@ def maximizeScoreAfterPairDeletions(nums):
 ### Summary
 This is a classic "leave the minimum behind, maximize removed sum" greedy approach. The main logic is to minimize what is left as it is *not scored*; all other numbers are. This falls under the prefix/suffix trick/cumulative sum class of problems, where reducing to a smaller core optimal substructure leads to a linear scan solution. This pattern is found in other DP/games/arrangement problems where only end groups are affected by allowed moves.
 
+
+### Flashcard
+Every element except the final unpaired one contributes to the score; for odd n, one element remains; for even n, choose which pair to leave unpaired to maximize score.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

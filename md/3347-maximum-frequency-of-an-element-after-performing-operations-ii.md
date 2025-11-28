@@ -114,6 +114,10 @@ def maxFrequency(nums, k, numOperations):
 ### Summary
 The approach uses a **sorting + sliding window pattern** to efficiently maximize frequency under range-change and limited operation constraints. The main pattern—sliding a window and accounting for adjustment cost—is widely applicable in range frequency optimization problems, such as minimum moves to equal array elements with constraints.
 
+
+### Flashcard
+Fix target value x; for each element in nums, determine if it can be adjusted to x within ±k; count how many elements can reach x, track maximum frequency.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Sorting(#sorting), Prefix Sum(#prefix-sum)
 

@@ -110,6 +110,10 @@ def findScore(nums):
 ### Summary
 This solution uses the **min-heap (priority queue) pattern** to efficiently always pick the smallest "valid" element, with *auxiliary marking* to enforce pick constraints due to marking/removal. Recognizing that the state (marked/unmarked) is just a boolean per entry allows for an efficient check/skipping logic. This approach is common in **greedy algorithms** and shows up when global minimums get invalidated as the process unfolds, or when "neighbor impact" requires state tracking. The pattern is broadly applicable to similar "mark and skip" or "local impact" selection problems.
 
+
+### Flashcard
+Use min-heap (value, index) to always pop smallest unmarked element; mark it and its neighbor, track score.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation)
 

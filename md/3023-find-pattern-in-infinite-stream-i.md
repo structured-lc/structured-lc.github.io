@@ -98,6 +98,10 @@ This problem is an application of the **fixed-length sliding window** and **bitm
 It's a variant of the classic substring search using a stream interface; treating bit patterns as integers allows efficient O(1) comparison and O(1) space.  
 Commonly appears in problems involving rolling hash, Rabin-Karp for strings, stream processing, and bit manipulation for sliding window detection.
 
+
+### Flashcard
+Find Pattern in Infinite Stream I (Medium)
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
 

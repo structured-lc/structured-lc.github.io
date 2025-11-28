@@ -148,6 +148,10 @@ This problem leverages the **BFS level-order traversal** pattern, ideal for all 
 This approach is commonly used in questions about level-based properties of trees, such as “Max Level Sum of a Binary Tree,” or “Average of Levels in Binary Tree.”  
 The BFS solution is simple, efficient (O(n)), and easy to extend for related problems.
 
+
+### Flashcard
+Use BFS to process tree level-by-level; track sum for each level and return the level with minimum sum (lowest level index if tied).
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Binary Tree(#binary-tree)
 

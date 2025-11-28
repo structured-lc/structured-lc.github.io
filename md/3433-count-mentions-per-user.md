@@ -146,6 +146,10 @@ This problem is a simulation/event-processing problem, requiring careful handlin
 - Parsing and expanding mention tokens per message.
 Similar simulation or event-driven problems can be found in online presence tracking, real-time chat apps, or notification counters.
 
+
+### Flashcard
+Process events in chronological order; track offline timestamps per user (auto-online after 60 units); for each MESSAGE, parse mentions and increment counts.
+
 ### Tags
 Array(#array), Math(#math), Sorting(#sorting), Simulation(#simulation)
 

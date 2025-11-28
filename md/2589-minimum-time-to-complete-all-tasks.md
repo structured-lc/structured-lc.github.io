@@ -100,6 +100,10 @@ This is a classic **greedy interval scheduling and covering problem**.
 The pattern—sort by deadline, greedily choose as late as possible—appears in interval packing/covering, scheduling, and bandwidth assignment scenarios.  
 Efficiently finding minimum overlap “cover cost” for union of intervals is a common theme in advanced scheduling or resource allocation problems.
 
+
+### Flashcard
+Sort tasks by end time, greedily assign required seconds as late as possible within each task's interval to maximize overlap.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Stack(#stack), Greedy(#greedy), Sorting(#sorting)
 

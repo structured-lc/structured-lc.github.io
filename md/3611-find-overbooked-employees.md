@@ -74,6 +74,10 @@ def find_overbooked_employees(schedule: dict) -> list:
 ### Summary
 This problem demonstrates the **interval overlap** pattern — sort and linearly check for intersections. The logic is common in calendar, booking, and allocation tasks.
 
+
+### Flashcard
+For each employee, sort meetings by start time and check for overlaps (current end > next start); if found, mark as overbooked.
+
 ### Tags
 Database(#database)
 

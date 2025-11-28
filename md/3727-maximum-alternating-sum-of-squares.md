@@ -103,6 +103,10 @@ This problem combines **greedy strategy** with **sorting**. The key insight is r
 
 This is a common greedy pattern: when you need to distribute items to positions with different "weights" (+ vs -), sort by value and assign greedily. Similar patterns appear in problems like "Container With Most Water" (two pointers + greedy) and "Rearrange Array Maximize Sum" variants.
 
+
+### Flashcard
+Sort the array in descending order; assign the largest values to positions with positive coefficients (+1, +3, +5, ...) and smallest to negative positions (−2, −4, −6, ...).
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

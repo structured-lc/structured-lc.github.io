@@ -143,6 +143,10 @@ def countCells(grid, pattern):
 ### Summary
 This problem uses brute force in a structured way, with intelligent use of *sets* to avoid double-counting and to efficiently determine overlap. The approach is a mix of *sliding window* and *set intersection* problems, often seen in substring-matching on two-dimensional structures. This coding pattern can be repurposed for problems involving overlapping regions, pattern finding, or intersections of multiple search areas in grids.
 
+
+### Flashcard
+Precompute all horizontal and vertical pattern matches (with wrapping) by iterating through starting positions; record cells in each match set, then count cells appearing in both.
+
 ### Tags
 Array(#array), String(#string), Rolling Hash(#rolling-hash), String Matching(#string-matching), Matrix(#matrix), Hash Function(#hash-function)
 

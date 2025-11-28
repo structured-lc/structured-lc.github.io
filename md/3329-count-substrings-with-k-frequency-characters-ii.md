@@ -108,6 +108,10 @@ def count_substrings_with_k_frequency(s: str, k: int) -> int:
 This problem uses the **sliding window with variable unique letter-count** pattern, a powerful approach when substring criteria involve both per-character frequency and unique character count.  
 By iterating different unique character amounts, and tracking counts efficiently, we avoid unnecessary work and achieve near-linear time. This pattern frequently appears in substring, anagram, and frequency-balance problems, especially those involving exact or at-most counts.
 
+
+### Flashcard
+Use sliding window with frequency map; for each unique character count (1 to 26), track substrings where all characters appear exactly k times.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

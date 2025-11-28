@@ -98,6 +98,10 @@ def apply_substitutions(replacements, text):
 ### Summary
 This problem is a textbook example of recursive string replacement with mapping lookup, modeled by DFS pattern. The key coding pattern is recursive substitution, similar to variable expansion in interpreters or macro preprocessors. Recognizing and handling indirect and chained substitutions recursively is crucial. This technique applies to problems like symbolic replacements, template expansion, and configuration file resolution.
 
+
+### Flashcard
+Build a dictionary for placeholder values, then recursively replace %var% tokens in text, handling nested placeholders by re-scanning after each replacement.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Topological Sort(#topological-sort)
 

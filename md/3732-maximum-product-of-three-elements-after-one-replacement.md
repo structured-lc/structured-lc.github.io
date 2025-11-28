@@ -113,6 +113,10 @@ def get_max_product_of_three(nums):
 ### Summary
 This problem teaches the importance of recognizing that **to maximize a product, we need to consider both positive and negative contributions**. Instead of brute-force trying all possibilities, we use the insight that only extreme values matter (either the range min or max for replacement). The solution combines **greedy selection** with **exhaustive case checking** to find the true maximum. This pattern applies to similar optimization problems where you must consider counter-intuitive strategies (like using negative numbers) alongside obvious ones.
 
+
+### Flashcard
+Maximum product of three elements comes from either three largest or two smallest (most negative) numbers; try replacing one element with min or max of range and compute both cases.
+
 ### Tags
 Array(#array), Math(#math), Greedy(#greedy), Sorting(#sorting)
 

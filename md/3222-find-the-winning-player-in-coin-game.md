@@ -74,6 +74,10 @@ def find_winning_player(x: int, y: int) -> str:
 ### Summary
 This problem is a classic **game theory**/simulation with a fixed move: each turn removes a fixed set of coins (1 × 75, 4 × 10). It becomes a pure counting and parity game—compute how many turns fit, and parity (odd/even) determines the winner. The pattern here ("take a fixed bundle each time, play alternately") is common in problems like Nim or "Stone Game," so this approach applies in many combinatorial games with a fixed move size and alternating turns.
 
+
+### Flashcard
+Only valid move is removing 1 coin of 75 and 4 coins of 10 (sum = 115); count how many moves possible, then determine winner by parity.
+
 ### Tags
 Math(#math), Simulation(#simulation), Game Theory(#game-theory)
 

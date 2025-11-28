@@ -128,6 +128,10 @@ def shortestSubstrings(arr):
 ### Summary
 This problem uses the **brute-force substring generation and hash set lookup** pattern. The core trick is to efficiently generate and compare all substrings of each string with all the rest. For small constraints, the simple cubic algorithm suffices, but large inputs require **advanced string data structures** like Trie or Suffix Tree for scalable solutions. This unique substring check style is common in competitive programming and helps in mastering string algorithms.
 
+
+### Flashcard
+For each string, generate all substrings, check if each appears in any other string; return shortest uncommon substring (lexicographically smallest if tied).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Trie(#trie)
 

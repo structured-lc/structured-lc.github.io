@@ -99,6 +99,10 @@ This problem uses the **stars and bars** combinatorial method with inclusion-exc
 The key pattern is applying combinatorics and the inclusion-exclusion principle to distribution questions with upper bounds.  
 This coding strategy appears in many “partition with bounds” problems, coin change variants, and integer solution count of equations under constraints.
 
+
+### Flashcard
+Use inclusion-exclusion principle: start with C(n+2, 2) solutions, subtract cases where ≥1 child exceeds limit, add back cases where ≥2 exceed, etc.
+
 ### Tags
 Math(#math), Combinatorics(#combinatorics)
 

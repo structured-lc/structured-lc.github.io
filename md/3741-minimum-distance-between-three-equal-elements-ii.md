@@ -98,6 +98,10 @@ def minimumDistance(nums):
 
 This problem uses a **grouping and windowing** pattern. By storing indices grouped by their values and then checking consecutive triplets within each group, we reduce the search space from O(n³) to O(n). The distance formula simplification (2 × (last - first)) is crucial—it shows that minimizing distance for any value is equivalent to finding the smallest span of three occurrences. This pattern applies to problems requiring minimum/maximum distances or spans within constrained subsets of data.
 
+
+### Flashcard
+Distance simplifies to 2×(k−i); find three equal elements with minimum span by checking consecutive occurrences.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

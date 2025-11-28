@@ -129,6 +129,10 @@ A classic _ranking after sorting_ problem using the competition ranking method.
 This pattern frequently appears in leaderboards, contest result rankings, or wherever tie-aware ranking is needed.  
 The solution is a combination of sort + scan, a fundamental and reusable approach in many leaderboard/contest scenarios.
 
+
+### Flashcard
+Calculate points = wins × 3 + draws; sort by (points desc, name asc); assign rank using competition ranking (ties get same rank, next rank skips).
+
 ### Tags
 Database(#database)
 

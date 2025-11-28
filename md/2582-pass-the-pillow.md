@@ -76,6 +76,10 @@ def pass_the_pillow(n: int, time: int) -> int:
 ### Summary
 This problem is a classic case of periodic array/path traversal with direction reversal, similar to a simulation of a "ping pong" or "bouncing pointer". The key insight is to realize the passing forms a repeating cycle; thus, it can be solved using simple division and modulo arithmetic for efficient O(1) computation. Problems with repeated forward-backward traversals, alternating patterns, or periodic state changes often benefit from this pattern.
 
+
+### Flashcard
+Recognize pillow bounces in cycles of 2×(n-1) seconds; use modulo arithmetic to find position and direction without simulation.
+
 ### Tags
 Math(#math), Simulation(#simulation)
 

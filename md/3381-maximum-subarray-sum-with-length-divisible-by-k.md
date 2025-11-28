@@ -84,6 +84,10 @@ def maximumSubarraySumWithLengthDivisibleByK(nums, k):
 ### Summary
 This problem uses the **prefix sum + modulus/pigeonhole** pattern to efficiently compute max subarrays with a length constraint. Recognizing the correspondence between prefix sum indices and their mod k equivalence allows O(n) or O(n × k) solutions. The same technique generalizes to many problems involving subarray properties mod k.
 
+
+### Flashcard
+Use prefix sums with a map tracking minimum prefix sum for each remainder (i mod k); for each index, find best subarray of length divisible by k.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
 

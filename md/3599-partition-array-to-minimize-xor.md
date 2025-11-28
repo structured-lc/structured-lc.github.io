@@ -113,6 +113,10 @@ This problem is a classic use case for **interval DP with memoization** (also ca
 Patterns used include prefix XOR for O(1) subarray queries, recursion with memoization to avoid redundant computation, and careful attention to partition constraints.  
 This DP technique broadly applies to "partition array to minimize/maximize aggregate function" types of problems, such as **Minimize Largest Sum in k Partitions**, Stone Game variants, and others in interval/partitioning DP.
 
+
+### Flashcard
+Use DP where dp[i][k] = minimum possible maximum-XOR when partitioning nums[i:] into k groups; try all split points.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
 

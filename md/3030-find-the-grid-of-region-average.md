@@ -138,6 +138,10 @@ This problem uses the **2D prefix sum** for fast region sum lookups and manual c
 The approach of marking every cell with all regions it belongs to, and then aggregating results, is a general technique for "overlapping sliding window" problems where output at each cell depends on overlapping neighborhoods. 
 A similar pattern appears in image processing (denoise, blur), convolutional filters, and "median of sliding window" problems.
 
+
+### Flashcard
+For each 3×3 subgrid, check if all adjacent pairs differ by ≤ threshold; compute region average ⌊sum/9⌋ for valid regions.
+
 ### Tags
 Array(#array), Matrix(#matrix)
 

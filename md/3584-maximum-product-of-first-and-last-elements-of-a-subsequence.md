@@ -118,6 +118,10 @@ def maximumProduct(nums, m):
 ### Summary
 This problem is a classic two-pointer/scan-the-array type problem. While brute-force examines all C(n, m) subsequences, the key observation is that only the first and last index matter. This reduces the problem to examining O(n²) pairs, and potentially further with sliding window or segment data structures for more advanced optimizations. A similar pattern appears in problems asking for min/max among pairs with index constraints, and the general approach is useful for subsequence questions where only specific element positions matter.
 
+
+### Flashcard
+For subsequence of length m, only first and last elements matter; iterate all pairs (i, j) with i < j, count valid middle elements, compute max product.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers)
 

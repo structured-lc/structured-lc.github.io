@@ -161,6 +161,10 @@ This problem uses the **pattern of combining user-based groupings to find pairs 
 
 This kind of problem and approach applies to many recommendation and co-purchasing analyses in big data and e-commerce domains.
 
+
+### Flashcard
+Build a map of each user to their purchased categories; for each user, generate all category pairs (category1 < category2) and count occurrences in a hash map.
+
 ### Tags
 Database(#database)
 

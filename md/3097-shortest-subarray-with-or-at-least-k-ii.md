@@ -109,6 +109,10 @@ def shortest_subarray_with_or_at_least_k(nums, k):
 This problem uses the **sliding window** technique in combination with **bit manipulation** and a per-bit count array, a pattern useful for problems where we want to efficiently maintain a window over the array with certain bitwise properties.  
 Patterns like this apply to bitwise AND window problems, or other monotonic aggregation in subarrays.
 
+
+### Flashcard
+Use sliding window with bit manipulation; maintain running OR as you expand right; shrink from left while OR ≥ k; track minimum length (limited distinct OR values per starting position).
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Sliding Window(#sliding-window)
 

@@ -167,6 +167,10 @@ def checkPalindromeDFS(parent, s):
 ### Summary
 This problem is a classic application of "subtree as preorder interval" in tree algorithms, and substring palindrome check using rolling hash. The same hashing pattern can be used for handling other substring-equality or palindromic queries in trees, such as "find all unique subtree strings," or problems involving subtree string manipulations and queries.
 
+
+### Flashcard
+Record DFS entry/exit times for each node; preorder substring for subtree rooted at i corresponds to letters[entry[i]...exit[i]]; check palindrome using character frequency.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Tree(#tree), Depth-First Search(#depth-first-search), Hash Function(#hash-function)
 

@@ -88,6 +88,10 @@ def findSubarrayORClosest(nums, k):
 ### Summary
 This problem showcases the common trick of reusing and memoizing bitwise operation results across overlapping subarrays, leading to a significant optimization over brute force. The idea is similar to "subarray XOR" or "maximum subarray sum" dynamic programming patterns, but adapted for the idiosyncrasies of the bitwise OR operator. The key is exploiting monotonicity and set-deduplication for efficiency. This technique is reusable in any problem that requires querying ranges for monotonic idempotent operations (e.g., OR, AND, but not XOR).
 
+
+### Flashcard
+For each starting position, extend the subarray right and cache bitwise OR values (OR is monotonic, so at most O(log max_val) distinct ORs per start); track closest OR to k.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Bit Manipulation(#bit-manipulation), Segment Tree(#segment-tree)
 

@@ -96,6 +96,10 @@ This problem uses the "wrapper/higher-order function" coding pattern: return a n
 Here, the extra logic is simply to enforce a minimum settlement delay. The pattern is common for timeouts, retry logic, debouncing, and similar controls, in both synchronous and asynchronous settings.  
 It's a foundational technique in both functional programming and concurrency control.
 
+
+### Flashcard
+Wrap original function to await result, then delay `ms` milliseconds before resolving/rejecting—handles both success and error uniformly.
+
 ### Tags
 
 ### Similar Problems

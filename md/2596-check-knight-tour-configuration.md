@@ -99,6 +99,10 @@ def checkValidGrid(grid):
 ### Summary
 We simulate and check every knight move by mapping each visit step to a board position, then verify the legal knight moves between them. This is a classic board simulation problem and a direct application of path reconstruction/checking. The coding pattern is mapping indices to positions with array lookups for constant-time checks—useful for validating movement sequences and problems that map step order to positions, such as validating Hamiltonian paths/cycles, robot movement paths, or sequence games.
 
+
+### Flashcard
+Build index-to-cell mapping; validate each consecutive step in the tour is a valid knight move (±2, ±1) or (±1, ±2).
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Matrix(#matrix), Simulation(#simulation)
 

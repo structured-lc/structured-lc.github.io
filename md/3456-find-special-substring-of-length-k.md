@@ -83,6 +83,10 @@ def has_special_substring(s: str, k: int) -> bool:
 ### Summary
 This problem uses a **single-scan grouping pattern**, commonly leveraged for substring or interval problems (“group by” operations). The technique is efficient for detecting isolated blocks in an array/string. The same approach can be applied in character run-length encoding, unique element blocks, or even many sliding window challenges where runs matter more than the individual elements.
 
+
+### Flashcard
+Scan for maximal blocks of identical characters; a block of length exactly k with different neighbors is a valid special substring.
+
 ### Tags
 String(#string)
 

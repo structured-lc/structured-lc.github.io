@@ -118,6 +118,10 @@ It’s very similar to classic string construction or valid sequences problems w
 Such DP ideas are used in problems on **combinatorics with forbidden substrings**, **run-length upper-boundings**, and **balanced parentheses generation with restrictions**.  
 Efficient DP memoization yields solution even for large inputs within limits.
 
+
+### Flashcard
+Use DP with state (position, consecutive_0s, consecutive_1s) to build valid arrays; ensure no run exceeds limit.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
 

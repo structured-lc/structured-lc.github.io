@@ -81,6 +81,10 @@ def gcd_of_odd_even_sums(n):
 ### Summary
 This problem uses the **mathematical reduction** pattern, deriving a closed-form for the result and avoiding brute-force computations. Recognizing patterns like arithmetic series and GCD properties provides instant O(1) solutions. Such techniques are broadly useful in problems asking for sums or GCDs over standard integer sequences.
 
+
+### Flashcard
+Sum of first n odd numbers = n², sum of first n even numbers = n(n+1); answer is GCD(n², n(n+1)) = n × GCD(n, n+1) = n (since consecutive integers are coprime).
+
 ### Tags
 Math(#math), Number Theory(#number-theory)
 

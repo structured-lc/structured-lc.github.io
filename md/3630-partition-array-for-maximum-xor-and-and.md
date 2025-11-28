@@ -129,6 +129,10 @@ The key trick is *reducing* the partition problem to fixed points (try all B) an
 This pattern appears in partition, xor-sum, and various subset-split combinatorial tasks.  
 Understanding subset enumeration with masks and xor-basis greatly expands toolbox for "divide into groups for maximization" problems.
 
+
+### Flashcard
+For each possible subset B, AND(B) is fixed. Partition remaining elements into A and C to maximize XOR(A) + AND(B) + XOR(C); use DP or greedy assignment based on bit patterns.
+
 ### Tags
 Array(#array), Math(#math), Greedy(#greedy), Bit Manipulation(#bit-manipulation), Enumeration(#enumeration)
 

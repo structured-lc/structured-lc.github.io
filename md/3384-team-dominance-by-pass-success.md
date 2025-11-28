@@ -199,6 +199,10 @@ def team_dominance_by_pass_success(Teams, Passes):
 ### Summary
 This problem is a **group-by and aggregate** pattern, combining basic dictionary mapping with timestamp binning. The method generalizes to any scenario where you accumulate per-group/per-interval counts or scores, such as in sports stats or event logs. It practices mapping, counting, and careful logic for grouping and edge cases—a classic pattern in real-world data analytics and coding interviews.
 
+
+### Flashcard
+For each team and half, sum dominance: +1 per pass to teammate, −1 per pass to opponent; iterate passes grouped by (team, half).
+
 ### Tags
 Database(#database)
 

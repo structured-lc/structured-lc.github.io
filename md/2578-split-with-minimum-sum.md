@@ -79,6 +79,10 @@ def splitNum(num):
 ### Summary
 This problem is a classic **greedy digit distribution** problem: sorting and alternately assigning the smallest digits keeps both numbers as small as possible and their sum minimal. It’s a pattern seen in “minimum/maximum by digit allocation” problems and is especially optimal when combining sorting with a simple round-robin assignment. The approach is robust, handles zeros and repeated digits, and is very efficient due to the small input size.
 
+
+### Flashcard
+Sort digits ascending, then distribute them alternately between two numbers to minimize their sum.
+
 ### Tags
 Math(#math), Greedy(#greedy), Sorting(#sorting)
 

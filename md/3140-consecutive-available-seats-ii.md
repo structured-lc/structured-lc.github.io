@@ -87,6 +87,10 @@ def are_all_rows_has_consecutive_seats(seats):
 ### Summary
 The solution uses a **simple linear scan** with early termination, leveraging the sliding window pattern for adjacency detection. This is a common coding pattern useful for substring, subarray, and sequence detection problems, and can also be extended for more general "find k consecutive elements" problems.
 
+
+### Flashcard
+For each row, check if there exists at least one pair of consecutive `0`'s; return False if any row lacks such a pair.
+
 ### Tags
 Database(#database)
 

@@ -100,6 +100,10 @@ This pattern appears in *approximate* string matching, and also in problems like
 For small mismatch thresholds and moderate-length patterns, this brute-force window scan is simple, readable, and effective.  
 The approach is widely applicable in substring matching problems where *exact* matching is relaxed to allow a small error margin.
 
+
+### Flashcard
+Use sliding window to check each substring of length |t| for ≤1 mismatch with t, return first match index.
+
 ### Tags
 String(#string), String Matching(#string-matching)
 

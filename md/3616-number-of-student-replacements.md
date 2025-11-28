@@ -69,6 +69,10 @@ def min_replacements(students):
 ### Summary
 This is a **greedy** and/or **hashing**-based solution for minimum replacements to enforce uniqueness (or a given property) in an array. The fundamental pattern is tracking duplicates and making minimal changes—relevant for set/dictionary manipulation or array transformation problems.
 
+
+### Flashcard
+Clarify the target configuration (e.g., uniqueness, sorted order); use a greedy or set-based approach to count minimum replacements needed.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

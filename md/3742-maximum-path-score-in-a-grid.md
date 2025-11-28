@@ -131,6 +131,10 @@ def maximumScore(grid, k):
 ### Summary
 This problem combines 3D dynamic programming with careful state space optimization. The key insight is recognizing that while k can be large, the actual number of useful states is bounded by the grid dimensions since any path requires exactly m + n - 1 moves minimum. This transforms what appears to be a 200 × 200 × 10000 state space into a manageable 200 × 200 × 400 space. The pattern of tracking a third dimension (steps/cost) appears frequently in constrained path problems (knapsack variations, weighted paths with limits). The optimization of bounding the third dimension based on problem constraints is a crucial technique in competitive programming.
 
+
+### Flashcard
+Use DP with three dimensions: position (i,j), cost (moves made), and maximum score; transition by moving right or down.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

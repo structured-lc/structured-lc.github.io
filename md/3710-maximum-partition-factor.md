@@ -103,6 +103,10 @@ def maximumPartitionFactor(points):
 
 3. **Incremental Updates:** If points are added or removed dynamically, how would you update the partition factor without recalculating everything from scratch?
 
+
+### Flashcard
+Use binary search on the distance value, then check if points can be 2-colored such that no two same-color points are closer than the current distance.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

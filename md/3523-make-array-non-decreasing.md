@@ -94,6 +94,10 @@ This problem is a **greedy** pattern, closely related to scanning for monotonic 
 The key trick is that every time you find a value at least as large as anything you’ve seen so far, you can start a new "block" that guarantees a non-decreasing order.  
 This pattern applies to problems where you have an unlimited number of subarray merges under monotonicity constraints—think stack/greedy approaches, longest non-decreasing subarrays, or block partitioning.
 
+
+### Flashcard
+Greedily keep elements from left; when next element < current, decide whether to replace a subarray with its maximum or skip elements.
+
 ### Tags
 Array(#array), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
 

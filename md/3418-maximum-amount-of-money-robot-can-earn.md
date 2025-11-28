@@ -118,6 +118,10 @@ def maximumAmount(coins: List[List[int]]) -> int:
 ### Summary
 This problem follows a classic **dynamic programming on grids** pattern, with adaptation for “limited-use” special abilities (neutralizations). The approach demonstrates stateful DP by tracking the grid position and the resource left (neutralizations). This design pattern—using extra DP state to model resource-limited decisions—applies to problems such as cherry pickup, grid path planning with powerups, and limited action bonuses in grid-based games or optimization settings.
 
+
+### Flashcard
+Use DP with state dp[i][j][k] = max money at cell (i, j) with k neutralizations used; at each cell, decide whether to neutralize (if k > 0) or take the penalty.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

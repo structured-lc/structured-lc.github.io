@@ -91,6 +91,10 @@ def construct_min_bitwise_array(nums):
 ### Summary
 This problem exercises bit manipulation and pattern observation, especially leveraging the properties of the bitwise OR for two consecutive numbers. The brute-force approach is acceptable for small primes but can be optimized efficiently for large or streaming data using direct bit analysis for odd primes. This type of problem appears in bitmasking, greedy, and constructive algorithm design commonly seen in interviews.
 
+
+### Flashcard
+For each prime nums[i], find minimum x where x OR (x+1) = nums[i]; for even primes (only 2), no solution exists; for odd primes, brute-force or use bit-pattern analysis.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

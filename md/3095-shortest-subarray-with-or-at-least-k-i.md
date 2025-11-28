@@ -78,6 +78,10 @@ def shortest_subarray_with_or_at_least_k(nums, k):
 ### Summary
 This problem applies the "expanding sliding window/brute-force with early stopping" pattern, exploiting bounded input constraints. It illustrates a common approach for "shortest subarray with condition" problems, especially when bitwise operations or monotonic properties are involved, and can be adapted where the operation (e.g. AND or XOR) preserves useful structure.
 
+
+### Flashcard
+Use sliding window with running OR; expand right and update OR; once OR ≥ k, shrink from left while maintaining OR ≥ k; track minimum length (OR values are limited by bit count).
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Sliding Window(#sliding-window)
 

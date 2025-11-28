@@ -199,6 +199,10 @@ def findWeightedMedian(n, edges, queries):
 ### Summary
 This problem uses the **binary lifting** and **lowest common ancestor (LCA)** pattern — a common approach for tree path queries that provides O(log n) query time after O(n log n) preprocessing. This coding pattern is standard for ancestry, jump, and path-related queries in trees and appears in segment path queries, k-th ancestor queries, and similar problems. Efficient traversal using distance accumulation and binary jumps is the key insight.
 
+
+### Flashcard
+Use Binary Lifting and LCA to precompute ancestor info; for each query, traverse path from u to v using LCA, accumulate weights, return first node where cumulative weight ≥ half total.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search)
 

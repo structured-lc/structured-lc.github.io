@@ -140,6 +140,10 @@ def minimum_weighted_subgraph(n, edges, src1, src2, dest):
 ### Summary
 This problem is a classic example of **LCA and path sum** queries in a tree. The coding pattern relies heavily on **Binary Lifting** for LCA and **DFS** for preprocessing. The technique here applies anywhere you need minimal subtrees containing arbitrary nodes in a tree, e.g., in network design, subtree queries, and some dynamic programming on trees. It leverages unique paths in a tree and LCA to minimize overlap in included edges, a frequent need for combinatorial optimization on tree graphs.
 
+
+### Flashcard
+Run Dijkstra three times (from src1, src2, and reverse from dest) to get shortest distances; find the meeting node i that minimizes d1[i] + d2[i] + d3[i].
+
 ### Tags
 Array(#array), Tree(#tree), Depth-First Search(#depth-first-search)
 

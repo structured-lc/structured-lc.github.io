@@ -96,6 +96,10 @@ def reverse_degree(s: str) -> int:
 ### Summary
 This problem is a straightforward application of iterating through a string and applying position-based logic—the "reverse" mapping is just a fixed formula for all lowercase letters. This is a classic **simulation / math pattern**, commonly encountered in string-encoding, checksum, and character-weighted summation problems. Techniques here also generalize to stream processing when you can't store the whole input.
 
+
+### Flashcard
+For each character, compute reverse_alphabet_position × string_position (1-indexed) and sum; reverse_pos = 26 − (char − 'a').
+
 ### Tags
 String(#string), Simulation(#simulation)
 

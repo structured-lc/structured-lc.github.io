@@ -84,6 +84,10 @@ def findPermutationDifference(s: str, t: str) -> int:
 ### Summary
 The problem uses a classic "hash map for index lookup" pattern—constructing an index map for one string and comparing each element from another sequence for efficient O(n) computation. This general approach is widely applicable in problems relating to permutations, character frequency comparison, or reordering problems.
 
+
+### Flashcard
+Store each character's index from s in a hash map; iterate through t and sum |index_in_s[char] − index_in_t| for each character.
+
 ### Tags
 Hash Table(#hash-table), String(#string)
 

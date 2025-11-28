@@ -179,6 +179,10 @@ This pattern applies to other problems involving:
 - Problems where element properties combine through bitwise operations
 - Optimization where naive enumeration is exponential but structured DP reduces complexity
 
+
+### Flashcard
+Find all possible OR values (submasks of total OR), then for each submask count subsequences with that exact OR using DP: dp[mask] = 2^(count of elements with all bits in mask).
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Combinatorics(#combinatorics)
 

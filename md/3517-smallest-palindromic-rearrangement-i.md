@@ -104,6 +104,10 @@ It uses a **counting and two-pointer build** pattern, often applicable to:
 - Problems needing lexicographically minimal/maximal outputs with constraints.  
 Optimizing by leveraging the fixed 26-letter alphabet removes the need for explicit sorting.
 
+
+### Flashcard
+Count character frequencies, build lexicographically smallest palindrome by placing smallest letters symmetrically from outside-in.
+
 ### Tags
 String(#string), Sorting(#sorting), Counting Sort(#counting-sort)
 

@@ -89,6 +89,10 @@ def maximum_set_size_after_removals(nums1, nums2):
 ### Summary
 This approach is based on set operations and greedy logic: you can never keep more unique elements than physically left after removals, nor more than exist in the union. The coding pattern is a classic application of set data structures and the min-max principle for optimizing selection under limiting constraints. This is a common pattern when maximizing diversity under quota constraints, and appears in allocation, selection, or packing-style problems.
 
+
+### Flashcard
+Greedily keep the ⌊n/2⌋ largest elements from each array. The maximum set size is min(⌊n/2⌋ + ⌊n/2⌋, number of unique elements across both arrays).
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Greedy(#greedy)
 

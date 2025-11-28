@@ -105,6 +105,10 @@ The core coding pattern here is **greedy partitioning / fair distribution** and 
 Balancing partitioning of multiplicative factors appears in several combinatorial and optimization contexts (load balancing, fair product partition).  
 The brute force is replaced by an efficient greedy approach that nearly always achieves the optimal max-min difference for such "balance by partitioning" problems.
 
+
+### Flashcard
+To minimize max − min in k-factor decomposition, make factors as close as possible; start with k copies of ⌊n^(1/k)⌋ and adjust by distributing remainder.
+
 ### Tags
 Math(#math), Backtracking(#backtracking), Number Theory(#number-theory)
 

@@ -85,6 +85,10 @@ def findGameCanBeWon(nums):
 ### Summary
 This problem uses a **partitioning and summing** pattern, a variant of greedy selection where candidate groups are fixed by digit count and a winner is determined by comparing group sums. It's similar to array split, greedy choice, and set-difference problems, and tests group-based maximization for simple conditions. This approach is clean, O(n), and uses only constant space. Similar logic applies to grouping or partitioning scenarios with restrictive choices.
 
+
+### Flashcard
+Alice picks either all single-digit or all double-digit numbers—calculate both sums and choose the larger group.
+
 ### Tags
 Array(#array), Math(#math)
 

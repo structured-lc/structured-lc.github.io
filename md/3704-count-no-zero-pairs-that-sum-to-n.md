@@ -114,6 +114,10 @@ def countNoZeroPairs(n: int) -> int:
 ### Summary
 This is a classic **Digit DP** problem, where you process numbers digit-by-digit using recursion and memoization, modeling constraints (here, no zeros, sum to n, handle carry). This technique is broadly applicable to counting problems involving digit-based rules, like “numbers with certain digit patterns” or “numbers matching conditions under arithmetic.”
 
+
+### Flashcard
+Use digit DP to count pairs (a, b) where a + b = n and neither contains digit 0, processing n digit by digit to avoid enumeration.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming)
 

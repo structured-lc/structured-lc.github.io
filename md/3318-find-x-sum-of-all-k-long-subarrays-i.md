@@ -131,6 +131,10 @@ def findXSum(nums, k, x):
 ### Summary
 This problem uses the **sliding window + frequency counting + custom ordering** pattern. The main challenge is maintaining the top x frequent elements within a sliding window, efficiently. This is similar to problems like "sliding window maximum/minimum," "top k frequent elements," and can be generalized to any windowed, frequency, or multiset–based subarray aggregate problem.
 
+
+### Flashcard
+Maintain sliding window frequency map; use a balanced data structure (heap or sorted container) to efficiently track top x most frequent elements in each k-long window.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue)
 

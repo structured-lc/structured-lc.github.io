@@ -81,6 +81,10 @@ def countSubarrays(nums):
 ### Summary
 This problem is a classic fixed-size sliding window check: examine all subarrays of a certain length (3), and check a mathematical condition that relates their elements. The approach is direct and avoids premature optimization; it's a representative example of using for-loop and windowed access for local array conditions, and the pattern frequently appears in other problems involving fixed-length subarrays and elementwise relationships.
 
+
+### Flashcard
+Iterate through all subarrays of length 3; for each triplet at index i, check if 2×(nums[i] + nums[i+2]) == nums[i+1] to avoid float division.
+
 ### Tags
 Array(#array)
 

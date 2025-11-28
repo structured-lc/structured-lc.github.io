@@ -136,6 +136,10 @@ def sortedGcdPairQueries(nums, queries):
 ### Summary
 This problem is a mix of **math (divisors, GCD, frequency sieve)** and **range query** patterns. The optimized solution avoids brute-force O(n²) by using frequency counting for multiples and careful subtraction for exact GCD counting. This pattern is common in divisor-related problems and can be seen in inclusion-exclusion, sieve algorithms, and advanced counting combinatorics.
 
+
+### Flashcard
+Generate all O(n²) pairs, compute GCD for each, sort; answer queries in O(1) per query after O(n² log n) preprocessing.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Binary Search(#binary-search), Combinatorics(#combinatorics), Counting(#counting), Number Theory(#number-theory), Prefix Sum(#prefix-sum)
 

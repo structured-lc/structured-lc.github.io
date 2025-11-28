@@ -129,6 +129,10 @@ The core idea is similar to other grid DP/bitmask problems (like Domino Tiling o
 By processing row by row and only remembering current blackened columns, we scale exponentially with row length but only linearly with the number of rows.  
 This technique is broadly applicable to other grid and chessboard state problems where state is localized per-row or per-column.
 
+
+### Flashcard
+Use DP/greedy on rows; for each row, decide which columns to blacken to maximize score from white cells adjacent to black cells.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix), Prefix Sum(#prefix-sum)
 

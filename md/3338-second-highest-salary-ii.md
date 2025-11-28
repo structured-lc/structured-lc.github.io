@@ -164,6 +164,10 @@ The pattern here is **"group by + ranking/selection"**. This occurs in "k-th lar
 Window functions (e.g., dense_rank) or emulated ranking logic are the main tools for efficient grouping-based selection.  
 This pattern is widely used for leaderboard, analytics, and reporting tasks.
 
+
+### Flashcard
+Use DENSE_RANK() window function partitioned by department, ordered by salary DESC; filter for rank = 2 to get second-highest earners per department.
+
 ### Tags
 Database(#database)
 

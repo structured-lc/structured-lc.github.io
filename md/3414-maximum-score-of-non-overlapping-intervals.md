@@ -144,6 +144,10 @@ def maximumScoreOfNonOverlappingIntervals(intervals):
 ### Summary
 This problem leverages the **Weighted Interval Scheduling** DP pattern, extended to selecting up to 4 non-overlapping intervals. By **sorting**, using **binary search** to find non-overlapping transitions, and **DP** to manage optimal subsets, it reflects classic patterns seen in interval DP and knapsack variants. This approach is widely applicable to maximum-weight/score subset selection where non-overlapping or non-conflicting constraints are present.
 
+
+### Flashcard
+Sort intervals by end time, then use DP: dp[i][k] = max score using first i intervals with ≤ k chosen; transition by skipping or including interval i.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
 

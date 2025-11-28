@@ -103,6 +103,10 @@ The coding pattern is nested iteration with indexed accumulation, applicable in 
 For very large input, FFT-based polynomial multiplication is optimal. For sparse cases, hashmap-based accumulation for nonzero terms saves work.  
 The brute-force approach is straightforward, efficient enough for standard input limits, and demonstrates clear thinking and code clarity.
 
+
+### Flashcard
+Multiply each coefficient of poly1 by each coefficient of poly2; add products to result array at index i+j; O(m × n) is acceptable for typical constraints.
+
 ### Tags
 Array(#array), Math(#math)
 

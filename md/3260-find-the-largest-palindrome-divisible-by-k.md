@@ -100,6 +100,10 @@ This problem is a classic example of **palindrome generation by prefix mirroring
 The **key idea** is drastically reducing the search space from all n-digit numbers to only n-digit palindromes, enabling an efficient solution.  
 This prefix–mirror pattern is common in palindrome construction, and the technique is widely applicable in problems involving palindromic numbers or string patterns.
 
+
+### Flashcard
+Generate n-digit palindromes by building the first ⌊n/2⌋ digits and mirroring; check each palindrome for divisibility by k, starting from largest.
+
 ### Tags
 Math(#math), String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Number Theory(#number-theory)
 

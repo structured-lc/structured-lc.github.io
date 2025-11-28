@@ -79,6 +79,10 @@ def maximumValueSum(board):
 ### Summary
 This is a classic combinatorial optimization problem — an application of the “assignment” pattern, simplified to small k=3. The brute-force tries all valid row and column selections and assignments (bijections), which is feasible for small inputs. This approach can be generalized: for k rooks it's fundamentally the max-sum assignment problem (can be solved by Hungarian algorithm for larger k). This brute-force + permutations trick is common in interview questions with very small k — look for problems saying “pick k non-conflicting elements” and ask if you can try all C(n,k) × k! possibilities when k is small!
 
+
+### Flashcard
+Choose 3 different rows and 3 different columns, then try all 6 permutations of row-to-column assignments; track maximum sum.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix), Enumeration(#enumeration)
 

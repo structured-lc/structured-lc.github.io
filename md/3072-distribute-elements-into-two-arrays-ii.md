@@ -181,6 +181,10 @@ def distributeElements(nums):
 ### Summary
 This problem demonstrates how advanced prefix sum data structures (like Binary Indexed Trees) and discretization can turn a naive O(N²) solution into a fast O(N log N) algorithm, a common and sought-after interview pattern. The "greaterCount" query is equivalent to rank queries, which arise frequently in problems about order statistics, range queries, and dynamic ranking. Variants occur in competitive programming and in interview questions related to medians, order-statistics trees, and custom sortings.
 
+
+### Flashcard
+Use Binary Indexed Tree (Fenwick Tree) or sorted list to efficiently count elements strictly greater than a value during dynamic insertions.
+
 ### Tags
 Array(#array), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Simulation(#simulation)
 

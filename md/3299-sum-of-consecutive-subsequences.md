@@ -136,6 +136,10 @@ def sumOfConsecutiveSubsequences(nums):
 ### Summary
 This problem uses a dynamic programming plus hash mapping approach to track and sum all strictly consecutive subsequences in either increasing or decreasing direction. The core pattern is DP/State-compression with rolling history via hash maps — common for sequence-counting or aggregation over chains with specific rules. This appears in variants such as consecutive length chains, arithmetic/sequence sums, or extendable subsequence problems.
 
+
+### Flashcard
+For each index, count consecutive subsequences (both increasing and decreasing by 1) using combinatorial formulas; sum contributions from all valid consecutive patterns.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming)
 

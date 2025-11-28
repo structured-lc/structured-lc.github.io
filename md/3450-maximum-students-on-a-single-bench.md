@@ -93,6 +93,10 @@ def maxStudentsOnBench(students):
 ### Summary
 This problem is a classic use of **hash maps with sets** for grouping and deduplicating. It fits the **“group-and-aggregate”** pattern common in data processing and coding interviews, and maps well to problems about finding counts of unique elements by category. This technique is broadly applicable to analytics, counting, and grouping scenarios.
 
+
+### Flashcard
+Use dictionary mapping bench_id → set of student_ids; after processing all assignments, return the bench with maximum unique students.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

@@ -73,6 +73,10 @@ def countSubstrings(s: str, c: str) -> int:
 ### Summary
 This problem demonstrates the "counting pairs" and combinatorics pattern—counting the number of ways two or more events (here, positions of `c`) can be combined. Instead of checking every substring, we use the mathematical formula for combinations to get an efficient O(n) solution. This counting pattern applies to similar substring, pair, or triplet problems in strings or arrays.
 
+
+### Flashcard
+Count occurrences of character c; answer is C(count, 2) = count × (count - 1) / 2, since any two positions with c form a valid substring.
+
 ### Tags
 Math(#math), String(#string), Counting(#counting)
 

@@ -97,6 +97,10 @@ def minMovesToPeacefulBoard(rooks):
 ### Summary
 This problem uses a classic **greedy assignment pattern** for minimizing total move distances on a bipartite grid, matching each rook to a unique row and column by sorting their coordinates. The core idea leverages the property that for minimizing sum of absolute differences, sorted order assignment is optimal. This approach appears in various assignment, Hungarian-algorithm-related, and minimum-distances problems on grids.
 
+
+### Flashcard
+This is a bipartite matching problem; use the Hungarian algorithm or min-cost flow to assign rooks to unique rows and columns with minimum total distance.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Counting Sort(#counting-sort)
 

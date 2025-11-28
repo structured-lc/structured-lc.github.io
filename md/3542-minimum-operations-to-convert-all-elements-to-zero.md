@@ -100,6 +100,10 @@ def min_operations(nums):
 ### Summary
 This divide-and-conquer pruning pattern is classic in range segment manipulation problems, similar to some advanced DP, greedy, and "painting" problems. The optimal strategy here is to recursively clear minimal values from each contiguous non-zero segment, counting the operations and splitting at zero boundaries. This approach is applicable in any problem where you must greedily eliminate repeated "obstacles" in intervals and handle subintervals recursively.
 
+
+### Flashcard
+Partition array into contiguous blocks of non-zero values; in each block, repeatedly erase the minimum value; total operations = sum of distinct values across all blocks.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
 

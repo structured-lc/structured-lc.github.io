@@ -75,6 +75,10 @@ def isArraySpecial(nums):
 ### Summary
 This problem uses the **adjacent pair property check** pattern—linear scan over adjacent elements, testing a simple relation (here: parity). This technique applies broadly: "peak" finding, checking monotonicity, and more. It’s simple, efficient, and robust for small-to-medium arrays, ideal for real interviews and similar problems involving pairwise relations.
 
+
+### Flashcard
+Check all adjacent pairs; if nums[i] % 2 == nums[i+1] % 2 for any i, return False; otherwise return True.
+
 ### Tags
 Array(#array)
 

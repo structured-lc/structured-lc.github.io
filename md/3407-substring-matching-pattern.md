@@ -90,6 +90,10 @@ This approach demonstrates the typical two-part string matching pattern:
 - This pattern is common in filesystem globbing, simple pattern-matching, and certain substring search variants.  
 - The code is straightforward and leverages small input sizes for efficient direct checks, making it suitable for both interviews and production settings where only one wildcard is present.
 
+
+### Flashcard
+Split pattern p into left and right parts around '*'; for each substring of s, check if it starts with left and ends with right using two-pointer matching.
+
 ### Tags
 String(#string), String Matching(#string-matching)
 

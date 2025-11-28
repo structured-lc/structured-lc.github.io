@@ -88,6 +88,10 @@ This problem uses a **greedy array pattern**—tracking and re-using the largest
 Such greedy scoring approaches are common in jump/score maximization on arrays, where the optimal substructure allows a simple O(n) scan.  
 Recognizing the form (greedy optimality, score accumulation with max-so-far) is also helpful in similar jump array problems and interval score questions.
 
+
+### Flashcard
+Use DP backward: for each index i, compute the maximum score reachable from i to n−1 by considering all possible jumps j > i with score (j−i)×nums[i].
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

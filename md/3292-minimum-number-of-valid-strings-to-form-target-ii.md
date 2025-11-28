@@ -103,6 +103,10 @@ def min_num_valid_strings(words, target):
 ### Summary
 This problem uses the **DP on strings + prefix hash/preprocessing** pattern, similar to "Word Break" and edit distance variants. The core insight is to precompute all possible valid pieces and DP through all splitting choices. The same approach can solve problems involving minimal segments or decompositions, and is a classic pattern for interview string decomposition and sequence formation problems.
 
+
+### Flashcard
+Use DP where dp[i] = minimum pieces to cover target[i:]; at each position, try all valid prefixes (from words) and take the minimum of 1 + dp[next_index].
+
 ### Tags
 Array(#array), String(#string), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Segment Tree(#segment-tree), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
 

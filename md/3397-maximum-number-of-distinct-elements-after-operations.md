@@ -106,6 +106,10 @@ def maxDistinctNumAfterOperations(nums, k):
 ### Summary
 This problem demonstrates a classic greedy + frequency counting approach: analyze duplicate bottlenecks, and greedily spread values into available "slots" using allowed operations. This technique—convert "make unique" under constraints to frequency + allocation problem—shows up in problems about minimizing/removing duplicates, choosing disjoint intervals, and making arrays "good" by limited changes.
 
+
+### Flashcard
+Sort array, greedily assign each element to a distinct value within [nums[i]−k, nums[i]+k]; use greedy assignment to maximize distinct count.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

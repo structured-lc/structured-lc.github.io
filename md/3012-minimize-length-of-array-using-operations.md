@@ -96,6 +96,10 @@ This problem reduces to a number theory insight: repeatedly taking modulus event
 Pattern: **Greedy, Min/Mod, Array Reduction.**  
 This “keep reducing by modulus” technique frequently arises in combinatorial or number theory problems, especially when the operation mimics some property of the GCD.
 
+
+### Flashcard
+Minimize Length of Array Using Operations (Medium)
+
 ### Tags
 Array(#array), Math(#math), Greedy(#greedy), Number Theory(#number-theory)
 

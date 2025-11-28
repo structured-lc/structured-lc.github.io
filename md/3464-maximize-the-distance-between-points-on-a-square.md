@@ -150,6 +150,10 @@ def maxDistance(side: int, points: List[List[int]], k: int) -> int:
 ### Summary  
 This problem involves transforming a 2D boundary placement scenario into 1D ring selection and applying a binary search with greedy feasibility checking. The coding pattern is a classic *binary search on answer* combined with *greedy placement using binary search*. This technique is widely used in problems involving maximization/minimization of intervals or spacing, such as placing antennas or splitting arrays by a threshold.
 
+
+### Flashcard
+Map square perimeter to a 1D circular array; reduce to selecting k points on a ring maximizing minimum spacing (binary search on spacing).
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy)
 

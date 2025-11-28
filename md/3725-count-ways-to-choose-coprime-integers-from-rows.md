@@ -129,6 +129,10 @@ This problem uses **dynamic programming with state compression**. The key insigh
 
 This is a common pattern in problems involving number theory (GCD, LCM) combined with combinatorial counting.
 
+
+### Flashcard
+Use DP with bitmask to track GCD values (≤ 150); for each row, compute which GCDs are achievable, then combine across rows to count coprime selections.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Matrix(#matrix), Combinatorics(#combinatorics), Number Theory(#number-theory)
 

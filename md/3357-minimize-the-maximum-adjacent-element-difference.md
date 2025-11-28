@@ -107,6 +107,10 @@ def minimizeMaxDiff(nums):
 ### Summary
 We applied a “binary search on the answer”/“tightest interval” pattern, common for minimizing the maximal difference after filling gaps or assigning values while respecting adjacency constraints. Intervals are intersected to ensure all constraints are met, making the greedy fill optimal. This pattern is general for sequence adjustment under global-optimum and local-adjacency cost rules.
 
+
+### Flashcard
+Binary search on the maximum adjacent difference D; for each D, greedily fill −1s to check if it's achievable.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy)
 

@@ -162,6 +162,10 @@ The approach avoids recomputation by only tracking maximal single- and double-va
   
 Variants of this method apply to path-constrained problems on trees (e.g. longest path with limited values, sliding window on trees, tree diameter, etc.).
 
+
+### Flashcard
+DFS from each node tracking at most 2 distinct edge values seen so far; maintain the maximum path length where distinct values ≤ 2.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Tree(#tree), Depth-First Search(#depth-first-search), Prefix Sum(#prefix-sum)
 

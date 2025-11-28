@@ -95,6 +95,10 @@ def maximum_unique_subarray_sum_after_deletion(nums):
 ### Summary
 This is a unique twist on the "Maximum Unique Subarray Sum" problem, expanded to allow deletions. The solution uses a **greedy set-building** pattern: take all unique positive numbers for the largest sum, or just the maximum otherwise. This sets up a template for questions mixing unique-value collections and subset/sum optimizations, and highlights how problem constraints (deletion allowed, sum maximized, uniqueness required) invite greedy reasoning over brute-force searching.
 
+
+### Flashcard
+Use a sliding window with a set to track unique elements; expand to include positive values and contract when duplicates appear, tracking maximum subarray sum.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Greedy(#greedy)
 

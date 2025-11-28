@@ -114,6 +114,10 @@ def maxWeight(n, edges, k, t):
 ### Summary
 This problem uses the **dynamic programming on graphs** pattern, similar to k-shortest or bounded paths problems. Key ideas are managing state with (node, step, sum) and efficiently tracking unique, feasible path sums using hash maps/sets. This DP-over-edges technique applies to many bounded path/cost/cycle problems on graphs.
 
+
+### Flashcard
+Use DP with state dp[node][edges_used] = maximum weight reachable; for each state, try extending to neighbors within k edges and sum < t constraint.
+
 ### Tags
 Hash Table(#hash-table), Dynamic Programming(#dynamic-programming), Graph(#graph)
 

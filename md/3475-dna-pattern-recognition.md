@@ -116,6 +116,10 @@ print(dna_pattern_recognition(samples))
 ### Summary
 This problem uses simple **string pattern recognition** with startswith, endswith, and substring search. It’s an example of direct pattern/exact-match detection—a common interview scenario for bioinformatics pipelines, regular expression problems, and custom SQL queries. Recognizing and checking for sequence motifs is common in both SQL and Python, and can be generalized to more flexible pattern/motif searching problems.
 
+
+### Flashcard
+For each DNA sequence, check: starts with "ATG", ends with "TAA"/"TAG"/"TGA", contains "ATAT", contains "GGG" or longer G-runs.
+
 ### Tags
 Database(#database)
 

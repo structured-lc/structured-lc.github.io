@@ -100,6 +100,10 @@ def numberOfRightTriangles(grid):
 ### Summary
 The approach builds on combinatorics and precomputation — for each possible pivot, multiply the number of available choices in its row and column (excluding itself). The coding pattern is akin to using *prefix sums* or *preprocessing for frequent queries on subarrays/submatrices*, and this thinking is common in problems that involve counting pairs or triplets based on shared attributes.
 
+
+### Flashcard
+For each cell with a `1`, count other `1`'s in its row and column; multiply these counts to get right triangles with right angle at that cell.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Combinatorics(#combinatorics), Counting(#counting)
 

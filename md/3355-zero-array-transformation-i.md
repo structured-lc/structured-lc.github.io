@@ -87,6 +87,10 @@ class Solution:
 ### Summary
 We use the **difference array** (also known as prefix-sum range frequency trick) to efficiently count how many times each index can be decremented by queries. We then check whether each value in nums can be reduced to zero with the allowed decrements, achieving an O(n + q) solution. This pattern recurs in range-update/range-query problems, and is especially common in sweep-line and interval coverage scenarios.
 
+
+### Flashcard
+Count how many times each index is covered by queries; if any index needs more decrements than its total coverage, it's impossible.
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

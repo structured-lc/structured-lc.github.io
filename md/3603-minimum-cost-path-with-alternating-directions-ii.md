@@ -84,6 +84,10 @@ def min_cost_path_with_alternating_directions(grid):
 ### Summary
 Problem resembles grid DP with extra state for move direction. Uses Dijkstra's with extra move state (alternating direction) to ensure all possible paths respecting alternation are considered. Generalizable for movement constraint problems.
 
+
+### Flashcard
+Use Dijkstra's with state (row, col, last_direction) to track minimum cost reaching each cell after moving horizontally or vertically; alternate allowed directions at each step.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Matrix(#matrix)
 

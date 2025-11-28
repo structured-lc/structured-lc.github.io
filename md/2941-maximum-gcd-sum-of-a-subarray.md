@@ -118,6 +118,10 @@ The approach leverages the fact that the GCD of a subarray only stays the same o
 This pattern of reducing a state space (here, unique gcds) and pushing forward only "interesting" combinations is similar to dynamic programming and is commonly seen in problems involving GCD/LCM and iterative subarray processing.  
 The method efficiently avoids brute-force enumeration and is applicable to any problem where merging elements can only restrict (monotonically) the property of interest.
 
+
+### Flashcard
+For each end index i, maintain all unique GCDs of subarrays ending at i and their best sums. As you extend left, GCD only decreases or stays same; use this to avoid recomputing GCD for every subarray.
+
 ### Tags
 Array(#array), Math(#math), Binary Search(#binary-search), Number Theory(#number-theory)
 

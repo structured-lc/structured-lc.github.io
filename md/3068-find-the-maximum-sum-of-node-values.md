@@ -128,6 +128,10 @@ The solution identifies where flipping increases value and greedily uses all suc
 This is a classic "flip to maximize gain while respecting operation constraints", similar to subarray XOR, and XOR toggling parity in trees.  
 Common pattern: Greedy + even/odd constraint, which appears in number partition, token game, or tree re-rooting problems.
 
+
+### Flashcard
+XOR is self-inverse; observe that flipping a node twice restores it, so maximize sum by choosing optimal flip states via DP or greedy pairing.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Bit Manipulation(#bit-manipulation), Tree(#tree), Sorting(#sorting)
 

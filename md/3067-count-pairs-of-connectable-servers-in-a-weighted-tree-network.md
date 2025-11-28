@@ -120,6 +120,10 @@ def countPairsOfConnectableServers(edges: List[List[int]], signalSpeed: int) -> 
 This problem showcases the **Tree DP/DFS** paradigm: for each node, analyze its disjoint subtrees recursively, and count combinations using the counts from each subtree (a classic application of “count pairs from multiple groups/subsets”).  
 The pattern (sum over pairs of valid counts from disjoint tree branches) is common in tree-pairing problems and is applicable in network analysis, distributed systems reachability, and subtree queries.
 
+
+### Flashcard
+For each server c, find nodes in each subtree, count pairs from different subtrees where both paths' edge products are divisible by k.
+
 ### Tags
 Array(#array), Tree(#tree), Depth-First Search(#depth-first-search)
 

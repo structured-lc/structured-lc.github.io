@@ -124,6 +124,10 @@ This problem is a variation of the classic subsequence DP pattern, but instead o
 The core insight is to use dynamic programming, indexed on (current value, allowed changes), to propagate maximal subsequence length as the array is traversed.  
 Such a DP approach is common for advanced variants of longest increasing/decreasing subsequence and other sequence selection under constraints.
 
+
+### Flashcard
+Use DP with state dp[i][h] = max length subsequence ending at nums[i] with h adjacent changes; transition by considering extending from previous indices or starting fresh.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming)
 

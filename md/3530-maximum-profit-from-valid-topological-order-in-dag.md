@@ -115,6 +115,10 @@ def maxProfit(n, edges, score):
 ### Summary
 This problem is a classic application of **DP with bitmasking over subsets** in the context of DAG scheduling and topological orders. The approach efficiently maximizes a position-based weighted sum when only certain execution orders are allowed. The DP technique used here is broadly applicable to other permutation-enumeration problems with dependency constraints, common in scheduling, course planning, and some matching or assignment problems.
 
+
+### Flashcard
+Use DP with bitmask to represent scheduled node subsets; for each state, try scheduling an available node next and track maximum profit achievable.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Graph(#graph), Topological Sort(#topological-sort), Bitmask(#bitmask)
 

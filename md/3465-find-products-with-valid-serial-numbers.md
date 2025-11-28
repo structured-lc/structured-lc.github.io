@@ -135,6 +135,10 @@ def find_products_with_valid_serial_numbers(products):
 ### Summary
 This problem is a classic **regex string pattern matching** use-case. It exemplifies validation search within larger text, a common theme in data cleansing, parsing logs, or extracting entities from unstructured fields. Similar patterns arise in record validation, input sanitization, or parsing structured IDs from free-form text. The reusable coding pattern is: iterate rows, extract matches with regex, accumulate results.
 
+
+### Flashcard
+Use regex to match pattern "SN\d{4}-\d{4}" in each description string; extract and collect all matching serial numbers.
+
 ### Tags
 Database(#database)
 

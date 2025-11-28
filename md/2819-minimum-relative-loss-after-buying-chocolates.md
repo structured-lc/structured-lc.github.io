@@ -134,6 +134,10 @@ def minimum_relative_loss(prices, queries):
 ### Summary
 The key pattern is **prefix sums after sorting** plus efficient two-pointer/binary search partition, common in subset sum and range query problems. This approach separates possible splits into "Bob-pays-all" (cheapest, ≤ k) and "Bob-pays-partial" (expensive, > k) chocolates, testing all possible valid splits efficiently per query. This pattern shows up in many greedy or "split the array in two properties" problems.
 
+
+### Flashcard
+Sort prices; for each query of size m, optimal set uses m cheapest chocolates where Bob pays min(price, k), maximizing Alice's payment.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sorting(#sorting), Prefix Sum(#prefix-sum)
 

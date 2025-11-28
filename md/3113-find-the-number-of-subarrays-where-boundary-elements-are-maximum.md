@@ -127,6 +127,10 @@ def count_subarrays(nums):
 ### Summary
 This problem is an example of the monotonic stack/sliding window pattern to efficiently count or aggregate information over subarrays that satisfy certain boundary and interior conditions. It's similar to classic interval-extension/stack enumeration problems (like Largest Rectangle in Histogram or Count Subarrays with Bounded Maximum). The idea of grouping identical runs and merging with monotonic constraints is broadly applicable in subarray and range-counting problems.
 
+
+### Flashcard
+For each position, find the longest run of equal values. Count subarrays within that run where both boundaries equal the run value and no larger value exists inside.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

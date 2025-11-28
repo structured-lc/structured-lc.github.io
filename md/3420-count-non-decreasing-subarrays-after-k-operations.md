@@ -123,6 +123,10 @@ This problem uses an **advanced sliding window with monotonic deque/prefix cost*
 It generalizes well to "minimum operations for monotonic subarrays" and demonstrates the power of careful two pointers plus hierarchy tracking (monotonic structures).  
 This pattern appears in certain DP optimizations and range query situations (range non-decreasing, min increments/subarray cost).
 
+
+### Flashcard
+For each subarray, compute the minimum operations to make it non-decreasing by greedily incrementing elements; count subarrays where total cost ≤ k.
+
 ### Tags
 Array(#array), Stack(#stack), Segment Tree(#segment-tree), Queue(#queue), Sliding Window(#sliding-window), Monotonic Stack(#monotonic-stack), Monotonic Queue(#monotonic-queue)
 

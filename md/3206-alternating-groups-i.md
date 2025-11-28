@@ -81,6 +81,10 @@ The approach uses simple brute-force with modular arithmetic to handle the circu
 This is a variation of **circular sliding window** or **wraparound array** pattern, often seen in ring buffer or circular structure problems.  
 The coding pattern generalizes to cases where local groupings require custom neighbor checks, and can appear in pattern search in 2D grids, music intervals, or gaming board problems.
 
+
+### Flashcard
+Check each index i as center of triplet; count positions where colors[i] ≠ colors[(i-1+n)%n] and colors[i] ≠ colors[(i+1)%n].
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window)
 

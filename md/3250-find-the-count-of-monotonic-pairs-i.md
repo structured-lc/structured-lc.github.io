@@ -115,6 +115,10 @@ def countMonotonicPairs(nums):
 ### Summary
 We used DP with prefix sums to efficiently count how many monotonic (non-decreasing, non-increasing) array pairs can sum to a given nums. The solution leverages state reduction and prefix queries, a common approach for monotonic sequence count problems. This DP pattern appears in similar monotonic/partition array problems and extends naturally to more constraints or counting variations.
 
+
+### Flashcard
+DP with state (index, last_arr₁_value)—for each position, try valid arr₁[i] values (non-decreasing, arr₁[i] ≤ nums[i]), compute arr₂[i], check non-increasing constraint.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics), Prefix Sum(#prefix-sum)
 

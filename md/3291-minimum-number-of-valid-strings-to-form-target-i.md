@@ -118,6 +118,10 @@ This problem demonstrates the **DP + Trie** pattern, especially useful for parsi
 Common variants include **word break**, **concatenation matching**, and **string segmentation**.  
 The trade-off is preprocessing time (Trie), but it yields optimal runtime for many matching queries, and memoization prevents redundant string scans.
 
+
+### Flashcard
+Precompute all valid prefixes from words; use DP where dp[i] = minimum pieces to cover target[0:i], checking at each position if any valid prefix matches.
+
 ### Tags
 Array(#array), String(#string), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Trie(#trie), Segment Tree(#segment-tree), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
 

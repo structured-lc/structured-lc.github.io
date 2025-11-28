@@ -104,6 +104,10 @@ This problem is a variant of the “minimum operations” or “greedy pick” p
 The best approach leverages counting and simple greedy allocation of allowed changes, similar to two-pointer or window techniques in selection/subset-sum problems.  
 It highlights the value of reducing complex move simulation to simple counting and state tracking.
 
+
+### Flashcard
+Collect all one positions; use maxChanges to create additional ones near the target cluster; find the k consecutive ones (or created ones) with minimum total moves.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

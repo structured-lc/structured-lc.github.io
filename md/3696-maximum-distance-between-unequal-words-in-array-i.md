@@ -90,6 +90,10 @@ def maximum_distance(words):
 ### Summary
 This approach is a classic "two-pointer/scan from ends" or greedy technique, optimized by leveraging the observation that the maximum distance pair of unequal words must include one endpoint. This pattern appears often in array problems where extremal values are required subject to an inequality, such as "longest unequal", "farthest different", or "spread in a spectrum."
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Array(#array), String(#string)
 

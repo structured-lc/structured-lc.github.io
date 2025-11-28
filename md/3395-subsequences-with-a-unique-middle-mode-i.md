@@ -138,6 +138,10 @@ def count_unique_middle_mode_subsequences(nums):
 ### Summary
 This problem uses a combinatorial counting and hash map approach, leveraging prefix/suffix maps and combinations to avoid generating all subsequences. The pattern is split-window counting with frequency logic, often useful in "count X in all subsequences" problems, especially for fixed-length, non-contiguous windows.
 
+
+### Flashcard
+For each middle position i (2 ≤ i ≤ n−3), count 5-element subsequences where middle element is unique mode; precompute frequencies of elements before/after i.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Combinatorics(#combinatorics)
 

@@ -82,6 +82,10 @@ def canJump(nums):
 This is a classic greedy approach problem. The core pattern is **range extension** — continuously tracking the furthest index that can be reached.  
 This strategy is commonly applicable to similar jump/interval coverage problems and is a standard part of interview prep for optimizations over brute-force and DP.
 
+
+### Flashcard
+Use greedy approach: scan left to right tracking the furthest reachable index; at each position, update max reach based on current value and jump constraints.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

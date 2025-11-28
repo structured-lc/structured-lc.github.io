@@ -141,6 +141,10 @@ class Solution:
 ### Summary
 This problem is a variation of the **Longest Common Prefix** pattern, but after dynamic, per-query removal. **Trie (prefix tree)** data structure is key: it allows efficient prefix search and dynamic update/removal. The approach is optimized by updating the prefix counts rather than recomputing all subsets. Similar techniques are used for dynamic dictionary problems, prefix/word recommendations, or problems with "for all subsets after removal" constraints.
 
+
+### Flashcard
+Build a Trie of all strings, then for each removal, traverse the Trie to find the longest common prefix among remaining k strings.
+
 ### Tags
 Array(#array), String(#string), Trie(#trie)
 

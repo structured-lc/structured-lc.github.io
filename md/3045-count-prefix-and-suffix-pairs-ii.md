@@ -105,6 +105,10 @@ def countPrefixSuffixPairs(words):
 ### Summary
 This problem is a classic trie application, where each path encodes combined prefix and suffix character pairs. The pattern of "simultaneous prefix and suffix matching" via trie traversal is powerful and can be extended to other problems where two ends or palindromic properties are checked together. Efficiently counting string pairs by leveraging trie-based aggregation avoids quadratic brute-force and demonstrates a strong understanding of advanced data structures.
 
+
+### Flashcard
+Process words left-to-right; for each new word, count how many previous words have it as both prefix and suffix using hash map.
+
 ### Tags
 Array(#array), String(#string), Trie(#trie), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
 

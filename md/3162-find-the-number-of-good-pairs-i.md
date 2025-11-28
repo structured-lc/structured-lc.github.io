@@ -92,6 +92,10 @@ This problem exemplifies the classic double for-loop pattern—brute-force pairw
 It's commonly applied to problems involving all-pairs checks, such as the "count pairs that satisfy some property" family.  
 In more restrictive settings, hashing or divisor tricks might be appropriate, but O(n×m) is clear, robust, and directly answers the question for reasonable array sizes.
 
+
+### Flashcard
+Brute-force check all pairs (i, j): for each nums₁[i], count how many nums₂[j] satisfy nums₁[i] % (nums₂[j] × k) == 0; O(n × m) is acceptable for Easy constraints.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

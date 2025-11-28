@@ -94,6 +94,10 @@ The code relies on systematic pair generation and cycle-based assignment to avoi
 Such patterns are common in tournament setups, sports leagues, and scheduling pairwise interviews.  
 The core coding pattern—cycle-based permutations and avoidance of consecutive repeats—often appears in problems involving graph coloring, distributed meetings, or resource assignment.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Array(#array), Math(#math), Greedy(#greedy)
 

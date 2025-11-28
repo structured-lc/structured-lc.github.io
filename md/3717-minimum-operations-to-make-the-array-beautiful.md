@@ -100,6 +100,10 @@ def minIncrementOperations(nums, k):
 ### Summary
 This is a **greedy/DP hybrid** sliding window problem, where you increment the rightmost member in each window not satisfying the "beautiful" condition. This approach is a common optimal strategy for interval covering and can be applied in other problems regarding overlapping window constraints and minimal local changes for global correctness (e.g., House Robber, minimum operations for subarrays, sliding window repairs).
 
+
+### Flashcard
+For every triplet nums[i], nums[i+1], nums[i+2], if all < k, increment one element to k; use a greedy pass to minimize total increments.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

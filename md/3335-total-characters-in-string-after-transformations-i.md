@@ -110,6 +110,10 @@ def total_characters_after_transformations(s: str, t: int) -> int:
 The problem is a classic **frequency-simulation** with fixed transition rules. Instead of string-building, keep only letter counts and apply updates as per rules each round. This "counting DP" or frequency-distribution update is common wherever content (not order) matters but explosive growth is possible (exponential string/tree expansion).  
 Patterns apply to population models, automata, or Markov/transition state simulations.
 
+
+### Flashcard
+Track frequency count of each letter instead of actual string; simulate transformations on frequencies (z→ab means decrement z, increment a and b); multiply final frequencies by their transformation counts.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), String(#string), Dynamic Programming(#dynamic-programming), Counting(#counting)
 

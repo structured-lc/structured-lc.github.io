@@ -106,6 +106,10 @@ def minimumCost(m, n, horizontalCut, verticalCut):
 ### Summary
 This problem is a classic greedy cut-order optimization: always make the highest-cost cut first to minimize its multiplication across future pieces. The solution uses **sorting and two-pointer greedy traversal** — a frequent pattern in interval and cost-minimization problems. This pattern often applies to "cutting", "merge", or "divide and conquer" types of cost aggregation questions.
 
+
+### Flashcard
+Sort cuts by cost descending; greedily apply expensive cuts first to maximize their effect on fewer segments.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Sorting(#sorting)
 

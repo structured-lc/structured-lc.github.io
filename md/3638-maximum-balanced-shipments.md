@@ -95,6 +95,10 @@ def maximumBalancedShipments(weight):
 ### Summary
 The problem fits a **greedy, partitioning** pattern—specifically, the “split when you can, then continue” approach, similar to interval partitioning or greedy segmentation. Core techniques here involve scanning for local constraints and early splitting to maximize non-overlapping segment selection. This pattern occurs in greedy string segmentation, interval partitioning, and some “max number of partitions” problems.
 
+
+### Flashcard
+Greedily scan left to right; whenever you find a balanced segment (last element < max in segment), take it and continue from the next position.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
 

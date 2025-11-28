@@ -114,6 +114,10 @@ This problem uses **filtering** and **sorting** patterns, which are common in da
 The approach is standard and applies to any relational data with "missing value" filtering — it's used for reporting, quality control, and statistics in analytics tasks.  
 Pattern variants: find rows based on null/missing, filter by multiple columns, select only needed fields, and order results by primary key or any other column.
 
+
+### Flashcard
+Filter rows where rating IS NULL and select the required columns, ordered by book_id.
+
 ### Tags
 Database(#database)
 

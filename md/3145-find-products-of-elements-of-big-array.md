@@ -109,6 +109,10 @@ def findProductsOfElements(queries):
 ### Summary
 This problem exemplifies the pattern of virtual array manipulation using prefix sums, clever coding for sums over positional binary structure, and fast modular exponentiation. It's a common pattern where array size constraints force indirect computation via formula or bit manipulation—inspired by binary indexed trees and prefix sums in virtual or compressed domains. This pattern is applicable in problems requiring aggregate operations over very large or infinite virtual structures.
 
+
+### Flashcard
+Avoid building the full array; instead, compute exponent sums directly using mathematical formulas for ranges in the powerful array.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Bit Manipulation(#bit-manipulation)
 

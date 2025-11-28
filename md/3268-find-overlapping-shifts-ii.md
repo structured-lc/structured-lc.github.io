@@ -132,6 +132,10 @@ This problem uses the **sweep line (scanline) algorithm**, which is a common pat
 It's especially applicable for: calculating max overlapping events, merging intervals, and calendar/meeting availability.  
 Patterns like this are frequently seen in interval scheduling, meeting rooms, and time-window aggregation problems.
 
+
+### Flashcard
+Use a sweep-line algorithm—create events (start, +1) and (end, -1) for each shift, sort by time, and track concurrent shifts to compute overlap durations.
+
 ### Tags
 Database(#database)
 

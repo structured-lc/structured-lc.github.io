@@ -149,6 +149,10 @@ def count_beautiful_substrings(s: str, k: int) -> int:
 ### Summary
 This problem is a combination of the prefix sum / hashmap pattern (often used to count substrings or subarrays with a particular sum or property) with an extra modulo/divisibility constraint. The general approach is efficient and widely used for equal count substrings, zero-sum subarrays, and similar problems, which often appear in coding interviews and contests.
 
+
+### Flashcard
+Use prefix sums to track vowel_count - consonant_count. For each position, find all prior positions where the difference equals current difference (vowels == consonants) and the distance squared is divisible by k.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), String(#string), Number Theory(#number-theory), Prefix Sum(#prefix-sum)
 

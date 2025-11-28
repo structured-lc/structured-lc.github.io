@@ -138,6 +138,10 @@ def minUnlockedIndices(nums, locked):
 This problem leverages **interval analysis** and careful **transition detection** within a limited domain (only 1,2,3 in nums). The key coding pattern is **range-based greedy counting**, and the approach is memory-efficient and linear time.  
 Related patterns include "critical block detection," two pointers, and interval sweeps, which are also used in merge intervals, sliding window optimization, and subarray/group partitioning problems.
 
+
+### Flashcard
+Identify critical locked indices that block sorting; a locked index at position i blocks if it prevents proper ordering of values (e.g., locked 3 before locked 1).
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

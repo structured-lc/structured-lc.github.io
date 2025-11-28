@@ -100,6 +100,10 @@ This problem uses a **greedy sliding window approach** on precomputed “gaps”
 This is a classic example of **window manipulation** in interval/array problems where you merge segments for a global optimum.  
 The pattern also appears in conference scheduling, busy/idle slot optimization, or maximizing contiguous resource availability in other time-interval problems.
 
+
+### Flashcard
+Identify gaps in schedule; for each gap, check if any meeting can slide into it; compute max free time after optimal rescheduling.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sliding Window(#sliding-window)
 

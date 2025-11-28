@@ -77,6 +77,10 @@ This problem is an example of an "accumulation" coding pattern, where we travers
 The even-number check using `num & 1` is a common trick for efficiency.  
 This approach has broad applications in problems that require calculating any associative operation (like sum, product, bitwise AND/OR) on filtered elements of an array.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Simulation(#simulation)
 

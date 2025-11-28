@@ -84,6 +84,10 @@ def convert_date_to_binary(date):
 This problem uses a **simple simulation and string parsing pattern**: break input into parts, perform a small calculation on each, and reassemble.  
 The solution is direct, robust to constraints, and showcases basic string/integer handling. This pattern frequently appears in parsing and formatting problems, and is foundational to interview questions involving manual conversion or output transformation.
 
+
+### Flashcard
+Split date string by hyphens, convert each part (year, month, day) to integer, then to binary representation, and rejoin with hyphens.
+
 ### Tags
 Math(#math), String(#string)
 

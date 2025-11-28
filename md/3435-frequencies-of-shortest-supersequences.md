@@ -111,6 +111,10 @@ def frequencies_of_shortest_supersequences(words):
 ### Summary
 This problem is a combinatorial dynamic programming problem involving generating all permutations and merging words pairwise using SCS DP. The main pattern is leveraging memoized dynamic programming over string pairs and permutations. The pattern applies to problems involving all sequence orderings and iterative pairwise merging, like multi-string LCS/SCS, or combinatorial path/frequency generation tasks.
 
+
+### Flashcard
+Generate all n! permutations of words; compute shortest common supersequence (SCS) for each permutation using DP; count frequency of each unique SCS.
+
 ### Tags
 Array(#array), String(#string), Bit Manipulation(#bit-manipulation), Graph(#graph), Topological Sort(#topological-sort), Enumeration(#enumeration)
 

@@ -171,6 +171,10 @@ def premier_league_table_ranking_ii(team_stats):
 ### Summary
 This problem is a classic example of grouping and ranking, akin to "ranking with ties" as in SQL's RANK(). The tiering uses percentage-based cutoffs—common in leaderboard scenarios. The coding pattern used here is: **custom sort - rank assignment - group boundary calculation** (math ceiling), and is useful for leaderboard, grading, or percentile grouping system designs.
 
+
+### Flashcard
+Compute points, rank teams (RANK() style for ties), assign tiers by percentile cutoffs (⌈n×0.33⌉, ⌈n×0.67⌉), sort by rank then name.
+
 ### Tags
 Database(#database)
 

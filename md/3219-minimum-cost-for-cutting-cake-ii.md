@@ -134,6 +134,10 @@ This general pattern appears in **resource-splitting problems** and can also be 
 - Greedy scheduling where expensive tasks should happen earliest  
 Key lesson: when costs multiply with how many times a resource is split, cut the most expensive lines first.
 
+
+### Flashcard
+Use greedy with priority queue; always make the most expensive cut next, since its cost multiplies by current segment count in the other direction.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

@@ -116,6 +116,10 @@ SET sex = IF(sex = 'm', 'f', 'm');
 
 This problem demonstrates the use of SQL's CASE statement within UPDATE operations to conditionally transform data in a single pass. The key pattern is using conditional logic (CASE or IF) to avoid multiple sequential UPDATE statements. This approach is widely applicable whenever you need to perform conditional transformations on table data—such as data normalization, value mapping, or state transitions. The pattern reinforces that SQL can handle complex conditional logic efficiently within a single query execution.
 
+
+### Flashcard
+Use CASE statement within UPDATE to swap 'm' ↔ 'f' in a single statement without temporary tables.
+
 ### Tags
 Database(#database)
 

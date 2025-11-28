@@ -185,6 +185,10 @@ This problem uses the **window function** (PERCENT_RANK/PERCENTILE mechanics) an
 This is very applicable for analytics on leaderboards, sales/achievement rankings, anomaly/outlier detection, and resource prioritization within categories.  
 The approach generalizes well and is favored in data-driven interviews for its efficiency and clarity.
 
+
+### Flashcard
+Use PERCENT_RANK() OVER (PARTITION BY state ORDER BY fraud_score DESC) to find top 5% fraud scores per state.
+
 ### Tags
 Database(#database)
 

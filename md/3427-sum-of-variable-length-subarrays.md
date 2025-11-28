@@ -95,6 +95,10 @@ This problem illustrates the **prefix sum pattern**, converting a brute-force O(
 It's a classic example of using prefix sums for range sum queries, a pattern useful in subarray sum, sliding window, and many range query problems.  
 Commonly applied in array processing, time-series sums, and other aggregate range computations.
 
+
+### Flashcard
+Precompute prefix sums; for each index i, compute start = max(0, i − nums[i]) and use prefix sums to get the subarray sum in O(1).
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

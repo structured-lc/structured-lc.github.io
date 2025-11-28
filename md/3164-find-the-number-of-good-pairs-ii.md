@@ -112,6 +112,10 @@ def countGoodPairs(nums1, nums2, k):
 ### Summary
 This problem is an application of the **Divisor Enumeration** pattern combined with a **hash map frequency lookup**. The optimized approach leverages number properties to move from brute-force O(n×m) to O(n×√max(nums₁[i])), allowing efficient counting of pairs based on divisibility relationships. Such techniques are widely useful in number theory and combinatorics-based problems, especially when direct pairwise iteration is too slow but a mathematical reformulation enables fast divisor checks.
 
+
+### Flashcard
+For each nums₁[i], count divisors of nums₁[i] that are multiples of k; precompute prime factorizations or use efficient divisor enumeration to avoid O(n × m) per query.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

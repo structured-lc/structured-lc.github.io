@@ -118,6 +118,10 @@ This problem is a variation of the **DP on subsequences** pattern, similar to �
 The key is to define **dp[x]** as the sum/ways of good subsequences ending with x, and build relations using only valid, consecutive values.  
 Commonly used in problems involving sequence constraints with tight bounds (e.g. jumping numbers, zig-zag arrays).
 
+
+### Flashcard
+DP where dp[x] = sum of good subsequences ending with value x; for each num, update dp[num±1] by adding num × (1 + dp[num±1]) to count new subsequences.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming)
 

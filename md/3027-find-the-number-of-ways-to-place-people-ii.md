@@ -103,6 +103,10 @@ def numOfWays(points):
 ### Summary
 This problem tests brute-force search over O(n²) pairs and emphasizes boundary conditions in 2D. The coding pattern is **nested iteration with rectangle-inclusion checking**; in more advanced cases, **2D prefix sums** or **spatial partitioning** would be essential. This is common in grid-based search, range queries, and is directly relevant for geometric problems, 2D range queries, and computational geometry.
 
+
+### Flashcard
+Find the Number of Ways to Place People II (Hard)
+
 ### Tags
 Array(#array), Math(#math), Geometry(#geometry), Sorting(#sorting), Enumeration(#enumeration)
 

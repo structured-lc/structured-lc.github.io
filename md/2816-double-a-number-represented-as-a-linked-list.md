@@ -109,6 +109,10 @@ This problem leverages the **in-place linked list multiplication with carry**, a
 The main trick is to process digits from least-to-most significant, which is handled by reversing the list (since it's singly linked).  
 Variations of this approach are often seen in *add two numbers* linked list problems, and are foundational for simulating arithmetic on large numbers stored as lists.
 
+
+### Flashcard
+Reverse linked list, double each digit with carry propagation, handle final carry, reverse result back—avoids integer overflow for large numbers.
+
 ### Tags
 Linked List(#linked-list), Math(#math), Stack(#stack)
 

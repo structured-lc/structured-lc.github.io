@@ -86,6 +86,10 @@ def countArrays(original, bounds):
 ### Summary
 This problem is a sliding interval/narrowing range pattern: by updating the feasible starting value for copy as we move through differences and bounds, we efficiently squeeze the answer into a tight range. This technique is common in problems related to prefix sums, difference constraints, or adjusting running feasibility over a collection (sweep line, DP with intervals, etc).
 
+
+### Flashcard
+Binary search on the value of copy; for each candidate, simulate the array and check if all values stay within bounds throughout.
+
 ### Tags
 Array(#array), Math(#math)
 

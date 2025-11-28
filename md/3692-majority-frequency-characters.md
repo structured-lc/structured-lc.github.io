@@ -95,6 +95,10 @@ def majorityFrequencyChars(s):
 ### Summary
 This problem illustrates the **hash map counting pattern** and **grouping**, common in string and frequency-based problems (like “group anagrams,” “top K frequent elements”). The approach is direct: count, group, evaluate, output. It generalizes to scenarios needing frequency grouping or majority-consensus logic in strings or collections.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

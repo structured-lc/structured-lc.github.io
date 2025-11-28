@@ -106,6 +106,10 @@ def count_almost_equal_pairs(nums):
 ### Summary
 This problem uses the **brute-force double loop with precomputation** pattern, leveraging small input size. The central trick: for each number, enumerate all numbers reachable by one swap, and for each pair, check mutual reachability. This "enumerate digit permutations for small constraints" approach is common when the input size is small and operations relate to digits, as seen in digit-based similarity or adjacency counting problems.
 
+
+### Flashcard
+For each pair (i, j), generate all numbers reachable from nums[i] and nums[j] via at most one digit swap; check if they intersect.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting), Counting(#counting), Enumeration(#enumeration)
 

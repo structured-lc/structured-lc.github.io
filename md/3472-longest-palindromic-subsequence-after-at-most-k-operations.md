@@ -98,6 +98,10 @@ def longestPalindromeSubseq(s: str, k: int) -> int:
 ### Summary
 This problem is a variant of dynamic programming on strings, extending the classic Longest Palindromic Subsequence pattern by adding at-most-k change operations (with limited change capability: next/prev letter, wrap-around). The approach uses a standard memoized top-down DP strategy with an extra dimension for remaining operations—a commonly used technique when dealing with operations constraints in optimal substructure problems. Variants of this technique occur frequently in problems with “at most k edits/changes/swaps” and string transformations.
 
+
+### Flashcard
+DP: dp[i][j][ops] = longest palindromic subsequence in s[i..j] using at most ops character changes; match or change s[i] and s[j].
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

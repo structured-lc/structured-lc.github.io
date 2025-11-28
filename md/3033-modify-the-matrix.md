@@ -142,6 +142,10 @@ This problem uses a **two-pass, column-wise processing pattern**—first to gath
 This is a common pattern in grid/matrix problems (precompute, then transform).  
 You can apply this whenever updates rely on column-wise or row-wise aggregates, e.g., max/min/sum per row/col in matrix manipulation, spreadsheet, and table-based interview settings.
 
+
+### Flashcard
+Precompute column maximums in O(m×n), then replace each −1 with its column max in second pass.
+
 ### Tags
 Array(#array), Matrix(#matrix)
 

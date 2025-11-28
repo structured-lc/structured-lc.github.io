@@ -171,6 +171,10 @@ This problem is a classic example of dynamic range queries with updates, applyin
 It's a specialized version of the "range query with value condition" concept; the bucketed variant is applicable to other counting features or any "groupby" property that can be quickly recomputed, such as modulus, digit sums, or bit lengths.  
 Key coding patterns: Segment Trees, value bucketing, and recomputation on update.
 
+
+### Flashcard
+For type 1 queries, scan range [L, R] and count numbers with popcount-depth = k; for type 2 updates, modify the array; optimize with segment trees or other range query structures if needed.
+
 ### Tags
 Array(#array), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
 

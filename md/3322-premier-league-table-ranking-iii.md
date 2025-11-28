@@ -167,6 +167,10 @@ This problem uses **sorting, grouping, and ranking patterns** commonly needed in
 The explicit breaking of ties by secondary and tertiary fields (goal difference, alphabetical order) is a typical multi-key sort, and assigning ranks using these criteria is a classic DENSE_RANK or RANK windowing problem.  
 Such an algorithm can be adapted for any leaderboard with tie-breaking.
 
+
+### Flashcard
+Calculate points (wins×3 + draws×1) and goal_difference for each team; sort by season, then points desc, goal_difference desc, team_name asc; assign ranks per season.
+
 ### Tags
 Database(#database)
 

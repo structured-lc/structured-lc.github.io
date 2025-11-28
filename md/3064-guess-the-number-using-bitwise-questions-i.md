@@ -69,6 +69,10 @@ def guessNumber():
 ### Summary
 We used a classic bit manipulation and mask-building approach to reconstruct the hidden integer by querying the iᵗʰ bit individually via API calls. This pattern—reconstructing a binary value through bitwise probing—is common in interactive/guessing problems and can appear in reverse engineering, security, or "twenty questions"-style algorithms. The strategy is efficient and optimal given the constraints.
 
+
+### Flashcard
+Query API with powers of 2 (1, 2, 4, ..., 2²⁹); if commonSetBits(1 << i) = 1, set iᵗʰ bit in result.
+
 ### Tags
 Bit Manipulation(#bit-manipulation), Interactive(#interactive)
 

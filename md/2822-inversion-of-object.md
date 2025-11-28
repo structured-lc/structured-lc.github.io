@@ -92,6 +92,10 @@ This problem uses a direct *reverse mapping* (group-by-value) technique, commonl
 It's a simple O(n) hash map pattern, and variants appear in group-by scenarios, frequency counting, and table pivoting.  
 Key points involve how to handle duplicates and non-string keys and the importance of only first-level processing.
 
+
+### Flashcard
+Iterate input keys; for each key-value pair, add value→key mapping; if value already exists, convert to array or append key.
+
 ### Tags
 
 ### Similar Problems

@@ -179,6 +179,10 @@ This problem is a classic example of **set comparison and mapping** using hashma
 It appears in problems like course scheduling, permission checks, or any "all requirements must be satisfied" logic.  
 The essential coding skills: building and querying dictionaries, set operations, and understanding multi-table (or multi-list) joins — useful for both interview and production code.
 
+
+### Flashcard
+Use hash sets to store required courses per major and A-grade courses per student; a student qualifies if both sets match exactly.
+
 ### Tags
 Database(#database)
 

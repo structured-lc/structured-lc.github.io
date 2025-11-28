@@ -116,6 +116,10 @@ def earliest_finish_time(land, water):
 ### Summary
 This problem is a classic **scheduling & simulation** pattern where you have to pick the earliest possible completion time considering constraints on start times and sequential dependencies. The solution involves **trying all pairs** and both orders, using simple math (max for start, + for finish). This can generalize to scheduling tasks with dependencies, such as meeting rooms, job sequencing, or bus/train transit problems.
 
+
+### Flashcard
+Try all (land, water) pairs in both orders (land→water and water→land). For each, compute finish time as max(start time of second ride, end time of first ride) + duration of second ride.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
 

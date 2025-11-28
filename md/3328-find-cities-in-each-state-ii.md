@@ -172,6 +172,10 @@ print(findCitiesInEachStateII(cities))
 ### Summary
 This problem uses the **group-by pattern**, filtering based on group aggregates, and custom sorting. This approach is broadly applicable in data analytics and reporting, and common in SQL (“GROUP BY, HAVING, aggregate function, ORDER BY”). Being able to handle group-wise filtering, aggregation, and sorting is a critical coding/data manipulation skill.
 
+
+### Flashcard
+Use GROUP_CONCAT with ORDER BY to combine cities, filter states with ≥3 cities and ≥1 city matching state's first letter, sort by matching count DESC then state ASC.
+
 ### Tags
 Database(#database)
 

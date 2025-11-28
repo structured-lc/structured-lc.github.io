@@ -122,6 +122,10 @@ def concatenated_divisibility(nums, k):
 This problem uses **bitmask dynamic programming with memoization** and combinatorial state traversal. The main pattern is **subset DP**, often applied when permutations or arrangements need to be checked for optimality or property (like Hamiltonian path, the Traveling Salesman Problem).  
 This DP + bitmasking template is common for small n and is directly reusable for other problems needing sequence construction and minimal lexicographical results under constraints.
 
+
+### Flashcard
+Use DP with bitmask to track which numbers are used; for each state, try appending the next unused number and update mod using new_mod = (prev_mod × 10^len(next_num) + next_num) % k.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

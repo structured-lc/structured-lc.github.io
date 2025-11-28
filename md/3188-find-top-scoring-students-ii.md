@@ -161,6 +161,10 @@ This is a classic example of set membership, grouping, and filtering—commonly 
 Key coding pattern: **group-by (dict), set operations, map/filter on constraints**.  
 Paradigm applies to similar problems in course audit, employee eligibility checks, or any database-style entity filtering with multiple compound rules.
 
+
+### Flashcard
+For each student, verify all mandatory courses have grade A, count electives with grade ≥ B (need ≥ 2), and check average GPA ≥ 2.5.
+
 ### Tags
 Database(#database)
 

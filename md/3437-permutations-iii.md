@@ -89,6 +89,10 @@ This problem uses a classic **backtracking/DFS pattern** with state pruning for 
 It's an example of permutations with custom validation, and the same pattern can apply to problems like "robot movement with forbidden steps," "word ladders with adjacency rules," and ordering elements under relation-based restrictions.  
 It's essential to prune the search space to avoid exponential blowup when constraints can be checked incrementally.
 
+
+### Flashcard
+Use backtracking to build alternating parity permutations; at each step, only add unused numbers with opposite parity to the last element.
+
 ### Tags
 Array(#array), Backtracking(#backtracking)
 

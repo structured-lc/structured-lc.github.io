@@ -135,6 +135,10 @@ This problem uses the **Graph/BFS Shortest Path** pattern with "teleportation" e
 It combines classic BFS for reachability with additional dynamic neighbor computation.  
 This approach generalizes to problems where some nodes enable non-local "special" jumps (used in many reachability/shortest path questions involving value-based transitions).
 
+
+### Flashcard
+Model as graph where nodes are indices and edges represent moves (±1 steps or prime teleportation). Use BFS to find shortest path; precompute prime factors for fast teleportation lookups.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Breadth-First Search(#breadth-first-search), Number Theory(#number-theory)
 

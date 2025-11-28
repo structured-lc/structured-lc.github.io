@@ -83,6 +83,10 @@ def subarray_and_k(nums, k):
 This problem leverages *dynamic programming over subarrays* and bit manipulation. The central idea is to maintain a hash table of all possible AND results for subarrays ending at each position, exploiting that repeated ANDs rapidly compress the set of tracked values.  
 It's a useful pattern for sliding subarrays with associative, monotonic operations (like AND/OR), and can be generalized for similar bitmasking problems.
 
+
+### Flashcard
+For each ending position, maintain a map of all possible AND values; AND is monotonic, so map size stays small (≤ 32 for integers).
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Bit Manipulation(#bit-manipulation), Segment Tree(#segment-tree)
 

@@ -107,6 +107,10 @@ def thresholdMajority(nums, queries):
 ### Summary
 This problem demonstrates **range query frequency analysis**, with optimizations possible using **preprocessing (index mapping)** or **MO’s algorithm** (Sqrt decomposition). The pattern of efficiently querying frequency/range is widely applicable in subarray voting, majority, or distinct element queries in large immutable arrays. Similar approaches can be used for other problems involving window statistics, majority, or mode queries.
 
+
+### Flashcard
+Precompute positions of each unique number. For each query [l, r], iterate through unique numbers and binary search their positions to count occurrences in range; return smallest with ≥ threshold.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer), Counting(#counting), Prefix Sum(#prefix-sum)
 

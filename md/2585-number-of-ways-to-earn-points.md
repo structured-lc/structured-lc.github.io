@@ -101,6 +101,10 @@ This is a classic **DP - bounded knapsack, ways counting** problem.
 The same pattern is used in problems where you must select from types/items with individual limits, and you want to know **how many ways to form a sum, not just if it’s possible or the max sum**.  
 Patterns like this apply widely, e.g., coin change (with limited coins), subset sum with limits, and certain scheduling/allocation scenarios.
 
+
+### Flashcard
+Bounded knapsack DP: dp[j] = ways to earn exactly j points; for each question type, iterate through counts and update DP table.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

@@ -111,6 +111,10 @@ It can be efficiently solved in O(n) by noting that you either pick elements all
 The greedy two-pointer/scan approach is robust and common in problems involving monotonic/alternate patterns in arrays, frequently appearing in problems on subsequence selection, longest alternating subsequence, or grouping by congruence classes.  
 The underlying technique generalizes to other similar array and sequence problems where adjacency relations can be described by simple group properties.
 
+
+### Flashcard
+All numbers with the same parity (all even or all odd) form a valid subsequence; also try alternating odd-even patterns; return the longest valid subsequence found.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

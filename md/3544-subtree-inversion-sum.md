@@ -160,6 +160,10 @@ This problem uses a classic tree DP approach with state remembering along the an
 This DP-on-trees pattern with additional constraints frequently appears in subtree selection, coloring, early stopping, and ancestor-based policy DP problems.  
 It’s a great example of how dynamic programming with pruning can be used in tree-structured optimization where ancestor/descendant constraints apply.
 
+
+### Flashcard
+Use DP on tree with state dp[node][inverted] = maximum sum if node is/isn't inverted; respect ancestor-distance-k constraint by tracking inversion depth in recursion.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search)
 

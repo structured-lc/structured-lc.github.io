@@ -86,6 +86,10 @@ def compressedString(word: str) -> str:
 ### Summary
 This problem is a variant of run-length encoding, with the twist of chunking runs longer than 9 into segments of ≤9. The approach uses a two-pointer or greedy technique, which is common in string compression and sequence processing. This pattern applies in problems like original run-length encoding, chunked partitioning, and simple stream compression algorithms.
 
+
+### Flashcard
+Single pass through the string: track current character and count; when count reaches 9 or character changes, output the chunk; split groups > 9 into multiple chunks of max 9.
+
 ### Tags
 String(#string)
 

@@ -136,6 +136,10 @@ def sequential_grid_path_cover(grid, k):
 ### Summary
 This problem uses the backtracking search pattern for finding **Hamiltonian paths with ordering constraints** in a grid. It's classic in that bitmask/state compression is used for feasibility due to small input size. The search approach and pruning strategy are common in **combinatorial search / constraint propagation** problems, and variants appear in puzzles, robot movement problems, and tour/pathfinding scenarios with hard state requirements.
 
+
+### Flashcard
+Use bitmask DP where the state is (current_cell, visited_bitmask); ensure that when visiting a cell labeled x, all cells labeled < x have been visited; find if a Hamiltonian path exists.
+
 ### Tags
 Array(#array), Recursion(#recursion), Matrix(#matrix)
 

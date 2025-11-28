@@ -95,6 +95,10 @@ This problem is a direct application of the **frequency counter** (hash map/dict
 It's a variant of finding mode(s) in an array.  
 This pattern appears in problems with "top K frequent," "find the mode," "group by element," etc.
 
+
+### Flashcard
+Count Elements With Maximum Frequency (Easy)
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

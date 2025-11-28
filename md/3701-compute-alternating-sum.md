@@ -75,6 +75,10 @@ The coding pattern is "accumulate with changing sign based on index parity" and 
 Understanding how to manage alternating operations (by index or other criteria) is useful in sum, difference, or mixing-type interview challenges.  
 Common pattern: running sum with state; easily extended for more complex alternating situations.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

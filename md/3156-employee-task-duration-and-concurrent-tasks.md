@@ -168,6 +168,10 @@ def employee_task_summary(tasks):
 ### Summary
 This problem combines **merging intervals** (to find union duration) and the **line sweep/event counting technique** (to compute max concurrent intervals). These are classic patterns for interval-related problems, useful in scheduling, calendar overlaps, and resource utilization. The efficient use of sorting and event-based counters makes the solution scalable.
 
+
+### Flashcard
+For each employee, sort intervals and merge overlaps to get union duration; use sweep-line (events at start/end times) to find max concurrent tasks.
+
 ### Tags
 Database(#database)
 

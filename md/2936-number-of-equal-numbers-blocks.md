@@ -111,6 +111,10 @@ This problem uses the **binary search for next change** pattern, a twist on the 
 The efficiency comes from the maximal blocks already being formed, making a logarithmic jump to the next block possible, which is ideal for BigArray or external memory scenarios.  
 Such grouping and block-counting patterns are common in **run-length encoding**, **data compression**, and detecting value changes in sorted/grouped sequences.
 
+
+### Flashcard
+Blocks are maximal groups of adjacent equal elements. Minimize element access by tracking when values change; use binary search on the BigArray interface to find block boundaries efficiently.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Interactive(#interactive)
 

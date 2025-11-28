@@ -115,6 +115,10 @@ This is a **dynamic programming over permutations** with inversion-count, filter
 This pattern appears in combinatorial enumeration, restricted sorting, and advanced counting queries about permutations.  
 The DP with state (length, inversions) and transitions by “where to put the new number” is a key pattern in these problems.
 
+
+### Flashcard
+Use DP where state is (prefix length, inversion count so far); for each position, try inserting each unused number and update the inversion count accordingly.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

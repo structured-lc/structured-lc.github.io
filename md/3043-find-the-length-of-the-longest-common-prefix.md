@@ -97,6 +97,10 @@ def longest_common_prefix_length(arr1, arr2):
 ### Summary
 This problem demonstrates efficient **prefix enumeration and set/mapping techniques**, a common pattern for substring/prefix problems. The approach here mirrors substring hash-set matching (used in problems like Longest Common Substring) and is also related to trie-based pattern matching in text or numeric contexts. It’s broadly useful in string manipulation, file system prefix matching, and autocomplete scenarios.
 
+
+### Flashcard
+Store all prefixes of numbers in arr1 in a hash set; for each number in arr2, check its prefixes against set.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Trie(#trie)
 

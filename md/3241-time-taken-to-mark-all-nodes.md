@@ -177,6 +177,10 @@ def timeTakenToMarkAllNodes(n, edges):
 This problem uses the **rerooting DP** tree dynamic programming pattern. The key insight is to compute the slowest mark propagation for each possible root efficiently, using bottom-up (downward DP) and then rerooting via upward DP.  
 The rerooting DP is a well-known approach for problems asking about "all possible tree roots" with substructure dependency, and also appears in centroid calculation, subtree sum, or influence problems in trees.
 
+
+### Flashcard
+Use tree DP with rerooting—first DFS computes mark time for each subtree, second DFS recomputes when considering parent direction.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search), Graph(#graph)
 

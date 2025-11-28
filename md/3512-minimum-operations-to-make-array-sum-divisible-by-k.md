@@ -68,6 +68,10 @@ def minOperations(nums, k):
 ### Summary
 The approach uses a **simple math and greedy counting pattern**. Since every decrement simply moves the sum toward a multiple of k, we compute sum(nums) % k to determine the minimum needed. This pattern (reduce a sum by repeated identical operations to reach divisibility) is common in array-manipulation and greedy math problems, e.g., in coin change, modular arithmetic, or batch processing tasks.
 
+
+### Flashcard
+Only the remainder r = sum(nums) % k matters; answer is r if r > 0, else 0 (no need to track which elements change).
+
 ### Tags
 Array(#array), Math(#math)
 

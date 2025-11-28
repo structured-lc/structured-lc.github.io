@@ -141,6 +141,10 @@ Sorting the results gives ordered output by domain name.
 Such string parsing and counting is common in log analysis, user grouping, or basic report generation tasks.  
 This pattern also aligns well with SQL GROUP BY queries or MapReduce problems in distributed systems.
 
+
+### Flashcard
+Iterate emails, extract domain after '@', filter ".com" domains, count occurrences in hashmap, sort lexicographically.
+
 ### Tags
 Database(#database)
 

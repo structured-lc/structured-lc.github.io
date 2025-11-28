@@ -83,6 +83,10 @@ def minOperations(nums):
 ### Summary
 This is a classic greedy, window sliding, or simulation problem. The key is always "handle the leftmost zero as soon as possible." This ensures global minimal operations, relying on the property that flipping three consecutive values can fix zeros in a propagating fashion. The technique is broadly useful in bit-manipulation, simulation, and "minimum moves to uniform array" type questions.
 
+
+### Flashcard
+Greedy left-to-right: whenever a 0 is found at index i (where i ≤ n−3), flip the window [i, i+3); if any 0 remains in the last two positions, return −1.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Queue(#queue), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

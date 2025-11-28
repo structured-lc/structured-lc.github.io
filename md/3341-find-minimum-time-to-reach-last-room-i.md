@@ -106,6 +106,10 @@ def findMinimumTime(moveTime):
 ### Summary
 This problem is a classic **shortest path on a weighted grid**, but instead of variable weights, the "waiting time" on each cell forms the cost. **Dijkstra's algorithm** is the optimal fit due to variable wait times ("move costs"). This pattern is highly applicable to grid traversal with delay or unlock constraints, and is a common variant in scheduling, networking, or game pathfinding problems.
 
+
+### Flashcard
+Use Dijkstra's algorithm with state (time, row, col); for each move, cost is max(current_time + 1, moveTime[next_cell]) to account for waiting.
+
 ### Tags
 Array(#array), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Shortest Path(#shortest-path)
 

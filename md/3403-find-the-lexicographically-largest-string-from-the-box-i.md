@@ -98,6 +98,10 @@ def lex_largest_string(word: str, numFriends: int) -> str:
 This problem utilizes **substring enumeration and comparison**, a common string pattern in coding interviews. The key is realizing the maximal substring length possible from the split rules, and then checking all eligible substrings to find the lexicographic maximum.  
 This **pattern** is broadly applicable in problems that need **optimal substring selection under constraints**, such as sliding windows, maximal/minimal substring problems, and sometimes in suffix-array or trie-based optimizations.
 
+
+### Flashcard
+Check all substrings of maximum length n − (numFriends − 1) starting from each position; return the lexicographically largest.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Enumeration(#enumeration)
 

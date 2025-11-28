@@ -91,6 +91,10 @@ This problem follows a **brute-force adjacency check** pattern, common with 2D g
 Working through each cell and comparing to specific neighbors (right, below) comes up often in matrix-based interviews—e.g., island counting, Game of Life, etc.  
 Edge handling (boundaries) and stopping early on first violation are important coding patterns here.
 
+
+### Flashcard
+Loop through grid checking: grid[i][j] == grid[i+1][j] for cells below, and grid[i][j] ≠ grid[i][j+1] for cells to the right.
+
 ### Tags
 Array(#array), Matrix(#matrix)
 

@@ -123,6 +123,10 @@ def minOperations(word1: str, word2: str) -> int:
 ### Summary
 This problem connects to **DP on partitions**, string transformation, and **interval DP patterns**. The crucial insight is using the substring operation's power to freely permute, swap, and reverse, making frequency counts the main subproblem. This pattern appears in many hard DP problems where you're allowed to batch edit substrings or segments—such as edit distance with batch ops, or palindrome partitioning.
 
+
+### Flashcard
+Use DP to partition word1 into chunks; for each chunk, compute the minimum cost to transform it into the corresponding target chunk via allowed operations (swap/reverse allow full rearrangement).
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

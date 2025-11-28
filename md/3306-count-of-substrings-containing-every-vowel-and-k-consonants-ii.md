@@ -103,6 +103,10 @@ This problem is a classic use of **window technique** and character counting—e
 It's closely related to problems like "minimum window containing all characters" and "fixed/sum substrings", which are very popular interview patterns.  
 The brute-force is easy to implement but slow; sliding windows bring performance and show your ability to optimize when overlapping subproblems allow.
 
+
+### Flashcard
+Maintain sliding window with vowel/consonant tracking; for each left position, find the range of right positions where all vowels appear and consonant count = k using two pointers.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

@@ -113,6 +113,10 @@ def countDistinctIntegers(n: int) -> int:
 ### Summary
 This problem uses **digit dynamic programming** to efficiently count numbers without zeros up to n. The key insight is recognizing that any number without zeros is inherently distinct after zero removal, so we only count such numbers. By processing digits from left to right while maintaining the tight constraint (whether we're still bounded by n), we avoid generating all numbers and instead compute the count mathematically. This pattern applies to many "count numbers in range with property X" problems like counting lucky numbers, numbers with specific digit properties, etc. Digit DP is essential for constraints up to 10¹⁵ where brute force becomes infeasible.
 
+
+### Flashcard
+Use digit DP to count numbers ≤ n with no zeros; any such number is unique after zero removal.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming)
 

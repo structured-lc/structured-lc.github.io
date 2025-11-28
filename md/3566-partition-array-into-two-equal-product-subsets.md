@@ -92,6 +92,10 @@ def canPartition(nums, target):
 ### Summary
 This problem is a subset generation/bitmask enumeration problem leveraging constraints (n ≤ 12, distinct, positive) for tractability. The brute-force approach is effective due to small n. The core logic—generating all subsets and matching a property via their complement—applies commonly to partition/splitting subset problems, and is adaptable for similar equal-sum/product set partition challenges.
 
+
+### Flashcard
+Use bitmask enumeration to try all possible subsets; for each subset, compute its product and the complement's product; count subsets where both products equal the target.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Recursion(#recursion), Enumeration(#enumeration)
 

@@ -70,6 +70,10 @@ def hexadecimal_and_hexatrigesimal_conversion(n):
 ### Summary
 Classical numeric base conversion. Base-16 and base-36 are common; this can generalize to other small integer bases. Useful for ID encoding, compact fingerprints, etc.
 
+
+### Flashcard
+Use built-in hex() for base-16; for base-36, use repeated division loop mapping digits 0−9 and a−z.
+
 ### Tags
 Math(#math), String(#string)
 

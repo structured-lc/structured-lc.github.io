@@ -99,6 +99,10 @@ def zigzagGridTraversal(grid):
 ### Summary
 This problem uses a **zigzag traversal** pattern with alternating visit/skip implemented through a boolean toggle. The core coding pattern is simulating traversal direction changes with row reversal and selective cell inclusion. Similar patterns appear in matrix traversal problems where direction toggles, or skipping logic is involved.
 
+
+### Flashcard
+Traverse row-by-row with alternating direction (left-to-right on even rows, right-to-left on odd); toggle a skip flag per cell to select every other element.
+
 ### Tags
 Array(#array), Matrix(#matrix), Simulation(#simulation)
 

@@ -88,6 +88,10 @@ This problem uses the **generator pattern**, efficiently producing each factoria
 The iterative/single-state update is a classic memory-efficient approach, commonly used wherever prior computations inform the next (e.g., Fibonacci sequence, prefix products).  
 Generator-based solutions are often applied to big data or on-demand computation scenarios for space efficiency.
 
+
+### Flashcard
+Use Python generator with `yield` and maintain running product—multiply by i for each factorial instead of recalculating from scratch.
+
 ### Tags
 
 ### Similar Problems

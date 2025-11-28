@@ -129,6 +129,10 @@ This problem is a **prefix-suffix counting and greedy string problem**. The key 
 This pattern is widely applicable in subsequence counting, optimal string insertions, and dynamic programming over character streams.  
 It exemplifies how optimizing brute force by analyzing constraints and leveraging counts/prefix sums leads to a scalable and efficient solution.
 
+
+### Flashcard
+Count "LCT" subsequences in original string, then try inserting 'L', 'C', or 'T' at optimal positions—inserting 'L' adds "CT" counts, 'C' adds l×r (prefix L's × suffix T's), 'T' adds "LC" counts.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Prefix Sum(#prefix-sum)
 

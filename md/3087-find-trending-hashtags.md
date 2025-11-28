@@ -160,6 +160,10 @@ It’s common in social media/analytics problems — such as word frequency, tre
 Key parts are filtering by date, extracting target features from data (here the hashtag), and sorting for “top-K.”  
 This same pattern appears in many string and frequency analysis interview questions.
 
+
+### Flashcard
+Filter tweets from February 2024, extract hashtags, count frequencies using a hashmap, use a min-heap to track top 3 by count (descending) then lexicographically.
+
 ### Tags
 Database(#database)
 

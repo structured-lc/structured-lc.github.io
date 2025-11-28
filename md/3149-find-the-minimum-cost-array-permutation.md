@@ -123,6 +123,10 @@ def find_permutation(nums):
 ### Summary
 This problem uses the **bitmask DP (Held-Karp)** pattern, like Traveling Salesman Problem variations, to efficiently explore all permutations for minimal cost circuit cycles using smart state compression. The key challenge is lexicographical tie-breaking, which requires tracking not just costs but actual paths in DP. This dynamic programming and state representation approach appears in many shortest Hamiltonian path/circuit or sequence permutation problems.
 
+
+### Flashcard
+Recognize as TSP variant; use DP with bitmask: dp[mask][last] = min cost visiting nodes in mask, ending at last; transition by trying all unvisited next nodes.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Bitmask(#bitmask)
 

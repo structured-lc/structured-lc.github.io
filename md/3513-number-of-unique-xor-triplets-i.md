@@ -94,6 +94,10 @@ This problem uses the **enumeration/all-combinations pattern** with a uniqueness
 This pattern appears in problems asking for counts or collections of unique results formed by one or more operations over all possible input tuples, such as pairwise or triple product, sum or XOR.  
 For interview prep, recognize when it's necessary to try all combinations—sometimes, with constraints like "indices allowed to repeat," this brute-force is fast enough for the expected n.
 
+
+### Flashcard
+Precompute all pairwise XORs, then for each element XOR it with each pairwise result and store unique values in a set.
+
 ### Tags
 Array(#array), Math(#math), Bit Manipulation(#bit-manipulation)
 

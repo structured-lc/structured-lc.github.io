@@ -96,6 +96,10 @@ This problem is an instance of *counting unique elements* under a specific opera
 The optimal greedy solution is to process all unique non-'a' characters, with each operation transforming all of one letter closer to the target 'a', utilizing a set to deduplicate work.  
 This pattern—minimizing steps via "grouping by unique value"—shows up in other batch-transformation, set-based interval, or bucket-type problems as well.
 
+
+### Flashcard
+Simulate incrementing letters cyclically until all become 'a'; track which letters have been processed; count total operations needed.
+
 ### Tags
 String(#string), Greedy(#greedy)
 

@@ -89,6 +89,10 @@ def maximumProduct(n: int) -> int:
 ### Summary
 This problem is an example of the "tracking max values while iterating" pattern, commonly used for questions about top-k or maximum values. Here, direct scanning for the two largest values eliminates the need for brute-force examination of all pairs, and the constraints allow for a straightforward O(k) solution. This approach applies to any similar "maximum pair product" from a set or sequence.
 
+
+### Flashcard
+Find the two largest digits in n and return their product; O(log n) time since n has at most 10 digits.
+
 ### Tags
 Math(#math), Sorting(#sorting)
 

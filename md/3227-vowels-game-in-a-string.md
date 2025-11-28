@@ -76,6 +76,10 @@ def doesAliceWin(s: str) -> bool:
 ### Summary
 This problem is a classic "parity check" disguised as a game theory question: the game reduces to **presence detection** for vowels. If there is at least one vowel, the first player (Alice) always wins. The coding pattern is *"presence scan,"* used in problems like "Does string s contain X element?" This is a very common interview trick—look for simple observations before implementing complex logic.
 
+
+### Flashcard
+If string has no vowels, Alice loses immediately; if ≥ 1 vowel exists, Alice always wins by removing one vowel per turn.
+
 ### Tags
 Math(#math), String(#string), Brainteaser(#brainteaser), Game Theory(#game-theory)
 

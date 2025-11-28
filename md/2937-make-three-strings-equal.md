@@ -73,6 +73,10 @@ def findMinimumOperations(s1: str, s2: str, s3: str) -> int:
 ### Summary
 This problem is a classic case of reducing multiple strings to their *longest common prefix* using right-end trimming. The optimal solution uses a single linear scan and is both time and space efficient. The same approach and reasoning pattern are common in problems involving operations restricted to ends of collections or arrays (e.g., string trimming, prefix logic), and can often be generalized to multiple strings or different allowed operations.
 
+
+### Flashcard
+Find the longest common prefix of all three strings. The answer is the sum of characters not in the prefix for each string; if prefix is empty, return -1.
+
 ### Tags
 String(#string)
 

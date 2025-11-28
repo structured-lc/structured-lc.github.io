@@ -134,6 +134,10 @@ This problem uses **binary search on the answer** combined with **mathematical c
 
 This pattern appears frequently in optimization problems where we need to find a minimum value satisfying certain constraints. Similar patterns are used in problems like "Minimum Time to Complete Trips" and "Capacity to Ship Packages Within D Days," where binary search helps find optimal thresholds.
 
+
+### Flashcard
+Use binary search on time T; for each T, greedily check if both drones can complete their deliveries by calculating maximum deliveries each can handle.
+
 ### Tags
 Math(#math), Binary Search(#binary-search)
 

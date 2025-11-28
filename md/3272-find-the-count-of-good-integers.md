@@ -151,6 +151,10 @@ This problem combines the palindrome property with permutation counting and divi
 The solution uses enumeration of palindromes, maps permutations to digit multisets, and counts valid arrangements using combinatorics/factorials, avoiding leading zeros.  
 This pattern is related to problems on **permutation/combination of multiset digits**, efficient palindrome construction, and **divisibility constraints**—applicable in advanced digit dynamic programming and number theory questions.
 
+
+### Flashcard
+Generate all n-digit palindromes (build first ⌊n/2⌋ digits, mirror for even n or add middle digit for odd n), then count those divisible by k.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), Combinatorics(#combinatorics), Enumeration(#enumeration)
 

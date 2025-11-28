@@ -102,6 +102,10 @@ This problem uses the **greedy + sorting pattern** to minimize total adjustments
 It leverages the **Rearrangement Inequality**, which ensures pairing smallest to smallest (and so on) gives minimum sum of absolute differences.  
 This approach and code pattern commonly applies to array matching, goal-seeking via pairwise cost minimization, and canonical cases like assignment or resource allocation problems.
 
+
+### Flashcard
+Compute the cost of direct assignment ∑|arr[i] − brr[i]|; optionally, sort both arrays and compute the cost of sorted matching to find the minimum.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

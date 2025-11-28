@@ -152,6 +152,10 @@ def pizza_topping_combinations(toppings: List[List]):
 ### Summary
 The problem uses the **combinatorial pattern**: generate all size-3 combinations from a list, process and sort results by custom rules. Alphabetical order and proper sorting logic prevent duplicates and ensure canonical output. This combinatorics approach is common in problems involving unique groupings, selection tasks, and listing k-element subsets from a pool (like subset, k-sum, team-chooser, etc.).
 
+
+### Flashcard
+Generate all C(n, 3) topping combinations; compute cost for each, sort by cost (descending) then name (ascending).
+
 ### Tags
 Database(#database)
 

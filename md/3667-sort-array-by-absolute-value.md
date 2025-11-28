@@ -125,6 +125,10 @@ This problem is a classic **custom sort** pattern, focusing on sorting first by 
 Implementing a comparison-based sort (like merge sort) with a custom comparator is a common technique, and this pattern often appears when sorting needs to respect multiple attributes (lexical, dates, priorities, etc.).  
 Understanding how to write and apply custom comparators is useful and portable to many interview and job scenarios.
 
+
+### Flashcard
+Sort by absolute value as primary key, then by sign (negative before positive) as tiebreaker; use built-in sort with custom comparator.
+
 ### Tags
 Array(#array), Math(#math), Two Pointers(#two-pointers), Sorting(#sorting)
 

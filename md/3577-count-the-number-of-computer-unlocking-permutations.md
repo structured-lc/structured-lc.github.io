@@ -82,6 +82,10 @@ def countPermutations(complexity):
 ### Summary
 This problem reduces to a verification of a global dependency: every other computer must have strictly higher complexity than the initially unlocked one (index 0), or it will be stuck. If so, the number of ways to unlock is simply the number of permutations of the remaining computers, i.e., (n-1)!. This is a typical constraint-checking followed by a combinatorics (permutation) calculation, a common pattern useful for many dependency-ordering and permutation-counting interview problems.
 
+
+### Flashcard
+Computer 0 must be first; use DP or recursion to count valid permutations where each computer i (i > 0) is unlocked only after at least one computer j with lower complexity has been unlocked.
+
 ### Tags
 Array(#array), Math(#math), Brainteaser(#brainteaser), Combinatorics(#combinatorics)
 

@@ -93,6 +93,10 @@ The pattern here is a **greedy, sorted-array pick**: By arranging the array, we 
 This mirrors other problems where we need to maximize sums of specific statistics over disjoint subgroups (see: partitioning arrays, greedy pairing).  
 Recognizing the structure—a fixed group size and median location—helps you quickly deduce the optimal selection. This approach is robust in many array partitioning problems.
 
+
+### Flashcard
+Sort the array; greedily form triplets using the largest available numbers to maximize each median (the second-largest in each triplet); sum all medians.
+
 ### Tags
 Array(#array), Math(#math), Greedy(#greedy), Sorting(#sorting), Game Theory(#game-theory)
 

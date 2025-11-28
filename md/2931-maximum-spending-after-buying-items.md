@@ -104,6 +104,10 @@ def maximumSpending(values):
 ### Summary
 The approach here is a classic greedy strategy: buy the cheapest products first to "waste" the smallest day multipliers, and reserve the priciest products for the days with the highest multipliers. This maximizes the sum total (contrary to minimizing cost in ordinary shopping optimizations). This pattern (assigning biggest weights to the biggest values) appears in similar optimal assignment or scheduling problems.
 
+
+### Flashcard
+Sort all m×n prices in ascending order, buy smallest first (day 1) and largest last (day m×n) to maximize sum of value × day. Greedy maximizes the product.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix)
 

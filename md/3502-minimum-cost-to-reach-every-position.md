@@ -70,6 +70,10 @@ def minCosts(cost):
 This is a classic **prefix minimum** pattern—maintain a running minimum as you process an array left to right.  
 It’s common in problems where, for each position, you want the minimum/maximum up to that point. The technique is widely used in range queries, monotonic stack/queue optimizations, and dynamic programming, whenever a cumulative monotonic property is leveraged for efficiency.
 
+
+### Flashcard
+For each position i, the minimum cost is the minimum of cost[i] and the minimum cost to reach any j < i (since you can swap j and i for free).
+
 ### Tags
 Array(#array)
 

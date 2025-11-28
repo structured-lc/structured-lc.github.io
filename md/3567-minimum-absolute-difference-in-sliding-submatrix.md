@@ -94,6 +94,10 @@ def min_abs_diff_in_sliding_submatrix(grid, k):
 ### Summary
 This solution uses the **2D sliding window** and **sorting** with single pass for adjacent differences, a common technique for submatrix query problems where a direct rolling update is hard and k is not too big. The approach is similar for any minimum difference/sliding window problem for small k, but for larger windows or dynamic queries, more advanced data structures may be needed. This pattern is widely seen in grid sliding window and minimum/maximum submatrix queries.
 
+
+### Flashcard
+For each k×k submatrix, collect and sort its elements; scan the sorted list to find the minimum difference between consecutive distinct values.
+
 ### Tags
 Array(#array), Sorting(#sorting), Matrix(#matrix)
 

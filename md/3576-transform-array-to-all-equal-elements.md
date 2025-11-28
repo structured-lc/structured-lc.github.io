@@ -100,6 +100,10 @@ The key coding pattern is **Greedy array transformation**, where each operation 
 
 The pattern applies to bit flipping, sign flipping, bulbs, and similar types of sequence-adjustment questions.
 
+
+### Flashcard
+Use a greedy approach: scan left to right and flip at index i whenever nums[i] ≠ target; each flip affects nums[i] and nums[i+1], so propagate changes; count total flips needed.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

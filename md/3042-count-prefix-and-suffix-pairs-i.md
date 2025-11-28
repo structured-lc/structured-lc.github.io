@@ -98,6 +98,10 @@ def countPrefixSuffixPairs(words):
 ### Summary
 The solution uses a **brute-force nested loop** to check all valid (i, j) pairs for the prefix and suffix property. This is a classic substring search/pair comparison problem well-suited to brute-force for small data. The coding pattern is common for pairwise comparisons (O(n²)), used in problems involving pairs, subarrays, or substring matching. For large-scale inputs, string hashing or tries would be a common optimization.
 
+
+### Flashcard
+Brute-force all pairs (i, j) with i < j; check if words[i] is both prefix and suffix of words[j].
+
 ### Tags
 Array(#array), String(#string), Trie(#trie), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
 

@@ -81,6 +81,10 @@ def minimumDistance(nums):
 ### Summary
 This problem uses a straightforward **triple nested loop** approach to check all possible triplets. The key insight is recognizing that the distance formula simplifies to 2(k - i) when indices are ordered, and that we should prioritize finding triplets with small index ranges. For larger inputs, this could be optimized using a **hash map to group indices by value**, then checking only triplets within each group. This pattern is useful for any problem requiring enumeration of all combinations with a specific property.
 
+
+### Flashcard
+Find all indices of equal elements; focus on consecutive occurrences since distance formula |i−j|+|j−k|+|i−k| is minimized with nearby indices.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

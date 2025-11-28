@@ -105,6 +105,10 @@ def smallestSubstringWithIdenticalCharactersII(s: str, numOps: int) -> int:
 ### Summary
 This problem uses the binary search on answer pattern—commonly used when asked to minimize/maximize some property, and a feasibility check can be implemented efficiently. The key is realizing that each flip can fragment a block, and the minimal worst block size can be found this way. This pattern arises in problems like minimizing the max subarray sum after splitting, or splitting work into days with a daily workload cap.
 
+
+### Flashcard
+Binary search on maximum block length; for each candidate length, greedily flip within long blocks to break them up; count flips needed.
+
 ### Tags
 String(#string), Binary Search(#binary-search)
 

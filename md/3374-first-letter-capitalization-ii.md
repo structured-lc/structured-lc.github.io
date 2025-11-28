@@ -99,6 +99,10 @@ def capitalize_words(text):
 This problem is a **string processing pattern** using **state tracking** (capitalization toggling). It’s applicable wherever “title-casing” with custom word boundaries is needed (for example, slug or human-readable formatting).  
 The technique easily generalizes, and is a foundation for more advanced tokenization or locale-aware text processing. The code stays efficient and clear by limiting built-ins and focusing on per-character logic.
 
+
+### Flashcard
+Track a flag for when to capitalize the next letter (after space, hyphen, or at start); convert all other letters to lowercase.
+
 ### Tags
 Database(#database)
 

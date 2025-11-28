@@ -103,6 +103,10 @@ def maxSizedArray(s: int) -> int:
 ### Summary
 This problem is a classic application of **binary search on the answer** for monotonic constraints, paired with careful sum analysis for custom array generations. The main coding pattern is "Binary Search on n" with an analytical summation for efficient checking. This pattern frequently arises in competitive programming where you must maximize/minimize n for a resource constraint (e.g., "Can build at least n houses given materials X?"). Similar strategies apply in allocation, splitting, or cumulative resource problems.
 
+
+### Flashcard
+Compute sum of i × (j | k) using mathematical formula; observe i = 0 contributes 0, then sum over i ≥ 1; use binary search to find largest n where sum ≤ s.
+
 ### Tags
 Binary Search(#binary-search), Bit Manipulation(#bit-manipulation)
 

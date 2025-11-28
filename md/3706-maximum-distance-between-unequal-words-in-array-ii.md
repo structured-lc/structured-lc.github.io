@@ -84,6 +84,10 @@ def maximumDistance(words):
 ### Summary
 This problem uses a two-pointer scanning pattern optimized for maximum span detection between two unequal elements. It's a linear scan leveraging the insight that the max distance appears at the array edges. This approach is common in detection of array range properties (see also: "Maximum Distance Between Two Unequal Elements," "Longest Distance of Same Elements"). Pattern: Two-pointer edge scanning for maximum/minimum across specific pairwise properties.
 
+
+### Flashcard
+To maximize |i - j| with words[i] ≠ words[j], check if the first word differs from the last word; if not, scan inward to find the nearest unequal word from either end.
+
 ### Tags
 Array(#array), String(#string)
 

@@ -95,6 +95,10 @@ def evenOddBit(n):
 ### Summary
 The problem leverages **bit manipulation**, scanning each bit of n efficiently. It's a classic *parity-indexed bit count* problem, highlighting patterns in binary digits depending on index. The approach avoids string operations, and this pattern can apply to problems involving parity of bit positions, masking, or other low-level operations with binary representations.
 
+
+### Flashcard
+Use bit manipulation: iterate through bits with index counter; increment even/odd counters based on bit position parity.
+
 ### Tags
 Bit Manipulation(#bit-manipulation)
 

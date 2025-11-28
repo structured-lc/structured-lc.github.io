@@ -96,6 +96,10 @@ def maximumLength(nums, k):
 ### Summary
 This problem is a variant of the **Longest Subsequence with Pairwise Constraints**, solved with a 2D DP tracking ended sum remainders for subsequences. The approach is dynamic programming—similar patterns occur in problems like Longest Arithmetic Subsequence, where state space encodes position and difference/remainder. Suitable wherever pairwise relationships must be consistent across subsequences.
 
+
+### Flashcard
+Use DP where state is (last element, sum remainder mod k); for each new element, extend all valid subsequences with matching remainder and track the longest.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

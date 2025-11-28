@@ -115,6 +115,10 @@ def minimumValueSum(nums, andValues):
 ### Summary
 We used DP with memoization to optimally partition **nums** into m contiguous chunks, each matching a target AND, minimizing the sum of their end values. This is a classic segmented DP/cutting problem, and the technique applies to many cut/partition/interval DP contexts (e.g., palindrome partitioning, segmented cost minimization, etc.), especially when you can define state transitions in terms of subarray boundaries and accumulatable properties (like AND/OR/aggregation).
 
+
+### Flashcard
+DP with memoization: dp[i][j] = minimum sum to partition nums[i:] into m−j subarrays matching andValues[j:]. For each state, try all valid subarray endpoints where AND matches andValues[j].
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Segment Tree(#segment-tree), Queue(#queue)
 

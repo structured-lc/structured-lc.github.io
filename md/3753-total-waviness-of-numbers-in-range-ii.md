@@ -147,6 +147,10 @@ def totalWaviness(num1: int, num2: int) -> int:
 
 This problem applies the **Digit DP** pattern—a technique for efficiently solving range-based digit constraint problems. The key strategy is decomposing the range query into two boundary queries using the difference method. We build numbers digit-by-digit while tracking the previous two digits to identify peaks and valleys, maintaining a tight bound constraint to ensure we don't exceed the upper limit. The pattern appears in problems like "count integers in range with specific digit properties" and can be adapted for various digit-based constraints by modifying the state tracking and counting logic.
 
+
+### Flashcard
+Use digit DP with the formula waviness(num1, num2) = waviness(0, num2) - waviness(0, num1 - 1) to count peaks/valleys in ranges by tracking tight bounds and previous digits.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming)
 

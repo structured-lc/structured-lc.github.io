@@ -90,6 +90,10 @@ We use a **two-pass, counting and scanning pattern**: first count every digit (f
 This is a common pattern for "frequency-based immediate checks" in strings or arrays.  
 It generalizes to substring or subarray patterns requiring frequency matches, as seen in problems involving anagram checks, frequency bucketing, or sliding window techniques.
 
+
+### Flashcard
+Count digit frequencies; traverse string checking adjacent pairs—valid if both digits appear with frequency ≥ their numeric value.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

@@ -118,6 +118,10 @@ def findNumOfSubsequences(nums):
 ### Summary
 This problem is a classic inclusion-exclusion (mobius inversion) and combinatorics on multisets challenge, similar to classical divisor sieve problems. The efficient approach is broadly useful in GCD counting over arrays, factorization-sieve type counting, and other problems requiring combinatorial processing on divisors or multiples rather than explicit subset enumeration.
 
+
+### Flashcard
+For each possible GCD g from max(nums) down to 1, count elements divisible by g; use inclusion-exclusion to subtract subsequences with GCD strictly > g from 2^count − 1.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Number Theory(#number-theory)
 

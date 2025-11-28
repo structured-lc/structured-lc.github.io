@@ -90,6 +90,10 @@ This is a simple **array scanning** and **property-check question**: all element
 If all elements are already equal, return 0; otherwise, 1 operation suffices by acting on the entire array.  
 This is a common pattern of "can we do this in one step?" and "check if already satisfied," seen in equalization, majority voting, and trivial game/array manipulation problems.
 
+
+### Flashcard
+If all elements equal, return 0; otherwise, one operation setting all to bitwise AND of array suffices if AND < min element, else return 1.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Brainteaser(#brainteaser)
 

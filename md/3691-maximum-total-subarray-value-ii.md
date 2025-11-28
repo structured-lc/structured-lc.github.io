@@ -106,6 +106,10 @@ Pattern used: Partition DP / Interval DP.
 Related to classic "Best Time to Buy and Sell Stock" and "Maximum Subarray" problems, and can extend to complex DP optimizations using segment trees or sparse tables for subarray queries.  
 Key idea: For every possible subarray ending at each position, compute the value and use dp to combine best non-overlapping picks.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Array(#array), Greedy(#greedy), Segment Tree(#segment-tree), Heap (Priority Queue)(#heap-priority-queue)
 

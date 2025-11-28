@@ -87,6 +87,10 @@ def countTrapezoids(points):
 ### Summary
 This is a classic *combinatorics and grouping* problem: group by y-level, count combinations, then combine in a way that avoids double counting using prefix sums. This pattern is common in geometry, combinatorics, and problems involving pairs of events or groupings across distinct classes (e.g., two-sum style, rectangles in a grid, etc.). Fast reduction from O(N²) brute force to O(N) accumulative logic is key.
 
+
+### Flashcard
+Precompute for each y-level the number of point pairs C(count, 2); for each pair of y-levels, multiply their pair counts to get trapezoid count.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Geometry(#geometry)
 

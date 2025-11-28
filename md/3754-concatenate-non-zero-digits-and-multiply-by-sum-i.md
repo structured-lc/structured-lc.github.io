@@ -86,6 +86,10 @@ def concatenatedProduct(n: int) -> int:
 ### Summary
 This problem is a straightforward digit manipulation exercise. The approach iterates through all digits, filters out zeros, concatenates the non-zero digits to form x, accumulates their sum, and returns the product. It's a common pattern in interview problems involving digit extraction and manipulation. Similar patterns appear in problems like "Sum of Digits of String After Convert to Integer" or "Multiply Strings" where you process digits sequentially and accumulate results. The key takeaway is mastering string-to-digit conversion and handling edge cases where results might be zero or empty.
 
+
+### Flashcard
+Iterate through digits, concatenate non-zeros into string x, sum all digits, then return x × sum.
+
 ### Tags
 Math(#math)
 

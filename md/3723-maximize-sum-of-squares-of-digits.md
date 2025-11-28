@@ -120,6 +120,10 @@ This problem uses a **greedy algorithm** combined with **digit construction**. T
 
 This pattern appears in similar problems like coin change, activity selection, and other optimization problems where greedy locally-optimal choices lead to globally-optimal solutions. It's a fundamental technique for digit manipulation and construction problems.
 
+
+### Flashcard
+Greedily use as many 9s as possible to maximize the sum of squares; if digit_sum > 9 × num_digits, use (num_digits − 1) nines and one smaller digit.
+
 ### Tags
 Math(#math), Greedy(#greedy)
 

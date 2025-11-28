@@ -159,6 +159,10 @@ def numberOfWays(n, edges, queries):
 ### Summary
 This is a classical combinatorial linear algebra problem on trees: count valid assignments for parity system constraints. The coding pattern used is **Gaussian elimination in GF(2)** for solving constraints in binary, applied to trees via **unique path** properties and efficient path representation (rooted tree path XOR). This pattern is common in problems about **parity constraints**, **XOR basis**, and **counting assignments that satisfy independent linear (mod 2) constraints**, and can be similarly applied to puzzles, labeling problems, and some coding theory problems.
 
+
+### Flashcard
+Recognize that each query constraint is a parity equation on the path sum; use DFS to build a system of linear equations over GF(2) and count valid assignments via Gaussian elimination.
+
 ### Tags
 Array(#array), Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Tree(#tree), Depth-First Search(#depth-first-search)
 

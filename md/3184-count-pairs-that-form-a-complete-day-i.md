@@ -75,6 +75,10 @@ def count_pairs(hours):
 ### Summary
 This problem uses the "count of pairs with given remainders" pattern, often solved with a hash map or frequency array for modular arithmetic. It's common when you need to pair numbers based on sums divisible by k. Variants appear in array, subarray, and string problems with modular or divisible-by constraints.
 
+
+### Flashcard
+For each hours[i], compute remainder r = hours[i] % 24 and check if complement (24 − r) % 24 exists in a hash map; increment count and update map.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

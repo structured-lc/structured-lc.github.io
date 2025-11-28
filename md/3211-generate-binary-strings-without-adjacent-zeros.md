@@ -95,6 +95,10 @@ def generateBinaryStrings(n):
 This problem uses the classic **backtracking** (DFS) technique with pruning, exploiting the adjacency constraint to avoid generating invalid branches.  
 This pattern is common for generating or counting strings under substring constraints and appears in problems related to **Fibonacci** recurrences, **bitmask DP**, or **enumeration with local rules**.
 
+
+### Flashcard
+Use backtracking/DFS; at each position, append '1' always, but append '0' only if previous bit wasn't '0'.
+
 ### Tags
 String(#string), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
 

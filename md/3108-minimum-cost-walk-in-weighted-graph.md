@@ -134,6 +134,10 @@ This problem uses a **bitmask path enumeration** with BFS: for each query, trave
 It's a variant of single-source shortest-path where “distance” is bitwise AND rather than sum, requiring you to remember distinct (node, AND) states.  
 This technique is common in bitmask graph problems, and similar ideas can be applied to other problems where cost accumulation is not linear (min, max, XOR, etc.).
 
+
+### Flashcard
+Cost is bitwise AND of all edge weights. AND only decreases or stays same, never increases. Use Dijkstra with AND as the "distance" metric to find minimum AND path from s to t.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Union Find(#union-find), Graph(#graph)
 

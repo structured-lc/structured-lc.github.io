@@ -93,6 +93,10 @@ This is a classic **dynamic programming, state-based DP** problem focusing on tr
 This pattern arises in many scheduling and path-dependent optimization problems, such as "Paint House," "House Robber," or job-schedule with cooldowns, where the next state depends only on the last state.  
 Optimizing state and transition logic is key to efficient solutions.
 
+
+### Flashcard
+DP with two states—dpA[i] = max energy if taking drink A at hour i, dpB[i] = max energy if taking drink B; transition respects switching restrictions.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

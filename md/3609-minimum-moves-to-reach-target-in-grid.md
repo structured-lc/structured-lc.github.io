@@ -82,6 +82,10 @@ def minMovesToTarget(grid, start, target, k):
 ### Summary
 This is a BFS variant with additional state (wall breaks used). This pattern is widely used in "grid with obstacles" problems and can be generalized to weighted moves, portal jumps, or variable move costs.
 
+
+### Flashcard
+Use BFS with state (x, y, walls_broken) to find shortest path; each move costs 1, and you can break ≤ k walls to pass through obstacles.
+
 ### Tags
 Math(#math)
 

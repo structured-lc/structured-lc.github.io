@@ -84,6 +84,10 @@ def maxNumOfMarkedIndices(nums):
 ### Summary
 A classic greedy + two-pointer solution after sorting: pair smallest available element with smallest large-enough element. This "pairing/greedy" pattern can be seen in matchings (assignments, socks, etc.), "max pairs with some constraint" problems, and optimizations involving sorted arrays and two-pointer sweeps.
 
+
+### Flashcard
+Sort array, then greedily pair smallest unmarked elements with large enough elements where 2 × nums[i] ≤ nums[j].
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
 

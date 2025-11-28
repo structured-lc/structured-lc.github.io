@@ -81,6 +81,10 @@ The coding pattern is classic double-loop enumeration—common in "all pairs" si
 This pattern applies to a number of similar problems, including pair sums, pair differences, or pair relations constrained by both elements' values.  
 For more advanced or tighter constraints, sorting or tries (for XOR queries) may provide faster solutions.
 
+
+### Flashcard
+Brute-force check all pairs (x,y) for strong pair condition |x-y| ≤ min(x,y), compute XOR, track max. O(n²) is acceptable for small n.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Trie(#trie), Sliding Window(#sliding-window)
 

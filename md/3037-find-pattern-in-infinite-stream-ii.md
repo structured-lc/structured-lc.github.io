@@ -117,6 +117,10 @@ class InfiniteStreamPatternFinder:
 ### Summary
 This problem uses the **KMP (Knuth-Morris-Pratt) string matching algorithm**, allowing efficient processing of an infinite or very long stream with fast state updates and constant-time pattern presence checks. This technique is highly reusable for "pattern in stream" and real-time substring/pattern detection scenarios, especially where brute force is too slow.
 
+
+### Flashcard
+Use KMP (Knuth-Morris-Pratt) algorithm; after each stream element, check if last pattern.length characters match pattern.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window), Rolling Hash(#rolling-hash), String Matching(#string-matching), Hash Function(#hash-function)
 

@@ -87,6 +87,10 @@ def constructTransformedArray(nums):
 ### Summary
 The solution uses direct array simulation with index wrapping, a common approach for circular array problems using modular arithmetic. This O(n) single-pass pattern is frequently seen in LeetCode problems involving rotation, jumps, or cyclic index mapping, making this problem a typical example of the "array transform with modular indexing" coding pattern.
 
+
+### Flashcard
+Simulate the transformation formula directly for each index i: result[i] = nums[(i + nums[i]) mod n]; O(n) time.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

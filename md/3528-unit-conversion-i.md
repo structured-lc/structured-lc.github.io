@@ -78,6 +78,10 @@ def baseUnitConversions(conversions):
 ### Summary
 This problem uses a classic tree/graph traversal pattern (DFS) to propagate and compute multiplicative relationships from a single starting node to all others. It’s a textbook use of recursive DFS on a tree, chaining products with modulo arithmetic. This approach commonly appears in problems involving computation along rooted tree paths, such as propagating weights, cumulative transformations, or costs.
 
+
+### Flashcard
+Model conversion dependencies as a tree rooted at 0; use single DFS to propagate conversion factors along the path, computing the product in O(n) instead of recomputing per query.
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
 

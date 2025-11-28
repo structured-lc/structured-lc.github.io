@@ -85,6 +85,10 @@ def frequenciesOfElements(head):
 ### Summary
 This approach adopts a two-pass technique and the widely-used *hash map counting* pattern. First, frequency counting maps the input efficiently. Second, the output is built as a (possibly unordered) linked list of these counts. This is a common pattern seen in interview problems requiring frequency tally and translation into another form, such as arrays, trees, or lists.
 
+
+### Flashcard
+Traverse linked list once, count occurrences in hashmap, then build new linked list from counts.
+
 ### Tags
 Hash Table(#hash-table), Linked List(#linked-list), Counting(#counting)
 

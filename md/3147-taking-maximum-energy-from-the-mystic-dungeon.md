@@ -105,6 +105,10 @@ def maximumEnergy(energy: list[int], k: int) -> int:
 - Optimizes from brute-force to O(n) by smart backward filling of dp.
 - Applies to similar "fixed jump" or "disjoint subsequence sum" problems.
 
+
+### Flashcard
+Use DP where dp[i] = energy[i] + dp[i+k]; compute backwards from the end to get total energy for starting at each index in O(n).
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

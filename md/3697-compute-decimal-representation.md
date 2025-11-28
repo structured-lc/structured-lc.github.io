@@ -83,6 +83,10 @@ def compute_decimal_representation(n):
 ### Summary
 We leverage a simple digit-place decomposition: for each nonzero digit, create its base-10 component by shifting with the appropriate power of 10. The coding pattern is similar to "decimal expansion" extraction. This pattern frequently appears in number manipulation, digital root, and digit-place problems in interviews.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Array(#array), Math(#math)
 

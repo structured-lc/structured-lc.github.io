@@ -91,6 +91,10 @@ def maximumTotalSum(maximumHeight):
 This is a classic sorting + greedy allocation problem, where maximizing under uniqueness constraints leads to a strictly decreasing assignment pattern.  
 The same pattern appears in maximizing unique values under bounded choices, common in subset/partition and greedy scheduling variants.
 
+
+### Flashcard
+Greedily assign the largest possible unique height to each tower; for tower i with limit maxHeights[i], assign min(maxHeights[i], previous_assigned − 1), ensuring all heights are unique and maximized.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting)
 

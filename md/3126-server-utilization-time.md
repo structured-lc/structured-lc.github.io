@@ -111,6 +111,10 @@ def server_utilization_time(records):
 ### Summary
 This problem fits the *grouping and interval sum* pattern: segment records per key/server, pair up start-stop events, and aggregate durations. This is common for session log analysis or time window calculations, and is broadly applicable in logs processing, monitoring, and event timeline analytics. Key tricks are grouping, sorting, and careful duration arithmetic.
 
+
+### Flashcard
+Sort records by server_id and status_time. Pair consecutive start/stop events for each server, sum durations, convert to full days (÷ 86400 seconds).
+
 ### Tags
 Database(#database)
 

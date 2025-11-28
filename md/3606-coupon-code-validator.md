@@ -71,6 +71,10 @@ def isValidCouponCode(code):
 ### Summary
 This is a classic input validation problem. It uses simple string traversal and counting, and can be solved with regular expressions or on-the-fly logic depending on requirements.
 
+
+### Flashcard
+Validate length = 10, all characters are uppercase letters or digits, and digit count ≥ 2.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting)
 

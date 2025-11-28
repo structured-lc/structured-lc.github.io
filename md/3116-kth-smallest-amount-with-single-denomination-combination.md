@@ -125,6 +125,10 @@ This problem is a classic use of **binary search on answer + inclusion-exclusion
 The key is to count efficiently how many distinct values ≤ X can be made by only one coin denomination at a time, using subset LCMs.  
 This fits a common “search on value + count by subsets/inclusion-exclusion” pattern, widely applicable to divisibility, generating non-overlapping sums, or similar resource allocation problems.
 
+
+### Flashcard
+Binary search on the answer. For a candidate value X, count how many unique amounts ≤ X can be formed using each denomination via inclusion-exclusion principle.
+
 ### Tags
 Array(#array), Math(#math), Binary Search(#binary-search), Bit Manipulation(#bit-manipulation), Combinatorics(#combinatorics), Number Theory(#number-theory)
 

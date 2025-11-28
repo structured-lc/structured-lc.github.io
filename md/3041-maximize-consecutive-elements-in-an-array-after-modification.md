@@ -110,6 +110,10 @@ def maxSelectedElements(nums):
 This problem leverages **counting with value transformations** and an efficient **sliding window over hash-mapped counts**—a common pattern when you can "upgrade" elements and need a maximal consecutive subarray or subset.  
 Recognizing that each number can represent both itself and itself+1, and reducing the problem to "find the longest sequence of consecutive, possibly overlapping, values built from the multiset" is the key insight. This technique is also seen in frequency manipulation (e.g., longest consecutive sequence, set union problems) and windowing over keys in hash maps.
 
+
+### Flashcard
+For each number, choose value or value+1; use DP to find longest consecutive sequence achievable.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Sorting(#sorting)
 

@@ -123,6 +123,10 @@ This problem uses the **Prefix XOR with State Tracking** pattern, a powerful tec
 
 This pattern is applicable to other subarray problems like finding subarrays with sum = K, maintaining specific element frequencies, or balancing multiple independent conditions. The key insight is: whenever two positions share identical state values, the subarray between them satisfies all state-dependent constraints.
 
+
+### Flashcard
+Use prefix XOR with a hash map to track (prefix_xor, odd_even_balance) pairs; subarrays between matching pairs have equal odd/even counts and non-zero XOR.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Prefix Sum(#prefix-sum)
 

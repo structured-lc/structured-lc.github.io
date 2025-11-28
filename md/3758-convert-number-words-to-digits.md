@@ -87,6 +87,10 @@ def convertWordsToDigits(words: str) -> str:
 ### Summary
 This problem uses a simple dictionary-mapping pattern to transform word representations into their digit equivalents. The solution leverages Python's `split()` method to tokenize the input and a generator expression with `join()` for efficient string building. This pattern is widely applicable whenever you need to translate between two symbolic representations, such as converting between Roman numerals and integers, or translating encoded strings. The key insight is recognizing that straightforward lookup-based transformations are often the most efficient approach when a direct mapping exists.
 
+
+### Flashcard
+Create a dictionary mapping word strings ("zero"–"nine") to digits, split input by spaces, look up each word, and concatenate results.
+
 ### Tags
 String(#string), Trie(#trie)
 

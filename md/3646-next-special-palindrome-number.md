@@ -124,6 +124,10 @@ def next_special_palindrome(n: int) -> int:
 ### Summary
 This problem uses combinatorial generation with the palindrome property, digit frequency constraints, backtracking, and binary search on a precomputed set. The solution is an example of *precomputation + cache + search* — a common paradigm in interview problems where the output space is dramatically smaller than the input range. Similar approaches are used for problems involving "rare" numbers (e.g., Armstrong numbers, strobogrammatic numbers, etc.).
 
+
+### Flashcard
+Precompute all special palindromes (very few exist due to tight constraints). For each query, binary search to find the smallest special palindrome > n.
+
 ### Tags
 Backtracking(#backtracking), Bit Manipulation(#bit-manipulation)
 

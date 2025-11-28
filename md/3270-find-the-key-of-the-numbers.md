@@ -89,6 +89,10 @@ def findTheKey(num1, num2, num3):
 ### Summary
 This problem exemplifies the **per-digit transformation** pattern, often used in digital signal processing or string-to-number algorithm questions. Key steps are standardization (pad), per-index (column) min, and appropriate conversion to ensure no leading zeros. Variants of this approach occur in coordinate-wise problems and digital manipulation tasks.
 
+
+### Flashcard
+Pad all numbers to 4 digits, then for each digit position, take the minimum digit across all three numbers; convert result back to integer.
+
 ### Tags
 Math(#math)
 

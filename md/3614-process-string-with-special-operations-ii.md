@@ -106,6 +106,10 @@ def get_kth_char(s: str, k: int) -> str:
 ### Summary
 This is a prototypical **string reverse engineering** and simulation problem, requiring you to process instructions in reverse to trace a particular position. Patterns from this problem appear in compressed string queries, version stacks, and browser or text editor undo/redo internals.
 
+
+### Flashcard
+Simulate operations on length only (forward pass) to compute final result length; then reverse-engineer backward to find the character at position k by tracing through `#` (duplicate), `%` (reverse), and `@` (clear) operations.
+
 ### Tags
 String(#string), Simulation(#simulation)
 

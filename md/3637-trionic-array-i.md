@@ -121,6 +121,10 @@ def isTrionic(nums):
 ### Summary
 This problem uses a **multi-pointer / scan partitioning technique** to classify array regions in a single linear pass. It’s a great example of reducing brute-force segment-checking to O(n) greedy scanning. This pattern can be generalized to problems like valleys and mountains (peak/valley arrays), stock trading, or tripartite array segmentation where strict monotonicity is required.
 
+
+### Flashcard
+Try all (p, q) pairs where 0 < p < q < n−1. For each, verify strictly increasing [0:p], strictly decreasing [p:q], and strictly increasing [q:n].
+
 ### Tags
 Array(#array)
 

@@ -101,6 +101,10 @@ def generate_tag(caption):
 ### Summary
 This problem is a **classic string preprocessing and formatting pattern**—combining case conversion, filtering, and truncation. The approach is linear scan with per-word transformation, commonly seen in data normalization, UI, and slug/tag generation scenarios. This method is robust, clear, and easily extensible for more complex rules.
 
+
+### Flashcard
+Split by whitespace, filter non-English letters, apply camelCase (lowercase first word, capitalize rest), prefix with "#", truncate to 100 characters.
+
 ### Tags
 String(#string), Simulation(#simulation)
 

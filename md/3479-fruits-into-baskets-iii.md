@@ -110,6 +110,10 @@ The scan-left-for-fit-and-mark pattern is a **classic greedy assignment** used i
 This approach is consistent with many interview problems where you must assign resources to tasks preserving order and capacity.  
 Optimizations (e.g., segment tree or binary search) are possible, especially as n grows, or if constraints relax order or exclusiveness.
 
+
+### Flashcard
+For each fruit, greedily assign to the leftmost unused basket with sufficient capacity; use a pointer to track the next basket to check.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Segment Tree(#segment-tree), Ordered Set(#ordered-set)
 

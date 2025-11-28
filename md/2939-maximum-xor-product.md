@@ -96,6 +96,10 @@ def maximumXorProduct(a: int, b: int, n: int) -> int:
 ### Summary
 This problem leverages **bit manipulation** and a **greedy constructive approach** to maximize (a⊕x)×(b⊕x) in a restricted x-range. Instead of brute-forcing all possibilities, we decide each bit optimally from MSB to LSB, similar to problems that require maximizing XOR or constructing values under bitwise constraints. This method is common in problems involving “maximize/minimize under XOR and range,” and is widely applicable in bitmask-based interview questions.
 
+
+### Flashcard
+Use greedy bit-by-bit construction from the highest bit. At each bit position, try setting x's bit to 0 or 1, choosing the option that makes (a⊕x) and (b⊕x) closer in magnitude to maximize their product.
+
 ### Tags
 Math(#math), Greedy(#greedy), Bit Manipulation(#bit-manipulation)
 

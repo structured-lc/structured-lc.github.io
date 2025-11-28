@@ -140,6 +140,10 @@ def countPartitions(nums, k):
 ### Summary
 This problem uses the **DP with sliding window and monotonic deque** pattern for efficiently enumerating partition points where each window [left, right] can be validated for max-min in O(1) time. This technique is common for problems involving dynamic properties over subarrays—especially when combined with prefix sums, it enables optimal O(n) solutions for sliding intervals with expensive aggregations (max/min). This approach can be reused for many interval DP problems involving range-limited partitions.
 
+
+### Flashcard
+Use DP with sliding window to find valid segment boundaries; for each position i, sum DP values from the leftmost valid start position to i−1 using a prefix sum for O(n) efficiency.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Queue(#queue), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum), Monotonic Queue(#monotonic-queue)
 

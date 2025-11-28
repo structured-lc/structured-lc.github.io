@@ -166,6 +166,10 @@ print(oddEvenTransactions(transactions))
 ### Summary
 This problem is a direct **group by + conditional sum** aggregation, commonly seen in database and data analysis work. Recognizing how to split a sum between odd and even on each group (date) is key. This pattern is common in SQL analytics and in applications needing summary statistics—for example, financial reports, data dashboards. The coding patterns are **grouping, aggregation, and conditional sum**.
 
+
+### Flashcard
+Group transactions by date; for each date, sum amounts where amount % 2 == 1 (odd) and where amount % 2 == 0 (even).
+
 ### Tags
 Database(#database)
 

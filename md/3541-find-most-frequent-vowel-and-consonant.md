@@ -100,6 +100,10 @@ def findMostFrequentVowelAndConsonant(s):
 ### Summary
 This problem is a classic use of frequency counting and simple category separation (vowel/consonant), using fixed-size arrays and constant extra space. The coding pattern is similar to many string counting/interview problems (e.g., most frequent character, anagram counts), and can be applied in many contexts where character grouping and frequency are involved.
 
+
+### Flashcard
+Single pass to count frequency of all 26 letters; track max frequency among vowels and separately among consonants, returning the lexicographically smallest letter in each category.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

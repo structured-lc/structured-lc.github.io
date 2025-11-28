@@ -153,6 +153,10 @@ def find_stores_with_inventory_imbalance(stores, products):
 ### Summary
 This problem is a neat example of the **aggregation per group** and **conditional filter** coding patterns. It checks per-group (per-store) data for a business logic property using *min*, *max*, and *comparison*. Elsewhere, this arises in reporting “group max/min” discrepancies or when finding "groups where x is less than y," applicable in database analytics, inventory logic, and error detection scenarios.
 
+
+### Flashcard
+For each store, find the product with minimum price and maximum price; compare their stock levels; if max-price stock < min-price stock, record the store.
+
 ### Tags
 
 ### Similar Problems

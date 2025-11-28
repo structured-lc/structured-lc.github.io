@@ -90,6 +90,10 @@ def maxProfit(prices, strategy):
 ### Summary
 This problem uses a **greedy simulation** and is a classic interview pattern for stock buy/sell questions. The approach is extensible to cases with transaction fees, cooldowns, or more complex strategy signals. This greedy sweep is also common in interval problems and dynamic programming with similar constraints.
 
+
+### Flashcard
+Iterate through strategy array. When strategy[i] = 1, sell at day i. Track minimum price seen so far on days with strategy = 1 to maximize profit per sell.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

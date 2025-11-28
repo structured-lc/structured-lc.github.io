@@ -69,6 +69,10 @@ def count_pairs(hours):
 ### Summary
 This problem uses the **modulo/remainder and complement counting pattern**, which is common in problems asking for pairs that sum to a multiple of some value (e.g., "two sum" modulo). The same pattern applies to finding subarrays or pairs in arrays with a prescribed modular sum, and is useful any time only remainders matter for counting combinations. The fixed, small modulus (24) keeps both time and space low.
 
+
+### Flashcard
+Track remainders modulo 24 in a counter array; for each new value, query the counter for its complement (24 − r) % 24 before updating.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

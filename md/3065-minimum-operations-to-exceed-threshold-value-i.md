@@ -67,6 +67,10 @@ def min_operations_to_exceed_threshold(nums, k):
 ### Summary
 This problem is a textbook example of counting with a single pass—a core array pattern. You traverse the list, count items with a simple condition, and output that count. Variations of this approach are common in filtering, partitioning, or streaming array problems. It’s a fundamental building block in algorithm interviews.
 
+
+### Flashcard
+Count elements strictly less than k; that count is the minimum operations needed.
+
 ### Tags
 Array(#array)
 

@@ -93,6 +93,10 @@ def maximumLengthSubstring(s):
 This problem is a great example of the **sliding window** pattern, especially for substring/array problems with "at most k occurrences/frequencies". The same template appears in problems like "longest substring with at most k distinct characters" and "longest substring without repeating characters".  
 You maintain frequency, adjust the window, and track the best found. This approach is highly reusable in string and array interview questions.
 
+
+### Flashcard
+Use sliding window with character frequency map; expand right pointer and shrink left whenever any character count exceeds 2; track maximum valid window length.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

@@ -88,6 +88,10 @@ def maxBottlesDrunk(numBottles: int, numExchange: int) -> int:
 ### Summary
 This problem is a simulation with careful attention to "post-exchange" requirements. It's a direct example of the "simulate greedy exchanges with growing requirement" pattern, common in bottle-exchange or recycling simulation problems. This coding pattern applies to problems with *state changes after each operation*—important in resource management, game scoring, and constrained exchanges.
 
+
+### Flashcard
+Simulate bottle exchanges; track empty bottles and current exchange rate; after each successful exchange, increment the rate; continue until fewer empties than required.
+
 ### Tags
 Math(#math), Simulation(#simulation)
 

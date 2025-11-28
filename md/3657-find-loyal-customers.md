@@ -141,6 +141,10 @@ This is a classic **group by and aggregate** pattern, useful for filtering based
 Common pattern for customer segmentation and filtering in SQL and analytics.  
 Variants may require date filtering, window functions, or exclusion logic.
 
+
+### Flashcard
+Use SQL GROUP BY to aggregate purchases per customer, filter for ≥ 3 purchases, exclude those with returns, and check total amount ≥ 1000.
+
 ### Tags
 
 ### Similar Problems

@@ -118,6 +118,10 @@ def getResults(queries):
 ### Summary
 The problem is a variant of the *dynamic interval coverage* or *nearest occupied slot* pattern, efficiently solved using a balanced BST or binary search approach. The main trick is storing obstacle locations in sorted order, so for each placement query, we can quickly check if the relevant segment is clear. This approach is common for segment-union, parking lot, seat reservation, or interval-exclusion style problems.
 
+
+### Flashcard
+Keep obstacle positions in a sorted structure (e.g., SortedList or balanced BST); for Type 2 queries, use binary search to find the largest obstacle ≤ x and check if the gap is ≥ sz.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
 

@@ -104,6 +104,10 @@ The core pattern is looking ahead to all possible options (i.e., “try all jump
 Such problems frequently arise in game theory, "choose your own adventure" scoring, or even multi-stage scheduling with cost-to-go.  
 The O(n²) table-filling solution is easy to implement and debug, and the pattern is common in interview DP questions. If further constraints were given, monotonic stack or greedy may further optimize.
 
+
+### Flashcard
+Use DP where dp[i] = maximum score from index i; for each i, try all forward hops j > i and take max(dp[j] + score).
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Stack(#stack), Greedy(#greedy), Monotonic Stack(#monotonic-stack)
 

@@ -99,6 +99,10 @@ def valueAfterKSeconds(n: int, k: int) -> int:
 ### Summary
 This problem uses the **combination (stars and bars)** pattern — mapping array transformations to combinatorics. This is a classic approach for repeated sum-updates and multi-step growth calculations, and applying modular combinations is efficient and widely applicable in similar problems (e.g., distributing coins into piles, counting paths with step constraints, or Pascal’s Triangle queries).
 
+
+### Flashcard
+The array after k seconds follows Pascal's Triangle pattern; a[n−1] equals C(n+k−2, k), the binomial coefficient for "stars and bars."
+
 ### Tags
 Array(#array), Math(#math), Simulation(#simulation), Combinatorics(#combinatorics), Prefix Sum(#prefix-sum)
 

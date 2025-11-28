@@ -102,6 +102,10 @@ def beautifulSubstrings(s: str, k: int) -> int:
 This problem is a classic "check all substrings with constraints" string problem, best handled with two nested loops and running counters. The approach uses the sliding window or prefix-accumulation concept, but due to the double constraint (balance and divisibility), hash map or prefix sum tricks do not directly help.  
 This coding pattern can be extended to problems involving balanced substrings, character frequencies, and substring product or parity conditions.
 
+
+### Flashcard
+For each starting index, maintain a running count of vowels and consonants. When vowel_count == consonant_count and their product is divisible by k, increment the answer. O(n²) with O(1) per substring.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), String(#string), Enumeration(#enumeration), Number Theory(#number-theory), Prefix Sum(#prefix-sum)
 

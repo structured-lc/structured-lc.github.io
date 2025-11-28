@@ -174,6 +174,10 @@ This solution is a classic **hashmap + aggregation/counting pattern**, where you
 It’s common in vote counting, leaderboard, and ranking scenarios, especially when votes or scores must be normalized or weighted.  
 The two-pass dictionary traversal is a standard method for such problems and can be applied anywhere aggregation is based on prior grouping (e.g., normalized survey results, point splits in ranking, etc.).
 
+
+### Flashcard
+Build voter→candidates map; for each voter, distribute 1/n vote to each candidate; return candidates with highest total votes.
+
 ### Tags
 
 ### Similar Problems

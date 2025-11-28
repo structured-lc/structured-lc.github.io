@@ -103,6 +103,10 @@ def check_if_any_element_has_prime_frequency(nums):
 ### Summary
 This problem uses the **hash map + prime check** coding pattern. It demonstrates basic frequency counting (hash table/dictionary) and prime number testing, common in array and counting problems. The optimization leverages precomputing primes when the range is small, a reusable trick for prime-checking-heavy problems. This approach is broadly applicable in frequency analysis and mathematical property checks in arrays.
 
+
+### Flashcard
+Count element frequencies, check each frequency for primality by testing divisibility up to √frequency.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Counting(#counting), Number Theory(#number-theory)
 

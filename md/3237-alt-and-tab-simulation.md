@@ -110,6 +110,10 @@ This approach leverages the **order preservation and deduplication** pattern—a
 By building the "top windows" first (in reverse query order), and then filling in with the untouched windows, we achieve a clean O(n + q) linear method.  
 This strategy is widely applicable wherever you need to track "most recent" or "move-to-top" elements efficiently without repeated shifting.
 
+
+### Flashcard
+Track window order as a deque; for each Alt+Tab query, move window to front—final order is most recent first, then others in original order.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Simulation(#simulation)
 

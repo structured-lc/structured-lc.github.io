@@ -127,6 +127,10 @@ This problem uses a **greedy degree reduction on trees**, always removing the lo
 The main pattern is "maintain local constraints via greedy global edge processing," which appears in network throttling, pruning DAGs, and degree-limited Steiner trees.  
 Patterns used: adjacency list construction, iterative/queue-batch processing, and greedy per-node edge removals.
 
+
+### Flashcard
+For each node with degree > k, keep its k heaviest edges and remove the rest to maximize the total weight retained.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Tree(#tree), Depth-First Search(#depth-first-search)
 

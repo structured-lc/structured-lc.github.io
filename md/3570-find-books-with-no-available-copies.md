@@ -138,6 +138,10 @@ def find_books_with_no_available_copies(library_books, borrowing_records):
 ### Summary
 This problem is classic **group and join/aggregation**—first aggregate current counts from one table (borrowing records), then join with another (book info), and finally filter by a numeric condition. The pattern is widely used in SQL, pandas, or procedural code dealing with inventory, reservations, or similar resource-limited systems. This approach ensures correctness and efficiency, and adapts well for new constraints or aggregation types.
 
+
+### Flashcard
+Filter borrowing_records for rows where return_date is null; group by book_id and count borrowers; join with library_books and find books where borrower_count equals total_copies.
+
 ### Tags
 Database(#database)
 

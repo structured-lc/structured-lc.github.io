@@ -96,6 +96,10 @@ def minimum_substrings_in_partition(s):
 ### Summary
 This problem uses the **Substring DP pattern** — for each index, try all substring breaks and update dp based on subproblem solutions. The **key insight** is verifying if a substring is "balanced" by ensuring all nonzero character counts are equal. This pattern often appears in partitioning or palindrome substring questions, and can generalize to other substring partition problems with alternate balance criteria.
 
+
+### Flashcard
+Use DP where dp[i] = min partitions for s[0..i]; for each position, extend backwards checking if substring is balanced (all chars have equal frequency).
+
 ### Tags
 Hash Table(#hash-table), String(#string), Dynamic Programming(#dynamic-programming), Counting(#counting)
 

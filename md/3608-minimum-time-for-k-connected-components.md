@@ -90,6 +90,10 @@ def minTimeForKComponents(n, edges, k):
 ### Summary
 This problem uses the offline union-find (DSU) and binary search over answer pattern, which shows up in many dynamic connectivity and parameter minimization graph problems.
 
+
+### Flashcard
+Binary search on time t; for each candidate t, use Union-Find to count connected components after adding all edges with timestamp ≤ t; find minimum t where component count = k.
+
 ### Tags
 Binary Search(#binary-search), Union Find(#union-find), Graph(#graph), Sorting(#sorting)
 

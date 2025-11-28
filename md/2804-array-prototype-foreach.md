@@ -83,6 +83,10 @@ Array.prototype.forEach = function(callback, context) {
 ### Summary
 This problem is a classic prototype extension pattern—adding behavior to a global object. The main coding pattern is **iteration over indices with a loop** and **using call to set context for callbacks**. This logic applies to many array method implementations (e.g., map, filter, reduce), and the approach is fundamental in understanding lower-level JS/TS API design or polyfilling methods in codebases lacking modern features.
 
+
+### Flashcard
+Attach method to `Array.prototype`, iterate valid indices, call callback with (value, index, array), and bind `this` to optional context parameter.
+
 ### Tags
 
 ### Similar Problems

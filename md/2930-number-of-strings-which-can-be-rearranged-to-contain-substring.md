@@ -119,6 +119,10 @@ def numberOfGoodStrings(n):
 ### Summary
 This problem is a classic application of **combinatorics with inclusion-exclusion**, where you count placements for a substring in all possible rearrangements while ensuring no overcount due to overlapping occurrences. The approach generalizes to other substrings and permutation-covering substring search, and the pattern (inclusion-exclusion + combinatorial state counting) often comes up in advanced counting and arrangement questions in interviews and competitions.
 
+
+### Flashcard
+Use complementary counting: total strings of length n minus strings that cannot form "leet". A string is "good" iff it contains at least l, e×2, t; use inclusion-exclusion on character frequencies.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
 

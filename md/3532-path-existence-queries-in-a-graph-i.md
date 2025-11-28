@@ -107,6 +107,10 @@ def pathExistenceQueries(n, nums, maxDiff, queries):
 ### Summary
 This problem uses the connectivity component pattern—reduce path queries to “are u and v in the same group?”. It highlights *efficient preprocessing* to reduce repeated graph queries. This logic is general to situations where relation between adjacent elements defines connection, and is a variant of *connected components in array/chain* questions. Similar ideas show up in range queries, offline queries, and problems with “segments of sameness/difference.”
 
+
+### Flashcard
+Precompute connected components by walking through nums and grouping nodes where the difference condition holds; answer each query in O(1) by checking if u and v are in the same component.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Union Find(#union-find), Graph(#graph)
 

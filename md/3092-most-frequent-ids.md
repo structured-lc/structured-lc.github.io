@@ -120,6 +120,10 @@ Patterns:
 - Lazy removal for outdated elements in the heap.
 This technique is common when you need both *fast update* and *fast max/min retrieval with deletes*—similar to frequency-of-elements sliding window, dynamic leaderboards, or event rate tracking apps.
 
+
+### Flashcard
+Maintain frequency map and a max-heap; after each update, push new frequency to heap; when querying max, pop stale entries until heap top matches current frequency.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Heap (Priority Queue)(#heap-priority-queue), Ordered Set(#ordered-set)
 

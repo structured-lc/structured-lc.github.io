@@ -107,6 +107,10 @@ This pattern applies to optimization problems where:
 
 Similar problems include finding the lexicographically smallest string after substring operations, or any problem requiring exploration of a finite set of states.
 
+
+### Flashcard
+Try all possible values of k (1 to n) and both operations (reverse first k, reverse last k); pick the lexicographically smallest result.
+
 ### Tags
 Two Pointers(#two-pointers), Binary Search(#binary-search), Enumeration(#enumeration)
 

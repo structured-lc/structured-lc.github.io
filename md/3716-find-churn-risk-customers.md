@@ -149,6 +149,10 @@ def find_churn_risk_customers(subscription_events):
 This solution uses the **grouping by key** pattern to aggregate user histories, then applies simple rule checks—demonstrating how to combine data parsing, aggregation, and filtering based on multiple criteria.  
 This approach is common in SQL, pandas, and event-tracking problems, and can be adapted for real-time analytics with queue or batch processing.
 
+
+### Flashcard
+Group events by user_id; for each user, track if any downgrade exists, find the highest plan amount, and check if the last event is not a cancellation.
+
 ### Tags
 
 ### Similar Problems

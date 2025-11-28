@@ -81,6 +81,10 @@ def filterCharactersByFrequency(s: str, k: int) -> str:
 ### Summary
 This problem is a classic application of the frequency counting (hash map or dictionary) pattern, followed by a filtering operation. The approach is highly efficient and generalizes to any string filtering problem where you first need aggregate info, then act on it in-order. Common in string/array preprocessing questions.
 
+
+### Flashcard
+Precompute character frequencies in a hash map, then traverse string once keeping only characters with frequency ≥ k; O(n) after O(n) preprocessing.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

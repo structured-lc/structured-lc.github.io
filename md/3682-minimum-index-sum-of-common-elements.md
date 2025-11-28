@@ -109,6 +109,10 @@ This problem is a textbook example of using a **hash map for efficient look-up a
 The coding pattern mirrors many "array intersection" or "first occurrence" style questions, where you preprocess one list for fast queries.  
 You avoid brute-force nested loops and demonstrate optimization with O(N + M) time, and the technique applies to many similar array/string intersection problems.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

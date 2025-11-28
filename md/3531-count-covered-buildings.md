@@ -101,6 +101,10 @@ def countCoveredBuildings(n: int, buildings: List[List[int]]) -> int:
 ### Summary
 The approach uses coordinate grouping and sorting for constant-time neighbor checks per building. The pattern is *row/column hashing* and is common in grid and rectangle coverage problems. It helps avoid brute-force O(n²) and can be reused for other “find neighbor in row/col” grid queries.
 
+
+### Flashcard
+Preprocess buildings into x→y and y→x mappings; for each building, use binary search on sorted coordinate lists to check if neighbors exist in all four directions in O(log k) per building.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting)
 

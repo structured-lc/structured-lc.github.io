@@ -122,6 +122,10 @@ def most_frequent_prime(mat):
 ### Summary
 We simulate all directional paths from every cell, generating numbers by concatenating digits, and count frequencies for those that are primes greater than 10. We use a frequency dictionary and cache prime checks to optimize for repeated values. This simulation/backtracking approach is common for matrix traversal problems involving prefix property checks, and the pattern applies to similar "generate as you go" substring or subarray counting problems.
 
+
+### Flashcard
+Generate all numbers in eight directions from each cell; track frequency of primes > 10, return most frequent.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Matrix(#matrix), Counting(#counting), Enumeration(#enumeration), Number Theory(#number-theory)
 

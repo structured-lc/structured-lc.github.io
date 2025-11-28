@@ -87,6 +87,10 @@ def maximumDifferenceEvenOddFrequencyII(s: str, k: int) -> int:
 ### Summary
 This problem uses the **sliding window + counting** pattern, exploiting the small digit alphabet to affordably check all relevant pairs. The main trick is efficiently computing, for each substring window, the max difference between odd/even freq characters—classic for questions involving substring stats with small constraint sets. This approach and pattern are broadly used in "at most K distinct chars," "longest substring with at least..." and frequency-based substring problems.
 
+
+### Flashcard
+Use sliding window (length ≥k) with frequency tracking for 5 digits; maintain max difference between odd and even frequency characters in each window.
+
 ### Tags
 String(#string), Sliding Window(#sliding-window), Enumeration(#enumeration), Prefix Sum(#prefix-sum)
 

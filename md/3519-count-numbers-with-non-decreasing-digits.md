@@ -128,6 +128,10 @@ This problem is a classic **Digit DP** application: counting numbers with given 
 It leverages recursion with memoization over digit positions, tight/limit propagation, and required digit ordering.  
 This pattern appears in problems that ask for counting numbers with certain digit properties—common in “number of X in [a,b]” queries—often requiring DP on digits for efficiency.
 
+
+### Flashcard
+Use digit DP with states (position, last digit, tight flag) to count non-decreasing numbers ≤ upper bound in base b; answer is count(r) − count(l−1).
+
 ### Tags
 Math(#math), String(#string), Dynamic Programming(#dynamic-programming)
 

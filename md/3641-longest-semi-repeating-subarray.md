@@ -102,6 +102,10 @@ def longest_semi_repeating_subarray(nums, key):
 - This pattern is broadly used for "longest/shortest subarray with at most X property" questions, e.g. longest substring with at most K distinct characters, or with at most K changes.
 - Understanding how to efficiently count properties within a moving window (without recomputing for every window) is the key transferable skill.
 
+
+### Flashcard
+Use sliding window with frequency map. Expand right pointer, track count of elements appearing >1 time; shrink left when repeated elements exceed key.
+
 ### Tags
 
 ### Similar Problems

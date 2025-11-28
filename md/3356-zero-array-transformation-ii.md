@@ -109,6 +109,10 @@ def minQueriesToZeroArray(nums, queries):
 ### Summary
 This problem is a classic application of **difference arrays** for efficient range updates, layered with **binary search** over queries for optimal k finding. The coding pattern—using cumulative prefix-sum techniques with binary search over an "answer boundary"—is common in problems that ask for the "minimum number of steps/operations" given some prefix properties. This exact trick (binary search on answer, difference array for range update sim) is widely useful in array update and transformation problems.
 
+
+### Flashcard
+Use binary search on k (number of queries to apply); for each k, use a difference array to efficiently check if all elements can be zeroed.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Prefix Sum(#prefix-sum)
 

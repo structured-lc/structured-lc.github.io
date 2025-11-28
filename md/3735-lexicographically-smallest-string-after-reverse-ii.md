@@ -115,6 +115,10 @@ This pattern is applicable to other problems involving:
 
 The technique trades computational efficiency for simplicity and correctness—acceptable when the input size is moderate (as is typical for hard LeetCode problems).
 
+
+### Flashcard
+Try all values of k and both operation orders; optimize by recognizing only specific k values matter and comparing candidates efficiently.
+
 ### Tags
 String(#string), Binary Search(#binary-search), Rolling Hash(#rolling-hash), Suffix Array(#suffix-array), Hash Function(#hash-function)
 

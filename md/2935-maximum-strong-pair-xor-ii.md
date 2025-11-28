@@ -129,6 +129,10 @@ def maximumStrongPairXor(nums):
 ### Summary
 This problem is a classic use of the **trie for fast binary XOR queries** paired with a **two-pointer/sliding window technique** based on sorted input and custom window constraints. The pattern is frequently used for maximum XOR problems (e.g., maximum XOR of any two numbers in a list) and in problems involving "windowed" or range-limited pair selection. It's an efficient alternative to brute force for large n, especially when fast max/min queries within a dynamic subarray are needed.
 
+
+### Flashcard
+Sort nums, then for each number y, use a sliding window to find all x where y ≤ 2x (strong pair condition). Compute XOR for valid pairs and track max. Reduces O(n²) brute-force via sorted constraint.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Bit Manipulation(#bit-manipulation), Trie(#trie), Sliding Window(#sliding-window)
 

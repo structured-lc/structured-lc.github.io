@@ -108,6 +108,10 @@ def distinct_points_after_removal(s: str, k: int) -> int:
 ### Summary
 This approach utilizes the **prefix sum** coding pattern to efficiently query the net movement of any substring, which enables fast calculation of the effect of removing any substring window. This is a common pattern in problems where additive properties allow range queries to be answered in constant time, such as in range sum queries or difference calculation. It can be applied to path-based grid movement, cumulative sum range queries, and sliding window problems.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window), Prefix Sum(#prefix-sum)
 

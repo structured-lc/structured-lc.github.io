@@ -123,6 +123,10 @@ def minArea(grid):
 ### Summary
 This problem is a classic example of optimizing region covering via rectilinear partitioning, solvable by considering all possible vertical and horizontal splits—efficient due to the grid’s modest size and direct bounding box area calculation. The approach is a common extension of “minimum bounding rectangle” plus greedy/partitioning tricks, useful in grid clustering, image segmentation, and coverage optimization.
 
+
+### Flashcard
+Try all possible ways to split the set of 1s into two groups; for each split, compute the bounding rectangle area for each group and sum them.
+
 ### Tags
 Array(#array), Matrix(#matrix), Enumeration(#enumeration)
 

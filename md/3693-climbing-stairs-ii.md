@@ -110,6 +110,10 @@ It uses a standard DP pattern with each `dp[i]` considering only a fixed number 
 This pattern applies to many pathfinding problems with local transitions and penalties.  
 Optimizations include reducing space to O(1) if only last few states needed and reconstructing solution paths if required.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

@@ -144,6 +144,10 @@ def maximum_sequence_value(nums, k):
 This problem applies **combinatorial DP** and **bitmask optimization** based on bitwise-OR properties, keeping the solution feasible despite the exponentially many possible groupings. The key insight is leveraging the small universal set of possible OR values and canonicalizing group selections to prune redundant exploration.  
 This coding pattern—decomposing into state-DP over subsets and tracking compact aggregations (like OR, AND, XOR)—is frequent in subset, bitwise, and selection partition problems. It can be adapted for similar 'split and maximize/minimize' scenarios with symmetric group operations.
 
+
+### Flashcard
+Use DP with bitmask to represent selected elements; for each state, track the maximum XOR of (OR of first k elements) XOR (OR of last k elements) among all valid 2k-element subsequences.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation)
 

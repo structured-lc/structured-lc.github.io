@@ -128,6 +128,10 @@ Pattern: *Single pass, early exit on invalid data, track required features with 
 This coding pattern is widely applicable for input validators/policy checkers, e.g., custom password rules, form validation, or lexical analyzers.  
 Common in both interviews and daily software work for basic input sanitation and property enforcement.
 
+
+### Flashcard
+Single pass through string: check length ≥ 3, verify all chars are alphanumeric, and track presence of at least one vowel and one consonant.
+
 ### Tags
 String(#string)
 

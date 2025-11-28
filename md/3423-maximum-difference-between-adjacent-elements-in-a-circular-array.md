@@ -72,6 +72,10 @@ def max_adjacent_difference(nums):
 ### Summary
 This problem exemplifies the *adjacent pair scanning* pattern with a circular extension: considering elements at the ends as adjacent. It demonstrates careful handling of indices (using `(i+1)%n`), and is a frequent sub-routine in problems involving cycles, patterns, or ring buffers. The time and space optimal solution uses a single linear scan and tracks a running maximum.
 
+
+### Flashcard
+Compute absolute differences between all adjacent pairs (including last and first due to circularity); return the maximum difference.
+
 ### Tags
 Array(#array)
 

@@ -113,6 +113,10 @@ def maxFrequency(nums, k, numOperations):
 ### Summary
 This solution uses an **enumeration and frequency counting pattern** typical for cases where the problem size is small and all possibilities can be checked efficiently. The key insight is to pick every achievable value as a potential target and maximize the number of indices you can convert to it within the allowed k range and operation limit. Variants of this pattern appear in “frequency maximization after changes”, “character replacement in strings”, and “at most k operations” sliding window problems.
 
+
+### Flashcard
+Since nums has ≤10 elements, try each possible target value v; for each element, check if it can reach v within ±k using ≤numOperations changes; count reachable elements.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Sorting(#sorting), Prefix Sum(#prefix-sum)
 

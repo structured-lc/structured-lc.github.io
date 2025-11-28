@@ -154,6 +154,10 @@ def sumOfAncestors(n, edges, nums):
 ### Summary
 This problem combines number theory (square-free residue) and path-counting with DFS on trees. The key insight is to match square-free parts, reducing ancestor counting to a prefix-frequency problem during traversal. This "factor signature on path" pattern appears in other GCD/LCM/prime-related ancestor queries.
 
+
+### Flashcard
+Compute the square-free part of each node value; a product is a perfect square iff both numbers share the same square-free part; use DFS with memoization.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Tree(#tree), Depth-First Search(#depth-first-search), Counting(#counting), Number Theory(#number-theory)
 

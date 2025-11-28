@@ -89,6 +89,10 @@ def minimum_removals(nums, k):
 ### Summary
 This problem uses the **two-pointer / sliding window** method on sorted data to define the maximal valid interval for every possible minimum. This approach avoids brute-force subset search and is a recurring pattern where kept subarrays must satisfy a maximum/minimum constraint. The pattern is broadly applicable to windowed or contiguous subarray balance problems.
 
+
+### Flashcard
+Sort array, then for each left endpoint (minimum), binary search or two-pointer to find the farthest right endpoint where nums[r] ≤ k × nums[l]; track maximum subarray length.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window), Sorting(#sorting)
 

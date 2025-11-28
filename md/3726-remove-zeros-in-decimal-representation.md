@@ -72,6 +72,10 @@ def removeZeros(n: int) -> int:
 ### Summary
 This problem demonstrates the power of leveraging built-in string operations for number manipulation. Converting to a string, filtering out unwanted characters, and converting back is a common pattern in competitive programming when dealing with digit-level operations. This approach trades potential mathematical complexity for code simplicity and readability. The same pattern applies to other digit-manipulation problems like counting specific digits, rearranging digits, or validating digit properties.
 
+
+### Flashcard
+Convert the number to a string, remove all '0' characters, and convert back to an integer.
+
 ### Tags
 Math(#math), Simulation(#simulation)
 

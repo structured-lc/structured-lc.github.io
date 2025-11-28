@@ -118,6 +118,10 @@ def maxProfit(prices):
 ### Summary
 This problem extends the standard "Best Time to Buy and Sell Stock" to include short-selling. The **DP state** models both position type (none, long, short) and tracks per-day options, using a recursion + memoization pattern. This is a standard “stateful DP” problem pattern, useful in advanced variants of stock trading, and anywhere transaction states can be represented by finite automata.
 
+
+### Flashcard
+Use DP with states (day, status) where status ∈ {0: no transaction, 1: holding stock, 2: short position}; at each day, transition by buying, selling, short-selling, or buying back.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

@@ -80,6 +80,10 @@ def isHarshad(x: int) -> bool:
 ### Summary
 This problem fits the "Digit Manipulation" pattern—extracting and processing digits using arithmetic operators and basic loops. The method is efficient and concise, with applications in digital root calculations, checksum algorithms, and divisibility checks. Recognizing problems that require extracting or processing digits directly leads to straightforward solutions using these simple loops.
 
+
+### Flashcard
+Extract digits via modulo and division; sum them; check if original number is divisible by digit sum (Harshad condition).
+
 ### Tags
 Math(#math)
 

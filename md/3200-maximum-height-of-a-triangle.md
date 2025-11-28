@@ -102,6 +102,10 @@ def maxHeightOfTriangle(red: int, blue: int) -> int:
 ### Summary
 The problem uses a **greedy alternating simulation**: build each row with the required number of balls, alternating colors, starting with either color, and track the max height achievable under the constraints. This is a classic case for greedy alternation and counting, and the approach is widely applicable for arranging objects under *alternating* or *adjacency* constraints.
 
+
+### Flashcard
+Try both starting colors (red or blue); for each, simulate row-by-row, alternating colors, until one color runs out; return the maximum height achieved.
+
 ### Tags
 Array(#array), Enumeration(#enumeration)
 

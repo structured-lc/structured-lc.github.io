@@ -127,6 +127,10 @@ def maximizeActiveSectionWithTrade(s: str) -> int:
 ### Summary
 This problem combines block segmentation, greedy selection, and two-pointers (run-length encoding and simulation) to efficiently consider possible "trades" that maximize active sections. It's a classic application of compressing the input to key events, then trying optimal swaps/pairings. The run-length encoding ("grouping") pattern applies to similar string or array problems where only contiguous blocks matter, and can support other interview problems like substring replacements, optimal flipping, or chunk-wise array operations.
 
+
+### Flashcard
+Segment string into alternating blocks of '1's and '0's; removing a '1' block and merging adjacent '0' blocks can increase active sections.
+
 ### Tags
 String(#string), Enumeration(#enumeration)
 

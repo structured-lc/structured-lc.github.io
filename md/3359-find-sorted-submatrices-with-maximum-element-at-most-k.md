@@ -107,6 +107,10 @@ def count_sorted_submatrices(matrix, k):
 ### Summary
 This problem is an example of the **matrix prefix processing** and **DP for ranges** pattern, with similarities to rectangle counting, prefix maxima/minima, and monotonic stack approaches. The rightward non-increasing count is a prefix DP per row, which is then used with an upward expansion for rectangles. Variants of this appear in problems about histograms in binary matrices, maximal rectangles, and special submatrix counts.
 
+
+### Flashcard
+Precompute for each cell how far right the row remains non-increasing; then iterate through all submatrices efficiently using these precomputed ranges.
+
 ### Tags
 Array(#array), Stack(#stack), Matrix(#matrix), Monotonic Stack(#monotonic-stack)
 

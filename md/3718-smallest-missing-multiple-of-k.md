@@ -78,6 +78,10 @@ This is a straightforward application of the hash set lookup pattern for fast ex
 The problem is a variant of "First Missing Positive" or "First Missing Multiple", commonly tested for set/hash usage and simple array scan.  
 This coding pattern is widely used for presence/absence questions and can also appear in integer sequence or modulo-based problems.
 
+
+### Flashcard
+Create a set from nums for O(1) lookup; iterate m = 1, 2, 3, ... and return the first m where m × k is not in the set.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

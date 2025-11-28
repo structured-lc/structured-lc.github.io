@@ -112,6 +112,10 @@ Similar patterns appear in:
 - **Greedy partitions for monotonic sequences**
 - Can be used in resource allocation, file merging, or pattern design where contiguous regrouping is permitted under a monotonic/constraint.
 
+
+### Flashcard
+Use DP where dp[i] = minimum length of non-decreasing array from merging elements 0..i. At each position, try merging consecutive elements into their sum and check if the result maintains non-decreasing order.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Stack(#stack), Queue(#queue), Monotonic Stack(#monotonic-stack), Monotonic Queue(#monotonic-queue)
 

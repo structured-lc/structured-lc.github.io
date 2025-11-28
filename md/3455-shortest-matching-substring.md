@@ -102,6 +102,10 @@ This problem exemplifies the **multi-segment substring search** pattern, a gener
 It’s related to *multi-pattern matching*, *greedy incremental search*, and is commonly seen in string parsing and wildcard pattern matching problems.  
 This technique can be adapted for patterns with multiple wildcards, and the coding patterns apply to problems like “subsequence with required segments” and custom regex substring searches.
 
+
+### Flashcard
+Split pattern by '\*' wildcards into three segments; use two-pointer or sliding window to find shortest substring containing all three in order.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Binary Search(#binary-search), String Matching(#string-matching)
 

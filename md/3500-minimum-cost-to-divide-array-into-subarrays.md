@@ -108,6 +108,10 @@ This problem uses a classic **DP with prefix sums** pattern, tackling **minimum 
 The state representation (index-based DP, considering all partitions at each index) is a frequent technique in "divide array with minimum cost" problems, and the prefix-sum precomputation is a common trick for fast subarray calculations.  
 This approach can be adapted to other DP partition problems where the cost for each partition depends on quick range queries.
 
+
+### Flashcard
+Use DP where dp[i] = minimum cost to partition nums[0…i−1]; for each split point, compute subarray cost using prefix sums.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
 

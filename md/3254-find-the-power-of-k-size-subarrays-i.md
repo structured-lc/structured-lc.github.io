@@ -94,6 +94,10 @@ def find_power_of_k_subarrays(nums, k):
 ### Summary
 The approach uses a **sliding window** to validate strict consecutive ascending sequences in O(n × k) time, suitable for moderate n. This "window with per-step validation" is a classic pattern for subarray problems and can be further optimized using auxiliary data structures for advanced scenarios. This solution is typical in checking "windowed" properties like consecutive elements, sortedness, or uniqueness, and the same pattern is used for problems such as "Longest Increasing Subarray" or "Subarrays with K-distinct values".
 
+
+### Flashcard
+Sliding window of size k; for each window, check if all adjacent pairs satisfy nums[j+1] == nums[j]+1 for consecutive ascending values.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window)
 

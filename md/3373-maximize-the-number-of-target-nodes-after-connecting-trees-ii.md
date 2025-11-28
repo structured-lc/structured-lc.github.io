@@ -207,6 +207,10 @@ def maximizeNumberOfTargetNodes(edges1, edges2):
 
 This problem uses the **tree coloring** and **parity** pattern. By coloring each tree node by even/odd depth and using rerooting DP, we efficiently track parity classes for any root. The **optimal selection** for each node leverages the property that parity only depends on distance, allowing efficient O(n + m) solutions. This approach is widely used in tree rerooting, dynamic programming on trees, and parity queries in subtrees.
 
+
+### Flashcard
+Use parity of distances; nodes at even distance from a node are targets; after connecting trees, count nodes with even parity distance.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
 

@@ -93,6 +93,10 @@ def countSpecialSubsequences(nums):
 ### Summary
 This is a classic **hashmap/dictionary and math pattern** with careful enumeration and ratio reduction. Similar techniques arise in fraction comparison, quadruple counting, and advanced sequence matching. The mapping from mathematical relations to counting structures is the key part, and modularity in counting applies for large results. This pattern also generalizes to subarray or tuple property counting in more complex sequence and graph problems.
 
+
+### Flashcard
+Fix middle indices (r, s) with s ≥ r + 2, then count pairs (p, q) where p < q < r and nums[p] × nums[r] == nums[q] × nums[s] using a hash map.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Enumeration(#enumeration)
 

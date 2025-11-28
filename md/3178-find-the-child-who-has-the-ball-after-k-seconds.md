@@ -89,6 +89,10 @@ def numberOfChild(n: int, k: int) -> int:
 ### Summary
 This problem leverages **cycle detection** and periodicity. The key insight is recognizing the repeating back-and-forth sequence, allowing for direct O(1) computation instead of brute-force simulation. This cyclic-movement pattern appears in problems involving "bounce" motion, periodic schedules, or circular queues, making the approach widely applicable in both technical interviews and real-world systems.
 
+
+### Flashcard
+Ball moves in a cycle of 2×(n−1) seconds; use modulo to find position within the current cycle without simulating every second.
+
 ### Tags
 Math(#math), Simulation(#simulation)
 

@@ -101,6 +101,10 @@ def isPossibleToRearrange(s: str, t: str, k: int) -> bool:
 This problem is a classic case of **hashing and multiset comparison**: preprocess input into grouped units (substrings), count frequency, and compare.  
 The coding pattern is the frequent "split → count → compare", commonly seen in anagram/grouping/subarray problems. Similar logic applies in "Group Anagrams" or "Check If Two Words Are k-Anagrams". Substring hashing and brute force partitioning are generalizations for harder variations.
 
+
+### Flashcard
+Split both s and t into k equal-length substrings; check if the multiset of substrings from s matches the multiset from t.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sorting(#sorting)
 

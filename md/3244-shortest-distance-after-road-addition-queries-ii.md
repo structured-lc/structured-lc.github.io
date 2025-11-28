@@ -96,6 +96,10 @@ def shortestDistance(n, queries):
 ### Summary
 This problem leverages an **interval/jump pointer compression** pattern, akin to flattening linked list jumps. Because the constraints guarantee no "crossing" intervals, a greedy update of jump pointers suffices for optimal paths. This pattern generalizes to range/jump pruning and is common where non-overlapping intervals must be handled, like certain greedy greedy graph sequence optimizations and union-interval problems.
 
+
+### Flashcard
+Use "no-crossing" property—maintain reachable range; each query shortcut "jumps" over a segment, reducing effective distance computation.
+
 ### Tags
 Array(#array), Greedy(#greedy), Graph(#graph), Ordered Set(#ordered-set)
 

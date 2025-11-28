@@ -96,6 +96,10 @@ The solution uses a hash set for O(1) presence checking of the next smallest abs
 This pattern is common for problems involving “missing positive integer” (such as LeetCode 41), but here with the added twist of a dynamic lower bound (strictly above average).  
 It’s also a good reminder to handle edge cases of averages and positive integer ranges carefully.
 
+
+### Flashcard
+Convert average to starting candidate using max(1, sum/len + 1), store nums in a set, then increment candidate until it's absent from the set.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

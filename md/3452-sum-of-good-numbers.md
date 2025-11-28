@@ -90,6 +90,10 @@ def sumOfGoodNumbers(nums, k):
 ### Summary
 This is a classic **linear scan** pattern where each element does at most two bounded neighbor checks. The approach generalizes to problems involving neighbors in arrays and can be applied to other "local comparison" problems, such as finding local maxima/minima or peaks in sequences.
 
+
+### Flashcard
+For each element nums[i], check if nums[i − k] and nums[i + k] exist and nums[i] > both; sum all such good numbers in O(n) time.
+
 ### Tags
 Array(#array)
 

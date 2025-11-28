@@ -190,6 +190,10 @@ This problem is a classic **group by / aggregate per key** type, similar to data
 Patterns used: grouping, aggregate calculations, filtering by multiple percentage criteria.  
 It's often seen in scenarios where you classify “top” entities based on time/rating/percentage splits (anomaly detection, customer segmentation, churn analysis, etc.).
 
+
+### Flashcard
+Group orders by customer_id using a hashmap, then for each customer check: total_orders ≥ 3, peak_orders/total ≥ 60%, and avg_rating ≥ 4.0 for rated orders.
+
 ### Tags
 
 ### Similar Problems

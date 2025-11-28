@@ -157,6 +157,10 @@ It’s often used for subtree queries where you need to aggregate or rank distin
 Patterns: DSU on tree, subtree queries, XOR path, offline query bucketization.  
 Variants can occur in histogram-based subtree problems, mergeable structures, and range query optimizations.
 
+
+### Flashcard
+Precompute root-to-node XOR for all nodes via DFS; for each query, collect XORs of subtree nodes, sort, return kᵗʰ smallest.
+
 ### Tags
 Array(#array), Tree(#tree), Depth-First Search(#depth-first-search), Ordered Set(#ordered-set)
 

@@ -86,6 +86,10 @@ def once_twice(nums):
 ### Summary
 The problem is a classic use case for a hash map (dictionary) counting pattern, often called "frequency count." This pattern is common in problems involving elements that appear a specified number of times. Variants apply to finding single or duplicate numbers, or filtering by frequency. Understanding hash maps and simple scans is critical for high performance with such constraints.
 
+
+### Flashcard
+Use hash map to count occurrences in one pass, collect all elements with count = 1, return sorted.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

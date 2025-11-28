@@ -132,6 +132,10 @@ def findAnswer(n, edges):
 ### Summary
 This problem applies the **Shortest Path** pattern; specifically, Dijkstra's algorithm to compute minimum distances from both start and end nodes. We use these distances to efficiently identify all edges lying on at least one shortest path, checking each in O(1). This approach is widely applicable to problems concerning all shortest routes in a positive-weight undirected graph (like alternative route tracking, logistics/checkpoint audit, etc).
 
+
+### Flashcard
+Run Dijkstra from node 0 and from node n−1 (reverse graph). An edge (u, v) is on a shortest path iff dist[u] + weight(u,v) + dist[n−1][v] = dist[n−1].
+
 ### Tags
 Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
 

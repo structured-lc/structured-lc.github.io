@@ -174,6 +174,10 @@ This problem leverages the **cycle detection in directed graphs**, taking advant
 The solution uses a visited set and per-node traversal to identify unique cycles efficiently.  
 Patterns here are applicable to problems like "Find all cycles in a functional graph," or "Group users by invitation cycles," seen commonly in social networks and gift circle analyses.
 
+
+### Flashcard
+Build directed graph where each node has one outgoing edge; follow chains from each unvisited node to find cycles; use visited set to avoid duplicates.
+
 ### Tags
 Database(#database)
 

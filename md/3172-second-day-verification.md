@@ -105,6 +105,10 @@ This problem follows the classic **table join and filter** pattern, which is fun
 The join relates transactional data (signup events) to actions; filtering applies relational and date-based logic.  
 This coding pattern is common for "event X happened exactly Y time after event Z" problems, e.g., checking follow-ups, reminders, or time-bound activities.
 
+
+### Flashcard
+Join emails and texts on email_id; filter for 'Verified' action and date difference of exactly 1 day; count matching pairs.
+
 ### Tags
 Database(#database)
 

@@ -128,6 +128,10 @@ This problem is a variant of **single-source shortest path** (Dijkstra’s algor
 Common pattern: shortest path with additional node/edge availability conditions.  
 This logic can be adapted for problems where *nodes or edges vanish* after certain periods—useful in network reliability, real-time systems, and simulated/active graphs.
 
+
+### Flashcard
+Classic shortest-path problem with node expiry constraint. Use Dijkstra's algorithm, but only relax edges to nodes if arrival time < disappear_time.
+
 ### Tags
 Array(#array), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
 

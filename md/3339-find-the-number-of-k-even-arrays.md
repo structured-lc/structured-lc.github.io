@@ -129,6 +129,10 @@ This problem uses **parity classification** and classic **dynamic programming**.
 The main insight is that counting only depends on whether numbers are even or odd (not their actual value), so we use counts for efficient transitions.  
 Pattern used: **Digit DP / parity DP** — commonly seen in sequence construction and restriction-counting problems.
 
+
+### Flashcard
+Analyze parity: (a × b) − a − b is even ⟺ both a and b have same parity; count even and odd values in array, compute valid combinations using combinatorics.
+
 ### Tags
 Dynamic Programming(#dynamic-programming)
 

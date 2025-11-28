@@ -94,6 +94,10 @@ It leverages the pattern where the position in the sequence (in base-2) directly
 The solution avoids brute-force construction and uses O(1) extra space by counting set bits in (k-1).  
 This approach generalizes to similar generative string or tree-based problems where the expansion follows recursive, repetitive rules.
 
+
+### Flashcard
+Simulate string growth by doubling with character shifts; track offsets as integers (0-25) instead of actual characters to reach k efficiently in O(k) time.
+
 ### Tags
 Math(#math), Bit Manipulation(#bit-manipulation), Recursion(#recursion), Simulation(#simulation)
 

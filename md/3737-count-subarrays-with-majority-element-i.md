@@ -86,6 +86,10 @@ def countSubarrays(nums, target):
 
 This problem uses the **two-pointer sliding window** pattern combined with a **brute-force enumeration** of all subarrays. The core technique is maintaining a running count as we expand the window, avoiding redundant recalculations. While the O(n²) time complexity appears high, it's acceptable for n ≤ 1000 and is straightforward to implement in an interview setting. For larger inputs, the problem scales to an O(n log n) solution using prefix sums and a binary indexed tree—a more advanced pattern that trades implementation complexity for better asymptotic performance.
 
+
+### Flashcard
+For each starting position, expand right and maintain target count; increment answer whenever target is majority in current subarray.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Divide and Conquer(#divide-and-conquer), Segment Tree(#segment-tree), Merge Sort(#merge-sort), Counting(#counting), Prefix Sum(#prefix-sum)
 

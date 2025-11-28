@@ -149,6 +149,10 @@ def maxFreeTime(eventTime, startTime, endTime):
 ### Summary
 This is a **greedy + simulation** scheduling problem, where given non-overlapping intervals and a window to slide one meeting, we leverage gap analysis and simulate moves to maximize the longest free interval. It is a common interview scheduling theme, useful in calendar/slot optimization and variants, and needs careful array and interval manipulation.
 
+
+### Flashcard
+Scan gaps between meetings; for each gap, try moving a meeting into it; track the maximum resulting free time block.
+
 ### Tags
 Array(#array), Greedy(#greedy), Enumeration(#enumeration)
 

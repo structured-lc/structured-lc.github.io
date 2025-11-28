@@ -82,6 +82,10 @@ def isSubstringPresent(s: str) -> bool:
 This problem uses the **fixed-size sliding window** and **hash set membership** approach—a common string pattern for quick substring existence queries.  
 The same approach applies to detecting repeated substrings, palindrome checks, as well as substring matching with generalized window sizes, provided the substring length is small relative to the string size.
 
+
+### Flashcard
+Precompute all length-2 substrings from reversed string into a set; check if each length-2 substring of original string exists in the reversed set in O(n) time.
+
 ### Tags
 Hash Table(#hash-table), String(#string)
 

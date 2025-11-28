@@ -109,6 +109,10 @@ This problem exemplifies a **hash map counting** pattern: use one mapping to tra
 This is a very common approach used for efficient management of state, such as "number of distinct X in current window" (sliding window/counting problems), or dynamic class sizes.  
 Learning this pattern is extremely useful for handling “distinct” or “occurrences in groups” problems in arrays, queries, or streaming data.
 
+
+### Flashcard
+Maintain a dictionary for each ball's current color and a dictionary counting balls per color; on color change, decrement old color count (remove if zero) and increment new color count.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Simulation(#simulation)
 

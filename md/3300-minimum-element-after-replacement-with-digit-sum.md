@@ -74,6 +74,10 @@ def min_element_after_digit_sum(nums):
 ### Summary
 This is a classic *array and digit manipulation* problem where a mapping operation (digit sum) is followed by a minimum-finding. The pattern appears frequently in digit/number transformation problems. The approach—processing each element individually, computing something simple (digit sum), and aggregating (minimum)—is a foundation for more complex data streaming and in-place transformation problems.
 
+
+### Flashcard
+Iterate through each element, compute digit sum by repeatedly taking mod 10 and dividing by 10, then return the minimum digit sum found.
+
 ### Tags
 Array(#array), Math(#math)
 

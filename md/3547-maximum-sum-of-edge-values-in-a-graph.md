@@ -147,6 +147,10 @@ class Solution:
 This problem uses a **graph-generalized greedy labeling pattern**: assign larger values to higher-degree nodes or those that participate in more edge products.  
 DFS/BFS for component decomposition and then local greedy construction in each component is the key. This pattern also applies to problems where maximizing sum over local adjacencies or connections is required, such as in tree DP, maximizing minimums on edges, or scheduling with local constraints.
 
+
+### Flashcard
+For each connected component, analyze structure (cycle vs. path); assign largest labels to highest-degree nodes to maximize repeated edge contributions to the sum.
+
 ### Tags
 Math(#math), Greedy(#greedy), Graph(#graph)
 

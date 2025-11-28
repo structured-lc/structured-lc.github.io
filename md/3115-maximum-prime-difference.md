@@ -95,6 +95,10 @@ This problem is a scanning/index-difference coding pattern, optimal with a singl
 The approach leverages small input constraints (nums[i] ≤ 100) to precompute primes and check efficiently.  
 This scan-min/max-index technique can be generally applied to range-maximum-difference questions and is a common trick in problems involving positions of selected values in arrays.
 
+
+### Flashcard
+Extract all indices where elements are prime. Return max_index − min_index (difference between last and first prime occurrence).
+
 ### Tags
 Array(#array), Math(#math), Number Theory(#number-theory)
 

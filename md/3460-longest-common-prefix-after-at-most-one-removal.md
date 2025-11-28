@@ -107,6 +107,10 @@ For a tighter O(n) solution, you could implement a two-pointers method with a sk
 ### Summary
 This problem combines the **longest common prefix** pattern with **one allowed skip** (or edit) on the source string. The brute-force solution is straightforward but not optimal for large inputs. The common interview optimization is using a **two-pointer technique with a skip flag**, which is a classic approach for "allow one mistake/skip" prefix and substring comparison problems. This is a common string manipulation and two-pointer interview pattern, also relevant for problems like substring search with errors, Plagiarism detection, or near-duplicate matching.
 
+
+### Flashcard
+Two-pointer with skip flag: match s and t character-by-character, allowing at most one character skip in s to maximize common prefix length.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string)
 

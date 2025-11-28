@@ -76,6 +76,10 @@ def minGroups(nums, k):
 ### Summary
 The approach exploits the **pigeonhole principle**: no two identical elements can occupy the same group, so the answer is the maximum number of times any number appears. This is a classic frequency-counting problem and falls under the **HashMap/Frequency Array + Greedy** pattern, which is common for problems about distributing or grouping with uniqueness/duplicate constraints.
 
+
+### Flashcard
+Maximum frequency of any number determines minimum groups needed; partition into max_freq groups by distributing each number's occurrences across different groups.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

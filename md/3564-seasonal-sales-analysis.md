@@ -125,6 +125,10 @@ def seasonal_sales_analysis(products, sales):
 ### Summary
 This problem is a classic **group by aggregation + tie-breaking** pattern, requiring careful mapping and aggregation, typically asked to assess comfort with data processing and edge case management. The coding pattern here is widely applicable in data analytics, reporting by category/group, and in windowed/tagged aggregation tasks.
 
+
+### Flashcard
+Join sales with products to get categories; map each sale's month to its season; group by (season, category), sum quantities and revenue; for each season, pick the category with max quantity (ties broken by revenue).
+
 ### Tags
 Database(#database)
 

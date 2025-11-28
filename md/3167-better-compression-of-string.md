@@ -97,6 +97,10 @@ def betterCompression(compressed: str) -> str:
 ### Summary
 This problem uses a **hashmap frequency accumulation** and **string parsing** pattern, a common approach for string parsing and character counting. The method improves on naive expansion by working only with counts, and the final sorting step is efficient given a-z range. This "frequency map merge and re-compress" handling can also be applied to log processing, letter counting, or data deduplication.
 
+
+### Flashcard
+Parse the compressed string character-by-character, extracting multi-digit counts; accumulate frequencies in a hashmap; output sorted by character with summed counts.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sorting(#sorting), Counting(#counting)
 

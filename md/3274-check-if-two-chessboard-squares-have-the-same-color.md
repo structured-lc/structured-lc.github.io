@@ -75,6 +75,10 @@ def checkTwoChessboards(coordinate1: str, coordinate2: str) -> bool:
 ### Summary
 This problem is a classic **parity-check** and grid-coloring issue, common in chessboard and matrix-pattern questions. The color of each cell is derived from the even/odd sum of its zero/one-based indices. The parity trick is widely used in grid or coordinate-based coding tasks and is useful for related problems involving checkerboard patterns or alternating assignments in arrays or matrices.
 
+
+### Flashcard
+A square at (row, col) is black iff (row + col) is even; check if both squares have the same parity sum.
+
 ### Tags
 Math(#math), String(#string)
 

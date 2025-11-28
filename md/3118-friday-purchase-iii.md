@@ -216,6 +216,10 @@ print(friday_purchase_iii(purchases, users))
 ### Summary
 This problem is a classic example of **pivoting with grouping over a template/cross-product**, ensuring all (category, time) pairs appear—even if not present in the data. The aggregation and cross-join pattern appears in report queries, data cubes, and analytics generally. It's also common in SQL ("generate all combinations and outer join"), log analytics, or time-series summary dashboards.
 
+
+### Flashcard
+Cross-join all Fridays in November 2023 with membership types (Premium/VIP). LEFT JOIN actual purchases and aggregate amounts, replacing NULLs with 0.
+
 ### Tags
 Database(#database)
 

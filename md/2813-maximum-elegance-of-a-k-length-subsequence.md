@@ -117,6 +117,10 @@ def findMaximumElegance(items, k):
 ### Summary
 The approach is a blend of **greedy** and **priority queue/min-stack**: pick the k largest by profit, but selectively swap out duplicates for new categories. This problem is an example of greedy “maximize one term but look for global boost” strategy commonly used in optimization with combinatorial constraints. Recognizing when to “trade” a little main value (profit) for a much bigger quadratic bonus (category set) is a key idea here. This pattern is common in "maximize sum plus f(unique thing)" combinatorics, e.g. in problems combining totals and diversity.
 
+
+### Flashcard
+Sort by profit descending, greedily pick top k items; track duplicate categories, swap duplicates with next-best items if it increases unique count and score.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Stack(#stack), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

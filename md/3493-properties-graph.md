@@ -124,6 +124,10 @@ This problem uses the **Connected Components** pattern, leveraging **Union-Find 
 It's a common approach for grouping by similarity (here, intersection size), and appears in graph, grouping, and clustering problems where connectivity must be tracked without explicit graph construction.  
 The mapping-to-sets and pairwise intersection ideas are broadly applicable, especially in "group by shared property" interview questions.
 
+
+### Flashcard
+Use Union-Find to merge nodes whose property sets intersect in ≥ k elements, then count connected components.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Graph(#graph)
 

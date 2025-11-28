@@ -153,6 +153,10 @@ class Router:
 ### Summary
 This problem uses a **queue** for FIFO eviction and per-destination **sorted lists** to enable fast time-window counting. The approach combines the **sliding window**, **binary search**, and **double data structure** patterns for efficient O(log n) queries. Variations of this structure are useful in real network routers, cache design, and sliding window analytics systems, where efficient eviction, lookup, and time-based queries are crucial.
 
+
+### Flashcard
+Maintain a queue for packet order and a hash map per destination with sorted timestamps for O(log n) range queries instead of O(n) traversal.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Binary Search(#binary-search), Design(#design), Queue(#queue), Ordered Set(#ordered-set)
 

@@ -124,6 +124,10 @@ The approach precomputes dynamic programming values, factorials, and combination
 This pattern is common in problems involving set partitions, assignments to groups, and combinatorial function compositions (common in both competition and real software for counting unique configurations).  
 It can also be seen in grouping/partitioning people into teams, assigning tasks, and distributing rewards in unique ways.
 
+
+### Flashcard
+Separate into two parts: (1) count surjective functions from n performers to x stages = x! × S(n,x) where S is Stirling number; (2) multiply by yˣ for score assignments.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Combinatorics(#combinatorics)
 

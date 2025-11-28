@@ -80,6 +80,10 @@ def restoreFinishingOrder(order, friends):
 ### Summary
 The pattern is **filtering a sequence based on membership in a set**, a very common algorithmic building block. This is used frequently in database queries (WHERE ... IN), set operations, and similar LeetCode tasks. The problem highlights the value of transforming an array into a set for efficient lookup.
 
+
+### Flashcard
+Convert friends to a set for O(1) lookup, then iterate through order and include elements present in friends; O(n + m) total.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

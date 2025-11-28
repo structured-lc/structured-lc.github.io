@@ -139,6 +139,10 @@ def pathExistenceQueries(n, edges, queries):
 ### Summary
 The problem is a classic case of **graph search with constraints**. Patterns: BFS for shortest paths in unweighted graphs, and caching results for repeated queries. Optimal for small limits or few queries; for huge graphs and numerous queries, requires advanced precomputation like all-pairs shortest paths or batch BFS. This approach and pattern appear in networking, pathfinding games, or reachability queries.
 
+
+### Flashcard
+Precompute shortest paths from each node using BFS; answer queries in O(1) by checking if dist[u][v] ≤ limit (trade O(n²) space for O(1) query time).
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Bit Manipulation(#bit-manipulation), Graph(#graph), Sorting(#sorting)
 

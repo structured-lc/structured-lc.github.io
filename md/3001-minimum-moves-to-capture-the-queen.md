@@ -97,6 +97,10 @@ def minMovesToCaptureTheQueen(a, b, c, d, e, f):
 ### Summary
 This is a straightforward chess-geometry problem: check if either attacker can capture immediately, accounting for the other piece as a blocker. If not, the minimum is always 2 moves, as either can realign and then attack. The coding pattern is constant-time simulation by direct calculation, often useful in problems involving piece movements and board constraints. This approach appears in many chess and board game LeetCode problems.
 
+
+### Flashcard
+Check if rook can capture in 1 move (same row/column, no bishop blocking). Check if bishop can capture in 1 move (same diagonal, no rook blocking). If both can, return 1; otherwise return 2.
+
 ### Tags
 Math(#math), Enumeration(#enumeration)
 

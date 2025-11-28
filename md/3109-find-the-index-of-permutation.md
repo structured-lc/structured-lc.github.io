@@ -121,6 +121,10 @@ def findIndexOfPermutation(perm):
 ### Summary
 This problem is a classic application of the **Factorial Number System** or combinatorial ranking of permutations. Efficient calculation uses a Fenwick Tree for fast prefix counts and factorials for block sizes. This coding pattern appears in permutation ranking/unranking problems in combinatorics, and can be applied to generate or locate the kᵗʰ permutation, count lexicographic orders, or handle ranking in problems with ordering constraints.
 
+
+### Flashcard
+Use factorial number system (Lehmer code). For each position, count how many remaining unpicked numbers are smaller than current element; multiply by (n−i−1)! and accumulate.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Divide and Conquer(#divide-and-conquer), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Merge Sort(#merge-sort), Ordered Set(#ordered-set)
 

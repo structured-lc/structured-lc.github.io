@@ -105,6 +105,10 @@ def findMinimumTime(skill, mana):
 ### Summary
 This problem is a classic **pipeline simulation** (or “job-shop scheduling” for a single pipeline). The code models a Gantt chart for tasks in a stage-by-stage process, updating when each wizard is available. The pattern and logic is reusable for multi-stage manufacturing, CPU pipeline modeling, and “time to complete last job in sequence” setups.
 
+
+### Flashcard
+Simulate the pipeline: for each (wizard, potion) pair, compute finish time as max(wizard's previous finish, potion's previous finish) + brew_time.
+
 ### Tags
 Array(#array), Simulation(#simulation), Prefix Sum(#prefix-sum)
 

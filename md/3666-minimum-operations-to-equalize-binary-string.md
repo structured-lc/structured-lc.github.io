@@ -127,6 +127,10 @@ def min_operations_to_equalize_binary_string(s: str, k: int) -> int:
 ### Summary
 This problem is a good application of **greedy methods** combined with **number theory (parity and divisibility on flip counts)**. The key is to realize the impact of k's parity on ability to reach all 1's and to handle corner cases directly. This pattern is common in problems involving flip/paint/grid/bitmask operations, and being able to justify impossibility based on parity or modular congruence is broadly useful.
 
+
+### Flashcard
+Use parity observation: flipping same index twice cancels out, so only parity of flips per index matters; model as system of linear equations over GF(2) and solve via Gaussian elimination.
+
 ### Tags
 Math(#math), String(#string), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Ordered Set(#ordered-set)
 

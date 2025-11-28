@@ -131,6 +131,10 @@ def find_x_value_of_array_ii(nums, k, queries):
 ### Summary
 This problem is a **counting with intervals** task: Once you realize that once a number divisible by k appears, the product of any subarray including it is also divisible by k, you can count all subarrays and subtract those that cannot possibly contain such a number. This **combinatorial interval exclusion** technique is reusable in various problems involving contiguous segments with certain forbidden or mandatory properties. The pattern is common in high frequency queries with cheap-to-compute updates, or in interval-based combinatorial counting.
 
+
+### Flashcard
+Observe that if any element in a subarray is divisible by k, the entire product is divisible by k; use this to prune and optimize counting.
+
 ### Tags
 Array(#array), Math(#math), Segment Tree(#segment-tree)
 

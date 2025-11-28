@@ -146,6 +146,10 @@ We used the classic **"House Robber"/DP with non-adjacent constraint** combined 
 This "DP with range updates/merges" pattern is common in problems involving subsequence sums under constraints, and the segment tree state merge is a general dynamic programming pattern for range queries.  
 Variants appear in Range Sum Queries, Dynamic Programming on intervals, and some DP optimizations.
 
+
+### Flashcard
+Use a segment tree where each node stores (max sum, max sum ending here, max sum not ending here); support point updates and range queries for fast DP recalculation.
+
 ### Tags
 Array(#array), Divide and Conquer(#divide-and-conquer), Dynamic Programming(#dynamic-programming), Segment Tree(#segment-tree)
 

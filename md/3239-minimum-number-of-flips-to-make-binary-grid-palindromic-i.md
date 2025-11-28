@@ -122,6 +122,10 @@ def minFlips(grid):
 ### Summary
 The approach uses a **greedy counting pattern** with symmetric index pairs to compute the minimal flips needed, either row-wise or column-wise. The minimum between these two options yields the optimal answer. This pattern (palindrome-restoration by pairwise comparison) also applies to classic string/array problems like "minimum insertions to make a string palindrome". The method is both optimal and efficient for the constraints.
 
+
+### Flashcard
+For rows: each symmetric pair (j, n-1-j) must match—count mismatches. For columns: each symmetric pair (i, m-1-i) must match—count mismatches. Return minimum.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Matrix(#matrix)
 

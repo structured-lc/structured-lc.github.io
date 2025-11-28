@@ -105,6 +105,10 @@ def maximumScore(a, b):
 ### Summary
 This problem is a classic example of "DP on few choices"; the key DP pattern is **subsequence picking with maximize/minimize**, especially when the pick order is fixed (like k = 4). The rolling DP and memoization technique here is reusable for variations involving picking elements from an array with constraints—see "Maximum Score from Performing Multiplication Operations" and “Pick k elements with rules” problems on LeetCode.
 
+
+### Flashcard
+Use DP with state (index in a, index in b); for each position in a, greedily pick the smallest available index in b that maximizes the current product while preserving order.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

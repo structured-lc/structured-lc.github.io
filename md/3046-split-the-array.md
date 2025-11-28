@@ -81,6 +81,10 @@ def is_possible_to_split(nums):
 ### Summary
 This approach uses the **hash map frequency counting** pattern and a key **pigeonhole principle** insight: for distinct halves, each value must appear at most twice (once per half). Frequency maps and count-checks are a common coding pattern—seen often in array partitioning, grouping problems, and constructing distinct sets.
 
+
+### Flashcard
+If any number appears > 2 times, impossible; otherwise, use backtracking/DP to check if valid split exists.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

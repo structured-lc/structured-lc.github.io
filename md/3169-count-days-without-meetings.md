@@ -101,6 +101,10 @@ This is a classic **merge intervals** problem — by merging all overlaps, you c
 This pattern occurs in sweep line problems, "meeting rooms", calendar schedulers, file range coalescing, and server/booking slot problems.  
 Recognizing overlap → merge → count gap is a recurring approach in real-world interval data.
 
+
+### Flashcard
+Sort meetings by start time, merge overlapping intervals; count gaps between merged intervals and add boundary gaps (1 to first start, last end to days).
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

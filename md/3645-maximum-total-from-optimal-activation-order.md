@@ -96,6 +96,10 @@ This problem demonstrates a classic **greedy** and **sorting by constraint** pat
 When constraints (like limits) risk making good options unavailable, prioritize them carefully—sort by the constraint, then quality/value. This is a common approach in activation or scheduling problems, especially where **greedy selection** with side effects (e.g., in eligibility/pruning) is required.  
 Patterns like this are useful in interval scheduling, jobs-with-deadlines, and greedy heap questions.
 
+
+### Flashcard
+Sort by (limit, value) pairs. Greedily activate highest-value items first while their limits allow; track cumulative sum and deactivate lowest-value items when active count exceeds limit.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting), Heap (Priority Queue)(#heap-priority-queue)
 

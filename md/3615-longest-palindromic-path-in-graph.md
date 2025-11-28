@@ -95,6 +95,10 @@ def longest_palindromic_path(n, edges, labels):
 ### Summary
 This problem uses standard DFS and backtracking with bitmask optimizations for small graphs. It combines character sequence construction (like word/path problems) with palindrome checking, and applies exhaustive search due to small constraints. This pattern—enumerating all simple paths and building/judging their properties on the fly—is a common approach in graph/DFS interview questions.
 
+
+### Flashcard
+Use DFS with bitmask to enumerate all simple paths; for each path, collect node labels and check if the resulting string is a palindrome; track maximum length.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Graph(#graph), Bitmask(#bitmask)
 

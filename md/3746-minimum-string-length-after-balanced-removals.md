@@ -130,6 +130,10 @@ This problem uses a **greedy stack pattern** where we immediately remove balance
 
 This pattern applies to many "balanced removal" problems like removing substrings (LeetCode 1544), canceling pairs in expressions, and matching parentheses-style problems. The counter-based optimization is a clever mathematical observation that you can pair any occurrence of one character with any occurrence of another, making the order irrelevant—only counts matter.
 
+
+### Flashcard
+Use stack to match and remove balanced pairs; key insight is that only counts of A's and B's matter, not their positions.
+
 ### Tags
 String(#string), Stack(#stack), Counting(#counting)
 

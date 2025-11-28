@@ -108,6 +108,10 @@ def find_power_k_subarray(nums, k):
 ### Summary
 This problem is an application of the sliding window technique, with a twist—checking for consecutive, strictly increasing integers within windows. The key optimization comes from translating the subarray check into a constant-time update as the window slides, by tracking the count of "bad" differences. The pattern is widely applicable for problems involving checking global/local conditions in contiguous subarrays, with similar techniques useful for monotonicity, strictness, and difference-based checks.
 
+
+### Flashcard
+Sliding window with early termination—track if current window has consecutive ascending values; if any pair breaks the pattern, mark that window as -1.
+
 ### Tags
 Array(#array), Sliding Window(#sliding-window)
 

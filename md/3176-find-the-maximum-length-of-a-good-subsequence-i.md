@@ -105,6 +105,10 @@ This problem uses a classic **dynamic programming** approach, similar to the Lon
 It's a variant of DP on sequences with a 'number of allowed mistakes/changes' state, which is a common coding pattern for sequence transformation problems.  
 Other applications include error-tolerant substring/subsequence matching, string transformations with allowed edits, or similar DP problems with bounded changes.
 
+
+### Flashcard
+For each possible target value x, use DP to find the longest subsequence with at most k elements differing from x; dp[i][j] = max length ending at i with j changes.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Dynamic Programming(#dynamic-programming)
 

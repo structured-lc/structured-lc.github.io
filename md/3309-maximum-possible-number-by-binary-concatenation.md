@@ -101,6 +101,10 @@ def maximum_binary_concatenation(nums):
 ### Summary
 This problem is a direct application of **brute-force search plus string manipulation**, justified by the fixed small size of input. It uses binary conversion and string concatenation. The core idea relates to the common "form the largest number" problems, often solved with custom orderings or greedy methods for larger sizes. Similar techniques apply to any “join representations in some order to maximize/minimize value” problems.
 
+
+### Flashcard
+Try all 3! = 6 permutations of the 3-element array; convert each to binary string, concatenate, convert back to decimal; return maximum.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Enumeration(#enumeration)
 

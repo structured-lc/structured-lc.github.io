@@ -118,6 +118,10 @@ def countStableSubarrays(capacity):
 ### Summary
 This problem combines **prefix sum optimization** with **brute-force enumeration**. The key insight is recognizing that checking all subarrays requires looking at all (l, r) pairs, but prefix sums let us check the interior sum condition in O(1). The pattern of using prefix sums to quickly compute range sums is widely applicable in array problems involving contiguous subarrays. Further optimization using HashMaps is possible by reformulating the search condition, converting the O(n²) nested loop into a single pass with lookups—a common technique in two-sum-like problems extended to subarrays.
 
+
+### Flashcard
+Use prefix sum + hash map to track when prefix[j-1] = prefix[i-1] + 3×capacity[i], ensuring capacity[j] = capacity[i] for valid stable subarrays.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
 

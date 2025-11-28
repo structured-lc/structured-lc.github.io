@@ -176,6 +176,10 @@ This problem uses an **interval heap + linked-array simulation** of merges, a co
 It’s a variation of “simulate merges by always picking the best local choice,” and is similar to *Interval heap* + *Sweepline* or *Union-Find* for dynamic intervals.  
 Useful for problems requiring efficient updates around local merges under global array constraints.
 
+
+### Flashcard
+Use a min-heap to efficiently track the smallest-sum adjacent pair; merge it and update neighbor relations in the heap.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Linked List(#linked-list), Heap (Priority Queue)(#heap-priority-queue), Simulation(#simulation), Doubly-Linked List(#doubly-linked-list), Ordered Set(#ordered-set)
 

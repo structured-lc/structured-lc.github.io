@@ -90,6 +90,10 @@ This problem is a *frequency-reduction* pattern, with careful constraint handlin
 The main coding pattern is *hashing for frequency counting* plus a *mathematical insight* about the reduction rules, commonly seen in string transformation problems.  
 Useful pattern to know for problems where restricted pair removals must be optimized globally.
 
+
+### Flashcard
+Use frequency map; for each character, if count ≥ 2, the minimum length contribution is count % 2 (either 1 or 0 chars remain).
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

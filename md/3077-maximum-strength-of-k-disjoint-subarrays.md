@@ -138,6 +138,10 @@ def maximumStrength(nums, k):
 ### Summary
 This problem uses a **dynamic programming** (interval DP) approach for partitioning arrays with alternating signed/coefficient sums, which is common in "pick k non-overlapping intervals to maximize weighted sum" problems. The key is capturing states: position, subarrays left, and whether starting new, and handling sign alternation and variable coefficients. This template generalizes to maximizing sum across disjoint subsegments with more complex weighting or sign alternating rules.
 
+
+### Flashcard
+Use DP with state f[i][k][fresh] (index, subarrays left, start new subarray); at each position, skip or include in current/new subarray.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
 

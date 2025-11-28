@@ -78,6 +78,10 @@ def flipSquareSubmatrixVertically(grid, x, y, k):
 ### Summary
 The approach leverages the fact that flipping vertically is just reversing row order for specific columns. In-place swapping of row slices (within submatrix columns) is an efficient coding pattern often applicable in matrix manipulation, such as rotating, mirroring, or transforming submatrices without allocating extra space. This is commonly found in grid-based problems in interviews and contests.
 
+
+### Flashcard
+Swap rows symmetrically within the k×k submatrix: for each row i in first ⌊k/2⌋ rows, swap with row at x+k−1−(i−x), operating on columns y to y+k−1 in place.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Matrix(#matrix)
 

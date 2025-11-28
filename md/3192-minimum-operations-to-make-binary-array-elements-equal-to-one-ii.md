@@ -81,6 +81,10 @@ def min_operations(nums):
 ### Summary
 This problem leverages the **greedy** pattern often seen in binary array flipping tasks, particularly when operations invert a whole suffix or prefix. The bitwise/XOR approach is particularly efficient for tracking parity of flips, and the pattern connects to problems involving "toggle" or "parity tracking" in-place. The problem is a direct application of greedy + bit manipulation and is commonly seen in various disguised forms across array and string toggling situations.
 
+
+### Flashcard
+Greedy left-to-right with a flip counter; at each index, if the current element (after accounting for previous flips) is 0, increment the flip counter.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

@@ -117,6 +117,10 @@ def minOperations(nums, queries):
 ### Summary
 This problem reduces to a *repeated subset-sum* problem with overlapping intervals, efficiently solvable by dynamic programming if `n` and queries are small. Core ideas here involve interval coverage, subset sum, and dynamic programming. Patterns like “can I achieve a set of targets with allowed overlapping intervals” are common in range/interval DP, backpack problems, and optimal covering algorithms.
 
+
+### Flashcard
+Use a greedy/DP approach: for each query, decide which indices in the range to decrement such that all elements eventually reach zero with minimum operations.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

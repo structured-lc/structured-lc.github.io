@@ -91,6 +91,10 @@ This problem uses a nested loop (brute force with early exit per substring) to c
 It highlights the **substring enumeration** and **early break** optimization pattern appropriate under small constraints.  
 Similar logic frequently appears in substring analysis, e.g., counting substrings that contain at most k distinct characters, sliding window for longest subarray, etc.
 
+
+### Flashcard
+Count substrings where count(0) ≤ k OR count(1) ≤ k; use two pointers to find the leftmost position where both exceed k, then subtract invalid ranges.
+
 ### Tags
 String(#string), Sliding Window(#sliding-window)
 

@@ -108,6 +108,10 @@ def minimumFlips(n):
 ### Summary
 This problem uses **bit manipulation with a two-pointer approach** to compare bits from opposite ends of a number's binary representation. The key insight is recognizing that we don't need to create an actual reversed string; instead, we can extract bits from symmetric positions and compare them. This is a common pattern in problems involving binary representations, palindrome checking, and bit-level operations. The approach applies to similar problems like reversing bits, checking binary palindromes, or comparing binary representations of two numbers.
 
+
+### Flashcard
+Use two pointers from LSB and MSB; extract and compare bits directly via bit manipulation without creating reversed string.
+
 ### Tags
 Math(#math), Two Pointers(#two-pointers), String(#string), Bit Manipulation(#bit-manipulation)
 

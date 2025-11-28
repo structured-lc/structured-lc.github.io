@@ -136,6 +136,10 @@ The solution applies the *prefix XOR* and *trie counting* pattern, common in "su
 This approach efficiently reduces O(n²) subarray checks to O(n) with bitwise Trie structure, which is a powerful method for problems involving counting pairs or ranges derived via bitwise or prefix computations.  
 The Trie + prefix computation pattern is broadly applicable in XOR/range querying challenges.
 
+
+### Flashcard
+Use prefix XOR array to compute subarray XOR in O(1). For each ending position j, count prefix XORs that satisfy the constraint using a hash map or sorted structure.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation), Trie(#trie), Prefix Sum(#prefix-sum)
 

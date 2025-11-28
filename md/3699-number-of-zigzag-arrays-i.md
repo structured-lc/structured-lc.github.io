@@ -111,6 +111,10 @@ The technique is common for:
 - Building up sequences with local conditions,
 - Combinatorial state transitions with O(1) lookups via prefix/suffix sum tricks.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Dynamic Programming(#dynamic-programming), Prefix Sum(#prefix-sum)
 

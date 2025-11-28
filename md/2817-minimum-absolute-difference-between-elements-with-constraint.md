@@ -90,6 +90,10 @@ def min_absolute_difference(nums, x):
 This problem illustrates the **"sliding window + ordered structure (BST/set with binary search)"** pattern, commonly used for "windowed" minimum/maximum/closest queries with constraints.  
 The key insight is: when you need efficient, repeated closest value search **within a moving dynamic range**, keep track of prior relevant window values in a sorted structure, updating as you sweep. This technique applies to median queues, K-diff pairs, or any "nearest" sliding window problem.
 
+
+### Flashcard
+For each i ≥ x, maintain sorted set of nums[0...i−x]; binary-search for closest value to nums[i], track minimum difference.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Ordered Set(#ordered-set)
 

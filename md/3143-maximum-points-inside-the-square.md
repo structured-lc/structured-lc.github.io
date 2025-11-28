@@ -93,6 +93,10 @@ This problem is an example of **grouping by boundary layers** and greedy set inc
 The key insight is associating each point with the smallest enclosing square, and growing the inclusion set layer by layer, halting when a duplicate tag occurs.  
 The tagging uniqueness requirement blends classic geometric search with counting under constraints; the set pattern for uniqueness is a common one, and this approach is very efficient for "expand and check uniqueness as you go" types of problems.
 
+
+### Flashcard
+For each point, compute min square side = max(|x|, |y|); sort points by this value, then greedily include points in increasing square sizes while maintaining tag uniqueness.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Binary Search(#binary-search), Sorting(#sorting)
 

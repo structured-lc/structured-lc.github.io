@@ -105,6 +105,10 @@ def getLargestOutlier(nums):
 ### Summary
 This problem uses the **hashmap counting** and **mathematical reasoning** pattern that's common in problems where you need to reconstruct hidden properties from aggregate values (like sums or frequencies). The key is transforming the problem to an equation and checking each candidate efficiently. This pattern appears often in interview problems involving "find the missing/extra element," subset sums, or array reconstruction.
 
+
+### Flashcard
+Compute total sum; for each element, check if (total_sum − element) / 2 exists as a distinct element in the array.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting), Enumeration(#enumeration)
 

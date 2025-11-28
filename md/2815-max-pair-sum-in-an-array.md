@@ -102,6 +102,10 @@ def maxSum(nums):
 ### Summary
 This problem illustrates the **bucket grouping + greedy selection** approach: categorize numbers by an attribute (here, max digit), and then optimize over each group. It's a variant of the "group by frequency, then maximize/minimize within group" pattern, which is applicable in many digit- or value-bucketed subarray or substring problems.
 
+
+### Flashcard
+Group numbers by max digit (0–9), for each group with ≥ 2 elements, sum the two largest; return maximum pair sum across all groups.
+
 ### Tags
 Array(#array), Hash Table(#hash-table)
 

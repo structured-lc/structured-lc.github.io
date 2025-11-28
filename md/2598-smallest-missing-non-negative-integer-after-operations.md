@@ -97,6 +97,10 @@ To solve this problem efficiently, notice the transformations allow every number
 By counting the occurrences for each remainder, and greedily matching up integers starting from 0 with available slots, we directly find the smallest non-negative integer that cannot be formed.  
 This greedy remainders + count assignment is a common competitive-programming technique (variants appear in “minimum excluded value” or “Mex” settings), and similar principles can be applied to interval covering and modular reachability problems.
 
+
+### Flashcard
+Key insight: from num, reachable values are num mod value; find smallest non-negative integer not in any residue class.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Greedy(#greedy)
 

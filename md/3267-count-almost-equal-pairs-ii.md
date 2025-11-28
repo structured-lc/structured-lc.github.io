@@ -123,6 +123,10 @@ def countAlmostEqualPairs(nums):
 ### Summary
 This problem uses the pattern of *enumerate all nearby states in a small local space* and counting using hashing, commonly seen in permutation-variant or transform-a-bit-problem interview types when the transform space is small. The solution uses efficient enumeration and mapping—similar to fingerprints, anagrams, or almost-equal string problems. This approach and pattern also apply to certain "at most k edits" or "reachable by swaps" problems.
 
+
+### Flashcard
+Two numbers are "almost equal" if their digit multisets differ in ≤4 positions (since 2 swaps fix ≤4 positions); precompute reachable numbers via ≤2 swaps for each number.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting), Counting(#counting), Enumeration(#enumeration)
 

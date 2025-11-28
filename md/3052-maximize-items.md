@@ -149,6 +149,10 @@ def maximize_items(inventory):
 ### Summary
 This problem is a **structured greedy allocation** with grouping constraint: maximize prime_eligible in sets, then fill with sets of not_prime. It’s not a classic knapsack; the grouping makes simple math and set-based counting optimal. The pattern shows up in warehouse loading, container shipping, and resource allocation with batch priorities. More complex variants (mixing types, picking any quantity per item) move to true knapsack/dynamic programming.
 
+
+### Flashcard
+Maximize prime_eligible items first: calculate cycles = ⌊500,000 / total_prime_sqft⌋; fill remaining space with not_prime items.
+
 ### Tags
 Database(#database)
 

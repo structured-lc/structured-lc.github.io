@@ -103,6 +103,10 @@ def countBowlSubarrays(nums):
 This problem is a good example of the **expansion-around-center** pattern and uses left/right extending sequences, which also applies in “peak” or “mountain” subarray problems.  
 The O(n) approach is often found in problems involving strictly monotonic subarrays, and the technique of precomputing range lengths appears in histogram/stack problems, as well as center-expansion methods in palindromes and mountain arrays.
 
+
+### Flashcard
+For each index as potential minimum, expand left while strictly decreasing and right while strictly increasing; count subarrays within valid span.
+
 ### Tags
 Array(#array), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

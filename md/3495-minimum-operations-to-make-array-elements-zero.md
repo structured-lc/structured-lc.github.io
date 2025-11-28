@@ -94,6 +94,10 @@ def minOperations(queries):
 This problem uses a *batching/floor reduction* pattern, grouped by powers-of-four segmentation. Instead of simulating every operation, you can count how many unique “operations” are needed for each number, batch those counts, and pair up all reductions — enabling much more efficient O(q × log(R)) calculation.  
 This technique is commonly applicable to reduction-operations on integer intervals, especially where the operation can be analyzed by levels or groupings, such as in bit manipulation, tree pruning, or other floor division scenarios.
 
+
+### Flashcard
+For each query, repeatedly pair the two largest elements and divide by 4 until all reach zero; use a max-heap for efficiency.
+
 ### Tags
 Array(#array), Math(#math), Bit Manipulation(#bit-manipulation)
 

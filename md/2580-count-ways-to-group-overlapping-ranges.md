@@ -87,6 +87,10 @@ def countWays(ranges):
 ### Summary
 This problem combines the interval merge pattern (sweep line/merge intervals) with combinatorics. By grouping overlapping intervals, we can think of each non-overlapping "component" as independently assignable, leading to a classic power-of-2 pattern similar to set partitioning. This pattern appears in interval scheduling, connected components (graph problems), and combinatorial set splitting tasks.
 
+
+### Flashcard
+Merge overlapping ranges into non-overlapping groups; each group can independently go to group 1 or 2, so answer is 2^(number of groups) - 1.
+
 ### Tags
 Array(#array), Sorting(#sorting)
 

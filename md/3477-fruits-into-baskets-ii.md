@@ -71,6 +71,10 @@ def unplaced_fruit_types(fruits, baskets):
         if not placed:
             unplaced
 
+
+### Flashcard
+Iterate through fruits left-to-right; for each, place in the first unused basket with sufficient capacity.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Segment Tree(#segment-tree), Simulation(#simulation), Ordered Set(#ordered-set)
 

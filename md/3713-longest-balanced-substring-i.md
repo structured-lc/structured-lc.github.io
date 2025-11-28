@@ -102,6 +102,10 @@ def longestBalancedSubstring(s: str) -> int:
 - The pattern here is "frequency matching in substrings", a common problem in anagrams, subarray sum, and sliding window techniques.
 - Useful in problems requiring count balancing or substring scans, like "Longest Equal Frequency Substring", "Longest Subarray with Equal Elements", etc.
 
+
+### Flashcard
+Use prefix frequency arrays for each character; for any substring [i, j], compute character counts in O(1) and check if all non-zero counts are equal.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting), Enumeration(#enumeration)
 

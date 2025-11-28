@@ -169,6 +169,10 @@ def max_min_sum_subarrays(nums, k):
 ### Summary
 This problem uses the **monotonic stack** pattern, related to “next/prev less/greater” problems. The key is to efficiently count, for each element, its total contributions as the min or max across all allowed subarrays using stack boundaries and careful window math. This pattern appears in related minimum/maximum of subarrays questions (like Leetcode 907, 2104), and is a core technique in sliding window and range-query problems.
 
+
+### Flashcard
+Apply monotonic deque for each window size 1 to k to efficiently compute min/max of all subarrays in O(nk) total time.
+
 ### Tags
 Array(#array), Math(#math), Stack(#stack), Monotonic Stack(#monotonic-stack)
 

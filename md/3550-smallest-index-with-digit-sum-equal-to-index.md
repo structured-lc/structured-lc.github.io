@@ -77,6 +77,10 @@ def smallest_index_with_digit_sum_equal_to_index(nums):
 ### Summary
 This problem is a classic *single pass / scan for first matching* pattern and a simple exercise in *digit processing*. The digit sum is a standard utility function you may encounter in problems involving number properties or base manipulation. Similar approaches are common in interview questions that require *linear search with a custom property* or *stat-based filtering on array elements*.
 
+
+### Flashcard
+Loop through array, compute digit sum for each element, return first index where digit sum equals index; O(n) with O(1) digit sum per number.
+
 ### Tags
 Array(#array), Math(#math)
 

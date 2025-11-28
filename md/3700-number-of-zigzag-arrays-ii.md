@@ -136,6 +136,10 @@ def numberOfZigZagArrays(n: int, l: int, r: int) -> int:
 ### Summary
 This problem is a **dynamic programming with state compression** combined with **fast matrix exponentiation** pattern, commonly used when n (sequence length) is huge but transitions are regular. The matrix formulation comes from the recurrence structure, and transition counting is reduced to linear algebra. Patterns like this appear in *linear recurrence*, *paths in graphs*, and constrained sequence counting.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming)
 

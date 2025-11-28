@@ -91,6 +91,10 @@ def maxDistance(s: str, k: int) -> int:
 ### Summary
 This problem is a classic **greedy simulation with case enumeration**: for each of several “optimally aligned” directions, simulate the walk greedily making changes where most valuable, to maximize a one-sided metric (Manhattan distance). The pattern of **enumeration + greedy simulation** is common in path optimization problems, and the approach applies in many grid-walk, "fix K mistakes" or alignment-maximization scenarios.
 
+
+### Flashcard
+Best strategy is to change moves to align all in one direction (N, S, E, or W); use greedy/DP to maximize Manhattan distance with ≤k changes.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), String(#string), Counting(#counting)
 

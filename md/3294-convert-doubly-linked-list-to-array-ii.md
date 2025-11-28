@@ -93,6 +93,10 @@ This problem applies the **"traverse a linked list from a non-head node"** patte
 It’s a fundamental linear scan problem: first walk left to find the head, then scan right to generate the output.  
 This pattern is common in problems involving doubly linked structures and is useful in data structures where you may start traversal from the middle or any arbitrary node.
 
+
+### Flashcard
+Traverse left via prev pointers until reaching the head (prev is None); then traverse right via next pointers, collecting all values into an array.
+
 ### Tags
 Array(#array), Linked List(#linked-list), Doubly-Linked List(#doubly-linked-list)
 

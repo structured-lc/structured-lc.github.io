@@ -105,6 +105,10 @@ def count_islands_with_total_value_divisible_by_k(grid, k):
 This problem is a **classic grid-connected component** search using DFS (or BFS), augmented by summing cell values and filtering by divisibility.  
 This pattern applies to similar "island" or "region" counting/count-then-filter problems, such as Number of Islands, Max Area of Island, or Perimeter/Property sum on grid components.
 
+
+### Flashcard
+Use DFS/BFS to identify islands; for each island, sum all cell values and check if sum % k = 0; mark visited cells to avoid reprocessing.
+
 ### Tags
 Array(#array), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Union Find(#union-find), Matrix(#matrix)
 

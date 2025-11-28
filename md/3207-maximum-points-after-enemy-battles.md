@@ -87,6 +87,10 @@ def maximumPoints(enemyEnergies, currentEnergy):
 ### Summary
 This problem is a **greedy simulation** with careful resource management. The main trick is to focus on always defeating the cheapest-cost enemy to maximize point gain, while using marks only for energy boosts when necessary. This kind of pattern occurs in **resource allocation DP, greedy coin change, and scheduling with refills**. The implemented greedy + math solution generalizes to similar problems with limited operations and one-shot restoration effects.
 
+
+### Flashcard
+Mark all enemies first to collect their energy, then greedily defeat enemies in ascending cost order until energy depletes.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

@@ -89,6 +89,10 @@ def minimum_levels(possible):
 ### Summary
 This problem is a classic prefix sum array split scenario, looking for a greedy optimal cut. It's similar to two-part partition problems, and the coding pattern (single-pass prefix-suffix comparison) is common in interview questions dealing with contiguous splits, array sum dominance, or team selection scenarios.
 
+
+### Flashcard
+Alice picks a prefix, Bob takes the suffix; find smallest k where prefixSum[k-1] > totalSum - prefixSum[k-1], i.e., 2 × prefixSum[k-1] > totalSum.
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

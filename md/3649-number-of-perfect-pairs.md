@@ -134,6 +134,10 @@ By observing that the bitwise equality only holds when there are no overlapping 
 For small arrays, brute force suffices; for bit-constrained inputs, advanced bitmask frequency tricks can give faster than quadratic time.  
 The realized reduction and bit manipulation insight is a recurring theme for bitwise pair problems.
 
+
+### Flashcard
+For bitwise AND to equal XOR, no bit position can have both operands = 1. Check each pair (i, j) in O(n²), or use bit-level filtering to prune candidates.
+
 ### Tags
 Array(#array), Math(#math), Two Pointers(#two-pointers), Sorting(#sorting)
 

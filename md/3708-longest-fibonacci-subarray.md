@@ -91,6 +91,10 @@ def lenLongestFibonacciSubarray(nums):
 ### Summary
 This problem uses the sliding window / streak length pattern for contiguous sequences with a sum property. Identifying window boundaries and maintaining counters is a common technique—applies whenever searching for longest contiguous patterns (e.g., arithmetic subarrays, constant-difference runs, or character substrings with properties). The solution is straightforward: linear scan, no sophisticated data structures, just counters.
 
+
+### Flashcard
+Iterate through the array and extend a Fibonacci streak when nums[i] = nums[i-1] + nums[i-2]; reset and track the maximum streak length.
+
 ### Tags
 Array(#array)
 

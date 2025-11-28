@@ -104,6 +104,10 @@ def count_substrings(word1: str, word2: str) -> int:
 ### Summary
 This problem uses the **sliding window with character frequency counting** pattern. It's a classic window/frequency check with an early-stopping trick: as soon as a substring is valid, all longer substrings starting at that left index are also valid. This approach is efficient for substring count/count of substrings with "at least" requirements, and can be adapted to many permutation and anagram-type subarray problems.
 
+
+### Flashcard
+Use a two-pointer sliding window approach; maintain character frequencies and expand/contract the window to find all substrings with length ≥ len(word2) containing required characters.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Sliding Window(#sliding-window)
 

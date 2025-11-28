@@ -144,6 +144,10 @@ def analyze_purchasing_behavior(transactions, products):
 ### Summary
 This problem combines **group-by aggregation**, per-group maximum selection with tiebreaker, and custom sorting—commonly found in report generation, recommendation engines, and e-commerce analytics. The coding pattern used is hash-table grouping plus nested iteration for max-selection, which is broadly applicable in log analysis, clickstream analytics, and customer segmentation problems.
 
+
+### Flashcard
+Join tables, group by customer, aggregate totals/counts, find mode category (most frequent, break ties by recency), compute loyalty score.
+
 ### Tags
 Database(#database)
 

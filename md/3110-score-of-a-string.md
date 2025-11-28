@@ -76,6 +76,10 @@ This problem is a straightforward string traversal and difference-aggregation pa
 It emphasizes careful handling of adjacent-pair logic, a pattern that recurs in problems like "wiggle sequence," windowed substring analysis, and local max/min pair differences.  
 The code and logic here are highly generalizable for similar neighbor-based operations on arrays or strings.
 
+
+### Flashcard
+Iterate through adjacent character pairs, sum absolute differences of ASCII values. Single pass, O(n) time.
+
 ### Tags
 String(#string)
 

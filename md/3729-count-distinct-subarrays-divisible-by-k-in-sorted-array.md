@@ -123,6 +123,10 @@ def countDistinct(nums, k):
 
 This problem combines two key patterns: **(1) Prefix Sum + Modulo Arithmetic** to efficiently find subarrays with a target divisibility property, and **(2) Deduplication via Element Grouping** to handle the constraint that identical subarrays should count only once. Since the input is sorted, identical elements cluster together, allowing us to compute over-counts mathematically rather than tracking each subarray explicitly. This approach is common in problems involving sorted arrays with duplicates and divisibility constraints, such as partitioning problems and subset sum variants.
 
+
+### Flashcard
+Since array is sorted, duplicates are grouped; use prefix sum modulo k with a dictionary to count distinct subarrays divisible by k, deduplicating by tracking ranges of identical elements.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Prefix Sum(#prefix-sum)
 

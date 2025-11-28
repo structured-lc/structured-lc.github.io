@@ -76,6 +76,10 @@ def numberOfSpecialChars(word):
 ### Summary
 This problem is a classic **set membership** and **character frequency** problem, relying on the fixed size of the English alphabet. The pattern (using sets to check presence) commonly appears in string processing and bit masking problems. This approach is efficient and scalable, handling any input size within the alphabet constraints efficiently.
 
+
+### Flashcard
+Use a set for O(1) lookup. Iterate 'a' to 'z'; count letters where both lowercase and uppercase forms exist in the set.
+
 ### Tags
 Hash Table(#hash-table), String(#string)
 

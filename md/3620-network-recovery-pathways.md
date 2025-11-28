@@ -119,6 +119,10 @@ def networkRecoveryPathways(n, edges, online, k):
 This problem uses the **binary search on the answer** technique combined with a modified **shortest path algorithm** (Dijkstra or BFS in DAG) to efficiently determine the highest possible minimum edge on a valid path under given constraints.  
 This is a classic approach applicable in similar optimization/search problems: maximize (or minimize) a key metric along a path subject to complex constraints (edge/node properties, cost limits). Common in hard graph questions, especially in network routing, resource allocation, or reliability scenarios.
 
+
+### Flashcard
+Clarify constraints (acyclic graph, online nodes as intermediates); use dynamic programming or DFS to find all valid paths from 0 to n−1 where intermediates are online and sum ≤ k; maximize the minimum edge weight on each path.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Dynamic Programming(#dynamic-programming), Graph(#graph), Topological Sort(#topological-sort), Heap (Priority Queue)(#heap-priority-queue), Shortest Path(#shortest-path)
 

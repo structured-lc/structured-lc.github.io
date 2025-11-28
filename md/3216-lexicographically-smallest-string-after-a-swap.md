@@ -81,6 +81,10 @@ def lexicographically_smallest_string_after_swap(s: str) -> str:
 ### Summary
 This problem uses a **greedy single-pass scan** to look for a beneficial adjacent swap (with parity constraint), a common pattern for problems requiring the first local improvement to guarantee global optimality under one-operation restriction. This approach is similar to early-exit bubble sort — often found in problems with local rearrangement constraints. This technique can be applied whenever the goal is to generate the lexicographically minimal string using one local operation.
 
+
+### Flashcard
+Scan left-to-right; swap s[i] and s[i+1] if they share parity and s[i] > s[i+1], then stop (only one swap allowed).
+
 ### Tags
 String(#string), Greedy(#greedy)
 

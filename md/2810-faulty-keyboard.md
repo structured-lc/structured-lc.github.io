@@ -80,6 +80,10 @@ def finalString(s: str) -> str:
 ### Summary
 This problem uses the **simulation pattern**, directly modeling the behavior described. The main coding pattern is: **string building with in-place transformations**, a common approach for many parsing/simulation questions. Understanding efficient use of string/list operations is key, especially for constrained input sizes, and can be broadly applied to problems involving stream processing or interpreters.
 
+
+### Flashcard
+Use list for efficient append; reverse list whenever `'i'` encountered; join at end—avoids repeated string concatenation overhead.
+
 ### Tags
 String(#string), Simulation(#simulation)
 

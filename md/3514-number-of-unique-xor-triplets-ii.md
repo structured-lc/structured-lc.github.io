@@ -96,6 +96,10 @@ def unique_xor_triplets(nums):
 ### Summary
 This problem is an application of bit manipulation and set-building: instead of triple-nesting for triplets, we optimize by using sets to store pairwise and then triplet XOR results. This deduplication leverages the properties of XOR and avoids O(n³) enumeration, landing us in O(n²) time and space. This pattern—breaking down higher-order combinations by enumerating lower-order ones and combining via associative, commutative operators—is common in interview settings involving bit manipulation or combinations, and appears in problems involving sums, subsets, and products as well.
 
+
+### Flashcard
+Precompute unique pairwise XORs, then XOR each with every array element to find all unique triplet XOR results efficiently.
+
 ### Tags
 Array(#array), Math(#math), Bit Manipulation(#bit-manipulation), Enumeration(#enumeration)
 

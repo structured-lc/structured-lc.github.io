@@ -87,6 +87,10 @@ This problem is a **bitmask pairwise search**—a common pattern when determinin
 The technique is widely used in problems like **Maximum Product of Word Lengths**, **bitwise set checks**, and **feature/mask constraints** in combinatorial algorithms.  
 It also reinforces preprocessing with hashmaps to quickly pair compatible or disjoint elements.
 
+
+### Flashcard
+For each unique bitmask, store the largest number with that mask; then check all pairs of non-overlapping masks (bitwise AND = 0) and track maximum product.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation)
 

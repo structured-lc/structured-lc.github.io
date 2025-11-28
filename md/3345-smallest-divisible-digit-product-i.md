@@ -89,6 +89,10 @@ This is a **math simulation** plus **digit manipulation** problem, relying on th
 The brute-force approach is also optimal due to the limited candidate space.  
 This approach (digit-product, digit-sum within a range) is a common pattern in digit dynamic programming (Digit DP), and useful wherever number properties or divisibility constraints relate to digit operations.
 
+
+### Flashcard
+Key insight: any number containing digit 0 has digit product 0 (divisible by any t); answer always within next 10 numbers, so brute-force check is O(1).
+
 ### Tags
 Math(#math), Enumeration(#enumeration)
 

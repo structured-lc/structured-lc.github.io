@@ -110,6 +110,10 @@ This problem is a classic application of the **greedy algorithm** and **priority
 The technique of prioritizing the removal (delay) of the largest-magnitude negative numbers is often used where you need to enforce array invariants (e.g., non-decreasing, non-negative sums).  
 Similar heap-greedy tricks can be found in problems involving minimizing/removing “bad” effects, such as interval scheduling, meeting rooms, or balancing running totals with constraints.
 
+
+### Flashcard
+Greedily postpone negative numbers by moving them to the end; maintain running prefix sum and swap when it goes negative.
+
 ### Tags
 Array(#array), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
 

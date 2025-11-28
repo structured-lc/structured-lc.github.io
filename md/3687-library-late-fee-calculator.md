@@ -74,6 +74,10 @@ def library_late_fee(due_date: str, return_date: str) -> int:
 ### Summary
 This problem is a direct application of **date difference calculation** and simple conditional logic. The **pattern** is common in billing, rental, and scheduling situations, whenever time-based penalties or fees are needed. Clear input validation and edge case handling are crucial for reliable real-world code.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Array(#array), Simulation(#simulation)
 

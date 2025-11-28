@@ -86,6 +86,10 @@ def equalSubstring(s: str) -> bool:
 ### Summary
 This problem follows a classic prefix sum technique — widely useful in substring, subarray, or "split with sum" types of questions. The key optimization is reducing score computation from O(n²) to O(n) with precomputed sums. This pattern appears in many partition, subarray, and balancing problems.
 
+
+### Flashcard
+Use prefix sums to compute substring scores in O(1); find the split point where prefix_sum = total_score/2 (total_score must be even).
+
 ### Tags
 String(#string), Prefix Sum(#prefix-sum)
 

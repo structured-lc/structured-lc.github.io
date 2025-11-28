@@ -136,6 +136,10 @@ This problem is a strong illustration of using a **suffix Trie** (by reversed in
 The main trick is realizing that reversing strings converts a suffix challenge into a prefix one, unlocking classic Trie efficiency.  
 The solution uses custom Trie nodes with storage for fast tie-breaking and is an example of "Trie plus metadata".
 
+
+### Flashcard
+Build a Trie of reversed strings from wordsContainer, storing index and length at each node; for each query, traverse reversed query in Trie to find longest common suffix, breaking ties by index then length.
+
 ### Tags
 Array(#array), String(#string), Trie(#trie)
 

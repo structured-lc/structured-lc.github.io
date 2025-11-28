@@ -108,6 +108,10 @@ The key approach to this problem is **stack-based matching** with efficient char
 It leverages the property that the closest earlier available partner will always be at the top of the stack.  
 Patterns like this arise in string pairing or greedy "first available" matching problems.
 
+
+### Flashcard
+Compute mirror of each character as chr(ord('a') + ord('z') − ord(c)); maintain stacks of unmatched indices per letter and pair greedily left-to-right.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Stack(#stack), Simulation(#simulation)
 

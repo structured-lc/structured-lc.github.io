@@ -123,6 +123,10 @@ Typical patterns: Generate all substrings, filter with a predicate (here: is_pri
 The pattern is commonly applicable to digit-string transformation and "find maximal substructure with property" problems.  
 Key challenge lies in the efficient correctness of the prime check, which is crucial for numbers possibly up to 10 digits.
 
+
+### Flashcard
+Generate all substrings (≤55 for length 10), convert to integers, check primality for each unique value, and sum the top 3 largest primes.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), String(#string), Sorting(#sorting), Number Theory(#number-theory)
 

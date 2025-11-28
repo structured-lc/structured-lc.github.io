@@ -183,6 +183,10 @@ def find_longest_calls(contacts, calls):
 ### Summary
 This problem demonstrates the **ranking within groups** pattern (i.e., windowed ranking), joining tables, and custom formatting after grouping/top-k selection. This is common in leaderboard, statistics, or "top N per category" database/reporting scenarios, and can often be addressed similarly in both code and SQL using sorting or window functions.
 
+
+### Flashcard
+JOIN Contacts and Calls tables. Use window function RANK() OVER (PARTITION BY type ORDER BY duration DESC) to rank calls within each type. Filter rank ≤ 3 and format duration as HH:MM:SS.
+
 ### Tags
 Database(#database)
 

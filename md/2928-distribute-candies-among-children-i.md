@@ -92,6 +92,10 @@ def distributeCandies(n: int, limit: int) -> int:
 This problem is a classic **bounded integer composition** with three parts (“stars and bars” with a cap).  
 The pattern: **Enumerate all solutions with upper bounds via nested loops**—a practical approach for small fixed k (children) and reasonable limit. For large limits or more children, combinatorial/inclusion-exclusion or DP is better. This pattern appears in problems of distributing indistinguishable items to groups with max/min constraints.
 
+
+### Flashcard
+Use stars and bars with inclusion-exclusion: count all distributions C(n+2,2), subtract cases where one child exceeds limit (3 × C(n-limit+1,2)).
+
 ### Tags
 Math(#math), Combinatorics(#combinatorics), Enumeration(#enumeration)
 

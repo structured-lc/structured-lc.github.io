@@ -79,6 +79,10 @@ def getSneakyNumbers(nums):
 ### Summary
 This solution leverages a classic counting array pattern, exploiting small constraints for clarity and simplicity. It’s highly applicable to similar duplicate-finding problems when the range of elements is known and limited. Variants include using hashmaps for larger ranges, or mathematical/XOR tricks for stricter space requirements — all of which are common patterns in array duplicate/interview questions.
 
+
+### Flashcard
+Use a hash map or counting array to track frequency of each number; iterate once and collect all numbers appearing exactly twice.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math)
 

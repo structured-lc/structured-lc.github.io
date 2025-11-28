@@ -134,6 +134,10 @@ def peaks_in_array(nums, queries):
 ### Summary
 This problem uses the **range query + point update** pattern, efficiently managed by Fenwick Trees or Segment Trees. It’s closely related to problems involving range sums, prefix computation, or maintaining counts after dynamic updates. This approach can be generalized to similar peak/valley or interval-counting queries in mutable arrays.
 
+
+### Flashcard
+Precompute a peak array; use a segment tree or Fenwick tree with bitmask to efficiently count peaks in a range and handle updates.
+
 ### Tags
 Array(#array), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
 

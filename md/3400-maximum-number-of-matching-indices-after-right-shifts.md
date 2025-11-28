@@ -84,6 +84,10 @@ This problem uses the **circular array matching** pattern and a brute-force slid
 It’s a classic use case for O(n²) search over all cyclic shifts, which is standard when constraints are moderate (n ≤ 3000).  
 Patterns here apply to other problems involving maximal overlap after rotations or circular shifts, and can be optimized using advanced algorithms for larger inputs.
 
+
+### Flashcard
+For each shift k (0 to n−1), count matching indices between shifted nums1 and nums2; track maximum matches across all shifts.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Simulation(#simulation)
 

@@ -133,6 +133,10 @@ def findPattern(board, pattern):
 ### Summary
 This problem is an example of a **sliding window with pattern mapping** in a 2D grid. The **bijective letter-to-digit mapping** inside candidate windows is a classic pattern seen in “isomorphic string” problems and 2D substring search. This technique is widely applicable for submatrix matching, isomorphism, and mapping-consistency checks.
 
+
+### Flashcard
+Use bijective letter-to-digit mapping with two-way validation; for each position, check if pattern matches by enforcing consistent letter→digit and digit→letter assignments.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Matrix(#matrix)
 

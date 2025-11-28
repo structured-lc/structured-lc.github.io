@@ -155,6 +155,10 @@ def analyze_subscription_conversion(user_activity):
 ### Summary
 This problem is a classic **group and join** scenario based on user_id, common in SQL analytics and ETL interviews. The pattern of grouping by ID and aggregating (mean) while filtering on a business conversion event is seen in subscription analytics, e-commerce conversion funnels, and retention analysis. The solution uses dictionaries for efficient group-by and can be extended and optimized for very large datasets using SQL window or CTE queries.
 
+
+### Flashcard
+Group records by user_id and subscription type, compute averages per user, then select users appearing in both groups.
+
 ### Tags
 Database(#database)
 

@@ -89,6 +89,10 @@ Count occurrences for each (player, color), then check if any player meets their
 The coding pattern is "grouping by keys and counting," common in card games or competitive scoring problems.  
 The solution is straightforward when constraints are tight; for larger or variable key spaces (like unbounded colors), a map/dictionary per group should be used.
 
+
+### Flashcard
+Use 2D array (player × color) to count balls per color per player; check if any color count ≥ i+1 for player i.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

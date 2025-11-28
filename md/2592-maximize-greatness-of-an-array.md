@@ -96,6 +96,10 @@ This problem is a classic **two-pointers greedy matching** problem, with sorting
 This **greedy** technique is common in maximization problems where elements need to be matched under constraints (e.g., assign tasks, maximize events, assign resources).  
 Other examples with similar patterns: assign cookies to children, maximize number of content children, scheduling non-overlapping intervals.
 
+
+### Flashcard
+Sort array, then use two-pointer greedy matching: for each original element, find smallest available element strictly greater than it.
+
 ### Tags
 Array(#array), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting)
 

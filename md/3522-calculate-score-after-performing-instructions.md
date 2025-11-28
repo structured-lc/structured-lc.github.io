@@ -137,6 +137,10 @@ def calculateScore(instructions, values):
 This problem demonstrates direct **simulation** with **cycle detection** using a visited array, a very frequent pattern for problems on jump-based board games, robot or infinite runner simulations, and others that require carefully stepping through a state machine or process.  
 Techniques here (O(n) simulation, visited tracking) are useful for problems involving cycles and process termination.
 
+
+### Flashcard
+Simulate with a visited set to detect cycles; track current index and score, updating based on instruction type until cycle or end.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Simulation(#simulation)
 

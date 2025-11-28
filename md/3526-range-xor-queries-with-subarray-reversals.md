@@ -215,6 +215,10 @@ This problem uses the advanced **implicit Treap** pattern, capable of supporting
 It demonstrates lazy propagation, ordered splits, and the power of randomized BSTs for array-like modifications under complex operations.  
 Similar data structures and ideas may be applied to range sum queries with reversals, substring manipulations, and ordered set problems where order and range operations must co-exist.
 
+
+### Flashcard
+Maintain a prefix XOR array; for range XOR queries use prefix array; rebuild prefix after each reverse or update operation.
+
 ### Tags
 Array(#array), Tree(#tree), Binary Tree(#binary-tree)
 

@@ -141,6 +141,10 @@ def minimumOperations(nums1, nums2):
 
 This problem combines **arithmetic optimization** with **greedy selection**. The key insight is that we must incur all transformation costs plus 1 for appending. The strategy is to find which element, when appended, minimizes the total operations. We calculate the baseline cost (sum of absolute differences), then add 1 for the mandatory append operation, plus the minimum additional cost (smallest absolute difference among all elements). This is a classic problem demonstrating how constraints force us into a greedy choice that's optimal. Similar patterns appear in problems involving array transformation with mandatory operations.
 
+
+### Flashcard
+For each element in nums1, calculate the cost to transform it to the corresponding target value; try each element as the appended value and pick the minimum total cost.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

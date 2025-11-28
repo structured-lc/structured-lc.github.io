@@ -111,6 +111,10 @@ This problem uses the **Digit DP** pattern, particularly useful for "count numbe
 This pattern is common for digit constraints, palindrome counting, and similar range queries.  
 Mastering digit dp helps handle a wide variety of unique-digit and bounding problems efficiently.
 
+
+### Flashcard
+Use digit DP to count numbers with unique digits up to n; answer is count(b) − count(a−1).
+
 ### Tags
 Hash Table(#hash-table), Math(#math), Dynamic Programming(#dynamic-programming)
 

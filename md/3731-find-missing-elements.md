@@ -77,6 +77,10 @@ def findMissing(nums):
 
 This problem uses the **set-based lookup pattern** to optimize repeated membership checks. Instead of searching linearly each time, we pre-process the input into a hash set for O(1) access. This transforms the naive O(n²) approach into an efficient O(n + r) solution. This pattern is widely applicable in problems requiring multiple membership queries, such as finding duplicates, intersection of arrays, or detecting missing elements in a range. The trade-off is using O(n) extra space to gain significant time complexity improvements.
 
+
+### Flashcard
+Convert array to a set for O(1) lookups, then iterate from min to max value and count missing elements.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting)
 

@@ -120,6 +120,10 @@ def maximumGoodSubtreeScore(vals, edges):
 This problem is a classic example of **DP on Trees** with submask merging and set/conflict avoidance. The main trick is merging child states only if their value sets are disjoint, which requires maintaining sets per subtree and efficiently combining them.  
 This coding pattern appears in unique-path or "maximum-sum-unique-set" tree dynamics, and is highly reusable if state-combination constraints are present (like coloring, value uniqueness, or subpath uniqueness in tree DP).
 
+
+### Flashcard
+Use tree DP with DFS; at each node, maintain a map of (bitmask of distinct values) → (max sum); merge child results ensuring no value overlap, and track the maximum score.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Tree(#tree), Depth-First Search(#depth-first-search), Bitmask(#bitmask)
 

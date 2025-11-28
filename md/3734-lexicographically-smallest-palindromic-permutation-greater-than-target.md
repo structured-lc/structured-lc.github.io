@@ -148,6 +148,10 @@ def makeSmallestPalindromic(s, target):
 
 This problem combines **backtracking with pruning** and **palindrome construction** from character frequencies. The core pattern is to build only half the palindrome (since the other half is determined by the palindrome property), and aggressively prune branches that cannot yield a result greater than the target. The key optimization is recognizing that once we diverge from the target's prefix with a larger character, we can immediately fill remaining positions with the lexicographically smallest valid characters. This pattern applies to other constrained permutation generation problems where we need solutions satisfying multiple criteria simultaneously.
 
+
+### Flashcard
+Use backtracking with character frequency map to construct palindromes directly; at most one character can have odd frequency (for middle position).
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Enumeration(#enumeration)
 

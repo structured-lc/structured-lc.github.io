@@ -112,6 +112,10 @@ This solution uses the **cycle decomposition pattern** commonly found in "minimu
 It computes the target sorted state using custom criteria (digit sum), then processes the array to count swap cycles.  
 This pattern generalizes to any sorting-by-criteria + swap-minimization question, and is seen in problems like "Minimum Swaps to Sort an Array" and "Min Swaps To Make Palindrome".
 
+
+### Flashcard
+Compute digit sum for each element; sort array by digit sum to get target order; use cycle decomposition to find minimum swaps needed.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Sorting(#sorting)
 

@@ -101,6 +101,10 @@ def stringHash(s: str, k: int) -> str:
 The problem follows a simulation/string-grouping pattern: break string into equal chunks, perform a fixed calculation per group, and aggregate the result.  
 The pattern is common for rolling hash, block-wise string operations, modular arithmetic in strings, and is a useful building block in string hashing, cryptography basics, and grouped feature extraction in machine learning workflows.
 
+
+### Flashcard
+Split string into chunks of size k, sum alphabet indices (a=1, b=2, ..., z=26) for each chunk modulo 26, convert back to character.
+
 ### Tags
 String(#string), Simulation(#simulation)
 

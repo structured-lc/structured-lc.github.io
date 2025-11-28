@@ -99,6 +99,10 @@ def maxOperations(nums):
 ### Summary
 This problem is classic **DP on intervals** with constraints, requiring tracking choices and the state (current ends and score). The DP pattern (intervals, memoization) is common in range-removal, "burst balloons", or "palindromic substring" style problems. The approach generalizes to any problem where the result depends on previous stateful operations with constraints.
 
+
+### Flashcard
+Use recursion with memoization on (left, right, target_score); at each step, try removing from ends while maintaining score.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Memoization(#memoization)
 

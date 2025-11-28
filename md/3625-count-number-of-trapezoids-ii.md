@@ -117,6 +117,10 @@ This problem combines **geometry**, **combinatorics**, and **hash mapping** for 
 It's an example of "geometry + hashing"—the same grouping-by-slope or angle pattern appears in problems like "Number of Boomerangs," "Number of Colinear Triplets," or fast parallelogram counting.  
 Handling properties like convexity, parallelism, and side length without brute force is crucial for efficient solutions to many geometry-with-points problems.
 
+
+### Flashcard
+For each group of 4 points, check if they form a convex quadrilateral with exactly one pair of parallel sides (not a parallelogram); use slope comparison to detect parallel sides.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Geometry(#geometry)
 

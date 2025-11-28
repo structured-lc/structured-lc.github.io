@@ -134,6 +134,10 @@ def find_best_candidates(candidates, projects):
 ### Summary
 This is a classic join-and-score problem, matching records between two collections, grouping and filtering by derived properties (having all required skills), then ranking ("windowing") by the computed scores per group. This pattern often appears in recommendation engines, job matching, and advanced multi-key filtering tasks. The controlling ideas are match, group, score, and select best by rank.
 
+
+### Flashcard
+Index candidates' skills by ID and precompute required skills per project; for each project, iterate only eligible candidates and track the highest score, breaking ties by lower candidate_id.
+
 ### Tags
 Database(#database)
 

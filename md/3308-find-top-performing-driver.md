@@ -184,6 +184,10 @@ def find_top_performing_driver(drivers, trips):
 The approach is a direct application of the **group by + ranking with tie-breakers** pattern.  
 This coding pattern appears in “Top k per group,” “Leaderboard,” and “employee performance” problems commonly seen in data-oriented interviews and can be implemented similarly in SQL using window functions or in Python using max with composite keys.
 
+
+### Flashcard
+Group trips by driver to compute average rating; join with driver table; for each fuel type, select driver with highest avg rating (break ties by max mileage, then min accidents).
+
 ### Tags
 Database(#database)
 

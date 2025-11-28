@@ -152,6 +152,10 @@ print(find_students_who_improved(scores))
 ### Summary
 This problem is an example of the "group by key, compute aggregate per group" pattern, commonly found in data processing, analytics, and interview questions (e.g., SQL window functions, reduce-by-key in Spark/map-reduce). It applies wherever you need to track and compare first/last or min/max events in time for grouped entities. The coding pattern is a standard single-pass hash map approach with per-group aggregation.
 
+
+### Flashcard
+Group scores by (student_id, subject) and sort by exam_date; for each group with ≥2 records, check if latest score > first score.
+
 ### Tags
 Database(#database)
 

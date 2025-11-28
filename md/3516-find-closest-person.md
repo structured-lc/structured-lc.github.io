@@ -78,6 +78,10 @@ def findClosestPerson(corridor: str, targetId: int) -> int:
 ### Summary
 This problem is an instance of the "nearest neighbor" pattern, which comes up when comparing distances in a 1D or 2D context. Here, a basic linear search yields an optimal solution. This scan-and-compare technique can also be applied to computational geometry, clustering, seating problems, or anywhere you need to identify minimum distances among a set of entities.
 
+
+### Flashcard
+Scan to find targetId's position, then compute absolute distance to all other people and return the one with minimum distance (or smallest id on tie).
+
 ### Tags
 Math(#math)
 

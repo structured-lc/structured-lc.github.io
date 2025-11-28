@@ -124,6 +124,10 @@ The root idea is exploiting the mathematical restriction on substring compositio
 The windowed two-pointer trick for every zero count keeps this O(√n × n), which is a classic subquadratic method for problems with "special substring" criteria.  
 This pattern also works for problems like substring sums in restricted ranges, or substrings with unique frequency counts.
 
+
+### Flashcard
+For each possible zero count z, substring needs ≥ z² ones; use two-pointer/sliding window to count valid substrings efficiently.
+
 ### Tags
 String(#string), Enumeration(#enumeration)
 

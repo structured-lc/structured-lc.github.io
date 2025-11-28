@@ -149,6 +149,10 @@ This problem is a classic example of the **"state DP + prefix sum"** pattern for
 It uses information about increasing/decreasing runs to efficiently find trionic shapes, and prefix sums for O(1) subarray sum lookup.  
 This approach (scanning left/right, storing longest runs, aggregating via prefix sums) is common in many array/sequence segmentation and maximal subarray sum problems.
 
+
+### Flashcard
+Precompute for each index the max length of strictly increasing subarrays ending/starting there. Then for each middle point, combine left-increasing + middle + right-increasing segments.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

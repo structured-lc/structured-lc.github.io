@@ -134,6 +134,10 @@ This problem uses the classic **DP on substrings counting with remainder bucket*
 - This technique is useful for substring divisibility, matching remainder rules, and any DP where multiple counters must evolve per position.  
 - It avoids brute-force and is used in substring counting problems with modularity or divisibility constraints.
 
+
+### Flashcard
+For each position, use modular arithmetic to check divisibility without converting full substring to integer; track remainders efficiently.
+
 ### Tags
 String(#string), Dynamic Programming(#dynamic-programming)
 

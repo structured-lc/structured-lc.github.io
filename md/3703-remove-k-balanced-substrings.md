@@ -87,6 +87,10 @@ def remove_k_balanced_substrings(s: str, k: int) -> str:
 ### Summary
 The stack-based pattern removal is a common approach for problems related to well-formed parentheses and pattern removal (like "Remove All Adjacent Duplicates in String"). This method is efficient because each pattern can only be formed and removed once per character. The same pattern is useful for problems involving repeated pattern removal, balance checking, and parsing nested structures.
 
+
+### Flashcard
+Use a stack to track opening brackets and count consecutive '(' characters; when you find k consecutive '(' followed by k consecutive ')', pop 2k characters and reprocess from the new top.
+
 ### Tags
 String(#string), Stack(#stack), Simulation(#simulation)
 

@@ -118,6 +118,10 @@ def longestBalancedSubarray(nums):
 ### Summary  
 This problem uses a **sliding window + hashmap/counting** technique to efficiently track distinct parity counts. The pattern is common for longest subarray/substring problems with balance or equality conditions (see: longest subarray with equal numbers, balanced parentheses, etc.). This approach generalizes to other “balanced” subarray/substring type interview questions where state can be encoded and window updated efficiently.
 
+
+### Flashcard
+Use a sliding window with sets for distinct evens and odds; maintain balance and track the maximum length where the counts are equal.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Divide and Conquer(#divide-and-conquer), Segment Tree(#segment-tree), Prefix Sum(#prefix-sum)
 

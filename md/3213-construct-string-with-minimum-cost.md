@@ -102,6 +102,10 @@ This problem uses the classic **DP on string construction** pattern, much like "
 Building from the end (bottom-up), for each index, it explores all words that can be placed at that index, tracking the minimum cost.  
 It's a reusable approach where dynamic programming and careful pre-processing (prefix matching, optional Trie) are crucial. This pattern frequently appears in **combinatorial string DP**, and can handle various constraints (e.g., minimum steps, path reconstruction, or constraints on repeat use).
 
+
+### Flashcard
+DP on string: dp[i] = minimum cost to build target[i:]; for each i, try all words matching target[i:] prefix and recurse.
+
 ### Tags
 Array(#array), String(#string), Dynamic Programming(#dynamic-programming), Suffix Array(#suffix-array)
 

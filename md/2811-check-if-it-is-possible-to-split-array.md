@@ -87,6 +87,10 @@ def canSplitArray(nums: list[int], m: int) -> bool:
 ### Summary
 The approach leverages a key insight about adjacent pairs to avoid unnecessary recursion or brute force, turning a seemingly tricky split problem into a single sweep for qualifying "cut points". This greedy/search pattern is common in array splitting and partitioning tasks. Variants of this logic often appear in DP-on-arrays, partitioning, and subarray sum problems.
 
+
+### Flashcard
+Base case: length < 3 always splittable; for n ≥ 3, recursively check if any split point i exists where both subarrays are splittable and nums[i] + nums[i+1] ≥ k.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

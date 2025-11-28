@@ -80,6 +80,10 @@ The solution is a direct application of **prefix sum** and counting.
 It's a classic example of maintaining a running state through an array.  
 This pattern — tracking running sums or states and counting when a property holds (sum == 0) — frequently appears in problems like subarray sum, zero-crossing, and simulation-style interview problems.
 
+
+### Flashcard
+Track position with running sum; count how many times position equals 0 after each move.
+
 ### Tags
 Array(#array), Simulation(#simulation), Prefix Sum(#prefix-sum)
 

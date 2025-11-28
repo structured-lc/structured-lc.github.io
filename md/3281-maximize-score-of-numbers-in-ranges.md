@@ -113,6 +113,10 @@ def maximizeScore(start, d):
 ### Summary
 We applied a **binary search on the result (score)** approach, using greedy checking to verify if a given minimal difference is feasible by picking left-to-right. This pattern is common in *placement*, *distance maximization*, and *load balancing* problems, like **aggressive cows**, **placing routers**, or any scenario where you want to maximize the minimal gap in a selection.
 
+
+### Flashcard
+Use DP or greedy observation: the score is minimized by the smallest pairwise difference; binary search on the answer and check if a valid selection exists for each candidate score.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Greedy(#greedy), Sorting(#sorting)
 

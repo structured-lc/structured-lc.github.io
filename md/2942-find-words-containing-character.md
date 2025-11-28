@@ -74,6 +74,10 @@ def findWordsContaining(words, x):
 This problem is a classic example of a **"filter by condition" over a list**, and the coding pattern is "enumerate with filter."  
 The approach—iterate through all items, collect indices that match a condition—is a fundamental list-processing technique, useful whenever filtering indices based on content or properties. Similar logic can be applied to searching substrings, filtering lists of numbers by conditions, and more.
 
+
+### Flashcard
+Simple linear scan: for each word, check if character x is present using built-in string methods (contains, in, find). Collect indices of matching words.
+
 ### Tags
 Array(#array), String(#string)
 

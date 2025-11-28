@@ -113,6 +113,10 @@ def maxScore(grid):
 ### Summary
 This problem uses a **bitmask dynamic programming** pattern, where each bitmask encodes which rows have already had a cell assigned. The key optimization is that the number of rows is small, letting us enumerate all possible combinations of chosen rows efficiently. This bitmask DP trick is common in grid, matching, and combinatorial selection problems, especially with "unique set" and "no two from the same row" constraints.
 
+
+### Flashcard
+Group cells by value, then use DP or backtracking—for each unique value, track which rows are available and select the maximum-scoring subset.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Matrix(#matrix), Bitmask(#bitmask)
 

@@ -102,6 +102,10 @@ def max_transactions_without_negative_balance(transactions):
 ### Summary
 This problem uses a **greedy with min-heap** approach, choosing withdrawals optimally to maximize accepted transactions while maintaining a non-negative running total at each step. It's a variant on greedy scheduling/sequence problems (see "Subarray Sum ≥ K", longest valid parentheses, or "scheduling lectures with capacity"). Patterns like this (greedy, skip/replace worst-so-far) appear in interval scheduling, maximizing elements under running sum constraints, and problems involving subarray or sequence with monotonic conditions.
 
+
+### Flashcard
+Use a greedy approach with a min-heap: always process deposits first (in order), then greedily add withdrawals starting with the smallest to maximize transaction count.
+
 ### Tags
 Array(#array), Greedy(#greedy), Heap (Priority Queue)(#heap-priority-queue)
 

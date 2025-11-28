@@ -70,6 +70,10 @@ def stableMountains(height, threshold):
 ### Summary
 This approach uses a single pass and constant extra space (besides the output), representing a classic linear scan and filtering pattern. It’s common in problems where you need to collect indices or elements based on adjacent values and simple comparisons; similar logic applies in local extrema, peak finding, and segment detection problems.
 
+
+### Flashcard
+Single pass from index 1 to n−1, collecting indices i where height[i−1] > threshold; O(n) is optimal since every element must be checked.
+
 ### Tags
 Array(#array)
 

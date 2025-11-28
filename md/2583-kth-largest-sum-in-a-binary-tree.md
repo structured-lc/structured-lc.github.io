@@ -141,6 +141,10 @@ def kthLargestLevelSum(root, k):
 ### Summary
 This problem follows the *Level-order BFS* pattern to compute layer-based aggregates (like per-level sums). Collecting, then sorting (or heap-selecting) the results is a common follow-up. Similar aggregation logic applies in problems involving per-layer statistics, tree views, and hierarchical data queries.
 
+
+### Flashcard
+Use BFS to traverse tree level-by-level, sum each level, sort sums descending, and return kᵗʰ element.
+
 ### Tags
 Tree(#tree), Breadth-First Search(#breadth-first-search), Sorting(#sorting), Binary Tree(#binary-tree)
 

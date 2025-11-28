@@ -106,6 +106,10 @@ def lexicographicallySmallestArray(n, target):
 
 This problem combines greedy selection with sorting to achieve the lexicographically smallest result. The key insight is recognizing that starting from all negatives and flipping larger numbers to positive maintains both feasibility and lexicographic minimality. The pattern is applicable to similar optimization problems where you need to construct a result with constraints on sum/aggregate properties while optimizing for lexicographic order. The algorithm demonstrates how understanding the problem structure (flips increase sum by 2k) can lead to an efficient greedy solution rather than brute force enumeration.
 
+
+### Flashcard
+Start with all negated (sum = −n(n+1)/2); calculate difference needed and flip smallest numbers to reach target while maintaining lexicographic order.
+
 ### Tags
 Array(#array), Math(#math), Two Pointers(#two-pointers), Greedy(#greedy), Sorting(#sorting)
 

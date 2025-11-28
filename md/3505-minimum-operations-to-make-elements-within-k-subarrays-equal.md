@@ -117,6 +117,10 @@ This problem is a classic **sliding window with DP** pattern, related to "pick k
 The key is reducing each window to a cost (via sliding median), then DP for interval selection with non-overlapping constraint.  
 This technique appears in median-cost window transforms, sliding window optimizations, and interval scheduling DP.
 
+
+### Flashcard
+Use median to minimize cost per subarray, then apply DP or greedy selection to pick k non-overlapping subarrays with minimum total cost.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Math(#math), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window), Heap (Priority Queue)(#heap-priority-queue)
 

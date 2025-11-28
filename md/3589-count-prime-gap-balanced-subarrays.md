@@ -122,6 +122,10 @@ def count_prime_gap_balanced_subarrays(nums, k):
 ### Summary
 We combined a **prime sieve**, **sliding window**, and **balanced BST/multiset** (using bisect on a sorted list in Python) to efficiently count all subarrays where the contained primes have a bounded gap. This is a strong example of the *two pointers with a balanced window* pattern, useful for subarray property problems with "range" (min/max) requirements and dynamic constraints. This pattern generalizes to many interval and subarray constraints where you need dynamic tracking of a statistic in the window.
 
+
+### Flashcard
+Use Sieve for primality, sliding window with sorted multiset of primes in current range, check if max − min ≤ k and count ≥ 2.
+
 ### Tags
 Array(#array), Math(#math), Queue(#queue), Sliding Window(#sliding-window), Number Theory(#number-theory), Monotonic Queue(#monotonic-queue)
 

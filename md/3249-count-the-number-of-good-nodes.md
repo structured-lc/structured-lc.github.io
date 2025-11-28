@@ -139,6 +139,10 @@ This problem is a clean example of **tree recursion and subtree property aggrega
 The main pattern—calculating and comparing subtree sizes—appears in many tree DP, centroid decomposition, or “equal subtree” type interview questions.  
 **Mastery of DFS, recursive info passing, and local/global aggregation is the key pattern here.**
 
+
+### Flashcard
+Build adjacency list; DFS from root, compute subtree sizes for each child; node is good if all children have equal subtree size (or ≤1 child).
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search)
 

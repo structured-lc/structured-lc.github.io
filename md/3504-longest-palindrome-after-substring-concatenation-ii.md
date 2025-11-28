@@ -119,6 +119,10 @@ This problem uses a **combination of dynamic programming for substring combinati
 The main pattern is **palindrome expansion with DP on two strings**, which is also seen in edit distance and LCS problems (Longest Common Subsequence), but with the twist of checking for palindromicity.  
 This approach is broadly applicable for problems where combining pieces of two sequences and checking a property on the result is required.
 
+
+### Flashcard
+Optimize by checking palindromes only in s, only in t, or split (suffix of s + prefix of t) to avoid O(n³) brute force on strings up to length 1000.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming)
 

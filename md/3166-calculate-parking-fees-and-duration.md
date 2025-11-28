@@ -162,6 +162,10 @@ def calculateParkingFeesAndDuration(transactions):
 ### Summary
 This problem is a variant of **group by aggregation** and **dictionary counting**, a very standard pattern in data summarization. Processing and summarizing events per key (here, per car) is a common interview technique and directly applies in log analytics, billing, and transaction reporting. Careful timestamp calculation and max/min selection are recurring subpatterns.
 
+
+### Flashcard
+Group transactions by car_id; sum fees and durations per car; for each car, find the lot with maximum duration (break ties by smallest lot_id).
+
 ### Tags
 Database(#database)
 

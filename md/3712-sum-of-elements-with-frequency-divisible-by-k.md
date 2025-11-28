@@ -90,6 +90,10 @@ def sum_elements_with_freq_divisible_by_k(nums, k):
 ### Summary
 This problem uses the familiar counting/hash map pattern to count frequencies, and then a simple filtering and aggregation step. It’s typical in interview settings for problems related to bucket-counting, frequency analysis, or histograms, and the approach is applicable for problems involving frequency-based selection or filtering in arrays.
 
+
+### Flashcard
+Count element frequencies using a hashmap, then sum (element × frequency) for all elements whose frequency is divisible by k.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Counting(#counting)
 

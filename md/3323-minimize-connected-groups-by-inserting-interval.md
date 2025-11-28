@@ -109,6 +109,10 @@ This problem is a variant of interval merging, with a one-shot optimization leve
 The core pattern is **merge intervals, then use two pointers or binary search** to optimally select where to place a connecting interval.  
 It’s an example of "greedy interval merging", and the merging/gap-bridging technique also applies to coverage, range/paint problems, and network components.
 
+
+### Flashcard
+Compute gaps between existing interval groups; insert a new interval of length ≤ k to span the largest gap, minimizing the final number of connected groups.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Sliding Window(#sliding-window), Sorting(#sorting)
 

@@ -115,6 +115,10 @@ This is a classic **monotonic subarray + prefix sum** problem, optimized by prec
 The pattern (prefix/suffix properties + prefix sums + sliding window) is extremely common in problems requiring optimal splitting of arrays with additional subarray monotonicity constraints.  
 This approach generalizes to related problems like finding split points in mountain arrays or valley arrays, and can be applied to greedy and DP interview settings.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Array(#array), Prefix Sum(#prefix-sum)
 

@@ -114,6 +114,10 @@ def splitMergeArrayTransformation(nums1, nums2):
 ### Summary
 This problem is an example of **state space search** using BFS under custom array transformation rules, a powerful technique whenever we seek "minimum moves" and arbitrary transformation operations. It can be generalized for puzzles (Rubik's Cube, word ladder, sorting with constraints) and teaches careful state management and pruning. The coding pattern is similar to BFS with visited states for minimal path discovery.
 
+
+### Flashcard
+Information not available in search results.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Breadth-First Search(#breadth-first-search)
 

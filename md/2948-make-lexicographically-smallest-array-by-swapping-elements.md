@@ -121,6 +121,10 @@ This solution leverages **union-find (disjoint set union)** to model the allowed
 This pattern is broadly useful whenever set-rearrangement constraints can be expressed as a graph problem, such as swap-to-sorted, minimal swaps to group objects, or selecting orderings under pairing constraints.  
 The approach is **graph + greedy sorting within sets**, and is very standard in array rearrangement under swap limitations.
 
+
+### Flashcard
+Model as a graph where indices are nodes; connect i and j if |nums[i] - nums[j]| ≤ limit. Find connected components, sort elements within each component, and place them back in sorted order.
+
 ### Tags
 Array(#array), Union Find(#union-find), Sorting(#sorting)
 

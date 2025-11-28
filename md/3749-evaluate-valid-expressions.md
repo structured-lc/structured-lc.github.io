@@ -112,6 +112,10 @@ def evaluate_expression(s: str) -> int:
 ### Summary
 This problem uses the **operator precedence stack pattern**, a fundamental technique for expression evaluation. The core idea is to defer lower-precedence operations (+ and -) by storing them on a stack, while immediately executing higher-precedence operations (\* and /). This elegant approach avoids complex recursive parsing. The pattern is widely applicable to arithmetic expression evaluators, compilers, and any system needing to respect mathematical operation precedence. For enhanced versions with parentheses, nested recursion or multi-stack approaches become necessary.
 
+
+### Flashcard
+Use stack-based evaluation with operator precedence; parse numbers and apply operations respecting order of operations.
+
 ### Tags
 Hash Table(#hash-table), Math(#math), String(#string), Divide and Conquer(#divide-and-conquer), Stack(#stack)
 

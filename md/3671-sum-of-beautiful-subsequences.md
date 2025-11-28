@@ -115,6 +115,10 @@ def sum_of_beautiful_subsequences(nums):
 This problem uses a **divisor sieve** technique and **inclusion-exclusion** to count subsequences by GCD efficiently.  
 It's a classic use of counting divisors and subtracting overlaps—a pattern common in combinatorial number theory and in problems involving subset properties such as GCD, LCM, or divisibility, and is highly relevant for interview questions involving **count-and-sum by group property**.
 
+
+### Flashcard
+For each possible GCD g, count subsequences divisible by g using 2^(count) − 1; use inclusion-exclusion to subtract subsequences with GCD > g.
+
 ### Tags
 Array(#array), Math(#math), Tree(#tree), Number Theory(#number-theory)
 

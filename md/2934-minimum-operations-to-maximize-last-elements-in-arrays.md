@@ -128,6 +128,10 @@ The approach uses careful case-checking—swapping at the last index or not—to
 It’s a classic "greedy with dual cases" pattern, commonly used when there’s a key pivot and two main "roots" to check for feasibility.  
 Recognizing that swaps are limited to the same index and that only two cases need checking (swap/not swap last) keeps the solution linear and efficient. This reduction technique can be found in in-place array transformation and "move max/min to end/start" family of problems.
 
+
+### Flashcard
+Try two strategies at the last index: (1) no swap—check if both nums1[n-1] and nums2[n-1] are already maxima; (2) swap—check if swapped values become maxima. For each strategy, greedily handle earlier indices.
+
 ### Tags
 Array(#array), Enumeration(#enumeration)
 

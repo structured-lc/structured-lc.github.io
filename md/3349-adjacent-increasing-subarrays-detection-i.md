@@ -90,6 +90,10 @@ def has_adjacent_increasing_subarrays(nums, k):
 ### Summary
 This problem demonstrates a classic sliding window / precomputation pattern for interval subarray property checks. The strictly increasing property is efficiently captured by tracking the run lengths. This approach generalizes well to problems seeking subarrays with certain monotonic or numeric properties, making it a useful technique for interval scanning and dynamic programming with window constraints.
 
+
+### Flashcard
+Precompute inc_len[i] = length of strictly increasing subarray ending at i; for each starting index a, check if inc_len[a+k−1] ≥ k and inc_len[a+2k−1] ≥ k.
+
 ### Tags
 Array(#array)
 

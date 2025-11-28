@@ -142,6 +142,10 @@ def maximizeTargetNodes(n, edges1, m, edges2, k):
 ### Summary
 This problem is a good application of BFS and precomputing local neighborhoods. The critical observation is BFS out from each node to a limited depth and combining results through the shortest connection. This pattern (precomputing distances/targets for all nodes, then maximizing with a cheap second pass) is common for “connectivity under modifications” problems and often appears in tree or sparse graph interview questions.
 
+
+### Flashcard
+For each node in Tree1, compute distances to all nodes within distance k; then find the best node in Tree2 to connect to maximize reachable nodes.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search)
 

@@ -116,6 +116,10 @@ This problem is a **two-dimensional dynamic programming** extension of the class
 The approach is to recursively select valid colorings, caching partial solutions (DP/memoization), and leveraging symmetry.  
 This coding pattern frequently appears in coloring, scheduling, or similar constraint-based optimization problems and can be adapted for various forms of mirrored or paired constraints.
 
+
+### Flashcard
+Use DP with memoization on (house_index, previous_color, mirror_color) to track valid colorings while respecting adjacency and mirror constraints.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

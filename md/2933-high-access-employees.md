@@ -86,6 +86,10 @@ def high_access_employees(access_times):
 ### Summary
 This problem is a classic example of the **grouping** + **sorting** + **sliding window** coding pattern, often used for temporal or sequential event checks. It’s similar to log analysis, detecting suspicious login patterns, or rate limiting. Mastering this pattern helps solve many sequence/window problems, like finding frequent users, longest subarrays under constraints, or event clustering.
 
+
+### Flashcard
+Group access times by employee, convert "HHMM" to minutes, sort each employee's times, use sliding window of 3 consecutive accesses—if any window has span < 60 minutes, mark as high-access.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Sorting(#sorting)
 

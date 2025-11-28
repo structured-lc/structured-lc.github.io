@@ -134,6 +134,10 @@ This is a classic **tree diameter** and multi-source BFS pattern. By leveraging 
 Final approach uses three BFS traversals and computes distances from endpoints, reducing runtime from O(n²) to O(n).  
 This template (find diameter, and use endpoints to answer queries about maximal path distances) is frequently useful in tree problems and can be adapted to shortest/farthest path or dynamic spreading problems in trees.
 
+
+### Flashcard
+For each node, run BFS level-by-level to find which nodes are marked last; optimize by recognizing that in a tree, the farthest nodes from the start are marked last.
+
 ### Tags
 Tree(#tree), Depth-First Search(#depth-first-search)
 

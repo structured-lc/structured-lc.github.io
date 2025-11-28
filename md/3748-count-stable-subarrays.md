@@ -155,6 +155,10 @@ def countStableSubarrays(self, nums: list, queries: list) -> list:
 ### Summary
 This problem uses **group-based preprocessing** combined with **prefix sums** to efficiently answer range queries. The key insight is recognizing that within a non-decreasing segment, all subarrays are stable, and their count follows a combinatorial formula. This pattern is useful whenever you need to partition input based on some property and precompute aggregate statistics for efficient querying. Similar approaches appear in problems involving maximal subarrays satisfying certain conditions, range sum queries, and other interval-based problems where you can identify and precompute independent components.
 
+
+### Flashcard
+Preprocess array into maximal non-decreasing segments; within segment of length m, count stable subarrays as m×(m+1)/2.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Prefix Sum(#prefix-sum)
 

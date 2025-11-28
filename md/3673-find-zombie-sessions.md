@@ -106,6 +106,10 @@ def findZombieSessions(sessions, now):
 ### Summary
 This problem uses the **hash map / direct lookup** pattern to reduce repeated parent scans and enable O(1) access by parent_id. The main "session dependency" check is common in process trees, graph problems, and OS process management—similar techniques apply for orphaned nodes or defunct processes in system monitoring tools.
 
+
+### Flashcard
+Build session_id → session map; for each open session, check if parent exists and is closed before now; mark as zombie if condition holds.
+
 ### Tags
 
 ### Similar Problems

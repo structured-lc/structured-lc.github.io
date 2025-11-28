@@ -95,6 +95,10 @@ def minCostPathWithAlternatingDirections(cost):
 ### Summary
 This problem is a restricted version of grid pathfinding where the allowed moves alternate strictly by direction, making the path deterministic (or impossible). It is a good example of **simulation** under tight constraints, and sometimes can be optimized to a simple loop if no DP is needed. Recognizing when paths are deterministic or where constraints reduce combinatorial explosion is a valuable coding pattern for both interviews and real-world code.
 
+
+### Flashcard
+Moves alternate (right, down, right, down, ...); path is largely fixed by grid dimensions; compute cost along the forced alternating path.
+
 ### Tags
 Math(#math), Brainteaser(#brainteaser)
 

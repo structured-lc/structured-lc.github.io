@@ -95,6 +95,10 @@ def phone_prefix(numbers):
 - The problem can also be solved with a Trie if constraints grow, but the sorting + linear check is simple and suffices for small arrays.  
 - This "prefix check after sorting" pattern appears in other string dictionary and autocomplete problems.
 
+
+### Flashcard
+Sort phone numbers lexicographically, then check if each number is a prefix of the next—adjacent pairs are the only candidates after sorting.
+
 ### Tags
 Array(#array), String(#string), Trie(#trie), Sorting(#sorting)
 

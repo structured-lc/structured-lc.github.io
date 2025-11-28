@@ -88,6 +88,10 @@ def find_lex_smallest_valid_sequence(word1: str, word2: str) -> list[int]:
 ### Summary
 This problem uses the **two-pointer greedy pattern** found in classic subsequence questions. It also echoes "merge intervals" or "merge k sorted" behavior, always picking the local optimal for global validity. This greediness, combined with strict progression of word1, yields the lexicographically smallest solution. The approach and code pattern are widely applicable to string and subsequence search problems with lexicographic constraints.
 
+
+### Flashcard
+Use a greedy two-pointer approach: for each character in word2, find the first occurrence in word1 starting from the current position, recording indices in ascending order.
+
 ### Tags
 Two Pointers(#two-pointers), String(#string), Dynamic Programming(#dynamic-programming), Greedy(#greedy)
 

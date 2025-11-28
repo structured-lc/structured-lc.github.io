@@ -138,6 +138,10 @@ def customClearInterval(id_):
 ### Summary
 This problem is a great example of **simulating variable-delay scheduling** by chaining recursive timeouts and storing interval handles for cancellation, similar to emulating setInterval with dynamic timing. It's a basic yet foundational concurrency and scheduling pattern common in timers, throttlers, debouncers, and periodic pollers. You may encounter this pattern in any async task scheduling, custom rate limiters, or animation loops where delay is not fixed.
 
+
+### Flashcard
+Map interval IDs to `setTimeout` handles; schedule next timeout after current fires to capture execution drift; use `customClearInterval` to cancel by ID.
+
 ### Tags
 
 ### Similar Problems

@@ -156,6 +156,10 @@ This problem is a classic **maximum product path in a weighted, bidirectional gr
 The coding pattern—graph max product DP/BFS—is common for **arbitrage**, **currency exchange**, and similar optimal conversion/cost minimization problems.  
 The template can be applied to networks of rates/odds/efficiency (e.g., supply chain conversions, chemical reactions).
 
+
+### Flashcard
+On each day, find the best conversion path (currency chain) that maximizes the final amount; use BFS/DFS or dynamic programming to explore all reachable conversions.
+
 ### Tags
 Array(#array), String(#string), Depth-First Search(#depth-first-search), Breadth-First Search(#breadth-first-search), Graph(#graph)
 

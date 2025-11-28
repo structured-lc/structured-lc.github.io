@@ -94,6 +94,10 @@ This problem is a variant of the sliding window and prefix-hashing common in sub
 The brute-force stepwise scan with sets fits small/medium input, and teaches how to scan for subarrays with custom balance criteria.  
 For harder variations or larger constraints, patterns from "prefix sum with state hashing" or "two-pointer with value tracking" would be applied, which are useful in many substring/subarray balancing/interleaving problems.
 
+
+### Flashcard
+Use two pointers with sets tracking distinct evens and odds; expand/contract the window to find the longest subarray where distinct_evens = distinct_odds.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), Divide and Conquer(#divide-and-conquer), Segment Tree(#segment-tree), Prefix Sum(#prefix-sum)
 

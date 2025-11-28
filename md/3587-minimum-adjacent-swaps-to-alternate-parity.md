@@ -113,6 +113,10 @@ def minimum_swaps_to_alternate_parity(nums):
 ### Summary
 This problem is a variant of the "minimum adjacent swaps to form a pattern" and uses the **greedy two-pointer/index matching pattern** (similar to minimum swaps to make binary string alternating). The **core trick** is to split indices by group, then match them greedily to their "intended" alternation slots, summing up position differences. This pattern appears in problems involving arrangement with minimal local moves, alternating patterns, and some permutation reorderings.
 
+
+### Flashcard
+Separate indices into odd and even groups; try two alternating patterns (even-first vs. odd-first) and count minimum adjacent swaps needed for each.
+
 ### Tags
 Array(#array), Greedy(#greedy)
 

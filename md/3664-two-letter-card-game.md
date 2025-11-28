@@ -118,6 +118,10 @@ def max_score(cards, X):
 This problem elegantly uses the **frequency counting and pairing/matching pattern**, exploiting the small search space for two-letter words and the matching-by-difference constraint.  
 The approach is similar to grouping and pairing tasks found in anagrams or pattern-matching problems, and it can be adapted for other settings with "differ in exactly one position" logic.
 
+
+### Flashcard
+Group cards by position (first letter = X vs. second letter = X); for each group, pair cards differing at exactly one position and greedily remove pairs until none remain.
+
 ### Tags
 Array(#array), Hash Table(#hash-table), String(#string), Counting(#counting), Enumeration(#enumeration)
 

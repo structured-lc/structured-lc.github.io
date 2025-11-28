@@ -127,6 +127,10 @@ It demonstrates grouping/swapping constraints via AND operation—classic for ad
 The coding pattern is *graph connectivity via disjoint sets* with additional constraints—appears in permutation sorting, bitmask problems, and equivalence classes in arrays.  
 Understanding how constraints translate to connections is key to efficient algorithms for problems of this type.
 
+
+### Flashcard
+For each k from max(nums) downward, build a graph where edges connect elements with bitwise AND = k. Check if all elements can reach sorted positions via connected components.
+
 ### Tags
 Array(#array), Bit Manipulation(#bit-manipulation)
 

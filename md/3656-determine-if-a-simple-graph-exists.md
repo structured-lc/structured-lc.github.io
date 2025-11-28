@@ -127,6 +127,10 @@ def isPossible(degrees):
 ### Summary
 This problem is a direct application of the Havel-Hakimi algorithm—a greedy method for testing degree sequence graphicality. It's a classic greedy/graph theoretical question. The approach and its edge-case checks are standard and also useful in problems about graph construction from given constraints, scheduling, or network design.
 
+
+### Flashcard
+Apply Havel-Hakimi algorithm: repeatedly sort degrees in descending order, remove the largest, and subtract 1 from the next k largest; valid graph exists if all degrees become 0.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Graph(#graph), Sorting(#sorting), Prefix Sum(#prefix-sum)
 

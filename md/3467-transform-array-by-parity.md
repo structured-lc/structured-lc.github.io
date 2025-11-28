@@ -80,6 +80,10 @@ def transformArray(nums):
 ### Summary
 This problem uses a *counting sort* idea (since only two values, 0 and 1, are possible after transformation). This pattern is useful whenever you need to group or count discrete values then output in grouped order, such as the Dutch National Flag and counting sort for limited-value arrays. Recognizing special value constraints can avoid unnecessary sorting.
 
+
+### Flashcard
+Transform array: even → 0, odd → 1; count zeros and ones, then construct result as all 0s followed by all 1s.
+
 ### Tags
 Array(#array), Sorting(#sorting), Counting(#counting)
 

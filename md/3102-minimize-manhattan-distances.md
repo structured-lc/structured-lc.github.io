@@ -127,6 +127,10 @@ def minimizeManhattanDistances(points):
 This problem leverages **geometry with order statistics**, specifically observing that Manhattan distances are determined by the range (max-min) of certain projections (x+y and x−y).  
 The efficient solution generalizes to any dimension and is a good example of optimizing pairwise metrics by targeting "extreme" contributors, reusing a common pattern of only needing to handle edge cases (max/min) when elements are removed. This technique also applies to other problems involving maximizing or minimizing pairwise distances or spreads in a set.
 
+
+### Flashcard
+Rewrite Manhattan distance as max of four linear forms: (x+y), (x-y) and their negatives; remove one point and track max/min of each form among remaining points to find maximum distance.
+
 ### Tags
 Array(#array), Math(#math), Geometry(#geometry), Sorting(#sorting), Ordered Set(#ordered-set)
 

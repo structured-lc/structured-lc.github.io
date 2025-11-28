@@ -83,6 +83,10 @@ def maximizeExpression(nums):
 
 This problem demonstrates the importance of **mathematical insight** before jumping into code. Rather than brute-forcing all combinations, recognizing that we want to maximize the sum of two terms and minimize the subtracted term allows us to use a simple sorting approach. This pattern applies whenever you need to optimize expressions with mixed operations (additions and subtractions) — identify which variables contribute positively and which negatively, then pick accordingly. The greedy strategy of selecting extremes (max and min) is valid when there are no positional constraints on the indices.
 
+
+### Flashcard
+To maximize a+b−c, choose two largest elements for a,b and smallest for c; try all combinations or use sorting.
+
 ### Tags
 Array(#array), Greedy(#greedy), Sorting(#sorting), Enumeration(#enumeration)
 

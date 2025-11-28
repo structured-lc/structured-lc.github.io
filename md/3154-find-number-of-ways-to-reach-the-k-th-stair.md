@@ -94,6 +94,10 @@ This problem uses a non-trivial combinatorial dynamic programming approach: for 
 The pattern (split into non-consecutive insertions) comes up in problems involving forbidden adjacency, and is related to stars-and-bars counting.  
 Such combinatorial insight is common in stair climbing, grid walking, or sequence formation with forbidden moves.
 
+
+### Flashcard
+Use memoization with state (stair, can_do_down, jump_count) to avoid recomputing overlapping subproblems in the recursive search.
+
 ### Tags
 Math(#math), Dynamic Programming(#dynamic-programming), Bit Manipulation(#bit-manipulation), Memoization(#memoization), Combinatorics(#combinatorics)
 

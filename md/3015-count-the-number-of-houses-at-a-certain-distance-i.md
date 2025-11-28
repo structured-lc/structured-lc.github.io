@@ -115,6 +115,10 @@ def count_of_pairs(n, x, y):
 ### Summary  
 This is a classic shortest-path-pair counting problem on an augmented linear graph. The pattern involves checking all pairs and considering both direct and shortcut routes; it's an application of path minimums and simulates all pairs distance. The algorithm is brute-force but justified by small constraints (n ≤ 100). This structure and pattern frequently occur in graph and network distance/counting problems.
 
+
+### Flashcard
+Count the Number of Houses at a Certain Distance I (Medium)
+
 ### Tags
 Breadth-First Search(#breadth-first-search), Graph(#graph), Prefix Sum(#prefix-sum)
 

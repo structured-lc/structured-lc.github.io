@@ -120,6 +120,10 @@ def find_building(heights: List[int], queries: List[List[int]]) -> List[int]:
 ### Summary
 This problem is a classic application of **monotonic stack** (for next greater element right), followed by efficient path finding (either via direct jump chains or merge through sorted lists). The coding techniques (stack, two pointers, preprocess for repeated queries) are common in interval, path, and ancestor-jump optimization problems such as binary lifting or jump links for sparse tables. The pattern appears in various next-greater, interval, and ancestor-type interview questions.
 
+
+### Flashcard
+Precompute the next greater building to the right for each building using a monotonic stack. For each query, simulate Alice and Bob's reachability by following next-greater pointers until they meet.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Stack(#stack), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree), Heap (Priority Queue)(#heap-priority-queue), Monotonic Stack(#monotonic-stack)
 

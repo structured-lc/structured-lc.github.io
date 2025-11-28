@@ -173,6 +173,10 @@ def smallestDivisibleDigitProductII(num: str, t: int) -> str:
 ### Summary
 This problem uses a **digit dynamic programming** and **greedy construction/backtrack** pattern, with heavy use of **prime factorization** and pruning based on digits 1–9. The technique of constructing minimal valid values under digit constraints appears in counting/constructing number problems, and understanding when product constraints can/cannot be met is crucial. This construction approach is applicable in problems involving minimal/maximal digit sequence with arithmetic constraints on their product, sum, or modulo.
 
+
+### Flashcard
+Digit DP with state (position, remainder mod t, tight); only use digits 1–9; if t has prime factor > 9, return −1; otherwise, find smallest zero-free number with digit product divisible by t.
+
 ### Tags
 Math(#math), String(#string), Backtracking(#backtracking), Greedy(#greedy), Number Theory(#number-theory)
 

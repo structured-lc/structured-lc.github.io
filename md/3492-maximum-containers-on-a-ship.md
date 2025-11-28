@@ -83,6 +83,10 @@ This problem is a classic example of *resource allocation* constrained by two in
 The same pattern (take the minimum imposed by independent constraints) is common in capacity planning, array allocation, and resource scheduling problems.  
 No loops or recursion are needed; math suffices for constant time solution.
 
+
+### Flashcard
+Maximum containers = min(n², ⌊maxWeight / w⌋); compute directly without iteration.
+
 ### Tags
 Math(#math)
 

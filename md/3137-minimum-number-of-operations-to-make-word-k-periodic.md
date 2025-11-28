@@ -77,6 +77,10 @@ def minimumOperationsToMakeKPeriodic(word: str, k: int) -> int:
 This problem uses the **frequency counting** pattern on fixed-length substrings and reduces to counting the maximum frequency, similar to modes in arrays. It applies to strings, blocks, or grouped entities where unification under one value is allowed with swaps/replacements.  
 The counting approach is frequently applicable for problems seeking a minimal number of changes to unify or equalize blocks.
 
+
+### Flashcard
+Divide string into n÷k segments of length k; count frequency of each segment, then replace all others with the most frequent segment.
+
 ### Tags
 Hash Table(#hash-table), String(#string), Counting(#counting)
 

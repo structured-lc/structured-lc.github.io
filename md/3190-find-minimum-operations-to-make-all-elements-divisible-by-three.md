@@ -67,6 +67,10 @@ def minimumOperations(nums):
 ### Summary
 This problem uses a simple math and greedy counting pattern: for each element, if it's not divisible by 3, count one operation. It's a classic modulus/divisibility pattern, and knowing how absolute difference to the nearest multiple scales is useful for divisibility operations. This is a variant of "make array elements satisfy a modular constraint with minimal edit cost," a common subroutine in coding interviews.
 
+
+### Flashcard
+For each element, the minimum moves to divisibility by 3 is min(x % 3, 3 − (x % 3)); sum across all elements.
+
 ### Tags
 Array(#array), Math(#math)
 

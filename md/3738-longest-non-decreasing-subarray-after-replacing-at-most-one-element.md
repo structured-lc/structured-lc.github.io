@@ -117,6 +117,10 @@ def longestNonDecreasingSubarray(nums: list[int]) -> int:
 
 This problem uses a **prefix-suffix decomposition** pattern combined with dynamic programming. The key insight is pre-computing the longest non-decreasing segments that end/start at each position, then leveraging this information to efficiently evaluate the impact of replacing each element. This pattern is useful for problems where you need to understand "what comes before" and "what comes after" a decision point. Similar patterns appear in problems like "Best Time to Buy and Sell Stock", "Trapping Rain Water", and other optimization problems involving subarrays.
 
+
+### Flashcard
+Use dynamic programming tracking the longest non-decreasing subarray ending at each position with 0 or 1 replacements used.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

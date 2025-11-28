@@ -120,6 +120,10 @@ def minimum_threshold_for_inversion_pairs_count(nums, key):
 ### Summary
 This problem uses the **binary search over answer** pattern, coupled with inversion pair counting using a balanced data structure (SortedList or BST). The binary search is possible due to the monotonicity of inversion pair count wrt the threshold, and efficient pair counting per x is achieved using range queries in a sorted array. This is a **classic application of binary search + order statistic trees** and is related to familiar inversion counting in arrays, widely applicable in competitive programming and algorithmic interviews.
 
+
+### Flashcard
+Binary search on x; for each x, count inversion pairs (i, j) where nums[i] > nums[j] and nums[i] − nums[j] ≤ x using merge sort or BIT.
+
 ### Tags
 Array(#array), Binary Search(#binary-search), Binary Indexed Tree(#binary-indexed-tree), Segment Tree(#segment-tree)
 

@@ -121,6 +121,10 @@ This problem is an advanced variant of **range query and batch update** with ste
 The core pattern is batching multiplicative effects per query for *positions with certain modular properties*.  
 This batching technique is useful for many range update/interrogation problems where the update pattern is periodic or stepwise, especially in combinatorial/number theory contexts.
 
+
+### Flashcard
+Split queries into two types by threshold √n: for large k (> √n), process directly; for small k (≤ √n), batch updates using difference arrays and cumulative products to avoid redundant iterations.
+
 ### Tags
 Array(#array), Divide and Conquer(#divide-and-conquer)
 

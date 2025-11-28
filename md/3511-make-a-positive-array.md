@@ -109,6 +109,10 @@ This problem uses a **greedy sliding window** and **prefix sum** approach to min
 This pattern of breaking the problem at the earliest violation is common in optimizations involving windows or ranges—such as "Partition Array", "Subarray Sums", or "Minimize Operations" types of problems.  
 No fancy data structures are needed; reasoning about prefix sums and careful window movement is sufficient. The overall pattern is frequently seen in competitive programming and algorithmic interviews.
 
+
+### Flashcard
+For each non-positive subarray sum of length ≥ 3, change one element to a large positive number; greedily minimize changes by covering overlapping subarrays.
+
 ### Tags
 Array(#array), Greedy(#greedy), Prefix Sum(#prefix-sum)
 

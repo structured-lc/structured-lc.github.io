@@ -131,6 +131,10 @@ We use **DP with memoization**, capturing the state as (index, op1_left, op2_lef
 This is a common **bounded resource + state optimization** pattern—DP is critical because local greedy choices may not yield globally optimal sums.  
 Similar DP patterns show up in limited-use operations, resource-constrained scheduling, or restricted state transitions in arrays.
 
+
+### Flashcard
+Use DP or greedy with bitmask to track which operations have been used; at each index, decide whether to apply op1, op2, both, or neither.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming)
 

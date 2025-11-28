@@ -106,6 +106,10 @@ def findSafeWalk(grid, health):
 ### Summary
 This approach combines BFS with state pruning to ensure only *better* health states continue, a common and powerful grid traversal/shortest-path pattern. The pattern is widely used for weighted grid pathfinding problems—such as "minimum cost path", "maze with obstacles and energy", and can be easily adapted where the state is more than just coordinates (e.g., carrying keys, lives, etc.).
 
+
+### Flashcard
+Use BFS with state (row, col, remaining_health); explore neighbors only if health stays ≥ 1 after subtracting grid values, tracking visited cells to avoid cycles.
+
 ### Tags
 Array(#array), Breadth-First Search(#breadth-first-search), Graph(#graph), Heap (Priority Queue)(#heap-priority-queue), Matrix(#matrix), Shortest Path(#shortest-path)
 

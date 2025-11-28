@@ -100,6 +100,10 @@ This problem is a classic use-case for **bitmask Dynamic Programming** (DP) for 
 Pattern: “Trying every order with memoization / DP (bitmask)” is very useful when the number of objects (locks/tasks) is small, but the number of possible sequences is factorial-sized.  
 The pattern can be used for problems around job scheduling, shortest path visiting all nodes, and permutation DP questions.
 
+
+### Flashcard
+Use bitmask DP with state (mask of broken locks, current x); for each state, try breaking each remaining lock and recurse.
+
 ### Tags
 Array(#array), Dynamic Programming(#dynamic-programming), Backtracking(#backtracking), Bit Manipulation(#bit-manipulation), Depth-First Search(#depth-first-search), Bitmask(#bitmask)
 
