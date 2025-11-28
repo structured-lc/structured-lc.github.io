@@ -511,9 +511,12 @@
 
   <!-- Hints/Tutorial System -->
   <div id="hints-overlay" class="hints-overlay">
-    <button class="hint-skip-all" onclick="skipAllHints()">Skip Tutorial</button>
     <div id="hint-spotlight" class="hint-spotlight"></div>
     <div id="hint-tooltip" class="hint-tooltip">
+      <button class="hint-close-btn" onclick="skipAllHints()" title="Skip tutorial">
+        <span class="hint-close-text">Skip</span>
+        <span class="hint-close-x">✕</span>
+      </button>
       <div class="hint-title">
         <span id="hint-icon">💡</span>
         <span id="hint-title-text">Welcome!</span>
@@ -534,30 +537,7 @@
   <!-- Hints Trigger Button -->
   <button id="hints-trigger" class="hints-trigger" onclick="startHints()" title="Take a tour">💡</button>
 
-  <!-- Hints/Tutorial System -->
-  <div id="hints-overlay" class="hints-overlay">
-    <button class="hint-skip-all" onclick="skipAllHints()">Skip Tutorial</button>
-    <div id="hint-spotlight" class="hint-spotlight"></div>
-    <div id="hint-tooltip" class="hint-tooltip">
-      <div class="hint-title">
-        <span id="hint-icon">💡</span>
-        <span id="hint-title-text">Welcome!</span>
-      </div>
-      <div class="hint-description" id="hint-description">
-        Let's take a quick tour of LeetCode Handbook!
-      </div>
-      <div class="hint-controls">
-        <div class="hint-step-counter" id="hint-step-counter">Step 1 of 5</div>
-        <div class="hint-buttons">
-          <button class="hint-button" onclick="previousHint()" id="hint-prev-btn" style="display: none;">Previous</button>
-          <button class="hint-button primary" onclick="nextHint()" id="hint-next-btn">Next</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Hints Trigger Button -->
-  <button id="hints-trigger" class="hints-trigger" onclick="startHints()" title="Take a tour">💡</button>
+
 
   <script>
     // ========================================
@@ -610,7 +590,7 @@
           position: 'bottom'
         },
         {
-          target: '#desktop-feedback-fab',
+          target: '#mobile-feedback-fab',
           title: 'Share Feedback',
           description: 'Have suggestions, found bugs, or want to request features? Click here to send feedback and help improve the platform.',
           icon: '💬',
@@ -665,14 +645,14 @@
           title: 'Send Feedback',
           description: 'Share suggestions, report bugs, or request new features. Your feedback helps make the app better for everyone.',
           icon: '💬',
-          position: 'left'
+          position: 'top'
         },
         {
           target: '#mobile-share-fab',
           title: 'Share Content',
           description: 'Easily share problems, solutions, or your study progress with friends and study groups using this floating share button.',
           icon: '🔗',
-          position: 'left'
+          position: 'top'
         }
       ]
     };
@@ -5495,7 +5475,7 @@ ${description}${reproSection}${contactInfo}
                 <p style="color: #6b7280; font-size: calc(0.9rem * var(--mobile-scale)); margin: 0 0 calc(1rem * var(--mobile-scale)) 0; line-height: 1.5;">
                   <strong>${currentLists.length} problem collections</strong> await your exploration.
                 </p>
-                <button onclick="showMobileLoadingAnimation(); setTimeout(() => mobileRouter.navigate('lists'), 500);" style="width: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: calc(12px * var(--mobile-scale)) calc(24px * var(--mobile-scale)); border-radius: calc(8px * var(--mobile-scale)); font-size: calc(0.9rem * var(--mobile-scale)); font-weight: 600; cursor: pointer; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); transition: all 0.2s ease;" onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0, 0, 0, 0.1)'" onmousedown="this.style.transform='translateY(0)'; this.style.boxShadow='0 1px 2px rgba(0, 0, 0, 0.1)'">
+                <button id="mobile-browse-collections-btn" onclick="showMobileLoadingAnimation(); setTimeout(() => mobileRouter.navigate('lists'), 500);" style="width: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: calc(12px * var(--mobile-scale)) calc(24px * var(--mobile-scale)); border-radius: calc(8px * var(--mobile-scale)); font-size: calc(0.9rem * var(--mobile-scale)); font-weight: 600; cursor: pointer; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); transition: all 0.2s ease;" onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0, 0, 0, 0.1)'" onmousedown="this.style.transform='translateY(0)'; this.style.boxShadow='0 1px 2px rgba(0, 0, 0, 0.1)'">
                   Browse Collections
                 </button>
               </div>

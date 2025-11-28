@@ -370,27 +370,50 @@
   transform: translateY(-1px);
 }
 
-/* Skip all button */
-.hint-skip-all {
+/* Close button with Skip text and X in top-right of hint dialog */
+.hint-close-btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.8);
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.7);
   border: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 500;
+  border-radius: 12px;
   cursor: pointer;
   transition: all 0.2s ease;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  backdrop-filter: blur(5px);
+  z-index: 1;
+  font-size: 11px;
 }
 
-.hint-skip-all:hover {
-  background: rgba(255, 255, 255, 0.2);
+.hint-close-text {
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.hint-close-x {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.hint-close-btn:hover {
+  background: rgba(255, 0, 0, 0.2);
   color: rgba(255, 255, 255, 1);
+  transform: translateY(-1px);
+}
+
+.hint-close-btn:hover .hint-close-text {
+  opacity: 1;
+}
+
+.hint-close-btn:active {
+  transform: scale(0.95);
 }
 
 /* Mobile responsive hints */
