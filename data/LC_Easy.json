@@ -913,5 +913,8 @@
     {"number": 3740, "slug": "minimum-distance-between-three-equal-elements-i", "title": "Minimum Distance Between Three Equal Elements I", "difficulty": "Easy", "tags": ["Array", "Hash Table"], "similar_problems": []},
     {"number": 3745, "slug": "maximize-expression-of-three-elements", "title": "Maximize Expression of Three Elements", "difficulty": "Easy", "tags": ["Array", "Greedy", "Sorting", "Enumeration"], "similar_problems": []},
     {"number": 3750, "slug": "minimum-number-of-flips-to-reverse-binary-string", "title": "Minimum Number of Flips to Reverse Binary String", "difficulty": "Easy", "tags": ["Math", "Two Pointers", "String", "Bit Manipulation"], "similar_problems": []},
-    {"number": 3754, "slug": "concatenate-non-zero-digits-and-multiply-by-sum-i", "title": "Concatenate Non-Zero Digits and Multiply by Sum I", "difficulty": "Easy", "tags": ["Math"], "similar_problems": []}
+    {"number": 3754, "slug": "concatenate-non-zero-digits-and-multiply-by-sum-i", "title": "Concatenate Non-Zero Digits and Multiply by Sum I", "difficulty": "Easy", "tags": ["Math"], "similar_problems": []},
+    {"number": 3769, "slug": "sort-integers-by-binary-reflection", "title": "Sort Integers by Binary Reflection", "difficulty": "Easy", "tags": ["Array", "Sorting"], "similar_problems": []},
+    {"number": 3774, "slug": "absolute-difference-between-maximum-and-minimum-k-elements", "title": "Absolute Difference Between Maximum and Minimum K Elements", "difficulty": "Easy", "tags": ["Array", "Sorting"], "similar_problems": []},
+    {"number": 3783, "slug": "mirror-distance-of-an-integer", "title": "Mirror Distance of an Integer", "difficulty": "Easy", "tags": ["Math"], "similar_problems": []}
 ]

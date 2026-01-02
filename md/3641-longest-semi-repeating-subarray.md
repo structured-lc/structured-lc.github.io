@@ -107,5 +107,6 @@ def longest_semi_repeating_subarray(nums, key):
 Use sliding window with frequency map. Expand right pointer, track count of elements appearing >1 time; shrink left when repeated elements exceed key.
 
 ### Tags
+Array(#array), Hash Table(#hash-table), Sliding Window(#sliding-window)
 
 ### Similar Problems

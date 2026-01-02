@@ -87,7 +87,7 @@ This is a classic *counting runs* or *sliding window* pattern, where you aggrega
 For each maximal smooth descent run, count subarrays as cnt × (cnt+1)/2 and sum over all runs.
 
 ### Tags
-Array(#array), Math(#math), Dynamic Programming(#dynamic-programming)
+Array(#array), Math(#math), Two Pointers(#two-pointers), Dynamic Programming(#dynamic-programming), Sliding Window(#sliding-window)
 
 ### Similar Problems
 - Subarray Product Less Than K(subarray-product-less-than-k) (Medium)

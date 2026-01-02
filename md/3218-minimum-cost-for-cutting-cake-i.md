@@ -111,7 +111,7 @@ This problem is a classic greedy cut-order optimization: always make the highest
 Sort cuts by cost descending; greedily apply expensive cuts first to maximize their effect on fewer segments.
 
 ### Tags
-Array(#array), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Sorting(#sorting)
+Array(#array), Two Pointers(#two-pointers), Dynamic Programming(#dynamic-programming), Greedy(#greedy), Sorting(#sorting)
 
 ### Similar Problems
 - Minimum Cost for Cutting Cake II(minimum-cost-for-cutting-cake-ii) (Hard)

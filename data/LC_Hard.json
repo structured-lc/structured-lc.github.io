@@ -885,5 +885,14 @@
     {"number": 3748, "slug": "count-stable-subarrays", "title": "Count Stable Subarrays", "difficulty": "Hard", "tags": ["Array", "Binary Search", "Prefix Sum"], "similar_problems": []},
     {"number": 3749, "slug": "evaluate-valid-expressions", "title": "Evaluate Valid Expressions", "difficulty": "Hard", "tags": ["Hash Table", "Math", "String", "Divide and Conquer", "Stack"], "similar_problems": [{"slug": "basic-calculator-ii", "title": "Basic Calculator II", "difficulty": "Medium"}]},
     {"number": 3753, "slug": "total-waviness-of-numbers-in-range-ii", "title": "Total Waviness of Numbers in Range II", "difficulty": "Hard", "tags": ["Math", "Dynamic Programming"], "similar_problems": []},
-    {"number": 3757, "slug": "number-of-effective-subsequences", "title": "Number of Effective Subsequences", "difficulty": "Hard", "tags": ["Array", "Math", "Dynamic Programming", "Bit Manipulation", "Combinatorics"], "similar_problems": []}
+    {"number": 3757, "slug": "number-of-effective-subsequences", "title": "Number of Effective Subsequences", "difficulty": "Hard", "tags": ["Array", "Math", "Dynamic Programming", "Bit Manipulation", "Combinatorics"], "similar_problems": []},
+    {"number": 3762, "slug": "minimum-operations-to-equalize-subarrays", "title": "Minimum Operations to Equalize Subarrays", "difficulty": "Hard", "tags": ["Array", "Math", "Binary Search", "Segment Tree"], "similar_problems": []},
+    {"number": 3764, "slug": "most-common-course-pairs", "title": "Most Common Course Pairs", "difficulty": "Hard", "tags": [], "similar_problems": []},
+    {"number": 3768, "slug": "minimum-inversion-count-in-subarrays-of-fixed-length", "title": "Minimum Inversion Count in Subarrays of Fixed Length", "difficulty": "Hard", "tags": ["Array", "Segment Tree", "Sliding Window"], "similar_problems": []},
+    {"number": 3772, "slug": "maximum-subgraph-score-in-a-tree", "title": "Maximum Subgraph Score in a Tree", "difficulty": "Hard", "tags": ["Array", "Dynamic Programming", "Tree", "Depth-First Search"], "similar_problems": []},
+    {"number": 3777, "slug": "minimum-deletions-to-make-alternating-substring", "title": "Minimum Deletions to Make Alternating Substring", "difficulty": "Hard", "tags": ["String", "Segment Tree"], "similar_problems": []},
+    {"number": 3782, "slug": "last-remaining-integer-after-alternating-deletion-operations", "title": "Last Remaining Integer After Alternating Deletion Operations", "difficulty": "Hard", "tags": ["Math", "Recursion"], "similar_problems": []},
+    {"number": 3785, "slug": "minimum-swaps-to-avoid-forbidden-values", "title": "Minimum Swaps to Avoid Forbidden Values", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Greedy", "Counting"], "similar_problems": []},
+    {"number": 3786, "slug": "total-sum-of-interaction-cost-in-tree-groups", "title": "Total Sum of Interaction Cost in Tree Groups", "difficulty": "Hard", "tags": ["Array", "Tree", "Depth-First Search"], "similar_problems": []},
+    {"number": 3791, "slug": "number-of-balanced-integers-in-a-range", "title": "Number of Balanced Integers in a Range", "difficulty": "Hard", "tags": [], "similar_problems": []}
 ]
