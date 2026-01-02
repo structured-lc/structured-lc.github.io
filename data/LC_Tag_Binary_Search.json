@@ -323,5 +323,9 @@
     {"number": 3722, "slug": "lexicographically-smallest-string-after-reverse", "title": "Lexicographically Smallest String After Reverse", "difficulty": "Medium", "tags": ["Two Pointers", "Binary Search", "Enumeration"], "similar_problems": []},
     {"number": 3733, "slug": "minimum-time-to-complete-all-deliveries", "title": "Minimum Time to Complete All Deliveries", "difficulty": "Medium", "tags": ["Math", "Binary Search"], "similar_problems": []},
     {"number": 3735, "slug": "lexicographically-smallest-string-after-reverse-ii", "title": "Lexicographically Smallest String After Reverse II", "difficulty": "Hard", "tags": ["String", "Binary Search", "Rolling Hash", "Suffix Array", "Hash Function"], "similar_problems": []},
-    {"number": 3748, "slug": "count-stable-subarrays", "title": "Count Stable Subarrays", "difficulty": "Hard", "tags": ["Array", "Binary Search", "Prefix Sum"], "similar_problems": []}
+    {"number": 3748, "slug": "count-stable-subarrays", "title": "Count Stable Subarrays", "difficulty": "Hard", "tags": ["Array", "Binary Search", "Prefix Sum"], "similar_problems": []},
+    {"number": 3759, "slug": "count-elements-with-at-least-k-greater-values", "title": "Count Elements With at Least K Greater Values", "difficulty": "Medium", "tags": ["Array", "Binary Search", "Divide and Conquer", "Sorting", "Quickselect"], "similar_problems": []},
+    {"number": 3762, "slug": "minimum-operations-to-equalize-subarrays", "title": "Minimum Operations to Equalize Subarrays", "difficulty": "Hard", "tags": ["Array", "Math", "Binary Search", "Segment Tree"], "similar_problems": []},
+    {"number": 3766, "slug": "minimum-operations-to-make-binary-palindrome", "title": "Minimum Operations to Make Binary Palindrome", "difficulty": "Medium", "tags": ["Array", "Two Pointers", "Binary Search", "Bit Manipulation"], "similar_problems": []},
+    {"number": 3771, "slug": "total-score-of-dungeon-runs", "title": "Total Score of Dungeon Runs", "difficulty": "Medium", "tags": ["Array", "Binary Search", "Prefix Sum"], "similar_problems": []}
 ]

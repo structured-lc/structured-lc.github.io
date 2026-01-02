@@ -193,5 +193,6 @@
     {"number": 3688, "slug": "bitwise-or-of-even-numbers-in-an-array", "title": "Bitwise OR of Even Numbers in an Array", "difficulty": "Easy", "tags": ["Array", "Bit Manipulation", "Simulation"], "similar_problems": []},
     {"number": 3701, "slug": "compute-alternating-sum", "title": "Compute Alternating Sum", "difficulty": "Easy", "tags": ["Array", "Simulation"], "similar_problems": [{"slug": "alternating-digit-sum", "title": "Alternating Digit Sum", "difficulty": "Easy"}]},
     {"number": 3703, "slug": "remove-k-balanced-substrings", "title": "Remove K-Balanced Substrings", "difficulty": "Medium", "tags": ["String", "Stack", "Simulation"], "similar_problems": []},
-    {"number": 3726, "slug": "remove-zeros-in-decimal-representation", "title": "Remove Zeros in Decimal Representation", "difficulty": "Easy", "tags": ["Math", "Simulation"], "similar_problems": []}
+    {"number": 3726, "slug": "remove-zeros-in-decimal-representation", "title": "Remove Zeros in Decimal Representation", "difficulty": "Easy", "tags": ["Math", "Simulation"], "similar_problems": []},
+    {"number": 3775, "slug": "reverse-words-with-same-vowel-count", "title": "Reverse Words With Same Vowel Count", "difficulty": "Medium", "tags": ["Two Pointers", "String", "Simulation"], "similar_problems": []}
 ]

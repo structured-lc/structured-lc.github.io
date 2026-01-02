@@ -628,5 +628,6 @@
     {"number": 3747, "slug": "count-distinct-integers-after-removing-zeros", "title": "Count Distinct Integers After Removing Zeros", "difficulty": "Medium", "tags": ["Math", "Dynamic Programming"], "similar_problems": []},
     {"number": 3751, "slug": "total-waviness-of-numbers-in-range-i", "title": "Total Waviness of Numbers in Range I", "difficulty": "Medium", "tags": ["Math", "Dynamic Programming", "Enumeration"], "similar_problems": []},
     {"number": 3753, "slug": "total-waviness-of-numbers-in-range-ii", "title": "Total Waviness of Numbers in Range II", "difficulty": "Hard", "tags": ["Math", "Dynamic Programming"], "similar_problems": []},
-    {"number": 3757, "slug": "number-of-effective-subsequences", "title": "Number of Effective Subsequences", "difficulty": "Hard", "tags": ["Array", "Math", "Dynamic Programming", "Bit Manipulation", "Combinatorics"], "similar_problems": []}
+    {"number": 3757, "slug": "number-of-effective-subsequences", "title": "Number of Effective Subsequences", "difficulty": "Hard", "tags": ["Array", "Math", "Dynamic Programming", "Bit Manipulation", "Combinatorics"], "similar_problems": []},
+    {"number": 3772, "slug": "maximum-subgraph-score-in-a-tree", "title": "Maximum Subgraph Score in a Tree", "difficulty": "Hard", "tags": ["Array", "Dynamic Programming", "Tree", "Depth-First Search"], "similar_problems": []}
 ]

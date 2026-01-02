@@ -128,5 +128,7 @@
     {"number": 3722, "slug": "lexicographically-smallest-string-after-reverse", "title": "Lexicographically Smallest String After Reverse", "difficulty": "Medium", "tags": ["Two Pointers", "Binary Search", "Enumeration"], "similar_problems": []},
     {"number": 3734, "slug": "lexicographically-smallest-palindromic-permutation-greater-than-target", "title": "Lexicographically Smallest Palindromic Permutation Greater Than Target", "difficulty": "Hard", "tags": ["Two Pointers", "String", "Enumeration"], "similar_problems": []},
     {"number": 3745, "slug": "maximize-expression-of-three-elements", "title": "Maximize Expression of Three Elements", "difficulty": "Easy", "tags": ["Array", "Greedy", "Sorting", "Enumeration"], "similar_problems": []},
-    {"number": 3751, "slug": "total-waviness-of-numbers-in-range-i", "title": "Total Waviness of Numbers in Range I", "difficulty": "Medium", "tags": ["Math", "Dynamic Programming", "Enumeration"], "similar_problems": []}
+    {"number": 3751, "slug": "total-waviness-of-numbers-in-range-i", "title": "Total Waviness of Numbers in Range I", "difficulty": "Medium", "tags": ["Math", "Dynamic Programming", "Enumeration"], "similar_problems": []},
+    {"number": 3765, "slug": "complete-prime-number", "title": "Complete Prime Number", "difficulty": "Medium", "tags": ["Math", "Enumeration", "Number Theory"], "similar_problems": []},
+    {"number": 3784, "slug": "minimum-deletion-cost-to-make-all-characters-equal", "title": "Minimum Deletion Cost to Make All Characters Equal", "difficulty": "Medium", "tags": ["Array", "Hash Table", "String", "Enumeration"], "similar_problems": []}
 ]

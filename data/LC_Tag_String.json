@@ -829,5 +829,11 @@
     {"number": 3749, "slug": "evaluate-valid-expressions", "title": "Evaluate Valid Expressions", "difficulty": "Hard", "tags": ["Hash Table", "Math", "String", "Divide and Conquer", "Stack"], "similar_problems": [{"slug": "basic-calculator-ii", "title": "Basic Calculator II", "difficulty": "Medium"}]},
     {"number": 3750, "slug": "minimum-number-of-flips-to-reverse-binary-string", "title": "Minimum Number of Flips to Reverse Binary String", "difficulty": "Easy", "tags": ["Math", "Two Pointers", "String", "Bit Manipulation"], "similar_problems": []},
     {"number": 3756, "slug": "concatenate-non-zero-digits-and-multiply-by-sum-ii", "title": "Concatenate Non-Zero Digits and Multiply by Sum II", "difficulty": "Medium", "tags": ["Math", "String", "Prefix Sum"], "similar_problems": []},
-    {"number": 3758, "slug": "convert-number-words-to-digits", "title": "Convert Number Words to Digits", "difficulty": "Medium", "tags": ["String", "Trie"], "similar_problems": []}
+    {"number": 3758, "slug": "convert-number-words-to-digits", "title": "Convert Number Words to Digits", "difficulty": "Medium", "tags": ["String", "Trie"], "similar_problems": []},
+    {"number": 3760, "slug": "maximum-substrings-with-distinct-start", "title": "Maximum Substrings With Distinct Start", "difficulty": "Medium", "tags": ["Hash Table", "String"], "similar_problems": []},
+    {"number": 3773, "slug": "maximum-number-of-equal-length-runs", "title": "Maximum Number of Equal Length Runs", "difficulty": "Medium", "tags": ["Hash Table", "String", "Counting"], "similar_problems": []},
+    {"number": 3775, "slug": "reverse-words-with-same-vowel-count", "title": "Reverse Words With Same Vowel Count", "difficulty": "Medium", "tags": ["Two Pointers", "String", "Simulation"], "similar_problems": []},
+    {"number": 3777, "slug": "minimum-deletions-to-make-alternating-substring", "title": "Minimum Deletions to Make Alternating Substring", "difficulty": "Hard", "tags": ["String", "Segment Tree"], "similar_problems": []},
+    {"number": 3781, "slug": "maximum-score-after-binary-swaps", "title": "Maximum Score After Binary Swaps", "difficulty": "Medium", "tags": ["Array", "String", "Greedy", "Heap (Priority Queue)"], "similar_problems": []},
+    {"number": 3784, "slug": "minimum-deletion-cost-to-make-all-characters-equal", "title": "Minimum Deletion Cost to Make All Characters Equal", "difficulty": "Medium", "tags": ["Array", "Hash Table", "String", "Enumeration"], "similar_problems": []}
 ]

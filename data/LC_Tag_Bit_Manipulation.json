@@ -262,5 +262,6 @@
     {"number": 3702, "slug": "longest-subsequence-with-non-zero-bitwise-xor", "title": "Longest Subsequence With Non-Zero Bitwise XOR", "difficulty": "Medium", "tags": ["Array", "Bit Manipulation"], "similar_problems": []},
     {"number": 3750, "slug": "minimum-number-of-flips-to-reverse-binary-string", "title": "Minimum Number of Flips to Reverse Binary String", "difficulty": "Easy", "tags": ["Math", "Two Pointers", "String", "Bit Manipulation"], "similar_problems": []},
     {"number": 3755, "slug": "find-maximum-balanced-xor-subarray-length", "title": "Find Maximum Balanced XOR Subarray Length", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Bit Manipulation", "Prefix Sum"], "similar_problems": []},
-    {"number": 3757, "slug": "number-of-effective-subsequences", "title": "Number of Effective Subsequences", "difficulty": "Hard", "tags": ["Array", "Math", "Dynamic Programming", "Bit Manipulation", "Combinatorics"], "similar_problems": []}
+    {"number": 3757, "slug": "number-of-effective-subsequences", "title": "Number of Effective Subsequences", "difficulty": "Hard", "tags": ["Array", "Math", "Dynamic Programming", "Bit Manipulation", "Combinatorics"], "similar_problems": []},
+    {"number": 3766, "slug": "minimum-operations-to-make-binary-palindrome", "title": "Minimum Operations to Make Binary Palindrome", "difficulty": "Medium", "tags": ["Array", "Two Pointers", "Binary Search", "Bit Manipulation"], "similar_problems": []}
 ]

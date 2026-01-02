@@ -48,5 +48,6 @@
     {"number": 3307, "slug": "find-the-k-th-character-in-string-game-ii", "title": "Find the K-th Character in String Game II", "difficulty": "Hard", "tags": ["Math", "Bit Manipulation", "Recursion"], "similar_problems": [{"slug": "shifting-letters", "title": "Shifting Letters", "difficulty": "Medium"}]},
     {"number": 3483, "slug": "unique-3-digit-even-numbers", "title": "Unique 3-Digit Even Numbers", "difficulty": "Easy", "tags": ["Array", "Hash Table", "Recursion", "Enumeration"], "similar_problems": [{"slug": "finding-3-digit-even-numbers", "title": "Finding 3-Digit Even Numbers", "difficulty": "Easy"}]},
     {"number": 3565, "slug": "sequential-grid-path-cover", "title": "Sequential Grid Path Cover", "difficulty": "Medium", "tags": ["Array", "Recursion", "Matrix"], "similar_problems": []},
-    {"number": 3566, "slug": "partition-array-into-two-equal-product-subsets", "title": "Partition Array into Two Equal Product Subsets", "difficulty": "Medium", "tags": ["Array", "Bit Manipulation", "Recursion", "Enumeration"], "similar_problems": []}
+    {"number": 3566, "slug": "partition-array-into-two-equal-product-subsets", "title": "Partition Array into Two Equal Product Subsets", "difficulty": "Medium", "tags": ["Array", "Bit Manipulation", "Recursion", "Enumeration"], "similar_problems": []},
+    {"number": 3782, "slug": "last-remaining-integer-after-alternating-deletion-operations", "title": "Last Remaining Integer After Alternating Deletion Operations", "difficulty": "Hard", "tags": ["Math", "Recursion"], "similar_problems": []}
 ]

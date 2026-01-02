@@ -636,5 +636,11 @@
     {"number": 3753, "slug": "total-waviness-of-numbers-in-range-ii", "title": "Total Waviness of Numbers in Range II", "difficulty": "Hard", "tags": ["Math", "Dynamic Programming"], "similar_problems": []},
     {"number": 3754, "slug": "concatenate-non-zero-digits-and-multiply-by-sum-i", "title": "Concatenate Non-Zero Digits and Multiply by Sum I", "difficulty": "Easy", "tags": ["Math"], "similar_problems": []},
     {"number": 3756, "slug": "concatenate-non-zero-digits-and-multiply-by-sum-ii", "title": "Concatenate Non-Zero Digits and Multiply by Sum II", "difficulty": "Medium", "tags": ["Math", "String", "Prefix Sum"], "similar_problems": []},
-    {"number": 3757, "slug": "number-of-effective-subsequences", "title": "Number of Effective Subsequences", "difficulty": "Hard", "tags": ["Array", "Math", "Dynamic Programming", "Bit Manipulation", "Combinatorics"], "similar_problems": []}
+    {"number": 3757, "slug": "number-of-effective-subsequences", "title": "Number of Effective Subsequences", "difficulty": "Hard", "tags": ["Array", "Math", "Dynamic Programming", "Bit Manipulation", "Combinatorics"], "similar_problems": []},
+    {"number": 3761, "slug": "minimum-absolute-distance-between-mirror-pairs", "title": "Minimum Absolute Distance Between Mirror Pairs", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Math"], "similar_problems": []},
+    {"number": 3762, "slug": "minimum-operations-to-equalize-subarrays", "title": "Minimum Operations to Equalize Subarrays", "difficulty": "Hard", "tags": ["Array", "Math", "Binary Search", "Segment Tree"], "similar_problems": []},
+    {"number": 3765, "slug": "complete-prime-number", "title": "Complete Prime Number", "difficulty": "Medium", "tags": ["Math", "Enumeration", "Number Theory"], "similar_problems": []},
+    {"number": 3770, "slug": "largest-prime-from-consecutive-prime-sum", "title": "Largest Prime from Consecutive Prime Sum", "difficulty": "Medium", "tags": ["Array", "Math", "Number Theory"], "similar_problems": []},
+    {"number": 3782, "slug": "last-remaining-integer-after-alternating-deletion-operations", "title": "Last Remaining Integer After Alternating Deletion Operations", "difficulty": "Hard", "tags": ["Math", "Recursion"], "similar_problems": []},
+    {"number": 3783, "slug": "mirror-distance-of-an-integer", "title": "Mirror Distance of an Integer", "difficulty": "Easy", "tags": ["Math"], "similar_problems": []}
 ]

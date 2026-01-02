@@ -180,5 +180,7 @@
     {"number": 3715, "slug": "sum-of-perfect-square-ancestors", "title": "Sum of Perfect Square Ancestors", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Math", "Tree", "Depth-First Search", "Counting", "Number Theory"], "similar_problems": []},
     {"number": 3720, "slug": "lexicographically-smallest-permutation-greater-than-target", "title": "Lexicographically Smallest Permutation Greater Than Target", "difficulty": "Medium", "tags": ["Hash Table", "String", "Greedy", "Counting", "Enumeration"], "similar_problems": []},
     {"number": 3737, "slug": "count-subarrays-with-majority-element-i", "title": "Count Subarrays With Majority Element I", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Divide and Conquer", "Segment Tree", "Merge Sort", "Counting", "Prefix Sum"], "similar_problems": []},
-    {"number": 3746, "slug": "minimum-string-length-after-balanced-removals", "title": "Minimum String Length After Balanced Removals", "difficulty": "Medium", "tags": ["String", "Stack", "Counting"], "similar_problems": []}
+    {"number": 3746, "slug": "minimum-string-length-after-balanced-removals", "title": "Minimum String Length After Balanced Removals", "difficulty": "Medium", "tags": ["String", "Stack", "Counting"], "similar_problems": []},
+    {"number": 3773, "slug": "maximum-number-of-equal-length-runs", "title": "Maximum Number of Equal Length Runs", "difficulty": "Medium", "tags": ["Hash Table", "String", "Counting"], "similar_problems": []},
+    {"number": 3785, "slug": "minimum-swaps-to-avoid-forbidden-values", "title": "Minimum Swaps to Avoid Forbidden Values", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Greedy", "Counting"], "similar_problems": []}
 ]

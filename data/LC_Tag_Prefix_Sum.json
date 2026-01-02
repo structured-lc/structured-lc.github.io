@@ -227,5 +227,6 @@
     {"number": 3739, "slug": "count-subarrays-with-majority-element-ii", "title": "Count Subarrays With Majority Element II", "difficulty": "Hard", "tags": ["Array", "Hash Table", "Divide and Conquer", "Segment Tree", "Merge Sort", "Prefix Sum"], "similar_problems": []},
     {"number": 3748, "slug": "count-stable-subarrays", "title": "Count Stable Subarrays", "difficulty": "Hard", "tags": ["Array", "Binary Search", "Prefix Sum"], "similar_problems": []},
     {"number": 3755, "slug": "find-maximum-balanced-xor-subarray-length", "title": "Find Maximum Balanced XOR Subarray Length", "difficulty": "Medium", "tags": ["Array", "Hash Table", "Bit Manipulation", "Prefix Sum"], "similar_problems": []},
-    {"number": 3756, "slug": "concatenate-non-zero-digits-and-multiply-by-sum-ii", "title": "Concatenate Non-Zero Digits and Multiply by Sum II", "difficulty": "Medium", "tags": ["Math", "String", "Prefix Sum"], "similar_problems": []}
+    {"number": 3756, "slug": "concatenate-non-zero-digits-and-multiply-by-sum-ii", "title": "Concatenate Non-Zero Digits and Multiply by Sum II", "difficulty": "Medium", "tags": ["Math", "String", "Prefix Sum"], "similar_problems": []},
+    {"number": 3771, "slug": "total-score-of-dungeon-runs", "title": "Total Score of Dungeon Runs", "difficulty": "Medium", "tags": ["Array", "Binary Search", "Prefix Sum"], "similar_problems": []}
 ]
