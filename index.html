@@ -543,7 +543,10 @@
     // ========================================
     // HINTS/TUTORIAL SYSTEM
     // ========================================
-    
+
+    // Set to true to re-enable the hints/tutorial system
+    const HINTS_ENABLED = false;
+
     // Hints configuration
     const hintsConfig = {
       desktop: [
@@ -675,7 +678,7 @@
     
     // Start hints system
     function startHints() {
-      if (isHintsActive) return;
+      if (!HINTS_ENABLED || isHintsActive) return;
       
       isHintsActive = true;
       currentHintIndex = 0;
@@ -879,10 +882,17 @@
     
     // Initialize hints system
     function initializeHints() {
+      if (!HINTS_ENABLED) {
+        // Hide the trigger button when hints are disabled
+        const trigger = document.getElementById('hints-trigger');
+        if (trigger) trigger.style.display = 'none';
+        return;
+      }
+
       // Add event listeners
       window.addEventListener('resize', handleHintsResize);
       document.addEventListener('keydown', handleHintsKeydown);
-      
+
       // Auto-start hints for new users after page load
       if (document.readyState === 'complete') {
         checkAutoStartHints();
