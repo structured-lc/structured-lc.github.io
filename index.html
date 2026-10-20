@@ -132,6 +132,29 @@ a{color:var(--accent);text-decoration:none}
 .hero-study .go{margin-top:8px;display:flex;align-items:center;gap:7px;font-weight:600;color:var(--accent);font-size:14px}
 .hero-study .go svg{width:17px;height:17px}
 
+/* first-run welcome (dismissible, shown until the user starts or dismisses) */
+.welcome{position:relative;margin-bottom:30px;padding:24px 26px;border-radius:18px;
+  background:linear-gradient(135deg,var(--accent-soft),transparent 72%),var(--surface);
+  border:1px solid var(--line);box-shadow:var(--shadow)}
+.welcome .wx{position:absolute;top:12px;right:12px;width:30px;height:30px;border-radius:9px;border:none;
+  background:transparent;color:var(--ink-3);display:grid;place-items:center;cursor:pointer;transition:.15s}
+.welcome .wx:hover{background:var(--surface-3);color:var(--ink)}
+.welcome .wx svg{width:17px;height:17px}
+.welcome .eyebrow{font-size:12px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.welcome .wh{font-family:var(--serif);font-size:23px;font-weight:600;letter-spacing:-.02em;margin-bottom:4px;padding-right:34px}
+.welcome .wsub{color:var(--ink-2);font-size:14px;margin-bottom:18px;max-width:62ch}
+.welcome .wsteps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:20px}
+@media(max-width:620px){.welcome .wsteps{grid-template-columns:1fr}}
+.welcome .wstep{display:flex;gap:12px;align-items:flex-start}
+.welcome .wstep .si{width:34px;height:34px;flex:none;border-radius:10px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center}
+.welcome .wstep .si svg{width:18px;height:18px}
+.welcome .wstep .st{font-weight:600;font-size:14px}
+.welcome .wstep .sd{color:var(--ink-2);font-size:13px;line-height:1.5}
+.welcome .wstart{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:11px;border:none;
+  background:var(--accent);color:#fff;font-weight:600;font-size:14px;cursor:pointer;transition:.15s}
+.welcome .wstart:hover{filter:brightness(1.05);transform:translateY(-1px)}
+.welcome .wstart svg{width:16px;height:16px}
+
 /* unified tile grid (patterns / tracks / lists) */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(184px,1fr));gap:14px}
 .tile{position:relative;padding:18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);
@@ -524,8 +547,8 @@ const I = {
   plus:`<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>`, bookmark:`<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12a0 0 0 0 1 0 0v15l-6-4-6 4v-15a0 0 0 0 1 0 0Z"/></svg>`, x:`<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg>`, user:`<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="3.6"/><path d="M5.5 19.5a6.5 6.5 0 0 1 13 0"/></svg>`, mark:`<svg aria-hidden="true" focusable="false" viewBox="0 0 32 32"><rect x="2" y="2" width="28" height="28" rx="8.5" fill="currentColor"/><rect x="8" y="9.6" width="16" height="2.9" rx="1.45" fill="#fff"/><rect x="8" y="14.5" width="11" height="2.9" rx="1.45" fill="#fff" fill-opacity="0.85"/><rect x="8" y="19.4" width="6.5" height="2.9" rx="1.45" fill="#fff" fill-opacity="0.6"/></svg>`, building:`<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v16M15 9h4a1 1 0 0 1 1 1v11M3 21h18M8 8h.01M8 12h.01M8 16h.01M11 8h.01M11 12h.01M11 16h.01"/></svg>`,
   chat:`<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a7.5 7.5 0 0 1-10.9 6.7L4.5 19.5l1.3-4.3A7.5 7.5 0 1 1 20 11.5Z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg>`
 };
-const BUILD='v1.0.3';        // project version (baked by `str-lc build-site`), attached to feedback
-const BUILD_DATE='2026-10-18'; // version.json lastUpdated, shown in the footer
+const BUILD='v1.0.4';        // project version (baked by `str-lc build-site`), attached to feedback
+const BUILD_DATE='2026-10-20'; // version.json lastUpdated, shown in the footer
 
 /* ==========================================================================
    STORE — the single, swappable persistence layer.
@@ -1070,6 +1093,7 @@ function home(){
   const rq=store.reviewQueue();
   const flashLine = rq.length ? `${rq.length} ready to review` : `Mark problems Done to build your deck`;
   vp.innerHTML=`<div class="scroll"><div class="wrap">
+    ${welcomeCard(cHash)}
     <div class="greet">${greet}${who} — ready to practice?</div>
     <div class="hero-row">
       <div class="continue" data-go="${cHash}">
@@ -1101,6 +1125,24 @@ function home(){
     </footer>
   </div></div>`;
   bind();
+}
+// first-run welcome — shown once per device until the user starts or dismisses it
+const WELCOME_KEY='slc_seen_welcome';
+function welcomeCard(startHash){
+  if(LS.get(WELCOME_KEY,false)) return '';
+  const steps=[
+    [I.grid,'Pick a lens','Browse by Pattern, Track, or Company — every problem lives under several.'],
+    [I.cards,'Read the card','One teaching card per problem, the same nine sections every time.'],
+    [I.check,'Track &amp; review','Set a status, save to lists, and drill flashcards. Press ⌘K to jump anywhere.'],
+  ].map(([ic,t,d])=>`<div class="wstep"><div class="si">${ic}</div><div><div class="st">${t}</div><div class="sd">${d}</div></div></div>`).join('');
+  return `<div class="welcome" id="welcome">
+    <button class="wx" id="welcomeX" title="Dismiss" aria-label="Dismiss welcome">${I.x}</button>
+    <div class="eyebrow">Welcome</div>
+    <div class="wh">Every problem, explained the same way.</div>
+    <div class="wsub">Structured-LC turns ${META.size.toLocaleString()} LeetCode problems into consistent teaching cards, so you learn the pattern instead of re-learning a new write-up each time.</div>
+    <div class="wsteps">${steps}</div>
+    <button class="wstart" id="welcomeStart" data-start="${esc(startHash)}">Start NeetCode 150 ${I.arrow}</button>
+  </div>`;
 }
 // a titled tile grid that shows up to `cap` tiles, plus a "+N more" tile to expand
 function homeSection(title, tiles, cap){
@@ -1188,6 +1230,7 @@ async function reader(num, ctx){
   const pos = ctx ? ctx.list.indexOf(num) : -1;
   const crumb = ctx ? `<span class="ctx">${esc(ctx.label)}</span><span class="pos">${pos+1}/${ctx.list.length}</span>` : `<span class="ctx">All problems</span>`;
   store.setLast({number:num, kind:ctx?ctx.kind:null, key:ctx?ctx.key:null, label:ctx?ctx.label:null, hash:ctx?ctx.hashFor(num):`#/p/${numToSlug(num)}`});
+  LS.set(WELCOME_KEY,true);   // opening any problem retires the first-run welcome
   const token=++readerToken;
   // render the bar + a loading body immediately (title known from the index)
   const bar=document.createElement('div'); bar.className='reader-bar';
@@ -1455,6 +1498,9 @@ function bind(){
     const n=sec.querySelectorAll('.tile.overflow').length;
     b.querySelector('.more-label').textContent = exp ? 'Show less' : `+${n} more`; });
   const sg=document.getElementById('studyGo'); if(sg) sg.onclick=()=>go('#/study');
+  const wx=document.getElementById('welcomeX'); if(wx) wx.onclick=()=>{ LS.set(WELCOME_KEY,true);
+    const w=document.getElementById('welcome'); if(w) w.remove(); };
+  const ws=document.getElementById('welcomeStart'); if(ws) ws.onclick=()=>{ LS.set(WELCOME_KEY,true); go(ws.dataset.start); };
   vp.querySelectorAll('[data-spoiler]').forEach(sp=>sp.querySelector('button').onclick=()=>{ sp.classList.add('hidden'); sp.nextElementSibling.classList.remove('hidden'); });
   vp.querySelectorAll('[data-hint]').forEach(b=>b.onclick=()=>{
     const body=b.nextElementSibling; const open=body.classList.toggle('hidden')===false;
