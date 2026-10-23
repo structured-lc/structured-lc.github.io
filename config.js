@@ -4,7 +4,7 @@
  *
  * To enable accounts + cross-device sync:
  *   1. Create a free project at https://supabase.com
- *   2. In the SQL editor, run the queries in  supabase.sql  (creates the
+ *   2. In the SQL editor, run the queries in  supabase/schema.sql  (creates the
  *      user_state table and its row-level-security policies)
  *   3. In Authentication → Providers, enable "Email" (magic link) and/or Google
  *   4. In Authentication → URL Configuration, add your site URL to the allowed
